@@ -26,6 +26,9 @@ FRAMEWORK = {"score/__main__.py", "score/graph/__init__.py", "score/graph/_code.
              "score/review/__main__.py", "score/adapters/compute/__init__.py", "score/stages/__init__.py",
              "score/stages/__main__.py", "tools/props/cloud/batch.py", "tools/props/cloud/capacity.py",
              "tools/props/cloud/park.py", "tools/props/cloud/blender_cloud.py", "tools/props/cloud/ledger.py"}
+# The cloud runners (renting machines, the paid parts) are hashed with the code, as score's recipe does, but never
+# shipped: the library carries no provider code.
+CLOUD = ("tools/props/cloud/", "tools/cloud/")
 FIELD = re.compile(r"^\s*(score:[\w:]+)\s+([\w\[\]]+)\s+(.*)$")
 TYPES = {"string": "string", "token": "string", "float": "number", "double": "number", "int": "integer",
          "bool": "boolean", "float2": "array", "float3": "array", "float4": "array", "color3f": "array",
@@ -281,15 +284,19 @@ def candidate(context, definition):
     name = definition["name"]
     work = context.work("algorithm", name)
     hashed = closure(context, definition["roots"], definition.get("search", []))
+    shipped = [path for path in hashed if not path.startswith(CLOUD)]
     every = python_files(context)
     files, roles, known = {}, {}, {}
-    for path in hashed + parents(hashed, every):
+    for path in shipped + parents(shipped, every):
         files[f"code/{path}"] = context.repo.export(path, work / "code" / path)
         roles[f"code/{path}"] = "code"
     digest = code_hash(context, hashed)
     code = {"commit": context.world["commit"], "python": PYTHON, "code_hash": digest,
-            "files": {path: hashlib.sha256(context.repo.read_bytes(path)).hexdigest() for path in hashed},
-            "imports_only": parents(hashed, every), "reproduces": reproduces(context, definition, digest)}
+            "files": {path: hashlib.sha256(context.repo.read_bytes(path)).hexdigest() for path in shipped},
+            "left_out": {path: hashlib.sha256(context.repo.read_bytes(path)).hexdigest() for path in hashed
+                         if path not in shipped},
+            "left_out_why": "cloud runner code (paid parts): hashed in code_hash, not shipped",
+            "imports_only": parents(shipped, every), "reproduces": reproduces(context, definition, digest)}
     files["code.json"] = write_json(work / "code.json", code)
     files["settings.schema.json"] = write_json(work / "settings.schema.json", settings_schema(context, definition))
     files["presets/world1/seed.json"] = write_json(work / "presets/world1/seed.json", seeds(context, definition))
