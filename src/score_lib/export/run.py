@@ -248,10 +248,12 @@ def build_record(context, candidate, address, state):
 
 def comparable(record):
     """An entry without what differs between versions of the same content (address, version, state, lock date,
-    the usd search path)."""
+    the usd search path, the score commit it was read at: a handover at a newer commit with the same content leaves
+    the entry unchanged)."""
     found = {key: value for key, value in record.items() if key not in UNVERSIONED}
     if found.get("usd"):
         found["usd"] = {key: value for key, value in found["usd"].items() if key != "path"}
+    found["provenance"] = {key: value for key, value in found.get("provenance", {}).items() if key != "commit"}
     return json.dumps(found, sort_keys=True)
 
 
@@ -366,8 +368,10 @@ def kind_report(planned, collisions):
     for each in planned:
         report["counts"][each.status] += 1
         if each.status == "refused":
+            provenance = each.candidate.provenance
             report["refused"].append({"id": each.candidate.entry_id, "reason": each.reason,
-                                      "places": each.candidate.places})
+                                      "places": each.candidate.places, "node": provenance.get("node"),
+                                      "output": provenance.get("output")})
         else:
             report["addresses"][each.status].append(each.address)
     return report
