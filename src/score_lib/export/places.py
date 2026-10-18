@@ -114,14 +114,13 @@ def node_provenance(context, node, output=None):
 
 
 def pinned_models(record):
-    """The finish record's pinned models without the registry host: {name, revision, sha256, digest, licence,
-    commercial_use, source}."""
+    """The finish record's pinned models without the registry host: {name, revision, sha256, digest, source} (what
+    made the output; the library names no licence per entry)."""
     found = []
     for pinned in (record.get("models") or {}).values():
         for model in pinned.get("models", []):
             found.append({"name": model.get("name"), "revision": model.get("revision"), "sha256": model.get("sha256"),
-                          "digest": pinned.get("digest"), "licence": model.get("licence"),
-                          "commercial_use": model.get("commercial_use"), "source": model.get("source")})
+                          "digest": pinned.get("digest"), "source": model.get("source")})
     return sorted(found, key=lambda model: model["name"] or "")
 
 

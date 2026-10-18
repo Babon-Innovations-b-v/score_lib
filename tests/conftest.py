@@ -346,6 +346,7 @@ def make_repo(folder, manifest_rules):
              "data/kit/room.json": json.dumps(kit), "data/library/materials.json": json.dumps(library),
              "data/checks/gaps/room.json": json.dumps([{"name": "a gap"}]),
              "data/demo/preset.json": json.dumps({"rate": 24}),
+             "data/demo/outside.json": json.dumps({"not": "ours"}),
              "tools/demo/algo.py": ALGORITHM, "tools/demo/helper.py": HELPER, "tools/demo/algo_test.py": ALGORITHM_TEST}
     folder.mkdir(parents=True)
     git(folder, "init", "-q", "-b", "main")
@@ -356,7 +357,8 @@ def make_repo(folder, manifest_rules):
 
 
 def make_root(folder, commit):
-    """A library root: the world toml, the licences config, the schemas and two algorithm definitions."""
+    """A library root: the world toml, the MIT LICENSE, the schemas and two algorithm definitions (the first with an
+    outside requirement keeping one preset file out)."""
     (folder / "worlds").mkdir(parents=True)
     (folder / "worlds/world1.toml").write_text(
         f'name = "world1"\nseed = 3\ncommit = "{commit}"\nplaces = ["room"]\n')
@@ -366,7 +368,9 @@ def make_root(folder, commit):
         'name = "demo"\ntitle = "Demo"\nentry = "algo:write"\nroots = ["tools/demo/algo.py"]\n'
         'search = ["tools/demo"]\nconstants = ["tools/demo/algo.py:RATE", "tools/demo/algo.py:STEP", '
         '"tools/demo/algo.py:NAMES"]\npreset = ["data/demo/*.json"]\nneeds = []\n'
-        'tests = ["tools/demo/algo_test.py"]\n')
+        'tests = ["tools/demo/algo_test.py"]\n\n[[outside]]\nname = "an outside library"\nversion = "1.0"\n'
+        'where = "https://example.org/outside"\nwhy = "not MIT"\npaths = ["data/demo/outside.json"]\n')
+    (folder / "LICENSE").write_text((LIBRARY / "LICENSE").read_text())
     (definitions / "demo_gpu.toml").write_text(
         'name = "demo_gpu"\ntitle = "Demo on a GPU"\nentry = "algo:write"\nroots = ["tools/demo/algo.py"]\n'
         'search = ["tools/demo"]\nconstants = []\npreset = []\nneeds = ["gpu"]\ntests = []\n')
@@ -429,16 +433,17 @@ class World:
         self.store.judge("complete@room", key, {"named gaps": {"answer": "fail"}}, at)
 
     def context(self):
+        from score_lib.admission import Sources
         from score_lib.export import run
-        from score_lib.licences import Licences
         from score_lib.source.repo import Repo
         from score_lib.source.store import Store
         world = run.load_world(self.root, "world1")
         return run.Context(self.root, world, Store(os.environ["SCORE_STORE"]), Repo(self.repo, self.commit),
-                           Licences.load(), scratch=self.scratch / "work")
+                           Sources.load(), scratch=self.scratch / "work")
 
     def export(self, dry_run=False, kinds=None):
         from score_lib.blobs import from_environment
+        from score_lib.admission import Sources
         from score_lib.export import run
         context = self.context()
         try:

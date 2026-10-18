@@ -6,10 +6,10 @@ from pxr import Sdf, Usd
 
 from score_lib.export import places as place_reads
 from score_lib.export.run import Candidate
-from score_lib.licences import SCORE_COMPONENT
+from score_lib.admission import SCORE, carried
 from score_lib.rewrite import asset_paths, export, gathered, rewrite
 
-EARTH = "NASA Earth Observatory's Visible Earth pictures, free of copyright (NASA's media guidelines)"
+EARTH = "nasa_visible_earth"
 
 
 def plan(context):
@@ -73,12 +73,11 @@ def sky_layer(context, place, picture, root_name):
     return layer, sorted(str(path) for path in present)
 
 
-def components(picture):
-    """Licence components: score's own work, and NASA's pictures for the Earth ball (tools/usd/earth.py)."""
-    found = [dict(SCORE_COMPONENT)]
+def made_with(picture):
+    """score's own work, and NASA's pictures the Earth ball is baked from (tools/usd/earth.py)."""
+    found = [dict(SCORE)]
     if picture.startswith("earth"):
-        found.append({"what": "Earth picture baked from NASA Blue Marble and cloud cover", "licence": EARTH,
-                      "source": "score tools/usd/earth.py"})
+        found.append(carried("Earth picture baked from NASA Blue Marble and cloud cover", EARTH))
     return found
 
 
@@ -97,7 +96,7 @@ def candidate(context, sha, uses):
     places = sorted({each for each, _ in uses})
     return Candidate(kind="light", base_id=root_name, identity=sha, title=stem.replace("_", " ").capitalize(),
                      places=places, files=files, roles={picture: "picture", "sky.usda": "usd"},
-                     components=components(picture), usd={"root": "sky.usda", "layer": "light", "use": "reference"},
+                     made_with=made_with(picture), usd={"root": "sky.usda", "layer": "light", "use": "reference"},
                      provenance=provenance,
                      tags={"place_kind": sorted({tag for each in places for tag in place_reads.place_kind(context, each)}),
                            "engine": ["usd"]},

@@ -20,7 +20,7 @@ import tomllib
 from score_lib import entry as entries
 from score_lib import index
 from score_lib.blobs import file_sha256
-from score_lib.licences import Licences, UnknownLicence
+from score_lib.admission import NotAdmitted, Sources
 from score_lib.rewrite import info
 from score_lib.source.release import Release
 from score_lib.source.repo import Repo
@@ -42,8 +42,7 @@ class Candidate:
     places: list
     files: dict  # entry file name -> local path
     roles: dict  # entry file name -> role
-    components: list = dataclasses.field(default_factory=list)  # {what, licence, source}
-    note: str = ""
+    made_with: list = dataclasses.field(default_factory=list)  # {what, source, carried?}: admission.made_by/carried
     usd: dict | None = None  # {root, layer, use}
     requires: list = dataclasses.field(default_factory=list)
     provenance: dict = dataclasses.field(default_factory=dict)
@@ -66,15 +65,15 @@ class Planned:
 
 
 class Context:
-    """What every kind's plan reads: the store, the repo at the commit, the world, the licences and the map of
-    store bytes to the entries holding them."""
+    """What every kind's plan reads: the store, the repo at the commit, the world, the sources an entry may be made
+    from, the map of store bytes to the entries holding them and the bytes of refused entries."""
 
-    def __init__(self, root, world, store, repo, licences, places=None, scratch=None, cache=None):
+    def __init__(self, root, world, store, repo, sources, places=None, scratch=None, cache=None):
         self.root = pathlib.Path(root)
         self.world = world
         self.store = store
         self.repo = repo
-        self.licences = licences
+        self.sources = sources
         self.places = sorted(places or world["places"])
         self.scratch = pathlib.Path(scratch or tempfile.mkdtemp(prefix="score-lib-"))
         self.cache = pathlib.Path(cache) if cache else None
@@ -83,6 +82,7 @@ class Context:
         self.addresses = {}  # (kind, identity) -> address
         self.by_id = {}  # (kind, id) -> address planned in this run
         self.memo = {}  # values the kinds share (a place's object prims, its layer paths), made once a run
+        self.refused = {}  # sha256 of a refused entry's bytes -> why, so no other entry carries them in
         self.seed_map_from_entries()
 
     def remembered(self, key, make):
@@ -163,7 +163,7 @@ def context_from_environment(root, world_name, places=None, cache=None):
     world = load_world(root, world_name)
     store = Store(pathlib.Path(os.environ["SCORE_STORE"]).expanduser())
     repo = Repo(pathlib.Path(os.environ["SCORE_REPO"]).expanduser(), world["commit"])
-    return Context(root, world, store, repo, Licences.load(), places, cache=cache or os.environ.get("SCORE_LIB_CACHE"))
+    return Context(root, world, store, repo, Sources.load(), places, cache=cache or os.environ.get("SCORE_LIB_CACHE"))
 
 
 def kind_module(kind):
@@ -229,6 +229,7 @@ def build_record(context, candidate, address, state):
     """The full entry record of a candidate at an address."""
     kind, entry_id, version = entries.parse_address(address)
     provenance = dict(candidate.provenance)
+    provenance["made_with"] = context.sources.made_with(candidate.made_with)
     provenance["world"] = context.world["name"]
     provenance["commit"] = context.world["commit"]
     if candidate.files_from:
@@ -239,7 +240,6 @@ def build_record(context, candidate, address, state):
               "title": candidate.title, "state": state, "picture": picture_block(candidate),
               "files": file_table(candidate), "usd": usd_block(candidate, address),
               "requires": sorted(set(candidate.requires)),
-              "licence": context.licences.block(candidate.components, candidate.note),
               "provenance": provenance, "tags": candidate.tags, "seen_in": sorted(set(candidate.places))}
     if record["picture"] is None:
         record["picture_reason"] = (candidate.picture or {}).get("reason", "no picture made")
@@ -277,6 +277,21 @@ def home_free(context, candidate):
         candidate.files_from.setdefault(name, {"path": name, "sha256": source})
 
 
+def candidate_bytes(candidate):
+    """The sha256 of every file a candidate would carry (the store's sha where known)."""
+    return {candidate.known.get(name) or file_sha256(path) for name, path in sorted(candidate.files.items())}
+
+
+def refused_carried(context, record):
+    """Why an entry may not go out because it carries a refused entry's bytes, or ''."""
+    shas = [described["sha256"] for described in record["files"].values()]
+    shas += [source["sha256"] for source in record["provenance"].get("files_from", {}).values()]
+    for sha in shas:
+        if sha in context.refused:
+            return f"not MIT: carries the bytes of refused {context.refused[sha]}"
+    return ""
+
+
 def resolve(context, candidate):
     """Settle one candidate against the entries already written: its status, address and record."""
     if candidate.refused:
@@ -288,8 +303,11 @@ def resolve(context, candidate):
     try:
         record = build_record(context, candidate, entries.address_of(candidate.kind, candidate.entry_id, version),
                               "draft")
-    except UnknownLicence as error:
-        return Planned(candidate, "refused", None, None, f"licence: {error}")
+    except NotAdmitted as error:
+        return Planned(candidate, "refused", None, None, f"not MIT: {error}")
+    carried = refused_carried(context, record)
+    if carried:
+        return Planned(candidate, "refused", None, None, carried)
     if latest is None:
         return Planned(candidate, "new", record["address"], record)
     if comparable(latest) == comparable(record):
@@ -324,6 +342,9 @@ def plan_kind(context, kind):
     planned = [resolve(context, candidate) for candidate in sorted(candidates, key=lambda each: each.entry_id)]
     for each in planned:
         remember(context, each)
+        if each.status == "refused" and not each.candidate.refused:
+            for sha in candidate_bytes(each.candidate):
+                context.refused.setdefault(sha, f"{kind}/{each.candidate.entry_id}")
     return planned, collisions
 
 

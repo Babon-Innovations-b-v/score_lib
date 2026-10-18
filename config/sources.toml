@@ -1,0 +1,144 @@
+# Where an entry's content comes from, and whether it may go out under the library's one licence (MIT, LICENSE).
+# The rule (owner, 2026-10-18): everything in the library is MIT; what cannot be released under MIT is not let in.
+#
+#   output  what the source makes may be released under MIT (our own work, or a model or tool whose terms give us
+#           its output)
+#   copy    the source's own bytes may be copied into an entry under MIT (only when its terms allow relicensing)
+#
+# An entry names its sources in provenance.made_with; a source missing here, or one used in a way its row does not
+# allow, is refused. A source whose own bytes may not be copied in stays outside: an algorithm names it as an outside
+# requirement (definitions/algorithms/<name>.toml `outside`). `match` lists the exact credit texts the score data
+# writes for the source. A row is added only from the source's real terms, named in `from`.
+
+[[source]]
+id = "score"
+name = "made by score (code, bakes, layouts, records)"
+output = true
+copy = true
+match = ["made for the first world, the repository's own (MIT)"]
+why = "our own work, released under MIT"
+from = "score LICENSE (MIT, Babon Innovations B.V. and contributors); data/sound/licences.json (tools/sound/made.py sounds)"
+
+[[source]]
+id = "framework_models"
+name = "models made by the framework's routes for world 1"
+output = true
+copy = true
+match = ["made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question"]
+why = "made by our routes (code-built pieces, or Pixal3D meshes from our own pictures); the release manifest releases them under MIT"
+from = "score data/assets/world1.json licences (every rule carries this text)"
+
+[[source]]
+id = "pixal3d"
+name = "Pixal3D (picture to 3D)"
+output = true
+copy = false
+why = "MIT code; its DINOv3 encoder's licence covers the weights, not what the model makes; no weights are copied in"
+from = "score paper/source/score.md Table C1"
+
+[[source]]
+id = "segvigen"
+name = "SegviGen on TRELLIS.2 (finish map laid on the shape)"
+output = true
+copy = false
+why = "MIT code on TRELLIS.2 (MIT); DINOv3 licence for its encoder's weights only; no weights are copied in"
+from = "score paper/source/score.md Table C1"
+
+[[source]]
+id = "nano_banana_pro"
+name = "Nano Banana Pro (paid API)"
+output = true
+copy = false
+why = "a paid API whose terms leave the generated output to the paying user"
+from = "score paper/source/score.md Table C1"
+
+[[source]]
+id = "gemini_31_pro"
+name = "Gemini 3.1 Pro (paid API)"
+output = true
+copy = false
+why = "a paid API whose terms leave the generated output to the paying user"
+from = "score paper/source/score.md Table C1"
+
+[[source]]
+id = "qwen_image_edit"
+name = "Qwen-Image-Edit-2511"
+output = true
+copy = false
+why = "Apache-2.0 weights: the licence covers the weights, not the pictures they make; no weights are copied in"
+from = "score paper/source/score.md Table C1"
+
+[[source]]
+id = "depth_anything_v2"
+name = "Depth Anything V2 Small"
+output = true
+copy = false
+why = "Apache-2.0 weights: the licence covers the weights, not the depth they make; no weights are copied in"
+from = "score paper/source/score.md Table C1"
+
+[[source]]
+id = "moss_soundeffect"
+name = "MOSS-SoundEffect v2.0"
+output = true
+copy = false
+match = ["made for the first world with MOSS-SoundEffect v2.0 (Apache-2.0)", "made for this game with MOSS-SoundEffect v2.0 (Apache-2.0)"]
+why = "Apache-2.0 weights: the licence covers the model, not the sounds it makes; no weights are copied in"
+from = "score data/sound/licences.json; paper/source/score.md Table C1"
+
+[[source]]
+id = "cc0_recordings"
+name = "CC0 recordings (freesound.org, Kenney)"
+output = true
+copy = true
+match = ["CC0 1.0", "CC0"]
+why = "CC0 1.0 waives every right the author holds, so the recordings may be released under MIT"
+from = "score data/sound/licences.json (each recording's freesound or Kenney page, CC0 1.0)"
+
+[[source]]
+id = "nasa_visible_earth"
+name = "NASA Visible Earth: Blue Marble Next Generation and cloud cover"
+output = true
+copy = true
+match = ["NASA Earth Observatory's Visible Earth pictures, free of copyright (NASA's media guidelines)"]
+why = "a work of the US government, not subject to copyright under NASA's media guidelines; like CC0, it may be released under MIT"
+from = "score tools/usd/earth.py:1-6"
+
+[[source]]
+id = "soma_x"
+name = "SOMA-X and MHR (the characters' skeleton)"
+output = true
+copy = false
+why = "Apache-2.0 (NVlabs/SOMA-X, nvidia/SOMA-X; MHR): the entries carry only the skeleton fitted inside our Pixal3D mesh and the skin weights our code moved onto it, never SOMA-X's or MHR's own files (rig.npz stays out)"
+from = "github.com/NVlabs/SOMA-X licence section; huggingface.co/nvidia/SOMA-X; score tools/characters/maker/prop_skeleton.py:1-10"
+
+[[source]]
+id = "procfunc"
+name = "ProcFunc 0.36.1"
+output = true
+copy = false
+why = "BSD-3-Clause: its copyright notice and conditions must stay with its code, which MIT cannot replace; what its recipes bake is ours"
+from = "score vendor/procfunc/LICENSE.md (Copyright 2026 Princeton University, BSD 3-Clause)"
+
+[[source]]
+id = "infinigen2"
+name = "infinigen2 shaders 2.0.0a2"
+output = true
+copy = false
+why = "BSD-3-Clause: its copyright notice and conditions must stay with its code, which MIT cannot replace; what its shaders bake is ours"
+from = "score vendor/infinigen2/LICENSE (Copyright (c) 2023, Princeton University, BSD 3-Clause)"
+
+[[source]]
+id = "ofl_fonts"
+name = "fonts under the SIL Open Font License 1.1 (Barlow, Barlow Condensed, Noto Sans SC, Noto Serif SC, ZCOOL QingKe HuangYou)"
+output = true
+copy = false
+why = "OFL 1.1: the fonts may only be distributed under the OFL itself, so they cannot go out under MIT; text drawn with them is ours"
+from = "score data/fonts/*/OFL.txt (SIL Open Font License, Version 1.1)"
+
+[[source]]
+id = "blender"
+name = "Blender 5.0.1"
+output = true
+copy = false
+why = "GPL: its code never enters the library; what it renders and bakes is ours"
+from = "score paper/source/score.md Table C1 (Blender is GPL and its output is ours)"

@@ -13,6 +13,7 @@ import os
 import posixpath
 import shutil
 
+from score_lib.admission import made_by
 from score_lib.export import places as place_reads
 from score_lib.export.run import Candidate, write_json
 from score_lib.preview import mesh
@@ -180,18 +181,19 @@ def kit_route(context, place, stem):
     return (kit.get("models") or {}).get(stem)
 
 
-def licence_name(use):
-    """The release manifest name a model's licence is matched on: its models/ name, or models/<stem>/."""
+def manifest_name(use):
+    """The release manifest name a model's rule is matched on: its models/ name, or models/<stem>/."""
     model = use["row"].get("model") or ""
     return model if model.startswith("models/") else f"models/{use['stem']}/"
 
 
-def licence_components(context, use):
-    rule = context.release.rule_for(licence_name(use))
+def made_with(context, use):
+    """The model's source, named by its release manifest rule's text (its own route in `what`)."""
+    name = manifest_name(use)
+    rule = context.release.rule_for(name)
     if not rule:
-        return []
-    return [{"what": f"model (release manifest rule {rule['match']})", "licence": rule["licence"],
-             "source": f"{rule['source']}; author: {rule['author']}"}]
+        return [made_by(f"model {name}", f"no release manifest rule for {name}")]
+    return [made_by(f"model: {rule['source']}", rule["licence"])]
 
 
 def title_of(stem):
@@ -235,7 +237,7 @@ def candidate(context, identity, uses, made):
                        "gltf": source})
     return Candidate(kind="model", base_id=place_reads.sanitised(first["stem"]), identity=identity,
                      title=title_of(first["stem"]), places=[use["place"] for use in uses], files=files, roles=roles,
-                     components=licence_components(context, first), usd={"root": "model.usdc", "layer": "base",
+                     made_with=made_with(context, first), usd={"root": "model.usdc", "layer": "base",
                                                                           "use": "reference"},
                      provenance=provenance, tags=tags_of(context, uses, first),
                      picture={"file": "preview.png", "made_by": "preview/mesh.py", "of": "model.usdc"},

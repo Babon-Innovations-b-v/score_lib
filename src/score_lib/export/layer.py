@@ -12,7 +12,7 @@ from score_lib import entry as entries
 from score_lib.export import places as place_reads
 from score_lib.export.model import dependencies
 from score_lib.export.run import Candidate
-from score_lib.licences import SCORE_COMPONENT
+from score_lib.admission import SCORE
 from score_lib.preview import audio, layer_map, mesh
 from score_lib.rewrite import asset_paths, export, joined, open_copy, rewrite
 
@@ -245,7 +245,7 @@ def candidate(context, place, name):
         usd["neighbours"] = sorted(mapping.neighbours)
     made = Candidate(kind="layer", base_id=f"{sublayer}_{place}", identity=identity,
                      title=f"{place.replace('_', ' ').capitalize()} {sublayer.replace('_', ' ')} layer",
-                     places=[place], files=files, roles=roles, components=[dict(SCORE_COMPONENT)], usd=usd,
+                     places=[place], files=files, roles=roles, made_with=[dict(SCORE)], usd=usd,
                      requires=sorted(mapping.requires), provenance=provenance,
                      tags={"layer": [sublayer], "place_kind": place_reads.place_kind(context, place)},
                      picture=layer_picture(context, place, sublayer, mapping, tree / name, work, files, roles, known),
@@ -279,7 +279,7 @@ def physics_candidate(context, place):
                               .encode()).hexdigest()
     made = Candidate(kind="layer", base_id=f"physics_{place}", identity=identity,
                      title=f"{place.replace('_', ' ').capitalize()} physics layer", places=[place], files=files,
-                     roles=roles, components=[dict(SCORE_COMPONENT)],
+                     roles=roles, made_with=[dict(SCORE)],
                      usd={"root": "layer.usda", "layer": "physics", "use": "sublayer"},
                      requires=sorted(mapping.requires), provenance=provenance,
                      tags={"layer": ["physics"], "place_kind": place_reads.place_kind(context, place)},

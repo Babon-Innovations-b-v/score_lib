@@ -52,8 +52,20 @@ commit `worlds/<world>.toml` names, both read only. The blob store is set by env
 ## Layout
 
 `entries/<kind>/<id>/<version>/entry.json` is the record; `index/` is built from it; `definitions/algorithms/` holds
-one hand-written file per algorithm; `config/licences.toml` lists every licence an entry may carry. An entry whose
-licence is not listed there is refused.
+one hand-written file per algorithm; `config/sources.toml` lists every source an entry's content may come from.
+
+## Licence
+
+The library and every entry in it, the bytes in the blob store included, are MIT (`LICENSE`). Nothing that cannot be
+released under MIT is let in. An entry names no licence of its own, only what made it (`provenance.made_with`: each
+part and its source in `config/sources.toml`). The export refuses an entry with a part whose source is unknown or may
+not go out under MIT, and any entry carrying a refused entry's bytes; `score-lib verify` checks the same.
+
+Our own outputs are in: code and bakes made by score, and what models make whose terms give us the output (Pixal3D,
+the paid APIs, MOSS-SoundEffect). CC0 recordings and NASA's public-domain pictures are in, since their terms allow
+relicensing. Code, fonts or other files whose terms require keeping their own licence (BSD-3-Clause, the SIL Open
+Font License, GPL) are never copied in: an algorithm names them as outside requirements (`outside` in its
+definition: name, version, where to get it, why), and its snapshot leaves their files out.
 
 ## Tests
 

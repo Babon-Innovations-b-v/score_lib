@@ -8,7 +8,7 @@ from pxr import Sdf
 
 from score_lib.export import places as place_reads
 from score_lib.export.run import Candidate, write_json
-from score_lib.licences import SCORE_COMPONENT
+from score_lib.admission import SCORE
 from score_lib.preview import points
 from score_lib.rewrite import asset_paths, copy_prim, export, joined, rewrite
 
@@ -135,7 +135,7 @@ def candidate(context, uses):
     places = [use["place"] for use in uses]
     return Candidate(kind="effect", base_id=root_name, identity=first["identity"],
                      title=first["name"].replace("_", " ").capitalize(), places=places, files=files, roles=roles,
-                     components=[dict(SCORE_COMPONENT)],
+                     made_with=[dict(SCORE)],
                      usd={"root": "effect.usda", "layer": "effects", "use": "reference"},
                      requires=[algorithm] if algorithm else [], provenance=provenance,
                      tags={"effect": [first["settings"].get("kind")], "weather": weathers, "engine": ["usd"],

@@ -1,13 +1,15 @@
 """The exporters on a small place stage made in the test: the entries, the rewritten paths, idempotence, refusal on
-an unknown licence and a new version on a locked change."""
+a source that may not go out under MIT and a new version on a locked change."""
 import hashlib
 import json
 import os
 import pathlib
 
+import pytest
 from conftest import MANIFEST_TEXT, World
 
 from score_lib import entry as entries
+from score_lib.admission import NotAdmitted, Sources, carried, made_by
 from score_lib import locks
 from score_lib.blobs.local import LocalBlobStore
 
@@ -38,8 +40,8 @@ def test_model_entry(world):
     world.export()
     model = entries.load_address(world.root, "model/crate_1@1")
     assert set(model["files"]) >= {"model.usdc", "textures/crate_1_base_color.png", "model.json", "preview.png"}
-    assert model["licence"]["spdx"] == "MIT" and model["licence"]["commercial_ok"]
-    assert "copyright" in model["licence"]["note"]
+    assert "licence" not in model
+    assert model["provenance"]["made_with"] == [{"what": "model: made by the fixture", "by": "framework_models"}]
     assert model["usd"]["default_prim"] == "/crate_1" and model["usd"]["use"] == "reference"
     assert model["seen_in"] == ["room"] and model["tags"]["model"] == ["piece"]
     assert model["tags"]["place_kind"] == ["inside", "moon"]
@@ -54,7 +56,7 @@ def test_effect_and_sound_paths_are_rewritten(world):
     assert effect["requires"] == []  # the fixture library holds no particle_effects algorithm
     sound = entries.load_address(world.root, "sound/hum@1")
     assert "@./audio/generated/places/hum.wav@" in blob_text(sound, "sound.usda")
-    assert sound["licence"]["spdx"] == "CC0-1.0"
+    assert sound["provenance"]["made_with"] == [{"what": "sound/generated/places/hum.wav", "by": "cc0_recordings"}]
 
 
 def test_layers_point_at_library_addresses(world):
@@ -87,15 +89,38 @@ def test_dry_run_writes_nothing(world):
     assert not any((world.root / "entries").rglob("entry.json"))
 
 
-def test_unknown_licence_is_refused(tmp_path):
+def test_a_source_not_known_to_be_mit_is_refused(tmp_path):
     rules = [{"match": "models/", "licence": "a licence nobody wrote down", "source": "x", "author": "y"}]
     world = World(tmp_path, rules)
     report = world.export()
     refused = report["kinds"]["model"]["refused"]
     assert refused and "a licence nobody wrote down" in refused[0]["reason"]
     assert not (world.root / "entries/model").exists()
-    layer = entries.load_address(world.root, "layer/base.room@1")
-    assert "assets/crate_1.usdc" in layer["files"]  # the layer keeps the refused model as its own file
+    layers = {each["id"]: each["reason"] for each in report["kinds"]["layer"]["refused"]}
+    assert "carries the bytes of refused model/crate_1" in layers["base.room"]  # no entry carries the model in
+    assert entries.load_address(world.root, "layer/base.room@1") is None
+
+
+def test_only_what_may_go_out_under_mit_is_admitted():
+    sources = Sources([{"id": "ours", "name": "ours", "output": True, "copy": True, "why": "ours"},
+                       {"id": "bsd", "name": "a BSD library", "output": True, "copy": False, "why": "BSD-3-Clause"},
+                       {"id": "closed", "name": "a closed model", "output": False, "copy": False, "why": "no"}])
+    assert sources.made_with([made_by("baked", "bsd"), carried("recording", "ours")]) == [
+        {"what": "baked", "by": "bsd"}, {"what": "recording", "by": "ours", "carried": True}]
+    for parts, reason in (([carried("code", "bsd")], "own bytes"), ([made_by("picture", "closed")], "made by"),
+                          ([made_by("x", "unknown")], "not in sources.toml"), ([], "names no source")):
+        with pytest.raises(NotAdmitted, match=reason):
+            sources.made_with(parts)
+
+
+def test_an_outside_requirement_stays_out_of_the_snapshot(world):
+    world.export(kinds=["algorithm"])
+    demo = entries.load_address(world.root, "algorithm/demo@1")
+    assert "presets/world1/data/demo/preset.json" in demo["files"]
+    assert "presets/world1/data/demo/outside.json" not in demo["files"]
+    assert demo["provenance"]["outside"] == [{"name": "an outside library", "version": "1.0",
+                                              "where": "https://example.org/outside", "why": "not MIT"}]
+    assert json.loads(blob_text(demo, "run.json"))["outside"] == demo["provenance"]["outside"]
 
 
 def test_locked_change_becomes_a_new_version(world):
@@ -110,9 +135,10 @@ def test_locked_change_becomes_a_new_version(world):
     assert locks.read(world.root)[0]["address"] == "model/crate_1@1"
 
 
-def test_manifest_text_is_known():
-    from score_lib.licences import Licences
-    assert Licences.load().lookup(MANIFEST_TEXT)["spdx"] == "MIT"
+def test_every_source_text_world1_writes_is_known():
+    sources = Sources.load()
+    assert sources.lookup(MANIFEST_TEXT)["id"] == "framework_models"
+    assert sources.lookup("CC0 1.0")["copy"] and not sources.lookup("ofl_fonts")["copy"]
 
 
 def test_layers_and_places_carry_pictures(world):

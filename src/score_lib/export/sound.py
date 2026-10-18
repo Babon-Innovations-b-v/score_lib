@@ -6,6 +6,7 @@ import json
 
 from pxr import Sdf
 
+from score_lib.admission import carried, made_by
 from score_lib.export import places as place_reads
 from score_lib.export.run import Candidate, write_json
 from score_lib.preview import audio
@@ -101,12 +102,16 @@ def sound_usda(context, use, work):
     return export(layer, work / "sound.usda")
 
 
-def components(sound):
-    """One licence component per credited file."""
+def made_with(sound):
+    """One part per credited file, its source named by the credit's text: a recording is carried in, a generated
+    sound is its model's output."""
     found = []
     for credit in sound.get("credits", []):
-        found.append({"what": credit.get("file"), "licence": credit.get("licence"),
-                      "source": f"{credit.get('source')}; author: {credit.get('author')}"})
+        what = credit.get("file") or "a credited file"
+        if "/recordings/" in what:
+            found.append(carried(what, credit.get("licence")))
+        else:
+            found.append(made_by(what, credit.get("licence")))
     return found
 
 
@@ -142,7 +147,7 @@ def candidate(context, uses):
     places = [use["place"] for use in uses]
     return Candidate(kind="sound", base_id=place_reads.sanitised(first["name"]), identity=first["identity"],
                      title=first["name"].replace("_", " ").capitalize(), places=places, files=files, roles=roles,
-                     components=components(first["record"]),
+                     made_with=made_with(first["record"]),
                      usd={"root": "sound.usda", "layer": "sound", "use": "reference"} if usda else None,
                      provenance=provenance,
                      tags={"category": [first["record"].get("category")] if first["record"].get("category") else [],

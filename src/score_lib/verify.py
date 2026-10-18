@@ -7,8 +7,9 @@ import tempfile
 from score_lib import entry as entries
 from score_lib import index, locks, schema
 from score_lib.blobs import BadBlob, check_sha
+from score_lib.export import algorithm as algorithm_export
 from score_lib.fetch import fetch
-from score_lib.licences import Licences
+from score_lib.admission import Sources
 
 USD_ROLES = ("usd",)
 
@@ -87,10 +88,41 @@ def check_blob(blobs, sha):
         blobs.get(sha, pathlib.Path(folder) / sha)
 
 
-def check_licences(records, licences):
-    """5. licence: spdx present and known, commercial_ok matching its components."""
-    return [(record["address"], f"licence: {fault}") for record in records
-            for fault in licences.check(record.get("licence", {}))]
+MIT_FIRST_LINE = "MIT License"
+
+
+def check_licence_file(root):
+    """5. the one licence: LICENSE at the root is the MIT licence."""
+    path = pathlib.Path(root) / "LICENSE"
+    if not path.is_file() or path.read_text().splitlines()[:1] != [MIT_FIRST_LINE]:
+        return [("LICENSE", "the library's one licence file is missing or not the MIT licence")]
+    return []
+
+
+def check_admission(root, records, sources):
+    """5. admission: no entry names a licence of its own; every source in its made_with may go out under MIT; an
+    algorithm carries no file of its outside requirements."""
+    failures = []
+    for record in records:
+        if "licence" in record:
+            failures.append((record["address"], "names a licence of its own; the library is MIT as a whole"))
+        failures += [(record["address"], f"not MIT: {fault}")
+                     for fault in sources.check(record.get("provenance", {}).get("made_with"))]
+        if record["kind"] == "algorithm":
+            failures += [(record["address"], f"not MIT: carries {name}, which belongs to an outside requirement")
+                         for name in outside_files(root, record)]
+    return failures
+
+
+def outside_files(root, record):
+    """An algorithm entry's preset files that its definition's outside requirements keep out."""
+    path = pathlib.Path(root) / algorithm_export.DEFINITIONS / f"{record['id']}.toml"
+    if not path.is_file():
+        return []
+    definition = algorithm_export.load(path)
+    prefix = "presets/world1/"
+    return [name for name in sorted(record["files"])
+            if name.startswith(prefix) and algorithm_export.kept_out(name[len(prefix):], definition)]
 
 
 def check_requires(root, records):
@@ -180,9 +212,9 @@ def selected(root, addresses):
 def verify(root, blobs, addresses=None, deep=False, usd=True):
     """Every failure as (address or file, message)."""
     records = selected(root, addresses)
-    licences = Licences.load()
     failures = check_schemas(root, records) + check_index(root) + check_locks(root, records)
-    failures += check_blobs(records, blobs, deep) + check_licences(records, licences)
+    failures += check_blobs(records, blobs, deep) + check_licence_file(root)
+    failures += check_admission(root, records, Sources.load())
     failures += check_requires(root, records)
     if usd:
         failures += check_usd(root, blobs, records)

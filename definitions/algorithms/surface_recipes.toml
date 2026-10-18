@@ -9,7 +9,36 @@ preset = ["data/library/materials.json", "data/definitions/place.json", "data/li
 stage = "surfaces-bake"
 contract = []
 needs = ["blender", "procfunc", "infinigen"]
-vendored = [["ProcFunc", "BSD-3-Clause"], ["Infinigen shaders", "BSD-3-Clause"], ["fonts in data/fonts (Barlow, Barlow Condensed, Noto Sans SC, Noto Serif SC, ZCOOL QingKe HuangYou; their OFL.txt ride along)", "OFL-1.1"]]
 tests = ["tools/props/library/library_test.py", "tools/props/library/paint_test.py"]
 picture = []
 requires = ["numpy"]
+
+# Outside requirements: what the algorithm needs but the library may not carry, since it cannot go out under MIT
+# (config/sources.toml). `paths` are the repository data files the preset leaves out for it.
+[[outside]]
+name = "ProcFunc"
+version = "0.36.1"
+where = "https://github.com/princeton-vl/procfunc (tag v0.36.1); score vendors it at vendor/procfunc"
+why = "BSD-3-Clause: its notice and conditions must stay with its code"
+paths = []
+
+[[outside]]
+name = "infinigen2 (Infinigen's shader library)"
+version = "2.0.0a2, princeton-vl/infinigen commit 3f58bb886bb1bda681d41240344fe3126ac0e9bd"
+where = "https://github.com/princeton-vl/infinigen/tree/3f58bb886bb1bda681d41240344fe3126ac0e9bd/src/infinigen2; score vendors it at vendor/infinigen2"
+why = "BSD-3-Clause: its notice and conditions must stay with its code"
+paths = []
+
+[[outside]]
+name = "fonts: Barlow, Barlow Condensed, Noto Sans SC, Noto Serif SC, ZCOOL QingKe HuangYou"
+version = "Barlow and Barlow Condensed 1.408, Noto Sans SC 2.004, Noto Serif SC 2.003, ZCOOL QingKe HuangYou 1.0 (score keeps cut-down copies of the last three)"
+where = "https://fonts.google.com (each family), or score's data/fonts at the world's commit; put them at presets/world1/data/fonts/<family>/ as score lays them out"
+why = "SIL Open Font License 1.1: the fonts may only be passed on under the OFL itself"
+paths = ["data/fonts/*"]
+
+[[outside]]
+name = "Blender"
+version = "5.0.1"
+where = "https://www.blender.org/download/"
+why = "GPL: the library carries none of its code"
+paths = []

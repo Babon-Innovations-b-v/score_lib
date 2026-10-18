@@ -8,7 +8,7 @@ from pxr import Usd, UsdShade
 
 from score_lib.export import places as place_reads
 from score_lib.export.run import Candidate, write_json
-from score_lib.licences import SCORE_COMPONENT
+from score_lib.admission import SCORE, made_by
 from score_lib.preview import swatch
 from score_lib.rewrite import copy_prim, export, open_copy
 
@@ -131,9 +131,8 @@ def candidate(context, name, family, variant, places, material):
     algorithm = context.by_id.get(("algorithm", "surface_recipes"))
     return Candidate(kind="surface", base_id=place_reads.sanitised(name), identity=identity,
                      title=name.replace("_", " ").capitalize(), places=places, files=files, roles=roles,
-                     components=[dict(SCORE_COMPONENT),
-                                 {"what": "surface recipes: ProcFunc and Infinigen shaders", "licence": "BSD-3-Clause",
-                                  "source": "score paper/source/score.md Table C1"}],
+                     made_with=[dict(SCORE), made_by("baked by the surface recipes on ProcFunc", "procfunc"),
+                                made_by("relief from infinigen2's base materials", "infinigen2")],
                      usd={"root": "material.usda", "layer": "base", "use": "reference"} if material else None,
                      requires=[algorithm] if algorithm else [],
                      provenance={"source": f"{LIBRARY} at the world's commit", "family": family,

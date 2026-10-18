@@ -16,7 +16,6 @@ def row(record):
     picture_file = record["files"].get(picture.get("file") or "", {})
     return {"address": record["address"], "title": record["title"], "state": record["state"],
             "version": record["version"], "picture_sha256": picture_file.get("sha256"),
-            "licence_spdx": record["licence"]["spdx"], "commercial_ok": record["licence"]["commercial_ok"],
             "tags": record.get("tags", {}), "digest": entries.digest(record)}
 
 

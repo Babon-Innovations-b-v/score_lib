@@ -125,7 +125,7 @@ def parser():
     ran.set_defaults(handle=command_run)
     indexed = commands.add_parser("index", help="rebuild the index from entries/")
     indexed.set_defaults(handle=command_index)
-    verified = commands.add_parser("verify", help="check entries, index, locks, blobs, licences and USD")
+    verified = commands.add_parser("verify", help="check entries, index, locks, blobs, the MIT admission and USD")
     verified.add_argument("--deep", action="store_true")
     verified.add_argument("--address", action="append")
     verified.add_argument("--no-usd", action="store_true", help="skip the USD check (section 8.7)")

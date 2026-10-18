@@ -36,8 +36,6 @@
           "state",
           "version",
           "picture_sha256",
-          "licence_spdx",
-          "commercial_ok",
           "tags",
           "digest"
         ],
@@ -69,12 +67,6 @@
                 "pattern": "^[0-9a-f]{64}$"
               }
             ]
-          },
-          "licence_spdx": {
-            "type": "string"
-          },
-          "commercial_ok": {
-            "type": "boolean"
           },
           "tags": {
             "type": "object"

@@ -15,7 +15,6 @@
     "files",
     "usd",
     "requires",
-    "licence",
     "provenance",
     "tags",
     "seen_in"
@@ -205,63 +204,12 @@
       },
       "uniqueItems": true
     },
-    "licence": {
-      "type": "object",
-      "required": [
-        "spdx",
-        "commercial_ok",
-        "note",
-        "components"
-      ],
-      "properties": {
-        "spdx": {
-          "type": "string",
-          "minLength": 1
-        },
-        "commercial_ok": {
-          "type": "boolean"
-        },
-        "note": {
-          "type": "string"
-        },
-        "components": {
-          "type": "array",
-          "minItems": 1,
-          "items": {
-            "type": "object",
-            "required": [
-              "what",
-              "spdx",
-              "commercial_ok",
-              "source"
-            ],
-            "properties": {
-              "what": {
-                "type": "string"
-              },
-              "spdx": {
-                "type": "string",
-                "minLength": 1
-              },
-              "commercial_ok": {
-                "type": "boolean"
-              },
-              "source": {
-                "type": "string"
-              },
-              "text": {
-                "type": "string"
-              }
-            }
-          }
-        }
-      }
-    },
     "provenance": {
       "type": "object",
       "required": [
         "world",
-        "commit"
+        "commit",
+        "made_with"
       ],
       "properties": {
         "world": {
@@ -275,6 +223,57 @@
         },
         "files_from": {
           "type": "object"
+        },
+        "made_with": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "what",
+              "by"
+            ],
+            "properties": {
+              "what": {
+                "type": "string"
+              },
+              "by": {
+                "type": "string",
+                "minLength": 1
+              },
+              "carried": {
+                "const": true
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "outside": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "name",
+              "version",
+              "where",
+              "why"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "version": {
+                "type": "string"
+              },
+              "where": {
+                "type": "string"
+              },
+              "why": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          }
         }
       }
     },
@@ -357,5 +356,10 @@
         ]
       }
     }
-  ]
+  ],
+  "not": {
+    "required": [
+      "licence"
+    ]
+  }
 }

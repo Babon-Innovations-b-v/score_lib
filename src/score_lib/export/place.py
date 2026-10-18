@@ -7,7 +7,7 @@ import posixpath
 from score_lib import entry as entries
 from score_lib.export import places as place_reads
 from score_lib.export.run import Candidate
-from score_lib.licences import SCORE_COMPONENT
+from score_lib.admission import SCORE
 from score_lib.preview import plan as plan_picture
 from score_lib.rewrite import asset_paths, export, joined, open_copy, rewrite
 
@@ -127,7 +127,7 @@ def candidate(context, place):
     identity = hashlib.sha256(json.dumps([place, output]).encode()).hexdigest()
     made = Candidate(kind="place", base_id=place_reads.sanitised(place), identity=identity,
                      title=place.replace("_", " ").capitalize(), places=[place], files=files, roles=roles,
-                     components=[dict(SCORE_COMPONENT)], usd={"root": root.name, "layer": "root", "use": "open"},
+                     made_with=[dict(SCORE)], usd={"root": root.name, "layer": "root", "use": "open"},
                      requires=sorted(set(requires)), provenance=provenance,
                      tags={"complete": [state] if state else [], "place_kind": place_reads.place_kind(context, place)},
                      picture=shown,

@@ -3,7 +3,7 @@ ground.json, rocks.json, measures.json, the diorama pictures and the depth the r
 ground/<planet>, and each place ground cut from it (places/<place>.usdc) as ground/<planet>.<place> (spec 4.8)."""
 from score_lib.export import places as place_reads
 from score_lib.export.run import Candidate
-from score_lib.licences import SCORE_COMPONENT
+from score_lib.admission import SCORE, made_by
 from score_lib.preview import mesh
 from score_lib.rewrite import asset_paths, export, open_copy, rewrite
 
@@ -11,11 +11,11 @@ NODE = "terrain"
 PLANET_FILES = ("ground.json", "heights.png", "shading.png", "skin.png", "zones.png", "plan.png", "rocks.json",
                 "measures.json", "diorama/c0.png", "diorama/c1.png", "diorama/c2.png", "diorama/c3.png",
                 "diorama/chosen-depth.npy")
-TABLE = "score paper/source/score.md Table C1; terrain stage in algorithms.md section 11"
+# The models the terrain stage runs (score paper/source/score.md Table C1; algorithms.md section 11).
 MADE_WITH = (
-    ("Depth Anything V2 Small: ground relief", "Apache-2.0"),
-    ("Nano Banana Pro: ground skins", "paid API"),
-    ("Qwen-Image-Edit-2511: diorama pictures the relief is read from", "Apache-2.0"),
+    ("ground relief", "depth_anything_v2"),
+    ("ground skins", "nano_banana_pro"),
+    ("diorama pictures the relief is read from", "qwen_image_edit"),
 )
 
 
@@ -34,8 +34,8 @@ def plan(context):
     return found
 
 
-def components():
-    return [dict(SCORE_COMPONENT)] + [{"what": what, "licence": text, "source": TABLE} for what, text in MADE_WITH]
+def made_with():
+    return [dict(SCORE)] + [made_by(what, source) for what, source in MADE_WITH]
 
 
 def provenance(context, output, planet, place=None):
@@ -63,7 +63,7 @@ def planet_candidate(context, output, listing, planet):
         else {"reason": "the terrain output holds no skin.png for this planet"}
     made = Candidate(kind="ground", base_id=planet, identity=f"{output}/{planet}",
                      title=f"{planet.capitalize()} ground", places=[], files=files, roles=roles,
-                     components=components(), provenance=provenance(context, output, planet),
+                     made_with=made_with(), provenance=provenance(context, output, planet),
                      requires=requires(context), tags={"place_kind": [planet, "outside"]}, picture=picture,
                      known=known)
     made.entry_id = planet
@@ -103,7 +103,7 @@ def place_candidate(context, output, listing, planet, place):
     seen = shown_in(context, sha)
     made = Candidate(kind="ground", base_id=f"{planet}_{place}", identity=sha,
                      title=f"{place.replace('_', ' ').capitalize()} ground ({planet})", places=seen,
-                     files=files, roles={"ground.usdc": "usd", "preview.png": "picture"}, components=components(),
+                     files=files, roles={"ground.usdc": "usd", "preview.png": "picture"}, made_with=made_with(),
                      usd={"root": "ground.usdc", "layer": "ground", "use": "payload", "neighbours": neighbours},
                      provenance=provenance(context, output, planet, place) | {"source_name": source},
                      requires=requires(context),

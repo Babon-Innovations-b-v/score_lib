@@ -6,7 +6,10 @@ A library of reusable parts of SCORE worlds: records in git (`entries/`), bytes 
 
 - Provider agnostic: no cloud provider, endpoint, bucket or company name in code, tests, docs or config. The blob
   store is configured by environment variables only (`config/blobstore.env.template`, placeholders only).
-- Real data only. A licence row in `config/licences.toml` is added only from a real source text.
+- Everything in the library is MIT (`LICENSE`); what cannot be released under MIT is not let in. A row in
+  `config/sources.toml` is added only from the source's real terms; a source whose own bytes cannot go out under MIT
+  stays outside (an algorithm's `outside` requirement), never copied in.
+- Real data only.
 - A locked entry is never rewritten; changed content becomes the next version as a draft.
 - The export reads the SCORE store and the score repository and never writes to either.
 - One function, one purpose; no single-letter names outside one-line comprehensions and lambdas.

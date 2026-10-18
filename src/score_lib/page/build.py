@@ -1,5 +1,5 @@
-"""The catalogue site: index.html (a section per kind, a card per entry: picture, title, version, state, licence and
-commercial flag, places) and <kind>/<id>/<version>.html per entry. Pictures and the sound players' takes are copied
+"""The catalogue site: index.html (a section per kind, a card per entry: picture, title, version, state, places;
+the whole library is MIT) and <kind>/<id>/<version>.html per entry. Pictures and the sound players' takes are copied
 from the blob store (or linked through SCORE_LIB_PUBLIC_URL)."""
 import html
 import json
@@ -67,12 +67,8 @@ class Site:
 
 
 def badges(record):
-    licence = record["licence"]
-    flag = "ok" if licence["commercial_ok"] else "no"
     return (f'<div class="badges"><span class="badge {record["state"]}">{record["state"]}</span>'
-            f'<span class="badge">v{record["version"]}</span>'
-            f'<span class="badge {flag}">{html.escape(licence["spdx"])}'
-            f'{" · commercial" if licence["commercial_ok"] else " · not commercial"}</span></div>')
+            f'<span class="badge">v{record["version"]}</span></div>')
 
 
 def card(site, record, prefix=""):
@@ -103,7 +99,8 @@ def front(site, records):
         cards = "".join(card(site, record) for record in sorted(by_kind[kind], key=lambda each: each["title"].lower()))
         sections.append(f'<section id="{kind}"><h2>{NAMES[kind]}</h2><div class="grid">{cards}</div></section>')
     header = ("<header><h1>score_lib</h1><p>Reusable parts of every OpenUSD layer of a SCORE world: "
-              f"{len(records)} entries.</p></header>")
+              f"{len(records)} entries. The library and every entry are MIT; nothing that cannot go out under MIT is let "
+              "in.</p></header>")
     return header + f'<nav class="kinds">{nav}</nav>' + "".join(sections)
 
 
@@ -119,6 +116,23 @@ def requires_list(record, prefix):
         kind, entry_id, version = entries.parse_address(address)
         items.append(f'<li><a href="{prefix}{kind}/{entry_id}/{version}.html">{html.escape(address)}</a></li>')
     return f"<ul>{''.join(items)}</ul>" if items else "<p>none</p>"
+
+
+def made_with_list(record):
+    """What made the entry: each part and its source (config/sources.toml), copied-in parts marked."""
+    items = [f"<li>{html.escape(item['what'])}: {html.escape(item['by'])}{' (copied in)' if item.get('carried') else ''}"
+             f"</li>" for item in record["provenance"].get("made_with", [])]
+    return f"<ul>{''.join(items)}</ul>" if items else "<p>none named</p>"
+
+
+def outside_list(record):
+    """An algorithm's outside requirements: what it needs but the library does not carry."""
+    outside = record["provenance"].get("outside") or []
+    if not outside:
+        return ""
+    items = "".join(f"<li><b>{html.escape(each['name'])}</b> {html.escape(each['version'])}: "
+                    f"{html.escape(each['where'])} ({html.escape(each['why'])})</li>" for each in outside)
+    return f"<h2>Outside requirements (not carried)</h2><ul>{items}</ul>"
 
 
 def sound_player(site, record, prefix):
@@ -161,9 +175,8 @@ def entry_page(site, record):
     picture = (f'<div class="big"><img src="{html.escape(link if link.startswith("http") else prefix + link)}" '
                f'alt=""></div>') if link else f'<p>{html.escape(record.get("picture_reason", "no picture"))}</p>'
     usd = record.get("usd") or {}
-    facts = [("address", record["address"]), ("state", record["state"]), ("licence", record["licence"]["spdx"]),
-             ("commercial use", "yes" if record["licence"]["commercial_ok"] else "no"),
-             ("licence note", record["licence"]["note"]), ("seen in", ", ".join(record.get("seen_in", []))),
+    facts = [("address", record["address"]), ("state", record["state"]), ("licence", "MIT, as the whole library"),
+             ("seen in", ", ".join(record.get("seen_in", []))),
              ("use in USD", f"{usd.get('use')} @{usd.get('path')}@" if usd else "not a USD entry")]
     listed = "".join(f"<dt>{html.escape(name)}</dt><dd>{html.escape(str(value))}</dd>" for name, value in facts
                      if value)
@@ -173,8 +186,8 @@ def entry_page(site, record):
     return (f'<p><a href="{prefix}index.html">score_lib</a> / {NAMES[record["kind"]]}</p>'
             f'<div class="entry"><div>{picture}{extra}</div><div><h1>{html.escape(record["title"])}</h1>'
             f'{badges(record)}<dl>{listed}</dl><h2>Files</h2>{files_table(record)}'
-            f'<h2>Requires</h2>{requires_list(record, prefix)}<h2>Licence components</h2>'
-            f'<pre>{html.escape(json.dumps(record["licence"]["components"], indent=2))}</pre>'
+            f'<h2>Requires</h2>{requires_list(record, prefix)}<h2>Made with</h2>{made_with_list(record)}'
+            f'{outside_list(record)}'
             f'<h2>Provenance</h2><pre>{provenance}</pre></div></div>')
 
 

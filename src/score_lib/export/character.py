@@ -1,24 +1,22 @@
 """character entries: each accepted body look (`people-body-<look>`) and dress (`people-dress-<look>[-in-<place>]`):
 the UsdSkel body and its textures, the gltf body, look.json and dress.json (spec 4.7). rig.npz stays out.
 
-Licence components: the finish record's pinned models (none are pinned for these rows in world 1) and the models the
-people route names (score/stages/people/__init__.py:1-3: Pixal3D's shape, the surface stage's paint, SOMA-X's
-skeleton) with their licences from the paper's Table C1."""
+made_with: the finish record's pinned models (none are pinned for these rows in world 1) and the models the people
+route names (score/stages/people/__init__.py:1-3: Pixal3D's shape, the surface stage's paint, SOMA-X's skeleton), as
+the paper's Table C1 lists them."""
 import posixpath
 
 from score_lib.export import places as place_reads
 from score_lib.export.model import dependencies
 from score_lib.export.run import Candidate
-from score_lib.licences import SCORE_COMPONENT
+from score_lib.admission import SCORE, made_by
 
-TABLE = "score paper/source/score.md Table C1; route in score/stages/people/__init__.py:1-3"
 ROUTE = (
-    ("Pixal3D: picture to 3D (the body's shape)", "MIT"),
-    ("Pixal3D's encoder (DINOv3)", "DINOv3 licence"),
-    ("SegviGen on TRELLIS.2: the finish map laid on the shape (surface stage)", "MIT"),
-    ("Nano Banana Pro: finish maps (surface stage)", "paid API"),
-    ("Gemini 3.1 Pro: finishes listed and named (surface stage)", "paid API"),
-    ("SOMA-X and MHR: the skeleton", "Apache-2.0"),
+    ("the body's shape", "pixal3d"),
+    ("the finish map laid on the shape (surface stage)", "segvigen"),
+    ("finish maps (surface stage)", "nano_banana_pro"),
+    ("finishes listed and named (surface stage)", "gemini_31_pro"),
+    ("the skeleton fitted inside the shape and its skin weights", "soma_x"),
 )
 BODY = "people-body-"
 DRESS = "people-dress-"
@@ -95,12 +93,11 @@ def candidate(context, node):
         picture = {"file": "picture.png", "made_by": "source picture", "of": source}
     provenance = place_reads.node_provenance(context, node, output)
     provenance.update({"place": place, "look": look})
-    components = [dict(SCORE_COMPONENT)] + [{"what": what, "licence": text, "source": TABLE} for what, text in ROUTE]
-    components += [{"what": f"pinned model {model['name']}", "licence": model["licence"], "source": model["source"]}
-                   for model in provenance["models"]]
+    made_with = [dict(SCORE)] + [made_by(what, source) for what, source in ROUTE]
+    made_with += [made_by(f"pinned model {model['name']}", model["name"]) for model in provenance["models"]]
     made = Candidate(kind="character", base_id=base, identity=output, title=look.replace("-", " ").capitalize(),
                      places=[place] if place in context.places else [], files=files, roles=roles,
-                     components=components,
+                     made_with=made_with,
                      usd={"root": "character.usdc", "layer": "characters", "use": "payload"} if "character.usdc"
                      in files else None,
                      provenance=provenance, tags={"character": ["dress" if node.startswith(DRESS) else "body"],

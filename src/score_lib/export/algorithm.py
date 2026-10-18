@@ -16,7 +16,7 @@ import tomllib
 
 from score_lib.export import places as place_reads
 from score_lib.export.run import Candidate, write_json
-from score_lib.licences import SCORE_COMPONENT
+from score_lib.admission import SCORE
 from score_lib.preview import audio
 
 DEFINITIONS = "definitions/algorithms"
@@ -235,12 +235,27 @@ def reproduces(context, definition, digest):
     return found
 
 
+def outside_paths(definition):
+    """The repository path globs of the definition's outside requirements: what may not go out under MIT."""
+    return [pattern for each in definition.get("outside", []) for pattern in each.get("paths", [])]
+
+
+def kept_out(path, definition):
+    """Whether a repository file belongs to an outside requirement, so the snapshot leaves it out."""
+    return any(fnmatch.fnmatchcase(path, pattern) for pattern in outside_paths(definition))
+
+
 def preset_files(context, definition):
-    """Repository data files the preset globs name, at the commit."""
+    """Repository data files the preset globs name, at the commit, without those of an outside requirement."""
     found = []
     for pattern in definition.get("preset", []):
         found += [name for name in context.repo.glob(pattern) if fnmatch.fnmatchcase(name, pattern)]
-    return sorted(set(found))
+    return sorted(name for name in set(found) if not kept_out(name, definition))
+
+
+def outside_record(definition):
+    """The outside requirements as an entry names them: {name, version, where, why} each (no path globs)."""
+    return [{key: each[key] for key in ("name", "version", "where", "why")} for each in definition.get("outside", [])]
 
 
 def picture(context, definition, work, files, roles, known):
@@ -276,6 +291,7 @@ def run_record(definition):
     return {"python": PYTHON, "requires": definition.get("requires", []), "entry": definition["entry"],
             "bake": definition.get("bake", []), "needs": definition.get("needs", []),
             "paid": definition.get("paid", []), "contract": definition.get("contract", []),
+            "outside": outside_record(definition),
             "how": f"score-lib run algorithm/{definition['name']}@<version> --preset world1 --out <dir>"}
 
 
@@ -309,12 +325,10 @@ def candidate(context, definition):
     for each in files:
         roles.setdefault(each, "code" if each.startswith(("code/", "test/")) else "record")
     shown = picture(context, definition, work, files, roles, known)
-    components = [dict(SCORE_COMPONENT)] + [{"what": f"vendored {what}", "licence": licence,
-                                             "source": f"definitions/algorithms/{name}.toml"}
-                                            for what, licence in definition.get("vendored", [])]
     made = Candidate(kind="algorithm", base_id=name, identity=digest, title=definition["title"], places=[],
-                     files=files, roles=roles, components=components,
+                     files=files, roles=roles, made_with=[dict(SCORE)],
                      provenance={"stage": definition.get("stage") or None, "code": digest,
+                                 "outside": outside_record(definition),
                                  "nodes": stage_nodes(context, definition.get("stage"))},
                      tags={"needs": definition.get("needs", []), "runnable": [not definition.get("needs")]},
                      picture=shown, known=known)

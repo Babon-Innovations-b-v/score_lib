@@ -5,7 +5,7 @@ import json
 
 from score_lib.export import places as place_reads
 from score_lib.export.run import Candidate
-from score_lib.licences import SCORE_COMPONENT
+from score_lib.admission import SCORE
 from score_lib.preview import plan as plan_picture
 
 SHIP_FILES = ("layout.json", "layout-full.json", "plan.json")
@@ -70,7 +70,7 @@ def candidate(context, place):
                   if ship_output else None}
     return Candidate(kind="kit", base_id=place_reads.sanitised(place), identity=identity,
                      title=f"{place.replace('_', ' ').capitalize()} kit", places=[place], files=files, roles=roles,
-                     components=[dict(SCORE_COMPONENT)], requires=requires, provenance=provenance,
+                     made_with=[dict(SCORE)], requires=requires, provenance=provenance,
                      tags={"place_kind": place_reads.place_kind(context, place)},
                      picture={"file": "preview.png", "made_by": "preview/plan.py",
                               "of": f"kit.json pieces ({drawn}) from above"},

@@ -5,7 +5,7 @@ import os
 from score_lib import entry as entries
 from score_lib import index, locks
 from score_lib.blobs.local import LocalBlobStore
-from score_lib.licences import Licences
+from score_lib.admission import Sources
 from score_lib.verify import verify
 
 
@@ -92,23 +92,50 @@ def test_4_blob_corrupt(world):
     assert any("sound/hum@1: blob corrupt" in each for each in messages(world))
 
 
-def test_5_licence_does_not_match_its_components(world):
-    world.export()
-    path = entries.folder_of(world.root, "sound", "hum", 1) / "entry.json"
+def rewrite_entry(world, kind, entry_id, change):
+    """Change one entry.json in place and rebuild the index."""
+    path = entries.folder_of(world.root, kind, entry_id, 1) / "entry.json"
     record = json.loads(path.read_text())
-    record["licence"]["commercial_ok"] = False
+    change(record)
     path.write_text(entries.dumps(record))
     index.rebuild(world.root)
-    assert any("sound/hum@1: licence: commercial_ok" in each for each in messages(world))
 
 
-def test_5_licence_row_no_longer_commercial(world):
+def test_5_entry_names_a_licence_of_its_own(world):
     world.export()
-    source = Licences.load()
-    rows = [dict(row, commercial_ok=False) for row in source.rows]
+    rewrite_entry(world, "sound", "hum", lambda record: record.update(licence={"spdx": "CC-BY-4.0"}))
+    found = messages(world)
+    assert any("sound/hum@1: names a licence of its own" in each for each in found)
+    assert any("sound/hum@1: schema:" in each for each in found)
+
+
+def test_5_source_not_mit(world):
+    world.export()
+    rewrite_entry(world, "sound", "hum", lambda record: record["provenance"]["made_with"].append(
+        {"what": "the fonts", "by": "ofl_fonts", "carried": True}))
+    assert any("sound/hum@1: not MIT: the fonts: carries fonts" in each for each in messages(world))
+
+
+def test_5_source_row_no_longer_admitted(world):
+    world.export()
+    rows = [dict(row, output=False, copy=False) for row in Sources.load().rows]
     record = entries.load_address(world.root, "sound/hum@1")
-    faults = Licences(rows).check(record["licence"])
-    assert any("commercial_ok True differs from licences.toml" in each for each in faults)
+    assert any("made by CC0 recordings" in each for each in Sources(rows).check(record["provenance"]["made_with"]))
+
+
+def test_5_algorithm_carries_an_outside_file(world):
+    world.export()
+    kept = entries.load_address(world.root, "algorithm/demo@1")["files"]["presets/world1/data/demo/preset.json"]
+    rewrite_entry(world, "algorithm", "demo",
+                  lambda record: record["files"].update({"presets/world1/data/demo/outside.json": kept}))
+    assert any("algorithm/demo@1: not MIT: carries presets/world1/data/demo/outside.json" in each
+               for each in messages(world))
+
+
+def test_5_licence_file_not_mit(world):
+    world.export()
+    (world.root / "LICENSE").write_text("All rights reserved\n")
+    assert any("LICENSE: the library's one licence file" in each for each in messages(world))
 
 
 def test_6_locked_requires_a_draft(world):
