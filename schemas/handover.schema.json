@@ -1,0 +1,268 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "library-handover/1",
+  "title": "The handover report score reads from the library (contract library-handover, version 1)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "version",
+    "backend",
+    "library",
+    "world",
+    "place",
+    "commit",
+    "command",
+    "covered",
+    "entries",
+    "refused",
+    "saved"
+  ],
+  "properties": {
+    "schema": {
+      "const": "library-handover"
+    },
+    "version": {
+      "const": 1
+    },
+    "backend": {
+      "type": "string"
+    },
+    "library": {
+      "type": "string",
+      "minLength": 1
+    },
+    "world": {
+      "type": "string",
+      "minLength": 1
+    },
+    "place": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "commit": {
+      "type": "string",
+      "minLength": 1
+    },
+    "command": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "covered": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "node",
+          "output",
+          "entries",
+          "exception",
+          "why"
+        ],
+        "properties": {
+          "node": {
+            "type": "string"
+          },
+          "output": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "entries": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z]+/[a-z0-9_]+(\\.[a-z0-9_]+)?@[1-9][0-9]*$"
+            }
+          },
+          "exception": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "why": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "address",
+          "kind",
+          "state",
+          "status",
+          "node",
+          "output",
+          "source",
+          "copy",
+          "copy_why",
+          "quality",
+          "quality_why"
+        ],
+        "properties": {
+          "address": {
+            "type": "string",
+            "pattern": "^[a-z]+/[a-z0-9_]+(\\.[a-z0-9_]+)?@[1-9][0-9]*$"
+          },
+          "kind": {
+            "type": "string"
+          },
+          "state": {
+            "enum": [
+              "draft",
+              "locked",
+              "withdrawn"
+            ]
+          },
+          "status": {
+            "enum": [
+              "new",
+              "unchanged",
+              "changed draft",
+              "new version"
+            ]
+          },
+          "node": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "output": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "source": {
+            "type": "string"
+          },
+          "copy": {
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "object",
+                "required": [
+                  "sha256",
+                  "role"
+                ],
+                "properties": {
+                  "sha256": {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$"
+                  },
+                  "role": {
+                    "type": "string"
+                  }
+                }
+              }
+            ]
+          },
+          "copy_why": {
+            "type": "string"
+          },
+          "quality": {
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "object",
+                "required": [
+                  "score",
+                  "measures"
+                ],
+                "properties": {
+                  "score": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                  },
+                  "measures": {
+                    "type": "object"
+                  }
+                }
+              }
+            ]
+          },
+          "quality_why": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "refused": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "kind",
+          "id",
+          "node",
+          "output",
+          "reason"
+        ],
+        "properties": {
+          "kind": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "node": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "output": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "saved": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "committed",
+        "pushed",
+        "why"
+      ],
+      "properties": {
+        "committed": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pushed": {
+          "type": "boolean"
+        },
+        "why": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

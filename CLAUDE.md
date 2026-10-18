@@ -20,4 +20,5 @@ A library of reusable parts of SCORE worlds: records in git (`entries/`), bytes 
 
 - `src/score_lib/export/<kind>.py`: one exporter per kind; `export/run.py` the order, versions and writes.
 - `src/score_lib/verify.py`: every check of `score-lib verify`.
+- `src/score_lib/handover.py`: `score-lib handover`, the one call score's runner makes (contract `library-handover` v1); `held.py`: what a place holds and which entries hold a store output.
 - `tests/conftest.py`: a small SCORE world (store, repo, library root) built per test.

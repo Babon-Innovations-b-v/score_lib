@@ -89,6 +89,28 @@ def command_page(options):
     print(f"wrote {pages} pages into {options.out}")
 
 
+def command_handover(options):
+    from score_lib.handover import HandoverError, handover
+    command = ["score-lib", *options.argv]
+    try:
+        report = handover(options.root, blob_store(), options.world, options.place, options.seed, options.commit,
+                          options.store, options.repo, options.out, command)
+    except HandoverError as error:
+        raise SystemExit(str(error))
+    covered = report["covered"]
+    print(f"handed {report['world']}@{report['place'] or 'world'}: {len(report['entries'])} entries, "
+          f"{sum(1 for row in covered if row['entries'])} of {len(covered)} outputs held, "
+          f"{len(report['refused'])} refused, saved {report['saved']['committed'] or report['saved']['why']}")
+
+
+def command_held(options):
+    from score_lib.held import held
+    rows = [{"address": record["address"], "kind": record["kind"], "state": record["state"],
+             "node": record.get("provenance", {}).get("node"), "output": record.get("provenance", {}).get("output")}
+            for record in held(options.root, options.world, options.place)]
+    sys.stdout.write(json.dumps(rows, indent=2, sort_keys=True) + "\n")
+
+
 def parser():
     found = argparse.ArgumentParser(prog="score-lib", description=__doc__)
     found.add_argument("--root", default=str(ROOT), help="the score_lib repository (default: this checkout)")
@@ -135,11 +157,27 @@ def parser():
     page.add_argument("--drafts", action="store_true")
     page.add_argument("--public-url", action="store_true")
     page.set_defaults(handle=command_page)
+    handed = commands.add_parser("handover", help="hand a place's accepted outputs to the library as drafts and "
+                                                  "write handover.json")
+    handed.add_argument("--world", required=True)
+    handed.add_argument("--place", help="the place; left out for the world's own node")
+    handed.add_argument("--seed", required=True, type=int)
+    handed.add_argument("--commit", required=True, help="the score commit the outputs were read at")
+    handed.add_argument("--store", required=True, help="the SCORE store's objects folder (read only)")
+    handed.add_argument("--repo", required=True, help="the score repository (read only)")
+    handed.add_argument("--out", required=True, help="the folder handover.json is written into")
+    handed.set_defaults(handle=command_handover)
+    holding = commands.add_parser("held", help="the newest entries a world's place (or its own node) holds, as JSON")
+    holding.add_argument("--world", required=True)
+    holding.add_argument("--place", help="the place; left out for the world's own node")
+    holding.set_defaults(handle=command_held)
     return found
 
 
 def main(argv=None):
+    argv = list(sys.argv[1:] if argv is None else argv)
     options = parser().parse_args(argv)
+    options.argv = argv
     if options.command == "lock" and options.all_drafts and not options.kind:
         raise SystemExit("--all-drafts needs --kind")
     options.handle(options)

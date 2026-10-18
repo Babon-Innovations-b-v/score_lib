@@ -43,11 +43,21 @@ score-lib run algorithm/<name>@<v> --preset world1 --out <dir> [--arg name=value
 score-lib index
 score-lib verify [--deep] [--address a]
 score-lib page --out <dir outside the repo> [--drafts] [--public-url]
+score-lib handover --world w [--place p] --seed n --commit <score sha> --store <objects> --repo <score> --out <dir>
+score-lib held --world w [--place p]
 ```
 
 The export reads a SCORE store (`SCORE_STORE`, its `objects` folder) and the score repository (`SCORE_REPO`) at the
 commit `worlds/<world>.toml` names, both read only. The blob store is set by environment variables only; see
 `config/blobstore.env.template`.
+
+`handover` is what score's runner calls once a place (or, without `--place`, the world's own node) is accepted: under
+a lock (`.handover.lock`) it records the place in `worlds/<w>.toml`, exports the place kinds over every place of the
+world at the commit given (the world node: `algorithm` and `ground`), gives each entry its web 3D copy and quality
+score, commits and pushes `entries/ index/ worlds/`, and writes `<out>/handover.json` (`schemas/handover.schema.json`,
+example `schemas/handover.example.json`): every accepted output and the entries holding it, every entry with its
+status and provenance, every refusal. It writes drafts only; it exits non-zero only when it could not run. `held`
+prints the newest entries a place (or the world node) holds, as JSON, for the cockpit's check.
 
 ## Layout
 

@@ -6,7 +6,7 @@ import jsonschema
 
 SCHEMAS = pathlib.Path(__file__).resolve().parents[2] / "schemas"
 FILES = {"entry": "entry.schema.json", "index": "index.schema.json", "catalogue": "catalogue.schema.json",
-         "algorithm": "algorithm.schema.json"}
+         "algorithm": "algorithm.schema.json", "handover": "handover.schema.json"}
 
 
 def load(name):

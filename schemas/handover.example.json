@@ -1,0 +1,200 @@
+{
+  "backend": "command",
+  "command": [
+    "score-lib",
+    "--root",
+    "<library root>",
+    "handover",
+    "--world",
+    "world1",
+    "--seed",
+    "3",
+    "--commit",
+    "6290cb5c8cf14799328bfa76d35f9662e0c362f6",
+    "--store",
+    "<store objects>",
+    "--repo",
+    "<score repository>",
+    "--out",
+    "<out>",
+    "--place",
+    "room"
+  ],
+  "commit": "6290cb5c8cf14799328bfa76d35f9662e0c362f6",
+  "covered": [
+    {
+      "entries": [
+        "effect/steam@1",
+        "layer/base.room@1",
+        "layer/effects.room@1",
+        "layer/sound.room@1",
+        "model/crate_1@1",
+        "place/room@1",
+        "sound/hum@1"
+      ],
+      "exception": null,
+      "node": "assembly@room",
+      "output": "3fb18a9df564b8f7ef57e244fcb8e5380250148f412e7a3fa49d766135f24e74",
+      "why": ""
+    },
+    {
+      "entries": [
+        "place/room@1"
+      ],
+      "exception": null,
+      "node": "complete@room",
+      "output": "082dab4c6bd6596f825c02e7e391ab2946ff465e9ca9bc5ad6dd0a2deb232583",
+      "why": ""
+    },
+    {
+      "entries": [
+        "effect/steam@1",
+        "layer/effects.room@1"
+      ],
+      "exception": null,
+      "node": "effects-layer@room",
+      "output": "cd290383394678473ab785549cc49da0ca45b359cb2bbceef680eb631c8c19ec",
+      "why": ""
+    },
+    {
+      "entries": [
+        "layer/sound.room@1",
+        "sound/hum@1"
+      ],
+      "exception": null,
+      "node": "sound@room",
+      "output": "14758ce1476cdfee7909d59b8a1058f36ba3e2341f7ca581b02b0d50cbc7fed2",
+      "why": ""
+    }
+  ],
+  "entries": [
+    {
+      "address": "effect/steam@1",
+      "copy": null,
+      "copy_why": "a effect entry is not shown in 3D",
+      "kind": "effect",
+      "node": "effects-layer@room",
+      "output": "cd290383394678473ab785549cc49da0ca45b359cb2bbceef680eb631c8c19ec",
+      "quality": null,
+      "quality_why": "no quality command in this library yet",
+      "source": "",
+      "state": "draft",
+      "status": "new"
+    },
+    {
+      "address": "kit/room@1",
+      "copy": null,
+      "copy_why": "a kit entry is not shown in 3D",
+      "kind": "kit",
+      "node": null,
+      "output": null,
+      "quality": null,
+      "quality_why": "no quality command in this library yet",
+      "source": "data/kit/room.json at the world's commit",
+      "state": "draft",
+      "status": "new"
+    },
+    {
+      "address": "layer/base.room@1",
+      "copy": null,
+      "copy_why": "no copies command in this library yet",
+      "kind": "layer",
+      "node": "assembly@room",
+      "output": "3fb18a9df564b8f7ef57e244fcb8e5380250148f412e7a3fa49d766135f24e74",
+      "quality": null,
+      "quality_why": "no quality command in this library yet",
+      "source": "",
+      "state": "draft",
+      "status": "new"
+    },
+    {
+      "address": "layer/effects.room@1",
+      "copy": null,
+      "copy_why": "no copies command in this library yet",
+      "kind": "layer",
+      "node": "assembly@room",
+      "output": "3fb18a9df564b8f7ef57e244fcb8e5380250148f412e7a3fa49d766135f24e74",
+      "quality": null,
+      "quality_why": "no quality command in this library yet",
+      "source": "",
+      "state": "draft",
+      "status": "new"
+    },
+    {
+      "address": "layer/sound.room@1",
+      "copy": null,
+      "copy_why": "no copies command in this library yet",
+      "kind": "layer",
+      "node": "assembly@room",
+      "output": "3fb18a9df564b8f7ef57e244fcb8e5380250148f412e7a3fa49d766135f24e74",
+      "quality": null,
+      "quality_why": "no quality command in this library yet",
+      "source": "",
+      "state": "draft",
+      "status": "new"
+    },
+    {
+      "address": "model/crate_1@1",
+      "copy": null,
+      "copy_why": "no copies command in this library yet",
+      "kind": "model",
+      "node": "assembly@room",
+      "output": "3fb18a9df564b8f7ef57e244fcb8e5380250148f412e7a3fa49d766135f24e74",
+      "quality": null,
+      "quality_why": "no quality command in this library yet",
+      "source": "",
+      "state": "draft",
+      "status": "new"
+    },
+    {
+      "address": "place/room@1",
+      "copy": null,
+      "copy_why": "no copies command in this library yet",
+      "kind": "place",
+      "node": "assembly@room",
+      "output": "3fb18a9df564b8f7ef57e244fcb8e5380250148f412e7a3fa49d766135f24e74",
+      "quality": null,
+      "quality_why": "no quality command in this library yet",
+      "source": "",
+      "state": "draft",
+      "status": "new"
+    },
+    {
+      "address": "sound/hum@1",
+      "copy": null,
+      "copy_why": "a sound entry is not shown in 3D",
+      "kind": "sound",
+      "node": "sound@room",
+      "output": "14758ce1476cdfee7909d59b8a1058f36ba3e2341f7ca581b02b0d50cbc7fed2",
+      "quality": null,
+      "quality_why": "no quality command in this library yet",
+      "source": "",
+      "state": "draft",
+      "status": "new"
+    },
+    {
+      "address": "surface/panel_paint@1",
+      "copy": null,
+      "copy_why": "a surface entry is not shown in 3D",
+      "kind": "surface",
+      "node": null,
+      "output": null,
+      "quality": null,
+      "quality_why": "no quality command in this library yet",
+      "source": "data/library/materials.json at the world's commit",
+      "state": "draft",
+      "status": "new"
+    }
+  ],
+  "library": "7b54b2dde948d691a8df192fa839ef91baa4169b",
+  "place": "room",
+  "refused": [],
+  "saved": {
+    "committed": "6172b63043f857446f981f91e716ded09bb4ec0d",
+    "pushed": true,
+    "why": ""
+  },
+  "schema": "library-handover",
+  "version": 1,
+  "world": "world1"
+}
