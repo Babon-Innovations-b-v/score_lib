@@ -10,6 +10,16 @@
       "bytes": 754,
       "role": "usd",
       "sha256": "d1c75fecf88ff9c23b0f24cb29f1aeb2dd0d1ed7f0eae89adc9ba8310da26c64"
+    },
+    "measures.json": {
+      "bytes": 2377,
+      "role": "record",
+      "sha256": "4fbd5af268e6c0452a26789b3cc9371c75d529d7283e0a27165dde78c1ace710"
+    },
+    "picture.png": {
+      "bytes": 1767741,
+      "role": "picture",
+      "sha256": "2aff950829e3ab95a1f3a1ee39a7cfb4d4ece27948eeef804ba1bf070e73a7e7"
     }
   },
   "id": "light.galley",
@@ -27,8 +37,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@galley: looks/galley/from-west-door-000-look.png"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-17T09:49:25.951322+00:00",

@@ -5,6 +5,11 @@
       "bytes": 92,
       "role": "usd",
       "sha256": "208a05a028b74fdbb6197b46645d8fca328935cca7a52a1d6fa9230cc4ac83f8"
+    },
+    "preview.png": {
+      "bytes": 27443,
+      "role": "picture",
+      "sha256": "864baa9309d90d6aa4c5d437a6d66b2a0e3347f8d241fa7271f9b1597b5eb982"
     }
   },
   "id": "ground.garage",
@@ -22,8 +27,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "the place's ground.usdc"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T22:23:43.534540+00:00",

@@ -5,6 +5,11 @@
       "bytes": 373615,
       "role": "usd",
       "sha256": "f886b73aeb47e37b8c7622236e4f75f7dd6f585ac633f65c368c9bd739e9cfe2"
+    },
+    "preview.png": {
+      "bytes": 11629,
+      "role": "picture",
+      "sha256": "ae5b80175efef83a0698d5797724b86fd3e0c4c945e6efb72faf572612a71563"
     }
   },
   "id": "base.engineroom",
@@ -22,8 +27,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "83 prim positions from above over data/kit/engineroom.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T20:05:54.680906+00:00",

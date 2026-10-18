@@ -10,6 +10,16 @@
       "bytes": 1407,
       "role": "usd",
       "sha256": "d050f731c625e691af942cb05e5643dbc0850197cce5549d41159915bca75e77"
+    },
+    "measures.json": {
+      "bytes": 5000,
+      "role": "record",
+      "sha256": "da3b23a6e14b968c1962a9d16e60e33665888a16747d9a0fe6f2c13395bd637b"
+    },
+    "picture.png": {
+      "bytes": 2323610,
+      "role": "picture",
+      "sha256": "9e2f19820fff01e9c12ad26784d8c63a402b2faf26b735f81ee4c81a512e1c92"
     }
   },
   "id": "light.stairwell",
@@ -27,8 +37,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@stairwell: looks/stairwell/shot0-000-look.png"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-15T17:24:17.414697+00:00",

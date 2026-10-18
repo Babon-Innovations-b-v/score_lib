@@ -10,6 +10,11 @@
       "bytes": 15315,
       "role": "usd",
       "sha256": "2a3a518af9175b2d6ef27993ff886d1c522dc47e7c3b01e2606fb9cd207b533d"
+    },
+    "preview.png": {
+      "bytes": 4846,
+      "role": "picture",
+      "sha256": "029d1c910b26a26bcd0f407befdb4a0c2bc305e2910d6ef3ce14945c4cded5b2"
     }
   },
   "id": "effects.flat",
@@ -27,8 +32,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "2 prim positions from above over data/kit/flat.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-15T12:52:44.767077+00:00",

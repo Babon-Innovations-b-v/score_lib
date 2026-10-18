@@ -1,6 +1,16 @@
 {
   "address": "layer/light.launch@1",
   "files": {
+    "haze/passes/launch-0.views.json": {
+      "bytes": 747,
+      "role": "record",
+      "sha256": "c14d34160724d669055964299b7f94ff6c71c43d5af5291c5dbfb42d4db7aaf1"
+    },
+    "haze/passes/launch-0/passes.json": {
+      "bytes": 164,
+      "role": "record",
+      "sha256": "9665ce17a5bb08c9948e47173406135baed0c2c094962629a8c62a031fe44535"
+    },
     "lamps.json": {
       "bytes": 917,
       "role": "record",
@@ -10,6 +20,16 @@
       "bytes": 33655,
       "role": "usd",
       "sha256": "f346d59f4bc261ec70ec75e167a26403fafeb5e1365850d0b8d277579c34ad29"
+    },
+    "measures.json": {
+      "bytes": 5132,
+      "role": "record",
+      "sha256": "73ed6ba9de740e3bef815e1e9ca225c8e1eee0a23c45c356b9125b518d285cc1"
+    },
+    "picture.png": {
+      "bytes": 2478806,
+      "role": "picture",
+      "sha256": "7b5eb90b9e28c0cd68a9f9c61e2a036d4180d103c1076c77c4396f5f7d0a16d8"
     }
   },
   "id": "light.launch",
@@ -27,8 +47,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@launch: looks/launch/shot0-000-look.png"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-15T12:59:49.032817+00:00",

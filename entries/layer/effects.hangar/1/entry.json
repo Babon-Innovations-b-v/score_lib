@@ -10,6 +10,11 @@
       "bytes": 15314,
       "role": "usd",
       "sha256": "9245611be58b5870376fa7a39636fc66bb4ac51175fdb5f0c55b013db41c04a9"
+    },
+    "preview.png": {
+      "bytes": 17620,
+      "role": "picture",
+      "sha256": "8d2769c9f4c139de9de8d76d7d5b3e2baa2af977f2e62b3f43f36d074e2f22f3"
     }
   },
   "id": "effects.hangar",
@@ -27,8 +32,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "2 prim positions from above over data/kit/hangar.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T22:13:41.093010+00:00",

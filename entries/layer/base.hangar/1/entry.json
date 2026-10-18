@@ -5,6 +5,11 @@
       "bytes": 1956851,
       "role": "usd",
       "sha256": "a3c1e53c04f62f93243619a669835298aa891c71a80324f3532904e3f7dcd569"
+    },
+    "preview.png": {
+      "bytes": 26523,
+      "role": "picture",
+      "sha256": "6af9c570f82ce16bb75e1c194018530f98fedfa06539b65e39e628f3cc93337e"
     }
   },
   "id": "base.hangar",
@@ -22,8 +27,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "1184 prim positions from above over data/kit/hangar.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T22:13:41.093010+00:00",

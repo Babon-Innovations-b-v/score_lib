@@ -10,6 +10,16 @@
       "bytes": 2229,
       "role": "usd",
       "sha256": "1b807dd50b7b43638c79833d6e8787a6d35e1148f9f3809210e822777aa3f1c4"
+    },
+    "measures.json": {
+      "bytes": 9669,
+      "role": "record",
+      "sha256": "747ac0799cf0eb6ebd9050dc84fca67109769c8fa3bc777a9080543035536047"
+    },
+    "picture.png": {
+      "bytes": 2540229,
+      "role": "picture",
+      "sha256": "f825f6efb940d2dec312dd6deb1323ca83ffb094b44dd019594334a95a770cd8"
     }
   },
   "id": "light.hub",
@@ -27,8 +37,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@hub: looks/hub/shot0-000-look.png"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T13:52:30.641953+00:00",

@@ -10,6 +10,11 @@
       "bytes": 463549,
       "role": "usd",
       "sha256": "f4ca18e28c8914c5dcb5bff50b2a228c6264b1a80c6f2ec41e25642ac8c7a0be"
+    },
+    "preview.png": {
+      "bytes": 40464,
+      "role": "picture",
+      "sha256": "2c6022d0809fd1f7f01cdcc90e394b07ebbfa0a511711840426e3cbabe468515"
     }
   },
   "id": "effects.camp",
@@ -27,8 +32,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "1 prim positions from above over data/kit/camp.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T14:13:56.147349+00:00",

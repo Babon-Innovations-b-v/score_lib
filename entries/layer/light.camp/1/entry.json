@@ -10,6 +10,16 @@
       "bytes": 492237,
       "role": "usd",
       "sha256": "cd5803c8ab4e7c98fa9608a4f58c8f8994d559daa84e88b734a86911a5d0e831"
+    },
+    "measures.json": {
+      "bytes": 5812,
+      "role": "record",
+      "sha256": "d02de9a2ba818526bd6dafb5df3d4526cbf31c4218d7bc2935722e8f0f7420c6"
+    },
+    "picture.png": {
+      "bytes": 3120923,
+      "role": "picture",
+      "sha256": "65631c0708296a7a4d3adcffef6b32b5efb45fafd14aed8f9787a3dc335b4bf7"
     }
   },
   "id": "light.camp",
@@ -27,8 +37,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@camp: looks/camp/shot0-000-look.png"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T14:13:56.147349+00:00",

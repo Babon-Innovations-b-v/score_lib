@@ -17,14 +17,24 @@
       "sha256": "56f24beea9a485be7aecaabc19427b7ce64c5a05603eeccc12f4d05d120b8e47"
     },
     "inputs.json": {
-      "bytes": 3901,
+      "bytes": 3775,
       "role": "record",
-      "sha256": "b79aa004317500aff0137868914bb7fbd2136312e0e8b26b1cc4504f5f7f8f39"
+      "sha256": "e9ffb01b38389f173435779caf55963a0b43e19184ef712090567c4fb9e6b58b"
     },
     "origin.json": {
-      "bytes": 781,
+      "bytes": 772,
       "role": "record",
-      "sha256": "1d269e04163505697dfcf6adbde3b847cf6cf33cc22b2535420cf8248cd13548"
+      "sha256": "b92db0850b76efa70b49d4ab8621ece55d4835834e949e878e414a072efd386c"
+    },
+    "picture.png": {
+      "bytes": 1740095,
+      "role": "picture",
+      "sha256": "6176f8668337bc9129acdbab8a6e364797a0f2fef63e0013db2f14a2e3cdf06d"
+    },
+    "plan/plan.json": {
+      "bytes": 4873,
+      "role": "record",
+      "sha256": "c9481094654195b0dfb6ac7a2c547fd10002e9b8b094ef5703397f99841e99b6"
     },
     "quarters.usda": {
       "bytes": 293,
@@ -52,8 +62,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@quarters: looks/quarters/from-east-door-000-look.png"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-17T09:49:59.642437+00:00",
@@ -75,12 +88,35 @@
     "complete_failing": [
       "named gaps"
     ],
+    "files_from": {
+      "inputs.json": {
+        "path": "inputs.json",
+        "sha256": "b79aa004317500aff0137868914bb7fbd2136312e0e8b26b1cc4504f5f7f8f39"
+      },
+      "origin.json": {
+        "path": "origin.json",
+        "sha256": "1d269e04163505697dfcf6adbde3b847cf6cf33cc22b2535420cf8248cd13548"
+      }
+    },
     "gaps": "data/checks/gaps/quarters.json",
     "models": [],
     "node": "assembly@quarters",
     "output": "0934c5ec797a592bef9fcdac6fe2542628ef4a5c60d80eecc9c8e27494da327c",
     "place": "quarters",
     "record_key": "af0a403a3f2f5e89e8d8fa6963c04ecafc141523dea0492f096bebb69558383d",
+    "records_from": {
+      "plan": {
+        "accept": {
+          "at": "2026-10-17T09:32:00.439370+00:00",
+          "by": "runner"
+        },
+        "code": "d717240bd08570d0486dfc7acdade8e73ea4926837b32eeaf69ba7b60a0a2a73",
+        "models": [],
+        "node": "plan@quarters",
+        "output": "73e99a56391bb234a024ebbb56e093741bd062ae3e8e0e136b805ef9ba7ea8f1",
+        "record_key": "c5de72bde46f37d04bc9b3c11138919f115f0179a8889cad395aa6c023365966"
+      }
+    },
     "unresolved_sublayers": [],
     "world": "world1"
   },

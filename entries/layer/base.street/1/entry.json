@@ -20,6 +20,11 @@
       "bytes": 2426111,
       "role": "usd",
       "sha256": "37a4077f3995952fe0746e6be84c6781258d78d807f7a27e17195511f0b0cd95"
+    },
+    "preview.png": {
+      "bytes": 15842,
+      "role": "picture",
+      "sha256": "3efc3648daaa0a4bc3fa03a14439d946edb9fbb2c12a81eb6946e5c5089e4b68"
     }
   },
   "id": "base.street",
@@ -37,8 +42,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "739 prim positions from above over data/kit/street.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-15T17:38:29.285750+00:00",

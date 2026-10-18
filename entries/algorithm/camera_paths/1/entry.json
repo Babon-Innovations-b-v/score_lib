@@ -107,9 +107,14 @@
       "sha256": "754a03ecfe59d51ef9b0495e073af0546db733b5af46497d0b95658c7370d72f"
     },
     "definition.json": {
-      "bytes": 986,
+      "bytes": 1032,
       "role": "record",
-      "sha256": "851101a50814d371980af8900e9ff44965ac68b1df8863673025a0093357c17f"
+      "sha256": "e1442cc406fa24705539648637adfcc43279bab9d12badbcb8959b83aa66b0e5"
+    },
+    "picture.png": {
+      "bytes": 1176945,
+      "role": "picture",
+      "sha256": "b25bf229e7e2b8bee1ee222585d6607358d4f7ab112538fdb0f7284925a4c220"
     },
     "presets/world1/data/definitions/demo_films/airlock.json": {
       "bytes": 1038,
@@ -282,8 +287,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "no world 1 output in the store pictures this algorithm",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "demo-film@airlock: concept.png"
+  },
   "provenance": {
     "code": "1686e4d2b091be9532a1d079e3d8cd19d274d5dea9318e99e1c4259df79df864",
     "commit": "4547b8c549eccfad6c9df83965fb452bead83560",

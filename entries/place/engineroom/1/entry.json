@@ -22,14 +22,24 @@
       "sha256": "7616b0ad73dde12bf7da28b5cb5a01ba13f74220a1c09919497b912b91972fdc"
     },
     "inputs.json": {
-      "bytes": 6337,
+      "bytes": 6130,
       "role": "record",
-      "sha256": "336dbc25ee0fa17099496e75f418939b722477ed39e739eb274c9f99be85dec8"
+      "sha256": "f23f9a2669fb0e4594dfa216cecb7657d25cb9d44a5843537d2e9268e6c1e67a"
     },
     "origin.json": {
-      "bytes": 945,
+      "bytes": 936,
       "role": "record",
-      "sha256": "f89ecc53e56a8a378b26e356f81880d4719f3ef71cbf7620deb5fa048d141518"
+      "sha256": "5da64e8983ae1410f2190bcf8acdb90b3996c6cca6470d8885469f5425fbc632"
+    },
+    "picture.png": {
+      "bytes": 2002387,
+      "role": "picture",
+      "sha256": "70ddbb9bebcc92582ebc52bfc22abf5092a0e7bbf92134e327c4f3e5e4678949"
+    },
+    "plan/plan.json": {
+      "bytes": 5579,
+      "role": "record",
+      "sha256": "2dcfed97bf9d437f2bfd61a366c49373431db164839f53a0038879c3cbf97fb4"
     },
     "scene.json": {
       "bytes": 2122,
@@ -52,8 +62,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@engineroom: looks/engineroom/from-north-door-at-0.4-000-look.png"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T20:05:54.680906+00:00",
@@ -75,12 +88,35 @@
     "complete_failing": [
       "named gaps"
     ],
+    "files_from": {
+      "inputs.json": {
+        "path": "inputs.json",
+        "sha256": "336dbc25ee0fa17099496e75f418939b722477ed39e739eb274c9f99be85dec8"
+      },
+      "origin.json": {
+        "path": "origin.json",
+        "sha256": "f89ecc53e56a8a378b26e356f81880d4719f3ef71cbf7620deb5fa048d141518"
+      }
+    },
     "gaps": "data/checks/gaps/engineroom.json",
     "models": [],
     "node": "assembly@engineroom",
     "output": "2b04a49e1020abb736cf72066d11757c544981b242f901765795a03462916330",
     "place": "engineroom",
     "record_key": "0025709ddb07848c2946b6abd8a4f122e919acdde9cc419b62d42eab63a0b1e6",
+    "records_from": {
+      "plan": {
+        "accept": {
+          "at": "2026-10-14T13:12:21.453899+00:00",
+          "by": "runner"
+        },
+        "code": "d717240bd08570d0486dfc7acdade8e73ea4926837b32eeaf69ba7b60a0a2a73",
+        "models": [],
+        "node": "plan@engineroom",
+        "output": "45ca320fb4bf737cefd07cfc030e9e66ee3c9056aed63bc4b9e56814fde681b6",
+        "record_key": "17a65462196e2e02a1da64693805cfb794d3176de95d4f82666e29d5f04510f0"
+      }
+    },
     "unresolved_sublayers": [],
     "world": "world1"
   },

@@ -6,6 +6,11 @@
       "role": "usd",
       "sha256": "524c4792558d62db71e63cd18f7dca85a2d0dd3fdc510d955351c810760a997b"
     },
+    "preview.png": {
+      "bytes": 43236,
+      "role": "picture",
+      "sha256": "3ea7292bf5f24092e095b618f750320a2ec904784d83ce5958636838d58ef4ed"
+    },
     "spots.json": {
       "bytes": 13598,
       "role": "record",
@@ -27,8 +32,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "1 prim positions from above over data/kit/greenhouse.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-17T11:21:57.694141+00:00",

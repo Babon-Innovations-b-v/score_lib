@@ -10,6 +10,16 @@
       "bytes": 490264,
       "role": "usd",
       "sha256": "1efd540af659e43dc87f33d01522b06511d789e2434ac771eb3c57762531869c"
+    },
+    "measures.json": {
+      "bytes": 1846,
+      "role": "record",
+      "sha256": "b49cc7c34c7aaa144f9a6c396ccc9e0bc4d031f1154a229123673c1d021c292b"
+    },
+    "picture.png": {
+      "bytes": 1712831,
+      "role": "picture",
+      "sha256": "8996aa7df5b6099926aa5c300ff857f6178bbfa3d25c95a3ccf69829fdf46f42"
     }
   },
   "id": "light.campgrounds",
@@ -27,8 +37,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@campgrounds: looks/campgrounds/shot0-000-look.png"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T14:16:00.039696+00:00",

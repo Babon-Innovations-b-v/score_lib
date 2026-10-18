@@ -5,6 +5,11 @@
       "bytes": 216460,
       "role": "usd",
       "sha256": "f32643d438c15a33b757e7c0c12a6cbc0d1d0724f1b3bcd02625d1ffcef1ca55"
+    },
+    "preview.png": {
+      "bytes": 1945,
+      "role": "picture",
+      "sha256": "07dd5b4dd37e2ffc3aa156a161d2aee5f5e3c025637c7c409785d7970a724088"
     }
   },
   "id": "base.gdoor",
@@ -22,8 +27,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "3 prim positions from above over data/kit/gdoor.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-13T08:07:15.141411+00:00",

@@ -5,6 +5,11 @@
       "bytes": 97,
       "role": "usd",
       "sha256": "4549a2d64faba03942405b81522aaecdcd75391d35b285e540aead402a237624"
+    },
+    "preview.png": {
+      "bytes": 32246,
+      "role": "picture",
+      "sha256": "67eb06cd1d6f65cd955fad148b2877c82c2d561176cd55caa66b7e9ed9208916"
     }
   },
   "id": "ground.campgrounds",
@@ -22,8 +27,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "the place's ground.usdc"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T14:16:00.039696+00:00",

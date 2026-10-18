@@ -10,6 +10,16 @@
       "bytes": 472,
       "role": "usd",
       "sha256": "daa93e1e688af52fa490f57690054af8569394a8a320932cad64d6487b869067"
+    },
+    "measures.json": {
+      "bytes": 2800,
+      "role": "record",
+      "sha256": "4f29699a655cc4ec2fa1d3c84f59c9b13e13aed24f99a8e8060da7734f7fab17"
+    },
+    "picture.png": {
+      "bytes": 2861009,
+      "role": "picture",
+      "sha256": "cbc1f0b1daacb22cc475974a46c222671acb57c2c1c09969c3431ed08474deaa"
     }
   },
   "id": "light.tube",
@@ -27,8 +37,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@tube: looks/tube/shot0-000-look.png"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T14:00:40.450199+00:00",

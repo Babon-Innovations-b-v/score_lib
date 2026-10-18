@@ -17,9 +17,9 @@
       "sha256": "aa5c3fbc13ffe39f1760483116ebfd8e996ce2d7bd6845d3c22e14e899d18572"
     },
     "inputs.json": {
-      "bytes": 3935,
+      "bytes": 3809,
       "role": "record",
-      "sha256": "af0bb1cb99c47abc9fddd47a1826a6ad085519b08e73229246742353cd92baba"
+      "sha256": "e8b082fd75f4e7b05dcddd11b97f73102ce1a3bfe44a438bec678e386be6a404"
     },
     "navigation.usda": {
       "bytes": 301,
@@ -27,9 +27,19 @@
       "sha256": "5a45980dff4c8b6c6ef209d8fba45fbc5a17c1d7779bc720f24e5fe9d9b2be8f"
     },
     "origin.json": {
-      "bytes": 803,
+      "bytes": 794,
       "role": "record",
-      "sha256": "d759502c3f37610d5109a261d7d7823a0d410bd023be074bd24bd073ca966a51"
+      "sha256": "7921558b951915d9056308b81ffecb80c8e1f572345a05f3366a293b5c06dab0"
+    },
+    "picture.png": {
+      "bytes": 2065989,
+      "role": "picture",
+      "sha256": "6882987085526b9eee8fa1afe814ccfcd61cb04579a06ebc81cab59566a14903"
+    },
+    "plan/plan.json": {
+      "bytes": 4153,
+      "role": "record",
+      "sha256": "85c67e2e6bf76ee717df0492e92b27846eb8ddc5ef1f0e9e165297312ebb75ab"
     },
     "scene.json": {
       "bytes": 2014,
@@ -52,8 +62,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@navigation: looks/navigation/from-west-door-000-look.png"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-17T09:46:43.958933+00:00",
@@ -75,12 +88,35 @@
     "complete_failing": [
       "named gaps"
     ],
+    "files_from": {
+      "inputs.json": {
+        "path": "inputs.json",
+        "sha256": "af0bb1cb99c47abc9fddd47a1826a6ad085519b08e73229246742353cd92baba"
+      },
+      "origin.json": {
+        "path": "origin.json",
+        "sha256": "d759502c3f37610d5109a261d7d7823a0d410bd023be074bd24bd073ca966a51"
+      }
+    },
     "gaps": "data/checks/gaps/navigation.json",
     "models": [],
     "node": "assembly@navigation",
     "output": "5cd589efecebda42c80bb145ce56b59ea716bb1342ccc96d66095c514a5399eb",
     "place": "navigation",
     "record_key": "cec8763d9b4f68cfd044261afac712e21f8d6b912e8af63af103f60b7761a775",
+    "records_from": {
+      "plan": {
+        "accept": {
+          "at": "2026-10-17T09:31:55.715182+00:00",
+          "by": "runner"
+        },
+        "code": "d717240bd08570d0486dfc7acdade8e73ea4926837b32eeaf69ba7b60a0a2a73",
+        "models": [],
+        "node": "plan@navigation",
+        "output": "48ab2d53fc5875e6d13dc77608305165a5afbd0fbc4c472c9da346881b803714",
+        "record_key": "db414c6e4fc0f686c686d06de7a6e53273948de2b3804c718dcc7f039c5d1295"
+      }
+    },
     "unresolved_sublayers": [],
     "world": "world1"
   },

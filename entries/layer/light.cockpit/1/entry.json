@@ -10,6 +10,16 @@
       "bytes": 1099,
       "role": "usd",
       "sha256": "c0d331fd89254d2e47b566ccc48ad10ab57db4939e879da6f2669edc76a4e9d8"
+    },
+    "measures.json": {
+      "bytes": 4054,
+      "role": "record",
+      "sha256": "5724b318a1aee461bccc9451fa08e1bf60e50b44216624890019487fe18adf3d"
+    },
+    "picture.png": {
+      "bytes": 1956063,
+      "role": "picture",
+      "sha256": "15b167d8e22146de274cd4dbc7341e0f2df42dbf99ab885c6da1d007848128ba"
     }
   },
   "id": "light.cockpit",
@@ -27,8 +37,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@cockpit: looks/cockpit/from-north-door-000-look.png"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T10:12:20.716778+00:00",

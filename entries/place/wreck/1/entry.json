@@ -17,14 +17,24 @@
       "sha256": "2ecd490912b902df795ce1350e499550983e355cabe4510af30207be6ea66cfd"
     },
     "inputs.json": {
-      "bytes": 4285,
+      "bytes": 4132,
       "role": "record",
-      "sha256": "9d5c5748fcf392ac5eb3d94add5370aae751cb92ae72e5c89332b93f8b130e99"
+      "sha256": "e149f6539e2ca4812c836d96c1197550c17241336b84b063cff68fccda0edd46"
     },
     "origin.json": {
-      "bytes": 691,
+      "bytes": 682,
       "role": "record",
-      "sha256": "48e4a07ac8a04e584480600d0d2f88ef8524f31189f1c49ed4b6724718e1e8bd"
+      "sha256": "4e013a3f9487db52f63b82e254f3d5c342d6ca4be3d4f3cbd1ffc1e9d1c5f5ca"
+    },
+    "picture.png": {
+      "bytes": 2144081,
+      "role": "picture",
+      "sha256": "9334c694190216af1c793e661e40e28bc91c22722fa288bf2b40812316b1052e"
+    },
+    "plan/plan.json": {
+      "bytes": 8735,
+      "role": "record",
+      "sha256": "dbd24b4f851d9dce6366d81befb50644978ead1c891321a48fe6da9ddadbb920"
     },
     "scene.json": {
       "bytes": 8156,
@@ -52,8 +62,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@wreck: looks/wreck/shot0-000-look.png"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T15:53:36.185584+00:00",
@@ -75,12 +88,35 @@
     "complete_failing": [
       "named gaps"
     ],
+    "files_from": {
+      "inputs.json": {
+        "path": "inputs.json",
+        "sha256": "9d5c5748fcf392ac5eb3d94add5370aae751cb92ae72e5c89332b93f8b130e99"
+      },
+      "origin.json": {
+        "path": "origin.json",
+        "sha256": "48e4a07ac8a04e584480600d0d2f88ef8524f31189f1c49ed4b6724718e1e8bd"
+      }
+    },
     "gaps": "data/checks/gaps/wreck.json",
     "models": [],
     "node": "assembly@wreck",
     "output": "591bca186cdb2ba3104fc444e86a6ff62eeb734cbab1de4f4f2c54506dd99291",
     "place": "wreck",
     "record_key": "ae3d3dca811e262167338103d0abcba1e68bff01135dac7ecd4e6f2f4113254b",
+    "records_from": {
+      "plan": {
+        "accept": {
+          "at": "2026-10-13T22:23:05.412736+00:00",
+          "by": "runner"
+        },
+        "code": "d717240bd08570d0486dfc7acdade8e73ea4926837b32eeaf69ba7b60a0a2a73",
+        "models": [],
+        "node": "plan@wreck",
+        "output": "1fbae40fbdd3adca73110f97cfc9104dc6981d587b0a30fe865591b74cbfa02d",
+        "record_key": "61bec842402445b352573ab004b2c4f615c487437815beea0257002c9693fcd4"
+      }
+    },
     "unresolved_sublayers": [],
     "world": "world1"
   },

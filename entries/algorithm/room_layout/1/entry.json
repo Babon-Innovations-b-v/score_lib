@@ -12,9 +12,24 @@
       "sha256": "6e5ca5fbf0d362639d55f5dcc571bf3f57a11d27a4b8100fcc77a024dadcf780"
     },
     "definition.json": {
-      "bytes": 452,
+      "bytes": 659,
       "role": "record",
-      "sha256": "9456499af67f07b2b2431787eb0ef55dc50061cfc344adeecf1f83b158e64078"
+      "sha256": "5e60a9d559bfd4a2b0bd97e4f61e89750340d82325cb4a36182b7e052e29d8d7"
+    },
+    "presets/world1/data/definitions/base.json": {
+      "bytes": 1590,
+      "role": "record",
+      "sha256": "712512c294f22d1bc69b72297df9413c533fc17685a146a0eeaa22c1c5c25bb7"
+    },
+    "presets/world1/data/definitions/place.json": {
+      "bytes": 133660,
+      "role": "record",
+      "sha256": "dffb590f3dba5d094505e1bb515d3c0a55c87a5f09f00e02c6e1f43c8ca0c3b8"
+    },
+    "presets/world1/data/definitions/world.json": {
+      "bytes": 257,
+      "role": "record",
+      "sha256": "6165adbe072f279d032dfecbe79a73ffa2ec5e052bf3e2ff2877159d29811f83"
     },
     "presets/world1/data/kit/airlock.json": {
       "bytes": 124288,
@@ -156,6 +171,21 @@
       "role": "record",
       "sha256": "719dbce4bbe2020dfa70afec750ff0e5f40fe5812e93372f0a7c4a552874a38e"
     },
+    "presets/world1/data/library/composites.json": {
+      "bytes": 39060,
+      "role": "record",
+      "sha256": "7a1e23ab8b228e9f7aa13b1fea9af901a2b3e715f49d897f7d7063c9ce67a820"
+    },
+    "presets/world1/data/library/details.json": {
+      "bytes": 56592,
+      "role": "record",
+      "sha256": "43bc7fe695689ad4fb0bf609196ea0772c51b8d7e45c8af0ca0047c2378be1b6"
+    },
+    "presets/world1/data/library/fittings.json": {
+      "bytes": 81683,
+      "role": "record",
+      "sha256": "07fecf7a4b231949eb30e6c916f37b455c06567cb1ee523f136fd5c8c3aba86a"
+    },
     "presets/world1/seed.json": {
       "bytes": 166,
       "role": "record",
@@ -197,6 +227,12 @@
   "provenance": {
     "code": "6cc1a680ebff2f66856e32cde02e4fa132f24424f903c452d8085240be597a26",
     "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "presets/world1/data/definitions/place.json": {
+        "path": "presets/world1/data/definitions/place.json",
+        "sha256": "9c83b6b7175d9809acb010a7c86fa48e2cfe618bc6595d4fd666c6a50565edc5"
+      }
+    },
     "nodes": [],
     "stage": null,
     "world": "world1"

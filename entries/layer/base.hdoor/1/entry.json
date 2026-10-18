@@ -5,6 +5,11 @@
       "bytes": 518295,
       "role": "usd",
       "sha256": "0939c046447c7c8b035bebdffe1f4d8411263d31d97ad57400664de56e8675c5"
+    },
+    "preview.png": {
+      "bytes": 9723,
+      "role": "picture",
+      "sha256": "dad6e53934b3d995c106712f0038c2c705d9566a7309da8a1b3424a1c1e8ec1e"
     }
   },
   "id": "base.hdoor",
@@ -22,8 +27,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "308 prim positions from above over data/kit/hdoor.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-13T08:09:34.278470+00:00",

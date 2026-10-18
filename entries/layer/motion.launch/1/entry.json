@@ -10,6 +10,11 @@
       "bytes": 127,
       "role": "record",
       "sha256": "12ae1423fbc4ca0766001c8c96da4ed5d40feefc22c9b2c102d541c1049e0ea0"
+    },
+    "preview.png": {
+      "bytes": 4176,
+      "role": "picture",
+      "sha256": "251b53661cc8dc972aa9e52cdf8ae7f59ea2013862d7452116e225edab199ff6"
     }
   },
   "id": "motion.launch",
@@ -27,8 +32,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "4 prim positions from above over data/kit/launch.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-15T12:59:49.032817+00:00",

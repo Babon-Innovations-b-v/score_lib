@@ -1,6 +1,16 @@
 {
   "address": "place/street@1",
   "files": {
+    "cast/cast.json": {
+      "bytes": 1240,
+      "role": "record",
+      "sha256": "6f1dda55ff8a63e553247e40229119b17a46602f14ae168b1e0544e73aeb0a7a"
+    },
+    "cast/measures.json": {
+      "bytes": 418,
+      "role": "record",
+      "sha256": "73b6327a456fbe2a197d9023e65a21575215df152c4e6018ca416af97b9f7cea"
+    },
     "contract.json": {
       "bytes": 99,
       "role": "record",
@@ -17,14 +27,24 @@
       "sha256": "733d142f5f5231a93723aeeec691a237bfb9e5f02e203b10789a8111686ccf25"
     },
     "inputs.json": {
-      "bytes": 23900,
+      "bytes": 23018,
       "role": "record",
-      "sha256": "f66c7c0f6fbce46395858e4cae91d08321348d1ffa52f9b706466bdee1e1a20d"
+      "sha256": "b686b3ff1c6e871a26f38ef068d01777782a562630f4c2777140259601e2723c"
     },
     "origin.json": {
-      "bytes": 703,
+      "bytes": 694,
       "role": "record",
-      "sha256": "702b549550c538b6bc9a8ce67be39d238a92852799c884b21485540f26b37cb2"
+      "sha256": "944c0a3d0f2733b190ce0340fbe5c5164c69b07bd4aba72744d91a9417cd4c72"
+    },
+    "picture.png": {
+      "bytes": 2481230,
+      "role": "picture",
+      "sha256": "6a7137c17bc1d18cf9dc29a03698d5cce984829a40ef076cb14f8100f466077b"
+    },
+    "plan/plan.json": {
+      "bytes": 8797,
+      "role": "record",
+      "sha256": "6bf425c16746ec4aefba004dd4c81a3627c53de266365aae54591cee5b7ddc2f"
     },
     "scene.json": {
       "bytes": 8686,
@@ -52,8 +72,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@street: looks/street/shot0-000-look.png"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-15T17:38:29.285750+00:00",
@@ -75,12 +98,46 @@
     "complete_failing": [
       "named gaps"
     ],
+    "files_from": {
+      "inputs.json": {
+        "path": "inputs.json",
+        "sha256": "f66c7c0f6fbce46395858e4cae91d08321348d1ffa52f9b706466bdee1e1a20d"
+      },
+      "origin.json": {
+        "path": "origin.json",
+        "sha256": "702b549550c538b6bc9a8ce67be39d238a92852799c884b21485540f26b37cb2"
+      }
+    },
     "gaps": "data/checks/gaps/street.json",
     "models": [],
     "node": "assembly@street",
     "output": "bbaaeb0aa7195bd7d899a3f5ff837f9ba560320bced6dcf06bdea37704342dad",
     "place": "street",
     "record_key": "eea7a7e11741099d56afa13effecfae534999af63793625de4692628148864f0",
+    "records_from": {
+      "cast": {
+        "accept": {
+          "at": "2026-10-15T05:13:12.220231+00:00",
+          "by": "runner"
+        },
+        "code": "70c559828907b5231f34fb0dddb7b719b7fb1199af14d2fecf63ba2f27ef8678",
+        "models": [],
+        "node": "cast@street",
+        "output": "17b0b9d989543d7a5015045faef9c7f81745089f2f2744c962ccff34e8e1f1e0",
+        "record_key": "8506c3788537667f77d938dfcc88af54311b198c230ce6d33eac54690779c2b3"
+      },
+      "plan": {
+        "accept": {
+          "at": "2026-10-13T17:24:28.345377+00:00",
+          "by": "runner"
+        },
+        "code": "d717240bd08570d0486dfc7acdade8e73ea4926837b32eeaf69ba7b60a0a2a73",
+        "models": [],
+        "node": "plan@street",
+        "output": "214931ad8da9d7454b1a28225adc748060cb674875c15ae38935002e764673f6",
+        "record_key": "4e6b3699fa940282eea4c7b2f8de8a9b69340d21011433fdc9e0f4be0045aefa"
+      }
+    },
     "unresolved_sublayers": [],
     "world": "world1"
   },

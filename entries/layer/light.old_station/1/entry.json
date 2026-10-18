@@ -10,6 +10,16 @@
       "bytes": 142367,
       "role": "usd",
       "sha256": "b805cf22862c6f22e9d306abb3e3f8f3148defe094ef58c09088f8cead2c4ae8"
+    },
+    "measures.json": {
+      "bytes": 1782,
+      "role": "record",
+      "sha256": "3e61337401110fc2b1d8bffbbd8c2c77e670eb9941e3256ac4629b77d8d86fe9"
+    },
+    "picture.png": {
+      "bytes": 2369675,
+      "role": "picture",
+      "sha256": "9686e837ee85b31a5407231151def5867fe221585b98cf77b40ea71b8afc9be7"
     }
   },
   "id": "light.old_station",
@@ -27,8 +37,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@old_station: looks/old_station/shot0-000-look.png"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T14:02:30.466230+00:00",

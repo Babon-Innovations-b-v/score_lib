@@ -10,6 +10,16 @@
       "bytes": 1032,
       "role": "usd",
       "sha256": "f71523417b0b885ea3bd6688d764c11fa008059b7d53e7e32cf8fef347472159"
+    },
+    "measures.json": {
+      "bytes": 5126,
+      "role": "record",
+      "sha256": "0250f87207a59d53b05733c3fcba01801d023a96b1d8e3f047aba5e560249c24"
+    },
+    "picture.png": {
+      "bytes": 1951366,
+      "role": "picture",
+      "sha256": "016463265de3a4742425db2986b1f81e7dbdadc96e946fb362aa1ee280a8c8ee"
     }
   },
   "id": "light.habitat",
@@ -27,8 +37,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@habitat: looks/habitat/shot0-000-look.png"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T09:31:21.711004+00:00",

@@ -1,6 +1,16 @@
 {
   "address": "place/cockpit@1",
   "files": {
+    "cast/cast.json": {
+      "bytes": 1372,
+      "role": "record",
+      "sha256": "a930ec8fdc70ea7737c87ef75a57c0d4dc913cd3acea8fe4d4afaa175168f8df"
+    },
+    "cast/measures.json": {
+      "bytes": 443,
+      "role": "record",
+      "sha256": "e50cd55c2774a4d2115f9fb46becdfe78b8cbe7aa44aabaaab420b436bac28d1"
+    },
     "cockpit.usda": {
       "bytes": 348,
       "role": "usd",
@@ -22,14 +32,24 @@
       "sha256": "84e0f7ddff8ca9661c963e4d981f549d6b5651d6d72205df8181b76f7d7e9293"
     },
     "inputs.json": {
-      "bytes": 9016,
+      "bytes": 8710,
       "role": "record",
-      "sha256": "26d84add0b79ff9b2d6fe04e85dd70d7a1c7b142b514d50b8c425f4fc3e3485c"
+      "sha256": "0677fe4aa2946e94936085cb8d8665002ab9555bf5a4ef0a81712557176608ae"
     },
     "origin.json": {
-      "bytes": 1063,
+      "bytes": 1054,
       "role": "record",
-      "sha256": "94eda4d70db192cc0a89cb9a94291d31e06e3bc98ae2ef3a93cf5ae7e956ad0b"
+      "sha256": "168c09e537ff1c72a7a58e7b4aa35f1bf560913366ea714a13d42b5fe697d0d6"
+    },
+    "picture.png": {
+      "bytes": 1956063,
+      "role": "picture",
+      "sha256": "15b167d8e22146de274cd4dbc7341e0f2df42dbf99ab885c6da1d007848128ba"
+    },
+    "plan/plan.json": {
+      "bytes": 7177,
+      "role": "record",
+      "sha256": "46e44fe53cedd55056c7f060ad652a0bcdcaff86fbce62126725c8459c5c0847"
     },
     "scene.json": {
       "bytes": 2238,
@@ -52,8 +72,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@cockpit: looks/cockpit/from-north-door-000-look.png"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T10:12:20.716778+00:00",
@@ -75,12 +98,46 @@
     "complete_failing": [
       "named gaps"
     ],
+    "files_from": {
+      "inputs.json": {
+        "path": "inputs.json",
+        "sha256": "26d84add0b79ff9b2d6fe04e85dd70d7a1c7b142b514d50b8c425f4fc3e3485c"
+      },
+      "origin.json": {
+        "path": "origin.json",
+        "sha256": "94eda4d70db192cc0a89cb9a94291d31e06e3bc98ae2ef3a93cf5ae7e956ad0b"
+      }
+    },
     "gaps": "data/checks/gaps/cockpit.json",
     "models": [],
     "node": "assembly@cockpit",
     "output": "b8ec7f49d4ff317fb9858d8dce4a33fcfc258d958fcd162c2b292eabb7de5c83",
     "place": "cockpit",
     "record_key": "6507789d5dd016672ed678b36e6a88f586c76345c9ca611d2f50b16a694eea46",
+    "records_from": {
+      "cast": {
+        "accept": {
+          "at": "2026-10-15T08:52:27.349289+00:00",
+          "by": "runner"
+        },
+        "code": "70c559828907b5231f34fb0dddb7b719b7fb1199af14d2fecf63ba2f27ef8678",
+        "models": [],
+        "node": "cast@cockpit",
+        "output": "587572fd28424613b860f1901ebe35b0bb0278322d0686df4dae15f808c22db1",
+        "record_key": "e15d5a61d9d1e5f5b8e831430db13b24e372e6df9913903072312ef4b967b496"
+      },
+      "plan": {
+        "accept": {
+          "at": "2026-10-14T21:31:17.561483+00:00",
+          "by": "runner"
+        },
+        "code": "d717240bd08570d0486dfc7acdade8e73ea4926837b32eeaf69ba7b60a0a2a73",
+        "models": [],
+        "node": "plan@cockpit",
+        "output": "55d5c319b6415673243a121081e31570099a05fed6ef3599e69b173b0f6d539d",
+        "record_key": "090936279a79dd3e75493c03f9026ef26b700f52bd7859073fd0c4419bc94103"
+      }
+    },
     "unresolved_sublayers": [],
     "world": "world1"
   },

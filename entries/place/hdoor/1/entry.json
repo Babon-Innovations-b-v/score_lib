@@ -17,14 +17,19 @@
       "sha256": "372ed05e2e48f7768543daf90a03ea662c7dac8972325391bc5cb1ce5de334bf"
     },
     "inputs.json": {
-      "bytes": 788,
+      "bytes": 770,
       "role": "record",
-      "sha256": "e7fea7576b7067e0c6654b4810d907df223aee3c2d4f46e0a749e1ec0c5da095"
+      "sha256": "e48b830a26b765375483f93c8d2f02a23cd897903a84c9dc3d534e54b4b699fe"
     },
     "origin.json": {
-      "bytes": 384,
+      "bytes": 375,
       "role": "record",
-      "sha256": "12b88f6eaadb1d4602518d56cf5e38331e5c54c266429eed0a8881e3ed20b2f6"
+      "sha256": "27d7513ec92bcdade56f9d03d9ca295c7e6bcc7ce414badb18c2048c5103a260"
+    },
+    "preview.png": {
+      "bytes": 5543,
+      "role": "picture",
+      "sha256": "6dfb29c014f5855518d76971d98e108feab58979e8794bec8bba3eb7c2830092"
     }
   },
   "id": "hdoor",
@@ -42,8 +47,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/plan.py",
+    "of": "data/kit/hdoor.json pieces (309)"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-13T08:09:34.278470+00:00",
@@ -63,12 +71,23 @@
       "record_key": "ef3a5a441cea41c649d4bf145f0b5f24e8e1fb4e4c4891df8e555b2842b98949"
     },
     "complete_failing": [],
+    "files_from": {
+      "inputs.json": {
+        "path": "inputs.json",
+        "sha256": "e7fea7576b7067e0c6654b4810d907df223aee3c2d4f46e0a749e1ec0c5da095"
+      },
+      "origin.json": {
+        "path": "origin.json",
+        "sha256": "12b88f6eaadb1d4602518d56cf5e38331e5c54c266429eed0a8881e3ed20b2f6"
+      }
+    },
     "gaps": null,
     "models": [],
     "node": "assembly@hdoor",
     "output": "86dd367298076480c9809c69abc93ed3ea88fc1a1703ccb9a967ccee0931e962",
     "place": "hdoor",
     "record_key": "bf431a9b130c39396f9446a21b5f1b71c9a09923c203f0f5c8aaccbc9cd74ba9",
+    "records_from": {},
     "unresolved_sublayers": [],
     "world": "world1"
   },

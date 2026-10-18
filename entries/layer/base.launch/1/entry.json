@@ -20,6 +20,11 @@
       "bytes": 1173288,
       "role": "usd",
       "sha256": "ebd3650373403bf12d4729f9ac89fa283ea7387a009c963619cfcbd0f127a400"
+    },
+    "preview.png": {
+      "bytes": 5138,
+      "role": "picture",
+      "sha256": "8fdcdb65b936642343af14d6ae9cf1ddfedb334e544f2c1f8cef7a0500f0fcd2"
     }
   },
   "id": "base.launch",
@@ -37,8 +42,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "69 prim positions from above over data/kit/launch.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-15T12:59:49.032817+00:00",

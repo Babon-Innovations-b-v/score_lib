@@ -20,6 +20,11 @@
       "bytes": 1228688,
       "role": "usd",
       "sha256": "b133c7e4709cafc2de2c47a3dd572d46c690757ae6163932a252e748d3c3b8bb"
+    },
+    "preview.png": {
+      "bytes": 6930,
+      "role": "picture",
+      "sha256": "d7d408565936cd1f10eda98856fe67a2ce009e188ee33ac5c5c7689a5ff56092"
     }
   },
   "id": "base.stairwell",
@@ -37,8 +42,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "48 prim positions from above over data/kit/stairwell.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-15T17:24:17.414697+00:00",

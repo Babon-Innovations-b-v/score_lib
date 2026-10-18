@@ -5,6 +5,11 @@
       "bytes": 96,
       "role": "usd",
       "sha256": "2ac16a10b7a9bdc15684c8b74a130e0cde2dd7db1832b0d34fb0c9ebae4079ff"
+    },
+    "preview.png": {
+      "bytes": 26589,
+      "role": "picture",
+      "sha256": "afd3e0d618847cecc1fe334e88e03b58afc49fd1141a60714b6c4d64cfd2c4ab"
     }
   },
   "id": "ground.greenhouse",
@@ -22,8 +27,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "the place's ground.usdc"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-17T11:21:57.694141+00:00",

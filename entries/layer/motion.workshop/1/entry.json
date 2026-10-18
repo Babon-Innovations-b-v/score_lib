@@ -10,6 +10,11 @@
       "bytes": 337,
       "role": "record",
       "sha256": "666dcbadd4f4d8c3c74e3e8c42c13975fa3306441d3937ba67480ada14a35cce"
+    },
+    "preview.png": {
+      "bytes": 30261,
+      "role": "picture",
+      "sha256": "4f41a2a28d1ce4bc557d9e67b37749b263b211da7f861b451914c8cfc32a4f0a"
     }
   },
   "id": "motion.workshop",
@@ -27,8 +32,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "9 prim positions from above over data/kit/workshop.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T00:15:15.593646+00:00",

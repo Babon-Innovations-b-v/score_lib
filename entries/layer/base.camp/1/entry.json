@@ -20,6 +20,11 @@
       "bytes": 28018534,
       "role": "usd",
       "sha256": "3a03b9fdbe685bd7ffb4bdda3df59338be8f68689dcaa242cf76df48101055da"
+    },
+    "preview.png": {
+      "bytes": 46076,
+      "role": "picture",
+      "sha256": "0ac18ed63089a794cc2372e8f94fa4bc3c0df0e33664676804e020899eca737a"
     }
   },
   "id": "base.camp",
@@ -37,8 +42,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "265 prim positions from above over data/kit/camp.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T14:13:56.147349+00:00",

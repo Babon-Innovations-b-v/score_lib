@@ -1,6 +1,16 @@
 {
   "address": "place/greenhouse@1",
   "files": {
+    "cast/cast.json": {
+      "bytes": 2120,
+      "role": "record",
+      "sha256": "43c6371b180b9fdcf6cfe64d39118ba2356939e2a48bfedc186ab1c8381db956"
+    },
+    "cast/measures.json": {
+      "bytes": 621,
+      "role": "record",
+      "sha256": "37d46da8e85bff95977c09a7aa9b2dd73a28550a7dd5d91a99e76c8016fd67c2"
+    },
     "contract.json": {
       "bytes": 99,
       "role": "record",
@@ -22,14 +32,24 @@
       "sha256": "7da0d5446d57fdb7f004d221069952e39406aab35c088061200da19bc22b93bf"
     },
     "inputs.json": {
-      "bytes": 39203,
+      "bytes": 37763,
       "role": "record",
-      "sha256": "1a4a08090e0522a544e12d63272d3c6dff360dd716c11df2492fe832c70d0586"
+      "sha256": "8965efdde4fe2f5e6b218312e3d12b4a9da4ccbe73f5efba188275657ee604f8"
     },
     "origin.json": {
-      "bytes": 1121,
+      "bytes": 1112,
       "role": "record",
-      "sha256": "e468fac7e402bf3c9c68f0ea8996814f58fae3e105240e9de20a1d7486e44ed2"
+      "sha256": "84dfd1dd573636f98a4389d7f2fe1e371deb4bc987d37b2a18912c618367e517"
+    },
+    "picture.png": {
+      "bytes": 2162032,
+      "role": "picture",
+      "sha256": "8c3e4adcece372a9d9d8100f57f592a7ab7c4d22de7f7b6043706381a927807b"
+    },
+    "plan/plan.json": {
+      "bytes": 10335,
+      "role": "record",
+      "sha256": "bd92c25ed1e895b17241628ccc306adb8d6145cb3b76d5c0aa17560cc677980c"
     },
     "scene.json": {
       "bytes": 10554,
@@ -52,8 +72,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@greenhouse: looks/greenhouse/shot0-000-look.png"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-17T11:21:57.694141+00:00",
@@ -75,12 +98,46 @@
     "complete_failing": [
       "named gaps"
     ],
+    "files_from": {
+      "inputs.json": {
+        "path": "inputs.json",
+        "sha256": "1a4a08090e0522a544e12d63272d3c6dff360dd716c11df2492fe832c70d0586"
+      },
+      "origin.json": {
+        "path": "origin.json",
+        "sha256": "e468fac7e402bf3c9c68f0ea8996814f58fae3e105240e9de20a1d7486e44ed2"
+      }
+    },
     "gaps": "data/checks/gaps/greenhouse.json",
     "models": [],
     "node": "assembly@greenhouse",
     "output": "910f5ef85c6bacfd60b7b934d6980011f765df81458a88095c9ee09416e6fec7",
     "place": "greenhouse",
     "record_key": "96f06014f00223d17da44c7eaa7bd37c8c838a72ef68ace7ba2ccc88be48cafa",
+    "records_from": {
+      "cast": {
+        "accept": {
+          "at": "2026-10-14T14:22:41.417396+00:00",
+          "by": "runner"
+        },
+        "code": "70c559828907b5231f34fb0dddb7b719b7fb1199af14d2fecf63ba2f27ef8678",
+        "models": [],
+        "node": "cast@greenhouse",
+        "output": "be47e36a088762ecdc804ab142375511d6732b8d8bb602172592afb70abd0957",
+        "record_key": "11325e19c43b767e6dbdb64279a267759ab1252b36fb6105074c0a3f560a328d"
+      },
+      "plan": {
+        "accept": {
+          "at": "2026-10-13T22:22:18.887557+00:00",
+          "by": "runner"
+        },
+        "code": "d717240bd08570d0486dfc7acdade8e73ea4926837b32eeaf69ba7b60a0a2a73",
+        "models": [],
+        "node": "plan@greenhouse",
+        "output": "15ced0705212152a375552639e558ae5efed795515099c7a02bc5d32b19f73dd",
+        "record_key": "4f8b2d1030cd63142a73d1a0d812fcc4f5f7418e2fadb25522cd69b5f61b1171"
+      }
+    },
     "unresolved_sublayers": [],
     "world": "world1"
   },

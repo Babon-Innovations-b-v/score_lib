@@ -6,6 +6,11 @@
       "role": "usd",
       "sha256": "5a4930c1d2f6914b1afc535adc2a191a0b662404456e0ae93770011dae958403"
     },
+    "preview.png": {
+      "bytes": 30045,
+      "role": "picture",
+      "sha256": "11df701d0526554c139f3710b565668f571b9b41f6f629df9dffb152d31979d3"
+    },
     "settle.json": {
       "bytes": 4412,
       "role": "record",
@@ -27,8 +32,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "2 prim positions from above over data/kit/garage.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T22:23:43.534540+00:00",

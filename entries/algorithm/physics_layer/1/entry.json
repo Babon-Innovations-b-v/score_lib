@@ -162,9 +162,14 @@
       "sha256": "57c6d1b2f2ff71cdeaeff6ab33c95688b49a09ffb67aea787211d937affa3e80"
     },
     "definition.json": {
-      "bytes": 838,
+      "bytes": 903,
       "role": "record",
-      "sha256": "ee7327cbabaf3febb9631fa9b0e7ea26b178c208116735302ed3053e43afb545"
+      "sha256": "f6e9b0fe955748b5726f4284c6d8cea0b1f092dad81c2cd3889283e25f348c4e"
+    },
+    "picture.png": {
+      "bytes": 618575,
+      "role": "picture",
+      "sha256": "ec5363eaf9033915dfe0237a2e91f1ca86cae9bd5364acfcbdde3e11afa70ff2"
     },
     "presets/world1/data/physics/habitat.json": {
       "bytes": 1719,
@@ -217,8 +222,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "no world 1 output in the store pictures this algorithm",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "physics-trial@habitat: frames/mess-t08.0-look.png"
+  },
   "provenance": {
     "code": "5717016692886dffa549ddfd97353e799428c8e66950147ddaa9d9c6f92e74ce",
     "commit": "4547b8c549eccfad6c9df83965fb452bead83560",

@@ -5,6 +5,11 @@
       "bytes": 349857,
       "role": "usd",
       "sha256": "654a00a28b314d41ba5fc99c3491260dfdecd714c14f85841321598c35a84489"
+    },
+    "preview.png": {
+      "bytes": 10131,
+      "role": "picture",
+      "sha256": "7faf2337281e6825628e41f7f51ad6a8e025f86b3e66a6d81eda6794693444e6"
     }
   },
   "id": "base.walkway",
@@ -22,8 +27,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "74 prim positions from above over data/kit/walkway.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T10:11:51.521798+00:00",

@@ -25,6 +25,11 @@
       "bytes": 13571390,
       "role": "usd",
       "sha256": "76df5f4231549efff335ecb5656f0e4156421de8a274e0344d2abf3aef23c617"
+    },
+    "preview.png": {
+      "bytes": 6081,
+      "role": "picture",
+      "sha256": "0cee3b83ae222694c3023a18c9f68a0c7e88ecc60d8e77d6515e0385c6c9a6ba"
     }
   },
   "id": "base.old_station",
@@ -42,8 +47,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "30 prim positions from above over data/kit/old_station.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T14:02:30.466230+00:00",

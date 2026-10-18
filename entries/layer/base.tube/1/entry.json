@@ -15,6 +15,11 @@
       "bytes": 7034883,
       "role": "usd",
       "sha256": "6cbb551bf120831fa2fc03eb781c77e6e1fe67f488e8a8f4124fc22d022bfd4f"
+    },
+    "preview.png": {
+      "bytes": 6684,
+      "role": "picture",
+      "sha256": "86810e83ddf7f5611c93de4d9187ef5cee8b32ddd48e64e7abca40624629027e"
     }
   },
   "id": "base.tube",
@@ -32,8 +37,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "101 prim positions from above over data/kit/tube.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T14:00:40.450199+00:00",

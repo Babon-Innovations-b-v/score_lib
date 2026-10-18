@@ -17,9 +17,9 @@
       "sha256": "a8c8ee452e86a807eaa7b7711425e9c9324a3c3b2899247b3dd3e27648de4104"
     },
     "inputs.json": {
-      "bytes": 2078,
+      "bytes": 2015,
       "role": "record",
-      "sha256": "0b1928b1be731640917881977fb26f4b804ab5c23f37bdd3161cc21fa27d561a"
+      "sha256": "27577e1ef5bd620608aad493404d0dc7fe1dda0933de2d5d4c353d002eb59349"
     },
     "launch.usda": {
       "bytes": 546,
@@ -27,9 +27,19 @@
       "sha256": "f7a729db7248564b95a5ba3caab23a6b9afb0bacd03fdee536600c2fd61d9dea"
     },
     "origin.json": {
-      "bytes": 837,
+      "bytes": 828,
       "role": "record",
-      "sha256": "3e1ed97748c56e69b5716f005c5347bdeb96ba161a8d766d278f37918cb7dd93"
+      "sha256": "2a50e9ce030c8ec9b3ace7426f7d00e7b42ada3416398ad7e5b47646a0e127b3"
+    },
+    "picture.png": {
+      "bytes": 2478806,
+      "role": "picture",
+      "sha256": "7b5eb90b9e28c0cd68a9f9c61e2a036d4180d103c1076c77c4396f5f7d0a16d8"
+    },
+    "plan/plan.json": {
+      "bytes": 5621,
+      "role": "record",
+      "sha256": "940edbd7339de239607b2eef02e652be1915cc47808e2628c9cfed204425172e"
     },
     "scene.json": {
       "bytes": 7541,
@@ -52,8 +62,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@launch: looks/launch/shot0-000-look.png"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-15T12:59:49.032817+00:00",
@@ -75,12 +88,35 @@
     "complete_failing": [
       "named gaps"
     ],
+    "files_from": {
+      "inputs.json": {
+        "path": "inputs.json",
+        "sha256": "0b1928b1be731640917881977fb26f4b804ab5c23f37bdd3161cc21fa27d561a"
+      },
+      "origin.json": {
+        "path": "origin.json",
+        "sha256": "3e1ed97748c56e69b5716f005c5347bdeb96ba161a8d766d278f37918cb7dd93"
+      }
+    },
     "gaps": "data/checks/gaps/launch.json",
     "models": [],
     "node": "assembly@launch",
     "output": "3da5eb7afef951572bd823e1c78de4b209d123aa5c61e7cd9e09deda57bb5a48",
     "place": "launch",
     "record_key": "5847448e1af903d9d737a9d25f3d1f3303a645a211dd8c1844d6b688faf8005d",
+    "records_from": {
+      "plan": {
+        "accept": {
+          "at": "2026-10-13T17:24:29.622320+00:00",
+          "by": "runner"
+        },
+        "code": "d717240bd08570d0486dfc7acdade8e73ea4926837b32eeaf69ba7b60a0a2a73",
+        "models": [],
+        "node": "plan@launch",
+        "output": "7bfaf09b933d06c99f17d8c6d26e818007546356165ac2c8a216d9921d9b959c",
+        "record_key": "1218a7e882dd2bccba3677ae2bc18c4ca55bdd851ea4feb05f7868d0a52d7c41"
+      }
+    },
     "unresolved_sublayers": [],
     "world": "world1"
   },

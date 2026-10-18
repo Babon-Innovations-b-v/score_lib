@@ -10,6 +10,11 @@
       "bytes": 8071,
       "role": "usd",
       "sha256": "a8d41c143982ffa566606aca2800afa96243fcf1a246554668e8685bb2c8f3d3"
+    },
+    "preview.png": {
+      "bytes": 43164,
+      "role": "picture",
+      "sha256": "3e93803b7d1917094b5d8118773867f4d8daced8023159af8736b3b82670924e"
     }
   },
   "id": "effects.greenhouse",
@@ -27,8 +32,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "1 prim positions from above over data/kit/greenhouse.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-17T11:21:57.694141+00:00",

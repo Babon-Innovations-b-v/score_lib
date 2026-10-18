@@ -5,6 +5,11 @@
       "bytes": 709858,
       "role": "usd",
       "sha256": "6ccf574a85dc9067e4495c1402f29b7cd968c526624dd4ea5f5591541dac2418"
+    },
+    "preview.png": {
+      "bytes": 48846,
+      "role": "picture",
+      "sha256": "5bcf7b81c7820807b9024d118513847a059a06322314121fcc9ac6a33bdf27d3"
     }
   },
   "id": "base.lab",
@@ -22,8 +27,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "386 prim positions from above over data/kit/lab.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T14:07:25.503141+00:00",

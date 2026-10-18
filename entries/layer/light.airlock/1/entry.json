@@ -10,6 +10,16 @@
       "bytes": 1192,
       "role": "usd",
       "sha256": "850ca7edcf58eba599affafb0e33ad7dc7c1e6a3dc2efcbaed948ed8a4d45c78"
+    },
+    "measures.json": {
+      "bytes": 5647,
+      "role": "record",
+      "sha256": "44c52798289bf3249b9d7ea7314f1f21f0fb6ca11fd9ffe7a4136272d0803cfa"
+    },
+    "picture.png": {
+      "bytes": 2675839,
+      "role": "picture",
+      "sha256": "4f5ddbe3444aea618bdae885250c0d8e86befbe2a18c7a6dc0eef5e5e6cb40b1"
     }
   },
   "id": "light.airlock",
@@ -27,8 +37,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@airlock: looks/airlock/shot0-000-look.png"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T21:49:09.803965+00:00",

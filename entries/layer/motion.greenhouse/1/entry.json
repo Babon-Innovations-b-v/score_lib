@@ -10,6 +10,11 @@
       "bytes": 519,
       "role": "record",
       "sha256": "66855d51a73fdc63df47b2c341724c89c841d4b33eb489923b3ea62fe6621790"
+    },
+    "preview.png": {
+      "bytes": 44726,
+      "role": "picture",
+      "sha256": "2480f8d91a53a46a40c523b0864e03f635f38e63e8a920a90b01dcfafce0d19e"
     }
   },
   "id": "motion.greenhouse",
@@ -27,8 +32,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "19 prim positions from above over data/kit/greenhouse.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-17T11:21:57.694141+00:00",

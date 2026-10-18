@@ -10,6 +10,11 @@
       "bytes": 51554,
       "role": "usd",
       "sha256": "956ab5ca3b496a063261c9d3d687608931a9f556ad238c06e8376a7417e7899e"
+    },
+    "preview.png": {
+      "bytes": 30190,
+      "role": "picture",
+      "sha256": "b55895a494f6f6f74b07255dd90503b89ce62bb2598c31a4af19a6ed4c09f29a"
     }
   },
   "id": "effects.habitat",
@@ -27,8 +32,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "2 prim positions from above over data/kit/habitat.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T09:31:21.711004+00:00",

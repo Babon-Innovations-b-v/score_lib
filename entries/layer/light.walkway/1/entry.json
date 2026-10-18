@@ -10,6 +10,16 @@
       "bytes": 1318,
       "role": "usd",
       "sha256": "2e56a16f6ca56fedca5d8741c469fedafea17d0d4feebe87725ec68772651367"
+    },
+    "measures.json": {
+      "bytes": 7622,
+      "role": "record",
+      "sha256": "e0f0d3beb3f10dd4af199b736a4f5c4a6e7c789d751364762b694a6b1e7585a5"
+    },
+    "picture.png": {
+      "bytes": 2387617,
+      "role": "picture",
+      "sha256": "3fc88c288dd7294224ec3f9ff6adf838b67f18c0d9e39c37f0517b3ccc9c9422"
     }
   },
   "id": "light.walkway",
@@ -27,8 +37,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@walkway: looks/walkway/from-east-door-000-look.png"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T10:11:51.521798+00:00",

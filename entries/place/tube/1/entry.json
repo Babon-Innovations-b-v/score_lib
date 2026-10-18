@@ -1,6 +1,16 @@
 {
   "address": "place/tube@1",
   "files": {
+    "cast/cast.json": {
+      "bytes": 1858,
+      "role": "record",
+      "sha256": "15d36f386af598b9114ac9742b7f20b91b832864c9bbfee4d9c74520ff2b6a2d"
+    },
+    "cast/measures.json": {
+      "bytes": 1900,
+      "role": "record",
+      "sha256": "ac225d9edfd6db87e957538d90056066ccfba9e4005613d3af56df382d406e7b"
+    },
     "contract.json": {
       "bytes": 99,
       "role": "record",
@@ -17,14 +27,24 @@
       "sha256": "bbf6d1827d37df7c505062c89a80bf34bc5ed1af2fba5e0efdce7fd9c1aaa54a"
     },
     "inputs.json": {
-      "bytes": 5204,
+      "bytes": 5015,
       "role": "record",
-      "sha256": "9745d7ae534b13c41668a29ea6f6c5a93471a1040e1b1ae927838de0ade883d7"
+      "sha256": "6ffc79e9733aa4bba2aa7208ecaf707d12b015a6ef3d5a7316ace75018d74b66"
     },
     "origin.json": {
-      "bytes": 699,
+      "bytes": 690,
       "role": "record",
-      "sha256": "d38e62bf4e3875c7cbdd2fb18cefc9223473f36efa39722aba8a301d98f8c41e"
+      "sha256": "30fa1a7a55aff08db9dfb5efd00119ddd1225a6b27d9eeb3ab17d4ddbb0783ed"
+    },
+    "picture.png": {
+      "bytes": 2861009,
+      "role": "picture",
+      "sha256": "cbc1f0b1daacb22cc475974a46c222671acb57c2c1c09969c3431ed08474deaa"
+    },
+    "plan/plan.json": {
+      "bytes": 6706,
+      "role": "record",
+      "sha256": "2ee828756fb5c3fa31d4e55d39abb15197e8f0eb5a0857530b5d307748180306"
     },
     "scene.json": {
       "bytes": 8508,
@@ -52,8 +72,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@tube: looks/tube/shot0-000-look.png"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T14:00:40.450199+00:00",
@@ -75,12 +98,46 @@
     "complete_failing": [
       "named gaps"
     ],
+    "files_from": {
+      "inputs.json": {
+        "path": "inputs.json",
+        "sha256": "9745d7ae534b13c41668a29ea6f6c5a93471a1040e1b1ae927838de0ade883d7"
+      },
+      "origin.json": {
+        "path": "origin.json",
+        "sha256": "d38e62bf4e3875c7cbdd2fb18cefc9223473f36efa39722aba8a301d98f8c41e"
+      }
+    },
     "gaps": "data/checks/gaps/tube.json",
     "models": [],
     "node": "assembly@tube",
     "output": "46b603be4ce58e7eb5c89d2585ecd43bb770e6dd89a1b6b79d28ce6a3ae19804",
     "place": "tube",
     "record_key": "b2afcac97aa05f6343658da019f1ce453598524265ce7ed16707651229609351",
+    "records_from": {
+      "cast": {
+        "accept": {
+          "at": "2026-10-14T10:21:37.615358+00:00",
+          "by": "runner"
+        },
+        "code": "70c559828907b5231f34fb0dddb7b719b7fb1199af14d2fecf63ba2f27ef8678",
+        "models": [],
+        "node": "cast@tube",
+        "output": "7c5876ce96c8b6152f61e7f3379af2c334c21852b7e737ff5f05829a6fcfc34d",
+        "record_key": "43da60996176ec0881d5eec26ecfd52905557c315f05b0036d8dc97e06a84b6e"
+      },
+      "plan": {
+        "accept": {
+          "at": "2026-10-13T22:21:48.343605+00:00",
+          "by": "runner"
+        },
+        "code": "d717240bd08570d0486dfc7acdade8e73ea4926837b32eeaf69ba7b60a0a2a73",
+        "models": [],
+        "node": "plan@tube",
+        "output": "8bc498ed845fed63110d3d9a625e190f0f1dbd6b6373f7bf26be3516bba5da71",
+        "record_key": "e73c3e2ebbba9a6d88f3b2435c1dc2f3e6d8480a98940ede0bad609b7b508812"
+      }
+    },
     "unresolved_sublayers": [],
     "world": "world1"
   },

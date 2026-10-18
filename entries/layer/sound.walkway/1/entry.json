@@ -6,6 +6,11 @@
       "role": "usd",
       "sha256": "39a076c6bc34a3e5a52d73aa8f9398cc9f50f87fa6ecef6e1c801c3d7cce71df"
     },
+    "preview.png": {
+      "bytes": 2238,
+      "role": "picture",
+      "sha256": "ec5c63a06ac17ebec027ffeb38715c1eb8361f8538e3287b44042301627dd13c"
+    },
     "sound.json": {
       "bytes": 25439,
       "role": "record",
@@ -27,8 +32,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/audio.py",
+    "of": "assets/sound/generated/doors/impact_grating.ogg (the layer's first sound)"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T10:11:51.521798+00:00",

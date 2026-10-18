@@ -20,6 +20,11 @@
       "bytes": 5264612,
       "role": "usd",
       "sha256": "0fe5042311bba4b201b57f3e5aa39b40d74f0ec1b3b1720b55d4876193bd3c0f"
+    },
+    "preview.png": {
+      "bytes": 34126,
+      "role": "picture",
+      "sha256": "1a10e88f5dea80743c4d8b33349f2e2f8f97c998baae6d0a79f33220bf774c18"
     }
   },
   "id": "base.square",
@@ -37,8 +42,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "1550 prim positions from above over data/kit/square.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T10:37:19.122806+00:00",

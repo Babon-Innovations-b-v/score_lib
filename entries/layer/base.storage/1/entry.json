@@ -5,6 +5,11 @@
       "bytes": 292501,
       "role": "usd",
       "sha256": "5581512aa75fb2a3ec0f0ef02ff2783cab4f757feb3c82130d5760ddb1dc5534"
+    },
+    "preview.png": {
+      "bytes": 5498,
+      "role": "picture",
+      "sha256": "68bc9be76261df22e08a02c7b403fbb987e30549e954d419656eec49d02e3a6d"
     }
   },
   "id": "base.storage",
@@ -22,8 +27,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "31 prim positions from above over data/kit/storage.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-17T09:51:12.135510+00:00",

@@ -6,6 +6,11 @@
       "role": "usd",
       "sha256": "7879316dfc76d0868f1337837be751b610877903dbecca8406a442d7d7884c61"
     },
+    "preview.png": {
+      "bytes": 38551,
+      "role": "picture",
+      "sha256": "4989e86baf8053903a5432845ab7f32c3d1a71e5dcc8f2602a7928fa9ca1f9df"
+    },
     "settle.json": {
       "bytes": 11628,
       "role": "record",
@@ -27,8 +32,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "17 prim positions from above over data/kit/lab.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T14:07:25.503141+00:00",

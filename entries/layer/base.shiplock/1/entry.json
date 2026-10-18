@@ -5,6 +5,11 @@
       "bytes": 285907,
       "role": "usd",
       "sha256": "ff6d72bf3747becda923390d4a409447f925494d7ddff02b929459d578206400"
+    },
+    "preview.png": {
+      "bytes": 6091,
+      "role": "picture",
+      "sha256": "4c1328ea69eaf50c5e3443c6df61a39884763a3cd07f4cc7af03669c909bb78b"
     }
   },
   "id": "base.shiplock",
@@ -22,8 +27,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "28 prim positions from above over data/kit/shiplock.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T10:26:39.062614+00:00",

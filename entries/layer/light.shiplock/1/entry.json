@@ -10,6 +10,16 @@
       "bytes": 340,
       "role": "usd",
       "sha256": "3f5305868bb4c969b25a604daf5e1c32231241cfe44275a5db833aafe276ab1f"
+    },
+    "measures.json": {
+      "bytes": 1838,
+      "role": "record",
+      "sha256": "3ee3ed23714721ecb8dd0637f2708cfd375b4e197056af9fc9ad0956b6992b62"
+    },
+    "picture.png": {
+      "bytes": 1784128,
+      "role": "picture",
+      "sha256": "6a0b78a410cccd4726c33741b6035e7b7ece2fef1a7856643255b208efaf730f"
     }
   },
   "id": "light.shiplock",
@@ -27,8 +37,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@shiplock: looks/shiplock/from-north-door-000-look.png"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T10:26:39.062614+00:00",

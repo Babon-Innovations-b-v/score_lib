@@ -5,6 +5,11 @@
       "bytes": 316868,
       "role": "usd",
       "sha256": "900ff0b9e8be5ad2dc5c48ab115ce4749062aad64daa41ace2c9422f554b102c"
+    },
+    "preview.png": {
+      "bytes": 6374,
+      "role": "picture",
+      "sha256": "b408e77bc41088eb47ba889742f04f56f012b27291493896ef25ff494bbc1b21"
     }
   },
   "id": "base.quarters",
@@ -22,8 +27,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "48 prim positions from above over data/kit/quarters.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-17T09:49:59.642437+00:00",

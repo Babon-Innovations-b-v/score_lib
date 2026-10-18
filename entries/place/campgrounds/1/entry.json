@@ -22,14 +22,24 @@
       "sha256": "c8f9d881af0aa2c7676ffc488034c3bffef9ce9e4181e1bc283f11e347e2c8ba"
     },
     "inputs.json": {
-      "bytes": 3720,
+      "bytes": 3594,
       "role": "record",
-      "sha256": "dde1a9e20ac540f61b8a42148e9a6aba152aedd1f6cc6b341da080aea8a0427b"
+      "sha256": "f126b439e8390742396f5dec21ebb34c4bd37a12150f14595c8275f1f910077a"
     },
     "origin.json": {
-      "bytes": 843,
+      "bytes": 834,
       "role": "record",
-      "sha256": "72031cce4f3eac41978b4761ffc95a1fd7d481ed64470ab0ed7c4c3ab546f43d"
+      "sha256": "bc3d6c86822dbedd69403a0f17cf51067527dc0c699b8af656b00259a69e5aa9"
+    },
+    "picture.png": {
+      "bytes": 1712831,
+      "role": "picture",
+      "sha256": "8996aa7df5b6099926aa5c300ff857f6178bbfa3d25c95a3ccf69829fdf46f42"
+    },
+    "plan/plan.json": {
+      "bytes": 10292,
+      "role": "record",
+      "sha256": "dcb4cd8c9fc9fad0a05c29c652307736bbb6c99abdce6eebc7fed2432cd03a30"
     },
     "scene.json": {
       "bytes": 5840,
@@ -52,8 +62,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@campgrounds: looks/campgrounds/shot0-000-look.png"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T14:16:00.039696+00:00",
@@ -75,12 +88,35 @@
     "complete_failing": [
       "named gaps"
     ],
+    "files_from": {
+      "inputs.json": {
+        "path": "inputs.json",
+        "sha256": "dde1a9e20ac540f61b8a42148e9a6aba152aedd1f6cc6b341da080aea8a0427b"
+      },
+      "origin.json": {
+        "path": "origin.json",
+        "sha256": "72031cce4f3eac41978b4761ffc95a1fd7d481ed64470ab0ed7c4c3ab546f43d"
+      }
+    },
     "gaps": "data/checks/gaps/campgrounds.json",
     "models": [],
     "node": "assembly@campgrounds",
     "output": "7fcf4c6f9552d4edb6020038bb83dd248f2e602f1958878438d52dfc3a7685bb",
     "place": "campgrounds",
     "record_key": "3e28c5bc4fca67388ebba8768e3cf58d643f791893e4237289ddba7e9754e64e",
+    "records_from": {
+      "plan": {
+        "accept": {
+          "at": "2026-10-13T22:21:46.502286+00:00",
+          "by": "runner"
+        },
+        "code": "d717240bd08570d0486dfc7acdade8e73ea4926837b32eeaf69ba7b60a0a2a73",
+        "models": [],
+        "node": "plan@campgrounds",
+        "output": "a9ad0f887b508fdef1a16f65391b3a03785fb9db76e1c097a7fd937788ed6524",
+        "record_key": "1660ca89a23ce0a5fea68ae00e0e556a5e1468f0ece0f3f3a70b3dd35ced538a"
+      }
+    },
     "unresolved_sublayers": [],
     "world": "world1"
   },

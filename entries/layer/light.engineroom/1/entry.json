@@ -10,6 +10,16 @@
       "bytes": 755,
       "role": "usd",
       "sha256": "30748b804c1030d3a42675311a2b8d3f223d39e7e4b2448bf042f45c4266a14e"
+    },
+    "measures.json": {
+      "bytes": 3077,
+      "role": "record",
+      "sha256": "dbe52f341822433991f3d02de7e663e6ec46da3f7c7710d0d9cd9569557f043b"
+    },
+    "picture.png": {
+      "bytes": 2002387,
+      "role": "picture",
+      "sha256": "70ddbb9bebcc92582ebc52bfc22abf5092a0e7bbf92134e327c4f3e5e4678949"
     }
   },
   "id": "light.engineroom",
@@ -27,8 +37,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@engineroom: looks/engineroom/from-north-door-at-0.4-000-look.png"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T20:05:54.680906+00:00",

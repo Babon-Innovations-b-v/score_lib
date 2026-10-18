@@ -1,6 +1,16 @@
 {
   "address": "place/garage@1",
   "files": {
+    "cast/cast.json": {
+      "bytes": 1087,
+      "role": "record",
+      "sha256": "6614229f91384a6895bdf42d28c64fded99c93ecef5af12a7d95abe8945ce72b"
+    },
+    "cast/measures.json": {
+      "bytes": 429,
+      "role": "record",
+      "sha256": "cfe6f75e540e84c1ef298d319f1b38060293bdd5c44ec7faf54a684659e7349c"
+    },
     "contract.json": {
       "bytes": 99,
       "role": "record",
@@ -22,14 +32,24 @@
       "sha256": "d923b0b1a590651f33c6fd8715efb325891fa7e17df210df1c2c36f279a6f1ef"
     },
     "inputs.json": {
-      "bytes": 24384,
+      "bytes": 23475,
       "role": "record",
-      "sha256": "a38a415a588f388feebb8d78f9e4b6233c79e20d603a8686500d30a93cb4cd7d"
+      "sha256": "1adf558ca2d0a1138e60623afb2a021e768d4bc54a5529569b3ffa400f449606"
     },
     "origin.json": {
-      "bytes": 1139,
+      "bytes": 1130,
       "role": "record",
-      "sha256": "1fbef8d5aac04acdf575e755eea5ceaa299777c39ea37208e306226c97e32dfd"
+      "sha256": "5ce59fe3c7b430e6afd158ae2e6e5a391df1df45b52b680ad506d01b64788ba7"
+    },
+    "picture.png": {
+      "bytes": 2128728,
+      "role": "picture",
+      "sha256": "fac4f0d376d7e6f4f44f9fcb78961805922f13022182c9122b49b9619500c815"
+    },
+    "plan/plan.json": {
+      "bytes": 10174,
+      "role": "record",
+      "sha256": "1ff8defa446100b96a2d32ebbc4c7246d242f77c5e4d1fde13676a07a23e009c"
     },
     "scene.json": {
       "bytes": 8824,
@@ -52,8 +72,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@garage: looks/garage/shot0-000-look.png"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T22:23:43.534540+00:00",
@@ -75,12 +98,46 @@
     "complete_failing": [
       "named gaps"
     ],
+    "files_from": {
+      "inputs.json": {
+        "path": "inputs.json",
+        "sha256": "a38a415a588f388feebb8d78f9e4b6233c79e20d603a8686500d30a93cb4cd7d"
+      },
+      "origin.json": {
+        "path": "origin.json",
+        "sha256": "1fbef8d5aac04acdf575e755eea5ceaa299777c39ea37208e306226c97e32dfd"
+      }
+    },
     "gaps": "data/checks/gaps/garage.json",
     "models": [],
     "node": "assembly@garage",
     "output": "b7aa59a6d59e8700275f9ac530ec0a920e7f3c63af29e58b93ecd3f39f5abe50",
     "place": "garage",
     "record_key": "08c1c1e01926f109c953734d2bf2bea3daed4a22d008d5b03cf237bf5c75ef70",
+    "records_from": {
+      "cast": {
+        "accept": {
+          "at": "2026-10-14T23:21:48.786493+00:00",
+          "by": "runner"
+        },
+        "code": "70c559828907b5231f34fb0dddb7b719b7fb1199af14d2fecf63ba2f27ef8678",
+        "models": [],
+        "node": "cast@garage",
+        "output": "17e37d3d300c2f27da32b091af0cbfcfc2c9b908df7fdb5aecd32ef73f9c846c",
+        "record_key": "f90c34b760809a722d699cec9c124decad7cae85284ba1772bb47d0089f952c0"
+      },
+      "plan": {
+        "accept": {
+          "at": "2026-10-14T13:12:28.538744+00:00",
+          "by": "runner"
+        },
+        "code": "d717240bd08570d0486dfc7acdade8e73ea4926837b32eeaf69ba7b60a0a2a73",
+        "models": [],
+        "node": "plan@garage",
+        "output": "f40e11da52fe0a690cff61b734f20ddcfcfb882a0af51061a0f93cd4bdb4c27e",
+        "record_key": "7da00924318ef60f5b04137e5b42744ace679fbac939fa8bdafaff651a7f8d2c"
+      }
+    },
     "unresolved_sublayers": [],
     "world": "world1"
   },

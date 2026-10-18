@@ -10,6 +10,11 @@
       "bytes": 148,
       "role": "record",
       "sha256": "299f681bb181ba82c54b800cd8beb974f9f50ef46f9885cc770b703608c142be"
+    },
+    "preview.png": {
+      "bytes": 30270,
+      "role": "picture",
+      "sha256": "37b1fbe76974c40e45101f7a2a760e094b1e592ae15314334b733fc181cf7e2b"
     }
   },
   "id": "motion.garage",
@@ -27,8 +32,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "4 prim positions from above over data/kit/garage.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T22:23:43.534540+00:00",

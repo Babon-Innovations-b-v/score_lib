@@ -10,6 +10,16 @@
       "bytes": 616,
       "role": "usd",
       "sha256": "41e1fae7e7a96cd14132a79c64fe527128a8b3f8b28e6e2956aede468687e8e9"
+    },
+    "measures.json": {
+      "bytes": 2107,
+      "role": "record",
+      "sha256": "5175f85bc841e3a39f3e290733e9e7c4fcd0f8b198a47f3541e623ad1c023c08"
+    },
+    "picture.png": {
+      "bytes": 1753166,
+      "role": "picture",
+      "sha256": "8d05317adcc9e2d8f01c543a20c18e0f818491a59b9670f4473906532d3b512f"
     }
   },
   "id": "light.storage",
@@ -27,8 +37,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@storage: looks/storage/from-east-door-000-look.png"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-17T09:51:12.135510+00:00",

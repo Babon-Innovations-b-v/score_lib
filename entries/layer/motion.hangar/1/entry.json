@@ -10,6 +10,11 @@
       "bytes": 129,
       "role": "record",
       "sha256": "2843a0934963d2ac9b36ddbd863f20497ff4a1b62f2f24a0f57ad7ba156327dd"
+    },
+    "preview.png": {
+      "bytes": 17764,
+      "role": "picture",
+      "sha256": "16ebd5d2ccc8001b84bd66277d40559ebcc957c0f8dd130939216585f6ff5cfa"
     }
   },
   "id": "motion.hangar",
@@ -27,8 +32,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "3 prim positions from above over data/kit/hangar.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T22:13:41.093010+00:00",

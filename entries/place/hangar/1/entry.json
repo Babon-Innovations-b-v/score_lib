@@ -1,6 +1,16 @@
 {
   "address": "place/hangar@1",
   "files": {
+    "cast/cast.json": {
+      "bytes": 1372,
+      "role": "record",
+      "sha256": "9c9c9011799d13f2ef78a450921e9f0dbe84f0a6a830967752b1746e4e0b189c"
+    },
+    "cast/measures.json": {
+      "bytes": 616,
+      "role": "record",
+      "sha256": "8eef13c4a622ce56f7d5fb61164bc39b1bd3dacbe302749011975dc11ea9491b"
+    },
     "contract.json": {
       "bytes": 99,
       "role": "record",
@@ -22,14 +32,24 @@
       "sha256": "577f7a20310bcc0455f43f7d6342cd958683d669e6269d5221dc940d9e1d1320"
     },
     "inputs.json": {
-      "bytes": 19839,
+      "bytes": 19101,
       "role": "record",
-      "sha256": "7a8c5f910c4d0057dfa7d5ec63ea36e1f46f1af3bb7cbf01a0fe57c4fe8a4b84"
+      "sha256": "3202243cdb4f5fdc24392aa57e42f50694c534b06e4faf0df54630b05777d409"
     },
     "origin.json": {
-      "bytes": 1118,
+      "bytes": 1109,
       "role": "record",
-      "sha256": "33433a113fbdec6c90f2d3ab5a97ce038c5c949cab412ad38ddec0f250436197"
+      "sha256": "043c8916eb8fa1c595c7d41377c4e853a7ac9e54477fae6b3c743ccc3b567293"
+    },
+    "picture.png": {
+      "bytes": 2541828,
+      "role": "picture",
+      "sha256": "3802dcb924d9cadd2238352188390a0cd94b7c3c5eb7d7b6580889e744de95d3"
+    },
+    "plan/plan.json": {
+      "bytes": 9358,
+      "role": "record",
+      "sha256": "9f22c6631abc50c5345168144680dc9ccd171e3833914a0dc208cd29c6a2b353"
     },
     "scene.json": {
       "bytes": 10304,
@@ -52,8 +72,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@hangar: looks/hangar/shot0-000-look.png"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T22:13:41.093010+00:00",
@@ -75,12 +98,46 @@
     "complete_failing": [
       "named gaps"
     ],
+    "files_from": {
+      "inputs.json": {
+        "path": "inputs.json",
+        "sha256": "7a8c5f910c4d0057dfa7d5ec63ea36e1f46f1af3bb7cbf01a0fe57c4fe8a4b84"
+      },
+      "origin.json": {
+        "path": "origin.json",
+        "sha256": "33433a113fbdec6c90f2d3ab5a97ce038c5c949cab412ad38ddec0f250436197"
+      }
+    },
     "gaps": "data/checks/gaps/hangar.json",
     "models": [],
     "node": "assembly@hangar",
     "output": "765aae9ca335aebbcb521472c52db37c76ad0b842d8f9bddc21b8c1beae3d144",
     "place": "hangar",
     "record_key": "d034efb2e042c8f0e9fca844f9dc9aa0b1d4146a0a39fbf3dafc78213e49fd74",
+    "records_from": {
+      "cast": {
+        "accept": {
+          "at": "2026-10-15T09:07:04.531943+00:00",
+          "by": "runner"
+        },
+        "code": "70c559828907b5231f34fb0dddb7b719b7fb1199af14d2fecf63ba2f27ef8678",
+        "models": [],
+        "node": "cast@hangar",
+        "output": "0cafc2bba34d1ef3a1416dd76aac874eba62654f6c4dbf746fe1a723aed1774c",
+        "record_key": "5d8556d26acc9cf1968527973222259e33fb9273eeb2ce3b2f46a12438a83f74"
+      },
+      "plan": {
+        "accept": {
+          "at": "2026-10-13T22:19:25.519857+00:00",
+          "by": "runner"
+        },
+        "code": "d717240bd08570d0486dfc7acdade8e73ea4926837b32eeaf69ba7b60a0a2a73",
+        "models": [],
+        "node": "plan@hangar",
+        "output": "57f10d7cc7a30598e63c0e03f0d7d003d8f88576313a0401446235a7e9f78123",
+        "record_key": "e00fa7b3ecb185c93e92ac567bc0253f295a5069d6908ed5737bb2aeb2f9ae5c"
+      }
+    },
     "unresolved_sublayers": [],
     "world": "world1"
   },

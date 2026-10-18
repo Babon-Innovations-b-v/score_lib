@@ -5,6 +5,11 @@
       "bytes": 96,
       "role": "usd",
       "sha256": "a08aede16e4d8e1aec533e54593ef459fc7cbe6fa9d40d53f54a10c581e64b36"
+    },
+    "preview.png": {
+      "bytes": 8988,
+      "role": "picture",
+      "sha256": "60c6209d4c44dead5b2a3d32a551c9f3ff2a4b11cdf70b8ab0f59a775d2621dc"
     }
   },
   "id": "ground.stairwell",
@@ -22,8 +27,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "the place's ground.usdc"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-15T17:24:17.414697+00:00",

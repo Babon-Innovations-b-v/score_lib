@@ -10,6 +10,16 @@
       "bytes": 1866,
       "role": "usd",
       "sha256": "01474e1c9819702a7a96a0a1f43f8b80e60ac007cfa12c64e8967483517e705c"
+    },
+    "measures.json": {
+      "bytes": 8928,
+      "role": "record",
+      "sha256": "e341e7f72b92c264e1b48e6d12de97f86518a4d2180082cbc6e8fd001bbe26ab"
+    },
+    "picture.png": {
+      "bytes": 2162032,
+      "role": "picture",
+      "sha256": "8c3e4adcece372a9d9d8100f57f592a7ab7c4d22de7f7b6043706381a927807b"
     }
   },
   "id": "light.greenhouse",
@@ -27,8 +37,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@greenhouse: looks/greenhouse/shot0-000-look.png"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-17T11:21:57.694141+00:00",

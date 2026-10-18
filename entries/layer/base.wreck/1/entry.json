@@ -25,6 +25,11 @@
       "bytes": 13833237,
       "role": "usd",
       "sha256": "dcbab7dc424f5a341911007a5dd08955297280fd67d1dee8ac7b81a7f264213c"
+    },
+    "preview.png": {
+      "bytes": 4559,
+      "role": "picture",
+      "sha256": "ccfceeba9c947e7cfd8672f3ea48262effd190c016290b78a8578c7827c9b73c"
     }
   },
   "id": "base.wreck",
@@ -42,8 +47,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "25 prim positions from above over data/kit/wreck.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T15:53:36.185584+00:00",

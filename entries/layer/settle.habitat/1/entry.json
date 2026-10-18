@@ -6,6 +6,11 @@
       "role": "usd",
       "sha256": "7738c8180bae54dce793b723c06e1e5ef779d53f45a23ca317fe03633480c5ab"
     },
+    "preview.png": {
+      "bytes": 31218,
+      "role": "picture",
+      "sha256": "50825351c595db3c9e7883cec51a1953d4c3b80c34ef2ac461f163ed3039e37c"
+    },
     "settle.json": {
       "bytes": 33888,
       "role": "record",
@@ -27,8 +32,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "41 prim positions from above over data/kit/habitat.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T09:31:21.711004+00:00",

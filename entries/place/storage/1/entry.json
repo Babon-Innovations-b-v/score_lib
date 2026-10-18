@@ -17,14 +17,24 @@
       "sha256": "5f88a179d0de2a2fcb18ed6d45fcb7445accf72e935592235ae54fdd5698772a"
     },
     "inputs.json": {
-      "bytes": 3884,
+      "bytes": 3758,
       "role": "record",
-      "sha256": "3cedbc813b313603cdf5e250a0288153617977ce2cfc99c29825d9b907842c5f"
+      "sha256": "a944af5f200db0bdc038d8c03261c5fc9e5d8fe48e21d40fa4d0a5dbb8c69a82"
     },
     "origin.json": {
-      "bytes": 777,
+      "bytes": 768,
       "role": "record",
-      "sha256": "3879f2e3c92166705ff27a84a83ec10326ed470e0baf06ba720c34683e841549"
+      "sha256": "3f5df9d3642b01da8bbd5b20098da8f55c365f0da40b73e06c962f677ee8a985"
+    },
+    "picture.png": {
+      "bytes": 1753166,
+      "role": "picture",
+      "sha256": "8d05317adcc9e2d8f01c543a20c18e0f818491a59b9670f4473906532d3b512f"
+    },
+    "plan/plan.json": {
+      "bytes": 4025,
+      "role": "record",
+      "sha256": "9ff29f8ca5e1bb3761aad7e102abe70aeed1213999ac380a0f0ccd08e97abcc8"
     },
     "scene.json": {
       "bytes": 2005,
@@ -52,8 +62,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@storage: looks/storage/from-east-door-000-look.png"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-17T09:51:12.135510+00:00",
@@ -75,12 +88,35 @@
     "complete_failing": [
       "named gaps"
     ],
+    "files_from": {
+      "inputs.json": {
+        "path": "inputs.json",
+        "sha256": "3cedbc813b313603cdf5e250a0288153617977ce2cfc99c29825d9b907842c5f"
+      },
+      "origin.json": {
+        "path": "origin.json",
+        "sha256": "3879f2e3c92166705ff27a84a83ec10326ed470e0baf06ba720c34683e841549"
+      }
+    },
     "gaps": "data/checks/gaps/storage.json",
     "models": [],
     "node": "assembly@storage",
     "output": "69f54fa7482a870ea9fcf8635d1dee2dcbce311391024babd0e085354ca2c3df",
     "place": "storage",
     "record_key": "07be8d8805dfb900db0fcbea2f77f5228ae16396357e62916ed34f782464f5d8",
+    "records_from": {
+      "plan": {
+        "accept": {
+          "at": "2026-10-17T09:32:03.318257+00:00",
+          "by": "runner"
+        },
+        "code": "d717240bd08570d0486dfc7acdade8e73ea4926837b32eeaf69ba7b60a0a2a73",
+        "models": [],
+        "node": "plan@storage",
+        "output": "8835f475d2c83a7150b892316ef6887d60c31efbd2d45f4fbb8313f07377fc12",
+        "record_key": "0fb892f6f8cb7f14ce3342428b28e96321cf285614bc70b4b8c465b01b27dd5b"
+      }
+    },
     "unresolved_sublayers": [],
     "world": "world1"
   },

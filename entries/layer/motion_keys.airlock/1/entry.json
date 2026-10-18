@@ -5,6 +5,11 @@
       "bytes": 433,
       "role": "usd",
       "sha256": "0ecc68de8cb34b3850010508c24b2830345024dfb15211d9dbe0d5ba3bebbda8"
+    },
+    "preview.png": {
+      "bytes": 22429,
+      "role": "picture",
+      "sha256": "d222c8cd9837967331cc75848caa8fb75d340c20e01a729ba2f3f0b9a44342a0"
     }
   },
   "id": "motion_keys.airlock",
@@ -22,8 +27,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "1 prim positions from above over data/kit/airlock.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T21:49:09.803965+00:00",

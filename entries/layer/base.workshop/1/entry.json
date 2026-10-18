@@ -5,6 +5,11 @@
       "bytes": 1122999,
       "role": "usd",
       "sha256": "03bf3cb0606b34672337e5df0044eaf19115df4db97ebc2c972a0c54d177be04"
+    },
+    "preview.png": {
+      "bytes": 45616,
+      "role": "picture",
+      "sha256": "7c75a53b332d93d721fadbb4a735f727701df7e1b15121c3b3bac99c6d72593b"
     }
   },
   "id": "base.workshop",
@@ -22,8 +27,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "783 prim positions from above over data/kit/workshop.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T00:15:15.593646+00:00",

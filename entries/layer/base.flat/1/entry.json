@@ -20,6 +20,11 @@
       "bytes": 1172386,
       "role": "usd",
       "sha256": "94c2588c452e38fb30761b4c0c17e9f6c7f5fcd5c3c0b7ee04c8564afc7c8bfc"
+    },
+    "preview.png": {
+      "bytes": 8657,
+      "role": "picture",
+      "sha256": "1021ffd3f254eefd7f799e1d777e6608b3d0558ba65a4815d9278f67e5f51b8d"
     }
   },
   "id": "base.flat",
@@ -37,8 +42,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "56 prim positions from above over data/kit/flat.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-15T12:52:44.767077+00:00",

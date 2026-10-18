@@ -5,6 +5,11 @@
       "bytes": 97,
       "role": "usd",
       "sha256": "341133869fab20ca2f8a4b0bc80078c09600566d9086cf74b19b5a731e23d8bf"
+    },
+    "preview.png": {
+      "bytes": 27486,
+      "role": "picture",
+      "sha256": "4955ad10c56cffae338c2e420c380b69dda0c36871f341213d3e983d7daa53bc"
     }
   },
   "id": "ground.old_station",
@@ -22,8 +27,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "the place's ground.usdc"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T14:02:30.466230+00:00",

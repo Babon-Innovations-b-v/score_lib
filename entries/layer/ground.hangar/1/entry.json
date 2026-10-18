@@ -5,6 +5,11 @@
       "bytes": 92,
       "role": "usd",
       "sha256": "d2ac5b044d8357181e0a8c85377d179482e43cd2ef072e7ce8f9f58622619878"
+    },
+    "preview.png": {
+      "bytes": 27926,
+      "role": "picture",
+      "sha256": "bdc6f1bdf8d02b6fef4026b269fafa2d901a048875c1c3a74b8ca6528251ff94"
     }
   },
   "id": "ground.hangar",
@@ -22,8 +27,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "the place's ground.usdc"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T22:13:41.093010+00:00",

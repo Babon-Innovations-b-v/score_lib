@@ -6,6 +6,16 @@
       "role": "usd",
       "sha256": "993d394ecf17dcfd1414cf49f9110d19a87179a25493b50f4379f317d19165c8"
     },
+    "cast/cast.json": {
+      "bytes": 1975,
+      "role": "record",
+      "sha256": "44f324420ba2838ee79746169774dac8df760aa0efdd9fcbc4235825e9a35e12"
+    },
+    "cast/measures.json": {
+      "bytes": 616,
+      "role": "record",
+      "sha256": "cbc4e880198397254f66c45bd947bb0b4cbfcc148d47a55fe36c99a864930d35"
+    },
     "contract.json": {
       "bytes": 99,
       "role": "record",
@@ -22,14 +32,24 @@
       "sha256": "e1bd9a5eccb7d2f228f046ae6e36d1007e95d08db00cf0741c8a146103360763"
     },
     "inputs.json": {
-      "bytes": 14266,
+      "bytes": 13735,
       "role": "record",
-      "sha256": "58cc8c29125134673c0b8733eed1bb5b9395c70047e0607068c4a944aac5971e"
+      "sha256": "805238d8e8c7519bd47b9a3d4ef53a964acef0eee78a72f1a54d0f7b50293c23"
     },
     "origin.json": {
-      "bytes": 892,
+      "bytes": 883,
       "role": "record",
-      "sha256": "477bd210798fd78002ca44ddd23c25c952adfd288cfad0af7a39caf015546edf"
+      "sha256": "2b45a28e1894032d3a898fae4368bad39c02547e908f3f55b05b7c40f5b4b6c1"
+    },
+    "picture.png": {
+      "bytes": 3120923,
+      "role": "picture",
+      "sha256": "65631c0708296a7a4d3adcffef6b32b5efb45fafd14aed8f9787a3dc335b4bf7"
+    },
+    "plan/plan.json": {
+      "bytes": 18546,
+      "role": "record",
+      "sha256": "ef9ab23dea8de87642c4785332dc27722cf393cb7d12ce537e9fa409eac9a4e7"
     },
     "scene.json": {
       "bytes": 22013,
@@ -52,8 +72,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@camp: looks/camp/shot0-000-look.png"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T14:13:56.147349+00:00",
@@ -75,12 +98,46 @@
     "complete_failing": [
       "named gaps"
     ],
+    "files_from": {
+      "inputs.json": {
+        "path": "inputs.json",
+        "sha256": "58cc8c29125134673c0b8733eed1bb5b9395c70047e0607068c4a944aac5971e"
+      },
+      "origin.json": {
+        "path": "origin.json",
+        "sha256": "477bd210798fd78002ca44ddd23c25c952adfd288cfad0af7a39caf015546edf"
+      }
+    },
     "gaps": "data/checks/gaps/camp.json",
     "models": [],
     "node": "assembly@camp",
     "output": "0d930395c3d487b308d579d02e775682ddf8d302e6e0735849093a37772728c8",
     "place": "camp",
     "record_key": "fe5504fc66033b6c5b56f7395fd37a688bbd5d26c50af13875018921c86ded02",
+    "records_from": {
+      "cast": {
+        "accept": {
+          "at": "2026-10-14T10:19:42.934923+00:00",
+          "by": "runner"
+        },
+        "code": "70c559828907b5231f34fb0dddb7b719b7fb1199af14d2fecf63ba2f27ef8678",
+        "models": [],
+        "node": "cast@camp",
+        "output": "38314f2686bc62463625749b9f07c626f8fe69181adb5b4672b5fce3aca81614",
+        "record_key": "aa9d9bf24952d5d092595a1d08f48c26aa00ea1c2147b437c39ad9a067d730b9"
+      },
+      "plan": {
+        "accept": {
+          "at": "2026-10-13T12:32:20.801897+00:00",
+          "by": "runner"
+        },
+        "code": "d717240bd08570d0486dfc7acdade8e73ea4926837b32eeaf69ba7b60a0a2a73",
+        "models": [],
+        "node": "plan@camp",
+        "output": "62a7f1801fbbd304ad19ecf228b66bf45277d49a69a5a90fb2b363b78da2974f",
+        "record_key": "e8a20406ebdd701b157569e29b0f0a20d9b451a2a5839f682a71d7685eae530b"
+      }
+    },
     "unresolved_sublayers": [],
     "world": "world1"
   },

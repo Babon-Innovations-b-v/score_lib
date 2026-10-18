@@ -1,6 +1,16 @@
 {
   "address": "place/lab@1",
   "files": {
+    "cast/cast.json": {
+      "bytes": 1078,
+      "role": "record",
+      "sha256": "2b38762faf4a6d73a8da82d1ef8ea896a79190c703a7cbad1655300f252d6207"
+    },
+    "cast/measures.json": {
+      "bytes": 427,
+      "role": "record",
+      "sha256": "abd0540b6109356e6eb8accc40d3db2f08fea43e717499c66300b2650a108ac1"
+    },
     "contract.json": {
       "bytes": 99,
       "role": "record",
@@ -17,9 +27,9 @@
       "sha256": "9af8acac679d8032ccfc77b19a32426c681b8857fdd553ee9ae7f2d1bccea2d7"
     },
     "inputs.json": {
-      "bytes": 19285,
+      "bytes": 18556,
       "role": "record",
-      "sha256": "82e35ef807d948e4a659c4b0737104e60a5d4c05afa5eeca0e6e6f6213d11ff3"
+      "sha256": "de6106805409a203249ba9a84b213efa361acc7f6736c3dae956f614a23394f1"
     },
     "lab.usda": {
       "bytes": 528,
@@ -27,9 +37,19 @@
       "sha256": "acd8a413dff1fae1e3591567d47bc44b9684ef5207c2403106c88962d2b2a8d8"
     },
     "origin.json": {
-      "bytes": 932,
+      "bytes": 923,
       "role": "record",
-      "sha256": "2149d35484bea2f841d9e38217147539ba68a96e6646e84ae46e0ba087c3876b"
+      "sha256": "f4e4a0748af58bf78151ad53e25ebc5c957480e0b9e1dbf4eb64b1e48a8c723e"
+    },
+    "picture.png": {
+      "bytes": 1938335,
+      "role": "picture",
+      "sha256": "617338d68d67542d64564946f68f95f2f4e9f49e3c97dcc68e70ee22720a220e"
+    },
+    "plan/plan.json": {
+      "bytes": 6881,
+      "role": "record",
+      "sha256": "8ea3ef6ae0a03c768b3580f5c2d72e4dada0a023eb76b300e03dcb5d359dbcaa"
     },
     "scene.json": {
       "bytes": 7059,
@@ -52,8 +72,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@lab: looks/lab/shot0-000-look.png"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T14:07:25.503141+00:00",
@@ -75,12 +98,46 @@
     "complete_failing": [
       "named gaps"
     ],
+    "files_from": {
+      "inputs.json": {
+        "path": "inputs.json",
+        "sha256": "82e35ef807d948e4a659c4b0737104e60a5d4c05afa5eeca0e6e6f6213d11ff3"
+      },
+      "origin.json": {
+        "path": "origin.json",
+        "sha256": "2149d35484bea2f841d9e38217147539ba68a96e6646e84ae46e0ba087c3876b"
+      }
+    },
     "gaps": "data/checks/gaps/lab.json",
     "models": [],
     "node": "assembly@lab",
     "output": "6e27c7d3c17e42a9d22d07e469a7b3a8e37bced2cae426b5827007830b83d66a",
     "place": "lab",
     "record_key": "90b53b440293d619704e077b09a234f458d34710e83b21efc9453072590550e1",
+    "records_from": {
+      "cast": {
+        "accept": {
+          "at": "2026-10-14T14:24:48.983362+00:00",
+          "by": "runner"
+        },
+        "code": "70c559828907b5231f34fb0dddb7b719b7fb1199af14d2fecf63ba2f27ef8678",
+        "models": [],
+        "node": "cast@lab",
+        "output": "44e13c058b607043043a4f904f153d1ee59350c69cd4784be848040f36543167",
+        "record_key": "25612b7a7c86782fb474d870598fc14a520fd43c3d63630f18721e0a6bf7b0df"
+      },
+      "plan": {
+        "accept": {
+          "at": "2026-10-13T22:20:39.269138+00:00",
+          "by": "runner"
+        },
+        "code": "d717240bd08570d0486dfc7acdade8e73ea4926837b32eeaf69ba7b60a0a2a73",
+        "models": [],
+        "node": "plan@lab",
+        "output": "296c3f695e0e5d32ecdabd824c58bab40c20ca511074ebc6cd5f91ff3c0f5747",
+        "record_key": "70a26bd1edf391717f57cfc1f3a1f6c868200b5b0fa538c7a3540b2d76a7c30c"
+      }
+    },
     "unresolved_sublayers": [],
     "world": "world1"
   },

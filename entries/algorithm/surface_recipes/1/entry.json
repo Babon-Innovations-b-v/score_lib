@@ -2,9 +2,19 @@
   "address": "algorithm/surface_recipes@1",
   "files": {
     "code.json": {
-      "bytes": 431,
+      "bytes": 643,
       "role": "record",
-      "sha256": "38ce0cdf87e56c43c137a79e9bd426d4bf1163051c652fac406ab087f19df974"
+      "sha256": "100797e94fa4e3139a3c67faa1cf6f8abde4f8d380149a99434e7815e23f46a2"
+    },
+    "code/tools/props/library/library.py": {
+      "bytes": 7950,
+      "role": "code",
+      "sha256": "0fd79aad29a760db5281941cb49630bb6949fba33bce6e9e6657280e85b5e969"
+    },
+    "code/tools/props/library/printed.py": {
+      "bytes": 15499,
+      "role": "code",
+      "sha256": "f8466625d3f6833437268b6346f0a3acd1c5b2cebb319b2e5d1801e9c412cb3a"
     },
     "code/tools/props/library/recipes.py": {
       "bytes": 35791,
@@ -12,19 +22,1084 @@
       "sha256": "e9b251794d317966bd50468f4addbe23089b4cf7e673c1d938a5e3f259eb7433"
     },
     "definition.json": {
-      "bytes": 899,
+      "bytes": 1155,
       "role": "record",
-      "sha256": "a51d1cf0b157e44981b0911a06a0265f99c7a8c04a8997816fec61b741545d7d"
+      "sha256": "4d41fb2121cd78f586c6e394c1ef24b13d2e99d8e78143a2daedb77f4f604069"
     },
     "presets/world1/data/definitions/place.json": {
-      "bytes": 133714,
+      "bytes": 133660,
       "role": "record",
-      "sha256": "9c83b6b7175d9809acb010a7c86fa48e2cfe618bc6595d4fd666c6a50565edc5"
+      "sha256": "dffb590f3dba5d094505e1bb515d3c0a55c87a5f09f00e02c6e1f43c8ca0c3b8"
+    },
+    "presets/world1/data/fonts/barlow/Barlow-Medium.ttf": {
+      "bytes": 103536,
+      "role": "record",
+      "sha256": "f8906f762cb73dca441da034bc363b2d8e2e68bc10d5c05e58717646c20cc4b4"
+    },
+    "presets/world1/data/fonts/barlow/Barlow-Regular.ttf": {
+      "bytes": 104068,
+      "role": "record",
+      "sha256": "95aa02c7c43096e0dd44d787ba6216864a67157e402adab59b35572e0c1577ea"
+    },
+    "presets/world1/data/fonts/barlow/Barlow-SemiBold.ttf": {
+      "bytes": 108348,
+      "role": "record",
+      "sha256": "86577cb32f8abe3673db53ca0f4221e6856751a4f6730c867e00f720f8bb1fc5"
+    },
+    "presets/world1/data/fonts/barlow/OFL.txt": {
+      "bytes": 4377,
+      "role": "record",
+      "sha256": "186d750eb496a4c17a76385f82be6aea2ac1cf2de074a811d63786cf374ea73f"
+    },
+    "presets/world1/data/fonts/barlow_condensed/BarlowCondensed-Bold.ttf": {
+      "bytes": 109912,
+      "role": "record",
+      "sha256": "e476562ec9c1e16cf16475895b511f08c804f438cc9a9f80a44ea50a0eeb5b65"
+    },
+    "presets/world1/data/fonts/barlow_condensed/BarlowCondensed-SemiBold.ttf": {
+      "bytes": 109428,
+      "role": "record",
+      "sha256": "7b619d14bc2327509a9ef32b0890f709626f7ecc9ff61191c2a4314c5499d2d9"
+    },
+    "presets/world1/data/fonts/barlow_condensed/OFL.txt": {
+      "bytes": 4377,
+      "role": "record",
+      "sha256": "186d750eb496a4c17a76385f82be6aea2ac1cf2de074a811d63786cf374ea73f"
+    },
+    "presets/world1/data/fonts/noto_sans_sc/FONTLOG.txt": {
+      "bytes": 1232,
+      "role": "record",
+      "sha256": "1e1bde03c17dcaea416da8f0b3f84e67605ff4fb43e2a492ee5a0400ad8cd03f"
+    },
+    "presets/world1/data/fonts/noto_sans_sc/NotoSansSC-Black.ttf": {
+      "bytes": 2452320,
+      "role": "record",
+      "sha256": "d52c08233d7a4961d3f07f1a1186f3257b42fba3fc11084117eab087c4c6b284"
+    },
+    "presets/world1/data/fonts/noto_sans_sc/NotoSansSC-Bold.ttf": {
+      "bytes": 2454396,
+      "role": "record",
+      "sha256": "b175ab9f03ad2fe1c564251dfdb55a1562a11b129fceab7163f51585bb8afac0"
+    },
+    "presets/world1/data/fonts/noto_sans_sc/NotoSansSC-Regular.otf": {
+      "bytes": 2005580,
+      "role": "record",
+      "sha256": "586233e10e24e9043f02e56093c6c39d6a60f68e1e6fec2ae6b7880b03703913"
+    },
+    "presets/world1/data/fonts/noto_sans_sc/OFL.txt": {
+      "bytes": 4388,
+      "role": "record",
+      "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9"
+    },
+    "presets/world1/data/fonts/noto_serif_sc/FONTLOG.txt": {
+      "bytes": 755,
+      "role": "record",
+      "sha256": "a63e0ea225faf4b9265f26e512c6222ed9bea765c8e0bb46f2a4bb1145be43d7"
+    },
+    "presets/world1/data/fonts/noto_serif_sc/NotoSerifSC-Bold.ttf": {
+      "bytes": 3417036,
+      "role": "record",
+      "sha256": "888110d3a749a75c0d8ca22577f6982f3f835b7f7ce2dc7ad52ca8fac6ca8143"
+    },
+    "presets/world1/data/fonts/noto_serif_sc/OFL.txt": {
+      "bytes": 4350,
+      "role": "record",
+      "sha256": "5e0da210fb04058a8c0087985d2d456b931c2579811a49655721d3cf0c36b6d6"
+    },
+    "presets/world1/data/fonts/zcool_qingke_huangyou/FONTLOG.txt": {
+      "bytes": 810,
+      "role": "record",
+      "sha256": "832730c4092329a2033d7b359ac3d1cae1d726670c585db3a2df3d54d01fb523"
+    },
+    "presets/world1/data/fonts/zcool_qingke_huangyou/OFL.txt": {
+      "bytes": 4419,
+      "role": "record",
+      "sha256": "f1bce31b817dee01c1e4ef8bc45d8ecb95f01f4abbf0a985007cb3cd0fd8123d"
+    },
+    "presets/world1/data/fonts/zcool_qingke_huangyou/ZCOOLQingKeHuangYou-Regular.ttf": {
+      "bytes": 3956680,
+      "role": "record",
+      "sha256": "5c4da65b8c1b66ef03fecc1d4278ce81b9616f6200af351f32207d31bcc1e539"
     },
     "presets/world1/data/library/materials.json": {
       "bytes": 94031,
       "role": "record",
       "sha256": "fd881c3eb02dfc3b63c4591ebee8cdfc8324954cc786b3f6e57309289b559970"
+    },
+    "presets/world1/data/library/pictures/banner_crowd.png": {
+      "bytes": 28164,
+      "role": "record",
+      "sha256": "b706ca8a0920d511edea57bcd55f1ebd63a5fa59d20e658d7e9284c89a799c04"
+    },
+    "presets/world1/data/library/pictures/banner_first.png": {
+      "bytes": 15217,
+      "role": "record",
+      "sha256": "979dce077674ff761323a40e820324815048c14455e3587c969d85f948db2f2b"
+    },
+    "presets/world1/data/library/pictures/banner_second.png": {
+      "bytes": 15202,
+      "role": "record",
+      "sha256": "115668e05a5bd62b69d6e72d2927df612b72a7f573f18ab8e171c995a7cb259c"
+    },
+    "presets/world1/data/library/pictures/banner_third.png": {
+      "bytes": 24427,
+      "role": "record",
+      "sha256": "3dfd7eb386571e4c8f611e9f02d331c48fb5474198878e264ee37e0ebf6dbf1b"
+    },
+    "presets/world1/data/library/pictures/console_systems.png": {
+      "bytes": 21716,
+      "role": "record",
+      "sha256": "95b4998736ae99d3ba219ab662c78bdcdff598057ebb5665bae3c7c4d9403692"
+    },
+    "presets/world1/data/library/pictures/couplet_left.png": {
+      "bytes": 25145,
+      "role": "record",
+      "sha256": "9a67b73e5f690200256ff80aa59348207c447f668339402ccd016f593a40a455"
+    },
+    "presets/world1/data/library/pictures/couplet_right.png": {
+      "bytes": 26383,
+      "role": "record",
+      "sha256": "78d4ff4066eab8d201e75166759b9d0494742699ff3149c1bd0f66916cd4301d"
+    },
+    "presets/world1/data/library/pictures/couplet_top.png": {
+      "bytes": 27283,
+      "role": "record",
+      "sha256": "06ffaaadddfb76feebfcacf96b85fd7b55dc21e0dd9255dd72367b0edca6c381"
+    },
+    "presets/world1/data/library/pictures/exit_sign.png": {
+      "bytes": 12065,
+      "role": "record",
+      "sha256": "57cbc42434c2ba1aa64424301724bfb64b045b0b285374a6396367c604041bed"
+    },
+    "presets/world1/data/library/pictures/flat_astronaut_poster.png": {
+      "bytes": 174562,
+      "role": "record",
+      "sha256": "2bc40027517b9b2e6b431e9582d04d7e640e77f0043e3120fc0a17ee2de7c745"
+    },
+    "presets/world1/data/library/pictures/flat_calendar.png": {
+      "bytes": 24393,
+      "role": "record",
+      "sha256": "eea4fef8ab608a0fd143a935abdd6b58e16e631963b995b5d12cb940f79fb916"
+    },
+    "presets/world1/data/library/pictures/flat_family_photo.png": {
+      "bytes": 130930,
+      "role": "record",
+      "sha256": "aaf9a2569812d042478d394d981ce82e330dcece0f39f6ce36fa751bca611488"
+    },
+    "presets/world1/data/library/pictures/flat_poster_red.png": {
+      "bytes": 32764,
+      "role": "record",
+      "sha256": "db5ebd8be390ad73abbbcb63eb921a1ce0cfbd76235c17f34de33884cf3edc7f"
+    },
+    "presets/world1/data/library/pictures/floor_1.png": {
+      "bytes": 11054,
+      "role": "record",
+      "sha256": "e83567c143782a7b839eede7eccedcf623b7ae726136bca6d4d5a10a44b2940d"
+    },
+    "presets/world1/data/library/pictures/floor_2.png": {
+      "bytes": 11051,
+      "role": "record",
+      "sha256": "3869f1e11ada00b8108bbd9f2dfa9618aaeb7496f6723216d30fe71bb21ebedb"
+    },
+    "presets/world1/data/library/pictures/floor_3.png": {
+      "bytes": 11158,
+      "role": "record",
+      "sha256": "e18d3146d7fad79a41fba392deeb2913f77ef3883aa8fa0ffb310353ed70dd92"
+    },
+    "presets/world1/data/library/pictures/floor_g.png": {
+      "bytes": 9007,
+      "role": "record",
+      "sha256": "d261eea7ba13e211196e0158da2afb98874a8e16c78617b8676f157d7b0768fb"
+    },
+    "presets/world1/data/library/pictures/fu_luck.png": {
+      "bytes": 10293,
+      "role": "record",
+      "sha256": "44decbb1aec3edbc3015cb3767edd9706a509578472bed3e8e406d1436799617"
+    },
+    "presets/world1/data/library/pictures/intercom_print.png": {
+      "bytes": 7660,
+      "role": "record",
+      "sha256": "aa4ce10237f4f9c1de4a5ef01829d79af38f7ff6af82dbdb171a8fa38a26c62e"
+    },
+    "presets/world1/data/library/pictures/keypad_print.png": {
+      "bytes": 13277,
+      "role": "record",
+      "sha256": "db4d52d5cea9e1b862dc3f8c7701dfda7bd5e9f28b54603b584405b092c7aaf7"
+    },
+    "presets/world1/data/library/pictures/label_access.png": {
+      "bytes": 10953,
+      "role": "record",
+      "sha256": "4c01a74048e3bd5ffb69f63d2e8cd98974b6e065301b2a553ba84a5dbca3efee"
+    },
+    "presets/world1/data/library/pictures/label_air.png": {
+      "bytes": 4476,
+      "role": "record",
+      "sha256": "0de3fac13f395de38132d8c7e7aa66ce0599a726b151beee0c93f40757351399"
+    },
+    "presets/world1/data/library/pictures/label_air_return.png": {
+      "bytes": 7025,
+      "role": "record",
+      "sha256": "2dd88e793c5c7378a6aa5e94cec98e8b293a1137b084f68c1b3fd47bd22f71f1"
+    },
+    "presets/world1/data/library/pictures/label_airlock.png": {
+      "bytes": 8084,
+      "role": "record",
+      "sha256": "c38a1f6ca1a1d25c9dc261525cba472e495e351ede8744472e120655e84e022a"
+    },
+    "presets/world1/data/library/pictures/label_airlock_leaf.png": {
+      "bytes": 8084,
+      "role": "record",
+      "sha256": "c38a1f6ca1a1d25c9dc261525cba472e495e351ede8744472e120655e84e022a"
+    },
+    "presets/world1/data/library/pictures/label_base_property.png": {
+      "bytes": 11332,
+      "role": "record",
+      "sha256": "5879279bd2fcef5942c987db779c87d7f3e4be4355e992a368b2d2c5581a8d6f"
+    },
+    "presets/world1/data/library/pictures/label_berth_1.png": {
+      "bytes": 5144,
+      "role": "record",
+      "sha256": "64cd5d4a8eb0509b35c1f20495e33249ead02c71fb079a788cf6bf59887db213"
+    },
+    "presets/world1/data/library/pictures/label_berth_2.png": {
+      "bytes": 6319,
+      "role": "record",
+      "sha256": "71960d8c55ee4f26502a65219d16b43c3804be8bd4e44d966fe59c3fe1705493"
+    },
+    "presets/world1/data/library/pictures/label_bolts.png": {
+      "bytes": 6712,
+      "role": "record",
+      "sha256": "d4b4552e23d75b3c746801e36668d429b9afd12c047318f309e3dffb7e9f10c4"
+    },
+    "presets/world1/data/library/pictures/label_boom.png": {
+      "bytes": 9939,
+      "role": "record",
+      "sha256": "3a47dfbb1995f1260fdba35e3091d6ecabbc46ec77e86d4866a471a2bfc10e5d"
+    },
+    "presets/world1/data/library/pictures/label_cable_run.png": {
+      "bytes": 9100,
+      "role": "record",
+      "sha256": "d3568cf82472d7f95dc610515c89a440cd602c0ac28e2b89fe7eb0d323eeb037"
+    },
+    "presets/world1/data/library/pictures/label_camp_radio.png": {
+      "bytes": 9325,
+      "role": "record",
+      "sha256": "7b82768b16b88acbcfe78a084728c67969aaebef3e9424f55ce775e62cbce8dc"
+    },
+    "presets/world1/data/library/pictures/label_caution_hot.png": {
+      "bytes": 9089,
+      "role": "record",
+      "sha256": "dd09221ab8690fd7b603e2a49a49a255ccde9f0dcb265644977bcf123122a8ed"
+    },
+    "presets/world1/data/library/pictures/label_caution_voltage.png": {
+      "bytes": 10295,
+      "role": "record",
+      "sha256": "a71dc955c35e6860ed4f391d23ccd02a02ce965bfba13ca76d844dc808ca9a1f"
+    },
+    "presets/world1/data/library/pictures/label_chamber.png": {
+      "bytes": 13108,
+      "role": "record",
+      "sha256": "44086ed5fa8acce4102744f83e26711acf4bcf8020b832db8d575311fb14bfe9"
+    },
+    "presets/world1/data/library/pictures/label_charge.png": {
+      "bytes": 7401,
+      "role": "record",
+      "sha256": "18d5639b7d210ae9f79fcf5e574fb25edbd8d379efa45aed445a1d8eede01f96"
+    },
+    "presets/world1/data/library/pictures/label_check_seal.png": {
+      "bytes": 8476,
+      "role": "record",
+      "sha256": "dd1d65d467c62c993389c56c9a8fbb7d8510f0f51bf19dd7614612a4393ac777"
+    },
+    "presets/world1/data/library/pictures/label_circuit.png": {
+      "bytes": 6379,
+      "role": "record",
+      "sha256": "88eb2c355689d419860e53ab6295926aeafa1224f9871b37291b9ed457018dbc"
+    },
+    "presets/world1/data/library/pictures/label_clamp_foot.png": {
+      "bytes": 7906,
+      "role": "record",
+      "sha256": "fd0703d88daaf4bb5dbd93a3eb2ecf15f2b8f18e5ff02db8ea60b6682d4dfcbe"
+    },
+    "presets/world1/data/library/pictures/label_clean_after_use.png": {
+      "bytes": 10257,
+      "role": "record",
+      "sha256": "23d67dd91102b5aac9c6df2b69a07905bb76cae4f27a3aeced22f09d317fec0a"
+    },
+    "presets/world1/data/library/pictures/label_cold_store.png": {
+      "bytes": 11363,
+      "role": "record",
+      "sha256": "0da00aa2912cb14dbbb6a1c4fbe71564740c2088f2c9f3ad4d2779722d3e898e"
+    },
+    "presets/world1/data/library/pictures/label_comms.png": {
+      "bytes": 7374,
+      "role": "record",
+      "sha256": "239f94643def59ea98f2f4c646fd7a8d12466997c2e9df03e9acb6773c040e86"
+    },
+    "presets/world1/data/library/pictures/label_control.png": {
+      "bytes": 6994,
+      "role": "record",
+      "sha256": "156baf7240dc97047e81e6ca82ced3ce28dad122c7b8407c5c31f5334a95a19f"
+    },
+    "presets/world1/data/library/pictures/label_control_box.png": {
+      "bytes": 9889,
+      "role": "record",
+      "sha256": "54b998530434d8bb164d06eca2a9ee4bdeb5495dc372da9ed614fa54d618c16f"
+    },
+    "presets/world1/data/library/pictures/label_crew_lkr_1.png": {
+      "bytes": 8479,
+      "role": "record",
+      "sha256": "35246c0b1654bd58459ea0eae263fe4742402369ef14a5e1288802ff74adceb5"
+    },
+    "presets/world1/data/library/pictures/label_crew_lkr_2.png": {
+      "bytes": 9634,
+      "role": "record",
+      "sha256": "a4445e382ab0c5e2a9907d45e03d3e13b5b844390ac2498686426b39fb9a79d9"
+    },
+    "presets/world1/data/library/pictures/label_crew_lkr_3.png": {
+      "bytes": 9724,
+      "role": "record",
+      "sha256": "33812ee7ddc4307959d148bb2d66e5ddf285b400bb38acee3bd840911a177017"
+    },
+    "presets/world1/data/library/pictures/label_crew_lkr_4.png": {
+      "bytes": 9011,
+      "role": "record",
+      "sha256": "c4f2e849ccca853aedd562787d2f2bbd1f3448d2288f4d1f0a7bb94bbc4a2558"
+    },
+    "presets/world1/data/library/pictures/label_crew_lockers.png": {
+      "bytes": 11276,
+      "role": "record",
+      "sha256": "1e8f428e82a222d69f4ece22424af11b6b94f35435569354ecd2a0f074befb3b"
+    },
+    "presets/world1/data/library/pictures/label_crops.png": {
+      "bytes": 8359,
+      "role": "record",
+      "sha256": "c4c29d45999b889074fb963e74520a04a092c0210bcc0ae753e6f1d9b757ca56"
+    },
+    "presets/world1/data/library/pictures/label_cycle.png": {
+      "bytes": 4940,
+      "role": "record",
+      "sha256": "0c2226149473691cc0b5b96a6961afb8f4a758db11e3e85d894c48157ca72ba7"
+    },
+    "presets/world1/data/library/pictures/label_data_entry.png": {
+      "bytes": 7672,
+      "role": "record",
+      "sha256": "997d7a69f691ff4f25dc84a5fecb9961d5bde73684f6b256a312c9bd51e6239a"
+    },
+    "presets/world1/data/library/pictures/label_data_monitor.png": {
+      "bytes": 8587,
+      "role": "record",
+      "sha256": "81deda7fc28309f3508c5e1e52a17ccf283fc5ed6687798e0425ed4e7aba8cf3"
+    },
+    "presets/world1/data/library/pictures/label_dose_meter.png": {
+      "bytes": 8269,
+      "role": "record",
+      "sha256": "14e9d5fe8842fc7c5e60c4677feff18c83b7f57da5869718dc6a038e89354c4c"
+    },
+    "presets/world1/data/library/pictures/label_east_hatch.png": {
+      "bytes": 7625,
+      "role": "record",
+      "sha256": "b13fbd0136d97c9ce7db919d1af2a3fb5016bed1ab9cf0d0337b26c3da758305"
+    },
+    "presets/world1/data/library/pictures/label_electric_hob.png": {
+      "bytes": 7762,
+      "role": "record",
+      "sha256": "6e219def03e381fd61f13bda65911658d9bf9270ace3c715b2e5590690a8becb"
+    },
+    "presets/world1/data/library/pictures/label_esd_safe.png": {
+      "bytes": 8533,
+      "role": "record",
+      "sha256": "6b86c8797e331579fd01176b4674051e57821b3697a98e9c5fdc03dc7d4cd42b"
+    },
+    "presets/world1/data/library/pictures/label_exam_couch.png": {
+      "bytes": 10624,
+      "role": "record",
+      "sha256": "37e8672583adfee8dc5450528a18442a1778058c8c77924de805f55ef3e65ab6"
+    },
+    "presets/world1/data/library/pictures/label_fan_unit.png": {
+      "bytes": 5594,
+      "role": "record",
+      "sha256": "72a3c810fdbbdbacbef26984a7a2e9ec0b7e3d87e6d3ec7224a64f69cd7aedcd"
+    },
+    "presets/world1/data/library/pictures/label_first_aid.png": {
+      "bytes": 7487,
+      "role": "record",
+      "sha256": "6492316aed978162782e6686b858c3055ef952e0275a456008e1987dbd056cf8"
+    },
+    "presets/world1/data/library/pictures/label_fission_unit.png": {
+      "bytes": 11876,
+      "role": "record",
+      "sha256": "1b543b30f4f4590b7573459caf3a1d48702f6303ad360fd536267a266215d823"
+    },
+    "presets/world1/data/library/pictures/label_food_pack.png": {
+      "bytes": 8651,
+      "role": "record",
+      "sha256": "6c44117d1fbf65e22c1f1e9c412facae28e8b57daeda8869c7682ae39e707aee"
+    },
+    "presets/world1/data/library/pictures/label_food_storage.png": {
+      "bytes": 6954,
+      "role": "record",
+      "sha256": "b2c415dd7fb52e5ebacbcba6ace28c37201c7e7b636cee933ee277427fb9738f"
+    },
+    "presets/world1/data/library/pictures/label_fuses.png": {
+      "bytes": 5505,
+      "role": "record",
+      "sha256": "71a8836227f3f3a3a5d86477779bbef02495eb2d14d0563edc56a4042b3a0d71"
+    },
+    "presets/world1/data/library/pictures/label_galley.png": {
+      "bytes": 11463,
+      "role": "record",
+      "sha256": "7c1baa6e18f42113b35c8af90c3e8a7950a31795b09042b677bf59dd8a49e9b0"
+    },
+    "presets/world1/data/library/pictures/label_glovebox.png": {
+      "bytes": 9201,
+      "role": "record",
+      "sha256": "33e88c92a72e4fa8e76c914db36139e588581083bdd3c873c928f19f24821000"
+    },
+    "presets/world1/data/library/pictures/label_grow_control.png": {
+      "bytes": 10618,
+      "role": "record",
+      "sha256": "9219af80d618f38a36082a6188e8ec676a144d8ed1f313b85abb4795bae69276"
+    },
+    "presets/world1/data/library/pictures/label_grow_light.png": {
+      "bytes": 11718,
+      "role": "record",
+      "sha256": "8f9fcaa3fd8b7b7be5eb27afe4cc5c2a311939d29fe4f46306ab6b4f223d7f81"
+    },
+    "presets/world1/data/library/pictures/label_handset.png": {
+      "bytes": 10358,
+      "role": "record",
+      "sha256": "0194c90725b718744249e5e7a74c481d76ef1ae9cc21f98c63ec7f03c6b0cc4f"
+    },
+    "presets/world1/data/library/pictures/label_high_voltage.png": {
+      "bytes": 7949,
+      "role": "record",
+      "sha256": "43ca1719c9db249f838c16006660afdb747f6d5a58f1c71ba0623ed1cf0a653f"
+    },
+    "presets/world1/data/library/pictures/label_humidifier.png": {
+      "bytes": 5864,
+      "role": "record",
+      "sha256": "6c4aed050bf132d743d9f7a524ae82b45edcebeac2960a903697f879146747b4"
+    },
+    "presets/world1/data/library/pictures/label_hygiene.png": {
+      "bytes": 5875,
+      "role": "record",
+      "sha256": "d6fc4268a0ff0f26935c72e99dd56eed4d426bfd11f584974e2bed99ffc8a4bf"
+    },
+    "presets/world1/data/library/pictures/label_ice_drill.png": {
+      "bytes": 7403,
+      "role": "record",
+      "sha256": "9ada64f9d0f02ea3535d3614dff2a53e536fc325717aaa2504346c5fc3716079"
+    },
+    "presets/world1/data/library/pictures/label_inspection.png": {
+      "bytes": 9036,
+      "role": "record",
+      "sha256": "19834dd0862e45ccd2b0ee491bc23eea6c7123aebc17a60e9a63ba06443ce82e"
+    },
+    "presets/world1/data/library/pictures/label_junction.png": {
+      "bytes": 11652,
+      "role": "record",
+      "sha256": "de82df8a02f4a1c866d5a295a5dfc04d7d03db138ffe82cebe11b6211dcc44b6"
+    },
+    "presets/world1/data/library/pictures/label_keep_out.png": {
+      "bytes": 9514,
+      "role": "record",
+      "sha256": "769bb15565c1254172d5c040882b37648bd3dd3a784a7a7c20311edb64dd80a0"
+    },
+    "presets/world1/data/library/pictures/label_ledge_cover.png": {
+      "bytes": 11399,
+      "role": "record",
+      "sha256": "654531778574f6bf02ae71e57a671fdd0cb1fded976c14998d5c206868b0e7f8"
+    },
+    "presets/world1/data/library/pictures/label_life_support.png": {
+      "bytes": 8644,
+      "role": "record",
+      "sha256": "26ad0b5f748721735587be532a74492c4cee9787dace4a1ceae797c695ff4ca5"
+    },
+    "presets/world1/data/library/pictures/label_locker_a.png": {
+      "bytes": 8284,
+      "role": "record",
+      "sha256": "53106407cc7b495557637740ef49274179ec22ee1fdb7bf5d283ac5d67240af0"
+    },
+    "presets/world1/data/library/pictures/label_locker_b.png": {
+      "bytes": 8180,
+      "role": "record",
+      "sha256": "430154f493ea673a11a5a1f0fb47d7912514bdf9ef406c576d57d3c9a1b35bb2"
+    },
+    "presets/world1/data/library/pictures/label_main_bus.png": {
+      "bytes": 10149,
+      "role": "record",
+      "sha256": "fb9dd7868ae8a3c23bdb1dee98b4b2ba5c226728b8e9b29eb7637c9962953f2a"
+    },
+    "presets/world1/data/library/pictures/label_main_unit.png": {
+      "bytes": 6136,
+      "role": "record",
+      "sha256": "dd78ecbe83d366902b9363ba59dc0fdad673311da4903cd84a56912df6ca2425"
+    },
+    "presets/world1/data/library/pictures/label_medical_supplies.png": {
+      "bytes": 6431,
+      "role": "record",
+      "sha256": "3bb1932b5927e16b66fbd7d2caddfd7f2ea731bd6ff6f82db39c734956d82f11"
+    },
+    "presets/world1/data/library/pictures/label_mess_table.png": {
+      "bytes": 8163,
+      "role": "record",
+      "sha256": "cd8b8e4296142b8c4809917a5fc5101060bf337bdaaccf73a6afaa11d2aa8d39"
+    },
+    "presets/world1/data/library/pictures/label_meter.png": {
+      "bytes": 4984,
+      "role": "record",
+      "sha256": "9bdfc119d4151c691677e720207b76898d60c9fdee048cb9b83e1b076df27534"
+    },
+    "presets/world1/data/library/pictures/label_multimeter.png": {
+      "bytes": 5353,
+      "role": "record",
+      "sha256": "ac4d083ad7dcbaf720902938aaf85e1050874aec093009732f132479139f9721"
+    },
+    "presets/world1/data/library/pictures/label_north_hatch.png": {
+      "bytes": 8303,
+      "role": "record",
+      "sha256": "080af3dd277a72a3b96f168776f73bf59bbedc8a950ab7231b0c9f3c8ca1244c"
+    },
+    "presets/world1/data/library/pictures/label_nutrient_supply.png": {
+      "bytes": 10127,
+      "role": "record",
+      "sha256": "7dc65dac11190768c7f0597c5230e18aa273d244b42cfd552b60f0b542b37388"
+    },
+    "presets/world1/data/library/pictures/label_nuts.png": {
+      "bytes": 5871,
+      "role": "record",
+      "sha256": "b5bf39c3a156e2b634b75523b613165e8f0398f8bf1e0bbd7ec3f2260f82836b"
+    },
+    "presets/world1/data/library/pictures/label_operations.png": {
+      "bytes": 9814,
+      "role": "record",
+      "sha256": "9b78f8494bd09ae4f0f4480bc4502a5f6b8b24947cd5ee1fd0da5463d1ea7739"
+    },
+    "presets/world1/data/library/pictures/label_oscilloscope.png": {
+      "bytes": 8459,
+      "role": "record",
+      "sha256": "687134a64d4dfd84a4dbd05dac8b88e1c6cd3587e2e031894b1a9970182a9b2e"
+    },
+    "presets/world1/data/library/pictures/label_parts.png": {
+      "bytes": 7331,
+      "role": "record",
+      "sha256": "5ef10ae7318fabc6295488795144f17defe0dc29343ba170e624bc27c6861f75"
+    },
+    "presets/world1/data/library/pictures/label_plug.png": {
+      "bytes": 4911,
+      "role": "record",
+      "sha256": "36ab4b8f36ba4deb646ac924481f62a6c87fff1905dadb85e4a94594534e06b9"
+    },
+    "presets/world1/data/library/pictures/label_porthole.png": {
+      "bytes": 8732,
+      "role": "record",
+      "sha256": "57bed6624d912e80304b673ca673cd81dd3fad025418309dc9186dfe85f7642f"
+    },
+    "presets/world1/data/library/pictures/label_potable.png": {
+      "bytes": 10291,
+      "role": "record",
+      "sha256": "364d92362553aadc06d8a1a762b434a062b0914849592ef41921e5a938caae8a"
+    },
+    "presets/world1/data/library/pictures/label_power.png": {
+      "bytes": 7368,
+      "role": "record",
+      "sha256": "5cce02ce84c13fb9588d13f49b42ce14ead8e1ea3302ce907685b6dbec3b6c1d"
+    },
+    "presets/world1/data/library/pictures/label_power_coolant.png": {
+      "bytes": 12096,
+      "role": "record",
+      "sha256": "20b381063b5902120f3294412013ca8c17c1fd349edd3a100f7f0a1f4470b690"
+    },
+    "presets/world1/data/library/pictures/label_pressure_door.png": {
+      "bytes": 9786,
+      "role": "record",
+      "sha256": "085bc7ed2dabb8dffb600bc566e893b9bec82e2a16148c268b3ec32b18430774"
+    },
+    "presets/world1/data/library/pictures/label_pump_a.png": {
+      "bytes": 5722,
+      "role": "record",
+      "sha256": "e1a5025406e96cf6334a0aa525b765e1b18f0052a0a166ef5605fd873da949d2"
+    },
+    "presets/world1/data/library/pictures/label_pump_b.png": {
+      "bytes": 5652,
+      "role": "record",
+      "sha256": "48ad151f6ae509103789dd56f2e1dc5d557b6ea1957981415830915674a7d6fc"
+    },
+    "presets/world1/data/library/pictures/label_pump_c.png": {
+      "bytes": 5700,
+      "role": "record",
+      "sha256": "1e6bbf57eab6e28f84da6f6761abc1df3d1da61b72313d2a71adb230f4b4e3c8"
+    },
+    "presets/world1/data/library/pictures/label_radio.png": {
+      "bytes": 6657,
+      "role": "record",
+      "sha256": "fba98344b8dd3a9d86938430100e09ac159bd32f670f90fa690f0b8b803083ed"
+    },
+    "presets/world1/data/library/pictures/label_rail_load.png": {
+      "bytes": 12955,
+      "role": "record",
+      "sha256": "1d313981fa1ad8dbc1d45201d6957dac36cefe019a2a999b7106be8fd0a53c6e"
+    },
+    "presets/world1/data/library/pictures/label_rations.png": {
+      "bytes": 8692,
+      "role": "record",
+      "sha256": "89c87734f24dd77a46e66c2b435899e41fced714799a756145aaa2a2eaf76cc2"
+    },
+    "presets/world1/data/library/pictures/label_resistors.png": {
+      "bytes": 7737,
+      "role": "record",
+      "sha256": "3aec35f7222028a62e9430a8d06761038839a41521c388400d3881e8b60a6d45"
+    },
+    "presets/world1/data/library/pictures/label_robot_bay.png": {
+      "bytes": 8347,
+      "role": "record",
+      "sha256": "5588526692c009297294d8a428b5e116242372f8b946a8b68662543fe953ed7a"
+    },
+    "presets/world1/data/library/pictures/label_samples.png": {
+      "bytes": 7523,
+      "role": "record",
+      "sha256": "7dad997d216eeba131d26f18e6a4cbe643e1950418d8206763037f215d22cbb3"
+    },
+    "presets/world1/data/library/pictures/label_screws.png": {
+      "bytes": 9043,
+      "role": "record",
+      "sha256": "5d41a22c805a3b0168ee73fdaf049518085966cb988653159313a0e4c3805602"
+    },
+    "presets/world1/data/library/pictures/label_seed.png": {
+      "bytes": 5097,
+      "role": "record",
+      "sha256": "f95b0437f6162ed3a3abf4e589b241c7d798849758726b03e599a0fe0dc1e54c"
+    },
+    "presets/world1/data/library/pictures/label_sign_out.png": {
+      "bytes": 9044,
+      "role": "record",
+      "sha256": "052b323312313f5b3b4783ad21fd1c69e609577dc8babac57047d65f63704eac"
+    },
+    "presets/world1/data/library/pictures/label_sink.png": {
+      "bytes": 6157,
+      "role": "record",
+      "sha256": "fb6b27764adac5143dd5f8d0240d4ad985efaa36e19d4f42e6d7d064688068be"
+    },
+    "presets/world1/data/library/pictures/label_sleep_pod.png": {
+      "bytes": 7306,
+      "role": "record",
+      "sha256": "1618e720361bcc97fad067af61a6fbaea013296da4640352b7f6f12eb06d151b"
+    },
+    "presets/world1/data/library/pictures/label_sockets.png": {
+      "bytes": 8284,
+      "role": "record",
+      "sha256": "7bd78a29f5db663637ce3dd2bd7391977f9366ed471205f32ce1a7366ad09a8a"
+    },
+    "presets/world1/data/library/pictures/label_soil.png": {
+      "bytes": 5400,
+      "role": "record",
+      "sha256": "3bc722af591308d22027954e27772edab3df5f16fbf6ddc6bf7528470c1eafac"
+    },
+    "presets/world1/data/library/pictures/label_south_hatch.png": {
+      "bytes": 8812,
+      "role": "record",
+      "sha256": "9dab7e79f458d718ad0bd9c7b47e5be99af0b486416a90443dde92890079eb46"
+    },
+    "presets/world1/data/library/pictures/label_spacexcitement.png": {
+      "bytes": 11298,
+      "role": "record",
+      "sha256": "040c02db51fdb4a42dcd940bf2b9393304d2c39df7b5f006c95289bd0fcae577"
+    },
+    "presets/world1/data/library/pictures/label_spare_parts.png": {
+      "bytes": 8486,
+      "role": "record",
+      "sha256": "ee6fcefe85c0cd9bc7694c3291e556156fb7fa2c7eb3f129826637cfc82025e8"
+    },
+    "presets/world1/data/library/pictures/label_spares.png": {
+      "bytes": 7709,
+      "role": "record",
+      "sha256": "3dd125526e61f8ab2d339211e16f2a34690d910a8e2318f9583d4e9f87a898ef"
+    },
+    "presets/world1/data/library/pictures/label_station_log.png": {
+      "bytes": 9196,
+      "role": "record",
+      "sha256": "a4d17656a9cc7ccf62b4cd5a11cd5aa2f40c9ebdeb33e7ba23ae1083307dcb09"
+    },
+    "presets/world1/data/library/pictures/label_storage.png": {
+      "bytes": 9220,
+      "role": "record",
+      "sha256": "623c9c754f572ffde7b344a6c2b5c25fbfeca948a2340dfdf34960b83e66fd22"
+    },
+    "presets/world1/data/library/pictures/label_storage_a.png": {
+      "bytes": 9498,
+      "role": "record",
+      "sha256": "ab2ed5c7cc9f8d93a73f810264c0d0405cd48a784b1f710f1861e54b9918968f"
+    },
+    "presets/world1/data/library/pictures/label_suit_up.png": {
+      "bytes": 9575,
+      "role": "record",
+      "sha256": "50786d91aecbd2230001253bcc3377f9f3672afa06ef512a260a3a2790f03e05"
+    },
+    "presets/world1/data/library/pictures/label_temp.png": {
+      "bytes": 3899,
+      "role": "record",
+      "sha256": "30d6ac12cce1cb322b4244de22e1b50a73959f998acaefc4a5bd37fcc570d738"
+    },
+    "presets/world1/data/library/pictures/label_tools.png": {
+      "bytes": 5736,
+      "role": "record",
+      "sha256": "83bd63dd81c8ff4c640d48b03f29f011466beb1e791fd3b8ade64b17124c192b"
+    },
+    "presets/world1/data/library/pictures/label_washers.png": {
+      "bytes": 9034,
+      "role": "record",
+      "sha256": "6c1ae61283c713dfdd1540583b23658eca64399d7a28079c162214459c1d8c6c"
+    },
+    "presets/world1/data/library/pictures/label_waste.png": {
+      "bytes": 7728,
+      "role": "record",
+      "sha256": "0f6c98c43abb99c0330195cbf38b93efc92968c27352364ba73ce1f1af782b88"
+    },
+    "presets/world1/data/library/pictures/label_water.png": {
+      "bytes": 6712,
+      "role": "record",
+      "sha256": "a35699476974652421ea5785da72bae057de48d5f7b15439a11bbe376fa4c02e"
+    },
+    "presets/world1/data/library/pictures/label_west_hatch.png": {
+      "bytes": 9208,
+      "role": "record",
+      "sha256": "a09a83abc36a3459f914ba320c5f182f6e085683c40aea3137c52888f0caaf65"
+    },
+    "presets/world1/data/library/pictures/label_wrenches.png": {
+      "bytes": 9875,
+      "role": "record",
+      "sha256": "e81ff3b3b53acd766180ee1c0ffa255015b0f600da9d42452b94aa80504705db"
+    },
+    "presets/world1/data/library/pictures/lamp_strip.png": {
+      "bytes": 266,
+      "role": "record",
+      "sha256": "df4f9c29fa0a80050172e06ba9859eb8ed32ecced9e53353484f6ac42568e786"
+    },
+    "presets/world1/data/library/pictures/lobby_sheets.png": {
+      "bytes": 22465,
+      "role": "record",
+      "sha256": "ece1e30e6184771a0d763bc357a32a65334d0e8814f9d1e165e0756860eeee37"
+    },
+    "presets/world1/data/library/pictures/menu_tea.png": {
+      "bytes": 61270,
+      "role": "record",
+      "sha256": "7cec986399ebbd2d6bef02370899d27dd7f2ed426198c5a5a4ee149dcf21c26a"
+    },
+    "presets/world1/data/library/pictures/note_bench.png": {
+      "bytes": 8682,
+      "role": "record",
+      "sha256": "092b223a0a4a9f9c7df3d6ddc64bedf12cf698e6369224f55fdba703a3f85d62"
+    },
+    "presets/world1/data/library/pictures/note_channel.png": {
+      "bytes": 8622,
+      "role": "record",
+      "sha256": "389475d917c05631588ede5313b791c9df29da29672939d029b9e0c383a8c306"
+    },
+    "presets/world1/data/library/pictures/note_check_cables.png": {
+      "bytes": 13292,
+      "role": "record",
+      "sha256": "17abb74769818a91ddd6bd6a654ec052b0436e792b6fa87ab8ed14cf01025106"
+    },
+    "presets/world1/data/library/pictures/note_clean_daily.png": {
+      "bytes": 5846,
+      "role": "record",
+      "sha256": "07acd65b87666df927afb5ff0a7aa1a0d58295562e0b70deb5c98fa880157855"
+    },
+    "presets/world1/data/library/pictures/note_crew.png": {
+      "bytes": 12295,
+      "role": "record",
+      "sha256": "235231d7f437d197caaa4a72995de72d0869fb59f9ab51d0822a194d3cfe2827"
+    },
+    "presets/world1/data/library/pictures/note_crew_keep_shut.png": {
+      "bytes": 5827,
+      "role": "record",
+      "sha256": "87717459234be27bfa9bdcf04c04fbb48ab5aa8bb48afc71a38022350f60706e"
+    },
+    "presets/world1/data/library/pictures/note_cycle.png": {
+      "bytes": 7406,
+      "role": "record",
+      "sha256": "04324a2ca403a4a2a8a494ca133332b4239796bf0fb1988496e1561d855983b2"
+    },
+    "presets/world1/data/library/pictures/note_filter.png": {
+      "bytes": 11266,
+      "role": "record",
+      "sha256": "93f464ff481298cd2911d8a73ab644e36ce56e1299cf987c24e1980d255be353"
+    },
+    "presets/world1/data/library/pictures/note_ledge_cover.png": {
+      "bytes": 9548,
+      "role": "record",
+      "sha256": "e355749e77436aa2689303f33acd41193805c35d3f610a5572bca03f7342fd22"
+    },
+    "presets/world1/data/library/pictures/note_link.png": {
+      "bytes": 9122,
+      "role": "record",
+      "sha256": "96589546d358bd5165495539d43c01e57072a158184d5f90280715098d332453"
+    },
+    "presets/world1/data/library/pictures/note_ship_to.png": {
+      "bytes": 15196,
+      "role": "record",
+      "sha256": "a8dadc5f821a5a44348971429364192cb909d1fabd6929fa1c20e8c725b24c6c"
+    },
+    "presets/world1/data/library/pictures/note_stock_check.png": {
+      "bytes": 11338,
+      "role": "record",
+      "sha256": "dc0d1d6b2a54aef04086b3a9bfc2fb1215ae5e9021ee5a68bfb1f72a820e4cbe"
+    },
+    "presets/world1/data/library/pictures/note_use_sparingly.png": {
+      "bytes": 11214,
+      "role": "record",
+      "sha256": "23eaa85abd7f04e47cfeb750cce12fa32705515c047fb510217ef5ac8f5db11d"
+    },
+    "presets/world1/data/library/pictures/notice_residents.png": {
+      "bytes": 81044,
+      "role": "record",
+      "sha256": "84ab27eaa225543d01eecf1deb37bb7114288d75ec99c38e87c29af7ee2f0950"
+    },
+    "presets/world1/data/library/pictures/notice_sheets.png": {
+      "bytes": 16748,
+      "role": "record",
+      "sha256": "1a70e6a77d70d4148b76507fb706fc2f3611e3948dcc64dffd63bf6883d86ae3"
+    },
+    "presets/world1/data/library/pictures/notices_street.png": {
+      "bytes": 22589,
+      "role": "record",
+      "sha256": "7042b603db6fae08852e258d807ded33c5c328bb00cc9eba5d62d1e1d2000ba6"
+    },
+    "presets/world1/data/library/pictures/poster_launch.png": {
+      "bytes": 45925,
+      "role": "record",
+      "sha256": "55f5f453fcb2edaa655b8b0e96d178a75328fae34acdfad5015c1b06feabba1c"
+    },
+    "presets/world1/data/library/pictures/poster_moon_flight.png": {
+      "bytes": 43102,
+      "role": "record",
+      "sha256": "daa54e4288bdabdf8f3467237cfc32240eb0eca934b588210da18f91f29c9222"
+    },
+    "presets/world1/data/library/pictures/screen_readout.png": {
+      "bytes": 10826,
+      "role": "record",
+      "sha256": "6dfb237225b04adcfb22715b00f519ffb9219a3c99c58de91ea8f68f5c38fee5"
+    },
+    "presets/world1/data/library/pictures/screen_status.png": {
+      "bytes": 23582,
+      "role": "record",
+      "sha256": "7f6821e636b50e94f7fabeae5540362a7b22531bc40aa44a779421ad5f14afe4"
+    },
+    "presets/world1/data/library/pictures/sheet_eva.png": {
+      "bytes": 8811,
+      "role": "record",
+      "sha256": "2b059aaba80a703f7d7f2cfd4a6bafdc799012209012752fc1583ad33b051faf"
+    },
+    "presets/world1/data/library/pictures/sheet_log.png": {
+      "bytes": 10289,
+      "role": "record",
+      "sha256": "e696d2a45f48688bcbfbdf1e14f569bfc405f5d0e19e9deae3495a45769e2fe5"
+    },
+    "presets/world1/data/library/pictures/sheet_main_box.png": {
+      "bytes": 8982,
+      "role": "record",
+      "sha256": "a810e8e14959693715128ae8dda91971c74086bf16959793770dae9d0307748d"
+    },
+    "presets/world1/data/library/pictures/sheet_maintenance.png": {
+      "bytes": 8224,
+      "role": "record",
+      "sha256": "67300c87274fdd765bf2a52a89d8169511b52e0f0d18e720846b00937ebebc7c"
+    },
+    "presets/world1/data/library/pictures/sheet_plan.png": {
+      "bytes": 9919,
+      "role": "record",
+      "sha256": "c69d26e25576fb2ff48474175c65535a0018748c354870ebbb453dc0464a20d4"
+    },
+    "presets/world1/data/library/pictures/sheet_rations.png": {
+      "bytes": 8855,
+      "role": "record",
+      "sha256": "92e53ddf4d6f40d52b65a543d6a5e10671da121a32d63b8aba7b1731bae97c09"
+    },
+    "presets/world1/data/library/pictures/sheet_roster.png": {
+      "bytes": 9875,
+      "role": "record",
+      "sha256": "9914662e10a97810e7e5aa383177c0fde71665a72ec69bccab1f8901dbec0691"
+    },
+    "presets/world1/data/library/pictures/sheet_spares.png": {
+      "bytes": 8974,
+      "role": "record",
+      "sha256": "49e7f742cd68288741bb809cb19669446bd89be331b4bd43d39cd43497953aa7"
+    },
+    "presets/world1/data/library/pictures/sign_airlock.png": {
+      "bytes": 8084,
+      "role": "record",
+      "sha256": "c38a1f6ca1a1d25c9dc261525cba472e495e351ede8744472e120655e84e022a"
+    },
+    "presets/world1/data/library/pictures/sign_barber.png": {
+      "bytes": 20051,
+      "role": "record",
+      "sha256": "7766cdd732f1224f84ae8f939465d3d524248969a154c4d366b9fd7061d28a6f"
+    },
+    "presets/world1/data/library/pictures/sign_block_name.png": {
+      "bytes": 35102,
+      "role": "record",
+      "sha256": "eea878dc9b7971fdb4743a0ef002fcf32942b9b6b715576fb3a65059c59a2940"
+    },
+    "presets/world1/data/library/pictures/sign_books.png": {
+      "bytes": 17383,
+      "role": "record",
+      "sha256": "e1fe2a6140911cec791c543d589193c69f113cd1f4950b415437869267a76ec6"
+    },
+    "presets/world1/data/library/pictures/sign_column_restaurant.png": {
+      "bytes": 18112,
+      "role": "record",
+      "sha256": "36de272addf1498b5cb697e2e2f60cd81b66a665e675b49dca5c02eea083eacc"
+    },
+    "presets/world1/data/library/pictures/sign_column_store.png": {
+      "bytes": 13534,
+      "role": "record",
+      "sha256": "98caac51726ceef15f0c0623d35eb3015969eb668df19368abb7b7ee8c798644"
+    },
+    "presets/world1/data/library/pictures/sign_electric.png": {
+      "bytes": 11839,
+      "role": "record",
+      "sha256": "a830cdd7d62c00965de871221a996556be401a9efa84a3d248bba0ecabc4e211"
+    },
+    "presets/world1/data/library/pictures/sign_garage.png": {
+      "bytes": 6418,
+      "role": "record",
+      "sha256": "0e269256950ac70a22680eecb142092848c47d3e0abd9da9285cb2f02fc035e2"
+    },
+    "presets/world1/data/library/pictures/sign_grain_oil.png": {
+      "bytes": 33354,
+      "role": "record",
+      "sha256": "aeb4fddbc447d9ccd4ffadaf41f00e7f46e8a27d159864d10e861de186e4e4f9"
+    },
+    "presets/world1/data/library/pictures/sign_greenhouse.png": {
+      "bytes": 9725,
+      "role": "record",
+      "sha256": "6a219e264eeefe749f719a9e72f7d063b8a3f5171ede069c4c5b9706678c0a69"
+    },
+    "presets/world1/data/library/pictures/sign_habitat.png": {
+      "bytes": 5190,
+      "role": "record",
+      "sha256": "7f543f89e5d5a63f5cc2851d76aed89014ee883f01ede7271b8d88dc5090967b"
+    },
+    "presets/world1/data/library/pictures/sign_hardware.png": {
+      "bytes": 21995,
+      "role": "record",
+      "sha256": "359eb67cdb6bc57b8f76ed212b8d2f69906a96fcb2f70a18cc3d05680da14cbc"
+    },
+    "presets/world1/data/library/pictures/sign_hub.png": {
+      "bytes": 4165,
+      "role": "record",
+      "sha256": "cecd66645fd23e02f5d1e790dc6a16128364418fee11991ac49e2e140e91b0f7"
+    },
+    "presets/world1/data/library/pictures/sign_lab.png": {
+      "bytes": 4657,
+      "role": "record",
+      "sha256": "4d10f8f54c8ad0355848def184ddc9b97d8cb9d5d88e39608585851c8a7b0325"
+    },
+    "presets/world1/data/library/pictures/sign_laundry.png": {
+      "bytes": 27400,
+      "role": "record",
+      "sha256": "6b3ad99582e3ba1248cae86e8bc38a2c7ed9943baa64471d5bc329f500245911"
+    },
+    "presets/world1/data/library/pictures/sign_pharmacy.png": {
+      "bytes": 24022,
+      "role": "record",
+      "sha256": "c586747f4782b1e386a323b95b37bbc3cde6e6740475452338d56cb724a9c177"
+    },
+    "presets/world1/data/library/pictures/sign_pressure_hatch.png": {
+      "bytes": 10335,
+      "role": "record",
+      "sha256": "ddb337ece667b6f2e4838b9f9dbcb427225046877cce74752211599268a93d00"
+    },
+    "presets/world1/data/library/pictures/sign_store.png": {
+      "bytes": 18448,
+      "role": "record",
+      "sha256": "455601460872f8b584799af50b83724d1c922c87de4b9d09a1b45fb22b81a331"
+    },
+    "presets/world1/data/library/pictures/sign_tea_restaurant.png": {
+      "bytes": 33341,
+      "role": "record",
+      "sha256": "0b7f75a336bf1fbbcf24042101f11a4851cd316151d41371b1fa13df37d8c02b"
+    },
+    "presets/world1/data/library/pictures/sign_watches.png": {
+      "bytes": 17523,
+      "role": "record",
+      "sha256": "2e9059f7b63407d8bdf9e120589e69e1bd6da63a389e2fa08fe92ed5abe9c403"
+    },
+    "presets/world1/data/library/pictures/sign_workshop.png": {
+      "bytes": 10435,
+      "role": "record",
+      "sha256": "4cc691cd74aa2302332219951a064d80560c5c98c3cba245be26936ca8aabbc9"
+    },
+    "presets/world1/data/library/pictures/stencil_cargo.png": {
+      "bytes": 7806,
+      "role": "record",
+      "sha256": "e2845a239ba4dd78532ba097b114a2d25083c88d7c826cbd4e9fc7f5c290bb13"
+    },
+    "presets/world1/data/library/pictures/stencil_case.png": {
+      "bytes": 9163,
+      "role": "record",
+      "sha256": "6be5f1c0a82d040805102399ab08923f9aba7d15c9f62e86bf4b3c24f6e9f546"
+    },
+    "presets/world1/data/library/pictures/stencil_do_not_cover.png": {
+      "bytes": 5478,
+      "role": "record",
+      "sha256": "8a265b65c152cd6f2b708ee07c688964d2bb609349ed160e3b3f66d7c4c5f736"
+    },
+    "presets/world1/data/library/pictures/stencil_keep_clear.png": {
+      "bytes": 5522,
+      "role": "record",
+      "sha256": "04ed1e485c6e521946ed59d4d2bfac5429d12f07beeeadd660e9e6e6c8c606a9"
+    },
+    "presets/world1/data/library/pictures/stencil_med_store.png": {
+      "bytes": 5360,
+      "role": "record",
+      "sha256": "732c23d247171991c1b46806e1bc59e61df87b375c10eab7030753d117a0de36"
+    },
+    "presets/world1/data/library/pictures/stencil_number.png": {
+      "bytes": 4258,
+      "role": "record",
+      "sha256": "7f0d223497fd327706982dce19159cac4fee8cce2ecff8cf37c0566e5fd78651"
+    },
+    "presets/world1/data/library/pictures/stencil_part_number.png": {
+      "bytes": 8179,
+      "role": "record",
+      "sha256": "167ec9c1c88249953d5bdf36fd362584cda6dd4823c75709fb2ec8564a488edd"
+    },
+    "presets/world1/data/library/pictures/stencil_samples_bt.png": {
+      "bytes": 6073,
+      "role": "record",
+      "sha256": "061d41eaad8f8b5fcba3bccb00e259ec4a1b36eb839ff950d26a4ffe0bf33ec9"
+    },
+    "presets/world1/data/library/pictures/stencil_service_panel.png": {
+      "bytes": 6312,
+      "role": "record",
+      "sha256": "064d7708692099503d7f7e674b93fca4a0f3411000aec12ca7876425adb59629"
+    },
+    "presets/world1/data/library/pictures/stencil_spacexcitement.png": {
+      "bytes": 5989,
+      "role": "record",
+      "sha256": "0cfd56b27a93298a62db99635db10b1178be7e9f909c7992d35b65361d776ff1"
+    },
+    "presets/world1/data/library/pictures/stencil_suit_up_bench.png": {
+      "bytes": 5539,
+      "role": "record",
+      "sha256": "519b3d4371218ba469892f37a60b9a9b0444841eca01f730a707df6e8a3d0ce8"
+    },
+    "presets/world1/data/library/pictures/stripes_barber.png": {
+      "bytes": 11050,
+      "role": "record",
+      "sha256": "947198a23237e3b588cf5135325b934d4f80a27b9079ab28d10299a3de11940f"
+    },
+    "presets/world1/data/library/pictures/toolboard_outlines.png": {
+      "bytes": 29799,
+      "role": "record",
+      "sha256": "d259eeed7519de7f77d885f56e9978ae74a605d5435fb7bc2a526b4fc12ac571"
+    },
+    "presets/world1/data/library/pictures/tv_leader.png": {
+      "bytes": 101091,
+      "role": "record",
+      "sha256": "3eee24a0fcf5ea8a0a946026bd5e6bf45eae95fb49a8603ddaa3943811145478"
     },
     "presets/world1/seed.json": {
       "bytes": 1190,
@@ -74,16 +1149,28 @@
         "source": "definitions/algorithms/surface_recipes.toml",
         "spdx": "BSD-3-Clause",
         "what": "vendored Infinigen shaders"
+      },
+      {
+        "commercial_ok": true,
+        "source": "definitions/algorithms/surface_recipes.toml",
+        "spdx": "OFL-1.1",
+        "what": "vendored fonts in data/fonts (Barlow, Barlow Condensed, Noto Sans SC, Noto Serif SC, ZCOOL QingKe HuangYou; their OFL.txt ride along)"
       }
     ],
-    "note": "",
-    "spdx": "BSD-3-Clause AND MIT"
+    "note": "fonts under the SIL Open Font License 1.1: free to use, bundle and embed, also commercially; not sold on their own",
+    "spdx": "BSD-3-Clause AND MIT AND OFL-1.1"
   },
   "picture": null,
   "picture_reason": "no world 1 output in the store pictures this algorithm",
   "provenance": {
-    "code": "85ad6f5cab8caeb13dd18330c0795d312d879a00c396a1f4b7ba65b0cb32fb78",
+    "code": "0a170b67938876af21b09ed49de4427e8ff5090ec17213a690b84e7fa237a8de",
     "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "presets/world1/data/definitions/place.json": {
+        "path": "presets/world1/data/definitions/place.json",
+        "sha256": "9c83b6b7175d9809acb010a7c86fa48e2cfe618bc6595d4fd666c6a50565edc5"
+      }
+    },
     "nodes": [
       "surfaces-bake@airlock",
       "surfaces-bake@camp",

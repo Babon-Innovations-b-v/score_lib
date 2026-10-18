@@ -5,6 +5,11 @@
       "bytes": 328565,
       "role": "usd",
       "sha256": "a15c742acdb37ac002c0e2ec55fcaa83eb1011e16528870af39e99225164d21b"
+    },
+    "preview.png": {
+      "bytes": 6280,
+      "role": "picture",
+      "sha256": "c38d2d6d22d952594f9017743e9ee8456e23694eba907138b89c42bce263d919"
     }
   },
   "id": "base.galley",
@@ -22,8 +27,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "55 prim positions from above over data/kit/galley.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-17T09:49:25.951322+00:00",

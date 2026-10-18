@@ -45,6 +45,11 @@
       "bytes": 122674,
       "role": "usd",
       "sha256": "64d036fd96a54078b4e0c15a25d3fb7e2c312c2e2bf966aae1cc0ee38a0fc20b"
+    },
+    "preview.png": {
+      "bytes": 2238,
+      "role": "picture",
+      "sha256": "ec5c63a06ac17ebec027ffeb38715c1eb8361f8538e3287b44042301627dd13c"
     }
   },
   "id": "sound.hdoor",
@@ -62,8 +67,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/audio.py",
+    "of": "assets/sound/generated/doors/impact_grating.ogg (the layer's first sound)"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-13T08:09:34.278470+00:00",

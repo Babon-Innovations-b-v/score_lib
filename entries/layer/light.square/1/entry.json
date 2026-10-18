@@ -1,6 +1,16 @@
 {
   "address": "layer/light.square@1",
   "files": {
+    "haze/passes/square-0.views.json": {
+      "bytes": 922,
+      "role": "record",
+      "sha256": "d14a0ef6d5bb072c0818427b21556e783b1e084ed981883d95b0aadfd02c6756"
+    },
+    "haze/passes/square-0/passes.json": {
+      "bytes": 670,
+      "role": "record",
+      "sha256": "4a71460ab25277a82b34985c874f3044bce6464e2e541462c5de3b0222c547db"
+    },
     "lamps.json": {
       "bytes": 5665,
       "role": "record",
@@ -10,6 +20,16 @@
       "bytes": 64635,
       "role": "usd",
       "sha256": "b88fa2bfff83df27215d861710d4f89d4cb507463f9361188a73adc91c66ef92"
+    },
+    "measures.json": {
+      "bytes": 10749,
+      "role": "record",
+      "sha256": "b0f75e30881adf08cc630e845c91ac0602eebd6bebaa6662379c2f7ec2da9534"
+    },
+    "picture.png": {
+      "bytes": 3191748,
+      "role": "picture",
+      "sha256": "d290ac091dc198315035922312a169d1e4f6304f6a63b249fb54858ba016c872"
     }
   },
   "id": "light.square",
@@ -27,8 +47,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@square: looks/square/shot0-000-look.png"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T10:37:19.122806+00:00",

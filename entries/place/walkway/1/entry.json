@@ -17,14 +17,24 @@
       "sha256": "771a7fd92fd1f71a63ad7bcf0d4893b8c566fadd6b057d9aa8b834ed04a2755c"
     },
     "inputs.json": {
-      "bytes": 5994,
+      "bytes": 5796,
       "role": "record",
-      "sha256": "01ed8023356d8cb535d52c469dcc48729c3350e1fe53b9a458f25a400d84a290"
+      "sha256": "2ae82a4acd85e57c4075cccb801f137b9a5af22eabdacee40aedefe4c4532907"
     },
     "origin.json": {
-      "bytes": 537,
+      "bytes": 528,
       "role": "record",
-      "sha256": "c696bf27db9d4e412e9747149960c54d892eb857e93b60a9ac7e1198baabbb1d"
+      "sha256": "1d29bbf43f512ab5951fa2182a2dc818238e2be98db0dd8faaf15bf7e45b384a"
+    },
+    "picture.png": {
+      "bytes": 2387617,
+      "role": "picture",
+      "sha256": "3fc88c288dd7294224ec3f9ff6adf838b67f18c0d9e39c37f0517b3ccc9c9422"
+    },
+    "plan/plan.json": {
+      "bytes": 5384,
+      "role": "record",
+      "sha256": "65617ccac14e841f5b790ac14dbffee65498d83da9cbd3c138f1812f0c3fcb67"
     },
     "scene.json": {
       "bytes": 2924,
@@ -52,8 +62,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@walkway: looks/walkway/from-east-door-000-look.png"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T10:11:51.521798+00:00",
@@ -75,12 +88,35 @@
     "complete_failing": [
       "named gaps"
     ],
+    "files_from": {
+      "inputs.json": {
+        "path": "inputs.json",
+        "sha256": "01ed8023356d8cb535d52c469dcc48729c3350e1fe53b9a458f25a400d84a290"
+      },
+      "origin.json": {
+        "path": "origin.json",
+        "sha256": "c696bf27db9d4e412e9747149960c54d892eb857e93b60a9ac7e1198baabbb1d"
+      }
+    },
     "gaps": "data/checks/gaps/walkway.json",
     "models": [],
     "node": "assembly@walkway",
     "output": "1dc1351be492896299a7b9efd113af8ad60584ef0750a6975a34519bcfe2690d",
     "place": "walkway",
     "record_key": "5aa3fd9e738de60a91da434e8522caed44f74785d8372bc5060177ecbf9d7d0a",
+    "records_from": {
+      "plan": {
+        "accept": {
+          "at": "2026-10-14T22:15:05.841380+00:00",
+          "by": "runner"
+        },
+        "code": "d717240bd08570d0486dfc7acdade8e73ea4926837b32eeaf69ba7b60a0a2a73",
+        "models": [],
+        "node": "plan@walkway",
+        "output": "0c075ece7e938f49cc1a46bf0c0c17a74f6650ae1951884463d85993c4f68c68",
+        "record_key": "7ca7ba0dca7ae441f1c5d4d2410a132091cf475180c9aab1ff6139c8018a86b2"
+      }
+    },
     "unresolved_sublayers": [],
     "world": "world1"
   },

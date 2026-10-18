@@ -5,6 +5,11 @@
       "bytes": 622461,
       "role": "usd",
       "sha256": "007801174c8c3c30e6e63e99fc191d93d6d9e66d316bad6930644d05ebad047f"
+    },
+    "preview.png": {
+      "bytes": 32169,
+      "role": "picture",
+      "sha256": "582ad000c3afbc656acd3cb106512943e786d4b9597294e7bdc0bf09357592d2"
     }
   },
   "id": "base.airlock",
@@ -22,8 +27,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "304 prim positions from above over data/kit/airlock.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T21:49:09.803965+00:00",

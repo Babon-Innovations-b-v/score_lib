@@ -6,6 +6,11 @@
       "role": "usd",
       "sha256": "5f5213f0f3877a41a2fb8f85e579a312eb0bf2360e5b2ae19b479b0b4f117293"
     },
+    "preview.png": {
+      "bytes": 3899,
+      "role": "picture",
+      "sha256": "e502b2c774589b990bc0b59e2ca66a891db7a4e13048ae30e0ec8dffa3d06ed0"
+    },
     "settle.json": {
       "bytes": 10579,
       "role": "record",
@@ -27,8 +32,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "17 prim positions from above over data/kit/campgrounds.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T14:16:00.039696+00:00",

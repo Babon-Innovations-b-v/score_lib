@@ -10,6 +10,16 @@
       "bytes": 1285,
       "role": "usd",
       "sha256": "f87bb9c2f0e3183cf0e81644618ccb6035358d3d296d8505eb11321bc36fef88"
+    },
+    "measures.json": {
+      "bytes": 4324,
+      "role": "record",
+      "sha256": "d1220c39a1262a6404d6691fd554c8916d963e0bbc04e155a1c8f53e20cf395c"
+    },
+    "picture.png": {
+      "bytes": 2481230,
+      "role": "picture",
+      "sha256": "6a7137c17bc1d18cf9dc29a03698d5cce984829a40ef076cb14f8100f466077b"
     }
   },
   "id": "light.street",
@@ -27,8 +37,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@street: looks/street/shot0-000-look.png"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-15T17:38:29.285750+00:00",

@@ -20,6 +20,11 @@
       "bytes": 13688392,
       "role": "usd",
       "sha256": "4dca03a486e2c50a41c7a4ff5e3ed82ac743d9055db7b7b64c6172da58c98009"
+    },
+    "preview.png": {
+      "bytes": 68571,
+      "role": "picture",
+      "sha256": "1a763598efb2decab6b52be970ebce2399533e9774832bf7da33853db6bdb3e6"
     }
   },
   "id": "base.greenhouse",
@@ -37,8 +42,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "1209 prim positions from above over data/kit/greenhouse.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-17T11:21:57.694141+00:00",

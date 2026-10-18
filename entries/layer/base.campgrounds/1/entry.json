@@ -20,6 +20,11 @@
       "bytes": 33309251,
       "role": "usd",
       "sha256": "0ec5b94333fc3cde9651ee9413cbc112a9ad4bfdf76f95c96b2c437af10dfd80"
+    },
+    "preview.png": {
+      "bytes": 5207,
+      "role": "picture",
+      "sha256": "5117adcf97e28428c4e5dbb4293f86e1fea0f5d2eb141da5ad10429dc86fac73"
     }
   },
   "id": "base.campgrounds",
@@ -37,8 +42,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "36 prim positions from above over data/kit/campgrounds.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T14:16:00.039696+00:00",

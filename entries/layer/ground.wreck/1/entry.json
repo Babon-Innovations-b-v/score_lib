@@ -5,6 +5,11 @@
       "bytes": 91,
       "role": "usd",
       "sha256": "93f3393e322e761cc185ac75c0efd9d686ae36232f08700de89026ecbcf0a961"
+    },
+    "preview.png": {
+      "bytes": 29254,
+      "role": "picture",
+      "sha256": "a072ff9e3e3a19f48aeb62099e54c43d96d15058c7213abebb258c684bc18b8c"
     }
   },
   "id": "ground.wreck",
@@ -22,8 +27,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "the place's ground.usdc"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T15:53:36.185584+00:00",

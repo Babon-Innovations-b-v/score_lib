@@ -10,6 +10,11 @@
       "bytes": 411,
       "role": "record",
       "sha256": "9583d42112bd4d1f7f8851a6b2de7ff523d6f628b548a1316e1c4233ea955a11"
+    },
+    "preview.png": {
+      "bytes": 30036,
+      "role": "picture",
+      "sha256": "f875a17c0c2176f023f499c62f1fd918b423488405627badb0795ebc3f2804b1"
     }
   },
   "id": "machines.garage",
@@ -27,8 +32,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "1 prim positions from above over data/kit/garage.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T22:23:43.534540+00:00",

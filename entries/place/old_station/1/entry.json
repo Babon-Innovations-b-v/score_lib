@@ -17,9 +17,9 @@
       "sha256": "33d2ee74c10a1c6c7f577978f06f427c9129276a7140af3df5b685c5b3d9942e"
     },
     "inputs.json": {
-      "bytes": 6007,
+      "bytes": 5791,
       "role": "record",
-      "sha256": "35de0c6d9d11f51aae5badff4fc76c830d6f4a0905413c059b72ffe0d789994c"
+      "sha256": "7e0e2361af1fd5947227a52f8474c1cb4b6b44071657b809ad0db568988cae6d"
     },
     "old_station.usda": {
       "bytes": 521,
@@ -27,9 +27,19 @@
       "sha256": "0f526286641b67443e56f1748ffa3b11b1ab2fc559f37f5be6fca8aa5fe9b7a6"
     },
     "origin.json": {
-      "bytes": 757,
+      "bytes": 748,
       "role": "record",
-      "sha256": "1725a877ea56c6a0df6d7dd266352849b986ad005a7ad3a6fa759c5de13ef63a"
+      "sha256": "838654079a1f62ee862efbbefedd6cea23184e6e28aed1c6ca24fe617f281c0c"
+    },
+    "picture.png": {
+      "bytes": 2369675,
+      "role": "picture",
+      "sha256": "9686e837ee85b31a5407231151def5867fe221585b98cf77b40ea71b8afc9be7"
+    },
+    "plan/plan.json": {
+      "bytes": 8247,
+      "role": "record",
+      "sha256": "542a1dab2cc6d9c4414251687316f59de35c71d08dd9a087047cb78fb7350bae"
     },
     "scene.json": {
       "bytes": 7774,
@@ -52,8 +62,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@old_station: looks/old_station/shot0-000-look.png"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T14:02:30.466230+00:00",
@@ -75,12 +88,35 @@
     "complete_failing": [
       "named gaps"
     ],
+    "files_from": {
+      "inputs.json": {
+        "path": "inputs.json",
+        "sha256": "35de0c6d9d11f51aae5badff4fc76c830d6f4a0905413c059b72ffe0d789994c"
+      },
+      "origin.json": {
+        "path": "origin.json",
+        "sha256": "1725a877ea56c6a0df6d7dd266352849b986ad005a7ad3a6fa759c5de13ef63a"
+      }
+    },
     "gaps": "data/checks/gaps/old_station.json",
     "models": [],
     "node": "assembly@old_station",
     "output": "f60adc09d2c14a31314d3bd31f69c2601467bfbcf728c76faa051b30b1810b56",
     "place": "old_station",
     "record_key": "7d9d97819faa5aebdafc6de56b258e509d111fd6834f0d009658ac7904c3e290",
+    "records_from": {
+      "plan": {
+        "accept": {
+          "at": "2026-10-13T09:47:55.985337+00:00",
+          "by": "runner"
+        },
+        "code": "d717240bd08570d0486dfc7acdade8e73ea4926837b32eeaf69ba7b60a0a2a73",
+        "models": [],
+        "node": "plan@old_station",
+        "output": "70a2d34d79cdc73e2c36f268e521d0f69766dbb89000bf1ff237a7f99e047260",
+        "record_key": "b5d2da74e14cdd8eb76d8771d5291fcb35bd86ae2e2127271e4c36cc39d335fa"
+      }
+    },
     "unresolved_sublayers": [],
     "world": "world1"
   },

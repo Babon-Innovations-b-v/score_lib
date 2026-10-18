@@ -10,6 +10,16 @@
       "bytes": 1038,
       "role": "usd",
       "sha256": "966b55482baab5e0527d2ec415993ccb76e6af86ab184ac874ce1bee859487a2"
+    },
+    "measures.json": {
+      "bytes": 5230,
+      "role": "record",
+      "sha256": "b1d06e9d79cc2b1ca93b060601c64e51f9a8cc1a767d5476f28cafd4b4b167e7"
+    },
+    "picture.png": {
+      "bytes": 2128728,
+      "role": "picture",
+      "sha256": "fac4f0d376d7e6f4f44f9fcb78961805922f13022182c9122b49b9619500c815"
     }
   },
   "id": "light.garage",
@@ -27,8 +37,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@garage: looks/garage/shot0-000-look.png"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T22:23:43.534540+00:00",

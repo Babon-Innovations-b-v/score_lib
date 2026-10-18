@@ -10,6 +10,16 @@
       "bytes": 3518,
       "role": "usd",
       "sha256": "0678d1bb6639bd6da9065e999b4559785b6f2f3a5bb17d69fe3fe6b3da8ae637"
+    },
+    "measures.json": {
+      "bytes": 12636,
+      "role": "record",
+      "sha256": "63b76f44755c34e7b60bbcc3c24a81209b2bcec2076a85f45633ea53f04c405e"
+    },
+    "picture.png": {
+      "bytes": 2541828,
+      "role": "picture",
+      "sha256": "3802dcb924d9cadd2238352188390a0cd94b7c3c5eb7d7b6580889e744de95d3"
     }
   },
   "id": "light.hangar",
@@ -27,8 +37,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@hangar: looks/hangar/shot0-000-look.png"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T22:13:41.093010+00:00",

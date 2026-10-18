@@ -10,6 +10,11 @@
       "bytes": 16857,
       "role": "usd",
       "sha256": "595565e1c1464926c2c8d03d070a2327c8f9cca18c60e026014081cb3df6aa2b"
+    },
+    "preview.png": {
+      "bytes": 30170,
+      "role": "picture",
+      "sha256": "a42e011df4b48e021c5d75c03c9887a5f2881164bb989170f33b2d5909987697"
     }
   },
   "id": "effects.garage",
@@ -27,8 +32,11 @@
     "note": "",
     "spdx": "MIT"
   },
-  "picture": null,
-  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "2 prim positions from above over data/kit/garage.json"
+  },
   "provenance": {
     "accept": {
       "at": "2026-10-16T22:23:43.534540+00:00",
