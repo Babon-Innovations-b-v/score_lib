@@ -6,6 +6,8 @@ import re
 from pxr import Sdf, Usd
 
 from score_lib import entry as entries
+from score_lib.export.run import world_places
+from score_lib.source.store import SUB, stored_output
 from score_lib.rewrite import asset_paths, joined, open_copy
 
 OBJECT_FIELDS = ("model", "model_sha256", "row", "kind", "name")
@@ -99,8 +101,13 @@ def place_kind(context, place):
 
 
 def assembly_provenance(context, place):
-    """The provenance block of a place's assembly node: node, output, record key, accept, code."""
-    return node_provenance(context, f"assembly@{place}")
+    """The provenance block of the node holding a place's assembled stage: node, output, record key, accept, code,
+    and the folder of the output it is read from when the place is one only other places show."""
+    node, output = context.assembly_source(place)
+    found = node_provenance(context, node or f"assembly@{place}", stored_output(output) if output else None)
+    if output and SUB in output:
+        found["folder"] = output.partition(SUB)[2]
+    return found
 
 
 def node_provenance(context, node, output=None):
@@ -142,7 +149,7 @@ def neighbour_path(context, path):
     """(library path, place address) of a neighbouring place's root named `../../<place>/<place>.usda`, or None when
     the path names none of the world's places."""
     found = NEIGHBOUR.match(path)
-    if not found or found["place"] not in context.world["places"]:
+    if not found or found["place"] not in world_places(context.world):
         return None
     address = place_address(context, found["place"])
     kind, entry_id, version = entries.parse_address(address)

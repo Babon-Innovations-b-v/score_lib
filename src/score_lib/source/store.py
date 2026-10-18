@@ -15,6 +15,19 @@ RETIRED_STAGES = {"effects", "lightkit", "late_bake", "models", "room_sound", "s
 RETIRED_PREFIXES = ("split-", "fm-", "surf-", "surfaces-hangar-", "person-", "image-pins-", "image-proof-")
 
 
+SUB = "#"  # an output's folder read as an output of its own: `<output>#<folder>/`
+
+
+def sub_output(output, folder):
+    """The id of one folder of an output read as an output of its own."""
+    return f"{output}{SUB}{folder.rstrip('/')}/"
+
+
+def stored_output(output):
+    """The stored output a (sub-)output id is read from."""
+    return output.partition(SUB)[0]
+
+
 def stage_of(node):
     """The stage name of a node: `<stage>@<place>` or a world node's own name."""
     return node.split("@", 1)[0]
@@ -68,8 +81,13 @@ class Store:
         return [node for node in self.nodes() if stage_of(node) == stage and self.accepted(node)]
 
     def listing(self, output):
-        """{relative path: sha256} of a stored output."""
-        return json.loads((self.objects / "outputs" / f"{output}.json").read_text())
+        """{relative path: sha256} of a stored output, or of the folder of one a sub-output names (`<output>#<folder>/`:
+        the files under that folder, the folder dropped from their names)."""
+        stored, _, folder = output.partition(SUB)
+        found = json.loads((self.objects / "outputs" / f"{stored}.json").read_text())
+        if not folder:
+            return found
+        return {name[len(folder):]: sha for name, sha in found.items() if name.startswith(folder)}
 
     def blob(self, sha256):
         """The path of one stored blob (read only)."""

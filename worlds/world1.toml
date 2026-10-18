@@ -4,3 +4,6 @@ seed = 3  # data/definitions/world.json:4
 commit = "4547b8c549eccfad6c9df83965fb452bead83560"  # the score commit the repo files are read at
 kinds = ["algorithm", "surface", "model", "light", "sound", "effect", "character", "ground", "kit", "layer", "place"]
 places = ["airlock", "camp", "campgrounds", "cockpit", "engineroom", "flat", "galley", "garage", "gdoor", "greenhouse", "habitat", "hangar", "hdoor", "hub", "lab", "launch", "navigation", "old_station", "quarters", "shiplock", "square", "stairwell", "storage", "street", "tube", "walkway", "workshop", "wreck"]
+# Places no assembly of their own makes, only other places show: read from the first neighbours output holding them
+# (neighbours@<place>: places/<shown>/), as the films see them.
+shown = ["far_city"]

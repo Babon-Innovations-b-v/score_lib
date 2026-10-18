@@ -24,7 +24,8 @@ from score_lib.admission import NotAdmitted, Sources
 from score_lib.rewrite import info
 from score_lib.source.release import Release
 from score_lib.source.repo import Repo
-from score_lib.source.store import Store
+from score_lib.source.store import Store, sub_output
+from score_lib.web3d import record as web_copy
 
 ORDER = ("algorithm", "surface", "model", "light", "sound", "effect", "character", "ground", "kit", "layer", "place")
 ATOMS = ORDER[:-2]
@@ -74,7 +75,7 @@ class Context:
         self.store = store
         self.repo = repo
         self.sources = sources
-        self.places = sorted(places or world["places"])
+        self.places = sorted(places or world_places(world))
         self.scratch = pathlib.Path(scratch or tempfile.mkdtemp(prefix="score-lib-"))
         self.cache = pathlib.Path(cache) if cache else None
         self.release = Release.from_repo(repo, world["name"])
@@ -116,9 +117,24 @@ class Context:
             self.sha_map.setdefault(sha, (record["address"], name))
 
     @functools.cache
-    def assembly(self, place):
-        """(output, listing) of a place's accepted assembly, or (None, {})."""
+    def assembly_source(self, place):
+        """(node, output) of a place's assembled stage: its accepted assembly, or for a place only other places show
+        (the world toml's `shown`) the folder holding it in the first neighbours output (sorted by node) that does;
+        (None, None) when there is none."""
         output = self.store.accepted(f"assembly@{place}")
+        if output:
+            return f"assembly@{place}", output
+        if place not in self.world.get("shown", []):
+            return None, None
+        for node in self.store.nodes_of("neighbours"):
+            found = self.store.accepted(node)
+            if f"places/{place}/{place}.usda" in self.store.listing(found):
+                return node, sub_output(found, f"places/{place}")
+        return None, None
+
+    def assembly(self, place):
+        """(output, listing) of a place's assembled stage, or (None, {})."""
+        output = self.assembly_source(place)[1]
         return (output, self.store.listing(output)) if output else (None, {})
 
     @functools.cache
@@ -144,6 +160,11 @@ def write_json(path, record):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(record, sort_keys=True, indent=2, ensure_ascii=False) + "\n")
     return path
+
+
+def world_places(world):
+    """Every place of a world: its own places and the places only they show (`shown`)."""
+    return sorted(set(world["places"]) | set(world.get("shown", [])))
 
 
 def load_world(root, name):
@@ -312,12 +333,14 @@ def resolve(context, candidate):
         return Planned(candidate, "refused", None, None, carried)
     if latest is None:
         return Planned(candidate, "new", record["address"], record)
+    record = web_copy.carried(record, latest)
     if comparable(latest) == comparable(record):
         return Planned(candidate, "unchanged", latest["address"], latest)
     if latest["state"] == "draft":
         return Planned(candidate, "changed draft", record["address"], record)
     address = entries.address_of(candidate.kind, candidate.entry_id, latest["version"] + 1)
-    return Planned(candidate, "new version", address, build_record(context, candidate, address, "draft"))
+    return Planned(candidate, "new version", address,
+                   web_copy.carried(build_record(context, candidate, address, "draft"), latest))
 
 
 def remember(context, planned):

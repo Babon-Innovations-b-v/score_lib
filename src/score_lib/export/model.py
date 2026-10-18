@@ -23,6 +23,7 @@ MADE_STAGES = ("surfaces-bake", "ship_kit", "crops-surfaces-bake")
 PREVIEW_VERSION = "mesh-3"
 LAYER_TAGS = {"layers/crops.usda": "crop", "layers/machines.usda": "machine"}
 ROUTE_TAGS = {"code": "piece", "model": "prop"}
+FIXTURE = "fixture_"  # score's tools/usd/scene.py fixture_asset: a released model's asset name
 
 
 def plan(context):
@@ -87,10 +88,27 @@ def place_models(context, place):
         found.append({"place": place, "asset": asset, "glow": glow if glow in listing else None, "stem": stem,
                       "identity": identity, "model_sha256": sha, "row": row, "layers": sorted(layers),
                       "output": output})
-        context.memo.setdefault("model_of", {})[(place, stem)] = identity
-        if glow in listing:
-            context.memo["model_of"][(place, f"{stem}_glow")] = identity
+        model_of = context.memo.setdefault("model_of", {})
+        for name in kit_names(stem, row):
+            keys = [(place, name)] + ([(place, f"{name}_glow")] if glow in listing else [])
+            for key in keys:  # an asset's own stem wins over another asset's alias of the same name
+                if name == stem:
+                    model_of[key] = identity
+                else:
+                    model_of.setdefault(key, identity)
     return found
+
+
+def kit_names(stem, row):
+    """The names a place's kit may give a model: its asset stem and, for a released model (a fixture, placed as
+    assets/fixture_<its file's stem>.usdc by score's tools/usd/scene.py fixture_asset), that file's own stem."""
+    names = [stem]
+    if stem.startswith(FIXTURE):
+        names.append(stem[len(FIXTURE):])
+    model = row.get("model") or ""
+    if model.endswith((".gltf", ".glb")):
+        names.append(posixpath.splitext(posixpath.basename(model))[0])
+    return sorted(set(names))
 
 
 def dependencies(context, output, name, seen=None):
