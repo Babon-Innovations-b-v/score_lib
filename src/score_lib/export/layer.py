@@ -50,6 +50,7 @@ class Mapping:
         self.context = context
         self.place = place
         self.output, self.listing = context.assembly(place)
+        self.name = name
         self.folder = posixpath.dirname(name)
         self.paths = {}
         self.requires = set()
@@ -85,6 +86,8 @@ class Mapping:
     def resolve(self, path):
         """The new text of one asset path."""
         name = joined(self.folder, path)
+        if name == self.name:  # the layer naming itself (a prim referencing another prim of the same layer)
+            return "./layer.usda"
         if name in self.listing:
             return self.library(self.listing[name]) or self.own_file(name)
         found = self.neighbour(path)
