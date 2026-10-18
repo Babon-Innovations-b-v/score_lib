@@ -24,19 +24,6 @@
   },
   "id": "drift_2_3.camp",
   "kind": "effect",
-  "licence": {
-    "commercial_ok": true,
-    "components": [
-      {
-        "commercial_ok": true,
-        "source": "score repository",
-        "spdx": "MIT",
-        "what": "made by score"
-      }
-    ],
-    "note": "",
-    "spdx": "MIT"
-  },
   "picture": {
     "file": "preview.png",
     "made_by": "preview/points.py",
@@ -50,6 +37,12 @@
     "code": "9b32f2200ac272fbb20a9a7b7f3190e8a3f4de0378733281b560755af276318d",
     "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
     "from": "game/outside/dust/mars_wind.gd:18-52,190-219,280-313 (CELL_M 14, CELLS_OUT 2, DRIFT_HIGH_CALM 0.4, WIND_CALM 2.5 m/s at 0.7 to 1.2 of it, DRIFT_SECONDS 3, DRIFT_SINK 0.25, DRIFT_GRAINS_A_CELL 20,000 at DRIFT_GRAINS_CALM_SHARE 0.06 = 1,200 a cell, DRIFT_GRAIN_M 0.03, DRIFT_GRAIN_THICKNESS 0.7, spread 8, fading_in_and_out 0 / 0.2 / 0.7 / 1), game/outside/dust/dust_grains.gd:24-38,106-117 (the unshaded speck, MARS_DUST #b4583a lifted by GRAIN_LIFT 1.25 to #e16e48); the cells are the stage's own five by five round the camp's middle, not Mars's cell grid round the player; footage: doi-10.1088/0034-4885/75/10/106901 (sand on Mars hops about 10 cm up and up to about a metre, grain by grain: the drift's grains stay within its 0.4 m over the ground)",
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
     "models": [],
     "node": "effects-layer@camp",
     "output": "ba556d2238a88a22cad7bca11d03443466319f14ed988abf6ba9c1a5b933e9fe",

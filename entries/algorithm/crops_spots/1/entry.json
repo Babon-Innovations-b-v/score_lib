@@ -132,9 +132,9 @@
       "sha256": "41bf1adaedeffa565ea3346c5f019877c029c0db818a2ce76a963109171c6461"
     },
     "run.json": {
-      "bytes": 381,
+      "bytes": 398,
       "role": "record",
-      "sha256": "3c92d44d22ff1ef51c908f8ea0d741261ade6175e94115b0406b30ae29f6b739"
+      "sha256": "48aa87509e8745285c59a1bf418ced25216419dfcf4c583f093d139491b312e3"
     },
     "settings.schema.json": {
       "bytes": 862,
@@ -149,19 +149,6 @@
   },
   "id": "crops_spots",
   "kind": "algorithm",
-  "licence": {
-    "commercial_ok": true,
-    "components": [
-      {
-        "commercial_ok": true,
-        "source": "score repository",
-        "spdx": "MIT",
-        "what": "made by score"
-      }
-    ],
-    "note": "",
-    "spdx": "MIT"
-  },
   "picture": {
     "file": "picture.png",
     "made_by": "source picture",
@@ -170,9 +157,16 @@
   "provenance": {
     "code": "2ce8fd3c2d9f1284557321c1ac32eb17057871bca5a20a0ece2d846e46901d04",
     "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
     "nodes": [
       "crops-layer@greenhouse"
     ],
+    "outside": [],
     "stage": "crops-layer",
     "world": "world1"
   },

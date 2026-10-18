@@ -162,9 +162,9 @@
       "sha256": "4614a2c739493e527882a5ac7b749813028313204bc26016a1d626cd2c9b2844"
     },
     "run.json": {
-      "bytes": 379,
+      "bytes": 396,
       "role": "record",
-      "sha256": "cdd42b3c7884be8708af3728f20f6508ec009ff6a3d09b23ea318539b76bb11f"
+      "sha256": "abc220e5ead46ea0e6d30ad750886fec1dcfbe1662307c71a6e74812856d237d"
     },
     "settings.schema.json": {
       "bytes": 1102,
@@ -194,19 +194,6 @@
   },
   "id": "sound_layer",
   "kind": "algorithm",
-  "licence": {
-    "commercial_ok": true,
-    "components": [
-      {
-        "commercial_ok": true,
-        "source": "score repository",
-        "spdx": "MIT",
-        "what": "made by score"
-      }
-    ],
-    "note": "",
-    "spdx": "MIT"
-  },
   "picture": {
     "file": "picture.png",
     "made_by": "preview/audio.py",
@@ -215,6 +202,12 @@
   "provenance": {
     "code": "4970e7427f142f1e59079dc1d0802fd120f1d9f1ef3af5e3209bd82ab929069e",
     "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
     "nodes": [
       "sound@airlock",
       "sound@camp",
@@ -243,6 +236,7 @@
       "sound@workshop",
       "sound@wreck"
     ],
+    "outside": [],
     "stage": "sound",
     "world": "world1"
   },

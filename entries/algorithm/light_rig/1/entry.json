@@ -182,9 +182,9 @@
       "sha256": "9ce17ec2cd1c0127e2026df01a20ffa633aef99c8e0e329a72a000717c598bcc"
     },
     "run.json": {
-      "bytes": 403,
+      "bytes": 420,
       "role": "record",
-      "sha256": "7d348458cc3be66fcf2c98d31db3b2713f65d29effeda343a77c5e29319979fb"
+      "sha256": "03510c782a7373d1cb48b8ce71edb6a5ab620270651e5e68d6ac4fecae4ad559"
     },
     "settings.schema.json": {
       "bytes": 1148,
@@ -199,19 +199,6 @@
   },
   "id": "light_rig",
   "kind": "algorithm",
-  "licence": {
-    "commercial_ok": true,
-    "components": [
-      {
-        "commercial_ok": true,
-        "source": "score repository",
-        "spdx": "MIT",
-        "what": "made by score"
-      }
-    ],
-    "note": "",
-    "spdx": "MIT"
-  },
   "picture": {
     "file": "picture.png",
     "made_by": "source picture",
@@ -220,6 +207,12 @@
   "provenance": {
     "code": "2b77312f503fb31f8c2d7396ac822dc9b42fbe1f332899baf500f84f5984ff92",
     "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
     "nodes": [
       "light@airlock",
       "light@camp",
@@ -248,6 +241,7 @@
       "light@workshop",
       "light@wreck"
     ],
+    "outside": [],
     "stage": "light",
     "world": "world1"
   },

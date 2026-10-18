@@ -19,25 +19,6 @@
   },
   "id": "steel_dark",
   "kind": "surface",
-  "licence": {
-    "commercial_ok": true,
-    "components": [
-      {
-        "commercial_ok": true,
-        "source": "score repository",
-        "spdx": "MIT",
-        "what": "made by score"
-      },
-      {
-        "commercial_ok": true,
-        "source": "score paper/source/score.md Table C1",
-        "spdx": "BSD-3-Clause",
-        "what": "surface recipes: ProcFunc and Infinigen shaders"
-      }
-    ],
-    "note": "",
-    "spdx": "BSD-3-Clause AND MIT"
-  },
   "picture": {
     "file": "preview.png",
     "made_by": "preview/swatch.py",
@@ -46,6 +27,20 @@
   "provenance": {
     "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
     "family": "steel",
+    "made_with": [
+      {
+        "by": "infinigen2",
+        "what": "relief from infinigen2's base materials"
+      },
+      {
+        "by": "procfunc",
+        "what": "baked by the surface recipes on ProcFunc"
+      },
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
     "place": "cockpit",
     "source": "data/library/materials.json at the world's commit",
     "world": "world1"

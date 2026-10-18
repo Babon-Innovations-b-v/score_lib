@@ -77,9 +77,9 @@
       "sha256": "39d96bcbefeee1783bae4f9717d67d2f0eaf21c0c1b54796e27ee44c2d60394e"
     },
     "run.json": {
-      "bytes": 268,
+      "bytes": 285,
       "role": "record",
-      "sha256": "474d51f540a7e7f900e620587b2f2ca5a277929de880f59cef0d6d9fa849c9c5"
+      "sha256": "e5ba7cf40652885ce04d7181d3f00602a1c5dd2027559ce8fd7029618c8e6af1"
     },
     "settings.schema.json": {
       "bytes": 292,
@@ -94,19 +94,6 @@
   },
   "id": "sky_dust_stars_haze",
   "kind": "algorithm",
-  "licence": {
-    "commercial_ok": true,
-    "components": [
-      {
-        "commercial_ok": true,
-        "source": "score repository",
-        "spdx": "MIT",
-        "what": "made by score"
-      }
-    ],
-    "note": "",
-    "spdx": "MIT"
-  },
   "picture": {
     "file": "picture.png",
     "made_by": "source picture",
@@ -115,6 +102,12 @@
   "provenance": {
     "code": "a03509ef4f86ce8be50a0f8e58b251dfc28ab948c31169704b7cd90365a9607b",
     "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
     "nodes": [
       "scene-record@airlock",
       "scene-record@camp",
@@ -143,6 +136,7 @@
       "scene-record@workshop",
       "scene-record@wreck"
     ],
+    "outside": [],
     "stage": "scene-record",
     "world": "world1"
   },

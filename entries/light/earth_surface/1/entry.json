@@ -14,26 +14,6 @@
   },
   "id": "earth_surface",
   "kind": "light",
-  "licence": {
-    "commercial_ok": true,
-    "components": [
-      {
-        "commercial_ok": true,
-        "source": "score repository",
-        "spdx": "MIT",
-        "what": "made by score"
-      },
-      {
-        "commercial_ok": true,
-        "source": "score tools/usd/earth.py",
-        "spdx": "LicenseRef-NASA-Media-Guidelines",
-        "text": "NASA Earth Observatory's Visible Earth pictures, free of copyright (NASA's media guidelines)",
-        "what": "Earth picture baked from NASA Blue Marble and cloud cover"
-      }
-    ],
-    "note": "free of copyright under NASA's media guidelines (the Blue Marble and cloud pictures the Earth ball is baked from)",
-    "spdx": "LicenseRef-NASA-Media-Guidelines AND MIT"
-  },
   "picture": {
     "file": "earth_surface.png",
     "made_by": "source picture",
@@ -46,6 +26,17 @@
     },
     "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
     "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "made_with": [
+      {
+        "by": "nasa_visible_earth",
+        "carried": true,
+        "what": "Earth picture baked from NASA Blue Marble and cloud cover"
+      },
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
     "models": [],
     "node": "assembly@old_station",
     "output": "f60adc09d2c14a31314d3bd31f69c2601467bfbcf728c76faa051b30b1810b56",

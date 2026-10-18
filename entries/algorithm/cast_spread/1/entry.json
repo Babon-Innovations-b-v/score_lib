@@ -367,9 +367,9 @@
       "sha256": "ad6755b2d89f36622ed743256851e128c94134f854c1e22ba1a1f2c7ea11c0ee"
     },
     "run.json": {
-      "bytes": 348,
+      "bytes": 365,
       "role": "record",
-      "sha256": "4e31eb5af84ef17cac6966a6fdf5eb8ab1586181cc541ab81b020d30f7841826"
+      "sha256": "37cbb0f898c0431d9752a7a53efa4c510535e3320ca5bc346503ac3c2b2b1145"
     },
     "settings.schema.json": {
       "bytes": 995,
@@ -389,19 +389,6 @@
   },
   "id": "cast_spread",
   "kind": "algorithm",
-  "licence": {
-    "commercial_ok": true,
-    "components": [
-      {
-        "commercial_ok": true,
-        "source": "score repository",
-        "spdx": "MIT",
-        "what": "made by score"
-      }
-    ],
-    "note": "",
-    "spdx": "MIT"
-  },
   "picture": null,
   "picture_reason": "no world 1 output in the store pictures this algorithm",
   "provenance": {
@@ -417,6 +404,12 @@
         "sha256": "fc2127ceb11ee55ffc98e55528248c45e13a212a41576b8cbdd1b6e1b76e81e4"
       }
     },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
     "nodes": [
       "cast@airlock",
       "cast@camp",
@@ -434,6 +427,7 @@
       "cast@tube",
       "cast@workshop"
     ],
+    "outside": [],
     "stage": "cast",
     "world": "world1"
   },

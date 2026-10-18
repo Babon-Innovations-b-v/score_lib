@@ -69,38 +69,6 @@
   },
   "id": "moon",
   "kind": "ground",
-  "licence": {
-    "commercial_ok": true,
-    "components": [
-      {
-        "commercial_ok": true,
-        "source": "score repository",
-        "spdx": "MIT",
-        "what": "made by score"
-      },
-      {
-        "commercial_ok": true,
-        "source": "score paper/source/score.md Table C1; terrain stage in algorithms.md section 11",
-        "spdx": "Apache-2.0",
-        "what": "Depth Anything V2 Small: ground relief"
-      },
-      {
-        "commercial_ok": true,
-        "source": "score paper/source/score.md Table C1; terrain stage in algorithms.md section 11",
-        "spdx": "LicenseRef-paid-API-terms",
-        "text": "paid API",
-        "what": "Nano Banana Pro: ground skins"
-      },
-      {
-        "commercial_ok": true,
-        "source": "score paper/source/score.md Table C1; terrain stage in algorithms.md section 11",
-        "spdx": "Apache-2.0",
-        "what": "Qwen-Image-Edit-2511: diorama pictures the relief is read from"
-      }
-    ],
-    "note": "the provider's terms of service for a paid API; the paper (Table C1) states every model in the framework allows commercial use of its output",
-    "spdx": "Apache-2.0 AND LicenseRef-paid-API-terms AND MIT"
-  },
   "picture": {
     "file": "skin.png",
     "made_by": "source picture",
@@ -113,6 +81,24 @@
     },
     "code": "c4cf7b735072a0e5e40c848bdb6abd3abf48645a9bb5c133f7e3687ba3485a68",
     "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "made_with": [
+      {
+        "by": "depth_anything_v2",
+        "what": "ground relief"
+      },
+      {
+        "by": "nano_banana_pro",
+        "what": "ground skins"
+      },
+      {
+        "by": "qwen_image_edit",
+        "what": "diorama pictures the relief is read from"
+      },
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
     "models": [],
     "node": "terrain",
     "output": "6a4ab8133411093ac2242f7fb9243f6912f5a8da17c4abe2a40ef8c99045a2f9",

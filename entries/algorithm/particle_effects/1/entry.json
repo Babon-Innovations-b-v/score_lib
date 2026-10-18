@@ -172,9 +172,9 @@
       "sha256": "371c2776119840bec41dc87c5b3b6a333252b196729d6d8b43d6f04b48685067"
     },
     "run.json": {
-      "bytes": 425,
+      "bytes": 442,
       "role": "record",
-      "sha256": "4ab8a382367e73e97af54232f5884dc8bc4092d4ea6b77e4bb2c26954312cf7b"
+      "sha256": "3a4f609634d056ac1804a9f4001d140c5594dcb38a01bfabf624f4c5587a7111"
     },
     "settings.schema.json": {
       "bytes": 7985,
@@ -194,19 +194,6 @@
   },
   "id": "particle_effects",
   "kind": "algorithm",
-  "licence": {
-    "commercial_ok": true,
-    "components": [
-      {
-        "commercial_ok": true,
-        "source": "score repository",
-        "spdx": "MIT",
-        "what": "made by score"
-      }
-    ],
-    "note": "",
-    "spdx": "MIT"
-  },
   "picture": {
     "file": "picture.png",
     "made_by": "source picture",
@@ -215,6 +202,12 @@
   "provenance": {
     "code": "439e17827a81367c66b69f6823fc99456b9fc1c6bca3e55d8d9e8e6cf1986fa0",
     "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
     "nodes": [
       "effects-layer@airlock",
       "effects-layer@camp",
@@ -227,6 +220,7 @@
       "effects-layer@launch",
       "effects-layer@wreck"
     ],
+    "outside": [],
     "stage": "effects-layer",
     "world": "world1"
   },

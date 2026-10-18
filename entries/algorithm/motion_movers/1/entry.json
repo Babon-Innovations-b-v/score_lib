@@ -322,9 +322,9 @@
       "sha256": "b3a8978f7176e9c9be09e21ab7a0a9838edc6539d41bc6ef0aecee5e774ad29f"
     },
     "run.json": {
-      "bytes": 364,
+      "bytes": 381,
       "role": "record",
-      "sha256": "dbdde5eb9dc87d134ca61d0a62e829c3e3988922d2df43a95c57a78f63e91f06"
+      "sha256": "2ec35647186318f2b3d6be92d2a26fd5353636453cc655ce1c10510a2154eaee"
     },
     "settings.schema.json": {
       "bytes": 845,
@@ -344,24 +344,17 @@
   },
   "id": "motion_movers",
   "kind": "algorithm",
-  "licence": {
-    "commercial_ok": true,
-    "components": [
-      {
-        "commercial_ok": true,
-        "source": "score repository",
-        "spdx": "MIT",
-        "what": "made by score"
-      }
-    ],
-    "note": "",
-    "spdx": "MIT"
-  },
   "picture": null,
   "picture_reason": "no world 1 output in the store pictures this algorithm",
   "provenance": {
     "code": "dfac0a714b21c4294d944edda63cc4025e2015ceee4dcd5a60d05775e7db8a9e",
     "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
     "nodes": [
       "motion@airlock",
       "motion@camp",
@@ -384,6 +377,7 @@
       "motion@workshop",
       "motion@wreck"
     ],
+    "outside": [],
     "stage": "motion",
     "world": "world1"
   },

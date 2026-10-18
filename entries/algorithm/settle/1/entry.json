@@ -187,9 +187,9 @@
       "sha256": "4b2c0f607eceb382722e0f59cc685c41a1cdfae96dd7a0dcd5eeaaffc1162bb3"
     },
     "run.json": {
-      "bytes": 421,
+      "bytes": 438,
       "role": "record",
-      "sha256": "d7950044e3ed333859653cd962652d73049ae87209966a8f660484bc6f68d4d7"
+      "sha256": "e8bd664c1f3e36d505dfc4801893e9b0e929bcb4850f503e9222757d36b79593"
     },
     "settings.schema.json": {
       "bytes": 1821,
@@ -214,24 +214,17 @@
   },
   "id": "settle",
   "kind": "algorithm",
-  "licence": {
-    "commercial_ok": true,
-    "components": [
-      {
-        "commercial_ok": true,
-        "source": "score repository",
-        "spdx": "MIT",
-        "what": "made by score"
-      }
-    ],
-    "note": "",
-    "spdx": "MIT"
-  },
   "picture": null,
   "picture_reason": "no world 1 output in the store pictures this algorithm",
   "provenance": {
     "code": "ab21764b394609d08cb0b0d7f48137e0973eaf3566aaf3d023c5c2fd1592ef18",
     "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
     "nodes": [
       "settle@airlock",
       "settle@campgrounds",
@@ -244,6 +237,7 @@
       "settle@workshop",
       "settle@wreck"
     ],
+    "outside": [],
     "stage": "settle",
     "world": "world1"
   },

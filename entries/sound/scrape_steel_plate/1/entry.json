@@ -24,20 +24,6 @@
   },
   "id": "scrape_steel_plate",
   "kind": "sound",
-  "licence": {
-    "commercial_ok": true,
-    "components": [
-      {
-        "commercial_ok": true,
-        "source": "https://huggingface.co/OpenMOSS-Team/MOSS-SoundEffect-v2.0; prompt: A heavy metal crate dragged across a steel floor: a harsh grinding metallic scrape, about two seconds.; seed 1; author: the 2099 project, generated with MOSS-SoundEffect v2.0 (OpenMOSS-Team/MOSS-SoundEffect-v2.0@e35df4d82fbe87fcd5d14e5d100e349c0c3c076d)",
-        "spdx": "Apache-2.0",
-        "text": "made for the first world with MOSS-SoundEffect v2.0 (Apache-2.0)",
-        "what": "sound/generated/doors/scrape_steel_plate.ogg"
-      }
-    ],
-    "note": "",
-    "spdx": "Apache-2.0"
-  },
   "picture": {
     "file": "preview.png",
     "made_by": "preview/audio.py",
@@ -53,20 +39,22 @@
     "files_source": {
       "audio/generated/doors/scrape_steel_plate.ogg": "assets/sound/generated/doors/scrape_steel_plate.ogg"
     },
+    "made_with": [
+      {
+        "by": "moss_soundeffect",
+        "what": "sound/generated/doors/scrape_steel_plate.ogg"
+      }
+    ],
     "models": [
       {
-        "commercial_use": true,
         "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
-        "licence": "Apache-2.0",
         "name": "clap-larger-general",
         "revision": "ada0c23a36c4e8582805bb38fec3905903f18b41",
         "sha256": "b8e001a32b37111261ccc28541ae07960a8cc047837f76a1a0877e9b2c59dc45",
         "source": "hf:laion/larger_clap_general"
       },
       {
-        "commercial_use": true,
         "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
-        "licence": "Apache-2.0",
         "name": "moss-soundeffect-v2",
         "revision": "e35df4d82fbe87fcd5d14e5d100e349c0c3c076d",
         "sha256": "d74b38a3387c5e670754edde2d06a71d1940c3a603e5a0489550159e79d18885",

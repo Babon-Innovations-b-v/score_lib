@@ -89,58 +89,6 @@
   },
   "id": "body_sefa_work",
   "kind": "character",
-  "licence": {
-    "commercial_ok": true,
-    "components": [
-      {
-        "commercial_ok": true,
-        "source": "score repository",
-        "spdx": "MIT",
-        "what": "made by score"
-      },
-      {
-        "commercial_ok": true,
-        "source": "score paper/source/score.md Table C1; route in score/stages/people/__init__.py:1-3",
-        "spdx": "MIT",
-        "what": "Pixal3D: picture to 3D (the body's shape)"
-      },
-      {
-        "commercial_ok": true,
-        "source": "score paper/source/score.md Table C1; route in score/stages/people/__init__.py:1-3",
-        "spdx": "LicenseRef-DINOv3-License",
-        "text": "DINOv3 licence",
-        "what": "Pixal3D's encoder (DINOv3)"
-      },
-      {
-        "commercial_ok": true,
-        "source": "score paper/source/score.md Table C1; route in score/stages/people/__init__.py:1-3",
-        "spdx": "MIT",
-        "what": "SegviGen on TRELLIS.2: the finish map laid on the shape (surface stage)"
-      },
-      {
-        "commercial_ok": true,
-        "source": "score paper/source/score.md Table C1; route in score/stages/people/__init__.py:1-3",
-        "spdx": "LicenseRef-paid-API-terms",
-        "text": "paid API",
-        "what": "Nano Banana Pro: finish maps (surface stage)"
-      },
-      {
-        "commercial_ok": true,
-        "source": "score paper/source/score.md Table C1; route in score/stages/people/__init__.py:1-3",
-        "spdx": "LicenseRef-paid-API-terms",
-        "text": "paid API",
-        "what": "Gemini 3.1 Pro: finishes listed and named (surface stage)"
-      },
-      {
-        "commercial_ok": true,
-        "source": "score paper/source/score.md Table C1; route in score/stages/people/__init__.py:1-3",
-        "spdx": "Apache-2.0",
-        "what": "SOMA-X and MHR: the skeleton"
-      }
-    ],
-    "note": "the paper's Table C1: every model in the framework must allow commercial use of its output (Pixal3D's and SegviGen's encoder); the provider's terms of service for a paid API; the paper (Table C1) states every model in the framework allows commercial use of its output",
-    "spdx": "Apache-2.0 AND LicenseRef-DINOv3-License AND LicenseRef-paid-API-terms AND MIT"
-  },
   "picture": {
     "file": "picture.png",
     "made_by": "source picture",
@@ -176,6 +124,32 @@
       }
     },
     "look": "sefa-work",
+    "made_with": [
+      {
+        "by": "gemini_31_pro",
+        "what": "finishes listed and named (surface stage)"
+      },
+      {
+        "by": "nano_banana_pro",
+        "what": "finish maps (surface stage)"
+      },
+      {
+        "by": "pixal3d",
+        "what": "the body's shape"
+      },
+      {
+        "by": "score",
+        "what": "made by score"
+      },
+      {
+        "by": "segvigen",
+        "what": "the finish map laid on the shape (surface stage)"
+      },
+      {
+        "by": "soma_x",
+        "what": "the skeleton fitted inside the shape and its skin weights"
+      }
+    ],
     "models": [],
     "node": "people-body-sefa-work",
     "output": "d9baacf54fb8dfe3c27631ec0b9d0d53c28ea8fc0a52e1f876b4d910ecec249e",

@@ -32,9 +32,9 @@
       "sha256": "c52baaad10096cf06c9b17e0b85cb70f9c4d0c83bb17825eeb0e18cd9475a630"
     },
     "run.json": {
-      "bytes": 269,
+      "bytes": 286,
       "role": "record",
-      "sha256": "195be7fb9f4dca304d0829a2e36dc7bc4a30b4caffdfcd9b4c228138e361e924"
+      "sha256": "53bb4e1b9392978fb1220e687d7e8e0fbf60844d6c326de35eb5bee961bbc733"
     },
     "settings.schema.json": {
       "bytes": 422,
@@ -49,19 +49,6 @@
   },
   "id": "mars_sky",
   "kind": "algorithm",
-  "licence": {
-    "commercial_ok": true,
-    "components": [
-      {
-        "commercial_ok": true,
-        "source": "score repository",
-        "spdx": "MIT",
-        "what": "made by score"
-      }
-    ],
-    "note": "",
-    "spdx": "MIT"
-  },
   "picture": {
     "file": "picture.png",
     "made_by": "source picture",
@@ -70,6 +57,12 @@
   "provenance": {
     "code": "282b02e74a5e3139e355951f93cb1dedf41d5c63b9db14b9fcff6c70b2be5873",
     "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
     "nodes": [
       "light-layer@airlock",
       "light-layer@camp",
@@ -98,6 +91,7 @@
       "light-layer@workshop",
       "light-layer@wreck"
     ],
+    "outside": [],
     "stage": "light-layer",
     "world": "world1"
   },

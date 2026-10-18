@@ -24,19 +24,6 @@
   },
   "id": "storm_grains_0_1",
   "kind": "effect",
-  "licence": {
-    "commercial_ok": true,
-    "components": [
-      {
-        "commercial_ok": true,
-        "source": "score repository",
-        "spdx": "MIT",
-        "what": "made by score"
-      }
-    ],
-    "note": "",
-    "spdx": "MIT"
-  },
   "picture": {
     "file": "preview.png",
     "made_by": "preview/points.py",
@@ -50,6 +37,12 @@
     "code": "9b32f2200ac272fbb20a9a7b7f3190e8a3f4de0378733281b560755af276318d",
     "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
     "from": "game/outside/dust/mars_wind.gd:18-52,190-219,294-313 (in the thick of a storm: DRIFT_HIGH_STORM 4 m, WIND_STORM 11 m/s, all of DRIFT_GRAINS_A_CELL 20,000 a cell), dust_grains.gd:24-38; the stage lays the three by three cells round the camp's middle (42 m across) where the game lays five by five round the player: the game draws the drift only within DRIFT_DRAWN_M 22 m of the eye, faded over 10 m more",
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
     "models": [],
     "node": "effects-layer@camp",
     "output": "ba556d2238a88a22cad7bca11d03443466319f14ed988abf6ba9c1a5b933e9fe",

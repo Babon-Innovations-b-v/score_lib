@@ -232,9 +232,9 @@
       "sha256": "757228abbe6eb30cc27cb28cff4a17254781ebbe7d2e88949bcd93ccb1acb24b"
     },
     "run.json": {
-      "bytes": 261,
+      "bytes": 278,
       "role": "record",
-      "sha256": "9507930a417298a8a6a12d0e9ab7f8c3cff178637d6ca6d0d95c2891dade185a"
+      "sha256": "c6cb02388e488f1001f87dc4bd5f4388dc89b6675ef0b27d53374f676ad2d026"
     },
     "settings.schema.json": {
       "bytes": 285,
@@ -249,28 +249,22 @@
   },
   "id": "machines_lay",
   "kind": "algorithm",
-  "licence": {
-    "commercial_ok": true,
-    "components": [
-      {
-        "commercial_ok": true,
-        "source": "score repository",
-        "spdx": "MIT",
-        "what": "made by score"
-      }
-    ],
-    "note": "",
-    "spdx": "MIT"
-  },
   "picture": null,
   "picture_reason": "no world 1 output in the store pictures this algorithm",
   "provenance": {
     "code": "e84f4894657e62a08f4f5c731b9fc96a7b2a2050a3ff81d507cee4b6cff54b21",
     "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
     "nodes": [
       "machines-layer@garage",
       "machines-layer@hangar"
     ],
+    "outside": [],
     "stage": "machines-layer",
     "world": "world1"
   },

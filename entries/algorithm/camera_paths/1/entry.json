@@ -257,9 +257,9 @@
       "sha256": "f005e3be93538a874a13c2de79830bdca9aa56e69bcfcd8063a7d2b8fea4798d"
     },
     "run.json": {
-      "bytes": 391,
+      "bytes": 408,
       "role": "record",
-      "sha256": "2cf72f2a78f5c70d0e41756ff57aaaf76aea869b948bbd5982010620331b496a"
+      "sha256": "6fb72c707a683485222ce0c1456c755c64ec0cef6fa6fc8ee3c6e6298024ca60"
     },
     "settings.schema.json": {
       "bytes": 1398,
@@ -274,19 +274,6 @@
   },
   "id": "camera_paths",
   "kind": "algorithm",
-  "licence": {
-    "commercial_ok": true,
-    "components": [
-      {
-        "commercial_ok": true,
-        "source": "score repository",
-        "spdx": "MIT",
-        "what": "made by score"
-      }
-    ],
-    "note": "",
-    "spdx": "MIT"
-  },
   "picture": {
     "file": "picture.png",
     "made_by": "source picture",
@@ -295,6 +282,12 @@
   "provenance": {
     "code": "1686e4d2b091be9532a1d079e3d8cd19d274d5dea9318e99e1c4259df79df864",
     "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
     "nodes": [
       "demo-film@airlock",
       "demo-film@camp",
@@ -323,6 +316,7 @@
       "demo-film@workshop",
       "demo-film@wreck"
     ],
+    "outside": [],
     "stage": "demo-film",
     "world": "world1"
   },

@@ -162,9 +162,9 @@
       "sha256": "0def93df99b7ef9c9ad5d9ada76bba8a73e6bfd751a44e0274d4bf1c176fccbd"
     },
     "run.json": {
-      "bytes": 455,
+      "bytes": 472,
       "role": "record",
-      "sha256": "294da6800090d0ad91d7b17b0e50b04088a6aeb4c08f7bfc3235fb4f0f2d4743"
+      "sha256": "95d32afabc984fae83dfffbbf90766ad7f650b3a8167fc9476c1767620b952cf"
     },
     "settings.schema.json": {
       "bytes": 729,
@@ -179,19 +179,6 @@
   },
   "id": "terrain_landforms",
   "kind": "algorithm",
-  "licence": {
-    "commercial_ok": true,
-    "components": [
-      {
-        "commercial_ok": true,
-        "source": "score repository",
-        "spdx": "MIT",
-        "what": "made by score"
-      }
-    ],
-    "note": "",
-    "spdx": "MIT"
-  },
   "picture": {
     "file": "picture.png",
     "made_by": "source picture",
@@ -200,9 +187,16 @@
   "provenance": {
     "code": "30b4e462408b5f2995b49bf4ac1c307ee8632f33cc73e1c597e5df57594849fc",
     "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
     "nodes": [
       "terrain"
     ],
+    "outside": [],
     "stage": "terrain",
     "world": "world1"
   },

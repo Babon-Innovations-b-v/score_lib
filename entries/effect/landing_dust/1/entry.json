@@ -24,19 +24,6 @@
   },
   "id": "landing_dust",
   "kind": "effect",
-  "licence": {
-    "commercial_ok": true,
-    "components": [
-      {
-        "commercial_ok": true,
-        "source": "score repository",
-        "spdx": "MIT",
-        "what": "made by score"
-      }
-    ],
-    "note": "",
-    "spdx": "MIT"
-  },
   "picture": {
     "file": "preview.png",
     "made_by": "preview/points.py",
@@ -50,6 +37,12 @@
     "code": "9b32f2200ac272fbb20a9a7b7f3190e8a3f4de0378733281b560755af276318d",
     "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
     "from": "footage: arxiv-2104.07669, arxiv-2305.12234, lpi-5040, arxiv-2306.01087 (the sheet 1 to 3 degrees over the ground: flatness 0.986 lets the cards out within 2.5 degrees of the ground's level either way, those below it hidden by the ground), arxiv-2102.12312 and nasa-alsj-a11-landing (one translucent veil streaming out radially, rocks seen through it, no lone grains: many soft dust cards, thin, growing as they fly), lpi-5040 and arxiv-2102.12312 (the finest dust at up to 3 km/s, sand at 100 to 1,000 m/s: 50 to 70 m/s here, slower than the real dust, so the 220 m world's curve can be followed: the pull of 16.4 m/s/s is 60 squared over the ball's 220 m, the ground's own fall-away for a card at the middle speed), arxiv-1503.00154 and nasa-a15-50yr (the blast reaching tens of metres out: the ring of the rocket's feet 3.3 m and body 2.0 m out to about 30 m in 0.4 s); game/world/supply_rockets/supply_rocket_view.gd:321-334,451-470 (the ring under the big rocket: feet 3.3, body 2.0, 0.1 high), game/outside/dust/dust_grains.gd:23-38 (REGOLITH #8b8883 lifted by GRAIN_LIFT 1.25 to #aeaaa4)",
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
     "models": [],
     "node": "effects-layer@wreck",
     "output": "9ab6cf0b3e09f6575445385165e61271a1fb4fad258fb32b49f191475e3cd175",

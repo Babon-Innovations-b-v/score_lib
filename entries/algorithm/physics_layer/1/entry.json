@@ -187,9 +187,9 @@
       "sha256": "cd7bd3111386d1f217276abe49ffb8699cd6a624a70303522e57f21730953deb"
     },
     "run.json": {
-      "bytes": 321,
+      "bytes": 338,
       "role": "record",
-      "sha256": "e305dc1f65eecd463eab03f8f4f081475a7f0f74c857b8f7d4690d947a212f95"
+      "sha256": "f56f17bd4a4aa74a5044de07d6adecb7c3147af96784c8ea5cbd48c54a23333c"
     },
     "settings.schema.json": {
       "bytes": 929,
@@ -209,19 +209,6 @@
   },
   "id": "physics_layer",
   "kind": "algorithm",
-  "licence": {
-    "commercial_ok": true,
-    "components": [
-      {
-        "commercial_ok": true,
-        "source": "score repository",
-        "spdx": "MIT",
-        "what": "made by score"
-      }
-    ],
-    "note": "",
-    "spdx": "MIT"
-  },
   "picture": {
     "file": "picture.png",
     "made_by": "source picture",
@@ -230,9 +217,16 @@
   "provenance": {
     "code": "5717016692886dffa549ddfd97353e799428c8e66950147ddaa9d9c6f92e74ce",
     "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
     "nodes": [
       "physics-layer@habitat"
     ],
+    "outside": [],
     "stage": "physics-layer",
     "world": "world1"
   },
