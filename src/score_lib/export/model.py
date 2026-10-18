@@ -20,7 +20,7 @@ from score_lib.preview import mesh
 from score_lib.rewrite import asset_paths, export, joined, open_copy, rewrite
 
 MADE_STAGES = ("surfaces-bake", "ship_kit", "crops-surfaces-bake")
-PREVIEW_VERSION = "mesh-1"
+PREVIEW_VERSION = "mesh-3"
 LAYER_TAGS = {"layers/crops.usda": "crop", "layers/machines.usda": "machine"}
 ROUTE_TAGS = {"code": "piece", "model": "prop"}
 

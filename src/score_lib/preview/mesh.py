@@ -15,6 +15,7 @@ GREY = np.array([0.6, 0.6, 0.6])
 LIGHT = np.array([0.35, 0.8, 0.5]) / np.linalg.norm([0.35, 0.8, 0.5])
 AZIMUTH = math.radians(-35.0)
 ELEVATION = math.radians(28.0)
+SHOWN_PURPOSES = (UsdGeom.Tokens.default_, UsdGeom.Tokens.render)
 
 
 def view_matrix():
@@ -101,21 +102,46 @@ def mesh_triangles(prim):
     world = np.c_[points, np.ones(len(points))] @ matrix
     corners = triangulated(counts, indices)
     triangles = world[indices[corners]][:, :, :3]
-    texture, constant = bound_texture(prim)
-    uvs = corner_uvs(mesh, len(indices), indices) if texture is not None else None
-    if uvs is None:
-        colours = np.tile(constant, (len(triangles), 1))
-    else:
-        colours = sampled(texture, uvs[corners].mean(axis=1))
+    faces = np.repeat(np.arange(len(counts)), np.maximum(counts - 2, 0))
+    centres = corner_uvs(mesh, len(indices), indices)
+    centres = centres[corners].mean(axis=1) if centres is not None else None
+    colours = np.tile(GREY, (len(triangles), 1))
+    for bound, face_indices in material_parts(mesh, len(counts)):
+        chosen = np.isin(faces, face_indices)
+        colours[chosen] = part_colours(bound, centres[chosen] if centres is not None else None, int(chosen.sum()))
     return triangles, colours
 
 
+def material_parts(mesh, face_count):
+    """[(prim whose bound material paints them, face indices)]: the mesh's own binding over every face, then each
+    material subset (a per-face binding, as the library's models carry) over its own faces."""
+    found = [(mesh.GetPrim(), np.arange(face_count))]
+    for subset in UsdShade.MaterialBindingAPI(mesh.GetPrim()).GetMaterialBindSubsets():
+        found.append((subset.GetPrim(), np.array(subset.GetIndicesAttr().Get() or [], dtype=np.int64)))
+    return found
+
+
+def part_colours(bound, centres, count):
+    """The colours of `count` triangles painted by `bound`'s material: its texture at their UV centres, else its
+    constant colour."""
+    texture, constant = bound_texture(bound)
+    if texture is None or centres is None:
+        return np.tile(constant, (count, 1))
+    return sampled(texture, centres)
+
+
+def drawn(prim):
+    """Whether a mesh shows in a render: visible, and not a guide or proxy (such as a model's collision hull)."""
+    imageable = UsdGeom.Imageable(prim)
+    return imageable.ComputeVisibility() != UsdGeom.Tokens.invisible and imageable.ComputePurpose() in SHOWN_PURPOSES
+
+
 def collect(path):
-    """Every triangle and colour of every mesh in a USD file (its composed stage)."""
+    """Every triangle and colour of every mesh a render of a USD file shows (its composed stage)."""
     stage = Usd.Stage.Open(str(path))
     found_triangles, found_colours = [], []
     for prim in stage.Traverse():
-        if prim.IsA(UsdGeom.Mesh) and UsdGeom.Imageable(prim).ComputeVisibility() != UsdGeom.Tokens.invisible:
+        if prim.IsA(UsdGeom.Mesh) and drawn(prim):
             triangles, colours = mesh_triangles(prim)
             found_triangles.append(triangles)
             found_colours.append(colours)
