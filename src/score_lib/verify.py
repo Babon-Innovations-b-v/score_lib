@@ -104,6 +104,14 @@ def check_requires(root, records):
     return failures
 
 
+def tail(path):
+    """A relative path without its leading ./ and ../ parts (how it ends once anchored to any folder)."""
+    parts = path.split("/")
+    while parts and parts[0] in (".", ".."):
+        parts.pop(0)
+    return "/".join(parts)
+
+
 def allowed_unresolved(records):
     """Paths an entry may leave unresolved: its neighbours' roots (optional views of other places) and paths the
     source assembly already left unresolved."""
@@ -112,7 +120,7 @@ def allowed_unresolved(records):
         for address in (record.get("usd") or {}).get("neighbours", []):
             kind, entry_id, version = entries.parse_address(address)
             allowed.add(entries.library_path(kind, entry_id, version, f"{entry_id}.usda"))
-        allowed.update(record.get("provenance", {}).get("unresolved", []))
+        allowed.update(tail(path) for path in record.get("provenance", {}).get("unresolved", []))
     return allowed
 
 
