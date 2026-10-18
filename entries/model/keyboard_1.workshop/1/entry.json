@@ -30,6 +30,16 @@
       "bytes": 13124799,
       "role": "texture",
       "sha256": "60efe39a562acb5803fabe44852f4172588d015e65c8e322d5cf6ed5a6059f81"
+    },
+    "web3d/full.glb": {
+      "bytes": 119700,
+      "role": "web3d",
+      "sha256": "93ff7e741a3d02e0069be4aa264a664bb9e4e5e2bc2c0a48dc3748cc22dd37c0"
+    },
+    "web3d/light.glb": {
+      "bytes": 18080,
+      "role": "web3d",
+      "sha256": "9dfd6926fe6db7a6e40495f845b78733f5a6ad1e20a634accc3e81606b62fea8"
     }
   },
   "id": "keyboard_1.workshop",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 119700,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "93ff7e741a3d02e0069be4aa264a664bb9e4e5e2bc2c0a48dc3748cc22dd37c0",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 18080,
+    "light_sha256": "9dfd6926fe6db7a6e40495f845b78733f5a6ad1e20a634accc3e81606b62fea8",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "a10213d6b5595ca25f1bd9f00cbf49eda35af0919e3527181e71451954f87ff3",
+    "triangles": 1048
+  }
 }

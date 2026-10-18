@@ -10,6 +10,16 @@
       "bytes": 42449,
       "role": "picture",
       "sha256": "89ffd2d5dce22ac1545444738ebc780c3f0328e19c0507352989736e27c9ac0a"
+    },
+    "web3d/full.glb": {
+      "bytes": 15701032,
+      "role": "web3d",
+      "sha256": "711132421476f65c452feed5337dfb22a0d80e5efcb6969afbb2a999513e78ea"
+    },
+    "web3d/light.glb": {
+      "bytes": 1682120,
+      "role": "web3d",
+      "sha256": "a26044b01ca4aeee278161e5c43f349544aa08cbb2dff80de0883b88335ff5a4"
     }
   },
   "id": "camp",
@@ -59,6 +69,16 @@
     "model/dome_window_panel_1@1",
     "model/dome_window_panel_2@1",
     "model/dome_window_panel_3@1",
+    "model/fixture_case_1@1",
+    "model/fixture_comms_desk_1@1",
+    "model/fixture_crate_1@1",
+    "model/fixture_crate_small_1@1",
+    "model/fixture_hygiene_1@1",
+    "model/fixture_monitor_1.camp@1",
+    "model/fixture_pedestal_table_1@1",
+    "model/fixture_radio_1.camp@1",
+    "model/fixture_sample_shelf_1@1",
+    "model/fixture_stores_rack_1@1",
     "model/floor_cable_1@1",
     "model/foot_ring_1@1",
     "model/foot_ring_2@1",
@@ -105,5 +125,455 @@
   },
   "title": "Camp kit",
   "usd": null,
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 15701032,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 38,
+      "library bake": 231,
+      "replaced": 40
+    },
+    "from": {
+      "layer/base.camp@1": "eff518c472e4681f1fbed5fc2ff216acf5819d42ef5d3bcc0a65e15af073bee3",
+      "light/sky_dome.camp@1": "087f6dac8756b1fe09ecf1a0cef91522664c06611408eaeb0e5ce99af069d6e1",
+      "model/bunk_1.camp@1": "2f1278fe1bbc01e5648d0cfe4dee3a32c506d13265edaf0bff42044df69cb41c",
+      "model/canister_1@1": "655af1141a70fa6e479db00809de4a6bfb735c0e35e5f08d806f4be0540a4123",
+      "model/coffee_maker_1@1": "bc3cd0d60563a17190f7a03e8f1efbe1f0309e1b6c125fdf8183e4bc4d37683f",
+      "model/cold_store_1@1": "ebeefffb6c04a10b9e189779af4bf5b355d591bfda0c5eeb60df93f25c427903",
+      "model/dome_ceiling_gore_1@1": "287c07e2fe60f032c516d8b517661214b6250c2fe99fefbe07b1a16d541e88fb",
+      "model/dome_ceiling_gore_2@1": "fcc7af05e11f28bb555cc0346e7069c3165fe496f3d1633ba0ae954deb079477",
+      "model/dome_ceiling_gore_3@1": "69f9b24ac2c083092cd3ba1a89e4ef83e1ed6ae964ea5f9af0cfdd7dc0ec2343",
+      "model/dome_ceiling_gore_4@1": "8ed3ba804361d1d701786aba9602174f58f94b335e77b25e6dba40af625bbcfe",
+      "model/dome_ceiling_gore_5@1": "0a9e909cba80947e1475f8919fd2392329c4154da2cfc5513a905bbc4efd5f6f",
+      "model/dome_deck_wedge_1@1": "51de17261ec4e4f098a5ff3e0b65c4c62587744721243f559d81cd4a9a03e828",
+      "model/dome_deck_wedge_2@1": "957df2adebc4134d88f85d0d55d11a8f2711e1824e45afa98335445888bf45a1",
+      "model/dome_deck_wedge_3@1": "a343cbe088db21db7379b5138a036eaffe94ad51f2ffaee2aa7d74f1803126a2",
+      "model/dome_deck_wedge_4@1": "f809c94ce81355402c2aeeefa8444fbcd4abda9e07c8aed0973fde1a372f2c2c",
+      "model/dome_deck_wedge_5@1": "631d95182a09ad421a7c85e8ee3429f5c3bf1fb13981d3140c4e7f535e8dbfa1",
+      "model/dome_opening_frame_1@1": "d2c632f0e5d19064459e6d95bc63d19c24d775c8bfc48c7d65649ee6688ac30c",
+      "model/dome_rib_1@1": "6520b00d92f89c306c9f8af22a5056e412a2fed637d4740909b5a2e584564886",
+      "model/dome_roof_cap_1@1": "cc802b476d2a2bacacc895a99881353baba7dac470bbb0e709bd4a3c027ade6e",
+      "model/dome_roof_cap_2@1": "b3a447b0f39022450339b48f0e364ddb1baf10cde5d99436775ba48271becf3f",
+      "model/dome_wall_panel_1@1": "40f981760837ea183d0f479e86fa790c1815679b3a43c8ebc54c5b72c21e2605",
+      "model/dome_wall_panel_2@1": "34dc61a05dcb4dabc36effbf5ad7be297402010820337d8e20090cd120a77d9f",
+      "model/dome_wall_panel_3@1": "0bbc330ffbb8d995798f1cd4541496a3afc4486c0b0dafa266354be25b7409b8",
+      "model/dome_window_panel_1@1": "80cd40f813480f2744a98dd6f4a8c1076750ab0a8617bb418218108e127bf1da",
+      "model/dome_window_panel_2@1": "59c4af9b44211bea43b9018ebd80a0253f5d1bf3e4e8f34e50e5c11bc27ad16e",
+      "model/dome_window_panel_3@1": "7d3b75f6d5b12c544d88867047f4829ce6a12bdbb360b5f10bca719f2b17fc85",
+      "model/fixture_case_1@1": "56f9811c64daeb6a131c80bae1ff24c4cbaa21152dc2568a54a1857b63752dd6",
+      "model/fixture_comms_desk_1@1": "9ff5831a7dc1d1b012d2b4364dcc13de19e66062b898a25163a20532b6adb187",
+      "model/fixture_crate_1@1": "80cd794829367f52aa688614cf7acc2402b7c1fb11400ddffbd6d7197e638b1d",
+      "model/fixture_crate_small_1@1": "ad323f61ebd208ef0823916d156aed105b991c00d044d7c775e27be6625d0564",
+      "model/fixture_hygiene_1@1": "b027a4e788be0299f44e963b70d3f88e5aa0b724c4f7bfd2e59d94288f42d4a6",
+      "model/fixture_monitor_1.camp@1": "860dd3c26d1ca28a362afb6b288a258c60e4442b0aefa1d760c06953b9b50ec8",
+      "model/fixture_pedestal_table_1@1": "2a5212e8542742b64aeb974aff1950304cc3dfa97619435011b9e5a95eaaadb1",
+      "model/fixture_radio_1.camp@1": "e7354b4f0b650d2562036444f8dee833eec5674c3c55c3152b9d35a8f9642edc",
+      "model/fixture_sample_shelf_1@1": "97562866f4d5b24212fe0ed4a1aed0056b8691186bd7a99e2e24b6db824ddada",
+      "model/fixture_stores_rack_1@1": "c8ee26fd7087e34d3619ef7befc3b2958f1d0a672d15a01ebd48a84eee8afbbd",
+      "model/floor_cable_1@1": "427e8ffec51b32de3ecd0b92fc4801748723e1fea65e0edb4d4bb3806d631a33",
+      "model/foot_ring_1@1": "2c21f07cf2086a141ef636c4bca3da905073fa40b6d51fa6140ad2ca4e89a7d6",
+      "model/foot_ring_2@1": "f2d520e29540c347e5f4485401a550e43d180e98dc8e46819e6afe673c91be73",
+      "model/foot_ring_3@1": "f1f6a1a456d45c1bb1b835e274cb9f1d5ff6dc95a8dda914a3913f8875c09110",
+      "model/galley_1@1": "f28c22ca8908860a8936be493f853a15da886f109308601e9d2505cfff70a477",
+      "model/galley_bin_1@1": "6dd65bf7ffd419c234efb6138201ce3367bad6ad2b12f7a0da39b33154db5f92",
+      "model/growth_chamber_1@1": "679046537bba9ec7157699b533b03e95799054e7d31423a19978e16ee846de50",
+      "model/kiosk_terminal_1@1": "ff709472f0391e010bbecdd32cf65bfcc91d3265fb1380a2bfa41180ad8c0f57",
+      "model/lockers_1@1": "aa771b09578d384c2dda8d96182be7c970e551a749ef2c3d11003c806e13f207",
+      "model/partition_1@1": "e8970e6dc771577ebe42c5ba389db6b6843a8d1447dbee46641274ae05c3467d",
+      "model/passage_hull_1@1": "3f2e280f185c10d71021524a2ae93deefbd8e81b89ae7462357a1171a300bda0",
+      "model/passage_lining_1@1": "3ccdb2e003da5ca60fa66775d53b436ec84b09d11907a47f3a09dd2e57d6a400",
+      "model/ring_lamp_1@1": "15809e3841ec9717a8ae165ebc028e24702b3019cca740d7c018619e52c821ae",
+      "model/rod_lamp_1@1": "379d1fb02d8edb49eeb730497c25032bd84a20d4777af0d5ce3de768bbed1cd6",
+      "model/rod_lamp_2@1": "30c4ec670a85dffcbba837af1edb3ebde57f3160ca1d33f069d6e28548456dd8",
+      "model/rod_lamp_3@1": "e73aafa7ef9cf4dd5e9a272e5bf3477d50006b8aa984468e62945eb1a9d8b44b",
+      "model/rod_lamp_4@1": "83dacd9111776bd8207f9ea9f44293ce01db55a66fe05aa96c604311e3430068",
+      "model/sample_case_1@1": "ba15022a2bd636b5e65accc119f136cd4863f04638cc81db0a6680bdaf5d49ec",
+      "model/sample_jar_1.camp@1": "47946d43bf0c82641fb98afde94b1c1ee1c6473de2e438286bfa4b30912b1c25",
+      "model/sample_tray_1.camp@1": "41fcf8f6a007225fd1c028a2908bc30f44a23179eb8c48004716ecb8e20687b7",
+      "model/shelf_case_1@1": "4e845cc0a4643237250c0a652f1348a33d9f82926530cf17a241cf4cd55e3b6a",
+      "model/shell_gore_1@1": "092c38a99875b855af014e27aecbb3f883f0c447fa441cd0555e8c878ab522f5",
+      "model/shell_gore_2@1": "d7493dbd8715818d657441342f1c48e548c03c5e6e27bd282208274edc061d8d",
+      "model/shell_gore_3@1": "ea9f703da352536ffa04d36e934e7dc87afd752065582d783c012f1a488f4b28",
+      "model/shell_gore_open_1@1": "018ea24150b29a02dad368df4520ea2ed8e80cacbf8105b84e91f0d8ca8cc0cd",
+      "model/shell_gore_open_2@1": "4b8bc60ab2b7b2fc1c75edf1fcc98d486eedc95311fa8d4a0fa0fab06571f3f2",
+      "model/shell_gore_window_1@1": "14fffa0de87f84d81fc798888922146a9a58b5e8f0135559fd8461d40ce1e649",
+      "model/shell_gore_window_2@1": "94b1b296a018a56437acea29ee082a04bec9a751b6101487b2bb26763c904aec",
+      "model/shell_gore_window_3@1": "6fd97c503c7578ca89db5fddfb46235ab3e6b3d9004c89689be15f51e521df5d",
+      "model/toaster_1@1": "7dccb077d82b0938f0e8b875dce2328c1670aef7f67df306ee106475d2fb17d4",
+      "model/wall_net_1@1": "41408d7aeb6d62a099e84b9e3c48080ec6fc837591abdd03574b3dbdabadd73e",
+      "model/window_strip_lamp_1@1": "c860d28bd75514bf5ed4bd9d5416054749797145719014582872f38ed25bb128"
+    },
+    "full_sha256": "711132421476f65c452feed5337dfb22a0d80e5efcb6969afbb2a999513e78ea",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 1682120,
+    "light_sha256": "a26044b01ca4aeee278161e5c43f349544aa08cbb2dff80de0883b88335ff5a4",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 284,
+    "replaced": {
+      "/camp/Fixtures/CommsDesk/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2257,
+          0.206,
+          0.1913
+        ],
+        "distance": 2.28
+      },
+      "/camp/Fixtures/CommsDesk/monitor_1_1/Looks/look_0": {
+        "by": "anodized_black",
+        "colour": [
+          0.0032,
+          0.0028,
+          0.0023
+        ],
+        "distance": 0.26
+      },
+      "/camp/Fixtures/CommsDesk/monitor_1_3/Looks/look_0": {
+        "by": "anodized_black",
+        "colour": [
+          0.0032,
+          0.0028,
+          0.0023
+        ],
+        "distance": 0.26
+      },
+      "/camp/Fixtures/CommsDesk/monitor_1_glow_2/Looks/look_0": {
+        "by": "screen_glow_green_dim",
+        "colour": [
+          0.018,
+          0.0319,
+          0.0439
+        ],
+        "distance": 34.59
+      },
+      "/camp/Fixtures/CommsDesk/monitor_1_glow_4/Looks/look_0": {
+        "by": "screen_glow_green_dim",
+        "colour": [
+          0.018,
+          0.0319,
+          0.0439
+        ],
+        "distance": 34.59
+      },
+      "/camp/Fixtures/CommsDesk/radio_1_5/Looks/look_0": {
+        "by": "glass_smoked",
+        "colour": [
+          0.2007,
+          0.1452,
+          0.1461
+        ],
+        "distance": 7.44
+      },
+      "/camp/Fixtures/CrateByTheBunks/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2393,
+          0.219,
+          0.1954
+        ],
+        "distance": 1.32
+      },
+      "/camp/Fixtures/CrateByTheChamber/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2393,
+          0.219,
+          0.1954
+        ],
+        "distance": 1.32
+      },
+      "/camp/Fixtures/CrateByTheDesk/Looks/look_0": {
+        "by": "moon_regolith",
+        "colour": [
+          0.2471,
+          0.2297,
+          0.2052
+        ],
+        "distance": 1.96
+      },
+      "/camp/Fixtures/CrateByTheGalley/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2393,
+          0.219,
+          0.1954
+        ],
+        "distance": 1.32
+      },
+      "/camp/Fixtures/CrateByTheHygiene/Looks/look_0": {
+        "by": "moon_regolith",
+        "colour": [
+          0.2471,
+          0.2297,
+          0.2052
+        ],
+        "distance": 1.96
+      },
+      "/camp/Fixtures/CrateByTheShelf/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2393,
+          0.219,
+          0.1954
+        ],
+        "distance": 1.32
+      },
+      "/camp/Fixtures/CrateByTheWay/Looks/look_0": {
+        "by": "moon_regolith",
+        "colour": [
+          0.2471,
+          0.2297,
+          0.2052
+        ],
+        "distance": 1.96
+      },
+      "/camp/Fixtures/CrateByTheWindow/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2393,
+          0.219,
+          0.1954
+        ],
+        "distance": 1.32
+      },
+      "/camp/Fixtures/CrateStack/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2393,
+          0.219,
+          0.1954
+        ],
+        "distance": 1.32
+      },
+      "/camp/Fixtures/CrateUnderTheWindow/Looks/look_0": {
+        "by": "moon_regolith",
+        "colour": [
+          0.2471,
+          0.2297,
+          0.2052
+        ],
+        "distance": 1.96
+      },
+      "/camp/Fixtures/Hygiene/Looks/look_0": {
+        "by": "painted_grey_light",
+        "colour": [
+          0.371,
+          0.3414,
+          0.3168
+        ],
+        "distance": 6.26
+      },
+      "/camp/Fixtures/MessTable/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2174,
+          0.1769,
+          0.1732
+        ],
+        "distance": 5.97
+      },
+      "/camp/Fixtures/OonasBedside/Looks/look_0": {
+        "by": "moon_regolith",
+        "colour": [
+          0.2471,
+          0.2297,
+          0.2052
+        ],
+        "distance": 1.96
+      },
+      "/camp/Fixtures/SampleShelf/Looks/look_0": {
+        "by": "anodized_natural",
+        "colour": [
+          0.3309,
+          0.2873,
+          0.2257
+        ],
+        "distance": 4.0
+      },
+      "/camp/Fixtures/SampleShelf/case_1_1/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2404,
+          0.2248,
+          0.2016
+        ],
+        "distance": 1.68
+      },
+      "/camp/Fixtures/SampleShelf/case_1_2/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2404,
+          0.2248,
+          0.2016
+        ],
+        "distance": 1.68
+      },
+      "/camp/Fixtures/SampleShelf/case_1_3/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2404,
+          0.2248,
+          0.2016
+        ],
+        "distance": 1.68
+      },
+      "/camp/Fixtures/SampleShelf/case_1_4/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2404,
+          0.2248,
+          0.2016
+        ],
+        "distance": 1.68
+      },
+      "/camp/Fixtures/SefasBedside/Looks/look_0": {
+        "by": "moon_regolith",
+        "colour": [
+          0.2471,
+          0.2297,
+          0.2052
+        ],
+        "distance": 1.96
+      },
+      "/camp/Fixtures/StoresRack/Looks/look_0": {
+        "by": "anodized_natural",
+        "colour": [
+          0.3549,
+          0.3065,
+          0.2395
+        ],
+        "distance": 2.23
+      },
+      "/camp/Fixtures/StoresRack/case_1_1/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2404,
+          0.2248,
+          0.2016
+        ],
+        "distance": 1.68
+      },
+      "/camp/Fixtures/StoresRack/case_1_2/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2404,
+          0.2248,
+          0.2016
+        ],
+        "distance": 1.68
+      },
+      "/camp/Fixtures/StoresRack/case_1_3/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2404,
+          0.2248,
+          0.2016
+        ],
+        "distance": 1.68
+      },
+      "/camp/Fixtures/StoresRack/case_1_4/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2404,
+          0.2248,
+          0.2016
+        ],
+        "distance": 1.68
+      },
+      "/camp/Fixtures/StoresRack/case_1_5/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2404,
+          0.2248,
+          0.2016
+        ],
+        "distance": 1.68
+      },
+      "/camp/Fixtures/StoresRack/case_1_6/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2404,
+          0.2248,
+          0.2016
+        ],
+        "distance": 1.68
+      },
+      "/camp/Fixtures/StoresRack/case_1_7/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2404,
+          0.2248,
+          0.2016
+        ],
+        "distance": 1.68
+      },
+      "/camp/Fixtures/StoresRack/case_1_8/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2404,
+          0.2248,
+          0.2016
+        ],
+        "distance": 1.68
+      },
+      "/camp/Fixtures/TerminalDesk/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2257,
+          0.206,
+          0.1913
+        ],
+        "distance": 2.28
+      },
+      "/camp/Fixtures/TerminalDesk/monitor_1_1/Looks/look_0": {
+        "by": "anodized_black",
+        "colour": [
+          0.0032,
+          0.0028,
+          0.0023
+        ],
+        "distance": 0.26
+      },
+      "/camp/Fixtures/TerminalDesk/monitor_1_3/Looks/look_0": {
+        "by": "anodized_black",
+        "colour": [
+          0.0032,
+          0.0028,
+          0.0023
+        ],
+        "distance": 0.26
+      },
+      "/camp/Fixtures/TerminalDesk/monitor_1_glow_2/Looks/look_0": {
+        "by": "screen_glow_green_dim",
+        "colour": [
+          0.018,
+          0.0319,
+          0.0439
+        ],
+        "distance": 34.59
+      },
+      "/camp/Fixtures/TerminalDesk/monitor_1_glow_4/Looks/look_0": {
+        "by": "screen_glow_green_dim",
+        "colour": [
+          0.018,
+          0.0319,
+          0.0439
+        ],
+        "distance": 34.59
+      },
+      "/camp/Fixtures/TerminalDesk/radio_1_5/Looks/look_0": {
+        "by": "glass_smoked",
+        "colour": [
+          0.2007,
+          0.1452,
+          0.1461
+        ],
+        "distance": 7.44
+      }
+    },
+    "source": "deeb7eb866f93cb0043a387898e581d1ccd16818da3a317ba7a6d0b7afde434b",
+    "triangles": 385967
+  }
 }

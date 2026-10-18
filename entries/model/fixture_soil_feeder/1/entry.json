@@ -15,6 +15,16 @@
       "bytes": 21466,
       "role": "picture",
       "sha256": "1dbaaa0ae2e31175f6897951adc52703ccbed70d8960092a86c8635630db8528"
+    },
+    "web3d/full.glb": {
+      "bytes": 13664,
+      "role": "web3d",
+      "sha256": "21cf0290385462d4c7fa54ccd4e8233d77bb2bf24d533ab736cd01091c778f01"
+    },
+    "web3d/light.glb": {
+      "bytes": 5756,
+      "role": "web3d",
+      "sha256": "16cbca5ee5be459d374c2779319431df331bb312bc2f43eee4a417149ad08e06"
     }
   },
   "id": "fixture_soil_feeder",
@@ -74,5 +84,69 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 13664,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "replaced": 5
+    },
+    "from": {},
+    "full_sha256": "21cf0290385462d4c7fa54ccd4e8233d77bb2bf24d533ab736cd01091c778f01",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 5756,
+    "light_sha256": "16cbca5ee5be459d374c2779319431df331bb312bc2f43eee4a417149ad08e06",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 5,
+    "replaced": {
+      "/model/body/Looks/look_0": {
+        "by": "painted_grey_light",
+        "colour": [
+          0.4,
+          0.4,
+          0.4
+        ],
+        "distance": 2.08
+      },
+      "/model/body/Looks/look_1": {
+        "by": "painted_grey_light",
+        "colour": [
+          0.4,
+          0.4,
+          0.4
+        ],
+        "distance": 2.08
+      },
+      "/model/body/Looks/look_2": {
+        "by": "painted_grey_light",
+        "colour": [
+          0.4,
+          0.4,
+          0.4
+        ],
+        "distance": 2.08
+      },
+      "/model/body/Looks/look_3": {
+        "by": "painted_grey_light",
+        "colour": [
+          0.4,
+          0.4,
+          0.4
+        ],
+        "distance": 2.08
+      },
+      "/model/body/Looks/look_4": {
+        "by": "painted_grey_light",
+        "colour": [
+          0.4,
+          0.4,
+          0.4
+        ],
+        "distance": 2.08
+      }
+    },
+    "source": "2f000e9e07450b323cc73472cd079d89867aa885b787116a81d069b23d61ec9b",
+    "triangles": 1572
+  }
 }

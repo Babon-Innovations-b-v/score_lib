@@ -30,6 +30,16 @@
       "bytes": 3169295,
       "role": "texture",
       "sha256": "3a14f55140f90f8cb71be1bdc2b37b9a51163f55110f69c95f91b66904ddbc00"
+    },
+    "web3d/full.glb": {
+      "bytes": 241956,
+      "role": "web3d",
+      "sha256": "634cea6b93b8852a6475610add9ddb79b1566bcf9848d26e5ede42debf68d5ce"
+    },
+    "web3d/light.glb": {
+      "bytes": 39956,
+      "role": "web3d",
+      "sha256": "51f6dede16c5700cf299277b3d71a002ff652b040a799bc73f98d7e64acbf8cb"
     }
   },
   "id": "pipe_straight_4.habitat",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 241956,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "634cea6b93b8852a6475610add9ddb79b1566bcf9848d26e5ede42debf68d5ce",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 39956,
+    "light_sha256": "51f6dede16c5700cf299277b3d71a002ff652b040a799bc73f98d7e64acbf8cb",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "ff249e27e147612aa9a55c889d4ee4bbf2bbdb72a9a558a49b147bdcbcd41325",
+    "triangles": 660
+  }
 }

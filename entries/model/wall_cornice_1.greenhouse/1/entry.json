@@ -30,6 +30,16 @@
       "bytes": 4842968,
       "role": "texture",
       "sha256": "a49a7098d7958272865bbb9d2ef6a8fbc6ed5f95fcc454f09e91fe9f88a37136"
+    },
+    "web3d/full.glb": {
+      "bytes": 124576,
+      "role": "web3d",
+      "sha256": "31f4ea019d2d9823609c880ba0c33ab2ed44ea893593d2e14c4675a1536c458e"
+    },
+    "web3d/light.glb": {
+      "bytes": 16872,
+      "role": "web3d",
+      "sha256": "1c95cbdc9e19ff4b7b3705d1d5d47a69df37fec7eed810fbc32d6b9d0ba68fd4"
     }
   },
   "id": "wall_cornice_1.greenhouse",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 124576,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "31f4ea019d2d9823609c880ba0c33ab2ed44ea893593d2e14c4675a1536c458e",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 16872,
+    "light_sha256": "1c95cbdc9e19ff4b7b3705d1d5d47a69df37fec7eed810fbc32d6b9d0ba68fd4",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "4c236b876dfce416d96cf63710a103048bfa6b0c680c0293642d1d8ae25d5045",
+    "triangles": 324
+  }
 }

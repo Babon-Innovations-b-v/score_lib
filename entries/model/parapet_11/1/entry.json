@@ -30,6 +30,16 @@
       "bytes": 3797460,
       "role": "texture",
       "sha256": "bf7c63f163068c052670c8bf21730d816cd9d4e3974b33e1ba3f5b69be47fa79"
+    },
+    "web3d/full.glb": {
+      "bytes": 187528,
+      "role": "web3d",
+      "sha256": "21dbc8cfa4263d4f0615de2bb3a355f25bfab6a392477eea96150950b18b2f50"
+    },
+    "web3d/light.glb": {
+      "bytes": 25104,
+      "role": "web3d",
+      "sha256": "99de5f6f3132349860b6be7be9ee6830375a2539c7ab81e52436f04f53617345"
     }
   },
   "id": "parapet_11",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 187528,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "21dbc8cfa4263d4f0615de2bb3a355f25bfab6a392477eea96150950b18b2f50",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 25104,
+    "light_sha256": "99de5f6f3132349860b6be7be9ee6830375a2539c7ab81e52436f04f53617345",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "5900d5b3d962b35b9bd07ea620a689cc62b9b592a9d4a5de26117fcede25e12f",
+    "triangles": 228
+  }
 }

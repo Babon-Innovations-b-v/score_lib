@@ -20,6 +20,16 @@
       "bytes": 6043456,
       "role": "texture",
       "sha256": "d97543dbac27f9f1b50ec36de283c6e2f182da6a560bcef64df52f210a12e6f2"
+    },
+    "web3d/full.glb": {
+      "bytes": 367484,
+      "role": "web3d",
+      "sha256": "aa1189036fe06eb3b11b3a626b985c3dac6e196759c43ffb20612ab5e714bdde"
+    },
+    "web3d/light.glb": {
+      "bytes": 13660,
+      "role": "web3d",
+      "sha256": "970b42c24c8c724a0b797927b5608f7fa9dde6c3e724b269ba27a95bcfa0e356"
     }
   },
   "id": "fixture_solar_panel_row",
@@ -86,5 +96,33 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 367484,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "replaced": 1
+    },
+    "from": {},
+    "full_sha256": "aa1189036fe06eb3b11b3a626b985c3dac6e196759c43ffb20612ab5e714bdde",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 13660,
+    "light_sha256": "970b42c24c8c724a0b797927b5608f7fa9dde6c3e724b269ba27a95bcfa0e356",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {
+      "/model/body/Looks/look_0": {
+        "by": "padding_grey_paint",
+        "colour": [
+          0.4833,
+          0.4982,
+          0.5363
+        ],
+        "distance": 4.85
+      }
+    },
+    "source": "697f9c04f28cca01379447fcc78e1536f8acc74fd703d3ce376d180150a3a825",
+    "triangles": 39998
+  }
 }

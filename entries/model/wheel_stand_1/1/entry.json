@@ -30,6 +30,16 @@
       "bytes": 9011024,
       "role": "texture",
       "sha256": "4b69d94b0ea74cea9d2177407fe6bc45b03115bb605ee45c3862c797bb933a37"
+    },
+    "web3d/full.glb": {
+      "bytes": 291244,
+      "role": "web3d",
+      "sha256": "d81f0d57864b9033cc6ecb4e23e0dbfb83a2e54f09d25070a2be71d54d40fe2b"
+    },
+    "web3d/light.glb": {
+      "bytes": 8708,
+      "role": "web3d",
+      "sha256": "db22c840428fa162bbd1810e9e5be8e67ce23aa310311ef60dc9c9983ef5815d"
     }
   },
   "id": "wheel_stand_1",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 291244,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 2
+    },
+    "from": {},
+    "full_sha256": "d81f0d57864b9033cc6ecb4e23e0dbfb83a2e54f09d25070a2be71d54d40fe2b",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 8708,
+    "light_sha256": "db22c840428fa162bbd1810e9e5be8e67ce23aa310311ef60dc9c9983ef5815d",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "8677295014035064097d4ee542c2beb73b484d85d68c972a78ed4d165a1cd6d5",
+    "triangles": 15389
+  }
 }

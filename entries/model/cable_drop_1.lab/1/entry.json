@@ -30,6 +30,16 @@
       "bytes": 3843066,
       "role": "texture",
       "sha256": "8a3a1fa530a501a2eb91dc45de57edc58f1db971323cd37436442acf4aac88c2"
+    },
+    "web3d/full.glb": {
+      "bytes": 250816,
+      "role": "web3d",
+      "sha256": "911091c8cfd92a6ca87fac54795894ef41f6feded95940013342ef0de6c45f2d"
+    },
+    "web3d/light.glb": {
+      "bytes": 42172,
+      "role": "web3d",
+      "sha256": "2b064b60266d65a7fda889b02bd336dbfd8621b103db017e249d47eaef18f9bc"
     }
   },
   "id": "cable_drop_1.lab",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 250816,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "911091c8cfd92a6ca87fac54795894ef41f6feded95940013342ef0de6c45f2d",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 42172,
+    "light_sha256": "2b064b60266d65a7fda889b02bd336dbfd8621b103db017e249d47eaef18f9bc",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "a403769e57ebcf7f7beab5429800062a56711da2bb20823172e3e30f387b9f29",
+    "triangles": 444
+  }
 }

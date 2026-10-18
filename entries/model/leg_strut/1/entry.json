@@ -30,6 +30,16 @@
       "bytes": 15134666,
       "role": "texture",
       "sha256": "422626aa9b6d07824ec8e966c6946b95a24fa5e23b648d8138e5049616633369"
+    },
+    "web3d/full.glb": {
+      "bytes": 323584,
+      "role": "web3d",
+      "sha256": "1a76ae2b3f5785c0bd96ea0b96755281e4ce5c01a9754a88ff80786219b0becd"
+    },
+    "web3d/light.glb": {
+      "bytes": 8616,
+      "role": "web3d",
+      "sha256": "86b9224a7bdc294be1ad6e69ec16f75bf58f07a0ff33a3e7bee4645090254941"
     }
   },
   "id": "leg_strut",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 323584,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 2
+    },
+    "from": {},
+    "full_sha256": "1a76ae2b3f5785c0bd96ea0b96755281e4ce5c01a9754a88ff80786219b0becd",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 8616,
+    "light_sha256": "86b9224a7bdc294be1ad6e69ec16f75bf58f07a0ff33a3e7bee4645090254941",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "261f1025876c109364f83176915a3946694acf453f5f9f8d8b3aa4383e4b820c",
+    "triangles": 19000
+  }
 }

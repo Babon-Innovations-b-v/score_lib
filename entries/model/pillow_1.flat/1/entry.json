@@ -30,6 +30,16 @@
       "bytes": 540015,
       "role": "texture",
       "sha256": "50191e3c35b959b8449b7f76f68b9787bc2a69c011727b29dc73d005fa9dd6aa"
+    },
+    "web3d/full.glb": {
+      "bytes": 78300,
+      "role": "web3d",
+      "sha256": "a3385c14268deb903cf53fb9bbaf0df255239d013a7791f5801e3953db35feb7"
+    },
+    "web3d/light.glb": {
+      "bytes": 18236,
+      "role": "web3d",
+      "sha256": "6d8ac399cbc5c199a0fc3012ea1e4b7db99e63048a0156e344e877e32a7d59f3"
     }
   },
   "id": "pillow_1.flat",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 78300,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "a3385c14268deb903cf53fb9bbaf0df255239d013a7791f5801e3953db35feb7",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 18236,
+    "light_sha256": "6d8ac399cbc5c199a0fc3012ea1e4b7db99e63048a0156e344e877e32a7d59f3",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "e5c17e044f8b268cd0889d870a5ce7abae022229459380487aa8d019a5fb9639",
+    "triangles": 108
+  }
 }

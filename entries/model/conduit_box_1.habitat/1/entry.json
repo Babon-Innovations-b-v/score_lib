@@ -30,6 +30,16 @@
       "bytes": 3169295,
       "role": "texture",
       "sha256": "3a14f55140f90f8cb71be1bdc2b37b9a51163f55110f69c95f91b66904ddbc00"
+    },
+    "web3d/full.glb": {
+      "bytes": 252436,
+      "role": "web3d",
+      "sha256": "651013d9a84cde0bb64ba89abbe131e7817f216ffeb76bfe60c36235c45808fa"
+    },
+    "web3d/light.glb": {
+      "bytes": 40516,
+      "role": "web3d",
+      "sha256": "74e5e9bee57a343afa940ad5965e27a97712ef312621d9f225bb5afe76a2e373"
     }
   },
   "id": "conduit_box_1.habitat",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 252436,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "651013d9a84cde0bb64ba89abbe131e7817f216ffeb76bfe60c36235c45808fa",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 40516,
+    "light_sha256": "74e5e9bee57a343afa940ad5965e27a97712ef312621d9f225bb5afe76a2e373",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "a4c67ed94fde8f7c038155058a7f5ca1c023a9d5c4a2bef1737a1faea8437d6a",
+    "triangles": 1636
+  }
 }

@@ -30,6 +30,16 @@
       "bytes": 8330900,
       "role": "texture",
       "sha256": "28ae07e3cbe86cea5857958dc227f81881896122a07494c5d4dba41266c8d31e"
+    },
+    "web3d/full.glb": {
+      "bytes": 219476,
+      "role": "web3d",
+      "sha256": "526de2f126f6a0e3d7d70cf68ad95c26c51641b8eaa911ca730401fcb20f5075"
+    },
+    "web3d/light.glb": {
+      "bytes": 31820,
+      "role": "web3d",
+      "sha256": "37528337997427b4e76013aa0e02d5084617fe3f43f62ffc0b7bb3d3f6f6b31c"
     }
   },
   "id": "door_leaf_1.shiplock",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 219476,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "526de2f126f6a0e3d7d70cf68ad95c26c51641b8eaa911ca730401fcb20f5075",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 31820,
+    "light_sha256": "37528337997427b4e76013aa0e02d5084617fe3f43f62ffc0b7bb3d3f6f6b31c",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "369f234d4b96fb1583b7f2e2303a7faedd6b19f8a3458fea3c5477eed33f3763",
+    "triangles": 4344
+  }
 }

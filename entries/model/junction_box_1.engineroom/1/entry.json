@@ -30,6 +30,16 @@
       "bytes": 1099045,
       "role": "texture",
       "sha256": "0da3065fa1d9042d8a23f4c121372aba29ed9f9cc1dff1aa62c8fd1ddba9f5c1"
+    },
+    "web3d/full.glb": {
+      "bytes": 93712,
+      "role": "web3d",
+      "sha256": "dc64c92e354fb194c13a072987da7c8dba0ed321eda9980ca301883b532d0f1a"
+    },
+    "web3d/light.glb": {
+      "bytes": 7152,
+      "role": "web3d",
+      "sha256": "ba5e66c75e1a93fc3edbe7451b658ae336c210265715acb793ff72ec69a2086d"
     }
   },
   "id": "junction_box_1.engineroom",
@@ -98,5 +108,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 93712,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 4
+    },
+    "from": {},
+    "full_sha256": "dc64c92e354fb194c13a072987da7c8dba0ed321eda9980ca301883b532d0f1a",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 7152,
+    "light_sha256": "ba5e66c75e1a93fc3edbe7451b658ae336c210265715acb793ff72ec69a2086d",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "cb5eb13caf565a8d5acd6a3984ed2e79c87644274af2ae688e932fb9b70ec4b4",
+    "triangles": 4999
+  }
 }

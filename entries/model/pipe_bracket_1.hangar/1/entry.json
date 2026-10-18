@@ -30,6 +30,16 @@
       "bytes": 98526,
       "role": "texture",
       "sha256": "ab475bb8960bd72fb93d0f7cda6159474b597b5bd3213d129c9ad61b30ffbbb9"
+    },
+    "web3d/full.glb": {
+      "bytes": 37840,
+      "role": "web3d",
+      "sha256": "25b27e6f9850e57af51808d3b9fdf49693ec983d4e5ef413347e426a73dea892"
+    },
+    "web3d/light.glb": {
+      "bytes": 7832,
+      "role": "web3d",
+      "sha256": "6dfa256e070eab1d1af5275a2ed259f44cdd8a8de41ddab9d4d782125cf88f39"
     }
   },
   "id": "pipe_bracket_1.hangar",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 37840,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "25b27e6f9850e57af51808d3b9fdf49693ec983d4e5ef413347e426a73dea892",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 7832,
+    "light_sha256": "6dfa256e070eab1d1af5275a2ed259f44cdd8a8de41ddab9d4d782125cf88f39",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "ac00ca7330632fccff2467f1509bf8d329d60a0867edd81c9156b6c558c3cf33",
+    "triangles": 1196
+  }
 }

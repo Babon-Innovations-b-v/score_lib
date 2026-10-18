@@ -20,6 +20,16 @@
       "bytes": 961875,
       "role": "texture",
       "sha256": "acf1411cd1890711d6f0707f1e3182a57162a1c8e1d6bbdc4e4b87df9357908a"
+    },
+    "web3d/full.glb": {
+      "bytes": 32052,
+      "role": "web3d",
+      "sha256": "3c8ee6bf19627680019e3c6a036f18d8056f5abedc337f7bc9f432c32faac16e"
+    },
+    "web3d/light.glb": {
+      "bytes": 3688,
+      "role": "web3d",
+      "sha256": "4a7eacffcc54de0407e6d152b3c31de22f8b189508fa74b8f2c5b0e341d8466d"
     }
   },
   "id": "fixture_door_leaf_1",
@@ -79,5 +89,33 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 32052,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "replaced": 1
+    },
+    "from": {},
+    "full_sha256": "3c8ee6bf19627680019e3c6a036f18d8056f5abedc337f7bc9f432c32faac16e",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 3688,
+    "light_sha256": "4a7eacffcc54de0407e6d152b3c31de22f8b189508fa74b8f2c5b0e341d8466d",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {
+      "/model/body/Looks/look_0": {
+        "by": "gate_grey",
+        "colour": [
+          0.2621,
+          0.2835,
+          0.3012
+        ],
+        "distance": 4.08
+      }
+    },
+    "source": "7ead5e775fe73c16b5ce393c440fe8f1839c584fec2033e84e13c031c8bd324b",
+    "triangles": 4344
+  }
 }

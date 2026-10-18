@@ -45,6 +45,16 @@
       "bytes": 289,
       "role": "usd",
       "sha256": "171051c19734f860ba4870966ba9bb0e37505c0227c22b604022821765533c83"
+    },
+    "web3d/full.glb": {
+      "bytes": 2034136,
+      "role": "web3d",
+      "sha256": "6d1a91d9d69c4b37f1c89ddfae723dec06adde9d0c86ef62b1b1260752960857"
+    },
+    "web3d/light.glb": {
+      "bytes": 310896,
+      "role": "web3d",
+      "sha256": "a4685d70a62279cbd9be17aa6733c4ac0e38d52acc28b750b29457d3447918b3"
     }
   },
   "id": "walkway",
@@ -143,5 +153,59 @@
     "up_axis": "Y",
     "use": "open"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 2034136,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 100
+    },
+    "from": {
+      "layer/base.walkway@1": "1ce1d2569e56b103b608ef3dedcca0d6251fdb789471c123585092b482b27798",
+      "layer/light.walkway@1": "86f40dcba1766bd1f732ecf253bc8ff5c43d314b753fdb09d03dd19e9116ebda",
+      "layer/sound.walkway@1": "ec077f4de9c91b68362f5ce574df82990c0be21136fe38fec28bef091bccc2bc",
+      "model/ceiling_light_panel_1.walkway@1": "ce5ef4b49a4616d011c7587b5c1060c0e2efcfa3fd47287d3ca77be37d7342f5",
+      "model/edge_light_strip_1.walkway@1": "897ee8d7f284a676b399295ab9bf6d11a7d205725d6f29c01cbb568d387a4b2e",
+      "model/floor_grate_1.walkway@1": "79430c4c59a2b5988b32943fc7a8ed9fcc0763903d6f336ea0aaace2f2e3900d",
+      "model/frame_rib_1.walkway@1": "78f818752d4d97030cec740b85036f332fe9c113fbccb34dfa7d6fa53cbaf528",
+      "model/frame_rib_2.walkway@1": "f7ebe498250fe4b2fe67d94bcd6e011d1a1cd6f4c5a04588095f2908aaca9802",
+      "model/ring_floor_plate_1.walkway@1": "4398c4df8605babecc2773f5efa0d165b23fb5270c3146b70b77a5ef87c1e30e",
+      "model/roof_face_panel_1.walkway@1": "302c038911b15688877f5bb7c53ef1da6b746f6b29750d3b344932a6e96b6ca9",
+      "model/wall_lower_plain_1.walkway@1": "8175b640798ba3337e7e679e02496520c7c57da9a8380f731e31c51f0f42479a",
+      "model/wall_lower_plain_2.walkway@1": "2171722ce622130983ad5ac80b050fe9685d646dd2d122949726af2feff9bb01",
+      "model/wall_lower_plain_3.walkway@1": "42dbbfbf7fed0a2a69c082fad112ba412c94f590c215ffbec927b10533047ae5",
+      "model/wall_lower_plain_4.walkway@1": "23edd5b341203142f286557b709f4e10a01ae73ee8d37a5fc79029299ded974b",
+      "model/wall_lower_plain_5.walkway@1": "4083589b0417dbbd67992f2e83f858f4e59ef535e0512a4c9c56f30459b81863",
+      "model/wall_lower_plain_6.walkway@1": "563100006c6e306340818cc5e44ba8496dce18081744e44e4a2477f3e92aa63a",
+      "model/wall_upper_plain_1.walkway@1": "c9621d01c7f799dad1d908411879d6086df7042d20b218d08f0ad97a34d9ca03",
+      "model/wall_upper_plain_2.walkway@1": "1163858eaaa23a80466545082ac345e3de9a310df5ddd48cb51a4b2230e9c3cf",
+      "model/wall_upper_plain_3.walkway@1": "f76c898377cd177068b40d11f8055b15af23040b788f45cb755d4a8f47ba44e0",
+      "model/wall_upper_plain_4.walkway@1": "9326898d3f353fad93996d7a446f5a132fb8d9e7cee110e2b916fae37524ccfa",
+      "model/wall_upper_plain_5.walkway@1": "e757ac5153593b088cd2ca6b9fc958f8f8b8ae221e051496e6801785e6a97223",
+      "model/wall_upper_plain_6.walkway@1": "d5a056d516e658c132962386b55ab3844cddc75863993357c15ff61ed4e9578c",
+      "model/wall_upper_plain_7.walkway@1": "74dc929776fdd493da188806a034523c2cab9acc94dea28d50785ee26896128f",
+      "sound/footstep_grating@1": "2e9201625477f7e8d36299bc61c38abb6b4418b2a03bf22bb57666e6ceb1d667",
+      "sound/footstep_rubber@1": "f110deb95dafb14db206c2aab1e8dae52f44c542cb4ce4365cb895a5d7f6c0e0",
+      "sound/footsteps_metal.walkway@1": "a957150c75f3fdc7499bb8aca67a568aed4921b7cfe1746d9008c3b92df6450a",
+      "sound/impact_grating@1": "58c4dbc50eca1e6d43d07134b7bbf4f98181c9d282cefedfd0b26eca46810801",
+      "sound/impact_rubber@1": "5b5d22820be488ea0bd782a5b929831755592af869fd64613d965c4699aaa31d",
+      "sound/impact_steel_plate@1": "db0c0c8fe92925b1df1f351b362952d83485d7e38785ff3526992c8ec28f1bde",
+      "sound/scrape_grating@1": "5f05414f0ee5496a8a5a6624b58189015c7da1b29c404ba0b3c27a94bdc872a1",
+      "sound/scrape_rubber@1": "09b537a83a4b28bdd94dc689184e387ea6b9a6ca5a25554d9f79ba674d4e28e3",
+      "sound/scrape_steel_plate@1": "e9c593cf26cb61fdab2c718e9af18afab2b1066cfffcf4ab72367d5447ec29d7",
+      "sound/ship_inside@1": "98979673df5b78bddcf419d5c0cc6d09847f5bd223709c921958279a1e88218d"
+    },
+    "full_sha256": "6d1a91d9d69c4b37f1c89ddfae723dec06adde9d0c86ef62b1b1260752960857",
+    "left_out": {
+      "sky (a light entry's prims)": 1
+    },
+    "light": "web3d/light.glb",
+    "light_bytes": 310896,
+    "light_sha256": "a4685d70a62279cbd9be17aa6733c4ac0e38d52acc28b750b29457d3447918b3",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 100,
+    "replaced": {},
+    "source": "2c8f2bd0160604e1d37ec3bfbbd7204ca3a7ae9827f363affb95863e4937077e",
+    "triangles": 45400
+  }
 }

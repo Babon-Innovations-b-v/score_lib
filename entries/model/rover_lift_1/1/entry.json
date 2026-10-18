@@ -30,6 +30,16 @@
       "bytes": 9766515,
       "role": "texture",
       "sha256": "03ac9c20d11ff21b98c71adae32469e565a062e7757eea0354bc3b00ee5d4f3f"
+    },
+    "web3d/full.glb": {
+      "bytes": 320140,
+      "role": "web3d",
+      "sha256": "d962e02fe280fafb1e0840d93adad2f0f9d3bebfa2b47ae6ef127d91bc4b6f1e"
+    },
+    "web3d/light.glb": {
+      "bytes": 8332,
+      "role": "web3d",
+      "sha256": "81f9b11aa5361ca4f095998ed21ce72849f2dbf8e4fcd7657d361ba0cd5443b8"
     }
   },
   "id": "rover_lift_1",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 320140,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 3
+    },
+    "from": {},
+    "full_sha256": "d962e02fe280fafb1e0840d93adad2f0f9d3bebfa2b47ae6ef127d91bc4b6f1e",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 8332,
+    "light_sha256": "81f9b11aa5361ca4f095998ed21ce72849f2dbf8e4fcd7657d361ba0cd5443b8",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "32310e49258f01c92f683219b121b0d58ab2b4eb491abc158e88c57eca6fb84f",
+    "triangles": 19000
+  }
 }

@@ -51,10 +51,67 @@
     "record_key": "3b9e779b1ab416b9f61b6b0ceac5191661c018ce08351c4888f300c1b3049ed6",
     "world": "world1"
   },
+  "refine_options": [
+    {
+      "action": "re-tune against its footage",
+      "answers": [
+        "footage",
+        "fine particles",
+        "loose blobs",
+        "cites footage"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "the emitter's settings moved toward its footage's measured ranges in data/effects/<place>.json and its particles baked again (tools/usd/effects.py, on this machine)",
+      "suggested": false
+    },
+    {
+      "action": "measure more footage",
+      "answers": [
+        "footage"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "add a footage check for this emitter (a real photograph or film measured against a thing of known size)",
+      "suggested": false
+    }
+  ],
   "requires": [
     "algorithm/particle_effects@1"
   ],
   "schema": "score-lib-entry/1",
+  "score": 90,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "worst of 11 footage checks of the effects stage (effects-layer@launch): cloud reach at lift-off 1.178 in [0.5, 1.3]; cloud height at lift-off 0.581 in [0.2, 1.3]; cloud reach 3 s after lift-off 1.712 in [0.8, 2.0]; cloud height 3 s after lift-off 0.745 in [0.4, 1.7]; cloud reach 12 s after lift-off 2.869 in [1.5, 4.0]; cloud height 12 s after lift-off 0.969 in [0.8, 3.0]; cloud particles fine 3 s after lift-off 0.031 in [0.0, 0.05]; cloud thick 3 s after lift-off 0.852 in [0.5, 1.0]; no loose blobs at lift-off 0.002 in [0.0, 0.01]; no loose blobs 1.5 s after lift-off 0.002 in [0.0, 0.01]; no loose blobs 5 s after lift-off 0.002 in [0.0, 0.01]; inside its range 75 to 100 by its margin, 50 at an end, 0 a range's width (or the bound's size) past it",
+      "measured": 0.9693,
+      "name": "footage",
+      "unit": "height",
+      "value": 79,
+      "weight": 2.0
+    },
+    {
+      "how": "share of its 10827 showing particles at its fullest moment touching no other (the effects stage's loose: the nearest middle farther than its width); 100 at 0.0, 50 at 0.01, 0 at 0.05 share",
+      "measured": 0.0,
+      "name": "loose blobs",
+      "unit": "share",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "its settings name the real footage they were measured on (100), or only the source game's lines (0): 'footage: KSC-20190625-PH_CSH01_0004, KSC-20180206-PH_KLS02_0046 (white steam ris'",
+      "measured": true,
+      "name": "cites footage",
+      "unit": "",
+      "value": 100,
+      "weight": 1.0
+    }
+  ],
   "seen_in": [
     "launch"
   ],

@@ -30,6 +30,16 @@
       "bytes": 3344262,
       "role": "texture",
       "sha256": "4ef690ee8f5a3b690742cb30afe5d8031fdb4887a451357c2e764410da84316c"
+    },
+    "web3d/full.glb": {
+      "bytes": 336608,
+      "role": "web3d",
+      "sha256": "0ad721e34f2bde0660815cf7eaabc2f4bafaa77a0847e098d63b9065e3adb7b4"
+    },
+    "web3d/light.glb": {
+      "bytes": 9860,
+      "role": "web3d",
+      "sha256": "c9e3eea44348d84913f1dfe00663f3bf736dcf95f1f5456785c9821894f91a26"
     }
   },
   "id": "crane_trolley_1",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 336608,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 3
+    },
+    "from": {},
+    "full_sha256": "0ad721e34f2bde0660815cf7eaabc2f4bafaa77a0847e098d63b9065e3adb7b4",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 9860,
+    "light_sha256": "c9e3eea44348d84913f1dfe00663f3bf736dcf95f1f5456785c9821894f91a26",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "aa4a4918cecbb65c00ca1a97ef2bad2e553f0fddf6f44baf83046a104464fe95",
+    "triangles": 18999
+  }
 }

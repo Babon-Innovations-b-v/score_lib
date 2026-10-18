@@ -30,6 +30,16 @@
       "bytes": 328991,
       "role": "texture",
       "sha256": "4d5687a8df413f554b9746fabd9b126c20a557fb18f3dc2c81295e37db0bb5d3"
+    },
+    "web3d/full.glb": {
+      "bytes": 92344,
+      "role": "web3d",
+      "sha256": "8e7c74f90d43359c08a61b24a4ac1ce42611e1cb2648cd5e389015b2034cefd0"
+    },
+    "web3d/light.glb": {
+      "bytes": 4036,
+      "role": "web3d",
+      "sha256": "6af7b5853ad25ebe2e9bc9e688a4879fd209b75f0b7aabfae9490257053bf970"
     }
   },
   "id": "junction_box_1.garage",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 92344,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 1
+    },
+    "from": {},
+    "full_sha256": "8e7c74f90d43359c08a61b24a4ac1ce42611e1cb2648cd5e389015b2034cefd0",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 4036,
+    "light_sha256": "6af7b5853ad25ebe2e9bc9e688a4879fd209b75f0b7aabfae9490257053bf970",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "699dfe906031adfe5b89259066cb0cc8220f15ac637ae0eeb042ac7179a049df",
+    "triangles": 5000
+  }
 }

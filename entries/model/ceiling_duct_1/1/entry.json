@@ -30,6 +30,16 @@
       "bytes": 10062893,
       "role": "texture",
       "sha256": "a4c9c379defa4b0079d3973f98bb0c1672001d41ffe5a09882298d5ae0e0e91c"
+    },
+    "web3d/full.glb": {
+      "bytes": 201960,
+      "role": "web3d",
+      "sha256": "f65f95b1bccb021772116a44fd5edd81515de06d10fe1c6dcc47472400ca09ce"
+    },
+    "web3d/light.glb": {
+      "bytes": 28472,
+      "role": "web3d",
+      "sha256": "bfba907143f55400c0b76ad464b3c217ffb0f6bf6d7947d434b5cc9981af5e62"
     }
   },
   "id": "ceiling_duct_1",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 201960,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "f65f95b1bccb021772116a44fd5edd81515de06d10fe1c6dcc47472400ca09ce",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 28472,
+    "light_sha256": "bfba907143f55400c0b76ad464b3c217ffb0f6bf6d7947d434b5cc9981af5e62",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "6993f84ddc2c442b942f69a2a0c459bcb11a99d5c1f6e294d32d28127aec391f",
+    "triangles": 1348
+  }
 }

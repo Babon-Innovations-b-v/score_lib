@@ -30,6 +30,16 @@
       "bytes": 5543,
       "role": "picture",
       "sha256": "6dfb29c014f5855518d76971d98e108feab58979e8794bec8bba3eb7c2830092"
+    },
+    "web3d/full.glb": {
+      "bytes": 2719812,
+      "role": "web3d",
+      "sha256": "77bc0112f2b2d44a5833b7db6fb50042e46e19cf73d1f5a2188d0940fdb77d47"
+    },
+    "web3d/light.glb": {
+      "bytes": 361100,
+      "role": "web3d",
+      "sha256": "074b6f599d7bb626c9ee708f03f167e34d5cfd3a811e0e8a10ab2a4adc6135c7"
     }
   },
   "id": "hdoor",
@@ -111,5 +121,37 @@
     "up_axis": "Y",
     "use": "open"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 2719812,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 309
+    },
+    "from": {
+      "layer/base.hdoor@1": "8623693da4ca900ce3113c9a4b42eb29ff33e5d458a27a28705192e28fea1047",
+      "layer/motion.hdoor@1": "7395516f432ca86fa29d83c61901fcacb4c4bdd2084878893f5f1f864828b279",
+      "layer/sound.hdoor@1": "d634c2fccdc66587c0136561962d9763fa4c1d3941668f0691c251ab8aec13bc",
+      "model/lattice_ring_rib_1.hdoor@1": "84b412781f831d187383018a5a5a293ece0e1cf0fac0f8a6449945e7b65065c6",
+      "model/wall_upper_plain_1.hdoor@1": "bc742628738262608bdb868910e384c196c848b7e255334869b0ebafb0c58437",
+      "sound/footstep_grating@1": "2e9201625477f7e8d36299bc61c38abb6b4418b2a03bf22bb57666e6ceb1d667",
+      "sound/footstep_rubber@1": "f110deb95dafb14db206c2aab1e8dae52f44c542cb4ce4365cb895a5d7f6c0e0",
+      "sound/impact_grating@1": "58c4dbc50eca1e6d43d07134b7bbf4f98181c9d282cefedfd0b26eca46810801",
+      "sound/impact_rubber@1": "5b5d22820be488ea0bd782a5b929831755592af869fd64613d965c4699aaa31d",
+      "sound/impact_steel_plate@1": "db0c0c8fe92925b1df1f351b362952d83485d7e38785ff3526992c8ec28f1bde",
+      "sound/scrape_grating@1": "5f05414f0ee5496a8a5a6624b58189015c7da1b29c404ba0b3c27a94bdc872a1",
+      "sound/scrape_rubber@1": "09b537a83a4b28bdd94dc689184e387ea6b9a6ca5a25554d9f79ba674d4e28e3",
+      "sound/scrape_steel_plate@1": "e9c593cf26cb61fdab2c718e9af18afab2b1066cfffcf4ab72367d5447ec29d7"
+    },
+    "full_sha256": "77bc0112f2b2d44a5833b7db6fb50042e46e19cf73d1f5a2188d0940fdb77d47",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 361100,
+    "light_sha256": "074b6f599d7bb626c9ee708f03f167e34d5cfd3a811e0e8a10ab2a4adc6135c7",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 309,
+    "replaced": {},
+    "source": "833b101fa7613d466474923912ef67280e1771f035a5bc36d68270702e0173ca",
+    "triangles": 244404
+  }
 }

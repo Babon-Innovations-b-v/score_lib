@@ -20,6 +20,16 @@
       "bytes": 551831,
       "role": "texture",
       "sha256": "b4125f2c5fb85408d8b4d091b3b2138ac2610152db65c0727049a823bb8c5153"
+    },
+    "web3d/full.glb": {
+      "bytes": 22512,
+      "role": "web3d",
+      "sha256": "e86f152dce0fda896e9cb38bb689d0b57ade48e311b63a393bca081376a451b2"
+    },
+    "web3d/light.glb": {
+      "bytes": 3068,
+      "role": "web3d",
+      "sha256": "64f901817f31af11dd99f11b65b48af874c30fbf67d72f4b06d7c0b3974ec3ef"
     }
   },
   "id": "fixture_glovebox_1",
@@ -79,5 +89,33 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 22512,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "replaced": 1
+    },
+    "from": {},
+    "full_sha256": "e86f152dce0fda896e9cb38bb689d0b57ade48e311b63a393bca081376a451b2",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 3068,
+    "light_sha256": "64f901817f31af11dd99f11b65b48af874c30fbf67d72f4b06d7c0b3974ec3ef",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {
+      "/model/body/Looks/look_0": {
+        "by": "cast_steel",
+        "colour": [
+          0.0879,
+          0.0942,
+          0.1035
+        ],
+        "distance": 3.65
+      }
+    },
+    "source": "1d1f8a9345edd2221250dcbd09e34015b5cd1d55e6ae015ade90b8cc87aa9ea2",
+    "triangles": 2892
+  }
 }

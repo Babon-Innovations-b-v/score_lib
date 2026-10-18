@@ -30,6 +30,16 @@
       "bytes": 5289324,
       "role": "texture",
       "sha256": "d2181d0a5db0473851b81244d61514c98aa58b6d287ab140cd9db1dfc9d01298"
+    },
+    "web3d/full.glb": {
+      "bytes": 236840,
+      "role": "web3d",
+      "sha256": "6a3460ecb04ce2cf4e0e853f52f3813efb263bc5f2a41ad312931e29e753ba43"
+    },
+    "web3d/light.glb": {
+      "bytes": 38580,
+      "role": "web3d",
+      "sha256": "76809ec940d060482fb9d3d7e6a5102299987b236c1e1744116a5b75601dd596"
     }
   },
   "id": "conduit_box_1.airlock",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 236840,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "6a3460ecb04ce2cf4e0e853f52f3813efb263bc5f2a41ad312931e29e753ba43",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 38580,
+    "light_sha256": "76809ec940d060482fb9d3d7e6a5102299987b236c1e1744116a5b75601dd596",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "401fe77b5ecd7bdd819dca0834b2f675dde5d5fb7620b302a79d5ab892779ae9",
+    "triangles": 1636
+  }
 }

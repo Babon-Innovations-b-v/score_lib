@@ -20,6 +20,16 @@
       "bytes": 19508132,
       "role": "texture",
       "sha256": "595998ae0c06e4cea4792e9e0c0b7a5929f044a23eb14d86013dab061b42ac43"
+    },
+    "web3d/full.glb": {
+      "bytes": 1285864,
+      "role": "web3d",
+      "sha256": "cb4a0c07c01d9dd24ff177ff43c2c4d15c48e3e87542f7777f376ee8d40560c5"
+    },
+    "web3d/light.glb": {
+      "bytes": 78576,
+      "role": "web3d",
+      "sha256": "0fef8aec422a4df6bc67124c0dcb42d6166c2d78b63525f176625eaf24ae2d68"
     }
   },
   "id": "fixture_mars_boulder_basalt",
@@ -79,5 +89,33 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 1285864,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "replaced": 1
+    },
+    "from": {},
+    "full_sha256": "cb4a0c07c01d9dd24ff177ff43c2c4d15c48e3e87542f7777f376ee8d40560c5",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 78576,
+    "light_sha256": "0fef8aec422a4df6bc67124c0dcb42d6166c2d78b63525f176625eaf24ae2d68",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {
+      "/model/body/Looks/look_0": {
+        "by": "bakelite",
+        "colour": [
+          0.0621,
+          0.0463,
+          0.0315
+        ],
+        "distance": 6.32
+      }
+    },
+    "source": "a314d1d27a173fec2c67067402f52b35ef7b89b77bb5f7b21b4febc8a006d293",
+    "triangles": 198325
+  }
 }

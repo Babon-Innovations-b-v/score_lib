@@ -30,6 +30,16 @@
       "bytes": 56025,
       "role": "texture",
       "sha256": "85fee4fcb3b913ec0169d40c884409fea95bdfb838e1fd1a37a21f6c8b6a85c6"
+    },
+    "web3d/full.glb": {
+      "bytes": 91556,
+      "role": "web3d",
+      "sha256": "4a6e646366003e0fa9f3068f7c6e305dfc37a042f0a9240932970934428ca658"
+    },
+    "web3d/light.glb": {
+      "bytes": 7344,
+      "role": "web3d",
+      "sha256": "64ec276b0e375c159b7d062e994962a6233067cf8a2e7ce9512f6c2f63f86327"
     }
   },
   "id": "sauce_bottle_1",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 91556,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 3
+    },
+    "from": {},
+    "full_sha256": "4a6e646366003e0fa9f3068f7c6e305dfc37a042f0a9240932970934428ca658",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 7344,
+    "light_sha256": "64ec276b0e375c159b7d062e994962a6233067cf8a2e7ce9512f6c2f63f86327",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "0b2cc95ed2fdb1ac01923fe58e13557d61f2b62ec7d220c79c5d0b16cad3dd90",
+    "triangles": 5000
+  }
 }

@@ -1,0 +1,141 @@
+{
+  "address": "surface/dark_panel.far_city@1",
+  "files": {
+    "material.usda": {
+      "bytes": 555,
+      "role": "usd",
+      "sha256": "113d33030a9209d1a7c3b87f339aa1ce20715ba68a8ca0bb5523527cd30a1b95"
+    },
+    "preview.png": {
+      "bytes": 18533,
+      "role": "picture",
+      "sha256": "3bbd6dd3ccb25bcb0bd1ebdaff5221801c2658c18ae3b640aa0a1d7f6c0ab29c"
+    },
+    "surface.json": {
+      "bytes": 407,
+      "role": "record",
+      "sha256": "37218d6cdae30c80882e9af175e8663233eb7cd19b546698d867eb0c713207bb"
+    }
+  },
+  "id": "dark_panel.far_city",
+  "kind": "surface",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "painted",
+    "made_with": [
+      {
+        "by": "infinigen2",
+        "what": "relief from infinigen2's base materials"
+      },
+      {
+        "by": "procfunc",
+        "what": "baked by the surface recipes on ProcFunc"
+      },
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
+    "place": "far_city",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "refine_options": [
+    {
+      "action": "re-tune its settings",
+      "answers": [
+        "palette fit",
+        "close-range detail",
+        "ink contrast"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "its library variant's settings and palette token adjusted in data/library/materials.json, checked again here",
+      "suggested": true
+    },
+    {
+      "action": "bake a tile locally",
+      "answers": [
+        "tiling",
+        "close-range detail"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "the surface_recipes algorithm bakes one tile on this machine (Blender), so its seams and close-range detail can be measured",
+      "suggested": false
+    },
+    {
+      "action": "redraw the print",
+      "answers": [
+        "print resolution",
+        "ink contrast"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "the print drawn again from its library picture at a higher resolution",
+      "suggested": false
+    }
+  ],
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "score": 0,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "its base colour against its palette token 'cabin-panel' (design/tokens/tokens.json); 100 at 2.0, 50 at 8.0, 0 at 20.0 CIE76",
+      "measured": 23.18,
+      "name": "palette fit",
+      "unit": "CIE76",
+      "value": 0,
+      "weight": 2.0
+    },
+    {
+      "how": "the entry holds its recipe's settings, no baked tile; seams and grain are judged on the models baked from it",
+      "name": "tiling",
+      "status": "not measured",
+      "value": null
+    },
+    {
+      "how": "the entry holds its recipe's settings, no baked tile; seams and grain are judged on the models baked from it",
+      "name": "close-range detail",
+      "status": "not measured",
+      "value": null
+    }
+  ],
+  "seen_in": [
+    "far_city",
+    "launch"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "painted"
+    ],
+    "recipe": [
+      "painted_metal"
+    ]
+  },
+  "title": "Dark panel",
+  "usd": {
+    "default_prim": "/dark_panel",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/dark_panel.far_city/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

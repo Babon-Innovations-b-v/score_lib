@@ -45,6 +45,16 @@
       "bytes": 424509,
       "role": "texture",
       "sha256": "b510be8c35b7c8aef5abd6bf28a114822c40e2e5fb40cf4ead55e7ca0e2f8d13"
+    },
+    "web3d/full.glb": {
+      "bytes": 118396,
+      "role": "web3d",
+      "sha256": "446716a525254b30bc1625f0cb993dbc6ea592ee999e0c4b8d7f277e6aed8ae2"
+    },
+    "web3d/light.glb": {
+      "bytes": 21588,
+      "role": "web3d",
+      "sha256": "a9be0db9af4fc19acb8777fff2f49fb4ea11678d14adc3778a2ef0cbd754dd2d"
     }
   },
   "id": "shop_sign_3.street",
@@ -106,5 +116,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 118396,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 2
+    },
+    "from": {},
+    "full_sha256": "446716a525254b30bc1625f0cb993dbc6ea592ee999e0c4b8d7f277e6aed8ae2",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 21588,
+    "light_sha256": "a9be0db9af4fc19acb8777fff2f49fb4ea11678d14adc3778a2ef0cbd754dd2d",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 2,
+    "replaced": {},
+    "source": "cbbbf222719b63b3a8253422faee4908aa33a469307e678a0ffda731dc0623e7",
+    "triangles": 1240
+  }
 }

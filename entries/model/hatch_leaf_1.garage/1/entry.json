@@ -30,6 +30,16 @@
       "bytes": 9556353,
       "role": "texture",
       "sha256": "16960d45db6de7f0f8eef780db0ecd1d6fe3cff00ab2dc5632380eb72b05fb3c"
+    },
+    "web3d/full.glb": {
+      "bytes": 95364,
+      "role": "web3d",
+      "sha256": "a7affe4cd91a0930162be8f5c761722be9298ce1dda9cccdc4a5fd699d155703"
+    },
+    "web3d/light.glb": {
+      "bytes": 14136,
+      "role": "web3d",
+      "sha256": "4b5a9823f1fa2c67cfc6b04cbe4fce34b0ec4f8e6e2e52c3d81c4a50e27d65df"
     }
   },
   "id": "hatch_leaf_1.garage",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 95364,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "a7affe4cd91a0930162be8f5c761722be9298ce1dda9cccdc4a5fd699d155703",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 14136,
+    "light_sha256": "4b5a9823f1fa2c67cfc6b04cbe4fce34b0ec4f8e6e2e52c3d81c4a50e27d65df",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "642eb969695c773daa22b39cfc26af05000e400b10ffac981938d24147cc7b10",
+    "triangles": 3144
+  }
 }

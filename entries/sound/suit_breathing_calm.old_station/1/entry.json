@@ -69,8 +69,100 @@
     "record_key": "dc747d66cce3eb7509fd4a5588fadff20f1997e37307f4d81a23f751d62f293b",
     "world": "world1"
   },
+  "refine_options": [
+    {
+      "action": "re-level",
+      "answers": [
+        "loudness",
+        "true peak",
+        "clipping"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "brought to its category's loudness target under the -3 dBTP ceiling (tools/sound/loudness normalise, ffmpeg, on this machine)",
+      "suggested": false
+    },
+    {
+      "action": "trim to its brief",
+      "answers": [
+        "length",
+        "loop join"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "cut to its brief's length with a short fade (ffmpeg)",
+      "suggested": false
+    },
+    {
+      "action": "regenerate a sound",
+      "answers": [
+        "prompt match",
+        "clipping",
+        "loop join"
+      ],
+      "basket": true,
+      "cost": "paid",
+      "does": "eight new MOSS-SoundEffect takes of its brief, the best by CLAP kept",
+      "price": "not measured yet",
+      "suggested": false
+    }
+  ],
   "requires": [],
   "schema": "score-lib-entry/1",
+  "score": 100,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "a recording the owner picked: no prompt to match",
+      "name": "prompt match",
+      "status": "not judged",
+      "value": null
+    },
+    {
+      "how": "integrated loudness -24.0 LUFS against its loop target -24.0 LUFS (ffmpeg ebur128); over: 100 at 0.0, 50 at 1.0, 0 at 4.0 LU; under: 100 at 1.0, 50 at 6.0, 0 at 12.0 LU; worst of 1 files (audio/recordings/suit/suit_breathing_calm.ogg)",
+      "measured": 0.0,
+      "name": "loudness",
+      "unit": "LU off target",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "true peak (ffmpeg ebur128, peak=true) against the -3 dBTP ceiling; worst of 1 files (audio/recordings/suit/suit_breathing_calm.ogg); 100 at -4.0, 50 at -3.0, 0 at 0.0 dBTP",
+      "measured": -5.8,
+      "name": "true peak",
+      "unit": "dBTP",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "share of samples in runs of three or more at full scale; worst of 1 files (audio/recordings/suit/suit_breathing_calm.ogg); 100 at 0.0, 50 at 0.0001, 0 at 0.001 share",
+      "measured": 0.0,
+      "name": "clipping",
+      "unit": "share",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "the sound stage's length rule against its brief (gates.length_fault): within",
+      "measured": 10.2,
+      "name": "length",
+      "unit": "s",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "the step across the loop's join over the file's 99.9th percentile step (audio/recordings/suit/suit_breathing_calm.ogg); 100 at 1.0, 50 at 2.0, 0 at 4.0 ratio",
+      "measured": 0.01,
+      "name": "loop join",
+      "unit": "ratio",
+      "value": 100,
+      "weight": 1.0
+    }
+  ],
   "seen_in": [
     "old_station"
   ],

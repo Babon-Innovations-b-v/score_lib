@@ -35,6 +35,16 @@
       "bytes": 3846781,
       "role": "texture",
       "sha256": "54d8ef9b069b4b93d53ac868830c69b69534b9e9eb9d6ed6ed208a41338247bd"
+    },
+    "web3d/full.glb": {
+      "bytes": 106376,
+      "role": "web3d",
+      "sha256": "a461592611293db04b5f4b70e61544d09902d398d854558ae7c5dcc5c23ed0ca"
+    },
+    "web3d/light.glb": {
+      "bytes": 13724,
+      "role": "web3d",
+      "sha256": "eff3b55e9e91259f37466e4656aa76c467231fc0fb5148f643ccc82bed9b5b18"
     }
   },
   "id": "ceiling_light_panel_1.engineroom",
@@ -96,5 +106,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 106376,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 2
+    },
+    "from": {},
+    "full_sha256": "a461592611293db04b5f4b70e61544d09902d398d854558ae7c5dcc5c23ed0ca",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 13724,
+    "light_sha256": "eff3b55e9e91259f37466e4656aa76c467231fc0fb5148f643ccc82bed9b5b18",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 2,
+    "replaced": {},
+    "source": "c55345314c9383cb07b1ad3b6e9023e8470576d3885ba4f2605f36f8da657b1f",
+    "triangles": 168
+  }
 }

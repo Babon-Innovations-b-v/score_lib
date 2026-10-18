@@ -35,6 +35,16 @@
       "bytes": 258975,
       "role": "texture",
       "sha256": "092f6d10ef7367257e0e6771751460db944aa2ebc0a9b63a1bb468221aa7945a"
+    },
+    "web3d/full.glb": {
+      "bytes": 78784,
+      "role": "web3d",
+      "sha256": "1b3a71663f6e30e2a51efae713b82882f5bca18a1b03ad6bb4504cc85d47043a"
+    },
+    "web3d/light.glb": {
+      "bytes": 12780,
+      "role": "web3d",
+      "sha256": "c38d3f07bb0299750ce80e9017e37df7af8a0e3ff0bd180c4b941339e0285ae6"
     }
   },
   "id": "wall_cage_lamp_1.hangar",
@@ -96,5 +106,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 78784,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 2
+    },
+    "from": {},
+    "full_sha256": "1b3a71663f6e30e2a51efae713b82882f5bca18a1b03ad6bb4504cc85d47043a",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 12780,
+    "light_sha256": "c38d3f07bb0299750ce80e9017e37df7af8a0e3ff0bd180c4b941339e0285ae6",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 2,
+    "replaced": {},
+    "source": "f23381abe5cd327ff67b252be569a41fcc4b6e3a2c911ec20c0888b889d8ccf6",
+    "triangles": 2724
+  }
 }

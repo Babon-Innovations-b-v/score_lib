@@ -20,6 +20,16 @@
       "bytes": 11158,
       "role": "texture",
       "sha256": "8f43506de61dedb7924eac63d27871fbd23a7b04ec469ffff276f92a73938f75"
+    },
+    "web3d/full.glb": {
+      "bytes": 87136,
+      "role": "web3d",
+      "sha256": "13af16d5543352fd3649e1b650c94393652b364107ff28c9ee7f1230d60edc0a"
+    },
+    "web3d/light.glb": {
+      "bytes": 4112,
+      "role": "web3d",
+      "sha256": "5cdc9f05c12543f4737be785996ba74b5ab0da5543b22a3ea486345f289efae3"
     }
   },
   "id": "fixture_wrench_1",
@@ -79,5 +89,33 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 87136,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "replaced": 1
+    },
+    "from": {},
+    "full_sha256": "13af16d5543352fd3649e1b650c94393652b364107ff28c9ee7f1230d60edc0a",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 4112,
+    "light_sha256": "5cdc9f05c12543f4737be785996ba74b5ab0da5543b22a3ea486345f289efae3",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {
+      "/model/body/Looks/look_0": {
+        "by": "cast_steel",
+        "colour": [
+          0.0602,
+          0.073,
+          0.0871
+        ],
+        "distance": 2.52
+      }
+    },
+    "source": "33f6a9440fda39ba36bac58ac16798a916129b044fe42f2b804a3ea6a83d06ec",
+    "triangles": 5000
+  }
 }

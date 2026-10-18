@@ -68,8 +68,100 @@
     "record_key": "57c80b8ac8bdd844cce008d7ce3baa6c37969f50c0df80c8254f5e4b88eed422",
     "world": "world1"
   },
+  "refine_options": [
+    {
+      "action": "re-level",
+      "answers": [
+        "loudness",
+        "true peak",
+        "clipping"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "brought to its category's loudness target under the -3 dBTP ceiling (tools/sound/loudness normalise, ffmpeg, on this machine)",
+      "suggested": false
+    },
+    {
+      "action": "trim to its brief",
+      "answers": [
+        "length",
+        "loop join"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "cut to its brief's length with a short fade (ffmpeg)",
+      "suggested": false
+    },
+    {
+      "action": "regenerate a sound",
+      "answers": [
+        "prompt match",
+        "clipping",
+        "loop join"
+      ],
+      "basket": true,
+      "cost": "paid",
+      "does": "eight new MOSS-SoundEffect takes of its brief, the best by CLAP kept",
+      "price": "not measured yet",
+      "suggested": false
+    }
+  ],
   "requires": [],
   "schema": "score-lib-entry/1",
+  "score": 93,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "CLAP score of the take against its prompt, from its record (the sound stage's likeness gate: CLAP_FLOOR 0.30); 100 at 0.55, 50 at 0.3, 0 at 0.15 CLAP",
+      "measured": 0.4413,
+      "name": "prompt match",
+      "unit": "CLAP",
+      "value": 78,
+      "weight": 2.0
+    },
+    {
+      "how": "integrated loudness -20.3 LUFS against its shot target -20.0 LUFS (ffmpeg ebur128); over: 100 at 0.0, 50 at 1.0, 0 at 4.0 LU; under: 100 at 1.0, 50 at 6.0, 0 at 12.0 LU; worst of 1 files (audio/generated/doors/scrape_steel_plate.ogg)",
+      "measured": -0.3,
+      "name": "loudness",
+      "unit": "LU off target",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "true peak (ffmpeg ebur128, peak=true) against the -3 dBTP ceiling; worst of 1 files (audio/generated/doors/scrape_steel_plate.ogg); 100 at -4.0, 50 at -3.0, 0 at 0.0 dBTP",
+      "measured": -9.3,
+      "name": "true peak",
+      "unit": "dBTP",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "share of samples in runs of three or more at full scale; worst of 1 files (audio/generated/doors/scrape_steel_plate.ogg); 100 at 0.0, 50 at 0.0001, 0 at 0.001 share",
+      "measured": 0.0,
+      "name": "clipping",
+      "unit": "share",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "the sound stage's length rule against its brief (gates.length_fault): within",
+      "measured": 2.97,
+      "name": "length",
+      "unit": "s",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "not a loop",
+      "name": "loop join",
+      "status": "not judged",
+      "value": null
+    }
+  ],
   "seen_in": [
     "airlock",
     "camp",

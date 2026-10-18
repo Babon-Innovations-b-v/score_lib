@@ -50,6 +50,16 @@
       "bytes": 3287,
       "role": "record",
       "sha256": "c17d64542617ebfa17ae548d3f0103d2a140031c9bd88da7e021ecd43ecba265"
+    },
+    "web3d/full.glb": {
+      "bytes": 1196728,
+      "role": "web3d",
+      "sha256": "8f323bbdde613d40f46157a69b692e3f02f7c12453ebdcadf8168bbabde12220"
+    },
+    "web3d/light.glb": {
+      "bytes": 167332,
+      "role": "web3d",
+      "sha256": "4cddc124a61d903a1a91f3f71008fd580fa1c69aa9f797f375ce22809aca46ae"
     }
   },
   "id": "navigation",
@@ -133,5 +143,43 @@
   },
   "title": "Navigation kit",
   "usd": null,
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 1196728,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 32
+    },
+    "from": {
+      "layer/base.navigation@1": "c402d30885317b40173e241693c401f74ca0919eadb13a488ca4364a3e04a2b9",
+      "model/ceiling_light_panel_1.navigation@1": "65265c3f7fea241920e6017caef4f640becfd558f6c324011323f7a208062bad",
+      "model/door_leaf_1.navigation@1": "7e31c1e8ee05082bfaffddb2e0ef362fdea9b623b42cb9d78b4bd862b5fb0c03",
+      "model/edge_light_strip_1.navigation@1": "dc51650ea0cc74474a87cd23728a3ee14314f9cf6b317cf26bac72c110f9fb3f",
+      "model/hatch_door_frame_1@1": "68b67e382de0bd754d4ad4fa303787e89d20c5cc784a9392307333c157a2ff4c",
+      "model/nav_table_1@1": "92898ddc01e8da6fae1f05537840ee6000e178767e5d5ccb616721b030340c99",
+      "model/overhead_vent_1@1": "4e725546b8168a4090f9c6c168dc1d66128aedf557e1c6379d39250e0be458a0",
+      "model/pilot_seat_1@1": "cd9ff06553789fbcb9f0e3d49b1ddc0e184f0f2aaa47b466ce7acca0449acc94",
+      "model/ring_floor_plate_1.navigation@1": "3d0bea73843a43bea7352c61bec25ceda225e96abc624a64e07cb13141949fd1",
+      "model/roof_face_panel_1.navigation@1": "636f6f8790b7d66e46b01bc7edebcd076324cfc5e2126586b2654aba89ba704c",
+      "model/side_console_1@1": "4c1280aeb0dd59457c7ad156efe19b506be28962f4725c17001438b1c3ed4640",
+      "model/wall_lower_plain_1.navigation@1": "72391d8fa67dfa9af35c7204b4b1fac724cf68087950ce4a21a1d6a9a1ab9f01",
+      "model/wall_lower_plain_2.navigation@1": "3a54fbbe62ff23b307bed107d274f4c37f92769149a60f1a897fca50abc0264e",
+      "model/wall_lower_plain_3.navigation@1": "6ef3920664e798faa86fa25c2813833f8bdd5b79aa6699681f6f310f41ecfa07",
+      "model/wall_screen_1@1": "db3909aa732a736dd2a663bbef24752a2af7c904a3e873ab1e173bb39587e854",
+      "model/wall_upper_plain_1.navigation@1": "b67677be06af3331ad99b871893e334bb82519cbb6e56b9e1c36aedf45169362",
+      "model/wall_upper_plain_2.navigation@1": "5fe5893e3210c774806919552ec13e4f0339e152c8e99d64d66fba18a82ab872",
+      "model/wall_upper_plain_3.navigation@1": "9852bc447d14bbd6ae564e446b30c84daee406892943f4853758a5a48184e34d",
+      "model/wall_upper_plain_4.navigation@1": "7a14cf78b6c6d5f6a23f554f9587422c163c9c62772c4af7984413665d98d08d"
+    },
+    "full_sha256": "8f323bbdde613d40f46157a69b692e3f02f7c12453ebdcadf8168bbabde12220",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 167332,
+    "light_sha256": "4cddc124a61d903a1a91f3f71008fd580fa1c69aa9f797f375ce22809aca46ae",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 32,
+    "replaced": {},
+    "source": "2dce27d1dd3d4d6e1b9df18abf81469f577b774b336705c877fada923a54a8f1",
+    "triangles": 22544
+  }
 }

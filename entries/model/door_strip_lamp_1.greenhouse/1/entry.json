@@ -35,6 +35,16 @@
       "bytes": 3305577,
       "role": "texture",
       "sha256": "90af254eabebf00857b56ec3d1a12944b065faef945a04bb975bd8c961196109"
+    },
+    "web3d/full.glb": {
+      "bytes": 293324,
+      "role": "web3d",
+      "sha256": "4980bfbcfa0a3cef347129cf78ed3ab160ddfce2cab7711a5b41db542edde9eb"
+    },
+    "web3d/light.glb": {
+      "bytes": 44288,
+      "role": "web3d",
+      "sha256": "66ba283ded67771ee1a5d5e81896558f85e9c593ee2e9b668a60ed0da0718099"
     }
   },
   "id": "door_strip_lamp_1.greenhouse",
@@ -96,5 +106,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 293324,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 2
+    },
+    "from": {},
+    "full_sha256": "4980bfbcfa0a3cef347129cf78ed3ab160ddfce2cab7711a5b41db542edde9eb",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 44288,
+    "light_sha256": "66ba283ded67771ee1a5d5e81896558f85e9c593ee2e9b668a60ed0da0718099",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 2,
+    "replaced": {},
+    "source": "76f7267c6febf29e861eee347756e732690d7c91049a8bd7deaa939f3eddf5ee",
+    "triangles": 628
+  }
 }

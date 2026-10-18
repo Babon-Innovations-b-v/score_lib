@@ -30,6 +30,16 @@
       "bytes": 2859628,
       "role": "texture",
       "sha256": "b9adbbb7581879821f1634a0449a484a3dd88497bdcb65d90c766b28d2c038f9"
+    },
+    "web3d/full.glb": {
+      "bytes": 296628,
+      "role": "web3d",
+      "sha256": "62bf0eb7f0e45eb4c2e0ccd5050546ee8f191bc39b6f82bca9197e63d87df37a"
+    },
+    "web3d/light.glb": {
+      "bytes": 38284,
+      "role": "web3d",
+      "sha256": "431025f9501821e0654a370e0fb1f446cfbc0038f0aeb6f7c06e4fb86f93eeb0"
     }
   },
   "id": "foot_ring_3",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 296628,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "62bf0eb7f0e45eb4c2e0ccd5050546ee8f191bc39b6f82bca9197e63d87df37a",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 38284,
+    "light_sha256": "431025f9501821e0654a370e0fb1f446cfbc0038f0aeb6f7c06e4fb86f93eeb0",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "f1f6a1a456d45c1bb1b835e274cb9f1d5ff6dc95a8dda914a3913f8875c09110",
+    "triangles": 380
+  }
 }

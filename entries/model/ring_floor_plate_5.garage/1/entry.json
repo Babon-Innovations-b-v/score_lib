@@ -30,6 +30,16 @@
       "bytes": 14843567,
       "role": "texture",
       "sha256": "bad731ce0a4e95d424137e2583f5405c4391418cedd9568cc9ce9c96c67f1a0f"
+    },
+    "web3d/full.glb": {
+      "bytes": 61720,
+      "role": "web3d",
+      "sha256": "d72fe83490262d8cac127bb3499fa370be52bccfd3846e9bbee58af2b448a71c"
+    },
+    "web3d/light.glb": {
+      "bytes": 8392,
+      "role": "web3d",
+      "sha256": "6742de2f1c1c4aa280104b869e41efd75b808c5a4105b6662a6c8aeae38c187c"
     }
   },
   "id": "ring_floor_plate_5.garage",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 61720,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "d72fe83490262d8cac127bb3499fa370be52bccfd3846e9bbee58af2b448a71c",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 8392,
+    "light_sha256": "6742de2f1c1c4aa280104b869e41efd75b808c5a4105b6662a6c8aeae38c187c",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "0a3289b0d976bad44822b83b46ae4135e265a4caf9675aa46a514e0e50c073ca",
+    "triangles": 208
+  }
 }

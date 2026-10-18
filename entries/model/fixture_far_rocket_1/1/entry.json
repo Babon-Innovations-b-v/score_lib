@@ -20,6 +20,16 @@
       "bytes": 558380,
       "role": "texture",
       "sha256": "eeb64de8a3cd17b1e5369dbb6b35b7ccfbb99d20a656f13c5bdb4e6f62057771"
+    },
+    "web3d/full.glb": {
+      "bytes": 509868,
+      "role": "web3d",
+      "sha256": "3247eaaba8a3541d8532c4d0f60c1c8c082a82152f8ec672b8706dbacfb97f1b"
+    },
+    "web3d/light.glb": {
+      "bytes": 11160,
+      "role": "web3d",
+      "sha256": "7d4f1e974d17be7af3eea15e5f12ca506098ba9403bd863b640e9de91f838f1a"
     }
   },
   "id": "fixture_far_rocket_1",
@@ -79,5 +89,33 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 509868,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "replaced": 1
+    },
+    "from": {},
+    "full_sha256": "3247eaaba8a3541d8532c4d0f60c1c8c082a82152f8ec672b8706dbacfb97f1b",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 11160,
+    "light_sha256": "7d4f1e974d17be7af3eea15e5f12ca506098ba9403bd863b640e9de91f838f1a",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {
+      "/model/body/Looks/look_0": {
+        "by": "wall_tile_white",
+        "colour": [
+          0.6127,
+          0.6365,
+          0.6205
+        ],
+        "distance": 5.92
+      }
+    },
+    "source": "03cc9ab1b929c5a6d7a1ce4c6ee4f3cc92ec7bb127ffe9af446090feb9205e80",
+    "triangles": 29997
+  }
 }

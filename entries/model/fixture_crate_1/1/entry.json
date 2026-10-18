@@ -20,6 +20,16 @@
       "bytes": 1823081,
       "role": "texture",
       "sha256": "285ff3c5f779b773896823c4ab023c78f141b64521f9b1f63b5b944d3dc39964"
+    },
+    "web3d/full.glb": {
+      "bytes": 7668,
+      "role": "web3d",
+      "sha256": "98a996848328a2d677a6b8da2b66674d8003dbee88e86bbae0119b5824a4d965"
+    },
+    "web3d/light.glb": {
+      "bytes": 2132,
+      "role": "web3d",
+      "sha256": "bb4248d99758467e4f54a5de0a80e369a5a829d36b10fb342afaa4575e9ed332"
     }
   },
   "id": "fixture_crate_1",
@@ -79,5 +89,33 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 7668,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "replaced": 1
+    },
+    "from": {},
+    "full_sha256": "98a996848328a2d677a6b8da2b66674d8003dbee88e86bbae0119b5824a4d965",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 2132,
+    "light_sha256": "bb4248d99758467e4f54a5de0a80e369a5a829d36b10fb342afaa4575e9ed332",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {
+      "/model/body/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2393,
+          0.219,
+          0.1954
+        ],
+        "distance": 1.32
+      }
+    },
+    "source": "80cd794829367f52aa688614cf7acc2402b7c1fb11400ddffbd6d7197e638b1d",
+    "triangles": 696
+  }
 }

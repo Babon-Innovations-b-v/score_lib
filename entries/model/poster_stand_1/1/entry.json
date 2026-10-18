@@ -30,6 +30,16 @@
       "bytes": 161072,
       "role": "texture",
       "sha256": "5e559f3473f405774e9e72c1a33d8c8bcdbd36b0a971fd904336bb44dda1faad"
+    },
+    "web3d/full.glb": {
+      "bytes": 71728,
+      "role": "web3d",
+      "sha256": "8a5ed157700da41613fba9cab5b16daf2787bf559f481fa516c8499ea212f2d8"
+    },
+    "web3d/light.glb": {
+      "bytes": 24180,
+      "role": "web3d",
+      "sha256": "607fab60cf0d0133f81d79749d4e3d04733ebdfab15188a4f0e59ee36d458514"
     }
   },
   "id": "poster_stand_1",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 71728,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "8a5ed157700da41613fba9cab5b16daf2787bf559f481fa516c8499ea212f2d8",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 24180,
+    "light_sha256": "607fab60cf0d0133f81d79749d4e3d04733ebdfab15188a4f0e59ee36d458514",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "d68cfa3f7781e9f7569740f9eaea3860223d454953ff623db42eef8a5ccf711b",
+    "triangles": 1676
+  }
 }

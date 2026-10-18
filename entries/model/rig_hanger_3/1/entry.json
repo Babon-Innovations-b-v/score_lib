@@ -30,6 +30,16 @@
       "bytes": 3305577,
       "role": "texture",
       "sha256": "90af254eabebf00857b56ec3d1a12944b065faef945a04bb975bd8c961196109"
+    },
+    "web3d/full.glb": {
+      "bytes": 322048,
+      "role": "web3d",
+      "sha256": "4023125f7f1d762aa6881d87521e2fd9ef4281be034f0e1115f47be8a6134486"
+    },
+    "web3d/light.glb": {
+      "bytes": 48332,
+      "role": "web3d",
+      "sha256": "bffe83e4ff55ace6b0b93aec4f3859b66400a8944407ea098c7bce38a0e92fdc"
     }
   },
   "id": "rig_hanger_3",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 322048,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "4023125f7f1d762aa6881d87521e2fd9ef4281be034f0e1115f47be8a6134486",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 48332,
+    "light_sha256": "bffe83e4ff55ace6b0b93aec4f3859b66400a8944407ea098c7bce38a0e92fdc",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "e0938d12508f3733f6d99e29fdabee0bd8ebeb41034725ef4fb25e26003a63b4",
+    "triangles": 3912
+  }
 }

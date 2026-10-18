@@ -15,6 +15,16 @@
       "bytes": 15367,
       "role": "picture",
       "sha256": "c54507ca3232057f3c02947fd0a846a60573a3de5d4bc38b22dc9270cb8bf280"
+    },
+    "web3d/full.glb": {
+      "bytes": 8432,
+      "role": "web3d",
+      "sha256": "bf102e41517a571531551e465960ddae5c1f5411d16c168e72a8794740d57e0c"
+    },
+    "web3d/light.glb": {
+      "bytes": 3184,
+      "role": "web3d",
+      "sha256": "9bf6785115fcadc71ea3550e7087e812cb0c3a8dca865d0571ecb55db8fc9d72"
     }
   },
   "id": "fixture_greenhouse",
@@ -74,5 +84,51 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 8432,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "replaced": 3
+    },
+    "from": {},
+    "full_sha256": "bf102e41517a571531551e465960ddae5c1f5411d16c168e72a8794740d57e0c",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 3184,
+    "light_sha256": "9bf6785115fcadc71ea3550e7087e812cb0c3a8dca865d0571ecb55db8fc9d72",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 3,
+    "replaced": {
+      "/model/body/Looks/look_0": {
+        "by": "painted_grey_light",
+        "colour": [
+          0.4,
+          0.4,
+          0.4
+        ],
+        "distance": 2.08
+      },
+      "/model/body/Looks/look_1": {
+        "by": "painted_grey_light",
+        "colour": [
+          0.4,
+          0.4,
+          0.4
+        ],
+        "distance": 2.08
+      },
+      "/model/body/Looks/look_2": {
+        "by": "painted_grey_light",
+        "colour": [
+          0.4,
+          0.4,
+          0.4
+        ],
+        "distance": 2.08
+      }
+    },
+    "source": "3b31dc780e2535e87a5ac1371d56dda02267766d295f1754e4483b2c5c943df8",
+    "triangles": 816
+  }
 }

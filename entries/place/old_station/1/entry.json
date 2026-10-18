@@ -45,6 +45,16 @@
       "bytes": 7774,
       "role": "record",
       "sha256": "801619172ddbeabc06f71abf54376c185547a7c155f870442f5f4c6e22116933"
+    },
+    "web3d/full.glb": {
+      "bytes": 11701448,
+      "role": "web3d",
+      "sha256": "5d5689dd8db39136efa354c3837ed8eff9afab5a32f9beb32bb20dda977b5205"
+    },
+    "web3d/light.glb": {
+      "bytes": 554892,
+      "role": "web3d",
+      "sha256": "1fb9fea3791ddc3d5b8793aff84c63b47be5f689191c3882644169c645f99673"
     }
   },
   "id": "old_station",
@@ -145,5 +155,70 @@
     "up_axis": "Y",
     "use": "open"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 11701448,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 52,
+      "library bake": 4
+    },
+    "from": {
+      "algorithm/terrain_landforms@1": "9fb2aec6e8c9320732f7f344611886e3d50b0c17640c564a6f3f692d1138e7aa",
+      "ground/moon.old_station@1": "3db3202a142172f42ea0e0ba6a068bf0dd7474d0630a7e0adc649a3288de1bc5",
+      "layer/base.old_station@1": "ba7c6a81075aedf22e01245250a04cd92e93ca7b00b236e92f9ab0e996ac3aeb",
+      "layer/ground.old_station@1": "7bb269cf8b750e1bc514161cc8c717da30dc555c721b38c77ec2daa315b1870e",
+      "layer/light.old_station@1": "fb49a4a13ae2b792e4e30a9ddb4ff2abe3a1f41940af754f794c2241721edcac",
+      "layer/motion.old_station@1": "51717889bb672e0b5561a1f84ccdda10650c78655fef9c552d23b2ae3c96c01d",
+      "layer/sound.old_station@1": "ebc0efbd0ea10a3b92392d0c7236a5f93c8faa8ae4f30e684cc0c940553863b7",
+      "light/earth_surface@1": "53c1b8f2177482b70dfb56a01ecdf0e57ea3989ef71dd023a0fc39220d58881a",
+      "model/apron_2p6@1": "cfd2c21a72a5d2c2100afe3e430b4702682d8d27dfa5c116e786138ca8e440ce",
+      "model/bag_pile@1": "2913b2f0cdc292a577699bbb6030556a2c31b3b892adec64f9b2a66ace3ec582",
+      "model/bag_stack@1": "7b617f1653356b9442646426e8c94736befe25f4193570e69fc284c2278b58d9",
+      "model/cable_run_1p28@1": "9e8d97b21b41e80db8cba85f50df030a6236b290c9453cf62bed2563fbfb7adc",
+      "model/cable_run_2p33@1": "3ecc302672d8deb53e27d331adab8719d184a42f40ad506459c1a955bd5cdd87",
+      "model/cable_run_3@1": "fb30c6484253ede1bbd0127ba914a6d52a89e4a8ba6044b207870ade9f6dd00a",
+      "model/cable_run_3p85@1": "249499bb92d04b53ae94ee526dae0cba994f685fad33e1c17d021365fd66da0d",
+      "model/cable_run_4p79@1": "b4edec03785e75104f181e6f0396d7db8aadae98c66afce1f5d5314db7ac3fc1",
+      "model/cable_run_5p55@1": "8f8290026bd231f1cef122830d73c743aea54ff0a81065fa95e287b4b60ffa6a",
+      "model/cable_run_7@1": "4aab41032d1765152fa4bfd52164af23b76627bb2770822ea9f73cf077e855ac",
+      "model/comms_mast@1": "9e7ec4bbce6b0db52eaef9045a56ea960d88364610b9474fa2777762b086a581",
+      "model/first_module@1": "80a898e6e5e410af59ffee2afd6a7a26ad1b423f0fe4cd2c420a01d15c37b89d",
+      "model/gas_bottle@1": "b047505d6a4bdb5c06ed7996484e07607999068563156d5f6e5bd05579219d18",
+      "model/hab_lander@1": "360ed0c30f895a7750d8d8a884ad7a3c22a8312c56172d1a50767436e4680bee",
+      "model/lab_module@1": "3a0361951cc8d20acb1454ee153ee9231d4d1a8d2305debf9f64f0991283f595",
+      "model/parts_rack_1@1": "951da14be6b6f225446b7153f3d20f6c57dbf21b448fc4af4c74e0fec6b21941",
+      "model/power_unit.old_station@1": "acb2ec184ab2a0782a6bf5cd254243cbbaf9a8aac1ea34ebe923090d2fa4fb06",
+      "model/radiator@1": "5f25be492ceb22759108c79cac7072ed1b6dfc9f5584855bd92c28ca016b5d87",
+      "model/rover@1": "841775017c6d4d9e2e6b37679b95aea4d9d281221b8e896c79a910ea090c904b",
+      "model/solar_mast@1": "05290981c17908e418219b36fa6728cc971fda67c9b5ec1d2608f1616ea2fcd6",
+      "model/solar_mast_dead@1": "6639b1086192a5270efd2a28e3f36b2c131495269b4abd15ae264ee4e7af24cc",
+      "model/spare_wheel@1": "4b18ba793c45d03c814148b4c9a4b58032a98cdaca57ddb73c29b9b9e23f7733",
+      "model/walkway_tube_2p7@1": "b5b4d78438966c7c72a9d9189bd2e38e01feb526ee8a6150f7569af75df35319",
+      "model/walkway_tube_3p6@1": "9a606eea8fbeba4f7c3c2cf97317c685a66c9ed023c534eafa7bd12f6f1db207",
+      "sound/footstep_grating@1": "2e9201625477f7e8d36299bc61c38abb6b4418b2a03bf22bb57666e6ceb1d667",
+      "sound/footstep_rubber@1": "f110deb95dafb14db206c2aab1e8dae52f44c542cb4ce4365cb895a5d7f6c0e0",
+      "sound/footsteps_metal.old_station@1": "dcc8cc5c6b4f811c9690e654769d7a446ff50cdf534a95c4a03041ac2ea3f7d3",
+      "sound/impact_grating@1": "58c4dbc50eca1e6d43d07134b7bbf4f98181c9d282cefedfd0b26eca46810801",
+      "sound/impact_rubber@1": "5b5d22820be488ea0bd782a5b929831755592af869fd64613d965c4699aaa31d",
+      "sound/impact_steel_plate@1": "db0c0c8fe92925b1df1f351b362952d83485d7e38785ff3526992c8ec28f1bde",
+      "sound/scrape_grating@1": "5f05414f0ee5496a8a5a6624b58189015c7da1b29c404ba0b3c27a94bdc872a1",
+      "sound/scrape_rubber@1": "09b537a83a4b28bdd94dc689184e387ea6b9a6ca5a25554d9f79ba674d4e28e3",
+      "sound/scrape_steel_plate@1": "e9c593cf26cb61fdab2c718e9af18afab2b1066cfffcf4ab72367d5447ec29d7",
+      "sound/suit_breathing_calm.old_station@1": "9a3515bda73be666938d78c4f13b3642418828180e1324442fd54d561fe6c54a",
+      "sound/suit_fans@1": "7b071d718ab2d80afbdf10ab303cca3f29b4e5bed1fa65dc47e1ee7fbf34e051"
+    },
+    "full_sha256": "5d5689dd8db39136efa354c3837ed8eff9afab5a32f9beb32bb20dda977b5205",
+    "left_out": {
+      "sky (a light entry's prims)": 1
+    },
+    "light": "web3d/light.glb",
+    "light_bytes": 554892,
+    "light_sha256": "1fb9fea3791ddc3d5b8793aff84c63b47be5f689191c3882644169c645f99673",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 26,
+    "replaced": {},
+    "source": "a915d4ed650c90bbd0121a3df54689cdd5fa5d1ba897daf64362fad69eb188bf",
+    "triangles": 1243498
+  }
 }

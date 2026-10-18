@@ -30,6 +30,16 @@
       "bytes": 84126,
       "role": "texture",
       "sha256": "758b11e8c8c1b4b416892510509fec54085cf6a51f3819706a53f0fb41fe9fb2"
+    },
+    "web3d/full.glb": {
+      "bytes": 92984,
+      "role": "web3d",
+      "sha256": "26666e36f44ae997e14963be628ccfc8e9d79ca2bddb2a6c4f332f6f4f8a261a"
+    },
+    "web3d/light.glb": {
+      "bytes": 4920,
+      "role": "web3d",
+      "sha256": "efaa29bdf3d211cb6b9e90406e3857d6211ffbabf1b18c9d7866f7845d20fcc6"
     }
   },
   "id": "pump_pliers_1",
@@ -98,5 +108,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 92984,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 2
+    },
+    "from": {},
+    "full_sha256": "26666e36f44ae997e14963be628ccfc8e9d79ca2bddb2a6c4f332f6f4f8a261a",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 4920,
+    "light_sha256": "efaa29bdf3d211cb6b9e90406e3857d6211ffbabf1b18c9d7866f7845d20fcc6",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "884857dc0dd3b38f1227c2e3e65e6bdc14a4a3bc5d39937d6362c7060347a6d5",
+    "triangles": 4999
+  }
 }

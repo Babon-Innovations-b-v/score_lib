@@ -30,6 +30,16 @@
       "bytes": 3704693,
       "role": "texture",
       "sha256": "986c3e72b16930e92ff8c79237c8901b31f8a0cb06d6ed049dc04a304952e40f"
+    },
+    "web3d/full.glb": {
+      "bytes": 246136,
+      "role": "web3d",
+      "sha256": "510a4c4bb98f9890880fbcbbec24944e1d60e626f071ba8c0e05d25fea573049"
+    },
+    "web3d/light.glb": {
+      "bytes": 8584,
+      "role": "web3d",
+      "sha256": "d45bb6e9308799b1a7f4308cbdc747aa8b26c3e216eaeccd586d33be254c085d"
     }
   },
   "id": "fold_down_seat_1",
@@ -89,5 +99,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 246136,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 3
+    },
+    "from": {},
+    "full_sha256": "510a4c4bb98f9890880fbcbbec24944e1d60e626f071ba8c0e05d25fea573049",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 8584,
+    "light_sha256": "d45bb6e9308799b1a7f4308cbdc747aa8b26c3e216eaeccd586d33be254c085d",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "a312e545b1c0225e658adf740152105ba4c33b9889d552474d24f8943dda87ed",
+    "triangles": 13725
+  }
 }

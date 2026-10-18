@@ -35,6 +35,16 @@
       "bytes": 3708041,
       "role": "texture",
       "sha256": "f123a976976aa3740f8af02262e83a45a7dcd3ae41b4c64e4d4adc626ed58f16"
+    },
+    "web3d/full.glb": {
+      "bytes": 190672,
+      "role": "web3d",
+      "sha256": "1f36a2e046c1f7ae32be031b3526517ef7b0a458c0af1db1fae6fb1c09286d76"
+    },
+    "web3d/light.glb": {
+      "bytes": 35348,
+      "role": "web3d",
+      "sha256": "32379045204f030438430b8a3a5a585c29003d647473dc4564b6a2f8385304e6"
     }
   },
   "id": "pendant_lamp_1",
@@ -96,5 +106,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 190672,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 2
+    },
+    "from": {},
+    "full_sha256": "1f36a2e046c1f7ae32be031b3526517ef7b0a458c0af1db1fae6fb1c09286d76",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 35348,
+    "light_sha256": "32379045204f030438430b8a3a5a585c29003d647473dc4564b6a2f8385304e6",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 2,
+    "replaced": {},
+    "source": "0029d25a309ed4be035989cbe3c04ddca9d3b5f588f0912bba16ecdb9ce33b45",
+    "triangles": 5632
+  }
 }

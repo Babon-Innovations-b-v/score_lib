@@ -30,6 +30,16 @@
       "bytes": 774988,
       "role": "texture",
       "sha256": "fd33a36cb836802727416a9496464ed9388f00d995cdbc899f8678b8904ea866"
+    },
+    "web3d/full.glb": {
+      "bytes": 94032,
+      "role": "web3d",
+      "sha256": "01355c0abf0e03431800696336589bb2acc8acedb2a90670817756728d86ac0b"
+    },
+    "web3d/light.glb": {
+      "bytes": 13472,
+      "role": "web3d",
+      "sha256": "e52c9099fed524d349f165fecb72d64965e7e72d2e0182658acb199cc011b3b5"
     }
   },
   "id": "pipe_valve_1.garage",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 94032,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "01355c0abf0e03431800696336589bb2acc8acedb2a90670817756728d86ac0b",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 13472,
+    "light_sha256": "e52c9099fed524d349f165fecb72d64965e7e72d2e0182658acb199cc011b3b5",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "f5205bd358b4f9356a11dcd335629acfe3e1ffcc863345f2df9c21070cbea81d",
+    "triangles": 3232
+  }
 }

@@ -30,6 +30,16 @@
       "bytes": 2748400,
       "role": "texture",
       "sha256": "33a27b83b69035490d542c7933021300a8c90ff91ed47bec3d103a2d09d95441"
+    },
+    "web3d/full.glb": {
+      "bytes": 43964,
+      "role": "web3d",
+      "sha256": "953de4823dfdae43b2a227be5b32408ddb3937e69ca8db1e6a3383eb9899b499"
+    },
+    "web3d/light.glb": {
+      "bytes": 10312,
+      "role": "web3d",
+      "sha256": "a43405cd276620e99d0a9a48abfd2e345127cb4f20eee43c590fc7174c695938"
     }
   },
   "id": "timber_door_frame_1.stairwell",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 43964,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "953de4823dfdae43b2a227be5b32408ddb3937e69ca8db1e6a3383eb9899b499",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 10312,
+    "light_sha256": "a43405cd276620e99d0a9a48abfd2e345127cb4f20eee43c590fc7174c695938",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "463b4cb567353744e104541f9c2c24366c6ee2ac380f20a094c162b18115d207",
+    "triangles": 648
+  }
 }

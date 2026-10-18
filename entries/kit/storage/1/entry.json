@@ -50,6 +50,16 @@
       "bytes": 3448,
       "role": "record",
       "sha256": "238e213990de4c10b5c2e634446afc0c3bb99434fae8917374dd73cee97ab220"
+    },
+    "web3d/full.glb": {
+      "bytes": 1126296,
+      "role": "web3d",
+      "sha256": "bb6eb93b708d9120b02ba01375bcc90a728726971f414e55ea94225bd340ed66"
+    },
+    "web3d/light.glb": {
+      "bytes": 176056,
+      "role": "web3d",
+      "sha256": "9d6f8dea30f80b01612b50fc58357d6e4795112f1e34e5cddaa7f80e2c781dbf"
     }
   },
   "id": "storage",
@@ -133,5 +143,42 @@
   },
   "title": "Storage kit",
   "usd": null,
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 1126296,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 40
+    },
+    "from": {
+      "layer/base.storage@1": "3d47d61171cef351babf7ecb8ad799d74834d53100ffc02c1675efc6fc172856",
+      "model/cargo_rack_1@1": "98a4def13cabc9a5d3779678ee6a1c93f0d5db46a53ed7d911eb5c2f6a42f0d5",
+      "model/ceiling_equipment_1@1": "b9be17d272ee885b092b371038572c9b6f5a54403009ab8c8cfa9d2b724d08d1",
+      "model/ceiling_light_panel_1.storage@1": "567f5112782e1bf1ac47ecac4b2102782cf3013903aec2280a0baaf07b22f5af",
+      "model/door_leaf_1.storage@1": "be7d0247ff55bda723d6b96b8535a0ba1398366ba9e87bce2d458c236e59b2ce",
+      "model/edge_light_strip_1.storage@1": "69b78ff612ba7acb6ca6d5503834a7c2a13204f73b9a6078d99febc3bf508ee1",
+      "model/hatch_door_frame_1@1": "68b67e382de0bd754d4ad4fa303787e89d20c5cc784a9392307333c157a2ff4c",
+      "model/overhead_vent_1@1": "4e725546b8168a4090f9c6c168dc1d66128aedf557e1c6379d39250e0be458a0",
+      "model/parts_crate_1@1": "79d6909de3e7860fadf3e1f807441f687c8a46ed93a6b1e78780a8cbd0263785",
+      "model/ring_floor_plate_1.storage@1": "baa2888a06d983259130b0416203f053aac233a583232c25beccf708d78bb5dc",
+      "model/roof_face_panel_1.storage@1": "e0c70c3cf2f1e9c2038d5867f737e28f5979316c862d5ffad5e0eb1242078c59",
+      "model/wall_lower_plain_1.storage@1": "8a61ec112b4efb352b0d2f8c49300fca1adbf2c9fdb32171338002d4816577ff",
+      "model/wall_lower_plain_2.storage@1": "00ac50f0c4ca8078057e6e7b7c5a3f7866aa5bc45a01db6b2d0fd4d23a8faadb",
+      "model/wall_lower_plain_3.storage@1": "64cf199c90bebc4dda4f73d93c4e92523a8348f3f9eddee75ed15a5341dbdfdb",
+      "model/wall_upper_plain_1.storage@1": "51d6a24f093cc8de1a14d5669f13da642dcb1f6cfe5022f53d099f8cd1df7b52",
+      "model/wall_upper_plain_2.storage@1": "9d5ca0fd51a7d4dce110d5c0f7f661eaaae3afddde1edfc7c548eb3aa539ea22",
+      "model/wall_upper_plain_3.storage@1": "0ec0371a249529df873896a50d7ab0ba699b0046bffea2844e023e4acd1a2781",
+      "model/wall_upper_plain_4.storage@1": "f1b807687f6b046f9894ea955541947c815deaa64f3d8983e1a14956109a87d3"
+    },
+    "full_sha256": "bb6eb93b708d9120b02ba01375bcc90a728726971f414e55ea94225bd340ed66",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 176056,
+    "light_sha256": "9d6f8dea30f80b01612b50fc58357d6e4795112f1e34e5cddaa7f80e2c781dbf",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 40,
+    "replaced": {},
+    "source": "e37c216f559001712f4b5ab7d060346e7d1197d675143b8b6328a66eb18443ab",
+    "triangles": 28536
+  }
 }

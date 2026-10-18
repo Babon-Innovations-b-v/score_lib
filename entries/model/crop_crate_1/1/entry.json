@@ -30,6 +30,16 @@
       "bytes": 11451843,
       "role": "texture",
       "sha256": "60b917314dbd76d0e28b041f251b61b03c089c8380f7d30a4591253200288630"
+    },
+    "web3d/full.glb": {
+      "bytes": 922124,
+      "role": "web3d",
+      "sha256": "3e08817f09546e1c505da42e04b5cc4e5015cb2aacdc07ec3b3719633eb6a60a"
+    },
+    "web3d/light.glb": {
+      "bytes": 77828,
+      "role": "web3d",
+      "sha256": "1e1756ba934e7b043b116c69ed540673bd4e923e1a2e0dc4248d9a67f74cec09"
     }
   },
   "id": "crop_crate_1",
@@ -91,5 +101,24 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 922124,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 3,
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "3e08817f09546e1c505da42e04b5cc4e5015cb2aacdc07ec3b3719633eb6a60a",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 77828,
+    "light_sha256": "1e1756ba934e7b043b116c69ed540673bd4e923e1a2e0dc4248d9a67f74cec09",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "45c73a29ed2a97f67fcf2ba5734c9c8a2af467d59573fb605e0d200d458b0214",
+    "triangles": 12133
+  }
 }

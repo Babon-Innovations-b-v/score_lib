@@ -20,6 +20,16 @@
       "bytes": 2846171,
       "role": "texture",
       "sha256": "9cfcc6f34878843eab6babb77144b7a5f03249368b5f0e42be3b87d786123787"
+    },
+    "web3d/full.glb": {
+      "bytes": 319156,
+      "role": "web3d",
+      "sha256": "f5774e8daf07a0720e3c2d260e154d77de5a403d3ad9fe6853fb81bfe3c45f6d"
+    },
+    "web3d/light.glb": {
+      "bytes": 15848,
+      "role": "web3d",
+      "sha256": "7839e9856f8e6859709c850bdd5ae8a9ae5377735c06f466adef8c3aebd5ad3f"
     }
   },
   "id": "fixture_earth_state_car",
@@ -79,5 +89,33 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 319156,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "replaced": 1
+    },
+    "from": {},
+    "full_sha256": "f5774e8daf07a0720e3c2d260e154d77de5a403d3ad9fe6853fb81bfe3c45f6d",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 15848,
+    "light_sha256": "7839e9856f8e6859709c850bdd5ae8a9ae5377735c06f466adef8c3aebd5ad3f",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {
+      "/model/body/Looks/look_0": {
+        "by": "wool_charcoal",
+        "colour": [
+          0.067,
+          0.066,
+          0.0659
+        ],
+        "distance": 2.56
+      }
+    },
+    "source": "e8ac8c1b2064893a340353c14dcf5a26005c0fdf53ceacc6f241fd9bebc502b8",
+    "triangles": 39981
+  }
 }

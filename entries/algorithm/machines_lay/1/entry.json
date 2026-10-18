@@ -268,8 +268,62 @@
     "stage": "machines-layer",
     "world": "world1"
   },
+  "refine_options": [
+    {
+      "action": "fix its snapshot",
+      "answers": [
+        "tests"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "the missing files added to its code snapshot so its tests import and pass (free, a coding agent)",
+      "suggested": true
+    },
+    {
+      "action": "add a preset picture",
+      "answers": [
+        "picture"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "its world 1 output pictured",
+      "suggested": false
+    }
+  ],
   "requires": [],
   "schema": "score-lib-entry/1",
+  "score": 25,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "its 1 test files run from its snapshot with pytest: 1 error in 0.09s (E   ImportError: cannot import name 'graph' from 'score' (/tmp/score-lib-quality-test-tyvg5oh6/score/__init__.py); ERROR score/stages/machines/machines_test.py)",
+      "measured": "1 error in 0.09s",
+      "name": "tests",
+      "unit": "",
+      "value": 0,
+      "weight": 3.0
+    },
+    {
+      "how": "files of its world 1 preset in the entry",
+      "measured": 4,
+      "name": "preset",
+      "unit": "files",
+      "value": 100,
+      "weight": 0.5
+    },
+    {
+      "how": "its settings schema is in the entry",
+      "measured": true,
+      "name": "schema",
+      "unit": "",
+      "value": 100,
+      "weight": 0.5
+    }
+  ],
   "seen_in": [
     "garage",
     "hangar"

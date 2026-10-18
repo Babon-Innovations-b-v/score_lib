@@ -30,6 +30,16 @@
       "bytes": 1619902,
       "role": "texture",
       "sha256": "3d32151062e423247af330d993543690edadd538c930e3a487163e4871462aff"
+    },
+    "web3d/full.glb": {
+      "bytes": 225448,
+      "role": "web3d",
+      "sha256": "2a39b4bab6eb2d850b4fc08214dd1f55e58b24a15e2bf1b83335e62d12e32b3c"
+    },
+    "web3d/light.glb": {
+      "bytes": 27876,
+      "role": "web3d",
+      "sha256": "def83cf839d9d4cf9c4dc2958b9d86eb4b081f5c55dbbb65423c20c0261a5c20"
     }
   },
   "id": "bay_balcony_slab_1",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 225448,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "2a39b4bab6eb2d850b4fc08214dd1f55e58b24a15e2bf1b83335e62d12e32b3c",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 27876,
+    "light_sha256": "def83cf839d9d4cf9c4dc2958b9d86eb4b081f5c55dbbb65423c20c0261a5c20",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "89e569c95201892a166d6a8c28dfdb01ca188c544faf10ac17389e1e86e6e425",
+    "triangles": 108
+  }
 }

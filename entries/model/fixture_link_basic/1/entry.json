@@ -15,6 +15,16 @@
       "bytes": 9679,
       "role": "picture",
       "sha256": "b96944e322a03c0b42d8886f41859c7676c871be8be5950fcaeb25ec8bd72588"
+    },
+    "web3d/full.glb": {
+      "bytes": 6168,
+      "role": "web3d",
+      "sha256": "463839440fec8660deca48fdd952385f5c10732c14e6d49872ebf85873f84dc4"
+    },
+    "web3d/light.glb": {
+      "bytes": 3788,
+      "role": "web3d",
+      "sha256": "00c95d370d8443589832716fd0ada4e805634d092ded4cf192429929dbcc5dc5"
     }
   },
   "id": "fixture_link_basic",
@@ -74,5 +84,60 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 6168,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "replaced": 4
+    },
+    "from": {},
+    "full_sha256": "463839440fec8660deca48fdd952385f5c10732c14e6d49872ebf85873f84dc4",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 3788,
+    "light_sha256": "00c95d370d8443589832716fd0ada4e805634d092ded4cf192429929dbcc5dc5",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 4,
+    "replaced": {
+      "/model/body/Looks/look_0": {
+        "by": "painted_grey_light",
+        "colour": [
+          0.4,
+          0.4,
+          0.4
+        ],
+        "distance": 2.08
+      },
+      "/model/body/Looks/look_1": {
+        "by": "painted_grey_light",
+        "colour": [
+          0.4,
+          0.4,
+          0.4
+        ],
+        "distance": 2.08
+      },
+      "/model/body/Looks/look_2": {
+        "by": "painted_grey_light",
+        "colour": [
+          0.4,
+          0.4,
+          0.4
+        ],
+        "distance": 2.08
+      },
+      "/model/body/Looks/look_3": {
+        "by": "painted_grey_light",
+        "colour": [
+          0.4,
+          0.4,
+          0.4
+        ],
+        "distance": 2.08
+      }
+    },
+    "source": "1941109429ee6101943f5222f8d78f6948388c2487f9f38f81f8577983c6354b",
+    "triangles": 452
+  }
 }

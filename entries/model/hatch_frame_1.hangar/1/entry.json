@@ -30,6 +30,16 @@
       "bytes": 13756661,
       "role": "texture",
       "sha256": "d8fdd088488a08342a19cff1f32e5dcc1006d07be5b7becf9416b7f711a8220f"
+    },
+    "web3d/full.glb": {
+      "bytes": 79844,
+      "role": "web3d",
+      "sha256": "bba47270cade23723ffbfba64cf3e9d152deb48d5a795c2ebd1d4fe589c33dde"
+    },
+    "web3d/light.glb": {
+      "bytes": 12400,
+      "role": "web3d",
+      "sha256": "b5d962641d80adeeb7872b9c7f18033d26d892b4c5e3f378e5f170c78741be40"
     }
   },
   "id": "hatch_frame_1.hangar",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 79844,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "bba47270cade23723ffbfba64cf3e9d152deb48d5a795c2ebd1d4fe589c33dde",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 12400,
+    "light_sha256": "b5d962641d80adeeb7872b9c7f18033d26d892b4c5e3f378e5f170c78741be40",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "9adc0f8161b39c53f53c2c19dbc8c8269f441ce88c8eac04affc5a1a7c334506",
+    "triangles": 1500
+  }
 }

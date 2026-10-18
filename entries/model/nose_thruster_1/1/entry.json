@@ -30,6 +30,16 @@
       "bytes": 1224971,
       "role": "texture",
       "sha256": "cee6f06d24f3bd1c701d044fd08115e70e533cfbdf0878c412948a5332c44225"
+    },
+    "web3d/full.glb": {
+      "bytes": 95600,
+      "role": "web3d",
+      "sha256": "8ebea0a879f2aae60f865c47f6e1aaa6b2d2b442a7862d673fe7a4e3fcb76493"
+    },
+    "web3d/light.glb": {
+      "bytes": 8852,
+      "role": "web3d",
+      "sha256": "b64cef3d3383a3944045fca20f6442b379ec067de98fcb3834a2ab6fc2d6b576"
     }
   },
   "id": "nose_thruster_1",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 95600,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 2
+    },
+    "from": {},
+    "full_sha256": "8ebea0a879f2aae60f865c47f6e1aaa6b2d2b442a7862d673fe7a4e3fcb76493",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 8852,
+    "light_sha256": "b64cef3d3383a3944045fca20f6442b379ec067de98fcb3834a2ab6fc2d6b576",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "e79d9b546339151be9764bc9f21d8ee7874ed4e01cea162d9ba2cfd3dea346a3",
+    "triangles": 4998
+  }
 }

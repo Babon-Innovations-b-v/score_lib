@@ -55,6 +55,16 @@
       "bytes": 22013,
       "role": "record",
       "sha256": "d48aa639d3654e2c3f593f8b806d0c85cf1cf1258ff811edf1eeb020c7829fc2"
+    },
+    "web3d/full.glb": {
+      "bytes": 17606360,
+      "role": "web3d",
+      "sha256": "2f7c8d5ccd281cc2363b584786e076c3ce3732a859456f05179aadc0b5951823"
+    },
+    "web3d/light.glb": {
+      "bytes": 1935012,
+      "role": "web3d",
+      "sha256": "a7d4c2225d83ad70f84727b295d80b8129edd036dbc3ae3c004881aa5036c841"
     }
   },
   "id": "camp",
@@ -168,5 +178,521 @@
     "up_axis": "Y",
     "use": "open"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 17606360,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 49,
+      "library bake": 231,
+      "replaced": 40
+    },
+    "from": {
+      "algorithm/particle_effects@1": "84f8f19d62435b19ad97212b6b26a909ed2b972804c78f8f42492cb68ac4e503",
+      "algorithm/terrain_landforms@1": "9fb2aec6e8c9320732f7f344611886e3d50b0c17640c564a6f3f692d1138e7aa",
+      "effect/devil_east.camp@1": "7eea017484d4d7e6e6a6382250759b6a35f5d545571438136aa068dccd9ef13e",
+      "effect/devil_west.camp@1": "2d8d3cf6f11b622e56a2747d1e24088fd940fca3a635241411fa9e552bf6de43",
+      "effect/drift_0_0.campgrounds@1": "f0799f8f89cc5634ccf82579f3ea3b964715ca1252706f4f4fe11873a2add1f8",
+      "effect/drift_0_1.campgrounds@1": "222dce048ec50f21ee52f067f2731845b1ade0051a8d763fa730a89b78b31592",
+      "effect/drift_0_2.campgrounds@1": "5818b8551db3bf950a31fdb83a7a9d9fc8b98b7b39e28aac33b542c996166f23",
+      "effect/drift_0_3.campgrounds@1": "5d5b252dc41ef587571688e523d5e64764191b0d96817eb51fc0ea68a05c069e",
+      "effect/drift_0_4.campgrounds@1": "b023f4bc41f02cc43f356b1d39be458715ea88595b79e0de84984eee719318d6",
+      "effect/drift_1_0.campgrounds@1": "b442752a8433f6c9a429e611c4fe0b7806a4f98af2b75d9f05a9236e649f5e0a",
+      "effect/drift_1_1.camp@1": "17997b3f13a48874dcf23dd4cf887702b936b8ba9a10a109cb4e188d5516ab42",
+      "effect/drift_1_2.camp@1": "a85a3dade1a450988ab931ddde7e4d33856f3d125b1df8db1266ae871b4808b5",
+      "effect/drift_1_3.campgrounds@1": "9a12989364981fabd505afc4f2f7ca50d7229e5811eb48c67c38840eceb619bb",
+      "effect/drift_1_4.campgrounds@1": "54e2408132f134d104d6edf01909a0e65cd8a52e97425caf44522c42fad23356",
+      "effect/drift_2_0.campgrounds@1": "6ba06530e4b6415acb15b561bdde4b43b31a11e940659e0fdba05eec0859bbd6",
+      "effect/drift_2_1.camp@1": "abf8f1bc2e5c7b476771548e96b75e037701f7306217b4b530d0f57e45fb84ad",
+      "effect/drift_2_2.camp@1": "386bed0644a8379fbf901b3362b52e361ec4a228ab30fa7678c0c4f7f32aea7a",
+      "effect/drift_2_3.camp@1": "42809b960f1bd71c0cbe40de6fd713f021316362197074ba7979325051ede3c8",
+      "effect/drift_2_4.campgrounds@1": "0ec3d52650f9afa11c1b591f8fe13a5e006407e2f13cc84398925069f4a28a00",
+      "effect/drift_3_0.campgrounds@1": "fae57efc6c6d735380398983ca4f5da7ad888d4d9c938ecc119fac7fd3a5064d",
+      "effect/drift_3_1.camp@1": "3634a5ace62356615d0de89dd4120c6561f05b92974ed0ecab97619b203e0dff",
+      "effect/drift_3_2.camp@1": "4ce135378aa7b39f88c9be3d457646d100c8075007b371cf63a2ac24f5d1fa5f",
+      "effect/drift_3_3.camp@1": "81781816d88fcec6086fef67e92e476728041d0fe3cf7bf71478a5ca0e37ca7d",
+      "effect/drift_3_4.campgrounds@1": "bd55eed9478a8e1b23027610e405a76e4b2cc3ba8fae813ee2291ffc8c99fae8",
+      "effect/drift_4_0.campgrounds@1": "4be436bde471555fbe37949adad8cb98dfbc9b9a583fab70e9afa3737dbeceab",
+      "effect/drift_4_1.campgrounds@1": "1147e4f04370c63547c1bf491676f7cae1034adfc19a76f9e04c4518f55d08a0",
+      "effect/drift_4_2.campgrounds@1": "5ad5118575ebeb86e103d46d2408cd60ca9ed4cdcb292b73bb7fdb78843bc8be",
+      "effect/drift_4_3.campgrounds@1": "5ea1eb33faccc69cc4af86e6da69e07e7ae372828d9ad3437bdc4f8534487d5e",
+      "effect/drift_4_4.campgrounds@1": "83f13f61889c8c0415d85ce0b305f6bc363602bfd3f0f4caed66d7f29048f58d",
+      "effect/storm_grains_0_0@1": "363896825b5a42464b3af73a0e1b721a4217eef495b04f15c6b9ceedf55e6791",
+      "effect/storm_grains_0_1@1": "983e21ecab019c9a7a989c7795f5917c0a2dfad844510485306d5e778555a78f",
+      "effect/storm_grains_0_2@1": "8fb6c030d47587401209dfba3260847f2f235ce9d1f56dcf9aa5ecdece8fbca5",
+      "effect/storm_grains_1_0@1": "6a40007e4b6b3251b9ab43f743bc963dc3c96d166f102224a47b4b25c51d6260",
+      "effect/storm_grains_1_1@1": "41435953fd0db284022ae9bac89c816b346986b8927145ff979861096b0b02be",
+      "effect/storm_grains_1_2@1": "b3a4c7cb710d32f63b89cbc408fc74fe7350918fd3ed0992c1d2bcaa99aefa1a",
+      "effect/storm_grains_2_0@1": "bb99d7a6ea2e18d8b2a14933c93f8528cdd58d67930ef9ddfd1cb5afff51e144",
+      "effect/storm_grains_2_1@1": "922e06732bfe3c3699cb6e695bb34c2a9f22585825328736962d2007820529aa",
+      "effect/storm_grains_2_2@1": "7c09041c88062186ade6e93839eca4c02bb537f0d464dd0e2e04539c24c48d6c",
+      "effect/storm_wisps_0_0@1": "8b1835184a770f8bd0903c0f22b19ea7c8dfcb1420302596c59d3220fa0e4626",
+      "effect/storm_wisps_0_1@1": "f348bfc1125cbf2b00c8f48745a516d585d5c8f6824fa1627aa04f7d8d2434ae",
+      "effect/storm_wisps_0_2@1": "fc15aae5ed676bc69b6b6a885ec805da14f90d3bbd14f007e754b60d071d25d4",
+      "effect/storm_wisps_1_0@1": "9c9289f158d56df11808b783cfdf775e1f0ca45a463400371ee0ca0c35a7cff9",
+      "effect/storm_wisps_1_1@1": "1cf966d8468910ed302446172778603fa490a783443bc93786b43c4e52d3ee00",
+      "effect/storm_wisps_1_2@1": "e6c11ca4b98db8a011b36de7e39f8dfe2634110812d3f147cefbb7f87dee07b4",
+      "effect/storm_wisps_2_0@1": "4ffddc64052874b3418e5c62817f7fcbbfed28eb4ddb3ca762f3e9d6d0682606",
+      "effect/storm_wisps_2_1@1": "3378522dfb10c96af8f3954e0a49fafda62e31e47565a01b6cef916e12f88f9a",
+      "effect/storm_wisps_2_2@1": "91f881ab9880799272ec1e4ed215bf70c702e6306097875a6bcb7b29f17f4f11",
+      "ground/mars.camp@1": "33cbe4803fac300f77c1691414eb24daab8d7f7b8eddcf24ab05a8675e2b06c1",
+      "layer/base.camp@1": "eff518c472e4681f1fbed5fc2ff216acf5819d42ef5d3bcc0a65e15af073bee3",
+      "layer/characters.camp@1": "69e3124167e2e625e2249355a6490f409dc180310011bfbf0c44c9169037af23",
+      "layer/effects.camp@1": "5a15296008084936293e558469c8cb53ab4e057ad2ad119c77eac4cbae89b736",
+      "layer/ground.camp@1": "ed2eea79e734bc75c57aa62136eacbc36659a89aa67805401ff88e09137361d9",
+      "layer/light.camp@1": "210cd89a4232779de76f21747fdc68336c6994749c7dac8eb859b7aaab6fdae8",
+      "layer/motion.camp@1": "b46cc955c2edaf96dab6a5ef05efbbe6fd7de88a284f3cdca9bbcffd7438d84c",
+      "layer/sound.camp@1": "3d32e72886a7058d42298c47ed0de9c1c6c4d1cb306003f7cfdb2c2d556a4acd",
+      "light/sky_dome.camp@1": "087f6dac8756b1fe09ecf1a0cef91522664c06611408eaeb0e5ce99af069d6e1",
+      "model/bunk_1.camp@1": "2f1278fe1bbc01e5648d0cfe4dee3a32c506d13265edaf0bff42044df69cb41c",
+      "model/canister_1@1": "655af1141a70fa6e479db00809de4a6bfb735c0e35e5f08d806f4be0540a4123",
+      "model/coffee_maker_1@1": "bc3cd0d60563a17190f7a03e8f1efbe1f0309e1b6c125fdf8183e4bc4d37683f",
+      "model/cold_store_1@1": "ebeefffb6c04a10b9e189779af4bf5b355d591bfda0c5eeb60df93f25c427903",
+      "model/dome_ceiling_gore_1@1": "287c07e2fe60f032c516d8b517661214b6250c2fe99fefbe07b1a16d541e88fb",
+      "model/dome_ceiling_gore_2@1": "fcc7af05e11f28bb555cc0346e7069c3165fe496f3d1633ba0ae954deb079477",
+      "model/dome_ceiling_gore_3@1": "69f9b24ac2c083092cd3ba1a89e4ef83e1ed6ae964ea5f9af0cfdd7dc0ec2343",
+      "model/dome_ceiling_gore_4@1": "8ed3ba804361d1d701786aba9602174f58f94b335e77b25e6dba40af625bbcfe",
+      "model/dome_ceiling_gore_5@1": "0a9e909cba80947e1475f8919fd2392329c4154da2cfc5513a905bbc4efd5f6f",
+      "model/dome_deck_wedge_1@1": "51de17261ec4e4f098a5ff3e0b65c4c62587744721243f559d81cd4a9a03e828",
+      "model/dome_deck_wedge_2@1": "957df2adebc4134d88f85d0d55d11a8f2711e1824e45afa98335445888bf45a1",
+      "model/dome_deck_wedge_3@1": "a343cbe088db21db7379b5138a036eaffe94ad51f2ffaee2aa7d74f1803126a2",
+      "model/dome_deck_wedge_4@1": "f809c94ce81355402c2aeeefa8444fbcd4abda9e07c8aed0973fde1a372f2c2c",
+      "model/dome_deck_wedge_5@1": "631d95182a09ad421a7c85e8ee3429f5c3bf1fb13981d3140c4e7f535e8dbfa1",
+      "model/dome_opening_frame_1@1": "d2c632f0e5d19064459e6d95bc63d19c24d775c8bfc48c7d65649ee6688ac30c",
+      "model/dome_rib_1@1": "6520b00d92f89c306c9f8af22a5056e412a2fed637d4740909b5a2e584564886",
+      "model/dome_roof_cap_1@1": "cc802b476d2a2bacacc895a99881353baba7dac470bbb0e709bd4a3c027ade6e",
+      "model/dome_roof_cap_2@1": "b3a447b0f39022450339b48f0e364ddb1baf10cde5d99436775ba48271becf3f",
+      "model/dome_wall_panel_1@1": "40f981760837ea183d0f479e86fa790c1815679b3a43c8ebc54c5b72c21e2605",
+      "model/dome_wall_panel_2@1": "34dc61a05dcb4dabc36effbf5ad7be297402010820337d8e20090cd120a77d9f",
+      "model/dome_wall_panel_3@1": "0bbc330ffbb8d995798f1cd4541496a3afc4486c0b0dafa266354be25b7409b8",
+      "model/dome_window_panel_1@1": "80cd40f813480f2744a98dd6f4a8c1076750ab0a8617bb418218108e127bf1da",
+      "model/dome_window_panel_2@1": "59c4af9b44211bea43b9018ebd80a0253f5d1bf3e4e8f34e50e5c11bc27ad16e",
+      "model/dome_window_panel_3@1": "7d3b75f6d5b12c544d88867047f4829ce6a12bdbb360b5f10bca719f2b17fc85",
+      "model/fixture_case_1@1": "56f9811c64daeb6a131c80bae1ff24c4cbaa21152dc2568a54a1857b63752dd6",
+      "model/fixture_comms_desk_1@1": "9ff5831a7dc1d1b012d2b4364dcc13de19e66062b898a25163a20532b6adb187",
+      "model/fixture_crate_1@1": "80cd794829367f52aa688614cf7acc2402b7c1fb11400ddffbd6d7197e638b1d",
+      "model/fixture_crate_small_1@1": "ad323f61ebd208ef0823916d156aed105b991c00d044d7c775e27be6625d0564",
+      "model/fixture_hygiene_1@1": "b027a4e788be0299f44e963b70d3f88e5aa0b724c4f7bfd2e59d94288f42d4a6",
+      "model/fixture_monitor_1.camp@1": "860dd3c26d1ca28a362afb6b288a258c60e4442b0aefa1d760c06953b9b50ec8",
+      "model/fixture_pedestal_table_1@1": "2a5212e8542742b64aeb974aff1950304cc3dfa97619435011b9e5a95eaaadb1",
+      "model/fixture_radio_1.camp@1": "e7354b4f0b650d2562036444f8dee833eec5674c3c55c3152b9d35a8f9642edc",
+      "model/fixture_sample_shelf_1@1": "97562866f4d5b24212fe0ed4a1aed0056b8691186bd7a99e2e24b6db824ddada",
+      "model/fixture_stores_rack_1@1": "c8ee26fd7087e34d3619ef7befc3b2958f1d0a672d15a01ebd48a84eee8afbbd",
+      "model/floor_cable_1@1": "427e8ffec51b32de3ecd0b92fc4801748723e1fea65e0edb4d4bb3806d631a33",
+      "model/foot_ring_1@1": "2c21f07cf2086a141ef636c4bca3da905073fa40b6d51fa6140ad2ca4e89a7d6",
+      "model/foot_ring_2@1": "f2d520e29540c347e5f4485401a550e43d180e98dc8e46819e6afe673c91be73",
+      "model/foot_ring_3@1": "f1f6a1a456d45c1bb1b835e274cb9f1d5ff6dc95a8dda914a3913f8875c09110",
+      "model/galley_1@1": "f28c22ca8908860a8936be493f853a15da886f109308601e9d2505cfff70a477",
+      "model/galley_bin_1@1": "6dd65bf7ffd419c234efb6138201ce3367bad6ad2b12f7a0da39b33154db5f92",
+      "model/growth_chamber_1@1": "679046537bba9ec7157699b533b03e95799054e7d31423a19978e16ee846de50",
+      "model/kiosk_terminal_1@1": "ff709472f0391e010bbecdd32cf65bfcc91d3265fb1380a2bfa41180ad8c0f57",
+      "model/lockers_1@1": "aa771b09578d384c2dda8d96182be7c970e551a749ef2c3d11003c806e13f207",
+      "model/partition_1@1": "e8970e6dc771577ebe42c5ba389db6b6843a8d1447dbee46641274ae05c3467d",
+      "model/passage_hull_1@1": "3f2e280f185c10d71021524a2ae93deefbd8e81b89ae7462357a1171a300bda0",
+      "model/passage_lining_1@1": "3ccdb2e003da5ca60fa66775d53b436ec84b09d11907a47f3a09dd2e57d6a400",
+      "model/ring_lamp_1@1": "15809e3841ec9717a8ae165ebc028e24702b3019cca740d7c018619e52c821ae",
+      "model/rod_lamp_1@1": "379d1fb02d8edb49eeb730497c25032bd84a20d4777af0d5ce3de768bbed1cd6",
+      "model/rod_lamp_2@1": "30c4ec670a85dffcbba837af1edb3ebde57f3160ca1d33f069d6e28548456dd8",
+      "model/rod_lamp_3@1": "e73aafa7ef9cf4dd5e9a272e5bf3477d50006b8aa984468e62945eb1a9d8b44b",
+      "model/rod_lamp_4@1": "83dacd9111776bd8207f9ea9f44293ce01db55a66fe05aa96c604311e3430068",
+      "model/sample_case_1@1": "ba15022a2bd636b5e65accc119f136cd4863f04638cc81db0a6680bdaf5d49ec",
+      "model/sample_jar_1.camp@1": "47946d43bf0c82641fb98afde94b1c1ee1c6473de2e438286bfa4b30912b1c25",
+      "model/sample_tray_1.camp@1": "41fcf8f6a007225fd1c028a2908bc30f44a23179eb8c48004716ecb8e20687b7",
+      "model/shelf_case_1@1": "4e845cc0a4643237250c0a652f1348a33d9f82926530cf17a241cf4cd55e3b6a",
+      "model/shell_gore_1@1": "092c38a99875b855af014e27aecbb3f883f0c447fa441cd0555e8c878ab522f5",
+      "model/shell_gore_2@1": "d7493dbd8715818d657441342f1c48e548c03c5e6e27bd282208274edc061d8d",
+      "model/shell_gore_3@1": "ea9f703da352536ffa04d36e934e7dc87afd752065582d783c012f1a488f4b28",
+      "model/shell_gore_open_1@1": "018ea24150b29a02dad368df4520ea2ed8e80cacbf8105b84e91f0d8ca8cc0cd",
+      "model/shell_gore_open_2@1": "4b8bc60ab2b7b2fc1c75edf1fcc98d486eedc95311fa8d4a0fa0fab06571f3f2",
+      "model/shell_gore_window_1@1": "14fffa0de87f84d81fc798888922146a9a58b5e8f0135559fd8461d40ce1e649",
+      "model/shell_gore_window_2@1": "94b1b296a018a56437acea29ee082a04bec9a751b6101487b2bb26763c904aec",
+      "model/shell_gore_window_3@1": "6fd97c503c7578ca89db5fddfb46235ab3e6b3d9004c89689be15f51e521df5d",
+      "model/toaster_1@1": "7dccb077d82b0938f0e8b875dce2328c1670aef7f67df306ee106475d2fb17d4",
+      "model/wall_net_1@1": "41408d7aeb6d62a099e84b9e3c48080ec6fc837591abdd03574b3dbdabadd73e",
+      "model/window_strip_lamp_1@1": "c860d28bd75514bf5ed4bd9d5416054749797145719014582872f38ed25bb128",
+      "sound/camp_room@1": "15bf4dc101c38ff5abe297109c71c55f3a3e1c68f00feea9104b440272a1ce68",
+      "sound/footstep_grating@1": "2e9201625477f7e8d36299bc61c38abb6b4418b2a03bf22bb57666e6ceb1d667",
+      "sound/footstep_rubber@1": "f110deb95dafb14db206c2aab1e8dae52f44c542cb4ce4365cb895a5d7f6c0e0",
+      "sound/footsteps_metal.camp@1": "0187371014b2f38ffe934a08a92fe13bd821b88bc70b66fb87f200bd2a91aba6",
+      "sound/impact_grating@1": "58c4dbc50eca1e6d43d07134b7bbf4f98181c9d282cefedfd0b26eca46810801",
+      "sound/impact_rubber@1": "5b5d22820be488ea0bd782a5b929831755592af869fd64613d965c4699aaa31d",
+      "sound/impact_steel_plate@1": "db0c0c8fe92925b1df1f351b362952d83485d7e38785ff3526992c8ec28f1bde",
+      "sound/scrape_grating@1": "5f05414f0ee5496a8a5a6624b58189015c7da1b29c404ba0b3c27a94bdc872a1",
+      "sound/scrape_rubber@1": "09b537a83a4b28bdd94dc689184e387ea6b9a6ca5a25554d9f79ba674d4e28e3",
+      "sound/scrape_steel_plate@1": "e9c593cf26cb61fdab2c718e9af18afab2b1066cfffcf4ab72367d5447ec29d7"
+    },
+    "full_sha256": "2f7c8d5ccd281cc2363b584786e076c3ce3732a859456f05179aadc0b5951823",
+    "left_out": {
+      "sky (a light entry's prims)": 1
+    },
+    "light": "web3d/light.glb",
+    "light_bytes": 1935012,
+    "light_sha256": "a7d4c2225d83ad70f84727b295d80b8129edd036dbc3ae3c004881aa5036c841",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 289,
+    "replaced": {
+      "/camp/Fixtures/CommsDesk/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2257,
+          0.206,
+          0.1913
+        ],
+        "distance": 2.28
+      },
+      "/camp/Fixtures/CommsDesk/monitor_1_1/Looks/look_0": {
+        "by": "anodized_black",
+        "colour": [
+          0.0032,
+          0.0028,
+          0.0023
+        ],
+        "distance": 0.26
+      },
+      "/camp/Fixtures/CommsDesk/monitor_1_3/Looks/look_0": {
+        "by": "anodized_black",
+        "colour": [
+          0.0032,
+          0.0028,
+          0.0023
+        ],
+        "distance": 0.26
+      },
+      "/camp/Fixtures/CommsDesk/monitor_1_glow_2/Looks/look_0": {
+        "by": "screen_glow_green_dim",
+        "colour": [
+          0.018,
+          0.0319,
+          0.0439
+        ],
+        "distance": 34.59
+      },
+      "/camp/Fixtures/CommsDesk/monitor_1_glow_4/Looks/look_0": {
+        "by": "screen_glow_green_dim",
+        "colour": [
+          0.018,
+          0.0319,
+          0.0439
+        ],
+        "distance": 34.59
+      },
+      "/camp/Fixtures/CommsDesk/radio_1_5/Looks/look_0": {
+        "by": "glass_smoked",
+        "colour": [
+          0.2007,
+          0.1452,
+          0.1461
+        ],
+        "distance": 7.44
+      },
+      "/camp/Fixtures/CrateByTheBunks/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2393,
+          0.219,
+          0.1954
+        ],
+        "distance": 1.32
+      },
+      "/camp/Fixtures/CrateByTheChamber/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2393,
+          0.219,
+          0.1954
+        ],
+        "distance": 1.32
+      },
+      "/camp/Fixtures/CrateByTheDesk/Looks/look_0": {
+        "by": "moon_regolith",
+        "colour": [
+          0.2471,
+          0.2297,
+          0.2052
+        ],
+        "distance": 1.96
+      },
+      "/camp/Fixtures/CrateByTheGalley/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2393,
+          0.219,
+          0.1954
+        ],
+        "distance": 1.32
+      },
+      "/camp/Fixtures/CrateByTheHygiene/Looks/look_0": {
+        "by": "moon_regolith",
+        "colour": [
+          0.2471,
+          0.2297,
+          0.2052
+        ],
+        "distance": 1.96
+      },
+      "/camp/Fixtures/CrateByTheShelf/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2393,
+          0.219,
+          0.1954
+        ],
+        "distance": 1.32
+      },
+      "/camp/Fixtures/CrateByTheWay/Looks/look_0": {
+        "by": "moon_regolith",
+        "colour": [
+          0.2471,
+          0.2297,
+          0.2052
+        ],
+        "distance": 1.96
+      },
+      "/camp/Fixtures/CrateByTheWindow/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2393,
+          0.219,
+          0.1954
+        ],
+        "distance": 1.32
+      },
+      "/camp/Fixtures/CrateStack/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2393,
+          0.219,
+          0.1954
+        ],
+        "distance": 1.32
+      },
+      "/camp/Fixtures/CrateUnderTheWindow/Looks/look_0": {
+        "by": "moon_regolith",
+        "colour": [
+          0.2471,
+          0.2297,
+          0.2052
+        ],
+        "distance": 1.96
+      },
+      "/camp/Fixtures/Hygiene/Looks/look_0": {
+        "by": "painted_grey_light",
+        "colour": [
+          0.371,
+          0.3414,
+          0.3168
+        ],
+        "distance": 6.26
+      },
+      "/camp/Fixtures/MessTable/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2174,
+          0.1769,
+          0.1732
+        ],
+        "distance": 5.97
+      },
+      "/camp/Fixtures/OonasBedside/Looks/look_0": {
+        "by": "moon_regolith",
+        "colour": [
+          0.2471,
+          0.2297,
+          0.2052
+        ],
+        "distance": 1.96
+      },
+      "/camp/Fixtures/SampleShelf/Looks/look_0": {
+        "by": "anodized_natural",
+        "colour": [
+          0.3309,
+          0.2873,
+          0.2257
+        ],
+        "distance": 4.0
+      },
+      "/camp/Fixtures/SampleShelf/case_1_1/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2404,
+          0.2248,
+          0.2016
+        ],
+        "distance": 1.68
+      },
+      "/camp/Fixtures/SampleShelf/case_1_2/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2404,
+          0.2248,
+          0.2016
+        ],
+        "distance": 1.68
+      },
+      "/camp/Fixtures/SampleShelf/case_1_3/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2404,
+          0.2248,
+          0.2016
+        ],
+        "distance": 1.68
+      },
+      "/camp/Fixtures/SampleShelf/case_1_4/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2404,
+          0.2248,
+          0.2016
+        ],
+        "distance": 1.68
+      },
+      "/camp/Fixtures/SefasBedside/Looks/look_0": {
+        "by": "moon_regolith",
+        "colour": [
+          0.2471,
+          0.2297,
+          0.2052
+        ],
+        "distance": 1.96
+      },
+      "/camp/Fixtures/StoresRack/Looks/look_0": {
+        "by": "anodized_natural",
+        "colour": [
+          0.3549,
+          0.3065,
+          0.2395
+        ],
+        "distance": 2.23
+      },
+      "/camp/Fixtures/StoresRack/case_1_1/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2404,
+          0.2248,
+          0.2016
+        ],
+        "distance": 1.68
+      },
+      "/camp/Fixtures/StoresRack/case_1_2/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2404,
+          0.2248,
+          0.2016
+        ],
+        "distance": 1.68
+      },
+      "/camp/Fixtures/StoresRack/case_1_3/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2404,
+          0.2248,
+          0.2016
+        ],
+        "distance": 1.68
+      },
+      "/camp/Fixtures/StoresRack/case_1_4/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2404,
+          0.2248,
+          0.2016
+        ],
+        "distance": 1.68
+      },
+      "/camp/Fixtures/StoresRack/case_1_5/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2404,
+          0.2248,
+          0.2016
+        ],
+        "distance": 1.68
+      },
+      "/camp/Fixtures/StoresRack/case_1_6/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2404,
+          0.2248,
+          0.2016
+        ],
+        "distance": 1.68
+      },
+      "/camp/Fixtures/StoresRack/case_1_7/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2404,
+          0.2248,
+          0.2016
+        ],
+        "distance": 1.68
+      },
+      "/camp/Fixtures/StoresRack/case_1_8/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2404,
+          0.2248,
+          0.2016
+        ],
+        "distance": 1.68
+      },
+      "/camp/Fixtures/TerminalDesk/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2257,
+          0.206,
+          0.1913
+        ],
+        "distance": 2.28
+      },
+      "/camp/Fixtures/TerminalDesk/monitor_1_1/Looks/look_0": {
+        "by": "anodized_black",
+        "colour": [
+          0.0032,
+          0.0028,
+          0.0023
+        ],
+        "distance": 0.26
+      },
+      "/camp/Fixtures/TerminalDesk/monitor_1_3/Looks/look_0": {
+        "by": "anodized_black",
+        "colour": [
+          0.0032,
+          0.0028,
+          0.0023
+        ],
+        "distance": 0.26
+      },
+      "/camp/Fixtures/TerminalDesk/monitor_1_glow_2/Looks/look_0": {
+        "by": "screen_glow_green_dim",
+        "colour": [
+          0.018,
+          0.0319,
+          0.0439
+        ],
+        "distance": 34.59
+      },
+      "/camp/Fixtures/TerminalDesk/monitor_1_glow_4/Looks/look_0": {
+        "by": "screen_glow_green_dim",
+        "colour": [
+          0.018,
+          0.0319,
+          0.0439
+        ],
+        "distance": 34.59
+      },
+      "/camp/Fixtures/TerminalDesk/radio_1_5/Looks/look_0": {
+        "by": "glass_smoked",
+        "colour": [
+          0.2007,
+          0.1452,
+          0.1461
+        ],
+        "distance": 7.44
+      }
+    },
+    "source": "a75230aae3907b24c238032e28beb844aa1bf33c409161d4a3528f7d26a412de",
+    "triangles": 1006567
+  }
 }

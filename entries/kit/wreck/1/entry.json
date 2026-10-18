@@ -10,6 +10,16 @@
       "bytes": 2528,
       "role": "picture",
       "sha256": "d66041f8f28f99d3fbc6e75037d5b71e500addfe2d3a23d7a5f2d2cbb3a56ce9"
+    },
+    "web3d/full.glb": {
+      "bytes": 6016336,
+      "role": "web3d",
+      "sha256": "b57c62db8f062eb4b8d4d7e867aebf6f75b3893918faaa444d236b83fc1af56c"
+    },
+    "web3d/light.glb": {
+      "bytes": 195032,
+      "role": "web3d",
+      "sha256": "5570573116587273ffc7df2f9f76acd1279c6c4ae05927063bf4b3a00b4656e3"
     }
   },
   "id": "wreck",
@@ -66,5 +76,43 @@
   },
   "title": "Wreck kit",
   "usd": null,
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 6016336,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 45,
+      "library bake": 3
+    },
+    "from": {
+      "layer/base.wreck@1": "20eccd8d6dea717b989546ce3000b1ad648bfa3a57b7674189d4589ef612fa82",
+      "model/access_cover@1": "19f01c24869a6667cf2a82e671dba2e80652036acb778175bd275497addd521c",
+      "model/aft_section@1": "1171df3cc74ffa2d81483f505785637117f2bcabe1bc93ed15d4b3f34580f536",
+      "model/cable_run_1p4@1": "f6f3648565178c77ae00959a60c4f0b113497b2974a730873649bf0edfdbfc9a",
+      "model/cable_run_2p4@1": "f5a28164c05a1ac2df044d47097d32251d5d54237d4804377c39c1930084cc10",
+      "model/cable_run_2p6@1": "9e0307d8d460ba41c9376337198be299eb5b32986f7a7136f22b766da04f4fac",
+      "model/foil_blanket@1": "e965a20e3966f5ede1538b66b01a64022090fb2e5d6108754baae5b233c0e535",
+      "model/forward_section@1": "ef3a14561e67559bb23d4e4c794bbc1b99041867cebb408b4696f98994e46124",
+      "model/fragment@1": "0d5b8550e34c52af1db5bae7ba7f0bbde1f0b77edba2d9f56a223b637c554e58",
+      "model/hull_panel@1": "a7868d03b6598256670e6de305b09f097f32e374d3ed0ffae705533d135fab68",
+      "model/leg_foot@1": "4b5ea5bba26ad60a8c2a0a3ef51ccb9a2815ed5948ce0295ddbba442bcceb315",
+      "model/leg_strut@1": "261f1025876c109364f83176915a3946694acf453f5f9f8d8b3aa4383e4b820c",
+      "model/pressure_sphere@1": "fab9ea3d4c6a96a99970c6cc51100fb39f54610bd26daaea7a7738c36e2a1c8c",
+      "model/probe_lander@1": "a27a1eb013078e9ea8add2ca54f1969b3c3bf4149d21a2cd5da124f7dc8feaa1",
+      "model/ring_frame@1": "f2b95d7513ca142901f03e5ea01ada1ff29ed663ee3a87c642711892e0b1d673",
+      "model/small_panel@1": "77314f7f185b5558e6d9f72873d172453fe790006c31093740fe480d34a23fa0",
+      "model/tank_dome@1": "d2212dcf4760f317fd88e4e8c4ba7968d716b69b987fbc717aadefe3ba33eec1",
+      "model/work_lamp@1": "547f26d1a353ecd81330d5bf3e886a8e87f7b9527b945f5fb687f470b12ebda2"
+    },
+    "full_sha256": "b57c62db8f062eb4b8d4d7e867aebf6f75b3893918faaa444d236b83fc1af56c",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 195032,
+    "light_sha256": "5570573116587273ffc7df2f9f76acd1279c6c4ae05927063bf4b3a00b4656e3",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 23,
+    "replaced": {},
+    "source": "55836d9598bb5a9c433e9fcd9f4063c3c093a701cc70e44c65d1d845ec8e63f9",
+    "triangles": 377827
+  }
 }

@@ -30,6 +30,16 @@
       "bytes": 14836197,
       "role": "texture",
       "sha256": "5f227206f14284d8bc4ae5a2c9c8b29ef0ff316e83d116d4ad6e7b0af8bc958b"
+    },
+    "web3d/full.glb": {
+      "bytes": 106848,
+      "role": "web3d",
+      "sha256": "15900565e3fa919f1b88d25dfd0ccecd00d86164fe563c88b05387d53f35733e"
+    },
+    "web3d/light.glb": {
+      "bytes": 14012,
+      "role": "web3d",
+      "sha256": "a1493cd4aa5b9b0ed9a0dd8abaa0602477b1b53be2a77bed4d84e4ca4f3c4c43"
     }
   },
   "id": "wall_lower_plain_3.cockpit",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 106848,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "15900565e3fa919f1b88d25dfd0ccecd00d86164fe563c88b05387d53f35733e",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 14012,
+    "light_sha256": "a1493cd4aa5b9b0ed9a0dd8abaa0602477b1b53be2a77bed4d84e4ca4f3c4c43",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "899dadd63817bf9cf21575ce2216ea4187b8ef89f59d46d93f203d5adeabfa18",
+    "triangles": 744
+  }
 }

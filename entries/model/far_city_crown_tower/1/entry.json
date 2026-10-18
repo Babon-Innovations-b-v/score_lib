@@ -1,0 +1,119 @@
+{
+  "address": "model/far_city_crown_tower@1",
+  "files": {
+    "model.json": {
+      "bytes": 193,
+      "role": "record",
+      "sha256": "39076f0d4185db32c199a93e6f55abc770a67e434fb6d6dfa94ee7a0213dd32b"
+    },
+    "model.usdc": {
+      "bytes": 2000733,
+      "role": "usd",
+      "sha256": "fd0c3a2996dbf2e0a94dc32add25c18c1ef91c043fb0985d46622a5b377db202"
+    },
+    "preview.png": {
+      "bytes": 37279,
+      "role": "picture",
+      "sha256": "a5547f666d64c106b664c1e6ebea392bdf3dbb53471e2a00d6fe85bad63f10f0"
+    },
+    "textures/far_city_crown_tower_0.png": {
+      "bytes": 815673,
+      "role": "texture",
+      "sha256": "5f20c7976077c3befa944e79606ee4511e254662802f5a4240da88346de69685"
+    },
+    "web3d/full.glb": {
+      "bytes": 359828,
+      "role": "web3d",
+      "sha256": "ee2873f6f0b3f7974fa4389136d4b540d1018d565fbb6b5e096f49b15ca989e8"
+    },
+    "web3d/light.glb": {
+      "bytes": 6028,
+      "role": "web3d",
+      "sha256": "f76ccf11ea62798fd915091aecfb9b741dc9ce1306402d23719faa07d38eafcd"
+    }
+  },
+  "id": "far_city_crown_tower",
+  "kind": "model",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T10:41:32.754135+00:00",
+      "by": "runner"
+    },
+    "code": "89962788af8431994f1543c9abe8e4f2a49ead05df0fbf80ac02a0d9bb5da769",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "folder": "places/far_city/",
+    "gltf": null,
+    "made_with": [
+      {
+        "by": "framework_models",
+        "what": "model: made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups"
+      }
+    ],
+    "model_sha256": "902b3ffe6eb8dd4ad4b2be48f26885c963a027da03c4975a90bbab5f2f7b0b35",
+    "models": [],
+    "node": "neighbours@flat",
+    "output": "11ad42eaae26ebb4c2851afb156a7412ab52ff3a34849eb919b68d61e6557436",
+    "place": "far_city",
+    "record_key": "807bceafbd516910e699ab44a0bc67ae209cb1f485c4b91502d0d7101c1da16b",
+    "source_name": "far_city_crown_tower",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "far_city"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [],
+    "place_kind": []
+  },
+  "title": "Far city crown tower",
+  "usd": {
+    "default_prim": "/far_city_crown_tower",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/far_city_crown_tower/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1,
+  "web3d": {
+    "bytes": 359828,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "replaced": 1
+    },
+    "from": {},
+    "full_sha256": "ee2873f6f0b3f7974fa4389136d4b540d1018d565fbb6b5e096f49b15ca989e8",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 6028,
+    "light_sha256": "f76ccf11ea62798fd915091aecfb9b741dc9ce1306402d23719faa07d38eafcd",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {
+      "/model/body/Looks/look_0": {
+        "by": "glass",
+        "colour": [
+          0.0209,
+          0.0336,
+          0.0449
+        ],
+        "distance": 1.32
+      }
+    },
+    "source": "6931edabe342ae69931163b58dc08cd105f7779af6e951d8366c098305b68210",
+    "triangles": 20355
+  }
+}

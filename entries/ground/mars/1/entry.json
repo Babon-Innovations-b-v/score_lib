@@ -107,10 +107,68 @@
     "record_key": "83726add119cd37905f2c14f9bef3c841eb08f6a51f62fe6833a7e81af75bddb",
     "world": "world1"
   },
+  "refine_options": [
+    {
+      "action": "re-run the terrain at a finer cell",
+      "answers": [
+        "cell",
+        "spikes",
+        "relief follows",
+        "scale faults"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "the terrain algorithm on this machine with a finer cell and the relief fitted again",
+      "suggested": false
+    },
+    {
+      "action": "re-draw the ground look",
+      "answers": [
+        "planet"
+      ],
+      "basket": true,
+      "cost": "paid",
+      "does": "the terrain look stage again (a cloud run)",
+      "price": "not measured yet",
+      "suggested": false
+    }
+  ],
   "requires": [
     "algorithm/terrain_landforms@1"
   ],
   "schema": "score-lib-entry/1",
+  "score": 100,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "correlation of its relief with its concept's (diorama/c2.png); 100 at 0.8, 50 at 0.5, 0 at 0.2 correlation",
+      "measured": 0.8171,
+      "name": "relief follows",
+      "unit": "correlation",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "|log| of its relief's RMS 0.229 m against the planned 0.25 m; 100 at 0.1, 50 at 0.3, 0 at 0.7 log",
+      "measured": 0.088,
+      "name": "relief size",
+      "unit": "log",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "the terrain stage's scale and slope faults; 100 at 0, 50 at 1, 0 at 4 faults",
+      "measured": 0,
+      "name": "faults",
+      "unit": "faults",
+      "value": 100,
+      "weight": 1.0
+    }
+  ],
   "seen_in": [],
   "state": "draft",
   "tags": {

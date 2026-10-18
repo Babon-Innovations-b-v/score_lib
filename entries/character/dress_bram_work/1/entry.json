@@ -35,6 +35,16 @@
       "bytes": 12964,
       "role": "texture",
       "sha256": "b9e847240fa32380174b201b0eb5bb6e297ad9eb44f0f4d844325fe19c9687ce"
+    },
+    "web3d/full.glb": {
+      "bytes": 171612,
+      "role": "web3d",
+      "sha256": "bd40206313ff02546f7be773d2aa058e6c4015a0f801927f78ec7a5178e92049"
+    },
+    "web3d/light.glb": {
+      "bytes": 37276,
+      "role": "web3d",
+      "sha256": "597388b62eb7ea2b7342d29c9331a3fc8cac80cbb8b88d1a7f5ef25e61ce637f"
     }
   },
   "id": "dress_bram_work",
@@ -108,5 +118,79 @@
     "up_axis": "Y",
     "use": "payload"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 171612,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 25,
+      "replaced": 6
+    },
+    "from": {},
+    "full_sha256": "bd40206313ff02546f7be773d2aa058e6c4015a0f801927f78ec7a5178e92049",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 37276,
+    "light_sha256": "597388b62eb7ea2b7342d29c9331a3fc8cac80cbb8b88d1a7f5ef25e61ce637f",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 31,
+    "replaced": {
+      "/Character/Looks/m25_hair": {
+        "by": "skin_dark",
+        "colour": [
+          0.2874,
+          0.1384,
+          0.0482
+        ],
+        "distance": 12.76
+      },
+      "/Character/Looks/m26_hair": {
+        "by": "skin_dark",
+        "colour": [
+          0.2874,
+          0.1384,
+          0.0482
+        ],
+        "distance": 12.76
+      },
+      "/Character/Looks/m27_hair": {
+        "by": "skin_dark",
+        "colour": [
+          0.2874,
+          0.1384,
+          0.0482
+        ],
+        "distance": 12.76
+      },
+      "/Character/Looks/m28_hair": {
+        "by": "skin_dark",
+        "colour": [
+          0.2874,
+          0.1384,
+          0.0482
+        ],
+        "distance": 12.76
+      },
+      "/Character/Looks/m29_hair": {
+        "by": "skin_dark",
+        "colour": [
+          0.2874,
+          0.1384,
+          0.0482
+        ],
+        "distance": 12.76
+      },
+      "/Character/Looks/m30_hair": {
+        "by": "skin_dark",
+        "colour": [
+          0.2874,
+          0.1384,
+          0.0482
+        ],
+        "distance": 12.76
+      }
+    },
+    "source": "e53cb86964fd114ab3f71bd03efe469d90af9902bb74bf09d91c264061c734af",
+    "triangles": 28930
+  }
 }

@@ -30,6 +30,16 @@
       "bytes": 1684105,
       "role": "texture",
       "sha256": "59f26a6b7d2de8104d5d3ece1385d4db5aa3841af1ed56052085043bcc3b74f5"
+    },
+    "web3d/full.glb": {
+      "bytes": 177796,
+      "role": "web3d",
+      "sha256": "0a0ce922b76e746bb827f7eb39280b9b4c05960721ce9d955416fa7007482674"
+    },
+    "web3d/light.glb": {
+      "bytes": 32084,
+      "role": "web3d",
+      "sha256": "16419814ba284dc1d95a39a56befaf42e36e89792b5442769cb8bc877efdc4e5"
     }
   },
   "id": "stair_rail_1",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 177796,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "0a0ce922b76e746bb827f7eb39280b9b4c05960721ce9d955416fa7007482674",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 32084,
+    "light_sha256": "16419814ba284dc1d95a39a56befaf42e36e89792b5442769cb8bc877efdc4e5",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "eb71049cb16728cc24faf02764ae04aad24d441880ec2c1e7c962c52ab714277",
+    "triangles": 1696
+  }
 }

@@ -30,6 +30,16 @@
       "bytes": 4106889,
       "role": "texture",
       "sha256": "fd7be3ba5c012c3809edca48fc0dd132256b35ae08d2087ac82e8aaa00ebd3f1"
+    },
+    "web3d/full.glb": {
+      "bytes": 111852,
+      "role": "web3d",
+      "sha256": "24db47e1f5a1f4f9be2a26081b49a5edb77b473be522e5b3d920a99ec6caa30b"
+    },
+    "web3d/light.glb": {
+      "bytes": 19940,
+      "role": "web3d",
+      "sha256": "7f80f5e1fa50927638c0b1e543e32c0385ff3a204b281b8da60edb3d402ac5f3"
     }
   },
   "id": "timber_chair_1",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 111852,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "24db47e1f5a1f4f9be2a26081b49a5edb77b473be522e5b3d920a99ec6caa30b",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 19940,
+    "light_sha256": "7f80f5e1fa50927638c0b1e543e32c0385ff3a204b281b8da60edb3d402ac5f3",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "5f5a2bb27dc1f318c1699ae15cb7f7e70751c3c7aa8e851adbf8751c21eb090d",
+    "triangles": 1944
+  }
 }

@@ -30,6 +30,16 @@
       "bytes": 3382594,
       "role": "texture",
       "sha256": "c071f3b6b68fa9f2b7fe83f93637d846015cc3a4fd4ccc50a6befadf49eefd0a"
+    },
+    "web3d/full.glb": {
+      "bytes": 250548,
+      "role": "web3d",
+      "sha256": "e40f6549511fe237e7ee976c09f91698fb494949aa5950879a48f552108f7f0f"
+    },
+    "web3d/light.glb": {
+      "bytes": 37020,
+      "role": "web3d",
+      "sha256": "718bd54c6cca63335ebe515071f2c6ca2bd950de59bdaddd2be13ddf45ba4175"
     }
   },
   "id": "irrigation_boom_1",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 250548,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "e40f6549511fe237e7ee976c09f91698fb494949aa5950879a48f552108f7f0f",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 37020,
+    "light_sha256": "718bd54c6cca63335ebe515071f2c6ca2bd950de59bdaddd2be13ddf45ba4175",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "d469dd10b51b34cc5dc9c9aed441161896bcf7ec01695621479a75522dfc90a2",
+    "triangles": 5648
+  }
 }

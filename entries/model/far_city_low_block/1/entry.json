@@ -1,0 +1,119 @@
+{
+  "address": "model/far_city_low_block@1",
+  "files": {
+    "model.json": {
+      "bytes": 191,
+      "role": "record",
+      "sha256": "14a6fd3a733b05777c79075052efd48156878d363e2dd82b523303672758f47c"
+    },
+    "model.usdc": {
+      "bytes": 1994857,
+      "role": "usd",
+      "sha256": "f00e6ad651547b51de13ec5878af4c19d1b6b1ad4bc1a66da941315a90503550"
+    },
+    "preview.png": {
+      "bytes": 91971,
+      "role": "picture",
+      "sha256": "5588a19635a2aefd9fbd6021f6af2f44dea46d60f25d668252fad41fedce3ff1"
+    },
+    "textures/far_city_low_block_0.png": {
+      "bytes": 1125695,
+      "role": "texture",
+      "sha256": "e92e2c7e2f0dbb6fef434675d5b0ccb10aee7e2cec2a94c3e0bf615a5cc2bf4d"
+    },
+    "web3d/full.glb": {
+      "bytes": 364568,
+      "role": "web3d",
+      "sha256": "7973a9ec225a761251f4f1b6c9f511ede3960f0149aa22878bd59209e5ae078b"
+    },
+    "web3d/light.glb": {
+      "bytes": 6624,
+      "role": "web3d",
+      "sha256": "219690a9605986075c4e0946337998d4f6dea589ca4a4a1b9e2c2fbdddd9067e"
+    }
+  },
+  "id": "far_city_low_block",
+  "kind": "model",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T10:41:32.754135+00:00",
+      "by": "runner"
+    },
+    "code": "89962788af8431994f1543c9abe8e4f2a49ead05df0fbf80ac02a0d9bb5da769",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "folder": "places/far_city/",
+    "gltf": null,
+    "made_with": [
+      {
+        "by": "framework_models",
+        "what": "model: made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups"
+      }
+    ],
+    "model_sha256": "66efb31bb9464bb2034e8525cb1822af45c98f9dab35f58cf0d286bad7c0726e",
+    "models": [],
+    "node": "neighbours@flat",
+    "output": "11ad42eaae26ebb4c2851afb156a7412ab52ff3a34849eb919b68d61e6557436",
+    "place": "far_city",
+    "record_key": "807bceafbd516910e699ab44a0bc67ae209cb1f485c4b91502d0d7101c1da16b",
+    "source_name": "far_city_low_block",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "far_city"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [],
+    "place_kind": []
+  },
+  "title": "Far city low block",
+  "usd": {
+    "default_prim": "/far_city_low_block",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/far_city_low_block/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1,
+  "web3d": {
+    "bytes": 364568,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "replaced": 1
+    },
+    "from": {},
+    "full_sha256": "7973a9ec225a761251f4f1b6c9f511ede3960f0149aa22878bd59209e5ae078b",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 6624,
+    "light_sha256": "219690a9605986075c4e0946337998d4f6dea589ca4a4a1b9e2c2fbdddd9067e",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {
+      "/model/body/Looks/look_0": {
+        "by": "canvas_beige",
+        "colour": [
+          0.5539,
+          0.5235,
+          0.4436
+        ],
+        "distance": 1.68
+      }
+    },
+    "source": "458c54dc9b20bb148e3aaabff7eaed8248aed3234e277ad04deb46fefdbdaf59",
+    "triangles": 19962
+  }
+}

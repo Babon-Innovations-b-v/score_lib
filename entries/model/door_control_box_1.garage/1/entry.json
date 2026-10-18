@@ -35,6 +35,16 @@
       "bytes": 774988,
       "role": "texture",
       "sha256": "fd33a36cb836802727416a9496464ed9388f00d995cdbc899f8678b8904ea866"
+    },
+    "web3d/full.glb": {
+      "bytes": 77984,
+      "role": "web3d",
+      "sha256": "4c038a735e577bedc983f74c2d9ade35afa75c93ffccae37f1af1ae750e9bdaa"
+    },
+    "web3d/light.glb": {
+      "bytes": 13836,
+      "role": "web3d",
+      "sha256": "3cb768d1b22bd86654253e81592ee9d3d8f767074e55264fd23c60a3b8a067e3"
     }
   },
   "id": "door_control_box_1.garage",
@@ -96,5 +106,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 77984,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 2
+    },
+    "from": {},
+    "full_sha256": "4c038a735e577bedc983f74c2d9ade35afa75c93ffccae37f1af1ae750e9bdaa",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 13836,
+    "light_sha256": "3cb768d1b22bd86654253e81592ee9d3d8f767074e55264fd23c60a3b8a067e3",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 2,
+    "replaced": {},
+    "source": "e8659e078eaff831990b0120362810f926c7ad9519d9215b9222a8bb3ca2fc8c",
+    "triangles": 1028
+  }
 }

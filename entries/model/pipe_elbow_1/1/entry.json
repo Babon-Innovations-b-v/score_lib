@@ -30,6 +30,16 @@
       "bytes": 4217287,
       "role": "texture",
       "sha256": "fee5012343ab13164a44d2332b271ab9e8aff7cec900b80ced3fac41a02811a1"
+    },
+    "web3d/full.glb": {
+      "bytes": 249216,
+      "role": "web3d",
+      "sha256": "8acc1d983a034f2da256bc650611dfeb54899639ca24dd4a1f56972e60c2b47e"
+    },
+    "web3d/light.glb": {
+      "bytes": 36748,
+      "role": "web3d",
+      "sha256": "94b01f3aca43ccae05548f490162cf42f802c5eb9c2e56afc6d97ab9031be211"
     }
   },
   "id": "pipe_elbow_1",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 249216,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "8acc1d983a034f2da256bc650611dfeb54899639ca24dd4a1f56972e60c2b47e",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 36748,
+    "light_sha256": "94b01f3aca43ccae05548f490162cf42f802c5eb9c2e56afc6d97ab9031be211",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "1f4c50d5bf31e869d0d8e4758fd20750bd85260b5fdb43cfc897ed7aa9fef1fd",
+    "triangles": 1764
+  }
 }

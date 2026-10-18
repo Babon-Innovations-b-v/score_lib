@@ -45,16 +45,81 @@
     "source": "data/library/materials.json at the world's commit",
     "world": "world1"
   },
+  "refine_options": [
+    {
+      "action": "re-tune its settings",
+      "answers": [
+        "palette fit",
+        "close-range detail",
+        "ink contrast"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "its library variant's settings and palette token adjusted in data/library/materials.json, checked again here",
+      "suggested": false
+    },
+    {
+      "action": "bake a tile locally",
+      "answers": [
+        "tiling",
+        "close-range detail"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "the surface_recipes algorithm bakes one tile on this machine (Blender), so its seams and close-range detail can be measured",
+      "suggested": false
+    },
+    {
+      "action": "redraw the print",
+      "answers": [
+        "print resolution",
+        "ink contrast"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "the print drawn again from its library picture at a higher resolution",
+      "suggested": false
+    }
+  ],
   "requires": [
     "algorithm/surface_recipes@1"
   ],
   "schema": "score-lib-entry/1",
+  "score": 100,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "its base colour against its palette token 'flat-floor' (design/tokens/tokens.json); 100 at 2.0, 50 at 8.0, 0 at 20.0 CIE76",
+      "measured": 0.0,
+      "name": "palette fit",
+      "unit": "CIE76",
+      "value": 100,
+      "weight": 2.0
+    },
+    {
+      "how": "the entry holds its recipe's settings, no baked tile; seams and grain are judged on the models baked from it",
+      "name": "tiling",
+      "status": "not measured",
+      "value": null
+    },
+    {
+      "how": "the entry holds its recipe's settings, no baked tile; seams and grain are judged on the models baked from it",
+      "name": "close-range detail",
+      "status": "not measured",
+      "value": null
+    }
+  ],
   "seen_in": [
     "airlock",
     "camp",
     "campgrounds",
     "cockpit",
     "engineroom",
+    "far_city",
     "flat",
     "galley",
     "garage",

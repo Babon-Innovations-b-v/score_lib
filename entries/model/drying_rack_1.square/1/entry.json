@@ -30,6 +30,16 @@
       "bytes": 1619902,
       "role": "texture",
       "sha256": "3d32151062e423247af330d993543690edadd538c930e3a487163e4871462aff"
+    },
+    "web3d/full.glb": {
+      "bytes": 226100,
+      "role": "web3d",
+      "sha256": "167cc3a336f9cc0755f9daa1381239c055f3442a6029aabff465222d8cf7a093"
+    },
+    "web3d/light.glb": {
+      "bytes": 27996,
+      "role": "web3d",
+      "sha256": "a957e6eea93bb6409f725ee6072904f671daf247ebdfaa1aab2e0f0b6fc5f351"
     }
   },
   "id": "drying_rack_1.square",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 226100,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "167cc3a336f9cc0755f9daa1381239c055f3442a6029aabff465222d8cf7a093",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 27996,
+    "light_sha256": "a957e6eea93bb6409f725ee6072904f671daf247ebdfaa1aab2e0f0b6fc5f351",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "c89b9aedbfb21c23814e98067e054b7df8ece81fcc5832099d8e85ce6ab6500d",
+    "triangles": 120
+  }
 }

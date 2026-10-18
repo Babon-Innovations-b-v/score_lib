@@ -30,6 +30,16 @@
       "bytes": 1619902,
       "role": "texture",
       "sha256": "3d32151062e423247af330d993543690edadd538c930e3a487163e4871462aff"
+    },
+    "web3d/full.glb": {
+      "bytes": 234140,
+      "role": "web3d",
+      "sha256": "f0abdce87af69fb50ed9093d21785e1f8bbe4fc1908702a9cf57f519ad921f10"
+    },
+    "web3d/light.glb": {
+      "bytes": 28588,
+      "role": "web3d",
+      "sha256": "b0917d536f1e1291e665bb95d0e2f61d094664b08fdb4870f0950a1a0793f1f3"
     }
   },
   "id": "drainpipe_1.square",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 234140,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "f0abdce87af69fb50ed9093d21785e1f8bbe4fc1908702a9cf57f519ad921f10",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 28588,
+    "light_sha256": "b0917d536f1e1291e665bb95d0e2f61d094664b08fdb4870f0950a1a0793f1f3",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "4c1d69b2ebd82d0a35d9b8ea42923cd19f4e60eb6b54f827abd2a487d539ba0a",
+    "triangles": 840
+  }
 }

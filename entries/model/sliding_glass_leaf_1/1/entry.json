@@ -30,6 +30,16 @@
       "bytes": 309888,
       "role": "texture",
       "sha256": "f6f2b68aacf2fd1ec5eb914956739703ced81fada14bc38bfe5016fbfccd7d5c"
+    },
+    "web3d/full.glb": {
+      "bytes": 68156,
+      "role": "web3d",
+      "sha256": "461508f94ccf6a6407a3119482b3b3223f1a92b5b6f3efce6183a37761d533c5"
+    },
+    "web3d/light.glb": {
+      "bytes": 11824,
+      "role": "web3d",
+      "sha256": "e82c3d073511e5cb218347e06eb6d233b4844e485e7106c7a97497c9df2779c1"
     }
   },
   "id": "sliding_glass_leaf_1",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 68156,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "461508f94ccf6a6407a3119482b3b3223f1a92b5b6f3efce6183a37761d533c5",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 11824,
+    "light_sha256": "e82c3d073511e5cb218347e06eb6d233b4844e485e7106c7a97497c9df2779c1",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "19b38dfa145f85a554fffbe9b307cdcd4aaffe1ffc6560732c82ca5e55b2b103",
+    "triangles": 576
+  }
 }

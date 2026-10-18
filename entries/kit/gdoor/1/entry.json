@@ -10,6 +10,16 @@
       "bytes": 1717,
       "role": "picture",
       "sha256": "6b365f9c6fc17b7da09b8cbcdd005d70054ca7723ebf3ee6c4f8d38922066ee8"
+    },
+    "web3d/full.glb": {
+      "bytes": 343736,
+      "role": "web3d",
+      "sha256": "206e6d11ffe345593f298affed7b0cff5d87c079c13d326046d8319870ccf5df"
+    },
+    "web3d/light.glb": {
+      "bytes": 48660,
+      "role": "web3d",
+      "sha256": "4329f4d3687d2664fed0402f24e403165ccf5417456e03f6d93a31872edbcdbb"
     }
   },
   "id": "gdoor",
@@ -48,5 +58,27 @@
   },
   "title": "Gdoor kit",
   "usd": null,
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 343736,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 9
+    },
+    "from": {
+      "layer/base.gdoor@1": "593011ea33a548bfc50ed8b9b60da58fa2c9f152a088cd469f0e9a807dd52450",
+      "model/lattice_ring_rib_1.gdoor@1": "9f6147a85175ea88ecc6eaefa628115cec481766fb43d36fb0058864102c1e39",
+      "model/wall_upper_plain_1.gdoor@1": "28a7d3bbd5377c9fc1d871e280bd886df2c1dd28ef92233dba0e37cc6f4f2752"
+    },
+    "full_sha256": "206e6d11ffe345593f298affed7b0cff5d87c079c13d326046d8319870ccf5df",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 48660,
+    "light_sha256": "4329f4d3687d2664fed0402f24e403165ccf5417456e03f6d93a31872edbcdbb",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 9,
+    "replaced": {},
+    "source": "8bee40f0943a209e198d1e093b249ea5585a191461909fc4c2386be85c3dffc5",
+    "triangles": 6204
+  }
 }

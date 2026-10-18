@@ -35,6 +35,16 @@
       "bytes": 4723469,
       "role": "texture",
       "sha256": "b3ad6fe7a327485c50007444d66895d7871e13f39cc96a547c9ef3282ebc3474"
+    },
+    "web3d/full.glb": {
+      "bytes": 178920,
+      "role": "web3d",
+      "sha256": "351907a9630d98ee6d63c3a8a06aaa574498df212c43e803bcf1345c2c414710"
+    },
+    "web3d/light.glb": {
+      "bytes": 28096,
+      "role": "web3d",
+      "sha256": "c68e6702125dfbca9770f5de2c377a8f3189afd01cb1afc72548bd5f1a1f7fa1"
     }
   },
   "id": "door_control_box_1.airlock",
@@ -96,5 +106,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 178920,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 2
+    },
+    "from": {},
+    "full_sha256": "351907a9630d98ee6d63c3a8a06aaa574498df212c43e803bcf1345c2c414710",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 28096,
+    "light_sha256": "c68e6702125dfbca9770f5de2c377a8f3189afd01cb1afc72548bd5f1a1f7fa1",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 2,
+    "replaced": {},
+    "source": "a5fbef199169ef613f8785e49019a1961e721fe8808677d6873c9f66376a1792",
+    "triangles": 1028
+  }
 }

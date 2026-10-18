@@ -1,0 +1,182 @@
+{
+  "address": "place/far_city@1",
+  "files": {
+    "edit.usda": {
+      "bytes": 183,
+      "role": "usd",
+      "sha256": "8fc5485ea9a58537dd8289c516a85733e069ad7a17b866471667b8795142454f"
+    },
+    "far_city.usda": {
+      "bytes": 183,
+      "role": "usd",
+      "sha256": "512bf0a6f698767303445d0aa5d9369a2fb1600a452bc050b1bd884a7d8494e1"
+    },
+    "inputs.json": {
+      "bytes": 1819,
+      "role": "record",
+      "sha256": "72863f4948c8e8ce7439f45ba713058ee297159a5c0499f96b313757e10c3f3a"
+    },
+    "web3d/full.glb": {
+      "bytes": 3381244,
+      "role": "web3d",
+      "sha256": "fa93ecbf792e9796f8ac2baa7f9f4af16aa5ce589214e46d9a7a0e24070c1fb9"
+    },
+    "web3d/light.glb": {
+      "bytes": 970580,
+      "role": "web3d",
+      "sha256": "d71ccf75297422c724b09ae8120a1035587703e2268610028ce47af302444a2b"
+    }
+  },
+  "id": "far_city",
+  "kind": "place",
+  "picture": null,
+  "picture_reason": "the place has no light pass render and no kit to draw",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T10:41:32.754135+00:00",
+      "by": "runner"
+    },
+    "code": "89962788af8431994f1543c9abe8e4f2a49ead05df0fbf80ac02a0d9bb5da769",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "complete": {
+      "accept": {
+        "at": null,
+        "by": null
+      },
+      "code": null,
+      "models": [],
+      "node": "complete@far_city",
+      "output": null,
+      "record_key": null
+    },
+    "complete_failing": [],
+    "files_from": {
+      "inputs.json": {
+        "path": "inputs.json",
+        "sha256": "0982a26cf355a9fe69582031fa66a794d2c46cd5588b2eeb98f3bd6321506313"
+      }
+    },
+    "folder": "places/far_city/",
+    "gaps": null,
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
+    "models": [],
+    "node": "neighbours@flat",
+    "output": "11ad42eaae26ebb4c2851afb156a7412ab52ff3a34849eb919b68d61e6557436",
+    "place": "far_city",
+    "record_key": "807bceafbd516910e699ab44a0bc67ae209cb1f485c4b91502d0d7101c1da16b",
+    "records_from": {},
+    "unresolved_sublayers": [],
+    "world": "world1"
+  },
+  "requires": [
+    "layer/base.far_city@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "far_city"
+  ],
+  "state": "draft",
+  "tags": {
+    "complete": [],
+    "place_kind": []
+  },
+  "title": "Far city",
+  "usd": {
+    "default_prim": "/far_city",
+    "layer": "root",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/place/far_city/1/far_city.usda",
+    "root": "far_city.usda",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "open"
+  },
+  "version": 1,
+  "web3d": {
+    "bytes": 3381244,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 9,
+      "replaced": 6
+    },
+    "from": {
+      "layer/base.far_city@1": "fadc6ac9931b0709240750623d7878abf60575eeec845e63a9ea27d1ffb0db31",
+      "model/far_city_crown_tower@1": "6931edabe342ae69931163b58dc08cd105f7779af6e951d8366c098305b68210",
+      "model/far_city_glass_tower@1": "9de1be2061c883574f6986eb6ded36de5a05d3dc2d695c878114f4016e5756f4",
+      "model/far_city_housing_tower@1": "04ae59b87cc9c772bd4103d8d638c86bca45478724be6d18b04aa504ad9ae570",
+      "model/far_city_low_block@1": "458c54dc9b20bb148e3aaabff7eaed8248aed3234e277ad04deb46fefdbdaf59",
+      "model/far_city_residential_tower@1": "78fa60b1a6b099794a0bb3922b99435ec7126bfbab881a41bd8b162a1202bb65",
+      "model/far_city_spire_tower@1": "ca2eae36ab4562f754c6c03a389a966d2f1fd9b393ce6b79b27cb612176dc441"
+    },
+    "full_sha256": "fa93ecbf792e9796f8ac2baa7f9f4af16aa5ce589214e46d9a7a0e24070c1fb9",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 970580,
+    "light_sha256": "d71ccf75297422c724b09ae8120a1035587703e2268610028ce47af302444a2b",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 4,
+    "replaced": {
+      "/far_city/Towers/Prototypes/far_city_crown_tower/body/Looks/look_0": {
+        "by": "glass",
+        "colour": [
+          0.0209,
+          0.0336,
+          0.0449
+        ],
+        "distance": 1.32
+      },
+      "/far_city/Towers/Prototypes/far_city_glass_tower/body/Looks/look_0": {
+        "by": "stair_terrazzo",
+        "colour": [
+          0.2026,
+          0.1693,
+          0.1305
+        ],
+        "distance": 5.39
+      },
+      "/far_city/Towers/Prototypes/far_city_housing_tower/body/Looks/look_0": {
+        "by": "canvas_beige",
+        "colour": [
+          0.4991,
+          0.4714,
+          0.4002
+        ],
+        "distance": 4.9
+      },
+      "/far_city/Towers/Prototypes/far_city_low_block/body/Looks/look_0": {
+        "by": "canvas_beige",
+        "colour": [
+          0.5539,
+          0.5235,
+          0.4436
+        ],
+        "distance": 1.68
+      },
+      "/far_city/Towers/Prototypes/far_city_residential_tower/body/Looks/look_0": {
+        "by": "canvas_beige",
+        "colour": [
+          0.5555,
+          0.525,
+          0.4449
+        ],
+        "distance": 1.58
+      },
+      "/far_city/Towers/Prototypes/far_city_spire_tower/body/Looks/look_0": {
+        "by": "glass",
+        "colour": [
+          0.0176,
+          0.0306,
+          0.0421
+        ],
+        "distance": 0.05
+      }
+    },
+    "source": "0b1d0814759d4f32d687f2b417588d64c624725cfacb7995950469f0b7a90a2c",
+    "triangles": 54229415
+  }
+}

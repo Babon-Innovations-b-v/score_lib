@@ -30,6 +30,16 @@
       "bytes": 5159313,
       "role": "texture",
       "sha256": "4715454cf274cee929729694e45bd293a37e2e2256b4192c37a72d9c2cef22dc"
+    },
+    "web3d/full.glb": {
+      "bytes": 140192,
+      "role": "web3d",
+      "sha256": "0aed6a535985c9f5c2d7fc0cf416fa8ae8dc83016087f951459ac37fa8e4efe8"
+    },
+    "web3d/light.glb": {
+      "bytes": 22512,
+      "role": "web3d",
+      "sha256": "dbbca49281eb348a1f6c054d18d2d6f17e6beeb75e7667f7898882d08b38fc69"
     }
   },
   "id": "gas_cylinder_1",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 140192,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "0aed6a535985c9f5c2d7fc0cf416fa8ae8dc83016087f951459ac37fa8e4efe8",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 22512,
+    "light_sha256": "dbbca49281eb348a1f6c054d18d2d6f17e6beeb75e7667f7898882d08b38fc69",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "769316a46326f3618fc451bde942e0c71a4aba9f42090a1df32daac0112cf539",
+    "triangles": 1320
+  }
 }

@@ -30,6 +30,16 @@
       "bytes": 1744545,
       "role": "texture",
       "sha256": "20fb93c02b8d0f4828f76e08d3188a020c42f8a9630fa380311ff99d4c229b1d"
+    },
+    "web3d/full.glb": {
+      "bytes": 345492,
+      "role": "web3d",
+      "sha256": "e51c1a59f29ae9a67a308eddc6ca1ba61e9b5875db7342c497e03dd4dc8df8a6"
+    },
+    "web3d/light.glb": {
+      "bytes": 9696,
+      "role": "web3d",
+      "sha256": "59970857a5cbd82275c09fa50d741eae20c213cd67ae057ab6c87eb2b515ecdf"
     }
   },
   "id": "balcony_fern_pot_1",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 345492,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 2
+    },
+    "from": {},
+    "full_sha256": "e51c1a59f29ae9a67a308eddc6ca1ba61e9b5875db7342c497e03dd4dc8df8a6",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 9696,
+    "light_sha256": "59970857a5cbd82275c09fa50d741eae20c213cd67ae057ab6c87eb2b515ecdf",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "5da033dfef8b98fa492fca0e844196a60159e7e861f7f11860d01954bb6f3ea5",
+    "triangles": 18905
+  }
 }

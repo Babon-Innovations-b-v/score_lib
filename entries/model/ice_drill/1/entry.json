@@ -30,6 +30,16 @@
       "bytes": 7305464,
       "role": "texture",
       "sha256": "a387280abacc16c7dd930a6997dbd5a094f4edb74f4941fba6c7e8af93598bcb"
+    },
+    "web3d/full.glb": {
+      "bytes": 1144120,
+      "role": "web3d",
+      "sha256": "dd78e3e25be899bb3faaa60b4681f78768c64b03549db6e98c343bc8aa98a2a1"
+    },
+    "web3d/light.glb": {
+      "bytes": 91852,
+      "role": "web3d",
+      "sha256": "96e52fa6167bdbff60871d1eeb3628cabb4db87d2032f5b62072d9a3e5a3ed89"
     }
   },
   "id": "ice_drill",
@@ -91,5 +101,24 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 1144120,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 2,
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "dd78e3e25be899bb3faaa60b4681f78768c64b03549db6e98c343bc8aa98a2a1",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 91852,
+    "light_sha256": "96e52fa6167bdbff60871d1eeb3628cabb4db87d2032f5b62072d9a3e5a3ed89",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "cdddb75353839cd80391144a025f739ed7fbaa17213a88e9ccf2ee531ded283e",
+    "triangles": 18996
+  }
 }

@@ -20,6 +20,16 @@
       "bytes": 837042,
       "role": "texture",
       "sha256": "d07ae6674869a89178f79b2ef33f255f076da116c41d115822160d2f3160ef02"
+    },
+    "web3d/full.glb": {
+      "bytes": 271764,
+      "role": "web3d",
+      "sha256": "4e90a72abbd793836ebd1c951c7eca831b7ee1ce3327288719029865e71c6b0c"
+    },
+    "web3d/light.glb": {
+      "bytes": 6756,
+      "role": "web3d",
+      "sha256": "aec227e435dddaa19c9dace6d26c810c02d12fa8985036546dea233c73e615d8"
     }
   },
   "id": "fixture_chair_1",
@@ -79,5 +89,33 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 271764,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "replaced": 1
+    },
+    "from": {},
+    "full_sha256": "4e90a72abbd793836ebd1c951c7eca831b7ee1ce3327288719029865e71c6b0c",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 6756,
+    "light_sha256": "aec227e435dddaa19c9dace6d26c810c02d12fa8985036546dea233c73e615d8",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {
+      "/model/body/Looks/look_0": {
+        "by": "glass",
+        "colour": [
+          0.023,
+          0.0286,
+          0.0422
+        ],
+        "distance": 3.41
+      }
+    },
+    "source": "e32698a49428e45f49813000bf08d57e13fb5ca3dd57a0cd310c9cb9d1bee89a",
+    "triangles": 15390
+  }
 }

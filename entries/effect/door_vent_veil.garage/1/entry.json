@@ -51,10 +51,67 @@
     "record_key": "fa8d6cf1614a1a69c6069be2dcd46690badc821a09804750e5e3772a8b52149f",
     "world": "world1"
   },
+  "refine_options": [
+    {
+      "action": "re-tune against its footage",
+      "answers": [
+        "footage",
+        "fine particles",
+        "loose blobs",
+        "cites footage"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "the emitter's settings moved toward its footage's measured ranges in data/effects/<place>.json and its particles baked again (tools/usd/effects.py, on this machine)",
+      "suggested": false
+    },
+    {
+      "action": "measure more footage",
+      "answers": [
+        "footage"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "add a footage check for this emitter (a real photograph or film measured against a thing of known size)",
+      "suggested": false
+    }
+  ],
   "requires": [
     "algorithm/particle_effects@1"
   ],
   "schema": "score-lib-entry/1",
+  "score": 84,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "worst of 2 footage checks of the effects stage (effects-layer@garage): veil's half angle 0.8 s after the door opens 23.618 in [14.0, 33.0]; veil one band, no loose blobs, 0.8 s after the door opens 0.000 in [0.0, 0.01]; inside its range 75 to 100 by its margin, 50 at an end, 0 a range's width (or the bound's size) past it",
+      "measured": 0.0002,
+      "name": "footage",
+      "unit": "loose",
+      "value": 76,
+      "weight": 2.0
+    },
+    {
+      "how": "share of its 5742 showing particles at its fullest moment touching no other (the effects stage's loose: the nearest middle farther than its width); 100 at 0.0, 50 at 0.01, 0 at 0.05 share",
+      "measured": 0.0028,
+      "name": "loose blobs",
+      "unit": "share",
+      "value": 86,
+      "weight": 1.0
+    },
+    {
+      "how": "its settings name the real footage they were measured on (100), or only the source game's lines (0): 'footage: NTRS-19910011413, S126E014192 (the gas itself leaving with the ice, the'",
+      "measured": true,
+      "name": "cites footage",
+      "unit": "",
+      "value": 100,
+      "weight": 1.0
+    }
+  ],
   "seen_in": [
     "garage"
   ],

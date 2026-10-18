@@ -20,6 +20,16 @@
       "bytes": 2920026,
       "role": "texture",
       "sha256": "8d19912c294810d4809f9ad9c3ab720a3d43d6f3444048742f45f1b83302ed56"
+    },
+    "web3d/full.glb": {
+      "bytes": 136164,
+      "role": "web3d",
+      "sha256": "0f860487f89571bc3e1a6f404d168377e753e4173e661eaee3af8e8dc4b8ce6d"
+    },
+    "web3d/light.glb": {
+      "bytes": 10076,
+      "role": "web3d",
+      "sha256": "f06c11cc91dd57a8d03eadaa47577d680bb98074eecfd7cbd82290dd56d0d6ad"
     }
   },
   "id": "fixture_hanging_suit",
@@ -79,5 +89,33 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 136164,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "replaced": 1
+    },
+    "from": {},
+    "full_sha256": "0f860487f89571bc3e1a6f404d168377e753e4173e661eaee3af8e8dc4b8ce6d",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 10076,
+    "light_sha256": "f06c11cc91dd57a8d03eadaa47577d680bb98074eecfd7cbd82290dd56d0d6ad",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {
+      "/model/body/Looks/look_0": {
+        "by": "chequer_plate_deck",
+        "colour": [
+          0.3076,
+          0.2881,
+          0.2842
+        ],
+        "distance": 4.1
+      }
+    },
+    "source": "9baeb9b632748ffd0a6f0032fa731bc183bb64bcbf298dd2a1fb4f886554d405",
+    "triangles": 19999
+  }
 }

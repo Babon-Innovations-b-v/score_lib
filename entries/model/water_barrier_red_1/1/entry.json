@@ -30,6 +30,16 @@
       "bytes": 5190669,
       "role": "texture",
       "sha256": "69abef59a80a8d86259a19b3bb5aaf61ca3e097a40185f1c2481dc56d93c6956"
+    },
+    "web3d/full.glb": {
+      "bytes": 308532,
+      "role": "web3d",
+      "sha256": "493c62bd82abed986201eeb0af0cf9eb67b777d5de7723156d4fa3b5b0484148"
+    },
+    "web3d/light.glb": {
+      "bytes": 10412,
+      "role": "web3d",
+      "sha256": "05c91f9c4b369d5590fd7b5b89f058e08fe3a8fa926ae1cf3f8e7dd8cdbfd8bb"
     }
   },
   "id": "water_barrier_red_1",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 308532,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 1
+    },
+    "from": {},
+    "full_sha256": "493c62bd82abed986201eeb0af0cf9eb67b777d5de7723156d4fa3b5b0484148",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 10412,
+    "light_sha256": "05c91f9c4b369d5590fd7b5b89f058e08fe3a8fa926ae1cf3f8e7dd8cdbfd8bb",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "f5c0d391f9bcba9d6d030273009c27af89a6827b8962a645cc4f7d7efcd16f0b",
+    "triangles": 18999
+  }
 }

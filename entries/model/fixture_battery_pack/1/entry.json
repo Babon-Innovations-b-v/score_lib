@@ -15,6 +15,16 @@
       "bytes": 6751,
       "role": "picture",
       "sha256": "ae2106597667a446bffa4d4f8dfc3d9c6efa3cc3cdba238bd18e87a47b334409"
+    },
+    "web3d/full.glb": {
+      "bytes": 6576,
+      "role": "web3d",
+      "sha256": "cca4761a15609c8b0f480f53bd7f777312a4c03b4c432d74033a00cca767b6a2"
+    },
+    "web3d/light.glb": {
+      "bytes": 3676,
+      "role": "web3d",
+      "sha256": "7cd7388bf51615510863031ffe308020e56722b2b37cb0ce78ee0aed09b199ed"
     }
   },
   "id": "fixture_battery_pack",
@@ -74,5 +84,60 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 6576,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "replaced": 4
+    },
+    "from": {},
+    "full_sha256": "cca4761a15609c8b0f480f53bd7f777312a4c03b4c432d74033a00cca767b6a2",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 3676,
+    "light_sha256": "7cd7388bf51615510863031ffe308020e56722b2b37cb0ce78ee0aed09b199ed",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 4,
+    "replaced": {
+      "/model/body/Looks/look_0": {
+        "by": "painted_grey_light",
+        "colour": [
+          0.4,
+          0.4,
+          0.4
+        ],
+        "distance": 2.08
+      },
+      "/model/body/Looks/look_1": {
+        "by": "painted_grey_light",
+        "colour": [
+          0.4,
+          0.4,
+          0.4
+        ],
+        "distance": 2.08
+      },
+      "/model/body/Looks/look_2": {
+        "by": "painted_grey_light",
+        "colour": [
+          0.4,
+          0.4,
+          0.4
+        ],
+        "distance": 2.08
+      },
+      "/model/body/Looks/look_3": {
+        "by": "painted_grey_light",
+        "colour": [
+          0.4,
+          0.4,
+          0.4
+        ],
+        "distance": 2.08
+      }
+    },
+    "source": "c0d2ef24d6c913b3c3e2193924f0a43206db2088eaf206067e20cadb5ea9bc67",
+    "triangles": 416
+  }
 }

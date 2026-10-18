@@ -30,6 +30,16 @@
       "bytes": 1158286,
       "role": "texture",
       "sha256": "af6c8b6cc2c8289c29cee3deb7ff9cce48cf41a3333a79ab3ae8dd5643cc1168"
+    },
+    "web3d/full.glb": {
+      "bytes": 93440,
+      "role": "web3d",
+      "sha256": "61dac5e65ddc80da583447f4af4e715f2b8b40044733e5c07175b76ab3534b63"
+    },
+    "web3d/light.glb": {
+      "bytes": 5748,
+      "role": "web3d",
+      "sha256": "681f0b47a49490c8270a30fb25e3aabf789e9724517fed84adb922508eb54871"
     }
   },
   "id": "pressure_gauge_1",
@@ -98,5 +108,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 93440,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 3
+    },
+    "from": {},
+    "full_sha256": "61dac5e65ddc80da583447f4af4e715f2b8b40044733e5c07175b76ab3534b63",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 5748,
+    "light_sha256": "681f0b47a49490c8270a30fb25e3aabf789e9724517fed84adb922508eb54871",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "df40cfbc008551cf99926b0c9166b0c9ec5674690f371fa79d5bc71dd4d5e994",
+    "triangles": 4999
+  }
 }

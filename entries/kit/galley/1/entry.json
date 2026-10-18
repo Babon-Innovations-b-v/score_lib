@@ -50,6 +50,16 @@
       "bytes": 4132,
       "role": "record",
       "sha256": "7ccc1182597f3fc2643797b9e5f29fa57836fac9cc5af63e5055c39927bfd3fa"
+    },
+    "web3d/full.glb": {
+      "bytes": 1355820,
+      "role": "web3d",
+      "sha256": "b5342a8e4e8e7d31c4f47d1d23475087eca2dbfc0acfff2b068ac1ca0591f6f4"
+    },
+    "web3d/light.glb": {
+      "bytes": 200644,
+      "role": "web3d",
+      "sha256": "673552fe77065fd210cfd9764d3b5a09e1df66f70a9003c6bedb33e0f749a78f"
     }
   },
   "id": "galley",
@@ -133,5 +143,44 @@
   },
   "title": "Galley kit",
   "usd": null,
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 1355820,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 70
+    },
+    "from": {
+      "layer/base.galley@1": "0bdcdd1e21395a396327a948ebc0489c17c23dc06d57a1e26fd8e5c1cf08f0c5",
+      "model/ceiling_light_panel_1.galley@1": "620ad3f1025ca9276b1d9754da47e2656f0eff621f52f98abf777093a9c59b56",
+      "model/door_leaf_1.galley@1": "c53bd3edc87a2957b87f02697c8d069efa3bcd2063535eb062f890a5f3330fb7",
+      "model/edge_light_strip_1.galley@1": "b2f001831cbb2cba38d491ccaffe4b889e0307c49225f56590015c09745c3081",
+      "model/fold_down_seat_1@1": "a312e545b1c0225e658adf740152105ba4c33b9889d552474d24f8943dda87ed",
+      "model/galley_counter_1.galley@1": "e27e05ca2c16baeac07346fdeeb813a787381ba7d335e86266de5cf36a1a01fe",
+      "model/galley_table_1@1": "4bc83660bd0c0d5933a0bf06a4ecbe86babb82b1704c08c7076db51e9ed6cea1",
+      "model/hatch_door_frame_1@1": "68b67e382de0bd754d4ad4fa303787e89d20c5cc784a9392307333c157a2ff4c",
+      "model/locker_1@1": "3af11add013dc430b2d59c50da1e87b14877a2e30416d4d028b81f918ca6ecf7",
+      "model/overhead_vent_1@1": "4e725546b8168a4090f9c6c168dc1d66128aedf557e1c6379d39250e0be458a0",
+      "model/ring_floor_plate_1.galley@1": "99b6b6a4f0cf50680b0a1cbd6aa4e239c7d80607b3a75c3e4b4c11238444e990",
+      "model/roof_face_panel_1.galley@1": "e1473c56b7bfb7972659b705fbd77df1cac8f7c0b6948465f9ea4eb1ca8399ad",
+      "model/wall_lower_plain_1.galley@1": "f96be5f5795b7794fc36ca000f114317d2c726e6644798b24815e311e72681aa",
+      "model/wall_lower_plain_2.galley@1": "54d296497a72724daba3a422e5e183963dacee9d3e925533feb74886203699c1",
+      "model/wall_lower_plain_3.galley@1": "21a695dfdf271f02c0ae06f3cf315fdc25418fd511ec2a16e41ece24e34165ad",
+      "model/wall_screen_1@1": "db3909aa732a736dd2a663bbef24752a2af7c904a3e873ab1e173bb39587e854",
+      "model/wall_upper_plain_1.galley@1": "998a716b9a1d72a836e2805b9fa3bd2fd24b69882f610c60d6986828ffe3dcf8",
+      "model/wall_upper_plain_2.galley@1": "7df034bfd8f1f891a3eae322b5cdb15755907f845d29d1a6b32f6ab090082018",
+      "model/wall_upper_plain_3.galley@1": "c1dda6125bb2995007c0b2a909fdb9a044841e20048d435ac78162c2cbf64d05",
+      "model/wall_upper_plain_4.galley@1": "8e6dccd7b3f4eab4eef4d91bf07a9798f4452a40cfe823e51c1d2ff378f1a3c5"
+    },
+    "full_sha256": "b5342a8e4e8e7d31c4f47d1d23475087eca2dbfc0acfff2b068ac1ca0591f6f4",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 200644,
+    "light_sha256": "673552fe77065fd210cfd9764d3b5a09e1df66f70a9003c6bedb33e0f749a78f",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 70,
+    "replaced": {},
+    "source": "df4679cee6ded171de2a74d9644329519d9776881e2645b260ce38ba8f565e51",
+    "triangles": 44620
+  }
 }

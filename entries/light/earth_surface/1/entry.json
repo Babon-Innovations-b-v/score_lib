@@ -50,8 +50,77 @@
     "source_name": "assets/light/earth_surface.png",
     "world": "world1"
   },
+  "refine_options": [
+    {
+      "action": "re-pass the place's light",
+      "answers": [
+        "place light"
+      ],
+      "basket": true,
+      "cost": "paid",
+      "does": "one paid render per place gives every lamp its own light group, the free sweep mixes them again",
+      "price": {
+        "eur": 0.54,
+        "from": "paper/evidence/cloud/forecast-2026-10-15.txt:25 (ledger medians)",
+        "per": "place",
+        "projected_eur": 0.65
+      },
+      "suggested": false
+    },
+    {
+      "action": "redraw the sky picture larger",
+      "answers": [
+        "sky resolution",
+        "blown sky"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "the sky drawn again at more texels a degree (on this machine)",
+      "suggested": false
+    }
+  ],
   "requires": [],
   "schema": "score-lib-entry/1",
+  "score": 100,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "its picture's 4096 pixels round 360 degrees; 100 at 8.0, 50 at 4.0, 0 at 1.0 px/degree",
+      "measured": 11.38,
+      "name": "sky resolution",
+      "unit": "px/degree",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "share of its pixels at full white in every channel; 100 at 0.001, 50 at 0.01, 0 at 0.05 share",
+      "measured": 0.001,
+      "name": "blown sky",
+      "unit": "share",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "share of light@old_station's gates that pass (fail and unknown block alike): brightness pass: the place 0.116 -> 0.261 against its concept's 0.303 (x0.86, within x1.5); the lamps without a shaft at x1 of the seed's; earth pass: 2 views: smooth share of the lit disc 0.000 (<= 0.25; concept C4's 0.0); heads pass: no floodlight in this place; lamps pass: 0 lamps: 0 unlit or blown out, 0 light no view and stand in none (not judged); sky pass: no day sky in this place; sky elements pass: every element the record holds: {'earth': [True, True], 'sky_dome': [False, False], 'sun_disc': [True, True], 'shafts': ; stage_no_worse pass: no worse: {'old_station_placeholders': 0, 'old_station_made_only': 0}",
+      "measured": "7 of 7 pass",
+      "name": "place light (old_station)",
+      "unit": "",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "share of light@wreck's gates that pass (fail and unknown block alike): brightness pass: the place 0.177 -> 0.307 against its concept's 0.378 (x0.81, within x1.5); the lamps without a shaft at x32 of the seed'; earth pass: the Earth is on screen in no view; the layer's is NASA's surface; heads pass: no floodlight in this place; lamps pass: 1 lamps: 0 unlit or blown out, 0 light no view and stand in none (not judged); sky pass: no day sky in this place; sky elements pass: every element the record holds: {'earth': [True, True], 'sky_dome': [False, False], 'sun_disc': [True, True], 'shafts': ; stage_no_worse pass: no worse: {'wreck_placeholders': 0, 'wreck_made_only': 0}",
+      "measured": "7 of 7 pass",
+      "name": "place light (wreck)",
+      "unit": "",
+      "value": 100,
+      "weight": 1.0
+    }
+  ],
   "seen_in": [
     "old_station",
     "wreck"

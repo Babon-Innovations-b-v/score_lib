@@ -30,6 +30,16 @@
       "bytes": 4093772,
       "role": "texture",
       "sha256": "e9d9276df666793167524169cc6f4886c2eb4c760620304b98ee08b40c44dc43"
+    },
+    "web3d/full.glb": {
+      "bytes": 357852,
+      "role": "web3d",
+      "sha256": "da6e43a1a51739f36acd74747de86e3f005c53b977050f49aee6d383a0d524c3"
+    },
+    "web3d/light.glb": {
+      "bytes": 38992,
+      "role": "web3d",
+      "sha256": "8afb907883d6ac9bf9865ed1f3c0822d3811f4f05d5a8d6ceeec3a63692124b4"
     }
   },
   "id": "dome_ceiling_gore_3",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 357852,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "da6e43a1a51739f36acd74747de86e3f005c53b977050f49aee6d383a0d524c3",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 38992,
+    "light_sha256": "8afb907883d6ac9bf9865ed1f3c0822d3811f4f05d5a8d6ceeec3a63692124b4",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "69f9b24ac2c083092cd3ba1a89e4ef83e1ed6ae964ea5f9af0cfdd7dc0ec2343",
+    "triangles": 300
+  }
 }

@@ -30,6 +30,16 @@
       "bytes": 1619902,
       "role": "texture",
       "sha256": "3d32151062e423247af330d993543690edadd538c930e3a487163e4871462aff"
+    },
+    "web3d/full.glb": {
+      "bytes": 230812,
+      "role": "web3d",
+      "sha256": "de31ad1bccbfe8d70a22bd9ac5629bef354a93ef24676d3f6ce5a7cc153b2d12"
+    },
+    "web3d/light.glb": {
+      "bytes": 28216,
+      "role": "web3d",
+      "sha256": "f09b21783b71ad1eba48b577c57f8e8bb0376b081bda580d8cff5d989587b0b4"
     }
   },
   "id": "bay_balcony_rail_2",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 230812,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "de31ad1bccbfe8d70a22bd9ac5629bef354a93ef24676d3f6ce5a7cc153b2d12",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 28216,
+    "light_sha256": "f09b21783b71ad1eba48b577c57f8e8bb0376b081bda580d8cff5d989587b0b4",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "21dc47f463165480f6c2ee503157a605e4b37da84f43c3e74449c7627adc867f",
+    "triangles": 456
+  }
 }

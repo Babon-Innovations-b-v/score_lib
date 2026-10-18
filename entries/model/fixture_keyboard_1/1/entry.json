@@ -20,6 +20,16 @@
       "bytes": 1352167,
       "role": "texture",
       "sha256": "861ed46df36c4e3804678eccd26fec08bf23a1a0626435622c9c3311d8716d64"
+    },
+    "web3d/full.glb": {
+      "bytes": 11244,
+      "role": "web3d",
+      "sha256": "6b0e89013ffb65cbfafd131a1306b19423e3d210784d17b8daacba1bb42968f8"
+    },
+    "web3d/light.glb": {
+      "bytes": 2460,
+      "role": "web3d",
+      "sha256": "036dee4fd0db3f2836e18213b6216c96419c6e041c78351c125b017a64267de7"
     }
   },
   "id": "fixture_keyboard_1",
@@ -79,5 +89,33 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 11244,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "replaced": 1
+    },
+    "from": {},
+    "full_sha256": "6b0e89013ffb65cbfafd131a1306b19423e3d210784d17b8daacba1bb42968f8",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 2460,
+    "light_sha256": "036dee4fd0db3f2836e18213b6216c96419c6e041c78351c125b017a64267de7",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {
+      "/model/body/Looks/look_0": {
+        "by": "stair_terrazzo",
+        "colour": [
+          0.2235,
+          0.1964,
+          0.1577
+        ],
+        "distance": 2.78
+      }
+    },
+    "source": "6ad5d1f90949b9230292fe450a8bad37f511fb28f46f15e1d7341d7e1b7627c7",
+    "triangles": 1048
+  }
 }

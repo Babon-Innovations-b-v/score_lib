@@ -20,6 +20,16 @@
       "bytes": 18922541,
       "role": "texture",
       "sha256": "f1fe9f9ab214a59288ba60a0a1295213af04fba01bcc5b4c283beafc195ebc23"
+    },
+    "web3d/full.glb": {
+      "bytes": 1155408,
+      "role": "web3d",
+      "sha256": "c11caf62640e2bae7b5ce26cc48074b9eba7efe7441ecd83180974edbae0d100"
+    },
+    "web3d/light.glb": {
+      "bytes": 74276,
+      "role": "web3d",
+      "sha256": "98bd6c089ed6225f6943749c98fba2d12724df68ffb96c2a1d5f07111d029ee7"
     }
   },
   "id": "fixture_moon_boulder_rounded",
@@ -86,5 +96,33 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 1155408,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "replaced": 1
+    },
+    "from": {},
+    "full_sha256": "c11caf62640e2bae7b5ce26cc48074b9eba7efe7441ecd83180974edbae0d100",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 74276,
+    "light_sha256": "98bd6c089ed6225f6943749c98fba2d12724df68ffb96c2a1d5f07111d029ee7",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {
+      "/model/body/Looks/look_0": {
+        "by": "concrete_dark",
+        "colour": [
+          0.1427,
+          0.118,
+          0.0994
+        ],
+        "distance": 3.89
+      }
+    },
+    "source": "989ea4ffb561150e8e1532c87558fddf3a066d4a0881e3f80c6977d39e062682",
+    "triangles": 188010
+  }
 }

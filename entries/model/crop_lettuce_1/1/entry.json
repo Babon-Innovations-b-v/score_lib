@@ -30,6 +30,16 @@
       "bytes": 461158,
       "role": "texture",
       "sha256": "9a54b2a0540f1b97ab291f5fd4dca30bfb290a5f81060252f8d65c8844617233"
+    },
+    "web3d/full.glb": {
+      "bytes": 114176,
+      "role": "web3d",
+      "sha256": "5038e75839d8ead29d7ee120345d7b916bde4166ce91774401fd1c8b72225f6e"
+    },
+    "web3d/light.glb": {
+      "bytes": 5196,
+      "role": "web3d",
+      "sha256": "e226080631905a0a937ef4e1b136250db6576dbe1a90b1d77a6202d263869f62"
     }
   },
   "id": "crop_lettuce_1",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 114176,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 1
+    },
+    "from": {},
+    "full_sha256": "5038e75839d8ead29d7ee120345d7b916bde4166ce91774401fd1c8b72225f6e",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 5196,
+    "light_sha256": "e226080631905a0a937ef4e1b136250db6576dbe1a90b1d77a6202d263869f62",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "9718cd77f9e151983b8fb589924d8ca009021d530398582ceb35f03fc596e421",
+    "triangles": 5912
+  }
 }

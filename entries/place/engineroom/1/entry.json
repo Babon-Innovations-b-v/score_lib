@@ -45,6 +45,16 @@
       "bytes": 2122,
       "role": "record",
       "sha256": "a4d3bc909df04d3805df4c575d08810444592dd3b3f4890f5df4dd92cb6b6d7a"
+    },
+    "web3d/full.glb": {
+      "bytes": 6216280,
+      "role": "web3d",
+      "sha256": "cb8d3248ed4f6b1f9956fca68e006a58787d4b4549456c86ad6d8d505b92276d"
+    },
+    "web3d/light.glb": {
+      "bytes": 528296,
+      "role": "web3d",
+      "sha256": "7442a3816f4888ff4dcd83e4d380343f3d1d37fcc2f8e22b6fadd112a9930b04"
     }
   },
   "id": "engineroom",
@@ -143,5 +153,71 @@
     "up_axis": "Y",
     "use": "open"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 6216280,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 54,
+      "library bake": 106
+    },
+    "from": {
+      "layer/base.engineroom@1": "1e57555e9c976d04208e9b5edf109f2c111abbdc1b561a7ba358ebcb983d6fc6",
+      "layer/light.engineroom@1": "ad7dbcd75a5029b0c6c9e2ebaa6c2c35cfa5e4b6cc362d4e7a834833881a0d5e",
+      "layer/sound.engineroom@1": "3035226f91047bbf1b028d71d54cdecde6b61a4fa73eae1aa85573d588f30f42",
+      "model/ceiling_equipment_1@1": "b9be17d272ee885b092b371038572c9b6f5a54403009ab8c8cfa9d2b724d08d1",
+      "model/ceiling_light_panel_1.engineroom@1": "c55345314c9383cb07b1ad3b6e9023e8470576d3885ba4f2605f36f8da657b1f",
+      "model/corner_lamp_1@1": "d447de5852b3e2bcd56e0b1ee8c3e1cc3b166870a7825d88756b0e97c4886757",
+      "model/door_leaf_1.engineroom@1": "6e82a024cb001f5e13ee7de918ddd42dc7b5e7c19c89398851cafa08ffa0450b",
+      "model/edge_light_strip_1.engineroom@1": "1956b02015715fd3b2bdc1cc4fc4aaad385ee864580933e63d58f99faf499351",
+      "model/fuel_tank_1@1": "53983f73d0069254ea73cd21c09e94accbd426c48c8690a2c2b8a1548e8477f1",
+      "model/hatch_door_frame_1@1": "68b67e382de0bd754d4ad4fa303787e89d20c5cc784a9392307333c157a2ff4c",
+      "model/junction_box_1.engineroom@1": "cb5eb13caf565a8d5acd6a3984ed2e79c87644274af2ae688e932fb9b70ec4b4",
+      "model/overhead_vent_1@1": "4e725546b8168a4090f9c6c168dc1d66128aedf557e1c6379d39250e0be458a0",
+      "model/pipe_straight_1.engineroom@1": "e8d9608757ec34555e34714d1a58cc5fbde356e180136c1279ce5a1eacc3de34",
+      "model/pit_wall_panel_1.engineroom@1": "9ba2263e0382e9214881c4e7f688d22d1172e442680e115e7d2011f26514c3c8",
+      "model/power_core_1@1": "154ff35554927a86b5c6239b1efce148b9c5b25d1ec86b9c6cf2212c711e16be",
+      "model/ring_floor_plate_1.engineroom@1": "9272ced1b21405b51366e9e7fa0a68be24029cc1e854acc3692a34e4c6bc528d",
+      "model/ring_floor_plate_2.engineroom@1": "307b3d555a9795354aa94c5276b186aa223675ea3a188d18cce4ea837ae667e8",
+      "model/ring_floor_plate_3.engineroom@1": "ec8e3269a5da2fee050cb2ae7c80c643a976a4723137d64d856d8d1a6ba58ede",
+      "model/ring_floor_plate_4.engineroom@1": "b4022e4bbb6c8aca42e1c078ba0e85ab3894454808f6382d3b39fe37a2a56e9c",
+      "model/ring_floor_plate_5.engineroom@1": "15c7f0dc77746fe0bf6ed56bdad4a8ad6c4aa6aecbc56d6443bf6481ea2bd5ad",
+      "model/roof_face_panel_1.engineroom@1": "ba9958d53c88907e96cba1252772a0b22d0323bca9c64e3cd89d0db6a70d763b",
+      "model/roof_face_panel_2.engineroom@1": "2c00e8e9ccd1cf69eaad65176eddc7750ac90bcded14f079cf331b671bed9093",
+      "model/roof_face_panel_3.engineroom@1": "093f280bcce5369be71d4977b53dd9aeaa6ec978c8f93b342f48bd35cdf96615",
+      "model/roof_face_panel_4.engineroom@1": "333eaf63b022b5705db2babf50237af0716b68163e2aa38d0e0d9a5faacf242b",
+      "model/side_console_1@1": "4c1280aeb0dd59457c7ad156efe19b506be28962f4725c17001438b1c3ed4640",
+      "model/toolbox_1@1": "fd5ed9e89b12defbe6865f242b62ee2acc9cdc6879397dfe05d3ed44a2ef1547",
+      "model/wall_lower_plain_1.engineroom@1": "2846010783ade41ec1e25715389735acc1bb3fcb895d1a9ea5957bdd3453061f",
+      "model/wall_lower_plain_2.engineroom@1": "780ec041db4a942add98c12315fd0b58c3f9fb6b6e827427c8efa7fcc29032f4",
+      "model/wall_lower_plain_3.engineroom@1": "39f6557b705459c103646c9de3d092dc62172199dc361512f3525c075c1ccc14",
+      "model/wall_screen_1@1": "db3909aa732a736dd2a663bbef24752a2af7c904a3e873ab1e173bb39587e854",
+      "model/wall_upper_plain_1.engineroom@1": "2ba23078305e9af565bb4cd40ae4c6d537245aea3c6995c5364ab8cd3283a8a8",
+      "model/wall_upper_plain_2.engineroom@1": "44a398fb53f442c778106a25bc63dc8b5d2bc27d907e1246a23672157ff63e7a",
+      "model/wall_upper_plain_3.engineroom@1": "c0abeba11b269e8e3f55a4670dc4b381d03853dc7cfa35a2b6e68dda0e987785",
+      "model/wall_upper_plain_4.engineroom@1": "23678c9d9631c294d31d2a41d4bbd6f4f45aa5c3b07d16d3215fd7745b7348e8",
+      "sound/footstep_grating@1": "2e9201625477f7e8d36299bc61c38abb6b4418b2a03bf22bb57666e6ceb1d667",
+      "sound/footstep_rubber@1": "f110deb95dafb14db206c2aab1e8dae52f44c542cb4ce4365cb895a5d7f6c0e0",
+      "sound/footsteps_metal.engineroom@1": "45f446ee15ef07496168834688d8045e575af78ef8349c1bc4c342f3b96c2b13",
+      "sound/impact_grating@1": "58c4dbc50eca1e6d43d07134b7bbf4f98181c9d282cefedfd0b26eca46810801",
+      "sound/impact_rubber@1": "5b5d22820be488ea0bd782a5b929831755592af869fd64613d965c4699aaa31d",
+      "sound/impact_steel_plate@1": "db0c0c8fe92925b1df1f351b362952d83485d7e38785ff3526992c8ec28f1bde",
+      "sound/scrape_grating@1": "5f05414f0ee5496a8a5a6624b58189015c7da1b29c404ba0b3c27a94bdc872a1",
+      "sound/scrape_rubber@1": "09b537a83a4b28bdd94dc689184e387ea6b9a6ca5a25554d9f79ba674d4e28e3",
+      "sound/scrape_steel_plate@1": "e9c593cf26cb61fdab2c718e9af18afab2b1066cfffcf4ab72367d5447ec29d7",
+      "sound/ship_inside@1": "98979673df5b78bddcf419d5c0cc6d09847f5bd223709c921958279a1e88218d"
+    },
+    "full_sha256": "cb8d3248ed4f6b1f9956fca68e006a58787d4b4549456c86ad6d8d505b92276d",
+    "left_out": {
+      "sky (a light entry's prims)": 1
+    },
+    "light": "web3d/light.glb",
+    "light_bytes": 528296,
+    "light_sha256": "7442a3816f4888ff4dcd83e4d380343f3d1d37fcc2f8e22b6fadd112a9930b04",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 123,
+    "replaced": {},
+    "source": "27c453f074dc30d5baa91fdb007112df70fe148a1b9326f85b09d648dcb7abc4",
+    "triangles": 285024
+  }
 }

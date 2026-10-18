@@ -35,6 +35,16 @@
       "bytes": 5262602,
       "role": "texture",
       "sha256": "d6955e38b7def55a9f603efc089612c6a91cce810d96b0c656501648cce82723"
+    },
+    "web3d/full.glb": {
+      "bytes": 312108,
+      "role": "web3d",
+      "sha256": "f6b4ba48bc5ff873c2892c0c56da3eb8a501211fe78d9a21477664a246a9d62f"
+    },
+    "web3d/light.glb": {
+      "bytes": 42320,
+      "role": "web3d",
+      "sha256": "e528835f431b1223824f3f49465e05bacfa6b4ed18f12bc5ceb858ef959c5c7c"
     }
   },
   "id": "soldering_station_1",
@@ -96,5 +106,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 312108,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 2
+    },
+    "from": {},
+    "full_sha256": "f6b4ba48bc5ff873c2892c0c56da3eb8a501211fe78d9a21477664a246a9d62f",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 42320,
+    "light_sha256": "e528835f431b1223824f3f49465e05bacfa6b4ed18f12bc5ceb858ef959c5c7c",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 2,
+    "replaced": {},
+    "source": "fb1531c9a19b54f58752ddc7bc274b4732e9f638b910adbf4a4e692273d24cf8",
+    "triangles": 3964
+  }
 }

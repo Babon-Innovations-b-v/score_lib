@@ -10,6 +10,16 @@
       "bytes": 57781,
       "role": "picture",
       "sha256": "a0cb6cde414d88062d27af7d47abb68eb3ccbc537dc26cca369fec8e4e69279a"
+    },
+    "web3d/full.glb": {
+      "bytes": 15999072,
+      "role": "web3d",
+      "sha256": "2240c5bdee6ccdb5aecf59402d7a888a27da054babb124392eb7da7e8abe14ad"
+    },
+    "web3d/light.glb": {
+      "bytes": 2090360,
+      "role": "web3d",
+      "sha256": "911ca23e18341f3094d86273f2dcad56c84c1fc3006ce411623b54fc663d5b48"
     }
   },
   "id": "hub",
@@ -44,6 +54,21 @@
     "model/desklamp_1.greenhouse@1",
     "model/door_control_box_1.hub@1",
     "model/door_strip_lamp_1.hub@1",
+    "model/fixture_comms_1@1",
+    "model/fixture_console_1@1",
+    "model/fixture_console_screen_1@1",
+    "model/fixture_glovebox_1@1",
+    "model/fixture_keyboard_1@1",
+    "model/fixture_labbench_1@1",
+    "model/fixture_monitor_1.hub@1",
+    "model/fixture_monitor_2@1",
+    "model/fixture_monitor_3@1",
+    "model/fixture_rack_1@1",
+    "model/fixture_radio_1.hub@1",
+    "model/fixture_screwdriver_1@1",
+    "model/fixture_status_lamp_1@1",
+    "model/fixture_talllocker_1@1",
+    "model/fixture_toolboard_1@1",
     "model/floor_access_hatch_1@1",
     "model/floor_grating_1.hub@1",
     "model/floor_grating_2@1",
@@ -134,5 +159,342 @@
   },
   "title": "Hub kit",
   "usd": null,
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 15999072,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 46,
+      "library bake": 452,
+      "replaced": 24
+    },
+    "from": {
+      "layer/base.hub@1": "1c548591a89f0535672e5bd8fc8e28cb3a8561852308c4d363a9a61044b4dfea",
+      "model/cable_bundle_1.hub@1": "29558e95602e2673e3fab6ca715a1ecdb6c83b20957f38904739c1ab08035795",
+      "model/cable_drop_1.hub@1": "3a9fe67e8ab34e38348c60298179a5cf5e7d4509822f28c44aa2da8fd51d0110",
+      "model/ceiling_cable_tray_1@1": "7784dcc3c4f2da7e105518892359a9a188a3c7c915f515ade37ae74d6b9ad568",
+      "model/ceiling_duct_1@1": "6993f84ddc2c442b942f69a2a0c459bcb11a99d5c1f6e294d32d28127aec391f",
+      "model/chair_1@1": "0fd66978c4464bc81d399e2744da76672fb32ef53896c73ba9260b473c491bc7",
+      "model/conduit_box_1.hub@1": "60a2c75f885e1223b4954ea29249959488a8f2d25b280ca46439b4a53b4f94df",
+      "model/desklamp_1.greenhouse@1": "543a632f309c7c8789be648cc3bc57d6f62612ca584b03cb81c1a3338f90a0ab",
+      "model/door_control_box_1.hub@1": "bd120305d99ce75cbfc8d1ed3770828c55af35472f7a50537b347b53b3587b04",
+      "model/door_strip_lamp_1.hub@1": "d60a28f0cc8ae21cdc492848a035e9a7af93344f54f70e9fec984af259659126",
+      "model/fixture_comms_1@1": "2729d7124d22f66b3d2c2ebca3a5e64b9229064c7a53d50bf82044555b479fae",
+      "model/fixture_console_1@1": "7a26045bd0c38570050634fe76412328cb8ab2c6aa286ca80e5fb8dd1dfee18b",
+      "model/fixture_glovebox_1@1": "1d1f8a9345edd2221250dcbd09e34015b5cd1d55e6ae015ade90b8cc87aa9ea2",
+      "model/fixture_keyboard_1@1": "6ad5d1f90949b9230292fe450a8bad37f511fb28f46f15e1d7341d7e1b7627c7",
+      "model/fixture_labbench_1@1": "d5e40b922c162a41ca8a9cff519fb6b00b0fa7c049d1059ba417287f215f98c0",
+      "model/fixture_monitor_1.hub@1": "2ebaa12769bfcde63042d8f5f3481ed26972d920caa252b2294d7a6f4f8f9f42",
+      "model/fixture_monitor_2@1": "73c69ad299f5f6afdcf64507da7decd61dab01b90249e78020ae9eb7ad1e2934",
+      "model/fixture_monitor_3@1": "e236dfb46dffa998d8e1240cbd40dc13dbdfb5f51d5d99a7428ce772011902e1",
+      "model/fixture_rack_1@1": "8ed6123e07545180306983af4f5749eab82801382ac222bd7ce0ec14bb8c7692",
+      "model/fixture_radio_1.hub@1": "e8d8f02ec50c09f0599bf0be90d445509bfc4f33dc547d1a206f1738a781eff2",
+      "model/fixture_screwdriver_1@1": "1fb2e1659edd6f470bb6628346150e4a2012f49bd825a8a3159698a3a8f9123d",
+      "model/fixture_talllocker_1@1": "6f7fcd88d64964bbabfd9344517bf713b54efaf5735b6c796d0a08396ff20ede",
+      "model/fixture_toolboard_1@1": "1b55d307a66d54416f1ca4bedfa169b0abcdf17c0f771ee39366d022f727b850",
+      "model/floor_access_hatch_1@1": "38ca1fea3f5d47188b9c3a72760ab74320e99f34b034cbc0a7d1e6af152d0542",
+      "model/floor_grating_1.hub@1": "d525153a99d5114da4df733f48bab5ce8f2bf53abc366a8bc16e341b689706bb",
+      "model/floor_grating_2@1": "1a3f1ba79890fa9a6d18a1880f25fcc6f0f77d29c31b6f1b6ce86fc1f7fbe34d",
+      "model/grab_bar_1.hub@1": "1147583de1321812d8930d94a6bef2280b139263f1e6c571cc895eab65b14c6a",
+      "model/hammer_1@1": "b71dd5fe3c293d96bb74fc87bac94cecf121fd1030f7010072c3fb6f89771814",
+      "model/hatch_frame_1.hub@1": "39fa9c5195810cac5ecd65a458aaabef0464dd441ac49aa4622d19e5462c879d",
+      "model/hatch_hinge_1.hub@1": "2176ca0e0dfa2c2bd7e72ebfa825c3b9c9c5723aed97388ee23c854098dbb821",
+      "model/hatch_leaf_1.hub@1": "dc2e41dfbb6e4bbdcac9fccbee8ed89a2c88e8093a3626e05679b33fc878c61d",
+      "model/hatch_wall_surround_1@1": "6fdc2f0836d11bbcea5b81efc1b013d92fd73b1059cc3f009b902e5e3983e724",
+      "model/hatch_wall_surround_2@1": "84016acf2e3152f0aef191effdd52fc7146f2f4f825673d3ec15f473a069b678",
+      "model/hatch_wall_surround_3@1": "8fd61bde187c561b37dddfd44ec3f8bbeac157a16038c8348371fa7601320ff1",
+      "model/hatch_wall_surround_4@1": "3cc6b56100d5e5c41261ba5c6dcc327765f6d148415cb42c044318cb78e1bbce",
+      "model/hatch_wall_surround_5@1": "fa7d7c0ddc99d5ab1e444be95c22948dd4c0d76cd7b87bdab79d82e4c5b6648e",
+      "model/hatch_wheel_1.hub@1": "455bc17c10b38b3b34febe72bd4a956315ab6ebf4fffd7941a405a04d3fb85b8",
+      "model/hatch_window_1.hub@1": "920e49719d58c57728dbdc83843a1de3f8f8e40c40b76384d05836c01bc863e0",
+      "model/headset_1@1": "4bbd3b1c252a0c548002d334967dc4267fab214a6411460084ee609bbc2b5aea",
+      "model/intercom_panel_1.hub@1": "57763e033d3bfb59d425ec7eb0be53821fd6aa6ee28739d05ce019366e6f0ffd",
+      "model/lattice_diamond_strut_1@1": "265e7e4b56b6fe24eab6cb81e027e718e6fa61d2f59f16d17483704ae4227cd0",
+      "model/lattice_hip_rib_1.hub@1": "ced8933b158f77b26db8d4611e6321a16cf41d9009b7207113bb5fff8d8b95cb",
+      "model/lattice_node_plate_1.hub@1": "b870c9c2b28e8a95b48f73186260ac13e5f0bd6d666efbf49e7163878c46efb1",
+      "model/lattice_ring_rib_1.hub@1": "c45488ddc4e311f4e37000816401ff0b4b9edca5ea45996dfc4201bc0708f2e2",
+      "model/lattice_ring_rib_2.hub@1": "f9496f087437c81abdc3e6f0cab618876384167efa2f024295f73bc4b3d2752b",
+      "model/lattice_ring_rib_3.hub@1": "f8a0d82110c9593bf120087c3cd26443bfe150876b2623f1a2209b2b8760a5ff",
+      "model/machine_bay_plate_1.hub@1": "c55d27b5942c67ff26dcede77cfa3419a2d379aee97029cff63f8f8fd60789fa",
+      "model/microscope_1.hub@1": "41edda60a97c9c79b3a25ebc84989945f4826b8397f7ac4b333008110c309972",
+      "model/notice_board_1.hub@1": "9bd60f2b8bc22b9b24f74acb9cdbcf4ad2971a57eb39da780d288279d0df11d9",
+      "model/pipe_bracket_1.hub@1": "9147642b5d0c9df3103f64e4e30072e9eec1a3a07346f5a2ff33207e2b02a448",
+      "model/pipe_elbow_1@1": "1f4c50d5bf31e869d0d8e4758fd20750bd85260b5fdb43cfc897ed7aa9fef1fd",
+      "model/pipe_straight_1.hub@1": "37b6b5bb6f5b992605245801b7f6fb0e62463e7547081b292851dce2952b15a4",
+      "model/pipe_straight_2.hub@1": "e7fdb57da3fb80bbfeb259c2a4a549c617a00c96d34e808c2b89b586c1c2a972",
+      "model/pipe_valve_1.hub@1": "1e05dd9c2ae27455d4bbb241268c0c7e78ec683e0dad7050bcd7d3cadc77a059",
+      "model/pit_floor_plate_1@1": "3f5c9eead829c9f615176914203aec2ddc49079488537482e4c361282b5a57d2",
+      "model/pit_floor_plate_2@1": "2b7db752184a0697a9375467d41d21230e88403fb6fff14a57ecf267ee0932b9",
+      "model/pit_junction_box_1@1": "cb8be4d6e127a7a8071807ca91fc64d745419905f58185c7fde809189cc6c825",
+      "model/pit_wall_panel_1.hub@1": "8d8d1934ff54a0d92736ec3df67ebeb1caf928060a8019d6b6b0e551f014705a",
+      "model/pliers_1@1": "7f66323b62178783ea442009184c7f9ec16cc7f2355532357b5db3ef9f6f85b7",
+      "model/porthole_panel_1@1": "95b9042a9f456b228099e9753f7f43f60393a816c7da4d24276c5113799a1da4",
+      "model/pump_pliers_1@1": "884857dc0dd3b38f1227c2e3e65e6bdc14a4a3bc5d39937d6362c7060347a6d5",
+      "model/ring_floor_plate_1.hub@1": "2703d7be7a1e772203e3bb097a903f619fb1011a2c7a052d86fe5c41fcb64b17",
+      "model/ring_floor_plate_2.hub@1": "9c13e79f7843a9554a9ab0414e3772b78b94daa178a8ba3e102bba24ed2a549c",
+      "model/ring_floor_plate_3.hub@1": "f75a9a9954397ab493926a14e9228396d73337f05d996406ebb4e10662adc46e",
+      "model/ring_floor_plate_4.hub@1": "264dcf32d956795322e0bb954a91dff2d6cfb213d8d642d7376a544b005d56b4",
+      "model/ring_floor_plate_5.hub@1": "9bbfac672198040c1b5d37fec2000afc3ffc2acaa66a6448062bdd6fc956de1a",
+      "model/ring_floor_plate_6.hub@1": "07cf0e8b28681dffe76a7f8d45084e7768c651ffd5ee30f8fbeb40da4daf1517",
+      "model/roof_apex_hub_1@1": "9b54c82ed1f15109ae9915ea7697d3f49ef1a727db09d4b9417eb5d9420aa31f",
+      "model/roof_face_panel_1.hub@1": "b50b3d0d23921877fa9c8d3509557fe482ec74b42a85674ea7755eec45357307",
+      "model/roof_light_fixture_1.hub@1": "b2777752e55fe4a3dfd29b0a64f702c405e63fb3a57ecc50dd6f5cde6924deb8",
+      "model/small_readout_1.hub@1": "678fe2b61daca659ee65d8a695a2b33fd2514c78f5fefb214cab7f7cb2119105",
+      "model/stair_stringer_1@1": "6bed37c6523ed6a12ae143babeb9256828dff3b2e59b46557f6b8e06779fd311",
+      "model/status_display_1.hub@1": "ffa64914800c399d58f0133436eba4b84cc9bab48ec8aec41ea642d2c4c50023",
+      "model/telephone_1@1": "a6c026816c598457584e251d7344ff03993eef2eae2e688ab61a88f8e435758d",
+      "model/tread_mat_1.hub@1": "b1cb20b2ea868b01513f32331b935f17541da611c3345f27aba71e78c89ece4d",
+      "model/under_floor_box_1.hub@1": "f605dd95ba6dd0bfa820df49f3024148992adb6b9c6b781f11fa24d1cfe836fe",
+      "model/under_floor_box_2@1": "2773197d89db40a28d3fbd79e2bab92f3bbe0edbc7681f93d27e1581b8bbad21",
+      "model/wall_cage_lamp_1.hub@1": "37eda33c0e32a6d20f7155a098e18f98da20c3524b61f66fb43d7abba2c4c472",
+      "model/wall_corner_post_1.hub@1": "27170d1eb1f6db41653675eccc7d00c9568aed53c955a134260b3dca10b9468f",
+      "model/wall_cornice_1.hub@1": "14635c6c5432be4676385597afaa6e8da428d3e5e9a0ceea6bafd3f442bd1349",
+      "model/wall_lower_patched_1.hub@1": "bb90f1a2e18c583ce9a7961ba63cb66cfff569bdee05d1525602b595d2d40925",
+      "model/wall_lower_plain_1.hub@1": "f00be09ea06426fb60a91ab8cb19c0e9897e368f41e5cfa249ede6e406d0f401",
+      "model/wall_lower_plain_2.hub@1": "c8bdc59fddcc7e8c457e750880f6b4558948860d48fb6874cf66955806ae9451",
+      "model/wall_lower_vent_1.hub@1": "ef11c32bdf3e3897ae3e241c6e47e6c44621d9d73dcdfa5630d755f91cc16e63",
+      "model/wall_screen_cluster_1.hub@1": "f72d7620087d29488c13652ba4fcca7155bf46df76884951cb211f4037d25ec7",
+      "model/wall_skirting_1.hub@1": "a7ca6b71e900c8bca520c9c1136fda956934e100f50b3bfd61df8adeef43e9f1",
+      "model/wall_upper_cables_1.hub@1": "2bf93d5dcdf134af9f4b7ae2a1e45361829104b044a9daf182a1fc729ddc2d51",
+      "model/wall_upper_patched_1.hub@1": "339238bfa559907eba1f10a26151ba6f64363fed3de9201b387c653299c54e87",
+      "model/wall_upper_pipes_1.hub@1": "2930fe0bf2366ccd582e87b7ada661f5cd890ede76b7e04f2b2cab589e7ad3ec",
+      "model/wall_upper_plain_1.hub@1": "409b06edab0944259550f29205c630804923adeb2698d7daf911911b9427c2fb",
+      "model/wall_upper_plain_2.hub@1": "d42fad07e35c985de40ecbcb042aaf060d3d060b8207e6c905c881018e173f2c",
+      "model/wall_upper_plain_3.hub@1": "c69d50988ff907e23e34ab5e1bae66a2684c51e2ae6efd041db6dac3e2798331",
+      "model/wall_upper_plain_4.hub@1": "3e620b503123824b88b98cccadc198d600144b4955f57611984cc67f43529e16",
+      "model/wall_upper_screen_recess_1@1": "964f864ca334b7b32cd92970014b86a706d7357e1ec9e68ee7d4f246a6508fc3",
+      "model/waste_bin_1.hub@1": "ab7e5cb766c03ff2ef4b7cf6b8c1c1bdd794bd6bb04ae905601f3123ee93a76a",
+      "model/wrench_1@1": "7cf3b5c8e0b1279822810a26404eaf47044c73738c93b36f9b3cd2070a2700b2",
+      "model/wrench_2@1": "57d06bc6d1f0f6d5ce8b54f256b64517ddfeb1734d702237500b91a01d0d49e5",
+      "model/wrench_3@1": "71d81623109c4c951f0fae4588d29567c586169d1c99f54d9b6aa33e56ab215d",
+      "model/wrench_4@1": "91cc9554f5f3aa5972b23c81b0e8ff3920a7395dbfb4b2cc4239c8a5fa9a4ac0"
+    },
+    "full_sha256": "2240c5bdee6ccdb5aecf59402d7a888a27da054babb124392eb7da7e8abe14ad",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 2090360,
+    "light_sha256": "911ca23e18341f3094d86273f2dcad56c84c1fc3006ce411623b54fc663d5b48",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 502,
+    "replaced": {
+      "/hub/Fixtures/comms_1/Looks/look_0": {
+        "by": "painted_grey_light",
+        "colour": [
+          0.3492,
+          0.3682,
+          0.3755
+        ],
+        "distance": 1.9
+      },
+      "/hub/Fixtures/comms_1/radio_1_1/Looks/look_0": {
+        "by": "cable_grey",
+        "colour": [
+          0.1309,
+          0.1409,
+          0.1522
+        ],
+        "distance": 2.31
+      },
+      "/hub/Fixtures/comms_1/radio_1_2/Looks/look_0": {
+        "by": "cable_grey",
+        "colour": [
+          0.1309,
+          0.1409,
+          0.1522
+        ],
+        "distance": 2.31
+      },
+      "/hub/Fixtures/console_1/Looks/look_0": {
+        "by": "wool_grey",
+        "colour": [
+          0.164,
+          0.1747,
+          0.1844
+        ],
+        "distance": 3.05
+      },
+      "/hub/Fixtures/console_1/keyboard_1_8/Looks/look_0": {
+        "by": "stair_terrazzo",
+        "colour": [
+          0.2235,
+          0.1964,
+          0.1577
+        ],
+        "distance": 2.78
+      },
+      "/hub/Fixtures/console_1/keyboard_1_9/Looks/look_0": {
+        "by": "stair_terrazzo",
+        "colour": [
+          0.2235,
+          0.1964,
+          0.1577
+        ],
+        "distance": 2.78
+      },
+      "/hub/Fixtures/console_1/monitor_1_1/Looks/look_0": {
+        "by": "anodized_black",
+        "colour": [
+          0.0037,
+          0.0034,
+          0.003
+        ],
+        "distance": 0.62
+      },
+      "/hub/Fixtures/console_1/monitor_1_2/Looks/look_0": {
+        "by": "anodized_black",
+        "colour": [
+          0.0037,
+          0.0034,
+          0.003
+        ],
+        "distance": 0.62
+      },
+      "/hub/Fixtures/console_1/monitor_1_3/Looks/look_0": {
+        "by": "anodized_black",
+        "colour": [
+          0.0037,
+          0.0034,
+          0.003
+        ],
+        "distance": 0.62
+      },
+      "/hub/Fixtures/console_1/monitor_2_4/Looks/look_0": {
+        "by": "anodized_black",
+        "colour": [
+          0.0037,
+          0.0034,
+          0.003
+        ],
+        "distance": 0.64
+      },
+      "/hub/Fixtures/console_1/monitor_2_glow_5/Looks/look_0": {
+        "by": "screen_glow_green_dim",
+        "colour": [
+          0.0186,
+          0.0309,
+          0.0427
+        ],
+        "distance": 34.97
+      },
+      "/hub/Fixtures/console_1/monitor_3_6/Looks/look_0": {
+        "by": "anodized_black",
+        "colour": [
+          0.0046,
+          0.0042,
+          0.0037
+        ],
+        "distance": 1.33
+      },
+      "/hub/Fixtures/console_1/monitor_3_glow_7/Looks/look_0": {
+        "by": "screen_glow_green_dim",
+        "colour": [
+          0.0032,
+          0.0026,
+          0.0022
+        ],
+        "distance": 49.76
+      },
+      "/hub/Fixtures/labbench_1/Looks/look_0": {
+        "by": "painted_grey_light",
+        "colour": [
+          0.3441,
+          0.3646,
+          0.3734
+        ],
+        "distance": 2.13
+      },
+      "/hub/Fixtures/labbench_1/glovebox_1_1/Looks/look_0": {
+        "by": "cast_steel",
+        "colour": [
+          0.0879,
+          0.0942,
+          0.1035
+        ],
+        "distance": 3.65
+      },
+      "/hub/Fixtures/rack_1/Looks/look_0": {
+        "by": "painted_grey_light",
+        "colour": [
+          0.3796,
+          0.404,
+          0.4212
+        ],
+        "distance": 1.46
+      },
+      "/hub/Fixtures/rack_2/Looks/look_0": {
+        "by": "painted_grey_light",
+        "colour": [
+          0.3796,
+          0.404,
+          0.4212
+        ],
+        "distance": 1.46
+      },
+      "/hub/Fixtures/talllocker_1/Looks/look_0": {
+        "by": "painted_grey_light",
+        "colour": [
+          0.3833,
+          0.402,
+          0.4102
+        ],
+        "distance": 1.39
+      },
+      "/hub/Fixtures/toolboard_1/Looks/look_0": {
+        "by": "stair_terrazzo",
+        "colour": [
+          0.3213,
+          0.2536,
+          0.2053
+        ],
+        "distance": 5.0
+      },
+      "/hub/Fixtures/toolboard_1/screwdriver_1_22/Looks/look_0": {
+        "by": "quilt_cotton",
+        "colour": [
+          0.3266,
+          0.1338,
+          0.1377
+        ],
+        "distance": 11.35
+      },
+      "/hub/Fixtures/toolboard_1/screwdriver_1_23/Looks/look_0": {
+        "by": "quilt_cotton",
+        "colour": [
+          0.3266,
+          0.1338,
+          0.1377
+        ],
+        "distance": 11.35
+      },
+      "/hub/Fixtures/toolboard_1/screwdriver_1_24/Looks/look_0": {
+        "by": "quilt_cotton",
+        "colour": [
+          0.3266,
+          0.1338,
+          0.1377
+        ],
+        "distance": 11.35
+      },
+      "/hub/Fixtures/toolboard_1/screwdriver_1_25/Looks/look_0": {
+        "by": "quilt_cotton",
+        "colour": [
+          0.3266,
+          0.1338,
+          0.1377
+        ],
+        "distance": 11.35
+      },
+      "/hub/Fixtures/toolboard_1/screwdriver_1_26/Looks/look_0": {
+        "by": "quilt_cotton",
+        "colour": [
+          0.3266,
+          0.1338,
+          0.1377
+        ],
+        "distance": 11.35
+      }
+    },
+    "source": "3173d7627ed15e6605339945b880f331d8bf7cd2ee35d2f7bc3490509b8e0cb6",
+    "triangles": 550034
+  }
 }

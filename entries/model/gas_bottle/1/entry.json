@@ -30,6 +30,16 @@
       "bytes": 12355365,
       "role": "texture",
       "sha256": "be9b6684093c92eb2204e97393c49c247c07f1303b3b3d067c89388828c2eacc"
+    },
+    "web3d/full.glb": {
+      "bytes": 338604,
+      "role": "web3d",
+      "sha256": "76796b4a788847fb083b67335ede8ac373a6c9820c7bf42ca3d021d9c50ea2d9"
+    },
+    "web3d/light.glb": {
+      "bytes": 10224,
+      "role": "web3d",
+      "sha256": "38fbfc7db319f043e932547815a4438c4392f6272e2b46914551609c298a66aa"
     }
   },
   "id": "gas_bottle",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 338604,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 2
+    },
+    "from": {},
+    "full_sha256": "76796b4a788847fb083b67335ede8ac373a6c9820c7bf42ca3d021d9c50ea2d9",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 10224,
+    "light_sha256": "38fbfc7db319f043e932547815a4438c4392f6272e2b46914551609c298a66aa",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "b047505d6a4bdb5c06ed7996484e07607999068563156d5f6e5bd05579219d18",
+    "triangles": 19000
+  }
 }

@@ -35,6 +35,16 @@
       "bytes": 3140432,
       "role": "texture",
       "sha256": "42a990177011bc153de280caa7bc4a03ba10391fd7153f83040c69ef685eb8a1"
+    },
+    "web3d/full.glb": {
+      "bytes": 124112,
+      "role": "web3d",
+      "sha256": "605c4ea89a48331606f6a78ec9507da56547348999935dec796354d6723cf734"
+    },
+    "web3d/light.glb": {
+      "bytes": 17252,
+      "role": "web3d",
+      "sha256": "b4744fc65bf1b9dd2e2f6fb94d9a9dd5f4ec4b28a99ea00790c2c36af5f88e27"
     }
   },
   "id": "ceiling_light_panel_1.shiplock",
@@ -96,5 +106,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 124112,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 2
+    },
+    "from": {},
+    "full_sha256": "605c4ea89a48331606f6a78ec9507da56547348999935dec796354d6723cf734",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 17252,
+    "light_sha256": "b4744fc65bf1b9dd2e2f6fb94d9a9dd5f4ec4b28a99ea00790c2c36af5f88e27",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 2,
+    "replaced": {},
+    "source": "bfe95570b59a06d52e992a8717d0a5c8d5b87469d49833543d68eef72af109e1",
+    "triangles": 168
+  }
 }

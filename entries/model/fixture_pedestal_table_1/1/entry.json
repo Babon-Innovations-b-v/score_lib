@@ -20,6 +20,16 @@
       "bytes": 1823081,
       "role": "texture",
       "sha256": "285ff3c5f779b773896823c4ab023c78f141b64521f9b1f63b5b944d3dc39964"
+    },
+    "web3d/full.glb": {
+      "bytes": 9112,
+      "role": "web3d",
+      "sha256": "8e112b315c74759a61c4206f0ce464257a375f45d62dd637133d031fe860e1b5"
+    },
+    "web3d/light.glb": {
+      "bytes": 2388,
+      "role": "web3d",
+      "sha256": "eff25def5a5469493cf9a10387128afad95a3b8a27bde95db423f102d864e38c"
     }
   },
   "id": "fixture_pedestal_table_1",
@@ -79,5 +89,33 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 9112,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "replaced": 1
+    },
+    "from": {},
+    "full_sha256": "8e112b315c74759a61c4206f0ce464257a375f45d62dd637133d031fe860e1b5",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 2388,
+    "light_sha256": "eff25def5a5469493cf9a10387128afad95a3b8a27bde95db423f102d864e38c",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {
+      "/model/body/Looks/look_0": {
+        "by": "concrete",
+        "colour": [
+          0.2174,
+          0.1769,
+          0.1732
+        ],
+        "distance": 5.97
+      }
+    },
+    "source": "2a5212e8542742b64aeb974aff1950304cc3dfa97619435011b9e5a95eaaadb1",
+    "triangles": 1184
+  }
 }

@@ -35,6 +35,16 @@
       "bytes": 3781200,
       "role": "texture",
       "sha256": "a72dcfbd79b4b3f0dfa783db407c82a18915584fbfb98c1baa189380dfff7cad"
+    },
+    "web3d/full.glb": {
+      "bytes": 155576,
+      "role": "web3d",
+      "sha256": "eb14d1e4706d18f9ce29805d4f5c5504f3f19aaa2ff693464d8da88fe0b2dabc"
+    },
+    "web3d/light.glb": {
+      "bytes": 24904,
+      "role": "web3d",
+      "sha256": "e8441eeebb71bc3dc39e92850dd1fe71573f1af399bff1825547afcc08b12bc3"
     }
   },
   "id": "humidifier_1",
@@ -96,5 +106,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 155576,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 2
+    },
+    "from": {},
+    "full_sha256": "eb14d1e4706d18f9ce29805d4f5c5504f3f19aaa2ff693464d8da88fe0b2dabc",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 24904,
+    "light_sha256": "e8441eeebb71bc3dc39e92850dd1fe71573f1af399bff1825547afcc08b12bc3",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 2,
+    "replaced": {},
+    "source": "ef22ee1d6c40d9cd9a9950c8c50cc9119c50b9c164117e32907bf8aa856a3a3e",
+    "triangles": 5048
+  }
 }

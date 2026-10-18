@@ -30,6 +30,16 @@
       "bytes": 13285806,
       "role": "texture",
       "sha256": "f3c00374786f38c6a3dbb9b4dfeb38f74567ede0fec01f28a603d334b626e697"
+    },
+    "web3d/full.glb": {
+      "bytes": 334156,
+      "role": "web3d",
+      "sha256": "3a4ce13fd0ccc236a4cb2f13f0e38d8a8aac13f60e2718dd696f4ec1cef5e54e"
+    },
+    "web3d/light.glb": {
+      "bytes": 10336,
+      "role": "web3d",
+      "sha256": "9a97c5d51b145a350e49f7f6255b01a0365b38cee203f17cebdfd0988e19601d"
     }
   },
   "id": "pilot_seat_1",
@@ -96,5 +106,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 334156,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 2
+    },
+    "from": {},
+    "full_sha256": "3a4ce13fd0ccc236a4cb2f13f0e38d8a8aac13f60e2718dd696f4ec1cef5e54e",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 10336,
+    "light_sha256": "9a97c5d51b145a350e49f7f6255b01a0365b38cee203f17cebdfd0988e19601d",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "cd9ff06553789fbcb9f0e3d49b1ddc0e184f0f2aaa47b466ce7acca0449acc94",
+    "triangles": 18998
+  }
 }

@@ -30,6 +30,16 @@
       "bytes": 1929366,
       "role": "texture",
       "sha256": "f090e1e6721043c47753312e2e3729bf49c41a0d88e3aaab750cc6696c22efd9"
+    },
+    "web3d/full.glb": {
+      "bytes": 127676,
+      "role": "web3d",
+      "sha256": "7aea9dfdc4c659eb12b0017c25bbc39268fe78ecaa9c8fdd3f184e8420b62525"
+    },
+    "web3d/light.glb": {
+      "bytes": 20420,
+      "role": "web3d",
+      "sha256": "09eb8406d18a2c1b8bf3c9b50d1de735001ebbe4b6bada524c9318a85e510147"
     }
   },
   "id": "floor_grate_1.walkway",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 127676,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "7aea9dfdc4c659eb12b0017c25bbc39268fe78ecaa9c8fdd3f184e8420b62525",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 20420,
+    "light_sha256": "09eb8406d18a2c1b8bf3c9b50d1de735001ebbe4b6bada524c9318a85e510147",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "79430c4c59a2b5988b32943fc7a8ed9fcc0763903d6f336ea0aaace2f2e3900d",
+    "triangles": 588
+  }
 }

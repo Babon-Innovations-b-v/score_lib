@@ -30,6 +30,16 @@
       "bytes": 5289324,
       "role": "texture",
       "sha256": "d2181d0a5db0473851b81244d61514c98aa58b6d287ab140cd9db1dfc9d01298"
+    },
+    "web3d/full.glb": {
+      "bytes": 233716,
+      "role": "web3d",
+      "sha256": "9aaa3da4e9a958360e82422fd1e11987e6333a5539f7a03ac0ee6cae0bb73b08"
+    },
+    "web3d/light.glb": {
+      "bytes": 38500,
+      "role": "web3d",
+      "sha256": "eecee586bbf79b6b83b29bc444a1f540b486926e26739fb8ff017613dbe8ac22"
     }
   },
   "id": "vent_grille_1",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 233716,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "9aaa3da4e9a958360e82422fd1e11987e6333a5539f7a03ac0ee6cae0bb73b08",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 38500,
+    "light_sha256": "eecee586bbf79b6b83b29bc444a1f540b486926e26739fb8ff017613dbe8ac22",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "ad405f1e7550141632fb0775e0ccc9261e55d46c2cd953210654108a577a2681",
+    "triangles": 1248
+  }
 }

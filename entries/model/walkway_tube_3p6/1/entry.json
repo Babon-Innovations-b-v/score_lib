@@ -30,6 +30,16 @@
       "bytes": 103801,
       "role": "texture",
       "sha256": "cf623fc8adc023e1cd45d878e641201a21f160790296ad77d3bf8387e3032fd9"
+    },
+    "web3d/full.glb": {
+      "bytes": 45300,
+      "role": "web3d",
+      "sha256": "cfd360f6d373d8d4df742f9d8af6ac45634629154b5257546e069de210ee2720"
+    },
+    "web3d/light.glb": {
+      "bytes": 11728,
+      "role": "web3d",
+      "sha256": "e4e2e0e969c343c565fadb5b24387272d152e7e693b2b26f0fb2a705c8a498ef"
     }
   },
   "id": "walkway_tube_3p6",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 45300,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "cfd360f6d373d8d4df742f9d8af6ac45634629154b5257546e069de210ee2720",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 11728,
+    "light_sha256": "e4e2e0e969c343c565fadb5b24387272d152e7e693b2b26f0fb2a705c8a498ef",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "9a606eea8fbeba4f7c3c2cf97317c685a66c9ed023c534eafa7bd12f6f1db207",
+    "triangles": 660
+  }
 }

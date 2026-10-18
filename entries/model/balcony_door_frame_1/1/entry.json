@@ -30,6 +30,16 @@
       "bytes": 1695778,
       "role": "texture",
       "sha256": "281e84e76771234f907d70681be16729c84c8f80c50c04edf061d35e8863fca0"
+    },
+    "web3d/full.glb": {
+      "bytes": 155180,
+      "role": "web3d",
+      "sha256": "7a7d137d77f83eb38d1e6e8f26b42cf1b4e0d4d737d4f0a1c1e9620f358f9090"
+    },
+    "web3d/light.glb": {
+      "bytes": 24800,
+      "role": "web3d",
+      "sha256": "61ac5b778be49c586656bf759b1aa8b357cfeac6821c320cc5e27b1eec7fd750"
     }
   },
   "id": "balcony_door_frame_1",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 155180,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "7a7d137d77f83eb38d1e6e8f26b42cf1b4e0d4d737d4f0a1c1e9620f358f9090",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 24800,
+    "light_sha256": "61ac5b778be49c586656bf759b1aa8b357cfeac6821c320cc5e27b1eec7fd750",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "d67951980d60b0794e859023209a39d004e630b6a02b6115415842298b781c57",
+    "triangles": 876
+  }
 }

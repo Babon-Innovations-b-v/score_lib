@@ -65,6 +65,16 @@
       "bytes": 485,
       "role": "texture",
       "sha256": "ce19d8f9e3aaaee18fac9e749afaa693751979d16166ddf9ea1a7fe37856e2a3"
+    },
+    "web3d/full.glb": {
+      "bytes": 154004,
+      "role": "web3d",
+      "sha256": "7a90bbb3c6ebb58729c9e8f2ed13eeeab793f4df52662f0061d4886fe52431eb"
+    },
+    "web3d/light.glb": {
+      "bytes": 27928,
+      "role": "web3d",
+      "sha256": "4d64733a90f7648f50b54de81896765fb65f7f7cb4521e94cf6698cbe04236a8"
     }
   },
   "id": "body_leader_state_suit",
@@ -144,5 +154,159 @@
     "up_axis": "Y",
     "use": "payload"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 154004,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "replaced": 15
+    },
+    "from": {},
+    "full_sha256": "7a90bbb3c6ebb58729c9e8f2ed13eeeab793f4df52662f0061d4886fe52431eb",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 27928,
+    "light_sha256": "4d64733a90f7648f50b54de81896765fb65f7f7cb4521e94cf6698cbe04236a8",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 15,
+    "replaced": {
+      "/Character/Looks/m10_skin_hands": {
+        "by": "skin_light",
+        "colour": [
+          0.7605,
+          0.4125,
+          0.2542
+        ],
+        "distance": 3.38
+      },
+      "/Character/Looks/m11_skin_hands": {
+        "by": "skin_light",
+        "colour": [
+          0.7605,
+          0.4125,
+          0.2542
+        ],
+        "distance": 3.38
+      },
+      "/Character/Looks/m12_skin_hands": {
+        "by": "skin_light",
+        "colour": [
+          0.7605,
+          0.4125,
+          0.2542
+        ],
+        "distance": 3.38
+      },
+      "/Character/Looks/m13_skin_hands": {
+        "by": "skin_light",
+        "colour": [
+          0.7605,
+          0.4125,
+          0.2542
+        ],
+        "distance": 3.38
+      },
+      "/Character/Looks/m14_skin_hands": {
+        "by": "skin_light",
+        "colour": [
+          0.7605,
+          0.4125,
+          0.2542
+        ],
+        "distance": 3.38
+      },
+      "/Character/Looks/m15_skin_head": {
+        "by": "skin_light",
+        "colour": [
+          0.744,
+          0.421,
+          0.255
+        ],
+        "distance": 2.3
+      },
+      "/Character/Looks/m16_skin_head": {
+        "by": "skin_light",
+        "colour": [
+          0.7537,
+          0.412,
+          0.2548
+        ],
+        "distance": 3.16
+      },
+      "/Character/Looks/m17_skin_head": {
+        "by": "skin_light",
+        "colour": [
+          0.7617,
+          0.4193,
+          0.2629
+        ],
+        "distance": 2.71
+      },
+      "/Character/Looks/m3_boot_l": {
+        "by": "cable_black",
+        "colour": [
+          0.008,
+          0.008,
+          0.0091
+        ],
+        "distance": 2.02
+      },
+      "/Character/Looks/m4_boot_r": {
+        "by": "cable_black",
+        "colour": [
+          0.008,
+          0.008,
+          0.0091
+        ],
+        "distance": 2.02
+      },
+      "/Character/Looks/m5_cloth": {
+        "by": "screen_crt_off",
+        "colour": [
+          0.0931,
+          0.0953,
+          0.0931
+        ],
+        "distance": 2.64
+      },
+      "/Character/Looks/m6_cloth": {
+        "by": "screen_crt_off",
+        "colour": [
+          0.0762,
+          0.0782,
+          0.0762
+        ],
+        "distance": 1.03
+      },
+      "/Character/Looks/m7_cloth": {
+        "by": "screen_crt_off",
+        "colour": [
+          0.0931,
+          0.0953,
+          0.0931
+        ],
+        "distance": 2.64
+      },
+      "/Character/Looks/m8_dark_glasses_glass": {
+        "by": "cable_black",
+        "colour": [
+          0.0091,
+          0.0091,
+          0.0103
+        ],
+        "distance": 1.01
+      },
+      "/Character/Looks/m9_red_pin_plastic": {
+        "by": "barrier_red",
+        "colour": [
+          0.552,
+          0.0144,
+          0.013
+        ],
+        "distance": 7.61
+      }
+    },
+    "source": "db5b2dd3b292516ac4377d638520fb4e36c6ca005cc8263c282989d10abd81a5",
+    "triangles": 31304
+  }
 }

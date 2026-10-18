@@ -30,6 +30,16 @@
       "bytes": 13032172,
       "role": "texture",
       "sha256": "2e7a12d845ffb5ac283f566c74014a222c3add54b9c7cc62b66abbf9e5ffd582"
+    },
+    "web3d/full.glb": {
+      "bytes": 185040,
+      "role": "web3d",
+      "sha256": "e03280e02a8cc4d2f8dc2bfa142b1efb207a480116a9856a9e30ae4881f0f9fe"
+    },
+    "web3d/light.glb": {
+      "bytes": 24740,
+      "role": "web3d",
+      "sha256": "727dfb76b4aed2e84c8d732127c462d7b329b2a734206909709229996da975e8"
     }
   },
   "id": "wall_upper_cables_1.habitat",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 185040,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "e03280e02a8cc4d2f8dc2bfa142b1efb207a480116a9856a9e30ae4881f0f9fe",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 24740,
+    "light_sha256": "727dfb76b4aed2e84c8d732127c462d7b329b2a734206909709229996da975e8",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "818fd4eff11b4cad00e2ce93e755d1d1f39c6d4794b45590d94a8f35abc6290f",
+    "triangles": 2428
+  }
 }

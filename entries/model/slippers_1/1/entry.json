@@ -30,6 +30,16 @@
       "bytes": 3169295,
       "role": "texture",
       "sha256": "3a14f55140f90f8cb71be1bdc2b37b9a51163f55110f69c95f91b66904ddbc00"
+    },
+    "web3d/full.glb": {
+      "bytes": 247412,
+      "role": "web3d",
+      "sha256": "3c78fa99ad7764dc81e3114ef3a9dd6a1c4d6c4dc3a91d570e41258bf9201cf4"
+    },
+    "web3d/light.glb": {
+      "bytes": 40444,
+      "role": "web3d",
+      "sha256": "0ece72cb54d695434cb37eeac0ed57749408d19f24ea28a5b0a05d9bc2c05149"
     }
   },
   "id": "slippers_1",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 247412,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "3c78fa99ad7764dc81e3114ef3a9dd6a1c4d6c4dc3a91d570e41258bf9201cf4",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 40444,
+    "light_sha256": "0ece72cb54d695434cb37eeac0ed57749408d19f24ea28a5b0a05d9bc2c05149",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "937ff5bac6d2f9d5e75119b4a06f9808bdae36cda5cf858baa4461c7f76da77d",
+    "triangles": 1328
+  }
 }

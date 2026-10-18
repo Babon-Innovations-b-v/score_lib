@@ -30,6 +30,16 @@
       "bytes": 4557049,
       "role": "texture",
       "sha256": "733c13bd1ae268f2050217e9d0d79aea31063c417f5373a058ac48d3df5cdfee"
+    },
+    "web3d/full.glb": {
+      "bytes": 149736,
+      "role": "web3d",
+      "sha256": "904eb5fca04b8819586828a2b7e9da281944cf2afd891d4679e1001d51896a50"
+    },
+    "web3d/light.glb": {
+      "bytes": 20984,
+      "role": "web3d",
+      "sha256": "e2e32d94eb38504eb5c912ac2d00c3eeb06aad72bc365ecf04dba1a0b737b59f"
     }
   },
   "id": "door_leaf_1.quarters",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 149736,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "904eb5fca04b8819586828a2b7e9da281944cf2afd891d4679e1001d51896a50",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 20984,
+    "light_sha256": "e2e32d94eb38504eb5c912ac2d00c3eeb06aad72bc365ecf04dba1a0b737b59f",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "2b758de3893599476f1a8020280b3548842f605f49b529e2c78528d9dde9b781",
+    "triangles": 4344
+  }
 }

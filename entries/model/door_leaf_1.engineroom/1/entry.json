@@ -30,6 +30,16 @@
       "bytes": 8277895,
       "role": "texture",
       "sha256": "3224f9bb6411922534914df25a6eb970b9ef99771f1845749944f9dfd910f1eb"
+    },
+    "web3d/full.glb": {
+      "bytes": 239572,
+      "role": "web3d",
+      "sha256": "e1c113f58bf0f0d71bdbfe7c4bb4ec5f17b399a265beb63994953d813251bb63"
+    },
+    "web3d/light.glb": {
+      "bytes": 36208,
+      "role": "web3d",
+      "sha256": "99b2c1de1d0ac4ca082b72e8bbc79ca082f9233083ef2bc93112ebd4b882c32f"
     }
   },
   "id": "door_leaf_1.engineroom",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 239572,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "e1c113f58bf0f0d71bdbfe7c4bb4ec5f17b399a265beb63994953d813251bb63",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 36208,
+    "light_sha256": "99b2c1de1d0ac4ca082b72e8bbc79ca082f9233083ef2bc93112ebd4b882c32f",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "6e82a024cb001f5e13ee7de918ddd42dc7b5e7c19c89398851cafa08ffa0450b",
+    "triangles": 4344
+  }
 }

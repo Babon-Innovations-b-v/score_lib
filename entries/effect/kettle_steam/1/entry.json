@@ -51,10 +51,67 @@
     "record_key": "43e62ea4f779818a8cda5b3f14638e6fe118f9628961795bc6b487c1c760f0fb",
     "world": "world1"
   },
+  "refine_options": [
+    {
+      "action": "re-tune against its footage",
+      "answers": [
+        "footage",
+        "fine particles",
+        "loose blobs",
+        "cites footage"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "the emitter's settings moved toward its footage's measured ranges in data/effects/<place>.json and its particles baked again (tools/usd/effects.py, on this machine)",
+      "suggested": false
+    },
+    {
+      "action": "measure more footage",
+      "answers": [
+        "footage"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "add a footage check for this emitter (a real photograph or film measured against a thing of known size)",
+      "suggested": false
+    }
+  ],
   "requires": [
     "algorithm/particle_effects@1"
   ],
   "schema": "score-lib-entry/1",
+  "score": 88,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "worst of 4 footage checks of the effects stage (effects-layer@habitat): kettle's jet length 0.448 in [0.2, None]; kettle's clear gap at the spout 0.024 in [0.015, 0.045]; kettle's jet half angle in its first 0.2 m 17.402 in [7.0, 20.0]; kettle's jet one plume, no loose blobs 0.000 in [0.0, 0.01]; inside its range 75 to 100 by its margin, 50 at an end, 0 a range's width (or the bound's size) past it",
+      "measured": 0.0,
+      "name": "footage",
+      "unit": "loose",
+      "value": 75,
+      "weight": 2.0
+    },
+    {
+      "how": "share of its 4176 showing particles at its fullest moment touching no other (the effects stage's loose: the nearest middle farther than its width); 100 at 0.0, 50 at 0.01, 0 at 0.05 share",
+      "measured": 0.0,
+      "name": "loose blobs",
+      "unit": "share",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "its settings name the real footage they were measured on (100), or only the source game's lines (0): 'footage: flickr-5587696584, commons-boilingkettle, arxiv-2201.12128 (a boiling k'",
+      "measured": true,
+      "name": "cites footage",
+      "unit": "",
+      "value": 100,
+      "weight": 1.0
+    }
+  ],
   "seen_in": [
     "habitat"
   ],

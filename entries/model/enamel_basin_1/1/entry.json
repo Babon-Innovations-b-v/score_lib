@@ -30,6 +30,16 @@
       "bytes": 765065,
       "role": "texture",
       "sha256": "dcaff37f3668e3fe16e2a8d5d0870c42a65885ab4fb2cdc6d56d246b9a55c6cf"
+    },
+    "web3d/full.glb": {
+      "bytes": 96248,
+      "role": "web3d",
+      "sha256": "a5fe7f7fd05cdba71029986f377ae3fed2773bc47989fbe3924fb66f84555a2a"
+    },
+    "web3d/light.glb": {
+      "bytes": 5000,
+      "role": "web3d",
+      "sha256": "6a5728bd075e52de05b04ff43c0ed359c8189afa924e8c6a30feef7d9daaa91a"
     }
   },
   "id": "enamel_basin_1",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 96248,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 2
+    },
+    "from": {},
+    "full_sha256": "a5fe7f7fd05cdba71029986f377ae3fed2773bc47989fbe3924fb66f84555a2a",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 5000,
+    "light_sha256": "6a5728bd075e52de05b04ff43c0ed359c8189afa924e8c6a30feef7d9daaa91a",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "e16cf63e233131b5ee108553ecb26fbfab7a69baa37b84f386e07b7c4d8d1553",
+    "triangles": 4998
+  }
 }

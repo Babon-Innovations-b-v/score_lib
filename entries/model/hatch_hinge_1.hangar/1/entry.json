@@ -30,6 +30,16 @@
       "bytes": 1954130,
       "role": "texture",
       "sha256": "cda680745b9a4d67b63ae2a22b965d29941659f78aefc483a6dd72efde146630"
+    },
+    "web3d/full.glb": {
+      "bytes": 157952,
+      "role": "web3d",
+      "sha256": "9b82e75685116f19070e72fcb9a13f5e3b883484f083abb7e5754dbaf7dff4dd"
+    },
+    "web3d/light.glb": {
+      "bytes": 28200,
+      "role": "web3d",
+      "sha256": "3272afaddc0b9fa1bfcdf8a0c7282c9ed1a444c781f1674dceeb715ae1a513b5"
     }
   },
   "id": "hatch_hinge_1.hangar",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 157952,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "9b82e75685116f19070e72fcb9a13f5e3b883484f083abb7e5754dbaf7dff4dd",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 28200,
+    "light_sha256": "3272afaddc0b9fa1bfcdf8a0c7282c9ed1a444c781f1674dceeb715ae1a513b5",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "76ae46d99a0116ed78c39d03df96318f2cc961d434d68309a858e27ae62cd77c",
+    "triangles": 1024
+  }
 }

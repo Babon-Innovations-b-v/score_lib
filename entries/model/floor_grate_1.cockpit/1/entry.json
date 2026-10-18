@@ -30,6 +30,16 @@
       "bytes": 9312610,
       "role": "texture",
       "sha256": "87000c848ee1281bd54413477953861591da9bf89c905cb782888659f1a82180"
+    },
+    "web3d/full.glb": {
+      "bytes": 126660,
+      "role": "web3d",
+      "sha256": "9f7ffec45e9420b011162624cfdded3cddec0e871907020105390d5450f380c7"
+    },
+    "web3d/light.glb": {
+      "bytes": 18036,
+      "role": "web3d",
+      "sha256": "f35b3babd12a3baa77bea80a0dd8035fb68a54052afccff034d602df78e9a16e"
     }
   },
   "id": "floor_grate_1.cockpit",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 126660,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "9f7ffec45e9420b011162624cfdded3cddec0e871907020105390d5450f380c7",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 18036,
+    "light_sha256": "f35b3babd12a3baa77bea80a0dd8035fb68a54052afccff034d602df78e9a16e",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "e6e57d09e8286c205145207750a8c172a75e0ca4c75157ce043588a3ebb6c5c6",
+    "triangles": 588
+  }
 }

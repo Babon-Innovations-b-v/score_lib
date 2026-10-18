@@ -1,0 +1,85 @@
+{
+  "address": "layer/base.far_city@1",
+  "files": {
+    "layer.usda": {
+      "bytes": 4459775,
+      "role": "usd",
+      "sha256": "f2ad9cb7c9915c92875d5526c5f92e079f016d95eada57b811ac2a4ac77eaee7"
+    },
+    "preview.png": {
+      "bytes": 1498,
+      "role": "picture",
+      "sha256": "ec999f0c499b4a74817a732f309cc2dbf57652f81dbc9e745baa33f07789f684"
+    }
+  },
+  "id": "base.far_city",
+  "kind": "layer",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "1 prim positions from above over data/kit/far_city.json"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T10:41:32.754135+00:00",
+      "by": "runner"
+    },
+    "code": "89962788af8431994f1543c9abe8e4f2a49ead05df0fbf80ac02a0d9bb5da769",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/base.usda",
+        "sha256": "128838f181bdb47bfafee0c668f438f055fd2a00f0eead6b72c84c302f23f6ed"
+      }
+    },
+    "folder": "places/far_city/",
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
+    "models": [],
+    "node": "neighbours@flat",
+    "output": "11ad42eaae26ebb4c2851afb156a7412ab52ff3a34849eb919b68d61e6557436",
+    "own_files": [],
+    "place": "far_city",
+    "record_key": "807bceafbd516910e699ab44a0bc67ae209cb1f485c4b91502d0d7101c1da16b",
+    "side_records_from": null,
+    "source_name": "layers/base.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/room_layout@1"
+  },
+  "requires": [
+    "model/far_city_crown_tower@1",
+    "model/far_city_glass_tower@1",
+    "model/far_city_housing_tower@1",
+    "model/far_city_low_block@1",
+    "model/far_city_residential_tower@1",
+    "model/far_city_spire_tower@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "far_city"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "base"
+    ],
+    "place_kind": []
+  },
+  "title": "Far city base layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/base.far_city/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

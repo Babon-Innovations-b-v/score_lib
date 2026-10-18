@@ -30,6 +30,16 @@
       "bytes": 11244268,
       "role": "texture",
       "sha256": "39e3884bd1f95a55b93540b7260f8b334c0a40218e9adafc7ba94e22bac396e7"
+    },
+    "web3d/full.glb": {
+      "bytes": 315764,
+      "role": "web3d",
+      "sha256": "4db2ba3d51533f71742bfcdb8ed65c6ee6904d91d365159e46dc6ad20e962f07"
+    },
+    "web3d/light.glb": {
+      "bytes": 12704,
+      "role": "web3d",
+      "sha256": "b077e9fdd3ba0210c71e202207973373455cb3be4ca6b19dd08ef408c71cdb97"
     }
   },
   "id": "hatch_door_frame_1",
@@ -101,5 +111,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 315764,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 3
+    },
+    "from": {},
+    "full_sha256": "4db2ba3d51533f71742bfcdb8ed65c6ee6904d91d365159e46dc6ad20e962f07",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 12704,
+    "light_sha256": "b077e9fdd3ba0210c71e202207973373455cb3be4ca6b19dd08ef408c71cdb97",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "68b67e382de0bd754d4ad4fa303787e89d20c5cc784a9392307333c157a2ff4c",
+    "triangles": 19000
+  }
 }

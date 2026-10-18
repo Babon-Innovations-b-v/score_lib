@@ -30,6 +30,16 @@
       "bytes": 5488922,
       "role": "texture",
       "sha256": "52650112fd92fbc039108c1b4c31bcccdc8d63387aacb2b300194c4dadd8e4c8"
+    },
+    "web3d/full.glb": {
+      "bytes": 343924,
+      "role": "web3d",
+      "sha256": "c3a19a2d59bfe0f180f0c2a5ddc60ea79e58bda84ab15cfaddf8fb51b1045aa8"
+    },
+    "web3d/light.glb": {
+      "bytes": 46932,
+      "role": "web3d",
+      "sha256": "90f08181befb24c7eba2098f1f92b8a520d4f21986daa5704b8c08770bdb7221"
     }
   },
   "id": "wall_print_2.stairwell",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 343924,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "c3a19a2d59bfe0f180f0c2a5ddc60ea79e58bda84ab15cfaddf8fb51b1045aa8",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 46932,
+    "light_sha256": "90f08181befb24c7eba2098f1f92b8a520d4f21986daa5704b8c08770bdb7221",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "fb677d16c2ed614fcab57a5e41ea6943441038b96bbba53d6c3a7e5ff740b386",
+    "triangles": 24
+  }
 }

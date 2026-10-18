@@ -35,6 +35,16 @@
       "bytes": 3708041,
       "role": "texture",
       "sha256": "f123a976976aa3740f8af02262e83a45a7dcd3ae41b4c64e4d4adc626ed58f16"
+    },
+    "web3d/full.glb": {
+      "bytes": 154980,
+      "role": "web3d",
+      "sha256": "ef15d0b93b35648b3ee41ec0702934d8fb32b3121284604491b00e8299bc9869"
+    },
+    "web3d/light.glb": {
+      "bytes": 27124,
+      "role": "web3d",
+      "sha256": "67bba26a18978c72d918e5f4ca9d552e9f30e242181340a2fb478370f50bf55d"
     }
   },
   "id": "door_strip_lamp_1.workshop",
@@ -96,5 +106,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 154980,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 2
+    },
+    "from": {},
+    "full_sha256": "ef15d0b93b35648b3ee41ec0702934d8fb32b3121284604491b00e8299bc9869",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 27124,
+    "light_sha256": "67bba26a18978c72d918e5f4ca9d552e9f30e242181340a2fb478370f50bf55d",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 2,
+    "replaced": {},
+    "source": "69902833393722a399b299ad08e4149089544186872e09aee179e43c39790008",
+    "triangles": 628
+  }
 }

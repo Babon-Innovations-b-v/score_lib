@@ -30,6 +30,16 @@
       "bytes": 4312782,
       "role": "texture",
       "sha256": "4318753da61588bef578390c107572ee3fd84fe917161292f4fd808ce07baf55"
+    },
+    "web3d/full.glb": {
+      "bytes": 58900,
+      "role": "web3d",
+      "sha256": "3c8ab98e8c11cca17088052c9a543be1033e0e23e69f068b5d4d0b513423d5eb"
+    },
+    "web3d/light.glb": {
+      "bytes": 12452,
+      "role": "web3d",
+      "sha256": "aa0900114c38434a5f7a3786b13c7c288df276b21b6544df25b4ca20bc0a9b52"
     }
   },
   "id": "tv_cabinet_1",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 58900,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "3c8ab98e8c11cca17088052c9a543be1033e0e23e69f068b5d4d0b513423d5eb",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 12452,
+    "light_sha256": "aa0900114c38434a5f7a3786b13c7c288df276b21b6544df25b4ca20bc0a9b52",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "1461308865b2945fc3f36f4792c83720342effee08ae835bcc850177290e9448",
+    "triangles": 948
+  }
 }

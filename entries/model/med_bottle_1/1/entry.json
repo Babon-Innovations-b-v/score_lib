@@ -30,6 +30,16 @@
       "bytes": 3169295,
       "role": "texture",
       "sha256": "3a14f55140f90f8cb71be1bdc2b37b9a51163f55110f69c95f91b66904ddbc00"
+    },
+    "web3d/full.glb": {
+      "bytes": 241860,
+      "role": "web3d",
+      "sha256": "c65d32045eb9d6818b6bd97ffcd7e0e48996a7785f89f58312c41cdfec865b48"
+    },
+    "web3d/light.glb": {
+      "bytes": 40168,
+      "role": "web3d",
+      "sha256": "ebafd816cbea649fcf179785b26e92aab29fe8c1c933be0709487c84e07dd916"
     }
   },
   "id": "med_bottle_1",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 241860,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "c65d32045eb9d6818b6bd97ffcd7e0e48996a7785f89f58312c41cdfec865b48",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 40168,
+    "light_sha256": "ebafd816cbea649fcf179785b26e92aab29fe8c1c933be0709487c84e07dd916",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "ad31d9b359abf1f836848755a893bea3868148a4ba3661cb5434d9ec0ffac339",
+    "triangles": 588
+  }
 }

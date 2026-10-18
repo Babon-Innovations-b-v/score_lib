@@ -51,10 +51,70 @@
     "record_key": "22796041a04506a19a5f8cef4fa80eb14e4fa8879a95dfff20e7cbb9f5ea901a",
     "world": "world1"
   },
+  "refine_options": [
+    {
+      "action": "re-tune against its footage",
+      "answers": [
+        "footage",
+        "fine particles",
+        "loose blobs",
+        "cites footage"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "the emitter's settings moved toward its footage's measured ranges in data/effects/<place>.json and its particles baked again (tools/usd/effects.py, on this machine)",
+      "suggested": true
+    },
+    {
+      "action": "measure more footage",
+      "answers": [
+        "footage"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "add a footage check for this emitter (a real photograph or film measured against a thing of known size)",
+      "suggested": false
+    }
+  ],
   "requires": [
     "algorithm/particle_effects@1"
   ],
   "schema": "score-lib-entry/1",
+  "score": 0,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "no footage check of its place names this emitter",
+      "name": "footage",
+      "status": "not measured",
+      "value": null
+    },
+    {
+      "how": "share of its 67 showing particles at its fullest moment touching no other (the effects stage's loose: the nearest middle farther than its width); 100 at 0.0, 50 at 0.01, 0 at 0.05 share",
+      "measured": 0.9552,
+      "name": "loose blobs",
+      "picture": {
+        "bytes": 4552,
+        "sha256": "1fb73101487d20dceaa45ac901f210b9338475eacf9e4ef7c3b728b21669e65f",
+        "what": "loose particles in red, seen side on"
+      },
+      "unit": "share",
+      "value": 0,
+      "weight": 1.0
+    },
+    {
+      "how": "its settings name the real footage they were measured on (100), or only the source game's lines (0): 'game/outside/dust/mars_wind.gd:28-39,51-52,316-339 (DRIFT_PUFFS_A_CELL 70, all b'",
+      "measured": false,
+      "name": "cites footage",
+      "unit": "",
+      "value": 0,
+      "weight": 1.0
+    }
+  ],
   "seen_in": [
     "camp"
   ],

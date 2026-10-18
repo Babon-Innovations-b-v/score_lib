@@ -20,6 +20,16 @@
       "bytes": 1705993,
       "role": "texture",
       "sha256": "7c60e300812418029c042bfd11f825f82e0a0509d536ac8de83b077905a0e767"
+    },
+    "web3d/full.glb": {
+      "bytes": 7764,
+      "role": "web3d",
+      "sha256": "02658bb54513022f626845fdb7deb63c779d198cf69ece95f015fe9a075c1204"
+    },
+    "web3d/light.glb": {
+      "bytes": 2148,
+      "role": "web3d",
+      "sha256": "dbbd7eba57fdf0d757c6187854593e6bcdb675ec6c6b3c0e24140db97a91e49b"
     }
   },
   "id": "fixture_crate_small_1",
@@ -79,5 +89,33 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 7764,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "replaced": 1
+    },
+    "from": {},
+    "full_sha256": "02658bb54513022f626845fdb7deb63c779d198cf69ece95f015fe9a075c1204",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 2148,
+    "light_sha256": "dbbd7eba57fdf0d757c6187854593e6bcdb675ec6c6b3c0e24140db97a91e49b",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {
+      "/model/body/Looks/look_0": {
+        "by": "moon_regolith",
+        "colour": [
+          0.2471,
+          0.2297,
+          0.2052
+        ],
+        "distance": 1.96
+      }
+    },
+    "source": "ad323f61ebd208ef0823916d156aed105b991c00d044d7c775e27be6625d0564",
+    "triangles": 696
+  }
 }

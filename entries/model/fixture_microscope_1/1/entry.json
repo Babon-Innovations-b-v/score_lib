@@ -20,6 +20,16 @@
       "bytes": 302157,
       "role": "texture",
       "sha256": "60a85a5c4207c80dea09807937a5e2a53d3585b3f13c873f8fc8206ff90218e1"
+    },
+    "web3d/full.glb": {
+      "bytes": 95912,
+      "role": "web3d",
+      "sha256": "a3a8742d85010287f50883f810d20d0e72bdb8460b3c4f729fd1ee1291d0907c"
+    },
+    "web3d/light.glb": {
+      "bytes": 4280,
+      "role": "web3d",
+      "sha256": "8504fc3fa89787864a7872ddfdae4e8ebefe0f07b7264bfe10d4d0a44f1df223"
     }
   },
   "id": "fixture_microscope_1",
@@ -79,5 +89,33 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 95912,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "replaced": 1
+    },
+    "from": {},
+    "full_sha256": "a3a8742d85010287f50883f810d20d0e72bdb8460b3c4f729fd1ee1291d0907c",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 4280,
+    "light_sha256": "8504fc3fa89787864a7872ddfdae4e8ebefe0f07b7264bfe10d4d0a44f1df223",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {
+      "/model/body/Looks/look_0": {
+        "by": "cast_steel",
+        "colour": [
+          0.0798,
+          0.0921,
+          0.1063
+        ],
+        "distance": 1.99
+      }
+    },
+    "source": "bc4d2801bc2bb60dc5f8044f3518937e41e340dc4d2da79a9d635dd5a2a0281d",
+    "triangles": 4984
+  }
 }

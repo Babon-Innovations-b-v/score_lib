@@ -95,6 +95,16 @@
       "bytes": 1168,
       "role": "texture",
       "sha256": "d4d7fb2fddbce48e7e529fae2e032fcc9530f18b08fcc99df09f8744dd7a68f1"
+    },
+    "web3d/full.glb": {
+      "bytes": 177024,
+      "role": "web3d",
+      "sha256": "c2a1fde887adf06aeda09c6d35be1eeb5abef8caabeb9f0536ac4805ad9859de"
+    },
+    "web3d/light.glb": {
+      "bytes": 42320,
+      "role": "web3d",
+      "sha256": "9587e81fe02985e93a4ca71734b7efc194d9e7132a7deb4bcedc4bb2f4686844"
     }
   },
   "id": "body_player_work",
@@ -190,5 +200,45 @@
     "up_axis": "Y",
     "use": "payload"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 177024,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 40,
+      "replaced": 2
+    },
+    "from": {
+      "character/dress_player_work@1": "b0a5048817ca1a47946a04c2c5e5d80e78aa580fb08769099bed2c31894cb95a"
+    },
+    "full_sha256": "c2a1fde887adf06aeda09c6d35be1eeb5abef8caabeb9f0536ac4805ad9859de",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 42320,
+    "light_sha256": "9587e81fe02985e93a4ca71734b7efc194d9e7132a7deb4bcedc4bb2f4686844",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 42,
+    "replaced": {
+      "/Character/Looks/m28_hair": {
+        "by": "cable_black",
+        "colour": [
+          0.0091,
+          0.0091,
+          0.0116
+        ],
+        "distance": 1.78
+      },
+      "/Character/Looks/m29_hair": {
+        "by": "cable_black",
+        "colour": [
+          0.0091,
+          0.0091,
+          0.0116
+        ],
+        "distance": 1.78
+      }
+    },
+    "source": "f2a86ef5e855d0a35e8161af38019a25c55ceec98fe2386e4067f62dae6fe185",
+    "triangles": 29692
+  }
 }

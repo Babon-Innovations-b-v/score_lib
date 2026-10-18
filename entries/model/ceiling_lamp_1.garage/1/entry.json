@@ -30,6 +30,16 @@
       "bytes": 1174516,
       "role": "texture",
       "sha256": "f145c040b681ddd7eb4be6153920e53586cc1026bf4b5d4464c2b0cfa6bf388f"
+    },
+    "web3d/full.glb": {
+      "bytes": 93024,
+      "role": "web3d",
+      "sha256": "aca79d7bd7348fd5fcce2bcff8622cef3e7ee5f388e806f661602b792a6a2412"
+    },
+    "web3d/light.glb": {
+      "bytes": 5684,
+      "role": "web3d",
+      "sha256": "10a4f95e74d9b3d3b2c558162fb2731646d6b94f9c2eb164863130112eecd4cf"
     }
   },
   "id": "ceiling_lamp_1.garage",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 93024,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 2
+    },
+    "from": {},
+    "full_sha256": "aca79d7bd7348fd5fcce2bcff8622cef3e7ee5f388e806f661602b792a6a2412",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 5684,
+    "light_sha256": "10a4f95e74d9b3d3b2c558162fb2731646d6b94f9c2eb164863130112eecd4cf",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "96b01871a2cecb16273020bef946d4c21b8d85a1a4d79b9aa956b8a0520c6289",
+    "triangles": 4997
+  }
 }

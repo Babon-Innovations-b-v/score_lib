@@ -30,6 +30,16 @@
       "bytes": 4105014,
       "role": "texture",
       "sha256": "51147fc3c2d9125d8cc21f572655f8e26b16f59229de93c67f71233393bcefc9"
+    },
+    "web3d/full.glb": {
+      "bytes": 28252,
+      "role": "web3d",
+      "sha256": "0e4efe78f5d75348920ae80f62053cdcb1200d86970609faa70a5b579182fcc8"
+    },
+    "web3d/light.glb": {
+      "bytes": 7744,
+      "role": "web3d",
+      "sha256": "23945ff31339c711687f649287590575bc9afa4958672627d5c09612d67fd867"
     }
   },
   "id": "far_promenade_1",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 28252,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "0e4efe78f5d75348920ae80f62053cdcb1200d86970609faa70a5b579182fcc8",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 7744,
+    "light_sha256": "23945ff31339c711687f649287590575bc9afa4958672627d5c09612d67fd867",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "a2c5902f2803f36db26db548f5a13931e6d752e3b056a6a3fcf185c76fb683df",
+    "triangles": 108
+  }
 }

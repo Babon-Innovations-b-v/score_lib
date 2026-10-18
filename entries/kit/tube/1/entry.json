@@ -10,6 +10,16 @@
       "bytes": 7642,
       "role": "picture",
       "sha256": "928edb3747fbf8fca859f4b3d308b16189c7bd75d0489eef1990cafe2cc1367d"
+    },
+    "web3d/full.glb": {
+      "bytes": 5140480,
+      "role": "web3d",
+      "sha256": "acd23c81a9157cfe249bb926b30b8fb5368bbf9b0568f5582ac9e77710ff5ce4"
+    },
+    "web3d/light.glb": {
+      "bytes": 778684,
+      "role": "web3d",
+      "sha256": "17c882ba963b6703853220e37869936941d59b50b3da35630392eb75410bc6fb"
     }
   },
   "id": "tube",
@@ -69,5 +79,45 @@
   },
   "title": "Tube kit",
   "usd": null,
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 5140480,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 388
+    },
+    "from": {
+      "layer/base.tube@1": "811978b7161ef484e6440cb2054221ddb548b13b2224c589e070dd98ebe21f90",
+      "model/cable_bundle_1.tube@1": "4d1638eb7a7a90242b5c737e09131f1aa0dcbe63f3fb44ba2ce180c4185ec8c4",
+      "model/crown_strip_lamp_1@1": "12b9b1a336fe28d66ed2fb649ab50366ada40c68dadd5bbbcd734427de4ccffe",
+      "model/end_mat_1@1": "a93ae6d6f0898b95f5f82eb5ec065dc5a9e4aae4ce728b8212de9fdc644c6934",
+      "model/hoop_1@1": "d120b163bec95e1ebb65c968ddce9067bed467e32bcda0f667d4174ae698ece5",
+      "model/hoop_2@1": "01c9df9d0972e668ec705d87954a8bc67a7eea50bcd6f31cf52b825ab68609cf",
+      "model/hull_patch_1@1": "078a5f73b1997fb0d8928a63ad3ae1cf245bca693d20439a9a29922a2df86ab4",
+      "model/hull_patch_2@1": "d777ecb3a9eb7a396aae0d5f68b02473d656528d2b2a0a5fb250bdbb332b61da",
+      "model/hull_plate_1@1": "b649bd410b8b794e41f1013227108783901a51b106b15fc8a51176469b9c5275",
+      "model/hull_plate_2@1": "f3855096416e734d52994ea9c3400d3b724d978b4ccf6854aff5ea36906df345",
+      "model/hull_plate_3@1": "424e779ae67c422593675995c7681bbed93a53394547ccfb09119f382c201313",
+      "model/hull_plate_4@1": "63e82fd978b2167c9b20cc6cfe06a66eed3dca4146b034f90b44baecfa9cb053",
+      "model/hull_plate_5@1": "5dd1a1bfd3d6e3687a64cbb939e1328278ebb5e44f942d753a3b9ca353f0e5fc",
+      "model/hull_plate_6@1": "bd6a182dbd761b2adc9bea2b52d1144f1accef43654b3ece5f1294982847f87c",
+      "model/hull_plate_7@1": "b86379315e4e78932c9dde5890c6f04ae6c5e96cbf032ede354b4820b2090c3b",
+      "model/pipe_bracket_1.tube@1": "9bf0af361828c7184c2659908ac6c9ce2e9c79a9ef6bb397f613d8b53f7d8e1f",
+      "model/pipe_straight_1.tube@1": "b6a614f39e602115dd8f5e23c045fecb577ebaa476b92ae0c27236ec477558b7",
+      "model/pipe_straight_2.tube@1": "f0aa31d121455c459f857374719f3687de689f3e5cfe99521d73d9f92c414bef",
+      "model/rail_bracket_1@1": "2a264051d58535b1d102390024a38709cc1703969836786f07bab31a70bc05c7",
+      "model/ring_floor_plate_1.tube@1": "d0e400d0e876d2ebca0425239b9576d9ca816493b50984b8e934f558b45797a4",
+      "model/sign_plate_2@1": "96836c7fe4a0dbd7ee4b2a732c32bbe7b794da6188f25760b87511725d63bf51"
+    },
+    "full_sha256": "acd23c81a9157cfe249bb926b30b8fb5368bbf9b0568f5582ac9e77710ff5ce4",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 778684,
+    "light_sha256": "17c882ba963b6703853220e37869936941d59b50b3da35630392eb75410bc6fb",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 388,
+    "replaced": {},
+    "source": "66ad58943d9c4e70fefc1bd6103169018f65c39473318c6c10cf89b3de78f47f",
+    "triangles": 318256
+  }
 }

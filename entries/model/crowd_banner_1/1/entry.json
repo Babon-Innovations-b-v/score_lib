@@ -35,6 +35,16 @@
       "bytes": 81895,
       "role": "texture",
       "sha256": "46fbbc265b9f450f23eae0f1ecca7e1e6e08a4e5fb8e588594541df3e707936d"
+    },
+    "web3d/full.glb": {
+      "bytes": 37796,
+      "role": "web3d",
+      "sha256": "a3a875e002103415006e4eabba433b081d8ba1d38a1b42b2e3f498948092b57c"
+    },
+    "web3d/light.glb": {
+      "bytes": 10108,
+      "role": "web3d",
+      "sha256": "424a8ca939e5ac82395017e069c31382f9a0fa7cb2b20810d45329a29f3df057"
     }
   },
   "id": "crowd_banner_1",
@@ -96,5 +106,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 37796,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "a3a875e002103415006e4eabba433b081d8ba1d38a1b42b2e3f498948092b57c",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 10108,
+    "light_sha256": "424a8ca939e5ac82395017e069c31382f9a0fa7cb2b20810d45329a29f3df057",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "5941e99e72aa159a727140ea090ea5110f57c40cfd48c26c7b3369d0310efc1a",
+    "triangles": 192
+  }
 }

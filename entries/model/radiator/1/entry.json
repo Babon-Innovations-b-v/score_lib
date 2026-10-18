@@ -30,6 +30,16 @@
       "bytes": 13119161,
       "role": "texture",
       "sha256": "3ac7c4146c9828b1212205fa70e431dda157e837e1ede8a583b25e7971f0a555"
+    },
+    "web3d/full.glb": {
+      "bytes": 338364,
+      "role": "web3d",
+      "sha256": "0b89fc18f2d23a90f28c77557d8a4d63d7d40b46fdef48e63ac609a480ae9fd5"
+    },
+    "web3d/light.glb": {
+      "bytes": 8256,
+      "role": "web3d",
+      "sha256": "c622ec6b52d08676c9e76a9b148e4d56f8a791c7634aa1aeccab2f1b431866a5"
     }
   },
   "id": "radiator",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 338364,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 2
+    },
+    "from": {},
+    "full_sha256": "0b89fc18f2d23a90f28c77557d8a4d63d7d40b46fdef48e63ac609a480ae9fd5",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 8256,
+    "light_sha256": "c622ec6b52d08676c9e76a9b148e4d56f8a791c7634aa1aeccab2f1b431866a5",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "5f25be492ceb22759108c79cac7072ed1b6dfc9f5584855bd92c28ca016b5d87",
+    "triangles": 18999
+  }
 }

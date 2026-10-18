@@ -30,6 +30,16 @@
       "bytes": 10558899,
       "role": "texture",
       "sha256": "19cff054bef3e91342b574567d00b2fd95e62ae14c392dc09eddc2693dca42c5"
+    },
+    "web3d/full.glb": {
+      "bytes": 147040,
+      "role": "web3d",
+      "sha256": "81a0872256500cc5f50f9f0a56573ca9e05a95193602418ab6a0539394b2becb"
+    },
+    "web3d/light.glb": {
+      "bytes": 20432,
+      "role": "web3d",
+      "sha256": "1d957187ed55ee08c7a4c65af940cd9b36d5839e01677bf357dca7517a994ad4"
     }
   },
   "id": "floor_grating_1.airlock",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 147040,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "81a0872256500cc5f50f9f0a56573ca9e05a95193602418ab6a0539394b2becb",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 20432,
+    "light_sha256": "1d957187ed55ee08c7a4c65af940cd9b36d5839e01677bf357dca7517a994ad4",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "034316fc37a48c45d6cf90e40adc193fac30eed004a05b5354989ef0ec597b53",
+    "triangles": 924
+  }
 }

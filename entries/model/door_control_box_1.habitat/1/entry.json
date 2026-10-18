@@ -35,6 +35,16 @@
       "bytes": 3169295,
       "role": "texture",
       "sha256": "3a14f55140f90f8cb71be1bdc2b37b9a51163f55110f69c95f91b66904ddbc00"
+    },
+    "web3d/full.glb": {
+      "bytes": 250936,
+      "role": "web3d",
+      "sha256": "054b67e95471c3dd0c185a19252da6ed21ea7d8272ac55eec95f21b8f1799d09"
+    },
+    "web3d/light.glb": {
+      "bytes": 41432,
+      "role": "web3d",
+      "sha256": "2b473893efee92c110adcd72f57bd6b376a46a81ee4d21a0633af040024eab42"
     }
   },
   "id": "door_control_box_1.habitat",
@@ -96,5 +106,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 250936,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 2
+    },
+    "from": {},
+    "full_sha256": "054b67e95471c3dd0c185a19252da6ed21ea7d8272ac55eec95f21b8f1799d09",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 41432,
+    "light_sha256": "2b473893efee92c110adcd72f57bd6b376a46a81ee4d21a0633af040024eab42",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 2,
+    "replaced": {},
+    "source": "0421e3e411640e4bea3c86a5039063c3a2cba15db9e1b468413360dbd742f6ac",
+    "triangles": 1028
+  }
 }

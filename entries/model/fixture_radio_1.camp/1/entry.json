@@ -20,6 +20,16 @@
       "bytes": 1823081,
       "role": "texture",
       "sha256": "285ff3c5f779b773896823c4ab023c78f141b64521f9b1f63b5b944d3dc39964"
+    },
+    "web3d/full.glb": {
+      "bytes": 19540,
+      "role": "web3d",
+      "sha256": "8d87da46f62e407a07c0ab9a41c127f14f3431178bc763fe44065cd5ea06568f"
+    },
+    "web3d/light.glb": {
+      "bytes": 3144,
+      "role": "web3d",
+      "sha256": "82e2ea9a985a1b3c2bc6e767b8329163c8f7630f74d15e53b60c394267121ed0"
     }
   },
   "id": "fixture_radio_1.camp",
@@ -79,5 +89,33 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 19540,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "replaced": 1
+    },
+    "from": {},
+    "full_sha256": "8d87da46f62e407a07c0ab9a41c127f14f3431178bc763fe44065cd5ea06568f",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 3144,
+    "light_sha256": "82e2ea9a985a1b3c2bc6e767b8329163c8f7630f74d15e53b60c394267121ed0",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {
+      "/model/body/Looks/look_0": {
+        "by": "glass_smoked",
+        "colour": [
+          0.2007,
+          0.1452,
+          0.1461
+        ],
+        "distance": 7.44
+      }
+    },
+    "source": "e7354b4f0b650d2562036444f8dee833eec5674c3c55c3152b9d35a8f9642edc",
+    "triangles": 2516
+  }
 }

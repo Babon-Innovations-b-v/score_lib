@@ -51,10 +51,67 @@
     "record_key": "5e51d617c044da3c7e8ee511e6e01546d78650b1b5c174f2566f235f4e4f022f",
     "world": "world1"
   },
+  "refine_options": [
+    {
+      "action": "re-tune against its footage",
+      "answers": [
+        "footage",
+        "fine particles",
+        "loose blobs",
+        "cites footage"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "the emitter's settings moved toward its footage's measured ranges in data/effects/<place>.json and its particles baked again (tools/usd/effects.py, on this machine)",
+      "suggested": false
+    },
+    {
+      "action": "measure more footage",
+      "answers": [
+        "footage"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "add a footage check for this emitter (a real photograph or film measured against a thing of known size)",
+      "suggested": false
+    }
+  ],
   "requires": [
     "algorithm/particle_effects@1"
   ],
   "schema": "score-lib-entry/1",
+  "score": 88,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "worst of 3 footage checks of the effects stage (effects-layer@greenhouse): mist plume's height 0.339 in [0.16, None]; mist plume's half angle in its first 0.15 m 14.287 in [8.0, 15.0]; mist one column, no loose blobs 0.000 in [0.0, 0.01]; inside its range 75 to 100 by its margin, 50 at an end, 0 a range's width (or the bound's size) past it",
+      "measured": 0.0,
+      "name": "footage",
+      "unit": "loose",
+      "value": 75,
+      "weight": 2.0
+    },
+    {
+      "how": "share of its 5092 showing particles at its fullest moment touching no other (the effects stage's loose: the nearest middle farther than its width); 100 at 0.0, 50 at 0.01, 0 at 0.05 share",
+      "measured": 0.0,
+      "name": "loose blobs",
+      "unit": "share",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "its settings name the real footage they were measured on (100), or only the source game's lines (0): 'footage: commons-ultrasonic-humidifier, flickr-3929581537 (an ultrasonic humidif'",
+      "measured": true,
+      "name": "cites footage",
+      "unit": "",
+      "value": 100,
+      "weight": 1.0
+    }
+  ],
   "seen_in": [
     "greenhouse"
   ],

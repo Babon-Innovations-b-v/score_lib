@@ -30,6 +30,16 @@
       "bytes": 6314447,
       "role": "texture",
       "sha256": "1a6f952fffa0cbf96a13f470ef489215fa023be5921bdef9003df7b4e99f6f08"
+    },
+    "web3d/full.glb": {
+      "bytes": 71880,
+      "role": "web3d",
+      "sha256": "57324a417b41ae8a22b5fa6f45d6957709607b1537db645fc870c510d5712971"
+    },
+    "web3d/light.glb": {
+      "bytes": 12484,
+      "role": "web3d",
+      "sha256": "b92f9b5806d92ee8b05fd2be6cdc1d6d9dc41a7c43480bfdb3c58676dd5fdc1a"
     }
   },
   "id": "wall_skirting_1.garage",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 71880,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "57324a417b41ae8a22b5fa6f45d6957709607b1537db645fc870c510d5712971",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 12484,
+    "light_sha256": "b92f9b5806d92ee8b05fd2be6cdc1d6d9dc41a7c43480bfdb3c58676dd5fdc1a",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "020ea378090e3c59e182f8d0508f0b563ac4043b4811595892aa89bb446f9ced",
+    "triangles": 108
+  }
 }

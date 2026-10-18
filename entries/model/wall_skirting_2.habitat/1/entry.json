@@ -30,6 +30,16 @@
       "bytes": 12501131,
       "role": "texture",
       "sha256": "edadddbdc5b185c49ff162f6508f821321efdc19c2d58b196bcb610d09278787"
+    },
+    "web3d/full.glb": {
+      "bytes": 91800,
+      "role": "web3d",
+      "sha256": "4d9319bba0c9909508218dd16f9740bc62fc32ab3812c0165a86b7cdfc85bae3"
+    },
+    "web3d/light.glb": {
+      "bytes": 15504,
+      "role": "web3d",
+      "sha256": "9ce6e7fbcabf460780d1a205a28b1af8d0557d0b636394714c447c13a5657cf0"
     }
   },
   "id": "wall_skirting_2.habitat",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 91800,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "4d9319bba0c9909508218dd16f9740bc62fc32ab3812c0165a86b7cdfc85bae3",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 15504,
+    "light_sha256": "9ce6e7fbcabf460780d1a205a28b1af8d0557d0b636394714c447c13a5657cf0",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "9894fc4fa1e936fe0d85373a4e9e6a21bdb9bb5eb72e26bbe1f28d3e12cebed3",
+    "triangles": 108
+  }
 }

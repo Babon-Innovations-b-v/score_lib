@@ -30,6 +30,16 @@
       "bytes": 14168130,
       "role": "texture",
       "sha256": "34a0014112440926f98da38c869fb8aa5518def67b01d3cbe5d3ab32b69100c0"
+    },
+    "web3d/full.glb": {
+      "bytes": 205104,
+      "role": "web3d",
+      "sha256": "7df329cc83653b05b4cb9d11e38a9ba81e938e2e9e3fc8deda1de60b78b1a911"
+    },
+    "web3d/light.glb": {
+      "bytes": 28208,
+      "role": "web3d",
+      "sha256": "b9adf9db40d310a68ad2bd63bf8837f3a5f03c72c54d4542f2dfa8d0070689f7"
     }
   },
   "id": "lattice_ring_rib_7",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 205104,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "7df329cc83653b05b4cb9d11e38a9ba81e938e2e9e3fc8deda1de60b78b1a911",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 28208,
+    "light_sha256": "b9adf9db40d310a68ad2bd63bf8837f3a5f03c72c54d4542f2dfa8d0070689f7",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "00d3e038ab6f25ac7f1f727b042294e0708ad438c9d96d440c8fe275ba101f22",
+    "triangles": 228
+  }
 }

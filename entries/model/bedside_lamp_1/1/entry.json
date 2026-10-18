@@ -30,6 +30,16 @@
       "bytes": 996169,
       "role": "texture",
       "sha256": "0fce0a9d6c06ab10143448a759cc7660a7951f16b360083f58ec4467f75a308d"
+    },
+    "web3d/full.glb": {
+      "bytes": 98160,
+      "role": "web3d",
+      "sha256": "851a60b8ec37e5fa98b269a6f2f53bc60fc528168453ac9d0b6a5461b50b4d8e"
+    },
+    "web3d/light.glb": {
+      "bytes": 7548,
+      "role": "web3d",
+      "sha256": "ef8cc66c2e09f51c1994a632112b4e06e3b0e19a0c9be94937962ec185bd52d8"
     }
   },
   "id": "bedside_lamp_1",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 98160,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 2
+    },
+    "from": {},
+    "full_sha256": "851a60b8ec37e5fa98b269a6f2f53bc60fc528168453ac9d0b6a5461b50b4d8e",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 7548,
+    "light_sha256": "ef8cc66c2e09f51c1994a632112b4e06e3b0e19a0c9be94937962ec185bd52d8",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "35507828c886790593927d00a3c7ef9ad5f5500acf7491921d21b2305cb9bb81",
+    "triangles": 4999
+  }
 }

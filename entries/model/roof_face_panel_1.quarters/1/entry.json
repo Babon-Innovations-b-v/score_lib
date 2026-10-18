@@ -30,6 +30,16 @@
       "bytes": 15485402,
       "role": "texture",
       "sha256": "21f3dcc88fe40285b7f5ff9171c1a88479176d8a7793671b7ca9b4f68d828c01"
+    },
+    "web3d/full.glb": {
+      "bytes": 66700,
+      "role": "web3d",
+      "sha256": "875f463b77ade2e27a501f25ab5d10fb727d14d99f716f3ac7be357350cea546"
+    },
+    "web3d/light.glb": {
+      "bytes": 11756,
+      "role": "web3d",
+      "sha256": "987c9d7203ad36bd961b62c77b7c5b7819d9a5f52b7b8e2aca8151e7bd6db18f"
     }
   },
   "id": "roof_face_panel_1.quarters",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 66700,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "875f463b77ade2e27a501f25ab5d10fb727d14d99f716f3ac7be357350cea546",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 11756,
+    "light_sha256": "987c9d7203ad36bd961b62c77b7c5b7819d9a5f52b7b8e2aca8151e7bd6db18f",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "a2d88805d76328b1a22f9a340e78ea5d64f4585df77fac1abce328654944cbfe",
+    "triangles": 324
+  }
 }

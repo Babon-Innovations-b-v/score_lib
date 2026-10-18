@@ -45,6 +45,16 @@
       "bytes": 6520973,
       "role": "texture",
       "sha256": "d5f88179be3d569a96a659c23c2f00233db7078081bdc5399dfaed83f99f1342"
+    },
+    "web3d/full.glb": {
+      "bytes": 121592,
+      "role": "web3d",
+      "sha256": "321889ffdcc083ee50158ca09c7a666b6eee5327faba6a696f5926727bbce216"
+    },
+    "web3d/light.glb": {
+      "bytes": 17716,
+      "role": "web3d",
+      "sha256": "a9a7ad08e17da88e7fa17c5e75eae1fef328684ed2a1f31815f7ec17aefd9b5c"
     }
   },
   "id": "far_floodlight_tower_1",
@@ -106,5 +116,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 121592,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 2
+    },
+    "from": {},
+    "full_sha256": "321889ffdcc083ee50158ca09c7a666b6eee5327faba6a696f5926727bbce216",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 17716,
+    "light_sha256": "a9a7ad08e17da88e7fa17c5e75eae1fef328684ed2a1f31815f7ec17aefd9b5c",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 2,
+    "replaced": {},
+    "source": "0087299772d87a76d1dffc52cf1e96c3ea5abcf802addf604ee73e1a436cc389",
+    "triangles": 2288
+  }
 }

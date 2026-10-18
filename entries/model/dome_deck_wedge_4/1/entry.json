@@ -30,6 +30,16 @@
       "bytes": 9566174,
       "role": "texture",
       "sha256": "46c48f4ba03ef0c3e97241b20bcd4bbf3a7a9fcdeab520d220d6747fb90a80ae"
+    },
+    "web3d/full.glb": {
+      "bytes": 65332,
+      "role": "web3d",
+      "sha256": "188239d4086a4e9e00502310be8dc5865720f9fdc63d31e0375c441fe1fbcb36"
+    },
+    "web3d/light.glb": {
+      "bytes": 14120,
+      "role": "web3d",
+      "sha256": "a277df37bb9fa74a029d07baa2e9f2b04c1b009baba81bbc358fe9b228c23097"
     }
   },
   "id": "dome_deck_wedge_4",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 65332,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "188239d4086a4e9e00502310be8dc5865720f9fdc63d31e0375c441fe1fbcb36",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 14120,
+    "light_sha256": "a277df37bb9fa74a029d07baa2e9f2b04c1b009baba81bbc358fe9b228c23097",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "f809c94ce81355402c2aeeefa8444fbcd4abda9e07c8aed0973fde1a372f2c2c",
+    "triangles": 180
+  }
 }

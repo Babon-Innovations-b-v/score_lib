@@ -1,0 +1,119 @@
+{
+  "address": "model/far_city_glass_tower@1",
+  "files": {
+    "model.json": {
+      "bytes": 193,
+      "role": "record",
+      "sha256": "b8ddaf660d3ab3aab2793e4d62e09e85866c06480d17119e4366d3a3346f6cb1"
+    },
+    "model.usdc": {
+      "bytes": 1869181,
+      "role": "usd",
+      "sha256": "fc80d302c212e02979cafd8e45e82eea53e1174f8f5baff90eb3a95e63f6ccf4"
+    },
+    "preview.png": {
+      "bytes": 21641,
+      "role": "picture",
+      "sha256": "94699c99ffeabe1c55f40a3fd4bb27f1cb973dc6d55cc9ae5be37fd977323987"
+    },
+    "textures/far_city_glass_tower_0.png": {
+      "bytes": 563343,
+      "role": "texture",
+      "sha256": "5adee2c1f6971dd0c38d5f60678d2d1251f2fa80f86cd75572d2c250f8c89459"
+    },
+    "web3d/full.glb": {
+      "bytes": 341384,
+      "role": "web3d",
+      "sha256": "88f6ae777c66ce0df2374a33ecfa2ab32f9d74e415f435ab2333b2af515bdc21"
+    },
+    "web3d/light.glb": {
+      "bytes": 6488,
+      "role": "web3d",
+      "sha256": "f2b8c4e07d292a4b763c1c3ae3c0aeddb5b202b97125780712e87f5bc190dbbe"
+    }
+  },
+  "id": "far_city_glass_tower",
+  "kind": "model",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T10:41:32.754135+00:00",
+      "by": "runner"
+    },
+    "code": "89962788af8431994f1543c9abe8e4f2a49ead05df0fbf80ac02a0d9bb5da769",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "folder": "places/far_city/",
+    "gltf": null,
+    "made_with": [
+      {
+        "by": "framework_models",
+        "what": "model: made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups"
+      }
+    ],
+    "model_sha256": "08b1a519f806479aa41da174279bb0aabd7bfe423cc9c8d5921ed17c2b9ec8a7",
+    "models": [],
+    "node": "neighbours@flat",
+    "output": "11ad42eaae26ebb4c2851afb156a7412ab52ff3a34849eb919b68d61e6557436",
+    "place": "far_city",
+    "record_key": "807bceafbd516910e699ab44a0bc67ae209cb1f485c4b91502d0d7101c1da16b",
+    "source_name": "far_city_glass_tower",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "far_city"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [],
+    "place_kind": []
+  },
+  "title": "Far city glass tower",
+  "usd": {
+    "default_prim": "/far_city_glass_tower",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/far_city_glass_tower/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1,
+  "web3d": {
+    "bytes": 341384,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "replaced": 1
+    },
+    "from": {},
+    "full_sha256": "88f6ae777c66ce0df2374a33ecfa2ab32f9d74e415f435ab2333b2af515bdc21",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 6488,
+    "light_sha256": "f2b8c4e07d292a4b763c1c3ae3c0aeddb5b202b97125780712e87f5bc190dbbe",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {
+      "/model/body/Looks/look_0": {
+        "by": "stair_terrazzo",
+        "colour": [
+          0.2026,
+          0.1693,
+          0.1305
+        ],
+        "distance": 5.39
+      }
+    },
+    "source": "9de1be2061c883574f6986eb6ded36de5a05d3dc2d695c878114f4016e5756f4",
+    "triangles": 19998
+  }
+}

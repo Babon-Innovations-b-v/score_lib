@@ -30,6 +30,16 @@
       "bytes": 1684105,
       "role": "texture",
       "sha256": "59f26a6b7d2de8104d5d3ece1385d4db5aa3841af1ed56052085043bcc3b74f5"
+    },
+    "web3d/full.glb": {
+      "bytes": 176608,
+      "role": "web3d",
+      "sha256": "0c0ff1e23a8b8f85e9faa12e80137d3b3dd481fe4d9b061565bdcd7ced888e88"
+    },
+    "web3d/light.glb": {
+      "bytes": 31104,
+      "role": "web3d",
+      "sha256": "88da60b4c9e37cc55c510256d169bbc60519f3841a846d95dbb11c38bb1fe2dc"
     }
   },
   "id": "balcony_rail_1.stairwell",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 176608,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "0c0ff1e23a8b8f85e9faa12e80137d3b3dd481fe4d9b061565bdcd7ced888e88",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 31104,
+    "light_sha256": "88da60b4c9e37cc55c510256d169bbc60519f3841a846d95dbb11c38bb1fe2dc",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "3c45ce64b8aac4f6920f504bcb8cdd26b4d19f21478b131f88c31d1ecba4e574",
+    "triangles": 1512
+  }
 }

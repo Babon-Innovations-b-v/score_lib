@@ -30,6 +30,16 @@
       "bytes": 638880,
       "role": "texture",
       "sha256": "bd77c00791ad7d959fbbe45c4debe4e6b56fbde988cb2f9ba9e939451a9a6322"
+    },
+    "web3d/full.glb": {
+      "bytes": 266240,
+      "role": "web3d",
+      "sha256": "649c65c70f2d009d028f16e97ee1e9b48d2e1f0d7fbcae6303be7c71391e1e11"
+    },
+    "web3d/light.glb": {
+      "bytes": 35952,
+      "role": "web3d",
+      "sha256": "5a16f00e04890655c191c3588e20b30ee97a2a411d1f6415e10d6a5a0135f4cd"
     }
   },
   "id": "kettle_1.habitat",
@@ -91,5 +101,24 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 266240,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 1,
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "649c65c70f2d009d028f16e97ee1e9b48d2e1f0d7fbcae6303be7c71391e1e11",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 35952,
+    "light_sha256": "5a16f00e04890655c191c3588e20b30ee97a2a411d1f6415e10d6a5a0135f4cd",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "26d978da81e105b81c92548a0ae5c5e3b4edcd9dda12de74e525595d65c1c373",
+    "triangles": 4997
+  }
 }

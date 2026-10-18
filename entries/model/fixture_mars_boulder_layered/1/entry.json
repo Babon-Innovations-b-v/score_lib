@@ -20,6 +20,16 @@
       "bytes": 20230046,
       "role": "texture",
       "sha256": "39134d6cc65c73aa9055535789f06381574b9dd74a24e0d3287bbfae6c21e606"
+    },
+    "web3d/full.glb": {
+      "bytes": 1191776,
+      "role": "web3d",
+      "sha256": "8cd5e81f53a820739846a1bd99bda17f62ddf9b323974ad8b69d06f35d70329f"
+    },
+    "web3d/light.glb": {
+      "bytes": 76920,
+      "role": "web3d",
+      "sha256": "3815e9206217d3a69000c9ffc8f3bc6d15773e527312b1d2b9c3f4569585407f"
     }
   },
   "id": "fixture_mars_boulder_layered",
@@ -79,5 +89,33 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 1191776,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "replaced": 1
+    },
+    "from": {},
+    "full_sha256": "8cd5e81f53a820739846a1bd99bda17f62ddf9b323974ad8b69d06f35d70329f",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 76920,
+    "light_sha256": "3815e9206217d3a69000c9ffc8f3bc6d15773e527312b1d2b9c3f4569585407f",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {
+      "/model/body/Looks/look_0": {
+        "by": "wood_board",
+        "colour": [
+          0.372,
+          0.22,
+          0.0984
+        ],
+        "distance": 3.87
+      }
+    },
+    "source": "6b718c4a108d75971fa2d0c233ebd57a5f57a6c0c9744a7c303263c42a459cf1",
+    "triangles": 192567
+  }
 }

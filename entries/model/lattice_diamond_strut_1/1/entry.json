@@ -30,6 +30,16 @@
       "bytes": 10062893,
       "role": "texture",
       "sha256": "a4c9c379defa4b0079d3973f98bb0c1672001d41ffe5a09882298d5ae0e0e91c"
+    },
+    "web3d/full.glb": {
+      "bytes": 188944,
+      "role": "web3d",
+      "sha256": "d38aaf6f68a853583da4293ffa3d0b4316040fa34759ac112220f1ff349dfabe"
+    },
+    "web3d/light.glb": {
+      "bytes": 25952,
+      "role": "web3d",
+      "sha256": "31a9e071d7ace2fb5664b1d657ce1edc193b765885d1730656ce9a7326011b7e"
     }
   },
   "id": "lattice_diamond_strut_1",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 188944,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "d38aaf6f68a853583da4293ffa3d0b4316040fa34759ac112220f1ff349dfabe",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 25952,
+    "light_sha256": "31a9e071d7ace2fb5664b1d657ce1edc193b765885d1730656ce9a7326011b7e",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "265e7e4b56b6fe24eab6cb81e027e718e6fa61d2f59f16d17483704ae4227cd0",
+    "triangles": 108
+  }
 }

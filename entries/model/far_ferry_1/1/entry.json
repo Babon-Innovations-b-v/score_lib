@@ -30,6 +30,16 @@
       "bytes": 11345585,
       "role": "texture",
       "sha256": "e2275d69f0914350928d1663c16f7ecd9c19f4028c5f4dba9d357f11017b053a"
+    },
+    "web3d/full.glb": {
+      "bytes": 344324,
+      "role": "web3d",
+      "sha256": "30fbcbf2d69cf04561c188b18c3aef4b0f70f0bcd6c20c02a68902671ea77fd6"
+    },
+    "web3d/light.glb": {
+      "bytes": 11624,
+      "role": "web3d",
+      "sha256": "76d2774c1ebe37445cdae63b3d5e8f306f6719591b931c2c2b5b262b74d5512d"
     }
   },
   "id": "far_ferry_1",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 344324,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 4
+    },
+    "from": {},
+    "full_sha256": "30fbcbf2d69cf04561c188b18c3aef4b0f70f0bcd6c20c02a68902671ea77fd6",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 11624,
+    "light_sha256": "76d2774c1ebe37445cdae63b3d5e8f306f6719591b931c2c2b5b262b74d5512d",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "d0361a86de59fb098bdd932525f50d4ff39f82baa58234b94bf07f714ca9217a",
+    "triangles": 18997
+  }
 }

@@ -20,6 +20,16 @@
       "bytes": 101091,
       "role": "texture",
       "sha256": "3eee24a0fcf5ea8a0a946026bd5e6bf45eae95fb49a8603ddaa3943811145478"
+    },
+    "web3d/full.glb": {
+      "bytes": 2004,
+      "role": "web3d",
+      "sha256": "ff8b208a722281e71fa3b403b9897a297fff981892c7328a1cc132947dc2cff5"
+    },
+    "web3d/light.glb": {
+      "bytes": 1876,
+      "role": "web3d",
+      "sha256": "51dd044afd351e513353d721720f795a97fc833bcd85d6f3bf7da03400d37032"
     }
   },
   "id": "crt_tv_1_screen_1",
@@ -79,5 +89,33 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 2004,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "replaced": 1
+    },
+    "from": {},
+    "full_sha256": "ff8b208a722281e71fa3b403b9897a297fff981892c7328a1cc132947dc2cff5",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 1876,
+    "light_sha256": "51dd044afd351e513353d721720f795a97fc833bcd85d6f3bf7da03400d37032",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {
+      "/model/body/Looks/baked": {
+        "by": "painted_floorboards",
+        "colour": [
+          0.1195,
+          0.0252,
+          0.0252
+        ],
+        "distance": 9.22
+      }
+    },
+    "source": "9a369a714d3d213c16808055dac9bd6d74e22ebb011673bc9e6fae372214c199",
+    "triangles": 12
+  }
 }

@@ -30,6 +30,16 @@
       "bytes": 8053439,
       "role": "texture",
       "sha256": "1c5934d991c08f01e090ad27fd0ecf6a192b66378dd0c3b72dfb89d9b1479a15"
+    },
+    "web3d/full.glb": {
+      "bytes": 333584,
+      "role": "web3d",
+      "sha256": "ace3bc96a48b73019fc21084b0e57e3d4e897f41953ce791647ab3ef5affcaa4"
+    },
+    "web3d/light.glb": {
+      "bytes": 14336,
+      "role": "web3d",
+      "sha256": "6a62bb7309433ce944f355f851397dac8c4a0fe111b45a9b15cb4bbe9f3c6751"
     }
   },
   "id": "hanging_suit",
@@ -89,5 +99,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 333584,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 4
+    },
+    "from": {},
+    "full_sha256": "ace3bc96a48b73019fc21084b0e57e3d4e897f41953ce791647ab3ef5affcaa4",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 14336,
+    "light_sha256": "6a62bb7309433ce944f355f851397dac8c4a0fe111b45a9b15cb4bbe9f3c6751",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "6f5344f5815c3241ae87ab2ffe9e31ba336c13318f7ee4e8780523d94f91dca1",
+    "triangles": 18997
+  }
 }

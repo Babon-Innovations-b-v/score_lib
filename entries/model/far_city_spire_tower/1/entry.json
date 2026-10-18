@@ -1,0 +1,119 @@
+{
+  "address": "model/far_city_spire_tower@1",
+  "files": {
+    "model.json": {
+      "bytes": 193,
+      "role": "record",
+      "sha256": "a01f31fae590642064bd6b8783724ff0cf0a920c56a0e6a1e38c25607e39237c"
+    },
+    "model.usdc": {
+      "bytes": 1891949,
+      "role": "usd",
+      "sha256": "6f8de8f742d816fca6928ecb7c5d9dee6ad84069773f132426ab78dc8078f22a"
+    },
+    "preview.png": {
+      "bytes": 16315,
+      "role": "picture",
+      "sha256": "e7d143882afeace85515d0569b0e973551e556569364d6481b69dee162c84bdf"
+    },
+    "textures/far_city_spire_tower_0.png": {
+      "bytes": 294237,
+      "role": "texture",
+      "sha256": "3ebbfd845fbac85371444deb89ed6c814061d74e4d4f1b77a8d42113aaa6e17b"
+    },
+    "web3d/full.glb": {
+      "bytes": 328476,
+      "role": "web3d",
+      "sha256": "8c6b6e33608f7cd476741df6ad7377ee260eaa9b6321b9987d47a8c95824b2fa"
+    },
+    "web3d/light.glb": {
+      "bytes": 8404,
+      "role": "web3d",
+      "sha256": "ea4a6b0f6adb931af0eedc37f722fd7f71ca9f289c139d15611240cc4984b79b"
+    }
+  },
+  "id": "far_city_spire_tower",
+  "kind": "model",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T10:41:32.754135+00:00",
+      "by": "runner"
+    },
+    "code": "89962788af8431994f1543c9abe8e4f2a49ead05df0fbf80ac02a0d9bb5da769",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "folder": "places/far_city/",
+    "gltf": null,
+    "made_with": [
+      {
+        "by": "framework_models",
+        "what": "model: made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups"
+      }
+    ],
+    "model_sha256": "1378ec2e78d4512d47dd6f1d95ca04c06b78b566ed23c2c2bb9b3c22eacb67c2",
+    "models": [],
+    "node": "neighbours@flat",
+    "output": "11ad42eaae26ebb4c2851afb156a7412ab52ff3a34849eb919b68d61e6557436",
+    "place": "far_city",
+    "record_key": "807bceafbd516910e699ab44a0bc67ae209cb1f485c4b91502d0d7101c1da16b",
+    "source_name": "far_city_spire_tower",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "far_city"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [],
+    "place_kind": []
+  },
+  "title": "Far city spire tower",
+  "usd": {
+    "default_prim": "/far_city_spire_tower",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/far_city_spire_tower/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1,
+  "web3d": {
+    "bytes": 328476,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "replaced": 1
+    },
+    "from": {},
+    "full_sha256": "8c6b6e33608f7cd476741df6ad7377ee260eaa9b6321b9987d47a8c95824b2fa",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 8404,
+    "light_sha256": "ea4a6b0f6adb931af0eedc37f722fd7f71ca9f289c139d15611240cc4984b79b",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {
+      "/model/body/Looks/look_0": {
+        "by": "glass",
+        "colour": [
+          0.0176,
+          0.0306,
+          0.0421
+        ],
+        "distance": 0.05
+      }
+    },
+    "source": "ca2eae36ab4562f754c6c03a389a966d2f1fd9b393ce6b79b27cb612176dc441",
+    "triangles": 19995
+  }
+}

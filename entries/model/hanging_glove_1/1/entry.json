@@ -30,6 +30,16 @@
       "bytes": 877684,
       "role": "texture",
       "sha256": "e7f7a563b6e6f1a8b21e41f03a5461fd7d366c2ed2ff7c7aaba0c87be64dcc9e"
+    },
+    "web3d/full.glb": {
+      "bytes": 98036,
+      "role": "web3d",
+      "sha256": "f975d0e423c9923edd102d00f4fd10fd91ec09ef50d4570538e7e5b0dc7187f3"
+    },
+    "web3d/light.glb": {
+      "bytes": 5600,
+      "role": "web3d",
+      "sha256": "fa954d8a712d57d38ca806162d05f6aece0babe5c6d39eeae36fca5591f1bc15"
     }
   },
   "id": "hanging_glove_1",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 98036,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 3
+    },
+    "from": {},
+    "full_sha256": "f975d0e423c9923edd102d00f4fd10fd91ec09ef50d4570538e7e5b0dc7187f3",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 5600,
+    "light_sha256": "fa954d8a712d57d38ca806162d05f6aece0babe5c6d39eeae36fca5591f1bc15",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "453748e9fc5ff8b4a5fc0625aaf789a0d356dc24dc5cafa3854e0c5d850e1337",
+    "triangles": 5000
+  }
 }

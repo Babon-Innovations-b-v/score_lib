@@ -60,6 +60,16 @@
       "bytes": 4514,
       "role": "record",
       "sha256": "89dbe3e21e9791ff74b0dec29d3f53c3a08912a661c20483ddfd0b85a04834b2"
+    },
+    "web3d/full.glb": {
+      "bytes": 1996352,
+      "role": "web3d",
+      "sha256": "717212ad8d5a3e031215479151697c6f32e32111e568bcc89ad63033ee11e8f0"
+    },
+    "web3d/light.glb": {
+      "bytes": 272596,
+      "role": "web3d",
+      "sha256": "2be82f4690a206a3530e8e4d9828ab3ac576c1032a562e1d8bb3aacc96b5af81"
     }
   },
   "id": "shiplock",
@@ -155,5 +165,46 @@
   },
   "title": "Shiplock kit",
   "usd": null,
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 1996352,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 33
+    },
+    "from": {
+      "layer/base.shiplock@1": "f10c50f2469ccd04fed7b06e20d7993a91f710a3619ae234a35e25b24a9b0627",
+      "model/ceiling_light_panel_1.shiplock@1": "bfe95570b59a06d52e992a8717d0a5c8d5b87469d49833543d68eef72af109e1",
+      "model/corner_lamp_1@1": "d447de5852b3e2bcd56e0b1ee8c3e1cc3b166870a7825d88756b0e97c4886757",
+      "model/door_leaf_1.shiplock@1": "369f234d4b96fb1583b7f2e2303a7faedd6b19f8a3458fea3c5477eed33f3763",
+      "model/floor_grate_1.shiplock@1": "efdf068733b6c53dd6b4b3c3a0fea6fafb297369a3d274c78441868329f13135",
+      "model/hatch_door_frame_1@1": "68b67e382de0bd754d4ad4fa303787e89d20c5cc784a9392307333c157a2ff4c",
+      "model/locker_1@1": "3af11add013dc430b2d59c50da1e87b14877a2e30416d4d028b81f918ca6ecf7",
+      "model/outer_hatch_1@1": "cf2d1acedf00e3f6509b512e7db9e48225b72d102078f11e384ebc274fe08de5",
+      "model/overhead_vent_1@1": "4e725546b8168a4090f9c6c168dc1d66128aedf557e1c6379d39250e0be458a0",
+      "model/pipe_straight_1.shiplock@1": "66a79587c5e163cc231d913cc905729118b94994e0d277240f661fd94107d218",
+      "model/ring_floor_plate_1.shiplock@1": "1c9c52b78d4b06ddad3b484bc0f1a0994182fc7b86c5896136b1fd26355e6995",
+      "model/ring_floor_plate_2.shiplock@1": "8def1d64b73fc240210f710c54f9dbcb4677d83f389b2ed2a057c7de0ffedd7c",
+      "model/ring_floor_plate_3.shiplock@1": "b2ad0279fe30e66e131818fd1b048403330f0e35a9675ff7fe4b09cdfcdcf507",
+      "model/ring_floor_plate_4.shiplock@1": "2e9c8c7b7cc55ad2973b5b0a829dda6ba00f2e59f348449fc0a61352c2a7b69c",
+      "model/roof_face_panel_1.shiplock@1": "0962476d213b21210a92ad5782aa3f46816d15cebc57c354bc5718ec1a53a4b6",
+      "model/wall_lower_plain_1.shiplock@1": "80bbea8c0f04d3d771378c2225f17599ef7e1adde84d1d2ab5887e6f52c55336",
+      "model/wall_lower_plain_2.shiplock@1": "ab80ea8e6b2a5a4a68738e925b5c6c6ebe74d47d9ca88d9765fe3bf851e13f62",
+      "model/wall_screen_1@1": "db3909aa732a736dd2a663bbef24752a2af7c904a3e873ab1e173bb39587e854",
+      "model/wall_upper_plain_1.shiplock@1": "d8815461fd5417e182f9caacf0edc2c4fa58427fb12725e16ae8b1e218c50de8",
+      "model/wall_upper_plain_2.shiplock@1": "2def33500abb9a858329231ab1adec76775906e1c734c1a966a5c9b21a5e5d21",
+      "model/wall_upper_plain_3.shiplock@1": "220e5e0ba815c534408e22a3dc4904fa1929d49306aaae0fb76f10749b570e9e",
+      "model/wall_upper_plain_4.shiplock@1": "d08279b0db1aad7af60e3e1d33d7fb37a3caa9fed1ec6515a704f2342de31464"
+    },
+    "full_sha256": "717212ad8d5a3e031215479151697c6f32e32111e568bcc89ad63033ee11e8f0",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 272596,
+    "light_sha256": "2be82f4690a206a3530e8e4d9828ab3ac576c1032a562e1d8bb3aacc96b5af81",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 33,
+    "replaced": {},
+    "source": "5b2605f9d422345105f234617f5e7fe934e6d797c78edfd72b8852f65d826b07",
+    "triangles": 23332
+  }
 }

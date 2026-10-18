@@ -30,6 +30,16 @@
       "bytes": 1695778,
       "role": "texture",
       "sha256": "281e84e76771234f907d70681be16729c84c8f80c50c04edf061d35e8863fca0"
+    },
+    "web3d/full.glb": {
+      "bytes": 152892,
+      "role": "web3d",
+      "sha256": "b630fbd38ff450fa24b50cb44820eaa6323edfd0fa23854c86f9725688c34e01"
+    },
+    "web3d/light.glb": {
+      "bytes": 24872,
+      "role": "web3d",
+      "sha256": "2a546f0cb1a63eac78b7b189cb018e989e47610de1de181aa9eca3f2aa0d42a3"
     }
   },
   "id": "timber_door_leaf_1.flat",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 152892,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "b630fbd38ff450fa24b50cb44820eaa6323edfd0fa23854c86f9725688c34e01",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 24872,
+    "light_sha256": "2a546f0cb1a63eac78b7b189cb018e989e47610de1de181aa9eca3f2aa0d42a3",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "3a14c821490754a27796c5b21d7637cc06ca71b782368be72d3083ed6bae41ce",
+    "triangles": 628
+  }
 }

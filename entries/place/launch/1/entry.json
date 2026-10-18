@@ -45,6 +45,16 @@
       "bytes": 7541,
       "role": "record",
       "sha256": "7392a90ecedb6db16e851a71c81645e31441cf4ceb984962e15df2dcac7b9505"
+    },
+    "web3d/full.glb": {
+      "bytes": 5126760,
+      "role": "web3d",
+      "sha256": "c11577c99994070883b2d7ad8e5c7b0979923c2dce9fbe073221fe9c2a24259d"
+    },
+    "web3d/light.glb": {
+      "bytes": 632456,
+      "role": "web3d",
+      "sha256": "8581d2252653b448d2f7ccc9e639adc070c3ea4501a5dddac6e90cd6b0d8993f"
     }
   },
   "id": "launch",
@@ -146,5 +156,80 @@
     "up_axis": "Y",
     "use": "open"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 5126760,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 26,
+      "library bake": 60,
+      "replaced": 2
+    },
+    "from": {
+      "algorithm/particle_effects@1": "84f8f19d62435b19ad97212b6b26a909ed2b972804c78f8f42492cb68ac4e503",
+      "algorithm/terrain_landforms@1": "9fb2aec6e8c9320732f7f344611886e3d50b0c17640c564a6f3f692d1138e7aa",
+      "effect/cloud_billows@1": "2f1131df7bc8453fd32c27a532dffb1888df20cfa1e47c3388fe499b8e657da9",
+      "effect/deluge_steam@1": "f97dce5e731dd16b5c285735bbb6128760e93989e1139ccad191d9d394fb0430",
+      "effect/flame@1": "c95bd6de96cdb4af6a66dedf1c5d615d468c20561839424a88a119f7227b3be0",
+      "effect/flame_core@1": "03e7105ac6689a5e0fe2db025e47dc386a5f57d0b2a94bdff97659a6df42ec7c",
+      "effect/ground_cloud@1": "bb46d4f7b166ad7dfd00a6baac67d9e7407fb97550b25457774aa42102e03357",
+      "effect/pad_fire@1": "cf059ad1b8e9c4f7b9a9a14f23857d9f4a97cc89972220f6d16dd69bea62cc56",
+      "effect/plume@1": "9684a1b86326fd06aa155760157b84093bac58a7bef0654801da3292ca0f7bee",
+      "ground/earth.launch@1": "38c5bcf7d5f14e9ec7daa6b22596e1f9f811f26aae635ae9783299a80c782d61",
+      "layer/base.launch@1": "6063dab4894546d99806c30551794914bedde3b3fc645e251a6fb8da97eff8ac",
+      "layer/effects.launch@1": "9f6f7230ea2dca5c4b0043eab804d516f9a9c7f86eb5b5360ed0044ffa6575a6",
+      "layer/ground.launch@1": "776de162f76995835f407a8d717911e4f8d658e5d4c462c3c8e845b7e5240a5b",
+      "layer/light.launch@1": "16fda281b80f7b3c06193c01793fefd8e1f1e7c9afddde1dcec5fc240e92cd06",
+      "layer/motion.launch@1": "fc525a3f26deb89d85dafe9c8a09df676a3674da8ac155e10af02a739b1e2b17",
+      "layer/sound.launch@1": "166daf1a56ef043e6311618bc0154eda1a452b3885a90c7551bbd4b9322d79aa",
+      "model/far_ferry_1@1": "d0361a86de59fb098bdd932525f50d4ff39f82baa58234b94bf07f714ca9217a",
+      "model/far_lightning_mast_1@1": "6a70c2bb876c69484d860d791fab9fd6090872fd7412c74e657dfa3712d2a520",
+      "model/far_pad_1@1": "4f0f555404c6a26db8aa61db0ec6a7026e64b8e0fdd8154a41b21d374710ff5f",
+      "model/far_pad_2@1": "60ff41a0b17a9e8063137d97bdd9cdca166d7e441fd11cc810f753f30083a2bf",
+      "model/far_pad_floodlight_1@1": "bcda18e11dea5a7a11388f734d2e165b8a4d7ccb9272063deedd6bb9e73620a3",
+      "model/far_rocket_1@1": "0aeaa380333ab03e91ca9135df57ef7b947a5fc8680358d6d97230eeb431fc81",
+      "sound/footstep_grating@1": "2e9201625477f7e8d36299bc61c38abb6b4418b2a03bf22bb57666e6ceb1d667",
+      "sound/footstep_rubber@1": "f110deb95dafb14db206c2aab1e8dae52f44c542cb4ce4365cb895a5d7f6c0e0",
+      "sound/footsteps_metal.launch@1": "d11b4b9826184c32c67d0031ca807e04f65850448884f6bb5c7fc7a5345fce5a",
+      "sound/impact_grating@1": "58c4dbc50eca1e6d43d07134b7bbf4f98181c9d282cefedfd0b26eca46810801",
+      "sound/impact_rubber@1": "5b5d22820be488ea0bd782a5b929831755592af869fd64613d965c4699aaa31d",
+      "sound/impact_steel_plate@1": "db0c0c8fe92925b1df1f351b362952d83485d7e38785ff3526992c8ec28f1bde",
+      "sound/launch_pad@1": "28ad896f35b2af2fa7fb461e2014acb5d60aed678a749a8129131bd61811c5c6",
+      "sound/rocket_launch@1": "8a0b8a48a661bf257e5ea4a9a2c6b377b03745fcb8035f857dc1bdc92d8cb7bb",
+      "sound/scrape_grating@1": "5f05414f0ee5496a8a5a6624b58189015c7da1b29c404ba0b3c27a94bdc872a1",
+      "sound/scrape_rubber@1": "09b537a83a4b28bdd94dc689184e387ea6b9a6ca5a25554d9f79ba674d4e28e3",
+      "sound/scrape_steel_plate@1": "e9c593cf26cb61fdab2c718e9af18afab2b1066cfffcf4ab72367d5447ec29d7"
+    },
+    "full_sha256": "c11577c99994070883b2d7ad8e5c7b0979923c2dce9fbe073221fe9c2a24259d",
+    "left_out": {
+      "sky (a light entry's prims)": 1
+    },
+    "light": "web3d/light.glb",
+    "light_bytes": 632456,
+    "light_sha256": "8581d2252653b448d2f7ccc9e639adc070c3ea4501a5dddac6e90cd6b0d8993f",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 70,
+    "replaced": {
+      "/launch/Shafts/shaft_0_look": {
+        "by": "wool_grey",
+        "colour": [
+          0.18,
+          0.18,
+          0.18
+        ],
+        "distance": 3.59
+      },
+      "/launch/Shafts/shaft_1_look": {
+        "by": "wool_grey",
+        "colour": [
+          0.18,
+          0.18,
+          0.18
+        ],
+        "distance": 3.59
+      }
+    },
+    "source": "5c26671a5a9f3a789d4822d83e41960b17e72b8fc5644f14cfbda9c22275c766",
+    "triangles": 1660590
+  }
 }

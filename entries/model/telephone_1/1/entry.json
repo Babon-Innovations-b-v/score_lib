@@ -30,6 +30,16 @@
       "bytes": 289436,
       "role": "texture",
       "sha256": "e9dd9099dc025647d5cacb51c6ad7a23103f02f54021f749c4e75f57b112fb27"
+    },
+    "web3d/full.glb": {
+      "bytes": 96200,
+      "role": "web3d",
+      "sha256": "0826540d6e80167ec869ffddb2fa370cd0f57f4dc03f8586c0f80b13dd4548cf"
+    },
+    "web3d/light.glb": {
+      "bytes": 7016,
+      "role": "web3d",
+      "sha256": "b392bb7529ede0a940449674db02bd6ef80a6b0f68908db887ee4f7edc266d72"
     }
   },
   "id": "telephone_1",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 96200,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 3
+    },
+    "from": {},
+    "full_sha256": "0826540d6e80167ec869ffddb2fa370cd0f57f4dc03f8586c0f80b13dd4548cf",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 7016,
+    "light_sha256": "b392bb7529ede0a940449674db02bd6ef80a6b0f68908db887ee4f7edc266d72",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "a6c026816c598457584e251d7344ff03993eef2eae2e688ab61a88f8e435758d",
+    "triangles": 5000
+  }
 }

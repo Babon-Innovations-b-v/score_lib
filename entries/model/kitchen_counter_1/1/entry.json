@@ -30,6 +30,16 @@
       "bytes": 5342607,
       "role": "texture",
       "sha256": "3e3ccfee1d4034bd9467173c57d70ac46d900fb63c308b7d17235d4e61f25074"
+    },
+    "web3d/full.glb": {
+      "bytes": 82280,
+      "role": "web3d",
+      "sha256": "c2dc8eee85daf14cf56c4d9826bc6f07676d70db5f04137b6cf98ce4242dd913"
+    },
+    "web3d/light.glb": {
+      "bytes": 14532,
+      "role": "web3d",
+      "sha256": "3722b827e01c40e080206c131fc1889b5f0a160205bf966cc2f1de3e1f09614d"
     }
   },
   "id": "kitchen_counter_1",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 82280,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "c2dc8eee85daf14cf56c4d9826bc6f07676d70db5f04137b6cf98ce4242dd913",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 14532,
+    "light_sha256": "3722b827e01c40e080206c131fc1889b5f0a160205bf966cc2f1de3e1f09614d",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "7d63e22da1babf686d461aeadb39b1a09abe4aab5ebd813b726b0e3598eede97",
+    "triangles": 3020
+  }
 }

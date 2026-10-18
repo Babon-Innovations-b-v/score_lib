@@ -45,16 +45,91 @@
     "source": "data/library/materials.json at the world's commit",
     "world": "world1"
   },
+  "refine_options": [
+    {
+      "action": "redraw the print",
+      "answers": [
+        "print resolution",
+        "ink contrast"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "the print drawn again from its library picture at a higher resolution",
+      "suggested": true
+    },
+    {
+      "action": "re-tune its settings",
+      "answers": [
+        "palette fit",
+        "close-range detail",
+        "ink contrast"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "its library variant's settings and palette token adjusted in data/library/materials.json, checked again here",
+      "suggested": false
+    },
+    {
+      "action": "bake a tile locally",
+      "answers": [
+        "tiling",
+        "close-range detail"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "the surface_recipes algorithm bakes one tile on this machine (Blender), so its seams and close-range detail can be measured",
+      "suggested": false
+    }
+  ],
   "requires": [
     "algorithm/surface_recipes@1"
   ],
   "schema": "score-lib-entry/1",
+  "score": 88,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "its picture's longer side (512 x 512 pixels); 100 at 1024, 50 at 512, 0 at 128 px",
+      "measured": 512,
+      "name": "print resolution",
+      "unit": "px",
+      "value": 50,
+      "weight": 1.0
+    },
+    {
+      "how": "CIE76 between its ink and its ground (the median colours either side of its lightness middle); 100 at 40.0, 50 at 20.0, 0 at 8.0 CIE76",
+      "measured": 104.2,
+      "name": "ink contrast",
+      "unit": "CIE76",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "share of its pixels within CIE76 8 of its ground token, its ink tokens and their mixes; 100 at 0.98, 50 at 0.9, 0 at 0.6 share",
+      "measured": 0.988,
+      "name": "palette fit",
+      "unit": "share",
+      "value": 100,
+      "weight": 2.0
+    },
+    {
+      "how": "a print is laid once, never tiled",
+      "name": "tiling",
+      "status": "not judged",
+      "value": null
+    }
+  ],
   "seen_in": [
     "airlock",
     "camp",
     "campgrounds",
     "cockpit",
     "engineroom",
+    "far_city",
     "flat",
     "galley",
     "garage",

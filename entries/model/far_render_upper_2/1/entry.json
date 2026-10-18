@@ -30,6 +30,16 @@
       "bytes": 6520973,
       "role": "texture",
       "sha256": "d5f88179be3d569a96a659c23c2f00233db7078081bdc5399dfaed83f99f1342"
+    },
+    "web3d/full.glb": {
+      "bytes": 75208,
+      "role": "web3d",
+      "sha256": "a086b093b62f1bf76dcfb49b777c8982541a67908af23d8229fedc76f5b58313"
+    },
+    "web3d/light.glb": {
+      "bytes": 11800,
+      "role": "web3d",
+      "sha256": "4ef89b5fce4c4cf22ec5b5a6478c381642bed6fdb3556ed9b2b3303dc9612702"
     }
   },
   "id": "far_render_upper_2",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 75208,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "a086b093b62f1bf76dcfb49b777c8982541a67908af23d8229fedc76f5b58313",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 11800,
+    "light_sha256": "4ef89b5fce4c4cf22ec5b5a6478c381642bed6fdb3556ed9b2b3303dc9612702",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "2788c2cb4364b3cdf2a1dbca70afb056d9d63accc6195c5bebb753af3b18f293",
+    "triangles": 128
+  }
 }

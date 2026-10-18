@@ -35,6 +35,16 @@
       "bytes": 12037563,
       "role": "texture",
       "sha256": "742c6d36036d084d1c1cc1aa15305d0149dae27fcf174bb795f5c20857f1216e"
+    },
+    "web3d/full.glb": {
+      "bytes": 110544,
+      "role": "web3d",
+      "sha256": "c6a1e8e3eb0a59164609e1ab1ed347558556a83e639692bf5f770a2918cacab0"
+    },
+    "web3d/light.glb": {
+      "bytes": 19072,
+      "role": "web3d",
+      "sha256": "410de50fd061d0594a9e56a3029498f4128a22339d095b219104260957b38e6d"
     }
   },
   "id": "suit_alcove_1",
@@ -96,5 +106,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 110544,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 2
+    },
+    "from": {},
+    "full_sha256": "c6a1e8e3eb0a59164609e1ab1ed347558556a83e639692bf5f770a2918cacab0",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 19072,
+    "light_sha256": "410de50fd061d0594a9e56a3029498f4128a22339d095b219104260957b38e6d",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 2,
+    "replaced": {},
+    "source": "7e7134eb96ad4ebea39befc0bdc932c374d26f8890a6baf4448e5fc9f15fa2f5",
+    "triangles": 1840
+  }
 }

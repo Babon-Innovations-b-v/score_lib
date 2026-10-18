@@ -30,6 +30,16 @@
       "bytes": 13365461,
       "role": "texture",
       "sha256": "8277d4626e78ce124e7f717a861e81f5f1c725e504da29bc01bd18622ee786ea"
+    },
+    "web3d/full.glb": {
+      "bytes": 114616,
+      "role": "web3d",
+      "sha256": "2b736ab8b6d18400a33102bb803c227bd732d325baaa7bb667a22602e0ab2ddf"
+    },
+    "web3d/light.glb": {
+      "bytes": 17760,
+      "role": "web3d",
+      "sha256": "a17c6ecbf3a66fcc78417741e1f8192e4938b370be059eeebee13b7808df49c1"
     }
   },
   "id": "ring_floor_plate_15.habitat",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 114616,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "2b736ab8b6d18400a33102bb803c227bd732d325baaa7bb667a22602e0ab2ddf",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 17760,
+    "light_sha256": "a17c6ecbf3a66fcc78417741e1f8192e4938b370be059eeebee13b7808df49c1",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "cd50aa59d0bba42130ac1194173885481dc7add685451d9730d6006695ae323e",
+    "triangles": 272
+  }
 }

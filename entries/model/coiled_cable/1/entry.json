@@ -30,6 +30,16 @@
       "bytes": 7847642,
       "role": "texture",
       "sha256": "9912f78a51573816666e1228a377740f0f479491177e8aa008911998afe70f19"
+    },
+    "web3d/full.glb": {
+      "bytes": 343460,
+      "role": "web3d",
+      "sha256": "d2cfe05c6514bea72b4a1715bc9ea21ff2d8cdf022b905498314fb4951bd6fae"
+    },
+    "web3d/light.glb": {
+      "bytes": 7708,
+      "role": "web3d",
+      "sha256": "04057eb94b3f6f74b5732c890dac5834ccd48880807db8109cfae437e7e98e5a"
     }
   },
   "id": "coiled_cable",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 343460,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 1
+    },
+    "from": {},
+    "full_sha256": "d2cfe05c6514bea72b4a1715bc9ea21ff2d8cdf022b905498314fb4951bd6fae",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 7708,
+    "light_sha256": "04057eb94b3f6f74b5732c890dac5834ccd48880807db8109cfae437e7e98e5a",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "9a2b2380db5fb24bd4b25f0ad1f6db749d0bc68f8f217f8cd8640659859ea8e3",
+    "triangles": 18982
+  }
 }

@@ -45,6 +45,16 @@
       "bytes": 13443,
       "role": "texture",
       "sha256": "0ccf9368dfe7863d355d99ded40d1e64d8b6fc00dd562a8a913ad185d98f3155"
+    },
+    "web3d/full.glb": {
+      "bytes": 187304,
+      "role": "web3d",
+      "sha256": "1b6885923191d532edd3dc3b8cefe65705bd80936cb0d2249b691b239d760a5d"
+    },
+    "web3d/light.glb": {
+      "bytes": 45936,
+      "role": "web3d",
+      "sha256": "7bc499a16749027bcaf0592fd8a02c10ec216f16ebd7c58acfb8b1d7139f4d38"
     }
   },
   "id": "dress_nev_work.camp",
@@ -120,5 +130,43 @@
     "up_axis": "Y",
     "use": "payload"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 187304,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 42,
+      "replaced": 2
+    },
+    "from": {},
+    "full_sha256": "1b6885923191d532edd3dc3b8cefe65705bd80936cb0d2249b691b239d760a5d",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 45936,
+    "light_sha256": "7bc499a16749027bcaf0592fd8a02c10ec216f16ebd7c58acfb8b1d7139f4d38",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 44,
+    "replaced": {
+      "/Character/Looks/m28_hair": {
+        "by": "wool_charcoal",
+        "colour": [
+          0.0685,
+          0.0723,
+          0.0844
+        ],
+        "distance": 1.9
+      },
+      "/Character/Looks/m29_hair": {
+        "by": "wool_charcoal",
+        "colour": [
+          0.0685,
+          0.0723,
+          0.0844
+        ],
+        "distance": 1.9
+      }
+    },
+    "source": "78f80f0fd6e2e664f926384970b011a403178a059caaca50a44752159a839e46",
+    "triangles": 28810
+  }
 }

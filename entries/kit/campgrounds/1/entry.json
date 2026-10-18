@@ -10,6 +10,16 @@
       "bytes": 2805,
       "role": "picture",
       "sha256": "27d5e8b5cc360fbbfecf81bf06a32f121371c171a6261e22ca7bc4d98f46ce49"
+    },
+    "web3d/full.glb": {
+      "bytes": 9068840,
+      "role": "web3d",
+      "sha256": "01bc2ce400b5c3bd51925378f1cb277c24eb1912bf0af3f52ba79c3a6100af89"
+    },
+    "web3d/light.glb": {
+      "bytes": 492700,
+      "role": "web3d",
+      "sha256": "6b4c9dc5b7b1643ccd4262fc490e276499ae8346b4a06dc9ad734bd9208457d7"
     }
   },
   "id": "campgrounds",
@@ -63,5 +73,43 @@
   },
   "title": "Campgrounds kit",
   "usd": null,
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 9068840,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 47,
+      "library bake": 21
+    },
+    "from": {
+      "layer/base.campgrounds@1": "e77b8f58f8f3c3e7d3be822f21205fb1377c0e02bbd209cbfa1921abfa0ad1b8",
+      "light/sky_dome.campgrounds@1": "b6f00e9eb931a69802001cc52dcd15facf0211b345eb6288e27764923ad78dc9",
+      "model/cairn@1": "6f1d767c7915741a8e09e8da423f3606c047bff2e00305fdd6f67a7f31add169",
+      "model/cargo_case@1": "7b37b7d37522e45aab450ff5f8c35ce03b5c2b8ffd5c87f8192d84073c83167c",
+      "model/cargo_case_open@1": "32f6600cdbc980eb5f58e5fabeb63f85d40982db1476d75f520b6450c200d299",
+      "model/cargo_pallet@1": "087a6249d07a5b696755757789d4ef5f5f39a909a55da21ab7d50443729aad0f",
+      "model/coiled_cable@1": "9a2b2380db5fb24bd4b25f0ad1f6db749d0bc68f8f217f8cd8640659859ea8e3",
+      "model/crane@1": "00f940c623c0e21d5043bb352162d526928de04314799be57838355468eaf9ca",
+      "model/drift@1": "f4a885f2038395620109ede1b5f77e6565bb4fc5b0db8cf5976d7a3f021fcb33",
+      "model/fixture_camp_boot_rock@1": "940fc197b5e6ce2c27b78ebe867c0d5aba345f8defc3d3caf0d2d350cc9a6ca8",
+      "model/ground_cable_2@1": "0214d66ae1a1807592187369e4bbc2c138a58bff08a12448cc2f9ccb4fb44111",
+      "model/ice_drill@1": "cdddb75353839cd80391144a025f739ed7fbaa17213a88e9ccf2ee531ded283e",
+      "model/lander@1": "35e48a3d04fc89bf19c60d97bc9975158c5b371c9469c1b8eee9826255e5134a",
+      "model/mast_5p82@1": "2b0e5d068eb6af431f39bd6b9c098505244f7e836070fb32eb5d5203cfc2bb48",
+      "model/mast_cabinet@1": "ae14440bb08e3baf0e79ff4611d26c85385d334a42dc8c460440d95e758e8485",
+      "model/power_unit.campgrounds@1": "a17ef0abfacd64178a5f1060fe10ac18e48fa6a238f26f1c27ac283e3dfc61ee",
+      "model/reactor@1": "c87922caaeec99779ea31fddf013de85569b6b967f89ee9e948ea3eb86410977",
+      "model/sample_case@1": "094e9bc183c0036fa8a8919923e158423d028867d443627437305c4a43dda86d"
+    },
+    "full_sha256": "01bc2ce400b5c3bd51925378f1cb277c24eb1912bf0af3f52ba79c3a6100af89",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 492700,
+    "light_sha256": "6b4c9dc5b7b1643ccd4262fc490e276499ae8346b4a06dc9ad734bd9208457d7",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 34,
+    "replaced": {},
+    "source": "888c0f8527d4b25150eeb25baff5079d209e97979bf362ced78cb85aa8a17b49",
+    "triangles": 387458
+  }
 }

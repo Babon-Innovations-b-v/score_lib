@@ -30,6 +30,16 @@
       "bytes": 5202233,
       "role": "texture",
       "sha256": "e227e2bc8217497be276a3c34905878225f0639410487f04f25a5a4d51525c01"
+    },
+    "web3d/full.glb": {
+      "bytes": 140568,
+      "role": "web3d",
+      "sha256": "2e792ef29fa26f902091aaf85cb23e18f786d057ec8fc0a99380cbafe62819aa"
+    },
+    "web3d/light.glb": {
+      "bytes": 21064,
+      "role": "web3d",
+      "sha256": "93231a4326479b92a80a88cc706dc2de95908a52cfca1df582465be365abfed8"
     }
   },
   "id": "lattice_ring_rib_1.gdoor",
@@ -88,5 +98,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 140568,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "2e792ef29fa26f902091aaf85cb23e18f786d057ec8fc0a99380cbafe62819aa",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 21064,
+    "light_sha256": "93231a4326479b92a80a88cc706dc2de95908a52cfca1df582465be365abfed8",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "9f6147a85175ea88ecc6eaefa628115cec481766fb43d36fb0058864102c1e39",
+    "triangles": 228
+  }
 }

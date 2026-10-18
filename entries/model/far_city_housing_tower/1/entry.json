@@ -1,0 +1,119 @@
+{
+  "address": "model/far_city_housing_tower@1",
+  "files": {
+    "model.json": {
+      "bytes": 195,
+      "role": "record",
+      "sha256": "4af0fb1ef92d204905ebc7ca3ad83d401e0836c97e6a10e739e9d2d52e721814"
+    },
+    "model.usdc": {
+      "bytes": 1974430,
+      "role": "usd",
+      "sha256": "6f2559bf2c31d559e296c2a04bb2d4756d133bff62b073569ba235814538f884"
+    },
+    "preview.png": {
+      "bytes": 44381,
+      "role": "picture",
+      "sha256": "97fc08c520bc8ea30f8207cc9785c597e15e73df2aa8e4abd082c3f5c2442205"
+    },
+    "textures/far_city_housing_tower_0.png": {
+      "bytes": 889000,
+      "role": "texture",
+      "sha256": "4da9d66ff4b32b7e4a8ccf8f3bfe26ed61bd3e12cc0e5eedbe70f6a6edf25bc8"
+    },
+    "web3d/full.glb": {
+      "bytes": 363360,
+      "role": "web3d",
+      "sha256": "9daa76c066c1b9eca195c6eb057e7131303ff028df10166a5e5bb850081a7c1b"
+    },
+    "web3d/light.glb": {
+      "bytes": 5328,
+      "role": "web3d",
+      "sha256": "11d187d0594018b1199ef7b1b183316abe5299ecfc62bce02fa539d6e6ac7122"
+    }
+  },
+  "id": "far_city_housing_tower",
+  "kind": "model",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T10:41:32.754135+00:00",
+      "by": "runner"
+    },
+    "code": "89962788af8431994f1543c9abe8e4f2a49ead05df0fbf80ac02a0d9bb5da769",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "folder": "places/far_city/",
+    "gltf": null,
+    "made_with": [
+      {
+        "by": "framework_models",
+        "what": "model: made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups"
+      }
+    ],
+    "model_sha256": "85de78eb6e055317b85a6adef1f6e9535ef1f75774fd2dafa052ce91cfe86261",
+    "models": [],
+    "node": "neighbours@flat",
+    "output": "11ad42eaae26ebb4c2851afb156a7412ab52ff3a34849eb919b68d61e6557436",
+    "place": "far_city",
+    "record_key": "807bceafbd516910e699ab44a0bc67ae209cb1f485c4b91502d0d7101c1da16b",
+    "source_name": "far_city_housing_tower",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "far_city"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [],
+    "place_kind": []
+  },
+  "title": "Far city housing tower",
+  "usd": {
+    "default_prim": "/far_city_housing_tower",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/far_city_housing_tower/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1,
+  "web3d": {
+    "bytes": 363360,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "replaced": 1
+    },
+    "from": {},
+    "full_sha256": "9daa76c066c1b9eca195c6eb057e7131303ff028df10166a5e5bb850081a7c1b",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 5328,
+    "light_sha256": "11d187d0594018b1199ef7b1b183316abe5299ecfc62bce02fa539d6e6ac7122",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {
+      "/model/body/Looks/look_0": {
+        "by": "canvas_beige",
+        "colour": [
+          0.4991,
+          0.4714,
+          0.4002
+        ],
+        "distance": 4.9
+      }
+    },
+    "source": "04ae59b87cc9c772bd4103d8d638c86bca45478724be6d18b04aa504ad9ae570",
+    "triangles": 19947
+  }
+}

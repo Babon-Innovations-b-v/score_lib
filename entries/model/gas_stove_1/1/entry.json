@@ -30,6 +30,16 @@
       "bytes": 3218656,
       "role": "texture",
       "sha256": "9d2e3a157160bfe91f15f9c090e68b975990dbb5e171708ec71db065b2373454"
+    },
+    "web3d/full.glb": {
+      "bytes": 144064,
+      "role": "web3d",
+      "sha256": "8e77d437e46832e92160f569dacb816ca2245c5accebbc4b54252c56219e7023"
+    },
+    "web3d/light.glb": {
+      "bytes": 6728,
+      "role": "web3d",
+      "sha256": "4cb37109ad46885d790b27f9a3b0fd638e1b9a122f6dd011cd4082b284a437cb"
     }
   },
   "id": "gas_stove_1",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 144064,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 3
+    },
+    "from": {},
+    "full_sha256": "8e77d437e46832e92160f569dacb816ca2245c5accebbc4b54252c56219e7023",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 6728,
+    "light_sha256": "4cb37109ad46885d790b27f9a3b0fd638e1b9a122f6dd011cd4082b284a437cb",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "915648972f55f9b85a2cb9f4a73258ccbaab3927d571493550dac5157528f444",
+    "triangles": 7299
+  }
 }

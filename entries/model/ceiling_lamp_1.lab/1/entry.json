@@ -30,6 +30,16 @@
       "bytes": 872299,
       "role": "texture",
       "sha256": "2901db70abcb810371dc01d67c016d6187902450a57231891560b65044cb8782"
+    },
+    "web3d/full.glb": {
+      "bytes": 129784,
+      "role": "web3d",
+      "sha256": "91852263dd86dccee3631234a2ad3aa1625bbc04e5b3b79e697a740e058c3fef"
+    },
+    "web3d/light.glb": {
+      "bytes": 6540,
+      "role": "web3d",
+      "sha256": "f4274b9de5b1e339ac8ffc834ca3a2d399eb5db8a825e5b1624875e9fde22ad6"
     }
   },
   "id": "ceiling_lamp_1.lab",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 129784,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 3
+    },
+    "from": {},
+    "full_sha256": "91852263dd86dccee3631234a2ad3aa1625bbc04e5b3b79e697a740e058c3fef",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 6540,
+    "light_sha256": "f4274b9de5b1e339ac8ffc834ca3a2d399eb5db8a825e5b1624875e9fde22ad6",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "33f93e8274beca7b2d83bae6f4be344a5158aae7ad5d5cfade6eb0d4bbeaf6e6",
+    "triangles": 6840
+  }
 }

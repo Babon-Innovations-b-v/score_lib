@@ -30,6 +30,16 @@
       "bytes": 3169295,
       "role": "texture",
       "sha256": "3a14f55140f90f8cb71be1bdc2b37b9a51163f55110f69c95f91b66904ddbc00"
+    },
+    "web3d/full.glb": {
+      "bytes": 238748,
+      "role": "web3d",
+      "sha256": "2ba6a6aadbfd5db001cad63040f96d41f5c918e60caca8b8bddce9313afd2489"
+    },
+    "web3d/light.glb": {
+      "bytes": 39576,
+      "role": "web3d",
+      "sha256": "1c857665a060819fb3083e1d4e8410a8bbbea18c3babb4fe9ba28f58d0f89fda"
     }
   },
   "id": "tea_towel_1",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 238748,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "2ba6a6aadbfd5db001cad63040f96d41f5c918e60caca8b8bddce9313afd2489",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 39576,
+    "light_sha256": "1c857665a060819fb3083e1d4e8410a8bbbea18c3babb4fe9ba28f58d0f89fda",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "9d47a8ffb9863c7a5e8fb426d22a9b7dd708c818b2f0a4d2679bc02ed0856cc8",
+    "triangles": 216
+  }
 }

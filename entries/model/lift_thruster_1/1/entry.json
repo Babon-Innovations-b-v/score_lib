@@ -30,6 +30,16 @@
       "bytes": 15381352,
       "role": "texture",
       "sha256": "4df9f6b42732de9f43233c0f53f73062e934fba7e29aaf8e91f28b02fe036ad4"
+    },
+    "web3d/full.glb": {
+      "bytes": 342496,
+      "role": "web3d",
+      "sha256": "bf6780f4f590bff1d94856838272ac264058ced9dee10ffa63b83cb4ed4a0271"
+    },
+    "web3d/light.glb": {
+      "bytes": 8312,
+      "role": "web3d",
+      "sha256": "21dcabb5594e4067ff5f45dbf74c7f19d437ddda26e93c7edacea972151e2194"
     }
   },
   "id": "lift_thruster_1",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 342496,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 2
+    },
+    "from": {},
+    "full_sha256": "bf6780f4f590bff1d94856838272ac264058ced9dee10ffa63b83cb4ed4a0271",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 8312,
+    "light_sha256": "21dcabb5594e4067ff5f45dbf74c7f19d437ddda26e93c7edacea972151e2194",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "734258d4dad8d7d5d4f8cd61ffc31a9efc9dc158dc659022dc762744846ba419",
+    "triangles": 18996
+  }
 }

@@ -75,6 +75,16 @@
       "bytes": 8628,
       "role": "record",
       "sha256": "03b7662c33163d11c11e29fbcec308e44cea78a375a37ecab2741f92410a25ab"
+    },
+    "web3d/full.glb": {
+      "bytes": 2740120,
+      "role": "web3d",
+      "sha256": "6343f19879215bb926ad9c682fd091931fbe0705d573fd869e527ee7ec3979c6"
+    },
+    "web3d/light.glb": {
+      "bytes": 379780,
+      "role": "web3d",
+      "sha256": "88bf5e11eb7dba5982c7bc550cb339eaeb90d8f080b0bce59ec37eda136fefc7"
     }
   },
   "id": "cockpit",
@@ -196,5 +206,65 @@
   },
   "title": "Cockpit kit",
   "usd": null,
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 2740120,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 88
+    },
+    "from": {
+      "layer/base.cockpit@1": "5cc19b065c4fbe411455b437a7769d1d9a3496f86baaab63e419b483d64934aa",
+      "model/ceiling_equipment_1@1": "b9be17d272ee885b092b371038572c9b6f5a54403009ab8c8cfa9d2b724d08d1",
+      "model/ceiling_light_panel_1.cockpit@1": "8284e3c00a60b12fe1ecbd565d5d962b05357b8f5b5bf78198b223ab5fec88bd",
+      "model/centre_pedestal_1@1": "738f03fad34490913501775b870a8e76cdc3a6490c9a1b12966d6f773fe661de",
+      "model/control_stick_1@1": "f44f40fab349e1a4f8d92ea6008d93ffa8528422c6c5316f565a90f37a81fe62",
+      "model/corner_lamp_1@1": "d447de5852b3e2bcd56e0b1ee8c3e1cc3b166870a7825d88756b0e97c4886757",
+      "model/dash_light_bar_1@1": "d9a221bd3fa6d4f07d9fd0d00c982b895dd327f43cce27ba3b2b6e74d6008c4d",
+      "model/door_leaf_1.cockpit@1": "a44f304947257cff248a1ffad9f7b94e149405e91ccb13f9c96c429d49440f70",
+      "model/edge_light_strip_1.cockpit@1": "5100d391a10b6f703e9ad056cae2d6dc8e31f461f313b1985d71b0e8e58da716",
+      "model/floor_grate_1.cockpit@1": "e6e57d09e8286c205145207750a8c172a75e0ca4c75157ce043588a3ebb6c5c6",
+      "model/frame_rib_1.cockpit@1": "47d7502dd9595531a9baea6b435cfd726c5630e7fc6f402421f159341dfaf97f",
+      "model/frame_rib_2.cockpit@1": "3948de964d4ed1b08a2953e5d59736d3318fe7fa4aad61c7cee07f125118a20b",
+      "model/hatch_door_frame_1@1": "68b67e382de0bd754d4ad4fa303787e89d20c5cc784a9392307333c157a2ff4c",
+      "model/main_console_1@1": "305d51323659cab165768e913749e5a14770b6b13f6fd9c8f694955ccfbd44c9",
+      "model/overhead_console_1@1": "34ff401e148a0b7e7dc91d9e923d87e6eba024e49b29d53cabcfe5ea95b10c97",
+      "model/overhead_vent_1@1": "4e725546b8168a4090f9c6c168dc1d66128aedf557e1c6379d39250e0be458a0",
+      "model/pilot_seat_1@1": "cd9ff06553789fbcb9f0e3d49b1ddc0e184f0f2aaa47b466ce7acca0449acc94",
+      "model/ring_floor_plate_1.cockpit@1": "3991069700ffcf2138cad5ff8b1663b7c8fb311c7e911cba971e505320ce476f",
+      "model/ring_floor_plate_2.cockpit@1": "059eccb0d95c71565c2aed59bd9342109efd4d60c1b84c4e026c5e3e6626742c",
+      "model/ring_floor_plate_3.cockpit@1": "4b6a1e13c8a2c4a985cbccbb0d942dfb6eabf348d66846b3fb3654980eb4bd78",
+      "model/ring_floor_plate_4.cockpit@1": "f2ef6659391ee44080f4f1d4e1f53d127efeacd3bc7a4d4dc01832f26a7c2cfb",
+      "model/ring_floor_plate_5.cockpit@1": "889093686f930bb3bc08023a1858a7a9e37012c459ee1c5ec881f286e4631d48",
+      "model/ring_floor_plate_6.cockpit@1": "29e790514144e683976c39b19bbe8c9be1517d13725f1eea36af753cbfbaca8e",
+      "model/ring_floor_plate_7.cockpit@1": "f57b772fc58a14c444e264fe3d4bce1bd236e742a70139d13d7b4549a5dfed1d",
+      "model/roof_face_panel_1.cockpit@1": "68616827f30bfaaab833e6862260ee00a9f00edc538f2cd0098bc52dbb1995a7",
+      "model/roof_face_panel_2.cockpit@1": "fd520ece79b0e7dc79f97f02fbc09cffcebaefc7ef0cee44830387b374040bcf",
+      "model/roof_face_panel_3.cockpit@1": "16dd956cc848d8e1b5a44ad5fb8095b3cedbabdc4b967ac8367d70f8ddfd2ec7",
+      "model/roof_face_panel_4.cockpit@1": "b679e629670311d09fbce61dcaacf8eda3e6c9c992df397d60b00a5f67ed9ba4",
+      "model/side_console_1@1": "4c1280aeb0dd59457c7ad156efe19b506be28962f4725c17001438b1c3ed4640",
+      "model/thrust_indicator_1@1": "cdbd6db0563e1ba03e6cddbe2e1d1264368ebea68104dbef3d65949da92babdd",
+      "model/wall_lower_plain_1.cockpit@1": "0e917f3fa560e36542192ac9c171c0344a381fc39dffae78c417d9b27443e70b",
+      "model/wall_lower_plain_2.cockpit@1": "081e36b6a0f22c65ccc4f90d53f5529c41693b9e44a96834f182bc0d38b39f79",
+      "model/wall_lower_plain_3.cockpit@1": "899dadd63817bf9cf21575ce2216ea4187b8ef89f59d46d93f203d5adeabfa18",
+      "model/wall_upper_plain_1.cockpit@1": "723a4b6e98350fcdb28f0edd27916a3f65daef8ee66f364c3a7c6d6fff0f4b8e",
+      "model/wall_upper_plain_2.cockpit@1": "dbd25f280bfc7b9d561a63e1d0bde50a187b910c01803d1015566ca1186811fc",
+      "model/wall_upper_plain_3.cockpit@1": "7b9f73abb27026126b00bf8c554b3ef6402f5e6430fa8248ac1ae32445eadf77",
+      "model/wall_upper_plain_4.cockpit@1": "fed05684567340ce3815a9749cdf55c3c6b484d2299d519ebfd95bf2c0b50993",
+      "model/wall_upper_plain_5.cockpit@1": "4de0c4a097fcf4f1acbcc450035134f70db13a44ed641ad527018298fc515031",
+      "model/wall_upper_plain_6.cockpit@1": "65b3113c67f29679a23c6896352027d0be93e240b1cc43ecf1a5ce76cc1ba9ef",
+      "model/window_frame_1@1": "c818dde315d46fb044647f60e50c4eded2a4949894db744090deac30191a35e1",
+      "model/window_pane_1@1": "9500924492bbde9f13afa6f5eb0d5756d62007032a208627523c8183b74d54a7"
+    },
+    "full_sha256": "6343f19879215bb926ad9c682fd091931fbe0705d573fd869e527ee7ec3979c6",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 379780,
+    "light_sha256": "88bf5e11eb7dba5982c7bc550cb339eaeb90d8f080b0bce59ec37eda136fefc7",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 88,
+    "replaced": {},
+    "source": "5b2350604f24e8b9af67ac7bdd7087faaf1fa7059eae3477f6f4c36b8272cfce",
+    "triangles": 46616
+  }
 }

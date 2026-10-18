@@ -20,6 +20,16 @@
       "bytes": 1352167,
       "role": "texture",
       "sha256": "861ed46df36c4e3804678eccd26fec08bf23a1a0626435622c9c3311d8716d64"
+    },
+    "web3d/full.glb": {
+      "bytes": 3948,
+      "role": "web3d",
+      "sha256": "84816ed591304f5796b668248b04cbf49f93c1d83a9509c361fa6f9f86e3722f"
+    },
+    "web3d/light.glb": {
+      "bytes": 1984,
+      "role": "web3d",
+      "sha256": "1265bba659dbf2af2ff3aa6703d4b659c311ba3e8ab12d55805cb1b0cdb0259c"
     }
   },
   "id": "fixture_screwdriver_1",
@@ -79,5 +89,33 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 3948,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "replaced": 1
+    },
+    "from": {},
+    "full_sha256": "84816ed591304f5796b668248b04cbf49f93c1d83a9509c361fa6f9f86e3722f",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 1984,
+    "light_sha256": "1265bba659dbf2af2ff3aa6703d4b659c311ba3e8ab12d55805cb1b0cdb0259c",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {
+      "/model/body/Looks/look_0": {
+        "by": "quilt_cotton",
+        "colour": [
+          0.3266,
+          0.1338,
+          0.1377
+        ],
+        "distance": 11.35
+      }
+    },
+    "source": "1fb2e1659edd6f470bb6628346150e4a2012f49bd825a8a3159698a3a8f9123d",
+    "triangles": 256
+  }
 }

@@ -35,6 +35,16 @@
       "bytes": 4093772,
       "role": "texture",
       "sha256": "e9d9276df666793167524169cc6f4886c2eb4c760620304b98ee08b40c44dc43"
+    },
+    "web3d/full.glb": {
+      "bytes": 362356,
+      "role": "web3d",
+      "sha256": "1598684853ae56a4a00c524aab02cfdc8130ba8e19d21fb6eac0c74a1b5bd4a5"
+    },
+    "web3d/light.glb": {
+      "bytes": 41068,
+      "role": "web3d",
+      "sha256": "7ca75433f6e671192c941e00812848239fe51ad0dbbfc57880da19458c5a4854"
     }
   },
   "id": "rod_lamp_4",
@@ -96,5 +106,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 362356,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 2
+    },
+    "from": {},
+    "full_sha256": "1598684853ae56a4a00c524aab02cfdc8130ba8e19d21fb6eac0c74a1b5bd4a5",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 41068,
+    "light_sha256": "7ca75433f6e671192c941e00812848239fe51ad0dbbfc57880da19458c5a4854",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 2,
+    "replaced": {},
+    "source": "83dacd9111776bd8207f9ea9f44293ce01db55a66fe05aa96c604311e3430068",
+    "triangles": 736
+  }
 }

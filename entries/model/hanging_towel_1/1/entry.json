@@ -30,6 +30,16 @@
       "bytes": 4312782,
       "role": "texture",
       "sha256": "4318753da61588bef578390c107572ee3fd84fe917161292f4fd808ce07baf55"
+    },
+    "web3d/full.glb": {
+      "bytes": 58084,
+      "role": "web3d",
+      "sha256": "78daad95c1162561c639bc66158c039d01e214355df7be6cc79e97a4a3dc4087"
+    },
+    "web3d/light.glb": {
+      "bytes": 12436,
+      "role": "web3d",
+      "sha256": "8fcd05bbd136c3d508f68985f18e819925e0ac66e549313a6cd341ad6ffb335d"
     }
   },
   "id": "hanging_towel_1",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 58084,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "78daad95c1162561c639bc66158c039d01e214355df7be6cc79e97a4a3dc4087",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 12436,
+    "light_sha256": "8fcd05bbd136c3d508f68985f18e819925e0ac66e549313a6cd341ad6ffb335d",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "3a4c855186535612fb3432d9e8a35c969e0fb50f9dc99ce148af2659c5ffa8c1",
+    "triangles": 856
+  }
 }

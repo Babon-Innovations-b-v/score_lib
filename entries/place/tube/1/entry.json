@@ -55,6 +55,16 @@
       "bytes": 535,
       "role": "usd",
       "sha256": "8e7087a2ec4e91c20a64a69a954a5f1394cdf5bca47331b04257c77c2584b956"
+    },
+    "web3d/full.glb": {
+      "bytes": 6919840,
+      "role": "web3d",
+      "sha256": "22fe4e2049f7e02cd2c143f94bb1fd0ca4d1080cb4356b51d32fb13afc9a8c86"
+    },
+    "web3d/light.glb": {
+      "bytes": 1036632,
+      "role": "web3d",
+      "sha256": "c3ed49686e154ebd80f7a15f368cc1afd3c870e651723160e7417684843c6765"
     }
   },
   "id": "tube",
@@ -167,5 +177,66 @@
     "up_axis": "Y",
     "use": "open"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 6919840,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 31,
+      "library bake": 388
+    },
+    "from": {
+      "algorithm/terrain_landforms@1": "9fb2aec6e8c9320732f7f344611886e3d50b0c17640c564a6f3f692d1138e7aa",
+      "ground/moon.tube@1": "b7657e4dcb9c8524b0202c853ed91e3cff81b33c358032954adbda05187697ce",
+      "layer/base.tube@1": "811978b7161ef484e6440cb2054221ddb548b13b2224c589e070dd98ebe21f90",
+      "layer/characters.tube@1": "52f5391650ac4143d7827c4d394b57f02e6b10f55e6ad896bfc22c1e1e64068c",
+      "layer/ground.tube@1": "7a6d639eb5809d8fb6b880eb9fec7430df893c10ed11034f162161f823aa025a",
+      "layer/light.tube@1": "1a21593fb32c6e6b3f5e0b92cd892591770d58a58d743c476f0489a6f9d1cfc7",
+      "layer/motion.tube@1": "6fb2bf3e65fb53e53ecfba05e8f11236eb915b46c6b9c9e8ec0b20bde1ccae38",
+      "layer/sound.tube@1": "99b427425d642823e2c252d9d7823a1b195c7c80449317510284f0ba1a966dd9",
+      "model/cable_bundle_1.tube@1": "4d1638eb7a7a90242b5c737e09131f1aa0dcbe63f3fb44ba2ce180c4185ec8c4",
+      "model/crown_strip_lamp_1@1": "12b9b1a336fe28d66ed2fb649ab50366ada40c68dadd5bbbcd734427de4ccffe",
+      "model/end_mat_1@1": "a93ae6d6f0898b95f5f82eb5ec065dc5a9e4aae4ce728b8212de9fdc644c6934",
+      "model/hoop_1@1": "d120b163bec95e1ebb65c968ddce9067bed467e32bcda0f667d4174ae698ece5",
+      "model/hoop_2@1": "01c9df9d0972e668ec705d87954a8bc67a7eea50bcd6f31cf52b825ab68609cf",
+      "model/hull_patch_1@1": "078a5f73b1997fb0d8928a63ad3ae1cf245bca693d20439a9a29922a2df86ab4",
+      "model/hull_patch_2@1": "d777ecb3a9eb7a396aae0d5f68b02473d656528d2b2a0a5fb250bdbb332b61da",
+      "model/hull_plate_1@1": "b649bd410b8b794e41f1013227108783901a51b106b15fc8a51176469b9c5275",
+      "model/hull_plate_2@1": "f3855096416e734d52994ea9c3400d3b724d978b4ccf6854aff5ea36906df345",
+      "model/hull_plate_3@1": "424e779ae67c422593675995c7681bbed93a53394547ccfb09119f382c201313",
+      "model/hull_plate_4@1": "63e82fd978b2167c9b20cc6cfe06a66eed3dca4146b034f90b44baecfa9cb053",
+      "model/hull_plate_5@1": "5dd1a1bfd3d6e3687a64cbb939e1328278ebb5e44f942d753a3b9ca353f0e5fc",
+      "model/hull_plate_6@1": "bd6a182dbd761b2adc9bea2b52d1144f1accef43654b3ece5f1294982847f87c",
+      "model/hull_plate_7@1": "b86379315e4e78932c9dde5890c6f04ae6c5e96cbf032ede354b4820b2090c3b",
+      "model/pipe_bracket_1.tube@1": "9bf0af361828c7184c2659908ac6c9ce2e9c79a9ef6bb397f613d8b53f7d8e1f",
+      "model/pipe_straight_1.tube@1": "b6a614f39e602115dd8f5e23c045fecb577ebaa476b92ae0c27236ec477558b7",
+      "model/pipe_straight_2.tube@1": "f0aa31d121455c459f857374719f3687de689f3e5cfe99521d73d9f92c414bef",
+      "model/rail_bracket_1@1": "2a264051d58535b1d102390024a38709cc1703969836786f07bab31a70bc05c7",
+      "model/ring_floor_plate_1.tube@1": "d0e400d0e876d2ebca0425239b9576d9ca816493b50984b8e934f558b45797a4",
+      "model/sign_plate_2@1": "96836c7fe4a0dbd7ee4b2a732c32bbe7b794da6188f25760b87511725d63bf51",
+      "sound/base_hum@1": "815282663d9cfc0e02fa339bd61767a4d37524e22b97fb1f075eda43846d09dd",
+      "sound/footstep_grating@1": "2e9201625477f7e8d36299bc61c38abb6b4418b2a03bf22bb57666e6ceb1d667",
+      "sound/footstep_rubber@1": "f110deb95dafb14db206c2aab1e8dae52f44c542cb4ce4365cb895a5d7f6c0e0",
+      "sound/footsteps_metal.tube@1": "03537ccc134b8749bfaf31cb8eadccc4de3725cc6184e50922e7495ff2a78f0f",
+      "sound/impact_grating@1": "58c4dbc50eca1e6d43d07134b7bbf4f98181c9d282cefedfd0b26eca46810801",
+      "sound/impact_rubber@1": "5b5d22820be488ea0bd782a5b929831755592af869fd64613d965c4699aaa31d",
+      "sound/impact_steel_plate@1": "db0c0c8fe92925b1df1f351b362952d83485d7e38785ff3526992c8ec28f1bde",
+      "sound/link_tube@1": "9f459da649a8b6a5fe6e64f43a6451b3e48809e5ff28dfd64d789cd9cd174a7d",
+      "sound/scrape_grating@1": "5f05414f0ee5496a8a5a6624b58189015c7da1b29c404ba0b3c27a94bdc872a1",
+      "sound/scrape_rubber@1": "09b537a83a4b28bdd94dc689184e387ea6b9a6ca5a25554d9f79ba674d4e28e3",
+      "sound/scrape_steel_plate@1": "e9c593cf26cb61fdab2c718e9af18afab2b1066cfffcf4ab72367d5447ec29d7"
+    },
+    "full_sha256": "22fe4e2049f7e02cd2c143f94bb1fd0ca4d1080cb4356b51d32fb13afc9a8c86",
+    "left_out": {
+      "sky (a light entry's prims)": 1
+    },
+    "light": "web3d/light.glb",
+    "light_bytes": 1036632,
+    "light_sha256": "c3ed49686e154ebd80f7a15f368cc1afd3c870e651723160e7417684843c6765",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 415,
+    "replaced": {},
+    "source": "e141feb72d47560c39b001973873cf7b69474861f6f93522a136eca0a58adff1",
+    "triangles": 916727
+  }
 }

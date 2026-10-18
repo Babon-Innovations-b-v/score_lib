@@ -30,6 +30,16 @@
       "bytes": 367177,
       "role": "texture",
       "sha256": "badc64455cc729649da45bc40fa1148fe613ad7a55b603f5fdccce7e34f29061"
+    },
+    "web3d/full.glb": {
+      "bytes": 68372,
+      "role": "web3d",
+      "sha256": "2f5df4b0b6eb1fa523d3e669fc428e5db0d5ff6610a8d8c2600aa5c0ca93c6e6"
+    },
+    "web3d/light.glb": {
+      "bytes": 12272,
+      "role": "web3d",
+      "sha256": "cac9690bba6f675b57b3018df46fb1a63341509fa534a37153099e1c96215a09"
     }
   },
   "id": "cable_bundle_1.garage",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 68372,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "2f5df4b0b6eb1fa523d3e669fc428e5db0d5ff6610a8d8c2600aa5c0ca93c6e6",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 12272,
+    "light_sha256": "cac9690bba6f675b57b3018df46fb1a63341509fa534a37153099e1c96215a09",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "0362cc3babdeaecf537d35714a5f0564448499bcebec1d6effb5e233b3b7ea7c",
+    "triangles": 1584
+  }
 }

@@ -30,6 +30,16 @@
       "bytes": 15817162,
       "role": "texture",
       "sha256": "ecc9e0586afaddaf0f77105bbbf44e3d9e92ce909a0788f877e07a3d3aa1af76"
+    },
+    "web3d/full.glb": {
+      "bytes": 342264,
+      "role": "web3d",
+      "sha256": "d2f8ce550fab84c74deda67e4854e51362f721b2711088bf154ae1cef7586d4c"
+    },
+    "web3d/light.glb": {
+      "bytes": 12732,
+      "role": "web3d",
+      "sha256": "92d5d0af0e36ffbaf350c91c79e26abac251ced3ee8441e3cbe9c31bc6e4ef5b"
     }
   },
   "id": "glovebox_cabinet_1",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 342264,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library": 4
+    },
+    "from": {},
+    "full_sha256": "d2f8ce550fab84c74deda67e4854e51362f721b2711088bf154ae1cef7586d4c",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 12732,
+    "light_sha256": "92d5d0af0e36ffbaf350c91c79e26abac251ced3ee8441e3cbe9c31bc6e4ef5b",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "2189cba7b57085494c9dbdf04e1c859a1b75a4431fab566f45f100cb2e2127ca",
+    "triangles": 18991
+  }
 }

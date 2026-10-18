@@ -30,6 +30,16 @@
       "bytes": 9146677,
       "role": "texture",
       "sha256": "603fba84a1a91da94ec2ef838af4e6358883c12bdb2f35b4440304d0a9ba2ec0"
+    },
+    "web3d/full.glb": {
+      "bytes": 129768,
+      "role": "web3d",
+      "sha256": "ec9da2d83e10a9bcf25f4a9b6174d859bb1138ad1905abf24051bf69bbff1df8"
+    },
+    "web3d/light.glb": {
+      "bytes": 19016,
+      "role": "web3d",
+      "sha256": "8154b6290af90f147431452e827bf179f81df05a19bb18ebf6771e2ffbb88c28"
     }
   },
   "id": "pit_junction_box_1",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 129768,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "ec9da2d83e10a9bcf25f4a9b6174d859bb1138ad1905abf24051bf69bbff1df8",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 19016,
+    "light_sha256": "8154b6290af90f147431452e827bf179f81df05a19bb18ebf6771e2ffbb88c28",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "cb8be4d6e127a7a8071807ca91fc64d745419905f58185c7fde809189cc6c825",
+    "triangles": 1444
+  }
 }

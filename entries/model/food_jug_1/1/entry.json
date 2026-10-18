@@ -30,6 +30,16 @@
       "bytes": 3169295,
       "role": "texture",
       "sha256": "3a14f55140f90f8cb71be1bdc2b37b9a51163f55110f69c95f91b66904ddbc00"
+    },
+    "web3d/full.glb": {
+      "bytes": 242720,
+      "role": "web3d",
+      "sha256": "ce2785a3d565e212543988271d06feb0151ee60765526071dc217382b954a2ca"
+    },
+    "web3d/light.glb": {
+      "bytes": 39984,
+      "role": "web3d",
+      "sha256": "fb2a40e8794bbdcd003f013ca35dc423b9709f68435817cebe6a35672daf65fb"
     }
   },
   "id": "food_jug_1",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 242720,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "ce2785a3d565e212543988271d06feb0151ee60765526071dc217382b954a2ca",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 39984,
+    "light_sha256": "fb2a40e8794bbdcd003f013ca35dc423b9709f68435817cebe6a35672daf65fb",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "fe24e1defe4f0dc76f56a0182dd18739883999a3bddbce97d40a3211425ca94b",
+    "triangles": 516
+  }
 }

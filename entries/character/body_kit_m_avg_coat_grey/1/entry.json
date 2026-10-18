@@ -55,6 +55,16 @@
       "bytes": 1592,
       "role": "texture",
       "sha256": "2b6e14ff45662864a1e81b90c4acecd43b9f8b593236ef8b1382ae11a53171b7"
+    },
+    "web3d/full.glb": {
+      "bytes": 173936,
+      "role": "web3d",
+      "sha256": "1ccf2899a01ce51bfd8b2c13e53701477b2ea1db4be15251eadf28c2d5cce2d5"
+    },
+    "web3d/light.glb": {
+      "bytes": 30920,
+      "role": "web3d",
+      "sha256": "b69d7a558ab9336c55ce5693862d4c47f320560c8b8f5a734f18ae1bd952da65"
     }
   },
   "id": "body_kit_m_avg_coat_grey",
@@ -131,5 +141,168 @@
     "up_axis": "Y",
     "use": "payload"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 173936,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "replaced": 16
+    },
+    "from": {},
+    "full_sha256": "1ccf2899a01ce51bfd8b2c13e53701477b2ea1db4be15251eadf28c2d5cce2d5",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 30920,
+    "light_sha256": "b69d7a558ab9336c55ce5693862d4c47f320560c8b8f5a734f18ae1bd952da65",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 16,
+    "replaced": {
+      "/Character/Looks/m10_dark_button_plastic": {
+        "by": "wet_asphalt",
+        "colour": [
+          0.0212,
+          0.0212,
+          0.0232
+        ],
+        "distance": 1.0
+      },
+      "/Character/Looks/m11_hair": {
+        "by": "cable_black",
+        "colour": [
+          0.0091,
+          0.0091,
+          0.0116
+        ],
+        "distance": 1.78
+      },
+      "/Character/Looks/m12_hair": {
+        "by": "cable_black",
+        "colour": [
+          0.0091,
+          0.0091,
+          0.0116
+        ],
+        "distance": 1.78
+      },
+      "/Character/Looks/m13_skin_hands": {
+        "by": "skin_light",
+        "colour": [
+          0.7605,
+          0.4125,
+          0.2542
+        ],
+        "distance": 3.38
+      },
+      "/Character/Looks/m14_skin_hands": {
+        "by": "skin_light",
+        "colour": [
+          0.7605,
+          0.4125,
+          0.2542
+        ],
+        "distance": 3.38
+      },
+      "/Character/Looks/m15_skin_hands": {
+        "by": "skin_light",
+        "colour": [
+          0.7605,
+          0.4125,
+          0.2542
+        ],
+        "distance": 3.38
+      },
+      "/Character/Looks/m16_skin_hands": {
+        "by": "skin_light",
+        "colour": [
+          0.7605,
+          0.4125,
+          0.2542
+        ],
+        "distance": 3.38
+      },
+      "/Character/Looks/m17_skin_head": {
+        "by": "skin_light",
+        "colour": [
+          0.7656,
+          0.4303,
+          0.2571
+        ],
+        "distance": 2.47
+      },
+      "/Character/Looks/m18_skin_head": {
+        "by": "skin_light",
+        "colour": [
+          0.7803,
+          0.4156,
+          0.2539
+        ],
+        "distance": 3.98
+      },
+      "/Character/Looks/m3_boot_l": {
+        "by": "cable_black",
+        "colour": [
+          0.008,
+          0.008,
+          0.0091
+        ],
+        "distance": 2.02
+      },
+      "/Character/Looks/m4_boot_r": {
+        "by": "cable_black",
+        "colour": [
+          0.008,
+          0.008,
+          0.0091
+        ],
+        "distance": 2.02
+      },
+      "/Character/Looks/m5_cloth": {
+        "by": "wool_grey",
+        "colour": [
+          0.1878,
+          0.1878,
+          0.1812
+        ],
+        "distance": 4.75
+      },
+      "/Character/Looks/m6_cloth": {
+        "by": "dark_panel",
+        "colour": [
+          0.0343,
+          0.0343,
+          0.0395
+        ],
+        "distance": 3.22
+      },
+      "/Character/Looks/m7_dark_button_plastic": {
+        "by": "wet_asphalt",
+        "colour": [
+          0.0212,
+          0.0212,
+          0.0232
+        ],
+        "distance": 1.0
+      },
+      "/Character/Looks/m8_dark_button_plastic": {
+        "by": "wet_asphalt",
+        "colour": [
+          0.0212,
+          0.0212,
+          0.0232
+        ],
+        "distance": 1.0
+      },
+      "/Character/Looks/m9_dark_button_plastic": {
+        "by": "wet_asphalt",
+        "colour": [
+          0.0212,
+          0.0212,
+          0.0232
+        ],
+        "distance": 1.0
+      }
+    },
+    "source": "6f0c410ec5d836ef7b44abb9dcf106a9e037b53b50c8944dcd68cb29deae779f",
+    "triangles": 34159
+  }
 }

@@ -20,6 +20,16 @@
       "bytes": 3380150,
       "role": "texture",
       "sha256": "3048d6d10d26523773ebdf419edc02c4715acea0532052ed82d508dc156f4871"
+    },
+    "web3d/full.glb": {
+      "bytes": 183388,
+      "role": "web3d",
+      "sha256": "adbdf192e23ad7671757914d47411b34f3082a9baeb6d666daf612b7e1d4af50"
+    },
+    "web3d/light.glb": {
+      "bytes": 8088,
+      "role": "web3d",
+      "sha256": "96639827f87bbff9030216cf139b769552dd339a9749145f8fe2b1bb334cfec8"
     }
   },
   "id": "fixture_inverter_cabinet",
@@ -86,5 +96,33 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 183388,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "replaced": 1
+    },
+    "from": {},
+    "full_sha256": "adbdf192e23ad7671757914d47411b34f3082a9baeb6d666daf612b7e1d4af50",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 8088,
+    "light_sha256": "96639827f87bbff9030216cf139b769552dd339a9749145f8fe2b1bb334cfec8",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {
+      "/model/body/Looks/look_0": {
+        "by": "chequer_plate_deck",
+        "colour": [
+          0.2937,
+          0.2875,
+          0.2756
+        ],
+        "distance": 2.63
+      }
+    },
+    "source": "ff5c9ce7cee55a8cff245915c054d23aae8b9621941957f450b8357245a13d86",
+    "triangles": 19998
+  }
 }

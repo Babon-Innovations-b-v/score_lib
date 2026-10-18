@@ -30,6 +30,16 @@
       "bytes": 4759189,
       "role": "texture",
       "sha256": "724f0c0ad1aa1ab92b45fc72728dd741e6385b19c19d992b4e4823bb7c690ad1"
+    },
+    "web3d/full.glb": {
+      "bytes": 54404,
+      "role": "web3d",
+      "sha256": "48ee586f0ee444f9374a66a2c5aff1ab1e553c6aed58674c74843d7197eaed79"
+    },
+    "web3d/light.glb": {
+      "bytes": 10308,
+      "role": "web3d",
+      "sha256": "d6d4dabb5b1958c01f777b118ff0677de80ec08265635aaf3df9bec86e1e0659"
     }
   },
   "id": "plaster_wall_2.stairwell",
@@ -91,5 +101,23 @@
     "up_axis": "Y",
     "use": "reference"
   },
-  "version": 1
+  "version": 1,
+  "web3d": {
+    "bytes": 54404,
+    "file": "web3d/full.glb",
+    "finishes": {
+      "library bake": 1
+    },
+    "from": {},
+    "full_sha256": "48ee586f0ee444f9374a66a2c5aff1ab1e553c6aed58674c74843d7197eaed79",
+    "left_out": {},
+    "light": "web3d/light.glb",
+    "light_bytes": 10308,
+    "light_sha256": "d6d4dabb5b1958c01f777b118ff0677de80ec08265635aaf3df9bec86e1e0659",
+    "made_with": "score_lib web3d (web3d-1): meshes from the entry's OpenUSD, finishes from the surface library, gltfpack@0.22.0 meshopt (-cc -kn -km -vpf), pictures WebP",
+    "objects": 1,
+    "replaced": {},
+    "source": "8df5fd94c1d17c4e4ff2e6d88b370ce1cffc305f150daa09f6afe8334b33e480",
+    "triangles": 868
+  }
 }
