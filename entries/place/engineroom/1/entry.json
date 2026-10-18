@@ -123,12 +123,66 @@
     "unresolved_sublayers": [],
     "world": "world1"
   },
+  "refine_options": [
+    {
+      "action": "close its named gaps",
+      "answers": [
+        "completion"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "each named gap's objects refined until its fault clears",
+      "suggested": true
+    },
+    {
+      "action": "refine its weakest layers",
+      "answers": [
+        "layers"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "its layers' own options, weakest first",
+      "suggested": false
+    }
+  ],
   "requires": [
     "layer/base.engineroom@1",
     "layer/light.engineroom@1",
     "layer/sound.engineroom@1"
   ],
   "schema": "score-lib-entry/1",
+  "score": 75,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "its named gaps are its completion gate's only fail (engineroom: cable bundle box not passed; engineroom: cable bundle box not passed (the box gate); engineroom: ceiling light panel box not passed; engineroom: ceiling light panel box not passed (the box gate); engineroom: edge light strip box not passed; engineroom: edge light strip box not passed (the box gate); engineroom: pit wall panel box not passed; engineroom: pit wall panel box not passed (the box gate); engineroom: ring floor plate box not passed; engineroom: ring floor plate box not passed (the box gate); engineroom: roof face panel box not passed; engineroom: roof face panel box not passed (the box gate); engineroom: wall upper plain box not passed; engineroom: wall upper plain box not passed (the box gate); engineroom: made pieces' boxes not passed (corner lamp, overhead vent, side cons; engineroom: made pieces' boxes not passed (corner lamp, overhead vent, side cons; engineroom: the junction box not held to its close-up (the lab's take, its place; engineroom: the toolbox not held to its close-up (the garage's take, its place h; engineroom: the cable bundle not on the stage); 60 less 5 a named gap, at least 50",
+      "measured": "complete apart from 19 named gaps",
+      "name": "completion",
+      "unit": "",
+      "value": 50,
+      "weight": 3.0
+    },
+    {
+      "how": "share of plan@engineroom's gates that pass (fail and unknown block alike): mapped pass: every plan item, concept element and door is mapped (7 items, 12 elements, 2 doors)",
+      "measured": "1 of 1 pass",
+      "name": "plan",
+      "unit": "",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "mean quality score of its 3 layers (0 under 50; weakest layer/base.engineroom@1 98, layer/sound.engineroom@1 98, layer/light.engineroom@1 100)",
+      "measured": "mean of 3",
+      "name": "layers",
+      "unit": "",
+      "value": 99,
+      "weight": 2.0
+    }
+  ],
   "seen_in": [
     "engineroom"
   ],

@@ -123,12 +123,66 @@
     "unresolved_sublayers": [],
     "world": "world1"
   },
+  "refine_options": [
+    {
+      "action": "close its named gaps",
+      "answers": [
+        "completion"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "each named gap's objects refined until its fault clears",
+      "suggested": true
+    },
+    {
+      "action": "refine its weakest layers",
+      "answers": [
+        "layers"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "its layers' own options, weakest first",
+      "suggested": false
+    }
+  ],
   "requires": [
     "layer/base.storage@1",
     "layer/light.storage@1",
     "layer/sound.storage@1"
   ],
   "schema": "score-lib-entry/1",
+  "score": 75,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "its named gaps are its completion gate's only fail (storage: the upper parts crate slides on the lower one's lid; storage: ring floor plate box not passed; storage: ring floor plate box not passed (the box gate); storage: wall upper plain box not passed; storage: wall upper plain box not passed (the box gate); storage: the parts crate not held to its close-up (the hangar's take, its props ); 60 less 5 a named gap, at least 50",
+      "measured": "complete apart from 6 named gaps",
+      "name": "completion",
+      "unit": "",
+      "value": 50,
+      "weight": 3.0
+    },
+    {
+      "how": "share of plan@storage's gates that pass (fail and unknown block alike): mapped pass: every plan item, concept element and door is mapped (5 items, 6 elements, 1 doors)",
+      "measured": "1 of 1 pass",
+      "name": "plan",
+      "unit": "",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "mean quality score of its 3 layers (0 under 50; weakest layer/base.storage@1 98, layer/sound.storage@1 98, layer/light.storage@1 100)",
+      "measured": "mean of 3",
+      "name": "layers",
+      "unit": "",
+      "value": 99,
+      "weight": 2.0
+    }
+  ],
   "seen_in": [
     "storage"
   ],

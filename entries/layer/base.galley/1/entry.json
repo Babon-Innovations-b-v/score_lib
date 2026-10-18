@@ -50,6 +50,29 @@
     "world": "world1",
     "written_by": "algorithm/room_layout@1"
   },
+  "refine_options": [
+    {
+      "action": "re-run its stage",
+      "answers": [
+        "gates",
+        "unresolved"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "the stage that writes this layer run again for its place; a paid stage (light passes, settle) is priced per place",
+      "suggested": false
+    },
+    {
+      "action": "refine its weakest entries",
+      "answers": [
+        "entries"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "the entries it points at refined by their own options",
+      "suggested": false
+    }
+  ],
   "requires": [
     "model/ceiling_light_panel_1.galley@1",
     "model/door_leaf_1.galley@1",
@@ -72,6 +95,38 @@
     "model/wall_upper_plain_4.galley@1"
   ],
   "schema": "score-lib-entry/1",
+  "score": 98,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "share of assembly@galley's gates that pass (fail and unknown block alike): layers pass: every layer it needs taken (sound, light); took light, scene-record, sound; record: scene-record@galley; placeholders pass: nothing stands in for a made piece; resting pass: 0 objects with real resting faults, 26 false alarms after the drop run",
+      "measured": "3 of 3 pass",
+      "name": "gates",
+      "unit": "",
+      "value": 100,
+      "weight": 2.0
+    },
+    {
+      "how": "paths pointing at no library address; 100 at 0, 50 at 1, 0 at 5 paths",
+      "measured": 0,
+      "name": "unresolved",
+      "unit": "paths",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "mean quality score of its 19 entries it points at (0 under 50; weakest model/fold_down_seat_1@1 75, model/galley_counter_1.galley@1 76, model/locker_1@1 83)",
+      "measured": "mean of 19",
+      "name": "entries",
+      "unit": "",
+      "value": 93,
+      "weight": 1.0
+    }
+  ],
   "seen_in": [
     "galley"
   ],

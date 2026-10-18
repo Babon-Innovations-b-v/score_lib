@@ -73,10 +73,56 @@
     "unresolved_sublayers": [],
     "world": "world1"
   },
+  "refine_options": [
+    {
+      "action": "refine its weakest layers",
+      "answers": [
+        "layers"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "its layers' own options, weakest first",
+      "suggested": false
+    },
+    {
+      "action": "close its named gaps",
+      "answers": [
+        "completion"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "each named gap's objects refined until its fault clears",
+      "suggested": false
+    }
+  ],
   "requires": [
     "layer/base.far_city@1"
   ],
   "schema": "score-lib-entry/1",
+  "score": 94,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "its completion gate passes and it has no named gap",
+      "measured": "complete",
+      "name": "completion",
+      "unit": "",
+      "value": 100,
+      "weight": 3.0
+    },
+    {
+      "how": "mean quality score of its 1 layers (0 under 50; weakest layer/base.far_city@1 86)",
+      "measured": "mean of 1",
+      "name": "layers",
+      "unit": "",
+      "value": 86,
+      "weight": 2.0
+    }
+  ],
   "seen_in": [
     "far_city"
   ],

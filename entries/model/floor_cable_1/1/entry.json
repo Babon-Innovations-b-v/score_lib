@@ -72,8 +72,146 @@
     "source_name": "floor_cable_1",
     "world": "world1"
   },
+  "refine_options": [
+    {
+      "action": "re-bake at higher resolution",
+      "answers": [
+        "texel density",
+        "seams",
+        "blotches"
+      ],
+      "basket": true,
+      "cost": "paid",
+      "does": "its place's picture sets baked again at a higher texel density (more texels a metre for its set)",
+      "price": {
+        "eur": 1.0,
+        "from": "paper/evidence/cloud/forecast-2026-10-15.txt:25 (ledger medians)",
+        "per": "place bake",
+        "projected_eur": 1.21
+      },
+      "suggested": true
+    },
+    {
+      "action": "rebuild from its code",
+      "answers": [
+        "plan shape",
+        "scale",
+        "holes"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "run its code builder again against its plan (sizes, parts) and bake it",
+      "suggested": false
+    }
+  ],
   "requires": [],
   "schema": "score-lib-entry/1",
+  "score": 92,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "open edges' share of the edge length (edges one triangle uses, points welded); 100 at 0.0, 50 at 0.001, 0 at 0.01 share",
+      "measured": 0.0,
+      "name": "holes",
+      "unit": "share",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "a code build joins separate closed parts edge to edge by design",
+      "name": "crowded edges",
+      "status": "not judged",
+      "value": null
+    },
+    {
+      "how": "a code build's surfaces are exact by its code",
+      "name": "surface noise",
+      "status": "not judged",
+      "value": null
+    },
+    {
+      "how": "a code build's triangles are its exact shape",
+      "name": "triangles",
+      "status": "not judged",
+      "value": null
+    },
+    {
+      "how": "a code build is painted from the library by its builder; its colours are judged by the palette part",
+      "name": "library",
+      "status": "not judged",
+      "value": null
+    },
+    {
+      "how": "the room sweep: share of its texels within CIE76 8 of what its places' library surfaces bake to; 100 at 0.98, 50 at 0.9, 0 at 0.6 share",
+      "measured": 0.987,
+      "name": "palette",
+      "unit": "share",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "the room sweep's blotchiness: 75th percentile of the lightness spread inside 8 x 8 texel tiles under its UVs (0 to 255); 100 at 4.0, 50 at 10.0, 0 at 20.0 levels",
+      "measured": 19.6,
+      "name": "blotches",
+      "unit": "levels",
+      "value": 2,
+      "weight": 0.5
+    },
+    {
+      "how": "metres of showing seam over the root of its surface area (0.03 m of its 0.04 m of UV cuts across smooth surface, under 20 degrees, step past CIE76 10.0: the larger of 10 and its own grain's 90th percentile); 100 at 0.05, 50 at 0.3, 0 at 1.5 m/m",
+      "measured": 0.04,
+      "name": "seams",
+      "unit": "m/m",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "2412 normal-map texels a metre (area-weighted median) against 1024, its picture set 'furniture'; 100 at 1.0, 50 at 0.5, 0 at 0.25 of target",
+      "measured": 2.356,
+      "name": "texel density",
+      "unit": "of target",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "no surfaces check of this model in the store",
+      "name": "bake",
+      "status": "not measured",
+      "value": null
+    },
+    {
+      "how": "no likeness measure of this model in the store (no close-up judged)",
+      "name": "outline",
+      "status": "not measured",
+      "value": null
+    },
+    {
+      "how": "largest |log| of its sides' proportions against the plan's, sides under 2 cm left out; [3.052, 0.05, 0.184] m made, [3.052, 0.05, 0.184] m planned (wide, tall, deep); 100 at 0.05, 50 at 0.25, 0 at 0.7 log",
+      "measured": 0.0,
+      "name": "plan shape",
+      "unit": "log",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "|log| of its largest side against the plan's; [3.052, 0.05, 0.184] m made, [3.052, 0.05, 0.184] m planned (wide, tall, deep); 100 at 0.05, 50 at 0.2, 0 at 0.7 log",
+      "measured": 0.0,
+      "name": "scale",
+      "unit": "log",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "whether it reads as its close-up to a viewer",
+      "name": "by eye",
+      "status": "needs a paid judge",
+      "value": null
+    }
+  ],
   "seen_in": [
     "camp"
   ],

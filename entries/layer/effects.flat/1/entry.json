@@ -55,11 +55,66 @@
     "world": "world1",
     "written_by": "algorithm/particle_effects@1"
   },
+  "refine_options": [
+    {
+      "action": "re-run its stage",
+      "answers": [
+        "gates",
+        "unresolved"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "the stage that writes this layer run again for its place; a paid stage (light passes, settle) is priced per place",
+      "suggested": false
+    },
+    {
+      "action": "refine its weakest entries",
+      "answers": [
+        "entries"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "the entries it points at refined by their own options",
+      "suggested": false
+    }
+  ],
   "requires": [
     "effect/breath@1",
     "effect/wisp@1"
   ],
   "schema": "score-lib-entry/1",
+  "score": 97,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "share of effects-layer@flat's gates that pass (fail and unknown block alike): attached pass: nothing in the record rides a prim: the smoke hangs off the player's eye (the balcony camera), as the game hangs the cig; footage pass: all 6 measures lie within the footage's ranges; light pass: the record's effects give off no light: smoke gives off no light of its own; the flat's lamps and the city light it; outside pass: no particle of 2 emitters under the sky shows inside the place's 0 interiors",
+      "measured": "4 of 4 pass",
+      "name": "gates",
+      "unit": "",
+      "value": 100,
+      "weight": 2.0
+    },
+    {
+      "how": "paths pointing at no library address; 100 at 0, 50 at 1, 0 at 5 paths",
+      "measured": 0,
+      "name": "unresolved",
+      "unit": "paths",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "mean quality score of its 2 entries it points at (0 under 50; weakest effect/wisp@1 86, effect/breath@1 90)",
+      "measured": "mean of 2",
+      "name": "entries",
+      "unit": "",
+      "value": 88,
+      "weight": 1.0
+    }
+  ],
   "seen_in": [
     "flat"
   ],

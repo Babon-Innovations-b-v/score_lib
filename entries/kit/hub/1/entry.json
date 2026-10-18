@@ -43,6 +43,30 @@
     "source": "data/kit/hub.json at the world's commit",
     "world": "world1"
   },
+  "refine_options": [
+    {
+      "action": "re-plan the partition",
+      "answers": [
+        "coverage",
+        "gaps",
+        "overlap"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "the kit's partition laid again so its groups cover their surfaces without gaps or overlaps (free, a coding agent)",
+      "suggested": true
+    },
+    {
+      "action": "refine its weakest pieces",
+      "answers": [
+        "pieces"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "each of its pieces under 50 refined by its own options",
+      "suggested": false
+    }
+  ],
   "requires": [
     "algorithm/room_layout@1",
     "model/cable_bundle_1.hub@1",
@@ -147,6 +171,54 @@
     "model/wrench_4@1"
   ],
   "schema": "score-lib-entry/1",
+  "score": 73,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "mean quality score of its 100 model entries (3 under 50; weakest model/fixture_glovebox_1@1 46, model/fixture_console_screen_1@1 47, model/fixture_status_lamp_1@1 47)",
+      "measured": "mean of 100",
+      "name": "pieces",
+      "unit": "",
+      "value": 89,
+      "weight": 2.0
+    },
+    {
+      "how": "share of its 100 model entries under 50; 100 at 0.0, 50 at 0.1, 0 at 0.3 share",
+      "measured": 0.03,
+      "name": "weak pieces",
+      "unit": "share",
+      "value": 85,
+      "weight": 1.0
+    },
+    {
+      "how": "worst group's coverage of its surface (pit wall); 100 at 1.0, 50 at 0.98, 0 at 0.9 share",
+      "measured": 0.9823,
+      "name": "coverage",
+      "unit": "share",
+      "value": 56,
+      "weight": 1.0
+    },
+    {
+      "how": "worst group's gaps (pit wall); 100 at 0.0, 50 at 0.02, 0 at 0.1 share",
+      "measured": 0.0177,
+      "name": "gaps",
+      "unit": "share",
+      "value": 56,
+      "weight": 1.0
+    },
+    {
+      "how": "worst group's overlap (pit wall); 100 at 0.0, 50 at 0.05, 0 at 0.2 share",
+      "measured": 0.0545,
+      "name": "overlap",
+      "unit": "share",
+      "value": 48,
+      "weight": 0.5
+    }
+  ],
   "seen_in": [
     "hub"
   ],

@@ -105,8 +105,75 @@
     "record_key": "282efa3d0aac524fc878497f80f29c6ea032e59c4b919cb53d6728a9ecfc33d7",
     "world": "world1"
   },
+  "refine_options": [
+    {
+      "action": "re-fit and re-weight the body",
+      "answers": [
+        "shell",
+        "tucks",
+        "hard parts stretched",
+        "crossings",
+        "joins"
+      ],
+      "basket": true,
+      "cost": "paid",
+      "does": "the people maker fits SOMA-X again and moves its skin weights (a cloud run)",
+      "price": "not measured yet",
+      "suggested": false
+    },
+    {
+      "action": "repaint from the library",
+      "answers": [
+        "library",
+        "finish"
+      ],
+      "basket": true,
+      "cost": "paid",
+      "does": "its looks' parts painted again from the surface library",
+      "price": "not measured yet",
+      "suggested": false
+    }
+  ],
   "requires": [],
   "schema": "score-lib-entry/1",
+  "score": 84,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "share of its 8 surfaces painted from the library; 100 at 1.0, 50 at 0.999, 0 at 0.0 share",
+      "measured": 1.0,
+      "name": "library",
+      "unit": "share",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "share of its skin surfaces painted from the skin family; 100 at 1.0, 50 at 0.999, 0 at 0.0 share",
+      "measured": 1.0,
+      "name": "skin as skin",
+      "unit": "share",
+      "value": 100,
+      "weight": 2.0
+    },
+    {
+      "how": "share of its surfaces painted with the variant its names chose; black_leather_belt named olive_drab, painted suit_navy, cloth named olive_drab, painted flag_red; 100 at 1.0, 50 at 0.999, 0 at 0.0 share",
+      "measured": 0.714,
+      "name": "painted as named",
+      "unit": "share",
+      "value": 36,
+      "weight": 1.0
+    },
+    {
+      "how": "none of its 1 body has a quality score",
+      "name": "its body",
+      "status": "not measured",
+      "value": null
+    }
+  ],
   "seen_in": [
     "camp"
   ],

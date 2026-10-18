@@ -144,6 +144,28 @@
     "unresolved_sublayers": [],
     "world": "world1"
   },
+  "refine_options": [
+    {
+      "action": "close its named gaps",
+      "answers": [
+        "completion"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "each named gap's objects refined until its fault clears",
+      "suggested": true
+    },
+    {
+      "action": "refine its weakest layers",
+      "answers": [
+        "layers"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "its layers' own options, weakest first",
+      "suggested": false
+    }
+  ],
   "requires": [
     "layer/base.habitat@1",
     "layer/characters.habitat@1",
@@ -154,6 +176,38 @@
     "layer/sound.habitat@1"
   ],
   "schema": "score-lib-entry/1",
+  "score": 75,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "its named gaps are its completion gate's only fail (habitat: layout taken from the source game: 18 citations, 2 positions; habitat: bram, nev and sefa not on the stage, no accepted body; habitat: no props file, so no likeness); 60 less 5 a named gap, at least 50",
+      "measured": "complete apart from 3 named gaps",
+      "name": "completion",
+      "unit": "",
+      "value": 50,
+      "weight": 3.0
+    },
+    {
+      "how": "share of plan@habitat's gates that pass (fail and unknown block alike): mapped pass: every plan item, concept element and door is mapped (9 items, 47 elements, 4 doors)",
+      "measured": "1 of 1 pass",
+      "name": "plan",
+      "unit": "",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "mean quality score of its 7 layers (0 under 50; weakest layer/effects.habitat@1 97, layer/base.habitat@1 98, layer/sound.habitat@1 98)",
+      "measured": "mean of 7",
+      "name": "layers",
+      "unit": "",
+      "value": 99,
+      "weight": 2.0
+    }
+  ],
   "seen_in": [
     "habitat"
   ],

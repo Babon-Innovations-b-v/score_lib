@@ -50,10 +50,65 @@
     "world": "world1",
     "written_by": "algorithm/terrain_landforms@1"
   },
+  "refine_options": [
+    {
+      "action": "refine its weakest entries",
+      "answers": [
+        "entries"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "the entries it points at refined by their own options",
+      "suggested": true
+    },
+    {
+      "action": "re-run its stage",
+      "answers": [
+        "gates",
+        "unresolved"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "the stage that writes this layer run again for its place; a paid stage (light passes, settle) is priced per place",
+      "suggested": false
+    }
+  ],
   "requires": [
     "ground/earth.launch@1"
   ],
   "schema": "score-lib-entry/1",
+  "score": 88,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "share of assembly@launch's gates that pass (fail and unknown block alike): layers pass: every layer it needs taken (sound, light, effects-layer, motion); took effects-layer, light, motion, scene-record, sound; placeholders pass: nothing stands in for a made piece; resting pass: 0 objects with real resting faults, 44 false alarms after the drop run",
+      "measured": "3 of 3 pass",
+      "name": "gates",
+      "unit": "",
+      "value": 100,
+      "weight": 2.0
+    },
+    {
+      "how": "paths pointing at no library address; 100 at 0, 50 at 1, 0 at 5 paths",
+      "measured": 0,
+      "name": "unresolved",
+      "unit": "paths",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "mean quality score of its 1 entries it points at (0 under 50; weakest ground/earth.launch@1 50)",
+      "measured": "mean of 1",
+      "name": "entries",
+      "unit": "",
+      "value": 50,
+      "weight": 1.0
+    }
+  ],
   "seen_in": [
     "launch"
   ],

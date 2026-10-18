@@ -133,6 +133,30 @@
     "source": "data/kit/shiplock.json at the world's commit",
     "world": "world1"
   },
+  "refine_options": [
+    {
+      "action": "re-plan the partition",
+      "answers": [
+        "coverage",
+        "gaps",
+        "overlap"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "the kit's partition laid again so its groups cover their surfaces without gaps or overlaps (free, a coding agent)",
+      "suggested": false
+    },
+    {
+      "action": "refine its weakest pieces",
+      "answers": [
+        "pieces"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "each of its pieces under 50 refined by its own options",
+      "suggested": false
+    }
+  ],
   "requires": [
     "algorithm/room_layout@1",
     "model/ceiling_light_panel_1.shiplock@1",
@@ -153,6 +177,30 @@
     "model/wall_upper_plain_4.shiplock@1"
   ],
   "schema": "score-lib-entry/1",
+  "score": 97,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "mean quality score of its 16 model entries (0 under 50; weakest model/pipe_straight_1.shiplock@1 84, model/door_leaf_1.shiplock@1 87, model/floor_grate_1.shiplock@1 92)",
+      "measured": "mean of 16",
+      "name": "pieces",
+      "unit": "",
+      "value": 96,
+      "weight": 2.0
+    },
+    {
+      "how": "share of its 16 model entries under 50; 100 at 0.0, 50 at 0.1, 0 at 0.3 share",
+      "measured": 0.0,
+      "name": "weak pieces",
+      "unit": "share",
+      "value": 100,
+      "weight": 1.0
+    }
+  ],
   "seen_in": [
     "shiplock"
   ],

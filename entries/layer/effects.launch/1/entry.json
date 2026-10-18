@@ -55,6 +55,29 @@
     "world": "world1",
     "written_by": "algorithm/particle_effects@1"
   },
+  "refine_options": [
+    {
+      "action": "re-run its stage",
+      "answers": [
+        "gates",
+        "unresolved"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "the stage that writes this layer run again for its place; a paid stage (light passes, settle) is priced per place",
+      "suggested": false
+    },
+    {
+      "action": "refine its weakest entries",
+      "answers": [
+        "entries"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "the entries it points at refined by their own options",
+      "suggested": false
+    }
+  ],
   "requires": [
     "effect/cloud_billows@1",
     "effect/deluge_steam@1",
@@ -65,6 +88,38 @@
     "effect/plume@1"
   ],
   "schema": "score-lib-entry/1",
+  "score": 97,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "share of effects-layer@launch's gates that pass (fail and unknown block alike): attached pass: 3 riders keep their place over 9112 m of their prim's travel and 1 following emitters let out where their prim stands; footage pass: all 13 measures lie within the footage's ranges; light pass: the flame lights the pad at least 122.0 times the place's 16 lamps from ignition to lift-off; outside pass: no particle of 5 emitters under the sky shows inside the place's 0 interiors",
+      "measured": "4 of 4 pass",
+      "name": "gates",
+      "unit": "",
+      "value": 100,
+      "weight": 2.0
+    },
+    {
+      "how": "paths pointing at no library address; 100 at 0, 50 at 1, 0 at 5 paths",
+      "measured": 0,
+      "name": "unresolved",
+      "unit": "paths",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "mean quality score of its 7 entries it points at (0 under 50; weakest effect/plume@1 73, effect/ground_cloud@1 82, effect/cloud_billows@1 89)",
+      "measured": "mean of 7",
+      "name": "entries",
+      "unit": "",
+      "value": 88,
+      "weight": 1.0
+    }
+  ],
   "seen_in": [
     "launch"
   ],

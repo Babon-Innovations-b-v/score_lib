@@ -43,6 +43,30 @@
     "source": "data/kit/stairwell.json at the world's commit",
     "world": "world1"
   },
+  "refine_options": [
+    {
+      "action": "re-plan the partition",
+      "answers": [
+        "coverage",
+        "gaps",
+        "overlap"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "the kit's partition laid again so its groups cover their surfaces without gaps or overlaps (free, a coding agent)",
+      "suggested": false
+    },
+    {
+      "action": "refine its weakest pieces",
+      "answers": [
+        "pieces"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "each of its pieces under 50 refined by its own options",
+      "suggested": false
+    }
+  ],
   "requires": [
     "algorithm/room_layout@1",
     "model/balcony_rail_1.stairwell@1",
@@ -90,6 +114,30 @@
     "model/wiring_box_1@1"
   ],
   "schema": "score-lib-entry/1",
+  "score": 95,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "mean quality score of its 43 model entries (0 under 50; weakest model/fire_hose_cabinet_1@1 71, model/letterboxes_1@1 74, model/pipe_straight_5.stairwell@1 75)",
+      "measured": "mean of 43",
+      "name": "pieces",
+      "unit": "",
+      "value": 92,
+      "weight": 2.0
+    },
+    {
+      "how": "share of its 43 model entries under 50; 100 at 0.0, 50 at 0.1, 0 at 0.3 share",
+      "measured": 0.0,
+      "name": "weak pieces",
+      "unit": "share",
+      "value": 100,
+      "weight": 1.0
+    }
+  ],
   "seen_in": [
     "stairwell"
   ],

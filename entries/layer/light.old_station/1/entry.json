@@ -60,10 +60,65 @@
     "world": "world1",
     "written_by": "algorithm/light_rig@1"
   },
+  "refine_options": [
+    {
+      "action": "re-run its stage",
+      "answers": [
+        "gates",
+        "unresolved"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "the stage that writes this layer run again for its place; a paid stage (light passes, settle) is priced per place",
+      "suggested": false
+    },
+    {
+      "action": "refine its weakest entries",
+      "answers": [
+        "entries"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "the entries it points at refined by their own options",
+      "suggested": false
+    }
+  ],
   "requires": [
     "light/earth_surface@1"
   ],
   "schema": "score-lib-entry/1",
+  "score": 100,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "share of light@old_station's gates that pass (fail and unknown block alike): brightness pass: the place 0.116 -> 0.261 against its concept's 0.303 (x0.86, within x1.5); the lamps without a shaft at x1 of the seed's; earth pass: 2 views: smooth share of the lit disc 0.000 (<= 0.25; concept C4's 0.0); heads pass: no floodlight in this place; lamps pass: 0 lamps: 0 unlit or blown out, 0 light no view and stand in none (not judged); sky pass: no day sky in this place; sky elements pass: every element the record holds: {'earth': [True, True], 'sky_dome': [False, False], 'sun_disc': [True, True], 'shafts': ; stage_no_worse pass: no worse: {'old_station_placeholders': 0, 'old_station_made_only': 0}",
+      "measured": "7 of 7 pass",
+      "name": "gates",
+      "unit": "",
+      "value": 100,
+      "weight": 2.0
+    },
+    {
+      "how": "paths pointing at no library address; 100 at 0, 50 at 1, 0 at 5 paths",
+      "measured": 0,
+      "name": "unresolved",
+      "unit": "paths",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "mean quality score of its 1 entries it points at (0 under 50; weakest light/earth_surface@1 100)",
+      "measured": "mean of 1",
+      "name": "entries",
+      "unit": "",
+      "value": 100,
+      "weight": 1.0
+    }
+  ],
   "seen_in": [
     "old_station"
   ],

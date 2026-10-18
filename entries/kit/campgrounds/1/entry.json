@@ -43,6 +43,30 @@
     "source": "data/kit/campgrounds.json at the world's commit",
     "world": "world1"
   },
+  "refine_options": [
+    {
+      "action": "re-plan the partition",
+      "answers": [
+        "coverage",
+        "gaps",
+        "overlap"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "the kit's partition laid again so its groups cover their surfaces without gaps or overlaps (free, a coding agent)",
+      "suggested": false
+    },
+    {
+      "action": "refine its weakest pieces",
+      "answers": [
+        "pieces"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "each of its pieces under 50 refined by its own options",
+      "suggested": false
+    }
+  ],
   "requires": [
     "algorithm/room_layout@1",
     "model/cargo_case@1",
@@ -61,6 +85,30 @@
     "model/sample_case@1"
   ],
   "schema": "score-lib-entry/1",
+  "score": 91,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "mean quality score of its 14 model entries (0 under 50; weakest model/lander@1 70, model/ice_drill@1 73, model/crane@1 78)",
+      "measured": "mean of 14",
+      "name": "pieces",
+      "unit": "",
+      "value": 87,
+      "weight": 2.0
+    },
+    {
+      "how": "share of its 14 model entries under 50; 100 at 0.0, 50 at 0.1, 0 at 0.3 share",
+      "measured": 0.0,
+      "name": "weak pieces",
+      "unit": "share",
+      "value": 100,
+      "weight": 1.0
+    }
+  ],
   "seen_in": [
     "campgrounds"
   ],

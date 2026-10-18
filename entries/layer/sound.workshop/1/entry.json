@@ -55,6 +55,29 @@
     "world": "world1",
     "written_by": "algorithm/sound_layer@1"
   },
+  "refine_options": [
+    {
+      "action": "re-run its stage",
+      "answers": [
+        "gates",
+        "unresolved"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "the stage that writes this layer run again for its place; a paid stage (light passes, settle) is priced per place",
+      "suggested": false
+    },
+    {
+      "action": "refine its weakest entries",
+      "answers": [
+        "entries"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "the entries it points at refined by their own options",
+      "suggested": false
+    }
+  ],
   "requires": [
     "sound/base_hum@1",
     "sound/footstep_grating@1",
@@ -69,6 +92,38 @@
     "sound/workshop@1"
   ],
   "schema": "score-lib-entry/1",
+  "score": 98,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "share of sound@workshop's gates that pass (fail and unknown block alike): level pass: all 40 files within their level and length (loudest -19.7 LUFS); likeness pass: all 10 MOSS sounds at least 0.3 (lowest 0.3761); no freesound pass: no Freesound pick but the owner's 2 chosen recordings; sources pass: all 12 sources have a sound (2 room, 0 object, 0 motion, 10 bank)",
+      "measured": "4 of 4 pass",
+      "name": "gates",
+      "unit": "",
+      "value": 100,
+      "weight": 2.0
+    },
+    {
+      "how": "paths pointing at no library address; 100 at 0, 50 at 1, 0 at 5 paths",
+      "measured": 0,
+      "name": "unresolved",
+      "unit": "paths",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "mean quality score of its 11 entries it points at (0 under 50; weakest sound/footstep_rubber@1 81, sound/footstep_grating@1 84, sound/footsteps_metal.workshop@1 89)",
+      "measured": "mean of 11",
+      "name": "entries",
+      "unit": "",
+      "value": 91,
+      "weight": 1.0
+    }
+  ],
   "seen_in": [
     "workshop"
   ],

@@ -51,6 +51,29 @@
     "world": "world1",
     "written_by": "algorithm/room_layout@1"
   },
+  "refine_options": [
+    {
+      "action": "refine its weakest entries",
+      "answers": [
+        "entries"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "the entries it points at refined by their own options",
+      "suggested": true
+    },
+    {
+      "action": "re-run its stage",
+      "answers": [
+        "gates",
+        "unresolved"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "the stage that writes this layer run again for its place; a paid stage (light passes, settle) is priced per place",
+      "suggested": false
+    }
+  ],
   "requires": [
     "model/far_city_crown_tower@1",
     "model/far_city_glass_tower@1",
@@ -60,6 +83,38 @@
     "model/far_city_spire_tower@1"
   ],
   "schema": "score-lib-entry/1",
+  "score": 86,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "share of neighbours@flat's gates that pass (fail and unknown block alike): neighbours pass: 5 shown places stand, each with children: far_city, launch, square, stairwell, street",
+      "measured": "1 of 1 pass",
+      "name": "gates",
+      "unit": "",
+      "value": 100,
+      "weight": 2.0
+    },
+    {
+      "how": "paths pointing at no library address; 100 at 0, 50 at 1, 0 at 5 paths",
+      "measured": 0,
+      "name": "unresolved",
+      "unit": "paths",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "mean quality score of its 6 entries it points at (4 under 50; weakest model/far_city_crown_tower@1 32, model/far_city_low_block@1 35, model/far_city_housing_tower@1 38)",
+      "measured": "mean of 6",
+      "name": "entries",
+      "unit": "",
+      "value": 44,
+      "weight": 1.0
+    }
+  ],
   "seen_in": [
     "far_city"
   ],

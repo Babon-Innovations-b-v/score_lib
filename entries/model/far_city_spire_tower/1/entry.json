@@ -63,8 +63,199 @@
     "source_name": "far_city_spire_tower",
     "world": "world1"
   },
+  "refine_options": [
+    {
+      "action": "re-make from the plan with a code-built body",
+      "answers": [
+        "holes",
+        "crowded edges",
+        "surface noise",
+        "triangles",
+        "seams",
+        "library",
+        "outline",
+        "plan shape",
+        "scale"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "a coding agent writes a code builder for its kind from its plan and inventory row, built exactly and baked with the library (no generated mesh)",
+      "suggested": true
+    },
+    {
+      "action": "repaint from the library",
+      "answers": [
+        "library",
+        "palette",
+        "blotches",
+        "seams",
+        "bake",
+        "bake against close-up"
+      ],
+      "basket": true,
+      "cost": "paid",
+      "does": "the surface line again: finish map, library names, split by finish, painted and baked from the surface library (never the picture's colours)",
+      "price": {
+        "eur": 1.9,
+        "from": "paper/evidence/cloud/forecast-2026-10-15.txt:25 (ledger medians)",
+        "per": "take",
+        "projected_eur": 2.3
+      },
+      "suggested": true
+    },
+    {
+      "action": "re-bake at higher resolution",
+      "answers": [
+        "texel density",
+        "seams",
+        "blotches"
+      ],
+      "basket": true,
+      "cost": "paid",
+      "does": "its place's picture sets baked again at a higher texel density (more texels a metre for its set)",
+      "price": {
+        "eur": 1.0,
+        "from": "paper/evidence/cloud/forecast-2026-10-15.txt:25 (ledger medians)",
+        "per": "place bake",
+        "projected_eur": 1.21
+      },
+      "suggested": true
+    },
+    {
+      "action": "re-make by the prop route",
+      "answers": [
+        "holes",
+        "crowded edges",
+        "surface noise",
+        "triangles",
+        "outline",
+        "plan shape"
+      ],
+      "basket": true,
+      "cost": "paid",
+      "does": "a new close-up, Pixal3D take, closed into a solid and the surface line",
+      "price": {
+        "eur": 2.21,
+        "from": "paper/evidence/cloud/forecast-2026-10-15.txt:25 (ledger medians)",
+        "per": "piece",
+        "projected_eur": 2.67
+      },
+      "suggested": false
+    }
+  ],
   "requires": [],
   "schema": "score-lib-entry/1",
+  "score": 61,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "open edges' share of the edge length (edges one triangle uses, points welded); 100 at 0.0, 50 at 0.001, 0 at 0.01 share",
+      "measured": 2e-05,
+      "name": "holes",
+      "unit": "share",
+      "value": 99,
+      "weight": 1.0
+    },
+    {
+      "how": "share of edges more than two triangles use (non-manifold); 100 at 0.0, 50 at 0.001, 0 at 0.01 share",
+      "measured": 0.0,
+      "name": "crowded edges",
+      "unit": "share",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "area-weighted median of how unevenly the surface bends point to point, over the edge length (melted or blobby surfaces stand high); 100 at 0.015, 50 at 0.04, 0 at 0.08 ratio",
+      "measured": 0.0197,
+      "name": "surface noise",
+      "unit": "ratio",
+      "value": 91,
+      "weight": 1.0
+    },
+    {
+      "how": "19995 triangles against the prop route's budget of 19000 for its 298.62 m (place_route.faces_for); under: 100 at 0.6, 50 at 0.3, 0 at 0.1 of it (gutted); over: 100 at 1.05, 50 at 1.5, 0 at 3.0",
+      "measured": 1.052,
+      "name": "triangles",
+      "unit": "of budget",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "share of its finishes that are surface library variants (0 of 1; not the library: look_0); a model brought in with its own picture texture keeps picture colours (the owner's hard rule); 100 at 1.0, 50 at 0.999, 0 at 0.0 share",
+      "measured": 0.0,
+      "name": "library",
+      "unit": "share",
+      "value": 0,
+      "weight": 2.0
+    },
+    {
+      "how": "no colour map, UVs or place palette to judge",
+      "name": "palette",
+      "status": "not measured",
+      "value": null
+    },
+    {
+      "how": "no colour map, UVs or place palette to judge",
+      "name": "blotches",
+      "status": "not measured",
+      "value": null
+    },
+    {
+      "how": "metres of showing seam over the root of its surface area (0.00 m of its 3492.80 m of UV cuts across smooth surface, under 20 degrees, step past CIE76 10.0: the larger of 10 and its own grain's 90th percentile); 100 at 0.05, 50 at 0.3, 0 at 1.5 m/m",
+      "measured": 0.0,
+      "name": "seams",
+      "unit": "m/m",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "12 normal-map texels a metre (area-weighted median) against 128, a far_ kind (route.DISTANT); 100 at 1.0, 50 at 0.5, 0 at 0.25 of target",
+      "measured": 0.095,
+      "name": "texel density",
+      "picture": {
+        "bytes": 37209,
+        "sha256": "b6b0fe9fc8e263119f55081f9ccbd2feea54af5b9b2cae4c2a6f59b3efeef5a6",
+        "what": "triangles under half the target density in red"
+      },
+      "unit": "of target",
+      "value": 0,
+      "weight": 1.0
+    },
+    {
+      "how": "no surfaces check of this model in the store",
+      "name": "bake",
+      "status": "not measured",
+      "value": null
+    },
+    {
+      "how": "no likeness measure of this model in the store (no close-up judged)",
+      "name": "outline",
+      "status": "not measured",
+      "value": null
+    },
+    {
+      "how": "no kit piece lays this model",
+      "name": "plan shape",
+      "status": "not measured",
+      "value": null
+    },
+    {
+      "how": "no kit piece lays this model",
+      "name": "scale",
+      "status": "not measured",
+      "value": null
+    },
+    {
+      "how": "whether it reads as its close-up to a viewer",
+      "name": "by eye",
+      "status": "needs a paid judge",
+      "value": null
+    }
+  ],
   "seen_in": [
     "far_city"
   ],

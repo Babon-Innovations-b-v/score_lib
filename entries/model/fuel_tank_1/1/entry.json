@@ -72,8 +72,223 @@
     "source_name": "fuel_tank_1",
     "world": "world1"
   },
+  "refine_options": [
+    {
+      "action": "re-make from the plan with a code-built body",
+      "answers": [
+        "holes",
+        "crowded edges",
+        "surface noise",
+        "triangles",
+        "seams",
+        "library",
+        "outline",
+        "plan shape",
+        "scale"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "a coding agent writes a code builder for its kind from its plan and inventory row, built exactly and baked with the library (no generated mesh)",
+      "suggested": true
+    },
+    {
+      "action": "repaint from the library",
+      "answers": [
+        "library",
+        "palette",
+        "blotches",
+        "seams",
+        "bake",
+        "bake against close-up"
+      ],
+      "basket": true,
+      "cost": "paid",
+      "does": "the surface line again: finish map, library names, split by finish, painted and baked from the surface library (never the picture's colours)",
+      "price": {
+        "eur": 1.9,
+        "from": "paper/evidence/cloud/forecast-2026-10-15.txt:25 (ledger medians)",
+        "per": "take",
+        "projected_eur": 2.3
+      },
+      "suggested": true
+    },
+    {
+      "action": "re-bake at higher resolution",
+      "answers": [
+        "texel density",
+        "seams",
+        "blotches"
+      ],
+      "basket": true,
+      "cost": "paid",
+      "does": "its place's picture sets baked again at a higher texel density (more texels a metre for its set)",
+      "price": {
+        "eur": 1.0,
+        "from": "paper/evidence/cloud/forecast-2026-10-15.txt:25 (ledger medians)",
+        "per": "place bake",
+        "projected_eur": 1.21
+      },
+      "suggested": true
+    },
+    {
+      "action": "re-make by the prop route",
+      "answers": [
+        "holes",
+        "crowded edges",
+        "surface noise",
+        "triangles",
+        "outline",
+        "plan shape"
+      ],
+      "basket": true,
+      "cost": "paid",
+      "does": "a new close-up, Pixal3D take, closed into a solid and the surface line",
+      "price": {
+        "eur": 2.21,
+        "from": "paper/evidence/cloud/forecast-2026-10-15.txt:25 (ledger medians)",
+        "per": "piece",
+        "projected_eur": 2.67
+      },
+      "suggested": false
+    }
+  ],
   "requires": [],
   "schema": "score-lib-entry/1",
+  "score": 92,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "open edges' share of the edge length (edges one triangle uses, points welded); 100 at 0.0, 50 at 0.001, 0 at 0.01 share",
+      "measured": 0.0,
+      "name": "holes",
+      "unit": "share",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "share of edges more than two triangles use (non-manifold); 100 at 0.0, 50 at 0.001, 0 at 0.01 share",
+      "measured": 0.0,
+      "name": "crowded edges",
+      "unit": "share",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "area-weighted median of how unevenly the surface bends point to point, over the edge length (melted or blobby surfaces stand high); 100 at 0.015, 50 at 0.04, 0 at 0.08 ratio",
+      "measured": 0.0182,
+      "name": "surface noise",
+      "unit": "ratio",
+      "value": 94,
+      "weight": 1.0
+    },
+    {
+      "how": "19000 triangles against the prop route's budget of 19000 for its 1.81 m (place_route.faces_for); under: 100 at 0.6, 50 at 0.3, 0 at 0.1 of it (gutted); over: 100 at 1.05, 50 at 1.5, 0 at 3.0",
+      "measured": 1.0,
+      "name": "triangles",
+      "unit": "of budget",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "share of its finishes that are surface library variants (3 of 3); 100 at 1.0, 50 at 0.999, 0 at 0.0 share",
+      "measured": 1.0,
+      "name": "library",
+      "unit": "share",
+      "value": 100,
+      "weight": 2.0
+    },
+    {
+      "how": "the room sweep: share of its texels within CIE76 8 of what its places' library surfaces bake to; 100 at 0.98, 50 at 0.9, 0 at 0.6 share",
+      "measured": 1.0,
+      "name": "palette",
+      "unit": "share",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "the room sweep's blotchiness: 75th percentile of the lightness spread inside 8 x 8 texel tiles under its UVs (0 to 255); 100 at 4.0, 50 at 10.0, 0 at 20.0 levels",
+      "measured": 2.0,
+      "name": "blotches",
+      "unit": "levels",
+      "value": 100,
+      "weight": 0.5
+    },
+    {
+      "how": "metres of showing seam over the root of its surface area (5.30 m of its 38.64 m of UV cuts across smooth surface, under 20 degrees, step past CIE76 14.1: the larger of 10 and its own grain's 90th percentile); 100 at 0.05, 50 at 0.3, 0 at 1.5 m/m",
+      "measured": 2.165,
+      "name": "seams",
+      "picture": {
+        "bytes": 65870,
+        "sha256": "0328e6d0bfa0687f5ea1d8ae70be5102c00e8a097b8c005ed55fe3e3a1ec889f",
+        "what": "showing seams in red"
+      },
+      "unit": "m/m",
+      "value": 0,
+      "weight": 1.0
+    },
+    {
+      "how": "1430 normal-map texels a metre (area-weighted median) against 1024, its bake job in data/surfaces/engineroom.json; 100 at 1.0, 50 at 0.5, 0 at 0.25 of target",
+      "measured": 1.396,
+      "name": "texel density",
+      "unit": "of target",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "worst part's bake against its library surface (perforated_steel; the surfaces check, surfaces-check@engineroom); 100 at 5.0, 50 at 20.0, 0 at 40.0 CIE76",
+      "measured": 0.2,
+      "name": "bake",
+      "unit": "CIE76",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "worst part's bake against its colour in the close-up (dark_panel); 100 at 16.0, 50 at 32.0, 0 at 50.0 CIE76",
+      "measured": 12.3,
+      "name": "bake against close-up",
+      "unit": "CIE76",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "highest foot lift off its floor (the surfaces check's quadrants); 100 at 0.0, 50 at 0.03, 0 at 0.1 m",
+      "measured": 0.002,
+      "name": "stands level",
+      "unit": "m",
+      "value": 97,
+      "weight": 1.0
+    },
+    {
+      "how": "best of eight outline overlaps with its close-up (the likeness stage, likeness@engineroom); 100 at 0.8, 50 at 0.5, 0 at 0.3 overlap",
+      "measured": 0.8306,
+      "name": "outline",
+      "unit": "overlap",
+      "value": 100,
+      "weight": 2.0
+    },
+    {
+      "how": "no kit piece lays this model",
+      "name": "plan shape",
+      "status": "not measured",
+      "value": null
+    },
+    {
+      "how": "no kit piece lays this model",
+      "name": "scale",
+      "status": "not measured",
+      "value": null
+    },
+    {
+      "how": "whether it reads as its close-up to a viewer",
+      "name": "by eye",
+      "status": "needs a paid judge",
+      "value": null
+    }
+  ],
   "seen_in": [
     "engineroom"
   ],

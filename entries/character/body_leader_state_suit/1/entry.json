@@ -131,8 +131,109 @@
     "record_key": "eab7ea6560f0a9814d4f7e1e72a8cf09acf5448c32dbf199bc8c41e2ce47628b",
     "world": "world1"
   },
+  "refine_options": [
+    {
+      "action": "re-fit and re-weight the body",
+      "answers": [
+        "shell",
+        "tucks",
+        "hard parts stretched",
+        "crossings",
+        "joins"
+      ],
+      "basket": true,
+      "cost": "paid",
+      "does": "the people maker fits SOMA-X again and moves its skin weights (a cloud run)",
+      "price": "not measured yet",
+      "suggested": false
+    },
+    {
+      "action": "repaint from the library",
+      "answers": [
+        "library",
+        "finish"
+      ],
+      "basket": true,
+      "cost": "paid",
+      "does": "its looks' parts painted again from the surface library",
+      "price": "not measured yet",
+      "suggested": false
+    }
+  ],
   "requires": [],
   "schema": "score-lib-entry/1",
+  "score": 92,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "mean offset of its look from the fitted body (worst point 0.0744 m); 100 at 0.01, 50 at 0.025, 0 at 0.05 m",
+      "measured": 0.0168,
+      "name": "shell",
+      "unit": "m",
+      "value": 77,
+      "weight": 2.0
+    },
+    {
+      "how": "no clip check in the entry (no clips judged for this look)",
+      "name": "tucks",
+      "status": "not measured",
+      "value": null
+    },
+    {
+      "how": "no clip check in the entry (no clips judged for this look)",
+      "name": "hard parts",
+      "status": "not measured",
+      "value": null
+    },
+    {
+      "how": "no clip check in the entry (no clips judged for this look)",
+      "name": "crossings",
+      "status": "not measured",
+      "value": null
+    },
+    {
+      "how": "share of its join verdicts that pass: wrist pass; ankle pass; stance pass",
+      "measured": "3 of 3 pass",
+      "name": "joins",
+      "unit": "",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "best outline overlap with its close-up; 100 at 0.8, 50 at 0.5, 0 at 0.3 overlap",
+      "measured": 0.8553,
+      "name": "outline",
+      "unit": "overlap",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "its far body's triangles (FAR_TRIANGLES 1,220); 100 at 1220, 50 at 1400, 0 at 2500 triangles",
+      "measured": 1220,
+      "name": "far triangles",
+      "unit": "triangles",
+      "value": 100,
+      "weight": 0.5
+    },
+    {
+      "how": "share of its 16 parts whose finish is a surface library family; 100 at 1.0, 50 at 0.999, 0 at 0.0 share",
+      "measured": 1.0,
+      "name": "library",
+      "unit": "share",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "whether its face reads as a person's",
+      "name": "face",
+      "status": "needs a paid judge",
+      "value": null
+    }
+  ],
   "seen_in": [],
   "state": "draft",
   "tags": {

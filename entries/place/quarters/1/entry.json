@@ -123,12 +123,66 @@
     "unresolved_sublayers": [],
     "world": "world1"
   },
+  "refine_options": [
+    {
+      "action": "close its named gaps",
+      "answers": [
+        "completion"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "each named gap's objects refined until its fault clears",
+      "suggested": true
+    },
+    {
+      "action": "refine its weakest layers",
+      "answers": [
+        "layers"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "its layers' own options, weakest first",
+      "suggested": false
+    }
+  ],
   "requires": [
     "layer/base.quarters@1",
     "layer/light.quarters@1",
     "layer/sound.quarters@1"
   ],
   "schema": "score-lib-entry/1",
+  "score": 75,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "its named gaps are its completion gate's only fail (quarters: side console box not passed; quarters: edge light strip box not passed; quarters: wall upper plain box not passed; quarters: roof face panel box not passed; quarters: side console box not passed (the box gate); quarters: edge light strip box not passed (the box gate); quarters: wall upper plain box not passed (the box gate); quarters: roof face panel box not passed (the box gate); quarters: made pieces' boxes not passed (hatch door frame); quarters: made pieces' boxes not passed (hatch door frame) (the box gate)); 60 less 5 a named gap, at least 50",
+      "measured": "complete apart from 10 named gaps",
+      "name": "completion",
+      "unit": "",
+      "value": 50,
+      "weight": 3.0
+    },
+    {
+      "how": "share of plan@quarters's gates that pass (fail and unknown block alike): mapped pass: every plan item, concept element and door is mapped (6 items, 12 elements, 1 doors)",
+      "measured": "1 of 1 pass",
+      "name": "plan",
+      "unit": "",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "mean quality score of its 3 layers (0 under 50; weakest layer/base.quarters@1 98, layer/sound.quarters@1 98, layer/light.quarters@1 100)",
+      "measured": "mean of 3",
+      "name": "layers",
+      "unit": "",
+      "value": 99,
+      "weight": 2.0
+    }
+  ],
   "seen_in": [
     "quarters"
   ],

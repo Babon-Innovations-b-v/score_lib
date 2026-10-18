@@ -60,10 +60,65 @@
     "world": "world1",
     "written_by": "algorithm/light_rig@1"
   },
+  "refine_options": [
+    {
+      "action": "re-run its stage",
+      "answers": [
+        "gates",
+        "unresolved"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "the stage that writes this layer run again for its place; a paid stage (light passes, settle) is priced per place",
+      "suggested": false
+    },
+    {
+      "action": "refine its weakest entries",
+      "answers": [
+        "entries"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "the entries it points at refined by their own options",
+      "suggested": false
+    }
+  ],
   "requires": [
     "light/sky_dome.campgrounds@1"
   ],
   "schema": "score-lib-entry/1",
+  "score": 94,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "share of light@campgrounds's gates that pass (fail and unknown block alike): brightness pass: the place 0.327 -> 0.327 against its concept's 0.419 (x0.78, within x1.5); the lamps without a shaft at x1 of the seed's; earth pass: no Earth in this place; heads pass: no floodlight in this place; lamps pass: 0 lamps: 0 unlit or blown out, 0 light no view and stand in none (not judged); sky pass: 3 views: colour gap to the concept 13.9 levels (<= 20.0), blue to red 0.643 (concept 0.5962, within 0.15), rise to the h; sky elements pass: every element the record holds: {'earth': [False, False], 'sky_dome': [True, True], 'sun_disc': [True, True], 'shafts': ; stage_no_worse pass: no worse: {'campgrounds_placeholders': 0, 'campgrounds_made_only': 0}",
+      "measured": "7 of 7 pass",
+      "name": "gates",
+      "unit": "",
+      "value": 100,
+      "weight": 2.0
+    },
+    {
+      "how": "paths pointing at no library address; 100 at 0, 50 at 1, 0 at 5 paths",
+      "measured": 0,
+      "name": "unresolved",
+      "unit": "paths",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "mean quality score of its 1 entries it points at (0 under 50; weakest light/sky_dome.campgrounds@1 77)",
+      "measured": "mean of 1",
+      "name": "entries",
+      "unit": "",
+      "value": 77,
+      "weight": 1.0
+    }
+  ],
   "seen_in": [
     "campgrounds"
   ],

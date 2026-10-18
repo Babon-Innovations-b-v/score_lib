@@ -62,8 +62,206 @@
     "source_name": "fixture_hygiene_1",
     "world": "world1"
   },
+  "refine_options": [
+    {
+      "action": "re-make from the plan with a code-built body",
+      "answers": [
+        "holes",
+        "crowded edges",
+        "surface noise",
+        "triangles",
+        "seams",
+        "library",
+        "outline",
+        "plan shape",
+        "scale"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "a coding agent writes a code builder for its kind from its plan and inventory row, built exactly and baked with the library (no generated mesh)",
+      "suggested": true
+    },
+    {
+      "action": "repaint from the library",
+      "answers": [
+        "library",
+        "palette",
+        "blotches",
+        "seams",
+        "bake",
+        "bake against close-up"
+      ],
+      "basket": true,
+      "cost": "paid",
+      "does": "the surface line again: finish map, library names, split by finish, painted and baked from the surface library (never the picture's colours)",
+      "price": {
+        "eur": 1.9,
+        "from": "paper/evidence/cloud/forecast-2026-10-15.txt:25 (ledger medians)",
+        "per": "take",
+        "projected_eur": 2.3
+      },
+      "suggested": true
+    },
+    {
+      "action": "re-make by the prop route",
+      "answers": [
+        "holes",
+        "crowded edges",
+        "surface noise",
+        "triangles",
+        "outline",
+        "plan shape"
+      ],
+      "basket": true,
+      "cost": "paid",
+      "does": "a new close-up, Pixal3D take, closed into a solid and the surface line",
+      "price": {
+        "eur": 2.21,
+        "from": "paper/evidence/cloud/forecast-2026-10-15.txt:25 (ledger medians)",
+        "per": "piece",
+        "projected_eur": 2.67
+      },
+      "suggested": true
+    },
+    {
+      "action": "re-bake at higher resolution",
+      "answers": [
+        "texel density",
+        "seams",
+        "blotches"
+      ],
+      "basket": true,
+      "cost": "paid",
+      "does": "its place's picture sets baked again at a higher texel density (more texels a metre for its set)",
+      "price": {
+        "eur": 1.0,
+        "from": "paper/evidence/cloud/forecast-2026-10-15.txt:25 (ledger medians)",
+        "per": "place bake",
+        "projected_eur": 1.21
+      },
+      "suggested": true
+    }
+  ],
   "requires": [],
   "schema": "score-lib-entry/1",
+  "score": 46,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "open edges' share of the edge length (edges one triangle uses, points welded); 100 at 0.0, 50 at 0.001, 0 at 0.01 share",
+      "measured": 0.0,
+      "name": "holes",
+      "unit": "share",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "share of edges more than two triangles use (non-manifold); 100 at 0.0, 50 at 0.001, 0 at 0.01 share",
+      "measured": 0.00256,
+      "name": "crowded edges",
+      "picture": {
+        "bytes": 5707,
+        "sha256": "28cb839e0c364b5365bb640919c72d0dd3cd0e07dd4ff876a72905f860417087",
+        "what": "edges more than two triangles use, in red"
+      },
+      "unit": "share",
+      "value": 41,
+      "weight": 1.0
+    },
+    {
+      "how": "1568 triangles, under 3000: too few to tell noise from shape",
+      "name": "surface noise",
+      "status": "not judged",
+      "value": null
+    },
+    {
+      "how": "1568 triangles against the prop route's budget of 19000 for its 2.29 m (place_route.faces_for); under: 100 at 0.6, 50 at 0.3, 0 at 0.1 of it (gutted); over: 100 at 1.05, 50 at 1.5, 0 at 3.0",
+      "measured": 0.083,
+      "name": "triangles",
+      "unit": "of budget",
+      "value": 0,
+      "weight": 1.0
+    },
+    {
+      "how": "share of its finishes that are surface library variants (0 of 1; not the library: look_0); a model brought in with its own picture texture keeps picture colours (the owner's hard rule); 100 at 1.0, 50 at 0.999, 0 at 0.0 share",
+      "measured": 0.0,
+      "name": "library",
+      "unit": "share",
+      "value": 0,
+      "weight": 2.0
+    },
+    {
+      "how": "the room sweep: share of its texels within CIE76 8 of what its places' library surfaces bake to; 100 at 0.98, 50 at 0.9, 0 at 0.6 share",
+      "measured": 1.0,
+      "name": "palette",
+      "unit": "share",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "the room sweep's blotchiness: 75th percentile of the lightness spread inside 8 x 8 texel tiles under its UVs (0 to 255); 100 at 4.0, 50 at 10.0, 0 at 20.0 levels",
+      "measured": 0.6,
+      "name": "blotches",
+      "unit": "levels",
+      "value": 100,
+      "weight": 0.5
+    },
+    {
+      "how": "metres of showing seam over the root of its surface area (17.91 m of its 75.81 m of UV cuts across smooth surface, under 20 degrees, step past CIE76 10.0: the larger of 10 and its own grain's 90th percentile); 100 at 0.05, 50 at 0.3, 0 at 1.5 m/m",
+      "measured": 3.058,
+      "name": "seams",
+      "picture": {
+        "bytes": 7643,
+        "sha256": "dd0260590e350c0d8aecef250261055386dd910a04566db721830d209319a79a",
+        "what": "showing seams in red"
+      },
+      "unit": "m/m",
+      "value": 0,
+      "weight": 1.0
+    },
+    {
+      "how": "713 normal-map texels a metre (area-weighted median) against 512, the route's FAR; 100 at 1.0, 50 at 0.5, 0 at 0.25 of target",
+      "measured": 1.393,
+      "name": "texel density",
+      "unit": "of target",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "no surfaces check of this model in the store",
+      "name": "bake",
+      "status": "not measured",
+      "value": null
+    },
+    {
+      "how": "no likeness measure of this model in the store (no close-up judged)",
+      "name": "outline",
+      "status": "not measured",
+      "value": null
+    },
+    {
+      "how": "no kit piece lays this model",
+      "name": "plan shape",
+      "status": "not measured",
+      "value": null
+    },
+    {
+      "how": "no kit piece lays this model",
+      "name": "scale",
+      "status": "not measured",
+      "value": null
+    },
+    {
+      "how": "whether it reads as its close-up to a viewer",
+      "name": "by eye",
+      "status": "needs a paid judge",
+      "value": null
+    }
+  ],
   "seen_in": [
     "camp"
   ],
