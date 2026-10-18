@@ -16,7 +16,7 @@ def row(record):
     picture_file = record["files"].get(picture.get("file") or "", {})
     return {"address": record["address"], "title": record["title"], "state": record["state"],
             "version": record["version"], "picture_sha256": picture_file.get("sha256"),
-            "tags": record.get("tags", {}), "digest": entries.digest(record)}
+            "tags": record.get("tags", {}), "digest": entries.digest(record), "score": record.get("score")}
 
 
 def kind_index(root, kind):

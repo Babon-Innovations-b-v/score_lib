@@ -8,7 +8,10 @@ SCHEMA = "score-lib-entry/1"
 KINDS = ("algorithm", "surface", "model", "light", "sound", "effect", "character", "ground", "kit", "layer", "place")
 ID_PATTERN = re.compile(r"^[a-z0-9_]+(\.[a-z0-9_]+)?$")
 ADDRESS_PATTERN = re.compile(r"^(?P<kind>[a-z]+)/(?P<id>[a-z0-9_]+(\.[a-z0-9_]+)?)@(?P<version>[1-9][0-9]*)$")
-UNSTAMPED = ("state", "locked")
+# The quality fields (score_lib.quality) are an assessment of an entry, not its content: a locked entry may be scored
+# again without its digest moving.
+QUALITY = ("score", "score_parts", "refine_options", "score_made")
+UNSTAMPED = ("state", "locked") + QUALITY
 
 
 def parse_address(address):
@@ -83,10 +86,11 @@ def versions(root, kind, entry_id):
 
 
 def content(record):
-    """The entry without its state and lock date: what its identity is made of."""
+    """The entry without its state, lock date and quality fields: what its identity is made of."""
     return {key: value for key, value in record.items() if key not in UNSTAMPED}
 
 
 def digest(record):
-    """The content digest: the sha256 of the canonical text of the entry minus `state` and `locked`."""
+    """The content digest: the sha256 of the canonical text of the entry minus `state`, `locked` and the quality
+    fields."""
     return hashlib.sha256(dumps(content(record)).encode()).hexdigest()

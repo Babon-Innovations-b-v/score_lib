@@ -109,6 +109,18 @@ def command_verify(options):
     raise SystemExit(1 if failures else 0)
 
 
+def command_quality(options):
+    import os
+    from score_lib import index, quality
+    from score_lib.source.store import Store
+    results = quality.run(options.root, blob_store(), Store(os.environ["SCORE_STORE"]), os.environ["SCORE_REPO"],
+                          options.kind or (), options.address or (), options.threads, options.dry_run)
+    if not options.dry_run:
+        index.rebuild(options.root)
+    scored = [score for score, _, _ in results.values() if score is not None]
+    print(f"scored {len(scored)} of {len(results)} entries; {sum(score < 50 for score in scored)} under 50")
+
+
 def command_page(options):
     from score_lib.page.build import build
     pages = build(options.root, blob_store(), options.out, options.drafts, options.public_url)
@@ -188,6 +200,13 @@ def parser():
     verified.add_argument("--address", action="append")
     verified.add_argument("--no-usd", action="store_true", help="skip the USD check (section 8.7)")
     verified.set_defaults(handle=command_verify)
+    scored = commands.add_parser("quality", help="score entries' quality from free local measures (reads "
+                                 "SCORE_STORE and SCORE_REPO; run with stdin from /dev/null when detached)")
+    scored.add_argument("--kind", action="append")
+    scored.add_argument("--address", action="append")
+    scored.add_argument("--threads", type=int, default=4)
+    scored.add_argument("--dry-run", action="store_true")
+    scored.set_defaults(handle=command_quality)
     page = commands.add_parser("page", help="write the catalogue site")
     page.add_argument("--out", required=True)
     page.add_argument("--drafts", action="store_true")

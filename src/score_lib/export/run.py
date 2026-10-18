@@ -30,7 +30,7 @@ from score_lib.web3d import record as web_copy
 ORDER = ("algorithm", "surface", "model", "light", "sound", "effect", "character", "ground", "kit", "layer", "place")
 ATOMS = ORDER[:-2]
 STATUSES = ("new", "unchanged", "changed draft", "new version", "refused")
-UNVERSIONED = ("address", "version", "state", "locked")
+UNVERSIONED = ("address", "version", "state", "locked") + entries.QUALITY
 
 
 @dataclasses.dataclass

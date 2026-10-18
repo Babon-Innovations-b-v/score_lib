@@ -362,6 +362,161 @@
           "type": "object"
         }
       }
+    },
+    "score": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        }
+      ]
+    },
+    "score_parts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "value",
+          "how"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "value": {
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 100
+              }
+            ]
+          },
+          "weight": {
+            "type": "number",
+            "minimum": 0
+          },
+          "unit": {
+            "type": "string"
+          },
+          "how": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "not measured",
+              "not judged",
+              "needs a paid judge"
+            ]
+          },
+          "picture": {
+            "type": "object",
+            "required": [
+              "sha256",
+              "bytes",
+              "what"
+            ],
+            "properties": {
+              "sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "bytes": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "what": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "refine_options": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "action",
+          "does",
+          "answers",
+          "cost",
+          "basket",
+          "suggested"
+        ],
+        "properties": {
+          "action": {
+            "type": "string"
+          },
+          "does": {
+            "type": "string"
+          },
+          "answers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "cost": {
+            "enum": [
+              "free",
+              "paid"
+            ]
+          },
+          "basket": {
+            "type": "boolean"
+          },
+          "suggested": {
+            "type": "boolean"
+          },
+          "price": {
+            "oneOf": [
+              {
+                "const": "not measured yet"
+              },
+              {
+                "type": "object",
+                "required": [
+                  "eur",
+                  "projected_eur",
+                  "per",
+                  "from"
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    "score_made": {
+      "type": "object",
+      "required": [
+        "at",
+        "by"
+      ],
+      "properties": {
+        "at": {
+          "type": "string"
+        },
+        "by": {
+          "type": "string"
+        },
+        "score_commit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
     }
   },
   "allOf": [

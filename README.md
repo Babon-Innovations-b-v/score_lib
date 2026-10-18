@@ -44,6 +44,7 @@ score-lib index
 score-lib audit --world world1 [--report <file>]
 score-lib web3d [--kind k] [--address a] [--limit n] [--report <file>]
 score-lib verify [--deep] [--address a]
+score-lib quality [--kind k] [--address a] [--threads 4] [--dry-run]
 score-lib page --out <dir outside the repo> [--drafts] [--public-url]
 score-lib handover --world w [--place p] --seed n --commit <score sha> --store <objects> --repo <score> --out <dir>
 score-lib held --world w [--place p]
@@ -75,6 +76,17 @@ bake's maps, else the library surface nearest the colour the part showed (each r
 
 `entries/<kind>/<id>/<version>/entry.json` is the record; `index/` is built from it; `definitions/algorithms/` holds
 one hand-written file per algorithm; `config/sources.toml` lists every source an entry's content may come from.
+
+## Quality scores
+
+`score-lib quality` gives every entry a quality score from 0 to 100, from free measures run on this machine by a
+scoring system of its kind's own (`src/score_lib/quality/<kind>.py`), and writes into the entry `score`, `score_parts`
+(each part's value, what was measured, how, and a picture of its worst spot in the blob store where one applies),
+`refine_options` (what refining it would do, free or paid, a paid one priced only from measured unit costs) and
+`score_made`. 50 is a gate's own line wherever the framework has a gate for the measure; a part that needs a paid
+judge is named and left out. It reads `SCORE_STORE` and `SCORE_REPO` and the score repository's own tools, so it runs
+under that repository's interpreter (`PYTHONPATH=src <score>/.venv/bin/python -c "from score_lib.cli import main;
+main(['quality'])" < /dev/null`).
 
 ## Licence
 
