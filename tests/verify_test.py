@@ -5,6 +5,7 @@ import os
 from score_lib import entry as entries
 from score_lib import index, locks
 from score_lib.blobs.local import LocalBlobStore
+from score_lib.licences import Licences
 from score_lib.verify import verify
 
 
@@ -48,6 +49,31 @@ def test_3_locked_digest_differs(world):
     assert any("kit/room@1: content digest differs" in each for each in messages(world))
 
 
+def lock_and_edit(world, change):
+    """Lock kit/room@1 with what it requires, change its entry.json, rebuild the index."""
+    locks.lock_many(world.root, ["kit/room@1"] + entries.load_address(world.root, "kit/room@1")["requires"])
+    path = entries.folder_of(world.root, "kit", "room", 1) / "entry.json"
+    record = json.loads(path.read_text())
+    change(record)
+    path.write_text(entries.dumps(record))
+    index.rebuild(world.root)
+    return record
+
+
+def test_3_lock_undone_by_setting_draft(world):
+    world.export()
+    lock_and_edit(world, lambda record: (record.pop("locked"), record.update(state="draft", title="Another title")))
+    assert any("kit/room@1: in index/locks.json but its state is draft" in each for each in messages(world))
+
+
+def test_3_second_lock_row(world):
+    world.export()
+    record = lock_and_edit(world, lambda record: record.update(title="Another title"))
+    locks.append(world.root, {"address": "kit/room@1", "digest": entries.digest(record), "date": "2026-10-19"})
+    index.rebuild(world.root)
+    assert any("kit/room@1: 2 rows in index/locks.json" in each for each in messages(world))
+
+
 def test_4_blob_missing(world):
     world.export()
     record = entries.load_address(world.root, "sound/hum@1")
@@ -74,6 +100,15 @@ def test_5_licence_does_not_match_its_components(world):
     path.write_text(entries.dumps(record))
     index.rebuild(world.root)
     assert any("sound/hum@1: licence: commercial_ok" in each for each in messages(world))
+
+
+def test_5_licence_row_no_longer_commercial(world):
+    world.export()
+    source = Licences.load()
+    rows = [dict(row, commercial_ok=False) for row in source.rows]
+    record = entries.load_address(world.root, "sound/hum@1")
+    faults = Licences(rows).check(record["licence"])
+    assert any("commercial_ok True differs from licences.toml" in each for each in faults)
 
 
 def test_6_locked_requires_a_draft(world):
