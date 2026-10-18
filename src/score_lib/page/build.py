@@ -155,8 +155,8 @@ def algorithm_parts(site, record):
 
 
 def entry_page(site, record):
-    """<kind>/<id>/<version>.html's content."""
-    prefix = "../../../"
+    """<kind>/<id>/<version>.html's content (two folders below the site root)."""
+    prefix = "../../"
     link = site.picture(record)
     picture = (f'<div class="big"><img src="{html.escape(link if link.startswith("http") else prefix + link)}" '
                f'alt=""></div>') if link else f'<p>{html.escape(record.get("picture_reason", "no picture"))}</p>'

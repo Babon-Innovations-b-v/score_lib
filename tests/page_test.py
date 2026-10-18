@@ -23,6 +23,10 @@ def test_page_links_every_picture(world, tmp_path):
             assert sha in front
     for source in re.findall(r'src="([^"]+)"', front):
         assert (out / source).is_file()
+    for page in out.glob("*/*/*.html"):
+        for link in re.findall(r'(?:src|href)="([^"#]+)"', page.read_text()):
+            if not link.startswith("http"):
+                assert (page.parent / link).resolve().is_file(), f"{page.relative_to(out)}: {link}"
     assert "<audio" in (out / "sound/hum/1.html").read_text()
 
 
