@@ -45,25 +45,42 @@ def hull(points):
     return np.array(lower[:-1] + upper[:-1])
 
 
-def render(kit, destination):
-    """Draw a kit's pieces from above to a png; the number of pieces drawn."""
+def draw_pieces(axes, kit, alpha=0.55):
+    """Draw a kit's piece outlines onto matplotlib axes, coloured by group."""
     pieces = kit.get("pieces") or []
     groups = sorted({((kit.get("kinds") or {}).get(piece.get("kind")) or {}).get("group", "") for piece in pieces})
-    figure, axes = plt.subplots(figsize=(4.5, 4.5), dpi=80)
-    figure.patch.set_facecolor(BACKGROUND)
-    axes.set_facecolor(BACKGROUND)
-    axes.set_axis_off()
     for piece in pieces:
         group = ((kit.get("kinds") or {}).get(piece.get("kind")) or {}).get("group", "")
         colour = GROUP_COLOURS[groups.index(group) % len(GROUP_COLOURS)]
         outline = footprint(piece)
         if len(outline) >= 3:
             axes.add_patch(Polygon(outline, closed=True, facecolor=colour, edgecolor="#1d2026", linewidth=0.3,
-                                   alpha=0.55))
+                                   alpha=alpha))
+    return len(pieces)
+
+
+def blank_axes():
+    """(figure, axes) of an empty square plan with the background colour and no axis lines."""
+    figure, axes = plt.subplots(figsize=(4.5, 4.5), dpi=80)
+    figure.patch.set_facecolor(BACKGROUND)
+    axes.set_facecolor(BACKGROUND)
+    axes.set_axis_off()
+    return figure, axes
+
+
+def save(figure, axes, destination):
+    """Fit the view to what is drawn (x across, z down, metres equal), write the png and close the figure."""
     axes.autoscale_view()
     axes.set_aspect("equal", adjustable="datalim")
     axes.invert_yaxis()
     pathlib.Path(destination).parent.mkdir(parents=True, exist_ok=True)
     figure.savefig(destination, format="png", facecolor=BACKGROUND, metadata={"Software": None})
     plt.close(figure)
-    return len(pieces)
+
+
+def render(kit, destination):
+    """Draw a kit's pieces from above to a png; the number of pieces drawn."""
+    figure, axes = blank_axes()
+    drawn = draw_pieces(axes, kit)
+    save(figure, axes, destination)
+    return drawn

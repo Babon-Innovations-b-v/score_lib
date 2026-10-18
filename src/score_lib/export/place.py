@@ -8,10 +8,13 @@ from score_lib import entry as entries
 from score_lib.export import places as place_reads
 from score_lib.export.run import Candidate
 from score_lib.licences import SCORE_COMPONENT
+from score_lib.preview import plan as plan_picture
 from score_lib.rewrite import asset_paths, export, joined, open_copy, rewrite
 
 JSON_FILES = ("scene.json", "origin.json", "inputs.json", "contract.json")
 EDIT = "layers/edit.usda"
+# the place's records from stages the assembly does not hold: its plan and its cast
+RECORDS = {"plan": ("plan.json",), "cast": ("cast.json", "measures.json")}
 
 
 def plan(context):
@@ -58,6 +61,38 @@ def root_layer(context, place, output, work):
     return export(layer, work / root), requires, missing
 
 
+def stage_records(context, place):
+    """{entry name: (path, sha)} of the place's plan and cast records (`plan/plan.json`, `cast/cast.json`, ...) and
+    the outputs they came from."""
+    found, outputs = {}, {}
+    for stage, names in RECORDS.items():
+        output = context.store.accepted(f"{stage}@{place}")
+        if not output:
+            continue
+        listing = context.store.listing(output)
+        outputs[stage] = place_reads.node_provenance(context, f"{stage}@{place}")
+        for name in names:
+            if name in listing:
+                found[f"{stage}/{name}"] = (context.tree(output) / name, listing[name])
+    return found, outputs
+
+
+def picture(context, place, work, files, roles, known):
+    """The place's picture: the first look render of its light pass, else its kit from above, else a reason."""
+    found = place_reads.look(context, place)
+    if found:
+        path, sha, name = found
+        files["picture.png"], known["picture.png"], roles["picture.png"] = path, sha, "picture"
+        return {"file": "picture.png", "made_by": "source picture", "of": f"light@{place}: {name}"}
+    kit = place_reads.kit(context, place)
+    if not kit.get("pieces"):
+        return {"reason": "the place has no light pass render and no kit to draw"}
+    drawn = plan_picture.render(kit, work / "preview.png")
+    files["preview.png"] = work / "preview.png"
+    roles["preview.png"] = "picture"
+    return {"file": "preview.png", "made_by": "preview/plan.py", "of": f"data/kit/{place}.json pieces ({drawn})"}
+
+
 def candidate(context, place):
     """One place candidate."""
     output, listing = context.assembly(place)
@@ -80,18 +115,22 @@ def candidate(context, place):
     if context.repo.exists(gaps):
         files["gaps.json"] = context.repo.export(gaps, work / "gaps.json")
         roles["gaps.json"] = "record"
+    records, record_outputs = stage_records(context, place)
+    for name, (path, sha) in records.items():
+        files[name], known[name], roles[name] = path, sha, "record"
+    shown = picture(context, place, work, files, roles, known)
     state, failing = completion(context, place)
     provenance = place_reads.assembly_provenance(context, place)
     provenance.update({"place": place, "complete": place_reads.node_provenance(context, f"complete@{place}"),
                        "complete_failing": failing, "unresolved_sublayers": missing,
-                       "gaps": gaps if "gaps.json" in files else None})
+                       "gaps": gaps if "gaps.json" in files else None, "records_from": record_outputs})
     identity = hashlib.sha256(json.dumps([place, output]).encode()).hexdigest()
     made = Candidate(kind="place", base_id=place_reads.sanitised(place), identity=identity,
                      title=place.replace("_", " ").capitalize(), places=[place], files=files, roles=roles,
                      components=[dict(SCORE_COMPONENT)], usd={"root": root.name, "layer": "root", "use": "open"},
                      requires=sorted(set(requires)), provenance=provenance,
                      tags={"complete": [state] if state else [], "place_kind": place_reads.place_kind(context, place)},
-                     picture={"reason": "a place is drawn only by a renderer, which v1 does not run"},
+                     picture=shown,
                      known=known)
     made.entry_id = place_reads.sanitised(place)
     return made

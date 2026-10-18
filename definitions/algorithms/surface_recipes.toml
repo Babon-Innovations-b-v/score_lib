@@ -2,14 +2,14 @@
 name = "surface_recipes"
 title = "Surface functions: ProcFunc material recipes and wear (needs Blender and ProcFunc)"
 entry = "tools.props.library.recipes:channels"
-roots = ["tools/props/library/recipes.py"]
+roots = ["tools/props/library/recipes.py", "tools/props/library/printed.py"]
 search = ["tools/props/library", "tools/props"]
 constants = ["tools/props/library/recipes.py:KICK_HIGH", "tools/props/library/recipes.py:KICK_SOFT"]
-preset = ["data/library/materials.json", "data/definitions/place.json"]
+preset = ["data/library/materials.json", "data/definitions/place.json", "data/library/pictures/*.png", "data/fonts/*"]
 stage = "surfaces-bake"
 contract = []
 needs = ["blender", "procfunc", "infinigen"]
-vendored = [["ProcFunc", "BSD-3-Clause"], ["Infinigen shaders", "BSD-3-Clause"]]
+vendored = [["ProcFunc", "BSD-3-Clause"], ["Infinigen shaders", "BSD-3-Clause"], ["fonts in data/fonts (Barlow, Barlow Condensed, Noto Sans SC, Noto Serif SC, ZCOOL QingKe HuangYou; their OFL.txt ride along)", "OFL-1.1"]]
 tests = ["tools/props/library/library_test.py", "tools/props/library/paint_test.py"]
 picture = []
 requires = ["numpy"]

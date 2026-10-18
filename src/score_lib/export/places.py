@@ -3,7 +3,7 @@ kind of place it is, and the provenance of the assembly node."""
 import posixpath
 import re
 
-from pxr import Sdf
+from pxr import Sdf, Usd
 
 from score_lib import entry as entries
 from score_lib.rewrite import asset_paths, joined, open_copy
@@ -148,3 +148,37 @@ def neighbour_path(context, path):
     address = place_address(context, found["place"])
     kind, entry_id, version = entries.parse_address(address)
     return entries.library_path(kind, entry_id, version, f"{found['place']}.usda"), address
+
+
+def stage_output(context, place, stage):
+    """The output of a stage the place's assembly took (origin.json `layers`), else the stage's accepted output."""
+    output, _ = context.assembly(place)
+    origin = (context.store.read_json(output, "origin.json") if output else None) or {}
+    return (origin.get("layers") or {}).get(stage) or context.store.accepted(f"{stage}@{place}")
+
+
+def look(context, place):
+    """(path, sha256, name) of the first look render of the place in the light output its assembly took, or None."""
+    output = stage_output(context, place, "light")
+    if not output:
+        return None
+    listing = context.store.listing(output)
+    folder = f"looks/{place}/"
+    names = sorted(name for name in listing if name.startswith(folder) and name.endswith("-look.png"))
+    return (context.tree(output) / names[0], listing[names[0]], names[0]) if names else None
+
+
+def composed(context, place):
+    """The place's composed stage (payloads unloaded), opened once a run."""
+    return context.remembered(("stage", place), lambda: open_stage(context, place))
+
+
+def open_stage(context, place):
+    output, _ = context.assembly(place)
+    return Usd.Stage.Open(str(context.tree(output) / f"{place}.usda"), Usd.Stage.LoadNone)
+
+
+def kit(context, place):
+    """The place's kit (data/kit/<place>.json at the commit), or {}."""
+    source = f"data/kit/{place}.json"
+    return context.repo.read_json(source) if context.repo.exists(source) else {}

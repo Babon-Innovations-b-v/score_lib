@@ -1,6 +1,6 @@
 """ground entries: each planet's terrain (`terrain` node: heights, skin, zones, shading and plan pictures,
-ground.json, rocks.json, measures.json) as ground/<planet>, and each place ground cut from it (places/<place>.usdc) as
-ground/<planet>.<place> (spec 4.8)."""
+ground.json, rocks.json, measures.json, the diorama pictures and the depth the relief was read from) as
+ground/<planet>, and each place ground cut from it (places/<place>.usdc) as ground/<planet>.<place> (spec 4.8)."""
 from score_lib.export import places as place_reads
 from score_lib.export.run import Candidate
 from score_lib.licences import SCORE_COMPONENT
@@ -9,7 +9,8 @@ from score_lib.rewrite import asset_paths, export, open_copy, rewrite
 
 NODE = "terrain"
 PLANET_FILES = ("ground.json", "heights.png", "shading.png", "skin.png", "zones.png", "plan.png", "rocks.json",
-                "measures.json")
+                "measures.json", "diorama/c0.png", "diorama/c1.png", "diorama/c2.png", "diorama/c3.png",
+                "diorama/chosen-depth.npy")
 TABLE = "score paper/source/score.md Table C1; terrain stage in algorithms.md section 11"
 MADE_WITH = (
     ("Depth Anything V2 Small: ground relief", "Apache-2.0"),

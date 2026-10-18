@@ -113,3 +113,40 @@ def test_locked_change_becomes_a_new_version(world):
 def test_manifest_text_is_known():
     from score_lib.licences import Licences
     assert Licences.load().lookup(MANIFEST_TEXT)["spdx"] == "MIT"
+
+
+def test_layers_and_places_carry_pictures(world):
+    world.export()
+    for address in ("layer/base.room@1", "layer/effects.room@1"):
+        layer = entries.load_address(world.root, address)
+        assert layer["picture"]["made_by"] == "preview/layer_map.py" and "preview.png" in layer["files"]
+    sound = entries.load_address(world.root, "layer/sound.room@1")  # one room sound, no positions to map
+    assert sound["picture"]["made_by"] == "preview/audio.py"
+    place = entries.load_address(world.root, "place/room@1")
+    assert place["picture"]["made_by"] == "preview/plan.py"  # no light pass in the fixture: its kit from above
+
+
+def test_place_takes_its_plan_cast_and_light_look(world):
+    from conftest import png
+    plan = world.store.put_output({"plan.json": b'{"items": []}', "contract.json": b"{}"})
+    cast = world.store.put_output({"cast.json": b'{"characters": []}', "measures.json": b"{}"})
+    light = world.store.put_output({"looks/room/shot0-000-look.png": png((10, 20, 30)), "lamps.json": b"{}",
+                                    "measures.json": b'{"brightness": {}}'})
+    for stage, output in (("plan", plan), ("cast", cast), ("light", light)):
+        world.store.accept(f"{stage}@room", output, "2026-01-02T00:00:00+00:00")
+    world.export()
+    place = entries.load_address(world.root, "place/room@1")
+    assert {"plan/plan.json", "cast/cast.json", "cast/measures.json", "picture.png"} <= set(place["files"])
+    assert place["picture"] == {"file": "picture.png", "made_by": "source picture",
+                                "of": "light@room: looks/room/shot0-000-look.png"}
+
+
+def test_home_folder_is_left_out_of_text_records(world, tmp_path):
+    from score_lib.export.run import Candidate, home_free
+    source = tmp_path / "origin.json"
+    source.write_text(json.dumps({"from": f"{pathlib.Path.home()}/work/room"}))
+    made = Candidate(kind="place", base_id="room", identity="x", title="Room", places=["room"],
+                     files={"origin.json": source}, roles={"origin.json": "record"}, known={"origin.json": "a" * 64})
+    home_free(world.context(), made)
+    assert json.loads(made.files["origin.json"].read_text()) == {"from": "~/work/room"}
+    assert made.files_from["origin.json"]["sha256"] == "a" * 64 and "origin.json" not in made.known

@@ -13,6 +13,7 @@ from score_lib.preview import swatch
 from score_lib.rewrite import copy_prim, export, open_copy
 
 LIBRARY = "data/library/materials.json"
+PICTURES = "data/library/pictures"
 SPLIT = ("recipe", "token", "reference")
 
 
@@ -83,8 +84,23 @@ def constants(material_path):
     return None
 
 
+def printed(context, variant, work, files, roles):
+    """A printed variant's print or screen picture (data/library/pictures/<name>.png) as the entry's print.png and
+    its picture, or None for a variant that prints nothing."""
+    source = f"{PICTURES}/{variant['picture']}.png" if variant.get("picture") else None
+    if not source or not context.repo.exists(source):
+        return None
+    files["print.png"] = context.repo.export(source, work / "print.png")
+    roles["print.png"] = "texture"
+    return {"file": "print.png", "made_by": "source picture", "of": source}
+
+
 def picture(context, variant, material, work, files, roles):
-    """The surface's picture: its reference picture when the repo holds it, else a swatch of the Material."""
+    """The surface's picture: its print, else its reference picture when the repo holds it, else a swatch of the
+    Material."""
+    shown = printed(context, variant, work, files, roles)
+    if shown:
+        return shown
     reference = (variant.get("reference") or {}).get("picture")
     if reference and context.repo.exists(reference):
         name = "reference" + posixpath.splitext(reference)[1]

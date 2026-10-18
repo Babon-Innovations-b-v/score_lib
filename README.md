@@ -16,8 +16,8 @@ The index lives in git; the bytes live in a blob store. Every entry is versioned
 | ground | one planet's terrain, or one place ground cut from it |
 | kit | one place kit (and a ship place's kit layout) |
 | algorithm | one engine algorithm: code snapshot, settings schema, world 1 preset, tests, run line |
-| layer | one sublayer of one place, its paths pointing at library addresses |
-| place | one place's root, its sublayers pointing at layer entries |
+| layer | one sublayer of one place (the physics layer too), its paths pointing at library addresses |
+| place | one place's root, its sublayers pointing at layer entries, with its plan and cast |
 
 An address is `<kind>/<id>@<version>`, for example `effect/devil_east.camp@1`.
 
