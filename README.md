@@ -17,7 +17,7 @@ The index lives in git; the bytes live in a blob store. Every entry is versioned
 | kit | one place kit (and a ship place's kit layout) |
 | algorithm | one engine algorithm: code snapshot, settings schema, world 1 preset, tests, run line |
 | layer | one sublayer of one place (the physics layer too), its paths pointing at library addresses |
-| place | one place's root, its sublayers pointing at layer entries, with its plan and cast |
+| place | one place's root, its sublayers pointing at layer entries, with its plan and cast (a place only others show, such as world 1's far city, too: `shown` in the world toml) |
 
 An address is `<kind>/<id>@<version>`, for example `effect/devil_east.camp@1`.
 
@@ -41,6 +41,8 @@ score-lib fetch <address>... --into <root> [--with-requires]
 score-lib test algorithm/<name>@<v>
 score-lib run algorithm/<name>@<v> --preset world1 --out <dir> [--arg name=value]
 score-lib index
+score-lib audit --world world1 [--report <file>]
+score-lib web3d [--kind k] [--address a] [--limit n] [--report <file>]
 score-lib verify [--deep] [--address a]
 score-lib page --out <dir outside the repo> [--drafts] [--public-url]
 score-lib handover --world w [--place p] --seed n --commit <score sha> --store <objects> --repo <score> --out <dir>
@@ -58,6 +60,16 @@ score, commits and pushes `entries/ index/ worlds/`, and writes `<out>/handover.
 example `schemas/handover.example.json`): every accepted output and the entries holding it, every entry with its
 status and provenance, every refusal. It writes drafts only; it exits non-zero only when it could not run. `held`
 prints the newest entries a place (or the world node) holds, as JSON, for the cockpit's check.
+
+## Web copies and the audit
+
+`score-lib web3d` gives every model, kit, character and place entry two compressed glTF binaries for a web viewer,
+a light preview (`web3d/light.glb`) and the whole copy (`web3d/full.glb`), made from the entry's own OpenUSD with
+meshopt (gltfpack) and WebP pictures, and records them in the entry (`web3d`, both files' hashes, and the two files
+with role `web3d`). Every finish comes from the surface library: a library material as its entry holds it, a library
+bake's maps, else the library surface nearest the colour the part showed (each replacement listed in `web3d`).
+
+`score-lib audit` counts what a world holds, kind by kind, against the entries, and names why anything is missing.
 
 ## Layout
 

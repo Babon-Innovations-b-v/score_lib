@@ -121,7 +121,8 @@
               "texture",
               "audio",
               "gltf",
-              "code"
+              "code",
+              "web3d"
             ]
           }
         }
@@ -321,6 +322,45 @@
       "type": "array",
       "items": {
         "type": "string"
+      }
+    },
+    "web3d": {
+      "type": "object",
+      "required": [
+        "file",
+        "light",
+        "full_sha256",
+        "light_sha256",
+        "source"
+      ],
+      "properties": {
+        "file": {
+          "type": "string"
+        },
+        "light": {
+          "type": "string"
+        },
+        "full_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "light_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "source": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "from": {
+          "type": "object"
+        },
+        "finishes": {
+          "type": "object"
+        },
+        "replaced": {
+          "type": "object"
+        }
       }
     }
   },

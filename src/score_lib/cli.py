@@ -29,6 +29,32 @@ def command_export(options):
     sys.stdout.write(json.dumps(report, indent=2, sort_keys=True) + "\n" if options.json else run.report_text(report))
 
 
+def command_audit(options):
+    from score_lib import audit
+    from score_lib.export import run
+    context = run.context_from_environment(options.root, options.world)
+    try:
+        report = audit.audit(context)
+    finally:
+        shutil.rmtree(context.scratch, ignore_errors=True)
+    if options.report:
+        pathlib.Path(options.report).write_text(json.dumps(report, indent=2, sort_keys=True) + "\n")
+    sys.stdout.write(audit.report_text(report))
+
+
+def command_web3d(options):
+    import os
+    from score_lib.web3d import run
+    cache = pathlib.Path(os.environ.get("SCORE_LIB_CACHE") or pathlib.Path.home() / ".cache/score-lib") / "web3d"
+    report = run.run(options.root, blob_store(), cache, tuple(options.kind or run.KINDS), options.address or None,
+                     options.limit)
+    if options.report:
+        pathlib.Path(options.report).write_text(json.dumps(report, indent=2, sort_keys=True) + "\n")
+    print(f"made {len(report['made'])}, standing {report['standing']}, locked {len(report['locked'])}, "
+          f"failed {len(report['failed'])}")
+    raise SystemExit(1 if report["failed"] else 0)
+
+
 def command_lock(options):
     from score_lib import locks
     addresses = list(options.address)
@@ -123,6 +149,16 @@ def parser():
     export.add_argument("--report")
     export.add_argument("--json", action="store_true")
     export.set_defaults(handle=command_export)
+    audited = commands.add_parser("audit", help="count what a world holds against the library, kind by kind")
+    audited.add_argument("--world", required=True)
+    audited.add_argument("--report", help="write the full report (every missing thing) as JSON")
+    audited.set_defaults(handle=command_audit)
+    web3d = commands.add_parser("web3d", help="make the web 3D copies of model, kit, character and place entries")
+    web3d.add_argument("--kind", action="append", choices=("model", "character", "kit", "place"))
+    web3d.add_argument("--address", action="append")
+    web3d.add_argument("--limit", type=int)
+    web3d.add_argument("--report")
+    web3d.set_defaults(handle=command_web3d)
     lock = commands.add_parser("lock", help="lock drafts")
     lock.add_argument("address", nargs="*")
     lock.add_argument("--all-drafts", action="store_true")
