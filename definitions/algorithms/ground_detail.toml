@@ -1,0 +1,15 @@
+# One engine algorithm of world 1 (algorithms.md); read by score_lib/export/algorithm.py.
+name = "ground_detail"
+title = "Placed ground: levelling, dents, ground detail bake, rock placement"
+entry = "tools.usd.ground_detail:bake"
+bake = ["tools.usd.ground:Ground", "tools.usd.rocks:laid_rocks"]
+roots = ["tools/usd/ground.py", "tools/usd/ground_detail.py", "tools/usd/rocks.py"]
+search = ["tools/usd"]
+constants = ["tools/usd/ground.py:GROUND_STEP", "tools/usd/ground.py:LEVEL_MARGIN", "tools/usd/ground.py:LEVEL_BLEND", "tools/usd/ground.py:DENT_DEPTH", "tools/usd/ground.py:DENT_WIDTH", "tools/usd/ground_detail.py:PIT_CELLS", "tools/usd/ground_detail.py:PIT_CHANCES", "tools/usd/ground_detail.py:PITS_FADE", "tools/usd/ground_detail.py:INK_FADE"]
+preset = ["data/ground/moon.json", "data/ground/mars.json"]
+stage = ""
+contract = []
+needs = []
+tests = ["tools/usd/resting_test.py", "tools/usd/settle_test.py"]
+picture = ["terrain-look@launch", "after/0/shot0-000-look.png"]
+requires = ["numpy", "pillow", "usd-core"]

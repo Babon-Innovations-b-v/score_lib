@@ -1,0 +1,16 @@
+# One engine algorithm of world 1 (algorithms.md); read by score_lib/export/algorithm.py.
+name = "sound_layer"
+title = "Sound layer, made sounds, loudness (MOSS and CLAP takes need a GPU)"
+entry = "tools.usd.sound:write_layer"
+bake = ["tools.sound.made:made"]
+roots = ["score/stages/sound/__init__.py", "tools/usd/sound.py", "tools/sound/made.py"]
+search = ["tools/usd", "tools/sound"]
+constants = ["tools/usd/sound.py:SAMPLE_RATE", "tools/usd/sound.py:NEAR_METRES", "tools/usd/sound.py:PEAK_DBFS", "tools/usd/sound.py:MIX_RMS_DBFS", "tools/sound/made.py:RATE", "tools/sound/made.py:SEED"]
+preset = ["data/sound/catalogue.json", "data/sound/places.json", "data/sound/surfaces.json", "data/sound/licences.json"]
+stage = "sound"
+contract = ["sound-layer", 1]
+needs = []
+paid = ["MOSS-SoundEffect takes and CLAP choice: cloud GPU"]
+tests = ["score/stages/sound/sound_test.py", "tools/usd/sound_test.py", "tools/sound/loudness/loudness_test.py", "tools/sound/picker/picker_test.py"]
+picture = ["sound@hub", "audio"]
+requires = ["numpy", "usd-core"]

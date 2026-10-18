@@ -1,0 +1,15 @@
+# One engine algorithm of world 1 (algorithms.md); read by score_lib/export/algorithm.py.
+name = "snap"
+title = "Snap placement and scatter by snap"
+entry = "tools.usd.snap:snap_down"
+bake = ["tools.usd.snap:place_free"]
+roots = ["tools/usd/snap.py", "tools/usd/collide.py"]
+search = ["tools/usd"]
+constants = ["tools/usd/snap.py:CLEARANCE", "tools/usd/snap.py:SAMPLES", "tools/usd/snap.py:TRIES"]
+preset = []
+stage = ""
+contract = []
+needs = []
+tests = ["tools/usd/snap_test.py"]
+picture = []
+requires = ["numpy", "trimesh", "python-fcl", "usd-core"]

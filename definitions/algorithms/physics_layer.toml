@@ -1,0 +1,15 @@
+# One engine algorithm of world 1 (algorithms.md); read by score_lib/export/algorithm.py.
+name = "physics_layer"
+title = "Physics layer (UsdPhysics masses, hinges, drives; the trial needs Blender)"
+entry = "tools.usd.physics:write"
+roots = ["score/stages/physics/__init__.py", "tools/usd/physics.py"]
+search = ["tools/usd"]
+constants = ["score/stages/physics/__init__.py:OPENED_LEAST", "score/stages/physics/__init__.py:MOVED_LEAST", "score/stages/physics/__init__.py:STILL", "score/stages/physics/__init__.py:LANDED"]
+preset = ["data/physics/*.json"]
+stage = "physics-layer"
+contract = []
+needs = []
+paid = ["physics-trial: Blender (Bullet) on a cloud 24 GB GPU"]
+tests = ["score/stages/physics/physics_test.py", "tools/usd/physics_test.py"]
+picture = []
+requires = ["numpy", "usd-core"]

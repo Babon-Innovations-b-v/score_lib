@@ -1,0 +1,14 @@
+# One engine algorithm of world 1 (algorithms.md); read by score_lib/export/algorithm.py.
+name = "machines_lay"
+title = "Machines laid on their supports"
+entry = "score.stages.machines:make"
+roots = ["score/stages/machines/__init__.py"]
+search = ["tools/usd"]
+constants = []
+preset = ["data/machines/*.json"]
+stage = "machines-layer"
+contract = []
+needs = []
+tests = ["score/stages/machines/machines_test.py"]
+picture = []
+requires = ["numpy", "usd-core"]

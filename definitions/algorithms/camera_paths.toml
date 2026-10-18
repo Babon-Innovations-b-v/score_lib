@@ -1,0 +1,16 @@
+# One engine algorithm of world 1 (algorithms.md); read by score_lib/export/algorithm.py.
+name = "camera_paths"
+title = "Camera moves: RRT* walk paths and film shots (the render needs a GPU)"
+entry = "tools.usd.camera_paths:rrt_star"
+bake = ["tools.usd.camera_paths:walk_views"]
+roots = ["tools/usd/camera_paths.py"]
+search = ["tools/usd"]
+constants = ["tools/usd/camera_paths.py:EYE_HEIGHT", "tools/usd/camera_paths.py:STEP_RISE", "tools/usd/camera_paths.py:CLEARANCE", "tools/usd/camera_paths.py:ITERATIONS", "tools/usd/camera_paths.py:STEP", "tools/usd/camera_paths.py:NEAR", "tools/usd/camera_paths.py:GOAL_BIAS", "tools/usd/camera_paths.py:FOV"]
+preset = ["data/definitions/demo_films/*.json"]
+stage = "demo-film"
+contract = []
+needs = []
+paid = ["the film render: Blender on a cloud GPU"]
+tests = ["tools/usd/camera_paths_test.py"]
+picture = []
+requires = ["numpy", "trimesh", "python-fcl", "usd-core"]

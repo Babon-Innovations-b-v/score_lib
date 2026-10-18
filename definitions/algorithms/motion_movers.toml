@@ -1,0 +1,15 @@
+# One engine algorithm of world 1 (algorithms.md); read by score_lib/export/algorithm.py.
+name = "motion_movers"
+title = "Motion: game timed motions and movers (paths, swings, spins)"
+entry = "tools.usd.movers:write_layer"
+bake = ["tools.usd.motion:write_layer"]
+roots = ["score/stages/motion/__init__.py", "tools/usd/motion.py", "tools/usd/movers.py"]
+search = ["tools/usd"]
+constants = ["tools/usd/motion.py:WRITTEN_SECONDS", "tools/usd/motion.py:SWITCH", "tools/usd/movers.py:PATH_SAMPLES", "tools/usd/movers.py:CURVE_PIECES"]
+preset = ["data/motion/*.json", "data/movers/*.json", "data/checks/motion.json"]
+stage = "motion"
+contract = ["motion-layer", 1]
+needs = []
+tests = ["score/stages/motion/motion_test.py", "tools/usd/motion_test.py"]
+picture = []
+requires = ["numpy", "usd-core", "trimesh", "python-fcl"]

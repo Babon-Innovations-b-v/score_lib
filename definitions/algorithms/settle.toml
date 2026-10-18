@@ -1,0 +1,16 @@
+# One engine algorithm of world 1 (algorithms.md); read by score_lib/export/algorithm.py.
+name = "settle"
+title = "Settle and rest physics (held snap and let-down run headless; the drop needs Blender)"
+entry = "score.stages.settling:write_layer"
+bake = ["score.stages.settling.held:held_rests"]
+roots = ["score/stages/settling/__init__.py", "score/stages/settling/held.py", "tools/usd/settle.py"]
+search = ["tools/usd"]
+constants = ["tools/usd/settle.py:TURN_MOST", "tools/usd/settle.py:DRIFT_MOST", "tools/usd/settle.py:DEBRIS_SIZE", "tools/usd/settle.py:DEBRIS_DRIFT", "tools/usd/settle.py:STILL", "tools/usd/settle.py:SETTLE_DROP", "tools/usd/settle.py:FOOT_BAND", "tools/usd/settle.py:STACK_REACH", "score/stages/settling/held.py:RISE_MOST", "score/stages/settling/held.py:SPOT_STEP", "score/stages/settling/__init__.py:SUPPORT_REACH"]
+preset = []
+stage = "settle"
+contract = ["settle-layer", 1]
+needs = []
+paid = ["the drop: Blender on a cloud CPU machine"]
+tests = ["score/stages/settling/settling_test.py", "tools/usd/settle_test.py", "tools/usd/resting_test.py"]
+picture = []
+requires = ["numpy", "usd-core", "trimesh", "python-fcl"]

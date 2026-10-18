@@ -1,0 +1,15 @@
+# One engine algorithm of world 1 (algorithms.md); read by score_lib/export/algorithm.py.
+name = "cast_spread"
+title = "Cast placement: groups and crowds"
+entry = "score.stages.cast.spread:stand_every"
+bake = ["score.stages.cast.layer:write"]
+roots = ["score/stages/cast/__init__.py", "score/stages/cast/spread.py", "score/stages/cast/layer.py"]
+search = ["tools/usd"]
+constants = ["score/stages/cast/spread.py:LATTICE", "score/stages/cast/spread.py:JITTER", "score/stages/cast/spread.py:FAR_SHARE", "score/stages/cast/spread.py:HEIGHT", "score/stages/cast/spread.py:CELL"]
+preset = ["data/characters/*.json"]
+stage = "cast"
+contract = ["cast", 1]
+needs = []
+tests = ["score/stages/cast/cast_test.py", "score/stages/cast/layer_test.py"]
+picture = []
+requires = ["numpy", "usd-core", "python-fcl"]
