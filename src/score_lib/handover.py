@@ -36,7 +36,7 @@ VERSION = 1
 PLACE_KINDS = tuple(kind for kind in run.ORDER if kind not in held.WORLD_KINDS)
 LIBRARY_STAGES = ("library", "library-world")  # the handover nodes themselves: no entry holds their reports
 COPY_KINDS = ("model", "layer", "place", "character")  # the kinds the cockpit shows in 3D
-COPY_ROLE = "gltf"
+COPY_ROLE = "web3d"
 LOCK = ".handover.lock"
 LOCK_WAIT = 1800.0
 SAVED_PATHS = ("entries", "index", "worlds")
@@ -143,24 +143,26 @@ def hook(module_name, function_name):
 
 
 def own_copy(record):
-    """The entry's own web 3D file ({sha256, role}), or None when it carries none."""
-    for name in sorted(record["files"]):
-        if record["files"][name]["role"] == COPY_ROLE:
-            return {"sha256": record["files"][name]["sha256"], "role": COPY_ROLE}
-    return None
+    """The web 3D copy recorded in the entry ({sha256, light_sha256, role}), or None when it carries none. Read from
+    its `web3d` field, never from a file's role: a character's body.glb is a source file, not its web copy."""
+    made = record.get("web3d")
+    if not made:
+        return None
+    return {"sha256": made["full_sha256"], "light_sha256": made["light_sha256"], "role": COPY_ROLE}
 
 
 def web_copy(root, blobs, record):
     """(copy, why) of one entry: its web 3D copy, or None and why there is none."""
     if record["kind"] not in COPY_KINDS:
         return None, f"a {record['kind']} entry is not shown in 3D"
-    found = own_copy(record)
-    if found:
-        return found, ""
     make = hook(*COPY_HOOK)
     if make is None:
-        return None, "no copies command in this library yet"
-    found = make(root, blobs, record)
+        found = own_copy(record)
+        return (found, "") if found else (None, "no copies command in this library yet")
+    try:
+        found = make(root, blobs, record)
+    except (RuntimeError, ValueError, LookupError) as error:  # one entry's copy failing is that row's why
+        return None, f"its copy failed: {str(error)[:300]}"
     return (found, "") if found else (None, "the copies command made no copy of this entry")
 
 

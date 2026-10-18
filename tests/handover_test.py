@@ -63,7 +63,7 @@ def test_a_first_handover_writes_drafts_and_covers_every_output(world, tmp_path)
     assert {row["state"] for row in report["entries"]} == {"draft"}
     model = next(row for row in report["entries"] if row["address"] == "model/crate_1@1")
     assert model["node"] == "assembly@room" and model["output"] == world.assembly
-    assert model["copy"] is None and model["copy_why"] == "no copies command in this library yet"
+    assert model["copy"]["role"] == "web3d" and model["copy_why"] == ""
     surface = next(row for row in report["entries"] if row["kind"] == "surface")
     assert surface["node"] is None and "data/library/materials.json" in surface["source"]
     assert report["saved"]["committed"] == git(world.root, "rev-parse", "HEAD") and report["saved"]["pushed"]
