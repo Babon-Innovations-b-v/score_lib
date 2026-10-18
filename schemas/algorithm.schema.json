@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "score-lib-algorithm/1",
+  "title": "definitions/algorithms/<name>.toml",
+  "type": "object",
+  "required": [
+    "name",
+    "title",
+    "entry",
+    "roots",
+    "constants",
+    "preset",
+    "needs",
+    "tests"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "entry": {
+      "type": "string",
+      "pattern": "^[\\w.]+:\\w+$"
+    },
+    "bake": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[\\w.]+:\\w+$"
+      }
+    },
+    "roots": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "search": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "constants": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[\\w/.]+\\.py:\\w+$"
+      }
+    },
+    "record_fields": {
+      "type": "string",
+      "pattern": "^[\\w/.]+:\\d+-\\d+$"
+    },
+    "preset": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "stage": {
+      "type": "string"
+    },
+    "contract": {
+      "type": "array"
+    },
+    "needs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "paid": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "tests": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "picture": {
+      "type": "array",
+      "maxItems": 2
+    },
+    "requires": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "vendored": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 2
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "score-lib-index/1",
+  "type": "object",
+  "required": [
+    "schema",
+    "kind",
+    "entries"
+  ],
+  "properties": {
+    "schema": {
+      "const": "score-lib-index/1"
+    },
+    "kind": {
+      "enum": [
+        "algorithm",
+        "surface",
+        "model",
+        "light",
+        "sound",
+        "effect",
+        "character",
+        "ground",
+        "kit",
+        "layer",
+        "place"
+      ]
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "address",
+          "title",
+          "state",
+          "version",
+          "picture_sha256",
+          "licence_spdx",
+          "commercial_ok",
+          "tags",
+          "digest"
+        ],
+        "properties": {
+          "address": {
+            "type": "string",
+            "pattern": "^(algorithm|surface|model|light|sound|effect|character|ground|kit|layer|place)/[a-z0-9_]+(\\.[a-z0-9_]+)?@[1-9][0-9]*$"
+          },
+          "title": {
+            "type": "string"
+          },
+          "state": {
+            "enum": [
+              "draft",
+              "locked",
+              "withdrawn"
+            ]
+          },
+          "version": {
+            "type": "integer"
+          },
+          "picture_sha256": {
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              }
+            ]
+          },
+          "licence_spdx": {
+            "type": "string"
+          },
+          "commercial_ok": {
+            "type": "boolean"
+          },
+          "tags": {
+            "type": "object"
+          },
+          "digest": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        }
+      }
+    }
+  }
+}

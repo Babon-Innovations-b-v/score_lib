@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "score-lib-catalogue/1",
+  "type": "object",
+  "required": [
+    "schema",
+    "kinds",
+    "worlds",
+    "built_from"
+  ],
+  "properties": {
+    "schema": {
+      "const": "score-lib-catalogue/1"
+    },
+    "kinds": {
+      "type": "object",
+      "propertyNames": {
+        "enum": [
+          "algorithm",
+          "surface",
+          "model",
+          "light",
+          "sound",
+          "effect",
+          "character",
+          "ground",
+          "kit",
+          "layer",
+          "place"
+        ]
+      },
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "count",
+          "locked",
+          "file"
+        ],
+        "properties": {
+          "count": {
+            "type": "integer"
+          },
+          "locked": {
+            "type": "integer"
+          },
+          "file": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "worlds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "built_from": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    }
+  }
+}
