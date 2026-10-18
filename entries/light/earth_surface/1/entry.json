@@ -1,0 +1,90 @@
+{
+  "address": "light/earth_surface@1",
+  "files": {
+    "earth_surface.png": {
+      "bytes": 10923039,
+      "role": "picture",
+      "sha256": "9598b885b0cb1619f72cdd443c96c7a0ae5d0580e29fc8cf93308591eafc5183"
+    },
+    "sky.usda": {
+      "bytes": 114453,
+      "role": "usd",
+      "sha256": "2ccb0bc3b914fb276bef92710a2dbc3ec934a70e3c923bdb56b838844785ca85"
+    }
+  },
+  "id": "earth_surface",
+  "kind": "light",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score tools/usd/earth.py",
+        "spdx": "LicenseRef-NASA-Media-Guidelines",
+        "text": "NASA Earth Observatory's Visible Earth pictures, free of copyright (NASA's media guidelines)",
+        "what": "Earth picture baked from NASA Blue Marble and cloud cover"
+      }
+    ],
+    "note": "free of copyright under NASA's media guidelines (the Blue Marble and cloud pictures the Earth ball is baked from)",
+    "spdx": "LicenseRef-NASA-Media-Guidelines AND MIT"
+  },
+  "picture": {
+    "file": "earth_surface.png",
+    "made_by": "source picture",
+    "of": "assets/light/earth_surface.png"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:02:30.466230+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "models": [],
+    "node": "assembly@old_station",
+    "output": "f60adc09d2c14a31314d3bd31f69c2601467bfbcf728c76faa051b30b1810b56",
+    "place": "old_station",
+    "prims": [
+      "/old_station/Environment",
+      "/old_station/Looks/earth_face",
+      "/old_station/Structure/earth"
+    ],
+    "record_key": "7d9d97819faa5aebdafc6de56b258e509d111fd6834f0d009658ac7904c3e290",
+    "source_name": "assets/light/earth_surface.png",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "old_station",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "place_kind": [
+      "moon",
+      "outside"
+    ]
+  },
+  "title": "Earth surface",
+  "usd": {
+    "default_prim": "/earth_surface",
+    "layer": "light",
+    "meters_per_unit": null,
+    "path": "score_lib/light/earth_surface/1/sky.usda",
+    "root": "sky.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

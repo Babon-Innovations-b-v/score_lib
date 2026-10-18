@@ -1,0 +1,108 @@
+{
+  "address": "surface/dust_coated_paint@1",
+  "files": {
+    "material.usda": {
+      "bytes": 572,
+      "role": "usd",
+      "sha256": "afe2fdc5e582679d02799a611f9d0b59c17a4f9e1c779994e2d8771e2a37209e"
+    },
+    "preview.png": {
+      "bytes": 16033,
+      "role": "picture",
+      "sha256": "4590fa74832f065f5d7b595ab0a16216d4ae199dcd229b3c169f9baf3cdf2c2a"
+    },
+    "surface.json": {
+      "bytes": 355,
+      "role": "record",
+      "sha256": "1ec44bb47a0c248c8c71ca28b98b57d22a2d50ba00e89b173db0daa70dd75948"
+    }
+  },
+  "id": "dust_coated_paint",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "mars_surface",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "mars_surface"
+    ],
+    "recipe": [
+      "painted_metal"
+    ]
+  },
+  "title": "Dust coated paint",
+  "usd": {
+    "default_prim": "/dust_coated_paint",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/dust_coated_paint/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

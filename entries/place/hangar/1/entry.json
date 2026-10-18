@@ -1,0 +1,124 @@
+{
+  "address": "place/hangar@1",
+  "files": {
+    "contract.json": {
+      "bytes": 99,
+      "role": "record",
+      "sha256": "c2b7151f92e6a67ca4666ea747ad262b67b4d0af824cc83862ce64d8cc49d12c"
+    },
+    "edit.usda": {
+      "bytes": 183,
+      "role": "usd",
+      "sha256": "8fc5485ea9a58537dd8289c516a85733e069ad7a17b866471667b8795142454f"
+    },
+    "gaps.json": {
+      "bytes": 9202,
+      "role": "record",
+      "sha256": "e27e493bca07a8e6b59cd540d5013298db387cd014090c0b9c0fb1b1a566d3f7"
+    },
+    "hangar.usda": {
+      "bytes": 714,
+      "role": "usd",
+      "sha256": "577f7a20310bcc0455f43f7d6342cd958683d669e6269d5221dc940d9e1d1320"
+    },
+    "inputs.json": {
+      "bytes": 19839,
+      "role": "record",
+      "sha256": "7a8c5f910c4d0057dfa7d5ec63ea36e1f46f1af3bb7cbf01a0fe57c4fe8a4b84"
+    },
+    "origin.json": {
+      "bytes": 1118,
+      "role": "record",
+      "sha256": "33433a113fbdec6c90f2d3ab5a97ce038c5c949cab412ad38ddec0f250436197"
+    },
+    "scene.json": {
+      "bytes": 10304,
+      "role": "record",
+      "sha256": "95b3a7e927669a887771d93a7a5795968367033ce2de939ed75a01e9dda58fa5"
+    }
+  },
+  "id": "hangar",
+  "kind": "place",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T22:13:41.093010+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "complete": {
+      "accept": {
+        "at": "2026-10-17T14:34:40.162190+00:00",
+        "by": "runner"
+      },
+      "code": "614e17d70adbc54d15ef2ac7532458f7dbfe393cb1a802ed4b39c5bbd5b6e794",
+      "models": [],
+      "node": "complete@hangar",
+      "output": "29a8c46163af0bc7d6d3609b9bf3aa4c6d3c3d079d5170a307dc5e191fb5af1d",
+      "record_key": "6c83f28e2bf588e3a8970241d73de463cebb0cf54d794c91a242d85b366c04f8"
+    },
+    "complete_failing": [
+      "named gaps"
+    ],
+    "gaps": "data/checks/gaps/hangar.json",
+    "models": [],
+    "node": "assembly@hangar",
+    "output": "765aae9ca335aebbcb521472c52db37c76ad0b842d8f9bddc21b8c1beae3d144",
+    "place": "hangar",
+    "record_key": "d034efb2e042c8f0e9fca844f9dc9aa0b1d4146a0a39fbf3dafc78213e49fd74",
+    "unresolved_sublayers": [],
+    "world": "world1"
+  },
+  "requires": [
+    "layer/base.hangar@1",
+    "layer/characters.hangar@1",
+    "layer/effects.hangar@1",
+    "layer/ground.hangar@1",
+    "layer/light.hangar@1",
+    "layer/machines.hangar@1",
+    "layer/motion.hangar@1",
+    "layer/settle.hangar@1",
+    "layer/sound.hangar@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "hangar"
+  ],
+  "state": "draft",
+  "tags": {
+    "complete": [
+      "named_gaps"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Hangar",
+  "usd": {
+    "default_prim": "/hangar",
+    "layer": "root",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/place/hangar/1/hangar.usda",
+    "root": "hangar.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": "Y",
+    "use": "open"
+  },
+  "version": 1
+}

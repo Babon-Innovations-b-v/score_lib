@@ -1,0 +1,103 @@
+{
+  "address": "model/power_unit.campgrounds@1",
+  "files": {
+    "model.json": {
+      "bytes": 288,
+      "role": "record",
+      "sha256": "9af37084c5e9d008e43b5f13878faff8ef0d3fa26e3f7082919bd01e74b95142"
+    },
+    "model.usdc": {
+      "bytes": 1563639,
+      "role": "usd",
+      "sha256": "3d16dca8c208495f992a44ebbc90f52558d45be1c736616f256fefc583323e1c"
+    },
+    "preview.png": {
+      "bytes": 35848,
+      "role": "picture",
+      "sha256": "2ac101acccd812f0fb5e536a8424fcfadca4ed1ba0a261f430682e61b970cfb8"
+    },
+    "textures/power_unit_base_color.png": {
+      "bytes": 2295814,
+      "role": "texture",
+      "sha256": "5308a009f6bd7729afc674f28fa56e38ffe83f56a7ad6111b8750abf80a3d91c"
+    },
+    "textures/power_unit_metal_roughness.png": {
+      "bytes": 1971232,
+      "role": "texture",
+      "sha256": "5e92358162708129b8ca097410e15f21e5c1042bbe4eb73b8f60eb8521bcdcb2"
+    },
+    "textures/power_unit_normal.png": {
+      "bytes": 11220067,
+      "role": "texture",
+      "sha256": "0a0f7922540fad6c2a80b0762a174389fab323f877494989e04140702dc0fa39"
+    }
+  },
+  "id": "power_unit.campgrounds",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:16:00.039696+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "658eb643b0c02ccb18843aa3a7afca2e7c6cec505326ad4fc4ebda11af4d8dc1",
+    "models": [],
+    "node": "assembly@campgrounds",
+    "output": "7fcf4c6f9552d4edb6020038bb83dd248f2e602f1958878438d52dfc3a7685bb",
+    "place": "campgrounds",
+    "record_key": "3e28c5bc4fca67388ebba8768e3cf58d643f791893e4237289ddba7e9754e64e",
+    "source_name": "power_unit",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "campgrounds"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "mars",
+      "outside"
+    ]
+  },
+  "title": "Power unit",
+  "usd": {
+    "default_prim": "/power_unit",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/power_unit.campgrounds/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

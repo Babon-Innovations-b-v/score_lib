@@ -1,0 +1,103 @@
+{
+  "address": "model/gauge_panel_1@1",
+  "files": {
+    "model.json": {
+      "bytes": 322,
+      "role": "record",
+      "sha256": "a1e920c9ae7232263697a811880b940f69f6600876a5e2e96bfe1828eaaa9b54"
+    },
+    "model.usdc": {
+      "bytes": 1067007,
+      "role": "usd",
+      "sha256": "4e26e3624a0d8f8ba64af90e7cbc2b4fcc19fb79b419ec05ffc70fbeb86d2388"
+    },
+    "preview.png": {
+      "bytes": 30100,
+      "role": "picture",
+      "sha256": "dfb3795836288aaac620106e2dd15da0047b12209a2e6328255debc379e494aa"
+    },
+    "textures/gauge_panel_1_base_color.png": {
+      "bytes": 802889,
+      "role": "texture",
+      "sha256": "6214a8ee324083282f6d7b9ad70c8a4c1093e93b18d216ce892bf5a6f9183ab2"
+    },
+    "textures/gauge_panel_1_metal_roughness.png": {
+      "bytes": 619998,
+      "role": "texture",
+      "sha256": "5d32b6a9f5450a75e866b882bb67de6acd90a906cad994c9e3f35a381b52fbe3"
+    },
+    "textures/gauge_panel_1_normal.png": {
+      "bytes": 4438267,
+      "role": "texture",
+      "sha256": "cc1ff8a12390dc232c1246a36ada28ea4ec84a1691c74d6384dcc64afdd95a9a"
+    }
+  },
+  "id": "gauge_panel_1",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:07:25.503141+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "1ece8869f65bafe990c14a880d954e225064860fcf32c700dc2c9e36bd1ee02b",
+    "models": [],
+    "node": "assembly@lab",
+    "output": "6e27c7d3c17e42a9d22d07e469a7b3a8e37bced2cae426b5827007830b83d66a",
+    "place": "lab",
+    "record_key": "90b53b440293d619704e077b09a234f458d34710e83b21efc9453072590550e1",
+    "source_name": "gauge_panel_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "lab"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Gauge panel 1",
+  "usd": {
+    "default_prim": "/gauge_panel_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/gauge_panel_1/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

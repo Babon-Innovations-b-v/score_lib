@@ -1,0 +1,88 @@
+{
+  "address": "surface/steel_dark@1",
+  "files": {
+    "material.usda": {
+      "bytes": 552,
+      "role": "usd",
+      "sha256": "24f26a1b7bc28cb9877fed96eb77024a123a2e579a53c3e3b3d4e1d0d75cbc9a"
+    },
+    "preview.png": {
+      "bytes": 15090,
+      "role": "picture",
+      "sha256": "e6bd8b2c3e229969d449b8f150b9d3d5855884f5fe7268ca07212e47f3e65b36"
+    },
+    "surface.json": {
+      "bytes": 357,
+      "role": "record",
+      "sha256": "6754bec9382c6c8b028cf215d8820a937305dcc888d7d949d1d8823fd38d970f"
+    }
+  },
+  "id": "steel_dark",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "steel",
+    "place": "cockpit",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "cockpit",
+    "engineroom",
+    "galley",
+    "navigation",
+    "quarters",
+    "shiplock",
+    "storage",
+    "walkway"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "steel"
+    ],
+    "recipe": [
+      "bare_metal"
+    ]
+  },
+  "title": "Steel dark",
+  "usd": {
+    "default_prim": "/steel_dark",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/steel_dark/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

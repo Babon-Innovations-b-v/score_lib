@@ -1,0 +1,88 @@
+{
+  "address": "layer/effects.airlock@1",
+  "files": {
+    "held.json": {
+      "bytes": 110,
+      "role": "record",
+      "sha256": "ffe65ba34a9b58c87e336ff461d3b663388686aaf94c4e86411b97bd5783b0fb"
+    },
+    "layer.usda": {
+      "bytes": 17332,
+      "role": "usd",
+      "sha256": "04bb7bbe0eb4fcf13fe04b8857f50ee4c3153889917c72f967f54b2fc681d89f"
+    }
+  },
+  "id": "effects.airlock",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T21:49:09.803965+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/effects.usda",
+        "sha256": "d1cc10f8a25eca2f8176f338a5d7aea98a44fde061e96a08abb334f3a82680d6"
+      }
+    },
+    "models": [],
+    "node": "assembly@airlock",
+    "output": "8900f72fdf3585e5c853f71bbe4723b74677075a11235a7acb403664c1ec2464",
+    "own_files": [],
+    "place": "airlock",
+    "record_key": "1971b952fc7cf77c7898f3951a1958e959f95e422ab47f4ce6910bda0ff3bdc3",
+    "side_records_from": "5d67d1f20e1051025f8df202d620167f7df591cc22f9d5c9daf1facb951a2315",
+    "source_name": "layers/effects.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/particle_effects@1"
+  },
+  "requires": [
+    "effect/door_vent.airlock@1",
+    "effect/door_vent_veil.airlock@1",
+    "effect/pump_fog.airlock@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "effects"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Airlock effects layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "effects",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/effects.airlock/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

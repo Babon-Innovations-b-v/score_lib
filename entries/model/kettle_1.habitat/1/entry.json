@@ -1,0 +1,103 @@
+{
+  "address": "model/kettle_1.habitat@1",
+  "files": {
+    "model.json": {
+      "bytes": 249,
+      "role": "record",
+      "sha256": "abad8fa3a17f7e93dc415ff0a9940741c4ac5b264223db22d3c64b31cd1c43fb"
+    },
+    "model.usdc": {
+      "bytes": 512207,
+      "role": "usd",
+      "sha256": "329b4a53de08bdc7b70d198d19f4a9224040b2b657aae137efb1f5ef9ed029bb"
+    },
+    "preview.png": {
+      "bytes": 24395,
+      "role": "picture",
+      "sha256": "bf2ec415f9c553f2841f824270e555c572169e33283056e1d270a97a440bad6b"
+    },
+    "textures/kettle_1_base_color.png": {
+      "bytes": 138637,
+      "role": "texture",
+      "sha256": "c1d2d2dde54c37630fa914c58fbf15d1dd2671041db80150a2a4efe8fd886a9b"
+    },
+    "textures/kettle_1_metal_roughness.png": {
+      "bytes": 91818,
+      "role": "texture",
+      "sha256": "23d6473cdced2d973bfa886a74984ae3975a7a4c0881a2f88726dec117353c9c"
+    },
+    "textures/kettle_1_normal.png": {
+      "bytes": 638880,
+      "role": "texture",
+      "sha256": "bd77c00791ad7d959fbbe45c4debe4e6b56fbde988cb2f9ba9e939451a9a6322"
+    }
+  },
+  "id": "kettle_1.habitat",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T09:31:21.711004+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "9d79e92ee47d1fbef1f34c1a38446877a0ccd9ce01f87fbb37a78dafcf781325",
+    "models": [],
+    "node": "assembly@habitat",
+    "output": "e6cb813b79be54e9c4ec9a531b2407cc81765e13b62c9b0962394ef9645519d6",
+    "place": "habitat",
+    "record_key": "e2801490121188a98eb1a3bfb7c0acdf01953b265874ff4b2a27a83a896bd500",
+    "source_name": "kettle_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "habitat"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Kettle 1",
+  "usd": {
+    "default_prim": "/kettle_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/kettle_1.habitat/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

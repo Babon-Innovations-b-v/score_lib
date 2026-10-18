@@ -1,0 +1,144 @@
+{
+  "address": "algorithm/mars_sky@1",
+  "files": {
+    "code.json": {
+      "bytes": 422,
+      "role": "record",
+      "sha256": "8d9845e0f3c3da15699168aefe30d5529fcfa08e0246cdb415fc52d0f5feac2c"
+    },
+    "code/tools/usd/mars_sky.py": {
+      "bytes": 4698,
+      "role": "code",
+      "sha256": "424fa5d50170f7b97e07f0f1f725e011ef9cbefd5d395711e180f3bae912d0ee"
+    },
+    "definition.json": {
+      "bytes": 572,
+      "role": "record",
+      "sha256": "aeac4f76c4269f912bb55e439c0e0bb46cb80014f883c03a9f41677b1fa09430"
+    },
+    "picture.png": {
+      "bytes": 1712831,
+      "role": "picture",
+      "sha256": "8996aa7df5b6099926aa5c300ff857f6178bbfa3d25c95a3ccf69829fdf46f42"
+    },
+    "presets/world1/data/definitions/sky.json": {
+      "bytes": 10210,
+      "role": "record",
+      "sha256": "a2350536b2c25405346737bc8c5c9f427dd883dfc7615039e2b3874817465b83"
+    },
+    "presets/world1/seed.json": {
+      "bytes": 1174,
+      "role": "record",
+      "sha256": "c52baaad10096cf06c9b17e0b85cb70f9c4d0c83bb17825eeb0e18cd9475a630"
+    },
+    "run.json": {
+      "bytes": 269,
+      "role": "record",
+      "sha256": "195be7fb9f4dca304d0829a2e36dc7bc4a30b4caffdfcd9b4c228138e361e924"
+    },
+    "settings.schema.json": {
+      "bytes": 422,
+      "role": "record",
+      "sha256": "ff46274947ef4e3d2d9909d4b56a77c20332b0d500bdb7adadeef4d481540b6c"
+    },
+    "test/score/stages/light/light_test.py": {
+      "bytes": 8923,
+      "role": "code",
+      "sha256": "bfb94fd6f777f78e67c7caa77083cc3266dbf34c709e0734c1b48012824d6cb6"
+    }
+  },
+  "id": "mars_sky",
+  "kind": "algorithm",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@campgrounds: looks/campgrounds/shot0-000-look.png"
+  },
+  "provenance": {
+    "code": "282b02e74a5e3139e355951f93cb1dedf41d5c63b9db14b9fcff6c70b2be5873",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "nodes": [
+      "light-layer@airlock",
+      "light-layer@camp",
+      "light-layer@campgrounds",
+      "light-layer@cockpit",
+      "light-layer@engineroom",
+      "light-layer@flat",
+      "light-layer@galley",
+      "light-layer@garage",
+      "light-layer@greenhouse",
+      "light-layer@habitat",
+      "light-layer@hangar",
+      "light-layer@hub",
+      "light-layer@lab",
+      "light-layer@launch",
+      "light-layer@navigation",
+      "light-layer@old_station",
+      "light-layer@quarters",
+      "light-layer@shiplock",
+      "light-layer@square",
+      "light-layer@stairwell",
+      "light-layer@storage",
+      "light-layer@street",
+      "light-layer@tube",
+      "light-layer@walkway",
+      "light-layer@workshop",
+      "light-layer@wreck"
+    ],
+    "stage": "light-layer",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "needs": [],
+    "runnable": [
+      true
+    ]
+  },
+  "title": "Mars day sky (single scattering dome)",
+  "usd": null,
+  "version": 1
+}

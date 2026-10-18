@@ -1,0 +1,108 @@
+{
+  "address": "surface/wet_asphalt@1",
+  "files": {
+    "material.usda": {
+      "bytes": 554,
+      "role": "usd",
+      "sha256": "fc5bc6d011d19028cf40303674778d43c7929b54e6bb2478c4812afa945ae8b1"
+    },
+    "preview.png": {
+      "bytes": 18189,
+      "role": "picture",
+      "sha256": "fc718b5c48a4ef48d01dade4e68ff079a23596ffb51e5bccd21cee081510ffeb"
+    },
+    "surface.json": {
+      "bytes": 141,
+      "role": "record",
+      "sha256": "1aedf0b4ab814cc2f99ee635b4efe95704ab1a4ae8d8b9001e33b97ec62beb61"
+    }
+  },
+  "id": "wet_asphalt",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "ground",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "ground"
+    ],
+    "recipe": [
+      "wet_asphalt"
+    ]
+  },
+  "title": "Wet asphalt",
+  "usd": {
+    "default_prim": "/wet_asphalt",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/wet_asphalt/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

@@ -1,0 +1,108 @@
+{
+  "address": "surface/perforated_steel@1",
+  "files": {
+    "material.usda": {
+      "bytes": 568,
+      "role": "usd",
+      "sha256": "4ae204e8d2d561a3d29614784fc36b89dacf713da805e3fb7b5c92b7d2b38968"
+    },
+    "preview.png": {
+      "bytes": 18278,
+      "role": "picture",
+      "sha256": "9a2b7fe99a37f6ec49f266f06efbd7836dd547cdb84f87e636b47aebd3604da7"
+    },
+    "surface.json": {
+      "bytes": 222,
+      "role": "record",
+      "sha256": "bb1b559ec53fa6109ba6f5b054e22a0e814333d8685a8cc9bba475bc9c80746b"
+    }
+  },
+  "id": "perforated_steel",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "steel",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "steel"
+    ],
+    "recipe": [
+      "perforated_metal"
+    ]
+  },
+  "title": "Perforated steel",
+  "usd": {
+    "default_prim": "/perforated_steel",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/perforated_steel/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

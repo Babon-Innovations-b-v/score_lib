@@ -1,0 +1,81 @@
+{
+  "address": "layer/ground.greenhouse@1",
+  "files": {
+    "layer.usda": {
+      "bytes": 96,
+      "role": "usd",
+      "sha256": "2ac16a10b7a9bdc15684c8b74a130e0cde2dd7db1832b0d34fb0c9ebae4079ff"
+    }
+  },
+  "id": "ground.greenhouse",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-17T11:21:57.694141+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/ground.usdc",
+        "sha256": "458381e03c26793bd1ada9038b63d3cedad2cea347d2de932c347f6ac2d0887a"
+      }
+    },
+    "models": [],
+    "node": "assembly@greenhouse",
+    "output": "910f5ef85c6bacfd60b7b934d6980011f765df81458a88095c9ee09416e6fec7",
+    "own_files": [],
+    "place": "greenhouse",
+    "record_key": "96f06014f00223d17da44c7eaa7bd37c8c838a72ef68ace7ba2ccc88be48cafa",
+    "side_records_from": null,
+    "source_name": "layers/ground.usdc",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/terrain_landforms@1"
+  },
+  "requires": [
+    "ground/moon.greenhouse@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "greenhouse"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "ground"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Greenhouse ground layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "ground",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/ground.greenhouse/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

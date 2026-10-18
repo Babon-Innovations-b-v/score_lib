@@ -1,0 +1,108 @@
+{
+  "address": "surface/sign_column_store@1",
+  "files": {
+    "material.usda": {
+      "bytes": 568,
+      "role": "usd",
+      "sha256": "bace01c77c3f574f6b2b3ab0be41535539176f6f3a8867738475dd0ab7514102"
+    },
+    "preview.png": {
+      "bytes": 13732,
+      "role": "picture",
+      "sha256": "a516913363e30b056cd213501c22b970be14f1763206823b2f450bec676f8a07"
+    },
+    "surface.json": {
+      "bytes": 203,
+      "role": "record",
+      "sha256": "bceb8c30bc4a7dbb7eba43d50c780bd7bec9e3e4ad1f180161b52e982046878f"
+    }
+  },
+  "id": "sign_column_store",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "print",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "print"
+    ],
+    "recipe": [
+      "printed"
+    ]
+  },
+  "title": "Sign column store",
+  "usd": {
+    "default_prim": "/sign_column_store",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/sign_column_store/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

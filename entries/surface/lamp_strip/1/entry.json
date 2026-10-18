@@ -1,0 +1,108 @@
+{
+  "address": "surface/lamp_strip@1",
+  "files": {
+    "material.usda": {
+      "bytes": 547,
+      "role": "usd",
+      "sha256": "773ec0620ea9975483ba3f144e71b68205fff25da694083524c9719706fd74ca"
+    },
+    "preview.png": {
+      "bytes": 10114,
+      "role": "picture",
+      "sha256": "af7b03fb874335a3425fab2ea3da06ba8a07781dd3dea2ed773c8b3326fe2220"
+    },
+    "surface.json": {
+      "bytes": 167,
+      "role": "record",
+      "sha256": "88ecbb7336e3c31e7270e3397fca8bfcd7f79e6da051212a7945b168b9294a6a"
+    }
+  },
+  "id": "lamp_strip",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "screen",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "screen"
+    ],
+    "recipe": [
+      "screen"
+    ]
+  },
+  "title": "Lamp strip",
+  "usd": {
+    "default_prim": "/lamp_strip",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/lamp_strip/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

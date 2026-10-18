@@ -1,0 +1,94 @@
+{
+  "address": "effect/cloud_billows@1",
+  "files": {
+    "clip.usdc": {
+      "bytes": 51100065,
+      "role": "usd",
+      "sha256": "a735583637c270731353fcd480163620ccf82d1bea9b4a301ea6d6e7fe892f18"
+    },
+    "effect.usda": {
+      "bytes": 3261,
+      "role": "usd",
+      "sha256": "f9984555f4002fab48c3a59652647e75f420211d0ddb270fc4d233401f3413c0"
+    },
+    "preview.png": {
+      "bytes": 43995,
+      "role": "picture",
+      "sha256": "a182e24d8e19d04df25cff792720f3a3994f555f6d136bc84910a3b78f7f6673"
+    },
+    "settings.json": {
+      "bytes": 1735,
+      "role": "record",
+      "sha256": "c816188ad12092e4083541b108480ba33472f5d854cc86ae4f2109cb022476cf"
+    }
+  },
+  "id": "cloud_billows",
+  "kind": "effect",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/points.py",
+    "of": "clip.usdc at clip time 120.0"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-15T06:23:31.528447+00:00",
+      "by": "runner"
+    },
+    "code": "bcb4de19a600c38d89a8733a5021c1a1d70e9715798df3581f7ad54703f37f6c",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "from": "footage: KSC-20190625-PH_CSH01_0004, KSC-20190625-PH_CSH01_0010, KSC-20190625-PH_CSH01_0013, KSC-20180206-PH_KLS02_0046 (the billows the exhaust throws up as it rolls out, the cloud standing near a rocket height within seconds of lift-off and two later)",
+    "models": [],
+    "node": "effects-layer@launch",
+    "output": "6661592a0391f23f240eef74e13976d953e7e5a592a471eafbd297a33ce6893e",
+    "place": "launch",
+    "prim": "/launch/Effects/cloud_billows",
+    "record_key": "3b9e779b1ab416b9f61b6b0ceac5191661c018ce08351c4888f300c1b3049ed6",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/particle_effects@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "launch"
+  ],
+  "state": "draft",
+  "tags": {
+    "effect": [
+      "exhaust_ground_cloud"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "place_kind": [
+      "earth",
+      "outside"
+    ],
+    "weather": []
+  },
+  "title": "Cloud billows",
+  "usd": {
+    "default_prim": "/cloud_billows",
+    "layer": "effects",
+    "meters_per_unit": null,
+    "path": "score_lib/effect/cloud_billows/1/effect.usda",
+    "root": "effect.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

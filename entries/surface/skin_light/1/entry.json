@@ -1,0 +1,88 @@
+{
+  "address": "surface/skin_light@1",
+  "files": {
+    "material.usda": {
+      "bytes": 543,
+      "role": "usd",
+      "sha256": "ef168d4956bf149c1c5e7d1bf04d990463da1f6ba836970a3e38bb94194f9ab7"
+    },
+    "preview.png": {
+      "bytes": 21502,
+      "role": "picture",
+      "sha256": "b8fb54f63f2e7ff0eb4dafe60992843d1594f5c5e2259d718b849ef65eac27bd"
+    },
+    "surface.json": {
+      "bytes": 341,
+      "role": "record",
+      "sha256": "8beb1d06099f1901824ebffdf4ca17e206b8346ad821d53b0a80e71c380e099f"
+    }
+  },
+  "id": "skin_light",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "skin",
+    "place": "cockpit",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "cockpit",
+    "engineroom",
+    "galley",
+    "navigation",
+    "quarters",
+    "shiplock",
+    "storage",
+    "walkway"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "skin"
+    ],
+    "recipe": [
+      "rubber"
+    ]
+  },
+  "title": "Skin light",
+  "usd": {
+    "default_prim": "/skin_light",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/skin_light/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

@@ -1,0 +1,103 @@
+{
+  "address": "model/fan_unit_1@1",
+  "files": {
+    "model.json": {
+      "bytes": 293,
+      "role": "record",
+      "sha256": "4341833d3e2125d1b027b6733ed30558d0c7c1946c946f41a4306851ddc4164f"
+    },
+    "model.usdc": {
+      "bytes": 198696,
+      "role": "usd",
+      "sha256": "f6ef0260d89d64d32ab55a506802591909e763048836e836413fc397f047c4e5"
+    },
+    "preview.png": {
+      "bytes": 9862,
+      "role": "picture",
+      "sha256": "9cd4956ed765b717f4b15b074a93a1a5383638af3842a738f488269fb073b51c"
+    },
+    "textures/airlock_gear_3_base_color.png": {
+      "bytes": 1562534,
+      "role": "texture",
+      "sha256": "dee3f587bdb2cde2586a44364a57348d3a8fcf56e1a95845e93c04fb7bcb4f29"
+    },
+    "textures/airlock_gear_3_metal_roughness.png": {
+      "bytes": 1146106,
+      "role": "texture",
+      "sha256": "d33509158f97a6e43dca347002339ff6dd69a185a8ba93d8b44cc80d331383c6"
+    },
+    "textures/airlock_gear_3_normal.png": {
+      "bytes": 4723469,
+      "role": "texture",
+      "sha256": "b3ad6fe7a327485c50007444d66895d7871e13f39cc96a547c9ef3282ebc3474"
+    }
+  },
+  "id": "fan_unit_1",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T21:49:09.803965+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "b6a4322991f596e4429fabb36894fe7f2ab5d3d80c679bd1370de2077bc0ce98",
+    "models": [],
+    "node": "assembly@airlock",
+    "output": "8900f72fdf3585e5c853f71bbe4723b74677075a11235a7acb403664c1ec2464",
+    "place": "airlock",
+    "record_key": "1971b952fc7cf77c7898f3951a1958e959f95e422ab47f4ce6910bda0ff3bdc3",
+    "source_name": "fan_unit_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Fan unit 1",
+  "usd": {
+    "default_prim": "/fan_unit_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/fan_unit_1/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

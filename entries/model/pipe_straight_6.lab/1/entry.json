@@ -1,0 +1,103 @@
+{
+  "address": "model/pipe_straight_6.lab@1",
+  "files": {
+    "model.json": {
+      "bytes": 287,
+      "role": "record",
+      "sha256": "20009f5befad0583c9dfd287942382aa82ed6a26e9233084197e791d9968f5ac"
+    },
+    "model.usdc": {
+      "bytes": 25203,
+      "role": "usd",
+      "sha256": "9406083785da3dfd173291baef57c1d24fc1926859a0feb4c0f8137a5b465878"
+    },
+    "preview.png": {
+      "bytes": 25540,
+      "role": "picture",
+      "sha256": "38705d63175b04fe23efbf4fa9de91e10c89fc9355a91844d1daea32e7553aa3"
+    },
+    "textures/lab_gear_base_color.png": {
+      "bytes": 1004164,
+      "role": "texture",
+      "sha256": "584e510df034639abbac26ebb1f28b1a8d35c22f4579e37e0abbab5df9a86ff0"
+    },
+    "textures/lab_gear_metal_roughness.png": {
+      "bytes": 633634,
+      "role": "texture",
+      "sha256": "3ac060f437311aa35256a5c377d5466ba96fa94f33fb8508762423ab3c912536"
+    },
+    "textures/lab_gear_normal.png": {
+      "bytes": 3843066,
+      "role": "texture",
+      "sha256": "8a3a1fa530a501a2eb91dc45de57edc58f1db971323cd37436442acf4aac88c2"
+    }
+  },
+  "id": "pipe_straight_6.lab",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:07:25.503141+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "8a510dd96f2891bc347c0b23aba882f96af45b92b7337b9f6542b43c19567afa",
+    "models": [],
+    "node": "assembly@lab",
+    "output": "6e27c7d3c17e42a9d22d07e469a7b3a8e37bced2cae426b5827007830b83d66a",
+    "place": "lab",
+    "record_key": "90b53b440293d619704e077b09a234f458d34710e83b21efc9453072590550e1",
+    "source_name": "pipe_straight_6",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "lab"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Pipe straight 6",
+  "usd": {
+    "default_prim": "/pipe_straight_6",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/pipe_straight_6.lab/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

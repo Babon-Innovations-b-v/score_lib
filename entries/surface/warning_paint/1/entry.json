@@ -1,0 +1,108 @@
+{
+  "address": "surface/warning_paint@1",
+  "files": {
+    "material.usda": {
+      "bytes": 560,
+      "role": "usd",
+      "sha256": "3671131801f9adcfff5e24606fc1b0c0411500bffbb963b6c71961b50330804c"
+    },
+    "preview.png": {
+      "bytes": 20567,
+      "role": "picture",
+      "sha256": "377f558de08b2ebdf0cd2f5365e8f9303ca59546da88ad499cf0937548e324a7"
+    },
+    "surface.json": {
+      "bytes": 386,
+      "role": "record",
+      "sha256": "fdc1992b12d264cdb0c813675d97348ee2d36b57b0eefa65ef34610bb43b8f28"
+    }
+  },
+  "id": "warning_paint",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "painted",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "painted"
+    ],
+    "recipe": [
+      "painted_metal"
+    ]
+  },
+  "title": "Warning paint",
+  "usd": {
+    "default_prim": "/warning_paint",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/warning_paint/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

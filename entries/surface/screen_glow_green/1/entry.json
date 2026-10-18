@@ -1,0 +1,88 @@
+{
+  "address": "surface/screen_glow_green@1",
+  "files": {
+    "material.usda": {
+      "bytes": 635,
+      "role": "usd",
+      "sha256": "e072142535e3ca58841926639734d04ab806f51e682456dbdaf25f9ece752aa1"
+    },
+    "preview.png": {
+      "bytes": 22310,
+      "role": "picture",
+      "sha256": "1f5b15a77b26a85e28b2af755f7d9c3f9db210e264154294642e292fc26baf4d"
+    },
+    "surface.json": {
+      "bytes": 380,
+      "role": "record",
+      "sha256": "e12a0a338b71f4835be0257facbc2ec2fbd2a9032e0170d7ae36f60977a52393"
+    }
+  },
+  "id": "screen_glow_green",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "light",
+    "place": "cockpit",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "cockpit",
+    "engineroom",
+    "galley",
+    "navigation",
+    "quarters",
+    "shiplock",
+    "storage",
+    "walkway"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "light"
+    ],
+    "recipe": [
+      "glowing"
+    ]
+  },
+  "title": "Screen glow green",
+  "usd": {
+    "default_prim": "/screen_glow_green",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/screen_glow_green/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

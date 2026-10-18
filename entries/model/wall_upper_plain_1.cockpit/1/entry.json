@@ -1,0 +1,103 @@
+{
+  "address": "model/wall_upper_plain_1.cockpit@1",
+  "files": {
+    "model.json": {
+      "bytes": 316,
+      "role": "record",
+      "sha256": "9035f29eca7cbf14ebb565f3c970c9f00cd0eb2183a3928fb551e215d43429e2"
+    },
+    "model.usdc": {
+      "bytes": 42244,
+      "role": "usd",
+      "sha256": "2f53a55479d8a196927e02c3eb4256714ed9de8be216125a93e84ad8e68d45a2"
+    },
+    "preview.png": {
+      "bytes": 11005,
+      "role": "picture",
+      "sha256": "a25c48ba57e09182b3d1208422f9af52af377ce45b2e579ce0b4e2ba5e39cbbe"
+    },
+    "textures/cockpit_walls_high_base_color.png": {
+      "bytes": 627983,
+      "role": "texture",
+      "sha256": "7934230326108aef0a588fb3e6f2becf02d5445e7daa493ff8af2cc2f052c592"
+    },
+    "textures/cockpit_walls_high_metal_roughness.png": {
+      "bytes": 624773,
+      "role": "texture",
+      "sha256": "2e5f3f205bd51c2488301fcb432635ec83ced7208b40a8b1e58537e85fc83d09"
+    },
+    "textures/cockpit_walls_high_normal.png": {
+      "bytes": 14870748,
+      "role": "texture",
+      "sha256": "8efeb48c0dacbada16967c112a9808d611f44407078e4ce49f2d0854bb944f13"
+    }
+  },
+  "id": "wall_upper_plain_1.cockpit",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T10:12:20.716778+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "8ccd9663b753080aa186c40a178eec836b67fefa01b7818051384a4639d69837",
+    "models": [],
+    "node": "assembly@cockpit",
+    "output": "b8ec7f49d4ff317fb9858d8dce4a33fcfc258d958fcd162c2b292eabb7de5c83",
+    "place": "cockpit",
+    "record_key": "6507789d5dd016672ed678b36e6a88f586c76345c9ca611d2f50b16a694eea46",
+    "source_name": "wall_upper_plain_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "cockpit"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Wall upper plain 1",
+  "usd": {
+    "default_prim": "/wall_upper_plain_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/wall_upper_plain_1.cockpit/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

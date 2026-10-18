@@ -1,0 +1,82 @@
+{
+  "address": "light/sky_dome.camp@1",
+  "files": {
+    "sky.usda": {
+      "bytes": 461940,
+      "role": "usd",
+      "sha256": "7a6d0d62e68b1a6c2a97390ea0a4cfe806ec2662f6812a0988932cb83e99d21f"
+    },
+    "sky_dome.png": {
+      "bytes": 72395,
+      "role": "picture",
+      "sha256": "34ef6050283fbfa24a4bdbc7a08e5d99cb4622c662d7e166302b65bdb624bba8"
+    }
+  },
+  "id": "sky_dome.camp",
+  "kind": "light",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "sky_dome.png",
+    "made_by": "source picture",
+    "of": "assets/light/sky_dome.png"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:13:56.147349+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "models": [],
+    "node": "assembly@camp",
+    "output": "0d930395c3d487b308d579d02e775682ddf8d302e6e0735849093a37772728c8",
+    "place": "camp",
+    "prims": [
+      "/camp/Environment",
+      "/camp/Sky/Dome",
+      "/camp/Sky/dome_look"
+    ],
+    "record_key": "fe5504fc66033b6c5b56f7395fd37a688bbd5d26c50af13875018921c86ded02",
+    "source_name": "assets/light/sky_dome.png",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "camp"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "place_kind": [
+      "mars",
+      "outside"
+    ]
+  },
+  "title": "Sky dome",
+  "usd": {
+    "default_prim": "/sky_dome",
+    "layer": "light",
+    "meters_per_unit": null,
+    "path": "score_lib/light/sky_dome.camp/1/sky.usda",
+    "root": "sky.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

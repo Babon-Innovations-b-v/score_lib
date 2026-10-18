@@ -1,0 +1,91 @@
+{
+  "address": "model/fixture_bunk_1@1",
+  "files": {
+    "model.json": {
+      "bytes": 161,
+      "role": "record",
+      "sha256": "bb9bb40dd90fddb62ef6fd2c5c73761d5a3960f6406a2a70136d03052c024e61"
+    },
+    "model.usdc": {
+      "bytes": 1893483,
+      "role": "usd",
+      "sha256": "80b1cf9e6af4db44d0105a278f925459a7ae3e7e75094faf165e0470e2f81092"
+    },
+    "preview.png": {
+      "bytes": 68425,
+      "role": "picture",
+      "sha256": "be45c009d5a0e9c38179b0740303a0e228c2b6cef0d523e33279e650c68cf56b"
+    },
+    "textures/fixture_bunk_1_0.png": {
+      "bytes": 2853619,
+      "role": "texture",
+      "sha256": "75d6df4eae2bd18ad40b093c0fa1ff4828ec0dc822c3226308115f538245c5b1"
+    }
+  },
+  "id": "fixture_bunk_1",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:13:56.147349+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": null,
+    "models": [],
+    "node": "assembly@camp",
+    "output": "0d930395c3d487b308d579d02e775682ddf8d302e6e0735849093a37772728c8",
+    "place": "camp",
+    "record_key": "fe5504fc66033b6c5b56f7395fd37a688bbd5d26c50af13875018921c86ded02",
+    "source_name": "fixture_bunk_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "camp"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [],
+    "place_kind": [
+      "mars",
+      "outside"
+    ]
+  },
+  "title": "Fixture bunk 1",
+  "usd": {
+    "default_prim": "/fixture_bunk_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/fixture_bunk_1/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

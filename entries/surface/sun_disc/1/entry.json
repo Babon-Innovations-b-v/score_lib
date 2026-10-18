@@ -1,0 +1,108 @@
+{
+  "address": "surface/sun_disc@1",
+  "files": {
+    "material.usda": {
+      "bytes": 593,
+      "role": "usd",
+      "sha256": "14fc19e972ffdd649a956261a2ee96a175d41cb540241a5e0536da4f990c10fb"
+    },
+    "preview.png": {
+      "bytes": 19371,
+      "role": "picture",
+      "sha256": "c451b8fe39bd059b8096c424d48d8861dd9c0f8e5efdb7e5d65a9e2095dbbc91"
+    },
+    "surface.json": {
+      "bytes": 224,
+      "role": "record",
+      "sha256": "443922f73a7e1060d078f4a3860bb4012e5e42c5b505740a97d6a8a572be2285"
+    }
+  },
+  "id": "sun_disc",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "light",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "light"
+    ],
+    "recipe": [
+      "glowing"
+    ]
+  },
+  "title": "Sun disc",
+  "usd": {
+    "default_prim": "/sun_disc",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/sun_disc/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

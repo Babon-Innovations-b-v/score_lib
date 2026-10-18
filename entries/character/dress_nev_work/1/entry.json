@@ -1,0 +1,148 @@
+{
+  "address": "character/dress_nev_work@1",
+  "files": {
+    "body.glb": {
+      "bytes": 101233396,
+      "role": "gltf",
+      "sha256": "f2fcc038d201d51185f634163ed641e91dca14bcf1253dc0b03a46019d7baffa"
+    },
+    "character.usdc": {
+      "bytes": 42422157,
+      "role": "usd",
+      "sha256": "61fb769cdd2a2d216e22ed94a6d69dfb67c8c45898507a0187bd72658331a9b6"
+    },
+    "dress.json": {
+      "bytes": 1158,
+      "role": "record",
+      "sha256": "e81f3b2a13d6c4e2e56936b76867aa064854066e397292c4b4e8637db1e9fffd"
+    },
+    "look.json": {
+      "bytes": 336,
+      "role": "record",
+      "sha256": "e57093c481546bdb4fc3cdae1be9d229e86b9d71552d2f47c5ca73a029b7f452"
+    },
+    "picture.png": {
+      "bytes": 864849,
+      "role": "picture",
+      "sha256": "8e160fac1639ad3c24f8669228b6082eb4e8cc0e9e1574df8cd6b0b9d0deff4a"
+    },
+    "textures/body_0.png": {
+      "bytes": 1015,
+      "role": "texture",
+      "sha256": "e08ba7ecf9efcfe9dc664d5011abc746450d59a85c3522c447aa7522e27583ae"
+    },
+    "textures/body_1.png": {
+      "bytes": 1015,
+      "role": "texture",
+      "sha256": "e08ba7ecf9efcfe9dc664d5011abc746450d59a85c3522c447aa7522e27583ae"
+    },
+    "textures/body_2.png": {
+      "bytes": 804,
+      "role": "texture",
+      "sha256": "81010c94f2f3a667325a760c6e3bf8bf02b61b4ec640eca1e7bbba3a6578cd34"
+    },
+    "textures/body_3.png": {
+      "bytes": 13443,
+      "role": "texture",
+      "sha256": "0ccf9368dfe7863d355d99ded40d1e64d8b6fc00dd562a8a913ad185d98f3155"
+    }
+  },
+  "id": "dress_nev_work",
+  "kind": "character",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1; route in score/stages/people/__init__.py:1-3",
+        "spdx": "MIT",
+        "what": "Pixal3D: picture to 3D (the body's shape)"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1; route in score/stages/people/__init__.py:1-3",
+        "spdx": "LicenseRef-DINOv3-License",
+        "text": "DINOv3 licence",
+        "what": "Pixal3D's encoder (DINOv3)"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1; route in score/stages/people/__init__.py:1-3",
+        "spdx": "MIT",
+        "what": "SegviGen on TRELLIS.2: the finish map laid on the shape (surface stage)"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1; route in score/stages/people/__init__.py:1-3",
+        "spdx": "LicenseRef-paid-API-terms",
+        "text": "paid API",
+        "what": "Nano Banana Pro: finish maps (surface stage)"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1; route in score/stages/people/__init__.py:1-3",
+        "spdx": "LicenseRef-paid-API-terms",
+        "text": "paid API",
+        "what": "Gemini 3.1 Pro: finishes listed and named (surface stage)"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1; route in score/stages/people/__init__.py:1-3",
+        "spdx": "Apache-2.0",
+        "what": "SOMA-X and MHR: the skeleton"
+      }
+    ],
+    "note": "the paper's Table C1: every model in the framework must allow commercial use of its output (Pixal3D's and SegviGen's encoder); the provider's terms of service for a paid API; the paper (Table C1) states every model in the framework allows commercial use of its output",
+    "spdx": "Apache-2.0 AND LicenseRef-DINOv3-License AND LicenseRef-paid-API-terms AND MIT"
+  },
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "people-take-nev_wide-work: closeup/pp-nev_wide-work-s3.png"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-13T14:50:50.766537+00:00",
+      "by": "runner"
+    },
+    "code": "bc650586616cc463c162315c91260149dc71b3545ac26582695a2ba649f1fb5c",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "look": "nev-work",
+    "models": [],
+    "node": "people-dress-nev-work",
+    "output": "746c042ccea09c1801a49cb5767ae3f8c9e983c300ccd74a950c58620c6f9fc2",
+    "place": null,
+    "record_key": "0012361dbac9a13563cbfa451d4969d49a9dd88785036992c78a13800cdff9f2",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "character": [
+      "dress"
+    ],
+    "engine": [
+      "usd"
+    ]
+  },
+  "title": "Nev work",
+  "usd": {
+    "default_prim": "/Character",
+    "layer": "characters",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/character/dress_nev_work/1/character.usdc",
+    "root": "character.usdc",
+    "time_codes_per_second": 30.0,
+    "up_axis": "Y",
+    "use": "payload"
+  },
+  "version": 1
+}

@@ -1,0 +1,107 @@
+{
+  "address": "surface/plastic_grey.airlock@1",
+  "files": {
+    "material.usda": {
+      "bytes": 547,
+      "role": "usd",
+      "sha256": "5a47144fa442cb7369217c17876f3bee8bfe61ab77a4d0308439a398ecb26060"
+    },
+    "preview.png": {
+      "bytes": 20518,
+      "role": "picture",
+      "sha256": "292a57a57a1ad4569cf5e35a74dcda5db64832e794d9bac61f9d00cbedc1d47e"
+    },
+    "surface.json": {
+      "bytes": 179,
+      "role": "record",
+      "sha256": "9f7d184412a214f53d090927462701c034065f551622fb1f43a5b53dee6b9133"
+    }
+  },
+  "id": "plastic_grey.airlock",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "plastic",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "plastic"
+    ],
+    "recipe": [
+      "rubber"
+    ]
+  },
+  "title": "Plastic grey",
+  "usd": {
+    "default_prim": "/plastic_grey",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/plastic_grey.airlock/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

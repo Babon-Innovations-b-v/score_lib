@@ -1,0 +1,107 @@
+{
+  "address": "surface/cast_iron_dark.airlock@1",
+  "files": {
+    "material.usda": {
+      "bytes": 558,
+      "role": "usd",
+      "sha256": "6e022df1096165e454ece4ff08dd6b0cd9992e42650418ac2a936f96026a72e6"
+    },
+    "preview.png": {
+      "bytes": 19669,
+      "role": "picture",
+      "sha256": "f60e698a2519a3499b9e6718af6f57e9523f569a6d1ecbba03d11d8910527c51"
+    },
+    "surface.json": {
+      "bytes": 181,
+      "role": "record",
+      "sha256": "ec7cab32aea42a9624f3ecbb9003589d49f3c8086b7cffd87a7f42cd247f7337"
+    }
+  },
+  "id": "cast_iron_dark.airlock",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "steel",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "steel"
+    ],
+    "recipe": [
+      "cast_metal"
+    ]
+  },
+  "title": "Cast iron dark",
+  "usd": {
+    "default_prim": "/cast_iron_dark",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/cast_iron_dark.airlock/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

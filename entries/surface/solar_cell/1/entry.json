@@ -1,0 +1,108 @@
+{
+  "address": "surface/solar_cell@1",
+  "files": {
+    "material.usda": {
+      "bytes": 552,
+      "role": "usd",
+      "sha256": "0a4063419c74da96917a129094546bb2ed2eb197d0ea42911f64ab10ad8faef7"
+    },
+    "preview.png": {
+      "bytes": 17004,
+      "role": "picture",
+      "sha256": "218c3073b3146db3cffdb824709a90d76aff670f8226592336259ae84ef63a20"
+    },
+    "surface.json": {
+      "bytes": 166,
+      "role": "record",
+      "sha256": "79b7b72550a9a2832fab648fc92ff2e3577ee96799f923a4edd1b9ae99edd4d8"
+    }
+  },
+  "id": "solar_cell",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "composite",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "composite"
+    ],
+    "recipe": [
+      "glass"
+    ]
+  },
+  "title": "Solar cell",
+  "usd": {
+    "default_prim": "/solar_cell",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/solar_cell/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

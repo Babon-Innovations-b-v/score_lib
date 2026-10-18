@@ -1,0 +1,110 @@
+{
+  "address": "model/hammer_1@1",
+  "files": {
+    "model.json": {
+      "bytes": 324,
+      "role": "record",
+      "sha256": "2cc0a0661184214382a508820172697a2c87881bf902916d09e45e7f141fc6ef"
+    },
+    "model.usdc": {
+      "bytes": 498236,
+      "role": "usd",
+      "sha256": "e1fd7d176e7e60d12ef83955ff9a9b68a7ade9198a5bb1282c08219b5d9d0ff9"
+    },
+    "preview.png": {
+      "bytes": 15092,
+      "role": "picture",
+      "sha256": "cba6ebe5a86a1000f090f49af720f063a7ce762c54d65fca81748193ae719020"
+    },
+    "textures/hammer_1_base_color.png": {
+      "bytes": 7616,
+      "role": "texture",
+      "sha256": "94856c370454cd5d0634aa215e58fd3892ff1181e8f9e5501a93f1be742a6166"
+    },
+    "textures/hammer_1_metal_roughness.png": {
+      "bytes": 5906,
+      "role": "texture",
+      "sha256": "7a7b5cd341acce2bc32fb6cd58260a1e3bff757776d864e204c796fb71c7d6d1"
+    },
+    "textures/hammer_1_normal.png": {
+      "bytes": 76608,
+      "role": "texture",
+      "sha256": "177760e464c359742e94ccb68719fb305592f2f35ab475bd9422d4d72628fad3"
+    }
+  },
+  "id": "hammer_1",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T13:52:30.641953+00:00",
+      "by": "runner"
+    },
+    "aliases": [
+      [
+        "e1fd7d176e7e60d12ef83955ff9a9b68a7ade9198a5bb1282c08219b5d9d0ff9",
+        "model.usdc"
+      ]
+    ],
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "89bcbf90e4e289fc912d04394597b1ee2228f6dd6210bb9c13d100afbee7bcc8",
+    "models": [],
+    "node": "assembly@hub",
+    "output": "6f4b2afd6b58d55735cd3ec6978f739fff14ae37e25f6dbe41b4293e96307a5e",
+    "place": "hub",
+    "record_key": "195d07ad428e0b9ad291848e678f726c744c4f2b1adc64130f28b40698c57461",
+    "source_name": "hammer_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "hub",
+    "workshop"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Hammer 1",
+  "usd": {
+    "default_prim": "/hammer_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/hammer_1/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

@@ -1,0 +1,81 @@
+{
+  "address": "layer/motion.hdoor@1",
+  "files": {
+    "layer.usda": {
+      "bytes": 260,
+      "role": "usd",
+      "sha256": "22ad122564372455280940a642cfff539a6ec9d077ca8f81ba263f893e7ad8c4"
+    },
+    "movers.json": {
+      "bytes": 66,
+      "role": "record",
+      "sha256": "6e965f66c02050255ebfdb49cec7be9599680f2d99fcc7eb2bf1e88e61ec0921"
+    }
+  },
+  "id": "motion.hdoor",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-13T08:09:34.278470+00:00",
+      "by": "runner"
+    },
+    "code": "0b158c668b94c11dfa4edc5aae6aca004c40e9e698701955b77f3799dbce1b7f",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/motion.usda",
+        "sha256": "22ad122564372455280940a642cfff539a6ec9d077ca8f81ba263f893e7ad8c4"
+      }
+    },
+    "models": [],
+    "node": "assembly@hdoor",
+    "output": "86dd367298076480c9809c69abc93ed3ea88fc1a1703ccb9a967ccee0931e962",
+    "own_files": [],
+    "place": "hdoor",
+    "record_key": "bf431a9b130c39396f9446a21b5f1b71c9a09923c203f0f5c8aaccbc9cd74ba9",
+    "side_records_from": "e3db0e4586a80a2755eae942675480d77ac7713912e35469cabe29be4bd2bb0f",
+    "source_name": "layers/motion.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/motion_movers@1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "hdoor"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "motion"
+    ],
+    "place_kind": []
+  },
+  "title": "Hdoor motion layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "motion",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/motion.hdoor/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

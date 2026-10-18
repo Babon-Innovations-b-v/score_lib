@@ -1,0 +1,121 @@
+{
+  "address": "place/tube@1",
+  "files": {
+    "contract.json": {
+      "bytes": 99,
+      "role": "record",
+      "sha256": "c2b7151f92e6a67ca4666ea747ad262b67b4d0af824cc83862ce64d8cc49d12c"
+    },
+    "edit.usda": {
+      "bytes": 183,
+      "role": "usd",
+      "sha256": "8fc5485ea9a58537dd8289c516a85733e069ad7a17b866471667b8795142454f"
+    },
+    "gaps.json": {
+      "bytes": 2278,
+      "role": "record",
+      "sha256": "bbf6d1827d37df7c505062c89a80bf34bc5ed1af2fba5e0efdce7fd9c1aaa54a"
+    },
+    "inputs.json": {
+      "bytes": 5204,
+      "role": "record",
+      "sha256": "9745d7ae534b13c41668a29ea6f6c5a93471a1040e1b1ae927838de0ade883d7"
+    },
+    "origin.json": {
+      "bytes": 699,
+      "role": "record",
+      "sha256": "d38e62bf4e3875c7cbdd2fb18cefc9223473f36efa39722aba8a301d98f8c41e"
+    },
+    "scene.json": {
+      "bytes": 8508,
+      "role": "record",
+      "sha256": "c4074311a2d21a0e3677d0194442a026af1ff3126a41a4f7d00b5c51f72b1bb8"
+    },
+    "tube.usda": {
+      "bytes": 535,
+      "role": "usd",
+      "sha256": "8e7087a2ec4e91c20a64a69a954a5f1394cdf5bca47331b04257c77c2584b956"
+    }
+  },
+  "id": "tube",
+  "kind": "place",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:00:40.450199+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "complete": {
+      "accept": {
+        "at": "2026-10-17T20:34:02.515816+00:00",
+        "by": "runner"
+      },
+      "code": "614e17d70adbc54d15ef2ac7532458f7dbfe393cb1a802ed4b39c5bbd5b6e794",
+      "models": [],
+      "node": "complete@tube",
+      "output": "2c9309958281ea912187af9e122c0003651a5096ff80c6b3060abce773d1c2f4",
+      "record_key": "a1ce6a74a82f41ef5ffc13a98c765caab07a736f95337c308765de563fc5926f"
+    },
+    "complete_failing": [
+      "named gaps"
+    ],
+    "gaps": "data/checks/gaps/tube.json",
+    "models": [],
+    "node": "assembly@tube",
+    "output": "46b603be4ce58e7eb5c89d2585ecd43bb770e6dd89a1b6b79d28ce6a3ae19804",
+    "place": "tube",
+    "record_key": "b2afcac97aa05f6343658da019f1ce453598524265ce7ed16707651229609351",
+    "unresolved_sublayers": [],
+    "world": "world1"
+  },
+  "requires": [
+    "layer/base.tube@1",
+    "layer/characters.tube@1",
+    "layer/ground.tube@1",
+    "layer/light.tube@1",
+    "layer/motion.tube@1",
+    "layer/sound.tube@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "tube"
+  ],
+  "state": "draft",
+  "tags": {
+    "complete": [
+      "named_gaps"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Tube",
+  "usd": {
+    "default_prim": "/tube",
+    "layer": "root",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/place/tube/1/tube.usda",
+    "root": "tube.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": "Y",
+    "use": "open"
+  },
+  "version": 1
+}

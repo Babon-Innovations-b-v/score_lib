@@ -1,0 +1,94 @@
+{
+  "address": "effect/pot_steam@1",
+  "files": {
+    "clip.usdc": {
+      "bytes": 901768,
+      "role": "usd",
+      "sha256": "27cd3fd49cdc157407abe85bbfb3639a705958589e6a174fdd35474e7b6f4b7c"
+    },
+    "effect.usda": {
+      "bytes": 32107,
+      "role": "usd",
+      "sha256": "35ce35e20894711c7ba6a79817f64e23bd6174b2fc45f6f8234b2a5984aa18ea"
+    },
+    "preview.png": {
+      "bytes": 31183,
+      "role": "picture",
+      "sha256": "81355c5326ca9f992288b117738a1a581a8aa76ca90bf86b63ba4469d756e8c2"
+    },
+    "settings.json": {
+      "bytes": 1700,
+      "role": "record",
+      "sha256": "58eb538e841646a15cdc844afae6d514a2bbc603dbb876c7ea41944795ccb72f"
+    }
+  },
+  "id": "pot_steam",
+  "kind": "effect",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/points.py",
+    "of": "clip.usdc at clip time 28.0"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-12T01:25:09.228205+00:00",
+      "by": "runner"
+    },
+    "code": "7b3bc97d9997c40ad75aad20b9a04a996a85620ffa21f81538dfd5251854aac9",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "from": "footage: flickr-4276025236, commons-steam-asparagus (a simmering pot's steam rising slowly off its whole top (its rim 3.5 cm under the box's top, at the lid's handle) and curling as it cools, gone about 0.05 to 0.12 m over the rim at a simmer)",
+    "models": [],
+    "node": "effects-layer@habitat",
+    "output": "cae1ccabdf65a4fe6dd0e4950b1da6a10c36a3dd101fa4feea0336935cd55593",
+    "place": "habitat",
+    "prim": "/habitat/Objects/pot_1/pot_steam",
+    "record_key": "43e62ea4f779818a8cda5b3f14638e6fe118f9628961795bc6b487c1c760f0fb",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/particle_effects@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "habitat"
+  ],
+  "state": "draft",
+  "tags": {
+    "effect": [
+      "steam_rise"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ],
+    "weather": []
+  },
+  "title": "Pot steam",
+  "usd": {
+    "default_prim": "/pot_steam",
+    "layer": "effects",
+    "meters_per_unit": null,
+    "path": "score_lib/effect/pot_steam/1/effect.usda",
+    "root": "effect.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

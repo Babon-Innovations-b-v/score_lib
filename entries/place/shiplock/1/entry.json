@@ -1,0 +1,118 @@
+{
+  "address": "place/shiplock@1",
+  "files": {
+    "contract.json": {
+      "bytes": 99,
+      "role": "record",
+      "sha256": "c2b7151f92e6a67ca4666ea747ad262b67b4d0af824cc83862ce64d8cc49d12c"
+    },
+    "edit.usda": {
+      "bytes": 183,
+      "role": "usd",
+      "sha256": "8fc5485ea9a58537dd8289c516a85733e069ad7a17b866471667b8795142454f"
+    },
+    "gaps.json": {
+      "bytes": 2273,
+      "role": "record",
+      "sha256": "8c81df7b23406645bf7cee118b40bb2bd30e45fe51d48adb33bab1265186b507"
+    },
+    "inputs.json": {
+      "bytes": 4733,
+      "role": "record",
+      "sha256": "45dcbba38159cf3595767a3727bbef8d65d78fe35488d8f8ba366e9589144950"
+    },
+    "origin.json": {
+      "bytes": 759,
+      "role": "record",
+      "sha256": "a6bb33e9abe1218a63a1e75a0c65f218d37276e5ab1b3e132f61b4c2cdecb310"
+    },
+    "scene.json": {
+      "bytes": 2091,
+      "role": "record",
+      "sha256": "104785cae0d28bba5c1f512817c045fe8415cec87c57ef4c6e490d7885ac1025"
+    },
+    "shiplock.usda": {
+      "bytes": 293,
+      "role": "usd",
+      "sha256": "c45584f6fbe4a3074d48163d9ed48275725803cb7dce454b10707a61e69983fb"
+    }
+  },
+  "id": "shiplock",
+  "kind": "place",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T10:26:39.062614+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "complete": {
+      "accept": {
+        "at": "2026-10-18T03:20:45.813073+00:00",
+        "by": "runner"
+      },
+      "code": "614e17d70adbc54d15ef2ac7532458f7dbfe393cb1a802ed4b39c5bbd5b6e794",
+      "models": [],
+      "node": "complete@shiplock",
+      "output": "726fb95566c307ca0bd445ffb36a32807c3b4b316a6e03ee2067d0d7384dd74d",
+      "record_key": "1c06789003cdbb882e2a79362dc968040f33ba75acf3e2e4ff1a75f2d1d98230"
+    },
+    "complete_failing": [
+      "named gaps"
+    ],
+    "gaps": "data/checks/gaps/shiplock.json",
+    "models": [],
+    "node": "assembly@shiplock",
+    "output": "9ea9c1ba2ba7fce72429f749372d757425d477683ae1bc551ad6d3e280d2b1ad",
+    "place": "shiplock",
+    "record_key": "adaee891e03334aa818fce0406f996d11d681dcf6c90ed18ccd6250eac3e41fe",
+    "unresolved_sublayers": [],
+    "world": "world1"
+  },
+  "requires": [
+    "layer/base.shiplock@1",
+    "layer/light.shiplock@1",
+    "layer/sound.shiplock@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "shiplock"
+  ],
+  "state": "draft",
+  "tags": {
+    "complete": [
+      "named_gaps"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Shiplock",
+  "usd": {
+    "default_prim": "/shiplock",
+    "layer": "root",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/place/shiplock/1/shiplock.usda",
+    "root": "shiplock.usda",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "open"
+  },
+  "version": 1
+}

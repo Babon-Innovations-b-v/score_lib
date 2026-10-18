@@ -1,0 +1,108 @@
+{
+  "address": "surface/glass_fibre_panel@1",
+  "files": {
+    "material.usda": {
+      "bytes": 572,
+      "role": "usd",
+      "sha256": "71a6362f529b8e5333ca3656701d47ada9da8628f5968e5c030512269efb1e47"
+    },
+    "preview.png": {
+      "bytes": 19788,
+      "role": "picture",
+      "sha256": "ef1111fe5e7c9006dcbd1a1eae74616a8e5afac2445876ee9da083bc25107013"
+    },
+    "surface.json": {
+      "bytes": 199,
+      "role": "record",
+      "sha256": "5a7e005cee3d66b3f4f5034293f8a54bef9da86a32b231b0d75066e56aa22837"
+    }
+  },
+  "id": "glass_fibre_panel",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "composite",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "composite"
+    ],
+    "recipe": [
+      "composite"
+    ]
+  },
+  "title": "Glass fibre panel",
+  "usd": {
+    "default_prim": "/glass_fibre_panel",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/glass_fibre_panel/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

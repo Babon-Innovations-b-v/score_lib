@@ -1,0 +1,103 @@
+{
+  "address": "model/rover@1",
+  "files": {
+    "model.json": {
+      "bytes": 296,
+      "role": "record",
+      "sha256": "e9f473fbd538c82ac738e63d079610e6cdfdc84ed5dd176e865cedf9e3e39ae2"
+    },
+    "model.usdc": {
+      "bytes": 5962543,
+      "role": "usd",
+      "sha256": "6a044813e4fabf49b256c327922b6d788b77c4d1fa97e025802c78975a09e3a3"
+    },
+    "preview.png": {
+      "bytes": 30755,
+      "role": "picture",
+      "sha256": "09f71e02b7477a67a0ff88ec9b30812c942e50164ec541ca46872f27180fd225"
+    },
+    "textures/rover_base_color.png": {
+      "bytes": 2851013,
+      "role": "texture",
+      "sha256": "8b9e80718d0ca5acf3b860bb8612cef2f742cd8bce59daf1f3c4e0d7348c73be"
+    },
+    "textures/rover_metal_roughness.png": {
+      "bytes": 2046000,
+      "role": "texture",
+      "sha256": "46470cbc9cc5b7759b3239fed031b2ad7a30128528c2db8bfff1d3405caf4b45"
+    },
+    "textures/rover_normal.png": {
+      "bytes": 10525877,
+      "role": "texture",
+      "sha256": "07a96a7698a0acfe35dbe79df8a5cb81bcbe1fa4c72f9c5b3e01033308ce11d4"
+    }
+  },
+  "id": "rover",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "FLUX.2-klein-4B picture, Pixal3D via image-to-3dlab, clean finish (take kit5-rover-3); author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/rover/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:02:30.466230+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "c2ff9516e9e4ba1a5dd5d69e061726e7835da383b093f0cb9d9fe8300e85b6f2",
+    "models": [],
+    "node": "assembly@old_station",
+    "output": "f60adc09d2c14a31314d3bd31f69c2601467bfbcf728c76faa051b30b1810b56",
+    "place": "old_station",
+    "record_key": "7d9d97819faa5aebdafc6de56b258e509d111fd6834f0d009658ac7904c3e290",
+    "source_name": "rover",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "old_station"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "moon",
+      "outside"
+    ]
+  },
+  "title": "Rover",
+  "usd": {
+    "default_prim": "/rover",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/rover/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

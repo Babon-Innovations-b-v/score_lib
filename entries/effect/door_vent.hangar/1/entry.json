@@ -1,0 +1,94 @@
+{
+  "address": "effect/door_vent.hangar@1",
+  "files": {
+    "clip.usdc": {
+      "bytes": 19803251,
+      "role": "usd",
+      "sha256": "1de8189147630a9d7393e0aced480a5f21d082bf77d0ec473046fd147f11e179"
+    },
+    "effect.usda": {
+      "bytes": 3825,
+      "role": "usd",
+      "sha256": "d7795bd613026e2b794e010fee248605a1cc9691b262ddd7ef366a60f9adb842"
+    },
+    "preview.png": {
+      "bytes": 86852,
+      "role": "picture",
+      "sha256": "507442ab69047fcc1a99dfefa23e999d31d2345246655b2af70b53e27b915985"
+    },
+    "settings.json": {
+      "bytes": 1955,
+      "role": "record",
+      "sha256": "eef347ecf8dc6b8293f01bb034817b1d7f357533c623218511db496ec49d0e72"
+    }
+  },
+  "id": "door_vent.hangar",
+  "kind": "effect",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/points.py",
+    "of": "clip.usdc at clip time 120.0"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-15T22:57:33.098910+00:00",
+      "by": "runner"
+    },
+    "code": "8d4f33546d6aa76ab10b4baa59eea2a3dfd27171a6d9c67389d04ecd6d88f21e",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "from": "footage: S126E014192, STS075-313-022, soyuz-ms22-leak, NTRS-19910011413 (the air the pump leaves (a real airlock's pump stops short of empty and lets the rest out) leaving as the door first opens to the vacuum, its water frozen into fine ice that flies straight out at 16 to 30 m/s with nothing to slow it (NTRS-19910011413's 23 m/s, give or take 30 %), a cone about 14 to 33 degrees either side, under the Moon's 1.62 m/s2; the roof's leaves part from their seam (the west leaf's east edge, 5.67 m east of its middle) at 1 s (data/motion/hangar.json roof_leaf_west))",
+    "models": [],
+    "node": "effects-layer@hangar",
+    "output": "e44baa4b8adaff4b301ec4281b4bb00155d22f5e1353de2b997cd451cb8e3bbd",
+    "place": "hangar",
+    "prim": "/hangar/Places/door_vent",
+    "record_key": "7f166f13dd7d1bf55c6ca9ab5ad76761b51b41ba652b00f4b2e614341b5b4916",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/particle_effects@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "hangar"
+  ],
+  "state": "draft",
+  "tags": {
+    "effect": [
+      "vacuum_vent_ice"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ],
+    "weather": []
+  },
+  "title": "Door vent",
+  "usd": {
+    "default_prim": "/door_vent",
+    "layer": "effects",
+    "meters_per_unit": null,
+    "path": "score_lib/effect/door_vent.hangar/1/effect.usda",
+    "root": "effect.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

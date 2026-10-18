@@ -1,0 +1,116 @@
+{
+  "address": "sound/junction_hum@1",
+  "files": {
+    "audio/generated/machines/junction_hum.wav": {
+      "bytes": 1104112,
+      "role": "audio",
+      "sha256": "2fa473bf1541526513cf439003cad61d2e9a2973d80c2b12e1903709d69ea7ec"
+    },
+    "preview.png": {
+      "bytes": 2672,
+      "role": "picture",
+      "sha256": "b909a9679cde15cabb21d3941effb4c96b62f5d1f74fe6f24a8af35b7b1c6249"
+    },
+    "sound.json": {
+      "bytes": 970,
+      "role": "record",
+      "sha256": "dc202c581c18ff817c72e99ed45fcad387bb65605ad7c61e93273032abcc7a3f"
+    },
+    "sound.usda": {
+      "bytes": 579,
+      "role": "usd",
+      "sha256": "bc13706d671f9a15c119d2e3829f2f087d6cefc90783229ed269e6f7c871388e"
+    }
+  },
+  "id": "junction_hum",
+  "kind": "sound",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "https://huggingface.co/OpenMOSS-Team/MOSS-SoundEffect-v2.0; prompt: Constant low mains hum from electrical equipment in a machine room, smooth and unchanging.; seed 2; author: the 2099 project, generated with MOSS-SoundEffect v2.0 (OpenMOSS-Team/MOSS-SoundEffect-v2.0@e35df4d82fbe87fcd5d14e5d100e349c0c3c076d)",
+        "spdx": "Apache-2.0",
+        "text": "made for the first world with MOSS-SoundEffect v2.0 (Apache-2.0)",
+        "what": "sound/generated/machines/junction_hum.wav"
+      }
+    ],
+    "note": "",
+    "spdx": "Apache-2.0"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/audio.py",
+    "of": "audio/generated/machines/junction_hum.wav"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-13T20:57:21.548790+00:00",
+      "by": "runner"
+    },
+    "code": "fddaae33e7b1078d7768d64b90025094353c176b30afeac6022b7b114ce61b81",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_source": {
+      "audio/generated/machines/junction_hum.wav": "assets/sound/generated/machines/junction_hum.wav"
+    },
+    "models": [
+      {
+        "commercial_use": true,
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "licence": "Apache-2.0",
+        "name": "clap-larger-general",
+        "revision": "ada0c23a36c4e8582805bb38fec3905903f18b41",
+        "sha256": "b8e001a32b37111261ccc28541ae07960a8cc047837f76a1a0877e9b2c59dc45",
+        "source": "hf:laion/larger_clap_general"
+      },
+      {
+        "commercial_use": true,
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "licence": "Apache-2.0",
+        "name": "moss-soundeffect-v2",
+        "revision": "e35df4d82fbe87fcd5d14e5d100e349c0c3c076d",
+        "sha256": "d74b38a3387c5e670754edde2d06a71d1940c3a603e5a0489550159e79d18885",
+        "source": "hf:OpenMOSS-Team/MOSS-SoundEffect-v2.0"
+      }
+    ],
+    "node": "sound@hub",
+    "output": "b36933ec3f03c9e0027ef3cf5780f0693e193f6f8f3193e510ad9546b7182b4a",
+    "place": "hub",
+    "prim": "/hub/Objects/pit_junction_box_1/Sound",
+    "record_key": "b4ca56ac5bad3f41cecdeb8f77567d4e23a6cb09056679fc4d84f1820386cc4a",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "hub"
+  ],
+  "state": "draft",
+  "tags": {
+    "category": [
+      "loop"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "made_by": [
+      "moss"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Junction hum",
+  "usd": {
+    "default_prim": "/junction_hum",
+    "layer": "sound",
+    "meters_per_unit": null,
+    "path": "score_lib/sound/junction_hum/1/sound.usda",
+    "root": "sound.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

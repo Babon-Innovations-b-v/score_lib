@@ -1,0 +1,108 @@
+{
+  "address": "model/suit_alcove_1@1",
+  "files": {
+    "model.json": {
+      "bytes": 375,
+      "role": "record",
+      "sha256": "bced1be6828f2ab2e922f69a45551beed06c7eab72bd1d8c19bb5b1f9aaa56c2"
+    },
+    "model.usdc": {
+      "bytes": 74185,
+      "role": "usd",
+      "sha256": "4c2a2836dbd05e8dd3a40d7573de00e7cafc0811b6833536de3c216f56433fd3"
+    },
+    "model_glow.usdc": {
+      "bytes": 3697,
+      "role": "usd",
+      "sha256": "77571f132eba8a4bed5b39572e50fbd0b697fb384f43978959af4b05f7ea2034"
+    },
+    "preview.png": {
+      "bytes": 14377,
+      "role": "picture",
+      "sha256": "bf656cba1d5be410b14ac29cfca708308b37e662c47a3a80b2b436bb6b16b101"
+    },
+    "textures/airlock_gear_1_base_color.png": {
+      "bytes": 1158541,
+      "role": "texture",
+      "sha256": "4f31bed85a4dc7df13d5d89f1c2daf6cce64085fb401a4d1add22694f006accd"
+    },
+    "textures/airlock_gear_1_metal_roughness.png": {
+      "bytes": 940004,
+      "role": "texture",
+      "sha256": "7b9a6d3326745f96f62114d803cdc4badf6cf46c3103ccaff74bf9264598ca26"
+    },
+    "textures/airlock_gear_1_normal.png": {
+      "bytes": 12037563,
+      "role": "texture",
+      "sha256": "742c6d36036d084d1c1cc1aa15305d0149dae27fcf174bb795f5c20857f1216e"
+    }
+  },
+  "id": "suit_alcove_1",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T21:49:09.803965+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "2c36562dfeb63cd5630376c3841b048f4e0753d6a227d5cecb735842f290e2f4",
+    "models": [],
+    "node": "assembly@airlock",
+    "output": "8900f72fdf3585e5c853f71bbe4723b74677075a11235a7acb403664c1ec2464",
+    "place": "airlock",
+    "record_key": "1971b952fc7cf77c7898f3951a1958e959f95e422ab47f4ce6910bda0ff3bdc3",
+    "source_name": "suit_alcove_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Suit alcove 1",
+  "usd": {
+    "default_prim": "/suit_alcove_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/suit_alcove_1/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

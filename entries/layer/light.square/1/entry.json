@@ -1,0 +1,84 @@
+{
+  "address": "layer/light.square@1",
+  "files": {
+    "lamps.json": {
+      "bytes": 5665,
+      "role": "record",
+      "sha256": "9b78c1dca8b23e15662d86f87c73934e93f5b348c31b585b0f796c76c3a55052"
+    },
+    "layer.usda": {
+      "bytes": 64635,
+      "role": "usd",
+      "sha256": "b88fa2bfff83df27215d861710d4f89d4cb507463f9361188a73adc91c66ef92"
+    }
+  },
+  "id": "light.square",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T10:37:19.122806+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/light.usda",
+        "sha256": "b88fa2bfff83df27215d861710d4f89d4cb507463f9361188a73adc91c66ef92"
+      }
+    },
+    "models": [],
+    "node": "assembly@square",
+    "output": "eae5e52a53b2d1757ed24acf4035c4a6bb2f806de9e7630adabdd6c13f4120be",
+    "own_files": [],
+    "place": "square",
+    "record_key": "97d5530a3361f6e15704b2a62582b9dfe5a727669824f06f7c46afab788c5160",
+    "side_records_from": "854e2837c6932e8a2eacd73d7e052a985ac1b9cd6a8135a6d6c72047e2866f9c",
+    "source_name": "layers/light.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/light_rig@1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "square"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "light"
+    ],
+    "place_kind": [
+      "outside",
+      "earth"
+    ]
+  },
+  "title": "Square light layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "light",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/light.square/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

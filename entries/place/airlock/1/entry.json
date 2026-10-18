@@ -1,0 +1,123 @@
+{
+  "address": "place/airlock@1",
+  "files": {
+    "airlock.usda": {
+      "bytes": 671,
+      "role": "usd",
+      "sha256": "00e44f3f322aaffb77cbd263a26797d56a0958c27ccc83297df4fecabf5cce42"
+    },
+    "contract.json": {
+      "bytes": 99,
+      "role": "record",
+      "sha256": "c2b7151f92e6a67ca4666ea747ad262b67b4d0af824cc83862ce64d8cc49d12c"
+    },
+    "edit.usda": {
+      "bytes": 183,
+      "role": "usd",
+      "sha256": "8fc5485ea9a58537dd8289c516a85733e069ad7a17b866471667b8795142454f"
+    },
+    "gaps.json": {
+      "bytes": 2468,
+      "role": "record",
+      "sha256": "90f90be4cf0389b1662fc8bf54a94777fbf64c9a458276273e87bc0e5e88d8e3"
+    },
+    "inputs.json": {
+      "bytes": 19967,
+      "role": "record",
+      "sha256": "cb080d80524e031ee880564fc2373d32e09563bf67864633cf57d4adb9961437"
+    },
+    "origin.json": {
+      "bytes": 974,
+      "role": "record",
+      "sha256": "3d0f2f5f572b0952e5c86de4eef746e6722397c949ea5f2a0daee61170156e29"
+    },
+    "scene.json": {
+      "bytes": 8369,
+      "role": "record",
+      "sha256": "ffdd01c0f621416b9e9bc5af0b6ec9d6c0607243381c358b906d6da376448a70"
+    }
+  },
+  "id": "airlock",
+  "kind": "place",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T21:49:09.803965+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "complete": {
+      "accept": {
+        "at": "2026-10-17T14:27:26.437919+00:00",
+        "by": "runner"
+      },
+      "code": "614e17d70adbc54d15ef2ac7532458f7dbfe393cb1a802ed4b39c5bbd5b6e794",
+      "models": [],
+      "node": "complete@airlock",
+      "output": "433eb37cf386a431a5c72efec86c8181ca79be7b8fb989c402c4a13919beeaac",
+      "record_key": "5ec15a3bd2a08c873f40b04fd6a4cf9d82a71983c99c2846523a50b632ad5135"
+    },
+    "complete_failing": [
+      "named gaps"
+    ],
+    "gaps": "data/checks/gaps/airlock.json",
+    "models": [],
+    "node": "assembly@airlock",
+    "output": "8900f72fdf3585e5c853f71bbe4723b74677075a11235a7acb403664c1ec2464",
+    "place": "airlock",
+    "record_key": "1971b952fc7cf77c7898f3951a1958e959f95e422ab47f4ce6910bda0ff3bdc3",
+    "unresolved_sublayers": [],
+    "world": "world1"
+  },
+  "requires": [
+    "layer/base.airlock@1",
+    "layer/characters.airlock@1",
+    "layer/effects.airlock@1",
+    "layer/light.airlock@1",
+    "layer/motion.airlock@1",
+    "layer/motion_keys.airlock@1",
+    "layer/settle.airlock@1",
+    "layer/sound.airlock@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock"
+  ],
+  "state": "draft",
+  "tags": {
+    "complete": [
+      "named_gaps"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Airlock",
+  "usd": {
+    "default_prim": "/airlock",
+    "layer": "root",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/place/airlock/1/airlock.usda",
+    "root": "airlock.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": "Y",
+    "use": "open"
+  },
+  "version": 1
+}

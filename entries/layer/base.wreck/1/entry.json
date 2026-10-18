@@ -1,0 +1,134 @@
+{
+  "address": "layer/base.wreck@1",
+  "files": {
+    "assets/textures/earth_surface.png": {
+      "bytes": 341407,
+      "role": "texture",
+      "sha256": "de8a5d2e71cf4813d6aba6333d7e1c812d21451544f140de2e65f089e7aa2280"
+    },
+    "assets/textures/ground_colour.jpg": {
+      "bytes": 2215386,
+      "role": "texture",
+      "sha256": "58fb28b20d0da0bbf3322b3f4f4088835fb2db19d6b8dbecd83f510fab3ebbb8"
+    },
+    "assets/textures/ground_facing.png": {
+      "bytes": 22944328,
+      "role": "texture",
+      "sha256": "a1c0207cd6060cafda3abc189172e96f5d26873fd205aa4d0c4483f1e504d016"
+    },
+    "assets/textures/ground_far_moon_plan_skin_shaded.jpg": {
+      "bytes": 2384998,
+      "role": "texture",
+      "sha256": "e458b301b51690ddfcda45a9d8873150fc1cbbbb4682bfbdec9bd54fa3f80029"
+    },
+    "layer.usda": {
+      "bytes": 13833237,
+      "role": "usd",
+      "sha256": "dcbab7dc424f5a341911007a5dd08955297280fd67d1dee8ac7b81a7f264213c"
+    }
+  },
+  "id": "base.wreck",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T15:53:36.185584+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/base.usda",
+        "sha256": "24c59affb81b6c676a057c9a37ff6826a44ab37d961394c0076c738e19b6ec9b"
+      }
+    },
+    "models": [],
+    "node": "assembly@wreck",
+    "output": "591bca186cdb2ba3104fc444e86a6ff62eeb734cbab1de4f4f2c54506dd99291",
+    "own_files": [
+      "assets/textures/earth_surface.png",
+      "assets/textures/ground_colour.jpg",
+      "assets/textures/ground_facing.png",
+      "assets/textures/ground_far_moon_plan_skin_shaded.jpg"
+    ],
+    "place": "wreck",
+    "record_key": "ae3d3dca811e262167338103d0abcba1e68bff01135dac7ecd4e6f2f4113254b",
+    "side_records_from": null,
+    "source_name": "layers/base.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/room_layout@1"
+  },
+  "requires": [
+    "model/access_cover@1",
+    "model/aft_section@1",
+    "model/cable_run_1p4@1",
+    "model/cable_run_2p4@1",
+    "model/cable_run_2p6@1",
+    "model/foil_blanket@1",
+    "model/forward_section@1",
+    "model/fragment@1",
+    "model/hull_panel@1",
+    "model/leg_foot@1",
+    "model/leg_strut@1",
+    "model/pressure_sphere@1",
+    "model/probe_lander@1",
+    "model/ring_frame@1",
+    "model/small_panel@1",
+    "model/tank_dome@1",
+    "model/work_lamp@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "base"
+    ],
+    "place_kind": [
+      "outside",
+      "moon"
+    ]
+  },
+  "title": "Wreck base layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "base",
+    "meters_per_unit": null,
+    "neighbours": [
+      "place/airlock@1",
+      "place/garage@1",
+      "place/greenhouse@1",
+      "place/habitat@1",
+      "place/hangar@1",
+      "place/hub@1",
+      "place/lab@1",
+      "place/old_station@1",
+      "place/tube@1",
+      "place/workshop@1"
+    ],
+    "path": "score_lib/layer/base.wreck/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

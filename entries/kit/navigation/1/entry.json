@@ -1,0 +1,122 @@
+{
+  "address": "kit/navigation@1",
+  "files": {
+    "kit.json": {
+      "bytes": 12387,
+      "role": "record",
+      "sha256": "0fb0066de89fdaccdaaec0d5941f80decc43ec0bb3022800419d5970caa46e55"
+    },
+    "preview.png": {
+      "bytes": 3743,
+      "role": "picture",
+      "sha256": "2df379a9b3b87863c0ef3b844371062632b184fe3f5bc7d0d1ab68ae83ab3d54"
+    },
+    "ship_kit/job-kit-floor.json": {
+      "bytes": 195182,
+      "role": "record",
+      "sha256": "e03ba89dcdce378f9c4087023029c5ae3c69714aefbd5f1e9b7b9af6de185f1a"
+    },
+    "ship_kit/job-kit-gear.json": {
+      "bytes": 195296,
+      "role": "record",
+      "sha256": "99d55a346ccdd25d89fcc2890e06552e469eca68a97a01190144df903769a148"
+    },
+    "ship_kit/job-kit-walls_high.json": {
+      "bytes": 195949,
+      "role": "record",
+      "sha256": "b63bd2ba78799fa9694da013b4d87716c2ec87493669417fbb88aa0e1406a445"
+    },
+    "ship_kit/job-kit-walls_low_1.json": {
+      "bytes": 195324,
+      "role": "record",
+      "sha256": "636c87ea2c5fb70cd6b2a18bad51628d1c938eb317847bf8a30ffb5cc9d6b4d2"
+    },
+    "ship_kit/job-kit-walls_low_2.json": {
+      "bytes": 195174,
+      "role": "record",
+      "sha256": "7b843b3900bab156ef6ad854c1692137c9a0475dedbd110dc2937c940546d6b1"
+    },
+    "ship_kit/layout-full.json": {
+      "bytes": 12169,
+      "role": "record",
+      "sha256": "db3350cfff67775f8c8c794955edd5971df4036464d35ab1d91473165061fe81"
+    },
+    "ship_kit/layout.json": {
+      "bytes": 9406,
+      "role": "record",
+      "sha256": "0ead441f8b18efdf61e649b38930f14b96b6c3a50848d1f87b16a14186114e06"
+    },
+    "ship_kit/plan.json": {
+      "bytes": 3287,
+      "role": "record",
+      "sha256": "c17d64542617ebfa17ae548d3f0103d2a140031c9bd88da7e021ecd43ecba265"
+    }
+  },
+  "id": "navigation",
+  "kind": "kit",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/plan.py",
+    "of": "kit.json pieces (32) from above"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "pieces": 32,
+    "place": "navigation",
+    "ship_kit": {
+      "accept": {
+        "at": "2026-10-14T23:30:31.829592+00:00",
+        "by": "runner"
+      },
+      "code": "fa0e03dae5d30889cf6f98455ec978fbd3b275e036d58494ccb2eb593df5217a",
+      "models": [],
+      "node": "ship_kit@navigation",
+      "output": "62951b73b7058e4cb438634231fc485514e430b7afbba8ea54ae89bd70583853",
+      "record_key": "d0d4b7bb1fc4d2ad4714fda64c61c0e466efc2bdf69a933ab9f462168d9bb966"
+    },
+    "source": "data/kit/navigation.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/room_layout@1",
+    "model/ceiling_light_panel_1.navigation@1",
+    "model/door_leaf_1.navigation@1",
+    "model/edge_light_strip_1.navigation@1",
+    "model/ring_floor_plate_1.navigation@1",
+    "model/roof_face_panel_1.navigation@1",
+    "model/wall_lower_plain_1.navigation@1",
+    "model/wall_lower_plain_2.navigation@1",
+    "model/wall_lower_plain_3.navigation@1",
+    "model/wall_upper_plain_1.navigation@1",
+    "model/wall_upper_plain_2.navigation@1",
+    "model/wall_upper_plain_3.navigation@1",
+    "model/wall_upper_plain_4.navigation@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "navigation"
+  ],
+  "state": "draft",
+  "tags": {
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Navigation kit",
+  "usd": null,
+  "version": 1
+}

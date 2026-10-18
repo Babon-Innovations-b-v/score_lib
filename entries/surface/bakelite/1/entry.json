@@ -1,0 +1,88 @@
+{
+  "address": "surface/bakelite@1",
+  "files": {
+    "material.usda": {
+      "bytes": 548,
+      "role": "usd",
+      "sha256": "ee692b97ffbcc1d83b83f57987249287507e70aa4eca0e4cb8cf4fc2c7ed6368"
+    },
+    "preview.png": {
+      "bytes": 16631,
+      "role": "picture",
+      "sha256": "9f092299b52b356b43ebf3292024ae6d3c0746b30e65730587e08a5e12f34640"
+    },
+    "surface.json": {
+      "bytes": 395,
+      "role": "record",
+      "sha256": "941ba52bd2bc1e202de6562e6564f7c1b1110037e5ac116aea7366b584c626ed"
+    }
+  },
+  "id": "bakelite",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "plastic",
+    "place": "cockpit",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "cockpit",
+    "engineroom",
+    "galley",
+    "navigation",
+    "quarters",
+    "shiplock",
+    "storage",
+    "walkway"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "plastic"
+    ],
+    "recipe": [
+      "rubber"
+    ]
+  },
+  "title": "Bakelite",
+  "usd": {
+    "default_prim": "/bakelite",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/bakelite/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

@@ -1,0 +1,134 @@
+{
+  "address": "layer/sound.gdoor@1",
+  "files": {
+    "assets/sound/recordings/footsteps/footsteps_metal_1.ogg": {
+      "bytes": 13535,
+      "role": "texture",
+      "sha256": "80ecb925455469a7a2b715b9a4ad148108708f31d148ddc63944f2c97388a760"
+    },
+    "assets/sound/recordings/footsteps/footsteps_metal_2.ogg": {
+      "bytes": 13464,
+      "role": "texture",
+      "sha256": "01a2ed49b36f8115d2225a25b6e65cbe1cb716c98146a3746406b038e09cf30c"
+    },
+    "assets/sound/recordings/footsteps/footsteps_metal_3.ogg": {
+      "bytes": 13645,
+      "role": "texture",
+      "sha256": "aa0fbbed8cf39c6893e355a5477a69280ed1e475ee93bd38df123d5fa8419eeb"
+    },
+    "assets/sound/recordings/footsteps/footsteps_metal_4.ogg": {
+      "bytes": 13639,
+      "role": "texture",
+      "sha256": "66f4f185bc47ef060b35ecf9d177caf83cbcd0cdfd07162d2c13e37f0183830f"
+    },
+    "assets/sound/recordings/footsteps/footsteps_metal_5.ogg": {
+      "bytes": 13500,
+      "role": "texture",
+      "sha256": "f1c5e3535dcc2ebf04ad53f142dba74ec731e597d157d1d1d92cda77458ec2cb"
+    },
+    "assets/sound/recordings/footsteps/footsteps_metal_6.ogg": {
+      "bytes": 13592,
+      "role": "texture",
+      "sha256": "8bdf60ca2de804fff92ddc66198c1f26ca9b091219dfbb148546b56d82aba25c"
+    },
+    "assets/sound/recordings/footsteps/footsteps_metal_7.ogg": {
+      "bytes": 13620,
+      "role": "texture",
+      "sha256": "a43eeb0dd83484527370bd925d1809ae9dfc3ad19da78d1bf863363c0ff5cadc"
+    },
+    "assets/sound/recordings/footsteps/footsteps_metal_8.ogg": {
+      "bytes": 13733,
+      "role": "texture",
+      "sha256": "2b64e67998792df3c657a1f37c0381775d7fb15d5fd3bc1d9793c892184cc28f"
+    },
+    "layer.usda": {
+      "bytes": 122674,
+      "role": "usd",
+      "sha256": "c14f46ad75da0cd423c066a58dd834db36cbb47cd722a674aeb23c05f63f508c"
+    }
+  },
+  "id": "sound.gdoor",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-13T08:07:15.141411+00:00",
+      "by": "runner"
+    },
+    "code": "0b158c668b94c11dfa4edc5aae6aca004c40e9e698701955b77f3799dbce1b7f",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/sound.usda",
+        "sha256": "7d0aeb0b0c89a484c3bcda0f1947c372d21c04b98e522ecf5074bf9be4b741f4"
+      }
+    },
+    "models": [],
+    "node": "assembly@gdoor",
+    "output": "68fc03418ea3f6bcd5ebf0ea6c56d1418ac865151a84199080152c3be97ad50a",
+    "own_files": [
+      "assets/sound/recordings/footsteps/footsteps_metal_1.ogg",
+      "assets/sound/recordings/footsteps/footsteps_metal_2.ogg",
+      "assets/sound/recordings/footsteps/footsteps_metal_3.ogg",
+      "assets/sound/recordings/footsteps/footsteps_metal_4.ogg",
+      "assets/sound/recordings/footsteps/footsteps_metal_5.ogg",
+      "assets/sound/recordings/footsteps/footsteps_metal_6.ogg",
+      "assets/sound/recordings/footsteps/footsteps_metal_7.ogg",
+      "assets/sound/recordings/footsteps/footsteps_metal_8.ogg"
+    ],
+    "place": "gdoor",
+    "record_key": "70a152d0500ea210cff8a69b8904b2ded93cd1287dac91a63bb0ca90471ec25a",
+    "side_records_from": null,
+    "source_name": "layers/sound.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/sound_layer@1"
+  },
+  "requires": [
+    "sound/footstep_grating@1",
+    "sound/footstep_rubber@1",
+    "sound/impact_grating@1",
+    "sound/impact_rubber@1",
+    "sound/impact_steel_plate@1",
+    "sound/scrape_grating@1",
+    "sound/scrape_rubber@1",
+    "sound/scrape_steel_plate@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "gdoor"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "sound"
+    ],
+    "place_kind": []
+  },
+  "title": "Gdoor sound layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "sound",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/sound.gdoor/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

@@ -1,0 +1,101 @@
+{
+  "address": "model/control_stick_1@1",
+  "files": {
+    "model.json": {
+      "bytes": 425,
+      "role": "record",
+      "sha256": "649f069ac006fc56d0583e65b40c530f65c212c3eebafe06ba04e4677132013b"
+    },
+    "model.usdc": {
+      "bytes": 514503,
+      "role": "usd",
+      "sha256": "588b92edcc11bf8623ae89f6065faee0db464ab6985ee8845a73b8ff64b36886"
+    },
+    "preview.png": {
+      "bytes": 20191,
+      "role": "picture",
+      "sha256": "840172e206f8efcb86b4a366bd32afc8efbd63c1c74aa49fba9ccf9652b52d2f"
+    },
+    "textures/control_stick_1_base_color.png": {
+      "bytes": 318735,
+      "role": "texture",
+      "sha256": "04187823a8b241c5b0a6726b1b1c27680abb515daf8d0082e0d444af28e4868c"
+    },
+    "textures/control_stick_1_metal_roughness.png": {
+      "bytes": 223221,
+      "role": "texture",
+      "sha256": "c2205171b82e7d8521f09cf2314f3176d46a0224963f38f2c4735935ef40381d"
+    },
+    "textures/control_stick_1_normal.png": {
+      "bytes": 853080,
+      "role": "texture",
+      "sha256": "8cc3ace9b5ea3e6c265829a9834567484a97f52401d05ca9a44245fe85d0c99e"
+    }
+  },
+  "id": "control_stick_1",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T10:12:20.716778+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "a442cf84fee04b591f0c5034ac144cc661415390a12d35b6df2e20fefec9fb18",
+    "models": [],
+    "node": "assembly@cockpit",
+    "output": "b8ec7f49d4ff317fb9858d8dce4a33fcfc258d958fcd162c2b292eabb7de5c83",
+    "place": "cockpit",
+    "record_key": "6507789d5dd016672ed678b36e6a88f586c76345c9ca611d2f50b16a694eea46",
+    "source_name": "control_stick_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "cockpit"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Control stick 1",
+  "usd": {
+    "default_prim": "/control_stick_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/control_stick_1/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

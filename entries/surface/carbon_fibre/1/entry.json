@@ -1,0 +1,108 @@
+{
+  "address": "surface/carbon_fibre@1",
+  "files": {
+    "material.usda": {
+      "bytes": 554,
+      "role": "usd",
+      "sha256": "f215f0aee53613138f7b801f3d25605ef466aca87be36b9076a9ec9a83ab63cb"
+    },
+    "preview.png": {
+      "bytes": 18669,
+      "role": "picture",
+      "sha256": "a53543ac8649272e4686bec0db5d146b64b697113a44fdb1e356b5233e8ee3f2"
+    },
+    "surface.json": {
+      "bytes": 191,
+      "role": "record",
+      "sha256": "bebc27670085cfb26adcde34145c25962a40dd280f9d01d266af93819ba85437"
+    }
+  },
+  "id": "carbon_fibre",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "composite",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "composite"
+    ],
+    "recipe": [
+      "composite"
+    ]
+  },
+  "title": "Carbon fibre",
+  "usd": {
+    "default_prim": "/carbon_fibre",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/carbon_fibre/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

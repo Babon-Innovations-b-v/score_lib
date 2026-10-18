@@ -1,0 +1,84 @@
+{
+  "address": "layer/characters.garage@1",
+  "files": {
+    "characters.json": {
+      "bytes": 275,
+      "role": "record",
+      "sha256": "43e2552834f0368d16f94fdfe487fabf8a74d9f122fdc9cc64700a007df73bcc"
+    },
+    "layer.usda": {
+      "bytes": 126,
+      "role": "usd",
+      "sha256": "3613e9cf6f596ffacfdb0e84809ee9e4237b0d9988de2ec2c5847424c31ae56d"
+    }
+  },
+  "id": "characters.garage",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T22:23:43.534540+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/characters.usda",
+        "sha256": "3613e9cf6f596ffacfdb0e84809ee9e4237b0d9988de2ec2c5847424c31ae56d"
+      }
+    },
+    "models": [],
+    "node": "assembly@garage",
+    "output": "b7aa59a6d59e8700275f9ac530ec0a920e7f3c63af29e58b93ecd3f39f5abe50",
+    "own_files": [],
+    "place": "garage",
+    "record_key": "08c1c1e01926f109c953734d2bf2bea3daed4a22d008d5b03cf237bf5c75ef70",
+    "side_records_from": "a5a7083e0014353cbbc6190e0828d1805707319fa36ccfadff3f85dbfe1ac624",
+    "source_name": "layers/characters.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/cast_spread@1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "garage"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "characters"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Garage characters layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "characters",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/characters.garage/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": 30.0,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

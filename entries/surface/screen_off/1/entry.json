@@ -1,0 +1,108 @@
+{
+  "address": "surface/screen_off@1",
+  "files": {
+    "material.usda": {
+      "bytes": 546,
+      "role": "usd",
+      "sha256": "1373c48b2d7cf1f3342d358c900800ee025d7112dc1f96999dbc53b9e696bdff"
+    },
+    "preview.png": {
+      "bytes": 10114,
+      "role": "picture",
+      "sha256": "af7b03fb874335a3425fab2ea3da06ba8a07781dd3dea2ed773c8b3326fe2220"
+    },
+    "surface.json": {
+      "bytes": 159,
+      "role": "record",
+      "sha256": "6bae0e4b6dbcd952c2d7799083b4ed758a23a905309657a1f3c6697eba14283c"
+    }
+  },
+  "id": "screen_off",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "screen",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "screen"
+    ],
+    "recipe": [
+      "glass"
+    ]
+  },
+  "title": "Screen off",
+  "usd": {
+    "default_prim": "/screen_off",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/screen_off/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

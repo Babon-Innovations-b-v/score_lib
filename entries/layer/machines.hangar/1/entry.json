@@ -1,0 +1,89 @@
+{
+  "address": "layer/machines.hangar@1",
+  "files": {
+    "layer.usda": {
+      "bytes": 9082,
+      "role": "usd",
+      "sha256": "493c7ed209d6d7927ef3eb9dfc7a9e3d3906e5efe40cd601ef37a1df6824658e"
+    },
+    "placed.json": {
+      "bytes": 4491,
+      "role": "record",
+      "sha256": "09dcb0dbaaaa511f9822746887ee35be58e0799d5a2a7fc072feffc0b21d2d7b"
+    }
+  },
+  "id": "machines.hangar",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T22:13:41.093010+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/machines.usda",
+        "sha256": "8657c35347405d3617b775554ae5c36dc496f4038b75eb5a3f89f2dccf04174f"
+      }
+    },
+    "models": [],
+    "node": "assembly@hangar",
+    "output": "765aae9ca335aebbcb521472c52db37c76ad0b842d8f9bddc21b8c1beae3d144",
+    "own_files": [],
+    "place": "hangar",
+    "record_key": "d034efb2e042c8f0e9fca844f9dc9aa0b1d4146a0a39fbf3dafc78213e49fd74",
+    "side_records_from": "9bd954eb5adc2c4948c40313340efe9695316cc77aa1b833d5adf75739f8e5f0",
+    "source_name": "layers/machines.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/machines_lay@1"
+  },
+  "requires": [
+    "model/lift_thruster_1@1",
+    "model/main_engine_1@1",
+    "model/nose_thruster_1@1",
+    "model/ship_1@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "hangar"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "machines"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Hangar machines layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "machines",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/machines.hangar/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

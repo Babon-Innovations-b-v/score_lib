@@ -1,0 +1,103 @@
+{
+  "address": "model/tool_case_1.habitat@1",
+  "files": {
+    "model.json": {
+      "bytes": 263,
+      "role": "record",
+      "sha256": "5bbb9dc1c20cb4f79e74a489396db7f0d82232d5b2f9dc43b4b162039ef14289"
+    },
+    "model.usdc": {
+      "bytes": 32268,
+      "role": "usd",
+      "sha256": "0b8073c70afbfeab6599fdeca278e674a4f30cf7a2e0433a91ea125fb5704df5"
+    },
+    "preview.png": {
+      "bytes": 31729,
+      "role": "picture",
+      "sha256": "3dd53141ffd51c3b565912db93e74b9ade85f97080277b62f8e91e3b23051ff4"
+    },
+    "textures/habitat_gear_8_base_color.png": {
+      "bytes": 1152558,
+      "role": "texture",
+      "sha256": "5856b88830a88de4b83f48223db7354592dd53f64925783a73d26d653bd4df8b"
+    },
+    "textures/habitat_gear_8_metal_roughness.png": {
+      "bytes": 784602,
+      "role": "texture",
+      "sha256": "ea63ab25744924d7f2c1a10797c042aed32e478e9c975090c78b62a88b162023"
+    },
+    "textures/habitat_gear_8_normal.png": {
+      "bytes": 5275479,
+      "role": "texture",
+      "sha256": "680b244101e191a3d4fd6db82362dda4498d93035090e1f48b46cde397ac0730"
+    }
+  },
+  "id": "tool_case_1.habitat",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T09:31:21.711004+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "c8b7c7b9844b5ecc1a5ef7ef0e8a62d810d44f73c83138026f80de9626466564",
+    "models": [],
+    "node": "assembly@habitat",
+    "output": "e6cb813b79be54e9c4ec9a531b2407cc81765e13b62c9b0962394ef9645519d6",
+    "place": "habitat",
+    "record_key": "e2801490121188a98eb1a3bfb7c0acdf01953b265874ff4b2a27a83a896bd500",
+    "source_name": "tool_case_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "habitat"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Tool case 1",
+  "usd": {
+    "default_prim": "/tool_case_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/tool_case_1.habitat/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

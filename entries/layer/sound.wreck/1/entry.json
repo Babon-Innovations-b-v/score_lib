@@ -1,0 +1,96 @@
+{
+  "address": "layer/sound.wreck@1",
+  "files": {
+    "layer.usda": {
+      "bytes": 124425,
+      "role": "usd",
+      "sha256": "8dadf2497d0ebd19ed78cbb938088a9e6589220c9dd04653f660574c6bdfd2b7"
+    },
+    "sound.json": {
+      "bytes": 26509,
+      "role": "record",
+      "sha256": "61362040c86673d16bf91dcc0c91eb64a7a59867606ab116678966fa06f9d00e"
+    }
+  },
+  "id": "sound.wreck",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T15:53:36.185584+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/sound.usda",
+        "sha256": "da422d343b0695396c714e75662894228fbe73511503b93a4af90654c55544c5"
+      }
+    },
+    "models": [],
+    "node": "assembly@wreck",
+    "output": "591bca186cdb2ba3104fc444e86a6ff62eeb734cbab1de4f4f2c54506dd99291",
+    "own_files": [],
+    "place": "wreck",
+    "record_key": "ae3d3dca811e262167338103d0abcba1e68bff01135dac7ecd4e6f2f4113254b",
+    "side_records_from": "4d0ecf1d2cafe9505cc53567bf719babd9bb2b503a1aab3297a6332038399a59",
+    "source_name": "layers/sound.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/sound_layer@1"
+  },
+  "requires": [
+    "sound/footstep_grating@1",
+    "sound/footstep_rubber@1",
+    "sound/footsteps_metal.wreck@1",
+    "sound/impact_grating@1",
+    "sound/impact_rubber@1",
+    "sound/impact_steel_plate@1",
+    "sound/scrape_grating@1",
+    "sound/scrape_rubber@1",
+    "sound/scrape_steel_plate@1",
+    "sound/suit_breathing_calm.wreck@1",
+    "sound/suit_fans@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "sound"
+    ],
+    "place_kind": [
+      "outside",
+      "moon"
+    ]
+  },
+  "title": "Wreck sound layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "sound",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/sound.wreck/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

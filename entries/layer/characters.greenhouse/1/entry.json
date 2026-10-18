@@ -1,0 +1,84 @@
+{
+  "address": "layer/characters.greenhouse@1",
+  "files": {
+    "characters.json": {
+      "bytes": 396,
+      "role": "record",
+      "sha256": "d513d051350424af88a262a0bfc45075656c96cd9ef56046966d66292273d910"
+    },
+    "layer.usda": {
+      "bytes": 130,
+      "role": "usd",
+      "sha256": "dd6a0f4d4ca22373177efacbd932dac9585aee3603545250b55cdb129e8c55ed"
+    }
+  },
+  "id": "characters.greenhouse",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-17T11:21:57.694141+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/characters.usda",
+        "sha256": "dd6a0f4d4ca22373177efacbd932dac9585aee3603545250b55cdb129e8c55ed"
+      }
+    },
+    "models": [],
+    "node": "assembly@greenhouse",
+    "output": "910f5ef85c6bacfd60b7b934d6980011f765df81458a88095c9ee09416e6fec7",
+    "own_files": [],
+    "place": "greenhouse",
+    "record_key": "96f06014f00223d17da44c7eaa7bd37c8c838a72ef68ace7ba2ccc88be48cafa",
+    "side_records_from": "a23e1a37bc065276335787471c200b62fda5b55ab4a5e59681ad429525112e1a",
+    "source_name": "layers/characters.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/cast_spread@1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "greenhouse"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "characters"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Greenhouse characters layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "characters",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/characters.greenhouse/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": 30.0,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

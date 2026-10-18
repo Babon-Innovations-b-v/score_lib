@@ -1,0 +1,93 @@
+{
+  "address": "surface/screen.airlock@1",
+  "files": {
+    "material.usda": {
+      "bytes": 531,
+      "role": "usd",
+      "sha256": "3fd8f9bce12e1aed4e14123c3dee24dd1bbeed57e66d93611153f17f076fd9d4"
+    },
+    "preview.png": {
+      "bytes": 15196,
+      "role": "picture",
+      "sha256": "8200ce8b4bed3582362a76f1ed968796efcfdbc96280643967bf184d2267bb74"
+    },
+    "surface.json": {
+      "bytes": 166,
+      "role": "record",
+      "sha256": "055f25a2bed7f5ebe8572ba4920392b01c3eb152cb5926bf6f425c544c9ee7ba"
+    }
+  },
+  "id": "screen.airlock",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "screen",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "tube",
+    "workshop"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "screen"
+    ],
+    "recipe": [
+      "screen"
+    ]
+  },
+  "title": "Screen",
+  "usd": {
+    "default_prim": "/screen",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/screen.airlock/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

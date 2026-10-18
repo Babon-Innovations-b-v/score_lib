@@ -1,0 +1,108 @@
+{
+  "address": "surface/stencil_keep_clear@1",
+  "files": {
+    "material.usda": {
+      "bytes": 573,
+      "role": "usd",
+      "sha256": "8f00e117b20eab56e766bcb2f9c51f0f5326e8b625b1e724e56cea025aefa1c5"
+    },
+    "preview.png": {
+      "bytes": 17263,
+      "role": "picture",
+      "sha256": "132806c37f9c5c347870b6437712a16f7c1c3fb24cc73c8926716c02c8d6a3f7"
+    },
+    "surface.json": {
+      "bytes": 208,
+      "role": "record",
+      "sha256": "c3ec7044f391984097bb76cacedc01581e097ba63789b0342220b247f2644497"
+    }
+  },
+  "id": "stencil_keep_clear",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "print",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "print"
+    ],
+    "recipe": [
+      "printed"
+    ]
+  },
+  "title": "Stencil keep clear",
+  "usd": {
+    "default_prim": "/stencil_keep_clear",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/stencil_keep_clear/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

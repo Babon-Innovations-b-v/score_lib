@@ -1,0 +1,122 @@
+{
+  "address": "kit/galley@1",
+  "files": {
+    "kit.json": {
+      "bytes": 24789,
+      "role": "record",
+      "sha256": "263c8e80a3d249e44609ddc9faf91b35d4ab9db5a17f8d1ed4a73cc50bb72c90"
+    },
+    "preview.png": {
+      "bytes": 3996,
+      "role": "picture",
+      "sha256": "c98c38ccc5825645eef90b3b7f481f3140c271955c6128909d78e4de53126b64"
+    },
+    "ship_kit/job-kit-floor.json": {
+      "bytes": 195181,
+      "role": "record",
+      "sha256": "f76348d7b423819c3470fa650b220d164f21bd6ef1818bb3041774cf89a69d35"
+    },
+    "ship_kit/job-kit-gear.json": {
+      "bytes": 195292,
+      "role": "record",
+      "sha256": "072d90a243cca225443a9420acfed4298742bbe567f7ad68095b67e692d19efd"
+    },
+    "ship_kit/job-kit-walls_high.json": {
+      "bytes": 195952,
+      "role": "record",
+      "sha256": "285f6db835afad2f0e88d92867c0cc8c9bf0384b4fa1d67b8b9600f504d3590c"
+    },
+    "ship_kit/job-kit-walls_low_1.json": {
+      "bytes": 195321,
+      "role": "record",
+      "sha256": "64d9501669f02df99f5ad293475b662197c412b5962d8d4d5383a64e8595a15a"
+    },
+    "ship_kit/job-kit-walls_low_2.json": {
+      "bytes": 195172,
+      "role": "record",
+      "sha256": "04a3916e43e37ef7176e1a46463872e8d63c35d8ec963a668a1c5b5834f404fe"
+    },
+    "ship_kit/layout-full.json": {
+      "bytes": 24111,
+      "role": "record",
+      "sha256": "155fd23869c8837aac01a0642c4744ab73d317e812258ceacc02e42b41a5f7f8"
+    },
+    "ship_kit/layout.json": {
+      "bytes": 20224,
+      "role": "record",
+      "sha256": "bc2452542a67b3164ff4938e8c848dd114e1c447121851700e688cf1d84894ff"
+    },
+    "ship_kit/plan.json": {
+      "bytes": 4132,
+      "role": "record",
+      "sha256": "7ccc1182597f3fc2643797b9e5f29fa57836fac9cc5af63e5055c39927bfd3fa"
+    }
+  },
+  "id": "galley",
+  "kind": "kit",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/plan.py",
+    "of": "kit.json pieces (70) from above"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "pieces": 70,
+    "place": "galley",
+    "ship_kit": {
+      "accept": {
+        "at": "2026-10-14T23:34:18.693344+00:00",
+        "by": "runner"
+      },
+      "code": "fa0e03dae5d30889cf6f98455ec978fbd3b275e036d58494ccb2eb593df5217a",
+      "models": [],
+      "node": "ship_kit@galley",
+      "output": "68991c4ac1b0e15e8b80d57e5b9a612a8c475dcc7cb6cb72be04600254132e6f",
+      "record_key": "bdf905629c6dc0afd90c8681cf21b237c54301896b0a74f723e64b7f8db3d42e"
+    },
+    "source": "data/kit/galley.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/room_layout@1",
+    "model/ceiling_light_panel_1.galley@1",
+    "model/door_leaf_1.galley@1",
+    "model/edge_light_strip_1.galley@1",
+    "model/ring_floor_plate_1.galley@1",
+    "model/roof_face_panel_1.galley@1",
+    "model/wall_lower_plain_1.galley@1",
+    "model/wall_lower_plain_2.galley@1",
+    "model/wall_lower_plain_3.galley@1",
+    "model/wall_upper_plain_1.galley@1",
+    "model/wall_upper_plain_2.galley@1",
+    "model/wall_upper_plain_3.galley@1",
+    "model/wall_upper_plain_4.galley@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "galley"
+  ],
+  "state": "draft",
+  "tags": {
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Galley kit",
+  "usd": null,
+  "version": 1
+}

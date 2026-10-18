@@ -1,0 +1,108 @@
+{
+  "address": "surface/quilted_white@1",
+  "files": {
+    "material.usda": {
+      "bytes": 549,
+      "role": "usd",
+      "sha256": "dfffaa1aa564211b712696926300621fc0f7ec64086f36a07f9337d35281602d"
+    },
+    "preview.png": {
+      "bytes": 16282,
+      "role": "picture",
+      "sha256": "1e3a0fb559b9450e3ef7ec820f5371baf2660f0e29ea37fbb6dff69a854711cd"
+    },
+    "surface.json": {
+      "bytes": 384,
+      "role": "record",
+      "sha256": "b53b06cc39e72791d770c4e699d9b914f0e0eacbce9c7866426e09dac189e636"
+    }
+  },
+  "id": "quilted_white",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "fabric",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "fabric"
+    ],
+    "recipe": [
+      "quilted"
+    ]
+  },
+  "title": "Quilted white",
+  "usd": {
+    "default_prim": "/quilted_white",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/quilted_white/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

@@ -1,0 +1,96 @@
+{
+  "address": "layer/sound.workshop@1",
+  "files": {
+    "layer.usda": {
+      "bytes": 127304,
+      "role": "usd",
+      "sha256": "9b5008f7e9fd20537b80d553013ff832bf8234350fe888f41254ae33f030ae9c"
+    },
+    "sound.json": {
+      "bytes": 26636,
+      "role": "record",
+      "sha256": "2397a619d645b96a67af67f612985207c8ede1319c9ce9dc6a6483f8fce0a818"
+    }
+  },
+  "id": "sound.workshop",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T00:15:15.593646+00:00",
+      "by": "runner"
+    },
+    "code": "3c875e56018d0d8dc81898b4a3fc27e1e0369f4b60d13fc7f18550aedc3a092a",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/sound.usda",
+        "sha256": "21783194d063a43ac15074b452bf1f510b47e8634afdaf0a557adb13e3565134"
+      }
+    },
+    "models": [],
+    "node": "assembly@workshop",
+    "output": "bee6eb7313a86043a2c7e40cc4062833466130c06ad9b07b9b6b80f085cf41c1",
+    "own_files": [],
+    "place": "workshop",
+    "record_key": "e3cd36726454e1d2f16c6f3ffabd1967c5b471749b13bd9a0d066d4f7ae7becc",
+    "side_records_from": "a791e29302faed3f9a364791db0038017a1dea61a81b64a0cc0fdaa97327a457",
+    "source_name": "layers/sound.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/sound_layer@1"
+  },
+  "requires": [
+    "sound/base_hum@1",
+    "sound/footstep_grating@1",
+    "sound/footstep_rubber@1",
+    "sound/footsteps_metal.workshop@1",
+    "sound/impact_grating@1",
+    "sound/impact_rubber@1",
+    "sound/impact_steel_plate@1",
+    "sound/scrape_grating@1",
+    "sound/scrape_rubber@1",
+    "sound/scrape_steel_plate@1",
+    "sound/workshop@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "workshop"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "sound"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Workshop sound layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "sound",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/sound.workshop/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

@@ -1,0 +1,108 @@
+{
+  "address": "surface/fu_luck@1",
+  "files": {
+    "material.usda": {
+      "bytes": 537,
+      "role": "usd",
+      "sha256": "a00481e4645129f105575e667562273facfeaad3e73eaa0cc70812c7633e1ab3"
+    },
+    "preview.png": {
+      "bytes": 22933,
+      "role": "picture",
+      "sha256": "3d287a6f2a9cd1bca5b6165dd66947f796792ecee8b581af2a7c40fdd7a6bf01"
+    },
+    "surface.json": {
+      "bytes": 184,
+      "role": "record",
+      "sha256": "0a01af3cf0c012920af3c99391927fc0e2c0e89c62ca7724234dd6d21c3dbd53"
+    }
+  },
+  "id": "fu_luck",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "print",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "print"
+    ],
+    "recipe": [
+      "printed"
+    ]
+  },
+  "title": "Fu luck",
+  "usd": {
+    "default_prim": "/fu_luck",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/fu_luck/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

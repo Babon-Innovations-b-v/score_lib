@@ -1,0 +1,108 @@
+{
+  "address": "surface/facade_paint@1",
+  "files": {
+    "material.usda": {
+      "bytes": 561,
+      "role": "usd",
+      "sha256": "97ea833cb2296d0ecbafff24584ae82bd45fc725f53d00cd16bf64b2e37dd7a1"
+    },
+    "preview.png": {
+      "bytes": 19180,
+      "role": "picture",
+      "sha256": "52b31dda137ffa3c72d928223a914e20697322e10f761bc5bb6d7c22276caf66"
+    },
+    "surface.json": {
+      "bytes": 247,
+      "role": "record",
+      "sha256": "62655aa32a42b9ea7ccf68452daad30e010aa30dd041c22136756decd23d0c31"
+    }
+  },
+  "id": "facade_paint",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "plaster",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "plaster"
+    ],
+    "recipe": [
+      "painted_plaster"
+    ]
+  },
+  "title": "Facade paint",
+  "usd": {
+    "default_prim": "/facade_paint",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/facade_paint/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

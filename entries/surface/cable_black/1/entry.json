@@ -1,0 +1,108 @@
+{
+  "address": "surface/cable_black@1",
+  "files": {
+    "material.usda": {
+      "bytes": 548,
+      "role": "usd",
+      "sha256": "e62b42e1396cf27cd1d34a786d37336b6021785386187f26c3066ce119adddb6"
+    },
+    "preview.png": {
+      "bytes": 12428,
+      "role": "picture",
+      "sha256": "72b167f7b88c4975208bc892c2582ede65f5fe2d89f2a63a26052bd2a321a308"
+    },
+    "surface.json": {
+      "bytes": 392,
+      "role": "record",
+      "sha256": "4eec2b2a5c21024fc8f77d134800a31068bf0f61d96b27f6da3f6306ae5373a7"
+    }
+  },
+  "id": "cable_black",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "cable",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "cable"
+    ],
+    "recipe": [
+      "rubber"
+    ]
+  },
+  "title": "Cable black",
+  "usd": {
+    "default_prim": "/cable_black",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/cable_black/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

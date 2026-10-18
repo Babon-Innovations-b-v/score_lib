@@ -1,0 +1,103 @@
+{
+  "address": "model/lander@1",
+  "files": {
+    "model.json": {
+      "bytes": 276,
+      "role": "record",
+      "sha256": "e2966824841678dc08e5bc0bcbc9ff711cdf88861bea9daf4c30782d9ac78254"
+    },
+    "model.usdc": {
+      "bytes": 1854677,
+      "role": "usd",
+      "sha256": "72fd3416c7486cb2ff3687606af129e071fc76187d51ddda2979a83f3183d0d2"
+    },
+    "preview.png": {
+      "bytes": 15918,
+      "role": "picture",
+      "sha256": "112d2ed24fc750ce3bc40bfad50340ad563cbc31b7f80a2ab77c8cb392a69688"
+    },
+    "textures/lander_base_color.png": {
+      "bytes": 761542,
+      "role": "texture",
+      "sha256": "2e3aad15bb3c7a06d8d65947575a4b9a1fdaa74c69d4db1817f80e75343c8867"
+    },
+    "textures/lander_metal_roughness.png": {
+      "bytes": 682880,
+      "role": "texture",
+      "sha256": "6e1a4106895d5eb9bcbeb94faa38cba7bffeb1942cbdb6a585cdd89ee758c139"
+    },
+    "textures/lander_normal.png": {
+      "bytes": 6679188,
+      "role": "texture",
+      "sha256": "bd9c55c66d159b2b3187829b3463e26353ca88a20e7a5ba0e2ebe15282afb0c0"
+    }
+  },
+  "id": "lander",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:16:00.039696+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "b9e0ecdb477ed75532814163432c23cc38e73a0ac308bb56a818ef35980fd9e9",
+    "models": [],
+    "node": "assembly@campgrounds",
+    "output": "7fcf4c6f9552d4edb6020038bb83dd248f2e602f1958878438d52dfc3a7685bb",
+    "place": "campgrounds",
+    "record_key": "3e28c5bc4fca67388ebba8768e3cf58d643f791893e4237289ddba7e9754e64e",
+    "source_name": "lander",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "campgrounds"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "mars",
+      "outside"
+    ]
+  },
+  "title": "Lander",
+  "usd": {
+    "default_prim": "/lander",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/lander/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

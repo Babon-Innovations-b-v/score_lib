@@ -1,0 +1,108 @@
+{
+  "address": "surface/label_fan_unit@1",
+  "files": {
+    "material.usda": {
+      "bytes": 559,
+      "role": "usd",
+      "sha256": "006253fec200f9d935e733845941cb17b461dd99d4453797b5ee16bb87c1d975"
+    },
+    "preview.png": {
+      "bytes": 15721,
+      "role": "picture",
+      "sha256": "b844be6c90561106a347603b55754deb7cda73d70c9b5ab7f26f6479c34de7c7"
+    },
+    "surface.json": {
+      "bytes": 175,
+      "role": "record",
+      "sha256": "2d91386c039897db7960e9b07bb57deeefe1ba279d247ae2e6b2b35d47e7a9cb"
+    }
+  },
+  "id": "label_fan_unit",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "print",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "print"
+    ],
+    "recipe": [
+      "printed"
+    ]
+  },
+  "title": "Label fan unit",
+  "usd": {
+    "default_prim": "/label_fan_unit",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/label_fan_unit/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

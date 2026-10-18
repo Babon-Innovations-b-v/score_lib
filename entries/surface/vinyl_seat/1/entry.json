@@ -1,0 +1,108 @@
+{
+  "address": "surface/vinyl_seat@1",
+  "files": {
+    "material.usda": {
+      "bytes": 550,
+      "role": "usd",
+      "sha256": "2520b81057ff8c6d5fc40aec86479f9a509cf69124c18002f412cc619b2b6b9f"
+    },
+    "preview.png": {
+      "bytes": 20570,
+      "role": "picture",
+      "sha256": "7f9e8d860e264962d3f1dad3f5d537bc7b821562e1b62b387675b02561b51b15"
+    },
+    "surface.json": {
+      "bytes": 163,
+      "role": "record",
+      "sha256": "ed2fbe1b16938b872adbd70a6c18f65c739cd9d4835e98b6d7096d318dc32b8e"
+    }
+  },
+  "id": "vinyl_seat",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "plastic",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "plastic"
+    ],
+    "recipe": [
+      "rubber"
+    ]
+  },
+  "title": "Vinyl seat",
+  "usd": {
+    "default_prim": "/vinyl_seat",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/vinyl_seat/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

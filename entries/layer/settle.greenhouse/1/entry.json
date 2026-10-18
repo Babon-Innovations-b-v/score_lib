@@ -1,0 +1,84 @@
+{
+  "address": "layer/settle.greenhouse@1",
+  "files": {
+    "layer.usda": {
+      "bytes": 5013,
+      "role": "usd",
+      "sha256": "be1741710e4cad3f19b18bbdf62caf259248bbbe1ceeb981347e8dc25cf98b8e"
+    },
+    "settle.json": {
+      "bytes": 14587,
+      "role": "record",
+      "sha256": "5efe674badadf4bb309b2a14a013ae2269dd75e1e65386913d3ff78016e4e8af"
+    }
+  },
+  "id": "settle.greenhouse",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-17T11:21:57.694141+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/settle.usda",
+        "sha256": "be1741710e4cad3f19b18bbdf62caf259248bbbe1ceeb981347e8dc25cf98b8e"
+      }
+    },
+    "models": [],
+    "node": "assembly@greenhouse",
+    "output": "910f5ef85c6bacfd60b7b934d6980011f765df81458a88095c9ee09416e6fec7",
+    "own_files": [],
+    "place": "greenhouse",
+    "record_key": "96f06014f00223d17da44c7eaa7bd37c8c838a72ef68ace7ba2ccc88be48cafa",
+    "side_records_from": "3c6dd9c1d02b6b603ad54e14a731419086301cf80a12b6c0866f4f74b647a295",
+    "source_name": "layers/settle.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/settle@1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "greenhouse"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "settle"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Greenhouse settle layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "settle",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/settle.greenhouse/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

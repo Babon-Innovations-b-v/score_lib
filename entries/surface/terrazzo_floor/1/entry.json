@@ -1,0 +1,108 @@
+{
+  "address": "surface/terrazzo_floor@1",
+  "files": {
+    "material.usda": {
+      "bytes": 556,
+      "role": "usd",
+      "sha256": "bc78326fe33f42e50c99558e21f6448d39bbdc84f9adb7362eb8667c205e690f"
+    },
+    "preview.png": {
+      "bytes": 20169,
+      "role": "picture",
+      "sha256": "3e5a795f4a44d15f4b74230090e040281078e4aef5b2673912f56f70c2407fb9"
+    },
+    "surface.json": {
+      "bytes": 142,
+      "role": "record",
+      "sha256": "b0f1e90ea0186715d9bf7d7a803b88d7bb05b706d150905f3346ee128b7887f4"
+    }
+  },
+  "id": "terrazzo_floor",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "tile",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "tile"
+    ],
+    "recipe": [
+      "terrazzo"
+    ]
+  },
+  "title": "Terrazzo floor",
+  "usd": {
+    "default_prim": "/terrazzo_floor",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/terrazzo_floor/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

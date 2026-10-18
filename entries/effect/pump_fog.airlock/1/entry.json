@@ -1,0 +1,94 @@
+{
+  "address": "effect/pump_fog.airlock@1",
+  "files": {
+    "clip.usdc": {
+      "bytes": 11973119,
+      "role": "usd",
+      "sha256": "425a9ad9d093e03c7a5fc0faa965ee9884924e9db7f4c65a8bf7291459337246"
+    },
+    "effect.usda": {
+      "bytes": 4390,
+      "role": "usd",
+      "sha256": "6da3b57b3528a2cdab6114b8ac20b8e117840a8d37aa0f94bc25ee59d5635b32"
+    },
+    "preview.png": {
+      "bytes": 80744,
+      "role": "picture",
+      "sha256": "4bb4be3b6662679eb3c3e4c4c2be924b32e4ecf263ac94f24fe5d5dc0339fa10"
+    },
+    "settings.json": {
+      "bytes": 1916,
+      "role": "record",
+      "sha256": "06229d07ae4acdfcd44585eaedfe227bbc5758c0cef4ee72e0d5918d67cc961b"
+    }
+  },
+  "id": "pump_fog.airlock",
+  "kind": "effect",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/points.py",
+    "of": "clip.usdc at clip time 120.0"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-12T01:25:10.634484+00:00",
+      "by": "runner"
+    },
+    "code": "7b3bc97d9997c40ad75aad20b9a04a996a85620ffa21f81538dfd5251854aac9",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "from": "footage: normandale-humidity-vacuum, physicsforums-vacuum-chamber-demo (the fog the air makes as the pump draws it down (expanding air cools and its water condenses on the dust in it), forming in the pump's first seconds and gone within seconds as the pressure keeps falling and the air warms again off the walls; the pump runs from 1 s to 6 s of the round (data/motion/airlock.json cycle_light))",
+    "models": [],
+    "node": "effects-layer@airlock",
+    "output": "5d67d1f20e1051025f8df202d620167f7df591cc22f9d5c9daf1facb951a2315",
+    "place": "airlock",
+    "prim": "/airlock/Effects/pump_fog",
+    "record_key": "976998f93d41562c408f4e7eb21e559b6a7dcac757b0089a0ef9a52ab6defb08",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/particle_effects@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock"
+  ],
+  "state": "draft",
+  "tags": {
+    "effect": [
+      "pump_down_fog"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ],
+    "weather": []
+  },
+  "title": "Pump fog",
+  "usd": {
+    "default_prim": "/pump_fog",
+    "layer": "effects",
+    "meters_per_unit": null,
+    "path": "score_lib/effect/pump_fog.airlock/1/effect.usda",
+    "root": "effect.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

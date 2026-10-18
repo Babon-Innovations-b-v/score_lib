@@ -1,0 +1,124 @@
+{
+  "address": "place/greenhouse@1",
+  "files": {
+    "contract.json": {
+      "bytes": 99,
+      "role": "record",
+      "sha256": "c2b7151f92e6a67ca4666ea747ad262b67b4d0af824cc83862ce64d8cc49d12c"
+    },
+    "edit.usda": {
+      "bytes": 183,
+      "role": "usd",
+      "sha256": "8fc5485ea9a58537dd8289c516a85733e069ad7a17b866471667b8795142454f"
+    },
+    "gaps.json": {
+      "bytes": 3256,
+      "role": "record",
+      "sha256": "45a8c7cab7bbbfc720ca91217c51c5286d46c18ebcca164a51b4e08c3792ec8a"
+    },
+    "greenhouse.usda": {
+      "bytes": 751,
+      "role": "usd",
+      "sha256": "7da0d5446d57fdb7f004d221069952e39406aab35c088061200da19bc22b93bf"
+    },
+    "inputs.json": {
+      "bytes": 39203,
+      "role": "record",
+      "sha256": "1a4a08090e0522a544e12d63272d3c6dff360dd716c11df2492fe832c70d0586"
+    },
+    "origin.json": {
+      "bytes": 1121,
+      "role": "record",
+      "sha256": "e468fac7e402bf3c9c68f0ea8996814f58fae3e105240e9de20a1d7486e44ed2"
+    },
+    "scene.json": {
+      "bytes": 10554,
+      "role": "record",
+      "sha256": "e31c6794c14788d7b403e126b25ab672e52a966c7a092398e3169f291367db21"
+    }
+  },
+  "id": "greenhouse",
+  "kind": "place",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-17T11:21:57.694141+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "complete": {
+      "accept": {
+        "at": "2026-10-17T14:29:07.159596+00:00",
+        "by": "runner"
+      },
+      "code": "614e17d70adbc54d15ef2ac7532458f7dbfe393cb1a802ed4b39c5bbd5b6e794",
+      "models": [],
+      "node": "complete@greenhouse",
+      "output": "62406584aaab0e79fb2174ea035e433af239b9fabb5925e42ec7de1a9013fe6a",
+      "record_key": "8b44f3749c66911c1afa49224e0217d9edbcbd6e95ec0b877c4d1951a7e416a2"
+    },
+    "complete_failing": [
+      "named gaps"
+    ],
+    "gaps": "data/checks/gaps/greenhouse.json",
+    "models": [],
+    "node": "assembly@greenhouse",
+    "output": "910f5ef85c6bacfd60b7b934d6980011f765df81458a88095c9ee09416e6fec7",
+    "place": "greenhouse",
+    "record_key": "96f06014f00223d17da44c7eaa7bd37c8c838a72ef68ace7ba2ccc88be48cafa",
+    "unresolved_sublayers": [],
+    "world": "world1"
+  },
+  "requires": [
+    "layer/base.greenhouse@1",
+    "layer/characters.greenhouse@1",
+    "layer/crops.greenhouse@1",
+    "layer/effects.greenhouse@1",
+    "layer/ground.greenhouse@1",
+    "layer/light.greenhouse@1",
+    "layer/motion.greenhouse@1",
+    "layer/settle.greenhouse@1",
+    "layer/sound.greenhouse@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "greenhouse"
+  ],
+  "state": "draft",
+  "tags": {
+    "complete": [
+      "named_gaps"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Greenhouse",
+  "usd": {
+    "default_prim": "/greenhouse",
+    "layer": "root",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/place/greenhouse/1/greenhouse.usda",
+    "root": "greenhouse.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": "Y",
+    "use": "open"
+  },
+  "version": 1
+}

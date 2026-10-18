@@ -1,0 +1,103 @@
+{
+  "address": "model/end_mat_1@1",
+  "files": {
+    "model.json": {
+      "bytes": 283,
+      "role": "record",
+      "sha256": "41e0c80080b91e653f698e86921a31d4e1eb6b95b8b3bfd371ec329a354a130c"
+    },
+    "model.usdc": {
+      "bytes": 62038,
+      "role": "usd",
+      "sha256": "57dc5e241814dba55b6e7be95d4015880766f3827e7bdaf208be86a8dd6e927e"
+    },
+    "preview.png": {
+      "bytes": 21536,
+      "role": "picture",
+      "sha256": "d5d57d405a065991707b8c1105ac856cbcadfe039817deb70ba0e9ccf5530309"
+    },
+    "textures/tube_gear_1_base_color.png": {
+      "bytes": 1417936,
+      "role": "texture",
+      "sha256": "bb62c58a0b867ad79c39d0ac10a229ba35aa1c034ff7b1154ed181bc64a1bf7c"
+    },
+    "textures/tube_gear_1_metal_roughness.png": {
+      "bytes": 1112248,
+      "role": "texture",
+      "sha256": "12cae59dbb4bff7666096d6410d04c4c2c9d0c09a8a7d69c64041d91c1b28c78"
+    },
+    "textures/tube_gear_1_normal.png": {
+      "bytes": 6800838,
+      "role": "texture",
+      "sha256": "adc620d3d5bb60349dd8bdd3753c2c8ace4016ff2055201223227a69a4036219"
+    }
+  },
+  "id": "end_mat_1",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:00:40.450199+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "cbb8d53454f4b15f5dcf6fe77cdc1b7ae32196e36a9c6902be0093a03405e29e",
+    "models": [],
+    "node": "assembly@tube",
+    "output": "46b603be4ce58e7eb5c89d2585ecd43bb770e6dd89a1b6b79d28ce6a3ae19804",
+    "place": "tube",
+    "record_key": "b2afcac97aa05f6343658da019f1ce453598524265ce7ed16707651229609351",
+    "source_name": "end_mat_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "tube"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "End mat 1",
+  "usd": {
+    "default_prim": "/end_mat_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/end_mat_1/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

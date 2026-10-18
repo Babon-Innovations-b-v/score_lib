@@ -1,0 +1,103 @@
+{
+  "address": "model/crane@1",
+  "files": {
+    "model.json": {
+      "bytes": 274,
+      "role": "record",
+      "sha256": "e27d51ff8e0bfc74223b2568650179805a1fdb91adabee9b210af0a3674f8f61"
+    },
+    "model.usdc": {
+      "bytes": 1791439,
+      "role": "usd",
+      "sha256": "3f387d318895420f4b66be0931ef64b6d1f6d2bc021de276e726003f2fab5c1d"
+    },
+    "preview.png": {
+      "bytes": 17775,
+      "role": "picture",
+      "sha256": "239c00bdec98418dffe57d67e8dd22f596bf9cad18d68deb792ca59f0a1f0d7a"
+    },
+    "textures/crane_base_color.png": {
+      "bytes": 1889199,
+      "role": "texture",
+      "sha256": "84eb4ef173ee7238985f8e4983f596304e99021d0d92f056dfe4b624d15507c2"
+    },
+    "textures/crane_metal_roughness.png": {
+      "bytes": 1667926,
+      "role": "texture",
+      "sha256": "8b3dc5133f4c418ecfd735b23a08d8380b4b00259c9b4095e427e5b854318a44"
+    },
+    "textures/crane_normal.png": {
+      "bytes": 14675416,
+      "role": "texture",
+      "sha256": "d7cf8683bd98ca55d1bd2d612a6af5283744ceca81007aaf79b14a903a736625"
+    }
+  },
+  "id": "crane",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:16:00.039696+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "f48f1c7bd509687facef5deddde34bfeb62afe239d24a897c520e8e6d66b4de4",
+    "models": [],
+    "node": "assembly@campgrounds",
+    "output": "7fcf4c6f9552d4edb6020038bb83dd248f2e602f1958878438d52dfc3a7685bb",
+    "place": "campgrounds",
+    "record_key": "3e28c5bc4fca67388ebba8768e3cf58d643f791893e4237289ddba7e9754e64e",
+    "source_name": "crane",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "campgrounds"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "mars",
+      "outside"
+    ]
+  },
+  "title": "Crane",
+  "usd": {
+    "default_prim": "/crane",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/crane/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

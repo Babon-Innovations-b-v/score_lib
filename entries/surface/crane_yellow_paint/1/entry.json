@@ -1,0 +1,88 @@
+{
+  "address": "surface/crane_yellow_paint@1",
+  "files": {
+    "material.usda": {
+      "bytes": 579,
+      "role": "usd",
+      "sha256": "5582c160884fe2e810afb8fb2ffad1678636b323e41cad13063f8b989c6d14a4"
+    },
+    "preview.png": {
+      "bytes": 22532,
+      "role": "picture",
+      "sha256": "3a7b1fc9e3322628ece43520561f2cc26a31dbfc47ccde3262db245bb35b9e00"
+    },
+    "surface.json": {
+      "bytes": 539,
+      "role": "record",
+      "sha256": "4597f2f634894bf72a18a27b6567e4c039db0e121a059331bb5d5b66c451dff6"
+    }
+  },
+  "id": "crane_yellow_paint",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "painted",
+    "place": "cockpit",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "cockpit",
+    "engineroom",
+    "galley",
+    "navigation",
+    "quarters",
+    "shiplock",
+    "storage",
+    "walkway"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "painted"
+    ],
+    "recipe": [
+      "painted_metal"
+    ]
+  },
+  "title": "Crane yellow paint",
+  "usd": {
+    "default_prim": "/crane_yellow_paint",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/crane_yellow_paint/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

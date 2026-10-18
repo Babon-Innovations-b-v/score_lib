@@ -1,0 +1,108 @@
+{
+  "address": "surface/enamel_blue@1",
+  "files": {
+    "material.usda": {
+      "bytes": 558,
+      "role": "usd",
+      "sha256": "8e10c881503d17838cc8cec1d202606695d45ad799722aabc04d40de0b617dbb"
+    },
+    "preview.png": {
+      "bytes": 19143,
+      "role": "picture",
+      "sha256": "68e60389d49a1732bc6b15066f0660f8ab138aaf7fb2a1161359f551b6a98655"
+    },
+    "surface.json": {
+      "bytes": 214,
+      "role": "record",
+      "sha256": "312d2dcaae2e2c2ff5ec05c9937de883aca7bb6274e48f36464be8288ecc48b2"
+    }
+  },
+  "id": "enamel_blue",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "painted",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "painted"
+    ],
+    "recipe": [
+      "painted_metal"
+    ]
+  },
+  "title": "Enamel blue",
+  "usd": {
+    "default_prim": "/enamel_blue",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/enamel_blue/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

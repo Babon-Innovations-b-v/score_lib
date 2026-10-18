@@ -1,0 +1,103 @@
+{
+  "address": "model/sample_scanner_1@1",
+  "files": {
+    "model.json": {
+      "bytes": 327,
+      "role": "record",
+      "sha256": "aecd442301b220fe182c07ceb6d2a8982065ff4aed67983490a3ae0725f10fc7"
+    },
+    "model.usdc": {
+      "bytes": 512462,
+      "role": "usd",
+      "sha256": "6055b6b037d4a894ccce788b7e2925c1a842a02cc2d8ce29583d15f2ffacdf10"
+    },
+    "preview.png": {
+      "bytes": 24371,
+      "role": "picture",
+      "sha256": "16a7370b1b26c5d7e794a9a7305900fdc575d750db6c5c20c833c733934534fd"
+    },
+    "textures/sample_scanner_1_base_color.png": {
+      "bytes": 42700,
+      "role": "texture",
+      "sha256": "5b35d98e828fb9c02fbad92fdde4b78ca07659156238f23a8873748e51f37068"
+    },
+    "textures/sample_scanner_1_metal_roughness.png": {
+      "bytes": 35208,
+      "role": "texture",
+      "sha256": "d5c8457a3aa2a7e94e8b7b10466fd185824205fdf0d9f58a600ce32429510918"
+    },
+    "textures/sample_scanner_1_normal.png": {
+      "bytes": 270892,
+      "role": "texture",
+      "sha256": "b3a69039e3d7d0954ec1185d0ab2b9fdc23d79c2ce11eec697fa1bb6212f7f33"
+    }
+  },
+  "id": "sample_scanner_1",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:07:25.503141+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "ff575204201b6fd2e437aa7c0138b21fe7fe2c65d21415907f354b4404eec7e2",
+    "models": [],
+    "node": "assembly@lab",
+    "output": "6e27c7d3c17e42a9d22d07e469a7b3a8e37bced2cae426b5827007830b83d66a",
+    "place": "lab",
+    "record_key": "90b53b440293d619704e077b09a234f458d34710e83b21efc9453072590550e1",
+    "source_name": "sample_scanner_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "lab"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Sample scanner 1",
+  "usd": {
+    "default_prim": "/sample_scanner_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/sample_scanner_1/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

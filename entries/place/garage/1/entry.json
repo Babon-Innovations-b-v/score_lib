@@ -1,0 +1,125 @@
+{
+  "address": "place/garage@1",
+  "files": {
+    "contract.json": {
+      "bytes": 99,
+      "role": "record",
+      "sha256": "c2b7151f92e6a67ca4666ea747ad262b67b4d0af824cc83862ce64d8cc49d12c"
+    },
+    "edit.usda": {
+      "bytes": 183,
+      "role": "usd",
+      "sha256": "8fc5485ea9a58537dd8289c516a85733e069ad7a17b866471667b8795142454f"
+    },
+    "gaps.json": {
+      "bytes": 4965,
+      "role": "record",
+      "sha256": "ae9b74b7cd2842a7a1744aab314a9b64b57b00176f3529ccc14324dec8bcb32b"
+    },
+    "garage.usda": {
+      "bytes": 773,
+      "role": "usd",
+      "sha256": "d923b0b1a590651f33c6fd8715efb325891fa7e17df210df1c2c36f279a6f1ef"
+    },
+    "inputs.json": {
+      "bytes": 24384,
+      "role": "record",
+      "sha256": "a38a415a588f388feebb8d78f9e4b6233c79e20d603a8686500d30a93cb4cd7d"
+    },
+    "origin.json": {
+      "bytes": 1139,
+      "role": "record",
+      "sha256": "1fbef8d5aac04acdf575e755eea5ceaa299777c39ea37208e306226c97e32dfd"
+    },
+    "scene.json": {
+      "bytes": 8824,
+      "role": "record",
+      "sha256": "75718c04f12497641691bb22a8a66a947809050247ea092187e5fa4b468e8d1a"
+    }
+  },
+  "id": "garage",
+  "kind": "place",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T22:23:43.534540+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "complete": {
+      "accept": {
+        "at": "2026-10-17T14:25:11.749161+00:00",
+        "by": "runner"
+      },
+      "code": "614e17d70adbc54d15ef2ac7532458f7dbfe393cb1a802ed4b39c5bbd5b6e794",
+      "models": [],
+      "node": "complete@garage",
+      "output": "c4b7c421a2934802f9d108d0f886e4401bfa3033629870dee2cb8882c4ec8ec6",
+      "record_key": "ba1a1b1f1550f6607540cdc99600d81918fdf3bce87b93a7979a1a3a1c17a57d"
+    },
+    "complete_failing": [
+      "named gaps"
+    ],
+    "gaps": "data/checks/gaps/garage.json",
+    "models": [],
+    "node": "assembly@garage",
+    "output": "b7aa59a6d59e8700275f9ac530ec0a920e7f3c63af29e58b93ecd3f39f5abe50",
+    "place": "garage",
+    "record_key": "08c1c1e01926f109c953734d2bf2bea3daed4a22d008d5b03cf237bf5c75ef70",
+    "unresolved_sublayers": [],
+    "world": "world1"
+  },
+  "requires": [
+    "layer/base.garage@1",
+    "layer/characters.garage@1",
+    "layer/effects.garage@1",
+    "layer/ground.garage@1",
+    "layer/light.garage@1",
+    "layer/machines.garage@1",
+    "layer/motion.garage@1",
+    "layer/motion_keys.garage@1",
+    "layer/settle.garage@1",
+    "layer/sound.garage@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "garage"
+  ],
+  "state": "draft",
+  "tags": {
+    "complete": [
+      "named_gaps"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Garage",
+  "usd": {
+    "default_prim": "/garage",
+    "layer": "root",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/place/garage/1/garage.usda",
+    "root": "garage.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": "Y",
+    "use": "open"
+  },
+  "version": 1
+}

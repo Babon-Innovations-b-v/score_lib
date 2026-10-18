@@ -1,0 +1,103 @@
+{
+  "address": "model/meter_box_2@1",
+  "files": {
+    "model.json": {
+      "bytes": 284,
+      "role": "record",
+      "sha256": "1bbd4e3ac96c29526ba1f2aeacb3dc89d29342c3bbdc13bc2bbdc91f28482ee5"
+    },
+    "model.usdc": {
+      "bytes": 14366,
+      "role": "usd",
+      "sha256": "a9728d7fd806a0b5bef9ea50abbfc69a5185be10651100fbbd9017184d5d971b"
+    },
+    "preview.png": {
+      "bytes": 8781,
+      "role": "picture",
+      "sha256": "ee3e38b8dfda42d8ccbe28354c06ad123007cbc6806ad879ad2d1e3f08ab210b"
+    },
+    "textures/prologue_street_street_level_8_base_color.png": {
+      "bytes": 1420926,
+      "role": "texture",
+      "sha256": "d995de9383e0186bbe6120fde78ac40592cead758f99ba3b501fd2fc18643742"
+    },
+    "textures/prologue_street_street_level_8_metal_roughness.png": {
+      "bytes": 731087,
+      "role": "texture",
+      "sha256": "06faf869ea42cde6a589859156d737afb2f24cb63e659e315e3521d6c2bd09a6"
+    },
+    "textures/prologue_street_street_level_8_normal.png": {
+      "bytes": 3763612,
+      "role": "texture",
+      "sha256": "d708f4878764e82fc5687584dc67832bd75d3aa6d764044fe33cf6535c7ed08c"
+    }
+  },
+  "id": "meter_box_2",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-15T17:38:29.285750+00:00",
+      "by": "runner"
+    },
+    "code": "e172da5a348a36e044c48ac88c4301ef36b984d2606f116b55884e77f224e788",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "4e4f4f3e7f6d74c367c2fd89fb98b0b5255e8c9275e8fddaa118f88e255c7d10",
+    "models": [],
+    "node": "assembly@street",
+    "output": "bbaaeb0aa7195bd7d899a3f5ff837f9ba560320bced6dcf06bdea37704342dad",
+    "place": "street",
+    "record_key": "eea7a7e11741099d56afa13effecfae534999af63793625de4692628148864f0",
+    "source_name": "meter_box_2",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "street"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "outside"
+    ]
+  },
+  "title": "Meter box 2",
+  "usd": {
+    "default_prim": "/meter_box_2",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/meter_box_2/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

@@ -1,0 +1,88 @@
+{
+  "address": "surface/steel_polished@1",
+  "files": {
+    "material.usda": {
+      "bytes": 556,
+      "role": "usd",
+      "sha256": "fe9ad5c02ed2186c5e9dce9712d1b7875a1924d3304012d9832ec235fc80ca0d"
+    },
+    "preview.png": {
+      "bytes": 17507,
+      "role": "picture",
+      "sha256": "d25bebec5a3d39639d0cff8f40fbdbe7159c0750e4cff0c4df996521c55e0b1f"
+    },
+    "surface.json": {
+      "bytes": 526,
+      "role": "record",
+      "sha256": "594d6ef8b483bea32797cf1a51b9c8d1722d1609c90cb4f3790c38af9d620735"
+    }
+  },
+  "id": "steel_polished",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "steel",
+    "place": "cockpit",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "cockpit",
+    "engineroom",
+    "galley",
+    "navigation",
+    "quarters",
+    "shiplock",
+    "storage",
+    "walkway"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "steel"
+    ],
+    "recipe": [
+      "bare_metal"
+    ]
+  },
+  "title": "Steel polished",
+  "usd": {
+    "default_prim": "/steel_polished",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/steel_polished/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

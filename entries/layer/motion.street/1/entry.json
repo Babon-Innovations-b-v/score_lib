@@ -1,0 +1,84 @@
+{
+  "address": "layer/motion.street@1",
+  "files": {
+    "layer.usda": {
+      "bytes": 260,
+      "role": "usd",
+      "sha256": "22ad122564372455280940a642cfff539a6ec9d077ca8f81ba263f893e7ad8c4"
+    },
+    "movers.json": {
+      "bytes": 67,
+      "role": "record",
+      "sha256": "4771baf03275bf6fb4ebee48f9036708a7845c8f1e2bc23a2cee1fbd4bff3234"
+    }
+  },
+  "id": "motion.street",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-15T17:38:29.285750+00:00",
+      "by": "runner"
+    },
+    "code": "e172da5a348a36e044c48ac88c4301ef36b984d2606f116b55884e77f224e788",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/motion.usda",
+        "sha256": "22ad122564372455280940a642cfff539a6ec9d077ca8f81ba263f893e7ad8c4"
+      }
+    },
+    "models": [],
+    "node": "assembly@street",
+    "output": "bbaaeb0aa7195bd7d899a3f5ff837f9ba560320bced6dcf06bdea37704342dad",
+    "own_files": [],
+    "place": "street",
+    "record_key": "eea7a7e11741099d56afa13effecfae534999af63793625de4692628148864f0",
+    "side_records_from": "71887736fb69a1ccaf9694d7f9fb20ea1eb48138b8ddcb3c24a9957a202f0c04",
+    "source_name": "layers/motion.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/motion_movers@1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "street"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "motion"
+    ],
+    "place_kind": [
+      "outside",
+      "earth"
+    ]
+  },
+  "title": "Street motion layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "motion",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/motion.street/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

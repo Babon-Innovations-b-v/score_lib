@@ -1,0 +1,88 @@
+{
+  "address": "surface/suit_fabric_white@1",
+  "files": {
+    "material.usda": {
+      "bytes": 560,
+      "role": "usd",
+      "sha256": "30797dfad0e899ae70245945de335e12028b724d7f65098252d49a8ddd9b9a6b"
+    },
+    "preview.png": {
+      "bytes": 15979,
+      "role": "picture",
+      "sha256": "5cc276ab89369335434e74da7455b00739249c0df114c975426cfd657622e468"
+    },
+    "surface.json": {
+      "bytes": 618,
+      "role": "record",
+      "sha256": "27ab42d5b254d32ad08edcde62b93fc2e8fe2b307dc5859ab798a31cc2eafbe2"
+    }
+  },
+  "id": "suit_fabric_white",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "fabric",
+    "place": "cockpit",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "cockpit",
+    "engineroom",
+    "galley",
+    "navigation",
+    "quarters",
+    "shiplock",
+    "storage",
+    "walkway"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "fabric"
+    ],
+    "recipe": [
+      "rubber"
+    ]
+  },
+  "title": "Suit fabric white",
+  "usd": {
+    "default_prim": "/suit_fabric_white",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/suit_fabric_white/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

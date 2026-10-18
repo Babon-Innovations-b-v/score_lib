@@ -1,0 +1,103 @@
+{
+  "address": "model/reactor@1",
+  "files": {
+    "model.json": {
+      "bytes": 292,
+      "role": "record",
+      "sha256": "fb0055301eb8d1f703a0fb06fa5807cf558a98a2b8065c7e542d18048a5194d7"
+    },
+    "model.usdc": {
+      "bytes": 1917426,
+      "role": "usd",
+      "sha256": "4430545b30af1b35aff02b42a98ccfdc75f3702b9ba512ff44d8fdd5216f9836"
+    },
+    "preview.png": {
+      "bytes": 29310,
+      "role": "picture",
+      "sha256": "8e1a8cb3517db875ca0929680d24e5662c94333c02442b89b2004ca299ab87d1"
+    },
+    "textures/reactor_base_color.png": {
+      "bytes": 2012311,
+      "role": "texture",
+      "sha256": "777ce23210ebd89f049d3b71a7e330c9721b44052a41f06fa16757ef25a053e4"
+    },
+    "textures/reactor_metal_roughness.png": {
+      "bytes": 1490467,
+      "role": "texture",
+      "sha256": "b57b78a1190e86719cd92376b6251a32d0e2c1c5576f198ddf5e5a6bae28ef58"
+    },
+    "textures/reactor_normal.png": {
+      "bytes": 6944940,
+      "role": "texture",
+      "sha256": "ecb6ae24c5788fdb7c554b90f3da0974a80cd2c161f0a780158eec75bc6d8f54"
+    }
+  },
+  "id": "reactor",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:16:00.039696+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "f7a210c3cc6728dba384e4b5e19c35fed30650baeb1af7ebbb98b0a0bb88e431",
+    "models": [],
+    "node": "assembly@campgrounds",
+    "output": "7fcf4c6f9552d4edb6020038bb83dd248f2e602f1958878438d52dfc3a7685bb",
+    "place": "campgrounds",
+    "record_key": "3e28c5bc4fca67388ebba8768e3cf58d643f791893e4237289ddba7e9754e64e",
+    "source_name": "reactor",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "campgrounds"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "mars",
+      "outside"
+    ]
+  },
+  "title": "Reactor",
+  "usd": {
+    "default_prim": "/reactor",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/reactor/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

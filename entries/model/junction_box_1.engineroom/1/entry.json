@@ -1,0 +1,110 @@
+{
+  "address": "model/junction_box_1.engineroom@1",
+  "files": {
+    "model.json": {
+      "bytes": 277,
+      "role": "record",
+      "sha256": "57b62fff856c1ad9babc71e84fa1e1be1498f9628bc1859967d23d78f3f0703f"
+    },
+    "model.usdc": {
+      "bytes": 508751,
+      "role": "usd",
+      "sha256": "b4f36ca9bbcd5fd4650c39dab1c4b86e65a9486f6bef10acf4b6eb0652033054"
+    },
+    "preview.png": {
+      "bytes": 22603,
+      "role": "picture",
+      "sha256": "fb7d224f1edc36c70b05214ec6df4c96a69355069661ddd1f6b24ce34399e3ce"
+    },
+    "textures/junction_box_1_base_color.png": {
+      "bytes": 314483,
+      "role": "texture",
+      "sha256": "cec3bde4804c6a80a95b010a43947193f77470c00fc4164df76b09cbcd617db7"
+    },
+    "textures/junction_box_1_metal_roughness.png": {
+      "bytes": 245928,
+      "role": "texture",
+      "sha256": "d8321afb72d7b552db638d3d2775fb4a5d64a24818413f32cc35ac8b820bd351"
+    },
+    "textures/junction_box_1_normal.png": {
+      "bytes": 1099045,
+      "role": "texture",
+      "sha256": "0da3065fa1d9042d8a23f4c121372aba29ed9f9cc1dff1aa62c8fd1ddba9f5c1"
+    }
+  },
+  "id": "junction_box_1.engineroom",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T20:05:54.680906+00:00",
+      "by": "runner"
+    },
+    "aliases": [
+      [
+        "b4f36ca9bbcd5fd4650c39dab1c4b86e65a9486f6bef10acf4b6eb0652033054",
+        "model.usdc"
+      ]
+    ],
+    "code": "2c394fb6649caa75a8d8b07ff69369fcc217046e6bc8cb45084263388cde70f0",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "55d3af4a9fa90d5ca84bb8dbebc902e40db8ee1fd6ca0e34bb59516651ec8955",
+    "models": [],
+    "node": "assembly@engineroom",
+    "output": "2b04a49e1020abb736cf72066d11757c544981b242f901765795a03462916330",
+    "place": "engineroom",
+    "record_key": "0025709ddb07848c2946b6abd8a4f122e919acdde9cc419b62d42eab63a0b1e6",
+    "source_name": "junction_box_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "engineroom",
+    "lab"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Junction box 1",
+  "usd": {
+    "default_prim": "/junction_box_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/junction_box_1.engineroom/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

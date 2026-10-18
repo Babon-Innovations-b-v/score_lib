@@ -1,0 +1,84 @@
+{
+  "address": "layer/characters.lab@1",
+  "files": {
+    "characters.json": {
+      "bytes": 269,
+      "role": "record",
+      "sha256": "4030bc982afd92426767ec503c1357bd0d4fce3a030338453c9305a967ae6a6a"
+    },
+    "layer.usda": {
+      "bytes": 123,
+      "role": "usd",
+      "sha256": "fdffa8953b814ac94cc42eb71bca36f32772eca272341b646a4361fad124c364"
+    }
+  },
+  "id": "characters.lab",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:07:25.503141+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/characters.usda",
+        "sha256": "fdffa8953b814ac94cc42eb71bca36f32772eca272341b646a4361fad124c364"
+      }
+    },
+    "models": [],
+    "node": "assembly@lab",
+    "output": "6e27c7d3c17e42a9d22d07e469a7b3a8e37bced2cae426b5827007830b83d66a",
+    "own_files": [],
+    "place": "lab",
+    "record_key": "90b53b440293d619704e077b09a234f458d34710e83b21efc9453072590550e1",
+    "side_records_from": "520fd614c23c61d069250e629b1f1715f01526a48ef61cba596327bc87b8a2b3",
+    "source_name": "layers/characters.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/cast_spread@1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "lab"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "characters"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Lab characters layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "characters",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/characters.lab/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": 30.0,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

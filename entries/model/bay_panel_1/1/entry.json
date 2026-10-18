@@ -1,0 +1,110 @@
+{
+  "address": "model/bay_panel_1@1",
+  "files": {
+    "model.json": {
+      "bytes": 407,
+      "role": "record",
+      "sha256": "35b922cda5ddd96b8790668159cabc5b5183737e748729e5bb433aac359b4440"
+    },
+    "model.usdc": {
+      "bytes": 1503633,
+      "role": "usd",
+      "sha256": "152f421e00c1d30e8a00c9de387e63e726052cd03ab6cfdabd154c6d27f14fc2"
+    },
+    "preview.png": {
+      "bytes": 17615,
+      "role": "picture",
+      "sha256": "03e1e89d2ac0240d3a21270b43e50f7fb2a03406b1554d43bd0944b5b866ce56"
+    },
+    "textures/bay_panel_1_base_color.png": {
+      "bytes": 134980,
+      "role": "texture",
+      "sha256": "13770b88ce776bee18f32b7ae01ace330fae0a28ebdf93bc27fbd3261242098d"
+    },
+    "textures/bay_panel_1_metal_roughness.png": {
+      "bytes": 95428,
+      "role": "texture",
+      "sha256": "b7285dbd62cca3dd69bd38f49d16573bab505702cd36b546678d5750ef95a853"
+    },
+    "textures/bay_panel_1_normal.png": {
+      "bytes": 1037107,
+      "role": "texture",
+      "sha256": "4571d9f3b39dfb64619c0bf74d1ca6aa698e37fffc97866e881383c1701964b1"
+    }
+  },
+  "id": "bay_panel_1",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T22:23:43.534540+00:00",
+      "by": "runner"
+    },
+    "aliases": [
+      [
+        "152f421e00c1d30e8a00c9de387e63e726052cd03ab6cfdabd154c6d27f14fc2",
+        "model.usdc"
+      ]
+    ],
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "c4cdced307f4f30616845443d9feadc257fb31b886ef57efd62949e23494836f",
+    "models": [],
+    "node": "assembly@garage",
+    "output": "b7aa59a6d59e8700275f9ac530ec0a920e7f3c63af29e58b93ecd3f39f5abe50",
+    "place": "garage",
+    "record_key": "08c1c1e01926f109c953734d2bf2bea3daed4a22d008d5b03cf237bf5c75ef70",
+    "source_name": "bay_panel_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "garage",
+    "hangar"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Bay panel 1",
+  "usd": {
+    "default_prim": "/bay_panel_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/bay_panel_1/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

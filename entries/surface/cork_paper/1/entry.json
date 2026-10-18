@@ -1,0 +1,88 @@
+{
+  "address": "surface/cork_paper@1",
+  "files": {
+    "material.usda": {
+      "bytes": 546,
+      "role": "usd",
+      "sha256": "78ed0aa76aeb47c171b28e384ac526d97bef41716d65156ffd8b211c11004736"
+    },
+    "preview.png": {
+      "bytes": 23122,
+      "role": "picture",
+      "sha256": "d79a132cc2f2b556cd5d7100e3e74098b043051c7410d65c8e767f79d1b73b89"
+    },
+    "surface.json": {
+      "bytes": 432,
+      "role": "record",
+      "sha256": "9d8165b1bd8b7ff4dd282aaa13577c8910de99d9adc6b79ddc348747c822194b"
+    }
+  },
+  "id": "cork_paper",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "paper",
+    "place": "cockpit",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "cockpit",
+    "engineroom",
+    "galley",
+    "navigation",
+    "quarters",
+    "shiplock",
+    "storage",
+    "walkway"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "paper"
+    ],
+    "recipe": [
+      "rubber"
+    ]
+  },
+  "title": "Cork paper",
+  "usd": {
+    "default_prim": "/cork_paper",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/cork_paper/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

@@ -1,0 +1,108 @@
+{
+  "address": "surface/label_cable_run@1",
+  "files": {
+    "material.usda": {
+      "bytes": 558,
+      "role": "usd",
+      "sha256": "787d0ae3e4ba171158455fa0df03c423672a2b9abae9e7933d329d53e9892892"
+    },
+    "preview.png": {
+      "bytes": 16889,
+      "role": "picture",
+      "sha256": "8519058a84041c9f4ca2e614606ef1c2bd460bcd9df2c4e1f4956ea64a198976"
+    },
+    "surface.json": {
+      "bytes": 179,
+      "role": "record",
+      "sha256": "11f166e5ad9380125cf39d03f7efbd9ace97a86a68cb681bd92254bede855f8e"
+    }
+  },
+  "id": "label_cable_run",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "print",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "print"
+    ],
+    "recipe": [
+      "printed"
+    ]
+  },
+  "title": "Label cable run",
+  "usd": {
+    "default_prim": "/label_cable_run",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/label_cable_run/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

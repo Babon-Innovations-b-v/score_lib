@@ -1,0 +1,84 @@
+{
+  "address": "layer/settle.garage@1",
+  "files": {
+    "layer.usda": {
+      "bytes": 725,
+      "role": "usd",
+      "sha256": "5a4930c1d2f6914b1afc535adc2a191a0b662404456e0ae93770011dae958403"
+    },
+    "settle.json": {
+      "bytes": 4412,
+      "role": "record",
+      "sha256": "f80d8851c11496c6e97dde835815650bac2942f0b738349d8de59c7152774a59"
+    }
+  },
+  "id": "settle.garage",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T22:23:43.534540+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/settle.usda",
+        "sha256": "5a4930c1d2f6914b1afc535adc2a191a0b662404456e0ae93770011dae958403"
+      }
+    },
+    "models": [],
+    "node": "assembly@garage",
+    "output": "b7aa59a6d59e8700275f9ac530ec0a920e7f3c63af29e58b93ecd3f39f5abe50",
+    "own_files": [],
+    "place": "garage",
+    "record_key": "08c1c1e01926f109c953734d2bf2bea3daed4a22d008d5b03cf237bf5c75ef70",
+    "side_records_from": "82db9eca9f95a74729d63ef2a742a64ed3e9c111b252a4fec96b9160dc00d0f2",
+    "source_name": "layers/settle.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/settle@1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "garage"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "settle"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Garage settle layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "settle",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/settle.garage/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

@@ -1,0 +1,108 @@
+{
+  "address": "surface/sign_watches@1",
+  "files": {
+    "material.usda": {
+      "bytes": 549,
+      "role": "usd",
+      "sha256": "9f4db550f01aeffd0acc63ddefcacb99b55cf24451ef0c25a767f9822ab78925"
+    },
+    "preview.png": {
+      "bytes": 17017,
+      "role": "picture",
+      "sha256": "1ce187bbbf1d00d8d47887eee5994307285253df9cadfc71092b8a14e97de67c"
+    },
+    "surface.json": {
+      "bytes": 195,
+      "role": "record",
+      "sha256": "270b1b4e841043dca3a63da6be0a6200d7982ba64e56d8d0a25caa56ad571e94"
+    }
+  },
+  "id": "sign_watches",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "print",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "print"
+    ],
+    "recipe": [
+      "printed"
+    ]
+  },
+  "title": "Sign watches",
+  "usd": {
+    "default_prim": "/sign_watches",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/sign_watches/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

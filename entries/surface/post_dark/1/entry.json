@@ -1,0 +1,108 @@
+{
+  "address": "surface/post_dark@1",
+  "files": {
+    "material.usda": {
+      "bytes": 546,
+      "role": "usd",
+      "sha256": "14bff8899adad2d85c3965fc4903bd0c6dd272f73825394c1c5649717b7a357a"
+    },
+    "preview.png": {
+      "bytes": 19119,
+      "role": "picture",
+      "sha256": "54a38f90b647dda67caeafe8fb777f4de060b145df1bfbce3c6a6dad6c780e43"
+    },
+    "surface.json": {
+      "bytes": 162,
+      "role": "record",
+      "sha256": "90ce89686e3694571f4c4ed8270dc84422d1859b5f402a368a7cd36b05bfb7e6"
+    }
+  },
+  "id": "post_dark",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "rusted",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "rusted"
+    ],
+    "recipe": [
+      "rusted_metal"
+    ]
+  },
+  "title": "Post dark",
+  "usd": {
+    "default_prim": "/post_dark",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/post_dark/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

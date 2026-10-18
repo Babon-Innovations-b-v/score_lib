@@ -1,0 +1,108 @@
+{
+  "address": "surface/label_check_seal@1",
+  "files": {
+    "material.usda": {
+      "bytes": 559,
+      "role": "usd",
+      "sha256": "da1e9c9f91868c0322cdbac4eda5cdef8d8197bb8825c338c30f161f4be9c151"
+    },
+    "preview.png": {
+      "bytes": 21617,
+      "role": "picture",
+      "sha256": "9442e615a042fda31bc97455cd6f5c73594bdc528ca7e14af43153e0de1f2578"
+    },
+    "surface.json": {
+      "bytes": 177,
+      "role": "record",
+      "sha256": "41a519df01d3eeeae9b50cfa72163d73999ea1e6bf3701f1607e04b8fa19fcf4"
+    }
+  },
+  "id": "label_check_seal",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "print",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "print"
+    ],
+    "recipe": [
+      "printed"
+    ]
+  },
+  "title": "Label check seal",
+  "usd": {
+    "default_prim": "/label_check_seal",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/label_check_seal/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

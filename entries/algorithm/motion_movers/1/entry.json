@@ -1,0 +1,424 @@
+{
+  "address": "algorithm/motion_movers@1",
+  "files": {
+    "code.json": {
+      "bytes": 3627,
+      "role": "record",
+      "sha256": "c1cf231ed2adeeeccbb978ac777e0df7cd89e05b726ea6d9ceec4f9215c96363"
+    },
+    "code/score/__init__.py": {
+      "bytes": 0,
+      "role": "code",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "code/score/checks/__init__.py": {
+      "bytes": 5111,
+      "role": "code",
+      "sha256": "95c8487441b20e04f9706c0109de8e48a63e9acdb5f6c158c973824f2975b0fd"
+    },
+    "code/score/contracts/__init__.py": {
+      "bytes": 5024,
+      "role": "code",
+      "sha256": "1c0f030fd4a7110bdb7881c9e792243b87af42f60ca68dd39486808382f5edde"
+    },
+    "code/score/stages/__init__.py": {
+      "bytes": 46134,
+      "role": "code",
+      "sha256": "f394a3feab1a7718bfa03a1d2c5de14f1265a8d7e835caaf7df9e7b55a466a01"
+    },
+    "code/score/stages/assembly/__init__.py": {
+      "bytes": 18155,
+      "role": "code",
+      "sha256": "c96d6e5fb205491a6cd3b9f5c304ec660bd42861d17f1d5ca1d84fefcfca12f7"
+    },
+    "code/score/stages/assembly/baked.py": {
+      "bytes": 8277,
+      "role": "code",
+      "sha256": "2af8e89a17538158ebe2e52b209673638aa7c5ede684badc8121469c2311ca8c"
+    },
+    "code/score/stages/assembly/made_waiting.py": {
+      "bytes": 3958,
+      "role": "code",
+      "sha256": "b1c702716a36e55dd7bb0aa5b5a6c4be5a7567e7f1122e942aaaca4218bf074d"
+    },
+    "code/score/stages/assembly/record.py": {
+      "bytes": 12219,
+      "role": "code",
+      "sha256": "b5bb3e84568c4e7430298466336dfda62c987fa65faaf3b9d12f2fbbf63bed2a"
+    },
+    "code/score/stages/assembly/sounds.py": {
+      "bytes": 8834,
+      "role": "code",
+      "sha256": "d863e350bb804afbaf1cc0143259a3f981404f19ec10f5bd8d9219a8f3561d86"
+    },
+    "code/score/stages/motion/__init__.py": {
+      "bytes": 34709,
+      "role": "code",
+      "sha256": "5e3527efe5f949cb8a9fa903895d40452cfd4321e9d2a46630124c09dbbb53e7"
+    },
+    "code/score/stages/motion/space.py": {
+      "bytes": 12767,
+      "role": "code",
+      "sha256": "6f2b1ccbf3e33ea1d7f548d0a64cb05182a2f432bb9e0d54ab803fbfb31da3b2"
+    },
+    "code/score/store/__init__.py": {
+      "bytes": 18948,
+      "role": "code",
+      "sha256": "55adab95c87963bf1196f319a81bdce6787ada73ae1c75abb467f5e660c78374"
+    },
+    "code/tools/usd/annotate.py": {
+      "bytes": 7768,
+      "role": "code",
+      "sha256": "c9f47927a2f6a3edcdf3da12f0ade1be138c3c0c7574008eb30458d3a86fbf07"
+    },
+    "code/tools/usd/builders.py": {
+      "bytes": 35527,
+      "role": "code",
+      "sha256": "a4eb1abba16bc589f1f495625c1151d66c76a3babfa23ed10e20a7d8dc8536fe"
+    },
+    "code/tools/usd/collide.py": {
+      "bytes": 7744,
+      "role": "code",
+      "sha256": "e0dd476ad4181d4db80b377110779182b2e2d4e7568b68dda48cbd8171474daf"
+    },
+    "code/tools/usd/earth.py": {
+      "bytes": 4311,
+      "role": "code",
+      "sha256": "6d0a6a7e6b35ac6da1e32084cce4d3dd6977770875b655088411112ab607dc7c"
+    },
+    "code/tools/usd/export.py": {
+      "bytes": 50261,
+      "role": "code",
+      "sha256": "3c6d8200252aa3c66f38a4a4b2d7236de469367e04ded06ac4fbab823e78740c"
+    },
+    "code/tools/usd/glb_asset.py": {
+      "bytes": 7027,
+      "role": "code",
+      "sha256": "f11c3d7a3d857ed0f426c4ea0d2f5eee6a3059cf4e465e7081fade77d9518590"
+    },
+    "code/tools/usd/ground.py": {
+      "bytes": 16928,
+      "role": "code",
+      "sha256": "1bbf7f9ca190f66133195b6fcdfebe6c2f1db159e6eb00b7fb2f5d35dc925133"
+    },
+    "code/tools/usd/ground_detail.py": {
+      "bytes": 23438,
+      "role": "code",
+      "sha256": "f915570e77ed7ed95f6ac83fb15a415dec9670f58d546463f8c00e4e954627c3"
+    },
+    "code/tools/usd/mars_sky.py": {
+      "bytes": 4698,
+      "role": "code",
+      "sha256": "424fa5d50170f7b97e07f0f1f725e011ef9cbefd5d395711e180f3bae912d0ee"
+    },
+    "code/tools/usd/motion.py": {
+      "bytes": 16516,
+      "role": "code",
+      "sha256": "6d48d81cbac1c025d1f10a00212668c16149ee984b1e041516087af9a96aa532"
+    },
+    "code/tools/usd/movers.py": {
+      "bytes": 20005,
+      "role": "code",
+      "sha256": "a470d719dffc2e55a902e0999764d902836b04b454ce5ca456aebb67dafb948b"
+    },
+    "code/tools/usd/orbits.py": {
+      "bytes": 6420,
+      "role": "code",
+      "sha256": "ea3f51f9dda02b62116a7d9968f6573adaf8d1084c94ad4d3d459d3f79b0bb71"
+    },
+    "code/tools/usd/pick_lock.py": {
+      "bytes": 2588,
+      "role": "code",
+      "sha256": "af11a3524ca12ed87b684e71dea5820006e1bad6913c5973d3e7e2e2867f2f0c"
+    },
+    "code/tools/usd/placeholders.py": {
+      "bytes": 10367,
+      "role": "code",
+      "sha256": "28d2b00f6bf66b89ec043bbbfde38d5630f455ccbce50a94f1eade45e8d123ae"
+    },
+    "code/tools/usd/resting.py": {
+      "bytes": 14997,
+      "role": "code",
+      "sha256": "903041d7540435b6f75a8f4163bb2616c92e6fe9144c7042ac47f402d3fee5de"
+    },
+    "code/tools/usd/rocks.py": {
+      "bytes": 8343,
+      "role": "code",
+      "sha256": "4d359ca9bf79b906b218ba992b70c661e216411a409cc2ec99bf4093f26d9df1"
+    },
+    "code/tools/usd/scene.py": {
+      "bytes": 70939,
+      "role": "code",
+      "sha256": "4e130f0aef9846caaeba16efae688eb66b8e8c27e581a390ecfc73d53a3aa3fe"
+    },
+    "code/tools/usd/settle.py": {
+      "bytes": 46116,
+      "role": "code",
+      "sha256": "55d030a92d0181c505fc472dfc0a275b2ecc710a9693811492b8a47dff1d84c4"
+    },
+    "code/tools/usd/shaders.py": {
+      "bytes": 4762,
+      "role": "code",
+      "sha256": "46233e2bb32b827d09bf5da76f2946ccfa3965ce0df0c9fcef2cc047c3ead3e4"
+    },
+    "code/tools/usd/sound.py": {
+      "bytes": 19427,
+      "role": "code",
+      "sha256": "efe3a0029e2ce0b052aabfad5a5f7a418bebde2d6b7745719ea5fc08ebcc5db4"
+    },
+    "code/tools/usd/stage_inputs.py": {
+      "bytes": 3573,
+      "role": "code",
+      "sha256": "57c6d1b2f2ff71cdeaeff6ab33c95688b49a09ffb67aea787211d937affa3e80"
+    },
+    "code/tools/usd/triage.py": {
+      "bytes": 39693,
+      "role": "code",
+      "sha256": "754a03ecfe59d51ef9b0495e073af0546db733b5af46497d0b95658c7370d72f"
+    },
+    "definition.json": {
+      "bytes": 897,
+      "role": "record",
+      "sha256": "871ad6cccb6eafc24f7a62e8b084faa44f1d072c9b94a182148d683b28f964c9"
+    },
+    "presets/world1/data/checks/motion.json": {
+      "bytes": 6082,
+      "role": "record",
+      "sha256": "4b256a2d9543e534ddd625fca1decfbb0cf26e0a75715d997f6b17cf0bd1d525"
+    },
+    "presets/world1/data/motion/airlock.json": {
+      "bytes": 4280,
+      "role": "record",
+      "sha256": "b760927403b9fcc4822cd943419baa0b009f86416678ed758a7714ead594f10b"
+    },
+    "presets/world1/data/motion/flat.json": {
+      "bytes": 1424,
+      "role": "record",
+      "sha256": "0e2a6368616bee02c879eee4a7c8884c8d5449a60efc8285f2e23af3074ad176"
+    },
+    "presets/world1/data/motion/garage.json": {
+      "bytes": 2756,
+      "role": "record",
+      "sha256": "5ccfc5dbae65ec778df2279b18168d8e21818fc17942099c2ae811e188edf8a0"
+    },
+    "presets/world1/data/motion/hangar.json": {
+      "bytes": 2047,
+      "role": "record",
+      "sha256": "f68b71c1bd290ece008eed9e43f03d89826e4c2b03d8206455e035f62abd91ca"
+    },
+    "presets/world1/data/motion/launch.json": {
+      "bytes": 1858,
+      "role": "record",
+      "sha256": "baeb85448e6ce8d1b9a0815dad37fa29bb7fafc069ecb4cd2b08cbe2d835f0f3"
+    },
+    "presets/world1/data/motion/workshop.json": {
+      "bytes": 1089,
+      "role": "record",
+      "sha256": "3fb044d921feeb7ece5ee65d102b182e16204a67bdf8012312c22c4e095479ca"
+    },
+    "presets/world1/data/movers/airlock.json": {
+      "bytes": 2710,
+      "role": "record",
+      "sha256": "8d29565514e3d94350fc40b67d8d82947543837a0a9915d411780d08fcd17304"
+    },
+    "presets/world1/data/movers/camp.json": {
+      "bytes": 133,
+      "role": "record",
+      "sha256": "20722f98057b647d595ec5d782db32a3f977cc77e5e6faa62ade81d02c0eb5d6"
+    },
+    "presets/world1/data/movers/campgrounds.json": {
+      "bytes": 436,
+      "role": "record",
+      "sha256": "56ae839b024d40dcd029292e29fb35abce4da3d749fc1437710bc578712e5f12"
+    },
+    "presets/world1/data/movers/flat.json": {
+      "bytes": 841,
+      "role": "record",
+      "sha256": "d63b9655fc26b6d1ef498beb60083c3871aa9511b9562fd6588ea30fb7f8ad83"
+    },
+    "presets/world1/data/movers/garage.json": {
+      "bytes": 4043,
+      "role": "record",
+      "sha256": "8a56e42eab1d5e8ca787795ba0de4c3ed65a7f965a542faeebca2b1340562517"
+    },
+    "presets/world1/data/movers/gdoor.json": {
+      "bytes": 149,
+      "role": "record",
+      "sha256": "91e4e77918974ef57ac55ea891ab5f8a417f05224131fe586893a63a0831fd81"
+    },
+    "presets/world1/data/movers/greenhouse.json": {
+      "bytes": 17514,
+      "role": "record",
+      "sha256": "b34b93c0bfd57082ca9baa760954ce5315dc8be12e4706204ff6f62dec646df4"
+    },
+    "presets/world1/data/movers/habitat.json": {
+      "bytes": 10364,
+      "role": "record",
+      "sha256": "30399ad66b895d5c5ce533058eb2756892ac19c5fe2b45459092aaea32dac2ef"
+    },
+    "presets/world1/data/movers/hangar.json": {
+      "bytes": 4446,
+      "role": "record",
+      "sha256": "c03fab0acbcb56106966125d72e2239e4c6fbb76117c4747c219d70783fa4d3b"
+    },
+    "presets/world1/data/movers/hdoor.json": {
+      "bytes": 149,
+      "role": "record",
+      "sha256": "2093b3c1e9273287fe11d251ca70d5c37194a83393846b26e0635da8056ee992"
+    },
+    "presets/world1/data/movers/hub.json": {
+      "bytes": 5213,
+      "role": "record",
+      "sha256": "f7c7075e242556aac8d27ba1a459046b35eaa345083ab294cc06a5c0fab4d3a9"
+    },
+    "presets/world1/data/movers/lab.json": {
+      "bytes": 5219,
+      "role": "record",
+      "sha256": "fec560461ab896bf03297ab107399b056131c6a03bff0a4370db0248b2c7ede8"
+    },
+    "presets/world1/data/movers/launch.json": {
+      "bytes": 7932,
+      "role": "record",
+      "sha256": "d567b5d33f55dea24a8e182004bf7b75cb64964aa723a1ef4ee00b24f966257f"
+    },
+    "presets/world1/data/movers/old_station.json": {
+      "bytes": 243,
+      "role": "record",
+      "sha256": "951a82cf498b8c028503c4fab3a3a1252fa60c4225a7e77c60de982355136f57"
+    },
+    "presets/world1/data/movers/square.json": {
+      "bytes": 199,
+      "role": "record",
+      "sha256": "8340792b7ac84f315f98957b60e36ab6ddab7f1c70ddc5ab86806ecdb11ec524"
+    },
+    "presets/world1/data/movers/stairwell.json": {
+      "bytes": 402,
+      "role": "record",
+      "sha256": "3a7e8b919bcae3a156928c8a67606fe24c3794fac02b83e0bb94d21734aea94e"
+    },
+    "presets/world1/data/movers/street.json": {
+      "bytes": 352,
+      "role": "record",
+      "sha256": "8a4eefe334fb72eb7e5a046497e24ae3592acd3d3fcb42d7c676bca656c381d6"
+    },
+    "presets/world1/data/movers/tube.json": {
+      "bytes": 146,
+      "role": "record",
+      "sha256": "7eedf51c227f25b9e1cac2ce95620edd2e0330372405765dc59a71a048a82a51"
+    },
+    "presets/world1/data/movers/workshop.json": {
+      "bytes": 8129,
+      "role": "record",
+      "sha256": "e55d352d05b92a7e00ed6b7cbe1fa3274954c3adc4465417ca41ac5f8579cbf3"
+    },
+    "presets/world1/data/movers/wreck.json": {
+      "bytes": 349,
+      "role": "record",
+      "sha256": "7ffe7a4cadafda31461b3fd87c91c5aa5e868c589388d9803609e7d465f5d254"
+    },
+    "presets/world1/seed.json": {
+      "bytes": 830,
+      "role": "record",
+      "sha256": "b3a8978f7176e9c9be09e21ab7a0a9838edc6539d41bc6ef0aecee5e774ad29f"
+    },
+    "run.json": {
+      "bytes": 364,
+      "role": "record",
+      "sha256": "dbdde5eb9dc87d134ca61d0a62e829c3e3988922d2df43a95c57a78f63e91f06"
+    },
+    "settings.schema.json": {
+      "bytes": 845,
+      "role": "record",
+      "sha256": "8a71ade233a9ff60f60c6090395472b6352b445785a9f5b6589c63a353d007d4"
+    },
+    "test/score/stages/motion/motion_test.py": {
+      "bytes": 7033,
+      "role": "code",
+      "sha256": "16e901c14650027f7c60f423074f7291e2e6093a599c1af4467200484784794d"
+    },
+    "test/tools/usd/motion_test.py": {
+      "bytes": 11840,
+      "role": "code",
+      "sha256": "057b743c11638d034def24cf2f0f658671d4981c100b73cdc5054223545b1c9c"
+    }
+  },
+  "id": "motion_movers",
+  "kind": "algorithm",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "no world 1 output in the store pictures this algorithm",
+  "provenance": {
+    "code": "dfac0a714b21c4294d944edda63cc4025e2015ceee4dcd5a60d05775e7db8a9e",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "nodes": [
+      "motion@airlock",
+      "motion@camp",
+      "motion@campgrounds",
+      "motion@flat",
+      "motion@garage",
+      "motion@gdoor",
+      "motion@greenhouse",
+      "motion@habitat",
+      "motion@hangar",
+      "motion@hdoor",
+      "motion@hub",
+      "motion@lab",
+      "motion@launch",
+      "motion@old_station",
+      "motion@square",
+      "motion@stairwell",
+      "motion@street",
+      "motion@tube",
+      "motion@workshop",
+      "motion@wreck"
+    ],
+    "stage": "motion",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "flat",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "old_station",
+    "square",
+    "stairwell",
+    "street",
+    "tube",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "needs": [],
+    "runnable": [
+      true
+    ]
+  },
+  "title": "Motion: game timed motions and movers (paths, swings, spins)",
+  "usd": null,
+  "version": 1
+}

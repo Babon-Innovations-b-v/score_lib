@@ -1,0 +1,94 @@
+{
+  "address": "effect/flame@1",
+  "files": {
+    "clip.usdc": {
+      "bytes": 1441336,
+      "role": "usd",
+      "sha256": "1c4fc80e664f69b0d3b395f26475ff9498d59703244d9e8245300fca2a5e2bd8"
+    },
+    "effect.usda": {
+      "bytes": 49989,
+      "role": "usd",
+      "sha256": "29aeeb9a4f7014ec5e9a44c4ce7d6d084b74f463f9f916b2e977dfc719e2bbe7"
+    },
+    "preview.png": {
+      "bytes": 31468,
+      "role": "picture",
+      "sha256": "67d1daa91d5ceaa0e2929f7ceca18205bf73c44c63ddd2bbbe5ec6cb91c95a1c"
+    },
+    "settings.json": {
+      "bytes": 1527,
+      "role": "record",
+      "sha256": "087b5bc939f5975dbe4835eb8095d5263b29068f9bf45e4c8fe9e5b768e05931"
+    }
+  },
+  "id": "flame",
+  "kind": "effect",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/points.py",
+    "of": "clip.usdc at clip time 12.0"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-15T06:23:31.528447+00:00",
+      "by": "runner"
+    },
+    "code": "bcb4de19a600c38d89a8733a5021c1a1d70e9715798df3581f7ad54703f37f6c",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "from": "footage: KSC-20190625-PH_CSH01_0013, KSC-20180206-PH_KLS02_0046 (the orange flame, half to one rocket height long under the rocket, widening as it goes)",
+    "models": [],
+    "node": "effects-layer@launch",
+    "output": "6661592a0391f23f240eef74e13976d953e7e5a592a471eafbd297a33ce6893e",
+    "place": "launch",
+    "prim": "/launch/Fixtures/rocket/flame",
+    "record_key": "3b9e779b1ab416b9f61b6b0ceac5191661c018ce08351c4888f300c1b3049ed6",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/particle_effects@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "launch"
+  ],
+  "state": "draft",
+  "tags": {
+    "effect": [
+      "rocket_flame"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "place_kind": [
+      "earth",
+      "outside"
+    ],
+    "weather": []
+  },
+  "title": "Flame",
+  "usd": {
+    "default_prim": "/flame",
+    "layer": "effects",
+    "meters_per_unit": null,
+    "path": "score_lib/effect/flame/1/effect.usda",
+    "root": "effect.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

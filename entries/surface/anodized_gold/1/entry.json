@@ -1,0 +1,108 @@
+{
+  "address": "surface/anodized_gold@1",
+  "files": {
+    "material.usda": {
+      "bytes": 562,
+      "role": "usd",
+      "sha256": "ad42d92f46f9d1ff510996d35ffcc3da601dc6ab7a88785987b55865d7439000"
+    },
+    "preview.png": {
+      "bytes": 21033,
+      "role": "picture",
+      "sha256": "e8c2fce0bc05837b3009a3650894786a9ed08e07f2e7532cb32fb94e9b53e01b"
+    },
+    "surface.json": {
+      "bytes": 145,
+      "role": "record",
+      "sha256": "90fad85733af7e1a9a045b86819638f79ce90f3bd8cd617d2e63499175e5f8fc"
+    }
+  },
+  "id": "anodized_gold",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "aluminium",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "aluminium"
+    ],
+    "recipe": [
+      "anodized"
+    ]
+  },
+  "title": "Anodized gold",
+  "usd": {
+    "default_prim": "/anodized_gold",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/anodized_gold/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

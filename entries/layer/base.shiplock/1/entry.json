@@ -1,0 +1,101 @@
+{
+  "address": "layer/base.shiplock@1",
+  "files": {
+    "layer.usda": {
+      "bytes": 285907,
+      "role": "usd",
+      "sha256": "ff6d72bf3747becda923390d4a409447f925494d7ddff02b929459d578206400"
+    }
+  },
+  "id": "base.shiplock",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T10:26:39.062614+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/base.usda",
+        "sha256": "266be6104edce65f4b6b5f49a6f98a3c6d712701a55f360f2d27eac9c47b9bfa"
+      }
+    },
+    "models": [],
+    "node": "assembly@shiplock",
+    "output": "9ea9c1ba2ba7fce72429f749372d757425d477683ae1bc551ad6d3e280d2b1ad",
+    "own_files": [],
+    "place": "shiplock",
+    "record_key": "adaee891e03334aa818fce0406f996d11d681dcf6c90ed18ccd6250eac3e41fe",
+    "side_records_from": null,
+    "source_name": "layers/base.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/room_layout@1"
+  },
+  "requires": [
+    "model/ceiling_light_panel_1.shiplock@1",
+    "model/corner_lamp_1@1",
+    "model/door_leaf_1.shiplock@1",
+    "model/floor_grate_1.shiplock@1",
+    "model/hatch_door_frame_1@1",
+    "model/locker_1@1",
+    "model/outer_hatch_1@1",
+    "model/overhead_vent_1@1",
+    "model/pipe_straight_1.shiplock@1",
+    "model/ring_floor_plate_1.shiplock@1",
+    "model/ring_floor_plate_2.shiplock@1",
+    "model/ring_floor_plate_3.shiplock@1",
+    "model/ring_floor_plate_4.shiplock@1",
+    "model/roof_face_panel_1.shiplock@1",
+    "model/wall_lower_plain_1.shiplock@1",
+    "model/wall_lower_plain_2.shiplock@1",
+    "model/wall_screen_1@1",
+    "model/wall_upper_plain_1.shiplock@1",
+    "model/wall_upper_plain_2.shiplock@1",
+    "model/wall_upper_plain_3.shiplock@1",
+    "model/wall_upper_plain_4.shiplock@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "shiplock"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "base"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Shiplock base layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/base.shiplock/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

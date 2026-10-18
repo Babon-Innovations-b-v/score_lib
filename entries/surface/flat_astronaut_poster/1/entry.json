@@ -1,0 +1,108 @@
+{
+  "address": "surface/flat_astronaut_poster@1",
+  "files": {
+    "material.usda": {
+      "bytes": 576,
+      "role": "usd",
+      "sha256": "ed7e326376a356469fed11bfddf40170b014d01e2cf4fbd97e52b0efae818fc8"
+    },
+    "preview.png": {
+      "bytes": 17024,
+      "role": "picture",
+      "sha256": "808ace10e4d7be79d48e874d4127f4fa0d238a6053d97b6cb72c7b7e60a2cfbe"
+    },
+    "surface.json": {
+      "bytes": 213,
+      "role": "record",
+      "sha256": "8e537d8a25f36c57fac7d83be52108e487092fc50d60aaa451d9c3195f3a364a"
+    }
+  },
+  "id": "flat_astronaut_poster",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "print",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "print"
+    ],
+    "recipe": [
+      "printed"
+    ]
+  },
+  "title": "Flat astronaut poster",
+  "usd": {
+    "default_prim": "/flat_astronaut_poster",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/flat_astronaut_poster/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

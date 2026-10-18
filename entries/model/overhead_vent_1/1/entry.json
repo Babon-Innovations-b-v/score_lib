@@ -1,0 +1,113 @@
+{
+  "address": "model/overhead_vent_1@1",
+  "files": {
+    "model.json": {
+      "bytes": 274,
+      "role": "record",
+      "sha256": "cdb50b810090f47b0f4df1b1f250f94d82694ab2a8fdaa3e5a2c84704a341ef9"
+    },
+    "model.usdc": {
+      "bytes": 511756,
+      "role": "usd",
+      "sha256": "e889cafa33239ee88a6b26e76f41df0930f8261c85ca137d2cd64ad97cf26011"
+    },
+    "preview.png": {
+      "bytes": 23410,
+      "role": "picture",
+      "sha256": "b6f15df07e3eceebf59a995d76908804a9f7e32481e84984ba1adfef1227d353"
+    },
+    "textures/overhead_vent_1_base_color.png": {
+      "bytes": 1119004,
+      "role": "texture",
+      "sha256": "2e8f110e87699700eee940f9840611a67f08e6a42349b176ed9564b4f8f30fa8"
+    },
+    "textures/overhead_vent_1_metal_roughness.png": {
+      "bytes": 894602,
+      "role": "texture",
+      "sha256": "c6f90a0d60d54674716ac7189d2802e625cf2b5d8d7c71f618d0fb4490eab292"
+    },
+    "textures/overhead_vent_1_normal.png": {
+      "bytes": 3698766,
+      "role": "texture",
+      "sha256": "a98d0d3182400b8cd37d9a641eb987bf370231fb632cf71a24b2bb300fdb8592"
+    }
+  },
+  "id": "overhead_vent_1",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T10:12:20.716778+00:00",
+      "by": "runner"
+    },
+    "aliases": [
+      [
+        "e889cafa33239ee88a6b26e76f41df0930f8261c85ca137d2cd64ad97cf26011",
+        "model.usdc"
+      ]
+    ],
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "0b89636306c7bb66c737eb226094d4ef7f11a94cf827b6f19cdcf2cb8f8ef722",
+    "models": [],
+    "node": "assembly@cockpit",
+    "output": "b8ec7f49d4ff317fb9858d8dce4a33fcfc258d958fcd162c2b292eabb7de5c83",
+    "place": "cockpit",
+    "record_key": "6507789d5dd016672ed678b36e6a88f586c76345c9ca611d2f50b16a694eea46",
+    "source_name": "overhead_vent_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "cockpit",
+    "engineroom",
+    "galley",
+    "navigation",
+    "quarters",
+    "shiplock",
+    "storage"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Overhead vent 1",
+  "usd": {
+    "default_prim": "/overhead_vent_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/overhead_vent_1/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

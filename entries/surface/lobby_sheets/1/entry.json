@@ -1,0 +1,108 @@
+{
+  "address": "surface/lobby_sheets@1",
+  "files": {
+    "material.usda": {
+      "bytes": 553,
+      "role": "usd",
+      "sha256": "b1aabf0456952fe9ca07220bd908bd05f4c4fb5aa98f18982a35136fd18fb1fa"
+    },
+    "preview.png": {
+      "bytes": 22786,
+      "role": "picture",
+      "sha256": "e3c2c4c3e0606f2de73543f9a2b7c5395da8aedf3a68e4171f1e8911873ddd32"
+    },
+    "surface.json": {
+      "bytes": 196,
+      "role": "record",
+      "sha256": "c43e576091bc7f098491dfca615ac3123bcf6546af4c2d3049e1a2ecc60894fc"
+    }
+  },
+  "id": "lobby_sheets",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "print",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "print"
+    ],
+    "recipe": [
+      "printed"
+    ]
+  },
+  "title": "Lobby sheets",
+  "usd": {
+    "default_prim": "/lobby_sheets",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/lobby_sheets/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

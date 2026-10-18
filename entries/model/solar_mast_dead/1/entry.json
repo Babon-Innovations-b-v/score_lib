@@ -1,0 +1,103 @@
+{
+  "address": "model/solar_mast_dead@1",
+  "files": {
+    "model.json": {
+      "bytes": 361,
+      "role": "record",
+      "sha256": "55905aca423c076f6bee36cf0bdda01c26595c4bfc5669be27719489c14ffd7f"
+    },
+    "model.usdc": {
+      "bytes": 5477255,
+      "role": "usd",
+      "sha256": "c22fe49f47b8d12f710e4d695bf60e0e76f18349a286b7876a4ff66b933dfd69"
+    },
+    "preview.png": {
+      "bytes": 14405,
+      "role": "picture",
+      "sha256": "f273404f165c7d0ca0d06ee40e0464a084bff89a1dd5646f40616dc262b752ba"
+    },
+    "textures/solar_mast_dead_base_color.png": {
+      "bytes": 2932190,
+      "role": "texture",
+      "sha256": "78e3a8f8a820317cd844e10e174a2c7335bb9bcc1590ca28f1f644fbd427b198"
+    },
+    "textures/solar_mast_dead_metal_roughness.png": {
+      "bytes": 2212146,
+      "role": "texture",
+      "sha256": "6b2a037b87374d38dfbccadb2042ea0a0d8c8592e09001f76026062e6f8d4204"
+    },
+    "textures/solar_mast_dead_normal.png": {
+      "bytes": 5968392,
+      "role": "texture",
+      "sha256": "5bd475fc326cabc83282e634dcebffe99d1574771705f993d73328e845bd5a93"
+    }
+  },
+  "id": "solar_mast_dead",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:02:30.466230+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "306b0bc18bdc34dc3601b35df237e5c372932c23f824a8a7de4662239cf23d98",
+    "models": [],
+    "node": "assembly@old_station",
+    "output": "f60adc09d2c14a31314d3bd31f69c2601467bfbcf728c76faa051b30b1810b56",
+    "place": "old_station",
+    "record_key": "7d9d97819faa5aebdafc6de56b258e509d111fd6834f0d009658ac7904c3e290",
+    "source_name": "solar_mast_dead",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "old_station"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "moon",
+      "outside"
+    ]
+  },
+  "title": "Solar mast dead",
+  "usd": {
+    "default_prim": "/solar_mast_dead",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/solar_mast_dead/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

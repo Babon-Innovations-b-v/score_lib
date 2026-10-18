@@ -1,0 +1,103 @@
+{
+  "address": "model/render_lower_3@1",
+  "files": {
+    "model.json": {
+      "bytes": 301,
+      "role": "record",
+      "sha256": "7239c2012e998fb4549d5302b9c9cbd2982001a6f5e3ded97c95a8155d4d2547"
+    },
+    "model.usdc": {
+      "bytes": 7766,
+      "role": "usd",
+      "sha256": "484315d53c7a456669fa0d9f041bed187abedbcdb5591e649c2f1c0ee15c5ba8"
+    },
+    "preview.png": {
+      "bytes": 8823,
+      "role": "picture",
+      "sha256": "27bae9cabe6d654261378001a56d0c4652a2f39043b4fd1d7bc57152844f0d35"
+    },
+    "textures/prologue_street_street_level_3_base_color.png": {
+      "bytes": 729719,
+      "role": "texture",
+      "sha256": "f349f3f28974bb7d3229332b0b877cab2ac34aced530c9d201eaaa193843ec30"
+    },
+    "textures/prologue_street_street_level_3_metal_roughness.png": {
+      "bytes": 123192,
+      "role": "texture",
+      "sha256": "39f0e1728a180fe3f19a7225da1dcda6b35890130834558a01633f14d5d8a755"
+    },
+    "textures/prologue_street_street_level_3_normal.png": {
+      "bytes": 3730249,
+      "role": "texture",
+      "sha256": "0ed3962e6ed6d94478c3d8a1b0463b10166136fede0a6ff0d8eeacdbcdc450c7"
+    }
+  },
+  "id": "render_lower_3",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-15T17:38:29.285750+00:00",
+      "by": "runner"
+    },
+    "code": "e172da5a348a36e044c48ac88c4301ef36b984d2606f116b55884e77f224e788",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "1fbed076ac59736c6953454d852455287a2a427ac9a917010041ea625f71498b",
+    "models": [],
+    "node": "assembly@street",
+    "output": "bbaaeb0aa7195bd7d899a3f5ff837f9ba560320bced6dcf06bdea37704342dad",
+    "place": "street",
+    "record_key": "eea7a7e11741099d56afa13effecfae534999af63793625de4692628148864f0",
+    "source_name": "render_lower_3",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "street"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "outside"
+    ]
+  },
+  "title": "Render lower 3",
+  "usd": {
+    "default_prim": "/render_lower_3",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/render_lower_3/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

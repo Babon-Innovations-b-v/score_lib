@@ -1,0 +1,103 @@
+{
+  "address": "model/desk_1@1",
+  "files": {
+    "model.json": {
+      "bytes": 302,
+      "role": "record",
+      "sha256": "c07c0f9244b55f1ffa4c397ea92ec529dc7fd02d57b43f5a6bb6c80d8aa5bf16"
+    },
+    "model.usdc": {
+      "bytes": 1889426,
+      "role": "usd",
+      "sha256": "544b67d68a08ffaf9bf64a6e89c8d58b23d1defbd050c6a789f28d07f614d40f"
+    },
+    "preview.png": {
+      "bytes": 19646,
+      "role": "picture",
+      "sha256": "18b7db7301c10b1951e7619810a5a65312b856c22e5b7a65a263a2281d20a99c"
+    },
+    "textures/desk_1_base_color.png": {
+      "bytes": 2199211,
+      "role": "texture",
+      "sha256": "fab75c8b3c0190251d5651db12adc45406bf4bca74b253946135ed5c29796d50"
+    },
+    "textures/desk_1_metal_roughness.png": {
+      "bytes": 1783737,
+      "role": "texture",
+      "sha256": "3699695fea8ac51caef1f955dacda35aa6a84e0a009ec0270241c304cfc93584"
+    },
+    "textures/desk_1_normal.png": {
+      "bytes": 9214220,
+      "role": "texture",
+      "sha256": "8429170c93bc016ba54f74c107c401b656a101df99811a05d6af7bead475582d"
+    }
+  },
+  "id": "desk_1",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:07:25.503141+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "250d15fc41d6856780b0ff817ca2496ebaaea954ccb26596a6a8ffd97bce5af5",
+    "models": [],
+    "node": "assembly@lab",
+    "output": "6e27c7d3c17e42a9d22d07e469a7b3a8e37bced2cae426b5827007830b83d66a",
+    "place": "lab",
+    "record_key": "90b53b440293d619704e077b09a234f458d34710e83b21efc9453072590550e1",
+    "source_name": "desk_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "lab"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Desk 1",
+  "usd": {
+    "default_prim": "/desk_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/desk_1/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

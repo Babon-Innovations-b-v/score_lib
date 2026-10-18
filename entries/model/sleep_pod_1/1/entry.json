@@ -1,0 +1,108 @@
+{
+  "address": "model/sleep_pod_1@1",
+  "files": {
+    "model.json": {
+      "bytes": 392,
+      "role": "record",
+      "sha256": "ecdd883540852fb24640da5654746fea4598d93d908e45218c54c60833ea4c47"
+    },
+    "model.usdc": {
+      "bytes": 211670,
+      "role": "usd",
+      "sha256": "d729c533178c46ef576e3800c26cbbd4ecc9e24b4f05eb3a1dd2048fe4c719fa"
+    },
+    "model_glow.usdc": {
+      "bytes": 11902,
+      "role": "usd",
+      "sha256": "d4775f4b22837ed49e38ea8c7dd00738caef5b724765e98988d63fa7e47b1247"
+    },
+    "preview.png": {
+      "bytes": 22772,
+      "role": "picture",
+      "sha256": "fd2ac546bdba8fe40e05d29bbc49e52dcd9d39daec4907538ddff75e627e1329"
+    },
+    "textures/habitat_gear_2_base_color.png": {
+      "bytes": 1071661,
+      "role": "texture",
+      "sha256": "1f4b87a95ed67464b2b268eca2e18c47f59b0fca47538ef4aa9731afdf3b0eca"
+    },
+    "textures/habitat_gear_2_metal_roughness.png": {
+      "bytes": 869021,
+      "role": "texture",
+      "sha256": "116bafb1f5e0773188fbba6ec99fd54266b1e38d2695cddbf51b0d86fb032e93"
+    },
+    "textures/habitat_gear_2_normal.png": {
+      "bytes": 4467954,
+      "role": "texture",
+      "sha256": "d7361026bbe3c786661c9cb8084b35ff71ce5044063472f5435a35725ce1b50e"
+    }
+  },
+  "id": "sleep_pod_1",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T09:31:21.711004+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "492bd7a4160ac72de4e55cce4ad11c2e32a2e5939bf8af63e8d382fa73ff63f5",
+    "models": [],
+    "node": "assembly@habitat",
+    "output": "e6cb813b79be54e9c4ec9a531b2407cc81765e13b62c9b0962394ef9645519d6",
+    "place": "habitat",
+    "record_key": "e2801490121188a98eb1a3bfb7c0acdf01953b265874ff4b2a27a83a896bd500",
+    "source_name": "sleep_pod_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "habitat"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Sleep pod 1",
+  "usd": {
+    "default_prim": "/sleep_pod_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/sleep_pod_1/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

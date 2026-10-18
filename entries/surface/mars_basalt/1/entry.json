@@ -1,0 +1,108 @@
+{
+  "address": "surface/mars_basalt@1",
+  "files": {
+    "material.usda": {
+      "bytes": 560,
+      "role": "usd",
+      "sha256": "d1eb5328844a11d5bd773058e2ed1b744528e5a274a597a763438e5d0cc3cdb8"
+    },
+    "preview.png": {
+      "bytes": 23581,
+      "role": "picture",
+      "sha256": "b43900b04bc2100398a7092166e5518a1526c7050023ce4708d1c18e8b5e2f91"
+    },
+    "surface.json": {
+      "bytes": 359,
+      "role": "record",
+      "sha256": "d6da3490557499dc8438ccc4930121ddef4e9a4b44146030c6d866f2ddc103e7"
+    }
+  },
+  "id": "mars_basalt",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "mars_surface",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "mars_surface"
+    ],
+    "recipe": [
+      "cast_metal"
+    ]
+  },
+  "title": "Mars basalt",
+  "usd": {
+    "default_prim": "/mars_basalt",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/mars_basalt/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

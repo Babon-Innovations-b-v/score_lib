@@ -1,0 +1,135 @@
+{
+  "address": "character/dress_sefa_work.camp@1",
+  "files": {
+    "body.glb": {
+      "bytes": 79019988,
+      "role": "gltf",
+      "sha256": "c3e266c494a99941431d15777d0643a624392c77aed4507e85a4b4f584252412"
+    },
+    "character.usdc": {
+      "bytes": 30376131,
+      "role": "usd",
+      "sha256": "3477aed911a6d37b3008a2087af8c2a5827fe5da138526a08f9c1c9022916ab3"
+    },
+    "dress.json": {
+      "bytes": 882,
+      "role": "record",
+      "sha256": "0a421e8b8089fd537b406c2c897b37e90c6197ddc6923cfbe95812192c16212c"
+    },
+    "look.json": {
+      "bytes": 279,
+      "role": "record",
+      "sha256": "361efbb8dc78c306c5b3ac95de0e82bf5d46290477d843ac0a75e95d4b171048"
+    },
+    "picture.png": {
+      "bytes": 807868,
+      "role": "picture",
+      "sha256": "4fd1516b3a8e89f8d7ae733bdcdee6971a8173fa5d942c4ea50709bc16163bd8"
+    },
+    "textures/body_0.png": {
+      "bytes": 12826,
+      "role": "texture",
+      "sha256": "55f748a3bb12626d09ead2b8e476640a79a59cc703395244e7dc87707262fc63"
+    }
+  },
+  "id": "dress_sefa_work.camp",
+  "kind": "character",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1; route in score/stages/people/__init__.py:1-3",
+        "spdx": "MIT",
+        "what": "Pixal3D: picture to 3D (the body's shape)"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1; route in score/stages/people/__init__.py:1-3",
+        "spdx": "LicenseRef-DINOv3-License",
+        "text": "DINOv3 licence",
+        "what": "Pixal3D's encoder (DINOv3)"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1; route in score/stages/people/__init__.py:1-3",
+        "spdx": "MIT",
+        "what": "SegviGen on TRELLIS.2: the finish map laid on the shape (surface stage)"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1; route in score/stages/people/__init__.py:1-3",
+        "spdx": "LicenseRef-paid-API-terms",
+        "text": "paid API",
+        "what": "Nano Banana Pro: finish maps (surface stage)"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1; route in score/stages/people/__init__.py:1-3",
+        "spdx": "LicenseRef-paid-API-terms",
+        "text": "paid API",
+        "what": "Gemini 3.1 Pro: finishes listed and named (surface stage)"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1; route in score/stages/people/__init__.py:1-3",
+        "spdx": "Apache-2.0",
+        "what": "SOMA-X and MHR: the skeleton"
+      }
+    ],
+    "note": "the paper's Table C1: every model in the framework must allow commercial use of its output (Pixal3D's and SegviGen's encoder); the provider's terms of service for a paid API; the paper (Table C1) states every model in the framework allows commercial use of its output",
+    "spdx": "Apache-2.0 AND LicenseRef-DINOv3-License AND LicenseRef-paid-API-terms AND MIT"
+  },
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "people-take-sefa_wide-work: closeup/pp-sefa_wide-work-s1.png"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-13T12:49:46.692259+00:00",
+      "by": "runner"
+    },
+    "code": "bc650586616cc463c162315c91260149dc71b3545ac26582695a2ba649f1fb5c",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "look": "sefa-work",
+    "models": [],
+    "node": "people-dress-sefa-work-in-camp",
+    "output": "80803b06d39cf03254bcc47f8142bc075b1af5e5c18d8d2af0df3410e336ceab",
+    "place": "camp",
+    "record_key": "a3bb256af58e67f0f7dae010a997c45225c10d20a50a520c780b9015806186cc",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "camp"
+  ],
+  "state": "draft",
+  "tags": {
+    "character": [
+      "dress"
+    ],
+    "engine": [
+      "usd"
+    ]
+  },
+  "title": "Sefa work",
+  "usd": {
+    "default_prim": "/Character",
+    "layer": "characters",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/character/dress_sefa_work.camp/1/character.usdc",
+    "root": "character.usdc",
+    "time_codes_per_second": 30.0,
+    "up_axis": "Y",
+    "use": "payload"
+  },
+  "version": 1
+}

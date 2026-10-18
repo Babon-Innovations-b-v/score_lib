@@ -1,0 +1,88 @@
+{
+  "address": "surface/tank_water@1",
+  "files": {
+    "material.usda": {
+      "bytes": 540,
+      "role": "usd",
+      "sha256": "9dc7c9f0ea78b7f284ebe559ba1c8fad1dffdfb2bd287f004ad16894410fbe44"
+    },
+    "preview.png": {
+      "bytes": 17461,
+      "role": "picture",
+      "sha256": "18bc524a8a912e40a7cfbba01b5e3e9ac0cc65cbf9adbcf263dcbc4621e2467c"
+    },
+    "surface.json": {
+      "bytes": 665,
+      "role": "record",
+      "sha256": "39fac8cdda353c36c80c5379aed6da60713c6b8480a5322d36208b5d6398c1ca"
+    }
+  },
+  "id": "tank_water",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "water",
+    "place": "cockpit",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "cockpit",
+    "engineroom",
+    "galley",
+    "navigation",
+    "quarters",
+    "shiplock",
+    "storage",
+    "walkway"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "water"
+    ],
+    "recipe": [
+      "glass"
+    ]
+  },
+  "title": "Tank water",
+  "usd": {
+    "default_prim": "/tank_water",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/tank_water/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

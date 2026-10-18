@@ -1,0 +1,91 @@
+{
+  "address": "model/fixture_earth_state_car@1",
+  "files": {
+    "model.json": {
+      "bytes": 241,
+      "role": "record",
+      "sha256": "4a528ebe680a120ccc8d79f5f1ea31f96c779d32282d2dfff9d42d98322d5782"
+    },
+    "model.usdc": {
+      "bytes": 1562486,
+      "role": "usd",
+      "sha256": "db8893d94992da9ee2147b3156fc40b2ea5338d69c37a0dcb5336faa5dfb1e4f"
+    },
+    "preview.png": {
+      "bytes": 49972,
+      "role": "picture",
+      "sha256": "0caede10aaa463870952fd06e3772d9d3f301769d9ed70e2d4a9f2a05c256c6c"
+    },
+    "textures/fixture_earth_state_car_0.png": {
+      "bytes": 2846171,
+      "role": "texture",
+      "sha256": "9cfcc6f34878843eab6babb77144b7a5f03249368b5f0e42be3b87d786123787"
+    }
+  },
+  "id": "fixture_earth_state_car",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "FLUX.2-klein-4B picture, Pixal3D mesh (take wf-state-car-1); author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/earth_state_car/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-15T17:38:29.285750+00:00",
+      "by": "runner"
+    },
+    "code": "e172da5a348a36e044c48ac88c4301ef36b984d2606f116b55884e77f224e788",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": null,
+    "models": [],
+    "node": "assembly@street",
+    "output": "bbaaeb0aa7195bd7d899a3f5ff837f9ba560320bced6dcf06bdea37704342dad",
+    "place": "street",
+    "record_key": "eea7a7e11741099d56afa13effecfae534999af63793625de4692628148864f0",
+    "source_name": "fixture_earth_state_car",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "street"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [],
+    "place_kind": [
+      "earth",
+      "outside"
+    ]
+  },
+  "title": "Fixture earth state car",
+  "usd": {
+    "default_prim": "/fixture_earth_state_car",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/fixture_earth_state_car/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

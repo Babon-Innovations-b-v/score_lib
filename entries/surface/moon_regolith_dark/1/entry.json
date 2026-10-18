@@ -1,0 +1,88 @@
+{
+  "address": "surface/moon_regolith_dark@1",
+  "files": {
+    "material.usda": {
+      "bytes": 577,
+      "role": "usd",
+      "sha256": "5508dd1a09d8d14dd4967139f824f4a3eeab03d979df5e7df05f4020e5bfb3cb"
+    },
+    "preview.png": {
+      "bytes": 20828,
+      "role": "picture",
+      "sha256": "184a30f7d01cefc4feb9ba626dfdb53ec8b6f7ddb899a5165d417b2f720fa13e"
+    },
+    "surface.json": {
+      "bytes": 281,
+      "role": "record",
+      "sha256": "cd9c537f74354abc8e63264198ca7a7390c36f6ebb2b10ca2a9482f076859344"
+    }
+  },
+  "id": "moon_regolith_dark",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "moon_surface",
+    "place": "cockpit",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "cockpit",
+    "engineroom",
+    "galley",
+    "navigation",
+    "quarters",
+    "shiplock",
+    "storage",
+    "walkway"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "moon_surface"
+    ],
+    "recipe": [
+      "rubber"
+    ]
+  },
+  "title": "Moon regolith dark",
+  "usd": {
+    "default_prim": "/moon_regolith_dark",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/moon_regolith_dark/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

@@ -1,0 +1,108 @@
+{
+  "address": "surface/flat_family_photo@1",
+  "files": {
+    "material.usda": {
+      "bytes": 564,
+      "role": "usd",
+      "sha256": "6ac21ed7775cae8808dd021186fcea3da30bd671d8cecf667e8e89714674f9d0"
+    },
+    "preview.png": {
+      "bytes": 18985,
+      "role": "picture",
+      "sha256": "df2ec801222df4b82675dc23ee61a638bf8162a35316d485c455391e0546af8a"
+    },
+    "surface.json": {
+      "bytes": 205,
+      "role": "record",
+      "sha256": "78dea9354b89bd8f59c05132c31982fdb243aa66d8d0cb700ab6da9bca35d29d"
+    }
+  },
+  "id": "flat_family_photo",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "print",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "print"
+    ],
+    "recipe": [
+      "printed"
+    ]
+  },
+  "title": "Flat family photo",
+  "usd": {
+    "default_prim": "/flat_family_photo",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/flat_family_photo/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

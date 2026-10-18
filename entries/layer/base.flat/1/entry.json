@@ -1,0 +1,155 @@
+{
+  "address": "layer/base.flat@1",
+  "files": {
+    "assets/textures/haze_ring.png": {
+      "bytes": 1382,
+      "role": "texture",
+      "sha256": "80afc91c8ebdb788c22a5f6b390fbab8cc352887fa70f4fd663e590de5da7bec"
+    },
+    "assets/textures/sky_halo.png": {
+      "bytes": 82050,
+      "role": "texture",
+      "sha256": "fb1632a89fad92a5dc8f7a1a5a9124d6fc43cc8241457c937938779a4ed5a9b2"
+    },
+    "assets/textures/sky_moon.png": {
+      "bytes": 160057,
+      "role": "texture",
+      "sha256": "c4320d387ff4c41c48077257468111df6df05d7251ee31f84ec589c911c8bc38"
+    },
+    "layer.usda": {
+      "bytes": 1172386,
+      "role": "usd",
+      "sha256": "94c2588c452e38fb30761b4c0c17e9f6c7f5fcd5c3c0b7ee04c8564afc7c8bfc"
+    }
+  },
+  "id": "base.flat",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-15T12:52:44.767077+00:00",
+      "by": "runner"
+    },
+    "code": "a463163a0eeef652acdcfd1091415cc08ea792bdf6eee5489b5a0b48e06ace87",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/base.usda",
+        "sha256": "459381087010d771362d0c55ab6dca700027b7bec77c9d6355821d94ea32d48a"
+      }
+    },
+    "models": [],
+    "node": "assembly@flat",
+    "output": "7164a61082dc77a23d6958d9f0e95ca4accc52c8781a93fbc670952303bbb4ff",
+    "own_files": [
+      "assets/textures/haze_ring.png",
+      "assets/textures/sky_halo.png",
+      "assets/textures/sky_moon.png"
+    ],
+    "place": "flat",
+    "record_key": "8bb7b4b3a3ec082c92dae2d6ca6380ae5dcbe1fe7b0248e538c9c0f86220f045",
+    "side_records_from": null,
+    "source_name": "layers/base.usda",
+    "unresolved": [
+      "../../far_city/far_city.usda"
+    ],
+    "world": "world1",
+    "written_by": "algorithm/room_layout@1"
+  },
+  "requires": [
+    "model/ashtray_1@1",
+    "model/balcony_door_frame_1@1",
+    "model/balcony_fern_pot_1@1",
+    "model/balcony_rail_1.flat@1",
+    "model/balcony_rail_2@1",
+    "model/balcony_rubber_plant_1@1",
+    "model/balcony_slab_1@1",
+    "model/bed_frame_1@1",
+    "model/bedside_lamp_1@1",
+    "model/bedside_table_1@1",
+    "model/bowl_stack_1@1",
+    "model/ceiling_fan_1@1",
+    "model/cooking_pot_1@1",
+    "model/crt_tv_1@1",
+    "model/crt_tv_1_screen_1@1",
+    "model/enamel_basin_1@1",
+    "model/floorboards_1@1",
+    "model/gas_stove_1@1",
+    "model/hanging_towel_1@1",
+    "model/kettle_1.flat@1",
+    "model/kitchen_counter_1@1",
+    "model/mattress_1@1",
+    "model/pillow_1.flat@1",
+    "model/plaster_ceiling_1.flat@1",
+    "model/plaster_wall_1.flat@1",
+    "model/plaster_wall_2.flat@1",
+    "model/plaster_wall_3.flat@1",
+    "model/plate_1@1",
+    "model/quilt_1@1",
+    "model/render_wall_1@1",
+    "model/sauce_bottle_1@1",
+    "model/sliding_glass_leaf_1@1",
+    "model/storage_box_1@1",
+    "model/table_1@1",
+    "model/tea_tin_1@1",
+    "model/thermos_1@1",
+    "model/timber_chair_1@1",
+    "model/timber_door_frame_1.flat@1",
+    "model/timber_door_leaf_1.flat@1",
+    "model/tube_light_1@1",
+    "model/tv_cabinet_1@1",
+    "model/wall_print_1.flat@1",
+    "model/wall_print_2.flat@1",
+    "model/wall_print_3.flat@1",
+    "model/wall_print_4.flat@1",
+    "model/wall_shelf_1@1",
+    "model/wardrobe_1@1",
+    "model/washbasin_stand_1@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "flat"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "base"
+    ],
+    "place_kind": [
+      "inside",
+      "earth"
+    ]
+  },
+  "title": "Flat base layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "base",
+    "meters_per_unit": null,
+    "neighbours": [
+      "place/launch@1",
+      "place/square@1",
+      "place/stairwell@1",
+      "place/street@1"
+    ],
+    "path": "score_lib/layer/base.flat/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

@@ -1,0 +1,108 @@
+{
+  "address": "surface/harbour_water@1",
+  "files": {
+    "material.usda": {
+      "bytes": 555,
+      "role": "usd",
+      "sha256": "4fb43d95a833fa1a9c94382751c0a20ebb078d3269394e5e7f78e8a029067da7"
+    },
+    "preview.png": {
+      "bytes": 10410,
+      "role": "picture",
+      "sha256": "881c74985064a8cde33a3af42503444100fcaf1b6761061c6cd073aa52a1ddbf"
+    },
+    "surface.json": {
+      "bytes": 161,
+      "role": "record",
+      "sha256": "62468a5019d1db756ce93c5fc122e8fd797d9bb0a53e0bb0e599e067296ecfd5"
+    }
+  },
+  "id": "harbour_water",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "water",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "water"
+    ],
+    "recipe": [
+      "glass"
+    ]
+  },
+  "title": "Harbour water",
+  "usd": {
+    "default_prim": "/harbour_water",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/harbour_water/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

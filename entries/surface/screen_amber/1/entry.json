@@ -1,0 +1,108 @@
+{
+  "address": "surface/screen_amber@1",
+  "files": {
+    "material.usda": {
+      "bytes": 553,
+      "role": "usd",
+      "sha256": "32d4696dc7df7ffd94d9d037ebfe62ff5d0eb2637d7494fffa289c6f6d346f06"
+    },
+    "preview.png": {
+      "bytes": 10114,
+      "role": "picture",
+      "sha256": "af7b03fb874335a3425fab2ea3da06ba8a07781dd3dea2ed773c8b3326fe2220"
+    },
+    "surface.json": {
+      "bytes": 173,
+      "role": "record",
+      "sha256": "a23f83dbf3b8c9ee9c70babae6900f138f532c2660e8fa2ca25e4a683d54a921"
+    }
+  },
+  "id": "screen_amber",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "screen",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "screen"
+    ],
+    "recipe": [
+      "screen"
+    ]
+  },
+  "title": "Screen amber",
+  "usd": {
+    "default_prim": "/screen_amber",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/screen_amber/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

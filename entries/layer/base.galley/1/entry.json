@@ -1,0 +1,99 @@
+{
+  "address": "layer/base.galley@1",
+  "files": {
+    "layer.usda": {
+      "bytes": 328565,
+      "role": "usd",
+      "sha256": "a15c742acdb37ac002c0e2ec55fcaa83eb1011e16528870af39e99225164d21b"
+    }
+  },
+  "id": "base.galley",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-17T09:49:25.951322+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/base.usda",
+        "sha256": "6f338ce3821c0e8fbfa51bb98b2bb9a8a70f43791cc07e25dbf885a145ad7878"
+      }
+    },
+    "models": [],
+    "node": "assembly@galley",
+    "output": "eabb9557c58e5b8c3f8af1c80b87f35086f778135b4488aad9798134c6539faa",
+    "own_files": [],
+    "place": "galley",
+    "record_key": "457d662c06cbee7295708f0dc0c0b7e3b5e8b2fb12052d9393b378d0ba644f4c",
+    "side_records_from": null,
+    "source_name": "layers/base.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/room_layout@1"
+  },
+  "requires": [
+    "model/ceiling_light_panel_1.galley@1",
+    "model/door_leaf_1.galley@1",
+    "model/edge_light_strip_1.galley@1",
+    "model/fold_down_seat_1@1",
+    "model/galley_counter_1.galley@1",
+    "model/galley_table_1@1",
+    "model/hatch_door_frame_1@1",
+    "model/locker_1@1",
+    "model/overhead_vent_1@1",
+    "model/ring_floor_plate_1.galley@1",
+    "model/roof_face_panel_1.galley@1",
+    "model/wall_lower_plain_1.galley@1",
+    "model/wall_lower_plain_2.galley@1",
+    "model/wall_lower_plain_3.galley@1",
+    "model/wall_screen_1@1",
+    "model/wall_upper_plain_1.galley@1",
+    "model/wall_upper_plain_2.galley@1",
+    "model/wall_upper_plain_3.galley@1",
+    "model/wall_upper_plain_4.galley@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "galley"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "base"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Galley base layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/base.galley/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

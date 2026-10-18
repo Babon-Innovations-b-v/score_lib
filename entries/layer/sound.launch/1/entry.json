@@ -1,0 +1,96 @@
+{
+  "address": "layer/sound.launch@1",
+  "files": {
+    "layer.usda": {
+      "bytes": 125618,
+      "role": "usd",
+      "sha256": "70911fdbb3ce1df3efab1dc234d374c08f8293fbcfef949aedac7fe0fdc87e02"
+    },
+    "sound.json": {
+      "bytes": 26882,
+      "role": "record",
+      "sha256": "884a1c7b1268e2776c3cee96d21a25ef0a4ec25001e22a089d80394a794b290e"
+    }
+  },
+  "id": "sound.launch",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-15T12:59:49.032817+00:00",
+      "by": "runner"
+    },
+    "code": "a463163a0eeef652acdcfd1091415cc08ea792bdf6eee5489b5a0b48e06ace87",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/sound.usda",
+        "sha256": "421c0acbce25459ef539cb86cb95d00195735348327fb6f004d6e4febd414025"
+      }
+    },
+    "models": [],
+    "node": "assembly@launch",
+    "output": "3da5eb7afef951572bd823e1c78de4b209d123aa5c61e7cd9e09deda57bb5a48",
+    "own_files": [],
+    "place": "launch",
+    "record_key": "5847448e1af903d9d737a9d25f3d1f3303a645a211dd8c1844d6b688faf8005d",
+    "side_records_from": "4557df99f4a9ccc391846d798dc02d1f01ea61f37b11cb5eaa98ac3f2d6b50b9",
+    "source_name": "layers/sound.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/sound_layer@1"
+  },
+  "requires": [
+    "sound/footstep_grating@1",
+    "sound/footstep_rubber@1",
+    "sound/footsteps_metal.launch@1",
+    "sound/impact_grating@1",
+    "sound/impact_rubber@1",
+    "sound/impact_steel_plate@1",
+    "sound/launch_pad@1",
+    "sound/rocket_launch@1",
+    "sound/scrape_grating@1",
+    "sound/scrape_rubber@1",
+    "sound/scrape_steel_plate@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "launch"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "sound"
+    ],
+    "place_kind": [
+      "outside",
+      "earth"
+    ]
+  },
+  "title": "Launch sound layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "sound",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/sound.launch/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

@@ -1,0 +1,165 @@
+{
+  "address": "kit/cockpit@1",
+  "files": {
+    "kit.json": {
+      "bytes": 33656,
+      "role": "record",
+      "sha256": "e85c3f4d80a9b4209ea72e3afcfc90b792f4e2f6a74875623d21a3802eac2fd4"
+    },
+    "preview.png": {
+      "bytes": 7341,
+      "role": "picture",
+      "sha256": "0691e9382c47aa996e5e9b9f924b0a8a9f5237ac25eb2d1c85a11a58316535f1"
+    },
+    "ship_kit/job-kit-floor_1.json": {
+      "bytes": 193458,
+      "role": "record",
+      "sha256": "2422de7fce7bf965dba35609add3e7da4f6255cd71d23f3fc96e546731b7ebb0"
+    },
+    "ship_kit/job-kit-floor_2.json": {
+      "bytes": 193079,
+      "role": "record",
+      "sha256": "211be7e4ecde876389bf8c0e5c54fe25a547313f650f47f9826e8b9e36a0e391"
+    },
+    "ship_kit/job-kit-gear_1.json": {
+      "bytes": 192824,
+      "role": "record",
+      "sha256": "b6d105b25379f259bb73ce668dfc22742d1d7d1f1d2b9cc9a0c3e8577f3e6034"
+    },
+    "ship_kit/job-kit-gear_2.json": {
+      "bytes": 192976,
+      "role": "record",
+      "sha256": "ffc37a97905270df3ddcec4f736787c0ad4e07d101f234150228cf8d287993ed"
+    },
+    "ship_kit/job-kit-gear_3.json": {
+      "bytes": 192829,
+      "role": "record",
+      "sha256": "1203d2a40800f7c8cfbf6a5011d40547a93eb2fe96d2417f79adcb247441c9dc"
+    },
+    "ship_kit/job-kit-gear_4.json": {
+      "bytes": 192644,
+      "role": "record",
+      "sha256": "a87bd0b0d1276c88a2a67a1a5170735080bb51f3b60b6b7f4494499b0f8299b5"
+    },
+    "ship_kit/job-kit-roof.json": {
+      "bytes": 193390,
+      "role": "record",
+      "sha256": "9d2bba231f0aac5ee081ed34e47d6355cb6e6ab190650d89b8b89cbf7608c4d1"
+    },
+    "ship_kit/job-kit-walls_high.json": {
+      "bytes": 193436,
+      "role": "record",
+      "sha256": "8aab79ba0bcf2d2956ced8090e52b1d24da2bfc3af5f27fb19355780b839d95b"
+    },
+    "ship_kit/job-kit-walls_low_1.json": {
+      "bytes": 192822,
+      "role": "record",
+      "sha256": "4e4f7c589e706fdd33df0b40b5f3a361e13d188e68ca904622424ac2f4735ab0"
+    },
+    "ship_kit/job-kit-walls_low_2.json": {
+      "bytes": 192671,
+      "role": "record",
+      "sha256": "8348ab175d48ada5865dc4580ace54fc8a73499fb6331c6b9fdd86da871c074a"
+    },
+    "ship_kit/layout-full.json": {
+      "bytes": 31913,
+      "role": "record",
+      "sha256": "fc34281a15c62f7fda93644b5b82453109cd925545d1db92dc7b796d7aeef87f"
+    },
+    "ship_kit/layout.json": {
+      "bytes": 26528,
+      "role": "record",
+      "sha256": "98ee5b7ff15db1e1d28a8f0f2eb858f64a56840b4cf7bddb1f3f0ff74dffa125"
+    },
+    "ship_kit/plan.json": {
+      "bytes": 8628,
+      "role": "record",
+      "sha256": "03b7662c33163d11c11e29fbcec308e44cea78a375a37ecab2741f92410a25ab"
+    }
+  },
+  "id": "cockpit",
+  "kind": "kit",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/plan.py",
+    "of": "kit.json pieces (88) from above"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "pieces": 88,
+    "place": "cockpit",
+    "ship_kit": {
+      "accept": {
+        "at": "2026-10-15T23:49:10.937235+00:00",
+        "by": "runner"
+      },
+      "code": "fa0e03dae5d30889cf6f98455ec978fbd3b275e036d58494ccb2eb593df5217a",
+      "models": [],
+      "node": "ship_kit@cockpit",
+      "output": "9ad2af77d3f71439cd864e51412a5587cadd17879851ef35015b0e03387a7482",
+      "record_key": "8b3ffb02db6b1cae8b7af44330047162ddbc7dca82f84cc2ba34a4b2139c2a66"
+    },
+    "source": "data/kit/cockpit.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/room_layout@1",
+    "model/ceiling_light_panel_1.cockpit@1",
+    "model/dash_light_bar_1@1",
+    "model/door_leaf_1.cockpit@1",
+    "model/edge_light_strip_1.cockpit@1",
+    "model/floor_grate_1.cockpit@1",
+    "model/frame_rib_1.cockpit@1",
+    "model/frame_rib_2.cockpit@1",
+    "model/ring_floor_plate_1.cockpit@1",
+    "model/ring_floor_plate_2.cockpit@1",
+    "model/ring_floor_plate_3.cockpit@1",
+    "model/ring_floor_plate_4.cockpit@1",
+    "model/ring_floor_plate_5.cockpit@1",
+    "model/ring_floor_plate_6.cockpit@1",
+    "model/ring_floor_plate_7.cockpit@1",
+    "model/roof_face_panel_1.cockpit@1",
+    "model/roof_face_panel_2.cockpit@1",
+    "model/roof_face_panel_3.cockpit@1",
+    "model/roof_face_panel_4.cockpit@1",
+    "model/thrust_indicator_1@1",
+    "model/wall_lower_plain_1.cockpit@1",
+    "model/wall_lower_plain_2.cockpit@1",
+    "model/wall_lower_plain_3.cockpit@1",
+    "model/wall_upper_plain_1.cockpit@1",
+    "model/wall_upper_plain_2.cockpit@1",
+    "model/wall_upper_plain_3.cockpit@1",
+    "model/wall_upper_plain_4.cockpit@1",
+    "model/wall_upper_plain_5.cockpit@1",
+    "model/wall_upper_plain_6.cockpit@1",
+    "model/window_frame_1@1",
+    "model/window_pane_1@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "cockpit"
+  ],
+  "state": "draft",
+  "tags": {
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Cockpit kit",
+  "usd": null,
+  "version": 1
+}

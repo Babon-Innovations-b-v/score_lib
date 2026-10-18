@@ -1,0 +1,108 @@
+{
+  "address": "surface/sign_lit@1",
+  "files": {
+    "material.usda": {
+      "bytes": 594,
+      "role": "usd",
+      "sha256": "d57cce23628cfa3700c33c1272b90dceef50bb78d97589074ce5f5142ca62e08"
+    },
+    "preview.png": {
+      "bytes": 20450,
+      "role": "picture",
+      "sha256": "49f6f61dc7369efc44b4828039e311c0ce1a1634be70aca761514d827eedad6b"
+    },
+    "surface.json": {
+      "bytes": 134,
+      "role": "record",
+      "sha256": "ada7fe1d7e07a77ab7460c1214d2377b8ca22fe22acb9258edef27af6d3beb42"
+    }
+  },
+  "id": "sign_lit",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "light",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "light"
+    ],
+    "recipe": [
+      "glowing"
+    ]
+  },
+  "title": "Sign lit",
+  "usd": {
+    "default_prim": "/sign_lit",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/sign_lit/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

@@ -1,0 +1,107 @@
+{
+  "address": "surface/pipe_steel.airlock@1",
+  "files": {
+    "material.usda": {
+      "bytes": 553,
+      "role": "usd",
+      "sha256": "39042e770dba961fc13c9a8094d5ec5e59b1338bbf8e79ca513aa99bc1407c14"
+    },
+    "preview.png": {
+      "bytes": 17042,
+      "role": "picture",
+      "sha256": "7b082a286cbd9f1706e16777b2a55f48762ace1ce3c3f449af6a624739b3ec7b"
+    },
+    "surface.json": {
+      "bytes": 190,
+      "role": "record",
+      "sha256": "1124d80b00237e3d4039241b46d513d68506776d2ec487e4bd137783c9b15dd5"
+    }
+  },
+  "id": "pipe_steel.airlock",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "steel",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "steel"
+    ],
+    "recipe": [
+      "bare_metal"
+    ]
+  },
+  "title": "Pipe steel",
+  "usd": {
+    "default_prim": "/pipe_steel",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/pipe_steel.airlock/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

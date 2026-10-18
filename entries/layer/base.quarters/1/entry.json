@@ -1,0 +1,98 @@
+{
+  "address": "layer/base.quarters@1",
+  "files": {
+    "layer.usda": {
+      "bytes": 316868,
+      "role": "usd",
+      "sha256": "900ff0b9e8be5ad2dc5c48ab115ce4749062aad64daa41ace2c9422f554b102c"
+    }
+  },
+  "id": "base.quarters",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-17T09:49:59.642437+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/base.usda",
+        "sha256": "cb17cb11c14e8025fb432e6cc48719472ed39479c6dd02a1772b5b9aff344881"
+      }
+    },
+    "models": [],
+    "node": "assembly@quarters",
+    "output": "0934c5ec797a592bef9fcdac6fe2542628ef4a5c60d80eecc9c8e27494da327c",
+    "own_files": [],
+    "place": "quarters",
+    "record_key": "af0a403a3f2f5e89e8d8fa6963c04ecafc141523dea0492f096bebb69558383d",
+    "side_records_from": null,
+    "source_name": "layers/base.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/room_layout@1"
+  },
+  "requires": [
+    "model/bunk_1.quarters@1",
+    "model/ceiling_light_panel_1.quarters@1",
+    "model/door_leaf_1.quarters@1",
+    "model/edge_light_strip_1.quarters@1",
+    "model/hatch_door_frame_1@1",
+    "model/locker_1@1",
+    "model/overhead_vent_1@1",
+    "model/ring_floor_plate_1.quarters@1",
+    "model/roof_face_panel_1.quarters@1",
+    "model/side_console_1@1",
+    "model/wall_lower_plain_1.quarters@1",
+    "model/wall_lower_plain_2.quarters@1",
+    "model/wall_lower_plain_3.quarters@1",
+    "model/wall_screen_1@1",
+    "model/wall_upper_plain_1.quarters@1",
+    "model/wall_upper_plain_2.quarters@1",
+    "model/wall_upper_plain_3.quarters@1",
+    "model/wall_upper_plain_4.quarters@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "quarters"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "base"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Quarters base layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/base.quarters/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

@@ -1,0 +1,96 @@
+{
+  "address": "effect/storm_grains_2_1@1",
+  "files": {
+    "clip.usdc": {
+      "bytes": 11602335,
+      "role": "usd",
+      "sha256": "ac07d06cc4f94126b6da8250867531f9cb801c61a78154d3f4bf43f201c33667"
+    },
+    "effect.usda": {
+      "bytes": 8258,
+      "role": "usd",
+      "sha256": "da54b506a1213665150cae981b95d7722952db622c100c270b48740f801078a1"
+    },
+    "preview.png": {
+      "bytes": 23365,
+      "role": "picture",
+      "sha256": "929ff20a1f257062fecfb35f75b36fea7a7b1f32280d9fd53b07d450d16ee918"
+    },
+    "settings.json": {
+      "bytes": 1765,
+      "role": "record",
+      "sha256": "9cd98de47e2ebd53d833f614da9032534cbb71d81d8e4aee26764bc10e0e5611"
+    }
+  },
+  "id": "storm_grains_2_1",
+  "kind": "effect",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/points.py",
+    "of": "clip.usdc at clip time 72.0"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-12T18:27:32.757391+00:00",
+      "by": "runner"
+    },
+    "code": "9b32f2200ac272fbb20a9a7b7f3190e8a3f4de0378733281b560755af276318d",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "from": "game/outside/dust/mars_wind.gd:18-52,190-219,294-313 (in the thick of a storm: DRIFT_HIGH_STORM 4 m, WIND_STORM 11 m/s, all of DRIFT_GRAINS_A_CELL 20,000 a cell), dust_grains.gd:24-38; the stage lays the three by three cells round the camp's middle (42 m across) where the game lays five by five round the player: the game draws the drift only within DRIFT_DRAWN_M 22 m of the eye, faded over 10 m more",
+    "models": [],
+    "node": "effects-layer@camp",
+    "output": "ba556d2238a88a22cad7bca11d03443466319f14ed988abf6ba9c1a5b933e9fe",
+    "place": "camp",
+    "prim": "/camp/Effects{weather=storm}storm_grains_2_1",
+    "record_key": "22796041a04506a19a5f8cef4fa80eb14e4fa8879a95dfff20e7cbb9f5ea901a",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/particle_effects@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "camp"
+  ],
+  "state": "draft",
+  "tags": {
+    "effect": [
+      "dust_storm_grains"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "place_kind": [
+      "mars",
+      "outside"
+    ],
+    "weather": [
+      "storm"
+    ]
+  },
+  "title": "Storm grains 2 1",
+  "usd": {
+    "default_prim": "/storm_grains_2_1",
+    "layer": "effects",
+    "meters_per_unit": null,
+    "path": "score_lib/effect/storm_grains_2_1/1/effect.usda",
+    "root": "effect.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

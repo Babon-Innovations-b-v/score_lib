@@ -1,0 +1,122 @@
+{
+  "address": "place/flat@1",
+  "files": {
+    "contract.json": {
+      "bytes": 99,
+      "role": "record",
+      "sha256": "c2b7151f92e6a67ca4666ea747ad262b67b4d0af824cc83862ce64d8cc49d12c"
+    },
+    "edit.usda": {
+      "bytes": 183,
+      "role": "usd",
+      "sha256": "8fc5485ea9a58537dd8289c516a85733e069ad7a17b866471667b8795142454f"
+    },
+    "flat.usda": {
+      "bytes": 588,
+      "role": "usd",
+      "sha256": "e616a8fd5e1fa0cedd194669b0fd0177f3eed7f3e0bbfb9daeecfbad1a1a8bc5"
+    },
+    "gaps.json": {
+      "bytes": 2191,
+      "role": "record",
+      "sha256": "d3df3cc9b5522f0b4647a95b09a31703cebea4e08cf2ee39d4879880cabccbbf"
+    },
+    "inputs.json": {
+      "bytes": 11530,
+      "role": "record",
+      "sha256": "ffa077c1bcc112347494f9ba2bcd9e5d9bf7ff134ddacef9a0acd26b7f3d5318"
+    },
+    "origin.json": {
+      "bytes": 786,
+      "role": "record",
+      "sha256": "2473761185a5829933593cc2caa186e034c6caebe75ccbc4fbbf0365180cc293"
+    },
+    "scene.json": {
+      "bytes": 7901,
+      "role": "record",
+      "sha256": "e5bedf6b66fbbb9b83a11d20bce6c76d80654c7972cd9aa9a7c11b3268a88eff"
+    }
+  },
+  "id": "flat",
+  "kind": "place",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-15T12:52:44.767077+00:00",
+      "by": "runner"
+    },
+    "code": "a463163a0eeef652acdcfd1091415cc08ea792bdf6eee5489b5a0b48e06ace87",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "complete": {
+      "accept": {
+        "at": "2026-10-18T03:20:21.647279+00:00",
+        "by": "runner"
+      },
+      "code": "614e17d70adbc54d15ef2ac7532458f7dbfe393cb1a802ed4b39c5bbd5b6e794",
+      "models": [],
+      "node": "complete@flat",
+      "output": "bf3951c33f5193aafe372dd07963708c23a451c9806d551340c55e98d7fe1559",
+      "record_key": "863b3fbe6ec35711142c8473e43d10c99063d62b2b29e24068d713a9884d4ff3"
+    },
+    "complete_failing": [
+      "named gaps"
+    ],
+    "gaps": "data/checks/gaps/flat.json",
+    "models": [],
+    "node": "assembly@flat",
+    "output": "7164a61082dc77a23d6958d9f0e95ca4accc52c8781a93fbc670952303bbb4ff",
+    "place": "flat",
+    "record_key": "8bb7b4b3a3ec082c92dae2d6ca6380ae5dcbe1fe7b0248e538c9c0f86220f045",
+    "unresolved_sublayers": [],
+    "world": "world1"
+  },
+  "requires": [
+    "layer/base.flat@1",
+    "layer/characters.flat@1",
+    "layer/effects.flat@1",
+    "layer/ground.flat@1",
+    "layer/light.flat@1",
+    "layer/motion.flat@1",
+    "layer/sound.flat@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "flat"
+  ],
+  "state": "draft",
+  "tags": {
+    "complete": [
+      "named_gaps"
+    ],
+    "place_kind": [
+      "inside",
+      "earth"
+    ]
+  },
+  "title": "Flat",
+  "usd": {
+    "default_prim": "/flat",
+    "layer": "root",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/place/flat/1/flat.usda",
+    "root": "flat.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": "Y",
+    "use": "open"
+  },
+  "version": 1
+}

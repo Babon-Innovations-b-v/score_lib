@@ -1,0 +1,94 @@
+{
+  "address": "effect/deluge_steam@1",
+  "files": {
+    "clip.usdc": {
+      "bytes": 26411545,
+      "role": "usd",
+      "sha256": "2f3e1c4b49a5e5cfa599293239155ea6d4f85a70c144acbf5f48fb971034e640"
+    },
+    "effect.usda": {
+      "bytes": 3135,
+      "role": "usd",
+      "sha256": "eb466e95a013493f871e10d5d8abd46b8d36f10ad27fc905bcca18379edfa020"
+    },
+    "preview.png": {
+      "bytes": 36171,
+      "role": "picture",
+      "sha256": "a3550a01ffb54fed2bacf345c3dcb5614916bde1c15b04d4056bb8593763e9f0"
+    },
+    "settings.json": {
+      "bytes": 1579,
+      "role": "record",
+      "sha256": "3587263d1e34309f8454fd5bdc18974cdc7d06b25dc3485a569ac16f4d4b1c10"
+    }
+  },
+  "id": "deluge_steam",
+  "kind": "effect",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/points.py",
+    "of": "clip.usdc at clip time 120.0"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-15T06:23:31.528447+00:00",
+      "by": "runner"
+    },
+    "code": "bcb4de19a600c38d89a8733a5021c1a1d70e9715798df3581f7ad54703f37f6c",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "from": "footage: KSC-20190625-PH_CSH01_0004, KSC-20180206-PH_KLS02_0046 (white steam rising round the pad's foot where the deluge's water meets the exhaust)",
+    "models": [],
+    "node": "effects-layer@launch",
+    "output": "6661592a0391f23f240eef74e13976d953e7e5a592a471eafbd297a33ce6893e",
+    "place": "launch",
+    "prim": "/launch/Effects/deluge_steam",
+    "record_key": "3b9e779b1ab416b9f61b6b0ceac5191661c018ce08351c4888f300c1b3049ed6",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/particle_effects@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "launch"
+  ],
+  "state": "draft",
+  "tags": {
+    "effect": [
+      "deluge_steam"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "place_kind": [
+      "earth",
+      "outside"
+    ],
+    "weather": []
+  },
+  "title": "Deluge steam",
+  "usd": {
+    "default_prim": "/deluge_steam",
+    "layer": "effects",
+    "meters_per_unit": null,
+    "path": "score_lib/effect/deluge_steam/1/effect.usda",
+    "root": "effect.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

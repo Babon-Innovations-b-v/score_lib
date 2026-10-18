@@ -1,0 +1,103 @@
+{
+  "address": "model/blanket_1@1",
+  "files": {
+    "model.json": {
+      "bytes": 254,
+      "role": "record",
+      "sha256": "1f906a328900bcf34b2e0954a2d1c922becb3ffbc98c5d8c8850e2d1bf9b5a69"
+    },
+    "model.usdc": {
+      "bytes": 507647,
+      "role": "usd",
+      "sha256": "50eb47af05f72b049354f5ec0fd5184eccf375bd9ef1f41e29fd3022f15869b5"
+    },
+    "preview.png": {
+      "bytes": 19185,
+      "role": "picture",
+      "sha256": "08c61a64d021b9c915740d8125b64041c7897f138d46d368d54c54ed077518eb"
+    },
+    "textures/blanket_1_base_color.png": {
+      "bytes": 95572,
+      "role": "texture",
+      "sha256": "b94e2b7074687076ae1d449789e703029a069f84581d9034ebee23242b3c8d18"
+    },
+    "textures/blanket_1_metal_roughness.png": {
+      "bytes": 15134,
+      "role": "texture",
+      "sha256": "f0c4d4ccca9a67243367d54f69f35d36802e8e681e7a774eab5bbc15cfcbadf6"
+    },
+    "textures/blanket_1_normal.png": {
+      "bytes": 720550,
+      "role": "texture",
+      "sha256": "c064cafe574c63c57d977737bf0735aa7eac05f747d4917f417ba8abc5e1492d"
+    }
+  },
+  "id": "blanket_1",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T09:31:21.711004+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "eec0b3fb4a7bc0692361a58f1cc2ffeb798e68bf55a7dd42948485c6057d10b5",
+    "models": [],
+    "node": "assembly@habitat",
+    "output": "e6cb813b79be54e9c4ec9a531b2407cc81765e13b62c9b0962394ef9645519d6",
+    "place": "habitat",
+    "record_key": "e2801490121188a98eb1a3bfb7c0acdf01953b265874ff4b2a27a83a896bd500",
+    "source_name": "blanket_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "habitat"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Blanket 1",
+  "usd": {
+    "default_prim": "/blanket_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/blanket_1/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

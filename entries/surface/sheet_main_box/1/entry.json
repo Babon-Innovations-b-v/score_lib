@@ -1,0 +1,108 @@
+{
+  "address": "surface/sheet_main_box@1",
+  "files": {
+    "material.usda": {
+      "bytes": 556,
+      "role": "usd",
+      "sha256": "a84ed2ca73059141ceb6b74636359570926ef8f235667a1564d3a6d0b8104cee"
+    },
+    "preview.png": {
+      "bytes": 16854,
+      "role": "picture",
+      "sha256": "940174b5b4c362200c788b6902566d5ea2cda8ae6b04e5e1668e287110567de7"
+    },
+    "surface.json": {
+      "bytes": 200,
+      "role": "record",
+      "sha256": "ee963bff10ab6ff02727cd85b01bb4747e91c28939d14230a454a6838bfeb44c"
+    }
+  },
+  "id": "sheet_main_box",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "print",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "print"
+    ],
+    "recipe": [
+      "printed"
+    ]
+  },
+  "title": "Sheet main box",
+  "usd": {
+    "default_prim": "/sheet_main_box",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/sheet_main_box/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

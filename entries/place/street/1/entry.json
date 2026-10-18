@@ -1,0 +1,121 @@
+{
+  "address": "place/street@1",
+  "files": {
+    "contract.json": {
+      "bytes": 99,
+      "role": "record",
+      "sha256": "c2b7151f92e6a67ca4666ea747ad262b67b4d0af824cc83862ce64d8cc49d12c"
+    },
+    "edit.usda": {
+      "bytes": 183,
+      "role": "usd",
+      "sha256": "8fc5485ea9a58537dd8289c516a85733e069ad7a17b866471667b8795142454f"
+    },
+    "gaps.json": {
+      "bytes": 2221,
+      "role": "record",
+      "sha256": "733d142f5f5231a93723aeeec691a237bfb9e5f02e203b10789a8111686ccf25"
+    },
+    "inputs.json": {
+      "bytes": 23900,
+      "role": "record",
+      "sha256": "f66c7c0f6fbce46395858e4cae91d08321348d1ffa52f9b706466bdee1e1a20d"
+    },
+    "origin.json": {
+      "bytes": 703,
+      "role": "record",
+      "sha256": "702b549550c538b6bc9a8ce67be39d238a92852799c884b21485540f26b37cb2"
+    },
+    "scene.json": {
+      "bytes": 8686,
+      "role": "record",
+      "sha256": "5e55f275bab5e3abf772cdd2e3664ba865f6464d19bbb7a0855fe10b47296a24"
+    },
+    "street.usda": {
+      "bytes": 549,
+      "role": "usd",
+      "sha256": "eda5370134d9467725ec198f93e4d5918869c4f4c53acc81aacd1adea67dcde3"
+    }
+  },
+  "id": "street",
+  "kind": "place",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-15T17:38:29.285750+00:00",
+      "by": "runner"
+    },
+    "code": "e172da5a348a36e044c48ac88c4301ef36b984d2606f116b55884e77f224e788",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "complete": {
+      "accept": {
+        "at": "2026-10-18T03:21:29.181270+00:00",
+        "by": "runner"
+      },
+      "code": "614e17d70adbc54d15ef2ac7532458f7dbfe393cb1a802ed4b39c5bbd5b6e794",
+      "models": [],
+      "node": "complete@street",
+      "output": "c2df187bcf0deb564691dfa1a37d7fe1a32f08d9e308f54d1bbda62b1b91bab5",
+      "record_key": "e56451d1fd35dc5df34ad8250fdf2b29d4e564fbab4a52f67bd09714fc70850b"
+    },
+    "complete_failing": [
+      "named gaps"
+    ],
+    "gaps": "data/checks/gaps/street.json",
+    "models": [],
+    "node": "assembly@street",
+    "output": "bbaaeb0aa7195bd7d899a3f5ff837f9ba560320bced6dcf06bdea37704342dad",
+    "place": "street",
+    "record_key": "eea7a7e11741099d56afa13effecfae534999af63793625de4692628148864f0",
+    "unresolved_sublayers": [],
+    "world": "world1"
+  },
+  "requires": [
+    "layer/base.street@1",
+    "layer/characters.street@1",
+    "layer/ground.street@1",
+    "layer/light.street@1",
+    "layer/motion.street@1",
+    "layer/sound.street@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "street"
+  ],
+  "state": "draft",
+  "tags": {
+    "complete": [
+      "named_gaps"
+    ],
+    "place_kind": [
+      "outside",
+      "earth"
+    ]
+  },
+  "title": "Street",
+  "usd": {
+    "default_prim": "/street",
+    "layer": "root",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/place/street/1/street.usda",
+    "root": "street.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": "Y",
+    "use": "open"
+  },
+  "version": 1
+}

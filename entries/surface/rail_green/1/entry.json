@@ -1,0 +1,108 @@
+{
+  "address": "surface/rail_green@1",
+  "files": {
+    "material.usda": {
+      "bytes": 554,
+      "role": "usd",
+      "sha256": "364d866dd847e48f44960be5b870d313f419f37aff8a86cdb00844cfbaca1b3f"
+    },
+    "preview.png": {
+      "bytes": 19792,
+      "role": "picture",
+      "sha256": "fa9a2516c7990f68b2864c297f125bf88c200c92f0a20352b726f697e2ff261f"
+    },
+    "surface.json": {
+      "bytes": 190,
+      "role": "record",
+      "sha256": "9c98351d72587fb671993873db62b1bf8f7a6182a7b90d7ce926159284d6111e"
+    }
+  },
+  "id": "rail_green",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "rusted",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "rusted"
+    ],
+    "recipe": [
+      "rusted_metal"
+    ]
+  },
+  "title": "Rail green",
+  "usd": {
+    "default_prim": "/rail_green",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/rail_green/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

@@ -1,0 +1,111 @@
+{
+  "address": "model/wall_screen_1@1",
+  "files": {
+    "model.json": {
+      "bytes": 309,
+      "role": "record",
+      "sha256": "6eedd2b91531e4cfea13024e0bd6ec8133661bf9b4357fcb9b41bce085f308db"
+    },
+    "model.usdc": {
+      "bytes": 1509733,
+      "role": "usd",
+      "sha256": "ce7f25f9bd9efc9450ff2d352187a03136e70c50e06c7ad084ebbae4acca0e90"
+    },
+    "preview.png": {
+      "bytes": 27999,
+      "role": "picture",
+      "sha256": "ccbfadc50452e877546d9ee415f40ae5fc138de8f70137eefd4fcf8a77bc7d94"
+    },
+    "textures/wall_screen_1_base_color.png": {
+      "bytes": 913801,
+      "role": "texture",
+      "sha256": "efc9e3b97009a3a0bcbd26ecc2e9511fc5951408fc024eb182537bbe6e8a63a7"
+    },
+    "textures/wall_screen_1_metal_roughness.png": {
+      "bytes": 654067,
+      "role": "texture",
+      "sha256": "7d5bf5d51a5f53d3f5fe95dd0a81a58bd251ba0c295e5d74ccce09a9ab5a83e0"
+    },
+    "textures/wall_screen_1_normal.png": {
+      "bytes": 4782407,
+      "role": "texture",
+      "sha256": "861edd1b4ccae276bf66ac89e1fe2a811ee680535ec944fa49b3d2a2744b5989"
+    }
+  },
+  "id": "wall_screen_1",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T20:05:54.680906+00:00",
+      "by": "runner"
+    },
+    "aliases": [
+      [
+        "ce7f25f9bd9efc9450ff2d352187a03136e70c50e06c7ad084ebbae4acca0e90",
+        "model.usdc"
+      ]
+    ],
+    "code": "2c394fb6649caa75a8d8b07ff69369fcc217046e6bc8cb45084263388cde70f0",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "c97a0944a510d67b7bc358e98b9318045d00844e9005766ba1b95b3a0efce75a",
+    "models": [],
+    "node": "assembly@engineroom",
+    "output": "2b04a49e1020abb736cf72066d11757c544981b242f901765795a03462916330",
+    "place": "engineroom",
+    "record_key": "0025709ddb07848c2946b6abd8a4f122e919acdde9cc419b62d42eab63a0b1e6",
+    "source_name": "wall_screen_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "engineroom",
+    "galley",
+    "navigation",
+    "quarters",
+    "shiplock"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Wall screen 1",
+  "usd": {
+    "default_prim": "/wall_screen_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/wall_screen_1/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

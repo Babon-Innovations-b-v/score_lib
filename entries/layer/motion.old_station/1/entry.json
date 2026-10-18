@@ -1,0 +1,84 @@
+{
+  "address": "layer/motion.old_station@1",
+  "files": {
+    "layer.usda": {
+      "bytes": 260,
+      "role": "usd",
+      "sha256": "22ad122564372455280940a642cfff539a6ec9d077ca8f81ba263f893e7ad8c4"
+    },
+    "movers.json": {
+      "bytes": 72,
+      "role": "record",
+      "sha256": "35f7cdb46a62b5a60df75720ca0a8bd1eb247807a07855c3d7718833e51d0341"
+    }
+  },
+  "id": "motion.old_station",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:02:30.466230+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/motion.usda",
+        "sha256": "22ad122564372455280940a642cfff539a6ec9d077ca8f81ba263f893e7ad8c4"
+      }
+    },
+    "models": [],
+    "node": "assembly@old_station",
+    "output": "f60adc09d2c14a31314d3bd31f69c2601467bfbcf728c76faa051b30b1810b56",
+    "own_files": [],
+    "place": "old_station",
+    "record_key": "7d9d97819faa5aebdafc6de56b258e509d111fd6834f0d009658ac7904c3e290",
+    "side_records_from": "42289145aa28af5cdd23e8bf272bec4adb4925c46b09de20daf49dc8bc1f3015",
+    "source_name": "layers/motion.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/motion_movers@1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "old_station"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "motion"
+    ],
+    "place_kind": [
+      "outside",
+      "moon"
+    ]
+  },
+  "title": "Old station motion layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "motion",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/motion.old_station/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

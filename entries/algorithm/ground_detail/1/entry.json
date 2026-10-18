@@ -1,0 +1,115 @@
+{
+  "address": "algorithm/ground_detail@1",
+  "files": {
+    "code.json": {
+      "bytes": 713,
+      "role": "record",
+      "sha256": "d9cf67a2165314925e61a6d4d229d5499be344e7951c245a3ea17d3f71d0c733"
+    },
+    "code/tools/usd/builders.py": {
+      "bytes": 35527,
+      "role": "code",
+      "sha256": "a4eb1abba16bc589f1f495625c1151d66c76a3babfa23ed10e20a7d8dc8536fe"
+    },
+    "code/tools/usd/ground.py": {
+      "bytes": 16928,
+      "role": "code",
+      "sha256": "1bbf7f9ca190f66133195b6fcdfebe6c2f1db159e6eb00b7fb2f5d35dc925133"
+    },
+    "code/tools/usd/ground_detail.py": {
+      "bytes": 23438,
+      "role": "code",
+      "sha256": "f915570e77ed7ed95f6ac83fb15a415dec9670f58d546463f8c00e4e954627c3"
+    },
+    "code/tools/usd/rocks.py": {
+      "bytes": 8343,
+      "role": "code",
+      "sha256": "4d359ca9bf79b906b218ba992b70c661e216411a409cc2ec99bf4093f26d9df1"
+    },
+    "definition.json": {
+      "bytes": 1116,
+      "role": "record",
+      "sha256": "739428ce926e03b183fbbfae921358d6c07798a7efcfddf744bd34a4cc180267"
+    },
+    "picture.png": {
+      "bytes": 3212896,
+      "role": "picture",
+      "sha256": "0c65ba7a0eece2503b23dccf4b72965b14bb0834987a8686e970a1c85c41398f"
+    },
+    "presets/world1/data/ground/mars.json": {
+      "bytes": 2785,
+      "role": "record",
+      "sha256": "274a73902e895dac98dda87ed75c3c0c0f07f379defd73aa05c101b52bc2889f"
+    },
+    "presets/world1/data/ground/moon.json": {
+      "bytes": 3793,
+      "role": "record",
+      "sha256": "2e93b12d5443929a58a2e337804e64f390f1777091a0324611b62fb523f60c48"
+    },
+    "presets/world1/seed.json": {
+      "bytes": 166,
+      "role": "record",
+      "sha256": "f01ebf493ca695c8faa5cc8d7ee153054112e6bcaeb64b3aca4bb701ad8c00fd"
+    },
+    "run.json": {
+      "bytes": 345,
+      "role": "record",
+      "sha256": "bddfd7f68f5e318f4c4af3438a6a847f33684ec60fce5f5d82fe5dc814d7fbe8"
+    },
+    "settings.schema.json": {
+      "bytes": 1755,
+      "role": "record",
+      "sha256": "bd0d8a3b96a5f44eb4035315cb272aae6ba7ad40e83ef4e89afdfbcc66ef00ac"
+    },
+    "test/tools/usd/resting_test.py": {
+      "bytes": 12666,
+      "role": "code",
+      "sha256": "4df60e0b7a5beea88e0b3dbd28ef4cd2ca9a4492117fe50a6a6eb6c1048fa7ac"
+    },
+    "test/tools/usd/settle_test.py": {
+      "bytes": 28223,
+      "role": "code",
+      "sha256": "5e6323988fae97c372c8a3cc7c1767e0e05de6826ade215f00fed017c00bbafc"
+    }
+  },
+  "id": "ground_detail",
+  "kind": "algorithm",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "terrain-look@launch: after/0/shot0-000-look.png"
+  },
+  "provenance": {
+    "code": "efd1229f07ab150d7695746bc1e6058420523a854794b1330f2ee70b034e0465",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "nodes": [],
+    "stage": null,
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "needs": [],
+    "runnable": [
+      true
+    ]
+  },
+  "title": "Placed ground: levelling, dents, ground detail bake, rock placement",
+  "usd": null,
+  "version": 1
+}

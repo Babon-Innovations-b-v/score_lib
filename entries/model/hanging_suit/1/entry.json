@@ -1,0 +1,101 @@
+{
+  "address": "model/hanging_suit@1",
+  "files": {
+    "model.json": {
+      "bytes": 202,
+      "role": "record",
+      "sha256": "0f09e4c4792db3a4df3c4f59695c5538de3e1fa92ad260fb08d13c11170fd0ca"
+    },
+    "model.usdc": {
+      "bytes": 1880143,
+      "role": "usd",
+      "sha256": "848d942cfdd351463cd7b83c02c840f5c14a03490d10d4ff1a3a556199a9a759"
+    },
+    "preview.png": {
+      "bytes": 18235,
+      "role": "picture",
+      "sha256": "c12902b8944d763a0951ea64ffb49fb16eacccf1a61b70ae1fd24d17390a5e77"
+    },
+    "textures/hanging_suit_base_color.png": {
+      "bytes": 1249062,
+      "role": "texture",
+      "sha256": "07c9d13a83e84255e8d97ebfd2796322ebe40653ba7584fbb068b69d548e73d6"
+    },
+    "textures/hanging_suit_metal_roughness.png": {
+      "bytes": 197254,
+      "role": "texture",
+      "sha256": "b1b5807c01747b1a620db1371c843f293c17d499ef6e5a35224ee21dd73796ff"
+    },
+    "textures/hanging_suit_normal.png": {
+      "bytes": 8053439,
+      "role": "texture",
+      "sha256": "1c5934d991c08f01e090ad27fd0ecf6a192b66378dd0c3b72dfb89d9b1479a15"
+    }
+  },
+  "id": "hanging_suit",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "Pixal3D via image-to-3dlab, clean finish, from a picture in the look of the airlock's world-step plan; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/hanging_suit/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T21:49:09.803965+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "7ecc5805a046d4932475514fd51dd8fde3d29684557c480a72f215386e6317be",
+    "models": [],
+    "node": "assembly@airlock",
+    "output": "8900f72fdf3585e5c853f71bbe4723b74677075a11235a7acb403664c1ec2464",
+    "place": "airlock",
+    "record_key": "1971b952fc7cf77c7898f3951a1958e959f95e422ab47f4ce6910bda0ff3bdc3",
+    "source_name": "hanging_suit",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Hanging suit",
+  "usd": {
+    "default_prim": "/hanging_suit",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/hanging_suit/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

@@ -1,0 +1,94 @@
+{
+  "address": "effect/plume@1",
+  "files": {
+    "clip.usdc": {
+      "bytes": 58826193,
+      "role": "usd",
+      "sha256": "298f6992410a601d964d0f9c75d145542849145d1354c1f983fa1bb654d11712"
+    },
+    "effect.usda": {
+      "bytes": 3130,
+      "role": "usd",
+      "sha256": "49fe434dc07732cd82e02a38ebffeca114f090fa0ee46b32b061ec5b905f6fa0"
+    },
+    "preview.png": {
+      "bytes": 3514,
+      "role": "picture",
+      "sha256": "5feb18ba10a145699ba80a9dcc4823bfa2140c65e97d7c64b934df91dfaf960f"
+    },
+    "settings.json": {
+      "bytes": 1582,
+      "role": "record",
+      "sha256": "fe2a1f11b685e41c12f4a5e82175e6465e2554f460e1f8d4b9f293f66fed9f9b"
+    }
+  },
+  "id": "plume",
+  "kind": "effect",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/points.py",
+    "of": "clip.usdc at clip time 120.0"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-15T06:23:31.528447+00:00",
+      "by": "runner"
+    },
+    "code": "bcb4de19a600c38d89a8733a5021c1a1d70e9715798df3581f7ad54703f37f6c",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "from": "footage: KSC-20180206-PH_KLS02_0046, KSC-20190625-PH_CSH01_0013 (the column of exhaust the rocket leaves under it as it climbs, thin and pale, lit by the flame near its top)",
+    "models": [],
+    "node": "effects-layer@launch",
+    "output": "6661592a0391f23f240eef74e13976d953e7e5a592a471eafbd297a33ce6893e",
+    "place": "launch",
+    "prim": "/launch/Effects/plume",
+    "record_key": "3b9e779b1ab416b9f61b6b0ceac5191661c018ce08351c4888f300c1b3049ed6",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/particle_effects@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "launch"
+  ],
+  "state": "draft",
+  "tags": {
+    "effect": [
+      "exhaust_trail"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "place_kind": [
+      "earth",
+      "outside"
+    ],
+    "weather": []
+  },
+  "title": "Plume",
+  "usd": {
+    "default_prim": "/plume",
+    "layer": "effects",
+    "meters_per_unit": null,
+    "path": "score_lib/effect/plume/1/effect.usda",
+    "root": "effect.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

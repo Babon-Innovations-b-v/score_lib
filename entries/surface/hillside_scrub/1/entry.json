@@ -1,0 +1,88 @@
+{
+  "address": "surface/hillside_scrub@1",
+  "files": {
+    "material.usda": {
+      "bytes": 562,
+      "role": "usd",
+      "sha256": "4c80223caf12901263575661f3a0c2ca2b54e291efa4c8f62c7483f246500c1f"
+    },
+    "preview.png": {
+      "bytes": 21895,
+      "role": "picture",
+      "sha256": "82517d792c267e360e409837a9b6df9dbc5f22a006fbf720e91ba3ee465572a0"
+    },
+    "surface.json": {
+      "bytes": 297,
+      "role": "record",
+      "sha256": "24c3e5766e41dc9732131cb104a3fdb83b7f6de26688319d0c0163c6ca5bbdbf"
+    }
+  },
+  "id": "hillside_scrub",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "earth_land",
+    "place": "cockpit",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "cockpit",
+    "engineroom",
+    "galley",
+    "navigation",
+    "quarters",
+    "shiplock",
+    "storage",
+    "walkway"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "earth_land"
+    ],
+    "recipe": [
+      "rubber"
+    ]
+  },
+  "title": "Hillside scrub",
+  "usd": {
+    "default_prim": "/hillside_scrub",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/hillside_scrub/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

@@ -1,0 +1,107 @@
+{
+  "address": "surface/canvas_beige.airlock@1",
+  "files": {
+    "material.usda": {
+      "bytes": 551,
+      "role": "usd",
+      "sha256": "a2e895b98a31384896731aa624842420227ace78524e4df05ba6d16d9bbb66f1"
+    },
+    "preview.png": {
+      "bytes": 18790,
+      "role": "picture",
+      "sha256": "6c82bd5ca6d32e82a3177c5353a72ccc4b081b5e1be2965584e1a01d5b00aa91"
+    },
+    "surface.json": {
+      "bytes": 374,
+      "role": "record",
+      "sha256": "0f881146c22da378c21c676e9323ef27dbea5c5a8bdb47d83b17bba4d1696c7e"
+    }
+  },
+  "id": "canvas_beige.airlock",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "fabric",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "fabric"
+    ],
+    "recipe": [
+      "rubber"
+    ]
+  },
+  "title": "Canvas beige",
+  "usd": {
+    "default_prim": "/canvas_beige",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/canvas_beige.airlock/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

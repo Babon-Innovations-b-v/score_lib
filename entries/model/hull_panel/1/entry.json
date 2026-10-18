@@ -1,0 +1,103 @@
+{
+  "address": "model/hull_panel@1",
+  "files": {
+    "model.json": {
+      "bytes": 261,
+      "role": "record",
+      "sha256": "43a87ed9aacbdb1913f4b1c82b034d7ef0ee600ae575818fea6bc67d3730cb49"
+    },
+    "model.usdc": {
+      "bytes": 1911128,
+      "role": "usd",
+      "sha256": "80bc412ab88b6ed3b16ed6dce9539499bcb0c9d689d4c7f191278c6b4b0d863c"
+    },
+    "preview.png": {
+      "bytes": 20176,
+      "role": "picture",
+      "sha256": "27e5eebbd0e50660297776576fa2a09ec7df721b0f798ab02e610d3b3895f06d"
+    },
+    "textures/hull_panel_base_color.png": {
+      "bytes": 2372317,
+      "role": "texture",
+      "sha256": "c95bba33efa7d8a7a32c50192747a15df5512fb7c3bb9b1e747de58c5796db80"
+    },
+    "textures/hull_panel_metal_roughness.png": {
+      "bytes": 2334485,
+      "role": "texture",
+      "sha256": "b7e80e24e08c4b7be77d95360753d8d0d3c09c1651d21d2f662d6d64dfb5c926"
+    },
+    "textures/hull_panel_normal.png": {
+      "bytes": 12411688,
+      "role": "texture",
+      "sha256": "449ee4441ba06180692fa3394c00570d33387232bef03bde05d1962a207fae8f"
+    }
+  },
+  "id": "hull_panel",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T15:53:36.185584+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "f1a208a488eba75ae33e809d6418719fef7e69a65da16e40475bd2a975207924",
+    "models": [],
+    "node": "assembly@wreck",
+    "output": "591bca186cdb2ba3104fc444e86a6ff62eeb734cbab1de4f4f2c54506dd99291",
+    "place": "wreck",
+    "record_key": "ae3d3dca811e262167338103d0abcba1e68bff01135dac7ecd4e6f2f4113254b",
+    "source_name": "hull_panel",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "moon",
+      "outside"
+    ]
+  },
+  "title": "Hull panel",
+  "usd": {
+    "default_prim": "/hull_panel",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/hull_panel/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

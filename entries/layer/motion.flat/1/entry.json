@@ -1,0 +1,84 @@
+{
+  "address": "layer/motion.flat@1",
+  "files": {
+    "layer.usda": {
+      "bytes": 2120,
+      "role": "usd",
+      "sha256": "600ece19e6acd46c88f018ed24a6a72674f07c4ea7366a384741595b9cb13227"
+    },
+    "movers.json": {
+      "bytes": 101,
+      "role": "record",
+      "sha256": "a1af4848fec81fa7d1bbd0631f3dedad3f8da061eadf14b30a4d0585967d6cce"
+    }
+  },
+  "id": "motion.flat",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-15T12:52:44.767077+00:00",
+      "by": "runner"
+    },
+    "code": "a463163a0eeef652acdcfd1091415cc08ea792bdf6eee5489b5a0b48e06ace87",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/motion.usda",
+        "sha256": "600ece19e6acd46c88f018ed24a6a72674f07c4ea7366a384741595b9cb13227"
+      }
+    },
+    "models": [],
+    "node": "assembly@flat",
+    "output": "7164a61082dc77a23d6958d9f0e95ca4accc52c8781a93fbc670952303bbb4ff",
+    "own_files": [],
+    "place": "flat",
+    "record_key": "8bb7b4b3a3ec082c92dae2d6ca6380ae5dcbe1fe7b0248e538c9c0f86220f045",
+    "side_records_from": "58d544c05a1f8f4ad0fbfc574e5f810d4fe58fbcb214839f31197df2e3cdded0",
+    "source_name": "layers/motion.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/motion_movers@1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "flat"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "motion"
+    ],
+    "place_kind": [
+      "inside",
+      "earth"
+    ]
+  },
+  "title": "Flat motion layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "motion",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/motion.flat/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

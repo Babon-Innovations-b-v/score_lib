@@ -1,0 +1,84 @@
+{
+  "address": "layer/settle.hangar@1",
+  "files": {
+    "layer.usda": {
+      "bytes": 10061,
+      "role": "usd",
+      "sha256": "1da14ec511007a116f2604d323314b5f7a5cc40c6c0396d78e26a62a809ebc80"
+    },
+    "settle.json": {
+      "bytes": 14057,
+      "role": "record",
+      "sha256": "52a0b150b466888c5cfc73fe40e51aba1c8d84b4fdb2eb0e7478f6c53f5535e0"
+    }
+  },
+  "id": "settle.hangar",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T22:13:41.093010+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/settle.usda",
+        "sha256": "1da14ec511007a116f2604d323314b5f7a5cc40c6c0396d78e26a62a809ebc80"
+      }
+    },
+    "models": [],
+    "node": "assembly@hangar",
+    "output": "765aae9ca335aebbcb521472c52db37c76ad0b842d8f9bddc21b8c1beae3d144",
+    "own_files": [],
+    "place": "hangar",
+    "record_key": "d034efb2e042c8f0e9fca844f9dc9aa0b1d4146a0a39fbf3dafc78213e49fd74",
+    "side_records_from": "5928e0fae0e0318fa0811ec4b4051c9352bb473bc41243de3b0369fd8c9ab575",
+    "source_name": "layers/settle.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/settle@1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "hangar"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "settle"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Hangar settle layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "settle",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/settle.hangar/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

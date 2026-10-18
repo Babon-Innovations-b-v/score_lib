@@ -1,0 +1,103 @@
+{
+  "address": "model/hab_lander@1",
+  "files": {
+    "model.json": {
+      "bytes": 398,
+      "role": "record",
+      "sha256": "eccaf6785dc726fb4f03475cd07161f710696ef0a817b437b304da9b26a8ca92"
+    },
+    "model.usdc": {
+      "bytes": 5962174,
+      "role": "usd",
+      "sha256": "fc204294085a7c21753aa5ad443634b1f0e51eae921374b0e8bc582d5c94ed1c"
+    },
+    "preview.png": {
+      "bytes": 30471,
+      "role": "picture",
+      "sha256": "f3a97c7cec183f3cd4e494a2b6a8b7e3b9c65942c39948252b76c5d723695ccc"
+    },
+    "textures/hab_lander_base_color.png": {
+      "bytes": 2207643,
+      "role": "texture",
+      "sha256": "7bba0738e7281d93aa709bf65a4b516f3920d2af0269d3532604959e56be9904"
+    },
+    "textures/hab_lander_metal_roughness.png": {
+      "bytes": 1852089,
+      "role": "texture",
+      "sha256": "1eef5a0c1f1c31539a7476dd6bd460425f496edb037f03a726dd76d557c47cc0"
+    },
+    "textures/hab_lander_normal.png": {
+      "bytes": 11828423,
+      "role": "texture",
+      "sha256": "c51819545893fd8a48ae72ca5521db7e3c287cf4b0818ac5012b841937a97eaa"
+    }
+  },
+  "id": "hab_lander",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:02:30.466230+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "8a12e50b64568b687dc2b726716fc3faa7d82711f0eb78a597deca265ad8c36b",
+    "models": [],
+    "node": "assembly@old_station",
+    "output": "f60adc09d2c14a31314d3bd31f69c2601467bfbcf728c76faa051b30b1810b56",
+    "place": "old_station",
+    "record_key": "7d9d97819faa5aebdafc6de56b258e509d111fd6834f0d009658ac7904c3e290",
+    "source_name": "hab_lander",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "old_station"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "moon",
+      "outside"
+    ]
+  },
+  "title": "Hab lander",
+  "usd": {
+    "default_prim": "/hab_lander",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/hab_lander/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

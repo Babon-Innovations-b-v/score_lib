@@ -1,0 +1,84 @@
+{
+  "address": "layer/light.engineroom@1",
+  "files": {
+    "lamps.json": {
+      "bytes": 1198,
+      "role": "record",
+      "sha256": "006ae82ec1cf44b7f5dde1b60137831b77720cfdc57b22a6a4b2f08e3342138e"
+    },
+    "layer.usda": {
+      "bytes": 755,
+      "role": "usd",
+      "sha256": "30748b804c1030d3a42675311a2b8d3f223d39e7e4b2448bf042f45c4266a14e"
+    }
+  },
+  "id": "light.engineroom",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T20:05:54.680906+00:00",
+      "by": "runner"
+    },
+    "code": "2c394fb6649caa75a8d8b07ff69369fcc217046e6bc8cb45084263388cde70f0",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/light.usda",
+        "sha256": "30748b804c1030d3a42675311a2b8d3f223d39e7e4b2448bf042f45c4266a14e"
+      }
+    },
+    "models": [],
+    "node": "assembly@engineroom",
+    "output": "2b04a49e1020abb736cf72066d11757c544981b242f901765795a03462916330",
+    "own_files": [],
+    "place": "engineroom",
+    "record_key": "0025709ddb07848c2946b6abd8a4f122e919acdde9cc419b62d42eab63a0b1e6",
+    "side_records_from": "01225850f318b1b76435083a7685a9d02d3fde56724638279ceb025955e376c7",
+    "source_name": "layers/light.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/light_rig@1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "engineroom"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "light"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Engineroom light layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "light",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/light.engineroom/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

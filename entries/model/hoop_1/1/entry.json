@@ -1,0 +1,103 @@
+{
+  "address": "model/hoop_1@1",
+  "files": {
+    "model.json": {
+      "bytes": 304,
+      "role": "record",
+      "sha256": "ae3d3b98c2f989d0e1240f2229b8f0ec4a6e774a4950e0a359fa26ee7042e238"
+    },
+    "model.usdc": {
+      "bytes": 119678,
+      "role": "usd",
+      "sha256": "24af4c44db82f5ed91e19f97497fa138f2a0135b8ce1367f33c904beea62d8a9"
+    },
+    "preview.png": {
+      "bytes": 26093,
+      "role": "picture",
+      "sha256": "60d60ebd78cd225b1ece38713f3bee903030be14e1c20abae61b6ebb06db44a9"
+    },
+    "textures/tube_gear_2_base_color.png": {
+      "bytes": 536926,
+      "role": "texture",
+      "sha256": "ec70c928beb4f9ef3f596c6321477f02a15046402b3d8161769c99394602930f"
+    },
+    "textures/tube_gear_2_metal_roughness.png": {
+      "bytes": 506895,
+      "role": "texture",
+      "sha256": "8778841eab7514d1a8d8f2060466a93a8120deff669257af652866ff3d38c11c"
+    },
+    "textures/tube_gear_2_normal.png": {
+      "bytes": 9557748,
+      "role": "texture",
+      "sha256": "fd1c507b6f8b8121003aaf8a7c306801dfa2df73ac1122e07fcf421f7222ba27"
+    }
+  },
+  "id": "hoop_1",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:00:40.450199+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "d079ff38315ca3222d30268aa3efa75de31313941884595fd353ed99385fee2e",
+    "models": [],
+    "node": "assembly@tube",
+    "output": "46b603be4ce58e7eb5c89d2585ecd43bb770e6dd89a1b6b79d28ce6a3ae19804",
+    "place": "tube",
+    "record_key": "b2afcac97aa05f6343658da019f1ce453598524265ce7ed16707651229609351",
+    "source_name": "hoop_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "tube"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Hoop 1",
+  "usd": {
+    "default_prim": "/hoop_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/hoop_1/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

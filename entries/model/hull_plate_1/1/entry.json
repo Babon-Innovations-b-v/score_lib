@@ -1,0 +1,103 @@
+{
+  "address": "model/hull_plate_1@1",
+  "files": {
+    "model.json": {
+      "bytes": 338,
+      "role": "record",
+      "sha256": "1538ff1ce70b4a4429c8c0e32b4d3060b0da5d388ed9b558e3bfba68460dfaab"
+    },
+    "model.usdc": {
+      "bytes": 23401,
+      "role": "usd",
+      "sha256": "1b6c22138c16eb925d048ef198bc8c77cde878ada86a98eb55c1f91762e99f6b"
+    },
+    "preview.png": {
+      "bytes": 18062,
+      "role": "picture",
+      "sha256": "af14d5e1cf593bcade111a2fe94384c21243d48a0e2d2642a2d2e3278fcfe0c1"
+    },
+    "textures/tube_gear_2_base_color.png": {
+      "bytes": 536926,
+      "role": "texture",
+      "sha256": "ec70c928beb4f9ef3f596c6321477f02a15046402b3d8161769c99394602930f"
+    },
+    "textures/tube_gear_2_metal_roughness.png": {
+      "bytes": 506895,
+      "role": "texture",
+      "sha256": "8778841eab7514d1a8d8f2060466a93a8120deff669257af652866ff3d38c11c"
+    },
+    "textures/tube_gear_2_normal.png": {
+      "bytes": 9557748,
+      "role": "texture",
+      "sha256": "fd1c507b6f8b8121003aaf8a7c306801dfa2df73ac1122e07fcf421f7222ba27"
+    }
+  },
+  "id": "hull_plate_1",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:00:40.450199+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "8690dfff00b31377478eb9200d85ac93bcd9bc659b8eda7425b65310c4d8aaa4",
+    "models": [],
+    "node": "assembly@tube",
+    "output": "46b603be4ce58e7eb5c89d2585ecd43bb770e6dd89a1b6b79d28ce6a3ae19804",
+    "place": "tube",
+    "record_key": "b2afcac97aa05f6343658da019f1ce453598524265ce7ed16707651229609351",
+    "source_name": "hull_plate_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "tube"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Hull plate 1",
+  "usd": {
+    "default_prim": "/hull_plate_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/hull_plate_1/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

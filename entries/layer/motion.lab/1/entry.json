@@ -1,0 +1,84 @@
+{
+  "address": "layer/motion.lab@1",
+  "files": {
+    "layer.usda": {
+      "bytes": 6672,
+      "role": "usd",
+      "sha256": "0f548911f6e02f7098ddddde0d7751d91b1134fb0e2b08e7086fa3214f3cdad5"
+    },
+    "movers.json": {
+      "bytes": 209,
+      "role": "record",
+      "sha256": "7230ec8ebe9733d351a9a12c57311a5f59773765a065a3f6b58e55d4377b61fa"
+    }
+  },
+  "id": "motion.lab",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:07:25.503141+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/motion.usda",
+        "sha256": "0f548911f6e02f7098ddddde0d7751d91b1134fb0e2b08e7086fa3214f3cdad5"
+      }
+    },
+    "models": [],
+    "node": "assembly@lab",
+    "output": "6e27c7d3c17e42a9d22d07e469a7b3a8e37bced2cae426b5827007830b83d66a",
+    "own_files": [],
+    "place": "lab",
+    "record_key": "90b53b440293d619704e077b09a234f458d34710e83b21efc9453072590550e1",
+    "side_records_from": "bb6a9ee0f6db621da36b08e3b3eca86368d02c8a771f7729bbc64469ee169f34",
+    "source_name": "layers/motion.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/motion_movers@1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "lab"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "motion"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Lab motion layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "motion",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/motion.lab/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

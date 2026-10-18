@@ -1,0 +1,108 @@
+{
+  "address": "surface/glass_tinted@1",
+  "files": {
+    "material.usda": {
+      "bytes": 557,
+      "role": "usd",
+      "sha256": "8b8b6539f311d9c6c3413e0c061de22a2d7748ceee0f26b5221f492afbbc0549"
+    },
+    "preview.png": {
+      "bytes": 14885,
+      "role": "picture",
+      "sha256": "c76f1064cbf9d9eac28bbb21e56dfffa49ff66f30a7831e2fcfca918befd4d32"
+    },
+    "surface.json": {
+      "bytes": 166,
+      "role": "record",
+      "sha256": "28e8c7e0b5f6deffb6fb86ca01e77bf4a5d96a2ea257455227ce162ae42377bd"
+    }
+  },
+  "id": "glass_tinted",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "glass",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "glass"
+    ],
+    "recipe": [
+      "glass"
+    ]
+  },
+  "title": "Glass tinted",
+  "usd": {
+    "default_prim": "/glass_tinted",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/glass_tinted/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

@@ -1,0 +1,108 @@
+{
+  "address": "surface/galvanized_steel@1",
+  "files": {
+    "material.usda": {
+      "bytes": 563,
+      "role": "usd",
+      "sha256": "b505e88fcb77c907cb1453a023835eb0f7b4ddf9d60e2d5079707fbc0b49ab64"
+    },
+    "preview.png": {
+      "bytes": 18173,
+      "role": "picture",
+      "sha256": "ffcf7b80cc4d8689a2ba159f089b1cc99e96a9a8b86193932f780fe40d720a9f"
+    },
+    "surface.json": {
+      "bytes": 142,
+      "role": "record",
+      "sha256": "b7899bf63ea6212443aadd3ac6acf5097751580e6a06c59477958a8d2174db47"
+    }
+  },
+  "id": "galvanized_steel",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "steel",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "steel"
+    ],
+    "recipe": [
+      "galvanized"
+    ]
+  },
+  "title": "Galvanized steel",
+  "usd": {
+    "default_prim": "/galvanized_steel",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/galvanized_steel/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

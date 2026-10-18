@@ -1,0 +1,88 @@
+{
+  "address": "surface/red_plastic@1",
+  "files": {
+    "material.usda": {
+      "bytes": 549,
+      "role": "usd",
+      "sha256": "d1ff6c40ca0562672865be6148be9e4736ef67da4d808d7cb294b24bcac5969e"
+    },
+    "preview.png": {
+      "bytes": 20897,
+      "role": "picture",
+      "sha256": "fa69b008fc31915186a04f16664e3b279a698db9d8efdcb862945727a41b2f60"
+    },
+    "surface.json": {
+      "bytes": 310,
+      "role": "record",
+      "sha256": "5a228108905483fe50ac81b94ac9eb2a2d82b0bc4da1747679887187c26c98b7"
+    }
+  },
+  "id": "red_plastic",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "plastic",
+    "place": "cockpit",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "cockpit",
+    "engineroom",
+    "galley",
+    "navigation",
+    "quarters",
+    "shiplock",
+    "storage",
+    "walkway"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "plastic"
+    ],
+    "recipe": [
+      "rubber"
+    ]
+  },
+  "title": "Red plastic",
+  "usd": {
+    "default_prim": "/red_plastic",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/red_plastic/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

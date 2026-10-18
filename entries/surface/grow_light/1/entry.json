@@ -1,0 +1,108 @@
+{
+  "address": "surface/grow_light@1",
+  "files": {
+    "material.usda": {
+      "bytes": 622,
+      "role": "usd",
+      "sha256": "21376e70e1168b67c352fed43e295c409119538cf7cde362dafdb5dca0412faa"
+    },
+    "preview.png": {
+      "bytes": 21849,
+      "role": "picture",
+      "sha256": "23b665fa0418fa2cc164d65b7be674b5d3948f6763c78c485729089731b59e7a"
+    },
+    "surface.json": {
+      "bytes": 253,
+      "role": "record",
+      "sha256": "cf8dcd91a1ed0b17fef597e015ed33245c35c198112dd6095e0d0f85755d5182"
+    }
+  },
+  "id": "grow_light",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "light",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "light"
+    ],
+    "recipe": [
+      "glowing"
+    ]
+  },
+  "title": "Grow light",
+  "usd": {
+    "default_prim": "/grow_light",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/grow_light/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

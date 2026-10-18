@@ -1,0 +1,84 @@
+{
+  "address": "layer/light.galley@1",
+  "files": {
+    "lamps.json": {
+      "bytes": 1174,
+      "role": "record",
+      "sha256": "03a6e1329fe0c4e03dfe32fbe484aad6a1c9538022c24a524b903c899d66996e"
+    },
+    "layer.usda": {
+      "bytes": 754,
+      "role": "usd",
+      "sha256": "d1c75fecf88ff9c23b0f24cb29f1aeb2dd0d1ed7f0eae89adc9ba8310da26c64"
+    }
+  },
+  "id": "light.galley",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-17T09:49:25.951322+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/light.usda",
+        "sha256": "d1c75fecf88ff9c23b0f24cb29f1aeb2dd0d1ed7f0eae89adc9ba8310da26c64"
+      }
+    },
+    "models": [],
+    "node": "assembly@galley",
+    "output": "eabb9557c58e5b8c3f8af1c80b87f35086f778135b4488aad9798134c6539faa",
+    "own_files": [],
+    "place": "galley",
+    "record_key": "457d662c06cbee7295708f0dc0c0b7e3b5e8b2fb12052d9393b378d0ba644f4c",
+    "side_records_from": "78a821c0902f52cd320a08d298abbfd6ece92703227779fb7d3e615753e7ea02",
+    "source_name": "layers/light.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/light_rig@1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "galley"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "light"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Galley light layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "light",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/light.galley/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

@@ -1,0 +1,108 @@
+{
+  "address": "surface/hull_white_gloss@1",
+  "files": {
+    "material.usda": {
+      "bytes": 564,
+      "role": "usd",
+      "sha256": "cfb4f344b6ad5e1fa992908010d552ac5b7d659494a9591736327d3a7bdf13b3"
+    },
+    "preview.png": {
+      "bytes": 17499,
+      "role": "picture",
+      "sha256": "c710a584ba6fd30af15ec8d9470d3e28536364b692563d54b7cfa4e2ebc9c427"
+    },
+    "surface.json": {
+      "bytes": 406,
+      "role": "record",
+      "sha256": "2f1a96d5d5272258606dbcfa552f4479536b80a30330904a04474e4d61b73419"
+    }
+  },
+  "id": "hull_white_gloss",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "painted",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "painted"
+    ],
+    "recipe": [
+      "painted_metal"
+    ]
+  },
+  "title": "Hull white gloss",
+  "usd": {
+    "default_prim": "/hull_white_gloss",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/hull_white_gloss/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

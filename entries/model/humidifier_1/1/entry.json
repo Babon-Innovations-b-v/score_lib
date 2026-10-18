@@ -1,0 +1,108 @@
+{
+  "address": "model/humidifier_1@1",
+  "files": {
+    "model.json": {
+      "bytes": 344,
+      "role": "record",
+      "sha256": "438a1408621e7d1adf6e77130b5db6283fabc8b9bbde8fa0ba05b70b2f952f58"
+    },
+    "model.usdc": {
+      "bytes": 193329,
+      "role": "usd",
+      "sha256": "e986a47e22f55aab203026a4ec2b5c273c48cd105c4bea70d56ea03cf5b07a08"
+    },
+    "model_glow.usdc": {
+      "bytes": 6573,
+      "role": "usd",
+      "sha256": "c3cd352790c0eb6f12dd7a98752d93c052014b65621f0c31fcaf146f04ff3c9b"
+    },
+    "preview.png": {
+      "bytes": 36214,
+      "role": "picture",
+      "sha256": "15af16ad73faeb619ae6a78dca35343affcdb86c66c36967d1c8c7d7da06c8d1"
+    },
+    "textures/greenhouse_gear_6_base_color.png": {
+      "bytes": 1017921,
+      "role": "texture",
+      "sha256": "288d0000142602da8c066960b04957bb4f28a7dbc5930ab818cc718735a4aef1"
+    },
+    "textures/greenhouse_gear_6_metal_roughness.png": {
+      "bytes": 755367,
+      "role": "texture",
+      "sha256": "aef0e705efb552b7cbf4284cd2fe60ce45e53786f933bafd7df91291e54c9fc5"
+    },
+    "textures/greenhouse_gear_6_normal.png": {
+      "bytes": 3781200,
+      "role": "texture",
+      "sha256": "a72dcfbd79b4b3f0dfa783db407c82a18915584fbfb98c1baa189380dfff7cad"
+    }
+  },
+  "id": "humidifier_1",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-17T11:21:57.694141+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "ed07f562e88a96c3b57cd9cb41bb1b88d11a915d56e48c8427a5f14aa0d6d839",
+    "models": [],
+    "node": "assembly@greenhouse",
+    "output": "910f5ef85c6bacfd60b7b934d6980011f765df81458a88095c9ee09416e6fec7",
+    "place": "greenhouse",
+    "record_key": "96f06014f00223d17da44c7eaa7bd37c8c838a72ef68ace7ba2ccc88be48cafa",
+    "source_name": "humidifier_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "greenhouse"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Humidifier 1",
+  "usd": {
+    "default_prim": "/humidifier_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/humidifier_1/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

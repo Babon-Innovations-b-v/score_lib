@@ -1,0 +1,103 @@
+{
+  "address": "model/spare_wheel@1",
+  "files": {
+    "model.json": {
+      "bytes": 303,
+      "role": "record",
+      "sha256": "db8635ae643a8c4fbd596072e82c32b0e70cc41a90ec5b0982310255ad2d4384"
+    },
+    "model.usdc": {
+      "bytes": 1564865,
+      "role": "usd",
+      "sha256": "8ddd30ec5f5c6728aff29502874fb7b008f71df7486715ccae6d5acc5979dfcb"
+    },
+    "preview.png": {
+      "bytes": 40451,
+      "role": "picture",
+      "sha256": "6df6dc12ce387b6837f16232756b3aa5d203a9a615fcabbd120784e9c12c5656"
+    },
+    "textures/spare_wheel_base_color.png": {
+      "bytes": 3525950,
+      "role": "texture",
+      "sha256": "1d1e3d268dab194c1ef54bd0cc195a233e7bdc905982c2a60d66e88bf2807c04"
+    },
+    "textures/spare_wheel_metal_roughness.png": {
+      "bytes": 2416168,
+      "role": "texture",
+      "sha256": "c66a5fc029954e228437f5b2f3793eb9c8ef60e811f5a0eaae44b376f6b742de"
+    },
+    "textures/spare_wheel_normal.png": {
+      "bytes": 10499187,
+      "role": "texture",
+      "sha256": "16d58445dd6da33f5d2849d3ef0fb0447524cdbb3be60d04f4e09976f02fbed7"
+    }
+  },
+  "id": "spare_wheel",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:02:30.466230+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "125bf851bfc6c581e84efb999a7a10d32de533ab5de3fc7d3ee47598c767c3f4",
+    "models": [],
+    "node": "assembly@old_station",
+    "output": "f60adc09d2c14a31314d3bd31f69c2601467bfbcf728c76faa051b30b1810b56",
+    "place": "old_station",
+    "record_key": "7d9d97819faa5aebdafc6de56b258e509d111fd6834f0d009658ac7904c3e290",
+    "source_name": "spare_wheel",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "old_station"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "moon",
+      "outside"
+    ]
+  },
+  "title": "Spare wheel",
+  "usd": {
+    "default_prim": "/spare_wheel",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/spare_wheel/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

@@ -1,0 +1,108 @@
+{
+  "address": "surface/wood_board@1",
+  "files": {
+    "material.usda": {
+      "bytes": 542,
+      "role": "usd",
+      "sha256": "ee887b075e5f957d1d0244829609c23496443b6b03abc6e32a4b071ce4880227"
+    },
+    "preview.png": {
+      "bytes": 22073,
+      "role": "picture",
+      "sha256": "390f584785f3fd4659bd2b41807668778b69cf5cf58b58cff0661bddf7a65899"
+    },
+    "surface.json": {
+      "bytes": 134,
+      "role": "record",
+      "sha256": "7a2219f712d7bc88d9f76fbdbd4424a7e42c37fc84648a83cb12e5239891ad1f"
+    }
+  },
+  "id": "wood_board",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "wood",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "wood"
+    ],
+    "recipe": [
+      "wood"
+    ]
+  },
+  "title": "Wood board",
+  "usd": {
+    "default_prim": "/wood_board",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/wood_board/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

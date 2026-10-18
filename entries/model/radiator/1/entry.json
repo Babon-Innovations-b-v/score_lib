@@ -1,0 +1,103 @@
+{
+  "address": "model/radiator@1",
+  "files": {
+    "model.json": {
+      "bytes": 308,
+      "role": "record",
+      "sha256": "12d5d842366d60097531540f49af173f4cd123c37ea5591c5ce34aacdbb51757"
+    },
+    "model.usdc": {
+      "bytes": 1899551,
+      "role": "usd",
+      "sha256": "167ae0a0af054f4af61658c6775d8dcba0edf9a290405581039cc04626a96f4e"
+    },
+    "preview.png": {
+      "bytes": 23241,
+      "role": "picture",
+      "sha256": "301a56d02239817608b08238d9fbd8de623505a4ab8455b4f752845c6639baaa"
+    },
+    "textures/radiator_base_color.png": {
+      "bytes": 4042394,
+      "role": "texture",
+      "sha256": "8616bae8ca757d4280e9e8de2064bb3655f63986fcba4f2d1da4067fb327909c"
+    },
+    "textures/radiator_metal_roughness.png": {
+      "bytes": 3676372,
+      "role": "texture",
+      "sha256": "a57721120bc8da170c2410dd08c40a24dcfdfb35b3ba0b12dbf17bc397e6b6fe"
+    },
+    "textures/radiator_normal.png": {
+      "bytes": 13119161,
+      "role": "texture",
+      "sha256": "3ac7c4146c9828b1212205fa70e431dda157e837e1ede8a583b25e7971f0a555"
+    }
+  },
+  "id": "radiator",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:02:30.466230+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "3cae745d6f8c0e0e79f118ce8a9ad85762b065e5049531951b39940d9bc0f386",
+    "models": [],
+    "node": "assembly@old_station",
+    "output": "f60adc09d2c14a31314d3bd31f69c2601467bfbcf728c76faa051b30b1810b56",
+    "place": "old_station",
+    "record_key": "7d9d97819faa5aebdafc6de56b258e509d111fd6834f0d009658ac7904c3e290",
+    "source_name": "radiator",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "old_station"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "moon",
+      "outside"
+    ]
+  },
+  "title": "Radiator",
+  "usd": {
+    "default_prim": "/radiator",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/radiator/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

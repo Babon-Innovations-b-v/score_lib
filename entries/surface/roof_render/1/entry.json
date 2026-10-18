@@ -1,0 +1,108 @@
+{
+  "address": "surface/roof_render@1",
+  "files": {
+    "material.usda": {
+      "bytes": 558,
+      "role": "usd",
+      "sha256": "07206307a7927100d435ebcfde142f98c5c8d056c4f232b84e9c29451e152373"
+    },
+    "preview.png": {
+      "bytes": 19244,
+      "role": "picture",
+      "sha256": "44abb3b4d437dfc9a238c97b591eff375b2163d25eee1496d402fe9c5e614ab4"
+    },
+    "surface.json": {
+      "bytes": 305,
+      "role": "record",
+      "sha256": "010d1e2329c211253358c64ee70bd41148d9960515e3eae9eb7ef6a97515aad1"
+    }
+  },
+  "id": "roof_render",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "plaster",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "plaster"
+    ],
+    "recipe": [
+      "weathered_render"
+    ]
+  },
+  "title": "Roof render",
+  "usd": {
+    "default_prim": "/roof_render",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/roof_render/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

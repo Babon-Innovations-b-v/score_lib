@@ -1,0 +1,108 @@
+{
+  "address": "surface/olive_panel@1",
+  "files": {
+    "material.usda": {
+      "bytes": 558,
+      "role": "usd",
+      "sha256": "a8adcd0be8c93ea77eb132d764be6c4648dc1728484280870c284451896e43ed"
+    },
+    "preview.png": {
+      "bytes": 20190,
+      "role": "picture",
+      "sha256": "a3300f32785d1bc1df210f4543ae7fca729ae69e8337989330bc11adf14d9ccf"
+    },
+    "surface.json": {
+      "bytes": 388,
+      "role": "record",
+      "sha256": "2bcd0a0c92b5173ebd46c22ca33893892b0a2049da55a4b4900d3b92e77b5901"
+    }
+  },
+  "id": "olive_panel",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "painted",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "painted"
+    ],
+    "recipe": [
+      "painted_metal"
+    ]
+  },
+  "title": "Olive panel",
+  "usd": {
+    "default_prim": "/olive_panel",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/olive_panel/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

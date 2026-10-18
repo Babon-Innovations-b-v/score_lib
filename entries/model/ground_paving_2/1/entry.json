@@ -1,0 +1,103 @@
+{
+  "address": "model/ground_paving_2@1",
+  "files": {
+    "model.json": {
+      "bytes": 307,
+      "role": "record",
+      "sha256": "d2fe983e374dd7b639a33accaadf7229c304b3cbf87f182aa8c61ac87101e422"
+    },
+    "model.usdc": {
+      "bytes": 7757,
+      "role": "usd",
+      "sha256": "f6c5676e80fcac9420b70d7ec8ac6da5300d82ec0b1b430c6da77bc2040d9567"
+    },
+    "preview.png": {
+      "bytes": 8225,
+      "role": "picture",
+      "sha256": "975cd04d3daba8bd1df991109dc67ba605745fd93aba69b79f3e12a025952f19"
+    },
+    "textures/prologue_street_street_level_6_base_color.png": {
+      "bytes": 1169252,
+      "role": "texture",
+      "sha256": "0050d3e8ffcee6e0af934dca9571acbe6e93c50fe5a0a8b4c98587b67264806b"
+    },
+    "textures/prologue_street_street_level_6_metal_roughness.png": {
+      "bytes": 938369,
+      "role": "texture",
+      "sha256": "01fdf06aeffde19224097a8971fa120be68172b05ee753a97ee5b61d88b5aeb8"
+    },
+    "textures/prologue_street_street_level_6_normal.png": {
+      "bytes": 200278,
+      "role": "texture",
+      "sha256": "0aec3aa169bc18ec4cd8fe202ea0260da8d93dbf64bbf876859be15565504728"
+    }
+  },
+  "id": "ground_paving_2",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-15T17:38:29.285750+00:00",
+      "by": "runner"
+    },
+    "code": "e172da5a348a36e044c48ac88c4301ef36b984d2606f116b55884e77f224e788",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "26fa7f99372361e755e05505a7d1a0a72b76a77876f11eceda981873a4b752dd",
+    "models": [],
+    "node": "assembly@street",
+    "output": "bbaaeb0aa7195bd7d899a3f5ff837f9ba560320bced6dcf06bdea37704342dad",
+    "place": "street",
+    "record_key": "eea7a7e11741099d56afa13effecfae534999af63793625de4692628148864f0",
+    "source_name": "ground_paving_2",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "street"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "outside"
+    ]
+  },
+  "title": "Ground paving 2",
+  "usd": {
+    "default_prim": "/ground_paving_2",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/ground_paving_2/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

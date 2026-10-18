@@ -1,0 +1,103 @@
+{
+  "address": "model/comms_mast@1",
+  "files": {
+    "model.json": {
+      "bytes": 318,
+      "role": "record",
+      "sha256": "eec3d6d7a6eba164b6c176a862f77aee2a48c536149ab0e572a990f5e7e36ed9"
+    },
+    "model.usdc": {
+      "bytes": 4315445,
+      "role": "usd",
+      "sha256": "040f8c72bef5ed3c55778b3b52a3dd0f5caf832e6cfb98b02519aad53ddc5651"
+    },
+    "preview.png": {
+      "bytes": 13027,
+      "role": "picture",
+      "sha256": "4696ced6cdaed30e4e2cb029bfe3d77fa5cef89ac5d2b898a89ca72bf8fb2625"
+    },
+    "textures/comms_mast_base_color.png": {
+      "bytes": 2800273,
+      "role": "texture",
+      "sha256": "2172f83681da8f67fcafda90ea9bba6720050a47fefff555d289b3ec12c27338"
+    },
+    "textures/comms_mast_metal_roughness.png": {
+      "bytes": 2549863,
+      "role": "texture",
+      "sha256": "94ec9f3aa1ba8acbe391644cd2c1002cf443ec2f9a6c6e9d637bab6a976b4827"
+    },
+    "textures/comms_mast_normal.png": {
+      "bytes": 10517054,
+      "role": "texture",
+      "sha256": "8c5425374514891b43c623c0adbef656c4129229e1cda3323035e7bb4c5e2c98"
+    }
+  },
+  "id": "comms_mast",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:02:30.466230+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "bcf2e0cfd62ce50bea512e4119a63f3275acb9526b287015613e5fd06d8abe36",
+    "models": [],
+    "node": "assembly@old_station",
+    "output": "f60adc09d2c14a31314d3bd31f69c2601467bfbcf728c76faa051b30b1810b56",
+    "place": "old_station",
+    "record_key": "7d9d97819faa5aebdafc6de56b258e509d111fd6834f0d009658ac7904c3e290",
+    "source_name": "comms_mast",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "old_station"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "moon",
+      "outside"
+    ]
+  },
+  "title": "Comms mast",
+  "usd": {
+    "default_prim": "/comms_mast",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/comms_mast/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

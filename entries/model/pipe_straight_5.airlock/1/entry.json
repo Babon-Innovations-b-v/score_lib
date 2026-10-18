@@ -1,0 +1,103 @@
+{
+  "address": "model/pipe_straight_5.airlock@1",
+  "files": {
+    "model.json": {
+      "bytes": 291,
+      "role": "record",
+      "sha256": "95db95fc1b5ebb44023ed39282c34ee32bf94082a057c18d0c43f42b87f3d7cc"
+    },
+    "model.usdc": {
+      "bytes": 25534,
+      "role": "usd",
+      "sha256": "39a77344baf20041af64a8421e549d2633dc08cc99c6de8c10a3536951fb0091"
+    },
+    "preview.png": {
+      "bytes": 27892,
+      "role": "picture",
+      "sha256": "397e07fa0c8cbcb952e377d90d62ca97eaf1fb3d85b28947e8290f747055f2fc"
+    },
+    "textures/airlock_gear_5_base_color.png": {
+      "bytes": 1002472,
+      "role": "texture",
+      "sha256": "84c64c8d3484de15e26e6577f1078e32746ad5f2835383af62657330d237c387"
+    },
+    "textures/airlock_gear_5_metal_roughness.png": {
+      "bytes": 770022,
+      "role": "texture",
+      "sha256": "e5a3ef3b20dee272eff80661b4db555fbeb5aae7583ff2d46374bc302f10ed28"
+    },
+    "textures/airlock_gear_5_normal.png": {
+      "bytes": 5289324,
+      "role": "texture",
+      "sha256": "d2181d0a5db0473851b81244d61514c98aa58b6d287ab140cd9db1dfc9d01298"
+    }
+  },
+  "id": "pipe_straight_5.airlock",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T21:49:09.803965+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "cd867e6ed7795f31b467c89d9aac2f6f11a1c4e0f014f42eec0082267da0bdfe",
+    "models": [],
+    "node": "assembly@airlock",
+    "output": "8900f72fdf3585e5c853f71bbe4723b74677075a11235a7acb403664c1ec2464",
+    "place": "airlock",
+    "record_key": "1971b952fc7cf77c7898f3951a1958e959f95e422ab47f4ce6910bda0ff3bdc3",
+    "source_name": "pipe_straight_5",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Pipe straight 5",
+  "usd": {
+    "default_prim": "/pipe_straight_5",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/pipe_straight_5.airlock/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

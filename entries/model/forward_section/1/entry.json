@@ -1,0 +1,103 @@
+{
+  "address": "model/forward_section@1",
+  "files": {
+    "model.json": {
+      "bytes": 338,
+      "role": "record",
+      "sha256": "11033cec7cc18974cf3ef8d5f184936b5952b327ff862b1baa5220529940e12c"
+    },
+    "model.usdc": {
+      "bytes": 5979624,
+      "role": "usd",
+      "sha256": "c4220496094d036a4f46c13424c8792a202e3b6258e658da3dd52af710c6dede"
+    },
+    "preview.png": {
+      "bytes": 34631,
+      "role": "picture",
+      "sha256": "fafa5e5b387f584275f0f1874c213a7860edd9ab11394de81aaa2f8c8fd9a905"
+    },
+    "textures/forward_section_base_color.png": {
+      "bytes": 2747221,
+      "role": "texture",
+      "sha256": "15bcde6417a32dd8cc46a4042d39572f6add9322646fb55987360221e64410d2"
+    },
+    "textures/forward_section_metal_roughness.png": {
+      "bytes": 2266189,
+      "role": "texture",
+      "sha256": "7148c6fe46d5ecd6e5b7af850ebe6503a136e0b9fe5182d15e1afe5f3511c087"
+    },
+    "textures/forward_section_normal.png": {
+      "bytes": 12935386,
+      "role": "texture",
+      "sha256": "752ee90cecc4c372d936e9d58d35b537774d95ffa6691fcd32649bd8aa7ab8bf"
+    }
+  },
+  "id": "forward_section",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T15:53:36.185584+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "b46717422a5a38dc4864e493541ea8660ce76f50639c39d880db926b9a9ace9f",
+    "models": [],
+    "node": "assembly@wreck",
+    "output": "591bca186cdb2ba3104fc444e86a6ff62eeb734cbab1de4f4f2c54506dd99291",
+    "place": "wreck",
+    "record_key": "ae3d3dca811e262167338103d0abcba1e68bff01135dac7ecd4e6f2f4113254b",
+    "source_name": "forward_section",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "moon",
+      "outside"
+    ]
+  },
+  "title": "Forward section",
+  "usd": {
+    "default_prim": "/forward_section",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/forward_section/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

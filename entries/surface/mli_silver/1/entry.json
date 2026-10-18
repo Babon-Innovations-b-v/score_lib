@@ -1,0 +1,108 @@
+{
+  "address": "surface/mli_silver@1",
+  "files": {
+    "material.usda": {
+      "bytes": 542,
+      "role": "usd",
+      "sha256": "4dc9bfbbfea73f17f290427b8830fe01f8cddbf43c46ea098835487c20e57321"
+    },
+    "preview.png": {
+      "bytes": 17943,
+      "role": "picture",
+      "sha256": "123e53b86691188d1e16ab56e8293af6990598cc4f428086223883137543d704"
+    },
+    "surface.json": {
+      "bytes": 219,
+      "role": "record",
+      "sha256": "a555cb701a342e4a0bcc90cd18800e2d7d4aaba3ded2016b44c2b5b0e55fbf02"
+    }
+  },
+  "id": "mli_silver",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "foil",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "foil"
+    ],
+    "recipe": [
+      "anodized"
+    ]
+  },
+  "title": "Mli silver",
+  "usd": {
+    "default_prim": "/mli_silver",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/mli_silver/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

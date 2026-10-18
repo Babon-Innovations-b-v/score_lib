@@ -1,0 +1,84 @@
+{
+  "address": "layer/settle.lab@1",
+  "files": {
+    "layer.usda": {
+      "bytes": 6093,
+      "role": "usd",
+      "sha256": "7879316dfc76d0868f1337837be751b610877903dbecca8406a442d7d7884c61"
+    },
+    "settle.json": {
+      "bytes": 11628,
+      "role": "record",
+      "sha256": "95450263a7949a095b62ae7bae0b375b74a48b3e358c423d5bbb3d7a209d52c4"
+    }
+  },
+  "id": "settle.lab",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:07:25.503141+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/settle.usda",
+        "sha256": "7879316dfc76d0868f1337837be751b610877903dbecca8406a442d7d7884c61"
+      }
+    },
+    "models": [],
+    "node": "assembly@lab",
+    "output": "6e27c7d3c17e42a9d22d07e469a7b3a8e37bced2cae426b5827007830b83d66a",
+    "own_files": [],
+    "place": "lab",
+    "record_key": "90b53b440293d619704e077b09a234f458d34710e83b21efc9453072590550e1",
+    "side_records_from": "3deabdc7e952ce7ea9f8f6f777f3f2a0f56f09c238a7d748c0884a01b085cd8c",
+    "source_name": "layers/settle.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/settle@1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "lab"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "settle"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Lab settle layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "settle",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/settle.lab/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

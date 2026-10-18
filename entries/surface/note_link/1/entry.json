@@ -1,0 +1,108 @@
+{
+  "address": "surface/note_link@1",
+  "files": {
+    "material.usda": {
+      "bytes": 535,
+      "role": "usd",
+      "sha256": "a7799f203d233e3efd03760e757c86537d655be29133cfde870ef3ba4bbaf702"
+    },
+    "preview.png": {
+      "bytes": 22197,
+      "role": "picture",
+      "sha256": "4f3e717584c2aee32b2046abb810f3e1418813084a10e3f041aaf0f4b5f3e1ff"
+    },
+    "surface.json": {
+      "bytes": 183,
+      "role": "record",
+      "sha256": "eef3ea4e415a1e4d1e0190788d7b6a502f8aff68a7d924a50368df9664314fa6"
+    }
+  },
+  "id": "note_link",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "print",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "print"
+    ],
+    "recipe": [
+      "printed"
+    ]
+  },
+  "title": "Note link",
+  "usd": {
+    "default_prim": "/note_link",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/note_link/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

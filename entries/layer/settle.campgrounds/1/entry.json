@@ -1,0 +1,84 @@
+{
+  "address": "layer/settle.campgrounds@1",
+  "files": {
+    "layer.usda": {
+      "bytes": 7366,
+      "role": "usd",
+      "sha256": "5f5213f0f3877a41a2fb8f85e579a312eb0bf2360e5b2ae19b479b0b4f117293"
+    },
+    "settle.json": {
+      "bytes": 10579,
+      "role": "record",
+      "sha256": "8c1678d2926339ca1d4e673fa0f587b3fa68d5e0b94b5d8bcc3e00dbc1afd7ce"
+    }
+  },
+  "id": "settle.campgrounds",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:16:00.039696+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/settle.usda",
+        "sha256": "5f5213f0f3877a41a2fb8f85e579a312eb0bf2360e5b2ae19b479b0b4f117293"
+      }
+    },
+    "models": [],
+    "node": "assembly@campgrounds",
+    "output": "7fcf4c6f9552d4edb6020038bb83dd248f2e602f1958878438d52dfc3a7685bb",
+    "own_files": [],
+    "place": "campgrounds",
+    "record_key": "3e28c5bc4fca67388ebba8768e3cf58d643f791893e4237289ddba7e9754e64e",
+    "side_records_from": "2a84722abb3df080813b050c1af98383831874209e326a6759905aef97240ee0",
+    "source_name": "layers/settle.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/settle@1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "campgrounds"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "settle"
+    ],
+    "place_kind": [
+      "outside",
+      "mars"
+    ]
+  },
+  "title": "Campgrounds settle layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "settle",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/settle.campgrounds/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

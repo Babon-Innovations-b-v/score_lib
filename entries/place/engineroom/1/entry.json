@@ -1,0 +1,118 @@
+{
+  "address": "place/engineroom@1",
+  "files": {
+    "contract.json": {
+      "bytes": 99,
+      "role": "record",
+      "sha256": "c2b7151f92e6a67ca4666ea747ad262b67b4d0af824cc83862ce64d8cc49d12c"
+    },
+    "edit.usda": {
+      "bytes": 183,
+      "role": "usd",
+      "sha256": "8fc5485ea9a58537dd8289c516a85733e069ad7a17b866471667b8795142454f"
+    },
+    "engineroom.usda": {
+      "bytes": 301,
+      "role": "usd",
+      "sha256": "3c04aaf4367453c616fa0effd34049c1374388bfb9216be2419ff7b583469f88"
+    },
+    "gaps.json": {
+      "bytes": 10820,
+      "role": "record",
+      "sha256": "7616b0ad73dde12bf7da28b5cb5a01ba13f74220a1c09919497b912b91972fdc"
+    },
+    "inputs.json": {
+      "bytes": 6337,
+      "role": "record",
+      "sha256": "336dbc25ee0fa17099496e75f418939b722477ed39e739eb274c9f99be85dec8"
+    },
+    "origin.json": {
+      "bytes": 945,
+      "role": "record",
+      "sha256": "f89ecc53e56a8a378b26e356f81880d4719f3ef71cbf7620deb5fa048d141518"
+    },
+    "scene.json": {
+      "bytes": 2122,
+      "role": "record",
+      "sha256": "a4d3bc909df04d3805df4c575d08810444592dd3b3f4890f5df4dd92cb6b6d7a"
+    }
+  },
+  "id": "engineroom",
+  "kind": "place",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T20:05:54.680906+00:00",
+      "by": "runner"
+    },
+    "code": "2c394fb6649caa75a8d8b07ff69369fcc217046e6bc8cb45084263388cde70f0",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "complete": {
+      "accept": {
+        "at": "2026-10-18T03:18:37.602521+00:00",
+        "by": "runner"
+      },
+      "code": "614e17d70adbc54d15ef2ac7532458f7dbfe393cb1a802ed4b39c5bbd5b6e794",
+      "models": [],
+      "node": "complete@engineroom",
+      "output": "4359f8998245f75e00ea221668e9d975c30dd1a7c96c81cdfe36019144b54fe1",
+      "record_key": "4f570d15960fa85a30bb114da4670594b34068a3494b85423cf8779b78297e03"
+    },
+    "complete_failing": [
+      "named gaps"
+    ],
+    "gaps": "data/checks/gaps/engineroom.json",
+    "models": [],
+    "node": "assembly@engineroom",
+    "output": "2b04a49e1020abb736cf72066d11757c544981b242f901765795a03462916330",
+    "place": "engineroom",
+    "record_key": "0025709ddb07848c2946b6abd8a4f122e919acdde9cc419b62d42eab63a0b1e6",
+    "unresolved_sublayers": [],
+    "world": "world1"
+  },
+  "requires": [
+    "layer/base.engineroom@1",
+    "layer/light.engineroom@1",
+    "layer/sound.engineroom@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "engineroom"
+  ],
+  "state": "draft",
+  "tags": {
+    "complete": [
+      "named_gaps"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Engineroom",
+  "usd": {
+    "default_prim": "/engineroom",
+    "layer": "root",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/place/engineroom/1/engineroom.usda",
+    "root": "engineroom.usda",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "open"
+  },
+  "version": 1
+}

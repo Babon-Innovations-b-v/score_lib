@@ -1,0 +1,103 @@
+{
+  "address": "model/small_panel@1",
+  "files": {
+    "model.json": {
+      "bytes": 258,
+      "role": "record",
+      "sha256": "0b0952696cfc442f7d3d5554b1c9e0d6c2f829e2d845bcccaace90ff931f30f1"
+    },
+    "model.usdc": {
+      "bytes": 943790,
+      "role": "usd",
+      "sha256": "3bfcabc4d2c55f3223d32bb02efd7c30ca14d7685d648555d7b6eb373b001ea9"
+    },
+    "preview.png": {
+      "bytes": 19202,
+      "role": "picture",
+      "sha256": "d935aac638be0e098d455e23a97155b5e6cfc5baf65045ca7f7853b29c5c9366"
+    },
+    "textures/small_panel_base_color.png": {
+      "bytes": 1321903,
+      "role": "texture",
+      "sha256": "c3bb7739a44ff308168175086f9cd09dcecbd6f2f61395bd7c346cdc7c3cdb7e"
+    },
+    "textures/small_panel_metal_roughness.png": {
+      "bytes": 1337561,
+      "role": "texture",
+      "sha256": "f0ee98540df7164b628c4759cb200674c7e8db36dffa9d9509425a0583cc1c89"
+    },
+    "textures/small_panel_normal.png": {
+      "bytes": 4700638,
+      "role": "texture",
+      "sha256": "cd193e413967a585dd8129a02ead654301dc6adb012664d42ca9c9ffddabd11f"
+    }
+  },
+  "id": "small_panel",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T15:53:36.185584+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "dedb2b677ebd19e71e0c21795aface10d0f8b89a6154e51700f5c014d2a2c787",
+    "models": [],
+    "node": "assembly@wreck",
+    "output": "591bca186cdb2ba3104fc444e86a6ff62eeb734cbab1de4f4f2c54506dd99291",
+    "place": "wreck",
+    "record_key": "ae3d3dca811e262167338103d0abcba1e68bff01135dac7ecd4e6f2f4113254b",
+    "source_name": "small_panel",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "moon",
+      "outside"
+    ]
+  },
+  "title": "Small panel",
+  "usd": {
+    "default_prim": "/small_panel",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/small_panel/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

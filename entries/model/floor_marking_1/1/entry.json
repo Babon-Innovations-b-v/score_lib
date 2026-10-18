@@ -1,0 +1,103 @@
+{
+  "address": "model/floor_marking_1@1",
+  "files": {
+    "model.json": {
+      "bytes": 323,
+      "role": "record",
+      "sha256": "b4c621a48b1dbed520af89459e2ad88375287b31a0b1552a9f7fcf3ba391ed83"
+    },
+    "model.usdc": {
+      "bytes": 12693,
+      "role": "usd",
+      "sha256": "1719403caf7760af6b9be85d671bb775ab3c0bf0102acb71de637620915ea648"
+    },
+    "preview.png": {
+      "bytes": 11140,
+      "role": "picture",
+      "sha256": "25151163062d31ea3b9be6d569f651e0ce9a175e2a228460a22f609561dfd95b"
+    },
+    "textures/habitat_floor_1_base_color.png": {
+      "bytes": 555282,
+      "role": "texture",
+      "sha256": "fb3673bdf7fc7e53fe9728406cebb53d7f4df083d56dab9b8c6b86c3458cd85e"
+    },
+    "textures/habitat_floor_1_metal_roughness.png": {
+      "bytes": 836830,
+      "role": "texture",
+      "sha256": "cedfd82af0e9d300aa0566ab1b37ea22167f497e84babb3cb92a12a6507d7583"
+    },
+    "textures/habitat_floor_1_normal.png": {
+      "bytes": 13598293,
+      "role": "texture",
+      "sha256": "eb2954772f683496f96e1104aec329270d0a0b819ee8732df9fbf5b6672bd1a3"
+    }
+  },
+  "id": "floor_marking_1",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T09:31:21.711004+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "bcda1b5a06ad3aa32fdd21f9bc45732f0247d60243034c65010152d0df6ae242",
+    "models": [],
+    "node": "assembly@habitat",
+    "output": "e6cb813b79be54e9c4ec9a531b2407cc81765e13b62c9b0962394ef9645519d6",
+    "place": "habitat",
+    "record_key": "e2801490121188a98eb1a3bfb7c0acdf01953b265874ff4b2a27a83a896bd500",
+    "source_name": "floor_marking_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "habitat"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Floor marking 1",
+  "usd": {
+    "default_prim": "/floor_marking_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/floor_marking_1/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

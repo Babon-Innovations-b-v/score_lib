@@ -1,0 +1,103 @@
+{
+  "address": "place/gdoor@1",
+  "files": {
+    "contract.json": {
+      "bytes": 99,
+      "role": "record",
+      "sha256": "c2b7151f92e6a67ca4666ea747ad262b67b4d0af824cc83862ce64d8cc49d12c"
+    },
+    "edit.usda": {
+      "bytes": 183,
+      "role": "usd",
+      "sha256": "8fc5485ea9a58537dd8289c516a85733e069ad7a17b866471667b8795142454f"
+    },
+    "gdoor.usda": {
+      "bytes": 380,
+      "role": "usd",
+      "sha256": "3d7441f8e3328b52ec23a9862c392c7cd3d3c3f04ae6f7a14137afb6e3961ab9"
+    },
+    "inputs.json": {
+      "bytes": 788,
+      "role": "record",
+      "sha256": "ac6d968586795851873479445b407f1a6e9869158dbc4ca074acfd25907ee4dc"
+    },
+    "origin.json": {
+      "bytes": 384,
+      "role": "record",
+      "sha256": "df909effefd082338b5f29f66370cf938bf62aa713f83ef58107fd94d454aece"
+    }
+  },
+  "id": "gdoor",
+  "kind": "place",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-13T08:07:15.141411+00:00",
+      "by": "runner"
+    },
+    "code": "0b158c668b94c11dfa4edc5aae6aca004c40e9e698701955b77f3799dbce1b7f",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "complete": {
+      "accept": {
+        "at": "2026-10-13T08:14:02.769718+00:00",
+        "by": "runner"
+      },
+      "code": "49febf695dbc2bb4612363ba79918223ed187ef78b657fa3c975bf18a9a809e9",
+      "models": [],
+      "node": "complete@gdoor",
+      "output": "1b672f0f236da1afd7ee796ca37a687612b9b5f8d1624fd65ebdcb14fb3de3ae",
+      "record_key": "689d003b6080a7a55ba54189f50208acc6402ed57c66405d8fef27e489423957"
+    },
+    "complete_failing": [],
+    "gaps": null,
+    "models": [],
+    "node": "assembly@gdoor",
+    "output": "68fc03418ea3f6bcd5ebf0ea6c56d1418ac865151a84199080152c3be97ad50a",
+    "place": "gdoor",
+    "record_key": "70a152d0500ea210cff8a69b8904b2ded93cd1287dac91a63bb0ca90471ec25a",
+    "unresolved_sublayers": [],
+    "world": "world1"
+  },
+  "requires": [
+    "layer/base.gdoor@1",
+    "layer/motion.gdoor@1",
+    "layer/sound.gdoor@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "gdoor"
+  ],
+  "state": "draft",
+  "tags": {
+    "complete": [
+      "pass"
+    ],
+    "place_kind": []
+  },
+  "title": "Gdoor",
+  "usd": {
+    "default_prim": "/gdoor",
+    "layer": "root",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/place/gdoor/1/gdoor.usda",
+    "root": "gdoor.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": "Y",
+    "use": "open"
+  },
+  "version": 1
+}

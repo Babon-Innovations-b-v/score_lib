@@ -1,0 +1,103 @@
+{
+  "address": "model/frame_rib_1.cockpit@1",
+  "files": {
+    "model.json": {
+      "bytes": 317,
+      "role": "record",
+      "sha256": "f3bf3156c52ec0f9483c2bf1daac719ec4debbe41f53c4d8e4fac6a12175d8f0"
+    },
+    "model.usdc": {
+      "bytes": 11780,
+      "role": "usd",
+      "sha256": "fc90dde3f4561625a82f0bdd228e038b24ffa09ff5501cb2f8b9faee4d5308a5"
+    },
+    "preview.png": {
+      "bytes": 6583,
+      "role": "picture",
+      "sha256": "9639c38ab2937dac31a27206c63288c2372d14cfd8938d20f1c5691b5e076c79"
+    },
+    "textures/cockpit_gear_3_base_color.png": {
+      "bytes": 337608,
+      "role": "texture",
+      "sha256": "852243fc8604a5dc7a78af39bdd3b731c46c5e7298680a97ef3424698d3cb4af"
+    },
+    "textures/cockpit_gear_3_metal_roughness.png": {
+      "bytes": 158080,
+      "role": "texture",
+      "sha256": "c2f93738ae606d14cdb94f67c1a751e9c3bc96811bd5816dda506e39cb62d374"
+    },
+    "textures/cockpit_gear_3_normal.png": {
+      "bytes": 4304783,
+      "role": "texture",
+      "sha256": "e69631cac3d2400424548c81aa0676717d85965e740ae946edbba601f89b7b53"
+    }
+  },
+  "id": "frame_rib_1.cockpit",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T10:12:20.716778+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "a5813cd88dc2d56204711501c8b2b9167864c08912f4a04804319b6a695c059c",
+    "models": [],
+    "node": "assembly@cockpit",
+    "output": "b8ec7f49d4ff317fb9858d8dce4a33fcfc258d958fcd162c2b292eabb7de5c83",
+    "place": "cockpit",
+    "record_key": "6507789d5dd016672ed678b36e6a88f586c76345c9ca611d2f50b16a694eea46",
+    "source_name": "frame_rib_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "cockpit"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Frame rib 1",
+  "usd": {
+    "default_prim": "/frame_rib_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/frame_rib_1.cockpit/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

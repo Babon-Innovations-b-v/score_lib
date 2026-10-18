@@ -1,0 +1,122 @@
+{
+  "address": "kit/quarters@1",
+  "files": {
+    "kit.json": {
+      "bytes": 20160,
+      "role": "record",
+      "sha256": "11084f2d5b76e2a385a0b8625d2449b88e80a7b37ca19dac86e7e41385b294b2"
+    },
+    "preview.png": {
+      "bytes": 3870,
+      "role": "picture",
+      "sha256": "da71e260b201e1b1e42be69fea27f8ff4a8d701ff75888ad93bcc3233ec09f04"
+    },
+    "ship_kit/job-kit-floor.json": {
+      "bytes": 195180,
+      "role": "record",
+      "sha256": "0436db83b8ea2c5a9d6208b9a87b8a61d8919d2df3c54e38dabea1c6a9ac7b71"
+    },
+    "ship_kit/job-kit-gear.json": {
+      "bytes": 195294,
+      "role": "record",
+      "sha256": "df425672d1042f9157aa61e5119d085eda59fd06cd2c5ff13b1cbed602282cb4"
+    },
+    "ship_kit/job-kit-walls_high.json": {
+      "bytes": 195948,
+      "role": "record",
+      "sha256": "058885dcaa5a7286b97457ee9cbaacc8c0e97f6b6d38f5d52891670c1c635672"
+    },
+    "ship_kit/job-kit-walls_low_1.json": {
+      "bytes": 195323,
+      "role": "record",
+      "sha256": "6f52811b6a643e9a84c9aad088b3a55c3e8760c4390f08c8fd10477b419de8c6"
+    },
+    "ship_kit/job-kit-walls_low_2.json": {
+      "bytes": 195172,
+      "role": "record",
+      "sha256": "b918fd5eb764f1fab6771b09937423d41e1bf5de41e0580746d5e715ce2691a9"
+    },
+    "ship_kit/layout-full.json": {
+      "bytes": 20374,
+      "role": "record",
+      "sha256": "ef381c240fb2def6da3a90b5d729ecd111e322cb7c31ee8029639866f4f94efa"
+    },
+    "ship_kit/layout.json": {
+      "bytes": 16056,
+      "role": "record",
+      "sha256": "570b97402c588eccfef759f9734ee8f5e2f3f15221ca14685cd01c201249fdbc"
+    },
+    "ship_kit/plan.json": {
+      "bytes": 3814,
+      "role": "record",
+      "sha256": "dcf544427fbbc3cba692b03e515f7a3f1d192ad100c82cd4378b89b9e49724fd"
+    }
+  },
+  "id": "quarters",
+  "kind": "kit",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/plan.py",
+    "of": "kit.json pieces (56) from above"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "pieces": 56,
+    "place": "quarters",
+    "ship_kit": {
+      "accept": {
+        "at": "2026-10-14T23:26:26.725126+00:00",
+        "by": "runner"
+      },
+      "code": "fa0e03dae5d30889cf6f98455ec978fbd3b275e036d58494ccb2eb593df5217a",
+      "models": [],
+      "node": "ship_kit@quarters",
+      "output": "d329af0551c31907790d0ebc9f6c75bdbaa0f206245d30fecb2a63bdeaa78f50",
+      "record_key": "eb3b48c5818546e16d514087149f7e5e579688116efa5a335b94051bccbb1b77"
+    },
+    "source": "data/kit/quarters.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/room_layout@1",
+    "model/ceiling_light_panel_1.quarters@1",
+    "model/door_leaf_1.quarters@1",
+    "model/edge_light_strip_1.quarters@1",
+    "model/ring_floor_plate_1.quarters@1",
+    "model/roof_face_panel_1.quarters@1",
+    "model/wall_lower_plain_1.quarters@1",
+    "model/wall_lower_plain_2.quarters@1",
+    "model/wall_lower_plain_3.quarters@1",
+    "model/wall_upper_plain_1.quarters@1",
+    "model/wall_upper_plain_2.quarters@1",
+    "model/wall_upper_plain_3.quarters@1",
+    "model/wall_upper_plain_4.quarters@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "quarters"
+  ],
+  "state": "draft",
+  "tags": {
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Quarters kit",
+  "usd": null,
+  "version": 1
+}

@@ -1,0 +1,88 @@
+{
+  "address": "surface/suit_fabric_orange@1",
+  "files": {
+    "material.usda": {
+      "bytes": 564,
+      "role": "usd",
+      "sha256": "6c97320cb905b075a6c417514ba1cfdff200bd8b8d0c8cd43bd3b6d839bcf67b"
+    },
+    "preview.png": {
+      "bytes": 22404,
+      "role": "picture",
+      "sha256": "6927596de405d9a9809575bb20fb73979883b1a469527ca2224035ee3fdee0b0"
+    },
+    "surface.json": {
+      "bytes": 462,
+      "role": "record",
+      "sha256": "4fb3503cea3a0242cf7b0e9513fb002beb9dac94b6c4c1d5586442af5f328215"
+    }
+  },
+  "id": "suit_fabric_orange",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "fabric",
+    "place": "cockpit",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "cockpit",
+    "engineroom",
+    "galley",
+    "navigation",
+    "quarters",
+    "shiplock",
+    "storage",
+    "walkway"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "fabric"
+    ],
+    "recipe": [
+      "rubber"
+    ]
+  },
+  "title": "Suit fabric orange",
+  "usd": {
+    "default_prim": "/suit_fabric_orange",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/suit_fabric_orange/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

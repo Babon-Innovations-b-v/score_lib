@@ -1,0 +1,107 @@
+{
+  "address": "surface/led_red.airlock@1",
+  "files": {
+    "material.usda": {
+      "bytes": 601,
+      "role": "usd",
+      "sha256": "af77bb7e9a8e27a1204207e14f348f97202c4d15f923bcedb059dc6fb4c0b633"
+    },
+    "preview.png": {
+      "bytes": 20667,
+      "role": "picture",
+      "sha256": "9573a3cfbb2d53509ffcd664039f75f7c1b0b1c462a7d0d7062928c36561f4a3"
+    },
+    "surface.json": {
+      "bytes": 137,
+      "role": "record",
+      "sha256": "e0acfe6d81af5d3cd07f4058a2643bba6acae8199713cd58b47c047bd05d645f"
+    }
+  },
+  "id": "led_red.airlock",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "light",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "light"
+    ],
+    "recipe": [
+      "glowing"
+    ]
+  },
+  "title": "Led red",
+  "usd": {
+    "default_prim": "/led_red",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/led_red.airlock/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

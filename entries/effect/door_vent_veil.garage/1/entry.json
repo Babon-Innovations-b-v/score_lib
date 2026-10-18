@@ -1,0 +1,94 @@
+{
+  "address": "effect/door_vent_veil.garage@1",
+  "files": {
+    "clip.usdc": {
+      "bytes": 7946369,
+      "role": "usd",
+      "sha256": "7b9624c27d5fd7e088dfc7868d89c3ac9ae01440a4dc7621bfd6226bfc26725a"
+    },
+    "effect.usda": {
+      "bytes": 4325,
+      "role": "usd",
+      "sha256": "32d71fd98d1166b88a0e00e2034256bda7c28fb74dfc9b4273954373398669c5"
+    },
+    "preview.png": {
+      "bytes": 97349,
+      "role": "picture",
+      "sha256": "e6e763d9d4e38ff0447aef9020bac5d25363f61c2799eac9c216d3906c20b688"
+    },
+    "settings.json": {
+      "bytes": 1900,
+      "role": "record",
+      "sha256": "9c0776510d5294148ea93e2211f5300c1a67ce2e6915cc50848fac8240d3730b"
+    }
+  },
+  "id": "door_vent_veil.garage",
+  "kind": "effect",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/points.py",
+    "of": "clip.usdc at clip time 120.0"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-12T01:25:10.589195+00:00",
+      "by": "runner"
+    },
+    "code": "7b3bc97d9997c40ad75aad20b9a04a996a85620ffa21f81538dfd5251854aac9",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "from": "footage: NTRS-19910011413, S126E014192 (the gas itself leaving with the ice, the fine fog of its vapour condensing again, seen as a faint fan of white leaving with the ice at its speed and diverging at its angle (NTRS-19910011413), each puff growing as it spreads so the fan stays one soft band (a vent seen in footage is a soft veil over the sparkling ice, never the ice alone); the leaves part from their seam (the west leaf's east edge, 1.27 m east of its middle) at 1 s (data/motion/garage.json big_door_west))",
+    "models": [],
+    "node": "effects-layer@garage",
+    "output": "dd0577f250d10d9cb327f68449f6daf3d2cf6ad45f25c6bcaf68d289e6e4068f",
+    "place": "garage",
+    "prim": "/garage/Places/door_vent_veil",
+    "record_key": "fa8d6cf1614a1a69c6069be2dcd46690badc821a09804750e5e3772a8b52149f",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/particle_effects@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "garage"
+  ],
+  "state": "draft",
+  "tags": {
+    "effect": [
+      "vacuum_vent_veil"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ],
+    "weather": []
+  },
+  "title": "Door vent veil",
+  "usd": {
+    "default_prim": "/door_vent_veil",
+    "layer": "effects",
+    "meters_per_unit": null,
+    "path": "score_lib/effect/door_vent_veil.garage/1/effect.usda",
+    "root": "effect.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

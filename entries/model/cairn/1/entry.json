@@ -1,0 +1,101 @@
+{
+  "address": "model/cairn@1",
+  "files": {
+    "model.json": {
+      "bytes": 189,
+      "role": "record",
+      "sha256": "51307e6b7b2f20ac37edc9895faa62aca38d77826539cc0be71d6def01db85a2"
+    },
+    "model.usdc": {
+      "bytes": 1924434,
+      "role": "usd",
+      "sha256": "b558c1c35046808084bf5762f24b825fdda1090781e606f0efcbffbaeffbb8d1"
+    },
+    "preview.png": {
+      "bytes": 28830,
+      "role": "picture",
+      "sha256": "bc4f5ff81e59133f64e61f8650cd25ceafcb4a6b56736419bf0a4957f98db1c9"
+    },
+    "textures/cairn_base_color.png": {
+      "bytes": 1855124,
+      "role": "texture",
+      "sha256": "ace7a0ab5fc4dc8e568bb47976f72075071da2da4980c9fe0deb0308efdff067"
+    },
+    "textures/cairn_metal_roughness.png": {
+      "bytes": 668944,
+      "role": "texture",
+      "sha256": "88402528be07407aece66b88ecf6df078898482353a0bf50b92dd75f9372b84a"
+    },
+    "textures/cairn_normal.png": {
+      "bytes": 16406478,
+      "role": "texture",
+      "sha256": "2076c6a7672ddc946f55556215db3aaba5fc0f8e636cc197462bdee0205de534"
+    }
+  },
+  "id": "cairn",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:16:00.039696+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "2fbcd1380d0e74e6bb87389aea28bcbc0720ed58da3425cfaf53aa16134e6b91",
+    "models": [],
+    "node": "assembly@campgrounds",
+    "output": "7fcf4c6f9552d4edb6020038bb83dd248f2e602f1958878438d52dfc3a7685bb",
+    "place": "campgrounds",
+    "record_key": "3e28c5bc4fca67388ebba8768e3cf58d643f791893e4237289ddba7e9754e64e",
+    "source_name": "cairn",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "campgrounds"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [],
+    "place_kind": [
+      "mars",
+      "outside"
+    ]
+  },
+  "title": "Cairn",
+  "usd": {
+    "default_prim": "/cairn",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/cairn/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

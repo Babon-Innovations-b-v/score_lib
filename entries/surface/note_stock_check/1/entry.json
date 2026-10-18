@@ -1,0 +1,108 @@
+{
+  "address": "surface/note_stock_check@1",
+  "files": {
+    "material.usda": {
+      "bytes": 556,
+      "role": "usd",
+      "sha256": "df35278d056219b341e8675539c14e3f48a0bd48f49cd081090a3a86b7b87194"
+    },
+    "preview.png": {
+      "bytes": 22197,
+      "role": "picture",
+      "sha256": "4f3e717584c2aee32b2046abb810f3e1418813084a10e3f041aaf0f4b5f3e1ff"
+    },
+    "surface.json": {
+      "bytes": 197,
+      "role": "record",
+      "sha256": "1430127df17ed617a8423437759759fbad84c4a06e22c93118ed84f8eb0049b1"
+    }
+  },
+  "id": "note_stock_check",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "print",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "print"
+    ],
+    "recipe": [
+      "printed"
+    ]
+  },
+  "title": "Note stock check",
+  "usd": {
+    "default_prim": "/note_stock_check",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/note_stock_check/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

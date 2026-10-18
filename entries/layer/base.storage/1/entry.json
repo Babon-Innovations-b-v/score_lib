@@ -1,0 +1,97 @@
+{
+  "address": "layer/base.storage@1",
+  "files": {
+    "layer.usda": {
+      "bytes": 292501,
+      "role": "usd",
+      "sha256": "5581512aa75fb2a3ec0f0ef02ff2783cab4f757feb3c82130d5760ddb1dc5534"
+    }
+  },
+  "id": "base.storage",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-17T09:51:12.135510+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/base.usda",
+        "sha256": "c38ec95b12664e3cd6e822b75dcdc40e34b0be282f9407e11076d341244ae238"
+      }
+    },
+    "models": [],
+    "node": "assembly@storage",
+    "output": "69f54fa7482a870ea9fcf8635d1dee2dcbce311391024babd0e085354ca2c3df",
+    "own_files": [],
+    "place": "storage",
+    "record_key": "07be8d8805dfb900db0fcbea2f77f5228ae16396357e62916ed34f782464f5d8",
+    "side_records_from": null,
+    "source_name": "layers/base.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/room_layout@1"
+  },
+  "requires": [
+    "model/cargo_rack_1@1",
+    "model/ceiling_equipment_1@1",
+    "model/ceiling_light_panel_1.storage@1",
+    "model/door_leaf_1.storage@1",
+    "model/edge_light_strip_1.storage@1",
+    "model/hatch_door_frame_1@1",
+    "model/overhead_vent_1@1",
+    "model/parts_crate_1@1",
+    "model/ring_floor_plate_1.storage@1",
+    "model/roof_face_panel_1.storage@1",
+    "model/wall_lower_plain_1.storage@1",
+    "model/wall_lower_plain_2.storage@1",
+    "model/wall_lower_plain_3.storage@1",
+    "model/wall_upper_plain_1.storage@1",
+    "model/wall_upper_plain_2.storage@1",
+    "model/wall_upper_plain_3.storage@1",
+    "model/wall_upper_plain_4.storage@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "storage"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "base"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Storage base layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/base.storage/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

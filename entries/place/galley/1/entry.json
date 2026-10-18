@@ -1,0 +1,118 @@
+{
+  "address": "place/galley@1",
+  "files": {
+    "contract.json": {
+      "bytes": 99,
+      "role": "record",
+      "sha256": "c2b7151f92e6a67ca4666ea747ad262b67b4d0af824cc83862ce64d8cc49d12c"
+    },
+    "edit.usda": {
+      "bytes": 183,
+      "role": "usd",
+      "sha256": "8fc5485ea9a58537dd8289c516a85733e069ad7a17b866471667b8795142454f"
+    },
+    "galley.usda": {
+      "bytes": 285,
+      "role": "usd",
+      "sha256": "7615d26dee062f993a9cdce71df24f7dcf6e85c0301366eadefbae619737e419"
+    },
+    "gaps.json": {
+      "bytes": 4757,
+      "role": "record",
+      "sha256": "57990a62a14d64fa9da05b25709242575e56822ba173140551923c4de224567e"
+    },
+    "inputs.json": {
+      "bytes": 3867,
+      "role": "record",
+      "sha256": "f5f4da925ac84f656c8afafe02b03d8f075b9b456e58ab63ba7c5cc5ca0804d0"
+    },
+    "origin.json": {
+      "bytes": 837,
+      "role": "record",
+      "sha256": "9f1e8c4724fcbc0af80de842c46347d561f8a089f43b8a3c15120bba3f58ae45"
+    },
+    "scene.json": {
+      "bytes": 1998,
+      "role": "record",
+      "sha256": "2aa93d0d46b232af69eb622cb79b9f1791e1708ab0c8353f1be7b0af4d3e7b96"
+    }
+  },
+  "id": "galley",
+  "kind": "place",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-17T09:49:25.951322+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "complete": {
+      "accept": {
+        "at": "2026-10-17T09:51:20.088780+00:00",
+        "by": "runner"
+      },
+      "code": "614e17d70adbc54d15ef2ac7532458f7dbfe393cb1a802ed4b39c5bbd5b6e794",
+      "models": [],
+      "node": "complete@galley",
+      "output": "66988550c3435b12bd1bd74be384736aaf69ff4fd9e74e742d97a38aeff2d59c",
+      "record_key": "b5ccab5262f676aa8335f2f27ccfff65aad16e1122918a6e7b54d538887b4b3c"
+    },
+    "complete_failing": [
+      "named gaps"
+    ],
+    "gaps": "data/checks/gaps/galley.json",
+    "models": [],
+    "node": "assembly@galley",
+    "output": "eabb9557c58e5b8c3f8af1c80b87f35086f778135b4488aad9798134c6539faa",
+    "place": "galley",
+    "record_key": "457d662c06cbee7295708f0dc0c0b7e3b5e8b2fb12052d9393b378d0ba644f4c",
+    "unresolved_sublayers": [],
+    "world": "world1"
+  },
+  "requires": [
+    "layer/base.galley@1",
+    "layer/light.galley@1",
+    "layer/sound.galley@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "galley"
+  ],
+  "state": "draft",
+  "tags": {
+    "complete": [
+      "named_gaps"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Galley",
+  "usd": {
+    "default_prim": "/galley",
+    "layer": "root",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/place/galley/1/galley.usda",
+    "root": "galley.usda",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "open"
+  },
+  "version": 1
+}

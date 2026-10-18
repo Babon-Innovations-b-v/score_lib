@@ -1,0 +1,108 @@
+{
+  "address": "model/thrust_indicator_1@1",
+  "files": {
+    "model.json": {
+      "bytes": 421,
+      "role": "record",
+      "sha256": "d2906d7cb2d6cdca11fbd0a106155bc232fc0943cc9aa22f188dff8464c7307f"
+    },
+    "model.usdc": {
+      "bytes": 116913,
+      "role": "usd",
+      "sha256": "895c0737ad7d3fc22e0071f226cebc198602ff07cc3a863e023268577aad76c4"
+    },
+    "model_glow.usdc": {
+      "bytes": 7879,
+      "role": "usd",
+      "sha256": "31a2ee942c44bcaaf94ed6a63819a881a8aeb50b9d8a14197e9701b196f9e7e1"
+    },
+    "preview.png": {
+      "bytes": 17761,
+      "role": "picture",
+      "sha256": "eaea2766f5f97b547d46e5e06f6f7856210acee75f2853e0edb76efb06765306"
+    },
+    "textures/cockpit_gear_2_base_color.png": {
+      "bytes": 435221,
+      "role": "texture",
+      "sha256": "026743519b399e80631009adddce5cf2e3e0ff053dc7e930a92e29484942406e"
+    },
+    "textures/cockpit_gear_2_metal_roughness.png": {
+      "bytes": 264634,
+      "role": "texture",
+      "sha256": "ab61aba3ee42223f82b85f2c5e28603ca7562e6345c15d0fa64caf611f48b77e"
+    },
+    "textures/cockpit_gear_2_normal.png": {
+      "bytes": 2803212,
+      "role": "texture",
+      "sha256": "f4018babab432cc850b8fdbb0e52806057c8fee428662135ee68e0a15698da6b"
+    }
+  },
+  "id": "thrust_indicator_1",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T10:12:20.716778+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "9b0dcd718afc59b25293877e6a48c8c9b858e2990ec68d92c9bad5f137fb13f1",
+    "models": [],
+    "node": "assembly@cockpit",
+    "output": "b8ec7f49d4ff317fb9858d8dce4a33fcfc258d958fcd162c2b292eabb7de5c83",
+    "place": "cockpit",
+    "record_key": "6507789d5dd016672ed678b36e6a88f586c76345c9ca611d2f50b16a694eea46",
+    "source_name": "thrust_indicator_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "cockpit"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Thrust indicator 1",
+  "usd": {
+    "default_prim": "/thrust_indicator_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/thrust_indicator_1/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

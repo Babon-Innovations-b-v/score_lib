@@ -1,0 +1,108 @@
+{
+  "address": "surface/bare_steel@1",
+  "files": {
+    "material.usda": {
+      "bytes": 544,
+      "role": "usd",
+      "sha256": "aee9acc1034d2c8a0432ca948631f9215951725d4d0950205196c2d051802a3f"
+    },
+    "preview.png": {
+      "bytes": 18275,
+      "role": "picture",
+      "sha256": "b5807e9dc03adce173a378964ea9eb8020c5c4488c05f23b507f85bee676ef5b"
+    },
+    "surface.json": {
+      "bytes": 382,
+      "role": "record",
+      "sha256": "ca9a650193ad3acd5ee18c6d34981b061838a9c80ef2aef50a690f66ed1bcdd6"
+    }
+  },
+  "id": "bare_steel",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "steel",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "steel"
+    ],
+    "recipe": [
+      "bare_metal"
+    ]
+  },
+  "title": "Bare steel",
+  "usd": {
+    "default_prim": "/bare_steel",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/bare_steel/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

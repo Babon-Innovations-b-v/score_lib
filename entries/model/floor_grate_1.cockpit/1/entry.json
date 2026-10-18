@@ -1,0 +1,103 @@
+{
+  "address": "model/floor_grate_1.cockpit@1",
+  "files": {
+    "model.json": {
+      "bytes": 330,
+      "role": "record",
+      "sha256": "51346ef68a9ea8e5d8591bec7f43e0a9d29640f5c21459e10d3f2cb6bf1442bc"
+    },
+    "model.usdc": {
+      "bytes": 28143,
+      "role": "usd",
+      "sha256": "61441572a29beed376256208dbe1addd0f7c822f9e36fc2ded478c2dd2dc0df9"
+    },
+    "preview.png": {
+      "bytes": 16817,
+      "role": "picture",
+      "sha256": "af7cc82152c48eb1f1df250e9495bb27839c72a79bf8fdcb9b356ef1b0071fe9"
+    },
+    "textures/cockpit_floor_2_base_color.png": {
+      "bytes": 878320,
+      "role": "texture",
+      "sha256": "126653e9c26eb84ab39968e986edf2a252a73e024bb351fb8c930c24f1692957"
+    },
+    "textures/cockpit_floor_2_metal_roughness.png": {
+      "bytes": 695036,
+      "role": "texture",
+      "sha256": "9301e454aa7781ea6eb618a856114ea84049a469f4fe31f29e0f8f1909d3967e"
+    },
+    "textures/cockpit_floor_2_normal.png": {
+      "bytes": 9312610,
+      "role": "texture",
+      "sha256": "87000c848ee1281bd54413477953861591da9bf89c905cb782888659f1a82180"
+    }
+  },
+  "id": "floor_grate_1.cockpit",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T10:12:20.716778+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "92a5b95a26bfcefcea9f18cb0ee0fd8b94103dd06b3857cbcee63c21a55225c0",
+    "models": [],
+    "node": "assembly@cockpit",
+    "output": "b8ec7f49d4ff317fb9858d8dce4a33fcfc258d958fcd162c2b292eabb7de5c83",
+    "place": "cockpit",
+    "record_key": "6507789d5dd016672ed678b36e6a88f586c76345c9ca611d2f50b16a694eea46",
+    "source_name": "floor_grate_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "cockpit"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Floor grate 1",
+  "usd": {
+    "default_prim": "/floor_grate_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/floor_grate_1.cockpit/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

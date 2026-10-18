@@ -1,0 +1,81 @@
+{
+  "address": "layer/ground.stairwell@1",
+  "files": {
+    "layer.usda": {
+      "bytes": 96,
+      "role": "usd",
+      "sha256": "a08aede16e4d8e1aec533e54593ef459fc7cbe6fa9d40d53f54a10c581e64b36"
+    }
+  },
+  "id": "ground.stairwell",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-15T17:24:17.414697+00:00",
+      "by": "runner"
+    },
+    "code": "e172da5a348a36e044c48ac88c4301ef36b984d2606f116b55884e77f224e788",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/ground.usdc",
+        "sha256": "de55089a37d0f243938c11291259d2a854b678fd6fda8d7db73d141c448e8e85"
+      }
+    },
+    "models": [],
+    "node": "assembly@stairwell",
+    "output": "2fb064ef9f057e0dd4f473a8717c5a3b3629717fa97d7e19c9e6a29fbf7dbd40",
+    "own_files": [],
+    "place": "stairwell",
+    "record_key": "7a5eb1daec9c844f6769fdeae2889c79d0a366dc1ed1e7ec898d0a817bd63e82",
+    "side_records_from": null,
+    "source_name": "layers/ground.usdc",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/terrain_landforms@1"
+  },
+  "requires": [
+    "ground/earth.stairwell@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "stairwell"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "ground"
+    ],
+    "place_kind": [
+      "inside",
+      "earth"
+    ]
+  },
+  "title": "Stairwell ground layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "ground",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/ground.stairwell/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

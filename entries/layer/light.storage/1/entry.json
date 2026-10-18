@@ -1,0 +1,84 @@
+{
+  "address": "layer/light.storage@1",
+  "files": {
+    "lamps.json": {
+      "bytes": 979,
+      "role": "record",
+      "sha256": "2f211b972411ef766387a0591c04dfbbe149048431991392a583fb70c5a0369e"
+    },
+    "layer.usda": {
+      "bytes": 616,
+      "role": "usd",
+      "sha256": "41e1fae7e7a96cd14132a79c64fe527128a8b3f8b28e6e2956aede468687e8e9"
+    }
+  },
+  "id": "light.storage",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-17T09:51:12.135510+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/light.usda",
+        "sha256": "41e1fae7e7a96cd14132a79c64fe527128a8b3f8b28e6e2956aede468687e8e9"
+      }
+    },
+    "models": [],
+    "node": "assembly@storage",
+    "output": "69f54fa7482a870ea9fcf8635d1dee2dcbce311391024babd0e085354ca2c3df",
+    "own_files": [],
+    "place": "storage",
+    "record_key": "07be8d8805dfb900db0fcbea2f77f5228ae16396357e62916ed34f782464f5d8",
+    "side_records_from": "05e62bc3b58748b79a8885c94aee0df02b6b703d118fc5a84c5be1e7916696ac",
+    "source_name": "layers/light.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/light_rig@1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "storage"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "light"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Storage light layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "light",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/light.storage/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

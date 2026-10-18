@@ -1,0 +1,108 @@
+{
+  "address": "surface/ceiling_whitewash@1",
+  "files": {
+    "material.usda": {
+      "bytes": 576,
+      "role": "usd",
+      "sha256": "e4921e959c5066b8a51b49219a58253eb89c390f777e82f9bc74f4553a73db5e"
+    },
+    "preview.png": {
+      "bytes": 19180,
+      "role": "picture",
+      "sha256": "52b31dda137ffa3c72d928223a914e20697322e10f761bc5bb6d7c22276caf66"
+    },
+    "surface.json": {
+      "bytes": 202,
+      "role": "record",
+      "sha256": "ccb9231ba2a6fcb834cc6706644e1b15d9b865ae50c640e3076d9fc4ba0f4a99"
+    }
+  },
+  "id": "ceiling_whitewash",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "plaster",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "plaster"
+    ],
+    "recipe": [
+      "painted_plaster"
+    ]
+  },
+  "title": "Ceiling whitewash",
+  "usd": {
+    "default_prim": "/ceiling_whitewash",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/ceiling_whitewash/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

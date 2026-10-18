@@ -1,0 +1,108 @@
+{
+  "address": "surface/note_use_sparingly@1",
+  "files": {
+    "material.usda": {
+      "bytes": 562,
+      "role": "usd",
+      "sha256": "62916d11e16ca3763d5ce023383bd93536f790f2659a2a294058cda8fbc40b0b"
+    },
+    "preview.png": {
+      "bytes": 22197,
+      "role": "picture",
+      "sha256": "4f3e717584c2aee32b2046abb810f3e1418813084a10e3f041aaf0f4b5f3e1ff"
+    },
+    "surface.json": {
+      "bytes": 201,
+      "role": "record",
+      "sha256": "43cb03fa121a2ed75d199cad9d546189b54301f1e0bd5e680d562586d979f219"
+    }
+  },
+  "id": "note_use_sparingly",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "print",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "print"
+    ],
+    "recipe": [
+      "printed"
+    ]
+  },
+  "title": "Note use sparingly",
+  "usd": {
+    "default_prim": "/note_use_sparingly",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/note_use_sparingly/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

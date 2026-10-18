@@ -1,0 +1,108 @@
+{
+  "address": "surface/shutter_paint@1",
+  "files": {
+    "material.usda": {
+      "bytes": 564,
+      "role": "usd",
+      "sha256": "767544736499c2cbba7db4bbc5de8a5994d494d5c37db1d9a5b229a7a17c7e36"
+    },
+    "preview.png": {
+      "bytes": 18356,
+      "role": "picture",
+      "sha256": "c87c813ac81cfc04f7d002c78ccaf2cba1a85c79c55848bf018c1c1e4db6c59f"
+    },
+    "surface.json": {
+      "bytes": 200,
+      "role": "record",
+      "sha256": "95873acb7230b3b3e1a24838996936e1c1b0990a11e581219601e9816811eb0d"
+    }
+  },
+  "id": "shutter_paint",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "rusted",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "rusted"
+    ],
+    "recipe": [
+      "rusted_metal"
+    ]
+  },
+  "title": "Shutter paint",
+  "usd": {
+    "default_prim": "/shutter_paint",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/shutter_paint/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

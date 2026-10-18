@@ -1,0 +1,108 @@
+{
+  "address": "surface/varnished_wood@1",
+  "files": {
+    "material.usda": {
+      "bytes": 553,
+      "role": "usd",
+      "sha256": "09e8d9b7398a3d148ec02dc84d4f89d057a4282b957e17de738acde8f2ef55fc"
+    },
+    "preview.png": {
+      "bytes": 19319,
+      "role": "picture",
+      "sha256": "f1306c1424d872d89565a267d6c252fb720b365398c02e188d1638d6419aaef9"
+    },
+    "surface.json": {
+      "bytes": 160,
+      "role": "record",
+      "sha256": "3efed68e542c30de8801d56f3281c47bdc52b1e92e920bedf0b13a4f35de0c55"
+    }
+  },
+  "id": "varnished_wood",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "wood",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "wood"
+    ],
+    "recipe": [
+      "wood"
+    ]
+  },
+  "title": "Varnished wood",
+  "usd": {
+    "default_prim": "/varnished_wood",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/varnished_wood/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

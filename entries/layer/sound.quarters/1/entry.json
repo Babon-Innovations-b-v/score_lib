@@ -1,0 +1,95 @@
+{
+  "address": "layer/sound.quarters@1",
+  "files": {
+    "layer.usda": {
+      "bytes": 144019,
+      "role": "usd",
+      "sha256": "e5ea0c0c0c65d7edf565be1ce535b3a06d497b807b084354746900cab41a026e"
+    },
+    "sound.json": {
+      "bytes": 25440,
+      "role": "record",
+      "sha256": "80ca377d227c924f12262eb33c7722170c2649a765d3fb92afead000360ee3b6"
+    }
+  },
+  "id": "sound.quarters",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-17T09:49:59.642437+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/sound.usda",
+        "sha256": "66f279a03fb25bedc9eac72418c11c701853ddd2c97ece11f47b27676a9a5374"
+      }
+    },
+    "models": [],
+    "node": "assembly@quarters",
+    "output": "0934c5ec797a592bef9fcdac6fe2542628ef4a5c60d80eecc9c8e27494da327c",
+    "own_files": [],
+    "place": "quarters",
+    "record_key": "af0a403a3f2f5e89e8d8fa6963c04ecafc141523dea0492f096bebb69558383d",
+    "side_records_from": "165850ee074d9d71aa06c7b86e6698156d6cd50234274bf3142088e693e8c60e",
+    "source_name": "layers/sound.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/sound_layer@1"
+  },
+  "requires": [
+    "sound/footstep_grating@1",
+    "sound/footstep_rubber@1",
+    "sound/footsteps_metal.quarters@1",
+    "sound/impact_grating@1",
+    "sound/impact_rubber@1",
+    "sound/impact_steel_plate@1",
+    "sound/scrape_grating@1",
+    "sound/scrape_rubber@1",
+    "sound/scrape_steel_plate@1",
+    "sound/ship_inside@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "quarters"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "sound"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Quarters sound layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "sound",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/sound.quarters/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

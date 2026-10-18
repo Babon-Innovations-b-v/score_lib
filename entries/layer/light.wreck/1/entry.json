@@ -1,0 +1,86 @@
+{
+  "address": "layer/light.wreck@1",
+  "files": {
+    "lamps.json": {
+      "bytes": 845,
+      "role": "record",
+      "sha256": "e1b75890a808f128cd196142cefae2b734083e0013123fb1080efd04e7fde699"
+    },
+    "layer.usda": {
+      "bytes": 140192,
+      "role": "usd",
+      "sha256": "0453398e4473f596f05ba8d1032ebf72d0a84c12c0e82ce144464ec167da011c"
+    }
+  },
+  "id": "light.wreck",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T15:53:36.185584+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/light.usda",
+        "sha256": "8acd7f94ad3b85e0b124f4b19cdbc72a44ec1b714a865e1675d4cd98d5e69072"
+      }
+    },
+    "models": [],
+    "node": "assembly@wreck",
+    "output": "591bca186cdb2ba3104fc444e86a6ff62eeb734cbab1de4f4f2c54506dd99291",
+    "own_files": [],
+    "place": "wreck",
+    "record_key": "ae3d3dca811e262167338103d0abcba1e68bff01135dac7ecd4e6f2f4113254b",
+    "side_records_from": "4016583b7571d735a748a06b153a291f2910c933b0bb5251e9b640d58319afc8",
+    "source_name": "layers/light.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/light_rig@1"
+  },
+  "requires": [
+    "light/earth_surface@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "light"
+    ],
+    "place_kind": [
+      "outside",
+      "moon"
+    ]
+  },
+  "title": "Wreck light layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "light",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/light.wreck/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

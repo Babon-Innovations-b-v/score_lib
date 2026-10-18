@@ -1,0 +1,103 @@
+{
+  "address": "model/gas_bottle@1",
+  "files": {
+    "model.json": {
+      "bytes": 274,
+      "role": "record",
+      "sha256": "df4219d41fe501b5fd0c0b4f30ac828c05a3385a3301f9c1343473c607630774"
+    },
+    "model.usdc": {
+      "bytes": 1910531,
+      "role": "usd",
+      "sha256": "776471bebd4f3108e82abe19fdd3de30cc35887ee1f553d81478c6caa3951604"
+    },
+    "preview.png": {
+      "bytes": 26851,
+      "role": "picture",
+      "sha256": "39c74a4bfc3b273b233f785d9e3ea14e3ffd8aefa8aa5ff942d14e226d718a0e"
+    },
+    "textures/gas_bottle_base_color.png": {
+      "bytes": 2337895,
+      "role": "texture",
+      "sha256": "865d609daa4bba8447e7a1a3975c20b6641f890a523138278d7d77541d5a6973"
+    },
+    "textures/gas_bottle_metal_roughness.png": {
+      "bytes": 2448839,
+      "role": "texture",
+      "sha256": "6a722b671930b2e97a82156913dce67d25ab599830de2e070cc88675a691682a"
+    },
+    "textures/gas_bottle_normal.png": {
+      "bytes": 12355365,
+      "role": "texture",
+      "sha256": "be9b6684093c92eb2204e97393c49c247c07f1303b3b3d067c89388828c2eacc"
+    }
+  },
+  "id": "gas_bottle",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:02:30.466230+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "8920c0d625a8b53e000861211c260d512346330aaf3e9843290cf31b7f582577",
+    "models": [],
+    "node": "assembly@old_station",
+    "output": "f60adc09d2c14a31314d3bd31f69c2601467bfbcf728c76faa051b30b1810b56",
+    "place": "old_station",
+    "record_key": "7d9d97819faa5aebdafc6de56b258e509d111fd6834f0d009658ac7904c3e290",
+    "source_name": "gas_bottle",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "old_station"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "moon",
+      "outside"
+    ]
+  },
+  "title": "Gas bottle",
+  "usd": {
+    "default_prim": "/gas_bottle",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/gas_bottle/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

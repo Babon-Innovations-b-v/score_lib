@@ -1,0 +1,108 @@
+{
+  "address": "ground/earth.flat@1",
+  "files": {
+    "ground.usdc": {
+      "bytes": 6584721,
+      "role": "usd",
+      "sha256": "58489eddbb6fb625aa4afaed24354b0b7a5793d2ea57a3cfa7cbafaa65bb0419"
+    },
+    "preview.png": {
+      "bytes": 8962,
+      "role": "picture",
+      "sha256": "689e53b9ac6bb14896d690965ca49850c88f9b359de95324d690a7d76897ddef"
+    }
+  },
+  "id": "earth.flat",
+  "kind": "ground",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1; terrain stage in algorithms.md section 11",
+        "spdx": "Apache-2.0",
+        "what": "Depth Anything V2 Small: ground relief"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1; terrain stage in algorithms.md section 11",
+        "spdx": "LicenseRef-paid-API-terms",
+        "text": "paid API",
+        "what": "Nano Banana Pro: ground skins"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1; terrain stage in algorithms.md section 11",
+        "spdx": "Apache-2.0",
+        "what": "Qwen-Image-Edit-2511: diorama pictures the relief is read from"
+      }
+    ],
+    "note": "the provider's terms of service for a paid API; the paper (Table C1) states every model in the framework allows commercial use of its output",
+    "spdx": "Apache-2.0 AND LicenseRef-paid-API-terms AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "ground.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-15T22:15:48.546897+00:00",
+      "by": "runner"
+    },
+    "code": "c4cf7b735072a0e5e40c848bdb6abd3abf48645a9bb5c133f7e3687ba3485a68",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "ground.usdc": {
+        "path": "earth/places/flat.usdc",
+        "sha256": "9b6a1ea86e1293149c9eac6e46c2b419f061c2d6d8a7b890b8896225d86c45ed"
+      }
+    },
+    "models": [],
+    "node": "terrain",
+    "output": "6a4ab8133411093ac2242f7fb9243f6912f5a8da17c4abe2a40ef8c99045a2f9",
+    "place": "flat",
+    "planet": "earth",
+    "record_key": "83726add119cd37905f2c14f9bef3c841eb08f6a51f62fe6833a7e81af75bddb",
+    "source_name": "earth/places/flat.usdc",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/terrain_landforms@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "flat"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "place_kind": [
+      "earth",
+      "inside"
+    ]
+  },
+  "title": "Flat ground (earth)",
+  "usd": {
+    "default_prim": null,
+    "layer": "ground",
+    "meters_per_unit": 1.0,
+    "neighbours": [
+      "place/stairwell@1"
+    ],
+    "path": "score_lib/ground/earth.flat/1/ground.usdc",
+    "root": "ground.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "payload"
+  },
+  "version": 1
+}

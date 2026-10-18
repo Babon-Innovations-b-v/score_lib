@@ -1,0 +1,94 @@
+{
+  "address": "effect/door_vent.airlock@1",
+  "files": {
+    "clip.usdc": {
+      "bytes": 7803881,
+      "role": "usd",
+      "sha256": "150aff25e6d8f6292d25434c14050797ab75b67da241f21ff12cc5991081a429"
+    },
+    "effect.usda": {
+      "bytes": 4485,
+      "role": "usd",
+      "sha256": "81d0125d43d041d3905177fba2ae02c0bce8f3db11be96fa63c66c0c7ed753ee"
+    },
+    "preview.png": {
+      "bytes": 98589,
+      "role": "picture",
+      "sha256": "402b9d4f541455fcc3ea1df24f16d24c55e94189fd33798c92b5cbb8ae5044d9"
+    },
+    "settings.json": {
+      "bytes": 1931,
+      "role": "record",
+      "sha256": "3a2251564de1685a104e14f3bf93406b476167a66591ab657ca4aa9c0ed45c7c"
+    }
+  },
+  "id": "door_vent.airlock",
+  "kind": "effect",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/points.py",
+    "of": "clip.usdc at clip time 120.0"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-12T01:25:10.634484+00:00",
+      "by": "runner"
+    },
+    "code": "7b3bc97d9997c40ad75aad20b9a04a996a85620ffa21f81538dfd5251854aac9",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "from": "footage: S126E014192, STS075-313-022, soyuz-ms22-leak, NTRS-19910011413 (the air the pump leaves (a real airlock's pump stops short of empty and lets the rest out) leaving as the door first opens to the vacuum, its water frozen into fine ice that flies straight out at 16 to 30 m/s with nothing to slow it (NTRS-19910011413's 23 m/s, give or take 30 %), a cone about 14 to 33 degrees either side, under the Moon's 1.62 m/s2; the outer door starts down at 6 s (data/motion/airlock.json outer_door), so the gap opens at its top first)",
+    "models": [],
+    "node": "effects-layer@airlock",
+    "output": "5d67d1f20e1051025f8df202d620167f7df591cc22f9d5c9daf1facb951a2315",
+    "place": "airlock",
+    "prim": "/airlock/Fixtures/door_vent",
+    "record_key": "976998f93d41562c408f4e7eb21e559b6a7dcac757b0089a0ef9a52ab6defb08",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/particle_effects@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock"
+  ],
+  "state": "draft",
+  "tags": {
+    "effect": [
+      "vacuum_vent_ice"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ],
+    "weather": []
+  },
+  "title": "Door vent",
+  "usd": {
+    "default_prim": "/door_vent",
+    "layer": "effects",
+    "meters_per_unit": null,
+    "path": "score_lib/effect/door_vent.airlock/1/effect.usda",
+    "root": "effect.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

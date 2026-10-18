@@ -1,0 +1,81 @@
+{
+  "address": "layer/motion.gdoor@1",
+  "files": {
+    "layer.usda": {
+      "bytes": 260,
+      "role": "usd",
+      "sha256": "22ad122564372455280940a642cfff539a6ec9d077ca8f81ba263f893e7ad8c4"
+    },
+    "movers.json": {
+      "bytes": 66,
+      "role": "record",
+      "sha256": "ff9a9849698c43b40375fd218f5622ec6d009daf6de32e0af811b7aad2f0d5b1"
+    }
+  },
+  "id": "motion.gdoor",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-13T08:07:15.141411+00:00",
+      "by": "runner"
+    },
+    "code": "0b158c668b94c11dfa4edc5aae6aca004c40e9e698701955b77f3799dbce1b7f",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/motion.usda",
+        "sha256": "22ad122564372455280940a642cfff539a6ec9d077ca8f81ba263f893e7ad8c4"
+      }
+    },
+    "models": [],
+    "node": "assembly@gdoor",
+    "output": "68fc03418ea3f6bcd5ebf0ea6c56d1418ac865151a84199080152c3be97ad50a",
+    "own_files": [],
+    "place": "gdoor",
+    "record_key": "70a152d0500ea210cff8a69b8904b2ded93cd1287dac91a63bb0ca90471ec25a",
+    "side_records_from": "bfc4247bb2841ada7ba369d4eb563d02936d225b87b0aa0b9d687f712ac9e1d4",
+    "source_name": "layers/motion.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/motion_movers@1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "gdoor"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "motion"
+    ],
+    "place_kind": []
+  },
+  "title": "Gdoor motion layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "motion",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/motion.gdoor/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

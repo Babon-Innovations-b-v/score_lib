@@ -1,0 +1,108 @@
+{
+  "address": "surface/plastic_white@1",
+  "files": {
+    "material.usda": {
+      "bytes": 549,
+      "role": "usd",
+      "sha256": "8bdab2eb5590248ce23678114e8878100a97b1d599f2abb5c9f021b7ad288e4b"
+    },
+    "preview.png": {
+      "bytes": 16567,
+      "role": "picture",
+      "sha256": "ec44a0f2b471fac0b4066e3471ef38d03ee22a4f944caba02c64ba2d0b964d9c"
+    },
+    "surface.json": {
+      "bytes": 181,
+      "role": "record",
+      "sha256": "2bd097c3e6999a10a36d8ab50613e4ff7ff8ec612a6862b5f2993a864bdd6359"
+    }
+  },
+  "id": "plastic_white",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "plastic",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "plastic"
+    ],
+    "recipe": [
+      "rubber"
+    ]
+  },
+  "title": "Plastic white",
+  "usd": {
+    "default_prim": "/plastic_white",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/plastic_white/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

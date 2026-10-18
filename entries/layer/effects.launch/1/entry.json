@@ -1,0 +1,92 @@
+{
+  "address": "layer/effects.launch@1",
+  "files": {
+    "held.json": {
+      "bytes": 196,
+      "role": "record",
+      "sha256": "d82cff2e85377506ae0304e0585ebe3d8ca3641f741fe029ae733f7c06306f2c"
+    },
+    "layer.usda": {
+      "bytes": 211408,
+      "role": "usd",
+      "sha256": "0cd4fcc3d664ac82852725d08d2df53eec121a2dabc78e58398cef9421bddc2a"
+    }
+  },
+  "id": "effects.launch",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-15T12:59:49.032817+00:00",
+      "by": "runner"
+    },
+    "code": "a463163a0eeef652acdcfd1091415cc08ea792bdf6eee5489b5a0b48e06ace87",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/effects.usda",
+        "sha256": "f65c2d73982fea10a096ac6dcdcca797f112c5d194f212e2c7a95abac47cb12d"
+      }
+    },
+    "models": [],
+    "node": "assembly@launch",
+    "output": "3da5eb7afef951572bd823e1c78de4b209d123aa5c61e7cd9e09deda57bb5a48",
+    "own_files": [],
+    "place": "launch",
+    "record_key": "5847448e1af903d9d737a9d25f3d1f3303a645a211dd8c1844d6b688faf8005d",
+    "side_records_from": "6661592a0391f23f240eef74e13976d953e7e5a592a471eafbd297a33ce6893e",
+    "source_name": "layers/effects.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/particle_effects@1"
+  },
+  "requires": [
+    "effect/cloud_billows@1",
+    "effect/deluge_steam@1",
+    "effect/flame@1",
+    "effect/flame_core@1",
+    "effect/ground_cloud@1",
+    "effect/pad_fire@1",
+    "effect/plume@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "launch"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "effects"
+    ],
+    "place_kind": [
+      "outside",
+      "earth"
+    ]
+  },
+  "title": "Launch effects layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "effects",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/effects.launch/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

@@ -1,0 +1,103 @@
+{
+  "address": "model/first_module@1",
+  "files": {
+    "model.json": {
+      "bytes": 380,
+      "role": "record",
+      "sha256": "e3c5094ef1eda81dcd60fefbab7bc2b4c07ab7258b651f5316575a05527fcefc"
+    },
+    "model.usdc": {
+      "bytes": 5966456,
+      "role": "usd",
+      "sha256": "2addbd49417f9a4c2368081c3c77586763853f24e863879efb06128f39635af2"
+    },
+    "preview.png": {
+      "bytes": 36459,
+      "role": "picture",
+      "sha256": "afac2d3321f661dd1b95f4ae6fb9385eb80a87357fde4b666b86b16e8435a5ff"
+    },
+    "textures/first_module_base_color.png": {
+      "bytes": 2429556,
+      "role": "texture",
+      "sha256": "13335e0f579f5a92bbc6f504cb5b817a29aedb4eade2221b0c1390e308a746a2"
+    },
+    "textures/first_module_metal_roughness.png": {
+      "bytes": 1812078,
+      "role": "texture",
+      "sha256": "26ea966a815bdc028a5ccb930afd6e26df0de6d305352519fce8b4bbf9b8f65f"
+    },
+    "textures/first_module_normal.png": {
+      "bytes": 8647731,
+      "role": "texture",
+      "sha256": "daabcd0cf04a14d53dc4655e047d30addae7407071ac605b36d1424d08ca0086"
+    }
+  },
+  "id": "first_module",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:02:30.466230+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "71fea1e7fbdde6f6416e43c3c097f833f8c60842d6e57ea0bda7b0bcbeb8e8a8",
+    "models": [],
+    "node": "assembly@old_station",
+    "output": "f60adc09d2c14a31314d3bd31f69c2601467bfbcf728c76faa051b30b1810b56",
+    "place": "old_station",
+    "record_key": "7d9d97819faa5aebdafc6de56b258e509d111fd6834f0d009658ac7904c3e290",
+    "source_name": "first_module",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "old_station"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "moon",
+      "outside"
+    ]
+  },
+  "title": "First module",
+  "usd": {
+    "default_prim": "/first_module",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/first_module/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

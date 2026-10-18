@@ -1,0 +1,103 @@
+{
+  "address": "model/ship_bench_1@1",
+  "files": {
+    "model.json": {
+      "bytes": 378,
+      "role": "record",
+      "sha256": "27a9a1763723b2846ab15d4e87c51d0aa43a1273512e12b1a66428e73b0c1cb3"
+    },
+    "model.usdc": {
+      "bytes": 1841544,
+      "role": "usd",
+      "sha256": "cae56c2b2e921f9249e2caefb50a0865150e3fdb0c7e3bd4108bf51e402b70b9"
+    },
+    "preview.png": {
+      "bytes": 21818,
+      "role": "picture",
+      "sha256": "875c15c3b649f4ea61d8cfba9ec05f16e2cc2af85a13f4b0a34d35cca535de19"
+    },
+    "textures/ship_bench_1_base_color.png": {
+      "bytes": 1603892,
+      "role": "texture",
+      "sha256": "e2a097a6535655e0c175b9ba77f7e1f965781511676ff8ff9368e359e38ffff1"
+    },
+    "textures/ship_bench_1_metal_roughness.png": {
+      "bytes": 1360375,
+      "role": "texture",
+      "sha256": "7daa6cfaf233815a8feb23f7b2dd4424207372a6feb7918abe51fa4ef810ea86"
+    },
+    "textures/ship_bench_1_normal.png": {
+      "bytes": 14478718,
+      "role": "texture",
+      "sha256": "3cfda241039242ac8709479e3de72d26b4e429cef64513ba79e76044da4206c6"
+    }
+  },
+  "id": "ship_bench_1",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T22:13:41.093010+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "a358484275d15f9fb63cbb065938993d42e3c0ecd66c6de7634a244f62d57166",
+    "models": [],
+    "node": "assembly@hangar",
+    "output": "765aae9ca335aebbcb521472c52db37c76ad0b842d8f9bddc21b8c1beae3d144",
+    "place": "hangar",
+    "record_key": "d034efb2e042c8f0e9fca844f9dc9aa0b1d4146a0a39fbf3dafc78213e49fd74",
+    "source_name": "ship_bench_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "hangar"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Ship bench 1",
+  "usd": {
+    "default_prim": "/ship_bench_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/ship_bench_1/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

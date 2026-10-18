@@ -1,0 +1,108 @@
+{
+  "address": "surface/machine_orange@1",
+  "files": {
+    "material.usda": {
+      "bytes": 565,
+      "role": "usd",
+      "sha256": "b25c15e7d1b987fd1d4af06e4db66d78319516272fcc27df5136619ed5b09236"
+    },
+    "preview.png": {
+      "bytes": 22274,
+      "role": "picture",
+      "sha256": "82840f708b977f9228f01546695d59bac902f82d400a3bfe7714318a340ee352"
+    },
+    "surface.json": {
+      "bytes": 172,
+      "role": "record",
+      "sha256": "90d373bf590488f6f926f57b56095b31eefaa47794b33b32f30bfd3afea41c4d"
+    }
+  },
+  "id": "machine_orange",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "painted",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "painted"
+    ],
+    "recipe": [
+      "painted_metal"
+    ]
+  },
+  "title": "Machine orange",
+  "usd": {
+    "default_prim": "/machine_orange",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/machine_orange/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

@@ -1,0 +1,101 @@
+{
+  "address": "model/bunk_1.quarters@1",
+  "files": {
+    "model.json": {
+      "bytes": 282,
+      "role": "record",
+      "sha256": "28c269464cb3b61fa4034f65dac21468c7d293626e36914378c001f65c29815c"
+    },
+    "model.usdc": {
+      "bytes": 1918996,
+      "role": "usd",
+      "sha256": "31cbfe1313aa43f0c8ba531e3ee5f38759c23119f602a4a8ff108750852a4e5e"
+    },
+    "preview.png": {
+      "bytes": 29369,
+      "role": "picture",
+      "sha256": "f9828325ea806e17133640d0554c55e40529421dac2e1805354e2787ee5e0406"
+    },
+    "textures/bunk_1_base_color.png": {
+      "bytes": 1740303,
+      "role": "texture",
+      "sha256": "610b7f63f5c30e4eb57441ba3c12124ba0b97c990726b8b86d9a661164f224a7"
+    },
+    "textures/bunk_1_metal_roughness.png": {
+      "bytes": 1353097,
+      "role": "texture",
+      "sha256": "e795d03cd39c7e46b0d7d30be22be542c7829b2f8b918c862690b3e59ecf9b5b"
+    },
+    "textures/bunk_1_normal.png": {
+      "bytes": 15847630,
+      "role": "texture",
+      "sha256": "459be848d0445d976d28be8a60d34da4ea76a417857008c0e399d4136a63c465"
+    }
+  },
+  "id": "bunk_1.quarters",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-17T09:49:59.642437+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "14b84702c64d227c4155ce381a6c3e664fef6f191d7eafb03211b19abdfe4e57",
+    "models": [],
+    "node": "assembly@quarters",
+    "output": "0934c5ec797a592bef9fcdac6fe2542628ef4a5c60d80eecc9c8e27494da327c",
+    "place": "quarters",
+    "record_key": "af0a403a3f2f5e89e8d8fa6963c04ecafc141523dea0492f096bebb69558383d",
+    "source_name": "bunk_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "quarters"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Bunk 1",
+  "usd": {
+    "default_prim": "/bunk_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/bunk_1.quarters/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

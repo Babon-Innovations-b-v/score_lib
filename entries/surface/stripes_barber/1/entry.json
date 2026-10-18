@@ -1,0 +1,108 @@
+{
+  "address": "surface/stripes_barber@1",
+  "files": {
+    "material.usda": {
+      "bytes": 555,
+      "role": "usd",
+      "sha256": "c9e1e6378990a59fcbba88080cb02d7e69fc3a0d697dfa5cbeecbe511643f74e"
+    },
+    "preview.png": {
+      "bytes": 18985,
+      "role": "picture",
+      "sha256": "df2ec801222df4b82675dc23ee61a638bf8162a35316d485c455391e0546af8a"
+    },
+    "surface.json": {
+      "bytes": 199,
+      "role": "record",
+      "sha256": "d6bc79362a625ea2b36ac45949238d64a0c07feb6113ae79359344cfde831f80"
+    }
+  },
+  "id": "stripes_barber",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "print",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "print"
+    ],
+    "recipe": [
+      "printed"
+    ]
+  },
+  "title": "Stripes barber",
+  "usd": {
+    "default_prim": "/stripes_barber",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/stripes_barber/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

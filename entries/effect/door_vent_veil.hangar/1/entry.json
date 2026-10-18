@@ -1,0 +1,94 @@
+{
+  "address": "effect/door_vent_veil.hangar@1",
+  "files": {
+    "clip.usdc": {
+      "bytes": 17956951,
+      "role": "usd",
+      "sha256": "4fa52c9dedaba8e601de777e9e614fba035ec789fb567a04df230cc92f2714ee"
+    },
+    "effect.usda": {
+      "bytes": 3815,
+      "role": "usd",
+      "sha256": "35669b1deaa671cc24439aff3bb2331a2fa98c5340e0c7ee1649f269115b0e58"
+    },
+    "preview.png": {
+      "bytes": 84260,
+      "role": "picture",
+      "sha256": "4bd9b31ceb3b38d9bfe144408b68939b2baf71ca0207fc72f92a1b3752a3f898"
+    },
+    "settings.json": {
+      "bytes": 1920,
+      "role": "record",
+      "sha256": "76a15d43fb2ffab71e38a2857ba87dd1229e052d4746237b6e77cf7e6b343717"
+    }
+  },
+  "id": "door_vent_veil.hangar",
+  "kind": "effect",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/points.py",
+    "of": "clip.usdc at clip time 120.0"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-15T22:57:33.098910+00:00",
+      "by": "runner"
+    },
+    "code": "8d4f33546d6aa76ab10b4baa59eea2a3dfd27171a6d9c67389d04ecd6d88f21e",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "from": "footage: NTRS-19910011413, S126E014192 (the gas itself leaving with the ice, the fine fog of its vapour condensing again, seen as a faint fan of white leaving with the ice at its speed and diverging at its angle (NTRS-19910011413), each puff growing as it spreads so the fan stays one soft band (a vent seen in footage is a soft veil over the sparkling ice, never the ice alone); the roof's leaves part from their seam (the west leaf's east edge, 5.67 m east of its middle) at 1 s (data/motion/hangar.json roof_leaf_west))",
+    "models": [],
+    "node": "effects-layer@hangar",
+    "output": "e44baa4b8adaff4b301ec4281b4bb00155d22f5e1353de2b997cd451cb8e3bbd",
+    "place": "hangar",
+    "prim": "/hangar/Places/door_vent_veil",
+    "record_key": "7f166f13dd7d1bf55c6ca9ab5ad76761b51b41ba652b00f4b2e614341b5b4916",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/particle_effects@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "hangar"
+  ],
+  "state": "draft",
+  "tags": {
+    "effect": [
+      "vacuum_vent_veil"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ],
+    "weather": []
+  },
+  "title": "Door vent veil",
+  "usd": {
+    "default_prim": "/door_vent_veil",
+    "layer": "effects",
+    "meters_per_unit": null,
+    "path": "score_lib/effect/door_vent_veil.hangar/1/effect.usda",
+    "root": "effect.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

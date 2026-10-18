@@ -1,0 +1,94 @@
+{
+  "address": "effect/devil_east.campgrounds@1",
+  "files": {
+    "clip.usdc": {
+      "bytes": 36007681,
+      "role": "usd",
+      "sha256": "177fe53f88245cff06d765baa560f423b140a35fd932c44fe88e2e402e867194"
+    },
+    "effect.usda": {
+      "bytes": 21342,
+      "role": "usd",
+      "sha256": "d51eb2e4a03fc715888f38a4d2f4697c3453f8903d2735ab40c9240409987f4e"
+    },
+    "preview.png": {
+      "bytes": 32336,
+      "role": "picture",
+      "sha256": "000a24a532fffb4ceec4baa2aafe9abb42028a49b700e14d421350733e257d81"
+    },
+    "settings.json": {
+      "bytes": 2335,
+      "role": "record",
+      "sha256": "cb812c908483b9be72690008c3531ea7af3eabe3782f47f10a9d13cc4eceebfb"
+    }
+  },
+  "id": "devil_east.campgrounds",
+  "kind": "effect",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/points.py",
+    "of": "clip.usdc at clip time 120.0"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-12T18:27:21.233652+00:00",
+      "by": "runner"
+    },
+    "code": "9b32f2200ac272fbb20a9a7b7f3190e8a3f4de0378733281b560755af276318d",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "from": "footage: doi-10.1029/2006JE002743, lpi-7thmars2007-3149, PIA07253, PIA07925 (Mars's dust devils most 10 to 20 m across at the foot, moving 1 to 21 m/s, their wind up the column 0.2 to 8.8 m/s, a see-through column of dust with no single grains, widening about 6 degrees either side as it climbs and standing at least 2.4 foot widths high: 15,000 faint dust cards let out round a ring 8.4 m across, climbing 3 to 5 m/s for 10 s, spreading 6 degrees, so the column is about 10 m across at its foot and stands 30 m and more); its wandering, spin and colour are the game's: game/outside/dust/dust_devil.gd:9-24 (TURN 3 rad/s, CLIMB 3 to 5 m/s), game/outside/dust/mars_wind.gd:56-61,225-247 (DEVIL_SECONDS 80, DEVIL_WANDER 1.4 m/s downwind, written 20 s into its life), game/outside/dust/dust_grains.gd:24-38 (MARS_DUST #b4583a lifted by GRAIN_LIFT 1.25 to #e16e48)",
+    "models": [],
+    "node": "effects-layer@campgrounds",
+    "output": "254c25cb0f17359e0ed539e1c28003c910cabbf5627c28ce0c57f445ae98ab6a",
+    "place": "campgrounds",
+    "prim": "/campgrounds/Effects/devil_east",
+    "record_key": "68e3bfc05c59c4d49337b6d7105b3b11e65cf3b7db1f7e1ab91b376090975f8a",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/particle_effects@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "campgrounds"
+  ],
+  "state": "draft",
+  "tags": {
+    "effect": [
+      "dust_devil_veil"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "place_kind": [
+      "mars",
+      "outside"
+    ],
+    "weather": []
+  },
+  "title": "Devil east",
+  "usd": {
+    "default_prim": "/devil_east",
+    "layer": "effects",
+    "meters_per_unit": null,
+    "path": "score_lib/effect/devil_east.campgrounds/1/effect.usda",
+    "root": "effect.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

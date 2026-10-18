@@ -1,0 +1,118 @@
+{
+  "address": "place/quarters@1",
+  "files": {
+    "contract.json": {
+      "bytes": 99,
+      "role": "record",
+      "sha256": "c2b7151f92e6a67ca4666ea747ad262b67b4d0af824cc83862ce64d8cc49d12c"
+    },
+    "edit.usda": {
+      "bytes": 183,
+      "role": "usd",
+      "sha256": "8fc5485ea9a58537dd8289c516a85733e069ad7a17b866471667b8795142454f"
+    },
+    "gaps.json": {
+      "bytes": 5405,
+      "role": "record",
+      "sha256": "56f24beea9a485be7aecaabc19427b7ce64c5a05603eeccc12f4d05d120b8e47"
+    },
+    "inputs.json": {
+      "bytes": 3901,
+      "role": "record",
+      "sha256": "b79aa004317500aff0137868914bb7fbd2136312e0e8b26b1cc4504f5f7f8f39"
+    },
+    "origin.json": {
+      "bytes": 781,
+      "role": "record",
+      "sha256": "1d269e04163505697dfcf6adbde3b847cf6cf33cc22b2535420cf8248cd13548"
+    },
+    "quarters.usda": {
+      "bytes": 293,
+      "role": "usd",
+      "sha256": "4de79686bcc63acefd9700fc8b2c741dbdd3db36f233669315ec0d3dbb2b19df"
+    },
+    "scene.json": {
+      "bytes": 2007,
+      "role": "record",
+      "sha256": "1076a5b5ab0bfb236434508ff60e430877f0071b40ca37c1e75d799c25241105"
+    }
+  },
+  "id": "quarters",
+  "kind": "place",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-17T09:49:59.642437+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "complete": {
+      "accept": {
+        "at": "2026-10-17T09:51:30.537410+00:00",
+        "by": "runner"
+      },
+      "code": "614e17d70adbc54d15ef2ac7532458f7dbfe393cb1a802ed4b39c5bbd5b6e794",
+      "models": [],
+      "node": "complete@quarters",
+      "output": "c2e2bbb2d62ce366b3c4bee56843c403587a6afebc48d8c3fea07504b38e5019",
+      "record_key": "675df4ea9d2bf15682268c14c4201db1b2c23a0eb0b06de2653ec73bc2bb64cf"
+    },
+    "complete_failing": [
+      "named gaps"
+    ],
+    "gaps": "data/checks/gaps/quarters.json",
+    "models": [],
+    "node": "assembly@quarters",
+    "output": "0934c5ec797a592bef9fcdac6fe2542628ef4a5c60d80eecc9c8e27494da327c",
+    "place": "quarters",
+    "record_key": "af0a403a3f2f5e89e8d8fa6963c04ecafc141523dea0492f096bebb69558383d",
+    "unresolved_sublayers": [],
+    "world": "world1"
+  },
+  "requires": [
+    "layer/base.quarters@1",
+    "layer/light.quarters@1",
+    "layer/sound.quarters@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "quarters"
+  ],
+  "state": "draft",
+  "tags": {
+    "complete": [
+      "named_gaps"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Quarters",
+  "usd": {
+    "default_prim": "/quarters",
+    "layer": "root",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/place/quarters/1/quarters.usda",
+    "root": "quarters.usda",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "open"
+  },
+  "version": 1
+}

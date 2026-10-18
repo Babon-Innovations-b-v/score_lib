@@ -1,0 +1,108 @@
+{
+  "address": "model/far_lightning_mast_1@1",
+  "files": {
+    "model.json": {
+      "bytes": 303,
+      "role": "record",
+      "sha256": "5741d7518ae654b1dbbccba722aeef0fcecbbf8ee0381475cfe738ea04140946"
+    },
+    "model.usdc": {
+      "bytes": 129651,
+      "role": "usd",
+      "sha256": "984fdd72faf4a7da246966c5ed3c8490326a7e603f2f495e351cda05de4941c4"
+    },
+    "model_glow.usdc": {
+      "bytes": 5310,
+      "role": "usd",
+      "sha256": "c800ab056c340621d064a5de13631ce75f3ee63add178eee352e45f4047c24f5"
+    },
+    "preview.png": {
+      "bytes": 7644,
+      "role": "picture",
+      "sha256": "69b188a4fe5261c6bd0a3bb68b5587893632495002b11a683b9dcfe5ebe13dcd"
+    },
+    "textures/prologue_launch_distant_1_base_color.png": {
+      "bytes": 1208013,
+      "role": "texture",
+      "sha256": "b5f690f3daa8e538bdd42f78b03181a05a476069a59db2447d8e6c6f37a608e1"
+    },
+    "textures/prologue_launch_distant_1_metal_roughness.png": {
+      "bytes": 908087,
+      "role": "texture",
+      "sha256": "ee402ec2c968f5436ce5b0b2897e645ad174cf8a68ac19845dd02270fc8eb171"
+    },
+    "textures/prologue_launch_distant_1_normal.png": {
+      "bytes": 655620,
+      "role": "texture",
+      "sha256": "a4a12d5937b56a3ea095b64aa462772d7ef6c9d353acc06f5ca9251b717b4cf6"
+    }
+  },
+  "id": "far_lightning_mast_1",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-15T12:59:49.032817+00:00",
+      "by": "runner"
+    },
+    "code": "a463163a0eeef652acdcfd1091415cc08ea792bdf6eee5489b5a0b48e06ace87",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "902b79b42b95e03be8df5e99d5d8ae08c309c96bfe0c60703aa623c2629b482a",
+    "models": [],
+    "node": "assembly@launch",
+    "output": "3da5eb7afef951572bd823e1c78de4b209d123aa5c61e7cd9e09deda57bb5a48",
+    "place": "launch",
+    "record_key": "5847448e1af903d9d737a9d25f3d1f3303a645a211dd8c1844d6b688faf8005d",
+    "source_name": "far_lightning_mast_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "launch"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "outside"
+    ]
+  },
+  "title": "Far lightning mast 1",
+  "usd": {
+    "default_prim": "/far_lightning_mast_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/far_lightning_mast_1/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

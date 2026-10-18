@@ -1,0 +1,103 @@
+{
+  "address": "model/access_cover@1",
+  "files": {
+    "model.json": {
+      "bytes": 259,
+      "role": "record",
+      "sha256": "6817ca895d0823e0a42f29303ce52ac872543941adfd941be5a8ad8298f2013b"
+    },
+    "model.usdc": {
+      "bytes": 1554310,
+      "role": "usd",
+      "sha256": "064bf90b243e2a754df52bbc1b3ff08668f4e53f2a24cc9c0a437c067f24465a"
+    },
+    "preview.png": {
+      "bytes": 23321,
+      "role": "picture",
+      "sha256": "72284bb7ab03ca5241d8ae94f8b40236b7571d034c7aa0044a5803e573d0eaa8"
+    },
+    "textures/access_cover_base_color.png": {
+      "bytes": 719861,
+      "role": "texture",
+      "sha256": "740f43b85fbdd3652b01bfce91843c53ad4b22c9448bf5e1e59d1fca5dae08fc"
+    },
+    "textures/access_cover_metal_roughness.png": {
+      "bytes": 712472,
+      "role": "texture",
+      "sha256": "ba3828c53dd866aa2ccb60016c599bcf1cda324464e93dc6fa95474d8d7933b7"
+    },
+    "textures/access_cover_normal.png": {
+      "bytes": 3150429,
+      "role": "texture",
+      "sha256": "ee12937003bf4511403d430a02a98c0834a7b6d12c2a1e5d4ecbfc7c073cf7ba"
+    }
+  },
+  "id": "access_cover",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T15:53:36.185584+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "e0a33b97e06e4d782ef3a73a60d73d36412f724cebbec8c2a867e1424afacf95",
+    "models": [],
+    "node": "assembly@wreck",
+    "output": "591bca186cdb2ba3104fc444e86a6ff62eeb734cbab1de4f4f2c54506dd99291",
+    "place": "wreck",
+    "record_key": "ae3d3dca811e262167338103d0abcba1e68bff01135dac7ecd4e6f2f4113254b",
+    "source_name": "access_cover",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "moon",
+      "outside"
+    ]
+  },
+  "title": "Access cover",
+  "usd": {
+    "default_prim": "/access_cover",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/access_cover/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

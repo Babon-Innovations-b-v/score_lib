@@ -1,0 +1,108 @@
+{
+  "address": "ground/earth.stairwell@1",
+  "files": {
+    "ground.usdc": {
+      "bytes": 6553455,
+      "role": "usd",
+      "sha256": "c99546eb7037b7b24f12c85baebc1bddfb85e996e9edbb7ee07f5d2cbdfdcf74"
+    },
+    "preview.png": {
+      "bytes": 8988,
+      "role": "picture",
+      "sha256": "60c6209d4c44dead5b2a3d32a551c9f3ff2a4b11cdf70b8ab0f59a775d2621dc"
+    }
+  },
+  "id": "earth.stairwell",
+  "kind": "ground",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1; terrain stage in algorithms.md section 11",
+        "spdx": "Apache-2.0",
+        "what": "Depth Anything V2 Small: ground relief"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1; terrain stage in algorithms.md section 11",
+        "spdx": "LicenseRef-paid-API-terms",
+        "text": "paid API",
+        "what": "Nano Banana Pro: ground skins"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1; terrain stage in algorithms.md section 11",
+        "spdx": "Apache-2.0",
+        "what": "Qwen-Image-Edit-2511: diorama pictures the relief is read from"
+      }
+    ],
+    "note": "the provider's terms of service for a paid API; the paper (Table C1) states every model in the framework allows commercial use of its output",
+    "spdx": "Apache-2.0 AND LicenseRef-paid-API-terms AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "ground.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-15T22:15:48.546897+00:00",
+      "by": "runner"
+    },
+    "code": "c4cf7b735072a0e5e40c848bdb6abd3abf48645a9bb5c133f7e3687ba3485a68",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "ground.usdc": {
+        "path": "earth/places/stairwell.usdc",
+        "sha256": "de55089a37d0f243938c11291259d2a854b678fd6fda8d7db73d141c448e8e85"
+      }
+    },
+    "models": [],
+    "node": "terrain",
+    "output": "6a4ab8133411093ac2242f7fb9243f6912f5a8da17c4abe2a40ef8c99045a2f9",
+    "place": "stairwell",
+    "planet": "earth",
+    "record_key": "83726add119cd37905f2c14f9bef3c841eb08f6a51f62fe6833a7e81af75bddb",
+    "source_name": "earth/places/stairwell.usdc",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/terrain_landforms@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "stairwell"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "place_kind": [
+      "earth",
+      "inside"
+    ]
+  },
+  "title": "Stairwell ground (earth)",
+  "usd": {
+    "default_prim": null,
+    "layer": "ground",
+    "meters_per_unit": 1.0,
+    "neighbours": [
+      "place/flat@1"
+    ],
+    "path": "score_lib/ground/earth.stairwell/1/ground.usdc",
+    "root": "ground.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "payload"
+  },
+  "version": 1
+}

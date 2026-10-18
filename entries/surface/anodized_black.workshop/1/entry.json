@@ -1,0 +1,81 @@
+{
+  "address": "surface/anodized_black.workshop@1",
+  "files": {
+    "material.usda": {
+      "bytes": 565,
+      "role": "usd",
+      "sha256": "a0b545723b0e03ff04dccfaab7e16331dad1686788a0e6423cc879b2c43f9e11"
+    },
+    "preview.png": {
+      "bytes": 11129,
+      "role": "picture",
+      "sha256": "3684ff1287461f021a81f8621c26a626aea15d14477124dfc77ad3ac2c23f7fd"
+    },
+    "surface.json": {
+      "bytes": 170,
+      "role": "record",
+      "sha256": "22689fcad450847671e29772a603c1638647cfb4cb2198bf7151ef90e704794d"
+    }
+  },
+  "id": "anodized_black.workshop",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "aluminium",
+    "place": "workshop",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "workshop"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "aluminium"
+    ],
+    "recipe": [
+      "anodized"
+    ]
+  },
+  "title": "Anodized black",
+  "usd": {
+    "default_prim": "/anodized_black",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/anodized_black.workshop/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

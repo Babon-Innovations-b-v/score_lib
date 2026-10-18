@@ -1,0 +1,121 @@
+{
+  "address": "place/launch@1",
+  "files": {
+    "contract.json": {
+      "bytes": 99,
+      "role": "record",
+      "sha256": "c2b7151f92e6a67ca4666ea747ad262b67b4d0af824cc83862ce64d8cc49d12c"
+    },
+    "edit.usda": {
+      "bytes": 183,
+      "role": "usd",
+      "sha256": "8fc5485ea9a58537dd8289c516a85733e069ad7a17b866471667b8795142454f"
+    },
+    "gaps.json": {
+      "bytes": 2755,
+      "role": "record",
+      "sha256": "a8c8ee452e86a807eaa7b7711425e9c9324a3c3b2899247b3dd3e27648de4104"
+    },
+    "inputs.json": {
+      "bytes": 2078,
+      "role": "record",
+      "sha256": "0b1928b1be731640917881977fb26f4b804ab5c23f37bdd3161cc21fa27d561a"
+    },
+    "launch.usda": {
+      "bytes": 546,
+      "role": "usd",
+      "sha256": "f7a729db7248564b95a5ba3caab23a6b9afb0bacd03fdee536600c2fd61d9dea"
+    },
+    "origin.json": {
+      "bytes": 837,
+      "role": "record",
+      "sha256": "3e1ed97748c56e69b5716f005c5347bdeb96ba161a8d766d278f37918cb7dd93"
+    },
+    "scene.json": {
+      "bytes": 7541,
+      "role": "record",
+      "sha256": "7392a90ecedb6db16e851a71c81645e31441cf4ceb984962e15df2dcac7b9505"
+    }
+  },
+  "id": "launch",
+  "kind": "place",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-15T12:59:49.032817+00:00",
+      "by": "runner"
+    },
+    "code": "a463163a0eeef652acdcfd1091415cc08ea792bdf6eee5489b5a0b48e06ace87",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "complete": {
+      "accept": {
+        "at": "2026-10-18T03:21:09.095021+00:00",
+        "by": "runner"
+      },
+      "code": "614e17d70adbc54d15ef2ac7532458f7dbfe393cb1a802ed4b39c5bbd5b6e794",
+      "models": [],
+      "node": "complete@launch",
+      "output": "74234a354eccc2062798b10a37ba9810b27f6ba574d57141d14d92c8c70aa5d8",
+      "record_key": "328a01ff65767c8021d190ffd28432534d44875a45cc9bec74dd7b139b30c723"
+    },
+    "complete_failing": [
+      "named gaps"
+    ],
+    "gaps": "data/checks/gaps/launch.json",
+    "models": [],
+    "node": "assembly@launch",
+    "output": "3da5eb7afef951572bd823e1c78de4b209d123aa5c61e7cd9e09deda57bb5a48",
+    "place": "launch",
+    "record_key": "5847448e1af903d9d737a9d25f3d1f3303a645a211dd8c1844d6b688faf8005d",
+    "unresolved_sublayers": [],
+    "world": "world1"
+  },
+  "requires": [
+    "layer/base.launch@1",
+    "layer/effects.launch@1",
+    "layer/ground.launch@1",
+    "layer/light.launch@1",
+    "layer/motion.launch@1",
+    "layer/sound.launch@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "launch"
+  ],
+  "state": "draft",
+  "tags": {
+    "complete": [
+      "named_gaps"
+    ],
+    "place_kind": [
+      "outside",
+      "earth"
+    ]
+  },
+  "title": "Launch",
+  "usd": {
+    "default_prim": "/launch",
+    "layer": "root",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/place/launch/1/launch.usda",
+    "root": "launch.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": "Y",
+    "use": "open"
+  },
+  "version": 1
+}

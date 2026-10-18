@@ -1,0 +1,103 @@
+{
+  "address": "model/canister_1@1",
+  "files": {
+    "model.json": {
+      "bytes": 286,
+      "role": "record",
+      "sha256": "f6077bc1060c8e3aec86467553166c9f00cca31c3d9ddc0e290bf87a6197950a"
+    },
+    "model.usdc": {
+      "bytes": 512539,
+      "role": "usd",
+      "sha256": "3ca02457ff29bb09f3cda1062a38c034118284524310b581729c158d9d237a3e"
+    },
+    "preview.png": {
+      "bytes": 26038,
+      "role": "picture",
+      "sha256": "b94ca195eac0db16d6da46e1a751a3454a12faabdca292dd58d1af3a2b70a87d"
+    },
+    "textures/canister_1_base_color.png": {
+      "bytes": 16353,
+      "role": "texture",
+      "sha256": "fefd52d7f8ad8b682ab491cc12ad1e3210eeca7028b26ba54719bc0dfee5dacd"
+    },
+    "textures/canister_1_metal_roughness.png": {
+      "bytes": 12514,
+      "role": "texture",
+      "sha256": "19333dec2c954df49f05922c15e139eea5e2c512bff76261ec9b1cec5faa5c9a"
+    },
+    "textures/canister_1_normal.png": {
+      "bytes": 210254,
+      "role": "texture",
+      "sha256": "1c26dd8a43669dc4ae838842342b2243f52a07d71b7c5cba00759706d052a5f0"
+    }
+  },
+  "id": "canister_1",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:13:56.147349+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "c5cc93f4895a24caa50b8837c99db082e8395c93dd855f588aa40d9a401dd2e9",
+    "models": [],
+    "node": "assembly@camp",
+    "output": "0d930395c3d487b308d579d02e775682ddf8d302e6e0735849093a37772728c8",
+    "place": "camp",
+    "record_key": "fe5504fc66033b6c5b56f7395fd37a688bbd5d26c50af13875018921c86ded02",
+    "source_name": "canister_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "camp"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "mars",
+      "outside"
+    ]
+  },
+  "title": "Canister 1",
+  "usd": {
+    "default_prim": "/canister_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/canister_1/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

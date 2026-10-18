@@ -1,0 +1,108 @@
+{
+  "address": "surface/window_lit@1",
+  "files": {
+    "material.usda": {
+      "bytes": 604,
+      "role": "usd",
+      "sha256": "fe193fc18ef615f119c6ca3fb646733b84962e66876202b2dbcfcd2b558ea9f9"
+    },
+    "preview.png": {
+      "bytes": 21958,
+      "role": "picture",
+      "sha256": "d09599d427f31a3db588ec1661f4b3984b9d783ca21f0720310e21bf95b54aae"
+    },
+    "surface.json": {
+      "bytes": 138,
+      "role": "record",
+      "sha256": "1c3e9e56f5780bf47f4d7ac60ce9a5a1d054d220a8f1dc1b10f334d5ad4254ba"
+    }
+  },
+  "id": "window_lit",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "light",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "light"
+    ],
+    "recipe": [
+      "glowing"
+    ]
+  },
+  "title": "Window lit",
+  "usd": {
+    "default_prim": "/window_lit",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/window_lit/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

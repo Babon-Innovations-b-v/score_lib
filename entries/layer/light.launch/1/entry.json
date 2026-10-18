@@ -1,0 +1,84 @@
+{
+  "address": "layer/light.launch@1",
+  "files": {
+    "lamps.json": {
+      "bytes": 917,
+      "role": "record",
+      "sha256": "c87d9a693f91a58db7e76e79d5644ee1933d4504b5675a460e41d4a2d445ddce"
+    },
+    "layer.usda": {
+      "bytes": 33655,
+      "role": "usd",
+      "sha256": "f346d59f4bc261ec70ec75e167a26403fafeb5e1365850d0b8d277579c34ad29"
+    }
+  },
+  "id": "light.launch",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-15T12:59:49.032817+00:00",
+      "by": "runner"
+    },
+    "code": "a463163a0eeef652acdcfd1091415cc08ea792bdf6eee5489b5a0b48e06ace87",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/light.usda",
+        "sha256": "f346d59f4bc261ec70ec75e167a26403fafeb5e1365850d0b8d277579c34ad29"
+      }
+    },
+    "models": [],
+    "node": "assembly@launch",
+    "output": "3da5eb7afef951572bd823e1c78de4b209d123aa5c61e7cd9e09deda57bb5a48",
+    "own_files": [],
+    "place": "launch",
+    "record_key": "5847448e1af903d9d737a9d25f3d1f3303a645a211dd8c1844d6b688faf8005d",
+    "side_records_from": "80ab91958bb8f818db8311b985cb562ecf5776e58ca5b940ad1963e1c45c6745",
+    "source_name": "layers/light.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/light_rig@1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "launch"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "light"
+    ],
+    "place_kind": [
+      "outside",
+      "earth"
+    ]
+  },
+  "title": "Launch light layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "light",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/light.launch/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

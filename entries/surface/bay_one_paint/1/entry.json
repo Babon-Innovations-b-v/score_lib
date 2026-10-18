@@ -1,0 +1,108 @@
+{
+  "address": "surface/bay_one_paint@1",
+  "files": {
+    "material.usda": {
+      "bytes": 559,
+      "role": "usd",
+      "sha256": "b9d2b8c63d80bfe61636f8b093d6f6a68e9902d64a595a9cf160bd036ee9a4f7"
+    },
+    "preview.png": {
+      "bytes": 22094,
+      "role": "picture",
+      "sha256": "f127e6542a9a89649f68f66ae2fd2f04e27a792ff9b76033c25d66612ce4bf71"
+    },
+    "surface.json": {
+      "bytes": 170,
+      "role": "record",
+      "sha256": "ada19b3fefe1c2549f5e7df6115b1b107bfc53bf2be7c51ed83d3ea7df3dc605"
+    }
+  },
+  "id": "bay_one_paint",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "painted",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "painted"
+    ],
+    "recipe": [
+      "painted_metal"
+    ]
+  },
+  "title": "Bay one paint",
+  "usd": {
+    "default_prim": "/bay_one_paint",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/bay_one_paint/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

@@ -1,0 +1,103 @@
+{
+  "address": "model/cargo_pallet@1",
+  "files": {
+    "model.json": {
+      "bytes": 274,
+      "role": "record",
+      "sha256": "52f114790c1f5b57717a3e98c9853e0421b732b59b0efa0ab88ae24d9365c794"
+    },
+    "model.usdc": {
+      "bytes": 1885333,
+      "role": "usd",
+      "sha256": "29bc1ddbe751489cc24033ce9894cb20c835c35347fcfef9bd9b43e655cc2ad9"
+    },
+    "preview.png": {
+      "bytes": 23310,
+      "role": "picture",
+      "sha256": "4fca96449e29de046da41f1666176f0f977bc225ef4918ff34b3bde8fe0fc218"
+    },
+    "textures/cargo_pallet_base_color.png": {
+      "bytes": 461924,
+      "role": "texture",
+      "sha256": "d4be3548e13b008151e3e3a34b94e9a9bf2d672a246c1097db8b876c7cb0e218"
+    },
+    "textures/cargo_pallet_metal_roughness.png": {
+      "bytes": 384679,
+      "role": "texture",
+      "sha256": "70dc5c1adce272de6f294b6a4d62691c156d089e38d7901ac86320f0068aea11"
+    },
+    "textures/cargo_pallet_normal.png": {
+      "bytes": 6925956,
+      "role": "texture",
+      "sha256": "b780a4c30d4b42068df804698d4ad2d7703d477fbd3a821db38e9ecef36b787c"
+    }
+  },
+  "id": "cargo_pallet",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:16:00.039696+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "7d26da9c597e6f00e5d44803145b461c4ae80ba18793184a2fcb29118271ff9a",
+    "models": [],
+    "node": "assembly@campgrounds",
+    "output": "7fcf4c6f9552d4edb6020038bb83dd248f2e602f1958878438d52dfc3a7685bb",
+    "place": "campgrounds",
+    "record_key": "3e28c5bc4fca67388ebba8768e3cf58d643f791893e4237289ddba7e9754e64e",
+    "source_name": "cargo_pallet",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "campgrounds"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "mars",
+      "outside"
+    ]
+  },
+  "title": "Cargo pallet",
+  "usd": {
+    "default_prim": "/cargo_pallet",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/cargo_pallet/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

@@ -1,0 +1,108 @@
+{
+  "address": "surface/sign_grain_oil@1",
+  "files": {
+    "material.usda": {
+      "bytes": 555,
+      "role": "usd",
+      "sha256": "39079284be11a00c4f09286e343ac69e66334071bc68f7205c6f99830c11e496"
+    },
+    "preview.png": {
+      "bytes": 17017,
+      "role": "picture",
+      "sha256": "1ce187bbbf1d00d8d47887eee5994307285253df9cadfc71092b8a14e97de67c"
+    },
+    "surface.json": {
+      "bytes": 199,
+      "role": "record",
+      "sha256": "594f34f4057c5ec30460997821ee35b9517c472c60c73a2e473235f1e4ae2741"
+    }
+  },
+  "id": "sign_grain_oil",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "print",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "print"
+    ],
+    "recipe": [
+      "printed"
+    ]
+  },
+  "title": "Sign grain oil",
+  "usd": {
+    "default_prim": "/sign_grain_oil",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/sign_grain_oil/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

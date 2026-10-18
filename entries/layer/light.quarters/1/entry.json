@@ -1,0 +1,84 @@
+{
+  "address": "layer/light.quarters@1",
+  "files": {
+    "lamps.json": {
+      "bytes": 1187,
+      "role": "record",
+      "sha256": "f413260604842fc26d9f9967dbc6167462c78a7389202b082145a582d3e9d0d1"
+    },
+    "layer.usda": {
+      "bytes": 756,
+      "role": "usd",
+      "sha256": "4ccbbfa5d04066ee10c1c79a9b3bb8481edf36437ffac640ff234fe7577c637a"
+    }
+  },
+  "id": "light.quarters",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-17T09:49:59.642437+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/light.usda",
+        "sha256": "4ccbbfa5d04066ee10c1c79a9b3bb8481edf36437ffac640ff234fe7577c637a"
+      }
+    },
+    "models": [],
+    "node": "assembly@quarters",
+    "output": "0934c5ec797a592bef9fcdac6fe2542628ef4a5c60d80eecc9c8e27494da327c",
+    "own_files": [],
+    "place": "quarters",
+    "record_key": "af0a403a3f2f5e89e8d8fa6963c04ecafc141523dea0492f096bebb69558383d",
+    "side_records_from": "026f595bfd151481d733cd827e3795e333d93bd08c4686d9d5f48c12928f7860",
+    "source_name": "layers/light.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/light_rig@1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "quarters"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "light"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Quarters light layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "light",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/light.quarters/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

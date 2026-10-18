@@ -1,0 +1,103 @@
+{
+  "address": "model/pressure_sphere@1",
+  "files": {
+    "model.json": {
+      "bytes": 283,
+      "role": "record",
+      "sha256": "e377f57efa885771f1853e5406773ea67db36b246aba80977f8d629c2d96c735"
+    },
+    "model.usdc": {
+      "bytes": 1584616,
+      "role": "usd",
+      "sha256": "47b318690a859ec6bfd74a3412124c7e6f26da81c5f5ddbc4a8db5146a05132d"
+    },
+    "preview.png": {
+      "bytes": 34949,
+      "role": "picture",
+      "sha256": "2a2dd53f65ceeb1bd335bf6d8e5af6582dd37b2f507fc9923dde1c07dd816295"
+    },
+    "textures/pressure_sphere_base_color.png": {
+      "bytes": 580345,
+      "role": "texture",
+      "sha256": "8a9477f5812ccd38a74cb40a12e0632e1470f1b8d80774fd3e761d0a040cde91"
+    },
+    "textures/pressure_sphere_metal_roughness.png": {
+      "bytes": 534493,
+      "role": "texture",
+      "sha256": "d9a6ffd9dd1552585d657a581d65c84dee7c53912b49932a82cdeae1cbfc5135"
+    },
+    "textures/pressure_sphere_normal.png": {
+      "bytes": 5604627,
+      "role": "texture",
+      "sha256": "a5bc3a6b993acc42d9e5a936c98be59c8ba3e409c55b73e16a2624c306319ebc"
+    }
+  },
+  "id": "pressure_sphere",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T15:53:36.185584+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "4bcb4f08e093f1043d5d2536ba7eb08e1c9f30cc146f4a4d961ec7afe614b3aa",
+    "models": [],
+    "node": "assembly@wreck",
+    "output": "591bca186cdb2ba3104fc444e86a6ff62eeb734cbab1de4f4f2c54506dd99291",
+    "place": "wreck",
+    "record_key": "ae3d3dca811e262167338103d0abcba1e68bff01135dac7ecd4e6f2f4113254b",
+    "source_name": "pressure_sphere",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "moon",
+      "outside"
+    ]
+  },
+  "title": "Pressure sphere",
+  "usd": {
+    "default_prim": "/pressure_sphere",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/pressure_sphere/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

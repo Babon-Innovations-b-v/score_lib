@@ -1,0 +1,122 @@
+{
+  "address": "place/wreck@1",
+  "files": {
+    "contract.json": {
+      "bytes": 99,
+      "role": "record",
+      "sha256": "c2b7151f92e6a67ca4666ea747ad262b67b4d0af824cc83862ce64d8cc49d12c"
+    },
+    "edit.usda": {
+      "bytes": 183,
+      "role": "usd",
+      "sha256": "8fc5485ea9a58537dd8289c516a85733e069ad7a17b866471667b8795142454f"
+    },
+    "gaps.json": {
+      "bytes": 2993,
+      "role": "record",
+      "sha256": "2ecd490912b902df795ce1350e499550983e355cabe4510af30207be6ea66cfd"
+    },
+    "inputs.json": {
+      "bytes": 4285,
+      "role": "record",
+      "sha256": "9d5c5748fcf392ac5eb3d94add5370aae751cb92ae72e5c89332b93f8b130e99"
+    },
+    "origin.json": {
+      "bytes": 691,
+      "role": "record",
+      "sha256": "48e4a07ac8a04e584480600d0d2f88ef8524f31189f1c49ed4b6724718e1e8bd"
+    },
+    "scene.json": {
+      "bytes": 8156,
+      "role": "record",
+      "sha256": "921588485a106d8b2e3d015359561f0a64bed3d8731632643e454520b2ca49cb"
+    },
+    "wreck.usda": {
+      "bytes": 592,
+      "role": "usd",
+      "sha256": "b7f9ace886c4e014b182d98c46ce498903241bdb54aacba22030569f8f443b0c"
+    }
+  },
+  "id": "wreck",
+  "kind": "place",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T15:53:36.185584+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "complete": {
+      "accept": {
+        "at": "2026-10-17T14:34:49.905050+00:00",
+        "by": "runner"
+      },
+      "code": "614e17d70adbc54d15ef2ac7532458f7dbfe393cb1a802ed4b39c5bbd5b6e794",
+      "models": [],
+      "node": "complete@wreck",
+      "output": "4ae80e3e2b9b87f8192622e4d15605d412e926dd0701e374b096ff49f8a4368e",
+      "record_key": "d107b184dfb8e008e2efd1d61aee1fea3ab60d09059acc84e190450d675d7a69"
+    },
+    "complete_failing": [
+      "named gaps"
+    ],
+    "gaps": "data/checks/gaps/wreck.json",
+    "models": [],
+    "node": "assembly@wreck",
+    "output": "591bca186cdb2ba3104fc444e86a6ff62eeb734cbab1de4f4f2c54506dd99291",
+    "place": "wreck",
+    "record_key": "ae3d3dca811e262167338103d0abcba1e68bff01135dac7ecd4e6f2f4113254b",
+    "unresolved_sublayers": [],
+    "world": "world1"
+  },
+  "requires": [
+    "layer/base.wreck@1",
+    "layer/effects.wreck@1",
+    "layer/ground.wreck@1",
+    "layer/light.wreck@1",
+    "layer/motion.wreck@1",
+    "layer/settle.wreck@1",
+    "layer/sound.wreck@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "complete": [
+      "named_gaps"
+    ],
+    "place_kind": [
+      "outside",
+      "moon"
+    ]
+  },
+  "title": "Wreck",
+  "usd": {
+    "default_prim": "/wreck",
+    "layer": "root",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/place/wreck/1/wreck.usda",
+    "root": "wreck.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": "Y",
+    "use": "open"
+  },
+  "version": 1
+}

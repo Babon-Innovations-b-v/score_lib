@@ -1,0 +1,160 @@
+{
+  "address": "algorithm/surface_recipes@1",
+  "files": {
+    "code.json": {
+      "bytes": 431,
+      "role": "record",
+      "sha256": "38ce0cdf87e56c43c137a79e9bd426d4bf1163051c652fac406ab087f19df974"
+    },
+    "code/tools/props/library/recipes.py": {
+      "bytes": 35791,
+      "role": "code",
+      "sha256": "e9b251794d317966bd50468f4addbe23089b4cf7e673c1d938a5e3f259eb7433"
+    },
+    "definition.json": {
+      "bytes": 899,
+      "role": "record",
+      "sha256": "a51d1cf0b157e44981b0911a06a0265f99c7a8c04a8997816fec61b741545d7d"
+    },
+    "presets/world1/data/definitions/place.json": {
+      "bytes": 133714,
+      "role": "record",
+      "sha256": "9c83b6b7175d9809acb010a7c86fa48e2cfe618bc6595d4fd666c6a50565edc5"
+    },
+    "presets/world1/data/library/materials.json": {
+      "bytes": 94031,
+      "role": "record",
+      "sha256": "fd881c3eb02dfc3b63c4591ebee8cdfc8324954cc786b3f6e57309289b559970"
+    },
+    "presets/world1/seed.json": {
+      "bytes": 1190,
+      "role": "record",
+      "sha256": "e92cd90bd732b9c4cc0a0209436e7e3d70774758d0e4705b94533ff3fc2655f4"
+    },
+    "run.json": {
+      "bytes": 308,
+      "role": "record",
+      "sha256": "1810e2a322b1d13906775481a7a63892eb529807149bc257c3115b8c8dff48cb"
+    },
+    "settings.schema.json": {
+      "bytes": 588,
+      "role": "record",
+      "sha256": "ac98f1f15ad01d96aedcf2477a75b449ae694fbd7b473f17b7065963fb20fbfb"
+    },
+    "test/tools/props/library/library_test.py": {
+      "bytes": 15679,
+      "role": "code",
+      "sha256": "0c0c7a100cc0f3ae56df5e12046a43d7fd042fada35b1ae715af3500a4b31826"
+    },
+    "test/tools/props/library/paint_test.py": {
+      "bytes": 15698,
+      "role": "code",
+      "sha256": "5d232fb7be7c882fa4df9ca110adec8650e8d267130f16ecc05cd6bcc473ab1a"
+    }
+  },
+  "id": "surface_recipes",
+  "kind": "algorithm",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "definitions/algorithms/surface_recipes.toml",
+        "spdx": "BSD-3-Clause",
+        "what": "vendored ProcFunc"
+      },
+      {
+        "commercial_ok": true,
+        "source": "definitions/algorithms/surface_recipes.toml",
+        "spdx": "BSD-3-Clause",
+        "what": "vendored Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": null,
+  "picture_reason": "no world 1 output in the store pictures this algorithm",
+  "provenance": {
+    "code": "85ad6f5cab8caeb13dd18330c0795d312d879a00c396a1f4b7ba65b0cb32fb78",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "nodes": [
+      "surfaces-bake@airlock",
+      "surfaces-bake@camp",
+      "surfaces-bake@campgrounds",
+      "surfaces-bake@cockpit",
+      "surfaces-bake@engineroom",
+      "surfaces-bake@far_city",
+      "surfaces-bake@flat",
+      "surfaces-bake@galley",
+      "surfaces-bake@garage",
+      "surfaces-bake@greenhouse",
+      "surfaces-bake@habitat",
+      "surfaces-bake@hangar",
+      "surfaces-bake@hub",
+      "surfaces-bake@lab",
+      "surfaces-bake@launch",
+      "surfaces-bake@navigation",
+      "surfaces-bake@old_station",
+      "surfaces-bake@quarters",
+      "surfaces-bake@shiplock",
+      "surfaces-bake@square",
+      "surfaces-bake@stairwell",
+      "surfaces-bake@storage",
+      "surfaces-bake@street",
+      "surfaces-bake@workshop",
+      "surfaces-bake@wreck"
+    ],
+    "stage": "surfaces-bake",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "far_city",
+    "flat",
+    "galley",
+    "garage",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "needs": [
+      "blender",
+      "procfunc",
+      "infinigen"
+    ],
+    "runnable": [
+      false
+    ]
+  },
+  "title": "Surface functions: ProcFunc material recipes and wear (needs Blender and ProcFunc)",
+  "usd": null,
+  "version": 1
+}

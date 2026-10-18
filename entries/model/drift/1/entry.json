@@ -1,0 +1,103 @@
+{
+  "address": "model/drift@1",
+  "files": {
+    "model.json": {
+      "bytes": 266,
+      "role": "record",
+      "sha256": "c9b37171242ce49b8aa581687d645307064a74dbbe6d7178bc78d8bf9742f01f"
+    },
+    "model.usdc": {
+      "bytes": 1883434,
+      "role": "usd",
+      "sha256": "84a447557bbc16b17a054a1b8a7925d1652c54b5fbb6412ec75fd7bfe14b6d50"
+    },
+    "preview.png": {
+      "bytes": 24253,
+      "role": "picture",
+      "sha256": "fd88c77ac2e17f894d312444847e351cd4e2d383b7600430e602f264e03a3350"
+    },
+    "textures/drift_base_color.png": {
+      "bytes": 182465,
+      "role": "texture",
+      "sha256": "1b9ce3e0d662fa607e01f42664e10aa77a159b3d4a74b7c88e4c9c21ad770be5"
+    },
+    "textures/drift_metal_roughness.png": {
+      "bytes": 53685,
+      "role": "texture",
+      "sha256": "a630368160755973c016de8285cceb91eb403130bb7dd40227f8641b7ac32e1e"
+    },
+    "textures/drift_normal.png": {
+      "bytes": 5787500,
+      "role": "texture",
+      "sha256": "c2ffd62da469ca79613e826ed5c261acbc582f8f7159604827d61bcbb55ba8bf"
+    }
+  },
+  "id": "drift",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:16:00.039696+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "8cb96ccb70c4be08af6cc4f681cbab523f5a95864148b17daa7b9cbff947d235",
+    "models": [],
+    "node": "assembly@campgrounds",
+    "output": "7fcf4c6f9552d4edb6020038bb83dd248f2e602f1958878438d52dfc3a7685bb",
+    "place": "campgrounds",
+    "record_key": "3e28c5bc4fca67388ebba8768e3cf58d643f791893e4237289ddba7e9754e64e",
+    "source_name": "drift",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "campgrounds"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "mars",
+      "outside"
+    ]
+  },
+  "title": "Drift",
+  "usd": {
+    "default_prim": "/drift",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/drift/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

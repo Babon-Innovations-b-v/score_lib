@@ -1,0 +1,108 @@
+{
+  "address": "surface/note_bench@1",
+  "files": {
+    "material.usda": {
+      "bytes": 543,
+      "role": "usd",
+      "sha256": "fbc61f54005b1f24657339bddc9775b9d9993cf4bf1bdad993388c0d185b2cfa"
+    },
+    "preview.png": {
+      "bytes": 16911,
+      "role": "picture",
+      "sha256": "545bf7efcddbd2d054c8cfa27e528f7cc12396a2dfa6c4ca5700974207c80da9"
+    },
+    "surface.json": {
+      "bytes": 191,
+      "role": "record",
+      "sha256": "ecb9f96941e8404c45bd973f2b2a6009079b79e54e822e9ef3e220e9096ddd6b"
+    }
+  },
+  "id": "note_bench",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "print",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "print"
+    ],
+    "recipe": [
+      "printed"
+    ]
+  },
+  "title": "Note bench",
+  "usd": {
+    "default_prim": "/note_bench",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/note_bench/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

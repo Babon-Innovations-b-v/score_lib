@@ -1,0 +1,108 @@
+{
+  "address": "surface/beta_cloth@1",
+  "files": {
+    "material.usda": {
+      "bytes": 545,
+      "role": "usd",
+      "sha256": "a8cfc57047b6df4117609a11a794abc6fd1e3d20e9b661ae16795e54193a8836"
+    },
+    "preview.png": {
+      "bytes": 16257,
+      "role": "picture",
+      "sha256": "e7762257a334d114a51950e35823f975147d652076127564f254fc40b4b9f0d3"
+    },
+    "surface.json": {
+      "bytes": 336,
+      "role": "record",
+      "sha256": "b1e8adb4bd25e2c70ecbf511ec956af18e658da07e181937494392a95c9ca3db"
+    }
+  },
+  "id": "beta_cloth",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "mars_surface",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "mars_surface"
+    ],
+    "recipe": [
+      "rubber"
+    ]
+  },
+  "title": "Beta cloth",
+  "usd": {
+    "default_prim": "/beta_cloth",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/beta_cloth/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

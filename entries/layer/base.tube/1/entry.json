@@ -1,0 +1,125 @@
+{
+  "address": "layer/base.tube@1",
+  "files": {
+    "assets/textures/ground_colour.jpg": {
+      "bytes": 1497012,
+      "role": "texture",
+      "sha256": "6dad7b054cf9f8c3c822c310a7366896d4e29e954a288e35a035355e95e30901"
+    },
+    "assets/textures/ground_facing.png": {
+      "bytes": 13743592,
+      "role": "texture",
+      "sha256": "192036204e6f2116ffc784972bae16b323ff8e982e931f1cee601bd5e9d93010"
+    },
+    "layer.usda": {
+      "bytes": 7034883,
+      "role": "usd",
+      "sha256": "6cbb551bf120831fa2fc03eb781c77e6e1fe67f488e8a8f4124fc22d022bfd4f"
+    }
+  },
+  "id": "base.tube",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:00:40.450199+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/base.usda",
+        "sha256": "b5ee20828e60f3b3fedce66892f806639654d9eddf8c790607a3afe62efd54fd"
+      }
+    },
+    "models": [],
+    "node": "assembly@tube",
+    "output": "46b603be4ce58e7eb5c89d2585ecd43bb770e6dd89a1b6b79d28ce6a3ae19804",
+    "own_files": [
+      "assets/textures/ground_colour.jpg",
+      "assets/textures/ground_facing.png"
+    ],
+    "place": "tube",
+    "record_key": "b2afcac97aa05f6343658da019f1ce453598524265ce7ed16707651229609351",
+    "side_records_from": null,
+    "source_name": "layers/base.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/room_layout@1"
+  },
+  "requires": [
+    "model/cable_bundle_1.tube@1",
+    "model/crown_strip_lamp_1@1",
+    "model/end_mat_1@1",
+    "model/hoop_1@1",
+    "model/hoop_2@1",
+    "model/hull_patch_1@1",
+    "model/hull_patch_2@1",
+    "model/hull_plate_1@1",
+    "model/hull_plate_2@1",
+    "model/hull_plate_3@1",
+    "model/hull_plate_4@1",
+    "model/hull_plate_5@1",
+    "model/hull_plate_6@1",
+    "model/hull_plate_7@1",
+    "model/pipe_bracket_1.tube@1",
+    "model/pipe_straight_1.tube@1",
+    "model/pipe_straight_2.tube@1",
+    "model/rail_bracket_1@1",
+    "model/ring_floor_plate_1.tube@1",
+    "model/sign_plate_2@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "tube"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "base"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Tube base layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "base",
+    "meters_per_unit": null,
+    "neighbours": [
+      "place/airlock@1",
+      "place/garage@1",
+      "place/greenhouse@1",
+      "place/habitat@1",
+      "place/hangar@1",
+      "place/hub@1",
+      "place/lab@1",
+      "place/old_station@1",
+      "place/workshop@1",
+      "place/wreck@1"
+    ],
+    "path": "score_lib/layer/base.tube/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

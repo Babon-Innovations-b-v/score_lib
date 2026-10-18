@@ -1,0 +1,110 @@
+{
+  "address": "model/chair_1@1",
+  "files": {
+    "model.json": {
+      "bytes": 259,
+      "role": "record",
+      "sha256": "0cbc204a25eb0bd5e4cf0f26e92750c4e4de0e20ef9cf00c9c961b9432a5cba5"
+    },
+    "model.usdc": {
+      "bytes": 1551057,
+      "role": "usd",
+      "sha256": "d02c28dab93177f0c5de2296f4c75d41db5a0ca975d0ff26ff553148d3ec3e87"
+    },
+    "preview.png": {
+      "bytes": 22287,
+      "role": "picture",
+      "sha256": "d5661d3f4b7495b3972062d1a40dec9f40a47140b078105eac6fc3a75f5dc17d"
+    },
+    "textures/chair_1_base_color.png": {
+      "bytes": 1119955,
+      "role": "texture",
+      "sha256": "318e89e97deb9a80e95429cfb718e7384d435bd854187a088b154f76010ebfa4"
+    },
+    "textures/chair_1_metal_roughness.png": {
+      "bytes": 895749,
+      "role": "texture",
+      "sha256": "fac41a2fa8fd35a0c13b945959be3c759ba4b8affdfa5c09bdd0cfac884fb1f5"
+    },
+    "textures/chair_1_normal.png": {
+      "bytes": 7358874,
+      "role": "texture",
+      "sha256": "db31b595df3e33d80f430868d3c410a3a78bdfaff213c7082319e2f144e188e7"
+    }
+  },
+  "id": "chair_1",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-17T11:21:57.694141+00:00",
+      "by": "runner"
+    },
+    "aliases": [
+      [
+        "d02c28dab93177f0c5de2296f4c75d41db5a0ca975d0ff26ff553148d3ec3e87",
+        "model.usdc"
+      ]
+    ],
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "5defd20acde5084e35388f21ab303dbcb47b5e1ca6b1142e82e29280bf91d356",
+    "models": [],
+    "node": "assembly@greenhouse",
+    "output": "910f5ef85c6bacfd60b7b934d6980011f765df81458a88095c9ee09416e6fec7",
+    "place": "greenhouse",
+    "record_key": "96f06014f00223d17da44c7eaa7bd37c8c838a72ef68ace7ba2ccc88be48cafa",
+    "source_name": "chair_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "greenhouse",
+    "hub"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Chair 1",
+  "usd": {
+    "default_prim": "/chair_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/chair_1/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

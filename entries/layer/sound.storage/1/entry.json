@@ -1,0 +1,95 @@
+{
+  "address": "layer/sound.storage@1",
+  "files": {
+    "layer.usda": {
+      "bytes": 142896,
+      "role": "usd",
+      "sha256": "29af248982ac74f1489af84d038b7025d62cf63ed1f198b8736a5edea3e6c6f1"
+    },
+    "sound.json": {
+      "bytes": 25439,
+      "role": "record",
+      "sha256": "7762ca6bcea9a3137695b929d2679ee316947288b4260331d34e6d98bb6c680c"
+    }
+  },
+  "id": "sound.storage",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-17T09:51:12.135510+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/sound.usda",
+        "sha256": "0dc7bd05ccd4f9816f21ebaa62bf1d02dd42a3a59777464ac23ef0fb4f22d04d"
+      }
+    },
+    "models": [],
+    "node": "assembly@storage",
+    "output": "69f54fa7482a870ea9fcf8635d1dee2dcbce311391024babd0e085354ca2c3df",
+    "own_files": [],
+    "place": "storage",
+    "record_key": "07be8d8805dfb900db0fcbea2f77f5228ae16396357e62916ed34f782464f5d8",
+    "side_records_from": "423fb005cedb97ec65fca5f50dcd82237f0e3e5fcaaea688a90e1f2de146661b",
+    "source_name": "layers/sound.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/sound_layer@1"
+  },
+  "requires": [
+    "sound/footstep_grating@1",
+    "sound/footstep_rubber@1",
+    "sound/footsteps_metal.storage@1",
+    "sound/impact_grating@1",
+    "sound/impact_rubber@1",
+    "sound/impact_steel_plate@1",
+    "sound/scrape_grating@1",
+    "sound/scrape_rubber@1",
+    "sound/scrape_steel_plate@1",
+    "sound/ship_inside@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "storage"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "sound"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Storage sound layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "sound",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/sound.storage/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

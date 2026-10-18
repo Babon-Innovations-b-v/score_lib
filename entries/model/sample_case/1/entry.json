@@ -1,0 +1,103 @@
+{
+  "address": "model/sample_case@1",
+  "files": {
+    "model.json": {
+      "bytes": 274,
+      "role": "record",
+      "sha256": "1f2d625834330211182c1f47c8575b6fc0f4caebb59d49b56a4c200c2c2429c1"
+    },
+    "model.usdc": {
+      "bytes": 508396,
+      "role": "usd",
+      "sha256": "cd243dd3785be0934ec05829d35afca773b02628f90150bb21d7aeb85b288732"
+    },
+    "preview.png": {
+      "bytes": 29088,
+      "role": "picture",
+      "sha256": "4c3118dde31f8e461e3210f8f3df9e2441293b0eabcc230051035c68bec4cbc9"
+    },
+    "textures/sample_case_base_color.png": {
+      "bytes": 721153,
+      "role": "texture",
+      "sha256": "e43d5c649d478e76f144a5bc7ebcb9fa0b962b4b56fa1213d793cdda1aa554ab"
+    },
+    "textures/sample_case_metal_roughness.png": {
+      "bytes": 711601,
+      "role": "texture",
+      "sha256": "17bf8f9360df00ce91bf8138e9e56203c5de252e6279f46b25a101a6638e9d6e"
+    },
+    "textures/sample_case_normal.png": {
+      "bytes": 4299660,
+      "role": "texture",
+      "sha256": "a850099a341874b1633a2980a6692d6767c9e5129d1391d0d7df7def3122348d"
+    }
+  },
+  "id": "sample_case",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:16:00.039696+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "089c2ac23e940169d19260664209c83fdc32079f9e12ec06d676fc82bbda1e87",
+    "models": [],
+    "node": "assembly@campgrounds",
+    "output": "7fcf4c6f9552d4edb6020038bb83dd248f2e602f1958878438d52dfc3a7685bb",
+    "place": "campgrounds",
+    "record_key": "3e28c5bc4fca67388ebba8768e3cf58d643f791893e4237289ddba7e9754e64e",
+    "source_name": "sample_case",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "campgrounds"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "mars",
+      "outside"
+    ]
+  },
+  "title": "Sample case",
+  "usd": {
+    "default_prim": "/sample_case",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/sample_case/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

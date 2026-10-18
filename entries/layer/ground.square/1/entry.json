@@ -1,0 +1,81 @@
+{
+  "address": "layer/ground.square@1",
+  "files": {
+    "layer.usda": {
+      "bytes": 93,
+      "role": "usd",
+      "sha256": "6ffc451aa62deb8cef8de036f94cb8a6f82d0bbd770f0838956f3f776caef3ea"
+    }
+  },
+  "id": "ground.square",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T10:37:19.122806+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/ground.usdc",
+        "sha256": "dc379067b811f40b443f9684ee8d98a5e2f50d299b1d646e3dd1f77c248b7563"
+      }
+    },
+    "models": [],
+    "node": "assembly@square",
+    "output": "eae5e52a53b2d1757ed24acf4035c4a6bb2f806de9e7630adabdd6c13f4120be",
+    "own_files": [],
+    "place": "square",
+    "record_key": "97d5530a3361f6e15704b2a62582b9dfe5a727669824f06f7c46afab788c5160",
+    "side_records_from": null,
+    "source_name": "layers/ground.usdc",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/terrain_landforms@1"
+  },
+  "requires": [
+    "ground/earth.square@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "square"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "ground"
+    ],
+    "place_kind": [
+      "outside",
+      "earth"
+    ]
+  },
+  "title": "Square ground layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "ground",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/ground.square/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

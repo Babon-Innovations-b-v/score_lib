@@ -1,0 +1,103 @@
+{
+  "address": "model/mast_cabinet@1",
+  "files": {
+    "model.json": {
+      "bytes": 289,
+      "role": "record",
+      "sha256": "4065998da63f12ab8db423c07a46dff1daaa549ca142aef0ea6cdfc01b5afa1e"
+    },
+    "model.usdc": {
+      "bytes": 1912988,
+      "role": "usd",
+      "sha256": "e53e4ef81d8b08de259d5ce9b24aa4820e872ace5539696a359ee2e135fbc6f1"
+    },
+    "preview.png": {
+      "bytes": 30736,
+      "role": "picture",
+      "sha256": "a18380c008fe3ed99c975bb594c86ac0c676775fb387d4301bc45429fa849ab5"
+    },
+    "textures/mast_cabinet_base_color.png": {
+      "bytes": 276822,
+      "role": "texture",
+      "sha256": "82dd31f8ebd1ff625230a8cfbcc5cc7f2eb0ad742cc7dc749c9621e38e203d3f"
+    },
+    "textures/mast_cabinet_metal_roughness.png": {
+      "bytes": 154770,
+      "role": "texture",
+      "sha256": "068adebfafb69b149e0048ea9d30b94b4b8a355c38a9edbb71c7d7b1114005bd"
+    },
+    "textures/mast_cabinet_normal.png": {
+      "bytes": 5547921,
+      "role": "texture",
+      "sha256": "80a1a1f724959b4baf359e9ebcebbc44aa6556c75a61647d97e289dd0f425593"
+    }
+  },
+  "id": "mast_cabinet",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:16:00.039696+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "292d63b7f79eadb2bc02e9ababdbda154ea6c0f9484cd5f36f4c0997730ee0ea",
+    "models": [],
+    "node": "assembly@campgrounds",
+    "output": "7fcf4c6f9552d4edb6020038bb83dd248f2e602f1958878438d52dfc3a7685bb",
+    "place": "campgrounds",
+    "record_key": "3e28c5bc4fca67388ebba8768e3cf58d643f791893e4237289ddba7e9754e64e",
+    "source_name": "mast_cabinet",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "campgrounds"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "mars",
+      "outside"
+    ]
+  },
+  "title": "Mast cabinet",
+  "usd": {
+    "default_prim": "/mast_cabinet",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/mast_cabinet/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

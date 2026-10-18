@@ -1,0 +1,94 @@
+{
+  "address": "effect/kettle_steam@1",
+  "files": {
+    "clip.usdc": {
+      "bytes": 3202721,
+      "role": "usd",
+      "sha256": "4448ecd31bc6224c98f7873fa71fdc8660bda8b5a88704ef71972ede80032cad"
+    },
+    "effect.usda": {
+      "bytes": 16493,
+      "role": "usd",
+      "sha256": "94d3e8277fd149ef484943a5e8a70911cc976e8b97f588bcb2ce105fd2b37936"
+    },
+    "preview.png": {
+      "bytes": 21040,
+      "role": "picture",
+      "sha256": "1f99f8d85be6d0cc81eb6a4701160858723241a50ef6f1ccce4e3ad3a1810112"
+    },
+    "settings.json": {
+      "bytes": 1942,
+      "role": "record",
+      "sha256": "16538e7b5f5e732ff9fdc408764f3ec4a6feb1a8d1c8b99e7f13c98edb6f857e"
+    }
+  },
+  "id": "kettle_steam",
+  "kind": "effect",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/points.py",
+    "of": "clip.usdc at clip time 62.0"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-12T01:25:09.228205+00:00",
+      "by": "runner"
+    },
+    "code": "7b3bc97d9997c40ad75aad20b9a04a996a85620ffa21f81538dfd5251854aac9",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "from": "footage: flickr-5587696584, commons-boilingkettle, arxiv-2201.12128 (a boiling kettle's turbulent jet out of its spout (the mesh's farthest point from its middle above half its height, toward +z), clear for its first 1.5 to 4.5 cm where the steam is still too hot to condense, then white as it mixes with the room's air, rising and widening, drying away within half a metre)",
+    "models": [],
+    "node": "effects-layer@habitat",
+    "output": "cae1ccabdf65a4fe6dd0e4950b1da6a10c36a3dd101fa4feea0336935cd55593",
+    "place": "habitat",
+    "prim": "/habitat/Objects/kettle_1/kettle_steam",
+    "record_key": "43e62ea4f779818a8cda5b3f14638e6fe118f9628961795bc6b487c1c760f0fb",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/particle_effects@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "habitat"
+  ],
+  "state": "draft",
+  "tags": {
+    "effect": [
+      "steam_jet"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ],
+    "weather": []
+  },
+  "title": "Kettle steam",
+  "usd": {
+    "default_prim": "/kettle_steam",
+    "layer": "effects",
+    "meters_per_unit": null,
+    "path": "score_lib/effect/kettle_steam/1/effect.usda",
+    "root": "effect.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

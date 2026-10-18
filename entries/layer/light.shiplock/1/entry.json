@@ -1,0 +1,84 @@
+{
+  "address": "layer/light.shiplock@1",
+  "files": {
+    "lamps.json": {
+      "bytes": 577,
+      "role": "record",
+      "sha256": "5672f5e56bb02a9f3902eae1ac352c14a648e10fcacd631bfed7a552862df771"
+    },
+    "layer.usda": {
+      "bytes": 340,
+      "role": "usd",
+      "sha256": "3f5305868bb4c969b25a604daf5e1c32231241cfe44275a5db833aafe276ab1f"
+    }
+  },
+  "id": "light.shiplock",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T10:26:39.062614+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/light.usda",
+        "sha256": "3f5305868bb4c969b25a604daf5e1c32231241cfe44275a5db833aafe276ab1f"
+      }
+    },
+    "models": [],
+    "node": "assembly@shiplock",
+    "output": "9ea9c1ba2ba7fce72429f749372d757425d477683ae1bc551ad6d3e280d2b1ad",
+    "own_files": [],
+    "place": "shiplock",
+    "record_key": "adaee891e03334aa818fce0406f996d11d681dcf6c90ed18ccd6250eac3e41fe",
+    "side_records_from": "2d2f55148dbb7b10f2fb5cf17304f9d1c4329baae1bda6256927fff08a7df407",
+    "source_name": "layers/light.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/light_rig@1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "shiplock"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "light"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Shiplock light layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "light",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/light.shiplock/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

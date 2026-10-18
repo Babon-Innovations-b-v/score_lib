@@ -1,0 +1,108 @@
+{
+  "address": "surface/meter_grey@1",
+  "files": {
+    "material.usda": {
+      "bytes": 551,
+      "role": "usd",
+      "sha256": "a45218357abc50eebb6232207696c45c3135a75e638da9cbfdf49b6ac964ef4a"
+    },
+    "preview.png": {
+      "bytes": 19655,
+      "role": "picture",
+      "sha256": "db915210ea61f6687c9b6bebe9e0f13944daec8f4b3cd2918e4efc184e6581b0"
+    },
+    "surface.json": {
+      "bytes": 195,
+      "role": "record",
+      "sha256": "496882b2df7dcaf2d017079350cf619ac811d6f36634c62da82a08c607207c1b"
+    }
+  },
+  "id": "meter_grey",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "rusted",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "rusted"
+    ],
+    "recipe": [
+      "rusted_metal"
+    ]
+  },
+  "title": "Meter grey",
+  "usd": {
+    "default_prim": "/meter_grey",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/meter_grey/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

@@ -1,0 +1,94 @@
+{
+  "address": "effect/door_vent_veil.airlock@1",
+  "files": {
+    "clip.usdc": {
+      "bytes": 5217617,
+      "role": "usd",
+      "sha256": "fd4eb5054a40bd47717794a6e5317814b0598dd7d890f8529130706a69da801e"
+    },
+    "effect.usda": {
+      "bytes": 4472,
+      "role": "usd",
+      "sha256": "92abe6d6b2f2db4f828a762b06e4f6f35bf99d2a1644c14c2545f103843c6c4d"
+    },
+    "preview.png": {
+      "bytes": 88656,
+      "role": "picture",
+      "sha256": "1ff5f341e95135fd9777c84016c96fb7e99d95e696d0bb5e3fdcf9e2462019e5"
+    },
+    "settings.json": {
+      "bytes": 1873,
+      "role": "record",
+      "sha256": "1fe11aa96dc17a57783664af610acf4ec0ebc50af3385d1c1f015861f8cd817a"
+    }
+  },
+  "id": "door_vent_veil.airlock",
+  "kind": "effect",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/points.py",
+    "of": "clip.usdc at clip time 120.0"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-12T01:25:10.634484+00:00",
+      "by": "runner"
+    },
+    "code": "7b3bc97d9997c40ad75aad20b9a04a996a85620ffa21f81538dfd5251854aac9",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "from": "footage: NTRS-19910011413, S126E014192 (the gas itself leaving with the ice, the fine fog of its vapour condensing again, seen as a faint fan of white leaving with the ice at its speed and diverging at its angle (NTRS-19910011413), each puff growing as it spreads so the fan stays one soft band (a vent seen in footage is a soft veil over the sparkling ice, never the ice alone); the outer door starts down at 6 s (data/motion/airlock.json outer_door), so the gap opens at its top first)",
+    "models": [],
+    "node": "effects-layer@airlock",
+    "output": "5d67d1f20e1051025f8df202d620167f7df591cc22f9d5c9daf1facb951a2315",
+    "place": "airlock",
+    "prim": "/airlock/Fixtures/door_vent_veil",
+    "record_key": "976998f93d41562c408f4e7eb21e559b6a7dcac757b0089a0ef9a52ab6defb08",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/particle_effects@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock"
+  ],
+  "state": "draft",
+  "tags": {
+    "effect": [
+      "vacuum_vent_veil"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ],
+    "weather": []
+  },
+  "title": "Door vent veil",
+  "usd": {
+    "default_prim": "/door_vent_veil",
+    "layer": "effects",
+    "meters_per_unit": null,
+    "path": "score_lib/effect/door_vent_veil.airlock/1/effect.usda",
+    "root": "effect.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

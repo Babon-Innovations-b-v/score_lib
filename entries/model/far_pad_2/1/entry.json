@@ -1,0 +1,103 @@
+{
+  "address": "model/far_pad_2@1",
+  "files": {
+    "model.json": {
+      "bytes": 276,
+      "role": "record",
+      "sha256": "0c7f10f696b824a2dc40293caaae91f17270b3ddcff9993e195707518f8ce69c"
+    },
+    "model.usdc": {
+      "bytes": 7733,
+      "role": "usd",
+      "sha256": "6a3c62a14c6b6b6575d34cec3f6b15c6a070d8b753a34cd2b9e4a7f131a19644"
+    },
+    "preview.png": {
+      "bytes": 7200,
+      "role": "picture",
+      "sha256": "57e350d71bf4b3bd8f1be992e269f54329ef8bdb6738915ee28ccd60f893a7e9"
+    },
+    "textures/prologue_launch_distant_2_base_color.png": {
+      "bytes": 18185,
+      "role": "texture",
+      "sha256": "e35f3d29a55bf5705ad1455fef7d317d6edce62163637b54c49d74029a980e68"
+    },
+    "textures/prologue_launch_distant_2_metal_roughness.png": {
+      "bytes": 17798,
+      "role": "texture",
+      "sha256": "b2283099aa63434176fdf3c37ff331f2908633c11fc36f26d5434ffe3297011b"
+    },
+    "textures/prologue_launch_distant_2_normal.png": {
+      "bytes": 10535206,
+      "role": "texture",
+      "sha256": "54c2791e9b74cd7c18bbca9deaa0d9d479b756554f419d2136b310a17d5c5188"
+    }
+  },
+  "id": "far_pad_2",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-15T12:59:49.032817+00:00",
+      "by": "runner"
+    },
+    "code": "a463163a0eeef652acdcfd1091415cc08ea792bdf6eee5489b5a0b48e06ace87",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "85f0a2f4d24601e5f27b7c313bc4993f5f791d1e976aacc786bd011a4b3effb1",
+    "models": [],
+    "node": "assembly@launch",
+    "output": "3da5eb7afef951572bd823e1c78de4b209d123aa5c61e7cd9e09deda57bb5a48",
+    "place": "launch",
+    "record_key": "5847448e1af903d9d737a9d25f3d1f3303a645a211dd8c1844d6b688faf8005d",
+    "source_name": "far_pad_2",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "launch"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "outside"
+    ]
+  },
+  "title": "Far pad 2",
+  "usd": {
+    "default_prim": "/far_pad_2",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/far_pad_2/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

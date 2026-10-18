@@ -1,0 +1,88 @@
+{
+  "address": "surface/mars_dust_fine@1",
+  "files": {
+    "material.usda": {
+      "bytes": 565,
+      "role": "usd",
+      "sha256": "58dfd46adedbe73f1e58f42f86c2f14e6cdce749f21544d20d78769b29f92391"
+    },
+    "preview.png": {
+      "bytes": 23122,
+      "role": "picture",
+      "sha256": "d79a132cc2f2b556cd5d7100e3e74098b043051c7410d65c8e767f79d1b73b89"
+    },
+    "surface.json": {
+      "bytes": 468,
+      "role": "record",
+      "sha256": "28d90a0943cc7fb2ee4a1b8402b37eb910ef672e4c8d22f70125a0fa15394f08"
+    }
+  },
+  "id": "mars_dust_fine",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "mars_surface",
+    "place": "cockpit",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "cockpit",
+    "engineroom",
+    "galley",
+    "navigation",
+    "quarters",
+    "shiplock",
+    "storage",
+    "walkway"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "mars_surface"
+    ],
+    "recipe": [
+      "rubber"
+    ]
+  },
+  "title": "Mars dust fine",
+  "usd": {
+    "default_prim": "/mars_dust_fine",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/mars_dust_fine/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

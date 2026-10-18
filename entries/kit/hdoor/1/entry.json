@@ -1,0 +1,59 @@
+{
+  "address": "kit/hdoor@1",
+  "files": {
+    "kit.json": {
+      "bytes": 100077,
+      "role": "record",
+      "sha256": "2e3558ec236ad7021a54fc957951a7760da1743c7d5358f00e016167d6a2070f"
+    },
+    "preview.png": {
+      "bytes": 5543,
+      "role": "picture",
+      "sha256": "6dfb29c014f5855518d76971d98e108feab58979e8794bec8bba3eb7c2830092"
+    }
+  },
+  "id": "hdoor",
+  "kind": "kit",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/plan.py",
+    "of": "kit.json pieces (309) from above"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "pieces": 309,
+    "place": "hdoor",
+    "ship_kit": null,
+    "source": "data/kit/hdoor.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/room_layout@1",
+    "model/lattice_ring_rib_1.hdoor@1",
+    "model/wall_upper_plain_1.hdoor@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "hdoor"
+  ],
+  "state": "draft",
+  "tags": {
+    "place_kind": []
+  },
+  "title": "Hdoor kit",
+  "usd": null,
+  "version": 1
+}

@@ -1,0 +1,108 @@
+{
+  "address": "surface/stair_terrazzo@1",
+  "files": {
+    "material.usda": {
+      "bytes": 556,
+      "role": "usd",
+      "sha256": "9709c3b84ccb90cd005b6937a6a5f91c3a77dfdbbfe461081ba8543aed0a8f8e"
+    },
+    "preview.png": {
+      "bytes": 20123,
+      "role": "picture",
+      "sha256": "f549210e71e02caac1daa3f8dce436a9bcc702679b0c49dec921677723c9468a"
+    },
+    "surface.json": {
+      "bytes": 214,
+      "role": "record",
+      "sha256": "4bc64ced30d633df0c0189ca39e84626728dc4c1de85ce3abc06c016215d6515"
+    }
+  },
+  "id": "stair_terrazzo",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "tile",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "tile"
+    ],
+    "recipe": [
+      "terrazzo"
+    ]
+  },
+  "title": "Stair terrazzo",
+  "usd": {
+    "default_prim": "/stair_terrazzo",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/stair_terrazzo/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

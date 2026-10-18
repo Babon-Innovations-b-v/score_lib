@@ -1,0 +1,459 @@
+{
+  "address": "algorithm/cast_spread@1",
+  "files": {
+    "code.json": {
+      "bytes": 1170,
+      "role": "record",
+      "sha256": "01a91ce52c32a0791d1349d486ec126e0a06a90d42ca503dd557fa72ba0860c0"
+    },
+    "code/score/__init__.py": {
+      "bytes": 0,
+      "role": "code",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "code/score/checks/__init__.py": {
+      "bytes": 5111,
+      "role": "code",
+      "sha256": "95c8487441b20e04f9706c0109de8e48a63e9acdb5f6c158c973824f2975b0fd"
+    },
+    "code/score/contracts/__init__.py": {
+      "bytes": 5024,
+      "role": "code",
+      "sha256": "1c0f030fd4a7110bdb7881c9e792243b87af42f60ca68dd39486808382f5edde"
+    },
+    "code/score/stages/__init__.py": {
+      "bytes": 46134,
+      "role": "code",
+      "sha256": "f394a3feab1a7718bfa03a1d2c5de14f1265a8d7e835caaf7df9e7b55a466a01"
+    },
+    "code/score/stages/cast/__init__.py": {
+      "bytes": 18070,
+      "role": "code",
+      "sha256": "f43c1274fb7fa8e716062d5325801e53f7ea9973f6678a497a74be2683755b6f"
+    },
+    "code/score/stages/cast/layer.py": {
+      "bytes": 10411,
+      "role": "code",
+      "sha256": "c24dddc82d399011e6ee8d295491437ac39d38d853031c1aa6d90b6f11e97644"
+    },
+    "code/score/stages/cast/measure.py": {
+      "bytes": 7656,
+      "role": "code",
+      "sha256": "3ef14f0536d07bfd0c860098eef2a5e9cdd2e823b5f4a8267895516b712a98c2"
+    },
+    "code/score/stages/cast/spread.py": {
+      "bytes": 7919,
+      "role": "code",
+      "sha256": "451375aa716d769fe1fc7d607fcf58136f13f3a2c6795859293a31b0c3523b3d"
+    },
+    "code/tools/usd/stage_inputs.py": {
+      "bytes": 3573,
+      "role": "code",
+      "sha256": "57c6d1b2f2ff71cdeaeff6ab33c95688b49a09ffb67aea787211d937affa3e80"
+    },
+    "definition.json": {
+      "bytes": 870,
+      "role": "record",
+      "sha256": "1e16f5bcb44ebcae7d8ecc966b47ebedecfe744fb5bac7229266e8fbd5cd0ddc"
+    },
+    "presets/world1/data/characters/airlock.json": {
+      "bytes": 2070,
+      "role": "record",
+      "sha256": "ab0f1180e7c1bda8c817acec2b6b14f5b5555be049c73d8d35e24b9c8c6eddbe"
+    },
+    "presets/world1/data/characters/camp.json": {
+      "bytes": 1868,
+      "role": "record",
+      "sha256": "ccc9b5454d2ab56ed4d55639e595bd146df767fccbb43d9fbff0e1f8213485b9"
+    },
+    "presets/world1/data/characters/campgrounds.json": {
+      "bytes": 394,
+      "role": "record",
+      "sha256": "b6d2590e27ffcc1a7d6c4b01c9d127b4326c8a941f39ca9fc867fb3d6f6abba0"
+    },
+    "presets/world1/data/characters/cockpit.json": {
+      "bytes": 1425,
+      "role": "record",
+      "sha256": "1c57570239304be9d4375d019245033b08e47a9366f385ca76ed9294bb6febe9"
+    },
+    "presets/world1/data/characters/engineroom.json": {
+      "bytes": 422,
+      "role": "record",
+      "sha256": "13f491b78d7eb6efce925201d8cc79fedbadb94eb1266aa37dfbf28e07b25565"
+    },
+    "presets/world1/data/characters/flat.json": {
+      "bytes": 1739,
+      "role": "record",
+      "sha256": "f5f6f8521410b0fad29cd7394ad54b428b8a0fd292a1d1ffbb42e26f2f924c40"
+    },
+    "presets/world1/data/characters/galley.json": {
+      "bytes": 406,
+      "role": "record",
+      "sha256": "9d1910ed338d2f602a1791de21de499e7ff945a93cb5d266393205f7a0a1ee37"
+    },
+    "presets/world1/data/characters/garage.json": {
+      "bytes": 1065,
+      "role": "record",
+      "sha256": "e53d57268b180bafbe75dd9c19415495a20dad24dea8405fc25d980e216dd9cf"
+    },
+    "presets/world1/data/characters/garments/coat/cloth.json": {
+      "bytes": 1286,
+      "role": "record",
+      "sha256": "d79cfe76b4402bc92e7d503f71db0742e5fad7d017158b054788c2e8f6a9af83"
+    },
+    "presets/world1/data/characters/garments/jacket/cloth.json": {
+      "bytes": 1292,
+      "role": "record",
+      "sha256": "7b740c4dad4288f891a9cc7609bb53c33cb419d439051a8d623e404ee280c6eb"
+    },
+    "presets/world1/data/characters/garments/space_suit/cloth.json": {
+      "bytes": 3095,
+      "role": "record",
+      "sha256": "2a7032426a561fd195efe618f119e620d4f20cdbe32b148426a60883d082dbe6"
+    },
+    "presets/world1/data/characters/garments/trousers/cloth.json": {
+      "bytes": 2403,
+      "role": "record",
+      "sha256": "72cfdcd13c9e502d39a9a60337904a7d188e3f393cf7c5db94cb2189d7bbf679"
+    },
+    "presets/world1/data/characters/garments/work_suit/cloth.json": {
+      "bytes": 1981,
+      "role": "record",
+      "sha256": "c541d7fe4297d17f7c94b37c6333b8f24f293578d8c8fd795d0ac9d3182f06f6"
+    },
+    "presets/world1/data/characters/greenhouse.json": {
+      "bytes": 2013,
+      "role": "record",
+      "sha256": "cf6416f827b80be9c9d857fb43072217486f719e27eaaab592345a5c255f15bd"
+    },
+    "presets/world1/data/characters/habitat.json": {
+      "bytes": 1503,
+      "role": "record",
+      "sha256": "5d35a1cb2e010fa2681492254544b4dac7874574448f538c7b14cdd4373c1825"
+    },
+    "presets/world1/data/characters/hangar.json": {
+      "bytes": 1505,
+      "role": "record",
+      "sha256": "e9ae140f9dab8c7c2087516c3be54e618cf94b0da7ffd716eda6a4fe3bd4510e"
+    },
+    "presets/world1/data/characters/hub.json": {
+      "bytes": 850,
+      "role": "record",
+      "sha256": "8c1c7503506b0f3d4e99083354cc89b5701d456186ca45ed03f1add5f9f98e16"
+    },
+    "presets/world1/data/characters/lab.json": {
+      "bytes": 1157,
+      "role": "record",
+      "sha256": "e81f813c1079039e1316c5aaa769a7128badd49d33c9d43c08bf094f58b14f96"
+    },
+    "presets/world1/data/characters/launch.json": {
+      "bytes": 418,
+      "role": "record",
+      "sha256": "5693d3fda60a4e01af4919981cedf147bae905b71b65ccff946578b1ac639531"
+    },
+    "presets/world1/data/characters/makes/bram_prop.json": {
+      "bytes": 2341,
+      "role": "record",
+      "sha256": "61c45f0bb0d8d9895e34d8152b5e913dfaf83488cbd5cc2ad7dcfecab9be1df3"
+    },
+    "presets/world1/data/characters/makes/bram_wide_prop.json": {
+      "bytes": 1699,
+      "role": "record",
+      "sha256": "a052a74636d66108c50bca4cd0eb77937a817a3e06968ef4b86a8b6a2e630ad8"
+    },
+    "presets/world1/data/characters/makes/dog_stray.json": {
+      "bytes": 358,
+      "role": "record",
+      "sha256": "d4137687b89703b96b278d0faf6e38452ddf29dfbc4ac992ac7396450a161deb"
+    },
+    "presets/world1/data/characters/makes/driver_prop.json": {
+      "bytes": 1276,
+      "role": "record",
+      "sha256": "3d2caf631de69ccea8616f42a52d110b79895c4fdfc3e1037cdcdfd76634b991"
+    },
+    "presets/world1/data/characters/makes/driver_wide_prop.json": {
+      "bytes": 1576,
+      "role": "record",
+      "sha256": "9e17b9badebd28a43898cf4272639b3c26b76c54943749ccc092ac7d79e71fc9"
+    },
+    "presets/world1/data/characters/makes/engineer_ama.json": {
+      "bytes": 1125,
+      "role": "record",
+      "sha256": "258c67ec4119fc8af68d967afc730230024cdc917e5e16a623c88021678e377a"
+    },
+    "presets/world1/data/characters/makes/fish_tang.json": {
+      "bytes": 402,
+      "role": "record",
+      "sha256": "fc2127ceb11ee55ffc98e55528248c45e13a212a41576b8cbdd1b6e1b76e81e4"
+    },
+    "presets/world1/data/characters/makes/guard_prop.json": {
+      "bytes": 1381,
+      "role": "record",
+      "sha256": "cd7121760fae09ffebf9096ddc12c6d88b20973345b81e1bc62f66f1bda5a709"
+    },
+    "presets/world1/data/characters/makes/guard_wide_prop.json": {
+      "bytes": 1686,
+      "role": "record",
+      "sha256": "ae94267a6838b66473ccb8ce2e465c626e11f6cc2bcf4acec2d27a22d0474d36"
+    },
+    "presets/world1/data/characters/makes/kit_m_avg_prop.json": {
+      "bytes": 1647,
+      "role": "record",
+      "sha256": "1a8a8e6d1628322cbea6e19af87e1cadcbe4ee44ee26cea4ba352ce249190393"
+    },
+    "presets/world1/data/characters/makes/kit_m_avg_wide_prop.json": {
+      "bytes": 1709,
+      "role": "record",
+      "sha256": "fa22ad7a83cd96079fc467f6cf92fd0fb34f99b439ff19135d26d71931dd5e2c"
+    },
+    "presets/world1/data/characters/makes/kit_m_broad_prop.json": {
+      "bytes": 1846,
+      "role": "record",
+      "sha256": "83f6089c0a6eeef7d156d69f5c318085785e014e190bc4ad523ac1d06c6c3d23"
+    },
+    "presets/world1/data/characters/makes/kit_m_broad_wide_prop.json": {
+      "bytes": 1717,
+      "role": "record",
+      "sha256": "7dc2586738972834e89f989d392553298e51d79378671a7c4de7da722f519624"
+    },
+    "presets/world1/data/characters/makes/kit_m_slim_prop.json": {
+      "bytes": 1485,
+      "role": "record",
+      "sha256": "cf4926d5b67acb6349dd11419064d3b10e3d42db906b39e9891895aa24b4a4ce"
+    },
+    "presets/world1/data/characters/makes/kit_w_avg_prop.json": {
+      "bytes": 1663,
+      "role": "record",
+      "sha256": "e029514bd712427353d4cc2c124df088b7b0b39669802f4c1aebf41da598160f"
+    },
+    "presets/world1/data/characters/makes/kit_w_broad_prop.json": {
+      "bytes": 1863,
+      "role": "record",
+      "sha256": "c8aaa04809e0d55d0810cbb4ba3b1e2284a8ae8dcade0e8be623500fc86a2766"
+    },
+    "presets/world1/data/characters/makes/kit_w_broad_wide_prop.json": {
+      "bytes": 1734,
+      "role": "record",
+      "sha256": "8ef5262bb92dfc871ad56f6df516f98be1a9b765d422cb38490709debfb894bf"
+    },
+    "presets/world1/data/characters/makes/kit_w_slim_prop.json": {
+      "bytes": 1662,
+      "role": "record",
+      "sha256": "c7445d65abe1286e0dffe0ea9fb9d06a6cd38a8b626fbe91b12bcf036eaede49"
+    },
+    "presets/world1/data/characters/makes/kit_w_slim_wide_prop.json": {
+      "bytes": 1724,
+      "role": "record",
+      "sha256": "b1a253d81311096c403e9870aede8e0ac53af08c2aa0d1ce4a5a03c49b7638d0"
+    },
+    "presets/world1/data/characters/makes/leader_prop.json": {
+      "bytes": 1338,
+      "role": "record",
+      "sha256": "fb97934c876b5e9c5d7031ffb2b68a8e40eec7b06d256a86c799a1603684dfdf"
+    },
+    "presets/world1/data/characters/makes/leader_wide_prop.json": {
+      "bytes": 1637,
+      "role": "record",
+      "sha256": "cfa8fc323ec1ef1c96b96f88c16815b2035f2c11450eb4399f1ac177f1b88c2a"
+    },
+    "presets/world1/data/characters/makes/nev_prop.json": {
+      "bytes": 2485,
+      "role": "record",
+      "sha256": "4904efa27a45dc8f802e3c24db2f460867bf279a4f421eac503e1f50cc705f94"
+    },
+    "presets/world1/data/characters/makes/nev_rebuild.json": {
+      "bytes": 1326,
+      "role": "record",
+      "sha256": "40fed10aa5ad2f75049dcf28e7383e3db367004bda534c8e88ee507e87849437"
+    },
+    "presets/world1/data/characters/makes/nev_wide_prop.json": {
+      "bytes": 1816,
+      "role": "record",
+      "sha256": "9815ff5a4e8032dd2e98da702b58480a35cc538b4d5b1df5e8f0da3d6ab4b949"
+    },
+    "presets/world1/data/characters/makes/oona_prop.json": {
+      "bytes": 1935,
+      "role": "record",
+      "sha256": "0f683d1e3f2327dc7dac8e7f2d99f207cf12429b99ff58609a1e18a368bfac1e"
+    },
+    "presets/world1/data/characters/makes/player.json": {
+      "bytes": 772,
+      "role": "record",
+      "sha256": "eb4f24f84ea5ae2e9792d916e979a7d1e02b74187ffdac3cc64228ca0fc1410e"
+    },
+    "presets/world1/data/characters/makes/player_prop.json": {
+      "bytes": 2151,
+      "role": "record",
+      "sha256": "b4c446861f2afcb252633b57eaaa7b6e982ceaf2f31cc079897bc9e0bdbc3bc2"
+    },
+    "presets/world1/data/characters/makes/player_wide_prop.json": {
+      "bytes": 1669,
+      "role": "record",
+      "sha256": "58823601c972d4ca2a722c4e18f8c5f46a9f01f98afdf398ddde409e29a30413"
+    },
+    "presets/world1/data/characters/makes/sefa_prop.json": {
+      "bytes": 1854,
+      "role": "record",
+      "sha256": "f4218dfacef6d6792ebab158d35712ff68545ff15cb51a5b6a1f1012910c68f6"
+    },
+    "presets/world1/data/characters/makes/sefa_wide_prop.json": {
+      "bytes": 1737,
+      "role": "record",
+      "sha256": "33fbc46fdabde168d60ff33bab985486826ea515aacd8bb3fd8c4e5f24218d06"
+    },
+    "presets/world1/data/characters/navigation.json": {
+      "bytes": 422,
+      "role": "record",
+      "sha256": "b62919faf7e1fcbdaf35953e549e2f60048e529ee32768e14c377e5046105163"
+    },
+    "presets/world1/data/characters/old_station.json": {
+      "bytes": 392,
+      "role": "record",
+      "sha256": "abb0dfc71aeb2a59a57d3154f4282eb1fda069dc92bad8aa4b5e79cdf7613f58"
+    },
+    "presets/world1/data/characters/quarters.json": {
+      "bytes": 414,
+      "role": "record",
+      "sha256": "09e3adf3439d17f611e24dd59f2fd1408b0b0e4b785a70f311581f71fba524f4"
+    },
+    "presets/world1/data/characters/shiplock.json": {
+      "bytes": 414,
+      "role": "record",
+      "sha256": "83d5e57f2e0875427f1b94dddc38392b5de7ca72c888f184f16057a3f5918d5a"
+    },
+    "presets/world1/data/characters/square.json": {
+      "bytes": 3371,
+      "role": "record",
+      "sha256": "c41590e2c09d909172e503aa7e1ffb35f99610da8ff3e1a4f23e19e41dd7650b"
+    },
+    "presets/world1/data/characters/stairwell.json": {
+      "bytes": 1604,
+      "role": "record",
+      "sha256": "e0632ebebab9bb8ac65edf4641024974e46400d3e6b65413931f449fc3e5844e"
+    },
+    "presets/world1/data/characters/storage.json": {
+      "bytes": 410,
+      "role": "record",
+      "sha256": "581ef2090168582508542eaab5b896e174d710a1f8dbb68286677b4d9021b8e6"
+    },
+    "presets/world1/data/characters/street.json": {
+      "bytes": 1427,
+      "role": "record",
+      "sha256": "a58ea06f3d0ea4756011ad4d58e7ada3129416846de641ba82e5f96db6ec2f4d"
+    },
+    "presets/world1/data/characters/tube.json": {
+      "bytes": 1847,
+      "role": "record",
+      "sha256": "d086e19de3550b88139ce651e27a888881f1669acbbf39585c069fece0446ddc"
+    },
+    "presets/world1/data/characters/walkway.json": {
+      "bytes": 410,
+      "role": "record",
+      "sha256": "ffd88857d7fc11c6980e719762d5628a9a04a401a91e542296a5d849d5b882e6"
+    },
+    "presets/world1/data/characters/workshop.json": {
+      "bytes": 1501,
+      "role": "record",
+      "sha256": "2e1befd2fa1cd102b2bdd1b06ef83d5e43ebd159a27ea045965db4f66869b789"
+    },
+    "presets/world1/data/characters/wreck.json": {
+      "bytes": 380,
+      "role": "record",
+      "sha256": "8ed96d8a75d567e474ed7c3c5927b90404f2911004649eba5595c55850893941"
+    },
+    "presets/world1/seed.json": {
+      "bytes": 627,
+      "role": "record",
+      "sha256": "ad6755b2d89f36622ed743256851e128c94134f854c1e22ba1a1f2c7ea11c0ee"
+    },
+    "run.json": {
+      "bytes": 348,
+      "role": "record",
+      "sha256": "4e31eb5af84ef17cac6966a6fdf5eb8ab1586181cc541ab81b020d30f7841826"
+    },
+    "settings.schema.json": {
+      "bytes": 995,
+      "role": "record",
+      "sha256": "919a590090f399acc715c55ff0c7955f5449c0ed830b869374d921c6c8011bde"
+    },
+    "test/score/stages/cast/cast_test.py": {
+      "bytes": 6454,
+      "role": "code",
+      "sha256": "470ba5251c2487356a08132ef993fac55fb8ea4b61bf5fbcd1ad865f5d48305e"
+    },
+    "test/score/stages/cast/layer_test.py": {
+      "bytes": 4482,
+      "role": "code",
+      "sha256": "80cfd456cbba9f8181391e3f9daa670bc29331433ec40084ff2d7041135d604b"
+    }
+  },
+  "id": "cast_spread",
+  "kind": "algorithm",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "no world 1 output in the store pictures this algorithm",
+  "provenance": {
+    "code": "95323c78ea79dd469b59ab40e370f3f72eb649b8076fb229bb7ad8a757316b2c",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "nodes": [
+      "cast@airlock",
+      "cast@camp",
+      "cast@cockpit",
+      "cast@flat",
+      "cast@garage",
+      "cast@greenhouse",
+      "cast@habitat",
+      "cast@hangar",
+      "cast@hub",
+      "cast@lab",
+      "cast@square",
+      "cast@stairwell",
+      "cast@street",
+      "cast@tube",
+      "cast@workshop"
+    ],
+    "stage": "cast",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "cockpit",
+    "flat",
+    "garage",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hub",
+    "lab",
+    "square",
+    "stairwell",
+    "street",
+    "tube",
+    "workshop"
+  ],
+  "state": "draft",
+  "tags": {
+    "needs": [],
+    "runnable": [
+      true
+    ]
+  },
+  "title": "Cast placement: groups and crowds",
+  "usd": null,
+  "version": 1
+}

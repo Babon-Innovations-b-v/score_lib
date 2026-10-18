@@ -1,0 +1,108 @@
+{
+  "address": "model/dash_light_bar_1@1",
+  "files": {
+    "model.json": {
+      "bytes": 341,
+      "role": "record",
+      "sha256": "3af7f4da525d3fbbfe3cf22ff153a01bebcc5f51e60fed7d22e6e32ba0af759a"
+    },
+    "model.usdc": {
+      "bytes": 7739,
+      "role": "usd",
+      "sha256": "82c53c5a220ce9ef406b71469c352404d4f6a6658ff3ef894f5f30320bcd4d99"
+    },
+    "model_glow.usdc": {
+      "bytes": 3703,
+      "role": "usd",
+      "sha256": "319aaa0d26d5e8d2f354bcdac0ace119ee4bb4ee01de7d5a2b2196da49d5164e"
+    },
+    "preview.png": {
+      "bytes": 5334,
+      "role": "picture",
+      "sha256": "ad2c254a04c8bcc7289ef3c1c86c3724d4fabe8220333e115c4f10265f5f92eb"
+    },
+    "textures/cockpit_gear_1_base_color.png": {
+      "bytes": 532574,
+      "role": "texture",
+      "sha256": "e82b139d94873e77c55e7b17f39324840ceace366af97a506de55d35b1183795"
+    },
+    "textures/cockpit_gear_1_metal_roughness.png": {
+      "bytes": 270824,
+      "role": "texture",
+      "sha256": "a683b30adc8995cf3cabb89e8146ac73773ae155ffe4306777e30a1c119fd05b"
+    },
+    "textures/cockpit_gear_1_normal.png": {
+      "bytes": 5640401,
+      "role": "texture",
+      "sha256": "97735c5f6b5c4600a3a709d2723198f7ac8c4af48cf9f3bd65352716905f117b"
+    }
+  },
+  "id": "dash_light_bar_1",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T10:12:20.716778+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "4a5ef3b064c43ccea2f6d105117fd9efa0770696178ef8d198a6dd4f1f398cf6",
+    "models": [],
+    "node": "assembly@cockpit",
+    "output": "b8ec7f49d4ff317fb9858d8dce4a33fcfc258d958fcd162c2b292eabb7de5c83",
+    "place": "cockpit",
+    "record_key": "6507789d5dd016672ed678b36e6a88f586c76345c9ca611d2f50b16a694eea46",
+    "source_name": "dash_light_bar_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "cockpit"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Dash light bar 1",
+  "usd": {
+    "default_prim": "/dash_light_bar_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/dash_light_bar_1/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

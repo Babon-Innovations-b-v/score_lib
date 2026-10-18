@@ -1,0 +1,59 @@
+{
+  "address": "kit/gdoor@1",
+  "files": {
+    "kit.json": {
+      "bytes": 3379,
+      "role": "record",
+      "sha256": "0a53408be20cb69f4e0ff7986ea9bf266dd501af25f068dc261e9e95f4a810e2"
+    },
+    "preview.png": {
+      "bytes": 1717,
+      "role": "picture",
+      "sha256": "6b365f9c6fc17b7da09b8cbcdd005d70054ca7723ebf3ee6c4f8d38922066ee8"
+    }
+  },
+  "id": "gdoor",
+  "kind": "kit",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/plan.py",
+    "of": "kit.json pieces (9) from above"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "pieces": 9,
+    "place": "gdoor",
+    "ship_kit": null,
+    "source": "data/kit/gdoor.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/room_layout@1",
+    "model/lattice_ring_rib_1.gdoor@1",
+    "model/wall_upper_plain_1.gdoor@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "gdoor"
+  ],
+  "state": "draft",
+  "tags": {
+    "place_kind": []
+  },
+  "title": "Gdoor kit",
+  "usd": null,
+  "version": 1
+}

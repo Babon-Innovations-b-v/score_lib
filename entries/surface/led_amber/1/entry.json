@@ -1,0 +1,108 @@
+{
+  "address": "surface/led_amber@1",
+  "files": {
+    "material.usda": {
+      "bytes": 605,
+      "role": "usd",
+      "sha256": "b08b46652200f408df8395da9ea9acdd1e02f1261b06f63bdf19c6c3ef45c8b1"
+    },
+    "preview.png": {
+      "bytes": 22255,
+      "role": "picture",
+      "sha256": "8d6015e670bed70c6f0da6c9a850ee007ee9195a0504018714ee686042bd0089"
+    },
+    "surface.json": {
+      "bytes": 139,
+      "role": "record",
+      "sha256": "8a054efe0630281189c3f6863913523ee59c6b39a5515943e928714fe9ffb291"
+    }
+  },
+  "id": "led_amber",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "light",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "light"
+    ],
+    "recipe": [
+      "glowing"
+    ]
+  },
+  "title": "Led amber",
+  "usd": {
+    "default_prim": "/led_amber",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/led_amber/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

@@ -1,0 +1,103 @@
+{
+  "address": "model/pipe_straight_8@1",
+  "files": {
+    "model.json": {
+      "bytes": 326,
+      "role": "record",
+      "sha256": "8e948c4cd7633f00db2e8e276b8cbfa3a12f104d8367bc96e0fe309749ffe621"
+    },
+    "model.usdc": {
+      "bytes": 24932,
+      "role": "usd",
+      "sha256": "4f9f4902d819a6aa67f8209a3c2178db602ac3d97279a9d3fb89af732678cda5"
+    },
+    "preview.png": {
+      "bytes": 23362,
+      "role": "picture",
+      "sha256": "bd4542e00f89aba509fe72933ac2276d339a2dbd5781a7f41d80ec3595ea6179"
+    },
+    "textures/workshop_gear_10_base_color.png": {
+      "bytes": 1090138,
+      "role": "texture",
+      "sha256": "77d8b3017355df128e16888dd8de7efe1e48184c53440015894a67c9e70adb71"
+    },
+    "textures/workshop_gear_10_metal_roughness.png": {
+      "bytes": 801906,
+      "role": "texture",
+      "sha256": "b1a71176c13d8b757724a0e7f6f7bbb578ec584f0f79c811dc915a5c4aa59ebd"
+    },
+    "textures/workshop_gear_10_normal.png": {
+      "bytes": 5262602,
+      "role": "texture",
+      "sha256": "d6955e38b7def55a9f603efc089612c6a91cce810d96b0c656501648cce82723"
+    }
+  },
+  "id": "pipe_straight_8",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T00:15:15.593646+00:00",
+      "by": "runner"
+    },
+    "code": "3c875e56018d0d8dc81898b4a3fc27e1e0369f4b60d13fc7f18550aedc3a092a",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "d55a5c18a28f785c07dc557d831122a2b186dc05314db67ccb0d108148d19c16",
+    "models": [],
+    "node": "assembly@workshop",
+    "output": "bee6eb7313a86043a2c7e40cc4062833466130c06ad9b07b9b6b80f085cf41c1",
+    "place": "workshop",
+    "record_key": "e3cd36726454e1d2f16c6f3ffabd1967c5b471749b13bd9a0d066d4f7ae7becc",
+    "source_name": "pipe_straight_8",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "workshop"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Pipe straight 8",
+  "usd": {
+    "default_prim": "/pipe_straight_8",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/pipe_straight_8/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

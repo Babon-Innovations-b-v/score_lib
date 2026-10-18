@@ -1,0 +1,96 @@
+{
+  "address": "layer/sound.hangar@1",
+  "files": {
+    "layer.usda": {
+      "bytes": 125431,
+      "role": "usd",
+      "sha256": "8edc5da0da7831cc42c9667274a4281d2db8a6defeeb3d4a22d7339ba1781402"
+    },
+    "sound.json": {
+      "bytes": 26716,
+      "role": "record",
+      "sha256": "af900167a8789827b9d817290e123a5d26ce46f63f987a115c30b8bdc62967b4"
+    }
+  },
+  "id": "sound.hangar",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T22:13:41.093010+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/sound.usda",
+        "sha256": "364e15833214d06f342fe51c15db55f34109230b65a359942dae3623232885e4"
+      }
+    },
+    "models": [],
+    "node": "assembly@hangar",
+    "output": "765aae9ca335aebbcb521472c52db37c76ad0b842d8f9bddc21b8c1beae3d144",
+    "own_files": [],
+    "place": "hangar",
+    "record_key": "d034efb2e042c8f0e9fca844f9dc9aa0b1d4146a0a39fbf3dafc78213e49fd74",
+    "side_records_from": "191d2ffa84c8e52e8f664f73953085e9e37f71a38c0fba72c62fa74c053900c2",
+    "source_name": "layers/sound.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/sound_layer@1"
+  },
+  "requires": [
+    "sound/base_hum@1",
+    "sound/footstep_grating@1",
+    "sound/footstep_rubber@1",
+    "sound/footsteps_metal.hangar@1",
+    "sound/impact_grating@1",
+    "sound/impact_rubber@1",
+    "sound/impact_steel_plate@1",
+    "sound/scrape_grating@1",
+    "sound/scrape_rubber@1",
+    "sound/scrape_steel_plate@1",
+    "sound/ship_idle@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "hangar"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "sound"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Hangar sound layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "sound",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/sound.hangar/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

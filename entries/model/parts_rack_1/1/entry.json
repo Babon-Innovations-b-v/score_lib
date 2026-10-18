@@ -1,0 +1,111 @@
+{
+  "address": "model/parts_rack_1@1",
+  "files": {
+    "model.json": {
+      "bytes": 353,
+      "role": "record",
+      "sha256": "bdf37ef138fca5860df0154ac26b586edc9f484db038f8c2db54b1a622eb58a4"
+    },
+    "model.usdc": {
+      "bytes": 1898848,
+      "role": "usd",
+      "sha256": "3df42722f7c083ef2b1021449c9584a1b52ef5a04416695c5999a3a19ba1a438"
+    },
+    "preview.png": {
+      "bytes": 27204,
+      "role": "picture",
+      "sha256": "017a63de73c3ccf9eb82ac31bb62796b0e568cc5af771fca2f2aaa18a332e85b"
+    },
+    "textures/parts_rack_base_color.png": {
+      "bytes": 1779429,
+      "role": "texture",
+      "sha256": "c445ef372c901bde285d349ab7fc097d67b81afe6497e2c9c1c3f9f292854ab5"
+    },
+    "textures/parts_rack_metal_roughness.png": {
+      "bytes": 1564041,
+      "role": "texture",
+      "sha256": "afed320a0272419cbc9da3dbb037f1479151aaaa2bcff1b749424236d5452202"
+    },
+    "textures/parts_rack_normal.png": {
+      "bytes": 8852775,
+      "role": "texture",
+      "sha256": "46d894541f2ed3de8ac2240093427862978906700ff0e12aa503d379152542af"
+    }
+  },
+  "id": "parts_rack_1",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T22:13:41.093010+00:00",
+      "by": "runner"
+    },
+    "aliases": [
+      [
+        "e85e83e591313e63ed9302133edc0200298be343dac72f5b321d85e8bf3c9e81",
+        "model.usdc"
+      ]
+    ],
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "2245cc6b27dda29c89bc0a612d268b4054d21c12fd943fb1f2a81d6a7712a70b",
+    "models": [],
+    "node": "assembly@hangar",
+    "output": "765aae9ca335aebbcb521472c52db37c76ad0b842d8f9bddc21b8c1beae3d144",
+    "place": "hangar",
+    "record_key": "d034efb2e042c8f0e9fca844f9dc9aa0b1d4146a0a39fbf3dafc78213e49fd74",
+    "source_name": "parts_rack_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "hangar",
+    "old_station"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "inside",
+      "moon",
+      "outside"
+    ]
+  },
+  "title": "Parts rack 1",
+  "usd": {
+    "default_prim": "/parts_rack_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/parts_rack_1/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

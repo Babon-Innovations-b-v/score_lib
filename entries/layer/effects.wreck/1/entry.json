@@ -1,0 +1,84 @@
+{
+  "address": "layer/effects.wreck@1",
+  "files": {
+    "held.json": {
+      "bytes": 65,
+      "role": "record",
+      "sha256": "b21568a72796a8dfb0b78d05cb3d8d9570582f4cb96cfd51bff999a241b52d20"
+    },
+    "layer.usda": {
+      "bytes": 240,
+      "role": "usd",
+      "sha256": "ce2f1b34c082bf3525696a40df2ad481071cc93211bcc3cd7914041d03b05aa1"
+    }
+  },
+  "id": "effects.wreck",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T15:53:36.185584+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/effects.usda",
+        "sha256": "ce2f1b34c082bf3525696a40df2ad481071cc93211bcc3cd7914041d03b05aa1"
+      }
+    },
+    "models": [],
+    "node": "assembly@wreck",
+    "output": "591bca186cdb2ba3104fc444e86a6ff62eeb734cbab1de4f4f2c54506dd99291",
+    "own_files": [],
+    "place": "wreck",
+    "record_key": "ae3d3dca811e262167338103d0abcba1e68bff01135dac7ecd4e6f2f4113254b",
+    "side_records_from": "9ab6cf0b3e09f6575445385165e61271a1fb4fad258fb32b49f191475e3cd175",
+    "source_name": "layers/effects.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/particle_effects@1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "effects"
+    ],
+    "place_kind": [
+      "outside",
+      "moon"
+    ]
+  },
+  "title": "Wreck effects layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "effects",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/effects.wreck/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

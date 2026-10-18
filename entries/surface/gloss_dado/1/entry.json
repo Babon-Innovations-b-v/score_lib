@@ -1,0 +1,108 @@
+{
+  "address": "surface/gloss_dado@1",
+  "files": {
+    "material.usda": {
+      "bytes": 556,
+      "role": "usd",
+      "sha256": "2b8184ca229dac313199e9f448611e747c1db65bd37c66f497ad87bc52b88e51"
+    },
+    "preview.png": {
+      "bytes": 20284,
+      "role": "picture",
+      "sha256": "e2d48bf6111a1fec893aa8ee73a87baa3ae6518ed92117f2500ecac7f22ed463"
+    },
+    "surface.json": {
+      "bytes": 171,
+      "role": "record",
+      "sha256": "3b03e68c6355700f462999f0434c2305b451f5cf06b199ef7c571160ad42c2c0"
+    }
+  },
+  "id": "gloss_dado",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "plaster",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "plaster"
+    ],
+    "recipe": [
+      "painted_plaster"
+    ]
+  },
+  "title": "Gloss dado",
+  "usd": {
+    "default_prim": "/gloss_dado",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/gloss_dado/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

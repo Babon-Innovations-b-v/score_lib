@@ -1,0 +1,103 @@
+{
+  "address": "model/crop_greens_1@1",
+  "files": {
+    "model.json": {
+      "bytes": 187,
+      "role": "record",
+      "sha256": "4eb8a9555ba7efd5732d39fd0170af52d4d0613618ce7c85e602ffc7577e2d90"
+    },
+    "model.usdc": {
+      "bytes": 581944,
+      "role": "usd",
+      "sha256": "ff9c1385bf496923d51d4638662615b4d3abe0a825a3667854770f75e81912d3"
+    },
+    "preview.png": {
+      "bytes": 20712,
+      "role": "picture",
+      "sha256": "19c9638812a1371abdfde6247d01f1633041d040bb2d7b3cbcc11fa5e789170e"
+    },
+    "textures/crop_greens_1_base_color.png": {
+      "bytes": 189395,
+      "role": "texture",
+      "sha256": "6326caaf1e2cdc0a6ac1be0726775c4979b0c5543d2910ea25c057157e7bf9eb"
+    },
+    "textures/crop_greens_1_metal_roughness.png": {
+      "bytes": 5530,
+      "role": "texture",
+      "sha256": "915d43a3fe6426dd1fe66de2e0a470962b85c9dc094d11a417d3662ab3e99e38"
+    },
+    "textures/crop_greens_1_normal.png": {
+      "bytes": 1919387,
+      "role": "texture",
+      "sha256": "5c8c9f1da61de86ea71e031f5887635ced836a5d41961b2a497184bd226768b2"
+    }
+  },
+  "id": "crop_greens_1",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-17T11:21:57.694141+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": null,
+    "models": [],
+    "node": "assembly@greenhouse",
+    "output": "910f5ef85c6bacfd60b7b934d6980011f765df81458a88095c9ee09416e6fec7",
+    "place": "greenhouse",
+    "record_key": "96f06014f00223d17da44c7eaa7bd37c8c838a72ef68ace7ba2ccc88be48cafa",
+    "source_name": "crop_greens_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "greenhouse"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "crop"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Crop greens 1",
+  "usd": {
+    "default_prim": "/crop_greens_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/crop_greens_1/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

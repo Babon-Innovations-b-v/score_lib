@@ -1,0 +1,103 @@
+{
+  "address": "model/ice_drill@1",
+  "files": {
+    "model.json": {
+      "bytes": 296,
+      "role": "record",
+      "sha256": "fe89ba478152bc5bb45d2f954be54eac17890b89e7e9e4d0a7fece334b0265ee"
+    },
+    "model.usdc": {
+      "bytes": 1919916,
+      "role": "usd",
+      "sha256": "eeee967993845ef4fc657988f410d902bdaaaffeb93214d0b3ce1c87e4dca34b"
+    },
+    "preview.png": {
+      "bytes": 22453,
+      "role": "picture",
+      "sha256": "105cc42b6ca47ad2b635ae237c21dabe32e562cccd621738a30418ea7340f3ec"
+    },
+    "textures/ice_drill_base_color.png": {
+      "bytes": 1370617,
+      "role": "texture",
+      "sha256": "e3292de0505a28b47ed4d1eb06b50b03cc5b290161093604c2e7eb3233a8d5d5"
+    },
+    "textures/ice_drill_metal_roughness.png": {
+      "bytes": 727974,
+      "role": "texture",
+      "sha256": "b41ac6e59e301310f3acb761120255a0dc14ec9a4766340e03bbcc2534845b7b"
+    },
+    "textures/ice_drill_normal.png": {
+      "bytes": 7305464,
+      "role": "texture",
+      "sha256": "a387280abacc16c7dd930a6997dbd5a094f4edb74f4941fba6c7e8af93598bcb"
+    }
+  },
+  "id": "ice_drill",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:16:00.039696+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "8aa9e1c6f1cd1c247603c7e96bad19412252a84eab98f64479acfb0cedea23ce",
+    "models": [],
+    "node": "assembly@campgrounds",
+    "output": "7fcf4c6f9552d4edb6020038bb83dd248f2e602f1958878438d52dfc3a7685bb",
+    "place": "campgrounds",
+    "record_key": "3e28c5bc4fca67388ebba8768e3cf58d643f791893e4237289ddba7e9754e64e",
+    "source_name": "ice_drill",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "campgrounds"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "mars",
+      "outside"
+    ]
+  },
+  "title": "Ice drill",
+  "usd": {
+    "default_prim": "/ice_drill",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/ice_drill/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

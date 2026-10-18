@@ -1,0 +1,84 @@
+{
+  "address": "layer/light.airlock@1",
+  "files": {
+    "lamps.json": {
+      "bytes": 1779,
+      "role": "record",
+      "sha256": "8b6e4c5d60b9e18da7b6ed7d37982cba11879ec8c2f10dd69e73207eb8636845"
+    },
+    "layer.usda": {
+      "bytes": 1192,
+      "role": "usd",
+      "sha256": "850ca7edcf58eba599affafb0e33ad7dc7c1e6a3dc2efcbaed948ed8a4d45c78"
+    }
+  },
+  "id": "light.airlock",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T21:49:09.803965+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/light.usda",
+        "sha256": "850ca7edcf58eba599affafb0e33ad7dc7c1e6a3dc2efcbaed948ed8a4d45c78"
+      }
+    },
+    "models": [],
+    "node": "assembly@airlock",
+    "output": "8900f72fdf3585e5c853f71bbe4723b74677075a11235a7acb403664c1ec2464",
+    "own_files": [],
+    "place": "airlock",
+    "record_key": "1971b952fc7cf77c7898f3951a1958e959f95e422ab47f4ce6910bda0ff3bdc3",
+    "side_records_from": "8741ecd55891a3e0845e9d1fcb4e4b28fbb129047ec0e6b5c95b98fcaca6549b",
+    "source_name": "layers/light.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/light_rig@1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "light"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Airlock light layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "light",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/light.airlock/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

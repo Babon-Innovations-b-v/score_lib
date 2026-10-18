@@ -1,0 +1,103 @@
+{
+  "address": "model/hose_unit_1@1",
+  "files": {
+    "model.json": {
+      "bytes": 308,
+      "role": "record",
+      "sha256": "9d3067bbfa41cb6cedc92f335ec82c31c12fb404e998ad52cd7786249d680713"
+    },
+    "model.usdc": {
+      "bytes": 200054,
+      "role": "usd",
+      "sha256": "91a7aeed75600f6b6785a0bbed2d36b5374836952a40155c9c8d42773c5418ac"
+    },
+    "preview.png": {
+      "bytes": 27705,
+      "role": "picture",
+      "sha256": "6aa48c7f277fd6dc1004030d660da6fac70540b6ef3548bc68542d94f8b7a782"
+    },
+    "textures/hose_unit_1_base_color.png": {
+      "bytes": 614561,
+      "role": "texture",
+      "sha256": "34b6631e93cd71544d1629d474c45177d8380f2e5c2c7207f692b317b4307df6"
+    },
+    "textures/hose_unit_1_metal_roughness.png": {
+      "bytes": 434869,
+      "role": "texture",
+      "sha256": "48d68166d8859462ec20578981c95252f738240b73cae653acb6cbbe6683344c"
+    },
+    "textures/hose_unit_1_normal.png": {
+      "bytes": 4488062,
+      "role": "texture",
+      "sha256": "5095b41a24934e238e38fc2249500ca9bb89534b0d124a447e7712ece23e234c"
+    }
+  },
+  "id": "hose_unit_1",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T21:49:09.803965+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "6a942c7470d2a6b6f2d2b509aa7e51e494ef56e6c24d380f08fdfec238190ff1",
+    "models": [],
+    "node": "assembly@airlock",
+    "output": "8900f72fdf3585e5c853f71bbe4723b74677075a11235a7acb403664c1ec2464",
+    "place": "airlock",
+    "record_key": "1971b952fc7cf77c7898f3951a1958e959f95e422ab47f4ce6910bda0ff3bdc3",
+    "source_name": "hose_unit_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Hose unit 1",
+  "usd": {
+    "default_prim": "/hose_unit_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/hose_unit_1/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

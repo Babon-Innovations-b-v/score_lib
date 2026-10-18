@@ -1,0 +1,103 @@
+{
+  "address": "model/vent_grille_1@1",
+  "files": {
+    "model.json": {
+      "bytes": 324,
+      "role": "record",
+      "sha256": "050255e466043c27bd81cc691a9d722337016da398b10a7f54b184bab1c19874"
+    },
+    "model.usdc": {
+      "bytes": 52634,
+      "role": "usd",
+      "sha256": "2836e0ff07422cfd9e5c1b78feee071e2e87d63340238ee86a12122bd6dc6be3"
+    },
+    "preview.png": {
+      "bytes": 33306,
+      "role": "picture",
+      "sha256": "f14960ae53217975180313504b461af0ca6d6bd810c0998d66118b5d8a868876"
+    },
+    "textures/airlock_gear_5_base_color.png": {
+      "bytes": 1002472,
+      "role": "texture",
+      "sha256": "84c64c8d3484de15e26e6577f1078e32746ad5f2835383af62657330d237c387"
+    },
+    "textures/airlock_gear_5_metal_roughness.png": {
+      "bytes": 770022,
+      "role": "texture",
+      "sha256": "e5a3ef3b20dee272eff80661b4db555fbeb5aae7583ff2d46374bc302f10ed28"
+    },
+    "textures/airlock_gear_5_normal.png": {
+      "bytes": 5289324,
+      "role": "texture",
+      "sha256": "d2181d0a5db0473851b81244d61514c98aa58b6d287ab140cd9db1dfc9d01298"
+    }
+  },
+  "id": "vent_grille_1",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T21:49:09.803965+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "4784e0ced735615eb83906aea2bde52f027484053327e31ef84aec18a19ad9ad",
+    "models": [],
+    "node": "assembly@airlock",
+    "output": "8900f72fdf3585e5c853f71bbe4723b74677075a11235a7acb403664c1ec2464",
+    "place": "airlock",
+    "record_key": "1971b952fc7cf77c7898f3951a1958e959f95e422ab47f4ce6910bda0ff3bdc3",
+    "source_name": "vent_grille_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Vent grille 1",
+  "usd": {
+    "default_prim": "/vent_grille_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/vent_grille_1/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

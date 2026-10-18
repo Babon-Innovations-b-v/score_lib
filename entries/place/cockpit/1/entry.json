@@ -1,0 +1,119 @@
+{
+  "address": "place/cockpit@1",
+  "files": {
+    "cockpit.usda": {
+      "bytes": 348,
+      "role": "usd",
+      "sha256": "9285a36c139d80c88dccb21b2af40dafebc585a5f7e29b69fd629f8c49704a42"
+    },
+    "contract.json": {
+      "bytes": 99,
+      "role": "record",
+      "sha256": "c2b7151f92e6a67ca4666ea747ad262b67b4d0af824cc83862ce64d8cc49d12c"
+    },
+    "edit.usda": {
+      "bytes": 183,
+      "role": "usd",
+      "sha256": "8fc5485ea9a58537dd8289c516a85733e069ad7a17b866471667b8795142454f"
+    },
+    "gaps.json": {
+      "bytes": 7533,
+      "role": "record",
+      "sha256": "84e0f7ddff8ca9661c963e4d981f549d6b5651d6d72205df8181b76f7d7e9293"
+    },
+    "inputs.json": {
+      "bytes": 9016,
+      "role": "record",
+      "sha256": "26d84add0b79ff9b2d6fe04e85dd70d7a1c7b142b514d50b8c425f4fc3e3485c"
+    },
+    "origin.json": {
+      "bytes": 1063,
+      "role": "record",
+      "sha256": "94eda4d70db192cc0a89cb9a94291d31e06e3bc98ae2ef3a93cf5ae7e956ad0b"
+    },
+    "scene.json": {
+      "bytes": 2238,
+      "role": "record",
+      "sha256": "bb4cb79ffa71316329a01ded85959f87a38c70f9efff07e4a671f49a987cba94"
+    }
+  },
+  "id": "cockpit",
+  "kind": "place",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T10:12:20.716778+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "complete": {
+      "accept": {
+        "at": "2026-10-18T03:18:21.988834+00:00",
+        "by": "runner"
+      },
+      "code": "614e17d70adbc54d15ef2ac7532458f7dbfe393cb1a802ed4b39c5bbd5b6e794",
+      "models": [],
+      "node": "complete@cockpit",
+      "output": "65c173da4224c440b7ec23f61146dcd061de17b1e7f824405c6cc1262c1fca43",
+      "record_key": "9f6dd8cd884d69ee98b068b2754573f0cd811935859a10e2cbd6f6577049cec7"
+    },
+    "complete_failing": [
+      "named gaps"
+    ],
+    "gaps": "data/checks/gaps/cockpit.json",
+    "models": [],
+    "node": "assembly@cockpit",
+    "output": "b8ec7f49d4ff317fb9858d8dce4a33fcfc258d958fcd162c2b292eabb7de5c83",
+    "place": "cockpit",
+    "record_key": "6507789d5dd016672ed678b36e6a88f586c76345c9ca611d2f50b16a694eea46",
+    "unresolved_sublayers": [],
+    "world": "world1"
+  },
+  "requires": [
+    "layer/base.cockpit@1",
+    "layer/characters.cockpit@1",
+    "layer/light.cockpit@1",
+    "layer/sound.cockpit@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "cockpit"
+  ],
+  "state": "draft",
+  "tags": {
+    "complete": [
+      "named_gaps"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Cockpit",
+  "usd": {
+    "default_prim": "/cockpit",
+    "layer": "root",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/place/cockpit/1/cockpit.usda",
+    "root": "cockpit.usda",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "open"
+  },
+  "version": 1
+}

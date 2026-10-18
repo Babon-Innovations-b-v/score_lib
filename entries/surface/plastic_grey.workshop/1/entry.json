@@ -1,0 +1,81 @@
+{
+  "address": "surface/plastic_grey.workshop@1",
+  "files": {
+    "material.usda": {
+      "bytes": 550,
+      "role": "usd",
+      "sha256": "3693de69f1911ad9acd10b87e4564d1572ca3aaaacf9310212af534bdf12e443"
+    },
+    "preview.png": {
+      "bytes": 19836,
+      "role": "picture",
+      "sha256": "8d005c9ca9b0c1bf5fd7b6893c564cbb6492c7ebfb594e4cb4e2984dd21aaf67"
+    },
+    "surface.json": {
+      "bytes": 179,
+      "role": "record",
+      "sha256": "9f7d184412a214f53d090927462701c034065f551622fb1f43a5b53dee6b9133"
+    }
+  },
+  "id": "plastic_grey.workshop",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "plastic",
+    "place": "workshop",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "workshop"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "plastic"
+    ],
+    "recipe": [
+      "rubber"
+    ]
+  },
+  "title": "Plastic grey",
+  "usd": {
+    "default_prim": "/plastic_grey",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/plastic_grey.workshop/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

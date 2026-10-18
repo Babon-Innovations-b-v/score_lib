@@ -1,0 +1,108 @@
+{
+  "address": "surface/concrete_dark@1",
+  "files": {
+    "material.usda": {
+      "bytes": 555,
+      "role": "usd",
+      "sha256": "615ee0c947720fdf29d3804d03f823a1537d5744254bcfdacdf647e82dcc7c48"
+    },
+    "preview.png": {
+      "bytes": 20441,
+      "role": "picture",
+      "sha256": "84dd11c79d4c19d7ac687be8c109850ae7bae86bcd6edd86aca7ee8fd83ca983"
+    },
+    "surface.json": {
+      "bytes": 225,
+      "role": "record",
+      "sha256": "525b453036a6736d1f3020c4ce18478a70b94dadb05545a4d15c05552880e20c"
+    }
+  },
+  "id": "concrete_dark",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "plaster",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "plaster"
+    ],
+    "recipe": [
+      "cast_metal"
+    ]
+  },
+  "title": "Concrete dark",
+  "usd": {
+    "default_prim": "/concrete_dark",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/concrete_dark/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

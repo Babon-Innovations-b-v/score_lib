@@ -1,0 +1,95 @@
+{
+  "address": "layer/sound.flat@1",
+  "files": {
+    "layer.usda": {
+      "bytes": 122710,
+      "role": "usd",
+      "sha256": "f8a0270e647e44c4a66803e02721f45e51247e7dc1557776ed8097fbf2e4fac7"
+    },
+    "sound.json": {
+      "bytes": 25453,
+      "role": "record",
+      "sha256": "4afbe7dbab86c5c2cff0b09ab545cbf34587a14544734f7ea0923f58a88d985a"
+    }
+  },
+  "id": "sound.flat",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-15T12:52:44.767077+00:00",
+      "by": "runner"
+    },
+    "code": "a463163a0eeef652acdcfd1091415cc08ea792bdf6eee5489b5a0b48e06ace87",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/sound.usda",
+        "sha256": "0e902561f4805eddd9f613c4f7ce7b316e2302cb091ce27c02a52f1d69be4d65"
+      }
+    },
+    "models": [],
+    "node": "assembly@flat",
+    "output": "7164a61082dc77a23d6958d9f0e95ca4accc52c8781a93fbc670952303bbb4ff",
+    "own_files": [],
+    "place": "flat",
+    "record_key": "8bb7b4b3a3ec082c92dae2d6ca6380ae5dcbe1fe7b0248e538c9c0f86220f045",
+    "side_records_from": "90e8258863086a28a338a77b872ea103813b233ae9af34d9698630b86520c243",
+    "source_name": "layers/sound.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/sound_layer@1"
+  },
+  "requires": [
+    "sound/earth_flat@1",
+    "sound/footstep_grating@1",
+    "sound/footstep_rubber@1",
+    "sound/footsteps_metal.flat@1",
+    "sound/impact_grating@1",
+    "sound/impact_rubber@1",
+    "sound/impact_steel_plate@1",
+    "sound/scrape_grating@1",
+    "sound/scrape_rubber@1",
+    "sound/scrape_steel_plate@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "flat"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "sound"
+    ],
+    "place_kind": [
+      "inside",
+      "earth"
+    ]
+  },
+  "title": "Flat sound layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "sound",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/sound.flat/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

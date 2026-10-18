@@ -1,0 +1,108 @@
+{
+  "address": "model/robot_bench_1@1",
+  "files": {
+    "model.json": {
+      "bytes": 387,
+      "role": "record",
+      "sha256": "d1f763f219e608bd208ff6233cfa46fc8f69ce267ce6ed3d82121d18520d4780"
+    },
+    "model.usdc": {
+      "bytes": 237244,
+      "role": "usd",
+      "sha256": "682f022ab447ac6748649e09612ecd522479c3cff30d84ab3d179dcbc9a91967"
+    },
+    "model_glow.usdc": {
+      "bytes": 8777,
+      "role": "usd",
+      "sha256": "dc1f62290199f694c388c469d45c0f9633dcb7b17d12bbc656db861a78ea6481"
+    },
+    "preview.png": {
+      "bytes": 25766,
+      "role": "picture",
+      "sha256": "fa8b86ddc4bf1dd9f7de72f14dd51ea91eedce6029fc59fd75430c6ce6ee5bf9"
+    },
+    "textures/workshop_gear_1_base_color.png": {
+      "bytes": 1846176,
+      "role": "texture",
+      "sha256": "8aaa8d1ef18c453f0e50681a8103e208ca3fd6590fcf8fdeefe24e37c0d4ec0f"
+    },
+    "textures/workshop_gear_1_metal_roughness.png": {
+      "bytes": 1458174,
+      "role": "texture",
+      "sha256": "92183c3cba3675111e86714544ed2c900f94e1bf8baf98086ed2a850b01cee7a"
+    },
+    "textures/workshop_gear_1_normal.png": {
+      "bytes": 11376335,
+      "role": "texture",
+      "sha256": "e6aa4d3015ce60d5b2984b55633dfd41fb382140db9c5b241cdebf821a7798b3"
+    }
+  },
+  "id": "robot_bench_1",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T00:15:15.593646+00:00",
+      "by": "runner"
+    },
+    "code": "3c875e56018d0d8dc81898b4a3fc27e1e0369f4b60d13fc7f18550aedc3a092a",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "2e7a54fc204f3ab47a7c4ec8726cf0cf10de084b05cc6f338043ecef3102ca93",
+    "models": [],
+    "node": "assembly@workshop",
+    "output": "bee6eb7313a86043a2c7e40cc4062833466130c06ad9b07b9b6b80f085cf41c1",
+    "place": "workshop",
+    "record_key": "e3cd36726454e1d2f16c6f3ffabd1967c5b471749b13bd9a0d066d4f7ae7becc",
+    "source_name": "robot_bench_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "workshop"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Robot bench 1",
+  "usd": {
+    "default_prim": "/robot_bench_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/robot_bench_1/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

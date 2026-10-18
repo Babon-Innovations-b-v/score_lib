@@ -1,0 +1,103 @@
+{
+  "address": "model/dust_vacuum_1@1",
+  "files": {
+    "model.json": {
+      "bytes": 303,
+      "role": "record",
+      "sha256": "dc885f270aa73b8d43ffb5e3cf8814d4bc4720ca03b116b781750c57afe47c47"
+    },
+    "model.usdc": {
+      "bytes": 696496,
+      "role": "usd",
+      "sha256": "17f64373737fc97767f02f42e360158704e3a10d03b1677efba0550c6b9343c9"
+    },
+    "preview.png": {
+      "bytes": 19384,
+      "role": "picture",
+      "sha256": "9345070d29242fee9c7af47b3202c33277daa403485875ab04c7624e5ed89576"
+    },
+    "textures/dust_vacuum_1_base_color.png": {
+      "bytes": 594294,
+      "role": "texture",
+      "sha256": "607e473e676d45dd622a9e2263d95bb4c4e965d67d4a2a9a1764c1ddc2afb4e0"
+    },
+    "textures/dust_vacuum_1_metal_roughness.png": {
+      "bytes": 596060,
+      "role": "texture",
+      "sha256": "c2abb6b24d1f01c07b34c848e017e0ccb36bd86530a20c771624036339e40807"
+    },
+    "textures/dust_vacuum_1_normal.png": {
+      "bytes": 3660895,
+      "role": "texture",
+      "sha256": "2527c532fca8b66f9d04d681f33188ca45d577658c453e9fa8a84fc761f9c342"
+    }
+  },
+  "id": "dust_vacuum_1",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T21:49:09.803965+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "3c717c0cba48c7ea4fdbe94c67b9c9fd87c2dfff836629c1e7e48c55c73e443d",
+    "models": [],
+    "node": "assembly@airlock",
+    "output": "8900f72fdf3585e5c853f71bbe4723b74677075a11235a7acb403664c1ec2464",
+    "place": "airlock",
+    "record_key": "1971b952fc7cf77c7898f3951a1958e959f95e422ab47f4ce6910bda0ff3bdc3",
+    "source_name": "dust_vacuum_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Dust vacuum 1",
+  "usd": {
+    "default_prim": "/dust_vacuum_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/dust_vacuum_1/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

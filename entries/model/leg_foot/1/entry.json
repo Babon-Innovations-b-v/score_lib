@@ -1,0 +1,103 @@
+{
+  "address": "model/leg_foot@1",
+  "files": {
+    "model.json": {
+      "bytes": 263,
+      "role": "record",
+      "sha256": "db8fe6747ae9e9c76af6a283b4e00890e4f1804eee8d43f79255b502cd63774e"
+    },
+    "model.usdc": {
+      "bytes": 1888866,
+      "role": "usd",
+      "sha256": "a1149c3bbfcf0d591c388f5a5126cc67130d4fb25c60dff9b4281e169865467a"
+    },
+    "preview.png": {
+      "bytes": 18510,
+      "role": "picture",
+      "sha256": "af5427a956a844c88ac1332ac196e8c6f825704904565678a8899a27a7b7572b"
+    },
+    "textures/leg_foot_base_color.png": {
+      "bytes": 4422595,
+      "role": "texture",
+      "sha256": "e2b336049cb0a5353b15a9df7f225486dbc00311b292e1b34622a063cdfc0382"
+    },
+    "textures/leg_foot_metal_roughness.png": {
+      "bytes": 4690844,
+      "role": "texture",
+      "sha256": "836a89318d337299f76acf388d89e5b91008e9858e26bd6c9a8f8c31208c68e4"
+    },
+    "textures/leg_foot_normal.png": {
+      "bytes": 15142976,
+      "role": "texture",
+      "sha256": "5c8a3984d68ce9c0fcfd45ad6cead71e6a6c5a2003ddef3082e6b02602e89c14"
+    }
+  },
+  "id": "leg_foot",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T15:53:36.185584+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "fa8432df2e329470fd7f0a7e63b08ab6a9522c278e32a626546c37c2daba34cb",
+    "models": [],
+    "node": "assembly@wreck",
+    "output": "591bca186cdb2ba3104fc444e86a6ff62eeb734cbab1de4f4f2c54506dd99291",
+    "place": "wreck",
+    "record_key": "ae3d3dca811e262167338103d0abcba1e68bff01135dac7ecd4e6f2f4113254b",
+    "source_name": "leg_foot",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "moon",
+      "outside"
+    ]
+  },
+  "title": "Leg foot",
+  "usd": {
+    "default_prim": "/leg_foot",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/leg_foot/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

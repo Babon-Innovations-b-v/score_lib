@@ -1,0 +1,121 @@
+{
+  "address": "place/workshop@1",
+  "files": {
+    "contract.json": {
+      "bytes": 99,
+      "role": "record",
+      "sha256": "c2b7151f92e6a67ca4666ea747ad262b67b4d0af824cc83862ce64d8cc49d12c"
+    },
+    "edit.usda": {
+      "bytes": 183,
+      "role": "usd",
+      "sha256": "8fc5485ea9a58537dd8289c516a85733e069ad7a17b866471667b8795142454f"
+    },
+    "gaps.json": {
+      "bytes": 3618,
+      "role": "record",
+      "sha256": "673eb8bc757859ebee12404531a3f5698ec882a2b650a4d2d849372900902df3"
+    },
+    "inputs.json": {
+      "bytes": 28527,
+      "role": "record",
+      "sha256": "be92919123456c0b79d5fbd303af6e238d7d09109d1bfcf57e7a8032597409d2"
+    },
+    "origin.json": {
+      "bytes": 787,
+      "role": "record",
+      "sha256": "2c14219705703b1e77095f18c820f6f6e8ed2bca6c70f26b264f126db3da8754"
+    },
+    "scene.json": {
+      "bytes": 7800,
+      "role": "record",
+      "sha256": "1201cbb3f7b65f9e0c67ed9e2c0bec5e9c014cfc63813767e545efc273891a1f"
+    },
+    "workshop.usda": {
+      "bytes": 563,
+      "role": "usd",
+      "sha256": "6a393aa9194de394f630605e79cb3888e05abf82e8f4a2910c66ec426e9fbb51"
+    }
+  },
+  "id": "workshop",
+  "kind": "place",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T00:15:15.593646+00:00",
+      "by": "runner"
+    },
+    "code": "3c875e56018d0d8dc81898b4a3fc27e1e0369f4b60d13fc7f18550aedc3a092a",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "complete": {
+      "accept": {
+        "at": "2026-10-17T14:33:56.246626+00:00",
+        "by": "runner"
+      },
+      "code": "614e17d70adbc54d15ef2ac7532458f7dbfe393cb1a802ed4b39c5bbd5b6e794",
+      "models": [],
+      "node": "complete@workshop",
+      "output": "5592ebf6750435bd99c08fa5ca8650448fe835004945e903e7c0e59b57c853c1",
+      "record_key": "933a2409b1dd7fd066288e5a2fbbd64e2bc217690588f2023122ba61fb389efd"
+    },
+    "complete_failing": [
+      "named gaps"
+    ],
+    "gaps": "data/checks/gaps/workshop.json",
+    "models": [],
+    "node": "assembly@workshop",
+    "output": "bee6eb7313a86043a2c7e40cc4062833466130c06ad9b07b9b6b80f085cf41c1",
+    "place": "workshop",
+    "record_key": "e3cd36726454e1d2f16c6f3ffabd1967c5b471749b13bd9a0d066d4f7ae7becc",
+    "unresolved_sublayers": [],
+    "world": "world1"
+  },
+  "requires": [
+    "layer/base.workshop@1",
+    "layer/characters.workshop@1",
+    "layer/light.workshop@1",
+    "layer/motion.workshop@1",
+    "layer/settle.workshop@1",
+    "layer/sound.workshop@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "workshop"
+  ],
+  "state": "draft",
+  "tags": {
+    "complete": [
+      "named_gaps"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Workshop",
+  "usd": {
+    "default_prim": "/workshop",
+    "layer": "root",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/place/workshop/1/workshop.usda",
+    "root": "workshop.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": "Y",
+    "use": "open"
+  },
+  "version": 1
+}

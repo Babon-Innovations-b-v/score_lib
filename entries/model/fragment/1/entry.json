@@ -1,0 +1,103 @@
+{
+  "address": "model/fragment@1",
+  "files": {
+    "model.json": {
+      "bytes": 247,
+      "role": "record",
+      "sha256": "3c195f63d6d4eac8412dd82385adc674d4cc7542bd8f408382f39d17665f369c"
+    },
+    "model.usdc": {
+      "bytes": 502933,
+      "role": "usd",
+      "sha256": "bba2322e415f5760890ef3f9468e9ac623e6f7619c7e8fbb9ce4c667ac5173ce"
+    },
+    "preview.png": {
+      "bytes": 20840,
+      "role": "picture",
+      "sha256": "3c30f231cf9bdfb8891b7a513b67df33a2ef087900fc240f5c9a650d7b8c4208"
+    },
+    "textures/fragment_base_color.png": {
+      "bytes": 342720,
+      "role": "texture",
+      "sha256": "6f3ea8d8eac4db29c897559d5aa712d96eb8b931900a8023dc0182a3f6510c8d"
+    },
+    "textures/fragment_metal_roughness.png": {
+      "bytes": 276356,
+      "role": "texture",
+      "sha256": "31f4c3deac92adae6a30225aa810d6999268b6d9ce6ecdfb61bd7d76a8f124ba"
+    },
+    "textures/fragment_normal.png": {
+      "bytes": 693011,
+      "role": "texture",
+      "sha256": "90cdcc871d55789113d274dd41175fbe4ed044880d6f54360ee2b7de44977c41"
+    }
+  },
+  "id": "fragment",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T15:53:36.185584+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "c1c82772e69607624b57fda79cb05918c7c077ca7093a8e713cd4c1fd5093e7a",
+    "models": [],
+    "node": "assembly@wreck",
+    "output": "591bca186cdb2ba3104fc444e86a6ff62eeb734cbab1de4f4f2c54506dd99291",
+    "place": "wreck",
+    "record_key": "ae3d3dca811e262167338103d0abcba1e68bff01135dac7ecd4e6f2f4113254b",
+    "source_name": "fragment",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "moon",
+      "outside"
+    ]
+  },
+  "title": "Fragment",
+  "usd": {
+    "default_prim": "/fragment",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/fragment/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

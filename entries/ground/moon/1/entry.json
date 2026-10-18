@@ -1,0 +1,114 @@
+{
+  "address": "ground/moon@1",
+  "files": {
+    "ground.json": {
+      "bytes": 2568,
+      "role": "record",
+      "sha256": "d03e7b2b4d0c376710abfda15e46e3075ddc8cd3df054da7d7d092aa7f7d1011"
+    },
+    "heights.png": {
+      "bytes": 1065114,
+      "role": "picture",
+      "sha256": "ec2f11234fb01d1dec45e9c2c719cf41551fd2c104c1a7fddc286a14aa57a493"
+    },
+    "measures.json": {
+      "bytes": 3544,
+      "role": "record",
+      "sha256": "3aefd65df5e80e11a53e203059e9bc81872ee1447d53c6ffd69687b4dea135b4"
+    },
+    "plan.png": {
+      "bytes": 446547,
+      "role": "picture",
+      "sha256": "b644e95c64cfcea6e77301a474ad3be12ec25fadc8a28dbb2b8d4fba9a1ac7e3"
+    },
+    "rocks.json": {
+      "bytes": 120335,
+      "role": "record",
+      "sha256": "674586f0bbb3f4b5e4a64de94c45f8e11c5f97ccca377a604eb66e5b7f829d2f"
+    },
+    "shading.png": {
+      "bytes": 371894,
+      "role": "picture",
+      "sha256": "1d829124d2e971de00feb5569ee672ca6ee694d7def45d1349cab6c21f2de385"
+    },
+    "skin.png": {
+      "bytes": 33143,
+      "role": "picture",
+      "sha256": "8e21a6f5efd208d5ba184c88e6418d6c83f1b44dd03594c9c7d9d79a83d51452"
+    },
+    "zones.png": {
+      "bytes": 24905,
+      "role": "picture",
+      "sha256": "3bbb0cfece9d6371b10df26a9eb448a57371d1c6deae48aa0cd064fa0e002512"
+    }
+  },
+  "id": "moon",
+  "kind": "ground",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1; terrain stage in algorithms.md section 11",
+        "spdx": "Apache-2.0",
+        "what": "Depth Anything V2 Small: ground relief"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1; terrain stage in algorithms.md section 11",
+        "spdx": "LicenseRef-paid-API-terms",
+        "text": "paid API",
+        "what": "Nano Banana Pro: ground skins"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1; terrain stage in algorithms.md section 11",
+        "spdx": "Apache-2.0",
+        "what": "Qwen-Image-Edit-2511: diorama pictures the relief is read from"
+      }
+    ],
+    "note": "the provider's terms of service for a paid API; the paper (Table C1) states every model in the framework allows commercial use of its output",
+    "spdx": "Apache-2.0 AND LicenseRef-paid-API-terms AND MIT"
+  },
+  "picture": {
+    "file": "skin.png",
+    "made_by": "source picture",
+    "of": "moon/skin.png"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-15T22:15:48.546897+00:00",
+      "by": "runner"
+    },
+    "code": "c4cf7b735072a0e5e40c848bdb6abd3abf48645a9bb5c133f7e3687ba3485a68",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "models": [],
+    "node": "terrain",
+    "output": "6a4ab8133411093ac2242f7fb9243f6912f5a8da17c4abe2a40ef8c99045a2f9",
+    "place": null,
+    "planet": "moon",
+    "record_key": "83726add119cd37905f2c14f9bef3c841eb08f6a51f62fe6833a7e81af75bddb",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/terrain_landforms@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "place_kind": [
+      "moon",
+      "outside"
+    ]
+  },
+  "title": "Moon ground",
+  "usd": null,
+  "version": 1
+}

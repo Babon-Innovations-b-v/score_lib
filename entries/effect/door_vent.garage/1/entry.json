@@ -1,0 +1,94 @@
+{
+  "address": "effect/door_vent.garage@1",
+  "files": {
+    "clip.usdc": {
+      "bytes": 9824621,
+      "role": "usd",
+      "sha256": "d86cf99872b87bc91d654ff7e7ce7dbcf72ef0d110d49c423fdabbca143b1f5b"
+    },
+    "effect.usda": {
+      "bytes": 4339,
+      "role": "usd",
+      "sha256": "67e4e6d5b72b27ba53c9aa54f5e31b86d83fde07ba6ffc4777e909568a9ac442"
+    },
+    "preview.png": {
+      "bytes": 111669,
+      "role": "picture",
+      "sha256": "a04d523cdf4794ff9f2e931a5a3d51d6f1e5bbb2b371751052ad1dcac498b0e5"
+    },
+    "settings.json": {
+      "bytes": 1959,
+      "role": "record",
+      "sha256": "1694fa5f6d919d38af04d240fa37b8285803da1a7318d74b26efa6a8ffcd4f9a"
+    }
+  },
+  "id": "door_vent.garage",
+  "kind": "effect",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/points.py",
+    "of": "clip.usdc at clip time 120.0"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-12T01:25:10.589195+00:00",
+      "by": "runner"
+    },
+    "code": "7b3bc97d9997c40ad75aad20b9a04a996a85620ffa21f81538dfd5251854aac9",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "from": "footage: S126E014192, STS075-313-022, soyuz-ms22-leak, NTRS-19910011413 (the air the pump leaves (a real airlock's pump stops short of empty and lets the rest out) leaving as the door first opens to the vacuum, its water frozen into fine ice that flies straight out at 16 to 30 m/s with nothing to slow it (NTRS-19910011413's 23 m/s, give or take 30 %), a cone about 14 to 33 degrees either side, under the Moon's 1.62 m/s2; the leaves part from their seam (the west leaf's east edge, 1.27 m east of its middle) at 1 s (data/motion/garage.json big_door_west))",
+    "models": [],
+    "node": "effects-layer@garage",
+    "output": "dd0577f250d10d9cb327f68449f6daf3d2cf6ad45f25c6bcaf68d289e6e4068f",
+    "place": "garage",
+    "prim": "/garage/Places/door_vent",
+    "record_key": "fa8d6cf1614a1a69c6069be2dcd46690badc821a09804750e5e3772a8b52149f",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/particle_effects@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "garage"
+  ],
+  "state": "draft",
+  "tags": {
+    "effect": [
+      "vacuum_vent_ice"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ],
+    "weather": []
+  },
+  "title": "Door vent",
+  "usd": {
+    "default_prim": "/door_vent",
+    "layer": "effects",
+    "meters_per_unit": null,
+    "path": "score_lib/effect/door_vent.garage/1/effect.usda",
+    "root": "effect.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

@@ -1,0 +1,88 @@
+{
+  "address": "surface/jacket_blue@1",
+  "files": {
+    "material.usda": {
+      "bytes": 549,
+      "role": "usd",
+      "sha256": "b4bb4e0b04705ab0dd39c06dc42382b9329797520d1a3422727f8d8af9006aaf"
+    },
+    "preview.png": {
+      "bytes": 23618,
+      "role": "picture",
+      "sha256": "034c317fb2e071e224067cbc23126ef93c1fe514b9ab17823debd7ce18ef44c9"
+    },
+    "surface.json": {
+      "bytes": 332,
+      "role": "record",
+      "sha256": "7dbdbb6ee26e43ba866e20f080bb547139a24f296cf3732ecc52d2d31d6d7f34"
+    }
+  },
+  "id": "jacket_blue",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "fabric",
+    "place": "cockpit",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "cockpit",
+    "engineroom",
+    "galley",
+    "navigation",
+    "quarters",
+    "shiplock",
+    "storage",
+    "walkway"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "fabric"
+    ],
+    "recipe": [
+      "rubber"
+    ]
+  },
+  "title": "Jacket blue",
+  "usd": {
+    "default_prim": "/jacket_blue",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/jacket_blue/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

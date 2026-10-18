@@ -1,0 +1,103 @@
+{
+  "address": "model/microscope_1.lab@1",
+  "files": {
+    "model.json": {
+      "bytes": 299,
+      "role": "record",
+      "sha256": "96321be7b26bcbb973b5c6734d33c9b72daafe95c50ffa736def6a42f078a9e0"
+    },
+    "model.usdc": {
+      "bytes": 741873,
+      "role": "usd",
+      "sha256": "4018ae17aa57c73c60b897bb20626c1dc8c4872781f07a6956556867a2c73dc6"
+    },
+    "preview.png": {
+      "bytes": 19458,
+      "role": "picture",
+      "sha256": "a007db182b7138edf68ecbe78c8fa8328b5122e44c441d29a9abdc360aad052e"
+    },
+    "textures/microscope_1_base_color.png": {
+      "bytes": 822839,
+      "role": "texture",
+      "sha256": "5d272b0ef57088bb864fb943ebfa89a1d6694e5a38d37a101c2dbaae4db31974"
+    },
+    "textures/microscope_1_metal_roughness.png": {
+      "bytes": 577552,
+      "role": "texture",
+      "sha256": "857cfda32b4c69c73cc1aa524cd844b1a4d2b8fe7f6ac7860331d91f576629a4"
+    },
+    "textures/microscope_1_normal.png": {
+      "bytes": 2925153,
+      "role": "texture",
+      "sha256": "7ab369cda57a0f7e290ceeda1085da3b1449034f40fbb7c55cf898cb8d8d0e50"
+    }
+  },
+  "id": "microscope_1.lab",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:07:25.503141+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "4d1bd061782bdcbe57e5d45c1351edf31698bb4254ebafaab4bf7c8108625f91",
+    "models": [],
+    "node": "assembly@lab",
+    "output": "6e27c7d3c17e42a9d22d07e469a7b3a8e37bced2cae426b5827007830b83d66a",
+    "place": "lab",
+    "record_key": "90b53b440293d619704e077b09a234f458d34710e83b21efc9453072590550e1",
+    "source_name": "microscope_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "lab"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Microscope 1",
+  "usd": {
+    "default_prim": "/microscope_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/microscope_1.lab/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

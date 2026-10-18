@@ -1,0 +1,81 @@
+{
+  "address": "surface/rubber_grey.workshop@1",
+  "files": {
+    "material.usda": {
+      "bytes": 549,
+      "role": "usd",
+      "sha256": "f7d8cac11c739fb8cce52ef09291d62fef166a9b3d86792378a59ce5fbd963df"
+    },
+    "preview.png": {
+      "bytes": 15427,
+      "role": "picture",
+      "sha256": "b0180ceeae312947d0a8c671d8d40c83c483cf5873d008cdf45828c659054014"
+    },
+    "surface.json": {
+      "bytes": 158,
+      "role": "record",
+      "sha256": "9188ad6689ba5b2f68779aa29a2433ce0d82e45ff9832a2c19d94e2365dbf9e6"
+    }
+  },
+  "id": "rubber_grey.workshop",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "rubber",
+    "place": "workshop",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "workshop"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "rubber"
+    ],
+    "recipe": [
+      "rubber"
+    ]
+  },
+  "title": "Rubber grey",
+  "usd": {
+    "default_prim": "/rubber_grey",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/rubber_grey.workshop/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

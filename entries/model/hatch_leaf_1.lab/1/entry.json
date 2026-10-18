@@ -1,0 +1,103 @@
+{
+  "address": "model/hatch_leaf_1.lab@1",
+  "files": {
+    "model.json": {
+      "bytes": 313,
+      "role": "record",
+      "sha256": "dbcf0bb476b9ed0fcfa78cb04f2cff251f920bc0b290c04c26e194c1295f40fc"
+    },
+    "model.usdc": {
+      "bytes": 118701,
+      "role": "usd",
+      "sha256": "6b5a9a677cd32722b1332674e84e2b80fbd3b9f450caf1d70154370575400a81"
+    },
+    "preview.png": {
+      "bytes": 16118,
+      "role": "picture",
+      "sha256": "4f1e9a87c4d5b7fac916ad65c35d6c4cfb2acf0422734aefe2c4c39162605550"
+    },
+    "textures/lab_fittings_2_base_color.png": {
+      "bytes": 774041,
+      "role": "texture",
+      "sha256": "05660fbb8a9163f7357bc50875e4ad1a3fedce444e3cbdb932b2776b32a3b080"
+    },
+    "textures/lab_fittings_2_metal_roughness.png": {
+      "bytes": 668493,
+      "role": "texture",
+      "sha256": "19a14b68b558765ad85f139ff0746caf5e5bb0da924c64b88e8359b9c8f58a1a"
+    },
+    "textures/lab_fittings_2_normal.png": {
+      "bytes": 9556353,
+      "role": "texture",
+      "sha256": "2d90ef8382aad8c84b555785716e36e8e8bc5c392982c7a275445fe8d6ce5fc1"
+    }
+  },
+  "id": "hatch_leaf_1.lab",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:07:25.503141+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "7e423c6af0d87b997e4536838ac60c6b90abc6efcf6c868ac01188cba386b20c",
+    "models": [],
+    "node": "assembly@lab",
+    "output": "6e27c7d3c17e42a9d22d07e469a7b3a8e37bced2cae426b5827007830b83d66a",
+    "place": "lab",
+    "record_key": "90b53b440293d619704e077b09a234f458d34710e83b21efc9453072590550e1",
+    "source_name": "hatch_leaf_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "lab"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Hatch leaf 1",
+  "usd": {
+    "default_prim": "/hatch_leaf_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/hatch_leaf_1.lab/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

@@ -1,0 +1,94 @@
+{
+  "address": "effect/humidifier_mist@1",
+  "files": {
+    "clip.usdc": {
+      "bytes": 7804713,
+      "role": "usd",
+      "sha256": "46bf1fc1e87dba0ac74f0e0119fb19285383efe2b7adab5425948a1936334317"
+    },
+    "effect.usda": {
+      "bytes": 5874,
+      "role": "usd",
+      "sha256": "4e87257c1511a6b496d71565d1e0a767d7352e35fc5347c4dcd39cf27079032b"
+    },
+    "preview.png": {
+      "bytes": 20161,
+      "role": "picture",
+      "sha256": "17afc28823ab4e5ba3db23e529333e2d8e13133c5e3fce7e48377e26e46cc960"
+    },
+    "settings.json": {
+      "bytes": 1950,
+      "role": "record",
+      "sha256": "08730fc6331ac4face167871d81173e72983a7d7ae1cc86fdecf8a01e4a44921"
+    }
+  },
+  "id": "humidifier_mist",
+  "kind": "effect",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/points.py",
+    "of": "clip.usdc at clip time 120.0"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-12T01:25:10.604128+00:00",
+      "by": "runner"
+    },
+    "code": "7b3bc97d9997c40ad75aad20b9a04a996a85620ffa21f81538dfd5251854aac9",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "from": "footage: commons-ultrasonic-humidifier, flickr-3929581537 (an ultrasonic humidifier's mist (droplets of 1 to 5 micrometres) blown out of its top in one column about 11 degrees either side and showing at least 0.16 m up (its exit speed and droplet size were not found in footage; the 0.35 to 0.6 m/s is this record's), too fine to fall, slowing, sinking a little as the cool wet plume is heavier than the room's air, and drying away within a metre)",
+    "models": [],
+    "node": "effects-layer@greenhouse",
+    "output": "be8e9ba23e46f44d14fb4473daa26852ab87e87afa8f0d089e883dad753084d8",
+    "place": "greenhouse",
+    "prim": "/greenhouse/Objects/humidifier_1/humidifier_mist",
+    "record_key": "5e51d617c044da3c7e8ee511e6e01546d78650b1b5c174f2566f235f4e4f022f",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/particle_effects@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "greenhouse"
+  ],
+  "state": "draft",
+  "tags": {
+    "effect": [
+      "humidifier_mist"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ],
+    "weather": []
+  },
+  "title": "Humidifier mist",
+  "usd": {
+    "default_prim": "/humidifier_mist",
+    "layer": "effects",
+    "meters_per_unit": null,
+    "path": "score_lib/effect/humidifier_mist/1/effect.usda",
+    "root": "effect.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

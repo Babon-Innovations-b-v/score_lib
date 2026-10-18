@@ -1,0 +1,108 @@
+{
+  "address": "surface/floor_g@1",
+  "files": {
+    "material.usda": {
+      "bytes": 535,
+      "role": "usd",
+      "sha256": "812e1a96308faa39ab76625e22229d9dd17847a526d70d59fd7245709869d5e5"
+    },
+    "preview.png": {
+      "bytes": 19003,
+      "role": "picture",
+      "sha256": "59ce9e4ad878470d121e8355ad78a56de5773b44415c8e22a5265cd99a8a98b7"
+    },
+    "surface.json": {
+      "bytes": 184,
+      "role": "record",
+      "sha256": "d4247b512e7b2c66db9ad85d13ffbd39d1410702cc45f38047a93e58ef00f095"
+    }
+  },
+  "id": "floor_g",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "print",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "print"
+    ],
+    "recipe": [
+      "printed"
+    ]
+  },
+  "title": "Floor g",
+  "usd": {
+    "default_prim": "/floor_g",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/floor_g/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

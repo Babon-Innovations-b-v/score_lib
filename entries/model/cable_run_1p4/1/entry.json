@@ -1,0 +1,103 @@
+{
+  "address": "model/cable_run_1p4@1",
+  "files": {
+    "model.json": {
+      "bytes": 285,
+      "role": "record",
+      "sha256": "0bdbbf8d4c060a8e1b7e82524281ce248515277dc03dd7788e6c8d98b87b0ce7"
+    },
+    "model.usdc": {
+      "bytes": 27260,
+      "role": "usd",
+      "sha256": "a33ee84e0b92e4c2b3eaa1f20b18336665c8bbb3ddb81b4464e2bad3eb4f248c"
+    },
+    "preview.png": {
+      "bytes": 18380,
+      "role": "picture",
+      "sha256": "3ed22b31120d04f91c7250b806bf21d4238c7f1353c7b5f6bde9815f7d251d07"
+    },
+    "textures/wreck_code_base_color.png": {
+      "bytes": 116993,
+      "role": "texture",
+      "sha256": "046d2d40563dd8d8147e8465f36aab98611c3a021baecc753662df5eed980bae"
+    },
+    "textures/wreck_code_metal_roughness.png": {
+      "bytes": 18376,
+      "role": "texture",
+      "sha256": "2286d1c7eb1023fe170d17d5cbbfa47bbc5f31caa9eda00d2d79ffbf3953c6e8"
+    },
+    "textures/wreck_code_normal.png": {
+      "bytes": 82058,
+      "role": "texture",
+      "sha256": "3ec2ac63986e045254c952dd10670fe5acf53713b42f5cf93e409191fb0d0317"
+    }
+  },
+  "id": "cable_run_1p4",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T15:53:36.185584+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "92676465af294bb4a8dc60f88dfa2e81366bdedc88225d3639fb3aceae5930a1",
+    "models": [],
+    "node": "assembly@wreck",
+    "output": "591bca186cdb2ba3104fc444e86a6ff62eeb734cbab1de4f4f2c54506dd99291",
+    "place": "wreck",
+    "record_key": "ae3d3dca811e262167338103d0abcba1e68bff01135dac7ecd4e6f2f4113254b",
+    "source_name": "cable_run_1p4",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "moon",
+      "outside"
+    ]
+  },
+  "title": "Cable run 1p4",
+  "usd": {
+    "default_prim": "/cable_run_1p4",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/cable_run_1p4/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

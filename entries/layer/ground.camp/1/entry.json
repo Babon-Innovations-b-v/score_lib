@@ -1,0 +1,81 @@
+{
+  "address": "layer/ground.camp@1",
+  "files": {
+    "layer.usda": {
+      "bytes": 90,
+      "role": "usd",
+      "sha256": "aa67155c9c699b1e4c98d6d740f13fbbe3139ae0a48166d9a4915a66503d65fb"
+    }
+  },
+  "id": "ground.camp",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:13:56.147349+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/ground.usdc",
+        "sha256": "019251f381387225f3e6755878da5cebe57ee441eac30aecd05739e7868a4133"
+      }
+    },
+    "models": [],
+    "node": "assembly@camp",
+    "output": "0d930395c3d487b308d579d02e775682ddf8d302e6e0735849093a37772728c8",
+    "own_files": [],
+    "place": "camp",
+    "record_key": "fe5504fc66033b6c5b56f7395fd37a688bbd5d26c50af13875018921c86ded02",
+    "side_records_from": null,
+    "source_name": "layers/ground.usdc",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/terrain_landforms@1"
+  },
+  "requires": [
+    "ground/mars.camp@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "camp"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "ground"
+    ],
+    "place_kind": [
+      "outside",
+      "mars"
+    ]
+  },
+  "title": "Camp ground layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "ground",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/ground.camp/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

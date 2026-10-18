@@ -1,0 +1,119 @@
+{
+  "address": "sound/suit_fans@1",
+  "files": {
+    "audio/generated/machines/suit_fans.wav": {
+      "bytes": 1104112,
+      "role": "audio",
+      "sha256": "7bd7f06339f5115360552de6062773b0321380ca13c8180d3f882a0699c96d5b"
+    },
+    "preview.png": {
+      "bytes": 2741,
+      "role": "picture",
+      "sha256": "450486883d427d5600c26c5de060157f931d55b869590a5fb5d9837b6489fd18"
+    },
+    "sound.json": {
+      "bytes": 1018,
+      "role": "record",
+      "sha256": "9f50cdcae957cfc8fc305bcb741fff531aea25907c1736ac645ebaa3de193d2f"
+    },
+    "sound.usda": {
+      "bytes": 564,
+      "role": "usd",
+      "sha256": "30c6ba53551dfbc1f5be81af2983c7bcb6321e9986a251086f91e21d2ffa39c2"
+    }
+  },
+  "id": "suit_fans",
+  "kind": "sound",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "https://huggingface.co/OpenMOSS-Team/MOSS-SoundEffect-v2.0; prompt: The steady whir of small air circulation fans inside a spacesuit helmet, a soft constant airflow hiss close to the ears.; seed 2; author: the 2099 project, generated with MOSS-SoundEffect v2.0 (OpenMOSS-Team/MOSS-SoundEffect-v2.0@e35df4d82fbe87fcd5d14e5d100e349c0c3c076d)",
+        "spdx": "Apache-2.0",
+        "text": "made for the first world with MOSS-SoundEffect v2.0 (Apache-2.0)",
+        "what": "sound/generated/machines/suit_fans.wav"
+      }
+    ],
+    "note": "",
+    "spdx": "Apache-2.0"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/audio.py",
+    "of": "audio/generated/machines/suit_fans.wav"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-13T20:58:40.549525+00:00",
+      "by": "runner"
+    },
+    "code": "fddaae33e7b1078d7768d64b90025094353c176b30afeac6022b7b114ce61b81",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_source": {
+      "audio/generated/machines/suit_fans.wav": "assets/sound/generated/machines/suit_fans.wav"
+    },
+    "models": [
+      {
+        "commercial_use": true,
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "licence": "Apache-2.0",
+        "name": "clap-larger-general",
+        "revision": "ada0c23a36c4e8582805bb38fec3905903f18b41",
+        "sha256": "b8e001a32b37111261ccc28541ae07960a8cc047837f76a1a0877e9b2c59dc45",
+        "source": "hf:laion/larger_clap_general"
+      },
+      {
+        "commercial_use": true,
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "licence": "Apache-2.0",
+        "name": "moss-soundeffect-v2",
+        "revision": "e35df4d82fbe87fcd5d14e5d100e349c0c3c076d",
+        "sha256": "d74b38a3387c5e670754edde2d06a71d1940c3a603e5a0489550159e79d18885",
+        "source": "hf:OpenMOSS-Team/MOSS-SoundEffect-v2.0"
+      }
+    ],
+    "node": "sound@campgrounds",
+    "output": "0b67f4168229f408ed7c1c84bb479e03026f31942cb88f827fbd16077eb063c8",
+    "place": "campgrounds",
+    "prim": "/campgrounds/Sound/Room/suit_fans",
+    "record_key": "cc8a014342ce7dc8e09f9a520a44d99a2efbfdaf67541fc648f3e7694ab4e1dd",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "campgrounds",
+    "old_station",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "category": [
+      "loop"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "made_by": [
+      "moss"
+    ],
+    "place_kind": [
+      "mars",
+      "moon",
+      "outside"
+    ]
+  },
+  "title": "Suit fans",
+  "usd": {
+    "default_prim": "/suit_fans",
+    "layer": "sound",
+    "meters_per_unit": null,
+    "path": "score_lib/sound/suit_fans/1/sound.usda",
+    "root": "sound.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

@@ -1,0 +1,130 @@
+{
+  "address": "kit/walkway@1",
+  "files": {
+    "kit.json": {
+      "bytes": 35417,
+      "role": "record",
+      "sha256": "aa2e6b79198176e0ea3ee9e1ee531e6dc58c350d644addb1478e8060b141fe3d"
+    },
+    "preview.png": {
+      "bytes": 6123,
+      "role": "picture",
+      "sha256": "f355d3d1105795fb55842726349e51f267fe4f2a67dfdb61db5035447099e044"
+    },
+    "ship_kit/job-kit-floor.json": {
+      "bytes": 192907,
+      "role": "record",
+      "sha256": "15f02feca067f4de39cfa4fb6450a06d8bbdc569c0f2637bd84ebdaaa0033cba"
+    },
+    "ship_kit/job-kit-gear.json": {
+      "bytes": 192929,
+      "role": "record",
+      "sha256": "6ed0852c11b36047f6a97f6111705d40314e2cafaf24ed61685a07f5209aaba8"
+    },
+    "ship_kit/job-kit-walls_high.json": {
+      "bytes": 193897,
+      "role": "record",
+      "sha256": "9267cae2e58cb1a7bb2860b0f44c0f50748c9f7876ed18f878c8520a9dfee44a"
+    },
+    "ship_kit/job-kit-walls_low_1.json": {
+      "bytes": 192971,
+      "role": "record",
+      "sha256": "0b170adbf9fa71e9060ab77f20356763e94617ce7ac0e1aed39eb49338352002"
+    },
+    "ship_kit/job-kit-walls_low_2.json": {
+      "bytes": 192971,
+      "role": "record",
+      "sha256": "15559ca0395ba262b37edd5d406a1cb2c2ce10c9401ca6d5fe5b9157cbf25561"
+    },
+    "ship_kit/layout-full.json": {
+      "bytes": 28086,
+      "role": "record",
+      "sha256": "3384b641a34c825b447453f7c2f9456d1c4b815f8857b80464c7b851ca774eee"
+    },
+    "ship_kit/layout.json": {
+      "bytes": 28085,
+      "role": "record",
+      "sha256": "ef20196b14ea95e5e58aff2e64f44c27140642b355194ad7473ddc08c5dbc1b9"
+    },
+    "ship_kit/plan.json": {
+      "bytes": 6354,
+      "role": "record",
+      "sha256": "caa25057930adeb2959d6f15cb541daf55dbd7066e93fbd4bb756714e35d18b1"
+    }
+  },
+  "id": "walkway",
+  "kind": "kit",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/plan.py",
+    "of": "kit.json pieces (100) from above"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "pieces": 100,
+    "place": "walkway",
+    "ship_kit": {
+      "accept": {
+        "at": "2026-10-16T00:05:45.744529+00:00",
+        "by": "runner"
+      },
+      "code": "fa0e03dae5d30889cf6f98455ec978fbd3b275e036d58494ccb2eb593df5217a",
+      "models": [],
+      "node": "ship_kit@walkway",
+      "output": "d3444eddaa3bedc80661e1bf0c66badffa9afa80dfdc57b8f1961d4860d5a7f4",
+      "record_key": "9bebd35da50fa64347ab1120aa6a767b32c7aadbd166ba3f9cf0cb0ec0907ac5"
+    },
+    "source": "data/kit/walkway.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/room_layout@1",
+    "model/ceiling_light_panel_1.walkway@1",
+    "model/edge_light_strip_1.walkway@1",
+    "model/floor_grate_1.walkway@1",
+    "model/frame_rib_1.walkway@1",
+    "model/frame_rib_2.walkway@1",
+    "model/ring_floor_plate_1.walkway@1",
+    "model/roof_face_panel_1.walkway@1",
+    "model/wall_lower_plain_1.walkway@1",
+    "model/wall_lower_plain_2.walkway@1",
+    "model/wall_lower_plain_3.walkway@1",
+    "model/wall_lower_plain_4.walkway@1",
+    "model/wall_lower_plain_5.walkway@1",
+    "model/wall_lower_plain_6.walkway@1",
+    "model/wall_upper_plain_1.walkway@1",
+    "model/wall_upper_plain_2.walkway@1",
+    "model/wall_upper_plain_3.walkway@1",
+    "model/wall_upper_plain_4.walkway@1",
+    "model/wall_upper_plain_5.walkway@1",
+    "model/wall_upper_plain_6.walkway@1",
+    "model/wall_upper_plain_7.walkway@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "walkway"
+  ],
+  "state": "draft",
+  "tags": {
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Walkway kit",
+  "usd": null,
+  "version": 1
+}

@@ -1,0 +1,95 @@
+{
+  "address": "layer/sound.stairwell@1",
+  "files": {
+    "layer.usda": {
+      "bytes": 127590,
+      "role": "usd",
+      "sha256": "fcf858af214ac2d5ed94a95d06b183893e0fd25582920965caeb3ac40b87e07f"
+    },
+    "sound.json": {
+      "bytes": 25458,
+      "role": "record",
+      "sha256": "be842d30cf40f354529e56136f6432e2a9ad15e986223d61b3fb501f68bd32dc"
+    }
+  },
+  "id": "sound.stairwell",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-15T17:24:17.414697+00:00",
+      "by": "runner"
+    },
+    "code": "e172da5a348a36e044c48ac88c4301ef36b984d2606f116b55884e77f224e788",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/sound.usda",
+        "sha256": "f4376b46e17d7639f0f003025908cb1a6ea03264afc2c354c443521dffb06bf0"
+      }
+    },
+    "models": [],
+    "node": "assembly@stairwell",
+    "output": "2fb064ef9f057e0dd4f473a8717c5a3b3629717fa97d7e19c9e6a29fbf7dbd40",
+    "own_files": [],
+    "place": "stairwell",
+    "record_key": "7a5eb1daec9c844f6769fdeae2889c79d0a366dc1ed1e7ec898d0a817bd63e82",
+    "side_records_from": "00934c36871015eb875b9e18127c5a643c05f86aaef3ce7e4e6037eb4861bfe7",
+    "source_name": "layers/sound.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/sound_layer@1"
+  },
+  "requires": [
+    "sound/earth_flat@1",
+    "sound/footstep_grating@1",
+    "sound/footstep_rubber@1",
+    "sound/footsteps_metal.stairwell@1",
+    "sound/impact_grating@1",
+    "sound/impact_rubber@1",
+    "sound/impact_steel_plate@1",
+    "sound/scrape_grating@1",
+    "sound/scrape_rubber@1",
+    "sound/scrape_steel_plate@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "stairwell"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "sound"
+    ],
+    "place_kind": [
+      "inside",
+      "earth"
+    ]
+  },
+  "title": "Stairwell sound layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "sound",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/sound.stairwell/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

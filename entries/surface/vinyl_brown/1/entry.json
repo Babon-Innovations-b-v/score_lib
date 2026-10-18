@@ -1,0 +1,108 @@
+{
+  "address": "surface/vinyl_brown@1",
+  "files": {
+    "material.usda": {
+      "bytes": 551,
+      "role": "usd",
+      "sha256": "9e460ec46a7ae259cc1903ecdb5e5bd2d316878e5c3d923ec09623ad9fea0bd4"
+    },
+    "preview.png": {
+      "bytes": 19071,
+      "role": "picture",
+      "sha256": "23bc1c3ea3e4e7bea108898ce39b33ffd3a24f7e3b487191cb2fab93ce2d37a2"
+    },
+    "surface.json": {
+      "bytes": 162,
+      "role": "record",
+      "sha256": "5326bc24787ca6cfa8c3bb7ac843df13e659daea90bdfd44859f507470fc39bc"
+    }
+  },
+  "id": "vinyl_brown",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "plastic",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "plastic"
+    ],
+    "recipe": [
+      "rubber"
+    ]
+  },
+  "title": "Vinyl brown",
+  "usd": {
+    "default_prim": "/vinyl_brown",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/vinyl_brown/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

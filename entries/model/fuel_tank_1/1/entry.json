@@ -1,0 +1,101 @@
+{
+  "address": "model/fuel_tank_1@1",
+  "files": {
+    "model.json": {
+      "bytes": 341,
+      "role": "record",
+      "sha256": "a24e4fc931d262f08da9062816467b184a604652d6d2a15c4dcb761964954059"
+    },
+    "model.usdc": {
+      "bytes": 1877376,
+      "role": "usd",
+      "sha256": "a4a234f93391fe3ae338fdf7826379ddddb441d1c19d1d901bf3f94c69090a2b"
+    },
+    "preview.png": {
+      "bytes": 22302,
+      "role": "picture",
+      "sha256": "887d3116272e57da5c28a21bd2fac3601558576a152d696ab15db536f2bd1829"
+    },
+    "textures/fuel_tank_1_base_color.png": {
+      "bytes": 2884298,
+      "role": "texture",
+      "sha256": "cf82afa15462e1fdb7db87deed47974e887660c0a9c7d3a619beb9aae1260a19"
+    },
+    "textures/fuel_tank_1_metal_roughness.png": {
+      "bytes": 2093595,
+      "role": "texture",
+      "sha256": "2dddc88325ced7017e744de0be633982a336a4448532e0a27304a8248621acd7"
+    },
+    "textures/fuel_tank_1_normal.png": {
+      "bytes": 17686995,
+      "role": "texture",
+      "sha256": "09423108aad8d9742f0d4c0924b92950c62c73f4970f5569af86465e99897d8d"
+    }
+  },
+  "id": "fuel_tank_1",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T20:05:54.680906+00:00",
+      "by": "runner"
+    },
+    "code": "2c394fb6649caa75a8d8b07ff69369fcc217046e6bc8cb45084263388cde70f0",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "c09ba0be20912d5b66f1c5b336406cec11c63bded3fb46d4a610daeae82a0c3c",
+    "models": [],
+    "node": "assembly@engineroom",
+    "output": "2b04a49e1020abb736cf72066d11757c544981b242f901765795a03462916330",
+    "place": "engineroom",
+    "record_key": "0025709ddb07848c2946b6abd8a4f122e919acdde9cc419b62d42eab63a0b1e6",
+    "source_name": "fuel_tank_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "engineroom"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Fuel tank 1",
+  "usd": {
+    "default_prim": "/fuel_tank_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/fuel_tank_1/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

@@ -1,0 +1,84 @@
+{
+  "address": "surface/plastic_orange@1",
+  "files": {
+    "material.usda": {
+      "bytes": 552,
+      "role": "usd",
+      "sha256": "85959f7276a9a00136dce997bbd5b68e131b8ff1d420fa242a2be878ab2088bf"
+    },
+    "preview.png": {
+      "bytes": 21606,
+      "role": "picture",
+      "sha256": "7dad118f2265adf8d37e556b87de490197f148df9a7711ab55e4db10f8784e03"
+    },
+    "surface.json": {
+      "bytes": 513,
+      "role": "record",
+      "sha256": "a9aed6bd483a3449f651a107b943109821233730084ea36821e2baafcbcbf7c5"
+    }
+  },
+  "id": "plastic_orange",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "plastic",
+    "place": "cockpit",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "cockpit",
+    "engineroom",
+    "shiplock",
+    "walkway"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "plastic"
+    ],
+    "recipe": [
+      "rubber"
+    ]
+  },
+  "title": "Plastic orange",
+  "usd": {
+    "default_prim": "/plastic_orange",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/plastic_orange/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

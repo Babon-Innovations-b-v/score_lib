@@ -1,0 +1,84 @@
+{
+  "address": "layer/characters.flat@1",
+  "files": {
+    "characters.json": {
+      "bytes": 308,
+      "role": "record",
+      "sha256": "8909cee9c03b7131d8be5d611ddbe17ca22c27a24996c18ffcdfb2bedfdd05f9"
+    },
+    "layer.usda": {
+      "bytes": 124,
+      "role": "usd",
+      "sha256": "a110b49240ba97e5f68d41c691ccfb5009fd6a44018b06bae68428c17c1f5114"
+    }
+  },
+  "id": "characters.flat",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-15T12:52:44.767077+00:00",
+      "by": "runner"
+    },
+    "code": "a463163a0eeef652acdcfd1091415cc08ea792bdf6eee5489b5a0b48e06ace87",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/characters.usda",
+        "sha256": "a110b49240ba97e5f68d41c691ccfb5009fd6a44018b06bae68428c17c1f5114"
+      }
+    },
+    "models": [],
+    "node": "assembly@flat",
+    "output": "7164a61082dc77a23d6958d9f0e95ca4accc52c8781a93fbc670952303bbb4ff",
+    "own_files": [],
+    "place": "flat",
+    "record_key": "8bb7b4b3a3ec082c92dae2d6ca6380ae5dcbe1fe7b0248e538c9c0f86220f045",
+    "side_records_from": "851cb5cd1d093798be8bea6745b325228ab23cbc79d0bdafb0a001a4a2536762",
+    "source_name": "layers/characters.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/cast_spread@1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "flat"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "characters"
+    ],
+    "place_kind": [
+      "inside",
+      "earth"
+    ]
+  },
+  "title": "Flat characters layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "characters",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/characters.flat/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": 30.0,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

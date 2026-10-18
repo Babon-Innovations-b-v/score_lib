@@ -1,0 +1,108 @@
+{
+  "address": "surface/tray_tile@1",
+  "files": {
+    "material.usda": {
+      "bytes": 548,
+      "role": "usd",
+      "sha256": "0b189024a8b6c50aa110b7112db2b0df028602ff42de8fb5f14f223ed4f089a3"
+    },
+    "preview.png": {
+      "bytes": 20880,
+      "role": "picture",
+      "sha256": "8ba781fae81d52fee4b48ead7c065cf4625e6ce17672fca445b2ef9fa91eea7b"
+    },
+    "surface.json": {
+      "bytes": 321,
+      "role": "record",
+      "sha256": "5257eb61061e128ad0ce9080eea53bc8a9679522dfc53eddb48dc5a8bd0e2721"
+    }
+  },
+  "id": "tray_tile",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "plastic",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "plastic"
+    ],
+    "recipe": [
+      "rubber"
+    ]
+  },
+  "title": "Tray tile",
+  "usd": {
+    "default_prim": "/tray_tile",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/tray_tile/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

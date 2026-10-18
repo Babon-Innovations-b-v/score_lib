@@ -1,0 +1,87 @@
+{
+  "address": "layer/effects.habitat@1",
+  "files": {
+    "held.json": {
+      "bytes": 87,
+      "role": "record",
+      "sha256": "80abb182ee21b6c06c21409abd525322399a5d99cee8c59800fc8cd98f0c1baf"
+    },
+    "layer.usda": {
+      "bytes": 51554,
+      "role": "usd",
+      "sha256": "956ab5ca3b496a063261c9d3d687608931a9f556ad238c06e8376a7417e7899e"
+    }
+  },
+  "id": "effects.habitat",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T09:31:21.711004+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/effects.usda",
+        "sha256": "06af6ca4292220f323c2ddd8cfb77987391ee1a5d81e5fdc2a84601576b9b1bf"
+      }
+    },
+    "models": [],
+    "node": "assembly@habitat",
+    "output": "e6cb813b79be54e9c4ec9a531b2407cc81765e13b62c9b0962394ef9645519d6",
+    "own_files": [],
+    "place": "habitat",
+    "record_key": "e2801490121188a98eb1a3bfb7c0acdf01953b265874ff4b2a27a83a896bd500",
+    "side_records_from": "cae1ccabdf65a4fe6dd0e4950b1da6a10c36a3dd101fa4feea0336935cd55593",
+    "source_name": "layers/effects.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/particle_effects@1"
+  },
+  "requires": [
+    "effect/kettle_steam@1",
+    "effect/pot_steam@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "habitat"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "effects"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Habitat effects layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "effects",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/effects.habitat/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

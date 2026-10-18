@@ -1,0 +1,108 @@
+{
+  "address": "surface/painted_panel@1",
+  "files": {
+    "material.usda": {
+      "bytes": 561,
+      "role": "usd",
+      "sha256": "0a495fe962e280d4285b01cba34dd36791ee1f9c48fd477c0513d46741946ba8"
+    },
+    "preview.png": {
+      "bytes": 19638,
+      "role": "picture",
+      "sha256": "7bb854897c2b674e7f0f97d8ba501738ef81076e2c860351cc9dd84bfce11c6d"
+    },
+    "surface.json": {
+      "bytes": 447,
+      "role": "record",
+      "sha256": "b80fcd97a00eb04c7f47b288789e0ba7028285d36444871ce37985a66fe6815e"
+    }
+  },
+  "id": "painted_panel",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "painted",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "painted"
+    ],
+    "recipe": [
+      "painted_metal"
+    ]
+  },
+  "title": "Painted panel",
+  "usd": {
+    "default_prim": "/painted_panel",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/painted_panel/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

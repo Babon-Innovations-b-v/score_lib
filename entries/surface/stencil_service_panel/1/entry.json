@@ -1,0 +1,108 @@
+{
+  "address": "surface/stencil_service_panel@1",
+  "files": {
+    "material.usda": {
+      "bytes": 582,
+      "role": "usd",
+      "sha256": "6a3ea3d87fbd1b83a3480666d583c4979c97c3bb8977210f7da8dfb4e90db554"
+    },
+    "preview.png": {
+      "bytes": 17263,
+      "role": "picture",
+      "sha256": "132806c37f9c5c347870b6437712a16f7c1c3fb24cc73c8926716c02c8d6a3f7"
+    },
+    "surface.json": {
+      "bytes": 214,
+      "role": "record",
+      "sha256": "5b8dc4dc2c036069391ebe731ed6e34ac22522a8b3e89859d0945ed8280f56af"
+    }
+  },
+  "id": "stencil_service_panel",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "print",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "print"
+    ],
+    "recipe": [
+      "printed"
+    ]
+  },
+  "title": "Stencil service panel",
+  "usd": {
+    "default_prim": "/stencil_service_panel",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/stencil_service_panel/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

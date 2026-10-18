@@ -1,0 +1,108 @@
+{
+  "address": "surface/glass@1",
+  "files": {
+    "material.usda": {
+      "bytes": 527,
+      "role": "usd",
+      "sha256": "d2c4d7f5ebb5ce37b543181995394c320c76a1f41406ceaa55195c47578443b8"
+    },
+    "preview.png": {
+      "bytes": 14554,
+      "role": "picture",
+      "sha256": "1300a570c5d92470ba28881de4f07abf0f8b5e8d030f753a93a8058ff76e3f04"
+    },
+    "surface.json": {
+      "bytes": 151,
+      "role": "record",
+      "sha256": "1822c7103d0955d0586b7b21299e4d3702595e254fe2bf1b973a14e64a9d147e"
+    }
+  },
+  "id": "glass",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "glass",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "glass"
+    ],
+    "recipe": [
+      "glass"
+    ]
+  },
+  "title": "Glass",
+  "usd": {
+    "default_prim": "/glass",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/glass/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

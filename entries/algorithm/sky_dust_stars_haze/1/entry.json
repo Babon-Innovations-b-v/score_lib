@@ -1,0 +1,189 @@
+{
+  "address": "algorithm/sky_dust_stars_haze@1",
+  "files": {
+    "code.json": {
+      "bytes": 1293,
+      "role": "record",
+      "sha256": "4ec19382f124645ec4a88f8f2c05bdf5f2467458fd661353560122c3c41a3713"
+    },
+    "code/tools/usd/builders.py": {
+      "bytes": 35527,
+      "role": "code",
+      "sha256": "a4eb1abba16bc589f1f495625c1151d66c76a3babfa23ed10e20a7d8dc8536fe"
+    },
+    "code/tools/usd/earth.py": {
+      "bytes": 4311,
+      "role": "code",
+      "sha256": "6d0a6a7e6b35ac6da1e32084cce4d3dd6977770875b655088411112ab607dc7c"
+    },
+    "code/tools/usd/glb_asset.py": {
+      "bytes": 7027,
+      "role": "code",
+      "sha256": "f11c3d7a3d857ed0f426c4ea0d2f5eee6a3059cf4e465e7081fade77d9518590"
+    },
+    "code/tools/usd/ground_detail.py": {
+      "bytes": 23438,
+      "role": "code",
+      "sha256": "f915570e77ed7ed95f6ac83fb15a415dec9670f58d546463f8c00e4e954627c3"
+    },
+    "code/tools/usd/mars_sky.py": {
+      "bytes": 4698,
+      "role": "code",
+      "sha256": "424fa5d50170f7b97e07f0f1f725e011ef9cbefd5d395711e180f3bae912d0ee"
+    },
+    "code/tools/usd/orbits.py": {
+      "bytes": 6420,
+      "role": "code",
+      "sha256": "ea3f51f9dda02b62116a7d9968f6573adaf8d1084c94ad4d3d459d3f79b0bb71"
+    },
+    "code/tools/usd/rocks.py": {
+      "bytes": 8343,
+      "role": "code",
+      "sha256": "4d359ca9bf79b906b218ba992b70c661e216411a409cc2ec99bf4093f26d9df1"
+    },
+    "code/tools/usd/scene.py": {
+      "bytes": 70939,
+      "role": "code",
+      "sha256": "4e130f0aef9846caaeba16efae688eb66b8e8c27e581a390ecfc73d53a3aa3fe"
+    },
+    "code/tools/usd/shaders.py": {
+      "bytes": 4762,
+      "role": "code",
+      "sha256": "46233e2bb32b827d09bf5da76f2946ccfa3965ce0df0c9fcef2cc047c3ead3e4"
+    },
+    "code/tools/usd/stage_inputs.py": {
+      "bytes": 3573,
+      "role": "code",
+      "sha256": "57c6d1b2f2ff71cdeaeff6ab33c95688b49a09ffb67aea787211d937affa3e80"
+    },
+    "definition.json": {
+      "bytes": 562,
+      "role": "record",
+      "sha256": "516700cb501dd884ec93a690571471b27376fe7e6567bf65f2551672744f8efc"
+    },
+    "picture.png": {
+      "bytes": 3120923,
+      "role": "picture",
+      "sha256": "65631c0708296a7a4d3adcffef6b32b5efb45fafd14aed8f9787a3dc335b4bf7"
+    },
+    "presets/world1/data/definitions/sky.json": {
+      "bytes": 10210,
+      "role": "record",
+      "sha256": "a2350536b2c25405346737bc8c5c9f427dd883dfc7615039e2b3874817465b83"
+    },
+    "presets/world1/seed.json": {
+      "bytes": 1195,
+      "role": "record",
+      "sha256": "39d96bcbefeee1783bae4f9717d67d2f0eaf21c0c1b54796e27ee44c2d60394e"
+    },
+    "run.json": {
+      "bytes": 268,
+      "role": "record",
+      "sha256": "474d51f540a7e7f900e620587b2f2ca5a277929de880f59cef0d6d9fa849c9c5"
+    },
+    "settings.schema.json": {
+      "bytes": 292,
+      "role": "record",
+      "sha256": "4867c13b08616ef67b1896ccdf69f7f8a6b9e65e2fe7accf347db77d3ca4011b"
+    },
+    "test/tools/usd/scene_test.py": {
+      "bytes": 42464,
+      "role": "code",
+      "sha256": "41c0fee772014e8b3e1c7fcad975298f212918324862cd0d97235b5322139c32"
+    }
+  },
+  "id": "sky_dust_stars_haze",
+  "kind": "algorithm",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@camp: looks/camp/shot0-000-look.png"
+  },
+  "provenance": {
+    "code": "a03509ef4f86ce8be50a0f8e58b251dfc28ab948c31169704b7cd90365a9607b",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "nodes": [
+      "scene-record@airlock",
+      "scene-record@camp",
+      "scene-record@campgrounds",
+      "scene-record@cockpit",
+      "scene-record@engineroom",
+      "scene-record@flat",
+      "scene-record@galley",
+      "scene-record@garage",
+      "scene-record@greenhouse",
+      "scene-record@habitat",
+      "scene-record@hangar",
+      "scene-record@hub",
+      "scene-record@lab",
+      "scene-record@launch",
+      "scene-record@navigation",
+      "scene-record@old_station",
+      "scene-record@quarters",
+      "scene-record@shiplock",
+      "scene-record@square",
+      "scene-record@stairwell",
+      "scene-record@storage",
+      "scene-record@street",
+      "scene-record@tube",
+      "scene-record@walkway",
+      "scene-record@workshop",
+      "scene-record@wreck"
+    ],
+    "stage": "scene-record",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "needs": [],
+    "runnable": [
+      true
+    ]
+  },
+  "title": "Static sky dust, stars, haze volume, haze ring and light beams",
+  "usd": null,
+  "version": 1
+}

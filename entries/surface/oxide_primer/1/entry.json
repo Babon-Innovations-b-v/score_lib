@@ -1,0 +1,108 @@
+{
+  "address": "surface/oxide_primer@1",
+  "files": {
+    "material.usda": {
+      "bytes": 561,
+      "role": "usd",
+      "sha256": "24e840fb63af322569a6c3d61cbabe775d7539fe039d3b2730cc9e66eb8f8e2a"
+    },
+    "preview.png": {
+      "bytes": 23004,
+      "role": "picture",
+      "sha256": "1de485c35d991903c3af3fab6277bb65d9845d5d1312e6e049b1c1ca6c95750b"
+    },
+    "surface.json": {
+      "bytes": 195,
+      "role": "record",
+      "sha256": "80044b0b195d89e397dd487d99dd4aac534451bf80902425e7b8e8fe8f0f595a"
+    }
+  },
+  "id": "oxide_primer",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "painted",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "painted"
+    ],
+    "recipe": [
+      "painted_metal"
+    ]
+  },
+  "title": "Oxide primer",
+  "usd": {
+    "default_prim": "/oxide_primer",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/oxide_primer/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

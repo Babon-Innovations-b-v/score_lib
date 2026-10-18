@@ -1,0 +1,103 @@
+{
+  "address": "model/tank_dome@1",
+  "files": {
+    "model.json": {
+      "bytes": 261,
+      "role": "record",
+      "sha256": "58f9aed796b85c38e5ac3c5e72eafcf9d9b92175bac2df5c5fca9fdb8a06e6a1"
+    },
+    "model.usdc": {
+      "bytes": 1937074,
+      "role": "usd",
+      "sha256": "c63c9e56016cd9e1a62bf78534bcff1db1ee511e3dea27be9fa50b4f0dc208e1"
+    },
+    "preview.png": {
+      "bytes": 25106,
+      "role": "picture",
+      "sha256": "d316f50ea4d03b4d80d3ee61900353e85b47a2f484f606afa56cdfb64bbeadbd"
+    },
+    "textures/tank_dome_base_color.png": {
+      "bytes": 866186,
+      "role": "texture",
+      "sha256": "478ffa14d7b4a3f6e4906ac5d9bb59031fd8df3252d15d37681a7cb48be7a067"
+    },
+    "textures/tank_dome_metal_roughness.png": {
+      "bytes": 801756,
+      "role": "texture",
+      "sha256": "7c9f72d664ecac5366b8fc58f794101694e93f5c54030afde2eb27d8ccf6c743"
+    },
+    "textures/tank_dome_normal.png": {
+      "bytes": 7815597,
+      "role": "texture",
+      "sha256": "fcb36c521e3ed8c383f8bb2a6b9d69ae0f368367c6a8e75e0f20462f0f0feaee"
+    }
+  },
+  "id": "tank_dome",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T15:53:36.185584+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "f9165f96ca498e63935bb0d07022a289fbfcda7bbbbb8718ce302f7f4901b536",
+    "models": [],
+    "node": "assembly@wreck",
+    "output": "591bca186cdb2ba3104fc444e86a6ff62eeb734cbab1de4f4f2c54506dd99291",
+    "place": "wreck",
+    "record_key": "ae3d3dca811e262167338103d0abcba1e68bff01135dac7ecd4e6f2f4113254b",
+    "source_name": "tank_dome",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "moon",
+      "outside"
+    ]
+  },
+  "title": "Tank dome",
+  "usd": {
+    "default_prim": "/tank_dome",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/tank_dome/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

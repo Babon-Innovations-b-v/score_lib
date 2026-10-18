@@ -1,0 +1,107 @@
+{
+  "address": "surface/mli_gold.airlock@1",
+  "files": {
+    "material.usda": {
+      "bytes": 543,
+      "role": "usd",
+      "sha256": "8a8a7454d974c75aa1fe4a7ba518644168869dd59b24a9ac4121dd0fe1a8bbeb"
+    },
+    "preview.png": {
+      "bytes": 21599,
+      "role": "picture",
+      "sha256": "7bbd18cc4cc75787beb34ba49f327aececb7225572f62c22c1b3dd471768a916"
+    },
+    "surface.json": {
+      "bytes": 222,
+      "role": "record",
+      "sha256": "1af70e86fec40c76db5c8f3d02ba968c5d525868561a60d11d10bbb9df84e3ee"
+    }
+  },
+  "id": "mli_gold.airlock",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "foil",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "foil"
+    ],
+    "recipe": [
+      "anodized"
+    ]
+  },
+  "title": "Mli gold",
+  "usd": {
+    "default_prim": "/mli_gold",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/mli_gold.airlock/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

@@ -1,0 +1,108 @@
+{
+  "address": "surface/barrier_red@1",
+  "files": {
+    "material.usda": {
+      "bytes": 550,
+      "role": "usd",
+      "sha256": "13f8f913dd3075b9bd7ac8f3897decbc37306ccf221e4f8eff240d71063170a4"
+    },
+    "preview.png": {
+      "bytes": 21512,
+      "role": "picture",
+      "sha256": "496ae1d4bdebf7f8c55ae0c359d3f5d3eaa9792c04ac1654e5a20e614c0a1e1c"
+    },
+    "surface.json": {
+      "bytes": 206,
+      "role": "record",
+      "sha256": "dc7b1be28e74e6c4d51a594110c2bbcc29fac24532ca00c8da930656351a19d6"
+    }
+  },
+  "id": "barrier_red",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "plastic",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "plastic"
+    ],
+    "recipe": [
+      "rubber"
+    ]
+  },
+  "title": "Barrier red",
+  "usd": {
+    "default_prim": "/barrier_red",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/barrier_red/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

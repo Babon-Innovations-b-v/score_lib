@@ -1,0 +1,88 @@
+{
+  "address": "surface/printed_paper@1",
+  "files": {
+    "material.usda": {
+      "bytes": 552,
+      "role": "usd",
+      "sha256": "cb8fa93efd600d40c0f2d900bf776923c9a1e44bd1b1f29f94b1bb90a4e7d6a8"
+    },
+    "preview.png": {
+      "bytes": 19244,
+      "role": "picture",
+      "sha256": "44abb3b4d437dfc9a238c97b591eff375b2163d25eee1496d402fe9c5e614ab4"
+    },
+    "surface.json": {
+      "bytes": 388,
+      "role": "record",
+      "sha256": "f0e686ffc440a9eff79f412ebb1a187eb7071a37b0353f5070080884cdfc44a1"
+    }
+  },
+  "id": "printed_paper",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "paper",
+    "place": "cockpit",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "cockpit",
+    "engineroom",
+    "galley",
+    "navigation",
+    "quarters",
+    "shiplock",
+    "storage",
+    "walkway"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "paper"
+    ],
+    "recipe": [
+      "rubber"
+    ]
+  },
+  "title": "Printed paper",
+  "usd": {
+    "default_prim": "/printed_paper",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/printed_paper/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

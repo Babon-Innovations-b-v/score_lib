@@ -1,0 +1,108 @@
+{
+  "address": "surface/floodlight_lens@1",
+  "files": {
+    "material.usda": {
+      "bytes": 633,
+      "role": "usd",
+      "sha256": "884ee47ba672318eb10ce0a2c3727c41600656b0c558e5ad16ed8d4edc2f9e0f"
+    },
+    "preview.png": {
+      "bytes": 18099,
+      "role": "picture",
+      "sha256": "7b8b07f44b9fffb783245af4810435ba1ddde0ea275ed4476ad06e1bba4eadcb"
+    },
+    "surface.json": {
+      "bytes": 143,
+      "role": "record",
+      "sha256": "7cee167ca37a6341812e7a37e9bd96746899fa9d6b95f6c9c2d976782fb25d92"
+    }
+  },
+  "id": "floodlight_lens",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "light",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "light"
+    ],
+    "recipe": [
+      "glowing"
+    ]
+  },
+  "title": "Floodlight lens",
+  "usd": {
+    "default_prim": "/floodlight_lens",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/floodlight_lens/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

@@ -1,0 +1,81 @@
+{
+  "address": "surface/cast_iron_dark.workshop@1",
+  "files": {
+    "material.usda": {
+      "bytes": 566,
+      "role": "usd",
+      "sha256": "51130273e4fc308cfa72118114a1bf26f9adc03aface0814d2fd405dae6269ac"
+    },
+    "preview.png": {
+      "bytes": 16935,
+      "role": "picture",
+      "sha256": "e6f56ea85ef2088d3ddcb287309acc2f23b1b16078f7771993aeb6a4d32f1969"
+    },
+    "surface.json": {
+      "bytes": 181,
+      "role": "record",
+      "sha256": "ec7cab32aea42a9624f3ecbb9003589d49f3c8086b7cffd87a7f42cd247f7337"
+    }
+  },
+  "id": "cast_iron_dark.workshop",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "steel",
+    "place": "workshop",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "workshop"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "steel"
+    ],
+    "recipe": [
+      "cast_metal"
+    ]
+  },
+  "title": "Cast iron dark",
+  "usd": {
+    "default_prim": "/cast_iron_dark",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/cast_iron_dark.workshop/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

@@ -1,0 +1,103 @@
+{
+  "address": "place/hdoor@1",
+  "files": {
+    "contract.json": {
+      "bytes": 99,
+      "role": "record",
+      "sha256": "c2b7151f92e6a67ca4666ea747ad262b67b4d0af824cc83862ce64d8cc49d12c"
+    },
+    "edit.usda": {
+      "bytes": 183,
+      "role": "usd",
+      "sha256": "8fc5485ea9a58537dd8289c516a85733e069ad7a17b866471667b8795142454f"
+    },
+    "hdoor.usda": {
+      "bytes": 380,
+      "role": "usd",
+      "sha256": "372ed05e2e48f7768543daf90a03ea662c7dac8972325391bc5cb1ce5de334bf"
+    },
+    "inputs.json": {
+      "bytes": 788,
+      "role": "record",
+      "sha256": "e7fea7576b7067e0c6654b4810d907df223aee3c2d4f46e0a749e1ec0c5da095"
+    },
+    "origin.json": {
+      "bytes": 384,
+      "role": "record",
+      "sha256": "12b88f6eaadb1d4602518d56cf5e38331e5c54c266429eed0a8881e3ed20b2f6"
+    }
+  },
+  "id": "hdoor",
+  "kind": "place",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-13T08:09:34.278470+00:00",
+      "by": "runner"
+    },
+    "code": "0b158c668b94c11dfa4edc5aae6aca004c40e9e698701955b77f3799dbce1b7f",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "complete": {
+      "accept": {
+        "at": "2026-10-13T08:40:38.211673+00:00",
+        "by": "runner"
+      },
+      "code": "4a09dee5f5fcc06a3bf44dec934d763a3cc7e2d99a6bb19c35df48aa6840baf3",
+      "models": [],
+      "node": "complete@hdoor",
+      "output": "2030ab75aee97679c74ccbc01c948c0a8a183665f6ee5cb84b140b17fd466bfe",
+      "record_key": "ef3a5a441cea41c649d4bf145f0b5f24e8e1fb4e4c4891df8e555b2842b98949"
+    },
+    "complete_failing": [],
+    "gaps": null,
+    "models": [],
+    "node": "assembly@hdoor",
+    "output": "86dd367298076480c9809c69abc93ed3ea88fc1a1703ccb9a967ccee0931e962",
+    "place": "hdoor",
+    "record_key": "bf431a9b130c39396f9446a21b5f1b71c9a09923c203f0f5c8aaccbc9cd74ba9",
+    "unresolved_sublayers": [],
+    "world": "world1"
+  },
+  "requires": [
+    "layer/base.hdoor@1",
+    "layer/motion.hdoor@1",
+    "layer/sound.hdoor@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "hdoor"
+  ],
+  "state": "draft",
+  "tags": {
+    "complete": [
+      "pass"
+    ],
+    "place_kind": []
+  },
+  "title": "Hdoor",
+  "usd": {
+    "default_prim": "/hdoor",
+    "layer": "root",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/place/hdoor/1/hdoor.usda",
+    "root": "hdoor.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": "Y",
+    "use": "open"
+  },
+  "version": 1
+}

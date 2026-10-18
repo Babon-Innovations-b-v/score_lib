@@ -1,0 +1,108 @@
+{
+  "address": "model/small_readout_1.garage@1",
+  "files": {
+    "model.json": {
+      "bytes": 338,
+      "role": "record",
+      "sha256": "21cd3d1b1b32e6c0a9ff8f9a0e76219e0d32714d8585f3601ebf67d949eee849"
+    },
+    "model.usdc": {
+      "bytes": 77373,
+      "role": "usd",
+      "sha256": "bb1ea3a7fd4607d67e6f0d54056147d40ddff8d1ccd583bb38b3f777d60f7130"
+    },
+    "model_glow.usdc": {
+      "bytes": 3698,
+      "role": "usd",
+      "sha256": "040e5676cb1d4d01643c87a2a5a46e2b8715f900b251ea85fade4e648013d4a0"
+    },
+    "preview.png": {
+      "bytes": 14397,
+      "role": "picture",
+      "sha256": "3224e81ee86e50d5b4213038e14d62364a9c7689d2357a6225807eb55ad6c4f0"
+    },
+    "textures/garage_gear_2_base_color.png": {
+      "bytes": 271783,
+      "role": "texture",
+      "sha256": "8e20d82103f448e0e7a324624bcf7b91a17335c90bb05ee0567816162fa786bb"
+    },
+    "textures/garage_gear_2_metal_roughness.png": {
+      "bytes": 121131,
+      "role": "texture",
+      "sha256": "1b5b59fae53fd63e0d07555663c4cc0d21fbcb73945e2f3861392330321e980d"
+    },
+    "textures/garage_gear_2_normal.png": {
+      "bytes": 367177,
+      "role": "texture",
+      "sha256": "badc64455cc729649da45bc40fa1148fe613ad7a55b603f5fdccce7e34f29061"
+    }
+  },
+  "id": "small_readout_1.garage",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T22:23:43.534540+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "6d68e82af50153fb48d1d2ad1aa7b5dbb02d387805e27fa9b5284bf89fee5fa5",
+    "models": [],
+    "node": "assembly@garage",
+    "output": "b7aa59a6d59e8700275f9ac530ec0a920e7f3c63af29e58b93ecd3f39f5abe50",
+    "place": "garage",
+    "record_key": "08c1c1e01926f109c953734d2bf2bea3daed4a22d008d5b03cf237bf5c75ef70",
+    "source_name": "small_readout_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "garage"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Small readout 1",
+  "usd": {
+    "default_prim": "/small_readout_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/small_readout_1.garage/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

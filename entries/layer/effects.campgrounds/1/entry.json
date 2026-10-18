@@ -1,0 +1,112 @@
+{
+  "address": "layer/effects.campgrounds@1",
+  "files": {
+    "held.json": {
+      "bytes": 617,
+      "role": "record",
+      "sha256": "be5f906d9870e01d7dc679cea528e548e55b15aede35099b89b43831ef0c9296"
+    },
+    "layer.usda": {
+      "bytes": 282327,
+      "role": "usd",
+      "sha256": "09cb57d96d7f7492283e22ad5c2a6805b7212c4ada473f03382d446660e46b47"
+    }
+  },
+  "id": "effects.campgrounds",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:16:00.039696+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/effects.usda",
+        "sha256": "4101c35f717fc25dddc4cd0d2beb675581e57daa0238914c04583457942df757"
+      }
+    },
+    "models": [],
+    "node": "assembly@campgrounds",
+    "output": "7fcf4c6f9552d4edb6020038bb83dd248f2e602f1958878438d52dfc3a7685bb",
+    "own_files": [],
+    "place": "campgrounds",
+    "record_key": "3e28c5bc4fca67388ebba8768e3cf58d643f791893e4237289ddba7e9754e64e",
+    "side_records_from": "254c25cb0f17359e0ed539e1c28003c910cabbf5627c28ce0c57f445ae98ab6a",
+    "source_name": "layers/effects.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/particle_effects@1"
+  },
+  "requires": [
+    "effect/devil_east.campgrounds@1",
+    "effect/devil_west.campgrounds@1",
+    "effect/drift_0_0.campgrounds@1",
+    "effect/drift_0_1.campgrounds@1",
+    "effect/drift_0_2.campgrounds@1",
+    "effect/drift_0_3.campgrounds@1",
+    "effect/drift_0_4.campgrounds@1",
+    "effect/drift_1_0.campgrounds@1",
+    "effect/drift_1_1.campgrounds@1",
+    "effect/drift_1_2.campgrounds@1",
+    "effect/drift_1_3.campgrounds@1",
+    "effect/drift_1_4.campgrounds@1",
+    "effect/drift_2_0.campgrounds@1",
+    "effect/drift_2_1.campgrounds@1",
+    "effect/drift_2_2.campgrounds@1",
+    "effect/drift_2_3.campgrounds@1",
+    "effect/drift_2_4.campgrounds@1",
+    "effect/drift_3_0.campgrounds@1",
+    "effect/drift_3_1.campgrounds@1",
+    "effect/drift_3_2.campgrounds@1",
+    "effect/drift_3_3.campgrounds@1",
+    "effect/drift_3_4.campgrounds@1",
+    "effect/drift_4_0.campgrounds@1",
+    "effect/drift_4_1.campgrounds@1",
+    "effect/drift_4_2.campgrounds@1",
+    "effect/drift_4_3.campgrounds@1",
+    "effect/drift_4_4.campgrounds@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "campgrounds"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "effects"
+    ],
+    "place_kind": [
+      "outside",
+      "mars"
+    ]
+  },
+  "title": "Campgrounds effects layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "effects",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/effects.campgrounds/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

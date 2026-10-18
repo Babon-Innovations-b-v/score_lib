@@ -1,0 +1,94 @@
+{
+  "address": "effect/wisp@1",
+  "files": {
+    "clip.usdc": {
+      "bytes": 3940721,
+      "role": "usd",
+      "sha256": "35123dc0376a156aceea1168451da421ca2a71dab11e4748740b0629f3479c05"
+    },
+    "effect.usda": {
+      "bytes": 7370,
+      "role": "usd",
+      "sha256": "1cdd07a012431abea6e7f8bb8daf79cf9c2273856c6d0ede7eda595234cf4c0f"
+    },
+    "preview.png": {
+      "bytes": 25220,
+      "role": "picture",
+      "sha256": "1ba062dcdf8010c6b44d8a64ae7d919158084914fe554af2ae06dc6e0cffe614"
+    },
+    "settings.json": {
+      "bytes": 3304,
+      "role": "record",
+      "sha256": "9ce2f88f2ad3bbe1b9c902d9a74cd09f3bb4f1862e208e23af188f4250941bcd"
+    }
+  },
+  "id": "wisp",
+  "kind": "effect",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/points.py",
+    "of": "clip.usdc at clip time 120.0"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-15T04:28:16.011834+00:00",
+      "by": "runner"
+    },
+    "code": "00a1f89e4de941c4a2782f55c966c21aee223e81ee19a2f6224cd66ae2dbf701",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "from": "footage: commons-Cigarettesmoke.JPG, commons-Still_smoking_(2329760820).jpg, commons-Incense_stick.JPG (one thin thread off the lit end, straight for 4 to 10 cm, then folding into curls and sheets that widen at 15 to 35 degrees either side, one connected veil seen at least 22 cm up and never loose blobs: 3,000 fine cards a 3 s life, rising at 0.12 to 0.2 m/s and slowly growing to about 5 cm, each faint so many overlap into the thread); the lit end at the lips 66 mm under the eye (the pupil to the mouth's opening, 65.52 plus or minus 5.28 mm over 500 adults: dovepress CCIDE, 'An anthropometric study to evaluate the correlation between the occlusal vertical dimension and length of the thumb', https://www.dovepress.com/an-anthropometric-study-to-evaluate-the-correlation-between-the-occlus-peer-reviewed-fulltext-article-CCIDE) and 27 mm ahead of it (measured on commons-Exhaling_cloud_of_cigarette_smoke_(50652653823).png against its head's 19.5 cm length) plus a king size cigarette's 84 mm (https://eastern-tobacco.com/cigarette-sizes-and-dimensions-complete-format-guide/) less the 11 mm smokers hold in their lips (10.6 and 11.0 mm on average over 2,232 butts' saliva marks: 'Mouth Insertion Depths in Canadian Smokers', https://reference-global.com/article/10.2478/cttr-2013-0673), held level and straight ahead (no footage here gives a held cigarette's angle: the record's own choice); the colour #e5e6e6, neutral: the mean of the brightest 5% of the unclipped smoke pixels of commons-Cigarettesmoke.JPG under a warm lamp (#e0dad5) and commons-Exhaling_cloud_of_cigarette_smoke_(50652653823).png in sunlight (#eaf3f7), smoke taking its light's colour; turbulence, its fading and the drift into the world set so the bake meets the footage block's checks (one veil, its half angle, its reach)",
+    "models": [],
+    "node": "effects-layer@flat",
+    "output": "cae91f4d02a42cf326e158f7ead637539b5388c7d65b9cf9c8057bf1fdf5759c",
+    "place": "flat",
+    "prim": "/flat/Effects/wisp",
+    "record_key": "790ec69c1376dd94f3f86d506f2435b5f17c308827a017cb66bb845b8a39bf39",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/particle_effects@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "flat"
+  ],
+  "state": "draft",
+  "tags": {
+    "effect": [
+      "smoke_wisp"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "place_kind": [
+      "earth",
+      "inside"
+    ],
+    "weather": []
+  },
+  "title": "Wisp",
+  "usd": {
+    "default_prim": "/wisp",
+    "layer": "effects",
+    "meters_per_unit": null,
+    "path": "score_lib/effect/wisp/1/effect.usda",
+    "root": "effect.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

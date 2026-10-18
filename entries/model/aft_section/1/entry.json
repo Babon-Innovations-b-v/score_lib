@@ -1,0 +1,103 @@
+{
+  "address": "model/aft_section@1",
+  "files": {
+    "model.json": {
+      "bytes": 384,
+      "role": "record",
+      "sha256": "975aac1f6342b2eb1a39b429df6e5df96f80577ede39334590d2530a4d7f07ee"
+    },
+    "model.usdc": {
+      "bytes": 5935912,
+      "role": "usd",
+      "sha256": "af87d945c2da5552db352c563c7459f5a6c3c4b759beb3e55f18b18dfb32c6dc"
+    },
+    "preview.png": {
+      "bytes": 24344,
+      "role": "picture",
+      "sha256": "16303548f4c85edc153f27391837ba6126c76a6c6e2544487ec11baa74c23fe8"
+    },
+    "textures/aft_section_base_color.png": {
+      "bytes": 1733947,
+      "role": "texture",
+      "sha256": "1d96ed0bdd4d5cc051fa3b0ce8d53ee27b301fe6819fffa71a088fd2099137af"
+    },
+    "textures/aft_section_metal_roughness.png": {
+      "bytes": 1438471,
+      "role": "texture",
+      "sha256": "ab53eacf9ba0f068f66771ac952b33cda124b9096d78335290de23d058b6247f"
+    },
+    "textures/aft_section_normal.png": {
+      "bytes": 8391907,
+      "role": "texture",
+      "sha256": "da321af7ba4d45a062e45ff2607c558dc7ea67e2419d7c1105adc80a577ae946"
+    }
+  },
+  "id": "aft_section",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T15:53:36.185584+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "403aa30271bf5a8a8102ec86cb5ece927247fcf91b571617d9771f44a049d4b3",
+    "models": [],
+    "node": "assembly@wreck",
+    "output": "591bca186cdb2ba3104fc444e86a6ff62eeb734cbab1de4f4f2c54506dd99291",
+    "place": "wreck",
+    "record_key": "ae3d3dca811e262167338103d0abcba1e68bff01135dac7ecd4e6f2f4113254b",
+    "source_name": "aft_section",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "moon",
+      "outside"
+    ]
+  },
+  "title": "Aft section",
+  "usd": {
+    "default_prim": "/aft_section",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/aft_section/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

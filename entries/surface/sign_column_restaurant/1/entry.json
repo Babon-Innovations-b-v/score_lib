@@ -1,0 +1,108 @@
+{
+  "address": "surface/sign_column_restaurant@1",
+  "files": {
+    "material.usda": {
+      "bytes": 583,
+      "role": "usd",
+      "sha256": "c22f19acad5c4fa4992e37f59746b99c9184b66d66763d20a8c978f87aaa9e44"
+    },
+    "preview.png": {
+      "bytes": 13732,
+      "role": "picture",
+      "sha256": "a516913363e30b056cd213501c22b970be14f1763206823b2f450bec676f8a07"
+    },
+    "surface.json": {
+      "bytes": 213,
+      "role": "record",
+      "sha256": "94293b3e3b15122504cc6876fb91c61930993236d9d06f3eac08c948925c6be1"
+    }
+  },
+  "id": "sign_column_restaurant",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "print",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "print"
+    ],
+    "recipe": [
+      "printed"
+    ]
+  },
+  "title": "Sign column restaurant",
+  "usd": {
+    "default_prim": "/sign_column_restaurant",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/sign_column_restaurant/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

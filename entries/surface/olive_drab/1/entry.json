@@ -1,0 +1,88 @@
+{
+  "address": "surface/olive_drab@1",
+  "files": {
+    "material.usda": {
+      "bytes": 546,
+      "role": "usd",
+      "sha256": "414dc10040713d75c2cb93b9638ffadc857a93b1f70415587e0edf8e43bf37ca"
+    },
+    "preview.png": {
+      "bytes": 18628,
+      "role": "picture",
+      "sha256": "75b84907f75fd5fa2ef31fdb9c804fd42c23c5659c96b2b24b6d2e31527bbceb"
+    },
+    "surface.json": {
+      "bytes": 330,
+      "role": "record",
+      "sha256": "8cf67b8024512ff30c7d5230e3f8dd0488c8907be7b98eff9f0fd4be8a3a4374"
+    }
+  },
+  "id": "olive_drab",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "fabric",
+    "place": "cockpit",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "cockpit",
+    "engineroom",
+    "galley",
+    "navigation",
+    "quarters",
+    "shiplock",
+    "storage",
+    "walkway"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "fabric"
+    ],
+    "recipe": [
+      "rubber"
+    ]
+  },
+  "title": "Olive drab",
+  "usd": {
+    "default_prim": "/olive_drab",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/olive_drab/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

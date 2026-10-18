@@ -1,0 +1,108 @@
+{
+  "address": "surface/mars_regolith@1",
+  "files": {
+    "material.usda": {
+      "bytes": 561,
+      "role": "usd",
+      "sha256": "71d4e7953c9fc2e0f0e5a2a178d420451e2df8a523f2f703096bdf0ae6dc770d"
+    },
+    "preview.png": {
+      "bytes": 24136,
+      "role": "picture",
+      "sha256": "bc1f962f23e42d92919f9d13123c355ad81e17440f4f426b2a1f948f28dda3aa"
+    },
+    "surface.json": {
+      "bytes": 332,
+      "role": "record",
+      "sha256": "90ec7f734bdd14f076ab8878f213a24721877960556caba97d9f6b840c7747bb"
+    }
+  },
+  "id": "mars_regolith",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "mars_surface",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "mars_surface"
+    ],
+    "recipe": [
+      "rubber"
+    ]
+  },
+  "title": "Mars regolith",
+  "usd": {
+    "default_prim": "/mars_regolith",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/mars_regolith/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

@@ -1,0 +1,108 @@
+{
+  "address": "surface/tarp_cloth@1",
+  "files": {
+    "material.usda": {
+      "bytes": 539,
+      "role": "usd",
+      "sha256": "d55fbd9e2580594c232d77f696a1237e6d86b27d717c77ac15b05483df459033"
+    },
+    "preview.png": {
+      "bytes": 22344,
+      "role": "picture",
+      "sha256": "e5f1eac049a180edeb33584d0cc2bffd7cbdc5495960885fd6a2425e528556c0"
+    },
+    "surface.json": {
+      "bytes": 336,
+      "role": "record",
+      "sha256": "7325bbe4bb6724a34d7d11211241444468a0215b11dd2ac975e2472348398804"
+    }
+  },
+  "id": "tarp_cloth",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "fabric",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "fabric"
+    ],
+    "recipe": [
+      "rubber"
+    ]
+  },
+  "title": "Tarp cloth",
+  "usd": {
+    "default_prim": "/tarp_cloth",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/tarp_cloth/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

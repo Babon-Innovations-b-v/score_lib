@@ -1,0 +1,96 @@
+{
+  "address": "effect/storm_wisps_2_2@1",
+  "files": {
+    "clip.usdc": {
+      "bytes": 53376,
+      "role": "usd",
+      "sha256": "47ae9081417871ba4ded2ad3220f6919eee48dc3061bd58001c4eaebaf5bbe4a"
+    },
+    "effect.usda": {
+      "bytes": 8193,
+      "role": "usd",
+      "sha256": "49898d8c231c42e04aff12a801f78bc7e4db52233522ac655907dde2cdc2e0e0"
+    },
+    "preview.png": {
+      "bytes": 3032,
+      "role": "picture",
+      "sha256": "4fbabc135fc3729bf8b501fa54eefaf5e36dc52c31ad0ad7d130c575736f11d4"
+    },
+    "settings.json": {
+      "bytes": 1702,
+      "role": "record",
+      "sha256": "77d845a6299317cec69b90a5c4d1fa6333fd826fa3ba685639db059354a43182"
+    }
+  },
+  "id": "storm_wisps_2_2",
+  "kind": "effect",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/points.py",
+    "of": "clip.usdc at clip time 72.0"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-12T18:27:32.757391+00:00",
+      "by": "runner"
+    },
+    "code": "9b32f2200ac272fbb20a9a7b7f3190e8a3f4de0378733281b560755af276318d",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "from": "game/outside/dust/mars_wind.gd:28-39,51-52,316-339 (DRIFT_PUFFS_A_CELL 70, all blowing in a storm and none on a calm day, DRIFT_PUFF_M 0.5 growing to DRIFT_PUFF_GROWS 1.8, DRIFT_THICKNESS 0.32, spread 6), game/outside/dust/dust_grains.gd:19-21,41-45 (lit_smoke: MARS_DUST times SMOKE_LIFT 2.2, clipped to #ffc280), game/art/shaders/dust.gdshader (the lit puff)",
+    "models": [],
+    "node": "effects-layer@camp",
+    "output": "ba556d2238a88a22cad7bca11d03443466319f14ed988abf6ba9c1a5b933e9fe",
+    "place": "camp",
+    "prim": "/camp/Effects{weather=storm}storm_wisps_2_2",
+    "record_key": "22796041a04506a19a5f8cef4fa80eb14e4fa8879a95dfff20e7cbb9f5ea901a",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/particle_effects@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "camp"
+  ],
+  "state": "draft",
+  "tags": {
+    "effect": [
+      "dust_storm_wisps"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "place_kind": [
+      "mars",
+      "outside"
+    ],
+    "weather": [
+      "storm"
+    ]
+  },
+  "title": "Storm wisps 2 2",
+  "usd": {
+    "default_prim": "/storm_wisps_2_2",
+    "layer": "effects",
+    "meters_per_unit": null,
+    "path": "score_lib/effect/storm_wisps_2_2/1/effect.usda",
+    "root": "effect.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

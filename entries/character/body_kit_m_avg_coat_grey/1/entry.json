@@ -1,0 +1,155 @@
+{
+  "address": "character/body_kit_m_avg_coat_grey@1",
+  "files": {
+    "body.glb": {
+      "bytes": 2210576,
+      "role": "gltf",
+      "sha256": "2698e6263732dc822ad6efc088feea5db309576d61d431c6098c200521d7ae54"
+    },
+    "character.usdc": {
+      "bytes": 2199794,
+      "role": "usd",
+      "sha256": "2901faa040aa651a5063983b8021bff226f00ce5696ef7183510b6e3c76bde81"
+    },
+    "checks/build.json": {
+      "bytes": 14684,
+      "role": "record",
+      "sha256": "884937ff0a8902256921ab8282eacf8a92139c6f637f79baa7e4a9c87a8920f7"
+    },
+    "checks/joins.json": {
+      "bytes": 5487,
+      "role": "record",
+      "sha256": "4b3ad916aba25f794291488b511755e348f14d3d72405c4910b30f7459e7a5ed"
+    },
+    "checks/likeness.json": {
+      "bytes": 127,
+      "role": "record",
+      "sha256": "4ccfd2a2a58225a50797fe24777fef066e330c1a112854c6e3eb65eb28eff5d5"
+    },
+    "checks/parts.json": {
+      "bytes": 2468,
+      "role": "record",
+      "sha256": "fe108dadcb9e275efdc0673f8ac9cab3854d73781c25529f76c902b30436d345"
+    },
+    "checks/rig.json": {
+      "bytes": 4289,
+      "role": "record",
+      "sha256": "cb49c746e0d565d4e0556cfb35df5edb30e5090c9117195de36a8d1cbd210ee7"
+    },
+    "checks/shell.json": {
+      "bytes": 1768,
+      "role": "record",
+      "sha256": "26c65f61b575a77e94724a16776b663db8e90da6c26b90a7e338d2612a02320c"
+    },
+    "look.json": {
+      "bytes": 424,
+      "role": "record",
+      "sha256": "4f550af3250e469c00255639d9a9a0c41a99a1f0247784174404db68c833a237"
+    },
+    "textures/kit_m_avg_0.png": {
+      "bytes": 25413,
+      "role": "texture",
+      "sha256": "be0ec90511998d4fa19a0a52a7fb2ad90bd272c9ed4a672189d4367825d93250"
+    },
+    "textures/kit_m_avg_1.png": {
+      "bytes": 1592,
+      "role": "texture",
+      "sha256": "2b6e14ff45662864a1e81b90c4acecd43b9f8b593236ef8b1382ae11a53171b7"
+    }
+  },
+  "id": "body_kit_m_avg_coat_grey",
+  "kind": "character",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1; route in score/stages/people/__init__.py:1-3",
+        "spdx": "MIT",
+        "what": "Pixal3D: picture to 3D (the body's shape)"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1; route in score/stages/people/__init__.py:1-3",
+        "spdx": "LicenseRef-DINOv3-License",
+        "text": "DINOv3 licence",
+        "what": "Pixal3D's encoder (DINOv3)"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1; route in score/stages/people/__init__.py:1-3",
+        "spdx": "MIT",
+        "what": "SegviGen on TRELLIS.2: the finish map laid on the shape (surface stage)"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1; route in score/stages/people/__init__.py:1-3",
+        "spdx": "LicenseRef-paid-API-terms",
+        "text": "paid API",
+        "what": "Nano Banana Pro: finish maps (surface stage)"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1; route in score/stages/people/__init__.py:1-3",
+        "spdx": "LicenseRef-paid-API-terms",
+        "text": "paid API",
+        "what": "Gemini 3.1 Pro: finishes listed and named (surface stage)"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1; route in score/stages/people/__init__.py:1-3",
+        "spdx": "Apache-2.0",
+        "what": "SOMA-X and MHR: the skeleton"
+      }
+    ],
+    "note": "the paper's Table C1: every model in the framework must allow commercial use of its output (Pixal3D's and SegviGen's encoder); the provider's terms of service for a paid API; the paper (Table C1) states every model in the framework allows commercial use of its output",
+    "spdx": "Apache-2.0 AND LicenseRef-DINOv3-License AND LicenseRef-paid-API-terms AND MIT"
+  },
+  "picture": null,
+  "picture_reason": "no accepted people-take close-up of this look",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-13T05:46:54.502218+00:00",
+      "by": "runner"
+    },
+    "code": "64fcfceb52c9d0bd74ceb0f4498554cefe6c685b156cfea7691b196f951a5679",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "look": "kit_m_avg-coat-grey",
+    "models": [],
+    "node": "people-body-kit_m_avg-coat-grey",
+    "output": "3217e5aaa6f51314745fe23071d2137b373d14ad087efa7c2059c57774c1b3ab",
+    "place": null,
+    "record_key": "3f8b29efac6b3fa3283a3c9d98bb77dbe0277bfc31c9840dcc7bf6ae5bb3e7a7",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "character": [
+      "body"
+    ],
+    "engine": [
+      "usd"
+    ]
+  },
+  "title": "Kit_m_avg coat grey",
+  "usd": {
+    "default_prim": "/Character",
+    "layer": "characters",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/character/body_kit_m_avg_coat_grey/1/character.usdc",
+    "root": "character.usdc",
+    "time_codes_per_second": 30.0,
+    "up_axis": "Y",
+    "use": "payload"
+  },
+  "version": 1
+}

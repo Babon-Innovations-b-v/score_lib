@@ -1,0 +1,108 @@
+{
+  "address": "surface/poster_launch@1",
+  "files": {
+    "material.usda": {
+      "bytes": 552,
+      "role": "usd",
+      "sha256": "8602106c4d98e3bbb88758f128a2769935cfb33373f2b5ebab822312ef3e6e2f"
+    },
+    "preview.png": {
+      "bytes": 16889,
+      "role": "picture",
+      "sha256": "8519058a84041c9f4ca2e614606ef1c2bd460bcd9df2c4e1f4956ea64a198976"
+    },
+    "surface.json": {
+      "bytes": 197,
+      "role": "record",
+      "sha256": "36aa15d60f1d2e1f8a6fba2a78ee04abfe9797ec1e6e4d20898f1607595cf9c7"
+    }
+  },
+  "id": "poster_launch",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "print",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "print"
+    ],
+    "recipe": [
+      "printed"
+    ]
+  },
+  "title": "Poster launch",
+  "usd": {
+    "default_prim": "/poster_launch",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/poster_launch/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

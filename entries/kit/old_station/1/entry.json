@@ -1,0 +1,84 @@
+{
+  "address": "kit/old_station@1",
+  "files": {
+    "kit.json": {
+      "bytes": 9017,
+      "role": "record",
+      "sha256": "7d47bf635c1a61c0c50b7825c60b6c38d78dc8959232978d682efd158068d0c4"
+    },
+    "preview.png": {
+      "bytes": 3808,
+      "role": "picture",
+      "sha256": "c351e8775f68a3f4042b243bea87a2569215a94c5888a494491b9f6126bc5570"
+    }
+  },
+  "id": "old_station",
+  "kind": "kit",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/plan.py",
+    "of": "kit.json pieces (28) from above"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "pieces": 28,
+    "place": "old_station",
+    "ship_kit": null,
+    "source": "data/kit/old_station.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/room_layout@1",
+    "model/apron_2p6@1",
+    "model/bag_pile@1",
+    "model/bag_stack@1",
+    "model/cable_run_1p28@1",
+    "model/cable_run_2p33@1",
+    "model/cable_run_3@1",
+    "model/cable_run_3p85@1",
+    "model/cable_run_4p79@1",
+    "model/cable_run_5p55@1",
+    "model/cable_run_7@1",
+    "model/comms_mast@1",
+    "model/first_module@1",
+    "model/gas_bottle@1",
+    "model/hab_lander@1",
+    "model/lab_module@1",
+    "model/parts_rack_1@1",
+    "model/power_unit.old_station@1",
+    "model/radiator@1",
+    "model/rover@1",
+    "model/solar_mast@1",
+    "model/solar_mast_dead@1",
+    "model/spare_wheel@1",
+    "model/walkway_tube_2p7@1",
+    "model/walkway_tube_3p6@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "old_station"
+  ],
+  "state": "draft",
+  "tags": {
+    "place_kind": [
+      "outside",
+      "moon"
+    ]
+  },
+  "title": "Old station kit",
+  "usd": null,
+  "version": 1
+}

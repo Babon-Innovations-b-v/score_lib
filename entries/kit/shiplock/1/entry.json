@@ -1,0 +1,136 @@
+{
+  "address": "kit/shiplock@1",
+  "files": {
+    "kit.json": {
+      "bytes": 13165,
+      "role": "record",
+      "sha256": "fb8d31f60732f8d5f81ce8d197b960c3b3b153ff95954eb379eabae708481dd2"
+    },
+    "preview.png": {
+      "bytes": 4445,
+      "role": "picture",
+      "sha256": "d449d80ab16ed8a9e0f6aab9fcc5caa3e5226438cd471702a2086168de6bd500"
+    },
+    "ship_kit/job-kit-floor_1.json": {
+      "bytes": 193024,
+      "role": "record",
+      "sha256": "6081222a1b1d11ffc1f5c2724c432b999de57ca57d06dc18c5c901d4628cc53f"
+    },
+    "ship_kit/job-kit-floor_2.json": {
+      "bytes": 193026,
+      "role": "record",
+      "sha256": "6e43eea7701b841c40472897423ddeb7d8ea877b3ff29943ac23c01ab19ef604"
+    },
+    "ship_kit/job-kit-floor_3.json": {
+      "bytes": 192651,
+      "role": "record",
+      "sha256": "fcc459f9db68c415893c82dcde10b97dbb310e1c0d27db79b2ac1136cb3a916c"
+    },
+    "ship_kit/job-kit-gear_1.json": {
+      "bytes": 192649,
+      "role": "record",
+      "sha256": "49a6dec40be3270b1e35020069c23e812a5f0499ecfd1fef47270248245c6780"
+    },
+    "ship_kit/job-kit-gear_2.json": {
+      "bytes": 192789,
+      "role": "record",
+      "sha256": "f6ae0bc15a2dfb8a06bbfc5a5fe2ee9edf508aefba880e4cceecce97e30ac4d5"
+    },
+    "ship_kit/job-kit-walls_high.json": {
+      "bytes": 193447,
+      "role": "record",
+      "sha256": "93e04cba37a41d7cca5d28525352dcdbc94388b0728342f48df32f70b6feb0ca"
+    },
+    "ship_kit/job-kit-walls_low.json": {
+      "bytes": 192816,
+      "role": "record",
+      "sha256": "52ee42df17dff9292f3c7cf8fdfa8d8827da4b8345447a6f3a71fc73462508bc"
+    },
+    "ship_kit/layout-full.json": {
+      "bytes": 13024,
+      "role": "record",
+      "sha256": "6b0a20d692576174a0f377eb42147f9be6a163ecc219e13407c5a931d2263686"
+    },
+    "ship_kit/layout.json": {
+      "bytes": 10584,
+      "role": "record",
+      "sha256": "11a829485eeccb8501fb9c56aba7e3ea4ec1f0e846115e2eaf5c303be06a4c7d"
+    },
+    "ship_kit/plan.json": {
+      "bytes": 4514,
+      "role": "record",
+      "sha256": "89dbe3e21e9791ff74b0dec29d3f53c3a08912a661c20483ddfd0b85a04834b2"
+    }
+  },
+  "id": "shiplock",
+  "kind": "kit",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/plan.py",
+    "of": "kit.json pieces (33) from above"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "pieces": 33,
+    "place": "shiplock",
+    "ship_kit": {
+      "accept": {
+        "at": "2026-10-16T00:16:39.751771+00:00",
+        "by": "runner"
+      },
+      "code": "fa0e03dae5d30889cf6f98455ec978fbd3b275e036d58494ccb2eb593df5217a",
+      "models": [],
+      "node": "ship_kit@shiplock",
+      "output": "39eb4731d0c8ebd3e0941bfda8b4f8721f9f7b4630d4b289fecc3a4956d2eef1",
+      "record_key": "aa93422835a776edaed3abb265e35ce8c4692e12a67e15a25e278f23e273e9bf"
+    },
+    "source": "data/kit/shiplock.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/room_layout@1",
+    "model/ceiling_light_panel_1.shiplock@1",
+    "model/door_leaf_1.shiplock@1",
+    "model/floor_grate_1.shiplock@1",
+    "model/outer_hatch_1@1",
+    "model/pipe_straight_1.shiplock@1",
+    "model/ring_floor_plate_1.shiplock@1",
+    "model/ring_floor_plate_2.shiplock@1",
+    "model/ring_floor_plate_3.shiplock@1",
+    "model/ring_floor_plate_4.shiplock@1",
+    "model/roof_face_panel_1.shiplock@1",
+    "model/wall_lower_plain_1.shiplock@1",
+    "model/wall_lower_plain_2.shiplock@1",
+    "model/wall_upper_plain_1.shiplock@1",
+    "model/wall_upper_plain_2.shiplock@1",
+    "model/wall_upper_plain_3.shiplock@1",
+    "model/wall_upper_plain_4.shiplock@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "shiplock"
+  ],
+  "state": "draft",
+  "tags": {
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Shiplock kit",
+  "usd": null,
+  "version": 1
+}

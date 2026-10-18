@@ -1,0 +1,108 @@
+{
+  "address": "surface/galvanized_dull@1",
+  "files": {
+    "material.usda": {
+      "bytes": 568,
+      "role": "usd",
+      "sha256": "bfb02464156007ce0f7d3ebaff316b9282569405d6a5f7a6b2c094454df02b24"
+    },
+    "preview.png": {
+      "bytes": 17368,
+      "role": "picture",
+      "sha256": "5758cc85e32fd61d917569ed3d924f6e4e7a8a4765f3f9589fae517c8abc0f2b"
+    },
+    "surface.json": {
+      "bytes": 216,
+      "role": "record",
+      "sha256": "1079abaabea1b4d2e945beb8dee164ca48e0b7041ad655fe9b94a8f374993627"
+    }
+  },
+  "id": "galvanized_dull",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "steel",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "steel"
+    ],
+    "recipe": [
+      "galvanized"
+    ]
+  },
+  "title": "Galvanized dull",
+  "usd": {
+    "default_prim": "/galvanized_dull",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/galvanized_dull/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

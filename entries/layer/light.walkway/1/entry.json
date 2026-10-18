@@ -1,0 +1,84 @@
+{
+  "address": "layer/light.walkway@1",
+  "files": {
+    "lamps.json": {
+      "bytes": 1998,
+      "role": "record",
+      "sha256": "4a71b534906d7e8e523397045c99911c460eeef587133c39e7e9dba05acfebe2"
+    },
+    "layer.usda": {
+      "bytes": 1318,
+      "role": "usd",
+      "sha256": "2e56a16f6ca56fedca5d8741c469fedafea17d0d4feebe87725ec68772651367"
+    }
+  },
+  "id": "light.walkway",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T10:11:51.521798+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/light.usda",
+        "sha256": "2e56a16f6ca56fedca5d8741c469fedafea17d0d4feebe87725ec68772651367"
+      }
+    },
+    "models": [],
+    "node": "assembly@walkway",
+    "output": "1dc1351be492896299a7b9efd113af8ad60584ef0750a6975a34519bcfe2690d",
+    "own_files": [],
+    "place": "walkway",
+    "record_key": "5aa3fd9e738de60a91da434e8522caed44f74785d8372bc5060177ecbf9d7d0a",
+    "side_records_from": "d6243ff03e0ab86bcb42c7e5b00769728200ced81c3d4db7e9dd3d4420a9ae04",
+    "source_name": "layers/light.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/light_rig@1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "walkway"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "light"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Walkway light layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "light",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/light.walkway/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

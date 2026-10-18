@@ -1,0 +1,103 @@
+{
+  "address": "model/cargo_case@1",
+  "files": {
+    "model.json": {
+      "bytes": 281,
+      "role": "record",
+      "sha256": "fe0f6a54a125925b2e546226059f5739b8c5a79081b260c076f67e556997c87b"
+    },
+    "model.usdc": {
+      "bytes": 1909378,
+      "role": "usd",
+      "sha256": "e9584e781448e471eacf45cb888ebfa17a55ca67b71a164c8dbcb68a27b2d5c9"
+    },
+    "preview.png": {
+      "bytes": 31510,
+      "role": "picture",
+      "sha256": "5ad9b17cd6fd69194d6967e2fc0715d4d06ba7ccefeecca518f40f7df0e2c26e"
+    },
+    "textures/cargo_case_base_color.png": {
+      "bytes": 3172021,
+      "role": "texture",
+      "sha256": "9ca882f0f6257593aecd757bc4df1643378f28535a230a145aad0ad3d5938546"
+    },
+    "textures/cargo_case_metal_roughness.png": {
+      "bytes": 2480320,
+      "role": "texture",
+      "sha256": "f773580772339ad37010af7b80e3dbdfe9f17757655666751b60e215029f271f"
+    },
+    "textures/cargo_case_normal.png": {
+      "bytes": 18045843,
+      "role": "texture",
+      "sha256": "42c2b46e13af9c1e304e4d75b3a66a34641501993627bcb4346445796408d5df"
+    }
+  },
+  "id": "cargo_case",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:16:00.039696+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "ea6adbeb8e687ef415292ca6284d4dfd3ce135c4b1e436f9072551c9f6e6728e",
+    "models": [],
+    "node": "assembly@campgrounds",
+    "output": "7fcf4c6f9552d4edb6020038bb83dd248f2e602f1958878438d52dfc3a7685bb",
+    "place": "campgrounds",
+    "record_key": "3e28c5bc4fca67388ebba8768e3cf58d643f791893e4237289ddba7e9754e64e",
+    "source_name": "cargo_case",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "campgrounds"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "mars",
+      "outside"
+    ]
+  },
+  "title": "Cargo case",
+  "usd": {
+    "default_prim": "/cargo_case",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/cargo_case/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

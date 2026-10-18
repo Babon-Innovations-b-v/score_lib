@@ -1,0 +1,140 @@
+{
+  "address": "character/dress_bram_work.airlock@1",
+  "files": {
+    "body.glb": {
+      "bytes": 74522952,
+      "role": "gltf",
+      "sha256": "55885ec96b3a3adaacbb95083028f49282a52415b619b72b6dc3384769f9bc6d"
+    },
+    "character.usdc": {
+      "bytes": 25797911,
+      "role": "usd",
+      "sha256": "96358abe06e20886455f4037666222c00d7087fc316cc34cbcec4f2bacde905d"
+    },
+    "dress.json": {
+      "bytes": 883,
+      "role": "record",
+      "sha256": "33dd17f92a248a89844f55a950dec32a4cf1c2ad565de5ff103c68482fdfb5db"
+    },
+    "look.json": {
+      "bytes": 279,
+      "role": "record",
+      "sha256": "9f0dfcdea05d7c913fd20ac801c2abb9713f397be943a81401f9825377e5a27f"
+    },
+    "picture.png": {
+      "bytes": 809072,
+      "role": "picture",
+      "sha256": "e918d5c596cca7f128e6104553af34fba7738d1cace1ffc5570bc6ad0b2039ef"
+    },
+    "textures/body_0.png": {
+      "bytes": 1015,
+      "role": "texture",
+      "sha256": "e08ba7ecf9efcfe9dc664d5011abc746450d59a85c3522c447aa7522e27583ae"
+    },
+    "textures/body_1.png": {
+      "bytes": 12964,
+      "role": "texture",
+      "sha256": "b9e847240fa32380174b201b0eb5bb6e297ad9eb44f0f4d844325fe19c9687ce"
+    }
+  },
+  "id": "dress_bram_work.airlock",
+  "kind": "character",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1; route in score/stages/people/__init__.py:1-3",
+        "spdx": "MIT",
+        "what": "Pixal3D: picture to 3D (the body's shape)"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1; route in score/stages/people/__init__.py:1-3",
+        "spdx": "LicenseRef-DINOv3-License",
+        "text": "DINOv3 licence",
+        "what": "Pixal3D's encoder (DINOv3)"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1; route in score/stages/people/__init__.py:1-3",
+        "spdx": "MIT",
+        "what": "SegviGen on TRELLIS.2: the finish map laid on the shape (surface stage)"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1; route in score/stages/people/__init__.py:1-3",
+        "spdx": "LicenseRef-paid-API-terms",
+        "text": "paid API",
+        "what": "Nano Banana Pro: finish maps (surface stage)"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1; route in score/stages/people/__init__.py:1-3",
+        "spdx": "LicenseRef-paid-API-terms",
+        "text": "paid API",
+        "what": "Gemini 3.1 Pro: finishes listed and named (surface stage)"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1; route in score/stages/people/__init__.py:1-3",
+        "spdx": "Apache-2.0",
+        "what": "SOMA-X and MHR: the skeleton"
+      }
+    ],
+    "note": "the paper's Table C1: every model in the framework must allow commercial use of its output (Pixal3D's and SegviGen's encoder); the provider's terms of service for a paid API; the paper (Table C1) states every model in the framework allows commercial use of its output",
+    "spdx": "Apache-2.0 AND LicenseRef-DINOv3-License AND LicenseRef-paid-API-terms AND MIT"
+  },
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "people-take-bram_wide-work: closeup/pp-bram_wide-work-s1.png"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-13T12:49:41.663224+00:00",
+      "by": "runner"
+    },
+    "code": "bc650586616cc463c162315c91260149dc71b3545ac26582695a2ba649f1fb5c",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "look": "bram-work",
+    "models": [],
+    "node": "people-dress-bram-work-in-airlock",
+    "output": "8616afb289f96b0d0a049615cd1ca628f03805e79552c364f3ba585ac8a2c5e7",
+    "place": "airlock",
+    "record_key": "51cc33d55d515f1ea2d3f4a73666c7c88f80f567937cf55baea67ea2e1cea4b8",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock"
+  ],
+  "state": "draft",
+  "tags": {
+    "character": [
+      "dress"
+    ],
+    "engine": [
+      "usd"
+    ]
+  },
+  "title": "Bram work",
+  "usd": {
+    "default_prim": "/Character",
+    "layer": "characters",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/character/dress_bram_work.airlock/1/character.usdc",
+    "root": "character.usdc",
+    "time_codes_per_second": 30.0,
+    "up_axis": "Y",
+    "use": "payload"
+  },
+  "version": 1
+}

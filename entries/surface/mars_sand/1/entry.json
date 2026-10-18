@@ -1,0 +1,108 @@
+{
+  "address": "surface/mars_sand@1",
+  "files": {
+    "material.usda": {
+      "bytes": 548,
+      "role": "usd",
+      "sha256": "07d1dea403d933a9f80570aad3c64b392d6970854f5652927b74eede8bdf0ee5"
+    },
+    "preview.png": {
+      "bytes": 24097,
+      "role": "picture",
+      "sha256": "72ca8550bca6024ddc29f2f8c6778f6e5faa7a5e5c80e1a53b734d3ef41b22cd"
+    },
+    "surface.json": {
+      "bytes": 336,
+      "role": "record",
+      "sha256": "b994bdfcccc54766d2c1f120109347322472accfcf3439d03a15549704efc940"
+    }
+  },
+  "id": "mars_sand",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "mars_surface",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "mars_surface"
+    ],
+    "recipe": [
+      "rubber"
+    ]
+  },
+  "title": "Mars sand",
+  "usd": {
+    "default_prim": "/mars_sand",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/mars_sand/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

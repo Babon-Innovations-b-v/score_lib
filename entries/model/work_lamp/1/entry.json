@@ -1,0 +1,103 @@
+{
+  "address": "model/work_lamp@1",
+  "files": {
+    "model.json": {
+      "bytes": 265,
+      "role": "record",
+      "sha256": "954e4e1222623d7220a00f2294449d7defea9e4e55a7b17bdb29f3a86b56726e"
+    },
+    "model.usdc": {
+      "bytes": 511821,
+      "role": "usd",
+      "sha256": "eba78c632d1ae40a71cee54a0c52e0350649777586baf45e18be0b18a33e181e"
+    },
+    "preview.png": {
+      "bytes": 21015,
+      "role": "picture",
+      "sha256": "e3466396ab8441bf920f3294d27c3dc026f5683f54cf3b4007373b57f0e5c408"
+    },
+    "textures/work_lamp_base_color.png": {
+      "bytes": 189721,
+      "role": "texture",
+      "sha256": "62abceb2a6fe85a7cbb485615374bbde44d88066f9a537b018ff8630e3ee753d"
+    },
+    "textures/work_lamp_metal_roughness.png": {
+      "bytes": 164697,
+      "role": "texture",
+      "sha256": "32ab76e2a2674b0d2c4081a95ed869a1d690e38adb5d2e0db5df9022c90c8904"
+    },
+    "textures/work_lamp_normal.png": {
+      "bytes": 755164,
+      "role": "texture",
+      "sha256": "f252367e0f0a78a5ab1b30dbb0f493b9c1e9e140d2f878c8c36b461736f0954c"
+    }
+  },
+  "id": "work_lamp",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T15:53:36.185584+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "34a2b43f0d1d9beb224b467ada7b45cb770c7c24cba8e278498b4ce2a4539c35",
+    "models": [],
+    "node": "assembly@wreck",
+    "output": "591bca186cdb2ba3104fc444e86a6ff62eeb734cbab1de4f4f2c54506dd99291",
+    "place": "wreck",
+    "record_key": "ae3d3dca811e262167338103d0abcba1e68bff01135dac7ecd4e6f2f4113254b",
+    "source_name": "work_lamp",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "moon",
+      "outside"
+    ]
+  },
+  "title": "Work lamp",
+  "usd": {
+    "default_prim": "/work_lamp",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/work_lamp/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

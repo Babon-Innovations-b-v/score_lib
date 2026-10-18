@@ -1,0 +1,108 @@
+{
+  "address": "surface/screen_teal@1",
+  "files": {
+    "material.usda": {
+      "bytes": 626,
+      "role": "usd",
+      "sha256": "9bd29d8a5968a39e1fc6f74730aff5d8d4a46717abb3c51a1563be5562882731"
+    },
+    "preview.png": {
+      "bytes": 21640,
+      "role": "picture",
+      "sha256": "bb111bb4338b988c8018497a2de77ac9bce0c165e4a848a830aaf8a4d35e3c91"
+    },
+    "surface.json": {
+      "bytes": 266,
+      "role": "record",
+      "sha256": "e287452156d188c24c9f7a0127e968afa2dc0ad5ce5d9d6dd2bb9a4c2dd0f961"
+    }
+  },
+  "id": "screen_teal",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "light",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "light"
+    ],
+    "recipe": [
+      "glowing"
+    ]
+  },
+  "title": "Screen teal",
+  "usd": {
+    "default_prim": "/screen_teal",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/screen_teal/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

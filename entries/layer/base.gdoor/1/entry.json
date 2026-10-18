@@ -1,0 +1,79 @@
+{
+  "address": "layer/base.gdoor@1",
+  "files": {
+    "layer.usda": {
+      "bytes": 216460,
+      "role": "usd",
+      "sha256": "f32643d438c15a33b757e7c0c12a6cbc0d1d0724f1b3bcd02625d1ffcef1ca55"
+    }
+  },
+  "id": "base.gdoor",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-13T08:07:15.141411+00:00",
+      "by": "runner"
+    },
+    "code": "0b158c668b94c11dfa4edc5aae6aca004c40e9e698701955b77f3799dbce1b7f",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/base.usda",
+        "sha256": "fbe2f5eb3475fdb7ac3867d8ab7761884e830fa4768834a18a614d8581da7dd7"
+      }
+    },
+    "models": [],
+    "node": "assembly@gdoor",
+    "output": "68fc03418ea3f6bcd5ebf0ea6c56d1418ac865151a84199080152c3be97ad50a",
+    "own_files": [],
+    "place": "gdoor",
+    "record_key": "70a152d0500ea210cff8a69b8904b2ded93cd1287dac91a63bb0ca90471ec25a",
+    "side_records_from": null,
+    "source_name": "layers/base.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/room_layout@1"
+  },
+  "requires": [
+    "model/lattice_ring_rib_1.gdoor@1",
+    "model/wall_upper_plain_1.gdoor@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "gdoor"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "base"
+    ],
+    "place_kind": []
+  },
+  "title": "Gdoor base layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/base.gdoor/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

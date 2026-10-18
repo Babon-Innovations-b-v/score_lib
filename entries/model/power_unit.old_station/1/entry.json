@@ -1,0 +1,103 @@
+{
+  "address": "model/power_unit.old_station@1",
+  "files": {
+    "model.json": {
+      "bytes": 296,
+      "role": "record",
+      "sha256": "07809de8539dd1f75b39ae9c2e7d13484b446e0fc04f5bdfaf6a2acb07e11a4a"
+    },
+    "model.usdc": {
+      "bytes": 1922707,
+      "role": "usd",
+      "sha256": "3955bdc682ab8f1b46bb52ea830fb3215f850d1f883ef30d85a6ffca0f85da86"
+    },
+    "preview.png": {
+      "bytes": 39096,
+      "role": "picture",
+      "sha256": "3cb11062cc36b2ee592c8fe78bd0f213abe6cfd902e00d4df68ab5fd0c6db3f1"
+    },
+    "textures/power_unit_base_color.png": {
+      "bytes": 3163561,
+      "role": "texture",
+      "sha256": "3bcef364caf5751d5e24aaeb8ea8749266d711f4ef43a11fc45f1971853e9db6"
+    },
+    "textures/power_unit_metal_roughness.png": {
+      "bytes": 4024142,
+      "role": "texture",
+      "sha256": "496b38a8f10444565317772a8c12315aadad218a65d6ace0f86c37b755a78b04"
+    },
+    "textures/power_unit_normal.png": {
+      "bytes": 16335962,
+      "role": "texture",
+      "sha256": "a591a52c904037367a6cb7f908f5298b7eef3d8ece9a941b2b8a21d9b1bda20b"
+    }
+  },
+  "id": "power_unit.old_station",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:02:30.466230+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "448bf4d5b818486c9bea1a20d89ef057de4569af96a48469392a84e0113383b7",
+    "models": [],
+    "node": "assembly@old_station",
+    "output": "f60adc09d2c14a31314d3bd31f69c2601467bfbcf728c76faa051b30b1810b56",
+    "place": "old_station",
+    "record_key": "7d9d97819faa5aebdafc6de56b258e509d111fd6834f0d009658ac7904c3e290",
+    "source_name": "power_unit",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "old_station"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "moon",
+      "outside"
+    ]
+  },
+  "title": "Power unit",
+  "usd": {
+    "default_prim": "/power_unit",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/power_unit.old_station/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

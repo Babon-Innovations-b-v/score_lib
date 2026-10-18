@@ -1,0 +1,108 @@
+{
+  "address": "surface/padding_grey_paint@1",
+  "files": {
+    "material.usda": {
+      "bytes": 579,
+      "role": "usd",
+      "sha256": "9851fa25b5311ec9fc58b28543321f39f7188f1fa9bd410ff1acf6664003ee1b"
+    },
+    "preview.png": {
+      "bytes": 18360,
+      "role": "picture",
+      "sha256": "3766c23f1430c132ad98ed4a65d2003551fe5ee8a54cf9290b83bfe8cfe1b473"
+    },
+    "surface.json": {
+      "bytes": 181,
+      "role": "record",
+      "sha256": "f7a922cdc7be7f6d4c83ea3700762b6fbd62f104152f2a9a206818859df6c6ce"
+    }
+  },
+  "id": "padding_grey_paint",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "painted",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "painted"
+    ],
+    "recipe": [
+      "painted_metal"
+    ]
+  },
+  "title": "Padding grey paint",
+  "usd": {
+    "default_prim": "/padding_grey_paint",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/padding_grey_paint/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

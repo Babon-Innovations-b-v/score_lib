@@ -1,0 +1,84 @@
+{
+  "address": "layer/characters.airlock@1",
+  "files": {
+    "characters.json": {
+      "bytes": 176,
+      "role": "record",
+      "sha256": "8d33c7df9646a5f946c3a0b85a02983443120d236b2632e7d54afb5b172ace7a"
+    },
+    "layer.usda": {
+      "bytes": 127,
+      "role": "usd",
+      "sha256": "975290ac9444b82e18ccb01fe8195ee3d14612abadad9d7ba885d0765dcc90af"
+    }
+  },
+  "id": "characters.airlock",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T21:49:09.803965+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/characters.usda",
+        "sha256": "975290ac9444b82e18ccb01fe8195ee3d14612abadad9d7ba885d0765dcc90af"
+      }
+    },
+    "models": [],
+    "node": "assembly@airlock",
+    "output": "8900f72fdf3585e5c853f71bbe4723b74677075a11235a7acb403664c1ec2464",
+    "own_files": [],
+    "place": "airlock",
+    "record_key": "1971b952fc7cf77c7898f3951a1958e959f95e422ab47f4ce6910bda0ff3bdc3",
+    "side_records_from": "b8c6bb545e4aa2800655ad50a14a960efa19f94efe823df6f492cc1f3847c171",
+    "source_name": "layers/characters.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/cast_spread@1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "characters"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Airlock characters layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "characters",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/characters.airlock/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": 30.0,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

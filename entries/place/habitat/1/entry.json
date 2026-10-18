@@ -1,0 +1,122 @@
+{
+  "address": "place/habitat@1",
+  "files": {
+    "contract.json": {
+      "bytes": 99,
+      "role": "record",
+      "sha256": "c2b7151f92e6a67ca4666ea747ad262b67b4d0af824cc83862ce64d8cc49d12c"
+    },
+    "edit.usda": {
+      "bytes": 183,
+      "role": "usd",
+      "sha256": "8fc5485ea9a58537dd8289c516a85733e069ad7a17b866471667b8795142454f"
+    },
+    "gaps.json": {
+      "bytes": 2431,
+      "role": "record",
+      "sha256": "25c2b124bf4beefd399c84f175c5a079c8ccc7a40fef86a48cd0f39ab304fb50"
+    },
+    "habitat.usda": {
+      "bytes": 612,
+      "role": "usd",
+      "sha256": "d34fc18c39cfbc47228ef46aca92b18eb6b48a9d5176451d9d0b27fd03d2f23c"
+    },
+    "inputs.json": {
+      "bytes": 26509,
+      "role": "record",
+      "sha256": "7034dcc63c4de78ce8dddf64befbde16af8e73e37dee0f371d7b1b41c227576b"
+    },
+    "origin.json": {
+      "bytes": 929,
+      "role": "record",
+      "sha256": "45325ba9dd88f2ee20704966e725c089deddc8db810fe365a461aebea6ef7602"
+    },
+    "scene.json": {
+      "bytes": 7738,
+      "role": "record",
+      "sha256": "7dd4a5087b8167c6d53ed852cf42461358238c613e87a89d055d945012f70cfd"
+    }
+  },
+  "id": "habitat",
+  "kind": "place",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T09:31:21.711004+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "complete": {
+      "accept": {
+        "at": "2026-10-17T14:28:31.840020+00:00",
+        "by": "runner"
+      },
+      "code": "614e17d70adbc54d15ef2ac7532458f7dbfe393cb1a802ed4b39c5bbd5b6e794",
+      "models": [],
+      "node": "complete@habitat",
+      "output": "699d3bfeb478a7de1334e186efed45d787c0daf71bf2f6594423ecb26d720784",
+      "record_key": "305dff9af24d8ddaecb6e1aa7f3c62054e851f8d8bb14ef804e0576ed1ba5b57"
+    },
+    "complete_failing": [
+      "named gaps"
+    ],
+    "gaps": "data/checks/gaps/habitat.json",
+    "models": [],
+    "node": "assembly@habitat",
+    "output": "e6cb813b79be54e9c4ec9a531b2407cc81765e13b62c9b0962394ef9645519d6",
+    "place": "habitat",
+    "record_key": "e2801490121188a98eb1a3bfb7c0acdf01953b265874ff4b2a27a83a896bd500",
+    "unresolved_sublayers": [],
+    "world": "world1"
+  },
+  "requires": [
+    "layer/base.habitat@1",
+    "layer/characters.habitat@1",
+    "layer/effects.habitat@1",
+    "layer/light.habitat@1",
+    "layer/motion.habitat@1",
+    "layer/settle.habitat@1",
+    "layer/sound.habitat@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "habitat"
+  ],
+  "state": "draft",
+  "tags": {
+    "complete": [
+      "named_gaps"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Habitat",
+  "usd": {
+    "default_prim": "/habitat",
+    "layer": "root",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/place/habitat/1/habitat.usda",
+    "root": "habitat.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": "Y",
+    "use": "open"
+  },
+  "version": 1
+}

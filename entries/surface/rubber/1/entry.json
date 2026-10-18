@@ -1,0 +1,108 @@
+{
+  "address": "surface/rubber@1",
+  "files": {
+    "material.usda": {
+      "bytes": 534,
+      "role": "usd",
+      "sha256": "58c37a70fe8b3bd5722b525e6c9afc283faf614caf816a6ac6acf2eb887d48f5"
+    },
+    "preview.png": {
+      "bytes": 15457,
+      "role": "picture",
+      "sha256": "2f36ab08fc248bf9e019255f08cbec10cc227ab747f3d15f6de54c107d197267"
+    },
+    "surface.json": {
+      "bytes": 368,
+      "role": "record",
+      "sha256": "e397130de49458356d36f52f8179d1a69f5e05729c4c609eac625868f6ffffe0"
+    }
+  },
+  "id": "rubber",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "rubber",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "rubber"
+    ],
+    "recipe": [
+      "rubber"
+    ]
+  },
+  "title": "Rubber",
+  "usd": {
+    "default_prim": "/rubber",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/rubber/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

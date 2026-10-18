@@ -1,0 +1,95 @@
+{
+  "address": "layer/sound.engineroom@1",
+  "files": {
+    "layer.usda": {
+      "bytes": 146974,
+      "role": "usd",
+      "sha256": "91e25b1cfa60fc685c41e4419a1b4fbaf359ce9784e72bbebe0ca492c5e2bf83"
+    },
+    "sound.json": {
+      "bytes": 25442,
+      "role": "record",
+      "sha256": "9f88209dffc727235e6282fc9e15bd64daf8c30b627ec837ccf105e65b9f65f2"
+    }
+  },
+  "id": "sound.engineroom",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T20:05:54.680906+00:00",
+      "by": "runner"
+    },
+    "code": "2c394fb6649caa75a8d8b07ff69369fcc217046e6bc8cb45084263388cde70f0",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/sound.usda",
+        "sha256": "56ff42f596c1c124726d70b8fb395a4eb6b1641114351b0e16af78b96fddadc6"
+      }
+    },
+    "models": [],
+    "node": "assembly@engineroom",
+    "output": "2b04a49e1020abb736cf72066d11757c544981b242f901765795a03462916330",
+    "own_files": [],
+    "place": "engineroom",
+    "record_key": "0025709ddb07848c2946b6abd8a4f122e919acdde9cc419b62d42eab63a0b1e6",
+    "side_records_from": "0ed326fb7025982146d10b1c6f7a309a412d9c2ad169f4aebc89b584c13c8283",
+    "source_name": "layers/sound.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/sound_layer@1"
+  },
+  "requires": [
+    "sound/footstep_grating@1",
+    "sound/footstep_rubber@1",
+    "sound/footsteps_metal.engineroom@1",
+    "sound/impact_grating@1",
+    "sound/impact_rubber@1",
+    "sound/impact_steel_plate@1",
+    "sound/scrape_grating@1",
+    "sound/scrape_rubber@1",
+    "sound/scrape_steel_plate@1",
+    "sound/ship_inside@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "engineroom"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "sound"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Engineroom sound layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "sound",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/sound.engineroom/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

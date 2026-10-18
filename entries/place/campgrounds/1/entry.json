@@ -1,0 +1,122 @@
+{
+  "address": "place/campgrounds@1",
+  "files": {
+    "campgrounds.usda": {
+      "bytes": 640,
+      "role": "usd",
+      "sha256": "7b7e6143c19c2478854a595c98a93bf3ec31704f8847293c712c6300bc692a0f"
+    },
+    "contract.json": {
+      "bytes": 99,
+      "role": "record",
+      "sha256": "c2b7151f92e6a67ca4666ea747ad262b67b4d0af824cc83862ce64d8cc49d12c"
+    },
+    "edit.usda": {
+      "bytes": 183,
+      "role": "usd",
+      "sha256": "8fc5485ea9a58537dd8289c516a85733e069ad7a17b866471667b8795142454f"
+    },
+    "gaps.json": {
+      "bytes": 4618,
+      "role": "record",
+      "sha256": "c8f9d881af0aa2c7676ffc488034c3bffef9ce9e4181e1bc283f11e347e2c8ba"
+    },
+    "inputs.json": {
+      "bytes": 3720,
+      "role": "record",
+      "sha256": "dde1a9e20ac540f61b8a42148e9a6aba152aedd1f6cc6b341da080aea8a0427b"
+    },
+    "origin.json": {
+      "bytes": 843,
+      "role": "record",
+      "sha256": "72031cce4f3eac41978b4761ffc95a1fd7d481ed64470ab0ed7c4c3ab546f43d"
+    },
+    "scene.json": {
+      "bytes": 5840,
+      "role": "record",
+      "sha256": "ca90a046e515d5f3f7b612d2168b2058234e37308e8fa281480e5b2effc9a59e"
+    }
+  },
+  "id": "campgrounds",
+  "kind": "place",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:16:00.039696+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "complete": {
+      "accept": {
+        "at": "2026-10-18T03:17:50.757899+00:00",
+        "by": "runner"
+      },
+      "code": "614e17d70adbc54d15ef2ac7532458f7dbfe393cb1a802ed4b39c5bbd5b6e794",
+      "models": [],
+      "node": "complete@campgrounds",
+      "output": "34c59e082db4a328cf5987815e0cffe967cbc0303cd5928519bd300eca575481",
+      "record_key": "fbf62ccf5208d567d3eb309672d1fd51edf40e4d8139d2b06df083e14fdb48be"
+    },
+    "complete_failing": [
+      "named gaps"
+    ],
+    "gaps": "data/checks/gaps/campgrounds.json",
+    "models": [],
+    "node": "assembly@campgrounds",
+    "output": "7fcf4c6f9552d4edb6020038bb83dd248f2e602f1958878438d52dfc3a7685bb",
+    "place": "campgrounds",
+    "record_key": "3e28c5bc4fca67388ebba8768e3cf58d643f791893e4237289ddba7e9754e64e",
+    "unresolved_sublayers": [],
+    "world": "world1"
+  },
+  "requires": [
+    "layer/base.campgrounds@1",
+    "layer/effects.campgrounds@1",
+    "layer/ground.campgrounds@1",
+    "layer/light.campgrounds@1",
+    "layer/motion.campgrounds@1",
+    "layer/settle.campgrounds@1",
+    "layer/sound.campgrounds@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "campgrounds"
+  ],
+  "state": "draft",
+  "tags": {
+    "complete": [
+      "named_gaps"
+    ],
+    "place_kind": [
+      "outside",
+      "mars"
+    ]
+  },
+  "title": "Campgrounds",
+  "usd": {
+    "default_prim": "/campgrounds",
+    "layer": "root",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/place/campgrounds/1/campgrounds.usda",
+    "root": "campgrounds.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": "Y",
+    "use": "open"
+  },
+  "version": 1
+}

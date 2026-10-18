@@ -1,0 +1,108 @@
+{
+  "address": "surface/quilt_cotton@1",
+  "files": {
+    "material.usda": {
+      "bytes": 548,
+      "role": "usd",
+      "sha256": "cf0e819306bfbc075724f36609ec8a9f86b16fc84e9dbfa9b265c3f3a71570b8"
+    },
+    "preview.png": {
+      "bytes": 23338,
+      "role": "picture",
+      "sha256": "ad7b9fc25960a1664064115cd1ebf12c88dabf24332a818ed64dc744c944a70f"
+    },
+    "surface.json": {
+      "bytes": 231,
+      "role": "record",
+      "sha256": "939a507439fcc222b245cf8308ea45105be32fb165b31547ccca75390b9f8e3d"
+    }
+  },
+  "id": "quilt_cotton",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "fabric",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "fabric"
+    ],
+    "recipe": [
+      "quilted"
+    ]
+  },
+  "title": "Quilt cotton",
+  "usd": {
+    "default_prim": "/quilt_cotton",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/quilt_cotton/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

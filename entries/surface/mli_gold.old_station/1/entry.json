@@ -1,0 +1,81 @@
+{
+  "address": "surface/mli_gold.old_station@1",
+  "files": {
+    "material.usda": {
+      "bytes": 545,
+      "role": "usd",
+      "sha256": "cd3268e0335862e5bce03472026bb2421b463e6715ff1ce15b997528f7bd7cf2"
+    },
+    "preview.png": {
+      "bytes": 20934,
+      "role": "picture",
+      "sha256": "5e190adcebea432efb103fa112827baf890be32dfc99af1ee7db4748de23af41"
+    },
+    "surface.json": {
+      "bytes": 222,
+      "role": "record",
+      "sha256": "1af70e86fec40c76db5c8f3d02ba968c5d525868561a60d11d10bbb9df84e3ee"
+    }
+  },
+  "id": "mli_gold.old_station",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "foil",
+    "place": "old_station",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "old_station"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "foil"
+    ],
+    "recipe": [
+      "anodized"
+    ]
+  },
+  "title": "Mli gold",
+  "usd": {
+    "default_prim": "/mli_gold",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/mli_gold.old_station/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

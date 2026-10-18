@@ -1,0 +1,118 @@
+{
+  "address": "place/storage@1",
+  "files": {
+    "contract.json": {
+      "bytes": 99,
+      "role": "record",
+      "sha256": "c2b7151f92e6a67ca4666ea747ad262b67b4d0af824cc83862ce64d8cc49d12c"
+    },
+    "edit.usda": {
+      "bytes": 183,
+      "role": "usd",
+      "sha256": "8fc5485ea9a58537dd8289c516a85733e069ad7a17b866471667b8795142454f"
+    },
+    "gaps.json": {
+      "bytes": 3461,
+      "role": "record",
+      "sha256": "5f88a179d0de2a2fcb18ed6d45fcb7445accf72e935592235ae54fdd5698772a"
+    },
+    "inputs.json": {
+      "bytes": 3884,
+      "role": "record",
+      "sha256": "3cedbc813b313603cdf5e250a0288153617977ce2cfc99c29825d9b907842c5f"
+    },
+    "origin.json": {
+      "bytes": 777,
+      "role": "record",
+      "sha256": "3879f2e3c92166705ff27a84a83ec10326ed470e0baf06ba720c34683e841549"
+    },
+    "scene.json": {
+      "bytes": 2005,
+      "role": "record",
+      "sha256": "ecc10371159f44daffa1666d8ff2099ededf0fef2437135d7a01352386ef7d91"
+    },
+    "storage.usda": {
+      "bytes": 289,
+      "role": "usd",
+      "sha256": "3ede685dc05e6bdd460181607b90461d2efea927c40bf2bf54bbf5490c09232f"
+    }
+  },
+  "id": "storage",
+  "kind": "place",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-17T09:51:12.135510+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "complete": {
+      "accept": {
+        "at": "2026-10-17T09:53:23.962155+00:00",
+        "by": "runner"
+      },
+      "code": "614e17d70adbc54d15ef2ac7532458f7dbfe393cb1a802ed4b39c5bbd5b6e794",
+      "models": [],
+      "node": "complete@storage",
+      "output": "f4b90632f8002d37e274154dcb5601d551390fbbd66576a36f407486fb3f537a",
+      "record_key": "b0726befbf258ef43c7756f91f9b26d9580f4477f2ec3ff9922fece118dc3613"
+    },
+    "complete_failing": [
+      "named gaps"
+    ],
+    "gaps": "data/checks/gaps/storage.json",
+    "models": [],
+    "node": "assembly@storage",
+    "output": "69f54fa7482a870ea9fcf8635d1dee2dcbce311391024babd0e085354ca2c3df",
+    "place": "storage",
+    "record_key": "07be8d8805dfb900db0fcbea2f77f5228ae16396357e62916ed34f782464f5d8",
+    "unresolved_sublayers": [],
+    "world": "world1"
+  },
+  "requires": [
+    "layer/base.storage@1",
+    "layer/light.storage@1",
+    "layer/sound.storage@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "storage"
+  ],
+  "state": "draft",
+  "tags": {
+    "complete": [
+      "named_gaps"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Storage",
+  "usd": {
+    "default_prim": "/storage",
+    "layer": "root",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/place/storage/1/storage.usda",
+    "root": "storage.usda",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "open"
+  },
+  "version": 1
+}

@@ -1,0 +1,89 @@
+{
+  "address": "layer/crops.greenhouse@1",
+  "files": {
+    "layer.usda": {
+      "bytes": 10869,
+      "role": "usd",
+      "sha256": "524c4792558d62db71e63cd18f7dca85a2d0dd3fdc510d955351c810760a997b"
+    },
+    "spots.json": {
+      "bytes": 13598,
+      "role": "record",
+      "sha256": "6a8a362a9c594f879ddc5c6b8ada9de12a532d2313886615c81e53ed4de196a2"
+    }
+  },
+  "id": "crops.greenhouse",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-17T11:21:57.694141+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/crops.usda",
+        "sha256": "e37a02c6fb6a2462dc06d77e6eda5c119fa5db055d591d407912c619d981553e"
+      }
+    },
+    "models": [],
+    "node": "assembly@greenhouse",
+    "output": "910f5ef85c6bacfd60b7b934d6980011f765df81458a88095c9ee09416e6fec7",
+    "own_files": [],
+    "place": "greenhouse",
+    "record_key": "96f06014f00223d17da44c7eaa7bd37c8c838a72ef68ace7ba2ccc88be48cafa",
+    "side_records_from": "ab6b20ac74fc3e09b6883bb4a4e085925f0e5837608c4c85c648147383f39429",
+    "source_name": "layers/crops.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/crops_spots@1"
+  },
+  "requires": [
+    "model/crop_greens_1@1",
+    "model/crop_herb_1@1",
+    "model/crop_lettuce_1@1",
+    "model/crop_potato_1@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "greenhouse"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "crops"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Greenhouse crops layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "crops",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/layer/crops.greenhouse/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "sublayer"
+  },
+  "version": 1
+}

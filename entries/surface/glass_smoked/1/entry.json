@@ -1,0 +1,88 @@
+{
+  "address": "surface/glass_smoked@1",
+  "files": {
+    "material.usda": {
+      "bytes": 549,
+      "role": "usd",
+      "sha256": "f1b73fcc2f2a850aabc057bba317f8f058932f5082556fe2a1be6040c37bcf67"
+    },
+    "preview.png": {
+      "bytes": 9523,
+      "role": "picture",
+      "sha256": "51f375bc26e3c78b0cbf6a386cdea67513e0a4a98da50180dfb92b9cff5668a9"
+    },
+    "surface.json": {
+      "bytes": 508,
+      "role": "record",
+      "sha256": "7143fe9d5c45475610c6c7526606757dfcdc30edc757a2ea0736f5c5874cac11"
+    }
+  },
+  "id": "glass_smoked",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "glass",
+    "place": "cockpit",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "cockpit",
+    "engineroom",
+    "galley",
+    "navigation",
+    "quarters",
+    "shiplock",
+    "storage",
+    "walkway"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "glass"
+    ],
+    "recipe": [
+      "glass"
+    ]
+  },
+  "title": "Glass smoked",
+  "usd": {
+    "default_prim": "/glass_smoked",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/glass_smoked/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

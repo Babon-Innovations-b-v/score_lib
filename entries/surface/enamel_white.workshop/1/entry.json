@@ -1,0 +1,81 @@
+{
+  "address": "surface/enamel_white.workshop@1",
+  "files": {
+    "material.usda": {
+      "bytes": 553,
+      "role": "usd",
+      "sha256": "86bb4f17e47933647ee485fe5c7696cb3b7ddfda2afb328f8fa453ab8d2eb144"
+    },
+    "preview.png": {
+      "bytes": 17909,
+      "role": "picture",
+      "sha256": "cf3a156254d959e87af4e7f5d9a3e64e9d246752eeb59b6cc9a6ba6fa6b6b063"
+    },
+    "surface.json": {
+      "bytes": 216,
+      "role": "record",
+      "sha256": "f517dbe21d723d6e157429acd6ee928345aacd2302540601a1a5b86b9e2a5859"
+    }
+  },
+  "id": "enamel_white.workshop",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "painted",
+    "place": "workshop",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "workshop"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "painted"
+    ],
+    "recipe": [
+      "painted_metal"
+    ]
+  },
+  "title": "Enamel white",
+  "usd": {
+    "default_prim": "/enamel_white",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/enamel_white.workshop/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

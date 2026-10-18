@@ -1,0 +1,88 @@
+{
+  "address": "layer/effects.garage@1",
+  "files": {
+    "held.json": {
+      "bytes": 109,
+      "role": "record",
+      "sha256": "1c009a94f1ff46e3eb44f9218c02cf21ee5a276200c488ec6285f78db9df7fc7"
+    },
+    "layer.usda": {
+      "bytes": 16857,
+      "role": "usd",
+      "sha256": "595565e1c1464926c2c8d03d070a2327c8f9cca18c60e026014081cb3df6aa2b"
+    }
+  },
+  "id": "effects.garage",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T22:23:43.534540+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/effects.usda",
+        "sha256": "832873adc57e913460e4136c650ded62dd003695627bba50386a2da16f1b17ca"
+      }
+    },
+    "models": [],
+    "node": "assembly@garage",
+    "output": "b7aa59a6d59e8700275f9ac530ec0a920e7f3c63af29e58b93ecd3f39f5abe50",
+    "own_files": [],
+    "place": "garage",
+    "record_key": "08c1c1e01926f109c953734d2bf2bea3daed4a22d008d5b03cf237bf5c75ef70",
+    "side_records_from": "dd0577f250d10d9cb327f68449f6daf3d2cf6ad45f25c6bcaf68d289e6e4068f",
+    "source_name": "layers/effects.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/particle_effects@1"
+  },
+  "requires": [
+    "effect/door_vent.garage@1",
+    "effect/door_vent_veil.garage@1",
+    "effect/pump_fog.garage@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "garage"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "effects"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Garage effects layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "effects",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/effects.garage/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

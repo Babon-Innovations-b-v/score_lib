@@ -1,0 +1,108 @@
+{
+  "address": "surface/barrier_white@1",
+  "files": {
+    "material.usda": {
+      "bytes": 554,
+      "role": "usd",
+      "sha256": "a9e4f3960903578022c2729cf306b4d783e215ca48de2fb6db422fdd2fe05dfa"
+    },
+    "preview.png": {
+      "bytes": 16958,
+      "role": "picture",
+      "sha256": "6963f9d48082d0d1f92126f556fac5c02693eb1a12a5a21286e3399592e4d9bf"
+    },
+    "surface.json": {
+      "bytes": 210,
+      "role": "record",
+      "sha256": "0fbec6e380b86e149c2968b11a9908a3149d63d24c167c183f7018e7c216fb51"
+    }
+  },
+  "id": "barrier_white",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "plastic",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "plastic"
+    ],
+    "recipe": [
+      "rubber"
+    ]
+  },
+  "title": "Barrier white",
+  "usd": {
+    "default_prim": "/barrier_white",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/barrier_white/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

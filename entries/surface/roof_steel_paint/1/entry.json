@@ -1,0 +1,108 @@
+{
+  "address": "surface/roof_steel_paint@1",
+  "files": {
+    "material.usda": {
+      "bytes": 573,
+      "role": "usd",
+      "sha256": "6003394e61d1b1aedd2561165690a395b0448f5741036919c33160cfd44c416e"
+    },
+    "preview.png": {
+      "bytes": 18750,
+      "role": "picture",
+      "sha256": "3f4df8a93afc20ff213378cfa92fbe26900a1c1ab11f6a8094d0e014a41710e8"
+    },
+    "surface.json": {
+      "bytes": 196,
+      "role": "record",
+      "sha256": "90165f03212494aafa25cca67a682b1630964f8640567f6ecdbe4a680d8dad61"
+    }
+  },
+  "id": "roof_steel_paint",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "painted",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "painted"
+    ],
+    "recipe": [
+      "painted_metal"
+    ]
+  },
+  "title": "Roof steel paint",
+  "usd": {
+    "default_prim": "/roof_steel_paint",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/roof_steel_paint/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

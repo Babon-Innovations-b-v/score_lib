@@ -1,0 +1,103 @@
+{
+  "address": "model/door_frame_1@1",
+  "files": {
+    "model.json": {
+      "bytes": 319,
+      "role": "record",
+      "sha256": "8e18d9a254d8ff7474dc24137d76ef43ff4cb7f069b43110d7319ae09c0d0285"
+    },
+    "model.usdc": {
+      "bytes": 108085,
+      "role": "usd",
+      "sha256": "9ee14454a9b7c978ad1fce631b3f577695009f275145dd78d85a6de6f63c5359"
+    },
+    "preview.png": {
+      "bytes": 19920,
+      "role": "picture",
+      "sha256": "757f3203975ba656891934821f85411898c974d748574d759a981c021d1d687b"
+    },
+    "textures/airlock_gear_2_base_color.png": {
+      "bytes": 1170087,
+      "role": "texture",
+      "sha256": "9a6b01f822e94e7c407c7d6b32ac61974431f53f98d57dfe00ec51b3a78b134a"
+    },
+    "textures/airlock_gear_2_metal_roughness.png": {
+      "bytes": 893838,
+      "role": "texture",
+      "sha256": "8fffa499680b0a44dff0c903522a32aac31c5bf07ce58e7e5f53b1a0b50c71c0"
+    },
+    "textures/airlock_gear_2_normal.png": {
+      "bytes": 7028147,
+      "role": "texture",
+      "sha256": "69bd31b0924728f7d08ab9740a405ea89adf1dde5b8cea7834f3dd78461b5a4d"
+    }
+  },
+  "id": "door_frame_1",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T21:49:09.803965+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "3a21aaff8a073c80c407c05c1c9c9e833b38f5fffac9d9be44677b67af5d4787",
+    "models": [],
+    "node": "assembly@airlock",
+    "output": "8900f72fdf3585e5c853f71bbe4723b74677075a11235a7acb403664c1ec2464",
+    "place": "airlock",
+    "record_key": "1971b952fc7cf77c7898f3951a1958e959f95e422ab47f4ce6910bda0ff3bdc3",
+    "source_name": "door_frame_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Door frame 1",
+  "usd": {
+    "default_prim": "/door_frame_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/door_frame_1/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

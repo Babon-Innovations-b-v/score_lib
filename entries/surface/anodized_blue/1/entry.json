@@ -1,0 +1,108 @@
+{
+  "address": "surface/anodized_blue@1",
+  "files": {
+    "material.usda": {
+      "bytes": 556,
+      "role": "usd",
+      "sha256": "76e0f17d89954909d82fcc02482b5b597d4f2fe9999f5f846c5b5c8057c0f154"
+    },
+    "preview.png": {
+      "bytes": 21428,
+      "role": "picture",
+      "sha256": "11dd0f4d1bb2366b4aa969defd281ffd1b84cddcb88fe8c8e434fb89ec8df47d"
+    },
+    "surface.json": {
+      "bytes": 374,
+      "role": "record",
+      "sha256": "cd1b52e66ec86a608ef01e417e45b60354ff3d37e83d35c42a8637f50b7ed6f7"
+    }
+  },
+  "id": "anodized_blue",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "aluminium",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "aluminium"
+    ],
+    "recipe": [
+      "anodized"
+    ]
+  },
+  "title": "Anodized blue",
+  "usd": {
+    "default_prim": "/anodized_blue",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/anodized_blue/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

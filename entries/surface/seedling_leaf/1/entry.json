@@ -1,0 +1,108 @@
+{
+  "address": "surface/seedling_leaf@1",
+  "files": {
+    "material.usda": {
+      "bytes": 558,
+      "role": "usd",
+      "sha256": "000d29bcd3758a4b77db6de06ac2d4bd62db931eb18746c528bf801b1d4eea86"
+    },
+    "preview.png": {
+      "bytes": 22441,
+      "role": "picture",
+      "sha256": "6d1167e6f5cc8d0352f7bf31f13ea6824d7ba5a895c700a15b5dc5a364fa297f"
+    },
+    "surface.json": {
+      "bytes": 275,
+      "role": "record",
+      "sha256": "0d937b1f173622f68e9598cf36374d35b894dcc3d3c2e25621a99672a130182c"
+    }
+  },
+  "id": "seedling_leaf",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "growing",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "growing"
+    ],
+    "recipe": [
+      "rubber"
+    ]
+  },
+  "title": "Seedling leaf",
+  "usd": {
+    "default_prim": "/seedling_leaf",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/seedling_leaf/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

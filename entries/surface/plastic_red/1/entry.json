@@ -1,0 +1,84 @@
+{
+  "address": "surface/plastic_red@1",
+  "files": {
+    "material.usda": {
+      "bytes": 549,
+      "role": "usd",
+      "sha256": "2c584f71b7aaa90164c8b64abed3edb885aa2f50db593688009acf079e433ace"
+    },
+    "preview.png": {
+      "bytes": 21861,
+      "role": "picture",
+      "sha256": "50f062977dd099aae517e065cecbf9943644383029352b927325c765495d27ff"
+    },
+    "surface.json": {
+      "bytes": 565,
+      "role": "record",
+      "sha256": "cd02cf232f37f2c20c41d5bb99c4a72b5078f983ae451fe68e509b749e065380"
+    }
+  },
+  "id": "plastic_red",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "plastic",
+    "place": "cockpit",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "cockpit",
+    "engineroom",
+    "shiplock",
+    "walkway"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "plastic"
+    ],
+    "recipe": [
+      "rubber"
+    ]
+  },
+  "title": "Plastic red",
+  "usd": {
+    "default_prim": "/plastic_red",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/plastic_red/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

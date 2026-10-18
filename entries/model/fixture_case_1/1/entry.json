@@ -1,0 +1,91 @@
+{
+  "address": "model/fixture_case_1@1",
+  "files": {
+    "model.json": {
+      "bytes": 219,
+      "role": "record",
+      "sha256": "a5b8126f4e6997aabb058ee11c5096dc50f52428d55fa30436d2d7d19ea71847"
+    },
+    "model.usdc": {
+      "bytes": 31786,
+      "role": "usd",
+      "sha256": "f1502c7d32baba6bdac8f3e7aef63984ad2ba96ea3fd70b1448747a943dc5b02"
+    },
+    "preview.png": {
+      "bytes": 21723,
+      "role": "picture",
+      "sha256": "d35592df6d2bdea8fcc571e643547e4cdfb9216c507e2a07031b73956602c8a8"
+    },
+    "textures/fixture_case_1_0.png": {
+      "bytes": 2563241,
+      "role": "texture",
+      "sha256": "274fd14ddbb508fae29ef141be4bf754cfebbc9b6eb39200d932ded379f118f1"
+    }
+  },
+  "id": "fixture_case_1",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:13:56.147349+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "990a6332e1d23e482480d39f444c338c72ffbab274988d9d693adbd6770e4762",
+    "models": [],
+    "node": "assembly@camp",
+    "output": "0d930395c3d487b308d579d02e775682ddf8d302e6e0735849093a37772728c8",
+    "place": "camp",
+    "record_key": "fe5504fc66033b6c5b56f7395fd37a688bbd5d26c50af13875018921c86ded02",
+    "source_name": "fixture_case_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "camp"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [],
+    "place_kind": [
+      "mars",
+      "outside"
+    ]
+  },
+  "title": "Fixture case 1",
+  "usd": {
+    "default_prim": "/fixture_case_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/fixture_case_1/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

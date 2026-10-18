@@ -1,0 +1,103 @@
+{
+  "address": "model/parapet_8@1",
+  "files": {
+    "model.json": {
+      "bytes": 298,
+      "role": "record",
+      "sha256": "c95baf48f200f4ff3017f1cad50bb01c80399902d882dd53466bc53d4becdde3"
+    },
+    "model.usdc": {
+      "bytes": 12684,
+      "role": "usd",
+      "sha256": "15f99c0e3b6b89f751dcf69dee9697ab76e76516d23cb7843aad08d8c497bd1a"
+    },
+    "preview.png": {
+      "bytes": 11682,
+      "role": "picture",
+      "sha256": "1fb8cd3668c6b73e3fa9aabe615d463846208b0fc3638b4b03e23c6f9862044c"
+    },
+    "textures/prologue_street_facade_4_base_color.png": {
+      "bytes": 1184220,
+      "role": "texture",
+      "sha256": "6af8e106ffaf9a012c3ca14a73ed1637d33fc5769d967e5730d72cf6fd670620"
+    },
+    "textures/prologue_street_facade_4_metal_roughness.png": {
+      "bytes": 596729,
+      "role": "texture",
+      "sha256": "1130c1665259183e63a7a1efe64b9cc10842e4347b69934702c8130462ddf4cb"
+    },
+    "textures/prologue_street_facade_4_normal.png": {
+      "bytes": 3797460,
+      "role": "texture",
+      "sha256": "bf7c63f163068c052670c8bf21730d816cd9d4e3974b33e1ba3f5b69be47fa79"
+    }
+  },
+  "id": "parapet_8",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-15T17:38:29.285750+00:00",
+      "by": "runner"
+    },
+    "code": "e172da5a348a36e044c48ac88c4301ef36b984d2606f116b55884e77f224e788",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "65c801095f07733425dda491d91d7ed67f584deef9526c2cd46db40ae9820170",
+    "models": [],
+    "node": "assembly@street",
+    "output": "bbaaeb0aa7195bd7d899a3f5ff837f9ba560320bced6dcf06bdea37704342dad",
+    "place": "street",
+    "record_key": "eea7a7e11741099d56afa13effecfae534999af63793625de4692628148864f0",
+    "source_name": "parapet_8",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "street"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "outside"
+    ]
+  },
+  "title": "Parapet 8",
+  "usd": {
+    "default_prim": "/parapet_8",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/parapet_8/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

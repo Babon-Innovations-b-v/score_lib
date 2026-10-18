@@ -1,0 +1,103 @@
+{
+  "address": "model/toolboard_1@1",
+  "files": {
+    "model.json": {
+      "bytes": 285,
+      "role": "record",
+      "sha256": "7998b32513df0f8b4c22409fb28f161c4baab650e2fb29ec116da953259fe9a6"
+    },
+    "model.usdc": {
+      "bytes": 131413,
+      "role": "usd",
+      "sha256": "42610e2c5bcca52ed73530e359494fa47ddb82936b9bcc37a1d6d93be45f6096"
+    },
+    "preview.png": {
+      "bytes": 19661,
+      "role": "picture",
+      "sha256": "cea277b19f780a1b4e58c7cae9bed7299ee6174de16821b215fa61d987e26c4f"
+    },
+    "textures/workshop_gear_4_base_color.png": {
+      "bytes": 255970,
+      "role": "texture",
+      "sha256": "3c8d0e118a3c6199dbefa48721a1587a9056093c3c4a3f5013b44937c861c586"
+    },
+    "textures/workshop_gear_4_metal_roughness.png": {
+      "bytes": 73763,
+      "role": "texture",
+      "sha256": "906bcb42c630f5c2fdc5ddb3f166a251cc2b34a86e19f3d5206d5dd810ee814a"
+    },
+    "textures/workshop_gear_4_normal.png": {
+      "bytes": 1368213,
+      "role": "texture",
+      "sha256": "aed73f0ac035576836597b49643444ea0fbde1dc24dccf96af74184d950e1af7"
+    }
+  },
+  "id": "toolboard_1",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T00:15:15.593646+00:00",
+      "by": "runner"
+    },
+    "code": "3c875e56018d0d8dc81898b4a3fc27e1e0369f4b60d13fc7f18550aedc3a092a",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "0b247ea02d1dd036750ffb08ed14b702847c1872ed12f2be05a9149cb73162db",
+    "models": [],
+    "node": "assembly@workshop",
+    "output": "bee6eb7313a86043a2c7e40cc4062833466130c06ad9b07b9b6b80f085cf41c1",
+    "place": "workshop",
+    "record_key": "e3cd36726454e1d2f16c6f3ffabd1967c5b471749b13bd9a0d066d4f7ae7becc",
+    "source_name": "toolboard_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "workshop"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Toolboard 1",
+  "usd": {
+    "default_prim": "/toolboard_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/toolboard_1/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

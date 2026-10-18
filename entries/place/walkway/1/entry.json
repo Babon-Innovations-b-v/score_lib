@@ -1,0 +1,118 @@
+{
+  "address": "place/walkway@1",
+  "files": {
+    "contract.json": {
+      "bytes": 99,
+      "role": "record",
+      "sha256": "c2b7151f92e6a67ca4666ea747ad262b67b4d0af824cc83862ce64d8cc49d12c"
+    },
+    "edit.usda": {
+      "bytes": 183,
+      "role": "usd",
+      "sha256": "8fc5485ea9a58537dd8289c516a85733e069ad7a17b866471667b8795142454f"
+    },
+    "gaps.json": {
+      "bytes": 1145,
+      "role": "record",
+      "sha256": "771a7fd92fd1f71a63ad7bcf0d4893b8c566fadd6b057d9aa8b834ed04a2755c"
+    },
+    "inputs.json": {
+      "bytes": 5994,
+      "role": "record",
+      "sha256": "01ed8023356d8cb535d52c469dcc48729c3350e1fe53b9a458f25a400d84a290"
+    },
+    "origin.json": {
+      "bytes": 537,
+      "role": "record",
+      "sha256": "c696bf27db9d4e412e9747149960c54d892eb857e93b60a9ac7e1198baabbb1d"
+    },
+    "scene.json": {
+      "bytes": 2924,
+      "role": "record",
+      "sha256": "85979960fee6b571245a9c3354d8bbf3c37960d0181c890b5fd53c181f7a32b0"
+    },
+    "walkway.usda": {
+      "bytes": 289,
+      "role": "usd",
+      "sha256": "171051c19734f860ba4870966ba9bb0e37505c0227c22b604022821765533c83"
+    }
+  },
+  "id": "walkway",
+  "kind": "place",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T10:11:51.521798+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "complete": {
+      "accept": {
+        "at": "2026-10-17T07:27:08.596445+00:00",
+        "by": "runner"
+      },
+      "code": "786bad4d2f8493466bb5c0b745706bfd36992119f09119588f5d4c07d3e65064",
+      "models": [],
+      "node": "complete@walkway",
+      "output": "a487ca285abf61fa30795bf09dc7a2c7e9eb84dbf6bc023a7730251e56ccaafd",
+      "record_key": "bfad02db83a4a76368dc6778784c809e6a659dee2d7983cf4bc67039b253a1ff"
+    },
+    "complete_failing": [
+      "named gaps"
+    ],
+    "gaps": "data/checks/gaps/walkway.json",
+    "models": [],
+    "node": "assembly@walkway",
+    "output": "1dc1351be492896299a7b9efd113af8ad60584ef0750a6975a34519bcfe2690d",
+    "place": "walkway",
+    "record_key": "5aa3fd9e738de60a91da434e8522caed44f74785d8372bc5060177ecbf9d7d0a",
+    "unresolved_sublayers": [],
+    "world": "world1"
+  },
+  "requires": [
+    "layer/base.walkway@1",
+    "layer/light.walkway@1",
+    "layer/sound.walkway@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "walkway"
+  ],
+  "state": "draft",
+  "tags": {
+    "complete": [
+      "named_gaps"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Walkway",
+  "usd": {
+    "default_prim": "/walkway",
+    "layer": "root",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/place/walkway/1/walkway.usda",
+    "root": "walkway.usda",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "open"
+  },
+  "version": 1
+}

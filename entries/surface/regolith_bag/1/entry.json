@@ -1,0 +1,108 @@
+{
+  "address": "surface/regolith_bag@1",
+  "files": {
+    "material.usda": {
+      "bytes": 551,
+      "role": "usd",
+      "sha256": "8c5ef74ee455bf6bdfae90d558e0e3fe714c9a136d67395fb753b67f77a1a148"
+    },
+    "preview.png": {
+      "bytes": 21252,
+      "role": "picture",
+      "sha256": "09104ae0c1c261aa2acd63993f7c97d4f2adcee3f2b164104d0f710fe13dcac2"
+    },
+    "surface.json": {
+      "bytes": 207,
+      "role": "record",
+      "sha256": "991c4b2be758623096de4f2fd4df141bb4dc1bf69943667c4a040b21a1e764c7"
+    }
+  },
+  "id": "regolith_bag",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "fabric",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "fabric"
+    ],
+    "recipe": [
+      "rubber"
+    ]
+  },
+  "title": "Regolith bag",
+  "usd": {
+    "default_prim": "/regolith_bag",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/regolith_bag/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

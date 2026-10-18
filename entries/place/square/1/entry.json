@@ -1,0 +1,122 @@
+{
+  "address": "place/square@1",
+  "files": {
+    "contract.json": {
+      "bytes": 99,
+      "role": "record",
+      "sha256": "c2b7151f92e6a67ca4666ea747ad262b67b4d0af824cc83862ce64d8cc49d12c"
+    },
+    "edit.usda": {
+      "bytes": 183,
+      "role": "usd",
+      "sha256": "8fc5485ea9a58537dd8289c516a85733e069ad7a17b866471667b8795142454f"
+    },
+    "gaps.json": {
+      "bytes": 9216,
+      "role": "record",
+      "sha256": "7b3d89849a84b36a9c1e670a8dd0ace9fb537db0ab361416395d37d8211c5921"
+    },
+    "inputs.json": {
+      "bytes": 24957,
+      "role": "record",
+      "sha256": "53255e51b6d1e4aae324696c3bcf1ccaf0fed4c63b26d3102095f055786ed4cf"
+    },
+    "origin.json": {
+      "bytes": 825,
+      "role": "record",
+      "sha256": "27ab8e6128b15bd509aec791539400e9803ac9693ac41d56e56505fc2c1514c5"
+    },
+    "scene.json": {
+      "bytes": 13000,
+      "role": "record",
+      "sha256": "ac4754e5ab11780d051bf6affb3ae290222618831bb3d23ba6f4b2154d5080a4"
+    },
+    "square.usda": {
+      "bytes": 603,
+      "role": "usd",
+      "sha256": "06680d51e05a0ea5e36b110f1c6576a9e0b17c036026086f3b20ec92da6b91b5"
+    }
+  },
+  "id": "square",
+  "kind": "place",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T10:37:19.122806+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "complete": {
+      "accept": {
+        "at": "2026-10-18T03:21:43.168591+00:00",
+        "by": "runner"
+      },
+      "code": "614e17d70adbc54d15ef2ac7532458f7dbfe393cb1a802ed4b39c5bbd5b6e794",
+      "models": [],
+      "node": "complete@square",
+      "output": "7f140aa3ef2c6b6b3cbe76ed700c6ab435be6274f13c21948722487dac02d088",
+      "record_key": "8253889cd0c6d09dafd3056b87e6a5240cb432589cb65523c488d8ab56646056"
+    },
+    "complete_failing": [
+      "named gaps"
+    ],
+    "gaps": "data/checks/gaps/square.json",
+    "models": [],
+    "node": "assembly@square",
+    "output": "eae5e52a53b2d1757ed24acf4035c4a6bb2f806de9e7630adabdd6c13f4120be",
+    "place": "square",
+    "record_key": "97d5530a3361f6e15704b2a62582b9dfe5a727669824f06f7c46afab788c5160",
+    "unresolved_sublayers": [],
+    "world": "world1"
+  },
+  "requires": [
+    "layer/base.square@1",
+    "layer/characters.square@1",
+    "layer/ground.square@1",
+    "layer/light.square@1",
+    "layer/motion.square@1",
+    "layer/settle.square@1",
+    "layer/sound.square@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "square"
+  ],
+  "state": "draft",
+  "tags": {
+    "complete": [
+      "named_gaps"
+    ],
+    "place_kind": [
+      "outside",
+      "earth"
+    ]
+  },
+  "title": "Square",
+  "usd": {
+    "default_prim": "/square",
+    "layer": "root",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/place/square/1/square.usda",
+    "root": "square.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": "Y",
+    "use": "open"
+  },
+  "version": 1
+}

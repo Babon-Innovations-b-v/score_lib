@@ -1,0 +1,74 @@
+{
+  "address": "kit/campgrounds@1",
+  "files": {
+    "kit.json": {
+      "bytes": 10992,
+      "role": "record",
+      "sha256": "3e9f7c4788910fc89d221a5e5fda69a4d8471330098775f21e121f5c889208cd"
+    },
+    "preview.png": {
+      "bytes": 2805,
+      "role": "picture",
+      "sha256": "27d5e8b5cc360fbbfecf81bf06a32f121371c171a6261e22ca7bc4d98f46ce49"
+    }
+  },
+  "id": "campgrounds",
+  "kind": "kit",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/plan.py",
+    "of": "kit.json pieces (34) from above"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "pieces": 34,
+    "place": "campgrounds",
+    "ship_kit": null,
+    "source": "data/kit/campgrounds.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/room_layout@1",
+    "model/cargo_case@1",
+    "model/cargo_case_open@1",
+    "model/cargo_pallet@1",
+    "model/coiled_cable@1",
+    "model/crane@1",
+    "model/drift@1",
+    "model/ground_cable_2@1",
+    "model/ice_drill@1",
+    "model/lander@1",
+    "model/mast_5p82@1",
+    "model/mast_cabinet@1",
+    "model/power_unit.campgrounds@1",
+    "model/reactor@1",
+    "model/sample_case@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "campgrounds"
+  ],
+  "state": "draft",
+  "tags": {
+    "place_kind": [
+      "outside",
+      "mars"
+    ]
+  },
+  "title": "Campgrounds kit",
+  "usd": null,
+  "version": 1
+}

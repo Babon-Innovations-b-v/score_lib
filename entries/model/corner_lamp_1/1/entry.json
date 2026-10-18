@@ -1,0 +1,109 @@
+{
+  "address": "model/corner_lamp_1@1",
+  "files": {
+    "model.json": {
+      "bytes": 270,
+      "role": "record",
+      "sha256": "19e9147adedf1c36300aab0006c17ef06c467ae75caf04ed4d519f35ae4bb332"
+    },
+    "model.usdc": {
+      "bytes": 509540,
+      "role": "usd",
+      "sha256": "cbc9c8f20d87c0252611b92ad36bce01b5b856ac4ec20b5bab9d39191c47b7b9"
+    },
+    "preview.png": {
+      "bytes": 32813,
+      "role": "picture",
+      "sha256": "d3a9f7e73ee4be1d44a99e1a8fb72078c3d949bdcc5ec37d32b875f1b577a89b"
+    },
+    "textures/corner_lamp_1_base_color.png": {
+      "bytes": 94143,
+      "role": "texture",
+      "sha256": "2343b7228761b9c2b54efe2a6d12704f4b4d9bdcf63a9073fd2beba96f70b6b3"
+    },
+    "textures/corner_lamp_1_metal_roughness.png": {
+      "bytes": 68266,
+      "role": "texture",
+      "sha256": "5873c6dfedcb88e833d4aa3cd5e76021a738306644dc611975b71afc48ab3cf7"
+    },
+    "textures/corner_lamp_1_normal.png": {
+      "bytes": 310261,
+      "role": "texture",
+      "sha256": "1cf979e18f1bc310f788432a7d76061f48369aafc2d8352e6023420efd4317c0"
+    }
+  },
+  "id": "corner_lamp_1",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T10:12:20.716778+00:00",
+      "by": "runner"
+    },
+    "aliases": [
+      [
+        "cbc9c8f20d87c0252611b92ad36bce01b5b856ac4ec20b5bab9d39191c47b7b9",
+        "model.usdc"
+      ]
+    ],
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "4a61c578aa447ec17cab96bd6b2e954fb16485d02a2e63004ecada81bc657475",
+    "models": [],
+    "node": "assembly@cockpit",
+    "output": "b8ec7f49d4ff317fb9858d8dce4a33fcfc258d958fcd162c2b292eabb7de5c83",
+    "place": "cockpit",
+    "record_key": "6507789d5dd016672ed678b36e6a88f586c76345c9ca611d2f50b16a694eea46",
+    "source_name": "corner_lamp_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "cockpit",
+    "engineroom",
+    "shiplock"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Corner lamp 1",
+  "usd": {
+    "default_prim": "/corner_lamp_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/corner_lamp_1/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

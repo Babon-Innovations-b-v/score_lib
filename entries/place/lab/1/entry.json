@@ -1,0 +1,121 @@
+{
+  "address": "place/lab@1",
+  "files": {
+    "contract.json": {
+      "bytes": 99,
+      "role": "record",
+      "sha256": "c2b7151f92e6a67ca4666ea747ad262b67b4d0af824cc83862ce64d8cc49d12c"
+    },
+    "edit.usda": {
+      "bytes": 183,
+      "role": "usd",
+      "sha256": "8fc5485ea9a58537dd8289c516a85733e069ad7a17b866471667b8795142454f"
+    },
+    "gaps.json": {
+      "bytes": 3137,
+      "role": "record",
+      "sha256": "9af8acac679d8032ccfc77b19a32426c681b8857fdd553ee9ae7f2d1bccea2d7"
+    },
+    "inputs.json": {
+      "bytes": 19285,
+      "role": "record",
+      "sha256": "82e35ef807d948e4a659c4b0737104e60a5d4c05afa5eeca0e6e6f6213d11ff3"
+    },
+    "lab.usda": {
+      "bytes": 528,
+      "role": "usd",
+      "sha256": "acd8a413dff1fae1e3591567d47bc44b9684ef5207c2403106c88962d2b2a8d8"
+    },
+    "origin.json": {
+      "bytes": 932,
+      "role": "record",
+      "sha256": "2149d35484bea2f841d9e38217147539ba68a96e6646e84ae46e0ba087c3876b"
+    },
+    "scene.json": {
+      "bytes": 7059,
+      "role": "record",
+      "sha256": "aae2d95e01eb0eb8c1dc1c7c6b077283882dbe04ed647d74d42535cc81d4a6dc"
+    }
+  },
+  "id": "lab",
+  "kind": "place",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:07:25.503141+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "complete": {
+      "accept": {
+        "at": "2026-10-17T14:35:31.680653+00:00",
+        "by": "runner"
+      },
+      "code": "614e17d70adbc54d15ef2ac7532458f7dbfe393cb1a802ed4b39c5bbd5b6e794",
+      "models": [],
+      "node": "complete@lab",
+      "output": "b75448aeffe1ee363c5beeb7ffa4759976510d2a677fd6aaab2d761afb7c1818",
+      "record_key": "6e6650b5041fac831524f4a2b1cbac9167328206192d8f345fcf1bd244b8f81d"
+    },
+    "complete_failing": [
+      "named gaps"
+    ],
+    "gaps": "data/checks/gaps/lab.json",
+    "models": [],
+    "node": "assembly@lab",
+    "output": "6e27c7d3c17e42a9d22d07e469a7b3a8e37bced2cae426b5827007830b83d66a",
+    "place": "lab",
+    "record_key": "90b53b440293d619704e077b09a234f458d34710e83b21efc9453072590550e1",
+    "unresolved_sublayers": [],
+    "world": "world1"
+  },
+  "requires": [
+    "layer/base.lab@1",
+    "layer/characters.lab@1",
+    "layer/light.lab@1",
+    "layer/motion.lab@1",
+    "layer/settle.lab@1",
+    "layer/sound.lab@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "lab"
+  ],
+  "state": "draft",
+  "tags": {
+    "complete": [
+      "named_gaps"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Lab",
+  "usd": {
+    "default_prim": "/lab",
+    "layer": "root",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/place/lab/1/lab.usda",
+    "root": "lab.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": "Y",
+    "use": "open"
+  },
+  "version": 1
+}

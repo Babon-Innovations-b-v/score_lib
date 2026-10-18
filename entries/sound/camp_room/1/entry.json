@@ -1,0 +1,116 @@
+{
+  "address": "sound/camp_room@1",
+  "files": {
+    "audio/generated/places/camp_room.wav": {
+      "bytes": 2208112,
+      "role": "audio",
+      "sha256": "6cad3d43003627fdb19d16a7070bb788ed998552d1f74ece0429819df4c53183"
+    },
+    "preview.png": {
+      "bytes": 2744,
+      "role": "picture",
+      "sha256": "33b1e6f72419d016908da52b65581f5d417c8aa322f009cd8f5c3cb22316dcff"
+    },
+    "sound.json": {
+      "bytes": 1124,
+      "role": "record",
+      "sha256": "79beab6790b58c0a9781be36742d945a12be00db95de94fb337ca10194a4c9a0"
+    },
+    "sound.usda": {
+      "bytes": 563,
+      "role": "usd",
+      "sha256": "b6bfb3df05183db6e6a0cfefb73061599f20cf35052af583574dbba4b4690ebb"
+    }
+  },
+  "id": "camp_room",
+  "kind": "sound",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "https://huggingface.co/OpenMOSS-Team/MOSS-SoundEffect-v2.0; prompt: Quiet room tone inside a small prefabricated habitat on Mars: a steady low hum of life-support fans and air scrubbers, a faint wind buffeting the thin outer wall, constant and even, no voices and no events.; seed 3; author: generated with MOSS-SoundEffect v2.0 (e35df4d82fbe87fcd5d14e5d100e349c0c3c076d)",
+        "spdx": "Apache-2.0",
+        "text": "made for this game with MOSS-SoundEffect v2.0 (Apache-2.0)",
+        "what": "sound/generated/places/camp_room.wav"
+      }
+    ],
+    "note": "",
+    "spdx": "Apache-2.0"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/audio.py",
+    "of": "audio/generated/places/camp_room.wav"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-12T19:04:31.301782+00:00",
+      "by": "runner"
+    },
+    "code": "fddaae33e7b1078d7768d64b90025094353c176b30afeac6022b7b114ce61b81",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_source": {
+      "audio/generated/places/camp_room.wav": "assets/sound/generated/places/camp_room.wav"
+    },
+    "models": [
+      {
+        "commercial_use": true,
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "licence": "Apache-2.0",
+        "name": "clap-larger-general",
+        "revision": "ada0c23a36c4e8582805bb38fec3905903f18b41",
+        "sha256": "b8e001a32b37111261ccc28541ae07960a8cc047837f76a1a0877e9b2c59dc45",
+        "source": "hf:laion/larger_clap_general"
+      },
+      {
+        "commercial_use": true,
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "licence": "Apache-2.0",
+        "name": "moss-soundeffect-v2",
+        "revision": "e35df4d82fbe87fcd5d14e5d100e349c0c3c076d",
+        "sha256": "d74b38a3387c5e670754edde2d06a71d1940c3a603e5a0489550159e79d18885",
+        "source": "hf:OpenMOSS-Team/MOSS-SoundEffect-v2.0"
+      }
+    ],
+    "node": "sound@camp",
+    "output": "d2ee95db8e57f5e792223bf4a5c4b79e3ce2bb358cfda3289160513ee8e8dd80",
+    "place": "camp",
+    "prim": "/camp/Sound/Room/camp_room",
+    "record_key": "3fefceb0b34f311d34d14671f9cae9da0fb696e9efa06236a52427bf23fa8832",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "camp"
+  ],
+  "state": "draft",
+  "tags": {
+    "category": [
+      "room"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "made_by": [
+      "moss"
+    ],
+    "place_kind": [
+      "mars",
+      "outside"
+    ]
+  },
+  "title": "Camp room",
+  "usd": {
+    "default_prim": "/camp_room",
+    "layer": "sound",
+    "meters_per_unit": null,
+    "path": "score_lib/sound/camp_room/1/sound.usda",
+    "root": "sound.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

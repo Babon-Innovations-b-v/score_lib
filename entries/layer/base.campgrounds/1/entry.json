@@ -1,0 +1,119 @@
+{
+  "address": "layer/base.campgrounds@1",
+  "files": {
+    "assets/textures/ground_colour.jpg": {
+      "bytes": 1788243,
+      "role": "texture",
+      "sha256": "a9bd2386e0059375c7ada6faa99a16e2a1a391ab8df027c8a7883867cee900d5"
+    },
+    "assets/textures/ground_facing.png": {
+      "bytes": 28334005,
+      "role": "texture",
+      "sha256": "7b11c870de3b310550694fb6110aa08e8cc30cb4e1db8fae44b8e6567a6eb59e"
+    },
+    "assets/textures/ground_far_mars_plan_skin_shaded.jpg": {
+      "bytes": 1788901,
+      "role": "texture",
+      "sha256": "740f9a82d87134517ae4fa080fb4c7cd4cb118f2cf87189472971329ce527621"
+    },
+    "layer.usda": {
+      "bytes": 33309251,
+      "role": "usd",
+      "sha256": "0ec5b94333fc3cde9651ee9413cbc112a9ad4bfdf76f95c96b2c437af10dfd80"
+    }
+  },
+  "id": "base.campgrounds",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:16:00.039696+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/base.usda",
+        "sha256": "1f4106aaaf227b235813d496b7262d8ffc19c7f6f265816fc661db0e1ff13c5d"
+      }
+    },
+    "models": [],
+    "node": "assembly@campgrounds",
+    "output": "7fcf4c6f9552d4edb6020038bb83dd248f2e602f1958878438d52dfc3a7685bb",
+    "own_files": [
+      "assets/textures/ground_colour.jpg",
+      "assets/textures/ground_facing.png",
+      "assets/textures/ground_far_mars_plan_skin_shaded.jpg"
+    ],
+    "place": "campgrounds",
+    "record_key": "3e28c5bc4fca67388ebba8768e3cf58d643f791893e4237289ddba7e9754e64e",
+    "side_records_from": null,
+    "source_name": "layers/base.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/room_layout@1"
+  },
+  "requires": [
+    "light/sky_dome.campgrounds@1",
+    "model/cairn@1",
+    "model/cargo_case@1",
+    "model/cargo_case_open@1",
+    "model/cargo_pallet@1",
+    "model/coiled_cable@1",
+    "model/crane@1",
+    "model/drift@1",
+    "model/fixture_camp_boot_rock@1",
+    "model/ground_cable_2@1",
+    "model/ice_drill@1",
+    "model/lander@1",
+    "model/mast_5p82@1",
+    "model/mast_cabinet@1",
+    "model/power_unit.campgrounds@1",
+    "model/reactor@1",
+    "model/sample_case@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "campgrounds"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "base"
+    ],
+    "place_kind": [
+      "outside",
+      "mars"
+    ]
+  },
+  "title": "Campgrounds base layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "base",
+    "meters_per_unit": null,
+    "neighbours": [
+      "place/camp@1"
+    ],
+    "path": "score_lib/layer/base.campgrounds/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

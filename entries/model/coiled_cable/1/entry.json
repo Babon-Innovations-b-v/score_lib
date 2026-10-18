@@ -1,0 +1,103 @@
+{
+  "address": "model/coiled_cable@1",
+  "files": {
+    "model.json": {
+      "bytes": 292,
+      "role": "record",
+      "sha256": "25342030b8c756998effa8ad85d5e5bfbe1e39b0be48ffc401379a233894f430"
+    },
+    "model.usdc": {
+      "bytes": 1917636,
+      "role": "usd",
+      "sha256": "47c9becee2e3bb0a8958041a99b1bb8a710f01cdbf49bfa5b258544008e02b30"
+    },
+    "preview.png": {
+      "bytes": 23401,
+      "role": "picture",
+      "sha256": "65f7482a1c766e01531c3e4f5fe87026c02b420da3ec143711ba43943b7e33ef"
+    },
+    "textures/coiled_cable_base_color.png": {
+      "bytes": 2410198,
+      "role": "texture",
+      "sha256": "ac96db74e182525ed584c917cc16b783290a86f068b37c359681e7a2b24d32b8"
+    },
+    "textures/coiled_cable_metal_roughness.png": {
+      "bytes": 332004,
+      "role": "texture",
+      "sha256": "ad45f71ae947370ffd410e51a2387e534bce432d585ba61a71c083754c966e3c"
+    },
+    "textures/coiled_cable_normal.png": {
+      "bytes": 7847642,
+      "role": "texture",
+      "sha256": "9912f78a51573816666e1228a377740f0f479491177e8aa008911998afe70f19"
+    }
+  },
+  "id": "coiled_cable",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:16:00.039696+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "5694405bee058455e5a7f06413934a8e60d92d679fa53a2ff2f403cda3ad8ee3",
+    "models": [],
+    "node": "assembly@campgrounds",
+    "output": "7fcf4c6f9552d4edb6020038bb83dd248f2e602f1958878438d52dfc3a7685bb",
+    "place": "campgrounds",
+    "record_key": "3e28c5bc4fca67388ebba8768e3cf58d643f791893e4237289ddba7e9754e64e",
+    "source_name": "coiled_cable",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "campgrounds"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "mars",
+      "outside"
+    ]
+  },
+  "title": "Coiled cable",
+  "usd": {
+    "default_prim": "/coiled_cable",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/coiled_cable/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

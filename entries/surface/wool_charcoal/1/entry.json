@@ -1,0 +1,88 @@
+{
+  "address": "surface/wool_charcoal@1",
+  "files": {
+    "material.usda": {
+      "bytes": 558,
+      "role": "usd",
+      "sha256": "6b21e46a34226c63d2836e17ac8d0feec511f1d844e286ed3e54d2fdad58c8d7"
+    },
+    "preview.png": {
+      "bytes": 19879,
+      "role": "picture",
+      "sha256": "04c2023a7b738f1cb22a35f21eb06a86093b38173ab6610c4fc7e5557c0f336a"
+    },
+    "surface.json": {
+      "bytes": 336,
+      "role": "record",
+      "sha256": "c51a99ce3f976dfae1e8cc3cc143d42b0c21d5f426538c108850b08631dd53fd"
+    }
+  },
+  "id": "wool_charcoal",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "fabric",
+    "place": "cockpit",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "cockpit",
+    "engineroom",
+    "galley",
+    "navigation",
+    "quarters",
+    "shiplock",
+    "storage",
+    "walkway"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "fabric"
+    ],
+    "recipe": [
+      "rubber"
+    ]
+  },
+  "title": "Wool charcoal",
+  "usd": {
+    "default_prim": "/wool_charcoal",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/wool_charcoal/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

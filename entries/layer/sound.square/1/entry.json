@@ -1,0 +1,97 @@
+{
+  "address": "layer/sound.square@1",
+  "files": {
+    "layer.usda": {
+      "bytes": 126172,
+      "role": "usd",
+      "sha256": "6427e4307fab53579fa6165776a6b0443cc5314353c77305925c6e757a54282b"
+    },
+    "sound.json": {
+      "bytes": 28137,
+      "role": "record",
+      "sha256": "ffecbae52bbc9df098fdc6ce0c1e72b727ea09b775f269b11c8dfee9b8a82b93"
+    }
+  },
+  "id": "sound.square",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T10:37:19.122806+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/sound.usda",
+        "sha256": "05cccd7bb7daefa192143fadcc71ecf45e5d72dca3ea6218f88c2e6a08a505be"
+      }
+    },
+    "models": [],
+    "node": "assembly@square",
+    "output": "eae5e52a53b2d1757ed24acf4035c4a6bb2f806de9e7630adabdd6c13f4120be",
+    "own_files": [],
+    "place": "square",
+    "record_key": "97d5530a3361f6e15704b2a62582b9dfe5a727669824f06f7c46afab788c5160",
+    "side_records_from": "3a8a978da3e2f38593dd60ee4f5a9771535d643656fe423f1aa65f36a9428e47",
+    "source_name": "layers/sound.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/sound_layer@1"
+  },
+  "requires": [
+    "sound/footstep_grating@1",
+    "sound/footstep_rubber@1",
+    "sound/footsteps_metal.square@1",
+    "sound/impact_grating@1",
+    "sound/impact_rubber@1",
+    "sound/impact_steel_plate@1",
+    "sound/leader_speech@1",
+    "sound/prologue_crowd@1",
+    "sound/scrape_grating@1",
+    "sound/scrape_rubber@1",
+    "sound/scrape_steel_plate@1",
+    "sound/square_pa@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "square"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "sound"
+    ],
+    "place_kind": [
+      "outside",
+      "earth"
+    ]
+  },
+  "title": "Square sound layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "sound",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/sound.square/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

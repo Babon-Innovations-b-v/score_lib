@@ -1,0 +1,108 @@
+{
+  "address": "surface/hull_white_old@1",
+  "files": {
+    "material.usda": {
+      "bytes": 559,
+      "role": "usd",
+      "sha256": "086a72bb488ae5afe427e0b8ec163ae615ccfd27a6e03e6e8d3d3f88436eb950"
+    },
+    "preview.png": {
+      "bytes": 15692,
+      "role": "picture",
+      "sha256": "6d66191d8cf91747f975da009e4f871f8d7c53ad32d2c5527708f14aa034456c"
+    },
+    "surface.json": {
+      "bytes": 212,
+      "role": "record",
+      "sha256": "dc8b1aee121938d1e746a8b2185331e99c3d5ed7a0cca0b37fe31a47eec2d9b4"
+    }
+  },
+  "id": "hull_white_old",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "painted",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "painted"
+    ],
+    "recipe": [
+      "painted_metal"
+    ]
+  },
+  "title": "Hull white old",
+  "usd": {
+    "default_prim": "/hull_white_old",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/hull_white_old/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

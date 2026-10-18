@@ -1,0 +1,103 @@
+{
+  "address": "model/ring_frame@1",
+  "files": {
+    "model.json": {
+      "bytes": 277,
+      "role": "record",
+      "sha256": "77f8fe7d3de3b131b5846f0ae1bcb217cc4d7e8512bb21498b2db7628849c0b6"
+    },
+    "model.usdc": {
+      "bytes": 1872739,
+      "role": "usd",
+      "sha256": "f5ae6165c9dbf81124342cf2c802cacbea3d371acf1860798e8a1b78fe52d205"
+    },
+    "preview.png": {
+      "bytes": 23878,
+      "role": "picture",
+      "sha256": "7b67d7b7f178efa61b32a29baeca7689fdf40b92eb5d1612b1ef5891f0a4273a"
+    },
+    "textures/ring_frame_base_color.png": {
+      "bytes": 737799,
+      "role": "texture",
+      "sha256": "0d11d1fc71e529cb53e9f73832aa3aa6544585a0437f59ebcc7023d206660b40"
+    },
+    "textures/ring_frame_metal_roughness.png": {
+      "bytes": 641741,
+      "role": "texture",
+      "sha256": "b8de9acde4547ee84b2bc491db4b79761a5776ca2a462287e4c6819473719577"
+    },
+    "textures/ring_frame_normal.png": {
+      "bytes": 2836336,
+      "role": "texture",
+      "sha256": "fbb08ec7326e2f0bc7598cb1e4de564019c76a4ac8bafe14d43b232ddc6e0e0d"
+    }
+  },
+  "id": "ring_frame",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T15:53:36.185584+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "cc623dab6640dd50f079e339c8906361215c7b7cc1551f8a2533b0d1cd8e56e9",
+    "models": [],
+    "node": "assembly@wreck",
+    "output": "591bca186cdb2ba3104fc444e86a6ff62eeb734cbab1de4f4f2c54506dd99291",
+    "place": "wreck",
+    "record_key": "ae3d3dca811e262167338103d0abcba1e68bff01135dac7ecd4e6f2f4113254b",
+    "source_name": "ring_frame",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "moon",
+      "outside"
+    ]
+  },
+  "title": "Ring frame",
+  "usd": {
+    "default_prim": "/ring_frame",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/ring_frame/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

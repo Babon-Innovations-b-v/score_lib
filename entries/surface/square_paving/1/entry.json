@@ -1,0 +1,108 @@
+{
+  "address": "surface/square_paving@1",
+  "files": {
+    "material.usda": {
+      "bytes": 550,
+      "role": "usd",
+      "sha256": "d750b51c1bac7afeba79c5558176eb31341fed2e716dc51b2f392228403f8ffb"
+    },
+    "preview.png": {
+      "bytes": 19003,
+      "role": "picture",
+      "sha256": "59ce9e4ad878470d121e8355ad78a56de5773b44415c8e22a5265cd99a8a98b7"
+    },
+    "surface.json": {
+      "bytes": 224,
+      "role": "record",
+      "sha256": "d1fa647752eca5b7f7b45ea82aafe82593de100fca9a3d413ab81a1ab2c747cd"
+    }
+  },
+  "id": "square_paving",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "tile",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "tile"
+    ],
+    "recipe": [
+      "tiles"
+    ]
+  },
+  "title": "Square paving",
+  "usd": {
+    "default_prim": "/square_paving",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/square_paving/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

@@ -1,0 +1,103 @@
+{
+  "address": "model/probe_lander@1",
+  "files": {
+    "model.json": {
+      "bytes": 319,
+      "role": "record",
+      "sha256": "308a0c58d2554d71cfdddb8fe0e83428cf6ead8934df50f65ab826a7d926262b"
+    },
+    "model.usdc": {
+      "bytes": 1908666,
+      "role": "usd",
+      "sha256": "3b5998415f3e0a77a8493cb221a0a7036d89cb3067ad8adecf7291d8d67f81f4"
+    },
+    "preview.png": {
+      "bytes": 16806,
+      "role": "picture",
+      "sha256": "775e00db6efaa1b7b364fdf6a85c3952aa6b54fd477889bdc8aedf54093649d8"
+    },
+    "textures/probe_lander_base_color.png": {
+      "bytes": 937262,
+      "role": "texture",
+      "sha256": "b1f7ce241ab209314eb5a5e40731b72611908100c44567252821c15ff2ca92c6"
+    },
+    "textures/probe_lander_metal_roughness.png": {
+      "bytes": 739274,
+      "role": "texture",
+      "sha256": "7393dd66179eae3db543a2610b5284f3cea14a5b50356bf2d2312c2df5a65517"
+    },
+    "textures/probe_lander_normal.png": {
+      "bytes": 7525068,
+      "role": "texture",
+      "sha256": "0173736c726cc46f33d4bf5a663e659ca9a016997e52fe803bcc4ce4ccdedb98"
+    }
+  },
+  "id": "probe_lander",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T15:53:36.185584+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "d85361a3dfc6e768d87ee9e74d3bcc855e246423bd6a045f425fc415ed23ae5e",
+    "models": [],
+    "node": "assembly@wreck",
+    "output": "591bca186cdb2ba3104fc444e86a6ff62eeb734cbab1de4f4f2c54506dd99291",
+    "place": "wreck",
+    "record_key": "ae3d3dca811e262167338103d0abcba1e68bff01135dac7ecd4e6f2f4113254b",
+    "source_name": "probe_lander",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "moon",
+      "outside"
+    ]
+  },
+  "title": "Probe lander",
+  "usd": {
+    "default_prim": "/probe_lander",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/probe_lander/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

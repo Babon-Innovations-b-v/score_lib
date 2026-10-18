@@ -1,0 +1,118 @@
+{
+  "address": "place/navigation@1",
+  "files": {
+    "contract.json": {
+      "bytes": 99,
+      "role": "record",
+      "sha256": "c2b7151f92e6a67ca4666ea747ad262b67b4d0af824cc83862ce64d8cc49d12c"
+    },
+    "edit.usda": {
+      "bytes": 183,
+      "role": "usd",
+      "sha256": "8fc5485ea9a58537dd8289c516a85733e069ad7a17b866471667b8795142454f"
+    },
+    "gaps.json": {
+      "bytes": 1855,
+      "role": "record",
+      "sha256": "aa5c3fbc13ffe39f1760483116ebfd8e996ce2d7bd6845d3c22e14e899d18572"
+    },
+    "inputs.json": {
+      "bytes": 3935,
+      "role": "record",
+      "sha256": "af0bb1cb99c47abc9fddd47a1826a6ad085519b08e73229246742353cd92baba"
+    },
+    "navigation.usda": {
+      "bytes": 301,
+      "role": "usd",
+      "sha256": "5a45980dff4c8b6c6ef209d8fba45fbc5a17c1d7779bc720f24e5fe9d9b2be8f"
+    },
+    "origin.json": {
+      "bytes": 803,
+      "role": "record",
+      "sha256": "d759502c3f37610d5109a261d7d7823a0d410bd023be074bd24bd073ca966a51"
+    },
+    "scene.json": {
+      "bytes": 2014,
+      "role": "record",
+      "sha256": "2cf00a23b7309bf0a9bea4025244d32092bd7f96a0003483e81feeaeca19ea9b"
+    }
+  },
+  "id": "navigation",
+  "kind": "place",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-17T09:46:43.958933+00:00",
+      "by": "runner"
+    },
+    "code": "ef47b8487d48b56da1d75a1c5b457e58a3b90c80f8ce25c6c78841629ebcbbbb",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "complete": {
+      "accept": {
+        "at": "2026-10-17T09:48:02.907787+00:00",
+        "by": "runner"
+      },
+      "code": "614e17d70adbc54d15ef2ac7532458f7dbfe393cb1a802ed4b39c5bbd5b6e794",
+      "models": [],
+      "node": "complete@navigation",
+      "output": "2e334ce20fc348561c66c0ac50baf564e942e07ceb70d4ac0846b0eaae08d1e1",
+      "record_key": "2e959984970089b94d4541be39edd8e93104bac1f0b27eb69d04359fd8102a22"
+    },
+    "complete_failing": [
+      "named gaps"
+    ],
+    "gaps": "data/checks/gaps/navigation.json",
+    "models": [],
+    "node": "assembly@navigation",
+    "output": "5cd589efecebda42c80bb145ce56b59ea716bb1342ccc96d66095c514a5399eb",
+    "place": "navigation",
+    "record_key": "cec8763d9b4f68cfd044261afac712e21f8d6b912e8af63af103f60b7761a775",
+    "unresolved_sublayers": [],
+    "world": "world1"
+  },
+  "requires": [
+    "layer/base.navigation@1",
+    "layer/light.navigation@1",
+    "layer/sound.navigation@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "navigation"
+  ],
+  "state": "draft",
+  "tags": {
+    "complete": [
+      "named_gaps"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Navigation",
+  "usd": {
+    "default_prim": "/navigation",
+    "layer": "root",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/place/navigation/1/navigation.usda",
+    "root": "navigation.usda",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "open"
+  },
+  "version": 1
+}

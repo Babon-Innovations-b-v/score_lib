@@ -1,0 +1,94 @@
+{
+  "address": "effect/pump_fog.garage@1",
+  "files": {
+    "clip.usdc": {
+      "bytes": 3073081,
+      "role": "usd",
+      "sha256": "f6eb9727bdc7520bc27672200f308872c57409393567e804030c90488da57731"
+    },
+    "effect.usda": {
+      "bytes": 4220,
+      "role": "usd",
+      "sha256": "88033e16fbdcc0cd44cd3d42f61fa29afa7ed1ee58f79c8284dc3e472cbac92a"
+    },
+    "preview.png": {
+      "bytes": 60321,
+      "role": "picture",
+      "sha256": "d6f11d11786a0e9e95fab3e2ca8a10e3a45b4de0332dddbad957190ee9a4f7e9"
+    },
+    "settings.json": {
+      "bytes": 1903,
+      "role": "record",
+      "sha256": "42621cd926468438be34c7c6cb50973993dc3e9ac882dbb495d3a48785e5f94c"
+    }
+  },
+  "id": "pump_fog.garage",
+  "kind": "effect",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/points.py",
+    "of": "clip.usdc at clip time 120.0"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-12T01:25:10.589195+00:00",
+      "by": "runner"
+    },
+    "code": "7b3bc97d9997c40ad75aad20b9a04a996a85620ffa21f81538dfd5251854aac9",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "from": "footage: normandale-humidity-vacuum, physicsforums-vacuum-chamber-demo (the fog the air makes as the pump draws it down (expanding air cools and its water condenses on the dust in it), forming in the pump's first seconds and gone within seconds as the pressure keeps falling and the air warms again off the walls; the pump runs from 12 s to 17 s of the round (data/motion/garage.json big_door_beacon))",
+    "models": [],
+    "node": "effects-layer@garage",
+    "output": "dd0577f250d10d9cb327f68449f6daf3d2cf6ad45f25c6bcaf68d289e6e4068f",
+    "place": "garage",
+    "prim": "/garage/Effects/pump_fog",
+    "record_key": "fa8d6cf1614a1a69c6069be2dcd46690badc821a09804750e5e3772a8b52149f",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/particle_effects@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "garage"
+  ],
+  "state": "draft",
+  "tags": {
+    "effect": [
+      "pump_down_fog"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ],
+    "weather": []
+  },
+  "title": "Pump fog",
+  "usd": {
+    "default_prim": "/pump_fog",
+    "layer": "effects",
+    "meters_per_unit": null,
+    "path": "score_lib/effect/pump_fog.garage/1/effect.usda",
+    "root": "effect.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

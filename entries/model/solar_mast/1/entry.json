@@ -1,0 +1,103 @@
+{
+  "address": "model/solar_mast@1",
+  "files": {
+    "model.json": {
+      "bytes": 357,
+      "role": "record",
+      "sha256": "dd1c9873f415d3efdd3ed921087c6b290c0f8575681fd174f01135f1b4f1ffd0"
+    },
+    "model.usdc": {
+      "bytes": 4839622,
+      "role": "usd",
+      "sha256": "911c5347412daad4a42cb39e45022df9c74f081287d58b6f7ee1c4becae506dc"
+    },
+    "preview.png": {
+      "bytes": 18803,
+      "role": "picture",
+      "sha256": "715ee720cf409ae0dc3cf42c214e56e1259255905b5a8c13ed66a73800de71ff"
+    },
+    "textures/solar_mast_base_color.png": {
+      "bytes": 1734243,
+      "role": "texture",
+      "sha256": "7bf7e77a568ada53ad37d02058ad9ac697cd7a6ea64ffa4e918d5bb068c88cb2"
+    },
+    "textures/solar_mast_metal_roughness.png": {
+      "bytes": 1303641,
+      "role": "texture",
+      "sha256": "73b0558f062249aa97c0dadccd1109006496050d3d582c0fc0da8cc34474724e"
+    },
+    "textures/solar_mast_normal.png": {
+      "bytes": 6355511,
+      "role": "texture",
+      "sha256": "f63a384efe0434a3dd200c7c92dd758a67b9f76b888f6dd9010c58fd6c643704"
+    }
+  },
+  "id": "solar_mast",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:02:30.466230+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "7cb256483db56350fcd01c1c60b37c683d3de86aaa1b75b744e56f82bee102be",
+    "models": [],
+    "node": "assembly@old_station",
+    "output": "f60adc09d2c14a31314d3bd31f69c2601467bfbcf728c76faa051b30b1810b56",
+    "place": "old_station",
+    "record_key": "7d9d97819faa5aebdafc6de56b258e509d111fd6834f0d009658ac7904c3e290",
+    "source_name": "solar_mast",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "old_station"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "moon",
+      "outside"
+    ]
+  },
+  "title": "Solar mast",
+  "usd": {
+    "default_prim": "/solar_mast",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/solar_mast/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

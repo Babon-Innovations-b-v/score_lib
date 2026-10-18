@@ -1,0 +1,88 @@
+{
+  "address": "surface/enamel_decal_rose@1",
+  "files": {
+    "material.usda": {
+      "bytes": 568,
+      "role": "usd",
+      "sha256": "ecba697ddacb563f7fc441c1b696551149522889029b5d5fa6c914ffd85b2866"
+    },
+    "preview.png": {
+      "bytes": 22189,
+      "role": "picture",
+      "sha256": "66a453beca756342c18ba87663a08b59a2c51b40cb03c2fe4aefa4ab793065b0"
+    },
+    "surface.json": {
+      "bytes": 431,
+      "role": "record",
+      "sha256": "0d419c65844ddf7d4637d73659ea367ed672e686f424625b61d4d2d93c42fd5c"
+    }
+  },
+  "id": "enamel_decal_rose",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "painted",
+    "place": "cockpit",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "cockpit",
+    "engineroom",
+    "galley",
+    "navigation",
+    "quarters",
+    "shiplock",
+    "storage",
+    "walkway"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "painted"
+    ],
+    "recipe": [
+      "painted_metal"
+    ]
+  },
+  "title": "Enamel decal rose",
+  "usd": {
+    "default_prim": "/enamel_decal_rose",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/enamel_decal_rose/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

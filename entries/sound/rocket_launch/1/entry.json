@@ -1,0 +1,116 @@
+{
+  "address": "sound/rocket_launch@1",
+  "files": {
+    "audio/generated/doors/rocket_launch.ogg": {
+      "bytes": 155411,
+      "role": "audio",
+      "sha256": "6a317bbaf1ef3729403e5b3349be022be76575a9059c04d9ae3c9edf6d990a6c"
+    },
+    "preview.png": {
+      "bytes": 2678,
+      "role": "picture",
+      "sha256": "8bd7ac7f2f6faddb02e0c8d607da37770b63475bbf28885a1ff79e630cde24de"
+    },
+    "sound.json": {
+      "bytes": 1083,
+      "role": "record",
+      "sha256": "d49ee7d35c7aa782dee133ba92055338e0f806a866e4209f718d8cc77fd0c83b"
+    },
+    "sound.usda": {
+      "bytes": 735,
+      "role": "usd",
+      "sha256": "3f4572bab16d9c62844a036acc22cb2c19ba2b0fbcac2207373b2f55d7c65eb2"
+    }
+  },
+  "id": "rocket_launch",
+  "kind": "sound",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "https://huggingface.co/OpenMOSS-Team/MOSS-SoundEffect-v2.0; prompt: A large rocket lifting off a few kilometres away: a deep thunderous roar with crackling low rumble that builds, holds and slowly fades as it climbs.; seed 2; author: the 2099 project, generated with MOSS-SoundEffect v2.0 (OpenMOSS-Team/MOSS-SoundEffect-v2.0@e35df4d82fbe87fcd5d14e5d100e349c0c3c076d)",
+        "spdx": "Apache-2.0",
+        "text": "made for the first world with MOSS-SoundEffect v2.0 (Apache-2.0)",
+        "what": "sound/generated/doors/rocket_launch.ogg"
+      }
+    ],
+    "note": "",
+    "spdx": "Apache-2.0"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/audio.py",
+    "of": "audio/generated/doors/rocket_launch.ogg"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-15T06:19:44.922765+00:00",
+      "by": "runner"
+    },
+    "code": "26abc0281e559526bee3e6dae0ec50a73603c24027643172eedf4602647432a3",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_source": {
+      "audio/generated/doors/rocket_launch.ogg": "assets/sound/generated/doors/rocket_launch.ogg"
+    },
+    "models": [
+      {
+        "commercial_use": true,
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "licence": "Apache-2.0",
+        "name": "clap-larger-general",
+        "revision": "ada0c23a36c4e8582805bb38fec3905903f18b41",
+        "sha256": "b8e001a32b37111261ccc28541ae07960a8cc047837f76a1a0877e9b2c59dc45",
+        "source": "hf:laion/larger_clap_general"
+      },
+      {
+        "commercial_use": true,
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "licence": "Apache-2.0",
+        "name": "moss-soundeffect-v2",
+        "revision": "e35df4d82fbe87fcd5d14e5d100e349c0c3c076d",
+        "sha256": "d74b38a3387c5e670754edde2d06a71d1940c3a603e5a0489550159e79d18885",
+        "source": "hf:OpenMOSS-Team/MOSS-SoundEffect-v2.0"
+      }
+    ],
+    "node": "sound@launch",
+    "output": "4557df99f4a9ccc391846d798dc02d1f01ea61f37b11cb5eaa98ac3f2d6b50b9",
+    "place": "launch",
+    "prim": "/launch/Fixtures/rocket/Sound_0_1000",
+    "record_key": "202e3468fc603f5521b64d1afe65cbf7134bff1887ad6f3dd1204cde78c68221",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "launch"
+  ],
+  "state": "draft",
+  "tags": {
+    "category": [
+      "shot"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "made_by": [
+      "moss"
+    ],
+    "place_kind": [
+      "earth",
+      "outside"
+    ]
+  },
+  "title": "Rocket launch",
+  "usd": {
+    "default_prim": "/rocket_launch",
+    "layer": "sound",
+    "meters_per_unit": null,
+    "path": "score_lib/sound/rocket_launch/1/sound.usda",
+    "root": "sound.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

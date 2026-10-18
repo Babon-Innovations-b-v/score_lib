@@ -1,0 +1,120 @@
+{
+  "address": "place/old_station@1",
+  "files": {
+    "contract.json": {
+      "bytes": 99,
+      "role": "record",
+      "sha256": "c2b7151f92e6a67ca4666ea747ad262b67b4d0af824cc83862ce64d8cc49d12c"
+    },
+    "edit.usda": {
+      "bytes": 183,
+      "role": "usd",
+      "sha256": "8fc5485ea9a58537dd8289c516a85733e069ad7a17b866471667b8795142454f"
+    },
+    "gaps.json": {
+      "bytes": 2277,
+      "role": "record",
+      "sha256": "33d2ee74c10a1c6c7f577978f06f427c9129276a7140af3df5b685c5b3d9942e"
+    },
+    "inputs.json": {
+      "bytes": 6007,
+      "role": "record",
+      "sha256": "35de0c6d9d11f51aae5badff4fc76c830d6f4a0905413c059b72ffe0d789994c"
+    },
+    "old_station.usda": {
+      "bytes": 521,
+      "role": "usd",
+      "sha256": "0f526286641b67443e56f1748ffa3b11b1ab2fc559f37f5be6fca8aa5fe9b7a6"
+    },
+    "origin.json": {
+      "bytes": 757,
+      "role": "record",
+      "sha256": "1725a877ea56c6a0df6d7dd266352849b986ad005a7ad3a6fa759c5de13ef63a"
+    },
+    "scene.json": {
+      "bytes": 7774,
+      "role": "record",
+      "sha256": "801619172ddbeabc06f71abf54376c185547a7c155f870442f5f4c6e22116933"
+    }
+  },
+  "id": "old_station",
+  "kind": "place",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a place is drawn only by a renderer, which v1 does not run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:02:30.466230+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "complete": {
+      "accept": {
+        "at": "2026-10-17T14:28:03.239242+00:00",
+        "by": "runner"
+      },
+      "code": "614e17d70adbc54d15ef2ac7532458f7dbfe393cb1a802ed4b39c5bbd5b6e794",
+      "models": [],
+      "node": "complete@old_station",
+      "output": "f4c9de981b8f7e95262dc738ac6e243a904545cca1ea6d998b859112fe1c8c75",
+      "record_key": "cfc87ebf678c2fcddf5deeea2819f317a2bdfda3cc09688dffd5f773ed163c88"
+    },
+    "complete_failing": [
+      "named gaps"
+    ],
+    "gaps": "data/checks/gaps/old_station.json",
+    "models": [],
+    "node": "assembly@old_station",
+    "output": "f60adc09d2c14a31314d3bd31f69c2601467bfbcf728c76faa051b30b1810b56",
+    "place": "old_station",
+    "record_key": "7d9d97819faa5aebdafc6de56b258e509d111fd6834f0d009658ac7904c3e290",
+    "unresolved_sublayers": [],
+    "world": "world1"
+  },
+  "requires": [
+    "layer/base.old_station@1",
+    "layer/ground.old_station@1",
+    "layer/light.old_station@1",
+    "layer/motion.old_station@1",
+    "layer/sound.old_station@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "old_station"
+  ],
+  "state": "draft",
+  "tags": {
+    "complete": [
+      "named_gaps"
+    ],
+    "place_kind": [
+      "outside",
+      "moon"
+    ]
+  },
+  "title": "Old station",
+  "usd": {
+    "default_prim": "/old_station",
+    "layer": "root",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/place/old_station/1/old_station.usda",
+    "root": "old_station.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": "Y",
+    "use": "open"
+  },
+  "version": 1
+}

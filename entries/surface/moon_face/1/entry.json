@@ -1,0 +1,108 @@
+{
+  "address": "surface/moon_face@1",
+  "files": {
+    "material.usda": {
+      "bytes": 612,
+      "role": "usd",
+      "sha256": "53cfe14203263d443dfcbed92d25083184804cc0c6d80f9849c39332d1bc47e2"
+    },
+    "preview.png": {
+      "bytes": 18606,
+      "role": "picture",
+      "sha256": "0b6d354378dab1580e9e367a65f3c66b7682922399b75745f14b183fa422242f"
+    },
+    "surface.json": {
+      "bytes": 244,
+      "role": "record",
+      "sha256": "242b60b72d200f6d1b3b9cffff887c551986524bfe2459980d9485e1e53f5367"
+    }
+  },
+  "id": "moon_face",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "light",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "light"
+    ],
+    "recipe": [
+      "glowing"
+    ]
+  },
+  "title": "Moon face",
+  "usd": {
+    "default_prim": "/moon_face",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/moon_face/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

@@ -1,0 +1,81 @@
+{
+  "address": "surface/pipe_steel.old_station@1",
+  "files": {
+    "material.usda": {
+      "bytes": 544,
+      "role": "usd",
+      "sha256": "c3acdbe7afe52bddef881df9c2a9bb74ada7dfef1b96c5b0ab16ff5014114805"
+    },
+    "preview.png": {
+      "bytes": 18095,
+      "role": "picture",
+      "sha256": "d1b9b4696c1e57a665e96c5303afec4dd7b51f885dfcc56714427e446a82bbd7"
+    },
+    "surface.json": {
+      "bytes": 190,
+      "role": "record",
+      "sha256": "1124d80b00237e3d4039241b46d513d68506776d2ec487e4bd137783c9b15dd5"
+    }
+  },
+  "id": "pipe_steel.old_station",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "steel",
+    "place": "old_station",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "old_station"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "steel"
+    ],
+    "recipe": [
+      "bare_metal"
+    ]
+  },
+  "title": "Pipe steel",
+  "usd": {
+    "default_prim": "/pipe_steel",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/pipe_steel.old_station/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

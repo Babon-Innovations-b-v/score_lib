@@ -1,0 +1,96 @@
+{
+  "address": "effect/drift_4_4.camp@1",
+  "files": {
+    "clip.usdc": {
+      "bytes": 693929,
+      "role": "usd",
+      "sha256": "b029fc46a8b91b93f68ac2532c075ec649f1dde9f7b77f65009b11739ea42cc8"
+    },
+    "effect.usda": {
+      "bytes": 8565,
+      "role": "usd",
+      "sha256": "5847f2bc8fdfde92b5326871e12f255994a71391b70d5677a70ed9f8cc586446"
+    },
+    "preview.png": {
+      "bytes": 10214,
+      "role": "picture",
+      "sha256": "1657fe5aedd6510bb8faba6ae94bf993099a0a75cdf65ffbe6162fd370ec9165"
+    },
+    "settings.json": {
+      "bytes": 2084,
+      "role": "record",
+      "sha256": "e0e2dd5f48ea2c47465b5a63d2bf965cde5cb4ba25379dc166db6663cd00f0aa"
+    }
+  },
+  "id": "drift_4_4.camp",
+  "kind": "effect",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/points.py",
+    "of": "clip.usdc at clip time 72.0"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-12T18:27:32.757391+00:00",
+      "by": "runner"
+    },
+    "code": "9b32f2200ac272fbb20a9a7b7f3190e8a3f4de0378733281b560755af276318d",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "from": "game/outside/dust/mars_wind.gd:18-52,190-219,280-313 (CELL_M 14, CELLS_OUT 2, DRIFT_HIGH_CALM 0.4, WIND_CALM 2.5 m/s at 0.7 to 1.2 of it, DRIFT_SECONDS 3, DRIFT_SINK 0.25, DRIFT_GRAINS_A_CELL 20,000 at DRIFT_GRAINS_CALM_SHARE 0.06 = 1,200 a cell, DRIFT_GRAIN_M 0.03, DRIFT_GRAIN_THICKNESS 0.7, spread 8, fading_in_and_out 0 / 0.2 / 0.7 / 1), game/outside/dust/dust_grains.gd:24-38,106-117 (the unshaded speck, MARS_DUST #b4583a lifted by GRAIN_LIFT 1.25 to #e16e48); the cells are the stage's own five by five round the camp's middle, not Mars's cell grid round the player; footage: doi-10.1088/0034-4885/75/10/106901 (sand on Mars hops about 10 cm up and up to about a metre, grain by grain: the drift's grains stay within its 0.4 m over the ground)",
+    "models": [],
+    "node": "effects-layer@camp",
+    "output": "ba556d2238a88a22cad7bca11d03443466319f14ed988abf6ba9c1a5b933e9fe",
+    "place": "camp",
+    "prim": "/camp/Effects{weather=calm}drift_4_4",
+    "record_key": "22796041a04506a19a5f8cef4fa80eb14e4fa8879a95dfff20e7cbb9f5ea901a",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/particle_effects@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "camp"
+  ],
+  "state": "draft",
+  "tags": {
+    "effect": [
+      "dust_drift"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "place_kind": [
+      "mars",
+      "outside"
+    ],
+    "weather": [
+      "calm"
+    ]
+  },
+  "title": "Drift 4 4",
+  "usd": {
+    "default_prim": "/drift_4_4",
+    "layer": "effects",
+    "meters_per_unit": null,
+    "path": "score_lib/effect/drift_4_4.camp/1/effect.usda",
+    "root": "effect.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

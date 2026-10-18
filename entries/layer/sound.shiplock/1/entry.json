@@ -1,0 +1,95 @@
+{
+  "address": "layer/sound.shiplock@1",
+  "files": {
+    "layer.usda": {
+      "bytes": 144716,
+      "role": "usd",
+      "sha256": "ebb71bfee7fba7ac444cad0f681de76008e2747fe5245f0310b805fcac032e55"
+    },
+    "sound.json": {
+      "bytes": 25440,
+      "role": "record",
+      "sha256": "05006e8e8e66c566f8b0783fd263a56e95dbf6a52e009765e208ac51bbcf2b97"
+    }
+  },
+  "id": "sound.shiplock",
+  "kind": "layer",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      }
+    ],
+    "note": "",
+    "spdx": "MIT"
+  },
+  "picture": null,
+  "picture_reason": "a sublayer is shown only as part of its place; no renderer is run",
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T10:26:39.062614+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/sound.usda",
+        "sha256": "9d1100e3ad9ff83b36adeb6d5bc50c06914b32fd2c3f32681f0f5c1982b81b95"
+      }
+    },
+    "models": [],
+    "node": "assembly@shiplock",
+    "output": "9ea9c1ba2ba7fce72429f749372d757425d477683ae1bc551ad6d3e280d2b1ad",
+    "own_files": [],
+    "place": "shiplock",
+    "record_key": "adaee891e03334aa818fce0406f996d11d681dcf6c90ed18ccd6250eac3e41fe",
+    "side_records_from": "cf2940e74ec2d74aafa5c3aa49c7b5f9394ee7a812886dc75dce1bf096c6fb5b",
+    "source_name": "layers/sound.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": "algorithm/sound_layer@1"
+  },
+  "requires": [
+    "sound/footstep_grating@1",
+    "sound/footstep_rubber@1",
+    "sound/footsteps_metal.shiplock@1",
+    "sound/impact_grating@1",
+    "sound/impact_rubber@1",
+    "sound/impact_steel_plate@1",
+    "sound/scrape_grating@1",
+    "sound/scrape_rubber@1",
+    "sound/scrape_steel_plate@1",
+    "sound/ship_inside@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "shiplock"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "sound"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Shiplock sound layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "sound",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/sound.shiplock/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 1
+}

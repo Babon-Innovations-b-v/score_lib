@@ -1,0 +1,108 @@
+{
+  "address": "surface/wall_tile_white@1",
+  "files": {
+    "material.usda": {
+      "bytes": 552,
+      "role": "usd",
+      "sha256": "c46c8b7d4a8d9d04523bc9ae714365a5119240d55cd980e6de2afb9e2a86ecf5"
+    },
+    "preview.png": {
+      "bytes": 19548,
+      "role": "picture",
+      "sha256": "434b29188957dc74982db3bca5ff62c4ce5dd8af17d90d2d1a2d45b0dc863a78"
+    },
+    "surface.json": {
+      "bytes": 134,
+      "role": "record",
+      "sha256": "98af5099fa44bf5e95f0e56ddabe63d2a6cf38924d809669daab180996bae1eb"
+    }
+  },
+  "id": "wall_tile_white",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "tile",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "tile"
+    ],
+    "recipe": [
+      "tiles"
+    ]
+  },
+  "title": "Wall tile white",
+  "usd": {
+    "default_prim": "/wall_tile_white",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/wall_tile_white/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

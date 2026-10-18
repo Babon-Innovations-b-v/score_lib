@@ -1,0 +1,81 @@
+{
+  "address": "surface/led_red.workshop@1",
+  "files": {
+    "material.usda": {
+      "bytes": 610,
+      "role": "usd",
+      "sha256": "6472567cedbeed370782dda68770344b0e37bfc98abf77af0d5eac0bfbd1a348"
+    },
+    "preview.png": {
+      "bytes": 20192,
+      "role": "picture",
+      "sha256": "cdf905e208495e68cee1de0964cc45eaf90fe81049a25d01ae66644b17b79382"
+    },
+    "surface.json": {
+      "bytes": 137,
+      "role": "record",
+      "sha256": "e0acfe6d81af5d3cd07f4058a2643bba6acae8199713cd58b47c047bd05d645f"
+    }
+  },
+  "id": "led_red.workshop",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "light",
+    "place": "workshop",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "workshop"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "light"
+    ],
+    "recipe": [
+      "glowing"
+    ]
+  },
+  "title": "Led red",
+  "usd": {
+    "default_prim": "/led_red",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/led_red.workshop/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

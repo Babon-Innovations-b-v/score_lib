@@ -1,0 +1,103 @@
+{
+  "address": "model/render_upper_1.street@1",
+  "files": {
+    "model.json": {
+      "bytes": 296,
+      "role": "record",
+      "sha256": "72a70cab73b32d6505cc412bb35a63c15194197bf8a59bd5e51c05f6ba8b342b"
+    },
+    "model.usdc": {
+      "bytes": 8763,
+      "role": "usd",
+      "sha256": "80fee477065b1c8e02628e35c1d2d28adc78e920964bbe2e6625d0bff8fbb109"
+    },
+    "preview.png": {
+      "bytes": 16079,
+      "role": "picture",
+      "sha256": "e66220125040aff6e65cf38cfdcabdf8bdd620b00c75254ccb513d71a151f430"
+    },
+    "textures/prologue_street_facade_2_base_color.png": {
+      "bytes": 1244828,
+      "role": "texture",
+      "sha256": "5e985def73ed2f5b292b6388a3faff329950f385fafb69e043e5288cee2284e6"
+    },
+    "textures/prologue_street_facade_2_metal_roughness.png": {
+      "bytes": 342936,
+      "role": "texture",
+      "sha256": "b970c81fa96b8881d9e19483699f878e9e39912254e9ab0aacec917352226452"
+    },
+    "textures/prologue_street_facade_2_normal.png": {
+      "bytes": 5543864,
+      "role": "texture",
+      "sha256": "e8b8b4ceae999b635b77a58f4a476256cd796cc19ad643d8b6d042a2c29674ff"
+    }
+  },
+  "id": "render_upper_1.street",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-15T17:38:29.285750+00:00",
+      "by": "runner"
+    },
+    "code": "e172da5a348a36e044c48ac88c4301ef36b984d2606f116b55884e77f224e788",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "b5b9df704fa93341ac82de8308299256adf007ec906299d7e9a020d398d34024",
+    "models": [],
+    "node": "assembly@street",
+    "output": "bbaaeb0aa7195bd7d899a3f5ff837f9ba560320bced6dcf06bdea37704342dad",
+    "place": "street",
+    "record_key": "eea7a7e11741099d56afa13effecfae534999af63793625de4692628148864f0",
+    "source_name": "render_upper_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "street"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "outside"
+    ]
+  },
+  "title": "Render upper 1",
+  "usd": {
+    "default_prim": "/render_upper_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/render_upper_1.street/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

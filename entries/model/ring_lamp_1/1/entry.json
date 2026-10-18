@@ -1,0 +1,108 @@
+{
+  "address": "model/ring_lamp_1@1",
+  "files": {
+    "model.json": {
+      "bytes": 306,
+      "role": "record",
+      "sha256": "b66a4b4e88100d773619486f910c2a2adfafb4411e5641df592aadebc560ca22"
+    },
+    "model.usdc": {
+      "bytes": 50489,
+      "role": "usd",
+      "sha256": "7b36ab691c42c3e0a2bd420e3a96c4c4ca5dddaf88aea33622db4097e842aff1"
+    },
+    "model_glow.usdc": {
+      "bytes": 18823,
+      "role": "usd",
+      "sha256": "359231f9bd9ab65aa5ad2277b70c8caba363b7be3dfb7613f8f7fc73d6a60372"
+    },
+    "preview.png": {
+      "bytes": 27526,
+      "role": "picture",
+      "sha256": "a07c62ed7e61eea0f96e33c9d0b2bfb503d64885221b1f83dfa5860dd5c9ca1a"
+    },
+    "textures/expedition_camp_gear_base_color.png": {
+      "bytes": 265758,
+      "role": "texture",
+      "sha256": "479c2fe5d83d64acc7f412b3be17b1a458c163f06a2e770f1db3ea9e850105f9"
+    },
+    "textures/expedition_camp_gear_metal_roughness.png": {
+      "bytes": 36568,
+      "role": "texture",
+      "sha256": "06523fa8a8247db4926a979ca80fdf4a7ebd11af2b572044c351040a16e48ab8"
+    },
+    "textures/expedition_camp_gear_normal.png": {
+      "bytes": 343296,
+      "role": "texture",
+      "sha256": "41db71ac63793f6b865fa47a58f72ce16662e1931dcc3a2bcb9d24c47495caf9"
+    }
+  },
+  "id": "ring_lamp_1",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:13:56.147349+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "c5457ae79865bea1620ad5785739ddc165b5b08a59a1970474cdecf3bec41b46",
+    "models": [],
+    "node": "assembly@camp",
+    "output": "0d930395c3d487b308d579d02e775682ddf8d302e6e0735849093a37772728c8",
+    "place": "camp",
+    "record_key": "fe5504fc66033b6c5b56f7395fd37a688bbd5d26c50af13875018921c86ded02",
+    "source_name": "ring_lamp_1",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "camp"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "mars",
+      "outside"
+    ]
+  },
+  "title": "Ring lamp 1",
+  "usd": {
+    "default_prim": "/ring_lamp_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/ring_lamp_1/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

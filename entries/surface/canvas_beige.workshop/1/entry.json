@@ -1,0 +1,81 @@
+{
+  "address": "surface/canvas_beige.workshop@1",
+  "files": {
+    "material.usda": {
+      "bytes": 553,
+      "role": "usd",
+      "sha256": "8a39c33201a46f7b9187364876913eaf201c8ddf29c0d39e85a81174d6f45451"
+    },
+    "preview.png": {
+      "bytes": 22068,
+      "role": "picture",
+      "sha256": "428df76e24f600f4d18261a7163e5a407bd1bc2b3eb023b86dd84aac7f8dcb87"
+    },
+    "surface.json": {
+      "bytes": 374,
+      "role": "record",
+      "sha256": "0f881146c22da378c21c676e9323ef27dbea5c5a8bdb47d83b17bba4d1696c7e"
+    }
+  },
+  "id": "canvas_beige.workshop",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "fabric",
+    "place": "workshop",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "workshop"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "fabric"
+    ],
+    "recipe": [
+      "rubber"
+    ]
+  },
+  "title": "Canvas beige",
+  "usd": {
+    "default_prim": "/canvas_beige",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/canvas_beige.workshop/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

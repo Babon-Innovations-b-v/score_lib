@@ -1,0 +1,103 @@
+{
+  "address": "model/bag_stack@1",
+  "files": {
+    "model.json": {
+      "bytes": 273,
+      "role": "record",
+      "sha256": "cda6bd5524981f15f8d5681774770a6a8b625344e34aa8658d41556cb44a2809"
+    },
+    "model.usdc": {
+      "bytes": 1929155,
+      "role": "usd",
+      "sha256": "98305dbc5574c1fd0a03abe4c4378d1de14774317bff42c1de19a2859188b110"
+    },
+    "preview.png": {
+      "bytes": 35858,
+      "role": "picture",
+      "sha256": "89963789c4d833a2c6b09fb45ae3912f9458021e03349daaa4832db62dc81e2a"
+    },
+    "textures/bag_stack_base_color.png": {
+      "bytes": 445668,
+      "role": "texture",
+      "sha256": "062f54ede39190bcb80453c4a67e994fcdd2104588816c24709918b46941d9d7"
+    },
+    "textures/bag_stack_metal_roughness.png": {
+      "bytes": 352019,
+      "role": "texture",
+      "sha256": "19ef5b14cf2a5c57e30a86a0158940002d2788434b4d4cc6959f99cad4aa2913"
+    },
+    "textures/bag_stack_normal.png": {
+      "bytes": 8899465,
+      "role": "texture",
+      "sha256": "87d2e226b380c7059a8e474c6dce63aee1c206851617fa09c3a22623905013bd"
+    }
+  },
+  "id": "bag_stack",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:02:30.466230+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "cb10892127c36fcd6cd121ba7961013b1c3ada5198fc566a712ee5ce67b03fba",
+    "models": [],
+    "node": "assembly@old_station",
+    "output": "f60adc09d2c14a31314d3bd31f69c2601467bfbcf728c76faa051b30b1810b56",
+    "place": "old_station",
+    "record_key": "7d9d97819faa5aebdafc6de56b258e509d111fd6834f0d009658ac7904c3e290",
+    "source_name": "bag_stack",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "old_station"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "moon",
+      "outside"
+    ]
+  },
+  "title": "Bag stack",
+  "usd": {
+    "default_prim": "/bag_stack",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/bag_stack/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

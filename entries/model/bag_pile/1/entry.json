@@ -1,0 +1,103 @@
+{
+  "address": "model/bag_pile@1",
+  "files": {
+    "model.json": {
+      "bytes": 260,
+      "role": "record",
+      "sha256": "450b69f5a47c12c5426966e9638f77b318cd162459d9e3b2003494f114604f04"
+    },
+    "model.usdc": {
+      "bytes": 1910862,
+      "role": "usd",
+      "sha256": "de5c215746a7277fcbc2ac696865950f1ff84d93c1bd3f120ee9cc638d3d7d12"
+    },
+    "preview.png": {
+      "bytes": 21360,
+      "role": "picture",
+      "sha256": "5b7946b23b6be332a4443b5020cfc4f2213c6d09b1a6bc8bc7b6f546a8e1e24b"
+    },
+    "textures/bag_pile_base_color.png": {
+      "bytes": 342699,
+      "role": "texture",
+      "sha256": "ed6a850d242da348de74b35a2e645a3955ede7e02f4638e2733e4c89e1616762"
+    },
+    "textures/bag_pile_metal_roughness.png": {
+      "bytes": 273742,
+      "role": "texture",
+      "sha256": "d7a3dfe8cd3a197e790cd7ec4c08a9f8205bd029cefd95afc51455bf2241d9dd"
+    },
+    "textures/bag_pile_normal.png": {
+      "bytes": 10124142,
+      "role": "texture",
+      "sha256": "7dc1a59978c8eb9d0f7ae253dcff5bcb91a3175aeb5f38a0beafa786678d2ad5"
+    }
+  },
+  "id": "bag_pile",
+  "kind": "model",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "made for the first world by this framework: code-built pieces baked with the surface library, or Pixal3D models from generated close-ups; author: the 2099 project",
+        "spdx": "MIT",
+        "text": "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question",
+        "what": "model (release manifest rule models/)"
+      }
+    ],
+    "note": "whether a model made with AI tools can carry copyright at all is an open question",
+    "spdx": "MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "model.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-16T14:02:30.466230+00:00",
+      "by": "runner"
+    },
+    "code": "886128fc3920df7878ed12af9a422c2cb3c52349ff8c06b0d34c1eb7aac27557",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "gltf": null,
+    "model_sha256": "91d89f9fb6ac158ded9c9e84f63a2cb709ae663db64e545be77abb8c37161088",
+    "models": [],
+    "node": "assembly@old_station",
+    "output": "f60adc09d2c14a31314d3bd31f69c2601467bfbcf728c76faa051b30b1810b56",
+    "place": "old_station",
+    "record_key": "7d9d97819faa5aebdafc6de56b258e509d111fd6834f0d009658ac7904c3e290",
+    "source_name": "bag_pile",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "old_station"
+  ],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "prop"
+    ],
+    "place_kind": [
+      "moon",
+      "outside"
+    ]
+  },
+  "title": "Bag pile",
+  "usd": {
+    "default_prim": "/bag_pile",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/bag_pile/1/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 1
+}

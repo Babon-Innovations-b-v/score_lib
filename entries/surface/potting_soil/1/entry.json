@@ -1,0 +1,108 @@
+{
+  "address": "surface/potting_soil@1",
+  "files": {
+    "material.usda": {
+      "bytes": 550,
+      "role": "usd",
+      "sha256": "74fefb12d83455e5cb38a3d601892e9df610910dc7a70381186c9b3d797a2214"
+    },
+    "preview.png": {
+      "bytes": 22608,
+      "role": "picture",
+      "sha256": "5762326ba1765f96b73ac1ff9b6e11c7516acd96d131f3bed5c1ab8532935701"
+    },
+    "surface.json": {
+      "bytes": 292,
+      "role": "record",
+      "sha256": "16a751dbee97ff7d0b7bcc91ea27c43b92ae9ec6ce1d902b536258fb7ad43af5"
+    }
+  },
+  "id": "potting_soil",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "growing",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "growing"
+    ],
+    "recipe": [
+      "rubber"
+    ]
+  },
+  "title": "Potting soil",
+  "usd": {
+    "default_prim": "/potting_soil",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/potting_soil/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

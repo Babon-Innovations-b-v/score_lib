@@ -1,0 +1,108 @@
+{
+  "address": "surface/rubber_floor_bumpy@1",
+  "files": {
+    "material.usda": {
+      "bytes": 569,
+      "role": "usd",
+      "sha256": "7e57f969aa2fd47e9e6f96040769c39cd70123ef4a9b806265061f9bb3e36fa0"
+    },
+    "preview.png": {
+      "bytes": 15135,
+      "role": "picture",
+      "sha256": "4204fea60a8fb422f29f88299ce4278c914e98cab0391103905f19160ec7fa7a"
+    },
+    "surface.json": {
+      "bytes": 210,
+      "role": "record",
+      "sha256": "4c95a79b245221a1a54e4e14f2aba4daf1fc71c073eb1147987aa6c7e75226a8"
+    }
+  },
+  "id": "rubber_floor_bumpy",
+  "kind": "surface",
+  "licence": {
+    "commercial_ok": true,
+    "components": [
+      {
+        "commercial_ok": true,
+        "source": "score repository",
+        "spdx": "MIT",
+        "what": "made by score"
+      },
+      {
+        "commercial_ok": true,
+        "source": "score paper/source/score.md Table C1",
+        "spdx": "BSD-3-Clause",
+        "what": "surface recipes: ProcFunc and Infinigen shaders"
+      }
+    ],
+    "note": "",
+    "spdx": "BSD-3-Clause AND MIT"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/swatch.py",
+    "of": "material.usda constants"
+  },
+  "provenance": {
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "family": "rubber",
+    "place": "airlock",
+    "source": "data/library/materials.json at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "gdoor",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hdoor",
+    "hub",
+    "lab",
+    "launch",
+    "navigation",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "rubber"
+    ],
+    "recipe": [
+      "rubber"
+    ]
+  },
+  "title": "Rubber floor bumpy",
+  "usd": {
+    "default_prim": "/rubber_floor_bumpy",
+    "layer": "base",
+    "meters_per_unit": null,
+    "path": "score_lib/surface/rubber_floor_bumpy/1/material.usda",
+    "root": "material.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}
