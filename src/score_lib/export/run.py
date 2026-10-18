@@ -8,6 +8,7 @@ becomes the next version as a draft.
 """
 import dataclasses
 import functools
+import hashlib
 import importlib
 import json
 import os
@@ -254,10 +255,33 @@ def comparable(record):
     return json.dumps(found, sort_keys=True)
 
 
+TEXT_RECORDS = (".json", ".txt")
+
+
+def home_free(context, candidate):
+    """Replace the exporting account's home folder with `~` in a candidate's text records (absolute local paths
+    must not reach a public blob store); a changed file keeps the sha of the source bytes in files_from."""
+    home = str(pathlib.Path.home()).rstrip("/") + "/"
+    for name, path in sorted(candidate.files.items()):
+        if candidate.roles.get(name) != "record" or not name.endswith(TEXT_RECORDS):
+            continue
+        text = pathlib.Path(path).read_text(errors="surrogateescape")
+        if home not in text:
+            continue
+        source = candidate.known.pop(name, None) or file_sha256(path)
+        folder = hashlib.sha256(f"{candidate.kind}/{candidate.identity}".encode()).hexdigest()[:16]
+        target = context.scratch / "home_free" / folder / name
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text(text.replace(home, "~/"), errors="surrogateescape")
+        candidate.files[name] = target
+        candidate.files_from.setdefault(name, {"path": name, "sha256": source})
+
+
 def resolve(context, candidate):
     """Settle one candidate against the entries already written: its status, address and record."""
     if candidate.refused:
         return Planned(candidate, "refused", None, None, candidate.refused)
+    home_free(context, candidate)
     existing = entries.versions(context.root, candidate.kind, candidate.entry_id)
     latest = existing[-1] if existing else None
     version = latest["version"] if latest else 1
