@@ -37,21 +37,25 @@ def check_index(root):
 
 
 def check_locks(root, records):
-    """3. a locked entry's digest against index/locks.json; a locks row with no entry."""
+    """3. a locked entry's digest against its one row in index/locks.json; an address with more than one row; a
+    row whose entry is no longer locked or withdrawn; a row with no entry."""
     rows = locks.read(root)
-    newest = {}
+    by_row = {}
     for row in rows:
-        newest[row["address"]] = row
+        by_row.setdefault(row["address"], []).append(row)
     by_address = {record["address"]: record for record in records}
-    failures = []
+    failures = [(address, f"{len(found)} rows in index/locks.json, a lock is written once")
+                for address, found in sorted(by_row.items()) if len(found) > 1]
     for record in records:
+        found = by_row.get(record["address"])
         if record["state"] in ("locked", "withdrawn"):
-            row = newest.get(record["address"])
-            if row is None:
+            if found is None:
                 failures.append((record["address"], "locked but not in index/locks.json"))
-            elif row["digest"] != entries.digest(record):
+            elif found[0]["digest"] != entries.digest(record):
                 failures.append((record["address"], "content digest differs from index/locks.json"))
-    failures += [(address, "locks row with no entry") for address in sorted(newest) if address not in by_address]
+        elif found is not None:
+            failures.append((record["address"], f"in index/locks.json but its state is {record['state']}"))
+    failures += [(address, "locks row with no entry") for address in sorted(by_row) if address not in by_address]
     return failures
 
 
