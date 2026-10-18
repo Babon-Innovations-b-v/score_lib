@@ -1,0 +1,134 @@
+# Known licences: one row per licence text (matched by the sha256 of its exact text) or SPDX id.
+# A row is added only from a real source text; an entry naming a licence missing here is refused.
+
+[[licence]]
+match = "MIT"
+spdx = "MIT"
+commercial_ok = true
+note = ""
+source = "SPDX id"
+
+[[licence]]
+match = "Apache-2.0"
+spdx = "Apache-2.0"
+commercial_ok = true
+note = ""
+source = "SPDX id"
+
+[[licence]]
+match = "BSD-3-Clause"
+spdx = "BSD-3-Clause"
+commercial_ok = true
+note = ""
+source = "SPDX id"
+
+[[licence]]
+match = "CC0-1.0"
+spdx = "CC0-1.0"
+commercial_ok = true
+note = ""
+source = "SPDX id"
+
+[[licence]]
+match = "849405e6f80437614cf5b08f06a052852ebef36e3118f971ab9f66138fb5a118"
+text = "made for the first world (the game 2099) by this framework's routes; released with the repository under MIT, though whether a model made with AI tools can carry copyright at all is an open question"
+spdx = "MIT"
+commercial_ok = true
+note = "whether a model made with AI tools can carry copyright at all is an open question"
+source = "score data/assets/world1.json licences (the release manifest's 16 rules share this text)"
+
+[[licence]]
+match = "5ff11ab00565916018dd7cfe146f62d5b5fde2c8be7865ecfd7dfcb744e75f57"
+text = "CC0 1.0"
+spdx = "CC0-1.0"
+commercial_ok = true
+note = ""
+source = "score sound credits and data/sound/licences.json (freesound recordings)"
+
+[[licence]]
+match = "c6c3f1b7dfa4a06d4e518885ac93ac399d99a32a3a1f66f85094bd3bf93679af"
+text = "made for the first world with MOSS-SoundEffect v2.0 (Apache-2.0)"
+spdx = "Apache-2.0"
+commercial_ok = true
+note = ""
+source = "score sound credits and data/sound/licences.json"
+
+[[licence]]
+match = "186795c971573813aca5587c8a1a8a8a8746d82bb848c6ec4046d653618fdc1d"
+text = "made for this game with MOSS-SoundEffect v2.0 (Apache-2.0)"
+spdx = "Apache-2.0"
+commercial_ok = true
+note = ""
+source = "score sound credits (sound@<place> sound.json)"
+
+[[licence]]
+match = "5203f51546039168c073c4380ecb21c531828c6fe8ead7c297b5e2a296572a75"
+text = "made for the first world, the repository's own (MIT)"
+spdx = "MIT"
+commercial_ok = true
+note = ""
+source = "score data/sound/licences.json (tools/sound/made.py sounds)"
+
+[[licence]]
+match = "880c02b30e363c1007f94398276164850530e7d2d95341dc4094c5a1a6a3210e"
+text = "SAM Licence"
+spdx = "LicenseRef-SAM-License"
+commercial_ok = true
+note = "the paper's Table C1: every model in the framework must allow commercial use of its output; SAM 3 and SAM 3D Body weights"
+source = "score paper/source/score.md Table C1"
+
+[[licence]]
+match = "13a73268e73b0460ddd9d660dfa5d48ec5ee5fa70c81d02fa698dba73bd8709f"
+text = "NVIDIA Open Model License"
+spdx = "LicenseRef-NVIDIA-Open-Model-License"
+commercial_ok = true
+note = "the paper's Table C1: commercial use allowed (Kimodo-SOMA-RP-v1.1 weights)"
+source = "score paper/source/score.md Table C1"
+
+[[licence]]
+match = "dddc01791e7fb80120b4382ec1edd5ab1649428285eadb409cfb4d858058b78f"
+text = "Llama 3 Community License"
+spdx = "LicenseRef-Llama-3-Community-License"
+commercial_ok = true
+note = "the paper's Table C1: commercial use allowed, the 700 million monthly users clause does not apply, \"Built with Meta Llama 3\" shown"
+source = "score paper/source/score.md Table C1"
+
+[[licence]]
+match = "1990cae29dba2fc4727e45ad6bcee3a4a819ac9bf5b384623a837db925ee6919"
+text = "DINOv3 licence"
+spdx = "LicenseRef-DINOv3-License"
+commercial_ok = true
+note = "the paper's Table C1: every model in the framework must allow commercial use of its output (Pixal3D's and SegviGen's encoder)"
+source = "score paper/source/score.md Table C1"
+[[licence]]
+match = "df7f2a0aa8e7e4c5913e32e326dc2f8665849ffd148a38e54fd1d399547320a6"
+text = "NASA Earth Observatory's Visible Earth pictures, free of copyright (NASA's media guidelines)"
+spdx = "LicenseRef-NASA-Media-Guidelines"
+commercial_ok = true
+note = "free of copyright under NASA's media guidelines (the Blue Marble and cloud pictures the Earth ball is baked from)"
+source = "score tools/usd/earth.py:1-6"
+
+
+[[licence]]
+match = "13bfe7a6a49cbc08ca0ccd17883e7a04d2ee00a692070942130e197ca78f8b2a"
+text = "paid API"
+spdx = "LicenseRef-paid-API-terms"
+commercial_ok = true
+note = "the provider's terms of service for a paid API; the paper (Table C1) states every model in the framework allows commercial use of its output"
+source = "score paper/source/score.md:264-270 Table C1"
+
+[[licence]]
+match = "cd754a95896760f420a2eacb8508e6dfc8f7764c6f280e84365a7076218b3944"
+text = "CC0"
+spdx = "CC0-1.0"
+commercial_ok = true
+note = ""
+source = "score paper/source/score.md Table C1 (MakeHuman eyes)"
+
+[[licence]]
+match = "90f4b8c25991696984daacfeb0918998a7c78abbe8c3b366ca947ca8168aefa9"
+text = "paid; outputs owned by paid users"
+spdx = "LicenseRef-paid-outputs-owned-by-user"
+commercial_ok = true
+note = "World Labs: outputs owned by paid users (the paper's Table C1)"
+source = "score paper/source/score.md Table C1"
