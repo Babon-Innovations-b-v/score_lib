@@ -36,8 +36,11 @@ TRIANGLES_UNDER = (0.6, 0.3, 0.1)
 TRIANGLES_OVER = (1.05, 1.5, 3.0)
 LIBRARY_SHARE = (1.0, 0.999, 0.0)
 PALETTE = (0.98, 0.9, 0.6)
+# Blotches and seams have no framework gate: their marks are set from a 160-model sample of world 1 (2026-10-18),
+# good near the median, the line near the 75th percentile, bad near the 90th (blotches 3.6 / 10.4 / 21.4, seams
+# 0.035 / 0.26 / 1.9 metres a metre).
 BLOTCHES = (4.0, 10.0, 20.0)
-SEAMS = (0.0, 0.3, 1.5)
+SEAMS = (0.05, 0.3, 1.5)
 TEXELS = (1.0, 0.5, 0.25)
 BAKE_DELTA_E = (5.0, 20.0, 40.0)
 CLOSE_UP_DELTA_E = (16.0, 32.0, 50.0)
@@ -255,7 +258,8 @@ def intended_density(model, stem, places, context):
             return route.SET_DENSITY[key], f"its picture set '{key}'"
     for place in places:
         job = ((context.repo_json(f"data/surfaces/{place}.json") or {}).get("bake") or {}).get("entries", {})
-        if stem in job and job[stem].get("density"):
+        # an entry is a dict, or the path of a job file outside the repo (no density this can read)
+        if isinstance(job.get(stem), dict) and job[stem].get("density"):
             return int(job[stem]["density"]), f"its bake job in data/surfaces/{place}.json"
     if stem.startswith(DISTANT_PREFIX):
         return DISTANT_TEXELS, "a far_ kind (route.DISTANT)"

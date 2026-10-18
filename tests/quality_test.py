@@ -17,6 +17,13 @@ def test_ramp_marks_100_50_0_both_ways():
     assert parts.ramp(0.4, 0.8, 0.5, 0.3) == 25
 
 
+def test_the_handover_hook_gives_the_recorded_score_on_its_contract_scale():
+    from score_lib import quality
+    record = {"score": 75, "score_parts": [parts.scored("holes", 100, 0.0, "x"), parts.unmeasured("by eye", "judge")]}
+    assert quality.score_of(None, None, record) == {"score": 0.75, "measures": {"holes": 100}}
+    assert quality.score_of(None, None, {"score": None}) is None
+
+
 def test_total_weights_measured_parts_and_leaves_out_the_rest():
     found = [parts.scored("a", 100, 1, "x", weight=3.0), parts.scored("b", 0, 1, "x"),
              parts.unmeasured("c", "needs a judge", parts.NEEDS_PAID_JUDGE)]

@@ -101,6 +101,15 @@ def scored_kind(kind, records, context, threads, root, repo, work):
         return pool.map(score_one, [record["address"] for record in records], chunksize=4)
 
 
+def score_of(root, blobs, record):
+    """The handover's quality hook (contract library-handover v1): the entry's recorded score as {score 0..1,
+    measures {part: value 0..100}}, or None while it has none (a `score-lib quality` run scores it)."""
+    if record.get("score") is None:
+        return None
+    measures = {part["name"]: part["value"] for part in record.get("score_parts") or [] if part.get("value") is not None}
+    return {"score": record["score"] / 100, "measures": measures}
+
+
 def run(root, blobs, store, repo, kinds=(), addresses=(), threads=4, dry_run=False):
     """Score the chosen entries kind by kind; write them unless dry_run. {address: (score, parts, options)}."""
     work = pathlib.Path(tempfile.mkdtemp(prefix="score-lib-quality-"))
