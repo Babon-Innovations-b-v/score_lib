@@ -1,5 +1,6 @@
-"""effect entries: each particle emitter of a place's effects layer, its 35 score:effect:* attributes and its baked
-value clip (spec 4.4). The record is the reusable algorithm's settings; the clip is one baked run of it."""
+"""effect entries: each particle emitter of a place's effects-layer output (the one its assembly took, else the
+accepted one), its 35 score:effect:* attributes and its baked value clip (spec 4.4). The record is the reusable
+algorithm's settings; the clip is one baked run of it."""
 import hashlib
 import json
 
@@ -71,9 +72,18 @@ def clip_name(layer, path):
     return None
 
 
+def effects_output(context, place):
+    """The effects-layer output the place's assembly took (origin.json), else the node's accepted output."""
+    assembly, _ = context.assembly(place)
+    origin = (context.store.read_json(assembly, "origin.json") or {}) if assembly else {}
+    return (origin.get("layers") or {}).get("effects-layer") or context.store.accepted(f"effects-layer@{place}")
+
+
 def place_emitters(context, place):
-    """Every emitter of a place: [{place, path, name, weather, settings, clip, clip_sha, identity}]."""
-    output, listing = context.assembly(place)
+    """Every emitter of a place's effects-layer output: [{place, path, name, weather, settings, clip, clip_sha,
+    identity, output}]."""
+    output = effects_output(context, place)
+    listing = context.store.listing(output) if output else {}
     if LAYER not in listing:
         return []
     layer = Sdf.Layer.OpenAsAnonymous(str(context.tree(output) / LAYER))
@@ -118,12 +128,8 @@ def candidate(context, uses):
         files["preview.png"] = work / "preview.png"
         roles["preview.png"] = "picture"
         picture = {"file": "preview.png", "made_by": "preview/points.py", "of": f"clip.usdc at clip time {clip_time}"}
-    provenance = place_reads.assembly_provenance(context, first["place"])
-    origin = context.store.read_json(first["output"], "origin.json") or {}
-    layer_output = (origin.get("layers") or {}).get("effects-layer")
-    provenance.update({"place": first["place"], "prim": str(first["path"]), "from": first["settings"].get("from"),
-                       "effects_layer": place_reads.node_provenance(context, f"effects-layer@{first['place']}",
-                                                                    layer_output)})
+    provenance = place_reads.node_provenance(context, f"effects-layer@{first['place']}", first["output"])
+    provenance.update({"place": first["place"], "prim": str(first["path"]), "from": first["settings"].get("from")})
     algorithm = context.by_id.get(("algorithm", "particle_effects"))
     weathers = sorted({use["weather"] for use in uses if use["weather"]})
     places = [use["place"] for use in uses]
