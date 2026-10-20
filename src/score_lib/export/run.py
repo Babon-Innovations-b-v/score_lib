@@ -26,6 +26,7 @@ from score_lib.source.release import Release
 from score_lib.source.repo import Repo
 from score_lib.source.store import Store, sub_output
 from score_lib.web3d import record as web_copy
+from score_lib import clip as preview_clip
 
 ORDER = ("algorithm", "surface", "model", "light", "sound", "effect", "character", "kit", "layer", "place")
 ATOMS = ORDER[:-2]
@@ -334,14 +335,15 @@ def resolve(context, candidate):
         return Planned(candidate, "refused", None, None, carried)
     if latest is None:
         return Planned(candidate, "new", record["address"], record)
-    record = web_copy.carried(record, latest)
+    record = preview_clip.carried(web_copy.carried(record, latest), latest)
     if comparable(latest) == comparable(record):
         return Planned(candidate, "unchanged", latest["address"], latest)
     if latest["state"] == "draft":
         return Planned(candidate, "changed draft", record["address"], record)
     address = entries.address_of(candidate.kind, candidate.entry_id, latest["version"] + 1)
     return Planned(candidate, "new version", address,
-                   web_copy.carried(build_record(context, candidate, address, "draft"), latest))
+                   preview_clip.carried(web_copy.carried(build_record(context, candidate, address, "draft"), latest),
+                                        latest))
 
 
 def remember(context, planned):

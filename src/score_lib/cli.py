@@ -154,6 +154,21 @@ def command_handover(options):
           f"{len(report['refused'])} refused, saved {report['saved']['committed'] or report['saved']['why']}")
 
 
+def command_clip_plan(options):
+    from score_lib.clip import plan
+    rows = plan(options.root, blob_store(), options.address, options.into)
+    print(f"planned {sum(not row['why'] for row in rows)} clips of {len(rows)} entries into {options.into}")
+
+
+def command_clip_attach(options):
+    from score_lib.clip import attach
+    rows = json.loads(pathlib.Path(options.clips).read_text())
+    report = attach(options.root, blob_store(), rows, options.message)
+    pathlib.Path(options.out).write_text(json.dumps(report, indent=2, sort_keys=True) + "\n")
+    print(f"attached {len(report['attached'])} clips, {len(report['refused'])} refused, saved "
+          f"{report['saved']['committed'] or report['saved']['why']}")
+
+
 def command_held(options):
     from score_lib.held import held
     rows = [{"address": record["address"], "kind": record["kind"], "state": record["state"],
@@ -245,6 +260,16 @@ def parser():
     holding.add_argument("--world", required=True)
     holding.add_argument("--place", help="the place; left out for the world's own node")
     holding.set_defaults(handle=command_held)
+    clip_plan = commands.add_parser("clip-plan", help="what each entry's preview clip opens, its entries fetched")
+    clip_plan.add_argument("address", nargs="+")
+    clip_plan.add_argument("--into", required=True, help="the folder the entries are fetched into, the plan written")
+    clip_plan.set_defaults(handle=command_clip_plan)
+    clip_attach = commands.add_parser("clip-attach", help="put rendered preview clips into their draft entries")
+    clip_attach.add_argument("--clips", required=True,
+                             help="JSON: [{address, file, shelf, frames, seconds, size, made_by}]")
+    clip_attach.add_argument("--out", required=True, help="the report written")
+    clip_attach.add_argument("--message", default="clips: preview clips made at handover")
+    clip_attach.set_defaults(handle=command_clip_attach)
     return found
 
 

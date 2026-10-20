@@ -14,7 +14,7 @@ import json
 
 VERSION = "web3d-1"
 FILES = ("web3d/full.glb", "web3d/light.glb")
-SKIPPED_ROLES = ("picture", "web3d", "closeup")
+SKIPPED_ROLES = ("picture", "web3d", "closeup", "clip")  # clip: score_lib.clip, the preview made from the rest
 
 
 def source_of(record):

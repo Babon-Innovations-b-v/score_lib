@@ -22,6 +22,9 @@ A library of reusable parts of SCORE worlds: records in git (`entries/`), bytes 
 - `src/score_lib/verify.py`: every check of `score-lib verify`.
 - `src/score_lib/take_in.py`: `score-lib take-in`, loose made files (no store outputs) in as draft entries.
 - `src/score_lib/handover.py`: `score-lib handover`, the one call score's runner makes (contract `library-handover` v1); `held.py`: what a place holds and which entries hold a store output.
+- `src/score_lib/clip.py`: an entry's preview clip (owner, 2026-10-20): `score-lib clip-plan` says what each clip
+  opens (its entries fetched), score renders it in cloud Blender at the item's handover, `score-lib clip-attach` puts
+  it into the draft entry (`clip` block, role `clip`, outside the web copy's source) and saves. Nothing renders here.
 - `src/score_lib/quality/<kind>.py`: one quality score system per kind (its parts and their marks); `quality/refine.py`
   the refine options and their measured prices. `score-lib quality` writes `score`, `score_parts`, `refine_options`
   and `score_made` into entries; they stay out of the digest, so scoring never rewrites a locked entry's content.

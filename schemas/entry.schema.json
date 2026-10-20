@@ -123,7 +123,8 @@
               "gltf",
               "code",
               "web3d",
-              "closeup"
+              "closeup",
+              "clip"
             ]
           }
         }
@@ -323,6 +324,68 @@
       "type": "array",
       "items": {
         "type": "string"
+      }
+    },
+    "clip": {
+      "type": "object",
+      "required": [
+        "file",
+        "sha256",
+        "bytes",
+        "source",
+        "shelf",
+        "frames",
+        "seconds",
+        "size",
+        "made_by"
+      ],
+      "properties": {
+        "file": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "source": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "shelf": {
+          "enum": [
+            "model",
+            "character",
+            "kit",
+            "effect",
+            "surface",
+            "sky",
+            "lamp",
+            "motion"
+          ]
+        },
+        "frames": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "seconds": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "size": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "made_by": {
+          "type": "string"
+        }
       }
     },
     "web3d": {
