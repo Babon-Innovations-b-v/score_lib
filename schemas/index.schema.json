@@ -23,7 +23,8 @@
         "ground",
         "kit",
         "layer",
-        "place"
+        "place",
+        "concept"
       ]
     },
     "entries": {
@@ -42,7 +43,7 @@
         "properties": {
           "address": {
             "type": "string",
-            "pattern": "^(algorithm|surface|model|light|sound|effect|character|ground|kit|layer|place)/[a-z0-9_]+(\\.[a-z0-9_]+)?@[1-9][0-9]*$"
+            "pattern": "^(algorithm|surface|model|light|sound|effect|character|ground|kit|layer|place|concept)/[a-z0-9_]+(\\.[a-z0-9_]+)?@[1-9][0-9]*$"
           },
           "title": {
             "type": "string"

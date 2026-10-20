@@ -25,7 +25,7 @@
     },
     "address": {
       "type": "string",
-      "pattern": "^(algorithm|surface|model|light|sound|effect|character|ground|kit|layer|place)/[a-z0-9_]+(\\.[a-z0-9_]+)?@[1-9][0-9]*$"
+      "pattern": "^(algorithm|surface|model|light|sound|effect|character|ground|kit|layer|place|concept)/[a-z0-9_]+(\\.[a-z0-9_]+)?@[1-9][0-9]*$"
     },
     "kind": {
       "enum": [
@@ -39,7 +39,8 @@
         "ground",
         "kit",
         "layer",
-        "place"
+        "place",
+        "concept"
       ]
     },
     "id": {
@@ -192,7 +193,7 @@
               "type": "array",
               "items": {
                 "type": "string",
-                "pattern": "^(algorithm|surface|model|light|sound|effect|character|ground|kit|layer|place)/[a-z0-9_]+(\\.[a-z0-9_]+)?@[1-9][0-9]*$"
+                "pattern": "^(algorithm|surface|model|light|sound|effect|character|ground|kit|layer|place|concept)/[a-z0-9_]+(\\.[a-z0-9_]+)?@[1-9][0-9]*$"
               }
             }
           }
@@ -203,7 +204,7 @@
       "type": "array",
       "items": {
         "type": "string",
-        "pattern": "^(algorithm|surface|model|light|sound|effect|character|ground|kit|layer|place)/[a-z0-9_]+(\\.[a-z0-9_]+)?@[1-9][0-9]*$"
+        "pattern": "^(algorithm|surface|model|light|sound|effect|character|ground|kit|layer|place|concept)/[a-z0-9_]+(\\.[a-z0-9_]+)?@[1-9][0-9]*$"
       },
       "uniqueItems": true
     },

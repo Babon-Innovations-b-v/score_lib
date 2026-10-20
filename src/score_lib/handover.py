@@ -252,10 +252,10 @@ def last_line(done):
     return lines[-1] if lines else f"git exited {done.returncode}"
 
 
-def committed(root, message):
-    """(commit, why): commit `entries/ index/ worlds/` (only those), or name the newest commit holding them when
-    nothing changed; None and why when no commit could be made."""
-    present = [path for path in SAVED_PATHS if (pathlib.Path(root) / path).exists()]
+def committed(root, message, paths=SAVED_PATHS):
+    """(commit, why): commit `paths` (only those; `entries/ index/ worlds/` by default), or name the newest commit
+    holding them when nothing changed; None and why when no commit could be made."""
+    present = [path for path in paths if (pathlib.Path(root) / path).exists()]
     added = git(root, "add", "-A", "--", *present)
     if added.returncode != 0:
         return None, last_line(added)
@@ -277,11 +277,11 @@ def pushed(root):
     return (True, "") if done.returncode == 0 else (False, last_line(done))
 
 
-def saved(root, message):
-    """The report's saved block: the library commit holding the entries and whether it reached origin."""
+def saved(root, message, paths=SAVED_PATHS):
+    """The report's saved block: the library commit holding `paths` and whether it reached origin."""
     if not is_repository(root):
         return {"committed": None, "pushed": False, "why": "the library root is not a git repository"}
-    commit, why = committed(root, message)
+    commit, why = committed(root, message, paths)
     if commit is None:
         return {"committed": None, "pushed": False, "why": why}
     went, why = pushed(root)

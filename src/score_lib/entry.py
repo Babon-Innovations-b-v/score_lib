@@ -6,8 +6,10 @@ import re
 
 SCHEMA = "score-lib-entry/1"
 # `ground` is retired (2026-10-20: terrain pieces are models, ground finishes surfaces); its old records stay,
-# withdrawn, so the places that name them still resolve. The export makes none (export/run.ORDER).
-KINDS = ("algorithm", "surface", "model", "light", "sound", "effect", "character", "ground", "kit", "layer", "place")
+# withdrawn, so the places that name them still resolve. The export makes none (export/run.ORDER). A `concept` is made
+# by `score-lib concept` alone (concept.py), never by the export.
+KINDS = ("algorithm", "surface", "model", "light", "sound", "effect", "character", "ground", "kit", "layer", "place",
+         "concept")
 ID_PATTERN = re.compile(r"^[a-z0-9_]+(\.[a-z0-9_]+)?$")
 ADDRESS_PATTERN = re.compile(r"^(?P<kind>[a-z]+)/(?P<id>[a-z0-9_]+(\.[a-z0-9_]+)?)@(?P<version>[1-9][0-9]*)$")
 # The quality fields (score_lib.quality) are an assessment of an entry, not its content: a locked entry may be scored

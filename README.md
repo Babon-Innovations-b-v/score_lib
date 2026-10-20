@@ -18,6 +18,7 @@ The index lives in git; the bytes live in a blob store. Every entry is versioned
 | algorithm | one engine algorithm: code snapshot, settings schema, world 1 preset, tests, run line |
 | layer | one sublayer of one place (the physics layer too), its paths pointing at library addresses: a part of its place, shown under it, never a shelf of its own |
 | place | one place's root, its sublayers pointing at layer entries, with its plan and cast (a place only others show, such as world 1's far city, too: `shown` in the world toml) |
+| concept | one place's locked concept (`concept.png`) and `concept.json`: its pick, the prompt, marks and notes of every draw that led to it, and every draw of the place by its sha; made by `score-lib concept` only, on the creator's pick in score's concept review, never shipped |
 
 An address is `<kind>/<id>@<version>`, for example `effect/devil_east.camp@1`.
 
@@ -49,6 +50,7 @@ score-lib quality [--kind k] [--address a] [--threads 4] [--dry-run]
 score-lib page --out <dir outside the repo> [--drafts] [--public-url]
 score-lib handover --world w [--place p] --seed n --commit <score sha> --store <objects> --repo <score> --out <dir>
 score-lib held --world w [--place p]
+score-lib concept --world w --place p --commit <score sha> --store <objects>
 ```
 
 The export reads a SCORE store (`SCORE_STORE`, its `objects` folder) and the score repository (`SCORE_REPO`) at the
@@ -62,6 +64,11 @@ score, commits and pushes `entries/ index/ worlds/`, and writes `<out>/handover.
 example `schemas/handover.example.json`): every accepted output and the entries holding it, every entry with its
 status and provenance, every refusal. It writes drafts only; it exits non-zero only when it could not run. `held`
 prints the newest entries a place (or the world node) holds, as JSON, for the cockpit's check.
+
+`concept` makes a place's `concept/<place>` entry follow its standing pick in the SCORE store (score's concept
+review keeps `concepts/<place>/draws/` and `picks/` there): a pick makes the picked draw the entry, new or the next
+version, and locks it; an unlock withdraws the newest version; nothing else changes it. It commits and pushes that
+entry's folder and the index only, and prints one JSON line {place, did, address, saved}.
 
 `take-in` takes loose made files, files that are no output of a SCORE store (world 1's old release of made models and
 sounds), in as draft `sound` and `model` entries from a list (`src/score_lib/take_in.py` has its shape): each entry's

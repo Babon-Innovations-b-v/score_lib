@@ -169,6 +169,13 @@ def command_clip_attach(options):
           f"{report['saved']['committed'] or report['saved']['why']}")
 
 
+def command_concept(options):
+    from score_lib import concept
+    report = concept.hand_over(options.root, blob_store(), options.store, options.world, options.place,
+                               options.commit)
+    print(json.dumps(report, sort_keys=True))
+
+
 def command_held(options):
     from score_lib.held import held
     rows = [{"address": record["address"], "kind": record["kind"], "state": record["state"],
@@ -245,6 +252,13 @@ def parser():
     page.add_argument("--drafts", action="store_true")
     page.add_argument("--public-url", action="store_true")
     page.set_defaults(handle=command_page)
+    conceived = commands.add_parser("concept", help="make a place's concept entry follow its standing pick in the "
+                                                    "SCORE store: locked on a pick, withdrawn on an unlock")
+    conceived.add_argument("--world", required=True)
+    conceived.add_argument("--place", required=True)
+    conceived.add_argument("--commit", required=True, help="the score commit the pick was made at")
+    conceived.add_argument("--store", required=True, help="the SCORE store's objects folder (read only)")
+    conceived.set_defaults(handle=command_concept)
     handed = commands.add_parser("handover", help="hand a place's accepted outputs to the library as drafts and "
                                                   "write handover.json")
     handed.add_argument("--world", required=True)
