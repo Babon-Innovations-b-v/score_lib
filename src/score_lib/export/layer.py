@@ -24,7 +24,9 @@ SIDE = {"light": ("light", ("lamps.json", "measures.json")), "motion": ("motion"
 # sublayer -> the algorithm entry that writes it (provenance only; a world needs none of them to use the layer)
 WRITTEN_BY = {"ground": "terrain_landforms", "settle": "settle", "machines": "motion", "motion-models": "motion",
               "crops": "crops_spots", "effects": "particle_effects", "motion": "motion", "motion_keys": "motion", "light": "light_rig", "sound": "sound_layer",
-              "characters": "cast_spread", "physics": "physics_layer"}
+              "characters": "cast_spread"}
+# the physics setups tools/usd/physics.py writes into a place's physics sublayer (score CONTEXT.md "physics setup")
+PHYSICS_SETUPS = ("body_weight", "hinge_motor", "drop", "push", "planet_gravity")
 NOT_ENTRIES = ("layers/edit.usda",)
 # the physics sublayer of a place is its own stage's output (`physics-layer@<place>`), not part of the assembly; its
 # trial (`physics-trial@<place>`) rides along as records
@@ -270,8 +272,8 @@ def physics_candidate(context, place):
             files[side], known[side] = path, sha
             roles[side] = "usd" if side.endswith(".usda") else "record"
     provenance = place_reads.node_provenance(context, f"physics-layer@{place}")
-    provenance.update({"place": place, "source_name": PHYSICS, "written_by": context.by_id.get(("algorithm",
-                                                                                                  "physics_layer")),
+    provenance.update({"place": place, "source_name": PHYSICS, "written_by": [context.by_id.get(("algorithm", name))
+                                                                                   for name in PHYSICS_SETUPS],
                        "trial": place_reads.node_provenance(context, f"physics-trial@{place}"),
                        "unresolved": sorted(mapping.unresolved), "own_files": sorted(mapping.own)})
     identity = hashlib.sha256(json.dumps([place, PHYSICS, mapping.listing[PHYSICS], sorted(known.values())])

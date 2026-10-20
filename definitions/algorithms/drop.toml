@@ -1,0 +1,17 @@
+# One physics setup of world 1 (score CONTEXT.md "physics setup"); read by score_lib/export/algorithm.py.
+# Split out of physics_layer (score #47): an object lifted over its target and let fall, its fall checked clear.
+name = "drop"
+title = "A drop onto its target: the object lifted over its target's top and let fall, refused when anything stands in its fall"
+entry = "tools.usd.physics:lifted"
+bake = ["tools.usd.physics:faults"]
+roots = ["tools/usd/physics.py"]
+search = ["tools/usd"]
+constants = ["tools/usd/physics.py:COLUMN_INSET"]
+preset = ["data/physics/habitat.json"]
+stage = "physics-layer"
+contract = []
+needs = []
+paid = ["physics-trial: Blender (Bullet) on a cloud 24 GB GPU"]
+tests = ["tools/usd/physics_test.py"]
+picture = []
+requires = ["numpy", "usd-core"]

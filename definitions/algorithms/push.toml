@@ -1,0 +1,16 @@
+# One physics setup of world 1 (score CONTEXT.md "physics setup"); read by score_lib/export/algorithm.py.
+# Split out of physics_layer (score #47): a kinematic box, an unseen hand, moved in a line between its seconds.
+name = "push"
+title = "A push by an unseen hand: a kinematic box moved in a straight line between its seconds"
+entry = "tools.usd.physics:write_push"
+roots = ["tools/usd/physics.py"]
+search = ["tools/usd"]
+constants = []
+preset = ["data/physics/habitat.json"]
+stage = "physics-layer"
+contract = []
+needs = []
+paid = ["physics-trial: Blender (Bullet) on a cloud 24 GB GPU"]
+tests = ["tools/usd/physics_test.py"]
+picture = []
+requires = ["numpy", "usd-core"]

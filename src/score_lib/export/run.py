@@ -114,7 +114,8 @@ class Context:
             self.sha_map.setdefault(described["sha256"], (record["address"], name))
         provenance = record.get("provenance", {})
         for name, source in sorted(provenance.get("files_from", {}).items()):
-            self.sha_map.setdefault(source["sha256"], (record["address"], name))
+            if isinstance(source, dict):  # a taken-in entry names its loose source path only (take_in.py)
+                self.sha_map.setdefault(source["sha256"], (record["address"], name))
         for sha, name in provenance.get("aliases", []):
             self.sha_map.setdefault(sha, (record["address"], name))
 

@@ -1,0 +1,71 @@
+{
+  "address": "algorithm/planet_gravity@1",
+  "files": {
+    "code.json": {
+      "bytes": 420,
+      "role": "record",
+      "sha256": "a827c66d92774cec615089b941450376f603cbd8fbc36599dca80ce6de8ebe9e"
+    },
+    "code/tools/usd/orbits.py": {
+      "bytes": 6420,
+      "role": "code",
+      "sha256": "ea3f51f9dda02b62116a7d9968f6573adaf8d1084c94ad4d3d459d3f79b0bb71"
+    },
+    "definition.json": {
+      "bytes": 742,
+      "role": "record",
+      "sha256": "54d922967a673b73cafd3c0350cc127bd543d83d510c216349daeca618ea24ca"
+    },
+    "presets/world1/seed.json": {
+      "bytes": 166,
+      "role": "record",
+      "sha256": "f01ebf493ca695c8faa5cc8d7ee153054112e6bcaeb64b3aca4bb701ad8c00fd"
+    },
+    "run.json": {
+      "bytes": 264,
+      "role": "record",
+      "sha256": "82fca6b467c3059cf177dcb08c6dbdb37bb204b3ccd3aaf7206342d051a14138"
+    },
+    "settings.schema.json": {
+      "bytes": 1348,
+      "role": "record",
+      "sha256": "0d0384591852c3bd3698b0ba1ff355849f20e9a25086de4c36abba9a698ebe38"
+    },
+    "test/tools/usd/orbits_test.py": {
+      "bytes": 2384,
+      "role": "code",
+      "sha256": "9f0856327f281ddcdc200bd4bd2d91b74104e7609a0e3497280f98d08833efa7"
+    }
+  },
+  "id": "planet_gravity",
+  "kind": "algorithm",
+  "picture": null,
+  "picture_reason": "no world 1 output in the store pictures this algorithm",
+  "provenance": {
+    "code": "1ad22f573ebf197244e07f19c58509cf54665d310cc91e8f9145d594fa8d4b1b",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
+    "nodes": [],
+    "outside": [],
+    "stage": null,
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "needs": [],
+    "runnable": [
+      true
+    ]
+  },
+  "title": "A planet's gravity and orbits: each body's pull, and the orbits of Earth and the Moon the pulls make",
+  "usd": null,
+  "version": 1
+}

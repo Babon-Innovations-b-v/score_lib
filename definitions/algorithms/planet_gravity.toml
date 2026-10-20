@@ -1,0 +1,16 @@
+# One physics setup of world 1 (score CONTEXT.md "physics setup"); read by score_lib/export/algorithm.py.
+# Split out of sky_orbits (score #47): each body's pull, the scene's gravity, and the orbits the pulls make (Earth
+# and the Moon round their shared middle, the pair round the Sun). sky_orbits keeps the sky drawn from them.
+name = "planet_gravity"
+title = "A planet's gravity and orbits: each body's pull, and the orbits of Earth and the Moon the pulls make"
+entry = "tools.usd.orbits:centre_at"
+roots = ["tools/usd/orbits.py"]
+search = ["tools/usd"]
+constants = ["tools/usd/orbits.py:PULL", "tools/usd/orbits.py:RADIUS", "tools/usd/orbits.py:SUN_TO_EARTH_M", "tools/usd/orbits.py:EARTH_YEAR_MINUTES", "tools/usd/orbits.py:MARS_SUN_TO_M", "tools/usd/orbits.py:MOON_SUN_DAYS_PER_WINDOW", "tools/usd/orbits.py:MOON_TILT_DEGREES"]
+preset = []
+stage = ""
+contract = []
+needs = []
+tests = ["tools/usd/orbits_test.py"]
+picture = []
+requires = ["numpy"]

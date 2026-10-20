@@ -1,0 +1,81 @@
+{
+  "address": "algorithm/hinge_motor@1",
+  "files": {
+    "code.json": {
+      "bytes": 516,
+      "role": "record",
+      "sha256": "9adbf8bc9c6a2c7bf695816eb8670870ba7d6d3bc343504bac16f198a81c2ef1"
+    },
+    "code/tools/usd/orbits.py": {
+      "bytes": 6420,
+      "role": "code",
+      "sha256": "ea3f51f9dda02b62116a7d9968f6573adaf8d1084c94ad4d3d459d3f79b0bb71"
+    },
+    "code/tools/usd/physics.py": {
+      "bytes": 19053,
+      "role": "code",
+      "sha256": "7b4e39658b372d17b74227586d2687556f6ab8e865c07fbf0b0f1c2b3540a4ef"
+    },
+    "definition.json": {
+      "bytes": 700,
+      "role": "record",
+      "sha256": "fee709255decc3c2b9caa5d2f02b3f1fb81773ab5ef66f5e66fedf388eefcb32"
+    },
+    "presets/world1/data/physics/habitat.json": {
+      "bytes": 1719,
+      "role": "record",
+      "sha256": "0a81067737290f0b0185e7f0fbab7ab5ae69da65669d47a406639d722f836f02"
+    },
+    "presets/world1/seed.json": {
+      "bytes": 166,
+      "role": "record",
+      "sha256": "f01ebf493ca695c8faa5cc8d7ee153054112e6bcaeb64b3aca4bb701ad8c00fd"
+    },
+    "run.json": {
+      "bytes": 381,
+      "role": "record",
+      "sha256": "4c119ab664c1cf5afdd704ae3c8c881b1c4afca86fa132ee6c8dab1232540332"
+    },
+    "settings.schema.json": {
+      "bytes": 434,
+      "role": "record",
+      "sha256": "ac6d90dcbdf088643ac94fc5e00417bb4facb979752add084647a9731bfbcd4a"
+    },
+    "test/tools/usd/physics_test.py": {
+      "bytes": 9243,
+      "role": "code",
+      "sha256": "bde665ec4536d37c1bc20eca8c63adce3d8ea898e0a4a9fa41ac351aaafc07f8"
+    }
+  },
+  "id": "hinge_motor",
+  "kind": "algorithm",
+  "picture": null,
+  "picture_reason": "no world 1 output in the store pictures this algorithm",
+  "provenance": {
+    "code": "bb431c4d1f8c6d5928dd6d26bb6f4ef8c75b23c7424043992156740f0c34aef8",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
+    "nodes": [],
+    "outside": [],
+    "stage": "physics-layer",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "needs": [],
+    "runnable": [
+      true
+    ]
+  },
+  "title": "A hinge with its limits and motor: a revolute joint at its pins, an angular drive, fixed joints for what it carries",
+  "usd": null,
+  "version": 1
+}

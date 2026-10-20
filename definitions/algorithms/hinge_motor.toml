@@ -1,0 +1,17 @@
+# One physics setup of world 1 (score CONTEXT.md "physics setup"); read by score_lib/export/algorithm.py.
+# Split out of physics_layer (score #47): a hinge's revolute joint with its limits, its motor and what it carries.
+name = "hinge_motor"
+title = "A hinge with its limits and motor: a revolute joint at its pins, an angular drive, fixed joints for what it carries"
+entry = "tools.usd.physics:write_hinge"
+bake = ["tools.usd.physics:write_drive"]
+roots = ["tools/usd/physics.py"]
+search = ["tools/usd"]
+constants = ["tools/usd/physics.py:STIFF_DRIVE"]
+preset = ["data/physics/habitat.json"]
+stage = "physics-layer"
+contract = []
+needs = []
+paid = ["physics-trial: Blender (Bullet) on a cloud 24 GB GPU"]
+tests = ["tools/usd/physics_test.py"]
+picture = []
+requires = ["numpy", "usd-core"]

@@ -1,0 +1,16 @@
+# One physics setup of world 1 (score CONTEXT.md "physics setup"); read by score_lib/export/algorithm.py.
+# Split out of physics_layer (score #47): each laid object's mass and its physics material.
+name = "body_weight"
+title = "A body's weight and material: its mass from its surface, sheet and density, its friction and bounce"
+entry = "tools.usd.physics:write_masses"
+bake = ["tools.usd.physics:write_materials"]
+roots = ["tools/usd/physics.py"]
+search = ["tools/usd"]
+constants = []
+preset = ["data/physics/materials.json"]
+stage = "physics-layer"
+contract = []
+needs = []
+tests = ["tools/usd/physics_test.py"]
+picture = []
+requires = ["numpy", "usd-core"]
