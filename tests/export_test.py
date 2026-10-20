@@ -238,3 +238,22 @@ def test_a_sound_two_places_play_keeps_the_other_bytes_as_aliases():
     same = {"audio": {"steps/a.ogg": (None, "1" * 64, ""), "steps/b.ogg": (None, "2" * 64, "")}}
     encoded_again = {"audio": {"steps/a.ogg": (None, "3" * 64, ""), "steps/b.ogg": (None, "2" * 64, "")}}
     assert sound.alias_rows(first, [same, encoded_again]) == [("3" * 64, "audio/steps/a.ogg")]
+
+
+def test_a_sound_written_again_keeps_its_taken_in_takes(world, tmp_path):
+    world.export()
+    record = entries.load_address(world.root, "sound/hum@1")
+    take = tmp_path / "hum.ogg"
+    take.write_bytes(b"a recorded take")
+    LocalBlobStore(os.environ["SCORE_LIB_BLOBS_DIR"]).put(sha256(b"a recorded take"), take)
+    name = "audio/recordings/places/hum.ogg"
+    record["files"][name] = {"sha256": sha256(b"a recorded take"), "bytes": 15, "role": "audio"}
+    record["provenance"]["files_from"] = {**record["provenance"].get("files_from", {}),
+                                          name: "sound/recordings/places/hum.ogg"}
+    row = {"by": "fixture", "what": "sound/recordings/places/hum.ogg: a recording"}
+    record["provenance"]["made_with"].append(row)
+    entries.write(world.root, record)
+    world.export()
+    again = entries.load_address(world.root, "sound/hum@1")
+    assert again["files"][name] == record["files"][name] and row in again["provenance"]["made_with"]
+    assert again["provenance"]["files_from"][name] == "sound/recordings/places/hum.ogg"

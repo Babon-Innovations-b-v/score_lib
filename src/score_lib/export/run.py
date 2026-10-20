@@ -27,6 +27,7 @@ from score_lib.source.repo import Repo
 from score_lib.source.store import Store, sub_output
 from score_lib.web3d import record as web_copy
 from score_lib import clip as preview_clip
+from score_lib import takes
 
 ORDER = ("algorithm", "surface", "model", "light", "sound", "effect", "character", "kit", "layer", "place")
 ATOMS = ORDER[:-2]
@@ -336,15 +337,15 @@ def resolve(context, candidate):
         return Planned(candidate, "refused", None, None, carried)
     if latest is None:
         return Planned(candidate, "new", record["address"], record)
-    record = preview_clip.carried(web_copy.carried(record, latest), latest)
+    record = takes.carried(preview_clip.carried(web_copy.carried(record, latest), latest), latest)
     if comparable(latest) == comparable(record):
         return Planned(candidate, "unchanged", latest["address"], latest)
     if latest["state"] == "draft":
         return Planned(candidate, "changed draft", record["address"], record)
     address = entries.address_of(candidate.kind, candidate.entry_id, latest["version"] + 1)
+    made = build_record(context, candidate, address, "draft")
     return Planned(candidate, "new version", address,
-                   preview_clip.carried(web_copy.carried(build_record(context, candidate, address, "draft"), latest),
-                                        latest))
+                   takes.carried(preview_clip.carried(web_copy.carried(made, latest), latest), latest))
 
 
 def remember(context, planned):
@@ -359,7 +360,8 @@ def remember(context, planned):
     for name, described in sorted(record["files"].items()):
         context.sha_map[described["sha256"]] = (record["address"], name)
     for name, source in sorted(record["provenance"].get("files_from", {}).items()):
-        context.sha_map.setdefault(source["sha256"], (record["address"], name))
+        if isinstance(source, dict):  # a taken-in take names its loose source path only (takes.py)
+            context.sha_map.setdefault(source["sha256"], (record["address"], name))
     for sha, name in record["provenance"].get("aliases", []):
         context.sha_map.setdefault(sha, (record["address"], name))
 
