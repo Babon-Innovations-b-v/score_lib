@@ -7,14 +7,14 @@
               "made_with": ...}
 
 and both files in `files` with role `web3d`, their bytes in the blob store. A copy stands while the entry's own content
-(every file but its pictures and the copy) and every entry it read are what they were.
+(every file but its pictures, its close-up and the copy) and every entry it read are what they were.
 """
 import hashlib
 import json
 
 VERSION = "web3d-1"
 FILES = ("web3d/full.glb", "web3d/light.glb")
-SKIPPED_ROLES = ("picture", "web3d")
+SKIPPED_ROLES = ("picture", "web3d", "closeup")
 
 
 def source_of(record):

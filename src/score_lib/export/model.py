@@ -3,7 +3,8 @@
 Identity is the gltf the model was built from (score:model_sha256 on its base prim, else inputs.json's models row,
 else the usdc's own bytes): one gltf = one entry, the usdc of the first place in sorted order kept, the places showing
 it in `seen_in` and their own copies' bytes kept as aliases (the layers are rewritten to the entry through them).
-A model's `_glow` part rides in the same entry as `model_glow.usdc`.
+A model's `_glow` part rides in the same entry as `model_glow.usdc`, and the accepted close-up it was made from as
+`closeup.png` (owner, 2026-10-20: a locked close-up is handed over to the library, so no work folder holds the only copy).
 """
 import concurrent.futures
 import hashlib
@@ -18,13 +19,15 @@ from score_lib.export import places as place_reads
 from score_lib.export.run import Candidate, write_json
 from score_lib.preview import mesh
 from score_lib.rewrite import asset_paths, export, joined, open_copy, rewrite
+from score_lib.source.store import place_of
 
 MADE_STAGES = ("surfaces-bake", "ship_kit", "crops-surfaces-bake")
 PREVIEW_VERSION = "mesh-3"
 # a model the ground layer shows is a terrain piece (the terrain adapter's, made through the prop pipeline)
 LAYER_TAGS = {"layers/crops.usda": "crop", "layers/machines.usda": "machine", "layers/ground.usdc": "terrain"}
 ROUTE_TAGS = {"code": "piece", "model": "prop"}
-FIXTURE = "fixture_"  # score's tools/usd/scene.py fixture_asset: a released model's asset name
+FIXTURE = "fixture_"
+CLOSEUP_STAGE = "closeup"  # score's stages/props closeup@<place>: closeups/<inventory row>.png and closeups.json  # score's tools/usd/scene.py fixture_asset: a released model's asset name
 
 
 def plan(context):
@@ -193,6 +196,32 @@ def made_record(context, source, stem):
     return report, baked
 
 
+def closeup_files(context, source, baked):
+    """(files, known, provenance block, made_with) of the close-up a baked model was made from, or empties: the
+    accepted closeup@<place> output's closeups/<row>.png, the row the place's prop data (data/props/<place>.json)
+    gives the bake's take (baked.json `parts`)."""
+    take = (baked or {}).get("parts")
+    place = place_of(source["node"]) if source else None
+    path = f"data/props/{place}.json"
+    if not take or not place or not context.repo.exists(path):
+        return {}, {}, None, []
+    objects = (context.repo.read_json(path) or {}).get("objects", {})
+    row = next((name for name, entry in sorted(objects.items()) if entry.get("take") == take), None)
+    node = f"{CLOSEUP_STAGE}@{place}"
+    output = context.store.accepted(node)
+    name = f"closeups/{row}.png"
+    listing = context.store.listing(output) if output and row else {}
+    drawn_by = ((context.store.read_json(output, "closeups.json") or {}).get("objects", {}).get(row) or {}).get(
+        "drawn_by") if name in listing else None
+    # shortcut: a close-up given in the prop data ("given") names no source to admit it by, so only Pro's go in;
+    # upgrade when prop data records where a given close-up came from.
+    if not drawn_by or drawn_by == "given":
+        return {}, {}, None, []
+    block = {"node": node, "output": output, "name": name, "row": row, "take": take, "drawn_by": drawn_by}
+    return ({"closeup.png": context.tree(output) / name}, {"closeup.png": listing[name]}, block,
+            [made_by("close-up: a Nano Banana Pro picture", "nano_banana_pro")])
+
+
 def kit_route(context, place, stem):
     """The kit's models row of a model ({glows, route}) or None."""
     path = f"data/kit/{place}.json"
@@ -242,6 +271,10 @@ def candidate(context, identity, uses, made):
     known.update(gltf_known)
     roles.update({name: "gltf" for name in gltf})
     report, baked = made_record(context, source, first["stem"])
+    closeup, closeup_known, closeup_block, closeup_made = closeup_files(context, source, baked)
+    files.update(closeup)
+    known.update(closeup_known)
+    roles.update({name: "closeup" for name in closeup})
     record = {"stem": first["stem"], "row": first["row"].get("row"), "kind": first["row"].get("kind"),
               "name": first["row"].get("name"), "model": first["row"].get("model"),
               "kit": kit_route(context, first["place"], first["stem"]), "report": report, "baked": baked,
@@ -254,9 +287,11 @@ def candidate(context, identity, uses, made):
     provenance = place_reads.assembly_provenance(context, first["place"])
     provenance.update({"place": first["place"], "model_sha256": first["model_sha256"], "source_name": first["stem"],
                        "gltf": source})
+    if closeup_block:
+        provenance["closeup"] = closeup_block
     return Candidate(kind="model", base_id=place_reads.sanitised(first["stem"]), identity=identity,
                      title=title_of(first["stem"]), places=[use["place"] for use in uses], files=files, roles=roles,
-                     made_with=made_with(context, first), usd={"root": "model.usdc", "layer": "base",
+                     made_with=made_with(context, first) + closeup_made, usd={"root": "model.usdc", "layer": "base",
                                                                           "use": "reference"},
                      provenance=provenance, tags=tags_of(context, uses, first),
                      picture={"file": "preview.png", "made_by": "preview/mesh.py", "of": "model.usdc"},

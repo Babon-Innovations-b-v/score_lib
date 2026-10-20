@@ -7,7 +7,7 @@ The index lives in git; the bytes live in a blob store. Every entry is versioned
 
 | kind | one entry is |
 |---|---|
-| model | one made model (usd form, gltf form when the bake holds it) |
+| model | one made model (usd form, gltf form when the bake holds it, and `closeup.png`, the accepted close-up it was made from, when the store holds one) |
 | surface | one surface library variant and the Material a place writes for it |
 | effect | one particle emitter: its 35 settings and one baked clip |
 | light | one sky picture with the prims that draw it |

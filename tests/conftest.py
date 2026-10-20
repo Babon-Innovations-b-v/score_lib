@@ -408,9 +408,9 @@ class World:
         self.scratch.mkdir()
         self.publish_place("2026-01-01T00:00:00+00:00")
 
-    def publish_place(self, at, crate_colour=(200, 120, 40)):
+    def publish_place(self, at, crate_colour=(200, 120, 40), model_sha=None):
         """Accept a new assembly (and its sound, effects and completion rows) at a time."""
-        model_sha = sha256(b"crate gltf")
+        model_sha = model_sha or sha256(b"crate gltf")
         files = assembly_files(self.scratch, model_sha, crate_colour)
         sound = self.store.put_output({
             "sound.json": json.dumps({"place": "room", "sounds": {"hum": {

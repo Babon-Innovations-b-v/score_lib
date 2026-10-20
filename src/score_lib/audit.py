@@ -131,6 +131,19 @@ def gltf_forms(context, held):
     return found
 
 
+def closeups(context, held):
+    """Every accepted close-up (closeup@<place>: closeups/<row>.png): in when the model entry made from it holds it."""
+    found = []
+    for node in context.store.nodes_of(model_export.CLOSEUP_STAGE):
+        for name, sha in sorted(context.store.listing(context.store.accepted(node)).items()):
+            if name.startswith("closeups/") and name.endswith(".png"):
+                key = f"{node}:{name}"
+                found.append(Thing("close-up", key, [place_of(node)], True) if held.has("model", sha) else
+                             missing("close-up", key, [place_of(node)], "other", "no model entry holds it: no place "
+                                     "shows a model baked from it yet, or the prop data gave it (no source to admit)"))
+    return found
+
+
 def kits(context, held):
     """Every place kit, and every model its pieces name, linked from the kit entry's requires."""
     found = []
@@ -338,6 +351,7 @@ NOT_MAKER_PREFIXES = ("people-take-",)
 ROUTES = (("crops-surfaces-", "surfaces (finish route)"), ("surfaces-", "surfaces (finish route)"),
           ("people-", "people (character maker)"), ("crops-", "crops (crop models)"))
 KINDS = (("algorithm", algorithms), ("surface", surfaces), ("model", models), ("model gltf form", gltf_forms),
+         ("close-up", closeups),
          ("light", lights), ("sound", sounds), ("effect", effects), ("character", characters),
          ("kit", kits), ("layer", layers), ("place", places))
 

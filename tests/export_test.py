@@ -6,7 +6,7 @@ import os
 import pathlib
 
 import pytest
-from conftest import MANIFEST_TEXT, World
+from conftest import MANIFEST_TEXT, World, git, png, sha256, write_files
 
 from score_lib import entry as entries
 from score_lib.admission import NotAdmitted, Sources, carried, made_by
@@ -47,6 +47,48 @@ def test_model_entry(world):
     assert model["seen_in"] == ["room"] and model["tags"]["model"] == ["piece"]
     assert model["tags"]["place_kind"] == ["inside", "moon"]
     assert model["provenance"]["model_sha256"] == hashlib.sha256(b"crate gltf").hexdigest()
+
+
+def stored(world, node, files):
+    """A fixture output of `node`, standing as its accepted one in the test's own store."""
+    output = world.store.put_output(files)
+    world.store.timed("accepts", node, output, "2026-02-01T00:00:00+00:00")
+
+
+def made_from_closeup(world, drawn_by):
+    """Bake crate_1 from the prop take crate-s1, whose close-up (closeup@room) the prop data names; its picture."""
+    gltf = json.dumps({"asset": {"version": "2.0"}}).encode()
+    picture = png((10, 20, 30))
+    stored(world, "surfaces-bake@room", {"made/crate_1.gltf": gltf,
+                                         "baked.json": json.dumps({"crate_1": {"parts": "crate-s1"}}).encode()})
+    stored(world, "closeup@room", {"closeups/crate.png": picture, "closeups.json": json.dumps(
+        {"objects": {"crate": {"drawn_by": drawn_by}}}).encode()})
+    write_files(world.repo, {"data/props/room.json": json.dumps(
+        {"place": "room", "objects": {"crate": {"route": "prop", "take": "crate-s1"}}})})
+    git(world.repo, "add", ".")
+    git(world.repo, "-c", "user.name=test", "-c", "user.email=test@example.org", "commit", "-q", "-m", "props")
+    world.commit = git(world.repo, "rev-parse", "HEAD")
+    world.publish_place("2026-02-02T00:00:00+00:00", model_sha=sha256(gltf))
+    return picture
+
+
+def test_a_model_carries_the_close_up_it_was_made_from(world):
+    from score_lib import audit
+    picture = made_from_closeup(world, "pro-crop")
+    world.export()
+    model = entries.load_address(world.root, "model/crate_1@1")
+    assert model["files"]["closeup.png"]["role"] == "closeup"
+    assert model["files"]["closeup.png"]["sha256"] == sha256(picture)
+    assert LocalBlobStore(os.environ["SCORE_LIB_BLOBS_DIR"]).has(sha256(picture))
+    assert model["provenance"]["closeup"]["node"] == "closeup@room"
+    assert {"what": "close-up: a Nano Banana Pro picture", "by": "nano_banana_pro"} in model["provenance"]["made_with"]
+    assert audit.audit(world.context())["kinds"]["close-up"]["in"] == 1
+
+
+def test_a_given_close_up_stays_out(world):
+    made_from_closeup(world, "given")
+    world.export()
+    assert "closeup.png" not in entries.load_address(world.root, "model/crate_1@1")["files"]
 
 
 def test_effect_and_sound_paths_are_rewritten(world):
