@@ -69,7 +69,7 @@ class Context:
     """What every kind's plan reads: the store, the repo at the commit, the world, the sources an entry may be made
     from, the map of store bytes to the entries holding them and the bytes of refused entries."""
 
-    def __init__(self, root, world, store, repo, sources, places=None, scratch=None, cache=None):
+    def __init__(self, root, world, store, repo, sources, places=None, scratch=None, cache=None, route=None):
         self.root = pathlib.Path(root)
         self.world = world
         self.store = store
@@ -78,6 +78,7 @@ class Context:
         self.places = sorted(places or world_places(world))
         self.scratch = pathlib.Path(scratch or tempfile.mkdtemp(prefix="score-lib-"))
         self.cache = pathlib.Path(cache) if cache else None
+        self.route = route  # the route score made the outputs under (a handover's --route); None: not stamped
         self.release = Release.from_repo(repo, world["name"])
         self.sha_map = {}  # store sha256 -> (address, entry file name)
         self.addresses = {}  # (kind, identity) -> address

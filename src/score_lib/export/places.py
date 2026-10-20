@@ -111,13 +111,15 @@ def assembly_provenance(context, place):
 
 
 def node_provenance(context, node, output=None):
-    """{node, output, record_key, accept{by, at}, code, models} of a node's accepted output (or the output given)."""
+    """{node, output, record_key, accept{by, at}, code, models} of a node's accepted output (or the output given),
+    and `route`, the route score made it under, when the context names one (a handover)."""
     accept = context.store.current_accept(node) or {}
     output = output or accept.get("output")
     record = context.store.record(node, accept["key"]) if accept.get("output") == output and accept else {}
     return {"node": node, "output": output, "record_key": record.get("key", accept.get("key")) if record else None,
             "accept": {"by": accept.get("by"), "at": accept.get("at")} if accept.get("output") == output else None,
-            "code": record.get("code"), "models": pinned_models(record)}
+            "code": record.get("code"), "models": pinned_models(record),
+            **({"route": context.route} if context.route else {})}
 
 
 def pinned_models(record):

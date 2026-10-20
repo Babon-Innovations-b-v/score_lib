@@ -92,6 +92,16 @@ def test_a_newer_score_commit_with_the_same_content_leaves_entries_unchanged(wor
     assert 'commit = "%s"' % world.commit in (world.root / "worlds/world1.toml").read_text()
 
 
+def test_the_route_given_is_stamped_into_each_made_entrys_provenance(world, tmp_path):
+    out = tmp_path / "out"
+    main(arguments(world, out) + ["--route", "r1"])
+    rows = json.loads((out / "handover.json").read_text())["entries"]
+    model = entries.load_address(world.root, "model/crate_1@1")
+    assert model["provenance"]["route"] == "r1" and model["provenance"]["accept"]
+    made = [entries.load_address(world.root, row["address"]) for row in rows if row["node"]]
+    assert made and all(record["provenance"]["route"] == "r1" for record in made)
+
+
 def test_a_locked_entry_with_changed_content_becomes_the_next_draft(world, tmp_path):
     handed(world, tmp_path / "first")
     locks.lock_many(world.root, ["model/crate_1@1"])

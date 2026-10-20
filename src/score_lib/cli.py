@@ -145,7 +145,7 @@ def command_handover(options):
     command = ["score-lib", *options.argv]
     try:
         report = handover(options.root, blob_store(), options.world, options.place, options.seed, options.commit,
-                          options.store, options.repo, options.out, command)
+                          options.store, options.repo, options.out, command, options.route)
     except HandoverError as error:
         raise SystemExit(str(error))
     covered = report["covered"]
@@ -239,6 +239,7 @@ def parser():
     handed.add_argument("--store", required=True, help="the SCORE store's objects folder (read only)")
     handed.add_argument("--repo", required=True, help="the score repository (read only)")
     handed.add_argument("--out", required=True, help="the folder handover.json is written into")
+    handed.add_argument("--route", help="the route score made the outputs under, stamped into each entry's provenance")
     handed.set_defaults(handle=command_handover)
     holding = commands.add_parser("held", help="the newest entries a world's place (or its own node) holds, as JSON")
     holding.add_argument("--world", required=True)

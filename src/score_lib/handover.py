@@ -3,6 +3,7 @@ writes the report score reads, `handover.json` (contract `library-handover`, ver
 
 Under a file lock it records the place and seed in `worlds/<world>.toml`, runs the export at the commit given (not
 written into the toml), gives each entry its web 3D copy and quality score through this library's own functions,
+stamps each entry made from a store output with the route score made it under (`--route`, in its provenance),
 works out which entries hold each accepted output, commits and pushes `entries/ index/ worlds/`, and writes the
 report. Locked entries are never rewritten; nothing is locked or withdrawn here. The report has sorted keys and no
 clock fields, so a handover of unchanged outputs writes the same bytes.
@@ -105,10 +106,12 @@ def record_world(root, name, place, seed, commit):
     path.write_text(text)
 
 
-def context_at(root, name, commit, store, repo, scratch):
-    """An export context for the world at a commit given by the caller (the toml's own commit left as written)."""
+def context_at(root, name, commit, store, repo, scratch, route=None):
+    """An export context for the world at a commit given by the caller (the toml's own commit left as written), its
+    entries' provenance stamped with the route score made the outputs under."""
     world = dict(run.load_world(root, name), commit=commit)
-    return run.Context(root, world, Store(store), Repo(repo, commit), Sources.load(), scratch=scratch)
+    return run.Context(root, world, Store(store), Repo(repo, commit), Sources.load(), scratch=scratch,
+                       route=route)
 
 
 def exported(context, place, blobs):
@@ -301,12 +304,12 @@ def checked_paths(store, repo):
         raise HandoverError(f"no score repository at {repo}: --repo names the score repository")
 
 
-def export_place(root, blobs, world, place, seed, commit, store, repo):
+def export_place(root, blobs, world, place, seed, commit, store, repo, route=None):
     """Record the place in the world toml and run its export at the commit; the export's report."""
     record_world(root, world, place, seed, commit)
     scratch = pathlib.Path(tempfile.mkdtemp(prefix="score-lib-handover-"))
     try:
-        return exported(context_at(root, world, commit, store, repo, scratch), place, blobs)
+        return exported(context_at(root, world, commit, store, repo, scratch, route), place, blobs)
     finally:
         shutil.rmtree(scratch, ignore_errors=True)
 
@@ -323,12 +326,13 @@ def report_of(root, blobs, world, place, commit, store, export_report):
             "covered": covered_rows(Store(store), holders, place, refused), "entries": rows, "refused": refused}
 
 
-def handover(root, blobs, world, place, seed, commit, store, repo, out, command):
-    """Hand a place (None: the world's own node) to the library under the lock and write the report; the report."""
+def handover(root, blobs, world, place, seed, commit, store, repo, out, command, route=None):
+    """Hand a place (None: the world's own node) to the library under the lock and write the report; the report.
+    `route` (score's hash of its route stages' code and gates) goes into each made entry's provenance."""
     checked_paths(store, repo)
     root = pathlib.Path(root)
     with locked(root, float(os.environ.get("SCORE_LIB_LOCK_WAIT", LOCK_WAIT))):
-        export_report = export_place(root, blobs, world, place, seed, commit, store, repo)
+        export_report = export_place(root, blobs, world, place, seed, commit, store, repo, route)
         result = report_of(root, blobs, world, place, commit, store, export_report)
         result["command"] = list(command)
         result["saved"] = saved(root, f"handover: {world}@{place or 'world'} at score {commit[:12]}")
