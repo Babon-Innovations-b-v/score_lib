@@ -7,7 +7,9 @@ to every second level. three.js decodes WebP natively (EXT_texture_webp).
 gltfpack (meshoptimizer 0.22.0, MIT) through npx --offline, from the local npm cache, never the network: meshes merged
 and compressed with meshopt (EXT_meshopt_compression), positions kept as floats (16-bit positions over a place
 kilometres across move surfaces by most of a metre), node names kept (-kn) so the viewer names what is clicked. The
-light preview is simplified hard (-si LIGHT_RATIO -se LIGHT_ERROR -sa), the whole copy never.
+light preview is simplified towards LIGHT_RATIO within gltfpack's 1% error, keeping UV and normal seams; the whole copy
+never. Never -sa: it collapses across seams and past any error, which smeared every baked finish into streaks and
+dropped a model's small parts (score's window_lit_1.square and parts_trolley_1, 2026-10-20).
 """
 import hashlib
 import json
@@ -21,7 +23,6 @@ GLTFPACK = "gltfpack@0.22.0"
 FULL_SIDE = 1024
 LIGHT_SIDE = 256
 LIGHT_RATIO = 0.1
-LIGHT_ERROR = "0.05"
 COLOUR_QUALITY = 85
 NORMAL_STEP = 2
 THREADS = "1"
@@ -87,12 +88,12 @@ def webp_document(gltf_path, folder, side, cache):
 
 
 def gltfpack(source, out, simplify):
-    """gltfpack the document at `source` into `out` (.glb): meshopt, float positions, names kept, simplified hard
-    when asked."""
+    """gltfpack the document at `source` into `out` (.glb): meshopt, float positions, names kept, simplified
+    within 1% when asked."""
     command = ["npx", "--offline", "-y", GLTFPACK, "-i", str(source), "-o", str(out), "-cc", "-kn", "-km", "-vpf",
                "-vt", "14"]
     if simplify:
-        command += ["-si", str(LIGHT_RATIO), "-se", LIGHT_ERROR, "-sa"]
+        command += ["-si", str(LIGHT_RATIO)]
     done = subprocess.run(command, capture_output=True, text=True,
                           env={**os.environ, "OMP_NUM_THREADS": THREADS, "npm_config_update_notifier": "false"})
     if done.returncode != 0 or not pathlib.Path(out).is_file():

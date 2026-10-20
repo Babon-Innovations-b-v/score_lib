@@ -106,3 +106,53 @@ def test_the_audit_counts_the_world_against_the_library(world):
     for kind in ("model", "surface", "effect", "sound", "layer", "place", "kit"):
         found = report["kinds"][kind]
         assert found["missing"] == 0 and found["in"] == found["world"], kind
+
+
+def seamed_box(folder, size):
+    """A glTF box of `size` whose six faces each have their own UV square (every edge a seam) and a colour picture."""
+    import numpy as np
+    from PIL import Image
+    corners, uvs, indices = [], [], []
+    for axis in range(3):
+        for side in (-0.5, 0.5):
+            for first, second in ((-0.5, -0.5), (0.5, -0.5), (0.5, 0.5), (-0.5, 0.5)):
+                point = [first, second]
+                point.insert(axis, side)
+                corners.append([value * extent for value, extent in zip(point, size)])
+            uvs += [(0, 0), (1, 0), (1, 1), (0, 1)]
+            start = len(corners) - 4
+            indices += [start, start + 1, start + 2, start, start + 2, start + 3]
+    positions = np.array(corners, np.float32).tobytes()
+    texcoords = np.array(uvs, np.float32).tobytes()
+    triangles = np.array(indices, np.uint16).tobytes()
+    (folder / "scene.bin").write_bytes(positions + texcoords + triangles)
+    Image.new("RGB", (64, 64), (200, 80, 40)).save(folder / "cube_base_color.png")
+    views = [{"buffer": 0, "byteOffset": 0, "byteLength": len(positions)},
+             {"buffer": 0, "byteOffset": len(positions), "byteLength": len(texcoords)},
+             {"buffer": 0, "byteOffset": len(positions) + len(texcoords), "byteLength": len(triangles)}]
+    document = {
+        "asset": {"version": "2.0"}, "scene": 0, "scenes": [{"nodes": [0]}], "nodes": [{"mesh": 0, "name": "cube"}],
+        "meshes": [{"primitives": [{"attributes": {"POSITION": 0, "TEXCOORD_0": 1}, "indices": 2, "material": 0}]}],
+        "materials": [{"pbrMetallicRoughness": {"baseColorTexture": {"index": 0}}}],
+        "textures": [{"source": 0}], "images": [{"uri": "cube_base_color.png"}],
+        "buffers": [{"uri": "scene.bin", "byteLength": len(positions) + len(texcoords) + len(triangles)}],
+        "bufferViews": views,
+        "accessors": [{"bufferView": 0, "componentType": 5126, "count": 24, "type": "VEC3",
+                       "min": [-extent / 2 for extent in size], "max": [extent / 2 for extent in size]},
+                      {"bufferView": 1, "componentType": 5126, "count": 24, "type": "VEC2"},
+                      {"bufferView": 2, "componentType": 5123, "count": 36, "type": "SCALAR"}]}
+    (folder / "scene.gltf").write_text(json.dumps(document))
+    return folder / "scene.gltf"
+
+
+def test_the_light_copy_keeps_its_seams(tmp_path):
+    """The light preview never collapses across UV seams: -sa smeared every baked finish into streaks (2026-10-20)."""
+    from score_lib.web3d import pack
+    source = tmp_path / "source"
+    source.mkdir()
+    made = pack.packed(seamed_box(source, (1.6, 1.6, 0.02)), tmp_path, tmp_path / "cache")
+    for name in ("light", "full"):
+        document = glb_document(made[name])
+        indices = [document["accessors"][primitive["indices"]]["count"]
+                   for mesh in document["meshes"] for primitive in mesh["primitives"]]
+        assert sum(indices) == 36, name

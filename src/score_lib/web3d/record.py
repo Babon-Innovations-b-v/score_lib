@@ -12,7 +12,7 @@ and both files in `files` with role `web3d`, their bytes in the blob store. A co
 import hashlib
 import json
 
-VERSION = "web3d-1"
+VERSION = "web3d-2"  # 2: the light copy keeps its seams and shape (no -sa)
 FILES = ("web3d/full.glb", "web3d/light.glb")
 SKIPPED_ROLES = ("picture", "web3d", "closeup", "clip")  # clip: score_lib.clip, the preview made from the rest
 
