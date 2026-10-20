@@ -1,0 +1,47 @@
+{
+  "address": "sound/rocket_landing_rumble@1",
+  "files": {
+    "audio/generated/machines/rocket_landing_rumble.wav": {
+      "bytes": 816112,
+      "role": "audio",
+      "sha256": "992ffa51a19e899cef81142c11b3a7d923bc1282a1ad4c6e06e736a12472fe43"
+    },
+    "audio/recordings/vehicles/rocket_landing_rumble.ogg": {
+      "bytes": 25593,
+      "role": "audio",
+      "sha256": "464427754d65620b03312466e56a7046bb8374d7e2568c8d55d8871598ef9cca"
+    }
+  },
+  "id": "rocket_landing_rumble",
+  "kind": "sound",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "fddaa273c268a69084eea24e3036bae64a91a978",
+    "files_from": {
+      "audio/generated/machines/rocket_landing_rumble.wav": "sound/generated/machines/rocket_landing_rumble.wav",
+      "audio/recordings/vehicles/rocket_landing_rumble.ogg": "sound/recordings/vehicles/rocket_landing_rumble.ogg"
+    },
+    "made_with": [
+      {
+        "by": "moss_soundeffect",
+        "what": "sound/generated/machines/rocket_landing_rumble.wav: https://huggingface.co/OpenMOSS-Team/MOSS-SoundEffect-v2.0; prompt: A rocket engine firing steadily during a slow descent: a constant deep roaring rumble with crackle, no start and no end.; seed 2 (the 2099 project, generated with MOSS-SoundEffect v2.0 (OpenMOSS-Team/MOSS-SoundEffect-v2.0@e35df4d82fbe87fcd5d14e5d100e349c0c3c076d))"
+      },
+      {
+        "by": "cc0_recordings",
+        "carried": true,
+        "what": "sound/recordings/vehicles/rocket_landing_rumble.ogg: https://freesound.org/people/Sanderboah/sounds/803852/ (Sanderboah)"
+      }
+    ],
+    "taken_from": "score's GitHub release world1-assets-5 (data/assets/world1.json at the commit), each file checked against the manifest's sha256 (score issue #22)",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {},
+  "title": "Rocket landing rumble",
+  "usd": null,
+  "version": 1
+}

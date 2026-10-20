@@ -6,6 +6,11 @@
       "role": "audio",
       "sha256": "6a317bbaf1ef3729403e5b3349be022be76575a9059c04d9ae3c9edf6d990a6c"
     },
+    "audio/recordings/vehicles/rocket_launch.ogg": {
+      "bytes": 132244,
+      "role": "audio",
+      "sha256": "5b1d439e024be667e3d51f2d59194d9f4f7dd0542fd288431c96199d2f69d934"
+    },
     "preview.png": {
       "bytes": 2678,
       "role": "picture",
@@ -36,6 +41,9 @@
     },
     "code": "26abc0281e559526bee3e6dae0ec50a73603c24027643172eedf4602647432a3",
     "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "audio/recordings/vehicles/rocket_launch.ogg": "sound/recordings/vehicles/rocket_launch.ogg"
+    },
     "files_source": {
       "audio/generated/doors/rocket_launch.ogg": "assets/sound/generated/doors/rocket_launch.ogg"
     },
@@ -43,6 +51,11 @@
       {
         "by": "moss_soundeffect",
         "what": "sound/generated/doors/rocket_launch.ogg"
+      },
+      {
+        "by": "cc0_recordings",
+        "carried": true,
+        "what": "sound/recordings/vehicles/rocket_launch.ogg: https://freesound.org/people/qubodup/sounds/211617/ (qubodup)"
       }
     ],
     "models": [

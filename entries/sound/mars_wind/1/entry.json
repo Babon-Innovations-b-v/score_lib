@@ -1,0 +1,47 @@
+{
+  "address": "sound/mars_wind@1",
+  "files": {
+    "audio/generated/places/mars_wind.wav": {
+      "bytes": 2208112,
+      "role": "audio",
+      "sha256": "7078895fade8d271679ba8d236de30927fd8d994cb2c391f37fa2f35402931ab"
+    },
+    "audio/recordings/places/mars_wind.ogg": {
+      "bytes": 278517,
+      "role": "audio",
+      "sha256": "56af1e9660ea3da2931559af4c6847495634187e7150ba8dc0c798ba0aa82dd9"
+    }
+  },
+  "id": "mars_wind",
+  "kind": "sound",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "fddaa273c268a69084eea24e3036bae64a91a978",
+    "files_from": {
+      "audio/generated/places/mars_wind.wav": "sound/generated/places/mars_wind.wav",
+      "audio/recordings/places/mars_wind.ogg": "sound/recordings/places/mars_wind.ogg"
+    },
+    "made_with": [
+      {
+        "by": "moss_soundeffect",
+        "what": "sound/generated/places/mars_wind.wav: https://huggingface.co/OpenMOSS-Team/MOSS-SoundEffect-v2.0; prompt: Thin, distant wind on a cold barren desert plain, heard muffled from inside a helmet: a soft steady low whoosh with gentle gusts.; seed 1 (the 2099 project, generated with MOSS-SoundEffect v2.0 (OpenMOSS-Team/MOSS-SoundEffect-v2.0@e35df4d82fbe87fcd5d14e5d100e349c0c3c076d))"
+      },
+      {
+        "by": "cc0_recordings",
+        "carried": true,
+        "what": "sound/recordings/places/mars_wind.ogg: https://freesound.org/people/DarkShroom/sounds/645305/ (DarkShroom)"
+      }
+    ],
+    "taken_from": "score's GitHub release world1-assets-5 (data/assets/world1.json at the commit), each file checked against the manifest's sha256 (score issue #22)",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {},
+  "title": "Mars wind",
+  "usd": null,
+  "version": 1
+}

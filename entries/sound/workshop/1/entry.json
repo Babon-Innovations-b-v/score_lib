@@ -6,6 +6,11 @@
       "role": "audio",
       "sha256": "046e48f5152edd679ed9555dc7920be8826a64f2c621b675b9268e9c197f2706"
     },
+    "audio/recordings/places/workshop.ogg": {
+      "bytes": 562609,
+      "role": "audio",
+      "sha256": "59b5728fc7f976fa3628f44ff882cf6fe5a398f8bac86f81bf32ebd81c6d3284"
+    },
     "preview.png": {
       "bytes": 2648,
       "role": "picture",
@@ -36,6 +41,9 @@
     },
     "code": "fddaae33e7b1078d7768d64b90025094353c176b30afeac6022b7b114ce61b81",
     "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "audio/recordings/places/workshop.ogg": "sound/recordings/places/workshop.ogg"
+    },
     "files_source": {
       "audio/generated/places/workshop.wav": "assets/sound/generated/places/workshop.wav"
     },
@@ -43,6 +51,11 @@
       {
         "by": "moss_soundeffect",
         "what": "sound/generated/places/workshop.wav"
+      },
+      {
+        "by": "cc0_recordings",
+        "carried": true,
+        "what": "sound/recordings/places/workshop.ogg: https://freesound.org/people/kyles/sounds/451064/ (kyles)"
       }
     ],
     "models": [

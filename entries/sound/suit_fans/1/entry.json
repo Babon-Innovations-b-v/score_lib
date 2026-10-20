@@ -6,6 +6,11 @@
       "role": "audio",
       "sha256": "7bd7f06339f5115360552de6062773b0321380ca13c8180d3f882a0699c96d5b"
     },
+    "audio/recordings/suit/suit_fans.ogg": {
+      "bytes": 438382,
+      "role": "audio",
+      "sha256": "bcfc476d525df5f383b1d8e40af4583ba2ef61958ab190ce9be6534192142422"
+    },
     "preview.png": {
       "bytes": 2741,
       "role": "picture",
@@ -36,6 +41,9 @@
     },
     "code": "fddaae33e7b1078d7768d64b90025094353c176b30afeac6022b7b114ce61b81",
     "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "audio/recordings/suit/suit_fans.ogg": "sound/recordings/suit/suit_fans.ogg"
+    },
     "files_source": {
       "audio/generated/machines/suit_fans.wav": "assets/sound/generated/machines/suit_fans.wav"
     },
@@ -43,6 +51,11 @@
       {
         "by": "moss_soundeffect",
         "what": "sound/generated/machines/suit_fans.wav"
+      },
+      {
+        "by": "cc0_recordings",
+        "carried": true,
+        "what": "sound/recordings/suit/suit_fans.ogg: https://freesound.org/people/Kinoton/sounds/503255/ (Kinoton)"
       }
     ],
     "models": [

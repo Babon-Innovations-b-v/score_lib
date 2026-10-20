@@ -6,6 +6,11 @@
       "role": "audio",
       "sha256": "2cdeab7507fd3baf96c1616b84fe1b843b565d9eed15e4ad21e092cd87c0e20c"
     },
+    "audio/made/base_hum.wav": {
+      "bytes": 705712,
+      "role": "audio",
+      "sha256": "77cef3976f505e7e58c9e62cd4e1e527536772af02d719e764ce9faf787ec7a3"
+    },
     "preview.png": {
       "bytes": 2689,
       "role": "picture",
@@ -36,6 +41,9 @@
     },
     "code": "fddaae33e7b1078d7768d64b90025094353c176b30afeac6022b7b114ce61b81",
     "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "audio/made/base_hum.wav": "sound/made/base_hum.wav"
+    },
     "files_source": {
       "audio/generated/places/base_hum.wav": "assets/sound/generated/places/base_hum.wav"
     },
@@ -43,6 +51,10 @@
       {
         "by": "moss_soundeffect",
         "what": "sound/generated/places/base_hum.wav"
+      },
+      {
+        "by": "score",
+        "what": "sound/made/base_hum.wav: tools/sound/made.py (this repository) (the 2099 project)"
       }
     ],
     "models": [

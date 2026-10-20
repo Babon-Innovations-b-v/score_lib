@@ -1,0 +1,47 @@
+{
+  "address": "sound/footsteps_gravel@1",
+  "files": {
+    "audio/generated/machines/footsteps_boots_gravel.wav": {
+      "bytes": 624112,
+      "role": "audio",
+      "sha256": "fc58fc8a7a926f39f3c197742f4054962dc7e24c892c01f2f494043b48da9372"
+    },
+    "audio/recordings/footsteps/footsteps_boots_gravel.ogg": {
+      "bytes": 183293,
+      "role": "audio",
+      "sha256": "c12f3c790ad2dc70c4a99a16f64dc78b3352d8f546714f0a9e5d4a6a825bb1c3"
+    }
+  },
+  "id": "footsteps_gravel",
+  "kind": "sound",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "fddaa273c268a69084eea24e3036bae64a91a978",
+    "files_from": {
+      "audio/generated/machines/footsteps_boots_gravel.wav": "sound/generated/machines/footsteps_boots_gravel.wav",
+      "audio/recordings/footsteps/footsteps_boots_gravel.ogg": "sound/recordings/footsteps/footsteps_boots_gravel.ogg"
+    },
+    "made_with": [
+      {
+        "by": "moss_soundeffect",
+        "what": "sound/generated/machines/footsteps_boots_gravel.wav: https://huggingface.co/OpenMOSS-Team/MOSS-SoundEffect-v2.0; prompt: Slow footsteps of heavy boots crunching on loose gravel and dust, muffled and dull as if heard through a thick suit, an even walking rhythm.; seed 1 (the 2099 project, generated with MOSS-SoundEffect v2.0 (OpenMOSS-Team/MOSS-SoundEffect-v2.0@e35df4d82fbe87fcd5d14e5d100e349c0c3c076d))"
+      },
+      {
+        "by": "cc0_recordings",
+        "carried": true,
+        "what": "sound/recordings/footsteps/footsteps_boots_gravel.ogg: https://freesound.org/people/Nox_Sound/sounds/556002/ (Nox_Sound)"
+      }
+    ],
+    "taken_from": "score's GitHub release world1-assets-5 (data/assets/world1.json at the commit), each file checked against the manifest's sha256 (score issue #22)",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {},
+  "title": "Footsteps gravel",
+  "usd": null,
+  "version": 1
+}

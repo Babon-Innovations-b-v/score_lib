@@ -6,6 +6,11 @@
       "role": "audio",
       "sha256": "94df5192899e77ce331cc49d25bf8c04493f6ed9a0b4722ae989b645b4f8a20d"
     },
+    "audio/recordings/doors/airlock_pump_down.ogg": {
+      "bytes": 58127,
+      "role": "audio",
+      "sha256": "9aed060534bf8dc749a7e3de733c77e5e308d85ad608012972d298b49a894e8a"
+    },
     "preview.png": {
       "bytes": 2606,
       "role": "picture",
@@ -36,6 +41,9 @@
     },
     "code": "fddaae33e7b1078d7768d64b90025094353c176b30afeac6022b7b114ce61b81",
     "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "audio/recordings/doors/airlock_pump_down.ogg": "sound/recordings/doors/airlock_pump_down.ogg"
+    },
     "files_source": {
       "audio/generated/machines/airlock_pump_down.wav": "assets/sound/generated/machines/airlock_pump_down.wav"
     },
@@ -43,6 +51,11 @@
       {
         "by": "moss_soundeffect",
         "what": "sound/generated/machines/airlock_pump_down.wav"
+      },
+      {
+        "by": "cc0_recordings",
+        "carried": true,
+        "what": "sound/recordings/doors/airlock_pump_down.ogg: https://freesound.org/people/firanthir/sounds/338971/ (firanthir)"
       }
     ],
     "models": [

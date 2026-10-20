@@ -6,6 +6,11 @@
       "role": "audio",
       "sha256": "447782e4b1e7fc60f130f87318ca4f7843ad8677f1d8a41aa8be33fd0be75486"
     },
+    "audio/recordings/doors/airlock_air_hiss.ogg": {
+      "bytes": 76202,
+      "role": "audio",
+      "sha256": "6fa04c271eefc90c9b2619cb5a6352f0ca8d77fbcdc024d869db7e7f76781599"
+    },
     "preview.png": {
       "bytes": 2353,
       "role": "picture",
@@ -36,6 +41,9 @@
     },
     "code": "fddaae33e7b1078d7768d64b90025094353c176b30afeac6022b7b114ce61b81",
     "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "audio/recordings/doors/airlock_air_hiss.ogg": "sound/recordings/doors/airlock_air_hiss.ogg"
+    },
     "files_source": {
       "audio/generated/doors/airlock_air_hiss.ogg": "assets/sound/generated/doors/airlock_air_hiss.ogg"
     },
@@ -43,6 +51,11 @@
       {
         "by": "moss_soundeffect",
         "what": "sound/generated/doors/airlock_air_hiss.ogg"
+      },
+      {
+        "by": "cc0_recordings",
+        "carried": true,
+        "what": "sound/recordings/doors/airlock_air_hiss.ogg: https://freesound.org/people/mcpable/sounds/131934/ (mcpable)"
       }
     ],
     "models": [

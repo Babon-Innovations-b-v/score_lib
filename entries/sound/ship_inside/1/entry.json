@@ -6,6 +6,11 @@
       "role": "audio",
       "sha256": "dafeb2a807e2cc97623bc9dfb1427ee91802bd05c68cb0f131897e2f2d5af8f5"
     },
+    "audio/recordings/places/ship_inside.ogg": {
+      "bytes": 186121,
+      "role": "audio",
+      "sha256": "39e2fe2262175cb1661e61175c7c3e532bfdd2249d13d2dbd1b569082923e107"
+    },
     "preview.png": {
       "bytes": 2654,
       "role": "picture",
@@ -36,6 +41,9 @@
     },
     "code": "26abc0281e559526bee3e6dae0ec50a73603c24027643172eedf4602647432a3",
     "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_from": {
+      "audio/recordings/places/ship_inside.ogg": "sound/recordings/places/ship_inside.ogg"
+    },
     "files_source": {
       "audio/generated/places/ship_inside.wav": "assets/sound/generated/places/ship_inside.wav"
     },
@@ -43,6 +51,11 @@
       {
         "by": "moss_soundeffect",
         "what": "sound/generated/places/ship_inside.wav"
+      },
+      {
+        "by": "cc0_recordings",
+        "carried": true,
+        "what": "sound/recordings/places/ship_inside.ogg: https://freesound.org/people/Suhuy/sounds/715175/ (Suhuy)"
       }
     ],
     "models": [
