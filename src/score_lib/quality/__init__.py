@@ -25,9 +25,9 @@ import tempfile
 
 from score_lib import entry as entries
 
-# Kinds in the order they are scored: a kit, a layer, a place, a ground cut and a dress read the scores of the
+# Kinds in the order they are scored: a kit, a layer, a place and a dress read the scores of the
 # entries they hold, so those come first.
-ORDER = ("algorithm", "surface", "model", "light", "sound", "effect", "character", "ground", "kit", "layer", "place")
+ORDER = ("algorithm", "surface", "model", "light", "sound", "effect", "character", "kit", "layer", "place")
 # Kinds whose entries are measured in worker processes (the rest are light and run in one).
 HEAVY = ("model", "sound", "effect", "surface")
 

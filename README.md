@@ -13,10 +13,10 @@ The index lives in git; the bytes live in a blob store. Every entry is versioned
 | light | one sky picture with the prims that draw it |
 | sound | one sound source: its SpatialAudio prim, takes and levels |
 | character | one body look or dress |
-| ground | one planet's terrain, or one place ground cut from it |
+| ~~ground~~ | retired 2026-10-20: a terrain piece is a `model` (tagged `terrain`, made through the prop pipeline), a ground finish a `surface`; the old ground drafts are kept withdrawn |
 | kit | one place kit (and a ship place's kit layout) |
 | algorithm | one engine algorithm: code snapshot, settings schema, world 1 preset, tests, run line |
-| layer | one sublayer of one place (the physics layer too), its paths pointing at library addresses |
+| layer | one sublayer of one place (the physics layer too), its paths pointing at library addresses: a part of its place, shown under it, never a shelf of its own |
 | place | one place's root, its sublayers pointing at layer entries, with its plan and cast (a place only others show, such as world 1's far city, too: `shown` in the world toml) |
 
 An address is `<kind>/<id>@<version>`, for example `effect/devil_east.camp@1`.
@@ -36,7 +36,7 @@ are relative (`./textures/...`). The stock resolver finds them; no plugin is nee
 ```
 score-lib export --world world1 [--kind k] [--place p] [--dry-run] [--report <file>]
 score-lib lock <address>... | --all-drafts --kind k
-score-lib withdraw <address>
+score-lib withdraw <address>          (a locked entry, or a draft: frozen as it stood)
 score-lib fetch <address>... --into <root> [--with-requires] [--file <name>]...
 score-lib take-in <list.json> [--report <file>]
 score-lib test algorithm/<name>@<v>
@@ -57,7 +57,7 @@ commit `worlds/<world>.toml` names, both read only. The blob store is set by env
 
 `handover` is what score's runner calls once a place (or, without `--place`, the world's own node) is accepted: under
 a lock (`.handover.lock`) it records the place in `worlds/<w>.toml`, exports the place kinds over every place of the
-world at the commit given (the world node: `algorithm` and `ground`), gives each entry its web 3D copy and quality
+world at the commit given (the world node: `algorithm`), gives each entry its web 3D copy and quality
 score, commits and pushes `entries/ index/ worlds/`, and writes `<out>/handover.json` (`schemas/handover.schema.json`,
 example `schemas/handover.example.json`): every accepted output and the entries holding it, every entry with its
 status and provenance, every refusal. It writes drafts only; it exits non-zero only when it could not run. `held`

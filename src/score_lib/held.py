@@ -3,7 +3,7 @@ place holds, and the store outputs each entry carries (its provenance nodes and 
 report and the cockpit's invariant check both read these (`score-lib held`)."""
 from score_lib import entry as entries
 
-WORLD_KINDS = ("algorithm", "ground")  # the kinds the world's own node hands over
+WORLD_KINDS = ("algorithm",)  # the kinds the world's own node hands over
 
 
 def newest_of_world(root, world):

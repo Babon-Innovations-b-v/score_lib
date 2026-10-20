@@ -194,7 +194,7 @@ def layer_picture(context, place, sublayer, mapping, layer_path, work, files, ro
 
 
 def ground_layer(context, mapping, name, work):
-    """The ground sublayer: a layer.usda holding the ground entry's usdc as its one sublayer (or its own copy)."""
+    """The ground sublayer: a layer.usda holding the place's ground usdc, its own copy, as its one sublayer."""
     sha = mapping.listing[name]
     target = mapping.library(sha) or mapping.own_file(name)
     layer = Sdf.Layer.CreateAnonymous(".usda")

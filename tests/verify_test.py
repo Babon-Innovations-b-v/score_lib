@@ -49,6 +49,15 @@ def test_3_locked_digest_differs(world):
     assert any("kit/room@1: content digest differs" in each for each in messages(world))
 
 
+def test_a_withdrawn_draft_is_frozen_and_passes(world):
+    world.export()
+    locks.withdraw(world.root, "kit/room@1")
+    index.rebuild(world.root)
+    assert entries.load_address(world.root, "kit/room@1")["state"] == "withdrawn"
+    assert [row["address"] for row in locks.read(world.root)] == ["kit/room@1"]
+    assert messages(world) == []
+
+
 def lock_and_edit(world, change):
     """Lock kit/room@1 with what it requires, change its entry.json, rebuild the index."""
     locks.lock_many(world.root, ["kit/room@1"] + entries.load_address(world.root, "kit/room@1")["requires"])

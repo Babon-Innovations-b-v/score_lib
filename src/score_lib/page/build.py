@@ -11,7 +11,7 @@ from score_lib import entry as entries
 
 TEMPLATE = pathlib.Path(__file__).with_name("template.html")
 NAMES = {"algorithm": "Engine algorithms", "surface": "Surfaces", "model": "Models", "light": "Skies",
-         "sound": "Sounds", "effect": "Effects", "character": "Characters", "ground": "Grounds", "kit": "Kits",
+         "sound": "Sounds", "effect": "Effects", "character": "Characters", "kit": "Kits",
          "layer": "Layers", "place": "Places"}
 
 

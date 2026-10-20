@@ -21,7 +21,8 @@ from score_lib.rewrite import asset_paths, export, joined, open_copy, rewrite
 
 MADE_STAGES = ("surfaces-bake", "ship_kit", "crops-surfaces-bake")
 PREVIEW_VERSION = "mesh-3"
-LAYER_TAGS = {"layers/crops.usda": "crop", "layers/machines.usda": "machine"}
+# a model the ground layer shows is a terrain piece (the terrain adapter's, made through the prop pipeline)
+LAYER_TAGS = {"layers/crops.usda": "crop", "layers/machines.usda": "machine", "layers/ground.usdc": "terrain"}
 ROUTE_TAGS = {"code": "piece", "model": "prop"}
 FIXTURE = "fixture_"  # score's tools/usd/scene.py fixture_asset: a released model's asset name
 

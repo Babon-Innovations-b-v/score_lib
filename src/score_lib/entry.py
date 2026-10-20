@@ -5,6 +5,8 @@ import pathlib
 import re
 
 SCHEMA = "score-lib-entry/1"
+# `ground` is retired (2026-10-20: terrain pieces are models, ground finishes surfaces); its old records stay,
+# withdrawn, so the places that name them still resolve. The export makes none (export/run.ORDER).
 KINDS = ("algorithm", "surface", "model", "light", "sound", "effect", "character", "ground", "kit", "layer", "place")
 ID_PATTERN = re.compile(r"^[a-z0-9_]+(\.[a-z0-9_]+)?$")
 ADDRESS_PATTERN = re.compile(r"^(?P<kind>[a-z]+)/(?P<id>[a-z0-9_]+(\.[a-z0-9_]+)?)@(?P<version>[1-9][0-9]*)$")

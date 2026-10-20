@@ -56,11 +56,15 @@ def drafts(root, kind):
     return [record["address"] for record in entries.all_entries(root, kind) if record["state"] == "draft"]
 
 
-def withdraw(root, address):
-    """A locked entry becomes withdrawn: kept with its files, hidden from the catalogue."""
+def withdraw(root, address, date=None):
+    """A locked entry or a draft becomes withdrawn: kept with its files, hidden from the catalogue. A draft is frozen
+    as it stood, its locks row written now (a retired kind's drafts, which nothing will make again)."""
     record = entries.load_address(root, address)
-    if record is None or record["state"] != "locked":
-        raise LockRefused(f"{address}: only a locked entry can be withdrawn")
+    if record is None or record["state"] not in ("locked", "draft"):
+        raise LockRefused(f"{address}: only a locked entry or a draft can be withdrawn")
+    if record["state"] == "draft":
+        record["locked"] = date or today()
+        append(root, {"address": address, "digest": entries.digest(record), "date": record["locked"]})
     record["state"] = "withdrawn"
     entries.write(root, record)
     return record

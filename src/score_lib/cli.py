@@ -189,7 +189,7 @@ def parser():
     lock.add_argument("--all-drafts", action="store_true")
     lock.add_argument("--kind")
     lock.set_defaults(handle=command_lock)
-    withdraw = commands.add_parser("withdraw", help="withdraw a locked entry")
+    withdraw = commands.add_parser("withdraw", help="withdraw a locked entry or a draft")
     withdraw.add_argument("address")
     withdraw.set_defaults(handle=command_withdraw)
     fetched = commands.add_parser("fetch", help="materialise entries into a folder")

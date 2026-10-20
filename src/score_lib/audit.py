@@ -262,24 +262,6 @@ def characters(context, held):
     return found
 
 
-def grounds(context, held):
-    """Every planet and place ground of the accepted terrain."""
-    output = context.store.accepted("terrain")
-    if not output:
-        return []
-    found = []
-    listing = context.store.listing(output)
-    for planet in sorted({name.split("/", 1)[0] for name in listing if "/" in name}):
-        found.append(Thing("ground", planet, [], True) if planet in held.ids["ground"] else
-                     missing("ground", planet, [], "not exported", "no ground entry for this planet"))
-    for name, sha in sorted(listing.items()):
-        parts = name.split("/")
-        if len(parts) == 3 and parts[1] == "places" and name.endswith(".usdc"):
-            found.append(Thing("ground", name, [], True) if held.has("ground", sha) else
-                         missing("ground", name, [], "not exported", "no ground entry holds it"))
-    return found
-
-
 def layers(context, held):
     """Every sublayer of a place's stage (the edit slot rides in the place) and every accepted physics layer."""
     found = []
@@ -356,7 +338,7 @@ NOT_MAKER_PREFIXES = ("people-take-",)
 ROUTES = (("crops-surfaces-", "surfaces (finish route)"), ("surfaces-", "surfaces (finish route)"),
           ("people-", "people (character maker)"), ("crops-", "crops (crop models)"))
 KINDS = (("algorithm", algorithms), ("surface", surfaces), ("model", models), ("model gltf form", gltf_forms),
-         ("light", lights), ("sound", sounds), ("effect", effects), ("character", characters), ("ground", grounds),
+         ("light", lights), ("sound", sounds), ("effect", effects), ("character", characters),
          ("kit", kits), ("layer", layers), ("place", places))
 
 

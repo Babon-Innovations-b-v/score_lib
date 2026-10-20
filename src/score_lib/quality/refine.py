@@ -100,13 +100,6 @@ def light_options(record, found, context):
                    ["sky resolution", "blown sky"])]
 
 
-def ground_options(record, found, context):
-    return [option("re-run the terrain at a finer cell", "the terrain algorithm on this machine with a finer cell "
-                   "and the relief fitted again", ["cell", "spikes", "relief follows", "scale faults"]),
-            option("re-draw the ground look", "the terrain look stage again (a cloud run)", ["planet"],
-                   NOT_MEASURED)]
-
-
 def kit_options(record, found, context):
     return [option("re-plan the partition", "the kit's partition laid again so its groups cover their surfaces "
                    "without gaps or overlaps (free, a coding agent)", ["coverage", "gaps", "overlap"]),
@@ -134,7 +127,7 @@ def algorithm_options(record, found, context):
 
 
 BY_KIND = {"model": model_options, "surface": surface_options, "effect": effect_options, "sound": sound_options,
-           "character": character_options, "light": light_options, "ground": ground_options, "kit": kit_options,
+           "character": character_options, "light": light_options, "kit": kit_options,
            "layer": layer_options, "place": place_options, "algorithm": algorithm_options}
 
 
