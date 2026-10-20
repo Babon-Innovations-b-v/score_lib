@@ -11,7 +11,7 @@ NODE = "terrain"
 PLANET_FILES = ("ground.json", "heights.png", "shading.png", "skin.png", "zones.png", "plan.png", "rocks.json",
                 "measures.json", "diorama/c0.png", "diorama/c1.png", "diorama/c2.png", "diorama/c3.png",
                 "diorama/chosen-depth.npy")
-# The models the terrain stage runs (score paper/source/score.md Table C1; algorithms.md section 11).
+# The models the terrain stage runs (score paper/source/score.md Table C1).
 MADE_WITH = (
     ("ground relief", "depth_anything_v2"),
     ("ground skins", "nano_banana_pro"),
