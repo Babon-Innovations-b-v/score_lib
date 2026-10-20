@@ -1,0 +1,165 @@
+{
+  "address": "effect/devil@1",
+  "files": {
+    "clip.usdc": {
+      "bytes": 36007681,
+      "role": "usd",
+      "sha256": "0ff3368c269490fd23b42b98c84024a0ed512379b6632e8347d27a0b343182f4"
+    },
+    "effect.usda": {
+      "bytes": 21500,
+      "role": "usd",
+      "sha256": "77afc38a656877b39a1d0dbe86fc7999fe4b76d83e7c14fe507892f0befb58b9"
+    },
+    "preview.png": {
+      "bytes": 32297,
+      "role": "picture",
+      "sha256": "7cd3fe3cc8a41ef4655a5542a44380a29e6a9996470b6b07f11e9d0a76f824d6"
+    },
+    "settings.json": {
+      "bytes": 2333,
+      "role": "record",
+      "sha256": "d4bd17237f25850f3f1174eec33645721dce54f5b3689374624441edab5d4a09"
+    }
+  },
+  "id": "devil",
+  "kind": "effect",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/points.py",
+    "of": "clip.usdc at clip time 120.0"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-12T18:27:32.757391+00:00",
+      "by": "runner"
+    },
+    "code": "9b32f2200ac272fbb20a9a7b7f3190e8a3f4de0378733281b560755af276318d",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "from": "footage: doi-10.1029/2006JE002743, lpi-7thmars2007-3149, PIA07253, PIA07925 (Mars's dust devils most 10 to 20 m across at the foot, moving 1 to 21 m/s, their wind up the column 0.2 to 8.8 m/s, a see-through column of dust with no single grains, widening about 6 degrees either side as it climbs and standing at least 2.4 foot widths high: 15,000 faint dust cards let out round a ring 8.4 m across, climbing 3 to 5 m/s for 10 s, spreading 6 degrees, so the column is about 10 m across at its foot and stands 30 m and more); its wandering, spin and colour are the game's: game/outside/dust/dust_devil.gd:9-24 (TURN 3 rad/s, CLIMB 3 to 5 m/s), game/outside/dust/mars_wind.gd:56-61,225-247 (DEVIL_SECONDS 80, DEVIL_WANDER 1.4 m/s downwind, written 20 s into its life), game/outside/dust/dust_grains.gd:24-38 (MARS_DUST #b4583a lifted by GRAIN_LIFT 1.25 to #e16e48)",
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
+    "models": [],
+    "node": "effects-layer@camp",
+    "output": "ba556d2238a88a22cad7bca11d03443466319f14ed988abf6ba9c1a5b933e9fe",
+    "place": "camp",
+    "placements": [
+      {
+        "place": "camp",
+        "prim": "/camp/Effects{weather=calm}devil_east"
+      },
+      {
+        "place": "camp",
+        "prim": "/camp/Effects{weather=calm}devil_west"
+      },
+      {
+        "place": "campgrounds",
+        "prim": "/campgrounds/Effects/devil_east"
+      },
+      {
+        "place": "campgrounds",
+        "prim": "/campgrounds/Effects/devil_west"
+      }
+    ],
+    "prim": "/camp/Effects{weather=calm}devil_east",
+    "record_key": "22796041a04506a19a5f8cef4fa80eb14e4fa8879a95dfff20e7cbb9f5ea901a",
+    "world": "world1"
+  },
+  "refine_options": [
+    {
+      "action": "re-tune against its footage",
+      "answers": [
+        "footage",
+        "fine particles",
+        "loose blobs",
+        "cites footage"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "the emitter's settings moved toward its footage's measured ranges in data/effects/<place>.json and its particles baked again (tools/usd/effects.py, on this machine)",
+      "suggested": false
+    },
+    {
+      "action": "measure more footage",
+      "answers": [
+        "footage"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "add a footage check for this emitter (a real photograph or film measured against a thing of known size)",
+      "suggested": false
+    }
+  ],
+  "requires": [
+    "algorithm/particle_effects@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "score": 88,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "worst of 3 footage checks of the effects stage (effects-layer@camp): devil_east: half its width 7.136 in [5.0, 10.0]; devil_east: its height, at least 2.4 foot widths 39.387 in [24.0, None]; devil_east: one see-through column, no loose blobs 0.000 in [0.0, 0.01]; inside its range 75 to 100 by its margin, 50 at an end, 0 a range's width (or the bound's size) past it",
+      "measured": 0.0004,
+      "name": "footage",
+      "unit": "loose",
+      "value": 77,
+      "weight": 2.0
+    },
+    {
+      "how": "share of its 14003 showing particles at its fullest moment touching no other (the effects stage's loose: the nearest middle farther than its width); 100 at 0.0, 50 at 0.01, 0 at 0.05 share",
+      "measured": 0.0005,
+      "name": "loose blobs",
+      "unit": "share",
+      "value": 98,
+      "weight": 1.0
+    },
+    {
+      "how": "its settings name the real footage they were measured on (100), or only the source game's lines (0): 'footage: doi-10.1029/2006JE002743, lpi-7thmars2007-3149, PIA07253, PIA07925 (Mar'",
+      "measured": true,
+      "name": "cites footage",
+      "unit": "",
+      "value": 100,
+      "weight": 1.0
+    }
+  ],
+  "seen_in": [
+    "camp",
+    "campgrounds"
+  ],
+  "state": "draft",
+  "tags": {
+    "effect": [
+      "dust_devil_veil"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "place_kind": [
+      "mars",
+      "outside"
+    ],
+    "weather": [
+      "calm"
+    ]
+  },
+  "title": "Devil",
+  "usd": {
+    "default_prim": "/devil",
+    "layer": "effects",
+    "meters_per_unit": null,
+    "path": "score_lib/effect/devil/1/effect.usda",
+    "root": "effect.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

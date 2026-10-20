@@ -1,0 +1,347 @@
+{
+  "address": "effect/drift@1",
+  "files": {
+    "clip.usdc": {
+      "bytes": 693929,
+      "role": "usd",
+      "sha256": "f124b37c3afea100b1dcfe3339431f75ad9fb0743ab793c2bf88ec59999a4275"
+    },
+    "effect.usda": {
+      "bytes": 8566,
+      "role": "usd",
+      "sha256": "1b5cf61ef1b19d05d9151955dd4005ad25d9d720ff7daa70ddf25e8abe9a8fda"
+    },
+    "preview.png": {
+      "bytes": 10346,
+      "role": "picture",
+      "sha256": "03e8ec505b4eac289d1603198fa621ad5f77d093ba4852174d99d732a3d5edf8"
+    },
+    "settings.json": {
+      "bytes": 2085,
+      "role": "record",
+      "sha256": "c412ea69cf39364dbf0f709ba46a2348a0f761b10255862be73f935c05bf5d97"
+    }
+  },
+  "id": "drift",
+  "kind": "effect",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/points.py",
+    "of": "clip.usdc at clip time 72.0"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-12T18:27:32.757391+00:00",
+      "by": "runner"
+    },
+    "code": "9b32f2200ac272fbb20a9a7b7f3190e8a3f4de0378733281b560755af276318d",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "from": "game/outside/dust/mars_wind.gd:18-52,190-219,280-313 (CELL_M 14, CELLS_OUT 2, DRIFT_HIGH_CALM 0.4, WIND_CALM 2.5 m/s at 0.7 to 1.2 of it, DRIFT_SECONDS 3, DRIFT_SINK 0.25, DRIFT_GRAINS_A_CELL 20,000 at DRIFT_GRAINS_CALM_SHARE 0.06 = 1,200 a cell, DRIFT_GRAIN_M 0.03, DRIFT_GRAIN_THICKNESS 0.7, spread 8, fading_in_and_out 0 / 0.2 / 0.7 / 1), game/outside/dust/dust_grains.gd:24-38,106-117 (the unshaded speck, MARS_DUST #b4583a lifted by GRAIN_LIFT 1.25 to #e16e48); the cells are the stage's own five by five round the camp's middle, not Mars's cell grid round the player; footage: doi-10.1088/0034-4885/75/10/106901 (sand on Mars hops about 10 cm up and up to about a metre, grain by grain: the drift's grains stay within its 0.4 m over the ground)",
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
+    "models": [],
+    "node": "effects-layer@camp",
+    "output": "ba556d2238a88a22cad7bca11d03443466319f14ed988abf6ba9c1a5b933e9fe",
+    "place": "camp",
+    "placements": [
+      {
+        "place": "camp",
+        "prim": "/camp/Effects{weather=calm}drift_0_0"
+      },
+      {
+        "place": "camp",
+        "prim": "/camp/Effects{weather=calm}drift_0_1"
+      },
+      {
+        "place": "camp",
+        "prim": "/camp/Effects{weather=calm}drift_0_2"
+      },
+      {
+        "place": "camp",
+        "prim": "/camp/Effects{weather=calm}drift_0_3"
+      },
+      {
+        "place": "camp",
+        "prim": "/camp/Effects{weather=calm}drift_0_4"
+      },
+      {
+        "place": "camp",
+        "prim": "/camp/Effects{weather=calm}drift_1_0"
+      },
+      {
+        "place": "camp",
+        "prim": "/camp/Effects{weather=calm}drift_1_1"
+      },
+      {
+        "place": "camp",
+        "prim": "/camp/Effects{weather=calm}drift_1_2"
+      },
+      {
+        "place": "camp",
+        "prim": "/camp/Effects{weather=calm}drift_1_3"
+      },
+      {
+        "place": "camp",
+        "prim": "/camp/Effects{weather=calm}drift_1_4"
+      },
+      {
+        "place": "camp",
+        "prim": "/camp/Effects{weather=calm}drift_2_0"
+      },
+      {
+        "place": "camp",
+        "prim": "/camp/Effects{weather=calm}drift_2_1"
+      },
+      {
+        "place": "camp",
+        "prim": "/camp/Effects{weather=calm}drift_2_2"
+      },
+      {
+        "place": "camp",
+        "prim": "/camp/Effects{weather=calm}drift_2_3"
+      },
+      {
+        "place": "camp",
+        "prim": "/camp/Effects{weather=calm}drift_2_4"
+      },
+      {
+        "place": "camp",
+        "prim": "/camp/Effects{weather=calm}drift_3_0"
+      },
+      {
+        "place": "camp",
+        "prim": "/camp/Effects{weather=calm}drift_3_1"
+      },
+      {
+        "place": "camp",
+        "prim": "/camp/Effects{weather=calm}drift_3_2"
+      },
+      {
+        "place": "camp",
+        "prim": "/camp/Effects{weather=calm}drift_3_3"
+      },
+      {
+        "place": "camp",
+        "prim": "/camp/Effects{weather=calm}drift_3_4"
+      },
+      {
+        "place": "camp",
+        "prim": "/camp/Effects{weather=calm}drift_4_0"
+      },
+      {
+        "place": "camp",
+        "prim": "/camp/Effects{weather=calm}drift_4_1"
+      },
+      {
+        "place": "camp",
+        "prim": "/camp/Effects{weather=calm}drift_4_2"
+      },
+      {
+        "place": "camp",
+        "prim": "/camp/Effects{weather=calm}drift_4_3"
+      },
+      {
+        "place": "camp",
+        "prim": "/camp/Effects{weather=calm}drift_4_4"
+      },
+      {
+        "place": "campgrounds",
+        "prim": "/campgrounds/Effects/drift_0_0"
+      },
+      {
+        "place": "campgrounds",
+        "prim": "/campgrounds/Effects/drift_0_1"
+      },
+      {
+        "place": "campgrounds",
+        "prim": "/campgrounds/Effects/drift_0_2"
+      },
+      {
+        "place": "campgrounds",
+        "prim": "/campgrounds/Effects/drift_0_3"
+      },
+      {
+        "place": "campgrounds",
+        "prim": "/campgrounds/Effects/drift_0_4"
+      },
+      {
+        "place": "campgrounds",
+        "prim": "/campgrounds/Effects/drift_1_0"
+      },
+      {
+        "place": "campgrounds",
+        "prim": "/campgrounds/Effects/drift_1_1"
+      },
+      {
+        "place": "campgrounds",
+        "prim": "/campgrounds/Effects/drift_1_2"
+      },
+      {
+        "place": "campgrounds",
+        "prim": "/campgrounds/Effects/drift_1_3"
+      },
+      {
+        "place": "campgrounds",
+        "prim": "/campgrounds/Effects/drift_1_4"
+      },
+      {
+        "place": "campgrounds",
+        "prim": "/campgrounds/Effects/drift_2_0"
+      },
+      {
+        "place": "campgrounds",
+        "prim": "/campgrounds/Effects/drift_2_1"
+      },
+      {
+        "place": "campgrounds",
+        "prim": "/campgrounds/Effects/drift_2_2"
+      },
+      {
+        "place": "campgrounds",
+        "prim": "/campgrounds/Effects/drift_2_3"
+      },
+      {
+        "place": "campgrounds",
+        "prim": "/campgrounds/Effects/drift_2_4"
+      },
+      {
+        "place": "campgrounds",
+        "prim": "/campgrounds/Effects/drift_3_0"
+      },
+      {
+        "place": "campgrounds",
+        "prim": "/campgrounds/Effects/drift_3_1"
+      },
+      {
+        "place": "campgrounds",
+        "prim": "/campgrounds/Effects/drift_3_2"
+      },
+      {
+        "place": "campgrounds",
+        "prim": "/campgrounds/Effects/drift_3_3"
+      },
+      {
+        "place": "campgrounds",
+        "prim": "/campgrounds/Effects/drift_3_4"
+      },
+      {
+        "place": "campgrounds",
+        "prim": "/campgrounds/Effects/drift_4_0"
+      },
+      {
+        "place": "campgrounds",
+        "prim": "/campgrounds/Effects/drift_4_1"
+      },
+      {
+        "place": "campgrounds",
+        "prim": "/campgrounds/Effects/drift_4_2"
+      },
+      {
+        "place": "campgrounds",
+        "prim": "/campgrounds/Effects/drift_4_3"
+      },
+      {
+        "place": "campgrounds",
+        "prim": "/campgrounds/Effects/drift_4_4"
+      }
+    ],
+    "prim": "/camp/Effects{weather=calm}drift_0_0",
+    "record_key": "22796041a04506a19a5f8cef4fa80eb14e4fa8879a95dfff20e7cbb9f5ea901a",
+    "world": "world1"
+  },
+  "refine_options": [
+    {
+      "action": "re-tune against its footage",
+      "answers": [
+        "footage",
+        "fine particles",
+        "loose blobs",
+        "cites footage"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "the emitter's settings moved toward its footage's measured ranges in data/effects/<place>.json and its particles baked again (tools/usd/effects.py, on this machine)",
+      "suggested": true
+    },
+    {
+      "action": "measure more footage",
+      "answers": [
+        "footage"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "add a footage check for this emitter (a real photograph or film measured against a thing of known size)",
+      "suggested": false
+    }
+  ],
+  "requires": [
+    "algorithm/particle_effects@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "score": 67,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "worst of 1 footage checks of the effects stage (effects-layer@camp): the drift hops within a metre of the ground 0.548 in [0.1, 1.0]; inside its range 75 to 100 by its margin, 50 at an end, 0 a range's width (or the bound's size) past it",
+      "measured": 0.5476,
+      "name": "footage",
+      "unit": "over_ground",
+      "value": 100,
+      "weight": 2.0
+    },
+    {
+      "how": "its look is 'speck': specks fly apart by nature",
+      "name": "loose blobs",
+      "status": "not judged",
+      "value": null
+    },
+    {
+      "how": "its settings name the real footage they were measured on (100), or only the source game's lines (0): 'game/outside/dust/mars_wind.gd:18-52,190-219,280-313 (CELL_M 14, CELLS_OUT 2, DR'",
+      "measured": false,
+      "name": "cites footage",
+      "unit": "",
+      "value": 0,
+      "weight": 1.0
+    }
+  ],
+  "seen_in": [
+    "camp",
+    "campgrounds"
+  ],
+  "state": "draft",
+  "tags": {
+    "effect": [
+      "dust_drift"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "place_kind": [
+      "mars",
+      "outside"
+    ],
+    "weather": [
+      "calm"
+    ]
+  },
+  "title": "Drift",
+  "usd": {
+    "default_prim": "/drift",
+    "layer": "effects",
+    "meters_per_unit": null,
+    "path": "score_lib/effect/drift/1/effect.usda",
+    "root": "effect.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

@@ -1,0 +1,180 @@
+{
+  "address": "effect/storm_grains@1",
+  "files": {
+    "clip.usdc": {
+      "bytes": 11522745,
+      "role": "usd",
+      "sha256": "8e83a772b1eabca8a7b41f444a7cca9ea9aee48afae6508641f7b6ff31697036"
+    },
+    "effect.usda": {
+      "bytes": 8249,
+      "role": "usd",
+      "sha256": "d188535deb917a1f209bbb277c1c315f15911616e76fe5821e1164aaa588c37a"
+    },
+    "preview.png": {
+      "bytes": 22120,
+      "role": "picture",
+      "sha256": "41c1503863f2044fc15f4332930ab52f92393902f3167c9c2d42715a880979eb"
+    },
+    "settings.json": {
+      "bytes": 1768,
+      "role": "record",
+      "sha256": "a128fc328fe673cfb345f05cb09b6c79e189885c9d03c6c123a049b3035a1461"
+    }
+  },
+  "id": "storm_grains",
+  "kind": "effect",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/points.py",
+    "of": "clip.usdc at clip time 72.0"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-12T18:27:32.757391+00:00",
+      "by": "runner"
+    },
+    "code": "9b32f2200ac272fbb20a9a7b7f3190e8a3f4de0378733281b560755af276318d",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "from": "game/outside/dust/mars_wind.gd:18-52,190-219,294-313 (in the thick of a storm: DRIFT_HIGH_STORM 4 m, WIND_STORM 11 m/s, all of DRIFT_GRAINS_A_CELL 20,000 a cell), dust_grains.gd:24-38; the stage lays the three by three cells round the camp's middle (42 m across) where the game lays five by five round the player: the game draws the drift only within DRIFT_DRAWN_M 22 m of the eye, faded over 10 m more",
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
+    "models": [],
+    "node": "effects-layer@camp",
+    "output": "ba556d2238a88a22cad7bca11d03443466319f14ed988abf6ba9c1a5b933e9fe",
+    "place": "camp",
+    "placements": [
+      {
+        "place": "camp",
+        "prim": "/camp/Effects{weather=storm}storm_grains_0_0"
+      },
+      {
+        "place": "camp",
+        "prim": "/camp/Effects{weather=storm}storm_grains_0_1"
+      },
+      {
+        "place": "camp",
+        "prim": "/camp/Effects{weather=storm}storm_grains_0_2"
+      },
+      {
+        "place": "camp",
+        "prim": "/camp/Effects{weather=storm}storm_grains_1_0"
+      },
+      {
+        "place": "camp",
+        "prim": "/camp/Effects{weather=storm}storm_grains_1_1"
+      },
+      {
+        "place": "camp",
+        "prim": "/camp/Effects{weather=storm}storm_grains_1_2"
+      },
+      {
+        "place": "camp",
+        "prim": "/camp/Effects{weather=storm}storm_grains_2_0"
+      },
+      {
+        "place": "camp",
+        "prim": "/camp/Effects{weather=storm}storm_grains_2_1"
+      },
+      {
+        "place": "camp",
+        "prim": "/camp/Effects{weather=storm}storm_grains_2_2"
+      }
+    ],
+    "prim": "/camp/Effects{weather=storm}storm_grains_0_0",
+    "record_key": "22796041a04506a19a5f8cef4fa80eb14e4fa8879a95dfff20e7cbb9f5ea901a",
+    "world": "world1"
+  },
+  "refine_options": [
+    {
+      "action": "re-tune against its footage",
+      "answers": [
+        "footage",
+        "fine particles",
+        "loose blobs",
+        "cites footage"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "the emitter's settings moved toward its footage's measured ranges in data/effects/<place>.json and its particles baked again (tools/usd/effects.py, on this machine)",
+      "suggested": true
+    },
+    {
+      "action": "measure more footage",
+      "answers": [
+        "footage"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "add a footage check for this emitter (a real photograph or film measured against a thing of known size)",
+      "suggested": false
+    }
+  ],
+  "requires": [
+    "algorithm/particle_effects@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "score": 0,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "no footage check of its place names this emitter",
+      "name": "footage",
+      "status": "not measured",
+      "value": null
+    },
+    {
+      "how": "its look is 'speck': specks fly apart by nature",
+      "name": "loose blobs",
+      "status": "not judged",
+      "value": null
+    },
+    {
+      "how": "its settings name the real footage they were measured on (100), or only the source game's lines (0): 'game/outside/dust/mars_wind.gd:18-52,190-219,294-313 (in the thick of a storm: D'",
+      "measured": false,
+      "name": "cites footage",
+      "unit": "",
+      "value": 0,
+      "weight": 1.0
+    }
+  ],
+  "seen_in": [
+    "camp"
+  ],
+  "state": "draft",
+  "tags": {
+    "effect": [
+      "dust_storm_grains"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "place_kind": [
+      "mars",
+      "outside"
+    ],
+    "weather": [
+      "storm"
+    ]
+  },
+  "title": "Storm grains",
+  "usd": {
+    "default_prim": "/storm_grains",
+    "layer": "effects",
+    "meters_per_unit": null,
+    "path": "score_lib/effect/storm_grains/1/effect.usda",
+    "root": "effect.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

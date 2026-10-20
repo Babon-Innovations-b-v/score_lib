@@ -1,0 +1,160 @@
+{
+  "address": "effect/pump_fog@1",
+  "files": {
+    "clip.usdc": {
+      "bytes": 11973119,
+      "role": "usd",
+      "sha256": "425a9ad9d093e03c7a5fc0faa965ee9884924e9db7f4c65a8bf7291459337246"
+    },
+    "effect.usda": {
+      "bytes": 4390,
+      "role": "usd",
+      "sha256": "6da3b57b3528a2cdab6114b8ac20b8e117840a8d37aa0f94bc25ee59d5635b32"
+    },
+    "preview.png": {
+      "bytes": 80744,
+      "role": "picture",
+      "sha256": "4bb4be3b6662679eb3c3e4c4c2be924b32e4ecf263ac94f24fe5d5dc0339fa10"
+    },
+    "settings.json": {
+      "bytes": 1916,
+      "role": "record",
+      "sha256": "06229d07ae4acdfcd44585eaedfe227bbc5758c0cef4ee72e0d5918d67cc961b"
+    }
+  },
+  "id": "pump_fog",
+  "kind": "effect",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/points.py",
+    "of": "clip.usdc at clip time 120.0"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-12T01:25:10.634484+00:00",
+      "by": "runner"
+    },
+    "code": "7b3bc97d9997c40ad75aad20b9a04a996a85620ffa21f81538dfd5251854aac9",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "from": "footage: normandale-humidity-vacuum, physicsforums-vacuum-chamber-demo (the fog the air makes as the pump draws it down (expanding air cools and its water condenses on the dust in it), forming in the pump's first seconds and gone within seconds as the pressure keeps falling and the air warms again off the walls; the pump runs from 1 s to 6 s of the round (data/motion/airlock.json cycle_light))",
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
+    "models": [],
+    "node": "effects-layer@airlock",
+    "output": "5d67d1f20e1051025f8df202d620167f7df591cc22f9d5c9daf1facb951a2315",
+    "place": "airlock",
+    "placements": [
+      {
+        "place": "airlock",
+        "prim": "/airlock/Effects/pump_fog"
+      },
+      {
+        "place": "garage",
+        "prim": "/garage/Effects/pump_fog"
+      },
+      {
+        "place": "hangar",
+        "prim": "/hangar/Effects/pump_fog"
+      }
+    ],
+    "prim": "/airlock/Effects/pump_fog",
+    "record_key": "976998f93d41562c408f4e7eb21e559b6a7dcac757b0089a0ef9a52ab6defb08",
+    "world": "world1"
+  },
+  "refine_options": [
+    {
+      "action": "re-tune against its footage",
+      "answers": [
+        "footage",
+        "fine particles",
+        "loose blobs",
+        "cites footage"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "the emitter's settings moved toward its footage's measured ranges in data/effects/<place>.json and its particles baked again (tools/usd/effects.py, on this machine)",
+      "suggested": false
+    },
+    {
+      "action": "measure more footage",
+      "answers": [
+        "footage"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "add a footage check for this emitter (a real photograph or film measured against a thing of known size)",
+      "suggested": false
+    }
+  ],
+  "requires": [
+    "algorithm/particle_effects@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "score": 88,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "worst of 3 footage checks of the effects stage (effects-layer@airlock): fog formed 1.5 s into the pump-down 0.898 in [0.5, 1.0]; fog still there 2.5 s into the pump-down 1.000 in [0.5, 1.0]; fog gone 5 s into the pump-down 0.000 in [0.0, 0.05]; inside its range 75 to 100 by its margin, 50 at an end, 0 a range's width (or the bound's size) past it",
+      "measured": 1.0,
+      "name": "footage",
+      "unit": "alive",
+      "value": 75,
+      "weight": 2.0
+    },
+    {
+      "how": "share of its 10600 showing particles at its fullest moment touching no other (the effects stage's loose: the nearest middle farther than its width); 100 at 0.0, 50 at 0.01, 0 at 0.05 share",
+      "measured": 0.0,
+      "name": "loose blobs",
+      "unit": "share",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "its settings name the real footage they were measured on (100), or only the source game's lines (0): 'footage: normandale-humidity-vacuum, physicsforums-vacuum-chamber-demo (the fog '",
+      "measured": true,
+      "name": "cites footage",
+      "unit": "",
+      "value": 100,
+      "weight": 1.0
+    }
+  ],
+  "seen_in": [
+    "airlock",
+    "garage",
+    "hangar"
+  ],
+  "state": "draft",
+  "tags": {
+    "effect": [
+      "pump_down_fog"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ],
+    "weather": []
+  },
+  "title": "Pump fog",
+  "usd": {
+    "default_prim": "/pump_fog",
+    "layer": "effects",
+    "meters_per_unit": null,
+    "path": "score_lib/effect/pump_fog/1/effect.usda",
+    "root": "effect.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}
