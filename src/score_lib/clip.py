@@ -57,10 +57,34 @@ def carried(record, previous):
     return {**record, "files": {**record["files"], FILE: previous["files"][FILE]}, "clip": previous["clip"]}
 
 
-def time_range(stage, per_second):
-    """{start, end, per_second} of an opened stage's time codes (its record's rate where the stage has none)."""
-    return {"start": stage.GetStartTimeCode(), "end": stage.GetEndTimeCode(),
-            "per_second": stage.GetTimeCodesPerSecond() or per_second or 24.0}
+def sampled_codes(stage, focus):
+    """(first, last) of the time samples on the prims under `focus` (every prim when None), or None when none is
+    sampled: an entry whose own layer names no time range (an effect's value clips answer through its points)."""
+    from pxr import Usd
+    roots = [stage.GetPrimAtPath(path) for path in focus] if focus else [stage.GetPseudoRoot()]
+    codes = [code for root in roots if root for prim in Usd.PrimRange(root) for attribute in prim.GetAttributes()
+             for code in attribute.GetTimeSamples()]
+    return (min(codes), max(codes)) if codes else None
+
+
+def time_range(own, stage, focus, per_second):
+    """{start, end, per_second} the clip plays: the entry's own layer's time codes where it names them, else the span
+    of its samples (`sampled_codes`), else none; its rate the layer's, else its record's."""
+    from pxr import Sdf
+    layer = Sdf.Layer.FindOrOpen(str(own))
+    span = (layer.startTimeCode, layer.endTimeCode) if layer.HasStartTimeCode() and layer.HasEndTimeCode() \
+        else sampled_codes(stage, focus) or (0.0, 0.0)
+    rate = layer.timeCodesPerSecond if layer.HasTimeCodesPerSecond() else per_second or 24.0
+    return {"start": float(span[0]), "end": float(span[1]), "per_second": float(rate)}
+
+
+def timed(opened, played):
+    """The clip's own root layer given the time it plays (a root layer's time codes are the stage's)."""
+    from pxr import Sdf
+    layer = Sdf.Layer.FindOrOpen(str(opened))
+    layer.startTimeCode, layer.endTimeCode = played["start"], played["end"]
+    layer.timeCodesPerSecond = layer.framesPerSecond = played["per_second"]
+    layer.Save()
 
 
 def hidden_paths(stage, keep):
@@ -166,8 +190,10 @@ def plan_row(root, blobs, address, into):
     sublayers, hidden, focus = what_opens(root, blobs, record, shelf, into, folder / "work")
     opened = write_open(folder, sublayers, hidden)
     stage = Usd.Stage.Open(str(opened))
-    return {**row, "open": str(opened), "focus": focus, **time_range(stage, (record["usd"] or {}).get(
-                "time_codes_per_second")),
+    played = time_range(sublayers[0], stage, focus, (record["usd"] or {}).get("time_codes_per_second")) \
+        if shelf in ("effect", "motion") else {"start": 0.0, "end": 0.0, "per_second": 24.0}
+    timed(opened, played)
+    return {**row, "open": str(opened), "focus": focus, **played,
             "points": light_points(stage) if shelf == "lamp" else None,
             "material": first_material(stage) if shelf == "surface" else None}
 
