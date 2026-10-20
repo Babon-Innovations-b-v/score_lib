@@ -77,6 +77,7 @@ a light preview (`web3d/light.glb`) and the whole copy (`web3d/full.glb`), made 
 meshopt (gltfpack) and WebP pictures, and records them in the entry (`web3d`, both files' hashes, and the two files
 with role `web3d`). Every finish comes from the surface library: a library material as its entry holds it, a library
 bake's maps, else the library surface nearest the colour the part showed (each replacement listed in `web3d`).
+A draft's copy is made again when its files are not in the blob store.
 
 `score-lib audit` counts what a world holds, kind by kind, against the entries, and names why anything is missing.
 

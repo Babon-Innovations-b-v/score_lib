@@ -1,7 +1,7 @@
 """score-lib web3d: give every model, kit, character and place entry its web copy, one entry at a time.
 
-An entry is made again when it has no copy, when its own content changed since (record.source_of), or when an entry
-its copy read changed or has a newer version. A locked entry is never rewritten: it is listed and left. Each copy's
+An entry is made again when it has no copy, when its copy's files are not in the blob store, when its own content
+changed since (record.source_of), or when an entry its copy read changed or has a newer version. A locked entry is never rewritten: it is listed and left. Each copy's
 two files go into the blob store and the entry, then the index is rebuilt once.
 """
 import shutil
@@ -27,11 +27,13 @@ def newest(root, kind):
     return [found[entry_id] for entry_id in sorted(found)]
 
 
-def stale_reason(root, record):
+def stale_reason(root, blobs, record):
     """Why an entry needs a copy made, or None when its copy stands."""
     made = record.get("web3d")
     if not made:
         return "no copy"
+    if not all(blobs.has(made[key]) for key in ("full_sha256", "light_sha256")):
+        return "its copy is not in the blob store"
     if made.get("source") != copies.source_of(record):
         return "its content changed"
     for address, source in sorted((made.get("from") or {}).items()):
@@ -92,7 +94,7 @@ def run(root, blobs, cache, kinds=KINDS, addresses=None, limit=None, say=print):
     library = Library(root, blobs)
     report = {"made": [], "standing": 0, "locked": [], "failed": []}
     for record in selected(root, kinds, addresses):
-        reason = stale_reason(root, record)
+        reason = stale_reason(root, blobs, record)
         if reason is None:
             report["standing"] += 1
             continue

@@ -47,8 +47,9 @@ class MissingFile(KeyError):
     """A file asked for that none of the fetched entries holds."""
 
 
-def fetch(root, blobs, addresses, into, with_requires=False, link=False, names=None):
-    """Materialise entries (and their requires), only the files `names` when given; the records fetched."""
+def fetch(root, blobs, addresses, into, with_requires=False, link=False, names=None, left_out_roles=()):
+    """Materialise entries (and their requires), only the files `names` when given and none of a role in
+    `left_out_roles`; the records fetched."""
     records = closure(root, addresses, with_requires)
     held = {name for record in records for name in record["files"]}
     missing = sorted(set(names or ()) - held)
@@ -56,7 +57,7 @@ def fetch(root, blobs, addresses, into, with_requires=False, link=False, names=N
         raise MissingFile(", ".join(missing))
     for record in records:
         for name, described in sorted(record["files"].items()):
-            if names and name not in names:
+            if (names and name not in names) or described["role"] in left_out_roles:
                 continue
             place_file(blobs, described["sha256"], destination(into, record, name), link)
     return records

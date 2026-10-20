@@ -16,7 +16,7 @@ def web_copy(root, blobs, record):
     a kind the copies do not cover or a locked entry without one."""
     if record["kind"] not in web3d.KINDS:
         return None
-    if web3d.stale_reason(root, record) is not None:
+    if web3d.stale_reason(root, blobs, record) is not None:
         if record["state"] != "draft":
             return None
         if str(root) not in LIBRARIES:

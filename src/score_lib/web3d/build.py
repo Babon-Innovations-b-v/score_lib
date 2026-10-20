@@ -16,11 +16,12 @@ import tempfile
 from score_lib import entry as entries
 from score_lib.fetch import fetch
 from score_lib.web3d import finish, gltf, pack
+from score_lib.web3d.record import SKIPPED_ROLES
 
 
 def fetched(root, blobs, addresses, folder):
-    """Entries and what they require linked into `folder`: the records."""
-    return fetch(root, blobs, addresses, folder, with_requires=True, link=True)
+    """Entries and what they require linked into `folder`, but their pictures and web copies: the records."""
+    return fetch(root, blobs, addresses, folder, with_requires=True, link=True, left_out_roles=SKIPPED_ROLES)
 
 
 def entry_folder(folder, address):

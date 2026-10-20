@@ -1,7 +1,7 @@
 """A generic S3-compatible blob store, configured only by environment variables (no endpoint or bucket in the code)."""
 import pathlib
 
-from score_lib.blobs import check_sha, key_of
+from score_lib.blobs import MissingBlob, check_sha, key_of
 
 
 class S3BlobStore:
@@ -49,7 +49,12 @@ class S3BlobStore:
         """Download a blob to a path and check its bytes."""
         destination = pathlib.Path(destination)
         destination.parent.mkdir(parents=True, exist_ok=True)
-        self.client.download_file(self.bucket, self.key(sha256), str(destination))
+        try:
+            self.client.download_file(self.bucket, self.key(sha256), str(destination))
+        except Exception as error:  # botocore ClientError; a 404 is a missing blob, anything else is raised
+            if getattr(error, "response", {}).get("Error", {}).get("Code") in ("404", "NoSuchKey", "NotFound"):
+                raise MissingBlob(f"the blob store holds no {sha256}") from error
+            raise
         check_sha(destination, sha256)
 
     def url(self, sha256):

@@ -3,7 +3,7 @@ import os
 import pathlib
 import shutil
 
-from score_lib.blobs import check_sha, key_of
+from score_lib.blobs import MissingBlob, check_sha, key_of
 
 
 class LocalBlobStore:
@@ -34,6 +34,8 @@ class LocalBlobStore:
     def get(self, sha256, destination):
         """Copy a blob to a path and check its bytes."""
         destination = pathlib.Path(destination)
+        if not self.has(sha256):
+            raise MissingBlob(f"the blob store holds no {sha256}")
         destination.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(self.path(sha256), destination)
         check_sha(destination, sha256)

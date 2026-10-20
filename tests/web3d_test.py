@@ -85,6 +85,10 @@ def test_the_web_copy_is_recorded_and_kept(world):
     assert all(found["counts"]["changed draft"] == 0 for found in again["kinds"].values())
     assert entries.load_address(world.root, "model/crate_1@1")["web3d"] == made
     assert web3d_run.run(world.root, blobs, world.scratch / "cache", kinds=("model", "place"))["standing"] == 2
+    blobs.path(made["full_sha256"]).unlink()  # a copy lost from the blob store is made again
+    report = web3d_run.run(world.root, blobs, world.scratch / "cache", kinds=("model", "place"))
+    assert [each["reason"] for each in report["made"]] == ["its copy is not in the blob store"]
+    assert blobs.has(entries.load_address(world.root, "model/crate_1@1")["web3d"]["full_sha256"])
 
 
 def test_a_picture_finish_is_replaced_by_the_nearest_library_surface(world):

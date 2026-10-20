@@ -28,6 +28,10 @@ class NoBlobStore(RuntimeError):
     """No blob store is configured in the environment."""
 
 
+class MissingBlob(LookupError):
+    """The blob store does not hold a blob asked for."""
+
+
 class BadBlob(RuntimeError):
     """A file's bytes do not hash to the name it is put or got under."""
 
