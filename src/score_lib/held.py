@@ -48,7 +48,7 @@ def carried_bytes(record):
     aliases."""
     provenance = record.get("provenance", {})
     found = {described["sha256"] for described in record["files"].values()}
-    found |= {source["sha256"] for source in provenance.get("files_from", {}).values()}
+    found |= {source["sha256"] for source in provenance.get("files_from", {}).values() if isinstance(source, dict)}
     found |= {sha for sha, _ in provenance.get("aliases", [])}
     return found
 

@@ -57,7 +57,8 @@ def check_locks(root, records):
                 failures.append((record["address"], "content digest differs from index/locks.json"))
         elif found is not None:
             failures.append((record["address"], f"in index/locks.json but its state is {record['state']}"))
-    failures += [(address, "locks row with no entry") for address in sorted(by_row) if address not in by_address]
+    on_disk = {record["address"] for record in entries.all_entries(root)}  # every entry, not only those asked for
+    failures += [(address, "locks row with no entry") for address in sorted(by_row) if address not in on_disk]
     return failures
 
 
