@@ -1,8 +1,11 @@
-"""effect entries: each particle emitter of a place's effects-layer output (the one its assembly took, else the
-accepted one), its 35 score:effect:* attributes and its baked value clip (spec 4.4). The record is the reusable
-algorithm's settings; the clip is one baked run of it."""
+"""effect entries: one entry a distinct effect, its look, however many spots and places show it (score #46). An
+emitter of a place's effects-layer output (the one its assembly took, else the accepted one) carries 35
+score:effect:* attributes and a baked value clip (spec 4.4); its placement settings (PLACEMENT: where and how much,
+fitted to its spot, door or room) stay in the place's layer, as does every placement's own clip, and the entry keeps
+one placement's settings and clip as its sample and names every placement (provenance `placements`)."""
 import hashlib
 import json
+import os
 
 from pxr import Sdf
 
@@ -14,10 +17,14 @@ from score_lib.rewrite import asset_paths, copy_prim, export, joined, rewrite
 
 PREFIX = "score:effect:"
 LAYER = "layers/effects.usda"
+# The settings fitted to one placement (its spot's seed and wind, its door's or room's size, the place's pump cycle
+# and the density over that size, the source lines it was read from): the place's, never the effect's.
+PLACEMENT = ("from", "seed", "wind", "emitter_size", "direction", "count", "rate", "loop", "trigger_every",
+             "explosiveness", "opacity", "size")
 
 
 def plan(context):
-    """One candidate per distinct emitter (settings and clip) across the places."""
+    """One candidate per distinct effect (its look: the settings without PLACEMENT) across the places."""
     groups = {}
     for place in context.places:
         for use in place_emitters(context, place):
@@ -93,7 +100,8 @@ def place_emitters(context, place):
         settings = settings_of(spec)
         clip = clip_name(layer, path)
         clip_sha = listing.get(clip)
-        identity = hashlib.sha256((json.dumps(settings, sort_keys=True) + (clip_sha or "")).encode()).hexdigest()
+        look = {key: value for key, value in settings.items() if key not in PLACEMENT}
+        identity = hashlib.sha256(json.dumps(look, sort_keys=True).encode()).hexdigest()
         found.append({"place": place, "path": path, "name": spec.name, "weather": weather, "settings": settings,
                       "clip": clip, "clip_sha": clip_sha, "identity": identity, "output": output})
     return found
@@ -109,11 +117,20 @@ def effect_usda(context, use, root_name, work):
     return export(layer, work / "effect.usda")
 
 
+def stem(names):
+    """The name the emitters of one effect share: their common start up to a whole word (drift_0_0 .. drift_4_4 ->
+    drift, devil_east and devil_west -> devil), or the one name they all have."""
+    if len(set(names)) == 1:
+        return names[0]
+    common = os.path.commonprefix(list(names))
+    return common.rsplit("_", 1)[0] if "_" in common else names[0]
+
+
 def candidate(context, uses):
-    """One effect candidate."""
-    uses = sorted(uses, key=lambda use: use["place"])
+    """One effect candidate: the first placement (by place, then prim) its sample, every placement named."""
+    uses = sorted(uses, key=lambda use: (use["place"], str(use["path"])))
     first = uses[0]
-    root_name = place_reads.sanitised(first["name"])
+    root_name = place_reads.sanitised(stem([use["name"] for use in uses]))
     work = context.work("effect", first["identity"][:16])
     files = {"settings.json": write_json(work / "settings.json", first["settings"]),
              "effect.usda": effect_usda(context, first, root_name, work)}
@@ -129,12 +146,13 @@ def candidate(context, uses):
         roles["preview.png"] = "picture"
         picture = {"file": "preview.png", "made_by": "preview/points.py", "of": f"clip.usdc at clip time {clip_time}"}
     provenance = place_reads.node_provenance(context, f"effects-layer@{first['place']}", first["output"])
-    provenance.update({"place": first["place"], "prim": str(first["path"]), "from": first["settings"].get("from")})
+    provenance.update({"place": first["place"], "prim": str(first["path"]), "from": first["settings"].get("from"),
+                       "placements": [{"place": use["place"], "prim": str(use["path"])} for use in uses]})
     algorithm = context.by_id.get(("algorithm", "particle_effects"))
     weathers = sorted({use["weather"] for use in uses if use["weather"]})
     places = [use["place"] for use in uses]
     return Candidate(kind="effect", base_id=root_name, identity=first["identity"],
-                     title=first["name"].replace("_", " ").capitalize(), places=places, files=files, roles=roles,
+                     title=root_name.replace("_", " ").capitalize(), places=places, files=files, roles=roles,
                      made_with=[dict(SCORE)],
                      usd={"root": "effect.usda", "layer": "effects", "use": "reference"},
                      requires=[algorithm] if algorithm else [], provenance=provenance,

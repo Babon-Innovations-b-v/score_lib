@@ -72,7 +72,8 @@ class Held:
 def record_shas(record):
     """Every sha an entry holds: its files, the store bytes they came from and its aliases."""
     found = {described["sha256"] for described in record["files"].values()}
-    found |= {source["sha256"] for source in record["provenance"].get("files_from", {}).values()}
+    found |= {source["sha256"] for source in record["provenance"].get("files_from", {}).values()
+              if isinstance(source, dict)}
     found |= {sha for sha, _ in record["provenance"].get("aliases", [])}
     return found
 
@@ -201,12 +202,19 @@ def effects(context, held):
     for place in context.places:
         for use in effect_export.place_emitters(context, place):
             key = f"{place}:{use['path']}"
-            in_library = held.has("effect", use["clip_sha"]) if use["clip_sha"] else any(
-                place in record["seen_in"] and record["provenance"].get("prim") == str(use["path"])
-                for record in held.of_kind("effect"))
+            in_library = (use["clip_sha"] and held.has("effect", use["clip_sha"])) or any(
+                (place, str(use["path"])) in placements(record) for record in held.of_kind("effect"))
             found.append(Thing("effect", key, [place], True) if in_library else
-                         missing("effect", key, [place], "not exported", "no effect entry holds its clip"))
+                         missing("effect", key, [place], "not exported", "no effect entry holds its clip or names it"))
     return found
+
+
+def placements(record):
+    """(place, prim) of every emitter an effect entry names: its placements (one entry a distinct effect, score #46),
+    else the one prim of its place."""
+    provenance = record["provenance"]
+    named = provenance.get("placements") or [{"place": provenance.get("place"), "prim": provenance.get("prim")}]
+    return {(each["place"], each["prim"]) for each in named}
 
 
 def lights(context, held):

@@ -9,7 +9,7 @@ The index lives in git; the bytes live in a blob store. Every entry is versioned
 |---|---|
 | model | one made model (usd form, gltf form when the bake holds it, and `closeup.png`, the accepted close-up it was made from, when the store holds one) |
 | surface | one surface library variant and the Material a place writes for it |
-| effect | one particle emitter: its 35 settings and one baked clip |
+| effect | one distinct effect however many spots and places show it: one placement's 35 settings and baked clip as its sample, every placement named; each placement's own settings and clip stay in its place's layer |
 | light | one sky picture with the prims that draw it |
 | sound | one sound source: its SpatialAudio prim, takes and levels |
 | character | one body look or dress |

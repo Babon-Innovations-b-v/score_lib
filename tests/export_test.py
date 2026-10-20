@@ -110,11 +110,23 @@ def test_layers_point_at_library_addresses(world):
     assert "model/crate_1@1" in base["requires"]
     effects = entries.load_address(world.root, "layer/effects.room@1")
     assert "@score_lib/effect/steam/1/clip.usdc@" in blob_text(effects, "layer.usda")
+    # the second spot's own baked run is a placement's, so the layer keeps it (score #46)
+    assert "@./assets/effects/steam_2.usdc@" in blob_text(effects, "layer.usda")
+    assert "assets/effects/steam_2.usdc" in effects["files"]
     assert "held.json" in effects["files"]
     place = entries.load_address(world.root, "place/room@1")
     root_text = blob_text(place, "room.usda")
     assert "@score_lib/layer/base.room/1/layer.usda@" in root_text and "@./edit.usda@" in root_text
     assert place["tags"]["complete"] == ["named_gaps"] and "gaps.json" in place["files"]
+
+
+def test_one_effect_two_spots_show_is_one_entry_naming_both(world):
+    world.export()
+    found = [record["id"] for record in entries.all_entries(world.root, "effect")]
+    effect = entries.load_address(world.root, "effect/steam@1")
+    assert found == ["steam"] and effect["title"] == "Steam"
+    assert effect["provenance"]["placements"] == [{"place": "room", "prim": "/room/Effects/steam"},
+                                                  {"place": "room", "prim": "/room/Effects/steam_2"}]
 
 
 def test_two_runs_write_the_same_bytes(world):

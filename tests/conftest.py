@@ -221,12 +221,36 @@ def "room"
             custom float score:effect:lifetime = 1.3
             custom color3f score:effect:colour = (0.9, 0.9, 0.9)
             custom string score:effect:from = "a measured source"
+            custom int score:effect:seed = 1
 
             def Points "steam_points" (
                 clips = {
                     dictionary default = {
                         double2[] active = [(0, 0)]
                         asset[] assetPaths = [@../assets/effects/steam.usdc@]
+                        string primPath = "/Effect"
+                        double2[] times = [(0, 0), (24, 24)]
+                    }
+                }
+            )
+            {
+            }
+        }
+
+        def Xform "steam_2"
+        {
+            custom token score:effect:kind = "steam_jet"
+            custom int score:effect:count = 60
+            custom float score:effect:lifetime = 1.3
+            custom color3f score:effect:colour = (0.9, 0.9, 0.9)
+            custom string score:effect:from = "a measured source"
+            custom int score:effect:seed = 2
+
+            def Points "steam_points" (
+                clips = {
+                    dictionary default = {
+                        double2[] active = [(0, 0)]
+                        asset[] assetPaths = [@../assets/effects/steam_2.usdc@]
                         string primPath = "/Effect"
                         double2[] times = [(0, 0), (24, 24)]
                     }
@@ -387,6 +411,7 @@ def assembly_files(folder, model_sha, crate_colour=(200, 120, 40)):
             "assets/crate_1.usdc": usd_text(CRATE, ".usdc", folder),
             "assets/textures/crate_1_base_color.png": png(crate_colour),
             "assets/effects/steam.usdc": usd_text(CLIP, ".usdc", folder),
+            "assets/effects/steam_2.usdc": usd_text(CLIP.replace("(0.2, 1.5, 0)", "(0.3, 1.5, 0)"), ".usdc", folder),
             "assets/sound/generated/places/hum.wav": wav(),
             "scene.json": b"{}", "inputs.json": json.dumps({"models": {"crate_1": {"sha256": model_sha}}}).encode(),
             "contract.json": json.dumps({"schema": "openusd-stage", "version": 1}).encode()}
@@ -421,6 +446,7 @@ class World:
             "files/sound/generated/places/hum.wav": files["assets/sound/generated/places/hum.wav"]})
         effects = self.store.put_output({"layers/effects.usda": files["layers/effects.usda"],
                                          "assets/effects/steam.usdc": files["assets/effects/steam.usdc"],
+                                         "assets/effects/steam_2.usdc": files["assets/effects/steam_2.usdc"],
                                          "held.json": b'{"particles": {"steam": 40}}'})
         files["origin.json"] = json.dumps({"layers": {"sound": sound, "effects-layer": effects}}).encode()
         assembly = self.store.put_output(files)
