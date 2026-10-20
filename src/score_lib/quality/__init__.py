@@ -89,7 +89,8 @@ def chosen(context, kinds, addresses):
     """The records to score, by kind in ORDER."""
     records = sorted(context.records.values(), key=lambda record: (ORDER.index(record["kind"]), record["address"]))
     return [record for record in records
-            if (not kinds or record["kind"] in kinds) and (not addresses or record["address"] in addresses)]
+            if (not kinds or record["kind"] in kinds) and (not addresses or record["address"] in addresses)
+            and not (record["kind"] == "model" and record.get("usd") is None)]  # a taken-in glTF: no OpenUSD to read
 
 
 def scored_kind(kind, records, context, threads, root, repo, work):

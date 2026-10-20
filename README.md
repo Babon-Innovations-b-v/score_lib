@@ -37,7 +37,8 @@ are relative (`./textures/...`). The stock resolver finds them; no plugin is nee
 score-lib export --world world1 [--kind k] [--place p] [--dry-run] [--report <file>]
 score-lib lock <address>... | --all-drafts --kind k
 score-lib withdraw <address>
-score-lib fetch <address>... --into <root> [--with-requires]
+score-lib fetch <address>... --into <root> [--with-requires] [--file <name>]...
+score-lib take-in <list.json> [--report <file>]
 score-lib test algorithm/<name>@<v>
 score-lib run algorithm/<name>@<v> --preset world1 --out <dir> [--arg name=value]
 score-lib index
@@ -61,6 +62,13 @@ score, commits and pushes `entries/ index/ worlds/`, and writes `<out>/handover.
 example `schemas/handover.example.json`): every accepted output and the entries holding it, every entry with its
 status and provenance, every refusal. It writes drafts only; it exits non-zero only when it could not run. `held`
 prints the newest entries a place (or the world node) holds, as JSON, for the cockpit's check.
+
+`take-in` takes loose made files, files that are no output of a SCORE store (world 1's old release of made models and
+sounds), in as draft `sound` and `model` entries from a list (`src/score_lib/take_in.py` has its shape): each entry's
+files, where each came from and its sources, admitted by the same MIT rule; the bytes go to the blob store. Such an
+entry has no OpenUSD form and no picture yet (a model is its glTF, `gltf/...`), so `quality` and `web3d` pass a model
+of it by, and `verify` checks it whole: every file named where it came from, its role by its ending, and every buffer
+and picture its `.gltf` names held beside it. score fetches one file of an entry with `fetch <address> --file <name>`.
 
 ## Web copies and the audit
 

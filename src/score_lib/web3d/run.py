@@ -83,7 +83,8 @@ def selected(root, kinds, addresses):
     """The entries to look at: the newest of each kind asked for, or the addresses."""
     if addresses:
         return [entries.load_address(root, address) for address in addresses]
-    return [record for kind in kinds for record in newest(root, kind)]
+    return [record for kind in kinds for record in newest(root, kind)
+            if not (kind == "model" and record.get("usd") is None)]  # a taken-in glTF has no OpenUSD to copy from
 
 
 def run(root, blobs, cache, kinds=KINDS, addresses=None, limit=None, say=print):

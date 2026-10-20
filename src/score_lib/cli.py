@@ -72,9 +72,22 @@ def command_withdraw(options):
 
 
 def command_fetch(options):
-    from score_lib.fetch import fetch
-    records = fetch(options.root, blob_store(), options.address, options.into, options.with_requires)
+    from score_lib.fetch import MissingEntry, MissingFile, fetch
+    try:
+        records = fetch(options.root, blob_store(), options.address, options.into, options.with_requires,
+                        names=options.file)
+    except (MissingEntry, MissingFile) as missing:
+        raise SystemExit(f"not in the library: {missing}")
     print(f"fetched {len(records)} entries into {options.into}")
+
+
+def command_take_in(options):
+    from score_lib import take_in
+    report = take_in.take_in(options.root, blob_store(), take_in.read_listing(options.listing))
+    if options.report:
+        pathlib.Path(options.report).write_text(json.dumps(report, indent=2, sort_keys=True) + "\n")
+    print(", ".join(f"{status} {len(found)}" for status, found in report.items()))
+    raise SystemExit(1 if report["refused"] else 0)
 
 
 def command_test(options):
@@ -183,7 +196,12 @@ def parser():
     fetched.add_argument("address", nargs="+")
     fetched.add_argument("--into", required=True)
     fetched.add_argument("--with-requires", action="store_true")
+    fetched.add_argument("--file", action="append", help="only this file of the entries (repeatable)")
     fetched.set_defaults(handle=command_fetch)
+    taken = commands.add_parser("take-in", help="take loose made files (no store outputs) in as draft entries")
+    taken.add_argument("listing", help="the list of entries and their files (take_in.py's docstring has its shape)")
+    taken.add_argument("--report", help="write the report (every address by status, every refusal) as JSON")
+    taken.set_defaults(handle=command_take_in)
     tested = commands.add_parser("test", help="run an algorithm entry's tests")
     tested.add_argument("address")
     tested.set_defaults(handle=command_test)

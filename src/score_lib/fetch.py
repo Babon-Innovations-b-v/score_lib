@@ -43,10 +43,20 @@ def place_file(blobs, sha, target, link):
     blobs.get(sha, target)
 
 
-def fetch(root, blobs, addresses, into, with_requires=False, link=False):
-    """Materialise entries (and their requires); the records fetched."""
+class MissingFile(KeyError):
+    """A file asked for that none of the fetched entries holds."""
+
+
+def fetch(root, blobs, addresses, into, with_requires=False, link=False, names=None):
+    """Materialise entries (and their requires), only the files `names` when given; the records fetched."""
     records = closure(root, addresses, with_requires)
+    held = {name for record in records for name in record["files"]}
+    missing = sorted(set(names or ()) - held)
+    if missing:
+        raise MissingFile(", ".join(missing))
     for record in records:
         for name, described in sorted(record["files"].items()):
+            if names and name not in names:
+                continue
             place_file(blobs, described["sha256"], destination(into, record, name), link)
     return records

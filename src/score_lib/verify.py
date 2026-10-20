@@ -1,5 +1,6 @@
 """score-lib verify (spec section 8): every check over the entries and the index; each failure named with its
 address. Exit code 0 only when all pass."""
+import json
 import pathlib
 import shutil
 import tempfile
@@ -140,6 +141,43 @@ def check_requires(root, records):
     return failures
 
 
+def taken_in_faults(blobs, record):
+    """A taken-in entry's faults: every file named where it came from and back, its role by its ending, and every
+    buffer and picture a .gltf file names held by the entry (the .gltf read from the blob store)."""
+    from score_lib.take_in import Refused, role_of
+    files, came_from = record["files"], record["provenance"].get("files_from", {})
+    faults = [f"{name}: no files_from row" for name in sorted(set(files) - set(came_from))]
+    faults += [f"files_from names {name}, which the entry does not hold" for name in sorted(set(came_from) - set(files))]
+    for name, described in sorted(files.items()):
+        try:
+            if role_of(name) != described["role"]:
+                faults.append(f"{name}: role {described['role']}, its ending says {role_of(name)}")
+        except Refused as why:
+            faults.append(str(why))
+        if name.endswith(".gltf") and blobs.has(described["sha256"]):  # a missing blob is check_blobs' fault
+            faults += gltf_faults(blobs, name, described["sha256"], files)
+    return faults
+
+
+def gltf_faults(blobs, name, sha, files):
+    """Every buffer or picture a .gltf names that its entry does not hold beside it."""
+    with tempfile.TemporaryDirectory() as folder:
+        path = pathlib.Path(folder) / "model.gltf"
+        blobs.get(sha, path)
+        found = json.loads(path.read_text())
+    base = pathlib.PurePosixPath(name).parent
+    named = [each["uri"] for each in found.get("buffers", []) + found.get("images", []) if "uri" in each]
+    return [f"{name} names {uri}, which the entry does not hold" for uri in named
+            if not uri.startswith("data:") and str(base / uri) not in files]
+
+
+def check_taken_in(blobs, records):
+    """8. every taken-in entry (provenance.taken_from: loose made files, score-lib take-in) whole and named."""
+    return [(record["address"], f"taken in: {fault}") for record in records
+            if "taken_from" in record.get("provenance", {}) and record["state"] != "withdrawn"
+            for fault in taken_in_faults(blobs, record)]
+
+
 def tail(path):
     """A relative path without its leading ./ and ../ parts (how it ends once anchored to any folder)."""
     parts = path.split("/")
@@ -216,6 +254,7 @@ def verify(root, blobs, addresses=None, deep=False, usd=True):
     failures += check_blobs(records, blobs, deep) + check_licence_file(root)
     failures += check_admission(root, records, Sources.load())
     failures += check_requires(root, records)
+    failures += check_taken_in(blobs, records)
     if usd:
         failures += check_usd(root, blobs, records)
     return failures
