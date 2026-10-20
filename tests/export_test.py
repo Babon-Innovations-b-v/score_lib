@@ -12,6 +12,7 @@ from score_lib import entry as entries
 from score_lib.admission import NotAdmitted, Sources, carried, made_by
 from score_lib import locks
 from score_lib.blobs.local import LocalBlobStore
+from score_lib.export import sound
 
 
 def blob_text(record, name):
@@ -176,3 +177,10 @@ def test_home_folder_is_left_out_of_text_records(world, tmp_path):
     home_free(world.context(), made)
     assert json.loads(made.files["origin.json"].read_text()) == {"from": "~/work/room"}
     assert made.files_from["origin.json"]["sha256"] == "a" * 64 and "origin.json" not in made.known
+
+
+def test_a_sound_two_places_play_keeps_the_other_bytes_as_aliases():
+    first = {"audio": {"steps/a.ogg": (None, "1" * 64, ""), "steps/b.ogg": (None, "2" * 64, "")}}
+    same = {"audio": {"steps/a.ogg": (None, "1" * 64, ""), "steps/b.ogg": (None, "2" * 64, "")}}
+    encoded_again = {"audio": {"steps/a.ogg": (None, "3" * 64, ""), "steps/b.ogg": (None, "2" * 64, "")}}
+    assert sound.alias_rows(first, [same, encoded_again]) == [("3" * 64, "audio/steps/a.ogg")]

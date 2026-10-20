@@ -1,6 +1,7 @@
 """sound entries: each sound source of a place (`sound@<place>` sound.json and its audio files) with its SpatialAudio
-prim from the assembly's sound layer (spec 4.6). Sources with the same audio and levels in several places are one
-entry."""
+prim from the assembly's sound layer (spec 4.6). A sound is one entry however many places play it: its identity is
+its name, its files' names and its levels, never their bytes, so a place whose copy was encoded again (other bytes,
+the same sound) adds its bytes to the entry as aliases (the layers are rewritten to the entry through them)."""
 import hashlib
 import json
 
@@ -78,8 +79,7 @@ def place_sounds(context, place):
             path, sha, source, rest = audio_source(context, place, sound_listing, each)
             files[rest] = (path or tree / each, sha, source)
         levels = {key: sound.get(key) for key in LEVELS}
-        identity = hashlib.sha256(json.dumps([name, sorted(sha for _, sha, _ in files.values()), levels],
-                                             sort_keys=True).encode()).hexdigest()
+        identity = hashlib.sha256(json.dumps([name, sorted(files), levels], sort_keys=True).encode()).hexdigest()
         found.append({"place": place, "name": name, "record": sound, "audio": files, "prim": prims.get(name),
                       "identity": identity, "output": output})
     return found
@@ -113,6 +113,12 @@ def made_with(sound):
         else:
             found.append(made_by(what, credit.get("licence")))
     return found
+
+
+def alias_rows(first, uses):
+    """[[store sha, entry file]] of the other places' copies of the sound's files whose bytes differ from the first's."""
+    return sorted({(sha, f"audio/{rest}") for use in uses for rest, (_, sha, _) in use["audio"].items()
+                   if sha != first["audio"][rest][1]})
 
 
 def candidate(context, uses):
@@ -154,5 +160,5 @@ def candidate(context, uses):
                            "made_by": [first["record"].get("made_by")] if first["record"].get("made_by") else [],
                            "engine": ["usd"],
                            "place_kind": sorted({tag for each in places for tag in place_reads.place_kind(context, each)})},
-                     picture=picture, known=known)
+                     picture=picture, known=known, aliases=[list(row) for row in alias_rows(first, uses[1:])])
 

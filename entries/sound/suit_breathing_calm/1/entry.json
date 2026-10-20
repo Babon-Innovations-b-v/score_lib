@@ -1,0 +1,210 @@
+{
+  "address": "sound/suit_breathing_calm@1",
+  "files": {
+    "audio/recordings/suit/suit_breathing_calm.ogg": {
+      "bytes": 87899,
+      "role": "audio",
+      "sha256": "f336d21accf5bafebcdb7639d4c6e4e71c8a3aad4524c7e89c620bd55c551f7f"
+    },
+    "preview.png": {
+      "bytes": 2376,
+      "role": "picture",
+      "sha256": "5563f4c4e8d8e0be06d5a2f96f090fa3d85a48c44a2362d385b48135c0f8bd7b"
+    },
+    "sound.json": {
+      "bytes": 598,
+      "role": "record",
+      "sha256": "9f3059d88e3763d4df41c9524f31bc8eb9544ddc52127ec445572f3bc4358315"
+    },
+    "sound.usda": {
+      "bytes": 600,
+      "role": "usd",
+      "sha256": "012864b93fb1d12a92c77b113a197ec87fc9093be2d762e8884c533959854cc6"
+    }
+  },
+  "id": "suit_breathing_calm",
+  "kind": "sound",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/audio.py",
+    "of": "audio/recordings/suit/suit_breathing_calm.ogg"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-13T20:58:40.549525+00:00",
+      "by": "runner"
+    },
+    "aliases": [
+      [
+        "47201f19a5ae9b38889e2c2162db7433de6610c17b70d41d2f5102dbca55ba8c",
+        "audio/recordings/suit/suit_breathing_calm.ogg"
+      ],
+      [
+        "c0d1a083866b225acee86d402cdfa0f8001367fb00fc09a1e1dd46322621f032",
+        "audio/recordings/suit/suit_breathing_calm.ogg"
+      ]
+    ],
+    "code": "fddaae33e7b1078d7768d64b90025094353c176b30afeac6022b7b114ce61b81",
+    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "files_source": {
+      "audio/recordings/suit/suit_breathing_calm.ogg": "assets/sound/recordings/suit/suit_breathing_calm.ogg"
+    },
+    "made_with": [
+      {
+        "by": "cc0_recordings",
+        "carried": true,
+        "what": "sound/recordings/suit/suit_breathing_calm.ogg"
+      }
+    ],
+    "models": [
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "clap-larger-general",
+        "revision": "ada0c23a36c4e8582805bb38fec3905903f18b41",
+        "sha256": "b8e001a32b37111261ccc28541ae07960a8cc047837f76a1a0877e9b2c59dc45",
+        "source": "hf:laion/larger_clap_general"
+      },
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "moss-soundeffect-v2",
+        "revision": "e35df4d82fbe87fcd5d14e5d100e349c0c3c076d",
+        "sha256": "d74b38a3387c5e670754edde2d06a71d1940c3a603e5a0489550159e79d18885",
+        "source": "hf:OpenMOSS-Team/MOSS-SoundEffect-v2.0"
+      }
+    ],
+    "node": "sound@campgrounds",
+    "output": "0b67f4168229f408ed7c1c84bb479e03026f31942cb88f827fbd16077eb063c8",
+    "place": "campgrounds",
+    "prim": "/campgrounds/Sound/Room/suit_breathing_calm",
+    "record_key": "cc8a014342ce7dc8e09f9a520a44d99a2efbfdaf67541fc648f3e7694ab4e1dd",
+    "world": "world1"
+  },
+  "refine_options": [
+    {
+      "action": "re-level",
+      "answers": [
+        "loudness",
+        "true peak",
+        "clipping"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "brought to its category's loudness target under the -3 dBTP ceiling (tools/sound/loudness normalise, ffmpeg, on this machine)",
+      "suggested": false
+    },
+    {
+      "action": "trim to its brief",
+      "answers": [
+        "length",
+        "loop join"
+      ],
+      "basket": false,
+      "cost": "free",
+      "does": "cut to its brief's length with a short fade (ffmpeg)",
+      "suggested": false
+    },
+    {
+      "action": "regenerate a sound",
+      "answers": [
+        "prompt match",
+        "clipping",
+        "loop join"
+      ],
+      "basket": true,
+      "cost": "paid",
+      "does": "eight new MOSS-SoundEffect takes of its brief, the best by CLAP kept",
+      "price": "not measured yet",
+      "suggested": false
+    }
+  ],
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "score": 100,
+  "score_made": {
+    "at": "2026-10-18",
+    "by": "score-lib quality",
+    "score_commit": "74c66ada9b74739c9277362e84720fe34a648a7b"
+  },
+  "score_parts": [
+    {
+      "how": "a recording the owner picked: no prompt to match",
+      "name": "prompt match",
+      "status": "not judged",
+      "value": null
+    },
+    {
+      "how": "integrated loudness -24.0 LUFS against its loop target -24.0 LUFS (ffmpeg ebur128); over: 100 at 0.0, 50 at 1.0, 0 at 4.0 LU; under: 100 at 1.0, 50 at 6.0, 0 at 12.0 LU; worst of 1 files (audio/recordings/suit/suit_breathing_calm.ogg)",
+      "measured": 0.0,
+      "name": "loudness",
+      "unit": "LU off target",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "true peak (ffmpeg ebur128, peak=true) against the -3 dBTP ceiling; worst of 1 files (audio/recordings/suit/suit_breathing_calm.ogg); 100 at -4.0, 50 at -3.0, 0 at 0.0 dBTP",
+      "measured": -5.8,
+      "name": "true peak",
+      "unit": "dBTP",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "share of samples in runs of three or more at full scale; worst of 1 files (audio/recordings/suit/suit_breathing_calm.ogg); 100 at 0.0, 50 at 0.0001, 0 at 0.001 share",
+      "measured": 0.0,
+      "name": "clipping",
+      "unit": "share",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "the sound stage's length rule against its brief (gates.length_fault): within",
+      "measured": 10.2,
+      "name": "length",
+      "unit": "s",
+      "value": 100,
+      "weight": 1.0
+    },
+    {
+      "how": "the step across the loop's join over the file's 99.9th percentile step (audio/recordings/suit/suit_breathing_calm.ogg); 100 at 1.0, 50 at 2.0, 0 at 4.0 ratio",
+      "measured": 0.01,
+      "name": "loop join",
+      "unit": "ratio",
+      "value": 100,
+      "weight": 1.0
+    }
+  ],
+  "seen_in": [
+    "campgrounds",
+    "old_station",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "category": [
+      "loop"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "made_by": [
+      "recording"
+    ],
+    "place_kind": [
+      "mars",
+      "moon",
+      "outside"
+    ]
+  },
+  "title": "Suit breathing calm",
+  "usd": {
+    "default_prim": "/suit_breathing_calm",
+    "layer": "sound",
+    "meters_per_unit": null,
+    "path": "score_lib/sound/suit_breathing_calm/1/sound.usda",
+    "root": "sound.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}
