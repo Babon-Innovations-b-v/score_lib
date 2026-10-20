@@ -88,9 +88,22 @@ def module_files(name, search, files):
     return found
 
 
+class Missing(ValueError):
+    """A definition names a repository file the world's commit does not hold: exported, it would be hollow."""
+
+
+def refuse_missing(context, paths, what):
+    """Raise Missing naming every path of `paths` the repository does not hold at the commit."""
+    missing = sorted(set(paths) - python_files(context))
+    if missing:
+        raise Missing(f"{what} names {', '.join(missing)}, not in the repository at {context.world['commit']}")
+
+
 def closure(context, roots, search):
-    """Every repository file the roots are or import, followed import by import, the framework's files left out."""
+    """Every repository file the roots are or import, followed import by import, the framework's files left out;
+    Missing when a root is not in the repository (score moved or deleted it)."""
     files = python_files(context)
+    refuse_missing(context, roots, "roots")
     folders = [""] + list(search)
     pending = list(roots)
     found = set()
@@ -298,6 +311,9 @@ def run_record(definition):
 def candidate(context, definition):
     """One algorithm candidate."""
     name = definition["name"]
+    refuse_missing(context, [*definition.get("tests", []),
+                             *(reference.rsplit(":", 1)[0] for reference in definition.get("constants", []))],
+                   f"algorithm {name}'s tests and constants")
     work = context.work("algorithm", name)
     hashed = closure(context, definition["roots"], definition.get("search", []))
     shipped = [path for path in hashed if not path.startswith(CLOUD)]

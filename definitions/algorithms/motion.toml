@@ -1,0 +1,17 @@
+# One engine algorithm of world 1 (README.md, Layout); read by score_lib/export/algorithm.py.
+# The one motion layer (score CONTEXT.md "motion"): rigid moves (hinge, rail, lane, spin) with the game's timed
+# motions, and the rigid moving things' models laid on what holds them up. Was machines_lay and motion_movers.
+name = "motion"
+title = "Motion: rigid moves, game timed motions and the moving models laid"
+entry = "score.stages.motion:make"
+bake = ["score.stages.motion.models:make"]
+roots = ["score/stages/motion/__init__.py", "score/stages/motion/models/__init__.py", "tools/usd/motion.py", "tools/usd/motion_layer.py"]
+search = ["tools/usd"]
+constants = ["tools/usd/motion.py:WRITTEN_SECONDS", "tools/usd/motion.py:SWITCH"]
+preset = ["data/motion/*.json", "data/motion/rigid/*.json", "data/motion/models/*.json", "data/checks/motion.json"]
+stage = "motion"
+contract = ["motion-layer", 2]
+needs = []
+tests = ["score/stages/motion/motion_test.py", "score/stages/motion/check_test.py", "score/stages/motion/models/models_test.py", "tools/usd/motion_test.py"]
+picture = []
+requires = ["numpy", "usd-core", "trimesh", "python-fcl"]

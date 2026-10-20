@@ -61,8 +61,6 @@ def candidate(context, place):
     files["preview.png"] = work / "preview.png"
     roles["preview.png"] = "picture"
     requires = piece_models(context, place, kit)
-    algorithm = context.by_id.get(("algorithm", "room_layout"))
-    requires += [algorithm] if algorithm else []
     identity = hashlib.sha256(json.dumps([hashlib.sha256(context.repo.read_bytes(source)).hexdigest(),
                                           sorted(known.values())]).encode()).hexdigest()
     provenance = {"source": f"{source} at the world's commit", "place": place, "pieces": len(kit.get("pieces") or []),

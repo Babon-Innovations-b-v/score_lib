@@ -22,9 +22,8 @@ SIDE = {"light": ("light", ("lamps.json", "measures.json")), "motion": ("motion"
         "sound": ("sound", ("sound.json",)), "characters": ("characters-layer", ("characters.json",)),
         "crops": ("crops-layer", ("spots.json",)), "machines": ("machines-layer", ("placed.json",))}
 # sublayer -> the algorithm entry that writes it (provenance only; a world needs none of them to use the layer)
-WRITTEN_BY = {"base": "room_layout", "ground": "terrain_landforms", "settle": "settle", "machines": "machines_lay",
-              "crops": "crops_spots", "effects": "particle_effects", "motion": "motion_movers",
-              "motion_keys": "motion_movers", "light": "light_rig", "sound": "sound_layer",
+WRITTEN_BY = {"ground": "terrain_landforms", "settle": "settle", "machines": "motion", "motion-models": "motion",
+              "crops": "crops_spots", "effects": "particle_effects", "motion": "motion", "motion_keys": "motion", "light": "light_rig", "sound": "sound_layer",
               "characters": "cast_spread", "physics": "physics_layer"}
 NOT_ENTRIES = ("layers/edit.usda",)
 # the physics sublayer of a place is its own stage's output (`physics-layer@<place>`), not part of the assembly; its

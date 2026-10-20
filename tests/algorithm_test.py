@@ -24,6 +24,16 @@ def test_snapshot_closure(world):
                                                                                  "tools/demo/helper.py"]
 
 
+def test_a_definition_naming_a_missing_file_is_refused(world):
+    context = world.context()
+    with pytest.raises(algorithm.Missing, match="tools/demo/gone.py"):
+        algorithm.closure(context, ["tools/demo/algo.py", "tools/demo/gone.py"], ["tools/demo"])
+    definition = {"name": "hollow", "title": "x", "entry": "algo:run", "roots": ["tools/demo/algo.py"],
+                  "search": ["tools/demo"], "tests": ["tools/demo/gone_test.py"]}
+    with pytest.raises(algorithm.Missing, match="gone_test.py"):
+        algorithm.candidate(context, definition)
+
+
 def test_entry_files_and_schema_defaults(world):
     world.export(kinds=["algorithm"])
     record = entries.load_address(world.root, "algorithm/demo@1")
@@ -63,7 +73,7 @@ def test_entry_tests_pass_in_the_materialised_folder(world, tmp_path):
 def test_the_library_definitions_are_valid():
     folder = pathlib.Path(__file__).resolve().parents[1] / "definitions/algorithms"
     found = sorted(folder.glob("*.toml"))
-    assert len(found) == 19
+    assert len(found) == 17
     for path in found:
         assert schema.faults("algorithm", algorithm.load(path)) == [], path.name
     jsonschema.Draft202012Validator.check_schema(schema.load("entry"))
