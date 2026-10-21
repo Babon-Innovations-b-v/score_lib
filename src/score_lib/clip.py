@@ -14,7 +14,8 @@ draft takes a clip: a locked entry is never rewritten.
 
 A plan row: {address, kind, shelf, open (the stage to open, absolute), search (the search path root), focus (prim
 paths the clip frames, or null: the whole stage), points (a lamp's spots, or null), material (a surface's material
-prim), start, end, per_second (its time codes), why ("" when it has a clip to make)}.
+prim), start, end, per_second (its time codes; an effect's one loop from where it shows most, `busiest_loop`), why
+("" when it has a clip to make). The entries are fetched with their pictures (a sky's dome picture is one).
 """
 import json
 import pathlib
@@ -22,7 +23,8 @@ import pathlib
 from score_lib import entry as entries
 from score_lib import index
 from score_lib.blobs import file_sha256
-from score_lib.web3d.record import source_of
+from score_lib.fetch import fetch
+from score_lib.web3d.record import SKIPPED_ROLES, source_of
 
 FILE = "clip/clip.mp4"
 ROLE = "clip"
@@ -76,6 +78,24 @@ def time_range(own, stage, focus, per_second):
         else sampled_codes(stage, focus) or (0.0, 0.0)
     rate = layer.timeCodesPerSecond if layer.HasTimeCodesPerSecond() else per_second or 24.0
     return {"start": float(span[0]), "end": float(span[1]), "per_second": float(rate)}
+
+
+def busiest_loop(stage, played):
+    """`played` as one of the effect's loops (its emitters' longest `score:effect:loop` seconds) from the time code in
+    its first loop where its points show most (their `primvars:displayOpacity` summed), so the clip opens on the
+    effect rather than an empty frame (a breath let out every 20 s over a 600 s stage, squeezed into the clip, opened
+    blank); `played` as it is when no emitter names a loop or no opacity is sampled in it."""
+    from pxr import Gf, UsdGeom
+    loops = [prim.GetAttribute("score:effect:loop").Get() for prim in stage.Traverse()
+             if prim.HasAttribute("score:effect:loop")]
+    loop = max((float(seconds) for seconds in loops if seconds), default=0.0) * played["per_second"]
+    opacities = [prim.GetAttribute("primvars:displayOpacity") for prim in stage.Traverse() if prim.IsA(UsdGeom.Points)]
+    window = Gf.Interval(played["start"], played["start"] + loop)
+    codes = sorted({code for attribute in opacities if attribute for code in attribute.GetTimeSamplesInInterval(window)})
+    if not loop or not codes:
+        return played
+    peak = max(codes, key=lambda code: sum(sum(attribute.Get(code) or ()) for attribute in opacities if attribute))
+    return {**played, "start": float(peak), "end": float(peak + loop)}
 
 
 def timed(opened, played):
@@ -158,7 +178,9 @@ def what_opens(root, blobs, record, shelf, into, work):
             from pxr import Usd
             hidden = hidden_paths(Usd.Stage.Open(str(planned.path)), planned.keep)
         return [planned.path], hidden, None
-    build.fetched(root, blobs, [record["address"]], into)
+    # its pictures too: a sky's dome picture is a `picture` file its sky.usda opens
+    fetch(root, blobs, [record["address"]], into, with_requires=True, link=True,
+          left_out_roles=tuple(role for role in SKIPPED_ROLES if role != "picture"))
     own = build.entry_folder(into, record["address"]) / record["usd"]["root"]
     if shelf != "motion":
         return [own], [], None
@@ -192,6 +214,8 @@ def plan_row(root, blobs, address, into):
     stage = Usd.Stage.Open(str(opened))
     played = time_range(sublayers[0], stage, focus, (record["usd"] or {}).get("time_codes_per_second")) \
         if shelf in ("effect", "motion") else {"start": 0.0, "end": 0.0, "per_second": 24.0}
+    if shelf == "effect":
+        played = busiest_loop(stage, played)
     timed(opened, played)
     return {**row, "open": str(opened), "focus": focus, **played,
             "points": light_points(stage) if shelf == "lamp" else None,
