@@ -27,13 +27,9 @@ from score_lib.export import sound as sound_export
 from score_lib.export.algorithm import DEFINITIONS, load
 from score_lib.export.model import MADE_STAGES
 from score_lib.export.run import world_places
-from score_lib.source.store import place_of, stage_of
+from score_lib.source.store import place_of
 
 REASONS = ("not exported", "deduplicated", "refused", "not accepted", "other")
-# Stages that judge, film or plan rather than make something a place shows: not algorithms the library lacks.
-NOT_MAKERS = ("complete", "complete-boxes", "likeness", "likeness-calibration", "surfaces-check", "surfaces-turntable",
-              "demo-turntables", "people-turntable", "concept-views", "concept_people", "partition-proposals",
-              "light-passes", "scene-record", "plan", "closeup", "people-take", "props-inputs", "people-inputs")
 LIGHTS = ("SphereLight", "DistantLight", "DomeLight", "RectLight", "DiskLight", "CylinderLight")
 
 
@@ -328,36 +324,14 @@ def unlisted_places(context):
 
 
 def algorithms(context, held):
-    """Every algorithm definition, and every stage that made accepted content no definition names."""
-    definitions = [load(path) for path in sorted((context.root / DEFINITIONS).glob("*.toml"))]
-    found = [Thing("algorithm", each["name"], [], True) if each["name"] in held.ids["algorithm"] else
-             missing("algorithm", each["name"], [], "not exported", "its definition was never exported")
-             for each in definitions]
-    covered = {each.get("stage") for each in definitions}
-    stages = sorted({stage_of(node) for node in context.store.nodes() if context.store.accepted(node)})
-    routes = collections.defaultdict(list)
-    for stage in stages:
-        if stage not in covered and stage not in NOT_MAKERS and not stage.startswith(NOT_MAKER_PREFIXES):
-            routes[route_of(stage)].append(stage)
-    for route, members in sorted(routes.items()):
-        found.append(missing("algorithm", route, [], "not exported",
-                             "a route whose stages made accepted content; no definition in definitions/algorithms "
-                             "names it (stages: " + ", ".join(members) + ")"))
-    return found
+    """Every algorithm definition: the physics setups and the surface recipes. A layer's other code (placement,
+    layout, terrain, skies, light, sound, films) is the framework's own steps, no algorithm the library lacks (score,
+    2026-10-21)."""
+    return [Thing("algorithm", each["name"], [], True) if each["name"] in held.ids["algorithm"] else
+            missing("algorithm", each["name"], [], "not exported", "its definition was never exported")
+            for each in (load(path) for path in sorted((context.root / DEFINITIONS).glob("*.toml")))]
 
 
-def route_of(stage):
-    """The route a stage belongs to: its prefix for the many-step routes, else the stage itself."""
-    for prefix, route in ROUTES:
-        if stage.startswith(prefix):
-            return route
-    return stage
-
-
-NOT_MAKER_PREFIXES = ("people-take-",)
-# many-step routes, by stage prefix (first match wins): one algorithm each
-ROUTES = (("crops-surfaces-", "surfaces (finish route)"), ("surfaces-", "surfaces (finish route)"),
-          ("people-", "people (character maker)"), ("crops-", "crops (crop models)"))
 KINDS = (("algorithm", algorithms), ("surface", surfaces), ("model", models), ("model gltf form", gltf_forms),
          ("close-up", closeups),
          ("light", lights), ("sound", sounds), ("effect", effects), ("character", characters),

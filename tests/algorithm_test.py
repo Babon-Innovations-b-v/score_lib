@@ -73,7 +73,7 @@ def test_entry_tests_pass_in_the_materialised_folder(world, tmp_path):
 def test_the_library_definitions_are_valid():
     folder = pathlib.Path(__file__).resolve().parents[1] / "definitions/algorithms"
     found = sorted(folder.glob("*.toml"))
-    assert len(found) == 21
+    assert len(found) == 8
     for path in found:
         assert schema.faults("algorithm", algorithm.load(path)) == [], path.name
     jsonschema.Draft202012Validator.check_schema(schema.load("entry"))

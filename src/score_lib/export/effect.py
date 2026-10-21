@@ -148,14 +148,13 @@ def candidate(context, uses):
     provenance = place_reads.node_provenance(context, f"effects-layer@{first['place']}", first["output"])
     provenance.update({"place": first["place"], "prim": str(first["path"]), "from": first["settings"].get("from"),
                        "placements": [{"place": use["place"], "prim": str(use["path"])} for use in uses]})
-    algorithm = context.by_id.get(("algorithm", "particle_effects"))
     weathers = sorted({use["weather"] for use in uses if use["weather"]})
     places = [use["place"] for use in uses]
     return Candidate(kind="effect", base_id=root_name, identity=first["identity"],
                      title=root_name.replace("_", " ").capitalize(), places=places, files=files, roles=roles,
                      made_with=[dict(SCORE)],
                      usd={"root": "effect.usda", "layer": "effects", "use": "reference"},
-                     requires=[algorithm] if algorithm else [], provenance=provenance,
+                     requires=[], provenance=provenance,
                      tags={"effect": [first["settings"].get("kind")], "weather": weathers, "engine": ["usd"],
                            "place_kind": sorted({tag for each in places for tag in place_reads.place_kind(context, each)})},
                      picture=picture, known=known)

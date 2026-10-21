@@ -21,10 +21,9 @@ SIDE = {"light": ("light", ("lamps.json", "measures.json")), "motion": ("motion"
         "settle": ("settle", ("settle.json",)), "effects": ("effects-layer", ("held.json",)),
         "sound": ("sound", ("sound.json",)), "characters": ("characters-layer", ("characters.json",)),
         "crops": ("crops-layer", ("spots.json",)), "machines": ("machines-layer", ("placed.json",))}
-# sublayer -> the algorithm entry that writes it (provenance only; a world needs none of them to use the layer)
-WRITTEN_BY = {"ground": "terrain_landforms", "settle": "settle", "machines": "motion", "motion-models": "motion",
-              "crops": "crops_spots", "effects": "particle_effects", "motion": "motion", "motion_keys": "motion", "light": "light_rig", "sound": "sound_layer",
-              "characters": "cast_spread"}
+# sublayer -> the algorithm entry that writes it (provenance only; a world needs none of them to use the layer). Only
+# physics setups are library algorithms; the other layers' code is the framework's own steps (score, 2026-10-21).
+WRITTEN_BY = {"settle": "settle"}
 # the physics setups tools/usd/physics.py writes into a place's physics sublayer (score CONTEXT.md "physics setup")
 PHYSICS_SETUPS = ("body_weight", "hinge_motor", "drop", "push", "planet_gravity")
 NOT_ENTRIES = ("layers/edit.usda",)
