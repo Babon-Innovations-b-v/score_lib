@@ -6,8 +6,9 @@
     blobs/<sha>                          each drawn picture
 
 The entry follows the place's standing pick: a pick makes the picked draw `concept/<place>` (new, or the next
-version when the newest holds another pick) and locks it, the owner's pick being his lock; an unlock withdraws the
-newest version. Files: `concept.png` (the picture) and `concept.json` (the place, the pick, the prompt, the marks and
+version when the newest holds another pick) and locks it, the owner's pick being his lock, and withdraws any older
+version still standing, so a place never has two locked concepts (owner, 2026-10-24: "this got duped in the lib");
+an unlock withdraws the newest version. Files: `concept.png` (the picture) and `concept.json` (the place, the pick, the prompt, the marks and
 notes of every draw that led to it, and every draw of the place by its sha: the draw history, kept outside the
 library by sha). Under the handover's lock; commits and pushes this entry's folder and the index only, so a
 library checkout with other work not committed keeps that work out of the commit.
@@ -85,6 +86,15 @@ def withdrawn(root, place):
     return found[-1]["address"]
 
 
+def older_withdrawn(root, place, address):
+    """Withdraw every version of the place's concept but `address` that is still locked or a draft; their addresses."""
+    older = [record["address"] for record in entries.versions(root, KIND, place)
+             if record["address"] != address and record["state"] in ("draft", "locked")]
+    for each in older:
+        locks.withdraw(root, each)
+    return older
+
+
 def picked(root, blobs, objects, world, place, pick, commit):
     """Make the picked draw the place's concept entry and lock it; (address, status)."""
     scratch = pathlib.Path(tempfile.mkdtemp(prefix="score-lib-concept-"))
@@ -113,6 +123,8 @@ def hand_over(root, blobs, objects, world, place, commit):
         else:
             address, status = picked(root, blobs, objects, world, place, pick, commit)
             did = "standing" if status == "unchanged" else "locked"
+            if did == "locked":
+                older_withdrawn(root, place, address)
         index.rebuild(root)
         report = {"place": place, "did": did, "address": address}
         if did in ("withdrawn", "locked"):

@@ -77,3 +77,17 @@ def test_a_pick_locks_the_concept_an_unlock_withdraws_it_and_a_new_pick_is_the_n
     report = handed(world, capsys)
     assert report["did"] == "locked" and report["address"] == "concept/room@2"
     assert entries.load_address(world.root, "concept/room@2")["files"]["concept.png"]["sha256"] == first["sha"]
+
+
+def test_a_second_pick_while_locked_withdraws_the_older_version(world, capsys):
+    """The owner picking the same draw twice (cockpit, 2026-10-21) leaves one locked concept, the newest."""
+    with_remote(world)
+    draw = drawn(world, "2026-10-20T10:00:00", b"the picture")
+    picked(draw["sha"], "2026-10-20T10:01:00")
+    assert handed(world, capsys)["address"] == "concept/room@1"
+    picked(draw["sha"], "2026-10-20T10:03:00")
+    report = handed(world, capsys)
+    assert report["did"] == "locked" and report["address"] == "concept/room@2"
+    states = {record["address"]: record["state"] for record in entries.versions(world.root, "concept", "room")}
+    assert states == {"concept/room@1": "withdrawn", "concept/room@2": "locked"}
+    assert "entries/concept/room/1/entry.json" in git(world.root, "show", "--stat", "--format=", "HEAD")
