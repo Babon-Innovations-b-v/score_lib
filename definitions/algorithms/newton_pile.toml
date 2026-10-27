@@ -1,0 +1,17 @@
+# One effect algorithm of world 1; read by score_lib/export/algorithm.py.
+# The first effect Newton makes (score #55): a granular pile by implicit MPM, a drilling rig's cuttings.
+name = "newton_pile"
+title = "A granular pile poured by Newton's implicit MPM (a drilling rig's cuttings), baked as effects-layer particles"
+entry = "newton_pile:main"
+bake = []
+roots = ["score/stages/effects/inside/newton_pile.py"]
+search = ["score/stages/effects/inside"]
+constants = ["score/stages/effects/inside/newton_pile.py:PER_CELL", "score/stages/effects/inside/newton_pile.py:STEP_MOST", "score/stages/effects/inside/newton_pile.py:RESTING", "score/stages/effects/inside/newton_pile.py:DROP"]
+preset = ["data/checks/effects.json"]
+stage = "effects-layer"
+contract = ["effects-layer", 1]
+needs = ["a CUDA card (Warp): its 1 cm grid is about 55 s on an RTX 5080"]
+paid = []
+tests = ["score/stages/effects/test_effects_ride_their_design.py"]
+picture = []
+requires = ["newton==1.7.0", "warp-lang==1.18.0", "numpy==2.5.3"]
