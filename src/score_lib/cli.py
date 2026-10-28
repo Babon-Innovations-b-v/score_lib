@@ -83,11 +83,16 @@ def command_fetch(options):
 
 def command_take_in(options):
     from score_lib import take_in
-    report = take_in.take_in(options.root, blob_store(), take_in.read_listing(options.listing))
+    listing = take_in.read_listing(options.listing)
+    taking = take_in.taken_in_saved if options.save else take_in.take_in
+    report = taking(options.root, blob_store(), listing)
     if options.report:
         pathlib.Path(options.report).write_text(json.dumps(report, indent=2, sort_keys=True) + "\n")
-    print(", ".join(f"{status} {len(found)}" for status, found in report.items()))
-    raise SystemExit(1 if report["refused"] else 0)
+    print(", ".join(f"{status} {len(found)}" for status, found in report.items() if status != "saved"))
+    saved = report.get("saved")
+    if saved:
+        print(f"saved: commit {saved['committed']}, pushed {saved['pushed']} {saved['why']}".rstrip())
+    raise SystemExit(1 if report["refused"] or (saved and not saved["pushed"]) else 0)
 
 
 def command_test(options):
@@ -223,6 +228,8 @@ def parser():
     taken = commands.add_parser("take-in", help="take loose made files (no store outputs) in as draft entries")
     taken.add_argument("listing", help="the list of entries and their files (take_in.py's docstring has its shape)")
     taken.add_argument("--report", help="write the report (every address by status, every refusal) as JSON")
+    taken.add_argument("--save", action="store_true",
+                       help="under the handover's lock, commit and push the entries written and the index")
     taken.set_defaults(handle=command_take_in)
     tested = commands.add_parser("test", help="run an algorithm entry's tests")
     tested.add_argument("address")

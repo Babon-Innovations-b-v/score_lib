@@ -2,6 +2,7 @@
 --file."""
 import json
 import pathlib
+import subprocess
 
 import pytest
 
@@ -113,3 +114,47 @@ def test_fetch_one_file(library, tmp_path):
     with pytest.raises(MissingFile):
         fetch(library, blobs, ["model/box.gltf@1"], into, names=["gltf/nothing.bin"])
     assert pathlib.Path(into / "score_lib/model/box.gltf/1/gltf/box.bin").read_bytes() == b"\0" * 24
+
+
+def a_take(folder):
+    """One Pixal3D take as work/pixal holds it: raw, finished and final models, its record, its camera folder."""
+    (folder / "cup-s1.svviews").mkdir(parents=True, exist_ok=True)
+    for name, data in (("cup-s1.glb", b"glTF raw"), ("cup-s1-12000.glb", b"glTF thin"), ("cup-s1-final.glb", b"glTF up"),
+                       ("cup-s1.json", b"{}"), ("cup-s1.svviews/input.png", b"\x89PNG close-up"),
+                       ("cup-s1.svviews/transforms.json", b"{\"frames\": []}")):
+        (folder / name).write_bytes(data)
+    files = {path.relative_to(folder).as_posix(): {"path": str(path), "from": f"work/pixal/{path.relative_to(folder)}"}
+             for path in sorted(folder.rglob("*")) if path.is_file()}
+    return {"world": "world1", "commit": "0" * 40, "taken_from": "a test's work/pixal",
+            "entries": [{"kind": "take", "id": "cup_s1", "title": "cup-s1", "files": files,
+                         "made_with": [{"what": "cup-s1", "source": "pixal3d"}]}]}
+
+
+def git(folder, *words):
+    subprocess.run(["git", "-C", str(folder), *words], check=True, capture_output=True)
+
+
+def test_a_take_keeps_its_camera_folder_and_is_saved_to_origin(library, tmp_path):
+    """Break: take_in.role_of: 'CAMERA_ROLES if path.parent.suffix == ".svviews" else TAKE_ROLES' -> 'TAKE_ROLES'
+    (the close-up is refused), or taken_in_saved's 'handover.saved(...)' -> None (the take reaches no remote)."""
+    remote = tmp_path / "remote.git"
+    subprocess.run(["git", "init", "-q", "--bare", str(remote)], check=True)
+    for words in (["init", "-q"], ["remote", "add", "origin", str(remote)], ["config", "user.email", "t@t"],
+                  ["config", "user.name", "t"], ["commit", "-q", "--allow-empty", "-m", "start"]):
+        git(library, *words)
+    blobs = from_environment()
+    report = take_in.taken_in_saved(library, blobs, a_take(tmp_path / "pixal"))
+    assert report["new"] == ["take/cup_s1@1"] and report["saved"]["pushed"], report
+    record = entries.load_address(library, "take/cup_s1@1")
+    assert record["files"]["cup-s1.svviews/input.png"]["role"] == "closeup"
+    assert record["files"]["cup-s1.svviews/transforms.json"]["role"] == "record"
+    assert record["files"]["cup-s1-final.glb"]["role"] == "gltf"
+    records = entries.all_entries(library)
+    assert verify.check_taken_in(blobs, records) == [] and verify.check_schemas(library, records) == []
+    pushed = subprocess.run(["git", "-C", str(remote), "show", "--stat=200", "--format=", "HEAD"],
+                            capture_output=True, text=True).stdout
+    assert "entries/take/cup_s1/1/entry.json" in pushed and "index/take.json" in pushed, pushed
+    into = tmp_path / "back"
+    fetch(library, blobs, ["take/cup_s1@1"], into, names=["cup-s1.svviews/input.png"])
+    assert (into / "score_lib/take/cup_s1/1/cup-s1.svviews/input.png").read_bytes() == b"\x89PNG close-up"
+    assert take_in.taken_in_saved(library, blobs, a_take(tmp_path / "pixal"))["saved"] is None

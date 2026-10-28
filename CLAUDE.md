@@ -20,7 +20,8 @@ A library of reusable parts of SCORE worlds: records in git (`entries/`), bytes 
 
 - `src/score_lib/export/<kind>.py`: one exporter per kind; `export/run.py` the order, versions and writes.
 - `src/score_lib/verify.py`: every check of `score-lib verify`.
-- `src/score_lib/take_in.py`: `score-lib take-in`, loose made files (no store outputs) in as draft entries.
+- `src/score_lib/take_in.py`: `score-lib take-in`, loose made files (no store outputs) in as draft entries; a `take`
+  entry is one Pixal3D take whole with its `.svviews` camera folder; `--save` commits and pushes what it wrote.
 - `src/score_lib/concept.py`: `score-lib concept`, a place's locked concept from score's concept review (score #40).
 - `src/score_lib/handover.py`: `score-lib handover`, the one call score's runner makes (contract `library-handover` v1); `held.py`: what a place holds and which entries hold a store output.
 - `src/score_lib/clip.py`: an entry's preview clip (owner, 2026-10-20): `score-lib clip-plan` says what each clip

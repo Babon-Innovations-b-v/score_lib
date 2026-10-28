@@ -151,8 +151,8 @@ def taken_in_faults(blobs, record):
     faults += [f"files_from names {name}, which the entry does not hold" for name in sorted(set(came_from) - set(files))]
     for name, described in sorted(files.items()):
         try:
-            if role_of(name) != described["role"]:
-                faults.append(f"{name}: role {described['role']}, its ending says {role_of(name)}")
+            if role_of(name, record["kind"]) != described["role"]:
+                faults.append(f"{name}: role {described['role']}, its ending says {role_of(name, record['kind'])}")
         except Refused as why:
             faults.append(str(why))
         if name.endswith(".gltf") and blobs.has(described["sha256"]):  # a missing blob is check_blobs' fault
