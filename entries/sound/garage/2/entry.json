@@ -1,0 +1,101 @@
+{
+  "address": "sound/garage@2",
+  "files": {
+    "audio/generated/places/garage.wav": {
+      "bytes": 2204272,
+      "role": "audio",
+      "sha256": "120bddee7b495f17d2df0c0f9be9aeef8b7ccf37c308647f8f2885d4c2415c1c"
+    },
+    "audio/recordings/places/garage.ogg": {
+      "bytes": 498086,
+      "role": "audio",
+      "sha256": "af0f3993e4cc6eafa66f571f274fe1b2e12917f6086f9bf822f7522fa4d5d763"
+    },
+    "preview.png": {
+      "bytes": 2565,
+      "role": "picture",
+      "sha256": "eecde8d96e445988993e9972e70cf52f0b72057c6a7198f4512241b6c6be5541"
+    },
+    "sound.json": {
+      "bytes": 971,
+      "role": "record",
+      "sha256": "257b228e68f55faff84bebbd5008ce954c7155aeff0229e42b641abf4a347365"
+    }
+  },
+  "id": "garage",
+  "kind": "sound",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/audio.py",
+    "of": "audio/generated/places/garage.wav"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-11-01T19:17:39.798468+00:00",
+      "by": "runner"
+    },
+    "code": "9c286aa2bb7e7a00eaf08e144dcddc92df567179a7a6e925fc3348e03c0cfd22",
+    "commit": "b14ae48f4f863e415445599503ad7609dc667a81",
+    "files_from": {
+      "audio/recordings/places/garage.ogg": "sound/recordings/places/garage.ogg"
+    },
+    "files_source": {
+      "audio/generated/places/garage.wav": "files/sound/generated/places/garage.wav"
+    },
+    "made_with": [
+      {
+        "by": "moss_soundeffect",
+        "what": "sound/generated/places/garage.wav"
+      },
+      {
+        "by": "cc0_recordings",
+        "carried": true,
+        "what": "sound/recordings/places/garage.ogg: https://freesound.org/people/Kinoton/sounds/353159/ (Kinoton)"
+      }
+    ],
+    "models": [
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "clap-larger-general",
+        "revision": "ada0c23a36c4e8582805bb38fec3905903f18b41",
+        "sha256": "b8e001a32b37111261ccc28541ae07960a8cc047837f76a1a0877e9b2c59dc45",
+        "source": "hf:laion/larger_clap_general"
+      },
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "moss-soundeffect-v2",
+        "revision": "e35df4d82fbe87fcd5d14e5d100e349c0c3c076d",
+        "sha256": "d74b38a3387c5e670754edde2d06a71d1940c3a603e5a0489550159e79d18885",
+        "source": "hf:OpenMOSS-Team/MOSS-SoundEffect-v2.0"
+      }
+    ],
+    "node": "sound@garage",
+    "output": "891fabaca9efdebe726772ddc61365c2348bff1c4404676b43ceeb875fbe6706",
+    "place": "garage",
+    "prim": null,
+    "record_key": "0757bab903bebb6dcedca1dff2bea400593aaf8ae478c330b4772ada46d71683",
+    "route": "83271d06a135a3696d326387147142d28aa8a1ba3a5c6b49e08046d2fd978f4b",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "garage"
+  ],
+  "state": "draft",
+  "tags": {
+    "category": [
+      "room"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "made_by": [
+      "moss"
+    ],
+    "place_kind": []
+  },
+  "title": "Garage",
+  "usd": null,
+  "version": 2
+}

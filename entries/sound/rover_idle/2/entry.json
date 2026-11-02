@@ -1,0 +1,89 @@
+{
+  "address": "sound/rover_idle@2",
+  "files": {
+    "audio/generated/machines/rover_idle.wav": {
+      "bytes": 624112,
+      "role": "audio",
+      "sha256": "6470fb83dcc14243951ce132ca6bb3a4025e04bd64328251ec8dfd6f3667e77c"
+    },
+    "preview.png": {
+      "bytes": 2679,
+      "role": "picture",
+      "sha256": "06e48c1d1923f0464a634197e7af6fb914dfe430f5c159df13697f22151f6e9b"
+    },
+    "sound.json": {
+      "bytes": 1123,
+      "role": "record",
+      "sha256": "706c9c3951400d017db75742ce5b6962a0e623a69679fc299ba6f8adfd2469a3"
+    }
+  },
+  "id": "rover_idle",
+  "kind": "sound",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/audio.py",
+    "of": "audio/generated/machines/rover_idle.wav"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-11-01T19:17:39.798468+00:00",
+      "by": "runner"
+    },
+    "code": "9c286aa2bb7e7a00eaf08e144dcddc92df567179a7a6e925fc3348e03c0cfd22",
+    "commit": "b14ae48f4f863e415445599503ad7609dc667a81",
+    "files_source": {
+      "audio/generated/machines/rover_idle.wav": "files/sound/generated/machines/rover_idle.wav"
+    },
+    "made_with": [
+      {
+        "by": "moss_soundeffect",
+        "what": "sound/generated/machines/rover_idle.wav"
+      }
+    ],
+    "models": [
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "clap-larger-general",
+        "revision": "ada0c23a36c4e8582805bb38fec3905903f18b41",
+        "sha256": "b8e001a32b37111261ccc28541ae07960a8cc047837f76a1a0877e9b2c59dc45",
+        "source": "hf:laion/larger_clap_general"
+      },
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "moss-soundeffect-v2",
+        "revision": "e35df4d82fbe87fcd5d14e5d100e349c0c3c076d",
+        "sha256": "d74b38a3387c5e670754edde2d06a71d1940c3a603e5a0489550159e79d18885",
+        "source": "hf:OpenMOSS-Team/MOSS-SoundEffect-v2.0"
+      }
+    ],
+    "node": "sound@garage",
+    "output": "891fabaca9efdebe726772ddc61365c2348bff1c4404676b43ceeb875fbe6706",
+    "place": "garage",
+    "prim": null,
+    "record_key": "0757bab903bebb6dcedca1dff2bea400593aaf8ae478c330b4772ada46d71683",
+    "route": "83271d06a135a3696d326387147142d28aa8a1ba3a5c6b49e08046d2fd978f4b",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "garage",
+    "old_station"
+  ],
+  "state": "draft",
+  "tags": {
+    "category": [
+      "loop"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "made_by": [
+      "moss"
+    ],
+    "place_kind": []
+  },
+  "title": "Rover idle",
+  "usd": null,
+  "version": 2
+}

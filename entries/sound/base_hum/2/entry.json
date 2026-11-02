@@ -1,0 +1,111 @@
+{
+  "address": "sound/base_hum@2",
+  "files": {
+    "audio/generated/places/base_hum.wav": {
+      "bytes": 2206192,
+      "role": "audio",
+      "sha256": "471d972b09f735a0983beb430305937a1412c9602546276a6ce4064e142c1db2"
+    },
+    "audio/made/base_hum.wav": {
+      "bytes": 705712,
+      "role": "audio",
+      "sha256": "77cef3976f505e7e58c9e62cd4e1e527536772af02d719e764ce9faf787ec7a3"
+    },
+    "preview.png": {
+      "bytes": 2495,
+      "role": "picture",
+      "sha256": "52cc69da593b633d7ffae6411542d5f611e1f1180472626cf8c702f78155b387"
+    },
+    "sound.json": {
+      "bytes": 1001,
+      "role": "record",
+      "sha256": "75779d51daa3de2fffe9d1bb348d7e3383fe7c7f6d6c1594e5a05de074510706"
+    }
+  },
+  "id": "base_hum",
+  "kind": "sound",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/audio.py",
+    "of": "audio/generated/places/base_hum.wav"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-31T18:42:06.619491+00:00",
+      "by": "runner"
+    },
+    "code": "9c286aa2bb7e7a00eaf08e144dcddc92df567179a7a6e925fc3348e03c0cfd22",
+    "commit": "b14ae48f4f863e415445599503ad7609dc667a81",
+    "files_from": {
+      "audio/made/base_hum.wav": "sound/made/base_hum.wav"
+    },
+    "files_source": {
+      "audio/generated/places/base_hum.wav": "files/sound/generated/places/base_hum.wav"
+    },
+    "made_with": [
+      {
+        "by": "moss_soundeffect",
+        "what": "sound/generated/places/base_hum.wav"
+      },
+      {
+        "by": "score",
+        "what": "sound/made/base_hum.wav: tools/sound/made.py (this repository) (the 2099 project)"
+      }
+    ],
+    "models": [
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "clap-larger-general",
+        "revision": "ada0c23a36c4e8582805bb38fec3905903f18b41",
+        "sha256": "b8e001a32b37111261ccc28541ae07960a8cc047837f76a1a0877e9b2c59dc45",
+        "source": "hf:laion/larger_clap_general"
+      },
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "moss-soundeffect-v2",
+        "revision": "e35df4d82fbe87fcd5d14e5d100e349c0c3c076d",
+        "sha256": "d74b38a3387c5e670754edde2d06a71d1940c3a603e5a0489550159e79d18885",
+        "source": "hf:OpenMOSS-Team/MOSS-SoundEffect-v2.0"
+      }
+    ],
+    "node": "sound@airlock",
+    "output": "85f517ffe8cc758c226194447434b8347624d90f274c515970958b8201d9d2a7",
+    "place": "airlock",
+    "prim": null,
+    "record_key": "4a5faaf3c34182c923a053edcbddc67e68ce8e2f2a1b6943116ab4ca77c0f2dd",
+    "route": "83271d06a135a3696d326387147142d28aa8a1ba3a5c6b49e08046d2fd978f4b",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "camp",
+    "campgrounds",
+    "engineroom",
+    "garage",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hub",
+    "lab",
+    "tube",
+    "workshop"
+  ],
+  "state": "draft",
+  "tags": {
+    "category": [
+      "room"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "made_by": [
+      "moss"
+    ],
+    "place_kind": []
+  },
+  "title": "Base hum",
+  "usd": null,
+  "version": 2
+}

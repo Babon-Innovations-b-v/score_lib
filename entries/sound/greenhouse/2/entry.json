@@ -1,0 +1,101 @@
+{
+  "address": "sound/greenhouse@2",
+  "files": {
+    "audio/generated/places/greenhouse.wav": {
+      "bytes": 2204272,
+      "role": "audio",
+      "sha256": "322336614c5c78c9952e36cded2297e471cb53d03f6e1ed329d9c228c1a37930"
+    },
+    "audio/recordings/places/greenhouse.ogg": {
+      "bytes": 533622,
+      "role": "audio",
+      "sha256": "bac2360b24691375dcd67b975e9ed066468e41bccd18d768d0dee16228143d60"
+    },
+    "preview.png": {
+      "bytes": 2806,
+      "role": "picture",
+      "sha256": "553da96e645a83a06f166f4a4c32a6f5db2d712b20d97dc72a96c33469cb5a47"
+    },
+    "sound.json": {
+      "bytes": 1055,
+      "role": "record",
+      "sha256": "e44361d44595a8e17de36513c4e41e06afe7666730bdc03b965560453df8a105"
+    }
+  },
+  "id": "greenhouse",
+  "kind": "sound",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/audio.py",
+    "of": "audio/generated/places/greenhouse.wav"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-11-01T20:52:26.312534+00:00",
+      "by": "runner"
+    },
+    "code": "9c286aa2bb7e7a00eaf08e144dcddc92df567179a7a6e925fc3348e03c0cfd22",
+    "commit": "b14ae48f4f863e415445599503ad7609dc667a81",
+    "files_from": {
+      "audio/recordings/places/greenhouse.ogg": "sound/recordings/places/greenhouse.ogg"
+    },
+    "files_source": {
+      "audio/generated/places/greenhouse.wav": "files/sound/generated/places/greenhouse.wav"
+    },
+    "made_with": [
+      {
+        "by": "moss_soundeffect",
+        "what": "sound/generated/places/greenhouse.wav"
+      },
+      {
+        "by": "cc0_recordings",
+        "carried": true,
+        "what": "sound/recordings/places/greenhouse.ogg: https://freesound.org/people/kyles/sounds/637797/ (kyles)"
+      }
+    ],
+    "models": [
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "clap-larger-general",
+        "revision": "ada0c23a36c4e8582805bb38fec3905903f18b41",
+        "sha256": "b8e001a32b37111261ccc28541ae07960a8cc047837f76a1a0877e9b2c59dc45",
+        "source": "hf:laion/larger_clap_general"
+      },
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "moss-soundeffect-v2",
+        "revision": "e35df4d82fbe87fcd5d14e5d100e349c0c3c076d",
+        "sha256": "d74b38a3387c5e670754edde2d06a71d1940c3a603e5a0489550159e79d18885",
+        "source": "hf:OpenMOSS-Team/MOSS-SoundEffect-v2.0"
+      }
+    ],
+    "node": "sound@greenhouse",
+    "output": "260a347b5ff7b82d8574ee42542e52028dd0061d9ed3b75dff6ddb0bf6c4f621",
+    "place": "greenhouse",
+    "prim": null,
+    "record_key": "c84896898c102bd3056c5118e0ea709f03c6f93f3dfc36941f2cbae053d4569a",
+    "route": "83271d06a135a3696d326387147142d28aa8a1ba3a5c6b49e08046d2fd978f4b",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "greenhouse"
+  ],
+  "state": "draft",
+  "tags": {
+    "category": [
+      "room"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "made_by": [
+      "moss"
+    ],
+    "place_kind": []
+  },
+  "title": "Greenhouse",
+  "usd": null,
+  "version": 2
+}

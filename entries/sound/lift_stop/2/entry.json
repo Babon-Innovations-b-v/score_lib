@@ -1,0 +1,101 @@
+{
+  "address": "sound/lift_stop@2",
+  "files": {
+    "audio/generated/doors/lift_stop.ogg": {
+      "bytes": 36505,
+      "role": "audio",
+      "sha256": "a9a8f3bff97d6fb5b649d4391422ed463268dbb8ecbe7ca3f97d1028ecdd9609"
+    },
+    "audio/recordings/doors/lift_stop.ogg": {
+      "bytes": 61553,
+      "role": "audio",
+      "sha256": "5f3fbc094eb539107c0026c3278dc757c0b8eb9fe6acc4b6cb302dec30e4df9d"
+    },
+    "preview.png": {
+      "bytes": 2800,
+      "role": "picture",
+      "sha256": "e6e0f1fb88e97de72c37b41c7fa447572a2f90bf31a05f5e0d69e052d07cbbf6"
+    },
+    "sound.json": {
+      "bytes": 923,
+      "role": "record",
+      "sha256": "94a8845672750c541601ab212b3c840683e92d053dcc63a20d058fdc114bac45"
+    }
+  },
+  "id": "lift_stop",
+  "kind": "sound",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/audio.py",
+    "of": "audio/generated/doors/lift_stop.ogg"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-11-01T22:37:52.165638+00:00",
+      "by": "runner"
+    },
+    "code": "9c286aa2bb7e7a00eaf08e144dcddc92df567179a7a6e925fc3348e03c0cfd22",
+    "commit": "b14ae48f4f863e415445599503ad7609dc667a81",
+    "files_from": {
+      "audio/recordings/doors/lift_stop.ogg": "sound/recordings/doors/lift_stop.ogg"
+    },
+    "files_source": {
+      "audio/generated/doors/lift_stop.ogg": "files/sound/generated/doors/lift_stop.ogg"
+    },
+    "made_with": [
+      {
+        "by": "moss_soundeffect",
+        "what": "sound/generated/doors/lift_stop.ogg"
+      },
+      {
+        "by": "cc0_recordings",
+        "carried": true,
+        "what": "sound/recordings/doors/lift_stop.ogg: https://freesound.org/people/ValentinPetiteau/sounds/564409/ (ValentinPetiteau)"
+      }
+    ],
+    "models": [
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "clap-larger-general",
+        "revision": "ada0c23a36c4e8582805bb38fec3905903f18b41",
+        "sha256": "b8e001a32b37111261ccc28541ae07960a8cc047837f76a1a0877e9b2c59dc45",
+        "source": "hf:laion/larger_clap_general"
+      },
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "moss-soundeffect-v2",
+        "revision": "e35df4d82fbe87fcd5d14e5d100e349c0c3c076d",
+        "sha256": "d74b38a3387c5e670754edde2d06a71d1940c3a603e5a0489550159e79d18885",
+        "source": "hf:OpenMOSS-Team/MOSS-SoundEffect-v2.0"
+      }
+    ],
+    "node": "sound@campgrounds",
+    "output": "c8482fa84966391cfb51996f6acdcb354cfe9a1c6f1cffd97110e8e820bb54ca",
+    "place": "campgrounds",
+    "prim": null,
+    "record_key": "deb6fa317fb58cd0d0ad031fbf1e2024c47d443dc79bf7f2cd34d6c0da4af0e1",
+    "route": "83271d06a135a3696d326387147142d28aa8a1ba3a5c6b49e08046d2fd978f4b",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "campgrounds"
+  ],
+  "state": "draft",
+  "tags": {
+    "category": [
+      "shot"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "made_by": [
+      "moss"
+    ],
+    "place_kind": []
+  },
+  "title": "Lift stop",
+  "usd": null,
+  "version": 2
+}

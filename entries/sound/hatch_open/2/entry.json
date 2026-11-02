@@ -1,0 +1,112 @@
+{
+  "address": "sound/hatch_open@2",
+  "files": {
+    "audio/generated/doors/hatch_open.ogg": {
+      "bytes": 44661,
+      "role": "audio",
+      "sha256": "796db227b74847cc6f30fa8ac1832321f6cd99cd1f3af592caffcec45fbf4f90"
+    },
+    "audio/recordings/doors/hatch_open.ogg": {
+      "bytes": 152097,
+      "role": "audio",
+      "sha256": "66859a765e2728eb328300672a10a71e4467f029e0fd91cf12a885b0f4033569"
+    },
+    "preview.png": {
+      "bytes": 2233,
+      "role": "picture",
+      "sha256": "a82afb41532cbe0b2479d38c05c87dea77fa2cd458dfa2e758e1e14141fb67de"
+    },
+    "sound.json": {
+      "bytes": 942,
+      "role": "record",
+      "sha256": "9541f5d36b9893251df1cb781d88ee058a996c53b490184092362737a3e8df8a"
+    }
+  },
+  "id": "hatch_open",
+  "kind": "sound",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/audio.py",
+    "of": "audio/generated/doors/hatch_open.ogg"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-31T18:42:06.619491+00:00",
+      "by": "runner"
+    },
+    "code": "9c286aa2bb7e7a00eaf08e144dcddc92df567179a7a6e925fc3348e03c0cfd22",
+    "commit": "b14ae48f4f863e415445599503ad7609dc667a81",
+    "files_from": {
+      "audio/recordings/doors/hatch_open.ogg": "sound/recordings/doors/hatch_open.ogg"
+    },
+    "files_source": {
+      "audio/generated/doors/hatch_open.ogg": "files/sound/generated/doors/hatch_open.ogg"
+    },
+    "made_with": [
+      {
+        "by": "moss_soundeffect",
+        "what": "sound/generated/doors/hatch_open.ogg"
+      },
+      {
+        "by": "cc0_recordings",
+        "carried": true,
+        "what": "sound/recordings/doors/hatch_open.ogg: https://freesound.org/people/ALEFF-ATMOS/sounds/452784/ (ALEFF-ATMOS)"
+      }
+    ],
+    "models": [
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "clap-larger-general",
+        "revision": "ada0c23a36c4e8582805bb38fec3905903f18b41",
+        "sha256": "b8e001a32b37111261ccc28541ae07960a8cc047837f76a1a0877e9b2c59dc45",
+        "source": "hf:laion/larger_clap_general"
+      },
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "moss-soundeffect-v2",
+        "revision": "e35df4d82fbe87fcd5d14e5d100e349c0c3c076d",
+        "sha256": "d74b38a3387c5e670754edde2d06a71d1940c3a603e5a0489550159e79d18885",
+        "source": "hf:OpenMOSS-Team/MOSS-SoundEffect-v2.0"
+      }
+    ],
+    "node": "sound@airlock",
+    "output": "85f517ffe8cc758c226194447434b8347624d90f274c515970958b8201d9d2a7",
+    "place": "airlock",
+    "prim": null,
+    "record_key": "4a5faaf3c34182c923a053edcbddc67e68ce8e2f2a1b6943116ab4ca77c0f2dd",
+    "route": "83271d06a135a3696d326387147142d28aa8a1ba3a5c6b49e08046d2fd978f4b",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "base",
+    "camp",
+    "cockpit",
+    "garage",
+    "greenhouse",
+    "hangar",
+    "lab",
+    "quarters",
+    "stairwell",
+    "street",
+    "tube"
+  ],
+  "state": "draft",
+  "tags": {
+    "category": [
+      "shot"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "made_by": [
+      "moss"
+    ],
+    "place_kind": []
+  },
+  "title": "Hatch open",
+  "usd": null,
+  "version": 2
+}

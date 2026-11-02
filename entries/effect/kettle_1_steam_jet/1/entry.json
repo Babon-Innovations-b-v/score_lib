@@ -1,0 +1,89 @@
+{
+  "address": "effect/kettle_1_steam_jet@1",
+  "files": {
+    "clip.usdc": {
+      "bytes": 3202721,
+      "role": "usd",
+      "sha256": "4448ecd31bc6224c98f7873fa71fdc8660bda8b5a88704ef71972ede80032cad"
+    },
+    "effect.usda": {
+      "bytes": 16503,
+      "role": "usd",
+      "sha256": "f4f3f6b697c2f22acb760073e21cb4fb3298ee567f0bd22ac85f65d9f8752a8a"
+    },
+    "preview.png": {
+      "bytes": 21040,
+      "role": "picture",
+      "sha256": "1f99f8d85be6d0cc81eb6a4701160858723241a50ef6f1ccce4e3ad3a1810112"
+    },
+    "settings.json": {
+      "bytes": 1942,
+      "role": "record",
+      "sha256": "16538e7b5f5e732ff9fdc408764f3ec4a6feb1a8d1c8b99e7f13c98edb6f857e"
+    }
+  },
+  "id": "kettle_1_steam_jet",
+  "kind": "effect",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/points.py",
+    "of": "clip.usdc at clip time 62.0"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-31T07:42:47.185754+00:00",
+      "by": "runner"
+    },
+    "code": "da362ab5ebdca25e0f8a279f044ed3e26551128363d0218b2d649c38c1c3beee",
+    "commit": "b14ae48f4f863e415445599503ad7609dc667a81",
+    "from": "footage: flickr-5587696584, commons-boilingkettle, arxiv-2201.12128 (a boiling kettle's turbulent jet out of its spout (the mesh's farthest point from its middle above half its height, toward +z), clear for its first 1.5 to 4.5 cm where the steam is still too hot to condense, then white as it mixes with the room's air, rising and widening, drying away within half a metre)",
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
+    "models": [],
+    "node": "effects-layer@flat",
+    "output": "2c504ae045a5c77a8decad4f4f3abe1dd300720e2fd35b1146021b5023a0b78b",
+    "place": "flat",
+    "placements": [
+      {
+        "place": "flat",
+        "prim": "/flat/Objects/kettle_1/kettle_1_steam_jet"
+      }
+    ],
+    "prim": "/flat/Objects/kettle_1/kettle_1_steam_jet",
+    "record_key": "12d5f2c738468e759c2283ca7f392e95553f4898cad19e1984826ea99b5372c3",
+    "route": "83271d06a135a3696d326387147142d28aa8a1ba3a5c6b49e08046d2fd978f4b",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "flat"
+  ],
+  "state": "draft",
+  "tags": {
+    "effect": [
+      "steam_jet"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "place_kind": [],
+    "weather": []
+  },
+  "title": "Kettle 1 steam jet",
+  "usd": {
+    "default_prim": "/kettle_1_steam_jet",
+    "layer": "effects",
+    "meters_per_unit": null,
+    "path": "score_lib/effect/kettle_1_steam_jet/1/effect.usda",
+    "root": "effect.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

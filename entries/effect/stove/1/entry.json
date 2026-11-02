@@ -1,0 +1,103 @@
+{
+  "address": "effect/stove@1",
+  "files": {
+    "clip.usdc": {
+      "bytes": 901768,
+      "role": "usd",
+      "sha256": "27cd3fd49cdc157407abe85bbfb3639a705958589e6a174fdd35474e7b6f4b7c"
+    },
+    "effect.usda": {
+      "bytes": 32116,
+      "role": "usd",
+      "sha256": "eec17bdd5465c9d890bf7336aa66f979ab7c0c31ddf131291a683e527e37db1c"
+    },
+    "preview.png": {
+      "bytes": 31183,
+      "role": "picture",
+      "sha256": "81355c5326ca9f992288b117738a1a581a8aa76ca90bf86b63ba4469d756e8c2"
+    },
+    "settings.json": {
+      "bytes": 1700,
+      "role": "record",
+      "sha256": "58eb538e841646a15cdc844afae6d514a2bbc603dbb876c7ea41944795ccb72f"
+    }
+  },
+  "id": "stove",
+  "kind": "effect",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/points.py",
+    "of": "clip.usdc at clip time 28.0"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-31T07:42:47.185754+00:00",
+      "by": "runner"
+    },
+    "code": "da362ab5ebdca25e0f8a279f044ed3e26551128363d0218b2d649c38c1c3beee",
+    "commit": "b14ae48f4f863e415445599503ad7609dc667a81",
+    "from": "footage: flickr-4276025236, commons-steam-asparagus (a simmering pot's steam rising slowly off its whole top (its rim 3.5 cm under the box's top, at the lid's handle) and curling as it cools, gone about 0.05 to 0.12 m over the rim at a simmer)",
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
+    "models": [],
+    "node": "effects-layer@flat",
+    "output": "2c504ae045a5c77a8decad4f4f3abe1dd300720e2fd35b1146021b5023a0b78b",
+    "place": "flat",
+    "placements": [
+      {
+        "place": "flat",
+        "prim": "/flat/Objects/stove_1/stove_1_steam_rise"
+      },
+      {
+        "place": "flat",
+        "prim": "/flat/Objects/stove_2/stove_2_steam_rise"
+      },
+      {
+        "place": "galley",
+        "prim": "/galley/Objects/stove_top_1/stove_top_1_steam_rise"
+      },
+      {
+        "place": "habitat",
+        "prim": "/habitat/Objects/stove_1/stove_1_steam_rise"
+      }
+    ],
+    "prim": "/flat/Objects/stove_1/stove_1_steam_rise",
+    "record_key": "12d5f2c738468e759c2283ca7f392e95553f4898cad19e1984826ea99b5372c3",
+    "route": "83271d06a135a3696d326387147142d28aa8a1ba3a5c6b49e08046d2fd978f4b",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "flat",
+    "galley",
+    "habitat"
+  ],
+  "state": "draft",
+  "tags": {
+    "effect": [
+      "steam_rise"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "place_kind": [],
+    "weather": []
+  },
+  "title": "Stove",
+  "usd": {
+    "default_prim": "/stove",
+    "layer": "effects",
+    "meters_per_unit": null,
+    "path": "score_lib/effect/stove/1/effect.usda",
+    "root": "effect.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": null,
+    "use": "reference"
+  },
+  "version": 1
+}

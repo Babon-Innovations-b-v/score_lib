@@ -1,0 +1,89 @@
+{
+  "address": "sound/junction_hum@2",
+  "files": {
+    "audio/generated/machines/junction_hum.wav": {
+      "bytes": 1103152,
+      "role": "audio",
+      "sha256": "891f366254ea5e26872039ca2d7f1cabc63d190b64ad0889b79c693f822398c0"
+    },
+    "preview.png": {
+      "bytes": 2350,
+      "role": "picture",
+      "sha256": "a8d5e9a897832fe33e490b7e17912895948de943f1cf8309aed795d041bf6bed"
+    },
+    "sound.json": {
+      "bytes": 972,
+      "role": "record",
+      "sha256": "1b300197971f118fff97f4d8c9bf6672ed1969a403dfedb71085c1fdd97c48c0"
+    }
+  },
+  "id": "junction_hum",
+  "kind": "sound",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/audio.py",
+    "of": "audio/generated/machines/junction_hum.wav"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-11-01T22:37:52.325214+00:00",
+      "by": "runner"
+    },
+    "code": "9c286aa2bb7e7a00eaf08e144dcddc92df567179a7a6e925fc3348e03c0cfd22",
+    "commit": "b14ae48f4f863e415445599503ad7609dc667a81",
+    "files_source": {
+      "audio/generated/machines/junction_hum.wav": "files/sound/generated/machines/junction_hum.wav"
+    },
+    "made_with": [
+      {
+        "by": "moss_soundeffect",
+        "what": "sound/generated/machines/junction_hum.wav"
+      }
+    ],
+    "models": [
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "clap-larger-general",
+        "revision": "ada0c23a36c4e8582805bb38fec3905903f18b41",
+        "sha256": "b8e001a32b37111261ccc28541ae07960a8cc047837f76a1a0877e9b2c59dc45",
+        "source": "hf:laion/larger_clap_general"
+      },
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "moss-soundeffect-v2",
+        "revision": "e35df4d82fbe87fcd5d14e5d100e349c0c3c076d",
+        "sha256": "d74b38a3387c5e670754edde2d06a71d1940c3a603e5a0489550159e79d18885",
+        "source": "hf:OpenMOSS-Team/MOSS-SoundEffect-v2.0"
+      }
+    ],
+    "node": "sound@camp",
+    "output": "6e6ab82b5a4dc4f81560992fbadb6f7f30cc4a1205e47092f525698bc0199b38",
+    "place": "camp",
+    "prim": null,
+    "record_key": "881127cb7805f3b3aa59eda01f9acc6891a47117730e943d45bbe33e1b527360",
+    "route": "83271d06a135a3696d326387147142d28aa8a1ba3a5c6b49e08046d2fd978f4b",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "camp",
+    "greenhouse"
+  ],
+  "state": "draft",
+  "tags": {
+    "category": [
+      "loop"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "made_by": [
+      "moss"
+    ],
+    "place_kind": []
+  },
+  "title": "Junction hum",
+  "usd": null,
+  "version": 2
+}

@@ -1,0 +1,90 @@
+{
+  "address": "sound/vent_air@2",
+  "files": {
+    "audio/generated/machines/vent_air.wav": {
+      "bytes": 1103152,
+      "role": "audio",
+      "sha256": "2d3f402e0f11c43e2b99689c484c0fb4b85eac16688ae475e169da0dd075bea1"
+    },
+    "preview.png": {
+      "bytes": 2613,
+      "role": "picture",
+      "sha256": "376194f7a666cd53cbc389efb2f2d9ad02d0eff4e16259f01ccd727552932157"
+    },
+    "sound.json": {
+      "bytes": 942,
+      "role": "record",
+      "sha256": "90e91418a5bad5f47865174973a79a5dc02e71b663183b030fb17f6b24091179"
+    }
+  },
+  "id": "vent_air",
+  "kind": "sound",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/audio.py",
+    "of": "audio/generated/machines/vent_air.wav"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-11-01T23:00:08.074864+00:00",
+      "by": "runner"
+    },
+    "code": "9c286aa2bb7e7a00eaf08e144dcddc92df567179a7a6e925fc3348e03c0cfd22",
+    "commit": "b14ae48f4f863e415445599503ad7609dc667a81",
+    "files_source": {
+      "audio/generated/machines/vent_air.wav": "files/sound/generated/machines/vent_air.wav"
+    },
+    "made_with": [
+      {
+        "by": "moss_soundeffect",
+        "what": "sound/generated/machines/vent_air.wav"
+      }
+    ],
+    "models": [
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "clap-larger-general",
+        "revision": "ada0c23a36c4e8582805bb38fec3905903f18b41",
+        "sha256": "b8e001a32b37111261ccc28541ae07960a8cc047837f76a1a0877e9b2c59dc45",
+        "source": "hf:laion/larger_clap_general"
+      },
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "moss-soundeffect-v2",
+        "revision": "e35df4d82fbe87fcd5d14e5d100e349c0c3c076d",
+        "sha256": "d74b38a3387c5e670754edde2d06a71d1940c3a603e5a0489550159e79d18885",
+        "source": "hf:OpenMOSS-Team/MOSS-SoundEffect-v2.0"
+      }
+    ],
+    "node": "sound@stairwell",
+    "output": "a8385292d8e3bb6750f2d98daee6151f9a7b1d9fa1f408f8c8c38551bdcd508d",
+    "place": "stairwell",
+    "prim": null,
+    "record_key": "56d73c771fa31aa08b40c2e5a764bc9a490321f4b0c8b2c897ccd2f780c4ae39",
+    "route": "83271d06a135a3696d326387147142d28aa8a1ba3a5c6b49e08046d2fd978f4b",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "stairwell",
+    "street",
+    "walkway"
+  ],
+  "state": "draft",
+  "tags": {
+    "category": [
+      "loop"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "made_by": [
+      "moss"
+    ],
+    "place_kind": []
+  },
+  "title": "Vent air",
+  "usd": null,
+  "version": 2
+}
