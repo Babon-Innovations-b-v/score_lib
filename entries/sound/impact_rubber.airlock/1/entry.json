@@ -1,0 +1,111 @@
+{
+  "address": "sound/impact_rubber.airlock@1",
+  "files": {
+    "audio/generated/doors/impact_rubber.ogg": {
+      "bytes": 12538,
+      "role": "audio",
+      "sha256": "695225e96c176f429dd33da031bbb0dd2477a3d14d77d59510d254f576036c00"
+    },
+    "preview.png": {
+      "bytes": 1626,
+      "role": "picture",
+      "sha256": "b0af32de0f6395b2cbda71bfb5fe9b94f41e18d1a53516d58c081e69d3fe96f0"
+    },
+    "sound.json": {
+      "bytes": 875,
+      "role": "record",
+      "sha256": "aacfe53ee8f5feeec8d92a7573967d58d97fea24abee527656fab547bd020ad1"
+    }
+  },
+  "id": "impact_rubber.airlock",
+  "kind": "sound",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/audio.py",
+    "of": "audio/generated/doors/impact_rubber.ogg"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-31T18:42:06.619491+00:00",
+      "by": "runner"
+    },
+    "code": "9c286aa2bb7e7a00eaf08e144dcddc92df567179a7a6e925fc3348e03c0cfd22",
+    "commit": "a4e0f4645de02520fb5b126ead4fecc1d82919c5",
+    "files_source": {
+      "audio/generated/doors/impact_rubber.ogg": "files/sound/generated/doors/impact_rubber.ogg"
+    },
+    "made_with": [
+      {
+        "by": "moss_soundeffect",
+        "what": "sound/generated/doors/impact_rubber.ogg"
+      }
+    ],
+    "models": [
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "clap-larger-general",
+        "revision": "ada0c23a36c4e8582805bb38fec3905903f18b41",
+        "sha256": "b8e001a32b37111261ccc28541ae07960a8cc047837f76a1a0877e9b2c59dc45",
+        "source": "hf:laion/larger_clap_general"
+      },
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "moss-soundeffect-v2",
+        "revision": "e35df4d82fbe87fcd5d14e5d100e349c0c3c076d",
+        "sha256": "d74b38a3387c5e670754edde2d06a71d1940c3a603e5a0489550159e79d18885",
+        "source": "hf:OpenMOSS-Team/MOSS-SoundEffect-v2.0"
+      }
+    ],
+    "node": "sound@airlock",
+    "output": "85f517ffe8cc758c226194447434b8347624d90f274c515970958b8201d9d2a7",
+    "place": "airlock",
+    "prim": null,
+    "record_key": "4a5faaf3c34182c923a053edcbddc67e68ce8e2f2a1b6943116ab4ca77c0f2dd",
+    "route": "83271d06a135a3696d326387147142d28aa8a1ba3a5c6b49e08046d2fd978f4b",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "base",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "docking_airlock",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "lab",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "category": [
+      "shot"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "made_by": [
+      "moss"
+    ],
+    "place_kind": []
+  },
+  "title": "Impact rubber",
+  "usd": null,
+  "version": 1
+}

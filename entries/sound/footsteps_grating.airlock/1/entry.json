@@ -1,0 +1,151 @@
+{
+  "address": "sound/footsteps_grating.airlock@1",
+  "files": {
+    "audio/generated/footsteps/footsteps_grating_1.ogg": {
+      "bytes": 10132,
+      "role": "audio",
+      "sha256": "3719a5b3b8303c85c4095bad2b4dade602ac70d4e4109cf5a54ea0e1095afba1"
+    },
+    "audio/generated/footsteps/footsteps_grating_2.ogg": {
+      "bytes": 8335,
+      "role": "audio",
+      "sha256": "2728e4106098dad6b60d6cec56a7df41c3c75e5b4cc0a3288bf58d9adc07ae34"
+    },
+    "audio/generated/footsteps/footsteps_grating_3.ogg": {
+      "bytes": 8228,
+      "role": "audio",
+      "sha256": "1862f74508f97d996d304595b374c44101fa3c5e4be09931dc3585e82a2de68b"
+    },
+    "audio/generated/footsteps/footsteps_grating_4.ogg": {
+      "bytes": 8885,
+      "role": "audio",
+      "sha256": "07430cc469f46024db5c50b6336334f98f79b850a9d17273ae905aea7c164d83"
+    },
+    "audio/generated/footsteps/footsteps_grating_5.ogg": {
+      "bytes": 9182,
+      "role": "audio",
+      "sha256": "0378a0135a955fb6214bdc5f31eef8902fba390ebe6bba15c9ec86b1e185d762"
+    },
+    "preview.png": {
+      "bytes": 3105,
+      "role": "picture",
+      "sha256": "6f21bc91a7e76c1c8715aa4bf43ff8bc01adb5d6a6705f21085d60b3d3171a2c"
+    },
+    "sound.json": {
+      "bytes": 3502,
+      "role": "record",
+      "sha256": "c771a905f3d8f0d844c76c4b833785c5aae551f9fddb5bc8e7918c02671b3413"
+    }
+  },
+  "id": "footsteps_grating.airlock",
+  "kind": "sound",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/audio.py",
+    "of": "audio/generated/footsteps/footsteps_grating_1.ogg"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-10-31T18:42:06.619491+00:00",
+      "by": "runner"
+    },
+    "code": "9c286aa2bb7e7a00eaf08e144dcddc92df567179a7a6e925fc3348e03c0cfd22",
+    "commit": "a4e0f4645de02520fb5b126ead4fecc1d82919c5",
+    "files_source": {
+      "audio/generated/footsteps/footsteps_grating_1.ogg": "files/sound/generated/footsteps/footsteps_grating_1.ogg",
+      "audio/generated/footsteps/footsteps_grating_2.ogg": "files/sound/generated/footsteps/footsteps_grating_2.ogg",
+      "audio/generated/footsteps/footsteps_grating_3.ogg": "files/sound/generated/footsteps/footsteps_grating_3.ogg",
+      "audio/generated/footsteps/footsteps_grating_4.ogg": "files/sound/generated/footsteps/footsteps_grating_4.ogg",
+      "audio/generated/footsteps/footsteps_grating_5.ogg": "files/sound/generated/footsteps/footsteps_grating_5.ogg"
+    },
+    "made_with": [
+      {
+        "by": "moss_soundeffect",
+        "what": "sound/generated/footsteps/footsteps_grating_1.ogg"
+      },
+      {
+        "by": "moss_soundeffect",
+        "what": "sound/generated/footsteps/footsteps_grating_2.ogg"
+      },
+      {
+        "by": "moss_soundeffect",
+        "what": "sound/generated/footsteps/footsteps_grating_3.ogg"
+      },
+      {
+        "by": "moss_soundeffect",
+        "what": "sound/generated/footsteps/footsteps_grating_4.ogg"
+      },
+      {
+        "by": "moss_soundeffect",
+        "what": "sound/generated/footsteps/footsteps_grating_5.ogg"
+      }
+    ],
+    "models": [
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "clap-larger-general",
+        "revision": "ada0c23a36c4e8582805bb38fec3905903f18b41",
+        "sha256": "b8e001a32b37111261ccc28541ae07960a8cc047837f76a1a0877e9b2c59dc45",
+        "source": "hf:laion/larger_clap_general"
+      },
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "moss-soundeffect-v2",
+        "revision": "e35df4d82fbe87fcd5d14e5d100e349c0c3c076d",
+        "sha256": "d74b38a3387c5e670754edde2d06a71d1940c3a603e5a0489550159e79d18885",
+        "source": "hf:OpenMOSS-Team/MOSS-SoundEffect-v2.0"
+      }
+    ],
+    "node": "sound@airlock",
+    "output": "85f517ffe8cc758c226194447434b8347624d90f274c515970958b8201d9d2a7",
+    "place": "airlock",
+    "prim": null,
+    "record_key": "4a5faaf3c34182c923a053edcbddc67e68ce8e2f2a1b6943116ab4ca77c0f2dd",
+    "route": "83271d06a135a3696d326387147142d28aa8a1ba3a5c6b49e08046d2fd978f4b",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "base",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "docking_airlock",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "lab",
+    "old_station",
+    "quarters",
+    "shiplock",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "category": [
+      "steps"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "made_by": [
+      "moss"
+    ],
+    "place_kind": []
+  },
+  "title": "Footsteps grating",
+  "usd": null,
+  "version": 1
+}
