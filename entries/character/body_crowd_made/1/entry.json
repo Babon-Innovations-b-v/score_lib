@@ -1,0 +1,126 @@
+{
+  "address": "character/body_crowd_made@1",
+  "files": {
+    "body.glb": {
+      "bytes": 904360,
+      "role": "gltf",
+      "sha256": "9a3960f720bbbda4085c0297f1c2e7041e0e9fbaec810970ddaa5ac4cf116e6f"
+    },
+    "character.usdc": {
+      "bytes": 737929,
+      "role": "usd",
+      "sha256": "1bd435ae791ba4485d96c76a147b84a9484ef332154bb6ed667cc9165fbc09cc"
+    },
+    "checks/build.json": {
+      "bytes": 3765,
+      "role": "record",
+      "sha256": "b706bf0f365f3eb272b1139b438e5b8d1443d30a84e6c9efe31bbd692a630597"
+    },
+    "checks/joins.json": {
+      "bytes": 1200,
+      "role": "record",
+      "sha256": "1ecff4315b6c7289ec7716506783eba6be97e0913ded77e51e533c7337fe25d9"
+    },
+    "checks/likeness.json": {
+      "bytes": 147,
+      "role": "record",
+      "sha256": "8391928db39ac20f63eb3013c7c7ed8a66aa914849337b3ee45cce6abf0dca2f"
+    },
+    "checks/parts.json": {
+      "bytes": 1727,
+      "role": "record",
+      "sha256": "714c0e1d5422f2a643d18a28d4cbdd7f6b5db5f12974872c7711aa62541fec9b"
+    },
+    "checks/rig.json": {
+      "bytes": 4262,
+      "role": "record",
+      "sha256": "94222a9073a3e3852b18b0cdd932e479096735098064d6ae5cf4c9d7b3ed100a"
+    },
+    "checks/shell.json": {
+      "bytes": 4625,
+      "role": "record",
+      "sha256": "fbf0fc123bcf91320ec4fa072ae87c018caf9e29644bb0b663e89fc2086ed3cc"
+    },
+    "look.json": {
+      "bytes": 285,
+      "role": "record",
+      "sha256": "3e74a2fd44af10adc68bbe33af117f1612f7610b62dcf3f794aea62f8fbc6169"
+    }
+  },
+  "id": "body_crowd_made",
+  "kind": "character",
+  "picture": null,
+  "picture_reason": "no accepted people-take close-up of this look",
+  "provenance": {
+    "accept": {
+      "at": "2026-11-03T21:47:21.916120+00:00",
+      "by": "runner"
+    },
+    "code": "f83e2de586093c848e65920d0f06c1d3da5cf2eb88e4d5eb503241d118b1c6d8",
+    "commit": "31ae133cbf78487b508760ef2a59029d5034ced6",
+    "files_from": {
+      "checks/rig.json": {
+        "path": "checks/rig.json",
+        "sha256": "46bb304a10eb204d4f95bf20b4921a338672f74fb4025b2464feeea59a4b80cd"
+      }
+    },
+    "look": "crowd-made",
+    "made_with": [
+      {
+        "by": "gemini_31_pro",
+        "what": "finishes listed and named (surface stage)"
+      },
+      {
+        "by": "nano_banana_pro",
+        "what": "finish maps (surface stage)"
+      },
+      {
+        "by": "pixal3d",
+        "what": "the body's shape"
+      },
+      {
+        "by": "score",
+        "what": "made by score"
+      },
+      {
+        "by": "segvigen",
+        "what": "the finish map laid on the shape (surface stage)"
+      },
+      {
+        "by": "soma_x",
+        "what": "the skeleton fitted inside the shape and its skin weights"
+      }
+    ],
+    "models": [],
+    "node": "people-body-crowd-made",
+    "output": "e138be5a68c990b17d729e3f818ed5ba7eebe72ea9738b2dab6003487595ad91",
+    "place": null,
+    "record_key": "714859ccdf396d86f524286abaa81cd74aaafd68973535a41842b823a5fc8f81",
+    "route": "83271d06a135a3696d326387147142d28aa8a1ba3a5c6b49e08046d2fd978f4b",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "character": [
+      "body"
+    ],
+    "engine": [
+      "usd"
+    ]
+  },
+  "title": "Crowd made",
+  "usd": {
+    "default_prim": "/Character",
+    "layer": "characters",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/character/body_crowd_made/1/character.usdc",
+    "root": "character.usdc",
+    "time_codes_per_second": 30.0,
+    "up_axis": "Y",
+    "use": "payload"
+  },
+  "version": 1
+}
