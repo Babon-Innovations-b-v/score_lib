@@ -1,0 +1,132 @@
+{
+  "address": "sound/footsteps_grating.cockpit@1",
+  "files": {
+    "audio/generated/footsteps/footsteps_grating_1.ogg": {
+      "bytes": 10132,
+      "role": "audio",
+      "sha256": "e2d0093f5bd19df75ab0c90ded2c56f5287d0ed1677f46760d211bc00acb5776"
+    },
+    "audio/generated/footsteps/footsteps_grating_2.ogg": {
+      "bytes": 8335,
+      "role": "audio",
+      "sha256": "76ff5ed025789f1dae34819c2a74ec0e5829bc94201ad26c62b131127144298e"
+    },
+    "audio/generated/footsteps/footsteps_grating_3.ogg": {
+      "bytes": 8228,
+      "role": "audio",
+      "sha256": "6d471c35181e7e5a6d51ba10efab5e151d7c2cf7700bab2671643eef219b534e"
+    },
+    "audio/generated/footsteps/footsteps_grating_4.ogg": {
+      "bytes": 8885,
+      "role": "audio",
+      "sha256": "402e53261d349a1c44fbfdb66c113d6b0f4248601b2078ffc327e2945e79ee09"
+    },
+    "audio/generated/footsteps/footsteps_grating_5.ogg": {
+      "bytes": 9193,
+      "role": "audio",
+      "sha256": "a310410e3f91f6563a48146e656b8bc1b2cd0354eedc72090082043fc996cec7"
+    },
+    "preview.png": {
+      "bytes": 3105,
+      "role": "picture",
+      "sha256": "6f21bc91a7e76c1c8715aa4bf43ff8bc01adb5d6a6705f21085d60b3d3171a2c"
+    },
+    "sound.json": {
+      "bytes": 3502,
+      "role": "record",
+      "sha256": "5578f7f4a57a41af781202337c0a5e1a41696ba306a2d20f4a1a79fe1e6116f1"
+    }
+  },
+  "id": "footsteps_grating.cockpit",
+  "kind": "sound",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/audio.py",
+    "of": "audio/generated/footsteps/footsteps_grating_1.ogg"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-11-03T19:08:33.535629+00:00",
+      "by": "runner"
+    },
+    "code": "9c286aa2bb7e7a00eaf08e144dcddc92df567179a7a6e925fc3348e03c0cfd22",
+    "commit": "a4e0f4645de02520fb5b126ead4fecc1d82919c5",
+    "files_source": {
+      "audio/generated/footsteps/footsteps_grating_1.ogg": "files/sound/generated/footsteps/footsteps_grating_1.ogg",
+      "audio/generated/footsteps/footsteps_grating_2.ogg": "files/sound/generated/footsteps/footsteps_grating_2.ogg",
+      "audio/generated/footsteps/footsteps_grating_3.ogg": "files/sound/generated/footsteps/footsteps_grating_3.ogg",
+      "audio/generated/footsteps/footsteps_grating_4.ogg": "files/sound/generated/footsteps/footsteps_grating_4.ogg",
+      "audio/generated/footsteps/footsteps_grating_5.ogg": "files/sound/generated/footsteps/footsteps_grating_5.ogg"
+    },
+    "made_with": [
+      {
+        "by": "moss_soundeffect",
+        "what": "sound/generated/footsteps/footsteps_grating_1.ogg"
+      },
+      {
+        "by": "moss_soundeffect",
+        "what": "sound/generated/footsteps/footsteps_grating_2.ogg"
+      },
+      {
+        "by": "moss_soundeffect",
+        "what": "sound/generated/footsteps/footsteps_grating_3.ogg"
+      },
+      {
+        "by": "moss_soundeffect",
+        "what": "sound/generated/footsteps/footsteps_grating_4.ogg"
+      },
+      {
+        "by": "moss_soundeffect",
+        "what": "sound/generated/footsteps/footsteps_grating_5.ogg"
+      }
+    ],
+    "models": [
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "clap-larger-general",
+        "revision": "ada0c23a36c4e8582805bb38fec3905903f18b41",
+        "sha256": "b8e001a32b37111261ccc28541ae07960a8cc047837f76a1a0877e9b2c59dc45",
+        "source": "hf:laion/larger_clap_general"
+      },
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "moss-soundeffect-v2",
+        "revision": "e35df4d82fbe87fcd5d14e5d100e349c0c3c076d",
+        "sha256": "d74b38a3387c5e670754edde2d06a71d1940c3a603e5a0489550159e79d18885",
+        "source": "hf:OpenMOSS-Team/MOSS-SoundEffect-v2.0"
+      }
+    ],
+    "node": "sound@cockpit",
+    "output": "1a84ca76c34720da2eabb5957d0cecbb346df00541eed8c5a9c49138b4640864",
+    "place": "cockpit",
+    "prim": null,
+    "record_key": "ccd01fe4941d046631a36225cb7f02ee629e09fae43b7624f0d5008dd3b321c5",
+    "route": "83271d06a135a3696d326387147142d28aa8a1ba3a5c6b49e08046d2fd978f4b",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "cockpit",
+    "docking_airlock",
+    "hub",
+    "square",
+    "workshop"
+  ],
+  "state": "draft",
+  "tags": {
+    "category": [
+      "steps"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "made_by": [
+      "moss"
+    ],
+    "place_kind": []
+  },
+  "title": "Footsteps grating",
+  "usd": null,
+  "version": 1
+}
