@@ -130,7 +130,8 @@ def run_in_process(world, out, place):
 
 def test_a_handover_after_another_writers_push_lands_on_top_of_it(world, tmp_path):
     """Break: pushing without rebasing onto origin first (env1, 2026-11-03: every place's handover refused as not a
-    fast-forward after take-in pushed from another checkout)."""
+    fast-forward after take-in pushed from another checkout); writing before catching up with origin (a generated
+    index both sides wrote then conflicts in the rebase, 2026-11-04)."""
     origin = with_remote(world)
     other = world.base / "other"
     subprocess.run(["git", "clone", "-q", "-b", "main", str(origin), str(other)], check=True)
@@ -138,7 +139,9 @@ def test_a_handover_after_another_writers_push_lands_on_top_of_it(world, tmp_pat
     git(other, "config", "user.email", "test@example.org")
     (other / "entries").mkdir(exist_ok=True)
     (other / "entries" / "elsewhere.txt").write_text("another writer's entry\n")
-    git(other, "add", "entries")
+    (other / "index").mkdir(exist_ok=True)
+    (other / "index" / "place.json").write_text("{}\n")
+    git(other, "add", "entries", "index")
     git(other, "commit", "-q", "-m", "take-in: elsewhere")
     git(other, "push", "-q", "origin", "main")
     report = handed(world, tmp_path / "out")

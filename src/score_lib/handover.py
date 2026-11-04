@@ -350,6 +350,8 @@ def handover(root, blobs, world, place, seed, commit, store, repo, out, command,
     checked_paths(store, repo)
     root = pathlib.Path(root)
     with locked(root, float(os.environ.get("SCORE_LIB_LOCK_WAIT", LOCK_WAIT))):
+        if is_repository(root) and git(root, "remote", "get-url", "origin").returncode == 0:
+            caught_up(root)
         export_report = export_place(root, blobs, world, place, seed, commit, store, repo, route)
         result = report_of(root, blobs, world, place, commit, store, export_report)
         result["command"] = list(command)
