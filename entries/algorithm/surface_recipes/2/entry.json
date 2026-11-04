@@ -1,0 +1,176 @@
+{
+  "address": "algorithm/surface_recipes@2",
+  "files": {
+    "code.json": {
+      "bytes": 643,
+      "role": "record",
+      "sha256": "94c5f9e1d4f17b3559077a728168ed37026da1858a887ad9ff17952c31364770"
+    },
+    "code/tools/props/library/library.py": {
+      "bytes": 9873,
+      "role": "code",
+      "sha256": "35f514d283de9fb426cfe0203bc215d0077da9c76bbb85fd2fd87f862ff5e76b"
+    },
+    "code/tools/props/library/printed.py": {
+      "bytes": 15511,
+      "role": "code",
+      "sha256": "36c7bd02be6a5e8a0deb11ced7c9931184426d0a7c3c0c0c51615aeb33063e2c"
+    },
+    "code/tools/props/library/recipes.py": {
+      "bytes": 44655,
+      "role": "code",
+      "sha256": "8e29588fd44486a1037984b8115bb94aa2cc6b1be6e29fa3445f839484d0ca3a"
+    },
+    "definition.json": {
+      "bytes": 2366,
+      "role": "record",
+      "sha256": "d490f27e6ed010919801ab58e9d901150041a6fe975a5c67dc4af904a4171c38"
+    },
+    "presets/world1/data/definitions/place.json": {
+      "bytes": 30510,
+      "role": "record",
+      "sha256": "94a5a86fa73bf17a8d0a2aabfdb6eac3023f91328ebb950a5ae342ee6773f528"
+    },
+    "presets/world1/data/library/materials.json": {
+      "bytes": 4946,
+      "role": "record",
+      "sha256": "03f3c58d8b681f6bbe9c62162e521d74cd884dcc23eafd726637f2466e4e14d5"
+    },
+    "presets/world1/seed.json": {
+      "bytes": 1269,
+      "role": "record",
+      "sha256": "1f05cac98e6667e8849bf902070aeb009edb8309bff91fc400afdb4ec5745fd9"
+    },
+    "run.json": {
+      "bytes": 1717,
+      "role": "record",
+      "sha256": "7521df66e760cdace848aecc998fbba1a84ec5145249a3ac1b2349c22bd2b1f9"
+    },
+    "settings.schema.json": {
+      "bytes": 588,
+      "role": "record",
+      "sha256": "5ccc1689dac3cfee6c2580cd47c29db56bb4956d194a951c61e4a616acca4013"
+    },
+    "test/tools/props/library/test_pieces_keep_true_shape_and_library_paint.py": {
+      "bytes": 58282,
+      "role": "code",
+      "sha256": "a6f1449f34ccc02b176eefd9b38cfc72dd8a5d6781c286f987314a25a838273f"
+    }
+  },
+  "id": "surface_recipes",
+  "kind": "algorithm",
+  "picture": null,
+  "picture_reason": "no world 1 output in the store pictures this algorithm",
+  "provenance": {
+    "code": "72bf117f4880a0d2883ca3b37b8ceea08ade5b05e43c64f2f894a4e45557b513",
+    "commit": "68416f6773c4eee1b0a3492b4d3b69cbbddfb414",
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
+    "nodes": [
+      "surfaces-bake@airlock",
+      "surfaces-bake@base",
+      "surfaces-bake@camp",
+      "surfaces-bake@campgrounds",
+      "surfaces-bake@cockpit",
+      "surfaces-bake@docking_airlock",
+      "surfaces-bake@engineroom",
+      "surfaces-bake@flat",
+      "surfaces-bake@galley",
+      "surfaces-bake@garage",
+      "surfaces-bake@greenhouse",
+      "surfaces-bake@habitat",
+      "surfaces-bake@hangar",
+      "surfaces-bake@hub",
+      "surfaces-bake@lab",
+      "surfaces-bake@old_station",
+      "surfaces-bake@people",
+      "surfaces-bake@quarters",
+      "surfaces-bake@shiplock",
+      "surfaces-bake@square",
+      "surfaces-bake@stairwell",
+      "surfaces-bake@storage",
+      "surfaces-bake@street",
+      "surfaces-bake@tube",
+      "surfaces-bake@walkway",
+      "surfaces-bake@workshop",
+      "surfaces-bake@wreck"
+    ],
+    "outside": [
+      {
+        "name": "ProcFunc",
+        "version": "0.36.1",
+        "where": "https://github.com/princeton-vl/procfunc (tag v0.36.1); score vendors it at vendor/procfunc",
+        "why": "BSD-3-Clause: its notice and conditions must stay with its code"
+      },
+      {
+        "name": "infinigen2 (Infinigen's shader library)",
+        "version": "2.0.0a2, princeton-vl/infinigen commit 3f58bb886bb1bda681d41240344fe3126ac0e9bd",
+        "where": "https://github.com/princeton-vl/infinigen/tree/3f58bb886bb1bda681d41240344fe3126ac0e9bd/src/infinigen2; score vendors it at vendor/infinigen2",
+        "why": "BSD-3-Clause: its notice and conditions must stay with its code"
+      },
+      {
+        "name": "fonts: Barlow, Barlow Condensed, Noto Sans SC, Noto Serif SC, ZCOOL QingKe HuangYou",
+        "version": "Barlow and Barlow Condensed 1.408, Noto Sans SC 2.004, Noto Serif SC 2.003, ZCOOL QingKe HuangYou 1.0 (score keeps cut-down copies of the last three)",
+        "where": "https://fonts.google.com (each family), or score's data/fonts at the world's commit; put them at presets/world1/data/fonts/<family>/ as score lays them out",
+        "why": "SIL Open Font License 1.1: the fonts may only be passed on under the OFL itself"
+      },
+      {
+        "name": "Blender",
+        "version": "5.0.1",
+        "where": "https://www.blender.org/download/",
+        "why": "GPL: the library carries none of its code"
+      }
+    ],
+    "stage": "surfaces-bake",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "airlock",
+    "base",
+    "camp",
+    "campgrounds",
+    "cockpit",
+    "docking_airlock",
+    "engineroom",
+    "flat",
+    "galley",
+    "garage",
+    "greenhouse",
+    "habitat",
+    "hangar",
+    "hub",
+    "lab",
+    "old_station",
+    "people",
+    "quarters",
+    "shiplock",
+    "square",
+    "stairwell",
+    "storage",
+    "street",
+    "tube",
+    "walkway",
+    "workshop",
+    "wreck"
+  ],
+  "state": "draft",
+  "tags": {
+    "needs": [
+      "blender",
+      "procfunc",
+      "infinigen"
+    ],
+    "runnable": [
+      false
+    ]
+  },
+  "title": "Surface functions: ProcFunc material recipes and wear (needs Blender and ProcFunc)",
+  "usd": null,
+  "version": 2
+}

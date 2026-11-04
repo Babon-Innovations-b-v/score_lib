@@ -2,29 +2,29 @@
   "address": "algorithm/drop@1",
   "files": {
     "code.json": {
-      "bytes": 516,
+      "bytes": 521,
       "role": "record",
-      "sha256": "9adbf8bc9c6a2c7bf695816eb8670870ba7d6d3bc343504bac16f198a81c2ef1"
-    },
-    "code/tools/usd/orbits.py": {
-      "bytes": 6420,
-      "role": "code",
-      "sha256": "ea3f51f9dda02b62116a7d9968f6573adaf8d1084c94ad4d3d459d3f79b0bb71"
+      "sha256": "6312343149395d08de5da47d661961404fe497fe0d387d80600378ea5272edfb"
     },
     "code/tools/usd/physics.py": {
-      "bytes": 19053,
+      "bytes": 20858,
       "role": "code",
-      "sha256": "7b4e39658b372d17b74227586d2687556f6ab8e865c07fbf0b0f1c2b3540a4ef"
+      "sha256": "62bb18c0851db2cafee470d4de574afa2fb883b1a7e539253e8d07699e6b57d4"
+    },
+    "code/tools/usd/whole_layer.py": {
+      "bytes": 1427,
+      "role": "code",
+      "sha256": "7fad884eafa859da079ee0c69fe83cb31ad6b7f7d70e1558fd1c3c89ece6d984"
     },
     "definition.json": {
-      "bytes": 687,
+      "bytes": 723,
       "role": "record",
-      "sha256": "e7fd194f8f5c60d6a23ca1fc79e3a4c8034445e7f3e2fdf922ea203acfd6713d"
+      "sha256": "5052feb1246f048017504b369ff766265deb38e10d032437edb97df1326fec4c"
     },
-    "presets/world1/data/physics/habitat.json": {
-      "bytes": 1719,
+    "presets/world1/data/physics/setting.json": {
+      "bytes": 1821,
       "role": "record",
-      "sha256": "0a81067737290f0b0185e7f0fbab7ab5ae69da65669d47a406639d722f836f02"
+      "sha256": "fe122ef764437121d3015c498c2db1ad9528391b34f4b3039369e5cca8ad3389"
     },
     "presets/world1/seed.json": {
       "bytes": 166,
@@ -39,12 +39,12 @@
     "settings.schema.json": {
       "bytes": 423,
       "role": "record",
-      "sha256": "c7b22d757ddf72dcaf5012cb34e9b98682965b9817e089fffa34a75d174f51aa"
+      "sha256": "0ff69d7523a5a74bf4d28dc22b1e744e6eec22d851daa66db0608b0d23c3f0b9"
     },
-    "test/tools/usd/physics_test.py": {
-      "bytes": 9243,
+    "test/tools/usd/test_the_physics_layers_hold_mass_drop_and_hinge.py": {
+      "bytes": 12173,
       "role": "code",
-      "sha256": "bde665ec4536d37c1bc20eca8c63adce3d8ea898e0a4a9fa41ac351aaafc07f8"
+      "sha256": "e7c47590dbeb65ce7e653c091d773bec148f9eb81c3ba2a4b2150e5c5d3cc9bf"
     }
   },
   "id": "drop",
@@ -52,8 +52,8 @@
   "picture": null,
   "picture_reason": "no world 1 output in the store pictures this algorithm",
   "provenance": {
-    "code": "bb431c4d1f8c6d5928dd6d26bb6f4ef8c75b23c7424043992156740f0c34aef8",
-    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "code": "b23b4d461779668e84891959ef2ef9c33aea501302a1078886415e9527406f09",
+    "commit": "68416f6773c4eee1b0a3492b4d3b69cbbddfb414",
     "made_with": [
       {
         "by": "score",

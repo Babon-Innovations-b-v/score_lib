@@ -2,19 +2,259 @@
   "address": "algorithm/planet_gravity@1",
   "files": {
     "code.json": {
-      "bytes": 420,
+      "bytes": 5077,
       "role": "record",
-      "sha256": "a827c66d92774cec615089b941450376f603cbd8fbc36599dca80ce6de8ebe9e"
+      "sha256": "0c7b673b2d487a527f9451e1940114cbaa2a1e0e9ad4eacd05f8e72ca093c657"
     },
-    "code/tools/usd/orbits.py": {
-      "bytes": 6420,
+    "code/score/__init__.py": {
+      "bytes": 0,
       "role": "code",
-      "sha256": "ea3f51f9dda02b62116a7d9968f6573adaf8d1084c94ad4d3d459d3f79b0bb71"
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "code/score/adapters/__init__.py": {
+      "bytes": 0,
+      "role": "code",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "code/score/checks/__init__.py": {
+      "bytes": 5111,
+      "role": "code",
+      "sha256": "95c8487441b20e04f9706c0109de8e48a63e9acdb5f6c158c973824f2975b0fd"
+    },
+    "code/score/conductor/__init__.py": {
+      "bytes": 7674,
+      "role": "code",
+      "sha256": "89456af0926877807bbdd13cb245909c2a2dc3ac390a16660bd4480ae5726773"
+    },
+    "code/score/contracts/__init__.py": {
+      "bytes": 5024,
+      "role": "code",
+      "sha256": "1c0f030fd4a7110bdb7881c9e792243b87af42f60ca68dd39486808382f5edde"
+    },
+    "code/score/library/__init__.py": {
+      "bytes": 2432,
+      "role": "code",
+      "sha256": "51ac56c59f0f9b102554d3af7f956506eab838d1bd4785c890f27b9c2a131733"
+    },
+    "code/score/review/__init__.py": {
+      "bytes": 27483,
+      "role": "code",
+      "sha256": "049e0db70eb1c765d09dd9649a209fb980d74db813657f3e20b89b1c4e4102a1"
+    },
+    "code/score/review/concepts.py": {
+      "bytes": 60861,
+      "role": "code",
+      "sha256": "c914cfc078f19618349ea3586d6095bf7ea8c4712a9a8a26773379e556176f70"
+    },
+    "code/score/review/creator_plans.py": {
+      "bytes": 4714,
+      "role": "code",
+      "sha256": "e609fb5bddf888fa7abfefb958cb56042214f027631b84f9a2d3d836e2cacd73"
+    },
+    "code/score/review/discuss.py": {
+      "bytes": 8061,
+      "role": "code",
+      "sha256": "f57d87722d38e263d4bcdd0ca57fcde296ccca5a218098348b181490b65dd668"
+    },
+    "code/score/review/environment_concept.py": {
+      "bytes": 21317,
+      "role": "code",
+      "sha256": "1a8c5f5990963a9d9cb7f51cbd1b411dc8aadfcc30662764c919b7d017867f27"
+    },
+    "code/score/review/environment_plan.py": {
+      "bytes": 35004,
+      "role": "code",
+      "sha256": "229410d611386bc4de204e3dfe39d0252bf7a8dc6cdc36ebf0c049f52a304916"
+    },
+    "code/score/review/overhead.py": {
+      "bytes": 12280,
+      "role": "code",
+      "sha256": "900f8d10ddf11e59554756cb846ff531f4e824ba236816ce6aae61d94009b17a"
+    },
+    "code/score/review/plan_checks.py": {
+      "bytes": 38164,
+      "role": "code",
+      "sha256": "21ad7a4de389aa4805226df931fc35d588230354b0e6823596df27be531b42f9"
+    },
+    "code/score/review/plan_drawing.py": {
+      "bytes": 10203,
+      "role": "code",
+      "sha256": "25092305ef975afef8160227efe299975441770a5e1482647aab9feb62ffaa48"
+    },
+    "code/score/review/plan_fixes.py": {
+      "bytes": 23010,
+      "role": "code",
+      "sha256": "0b96b7898e4c5e8b7b46292b83720b52d3c18c99af0c8a62599749f505da518b"
+    },
+    "code/score/review/plan_writing.py": {
+      "bytes": 58365,
+      "role": "code",
+      "sha256": "5dbac7538d158062a90b31985f2be0f30fd27db0d32eeb45208ac829306b3ddc"
+    },
+    "code/score/review/plans.py": {
+      "bytes": 59799,
+      "role": "code",
+      "sha256": "e2195b96a32eb652a2c6f3570f5a5cd1b544cdd3ce0c2418c72754c1760d6ed9"
+    },
+    "code/score/review/reading.py": {
+      "bytes": 57751,
+      "role": "code",
+      "sha256": "e4bc5ef7fafa3724eefb46b6f3246ba82fc363e9af8d12b98861629ba8717724"
+    },
+    "code/score/review/scene_sky.py": {
+      "bytes": 2798,
+      "role": "code",
+      "sha256": "714e94005a87d2be6d170e651a42b0d1cf016b4a11c7d4ffa29220fac617e792"
+    },
+    "code/score/review/setting.py": {
+      "bytes": 15393,
+      "role": "code",
+      "sha256": "d704a8d20d5c211b61612c1af098823556ad7586f8f157b3cc5cd028560822f9"
+    },
+    "code/score/stages/__init__.py": {
+      "bytes": 78344,
+      "role": "code",
+      "sha256": "9f369636c5684ec52c5f055d8fef906ead0a2829e8159555f3ad70bd39fbc5a8"
+    },
+    "code/score/stages/complete/__init__.py": {
+      "bytes": 5971,
+      "role": "code",
+      "sha256": "ae6ccbfd7be26333ac25c18f4a15456cb663f9559b43842a798304f08d68064c"
+    },
+    "code/score/stages/complete/library/__init__.py": {
+      "bytes": 141,
+      "role": "code",
+      "sha256": "d8d14b729bfce9662feefa92460b8e30877b153398f810698c79ebb50646e8a6"
+    },
+    "code/score/stages/complete/library/entries.py": {
+      "bytes": 5007,
+      "role": "code",
+      "sha256": "bfb702081aba130e182222cdf88b1e2a16b949097d0ba1cfeb6a689ecc401039"
+    },
+    "code/score/stages/complete/library/exceptions.py": {
+      "bytes": 3201,
+      "role": "code",
+      "sha256": "1c93edff58cf847e7dbe7b8fbcb400e7f402e0102ab5f7e9e9ac5d4f0bf69e63"
+    },
+    "code/score/stages/complete/library/findings.py": {
+      "bytes": 2912,
+      "role": "code",
+      "sha256": "7f202de91e6ca65e4f1e6997946c279c195ca2059499f973f847862bc041ed7a"
+    },
+    "code/score/stages/complete/library/stored.py": {
+      "bytes": 2960,
+      "role": "code",
+      "sha256": "64391499a69c38207073104ecbe75bb87bf818406303fe0cc83e32fb39d8ceef"
+    },
+    "code/score/stages/complete/library/trace.py": {
+      "bytes": 14102,
+      "role": "code",
+      "sha256": "a4cbcfcddafb4fd29284b76cff8f6d862b08b398b3f6678778a5bf408f2489ee"
+    },
+    "code/score/stages/library/__init__.py": {
+      "bytes": 10863,
+      "role": "code",
+      "sha256": "b71f8784c5a43188f11ea2523d2289294453b3254a070a6ff1b97d815a885898"
+    },
+    "code/score/stages/library/backend.py": {
+      "bytes": 6568,
+      "role": "code",
+      "sha256": "ce0b622c47d5534fc013e0636bfb6d1a2fb33d7c7ecd7a5fe6dd77a572b3c9b7"
+    },
+    "code/score/stages/library/checks.py": {
+      "bytes": 9722,
+      "role": "code",
+      "sha256": "52d900d0ffe98491fe45251e682216f74a240b4043db9c3c6625dd7f5bc4a129"
+    },
+    "code/score/stages/library/handover.py": {
+      "bytes": 4395,
+      "role": "code",
+      "sha256": "1579372359158a4d78b023458e042ee200b8569f18f9a53e8b77b7f8cd20a62d"
+    },
+    "code/score/stages/library/traced.py": {
+      "bytes": 2451,
+      "role": "code",
+      "sha256": "f76bfffc840d51bd2bcc39106ac0ac140cdd6dd9c2b224dd4d4780ae92eb7441"
+    },
+    "code/score/stages/people_bodies/__init__.py": {
+      "bytes": 382,
+      "role": "code",
+      "sha256": "e1d6a5eede46b22fa55fa8216355c077fe02e8a3725861e3f7fee1d063651eec"
+    },
+    "code/score/stages/people_bodies/bodies.py": {
+      "bytes": 28161,
+      "role": "code",
+      "sha256": "bf6ea6d0e80aa9d9404fc5cdd52f519ab32d104937d384b07964582a7442fbe1"
+    },
+    "code/score/stages/people_bodies/clips.py": {
+      "bytes": 5660,
+      "role": "code",
+      "sha256": "3950410b0ec09528077fa36828b72edee03e5973429750290eac5198a823687d"
+    },
+    "code/score/stages/people_bodies/full.py": {
+      "bytes": 1284,
+      "role": "code",
+      "sha256": "8e989d73b07f2fb1efb40e98d52627300b832422ab8b0aff36d1324720198bd5"
+    },
+    "code/score/stages/people_bodies/made_clips.py": {
+      "bytes": 3426,
+      "role": "code",
+      "sha256": "e940ffb2aff96dc9a631f3ce3ec72002337402c3e03da7325527475db0bd032b"
+    },
+    "code/score/stages/people_clothes.py": {
+      "bytes": 4917,
+      "role": "code",
+      "sha256": "96cdfc56b9b6361e933cf461bce8b3d9885e6a45a8246e49c7e2c479a9c1e1de"
+    },
+    "code/score/stages/people_rows.py": {
+      "bytes": 29333,
+      "role": "code",
+      "sha256": "486105fed790b7c3e7c84f914f2278a5b85b8adce9c34aa30913633de1e8c08a"
+    },
+    "code/score/stages/props/__init__.py": {
+      "bytes": 4295,
+      "role": "code",
+      "sha256": "2646d50a9913c2acb4e471283145425fe020be0af52418fe726bc62d527e9c17"
+    },
+    "code/score/stages/props/likeness.py": {
+      "bytes": 8602,
+      "role": "code",
+      "sha256": "bc88a65d0a319690c8ae2741246d657fa651366fb7c718c315a98c5367666c5e"
+    },
+    "code/score/stages/props/prop_data.py": {
+      "bytes": 9807,
+      "role": "code",
+      "sha256": "0ee57dbf9c2fe95dd5fd1e8366b32e657d860ecca7e3751386c0efdbc85e1ff7"
+    },
+    "code/score/stages/root_stage.py": {
+      "bytes": 537,
+      "role": "code",
+      "sha256": "6a33eef2478d9f29c2d2df7cf1d72529335bc4382a5da4c65a929982c4e5423a"
+    },
+    "code/score/stages/scene_record/__init__.py": {
+      "bytes": 1520,
+      "role": "code",
+      "sha256": "e60948deb1a6c02b947bf97d6e1bcd2a028192ab8b57521a795ab2298d751a43"
+    },
+    "code/score/stages/scene_record/plan.py": {
+      "bytes": 27682,
+      "role": "code",
+      "sha256": "f92aa196b03d39306c824dc9f770cde24f2961afb0e8db21778d61870c26ad33"
+    },
+    "code/score/store/__init__.py": {
+      "bytes": 21142,
+      "role": "code",
+      "sha256": "72bf0a79cc5e7a00d67f851375668782053541c29573c70aca4e061c587556cf"
     },
     "definition.json": {
-      "bytes": 742,
+      "bytes": 485,
       "role": "record",
-      "sha256": "54d922967a673b73cafd3c0350cc127bd543d83d510c216349daeca618ea24ca"
+      "sha256": "245e35c2db6758fed8d50e85a3e633db9d585bff2355b7a9ec86afe6eda12c3d"
+    },
+    "presets/world1/data/physics/bodies.json": {
+      "bytes": 7133,
+      "role": "record",
+      "sha256": "414f30d7597559afcfec5196fb8a777e78118636ecede54cef2ec263d2602890"
     },
     "presets/world1/seed.json": {
       "bytes": 166,
@@ -22,19 +262,19 @@
       "sha256": "f01ebf493ca695c8faa5cc8d7ee153054112e6bcaeb64b3aca4bb701ad8c00fd"
     },
     "run.json": {
-      "bytes": 264,
+      "bytes": 254,
       "role": "record",
-      "sha256": "82fca6b467c3059cf177dcb08c6dbdb37bb204b3ccd3aaf7206342d051a14138"
+      "sha256": "5e3604ba7efb2beb1505308bb9af7bbb771a9d0ee921c419327a118408c49be4"
     },
     "settings.schema.json": {
-      "bytes": 1348,
+      "bytes": 287,
       "role": "record",
-      "sha256": "0d0384591852c3bd3698b0ba1ff355849f20e9a25086de4c36abba9a698ebe38"
+      "sha256": "b71f7205a099e34faa524ac131ace54adfc0ae5946985545112033a5657c8e4b"
     },
-    "test/tools/usd/orbits_test.py": {
-      "bytes": 2384,
+    "test/score/review/test_the_owners_word_stands.py": {
+      "bytes": 218561,
       "role": "code",
-      "sha256": "9f0856327f281ddcdc200bd4bd2d91b74104e7609a0e3497280f98d08833efa7"
+      "sha256": "f97ea68e4f5c112810f8778daa0c8628931c1ad455de93c8acc84ceea99b0aab"
     }
   },
   "id": "planet_gravity",
@@ -42,8 +282,8 @@
   "picture": null,
   "picture_reason": "no world 1 output in the store pictures this algorithm",
   "provenance": {
-    "code": "1ad22f573ebf197244e07f19c58509cf54665d310cc91e8f9145d594fa8d4b1b",
-    "commit": "4547b8c549eccfad6c9df83965fb452bead83560",
+    "code": "b56e554f961528077f5494056080322fabcceb9b297fd24249bbded2423e5ed1",
+    "commit": "68416f6773c4eee1b0a3492b4d3b69cbbddfb414",
     "made_with": [
       {
         "by": "score",
@@ -65,7 +305,7 @@
       true
     ]
   },
-  "title": "A planet's gravity and orbits: each body's pull, and the orbits of Earth and the Moon the pulls make",
+  "title": "A planet's gravity: each body of the setting from the reference table of real bodies, its pull at its surface",
   "usd": null,
   "version": 1
 }

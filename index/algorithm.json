@@ -2,7 +2,7 @@
   "entries": [
     {
       "address": "algorithm/body_weight@1",
-      "digest": "20e0d538932834fbef2978093ed9fc00f43428ed4060d89e401b58669937a4d1",
+      "digest": "da68878c6e723f0e3033b62df589c3f3b7538e2b8d20f94d7dfc219a39d171d2",
       "picture_sha256": null,
       "score": null,
       "state": "draft",
@@ -62,7 +62,7 @@
     },
     {
       "address": "algorithm/drop@1",
-      "digest": "158a5ee31f1b9fca1c290b486798601784ec27cf2ccf9f80a055b02a28c074fc",
+      "digest": "ca46153cfc2eb3d3ac506b2e8b6f3ce4f531a7ca7579ce7d7dfeec3a8ffb55fa",
       "picture_sha256": null,
       "score": null,
       "state": "draft",
@@ -107,7 +107,7 @@
     },
     {
       "address": "algorithm/hinge_motor@1",
-      "digest": "677d2d50f423b9b86e810602e3219554526117f883c5e3c52290a7ef0c3f59d9",
+      "digest": "00c9e3e5b9434e1131bbb03d0b74ab126d39617ac0758332bcfcd96220e6142d",
       "picture_sha256": null,
       "score": null,
       "state": "draft",
@@ -181,6 +181,23 @@
       "version": 1
     },
     {
+      "address": "algorithm/newton_pile@1",
+      "digest": "102855561e444fbcde2d7593d3d4e8f50da2d13f21826d2a5b80434d99a70772",
+      "picture_sha256": null,
+      "score": null,
+      "state": "draft",
+      "tags": {
+        "needs": [
+          "a CUDA card (Warp): its 1 cm grid is about 55 s on an RTX 5080"
+        ],
+        "runnable": [
+          false
+        ]
+      },
+      "title": "A granular pile poured by Newton's implicit MPM (a drilling rig's cuttings), baked as effects-layer particles",
+      "version": 1
+    },
+    {
       "address": "algorithm/particle_effects@1",
       "digest": "fe7502e543b4adaebfa64d0e4b85371da57edd2b0af64a916d44381b8cb6fadc",
       "picture_sha256": "d9a2dd2af857dd53463aac0126ee24446056e795de3e269451698f120f752e84",
@@ -212,7 +229,7 @@
     },
     {
       "address": "algorithm/planet_gravity@1",
-      "digest": "ae43800f51ea4fda39638659df435f444fba0780fc7a3324d940202a1098916d",
+      "digest": "e3e31410c1ac25719a5787384f986dd9fb7e85469f51b94e30b50a491f746b22",
       "picture_sha256": null,
       "score": null,
       "state": "draft",
@@ -222,12 +239,12 @@
           true
         ]
       },
-      "title": "A planet's gravity and orbits: each body's pull, and the orbits of Earth and the Moon the pulls make",
+      "title": "A planet's gravity: each body of the setting from the reference table of real bodies, its pull at its surface",
       "version": 1
     },
     {
       "address": "algorithm/push@1",
-      "digest": "22192e16de9aabc16fe4934ea7fda37078ecb26c6486efbe10bfc43c7bd73e58",
+      "digest": "34148b800c93b8f624cc2a47c1d6c927fda0474de4b5acd280c17a3e4d28ed84",
       "picture_sha256": null,
       "score": null,
       "state": "draft",
@@ -257,9 +274,9 @@
     },
     {
       "address": "algorithm/settle@1",
-      "digest": "4c2464a85bad94f265b2445d805456951aad7b219525d22861e234ac9829078b",
+      "digest": "e257a6579c25822afbea6ecd75345c9b72ac0a823ad51815895979ce5b05646e",
       "picture_sha256": null,
-      "score": 25,
+      "score": null,
       "state": "draft",
       "tags": {
         "needs": [],
@@ -302,9 +319,9 @@
     },
     {
       "address": "algorithm/snap@1",
-      "digest": "2f80572498d4d5a3700ee38a4793c26b4aa45fedc54c72d299cb8cbb89133615",
+      "digest": "0e89279418a1e78850a1d6d309d97dfb9c1a3ce37308d2313952722f27537821",
       "picture_sha256": null,
-      "score": 25,
+      "score": null,
       "state": "draft",
       "tags": {
         "needs": [],
@@ -348,6 +365,25 @@
       },
       "title": "Surface functions: ProcFunc material recipes and wear (needs Blender and ProcFunc)",
       "version": 1
+    },
+    {
+      "address": "algorithm/surface_recipes@2",
+      "digest": "abab867eef9f1c71b6a41b2ae0cec6776b940e435d39b13249be9a805d6d9afc",
+      "picture_sha256": null,
+      "score": null,
+      "state": "draft",
+      "tags": {
+        "needs": [
+          "blender",
+          "procfunc",
+          "infinigen"
+        ],
+        "runnable": [
+          false
+        ]
+      },
+      "title": "Surface functions: ProcFunc material recipes and wear (needs Blender and ProcFunc)",
+      "version": 2
     },
     {
       "address": "algorithm/terrain_landforms@1",
