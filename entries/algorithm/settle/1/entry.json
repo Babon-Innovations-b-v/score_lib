@@ -2,9 +2,9 @@
   "address": "algorithm/settle@1",
   "files": {
     "code.json": {
-      "bytes": 12327,
+      "bytes": 12875,
       "role": "record",
-      "sha256": "0a98383635dc57dfd34b11283397ca4a890b0fc549797ecc8d187d0bfc6dd56c"
+      "sha256": "9822bcd510aa08fd028658331da9f289bc2fb91ff4a87ef44ee01b1da4da9bc3"
     },
     "code/score/__init__.py": {
       "bytes": 0,
@@ -47,9 +47,9 @@
       "sha256": "049e0db70eb1c765d09dd9649a209fb980d74db813657f3e20b89b1c4e4102a1"
     },
     "code/score/review/concepts.py": {
-      "bytes": 60861,
+      "bytes": 61489,
       "role": "code",
-      "sha256": "c914cfc078f19618349ea3586d6095bf7ea8c4712a9a8a26773379e556176f70"
+      "sha256": "7d0b396ceab7f54e83b7bf3b64a61f426f73ecb9434b2efba0dd0fd14f8d74d9"
     },
     "code/score/review/creator_plans.py": {
       "bytes": 4714,
@@ -57,24 +57,24 @@
       "sha256": "e609fb5bddf888fa7abfefb958cb56042214f027631b84f9a2d3d836e2cacd73"
     },
     "code/score/review/discuss.py": {
-      "bytes": 8061,
+      "bytes": 8069,
       "role": "code",
-      "sha256": "f57d87722d38e263d4bcdd0ca57fcde296ccca5a218098348b181490b65dd668"
+      "sha256": "66c80feda753cf41ebfad37ef195c084389e6374a19bb77b7a12b721ac42cbb5"
     },
     "code/score/review/environment_concept.py": {
-      "bytes": 21317,
+      "bytes": 21341,
       "role": "code",
-      "sha256": "1a8c5f5990963a9d9cb7f51cbd1b411dc8aadfcc30662764c919b7d017867f27"
+      "sha256": "bcd2ab7c36963c5e016d8a26a7f2f09a3becc41b8dd49e04db1f390c80e4324c"
     },
     "code/score/review/environment_plan.py": {
-      "bytes": 35004,
+      "bytes": 35012,
       "role": "code",
-      "sha256": "229410d611386bc4de204e3dfe39d0252bf7a8dc6cdc36ebf0c049f52a304916"
+      "sha256": "10189b2e9e4a537eb5d82efa2d4ec3b9b132bdc613fd27cb42497033748252ed"
     },
     "code/score/review/holders/__init__.py": {
-      "bytes": 64599,
+      "bytes": 87721,
       "role": "code",
-      "sha256": "1ccf70a4671a97f1e62c6db65a1f484f9b1baa0b13deada533782656d192653c"
+      "sha256": "3d0b2f0d2c0b177aa509700e7636772355193bf43c58ab72fbdaed9b92817890"
     },
     "code/score/review/overhead.py": {
       "bytes": 12280,
@@ -82,34 +82,44 @@
       "sha256": "900f8d10ddf11e59554756cb846ff531f4e824ba236816ce6aae61d94009b17a"
     },
     "code/score/review/plan_checks.py": {
-      "bytes": 38164,
+      "bytes": 45318,
       "role": "code",
-      "sha256": "21ad7a4de389aa4805226df931fc35d588230354b0e6823596df27be531b42f9"
+      "sha256": "44b3237f928ca64de0f1962755e2a84094d12879299f495d1adbe89b852e560b"
     },
     "code/score/review/plan_drawing.py": {
-      "bytes": 10203,
+      "bytes": 11659,
       "role": "code",
-      "sha256": "25092305ef975afef8160227efe299975441770a5e1482647aab9feb62ffaa48"
+      "sha256": "f1141a7a7c867792cf717d8544acffa1eae73d8f88c84ea72cd905649206e79e"
     },
     "code/score/review/plan_fixes.py": {
-      "bytes": 23010,
+      "bytes": 30041,
       "role": "code",
-      "sha256": "0b96b7898e4c5e8b7b46292b83720b52d3c18c99af0c8a62599749f505da518b"
+      "sha256": "4c08cb6622263a9314b88303d0bcda86c7ca31a70c2edb218ef573d03fdccc51"
     },
     "code/score/review/plan_writing.py": {
-      "bytes": 58365,
+      "bytes": 74192,
       "role": "code",
-      "sha256": "5dbac7538d158062a90b31985f2be0f30fd27db0d32eeb45208ac829306b3ddc"
+      "sha256": "060b2984ec9c663355737423ebb528229cb93e4cbbc53e70b1d069f811383daf"
     },
     "code/score/review/plans.py": {
-      "bytes": 59799,
+      "bytes": 61144,
       "role": "code",
-      "sha256": "e2195b96a32eb652a2c6f3570f5a5cd1b544cdd3ce0c2418c72754c1760d6ed9"
+      "sha256": "2005c486d0fd0d79d6e5fd0aac4da726f06601a8b5a081da689826dc8536f2ff"
     },
     "code/score/review/reading.py": {
-      "bytes": 57751,
+      "bytes": 57783,
       "role": "code",
-      "sha256": "e4bc5ef7fafa3724eefb46b6f3246ba82fc363e9af8d12b98861629ba8717724"
+      "sha256": "475b487f45a809669680dea082f101f4624f4dd5b1da4b7264e522a11980b78d"
+    },
+    "code/score/review/relation_solver/__init__.py": {
+      "bytes": 6971,
+      "role": "code",
+      "sha256": "19fb45bc33297040883c98774a7fd5c1cde14d3c40261f3fef7fecb7446830b1"
+    },
+    "code/score/review/relation_solver/_solver.py": {
+      "bytes": 9228,
+      "role": "code",
+      "sha256": "dc7ffe82acbbf501e2843682c673ee0ab3f7082268ed0bbead61ab9beca0ca15"
     },
     "code/score/review/scene_sky.py": {
       "bytes": 2798,
@@ -127,14 +137,14 @@
       "sha256": "9ada8b6e1c12e6ab7afb91694ea7cfe7070eee5efcacb4ca535a70c74c141a19"
     },
     "code/score/stages/__init__.py": {
-      "bytes": 78344,
+      "bytes": 80931,
       "role": "code",
-      "sha256": "9f369636c5684ec52c5f055d8fef906ead0a2829e8159555f3ad70bd39fbc5a8"
+      "sha256": "a752624e866ab2189bfd9780e96cea6884592c55cb14d9416d4869a6e12721ff"
     },
     "code/score/stages/assembly/__init__.py": {
-      "bytes": 30206,
+      "bytes": 30669,
       "role": "code",
-      "sha256": "916193eaf40b2a2fa8181250cff4f29d72649d45eb244acddfe1c68ea4559af7"
+      "sha256": "2de93df23e18aeebf8ec006a2c59e6e311743d0cd4afd8262110067b4c8017e7"
     },
     "code/score/stages/assembly/baked.py": {
       "bytes": 9407,
@@ -142,9 +152,9 @@
       "sha256": "39939deb9e6aea1ff7783ce697a67f55679288758349fc136ba3d6274784e895"
     },
     "code/score/stages/assembly/fitting.py": {
-      "bytes": 67326,
+      "bytes": 85638,
       "role": "code",
-      "sha256": "4fa782a8bd3e4a1267c25bf8316f20e788be294e7f40c174ed72b64e7be22046"
+      "sha256": "9fb573028a44b34d5f7323d709c939097675723efb2b23a00e185b2cfb9a8f0a"
     },
     "code/score/stages/assembly/grounded.py": {
       "bytes": 3938,
@@ -177,14 +187,24 @@
       "sha256": "f0936acdb096654b9b5c69ef1365a0e7922b7476ecf8e85d3f5d619aa8f2574a"
     },
     "code/score/stages/cast/__init__.py": {
-      "bytes": 24945,
+      "bytes": 33307,
       "role": "code",
-      "sha256": "348f0d68bf2710cb9e6b385948936f3ee2025ed77b18d94d2169f5f7f0b308ed"
+      "sha256": "32e98ff1f74e8e2caeb74b9d8f43603d2cfe3536b3de37577dc2a0871eef2e18"
+    },
+    "code/score/stages/cast/layer.py": {
+      "bytes": 12169,
+      "role": "code",
+      "sha256": "44ba1b72866a7693bd47e1f0312152ba2f8a9c7e0c43124462b6a55292eb36aa"
     },
     "code/score/stages/cast/measure.py": {
-      "bytes": 9568,
+      "bytes": 11622,
       "role": "code",
-      "sha256": "a5ecb29d7b7b0c817de5dc4230cb405e965bd1b9d6ea4c12f3b6dacb60a5f23f"
+      "sha256": "738720c5a1fd5cd5d15640b656cdc91abd7a65c10fc5d76eab7429ce5257bb1d"
+    },
+    "code/score/stages/cast/spread.py": {
+      "bytes": 8872,
+      "role": "code",
+      "sha256": "525b14ffd16cb52bda97b72ab1b20b1fac2f070a5678863def6428b272049067"
     },
     "code/score/stages/complete/__init__.py": {
       "bytes": 5971,
@@ -222,9 +242,9 @@
       "sha256": "a4cbcfcddafb4fd29284b76cff8f6d862b08b398b3f6678778a5bf408f2489ee"
     },
     "code/score/stages/design_layers.py": {
-      "bytes": 5111,
+      "bytes": 5400,
       "role": "code",
-      "sha256": "ab233c75a0c04ef31ed0be21013cb0631410ef26634912c2fbcba58508dd112c"
+      "sha256": "0b31c68d33bbd4fe2fea4c09ffe1f681e3b5b7c557f6906f0f5fb6e2f9efe235"
     },
     "code/score/stages/earth_seed/__init__.py": {
       "bytes": 12112,
@@ -232,9 +252,9 @@
       "sha256": "4ff497fe5ad095527ce7fa7c64ad9a8e0e18571ffd430b08d836fe31bc3f4243"
     },
     "code/score/stages/earth_seed/design_shell.py": {
-      "bytes": 47023,
+      "bytes": 49797,
       "role": "code",
-      "sha256": "29fff1c52df0197f182bc0ad405d7de597b80d28ba05d6932ac3f168c57b0401"
+      "sha256": "6ae1b20d9a3e654175c922b5ce5598e364b21c75907096b1752692c4543c52b0"
     },
     "code/score/stages/layer_base.py": {
       "bytes": 3881,
@@ -267,9 +287,9 @@
       "sha256": "f76bfffc840d51bd2bcc39106ac0ac140cdd6dd9c2b224dd4d4780ae92eb7441"
     },
     "code/score/stages/motion/__init__.py": {
-      "bytes": 39439,
+      "bytes": 47405,
       "role": "code",
-      "sha256": "5194eab186023cff544bebd91cbd9e26563c33729285457f253093ef8af3c856"
+      "sha256": "8a0f0b885bc318501a23d877956ea51570eec1399e57bed99a91f87e073b64ad"
     },
     "code/score/stages/motion/check.py": {
       "bytes": 11720,
@@ -277,9 +297,9 @@
       "sha256": "3af6cf57866b05fcd9bd7efcf5d941df1573da5faaef200ae0fc204b18571c49"
     },
     "code/score/stages/motion/from_design.py": {
-      "bytes": 8181,
+      "bytes": 18576,
       "role": "code",
-      "sha256": "b7fba33bdb2f09ee3e13d09c3d4a610cb1de83a79dcd9c73eb2b5dcfdcfb9f3f"
+      "sha256": "297c4f0ce7c315cbc6f8228a10ab6dcfec0dd23a7668fa949e724a450939d9ed"
     },
     "code/score/stages/motion/space.py": {
       "bytes": 12849,
@@ -312,19 +332,19 @@
       "sha256": "8e989d73b07f2fb1efb40e98d52627300b832422ab8b0aff36d1324720198bd5"
     },
     "code/score/stages/people_bodies/made_clips.py": {
-      "bytes": 3426,
+      "bytes": 3444,
       "role": "code",
-      "sha256": "e940ffb2aff96dc9a631f3ce3ec72002337402c3e03da7325527475db0bd032b"
+      "sha256": "3fa645881bdede5561573d104698a92fa008272fb7454943813c7e6cd6befc07"
     },
     "code/score/stages/people_clothes.py": {
-      "bytes": 4917,
+      "bytes": 6499,
       "role": "code",
-      "sha256": "96cdfc56b9b6361e933cf461bce8b3d9885e6a45a8246e49c7e2c479a9c1e1de"
+      "sha256": "530c3a454471b25557f746819aff9dc2d9171a6f43795018c10ea14737301cfd"
     },
     "code/score/stages/people_rows.py": {
-      "bytes": 29333,
+      "bytes": 32328,
       "role": "code",
-      "sha256": "486105fed790b7c3e7c84f914f2278a5b85b8adce9c34aa30913633de1e8c08a"
+      "sha256": "266c68f896c1481812286ee8aa56f3715faf30cfc79af6f0ebc96b92467fe0b7"
     },
     "code/score/stages/props/__init__.py": {
       "bytes": 4295,
@@ -357,9 +377,14 @@
       "sha256": "c94ab113c99042c2fe7ed92533db79fac68140d8bd94692adaacc5c88c3dfa4a"
     },
     "code/score/stages/row_kinds.py": {
-      "bytes": 4900,
+      "bytes": 7710,
       "role": "code",
-      "sha256": "4e27183053d34a6e3224e295f372984f79abb881985fc25dd9308633973c4f12"
+      "sha256": "359367ae3a3855038ae4cf64f17d127fe03339443664d9d4ae8e91a837ea0824"
+    },
+    "code/score/stages/scene_clips/__init__.py": {
+      "bytes": 25600,
+      "role": "code",
+      "sha256": "d10abf490d98b240c486d4b36b9cf06fa7efa1eda9a80731534ced652332147a"
     },
     "code/score/stages/scene_record/__init__.py": {
       "bytes": 1520,
@@ -377,24 +402,24 @@
       "sha256": "852f8702899ea8c6b85618391865435f96cf7837e9b19ae2932168992427bbbb"
     },
     "code/score/stages/scene_record/plan.py": {
-      "bytes": 27682,
+      "bytes": 39633,
       "role": "code",
-      "sha256": "f92aa196b03d39306c824dc9f770cde24f2961afb0e8db21778d61870c26ad33"
+      "sha256": "b991613b80b40322177c13ff58faa1b8a6d136838b9f57c78ac8132c0bba32e8"
     },
     "code/score/stages/scene_record/writer.py": {
-      "bytes": 68482,
+      "bytes": 76641,
       "role": "code",
-      "sha256": "2b184e04a4ced1e737db52d72b4e6e328676c92a2f64c7bb45b15659e74c4bb4"
+      "sha256": "b735864124b580630282d031d7ee027ca8b60a2a71c4b13300fae064e8694dc5"
     },
     "code/score/stages/settling/__init__.py": {
-      "bytes": 29874,
+      "bytes": 32410,
       "role": "code",
-      "sha256": "d34f0aa78e74a2265a739c43cc4756b243847917ccdc45c3680b75f498e52187"
+      "sha256": "839f1bb02a20cbc2f730a27be480d12936a51bd084a827599ddd74bd592d60c2"
     },
     "code/score/stages/settling/held.py": {
-      "bytes": 11226,
+      "bytes": 11970,
       "role": "code",
-      "sha256": "a725b403b94314792e97b26136010ab57d5c80260d8d246d9aac939b85988b2f"
+      "sha256": "e952f35a1d444f6f7302549b41518e4b080613651b504f4810e88b4989e5be1c"
     },
     "code/score/stages/shapes_first/__init__.py": {
       "bytes": 7716,
@@ -537,9 +562,9 @@
       "sha256": "367d612dc15d667e78b8a877e8d3a90c9c9ed4c598bf053f2b75470e635d9bb0"
     },
     "code/tools/usd/motion_layer.py": {
-      "bytes": 21403,
+      "bytes": 21659,
       "role": "code",
-      "sha256": "79c0ae6f91224faa87da07643294bb37a20ba39686282685714a9100915263ba"
+      "sha256": "e1c9a0c75c25a134fee054f7afc973c45d1cdb811b92b871a9efc7f88bde1510"
     },
     "code/tools/usd/pick_lock.py": {
       "bytes": 2588,
@@ -619,12 +644,12 @@
     "settings.schema.json": {
       "bytes": 1821,
       "role": "record",
-      "sha256": "abf786728e98b54b594ef0bba8306af98ef104ae380480d7195b2b7f9f0e0680"
+      "sha256": "1b6b92177c6d1d7b6b11d6afcda51d30012099304f27e4bfa0f04eb7d8a0671b"
     },
     "test/score/stages/settling/test_the_settle_layer_lays_and_its_gate_fails_a_broken_drop.py": {
-      "bytes": 28841,
+      "bytes": 30714,
       "role": "code",
-      "sha256": "d7853790affa120ec57e9f22f108cd1b94ab04af05bce50c6b36ed9e5fadc9e3"
+      "sha256": "df7f47a0fa2cfb8a5d2970974eb8ecf6701f75afa2b703234cc5463bc8048148"
     },
     "test/tools/usd/test_a_settled_pose_is_written_back_within_its_limits.py": {
       "bytes": 32097,
@@ -642,8 +667,8 @@
   "picture": null,
   "picture_reason": "no world 1 output in the store pictures this algorithm",
   "provenance": {
-    "code": "7a69ac3b663b162262b432599ca7778efa322fd06abad063f51687d12619cd54",
-    "commit": "68416f6773c4eee1b0a3492b4d3b69cbbddfb414",
+    "code": "c11eeafe3eaddbff4fe931530bc99024fc565fdf7e97b617b19a69f2a7c1d2ba",
+    "commit": "ddbd320db40ea0ec307007bbca3c6ed6656d4c7e",
     "made_with": [
       {
         "by": "score",
