@@ -128,6 +128,25 @@ def run_in_process(world, out, place):
                             stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
 
 
+def test_a_handover_after_another_writers_push_lands_on_top_of_it(world, tmp_path):
+    """Break: pushing without rebasing onto origin first (env1, 2026-11-03: every place's handover refused as not a
+    fast-forward after take-in pushed from another checkout)."""
+    origin = with_remote(world)
+    other = world.base / "other"
+    subprocess.run(["git", "clone", "-q", "-b", "main", str(origin), str(other)], check=True)
+    git(other, "config", "user.name", "test")
+    git(other, "config", "user.email", "test@example.org")
+    (other / "entries").mkdir(exist_ok=True)
+    (other / "entries" / "elsewhere.txt").write_text("another writer's entry\n")
+    git(other, "add", "entries")
+    git(other, "commit", "-q", "-m", "take-in: elsewhere")
+    git(other, "push", "-q", "origin", "main")
+    report = handed(world, tmp_path / "out")
+    assert report["saved"]["pushed"], report["saved"]
+    assert report["saved"]["committed"] == git(origin, "rev-parse", "main") == git(world.root, "rev-parse", "HEAD")
+    assert (world.root / "entries" / "elsewhere.txt").is_file()
+
+
 def test_two_handovers_side_by_side_both_land(world, tmp_path):
     with_remote(world)
     running = [run_in_process(world, tmp_path / "room", "room"), run_in_process(world, tmp_path / "world", None)]
