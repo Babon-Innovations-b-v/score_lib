@@ -9,7 +9,7 @@ preset = ["data/library/materials.json", "data/definitions/place.json", "data/li
 stage = "surfaces-bake"
 contract = []
 needs = ["blender", "procfunc", "infinigen"]
-tests = ["tools/props/library/library_test.py", "tools/props/library/paint_test.py"]
+tests = ["tools/props/library/test_pieces_keep_true_shape_and_library_paint.py"]
 picture = []
 requires = ["numpy"]
 

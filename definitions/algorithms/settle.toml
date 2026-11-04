@@ -11,6 +11,6 @@ stage = "settle"
 contract = ["settle-layer", 1]
 needs = []
 paid = ["the drop: Blender on a cloud CPU machine"]
-tests = ["score/stages/settling/settling_test.py", "tools/usd/settle_test.py", "tools/usd/resting_test.py"]
+tests = ["score/stages/settling/test_the_settle_layer_lays_and_its_gate_fails_a_broken_drop.py", "tools/usd/test_a_settled_pose_is_written_back_within_its_limits.py", "tools/usd/test_floating_sunk_and_tipping_objects_are_told_apart.py"]
 picture = []
 requires = ["numpy", "usd-core", "trimesh", "python-fcl"]
