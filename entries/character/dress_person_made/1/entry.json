@@ -1,0 +1,110 @@
+{
+  "address": "character/dress_person_made@1",
+  "files": {
+    "body.glb": {
+      "bytes": 26217100,
+      "role": "gltf",
+      "sha256": "6e82e6ac97ba5940c607f753a5f0a175852ba2c5709471450449e862f951af77"
+    },
+    "character.usdc": {
+      "bytes": 5532444,
+      "role": "usd",
+      "sha256": "7e6ad46cd513fa9f9f02bd4478da14f67b46c1a25b4b1cdef2532826d7e16760"
+    },
+    "dress.json": {
+      "bytes": 7275,
+      "role": "record",
+      "sha256": "414b606845ee28dbd1afc8dfbe96016fa29d344995154c8b57796ddba4296226"
+    },
+    "look.json": {
+      "bytes": 271,
+      "role": "record",
+      "sha256": "8e16d34756ee4cf49934e77e93afc87968c2bd96c1a5a59167382a09d97b807b"
+    },
+    "textures/body_0.png": {
+      "bytes": 1066310,
+      "role": "texture",
+      "sha256": "f69e8c3cf127f931059a1e0bcd66b6d6b138fcab12eef8833b4b7e6381773bcd"
+    },
+    "textures/body_1.png": {
+      "bytes": 719828,
+      "role": "texture",
+      "sha256": "c07b62ebeedde92f89ef8001745f29f53b3ea74a29cd23a5283f95136bdef059"
+    },
+    "textures/body_2.png": {
+      "bytes": 17404078,
+      "role": "texture",
+      "sha256": "7775d162cfac5262eb3660008ab9373742c9509083c3e88b5105de34622c9f6f"
+    }
+  },
+  "id": "dress_person_made",
+  "kind": "character",
+  "picture": null,
+  "picture_reason": "no accepted people-take close-up of this look",
+  "provenance": {
+    "accept": {
+      "at": "2026-11-07T10:57:58.023295+00:00",
+      "by": "runner"
+    },
+    "code": "f8c5f4e1500cfca887f7ed2bd2a83718de8564a6a7db951a4293d82a4f699044",
+    "commit": "b72dbca408ccd6ceddf6a6e78f2cf35e47bb3faf",
+    "look": "person-made",
+    "made_with": [
+      {
+        "by": "gemini_31_pro",
+        "what": "finishes listed and named (surface stage)"
+      },
+      {
+        "by": "nano_banana_pro",
+        "what": "finish maps (surface stage)"
+      },
+      {
+        "by": "pixal3d",
+        "what": "the body's shape"
+      },
+      {
+        "by": "score",
+        "what": "made by score"
+      },
+      {
+        "by": "segvigen",
+        "what": "the finish map laid on the shape (surface stage)"
+      },
+      {
+        "by": "soma_x",
+        "what": "the skeleton fitted inside the shape and its skin weights"
+      }
+    ],
+    "models": [],
+    "node": "people-dress-person-made",
+    "output": "9ee600139b100fbc6288d79ca025e71dcd6ac04b2d27a1981299e6339f05b8f3",
+    "place": null,
+    "record_key": "6aea368ee97d40b83cec3f23d5f20c662bf6cbffed9a760b17c12a36dbb1a4b8",
+    "route": "4e037de4b983d2bb96cdfcbf1a534fb8d29ddd2024ba927ea17398087afed3ba",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "character": [
+      "dress"
+    ],
+    "engine": [
+      "usd"
+    ]
+  },
+  "title": "Person made",
+  "usd": {
+    "default_prim": "/Character",
+    "layer": "characters",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/character/dress_person_made/1/character.usdc",
+    "root": "character.usdc",
+    "time_codes_per_second": 30.0,
+    "up_axis": "Y",
+    "use": "payload"
+  },
+  "version": 1
+}

@@ -1,0 +1,145 @@
+{
+  "address": "character/body_pilot_made@1",
+  "files": {
+    "body.glb": {
+      "bytes": 4556080,
+      "role": "gltf",
+      "sha256": "c719483158c17c24c25edd2a9f242deb7d1227a168d1be52af58f4411ed9b9a1"
+    },
+    "character.usdc": {
+      "bytes": 3994432,
+      "role": "usd",
+      "sha256": "0a2471046beaf69babac75c4b15e0d0887a974ed837e6091a20aace28503d759"
+    },
+    "checks/bodycloth.json": {
+      "bytes": 4475,
+      "role": "record",
+      "sha256": "c961049c7ef1989e7c6644ff458a6cef6351ce72e039b36b71c816fc65efc361"
+    },
+    "checks/bodycloth_plain.json": {
+      "bytes": 4475,
+      "role": "record",
+      "sha256": "cc01607553c187c1901dd032b73319780df36e35bda84ffe80f79922c956ca73"
+    },
+    "checks/build.json": {
+      "bytes": 4200,
+      "role": "record",
+      "sha256": "88f8547d404ae1631173f87a29d7b5053f5bf165fca48c7ec8a4ba0f3ed3391f"
+    },
+    "checks/joins.json": {
+      "bytes": 1085,
+      "role": "record",
+      "sha256": "bf43c9de138ea8d559cb7530c7cb89dc0b18bdbd97f11cd0c43bb03a2b9090a4"
+    },
+    "checks/likeness.json": {
+      "bytes": 145,
+      "role": "record",
+      "sha256": "447b50e82e822b031cf134cb313bd1d4611351c985b697841a1b487b7bd04593"
+    },
+    "checks/outline.json": {
+      "bytes": 611,
+      "role": "record",
+      "sha256": "4b6d8689bb3b981c5fafe02dd48f7eb65f5b9520c0697a31c3d6280e708a6619"
+    },
+    "checks/parts.json": {
+      "bytes": 1037,
+      "role": "record",
+      "sha256": "e128f063ced0f6bcd6801677e90a255fc23346b6b00bcf36444e39044afcfc91"
+    },
+    "checks/pokes.json": {
+      "bytes": 1439,
+      "role": "record",
+      "sha256": "f3748754b44ddeffba4b99a4c01b539e3a1a1f2b0b050819d3b48f58dfe12151"
+    },
+    "checks/rig.json": {
+      "bytes": 4293,
+      "role": "record",
+      "sha256": "e6a0e6c6943ddecc85e7a1f39e3daf58fd0b3fa8b02436242ed2a3e00056a0b7"
+    },
+    "checks/route.json": {
+      "bytes": 433,
+      "role": "record",
+      "sha256": "20f1745feb2a57522b63404dceb87969cb99bb461cdc6cdd3b5559fbf16dca94"
+    },
+    "checks/shell.json": {
+      "bytes": 2837,
+      "role": "record",
+      "sha256": "de997788149aea8d2895f2a7ddc05643faa9ab9b68233ea112a1fc2604da9232"
+    },
+    "look.json": {
+      "bytes": 267,
+      "role": "record",
+      "sha256": "0d0c321c00177d610fdf91523d095daffd52dbeddba8352ce2f5235b67e57be6"
+    }
+  },
+  "id": "body_pilot_made",
+  "kind": "character",
+  "picture": null,
+  "picture_reason": "no accepted people-take close-up of this look",
+  "provenance": {
+    "accept": {
+      "at": "2026-11-07T10:15:52.421769+00:00",
+      "by": "runner"
+    },
+    "code": "ddda8a98604d79ee125edd93d6fe563d99e0448c744a9f4fb6af1f23e68f7af0",
+    "commit": "b72dbca408ccd6ceddf6a6e78f2cf35e47bb3faf",
+    "look": "pilot-made",
+    "made_with": [
+      {
+        "by": "gemini_31_pro",
+        "what": "finishes listed and named (surface stage)"
+      },
+      {
+        "by": "nano_banana_pro",
+        "what": "finish maps (surface stage)"
+      },
+      {
+        "by": "pixal3d",
+        "what": "the body's shape"
+      },
+      {
+        "by": "score",
+        "what": "made by score"
+      },
+      {
+        "by": "segvigen",
+        "what": "the finish map laid on the shape (surface stage)"
+      },
+      {
+        "by": "soma_x",
+        "what": "the skeleton fitted inside the shape and its skin weights"
+      }
+    ],
+    "models": [],
+    "node": "people-body-pilot-made",
+    "output": "167b29e4daec8ebb01922fc613750ce3b0dfe6f4c33a71f3d6e02de2c0f21d31",
+    "place": null,
+    "record_key": "13dd5391f81d68b07b712a01203c078bc70e9b76a5cc8858daae6d27a18e4723",
+    "route": "4e037de4b983d2bb96cdfcbf1a534fb8d29ddd2024ba927ea17398087afed3ba",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "character": [
+      "body"
+    ],
+    "engine": [
+      "usd"
+    ]
+  },
+  "title": "Pilot made",
+  "usd": {
+    "default_prim": "/Character",
+    "layer": "characters",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/character/body_pilot_made/1/character.usdc",
+    "root": "character.usdc",
+    "time_codes_per_second": 30.0,
+    "up_axis": "Y",
+    "use": "payload"
+  },
+  "version": 1
+}

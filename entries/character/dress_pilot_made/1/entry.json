@@ -1,0 +1,110 @@
+{
+  "address": "character/dress_pilot_made@1",
+  "files": {
+    "body.glb": {
+      "bytes": 29009936,
+      "role": "gltf",
+      "sha256": "147aeb38aa02a7a1ea014a242248f4746515daf710a8cdaf1d6eea9a89110a81"
+    },
+    "character.usdc": {
+      "bytes": 5805072,
+      "role": "usd",
+      "sha256": "da115c351303c11ead0349c3a39dd355f3e1d51fb383c915c13270276722e2db"
+    },
+    "dress.json": {
+      "bytes": 5520,
+      "role": "record",
+      "sha256": "da0e559c8f24869a7a4902d37a0b8cc05ebd7db09773423a9a6a9374371f4ff4"
+    },
+    "look.json": {
+      "bytes": 267,
+      "role": "record",
+      "sha256": "0d0c321c00177d610fdf91523d095daffd52dbeddba8352ce2f5235b67e57be6"
+    },
+    "textures/body_0.png": {
+      "bytes": 1385380,
+      "role": "texture",
+      "sha256": "a6725b480d7529a10432a244aff0362727421a9f0ad912812c94ad00faf482be"
+    },
+    "textures/body_1.png": {
+      "bytes": 684953,
+      "role": "texture",
+      "sha256": "f0e1e5075840e4c5496f15963cc0102f830f8bca7e1e4661d9e5c937743aaa66"
+    },
+    "textures/body_2.png": {
+      "bytes": 19794813,
+      "role": "texture",
+      "sha256": "3e09ea5a3adca3db24cc68bf63bd0ed0437493889c97ec0ec0c7c44240c5dc0e"
+    }
+  },
+  "id": "dress_pilot_made",
+  "kind": "character",
+  "picture": null,
+  "picture_reason": "no accepted people-take close-up of this look",
+  "provenance": {
+    "accept": {
+      "at": "2026-11-07T10:56:19.831918+00:00",
+      "by": "runner"
+    },
+    "code": "f8c5f4e1500cfca887f7ed2bd2a83718de8564a6a7db951a4293d82a4f699044",
+    "commit": "b72dbca408ccd6ceddf6a6e78f2cf35e47bb3faf",
+    "look": "pilot-made",
+    "made_with": [
+      {
+        "by": "gemini_31_pro",
+        "what": "finishes listed and named (surface stage)"
+      },
+      {
+        "by": "nano_banana_pro",
+        "what": "finish maps (surface stage)"
+      },
+      {
+        "by": "pixal3d",
+        "what": "the body's shape"
+      },
+      {
+        "by": "score",
+        "what": "made by score"
+      },
+      {
+        "by": "segvigen",
+        "what": "the finish map laid on the shape (surface stage)"
+      },
+      {
+        "by": "soma_x",
+        "what": "the skeleton fitted inside the shape and its skin weights"
+      }
+    ],
+    "models": [],
+    "node": "people-dress-pilot-made",
+    "output": "c4ea1173317a81e8cdad4ce24dddba945aaf0c018d89173cdd405f427a1e3e4e",
+    "place": null,
+    "record_key": "e1940b8cc58cbbddb69adcaba764a707b2d8a3c858c33a86b4280cb3d1e5814c",
+    "route": "4e037de4b983d2bb96cdfcbf1a534fb8d29ddd2024ba927ea17398087afed3ba",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "character": [
+      "dress"
+    ],
+    "engine": [
+      "usd"
+    ]
+  },
+  "title": "Pilot made",
+  "usd": {
+    "default_prim": "/Character",
+    "layer": "characters",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/character/dress_pilot_made/1/character.usdc",
+    "root": "character.usdc",
+    "time_codes_per_second": 30.0,
+    "up_axis": "Y",
+    "use": "payload"
+  },
+  "version": 1
+}

@@ -1,0 +1,130 @@
+{
+  "address": "character/body_worker_jumpsuit_made@1",
+  "files": {
+    "body.glb": {
+      "bytes": 949340,
+      "role": "gltf",
+      "sha256": "b3c3d2c08e9ae561792bb80b6f0cab57a247d4cc93424e427643e1b500edda5c"
+    },
+    "character.usdc": {
+      "bytes": 801913,
+      "role": "usd",
+      "sha256": "eca5fc1676ac69b953c1e7d1a3562b64de4f9acae79d551da2ba74cafb5a1fc4"
+    },
+    "checks/build.json": {
+      "bytes": 4096,
+      "role": "record",
+      "sha256": "01873b5ae3405ecbfb7802a993fab9191f00d2d2c0dc44bcaf5a8bbff1f07d4d"
+    },
+    "checks/joins.json": {
+      "bytes": 1097,
+      "role": "record",
+      "sha256": "92f742f11cd213eaf0cfb82a0958371e847da3fe132eff24d43d0a85c130f431"
+    },
+    "checks/likeness.json": {
+      "bytes": 147,
+      "role": "record",
+      "sha256": "ea7a37f9983936d5827bf053f571813a03768a835e1b926e506530e9f5015365"
+    },
+    "checks/parts.json": {
+      "bytes": 1879,
+      "role": "record",
+      "sha256": "1d229ef4cfffbbd2544d63d795618fedb44754fd6066b55e43200bc7cdf8a673"
+    },
+    "checks/rig.json": {
+      "bytes": 4284,
+      "role": "record",
+      "sha256": "ff34822a67e2be0f0f815f1ab9ebb3c8adc7a960c2252d145ed487e99d012eba"
+    },
+    "checks/shell.json": {
+      "bytes": 4185,
+      "role": "record",
+      "sha256": "19692814ce4362a2a677097543ca100916fd0c4872a025b8b7ffe4053ce7b892"
+    },
+    "look.json": {
+      "bytes": 315,
+      "role": "record",
+      "sha256": "056019a8ddcfe122955abee66c9162a1742199f361b564c21d3fdd3cfb59a2cf"
+    },
+    "textures/worker_jumpsuit_0.png": {
+      "bytes": 1015,
+      "role": "texture",
+      "sha256": "e08ba7ecf9efcfe9dc664d5011abc746450d59a85c3522c447aa7522e27583ae"
+    },
+    "textures/worker_jumpsuit_1.png": {
+      "bytes": 1015,
+      "role": "texture",
+      "sha256": "e08ba7ecf9efcfe9dc664d5011abc746450d59a85c3522c447aa7522e27583ae"
+    }
+  },
+  "id": "body_worker_jumpsuit_made",
+  "kind": "character",
+  "picture": null,
+  "picture_reason": "no accepted people-take close-up of this look",
+  "provenance": {
+    "accept": {
+      "at": "2026-11-07T09:57:46.228524+00:00",
+      "by": "runner"
+    },
+    "code": "c597fe577664f9067c6189cf47395fa2c2bf9ccd44ba3d8c83bf1f9d3cd4ae1b",
+    "commit": "b72dbca408ccd6ceddf6a6e78f2cf35e47bb3faf",
+    "look": "worker_jumpsuit-made",
+    "made_with": [
+      {
+        "by": "gemini_31_pro",
+        "what": "finishes listed and named (surface stage)"
+      },
+      {
+        "by": "nano_banana_pro",
+        "what": "finish maps (surface stage)"
+      },
+      {
+        "by": "pixal3d",
+        "what": "the body's shape"
+      },
+      {
+        "by": "score",
+        "what": "made by score"
+      },
+      {
+        "by": "segvigen",
+        "what": "the finish map laid on the shape (surface stage)"
+      },
+      {
+        "by": "soma_x",
+        "what": "the skeleton fitted inside the shape and its skin weights"
+      }
+    ],
+    "models": [],
+    "node": "people-body-worker_jumpsuit-made",
+    "output": "1be1ae05a220e41e054919784f7755587e627179f4f3712617fc22a8561fb65e",
+    "place": null,
+    "record_key": "b09e4b22681c843c8a05244a3e12f50cf2e5b01e0e5212da279c9732322c2d87",
+    "route": "4e037de4b983d2bb96cdfcbf1a534fb8d29ddd2024ba927ea17398087afed3ba",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "character": [
+      "body"
+    ],
+    "engine": [
+      "usd"
+    ]
+  },
+  "title": "Worker_jumpsuit made",
+  "usd": {
+    "default_prim": "/Character",
+    "layer": "characters",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/character/body_worker_jumpsuit_made/1/character.usdc",
+    "root": "character.usdc",
+    "time_codes_per_second": 30.0,
+    "up_axis": "Y",
+    "use": "payload"
+  },
+  "version": 1
+}

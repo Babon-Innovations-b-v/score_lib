@@ -1,0 +1,88 @@
+{
+  "address": "sound/fridge_hum@1",
+  "files": {
+    "audio/generated/machines/fridge_hum.wav": {
+      "bytes": 1104112,
+      "role": "audio",
+      "sha256": "622d31cf0fea2cbfbe449a29fbf61d45ad2a49e766b1c7ee7df37dc31c63ef52"
+    },
+    "preview.png": {
+      "bytes": 2558,
+      "role": "picture",
+      "sha256": "d1f2f586dc2190546c1cd251df16b22b3dd20d2b34bb4a8cf359db97e3962da6"
+    },
+    "sound.json": {
+      "bytes": 990,
+      "role": "record",
+      "sha256": "6fc83eec92c0687f83451ffbcb91bfe202f26ad3a352242589d47473b8f05be1"
+    }
+  },
+  "id": "fridge_hum",
+  "kind": "sound",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/audio.py",
+    "of": "audio/generated/machines/fridge_hum.wav"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-11-07T08:04:07.799152+00:00",
+      "by": "runner"
+    },
+    "code": "61d1ea5eaeddd2f8bbc08c50a9e4f7a94dd24618d36c00ecc235b2b2ccaefffa",
+    "commit": "b72dbca408ccd6ceddf6a6e78f2cf35e47bb3faf",
+    "files_source": {
+      "audio/generated/machines/fridge_hum.wav": "files/sound/generated/machines/fridge_hum.wav"
+    },
+    "made_with": [
+      {
+        "by": "moss_soundeffect",
+        "what": "sound/generated/machines/fridge_hum.wav"
+      }
+    ],
+    "models": [
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "clap-larger-general",
+        "revision": "ada0c23a36c4e8582805bb38fec3905903f18b41",
+        "sha256": "b8e001a32b37111261ccc28541ae07960a8cc047837f76a1a0877e9b2c59dc45",
+        "source": "hf:laion/larger_clap_general"
+      },
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "moss-soundeffect-v2",
+        "revision": "e35df4d82fbe87fcd5d14e5d100e349c0c3c076d",
+        "sha256": "d74b38a3387c5e670754edde2d06a71d1940c3a603e5a0489550159e79d18885",
+        "source": "hf:OpenMOSS-Team/MOSS-SoundEffect-v2.0"
+      }
+    ],
+    "node": "sound@flat",
+    "output": "b9313aa72a3bbc688275e7f8dd6343eb7778cc61cb6efd4ed81cf7a183e97239",
+    "place": "flat",
+    "prim": null,
+    "record_key": "d3700ed881d69050da31474e1173230f46ed99bececf48ccc720ec14b5dce5c8",
+    "route": "4e037de4b983d2bb96cdfcbf1a534fb8d29ddd2024ba927ea17398087afed3ba",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "flat"
+  ],
+  "state": "draft",
+  "tags": {
+    "category": [
+      "loop"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "made_by": [
+      "moss"
+    ],
+    "place_kind": []
+  },
+  "title": "Fridge hum",
+  "usd": null,
+  "version": 1
+}
