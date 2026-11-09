@@ -2,9 +2,9 @@
   "address": "algorithm/planet_gravity@1",
   "files": {
     "code.json": {
-      "bytes": 5177,
+      "bytes": 11870,
       "role": "record",
-      "sha256": "2810764312fe444bfddeb25b7fd801234b7e24603071856a6a3722494070277e"
+      "sha256": "7b1ec9567000a6a35fddf617446f9b66071d567dfeda3bdd4abf24b29fbf3d6d"
     },
     "code/score/__init__.py": {
       "bytes": 0,
@@ -15,6 +15,11 @@
       "bytes": 0,
       "role": "code",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "code/score/adapters/engines/__init__.py": {
+      "bytes": 2245,
+      "role": "code",
+      "sha256": "283817507640321516d8cde73b09a38f5d322fceef386d0c24a3c745c07a836d"
     },
     "code/score/checks/__init__.py": {
       "bytes": 5111,
@@ -66,6 +71,11 @@
       "role": "code",
       "sha256": "10189b2e9e4a537eb5d82efa2d4ec3b9b132bdc613fd27cb42497033748252ed"
     },
+    "code/score/review/holders/__init__.py": {
+      "bytes": 138929,
+      "role": "code",
+      "sha256": "9105fa999f83ccafd52757a8c0440e2f6611bc62771a9850bdbfef8a3383d1f3"
+    },
     "code/score/review/overhead.py": {
       "bytes": 12280,
       "role": "code",
@@ -82,9 +92,9 @@
       "sha256": "f1141a7a7c867792cf717d8544acffa1eae73d8f88c84ea72cd905649206e79e"
     },
     "code/score/review/plan_fixes.py": {
-      "bytes": 39582,
+      "bytes": 92795,
       "role": "code",
-      "sha256": "2797e72c02d676bcee37d928800b6191dd3cfc53592ffb66d420eceda1cdcf96"
+      "sha256": "f47b16bd2d3622758ec84fd7594fabd4f42391b6ddee3eba8b20f03724b3a0b9"
     },
     "code/score/review/plan_writing.py": {
       "bytes": 74192,
@@ -92,14 +102,24 @@
       "sha256": "060b2984ec9c663355737423ebb528229cb93e4cbbc53e70b1d069f811383daf"
     },
     "code/score/review/plans.py": {
-      "bytes": 85463,
+      "bytes": 87795,
       "role": "code",
-      "sha256": "545d40bf070079c9c8a0c12131a55c18ebd8c95c7e463e5cd7b55de9ecd36fbb"
+      "sha256": "0880a142c0abcc01400b8a2b10bb76d3045a10a3a552a2f5cea640b032894a50"
     },
     "code/score/review/reading.py": {
       "bytes": 58123,
       "role": "code",
       "sha256": "92c33e18be99e93cfa2a15e18fb86bc652687d327ceff7e0f6c1c5d35c9968bd"
+    },
+    "code/score/review/relation_solver/__init__.py": {
+      "bytes": 6971,
+      "role": "code",
+      "sha256": "19fb45bc33297040883c98774a7fd5c1cde14d3c40261f3fef7fecb7446830b1"
+    },
+    "code/score/review/relation_solver/_solver.py": {
+      "bytes": 9228,
+      "role": "code",
+      "sha256": "dc7ffe82acbbf501e2843682c673ee0ab3f7082268ed0bbead61ab9beca0ca15"
     },
     "code/score/review/scene_sky.py": {
       "bytes": 2798,
@@ -117,9 +137,79 @@
       "sha256": "9ada8b6e1c12e6ab7afb91694ea7cfe7070eee5efcacb4ca535a70c74c141a19"
     },
     "code/score/stages/__init__.py": {
-      "bytes": 115508,
+      "bytes": 115787,
       "role": "code",
-      "sha256": "f38d042e9cab71b165efd23af9d62a33e115ddcd41d2a98611559559801e867f"
+      "sha256": "ae83a96b5f8009ba55c53d4cda4b2d65aa4ab3fa774fb4aff00cbf22e40946e2"
+    },
+    "code/score/stages/assembly/__init__.py": {
+      "bytes": 25114,
+      "role": "code",
+      "sha256": "b442546f6cfe880fd1d41ccfa43f4eea1b907693280966107ce473c127636093"
+    },
+    "code/score/stages/assembly/baked.py": {
+      "bytes": 9407,
+      "role": "code",
+      "sha256": "39939deb9e6aea1ff7783ce697a67f55679288758349fc136ba3d6274784e895"
+    },
+    "code/score/stages/assembly/fitting.py": {
+      "bytes": 98880,
+      "role": "code",
+      "sha256": "4a50cac64afa29a073850c24a7db71f1bf6190e46048b734c77979b37663ab6f"
+    },
+    "code/score/stages/assembly/ground_finish.py": {
+      "bytes": 8066,
+      "role": "code",
+      "sha256": "cc17331f9b1efb1e0c279f4337acc0b746107fbb13cda72ec57f6ffb85f9a483"
+    },
+    "code/score/stages/assembly/grounded.py": {
+      "bytes": 3938,
+      "role": "code",
+      "sha256": "1698e0a888f5e9f3c325db7339a601199ed9631338b7a3e8200d75f49fd3cb49"
+    },
+    "code/score/stages/assembly/made_waiting.py": {
+      "bytes": 7925,
+      "role": "code",
+      "sha256": "6ad4bbaab1969ad5afc2c887a4695d1f3ca48d30ae437ebe95fc2d69c29f0c83"
+    },
+    "code/score/stages/assembly/mounted.py": {
+      "bytes": 2691,
+      "role": "code",
+      "sha256": "bf9959a5895bf30eb2e41d18a171a804fb88fbfd7b42e5174cf45a0eeafd68ce"
+    },
+    "code/score/stages/assembly/record.py": {
+      "bytes": 12254,
+      "role": "code",
+      "sha256": "d591f45afd5665038b8982d7184fcd5feaa957fb2e3baadf32956c6b9b80b95a"
+    },
+    "code/score/stages/assembly/sounds.py": {
+      "bytes": 8453,
+      "role": "code",
+      "sha256": "774fdd7d3aaa38629dd66beecbd8ae821b9d95e1264a94bbd8943ce3738d8412"
+    },
+    "code/score/stages/batch_gaps.py": {
+      "bytes": 2897,
+      "role": "code",
+      "sha256": "f0936acdb096654b9b5c69ef1365a0e7922b7476ecf8e85d3f5d619aa8f2574a"
+    },
+    "code/score/stages/cast/__init__.py": {
+      "bytes": 35672,
+      "role": "code",
+      "sha256": "9b372de6a93daa1d32e95053cf174229d535c27af88c2c3c5c998bba086f7c96"
+    },
+    "code/score/stages/cast/layer.py": {
+      "bytes": 12169,
+      "role": "code",
+      "sha256": "44ba1b72866a7693bd47e1f0312152ba2f8a9c7e0c43124462b6a55292eb36aa"
+    },
+    "code/score/stages/cast/measure.py": {
+      "bytes": 11622,
+      "role": "code",
+      "sha256": "738720c5a1fd5cd5d15640b656cdc91abd7a65c10fc5d76eab7429ce5257bb1d"
+    },
+    "code/score/stages/cast/spread.py": {
+      "bytes": 8872,
+      "role": "code",
+      "sha256": "525b14ffd16cb52bda97b72ab1b20b1fac2f070a5678863def6428b272049067"
     },
     "code/score/stages/complete/__init__.py": {
       "bytes": 5971,
@@ -156,6 +246,41 @@
       "role": "code",
       "sha256": "a4cbcfcddafb4fd29284b76cff8f6d862b08b398b3f6678778a5bf408f2489ee"
     },
+    "code/score/stages/complete/prepare/__init__.py": {
+      "bytes": 3511,
+      "role": "code",
+      "sha256": "640760992b0b9eebc7d72a717220e77cd7d7f80e9b566962fa93961ba9100b24"
+    },
+    "code/score/stages/complete/prepare/contract.py": {
+      "bytes": 4281,
+      "role": "code",
+      "sha256": "2647276fab9f96690df89d7c8a4fe485f8c65bcb07426dc026160fc42fca8a1c"
+    },
+    "code/score/stages/complete/prepare/groups.py": {
+      "bytes": 37495,
+      "role": "code",
+      "sha256": "d273880556783ab0095270c24fd3634ae6c69d4a9f9678888a93c0189bdecb6b"
+    },
+    "code/score/stages/design_layers.py": {
+      "bytes": 5400,
+      "role": "code",
+      "sha256": "0b31c68d33bbd4fe2fea4c09ffe1f681e3b5b7c557f6906f0f5fb6e2f9efe235"
+    },
+    "code/score/stages/earth_seed/__init__.py": {
+      "bytes": 12112,
+      "role": "code",
+      "sha256": "4ff497fe5ad095527ce7fa7c64ad9a8e0e18571ffd430b08d836fe31bc3f4243"
+    },
+    "code/score/stages/earth_seed/design_shell.py": {
+      "bytes": 66001,
+      "role": "code",
+      "sha256": "2ee2949a73f346189679b7e925a480547a4768202250028f49911b1332f27412"
+    },
+    "code/score/stages/layer_base.py": {
+      "bytes": 3881,
+      "role": "code",
+      "sha256": "3a6bab4ef6d978540c4cce41c71e539da1d972b7e618af221f12ca4c304ac139"
+    },
     "code/score/stages/library/__init__.py": {
       "bytes": 10863,
       "role": "code",
@@ -181,15 +306,50 @@
       "role": "code",
       "sha256": "f76bfffc840d51bd2bcc39106ac0ac140cdd6dd9c2b224dd4d4780ae92eb7441"
     },
+    "code/score/stages/motion/__init__.py": {
+      "bytes": 51962,
+      "role": "code",
+      "sha256": "e31166e930b52251ff07fe9e2eb1a1089d44ae996910c3b855cda44760cb2843"
+    },
+    "code/score/stages/motion/check.py": {
+      "bytes": 12100,
+      "role": "code",
+      "sha256": "36f4e6150ab10d8b40e19f2b40bc84e8bd564b50df1bf011fcd5eec1ef6d2cd0"
+    },
+    "code/score/stages/motion/from_design.py": {
+      "bytes": 27497,
+      "role": "code",
+      "sha256": "1b60d906a3c2afa06ec3fb7cf9f743b83943d780a4ff168ebd8b8b1162f7c68f"
+    },
+    "code/score/stages/motion/space.py": {
+      "bytes": 12849,
+      "role": "code",
+      "sha256": "9dd5c757fbc79951ffa7c6a86e523a5e8a78a14949e2fd7954ac3b1401826052"
+    },
+    "code/score/stages/natural_grounds.py": {
+      "bytes": 6511,
+      "role": "code",
+      "sha256": "ad13cdb2d09b5cf939c12ed5fad52883ace3d6bf63632240b3cba444bfd19b43"
+    },
+    "code/score/stages/people/__init__.py": {
+      "bytes": 6155,
+      "role": "code",
+      "sha256": "b1139574bcc70498f44e1297e3acddc082ea57d44a65811059e6c62d4d19f1dc"
+    },
+    "code/score/stages/people/loop.py": {
+      "bytes": 5459,
+      "role": "code",
+      "sha256": "ed05cad5932277e3ecfd761e538a49eea064798e58144a655813bd21fd4ceee5"
+    },
     "code/score/stages/people_bodies/__init__.py": {
       "bytes": 382,
       "role": "code",
       "sha256": "e1d6a5eede46b22fa55fa8216355c077fe02e8a3725861e3f7fee1d063651eec"
     },
     "code/score/stages/people_bodies/bodies.py": {
-      "bytes": 28161,
+      "bytes": 33065,
       "role": "code",
-      "sha256": "bf6ea6d0e80aa9d9404fc5cdd52f519ab32d104937d384b07964582a7442fbe1"
+      "sha256": "a1896c2a9df052a12ad9d29d1bd75d7fa7da51715e4635dc49fcfbaedb3f2a1c"
     },
     "code/score/stages/people_bodies/clips.py": {
       "bytes": 5660,
@@ -221,30 +381,180 @@
       "role": "code",
       "sha256": "2646d50a9913c2acb4e471283145425fe020be0af52418fe726bc62d527e9c17"
     },
+    "code/score/stages/props/calibration_row.py": {
+      "bytes": 2892,
+      "role": "code",
+      "sha256": "54085daf246d8f7d0599af52d31691a01791e7d0eb10cb997dfedd951c5d9ebb"
+    },
+    "code/score/stages/props/closeup_row.py": {
+      "bytes": 19756,
+      "role": "code",
+      "sha256": "1d853aed92375a30293bd5eaa68363345b6a03469912b252e497300951842cad"
+    },
+    "code/score/stages/props/flat_sheet.py": {
+      "bytes": 9143,
+      "role": "code",
+      "sha256": "9eed93db80f099612bd1ae492fce005fe557af019a34e287d2974783eb851e42"
+    },
     "code/score/stages/props/likeness.py": {
       "bytes": 8602,
       "role": "code",
       "sha256": "bc88a65d0a319690c8ae2741246d657fa651366fb7c718c315a98c5367666c5e"
+    },
+    "code/score/stages/props/likeness_row.py": {
+      "bytes": 40959,
+      "role": "code",
+      "sha256": "9fac07f7eaf5c68b4ce7de05dac133272b7cb5298cf4df93e3ee6409c1778186"
+    },
+    "code/score/stages/props/pixal_row.py": {
+      "bytes": 18744,
+      "role": "code",
+      "sha256": "7f22bc6afba7dfa4eba22ab5fc60fad0311e3fca087d56ab4dbb2ca89224dcf4"
     },
     "code/score/stages/props/prop_data.py": {
       "bytes": 9807,
       "role": "code",
       "sha256": "0ee57dbf9c2fe95dd5fd1e8366b32e657d860ecca7e3751386c0efdbc85e1ff7"
     },
+    "code/score/stages/props/thin_straight.py": {
+      "bytes": 66145,
+      "role": "code",
+      "sha256": "cdb123f8f36adb943e8c52a5adfffbf3a93bb324c283e227a2d3563a39ccd025"
+    },
     "code/score/stages/root_stage.py": {
       "bytes": 537,
       "role": "code",
       "sha256": "6a33eef2478d9f29c2d2df7cf1d72529335bc4382a5da4c65a929982c4e5423a"
+    },
+    "code/score/stages/rough_model/__init__.py": {
+      "bytes": 10111,
+      "role": "code",
+      "sha256": "c94ab113c99042c2fe7ed92533db79fac68140d8bd94692adaacc5c88c3dfa4a"
+    },
+    "code/score/stages/row_kinds.py": {
+      "bytes": 7710,
+      "role": "code",
+      "sha256": "359367ae3a3855038ae4cf64f17d127fe03339443664d9d4ae8e91a837ea0824"
+    },
+    "code/score/stages/scene_clips/__init__.py": {
+      "bytes": 25600,
+      "role": "code",
+      "sha256": "d10abf490d98b240c486d4b36b9cf06fa7efa1eda9a80731534ced652332147a"
     },
     "code/score/stages/scene_record/__init__.py": {
       "bytes": 1520,
       "role": "code",
       "sha256": "e60948deb1a6c02b947bf97d6e1bcd2a028192ab8b57521a795ab2298d751a43"
     },
+    "code/score/stages/scene_record/concept_light.py": {
+      "bytes": 722,
+      "role": "code",
+      "sha256": "e7f02960a2f8bad361fcc6391d2cb5b1fd69b09ccc01595d78dfbf8500b0f773"
+    },
+    "code/score/stages/scene_record/far.py": {
+      "bytes": 4666,
+      "role": "code",
+      "sha256": "852f8702899ea8c6b85618391865435f96cf7837e9b19ae2932168992427bbbb"
+    },
     "code/score/stages/scene_record/plan.py": {
       "bytes": 51691,
       "role": "code",
       "sha256": "6e632817023df4520d3ac9261b38d6d6f23acdbf776b197bed7588bb8788ea62"
+    },
+    "code/score/stages/scene_record/writer.py": {
+      "bytes": 86102,
+      "role": "code",
+      "sha256": "05e506d6d24e611ca93ca36d83b1d700c15ff29be647cea4648c69cb1b63073a"
+    },
+    "code/score/stages/shapes_first/__init__.py": {
+      "bytes": 7716,
+      "role": "code",
+      "sha256": "f123e686802d8f85e658866fc3ad5c8bbde3a6dab87ba3d9dc0e94c5205a7eb3"
+    },
+    "code/score/stages/shapes_first/align.py": {
+      "bytes": 11707,
+      "role": "code",
+      "sha256": "f3e1abb3f45d918cfa1a6d17cc225f7d6355f6ca768bb0bd67c9a7fcfde449ed"
+    },
+    "code/score/stages/shapes_first/floor_fit.py": {
+      "bytes": 5765,
+      "role": "code",
+      "sha256": "157d0047525f383713c0663aca2b4839925880bbaeeb5742d1559fb938a785b3"
+    },
+    "code/score/stages/shapes_first/made.py": {
+      "bytes": 2729,
+      "role": "code",
+      "sha256": "32fd9fb2c31b6b61115a5261fd090fc0f0ebb43b06de33b30e1e2a6951348eb8"
+    },
+    "code/score/stages/shell_parts.py": {
+      "bytes": 2462,
+      "role": "code",
+      "sha256": "905be7ebc8b2944dfa37e6ad51479889f79e9428b22c610741921895bcf8f7ce"
+    },
+    "code/score/stages/surfaces/__init__.py": {
+      "bytes": 6813,
+      "role": "code",
+      "sha256": "b2c4bf749d8303aaa8fdc4ac8ef262174f59c3d3276abdd7f4f605e28007ee6c"
+    },
+    "code/score/stages/surfaces/palette_library.py": {
+      "bytes": 6487,
+      "role": "code",
+      "sha256": "e81a87a25553f0bf69e6927de97bdcd4ba2940cc2b318725ea4991f224847634"
+    },
+    "code/score/stages/surfaces/prop_env.py": {
+      "bytes": 2381,
+      "role": "code",
+      "sha256": "70e33e1ca2dd376987a35742b8db744fda274eef9a36fc4cfe6b16d0b26a4c8e"
+    },
+    "code/score/stages/surfaces/route_cast.py": {
+      "bytes": 11670,
+      "role": "code",
+      "sha256": "3b13e997921b02ff7740d567a5d6ff91f65184a819b8a37cbab791efb6ef5212"
+    },
+    "code/score/stages/surfaces/route_settings.py": {
+      "bytes": 2902,
+      "role": "code",
+      "sha256": "d31a7712dbd089524d2de090b0ca34f720a6fb10a90664813f0dca81242a9c80"
+    },
+    "code/score/stages/surfaces/surface_data.py": {
+      "bytes": 5036,
+      "role": "code",
+      "sha256": "82d22b30b7a13d26bbff24f0d791a9b1d665a42eeb282bbb84ac15882a2b1d1d"
+    },
+    "code/score/stages/surfaces/surface_gates.py": {
+      "bytes": 1343,
+      "role": "code",
+      "sha256": "358f4831813853c022772ad946525eac6fc0b11189bc8c7de9c4446dfc25cdf8"
+    },
+    "code/score/stages/surfaces/tumble.py": {
+      "bytes": 9288,
+      "role": "code",
+      "sha256": "c6700c26ae322fa162797c09467ac730db98b9e91bf1ddd495593860d64e5b0d"
+    },
+    "code/score/stages/terrain/__init__.py": {
+      "bytes": 8102,
+      "role": "code",
+      "sha256": "608c4afa8f38e3ffd3d047dc3c975076b086b6d26c829b0f8f5c1934cf84113e"
+    },
+    "code/score/stages/terrain/design.py": {
+      "bytes": 25114,
+      "role": "code",
+      "sha256": "82bddf7349fa99fba3b5119c5aed216b38f8d9dea8169075e0687eae3b95f25c"
+    },
+    "code/score/stages/terrain/gates.py": {
+      "bytes": 11073,
+      "role": "code",
+      "sha256": "c8173e04eaa6fceea60c0dcabba560e7f995fc0a2dda8c26820f07ad6d50a14c"
+    },
+    "code/score/stages/terrain/join.py": {
+      "bytes": 15061,
+      "role": "code",
+      "sha256": "c8863233ff6dedd67d1011ce00a530da1c5f498fce42ac8e1d905285c9c975f8"
+    },
+    "code/score/stages/terrain/sight.py": {
+      "bytes": 9126,
+      "role": "code",
+      "sha256": "f351967f17f6ff8512b7c2dc613226c9f2b2f8384709e9f6edf0a11512e6c774"
     },
     "code/score/store/__init__.py": {
       "bytes": 21142,
@@ -277,9 +587,9 @@
       "sha256": "b71f7205a099e34faa524ac131ace54adfc0ae5946985545112033a5657c8e4b"
     },
     "test/score/review/test_the_owners_word_stands.py": {
-      "bytes": 257214,
+      "bytes": 300855,
       "role": "code",
-      "sha256": "ef8a9d260dd6af885d49013693a5001e9893b8e694b033f59ab767fcb886edf5"
+      "sha256": "2bdf19e6226ce0b00a0b1b4da4d8eae64684e5334e57ed4f32b107059323b413"
     }
   },
   "id": "planet_gravity",
@@ -287,8 +597,8 @@
   "picture": null,
   "picture_reason": "no world 1 output in the store pictures this algorithm",
   "provenance": {
-    "code": "65890c65c80cc73776add43a5c65812319f29fa1ed8e2c29b2929cff09c6b301",
-    "commit": "beabfbd54e84a8fbde819a65b594917ff383fcbf",
+    "code": "8572bf5863492e6614db9b958426e5df807b7ede8fde0675eac01630c09675a0",
+    "commit": "80af60deff282d71e8adfc67367b07c4579211f7",
     "made_with": [
       {
         "by": "score",
