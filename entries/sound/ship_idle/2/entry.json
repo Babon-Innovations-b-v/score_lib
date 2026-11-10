@@ -4,17 +4,17 @@
     "audio/generated/machines/ship_idle.wav": {
       "bytes": 816112,
       "role": "audio",
-      "sha256": "3afab329136b82699cf8bad6f8930aeaad2bfb3033d6cc176323d705ba5419da"
+      "sha256": "998c5c080bf719d2cae6ef1cdc8d54c34a6b95e0b52826cce7b505bda17772a7"
     },
     "preview.png": {
-      "bytes": 2777,
+      "bytes": 2803,
       "role": "picture",
-      "sha256": "fe4e6cee14485603339cfaf0a3ce14735a850306e104551c5ec8cc6a417c6f4f"
+      "sha256": "be01c865481f3320cd955d3273ef20caff09b9b43d60a5a945d0d50c47faaeda"
     },
     "sound.json": {
       "bytes": 1130,
       "role": "record",
-      "sha256": "03aa0e00a02263bde03aed27306511fc8d021d5a023eebe8631c224a4ec341d7"
+      "sha256": "d5ac97d26053f12df3553eb5cdc4e0f44ddd194bcf88ec9657ea5cfb08c70954"
     }
   },
   "id": "ship_idle",
@@ -26,15 +26,9 @@
   },
   "provenance": {
     "accept": {
-      "at": "2026-10-31T20:07:20.663462+00:00",
+      "at": "2026-11-03T19:27:43.652758+00:00",
       "by": "runner"
     },
-    "aliases": [
-      [
-        "998c5c080bf719d2cae6ef1cdc8d54c34a6b95e0b52826cce7b505bda17772a7",
-        "audio/generated/machines/ship_idle.wav"
-      ]
-    ],
     "code": "9c286aa2bb7e7a00eaf08e144dcddc92df567179a7a6e925fc3348e03c0cfd22",
     "commit": "80af60deff282d71e8adfc67367b07c4579211f7",
     "files_source": {
@@ -62,18 +56,17 @@
         "source": "hf:OpenMOSS-Team/MOSS-SoundEffect-v2.0"
       }
     ],
-    "node": "sound@base",
-    "output": "d702d081d5ef269cd1ca0bfdd2ae357c230427d78aa620e1295888b04c48e62a",
-    "place": "base",
+    "node": "sound@campgrounds",
+    "output": "0b911fb1d66abbf8c8093ef6b23cba09261ad9fee3a7072791b0685e9d8b27d0",
+    "place": "campgrounds",
     "prim": null,
-    "record_key": "91eaa0c32eaac0511205c36b8a9bbb64b9b85f0f670a6863ebce4417bd8eef46",
+    "record_key": "87aa045156b06908cbca92535a185e6039e731acff95d9bf41eb3ab4e647e18f",
     "route": "9cac12e1aec8eac15144ea1c2d5240d20f8d8161ff7b6313a8df71dce66ee0dc",
     "world": "world1"
   },
   "requires": [],
   "schema": "score-lib-entry/1",
   "seen_in": [
-    "base",
     "campgrounds",
     "hangar"
   ],
