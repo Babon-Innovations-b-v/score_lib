@@ -2,9 +2,9 @@
   "address": "sound/hatch_open@2",
   "files": {
     "audio/generated/doors/hatch_open.ogg": {
-      "bytes": 44661,
+      "bytes": 44373,
       "role": "audio",
-      "sha256": "796db227b74847cc6f30fa8ac1832321f6cd99cd1f3af592caffcec45fbf4f90"
+      "sha256": "1cf82b26eabd71b86ae7b5d85084a8e03d896628d499b34ae1f8147473c0b703"
     },
     "audio/recordings/doors/hatch_open.ogg": {
       "bytes": 152097,
@@ -12,14 +12,14 @@
       "sha256": "66859a765e2728eb328300672a10a71e4467f029e0fd91cf12a885b0f4033569"
     },
     "preview.png": {
-      "bytes": 2233,
+      "bytes": 2178,
       "role": "picture",
-      "sha256": "a82afb41532cbe0b2479d38c05c87dea77fa2cd458dfa2e758e1e14141fb67de"
+      "sha256": "78999a23840aff3551e2accab4168f15f487776a804fa6de51bd4c1cc5379b30"
     },
     "sound.json": {
-      "bytes": 942,
+      "bytes": 941,
       "role": "record",
-      "sha256": "9541f5d36b9893251df1cb781d88ee058a996c53b490184092362737a3e8df8a"
+      "sha256": "8c7647171014e74c4cb24e59bd5546e4b564d19196c51de6695806e6f7b7ee6b"
     }
   },
   "id": "hatch_open",
@@ -31,17 +31,11 @@
   },
   "provenance": {
     "accept": {
-      "at": "2026-10-31T18:42:06.619491+00:00",
+      "at": "2026-11-03T19:19:17.237692+00:00",
       "by": "runner"
     },
-    "aliases": [
-      [
-        "1cf82b26eabd71b86ae7b5d85084a8e03d896628d499b34ae1f8147473c0b703",
-        "audio/generated/doors/hatch_open.ogg"
-      ]
-    ],
     "code": "9c286aa2bb7e7a00eaf08e144dcddc92df567179a7a6e925fc3348e03c0cfd22",
-    "commit": "c1b04fb6e7942b4a2e9e24e26d39ce443a7fb464",
+    "commit": "ae117c75554457e24ae2db8740bdb28b37fccb71",
     "files_from": {
       "audio/recordings/doors/hatch_open.ogg": "sound/recordings/doors/hatch_open.ogg"
     },
@@ -75,18 +69,17 @@
         "source": "hf:OpenMOSS-Team/MOSS-SoundEffect-v2.0"
       }
     ],
-    "node": "sound@airlock",
-    "output": "85f517ffe8cc758c226194447434b8347624d90f274c515970958b8201d9d2a7",
-    "place": "airlock",
+    "node": "sound@camp",
+    "output": "48ed56183658f677008da36567164bf5f39589ff5bb46a464e565167aca81db9",
+    "place": "camp",
     "prim": null,
-    "record_key": "4a5faaf3c34182c923a053edcbddc67e68ce8e2f2a1b6943116ab4ca77c0f2dd",
+    "record_key": "3603a4b3f8b9fe60726b93803cc2d99bd2aae530278fa0bfb9faa5d18106f6b0",
     "route": "fe2d136cb0940a39e1aef06f4df64f62cbd007d7c48794969254e086bee9e3ce",
     "world": "world1"
   },
   "requires": [],
   "schema": "score-lib-entry/1",
   "seen_in": [
-    "airlock",
     "camp",
     "hangar",
     "stairwell",
