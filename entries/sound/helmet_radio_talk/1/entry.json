@@ -1,0 +1,88 @@
+{
+  "address": "sound/helmet_radio_talk@1",
+  "files": {
+    "audio/generated/machines/helmet_radio_talk.wav": {
+      "bytes": 816112,
+      "role": "audio",
+      "sha256": "1f0f5bd87371fefd9dcb2590e692888d275886fb4ed13ba884f7c89d7269aa94"
+    },
+    "preview.png": {
+      "bytes": 2819,
+      "role": "picture",
+      "sha256": "c8746e14a8fbd0e2d0fdd180469f879c5eefb554bcd0d6d00565ef1ed650fa1a"
+    },
+    "sound.json": {
+      "bytes": 1100,
+      "role": "record",
+      "sha256": "3cf946a06505b1ccd2e39e5dac5486a7658bda5fb68593dc5265bf3b1e0c94c0"
+    }
+  },
+  "id": "helmet_radio_talk",
+  "kind": "sound",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/audio.py",
+    "of": "audio/generated/machines/helmet_radio_talk.wav"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-11-10T03:22:48.284879+00:00",
+      "by": "runner"
+    },
+    "code": "1a2a7eb3e2d0b5b9a01ada54cd9879ba10330f6619ac6b6247e0263365e06f41",
+    "commit": "80af60deff282d71e8adfc67367b07c4579211f7",
+    "files_source": {
+      "audio/generated/machines/helmet_radio_talk.wav": "files/sound/generated/machines/helmet_radio_talk.wav"
+    },
+    "made_with": [
+      {
+        "by": "moss_soundeffect",
+        "what": "sound/generated/machines/helmet_radio_talk.wav"
+      }
+    ],
+    "models": [
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "clap-larger-general",
+        "revision": "ada0c23a36c4e8582805bb38fec3905903f18b41",
+        "sha256": "b8e001a32b37111261ccc28541ae07960a8cc047837f76a1a0877e9b2c59dc45",
+        "source": "hf:laion/larger_clap_general"
+      },
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "moss-soundeffect-v2",
+        "revision": "e35df4d82fbe87fcd5d14e5d100e349c0c3c076d",
+        "sha256": "d74b38a3387c5e670754edde2d06a71d1940c3a603e5a0489550159e79d18885",
+        "source": "hf:OpenMOSS-Team/MOSS-SoundEffect-v2.0"
+      }
+    ],
+    "node": "sound@old_station",
+    "output": "5830b927150226f5ce1983539d43b9e443cc0674b714983d19b30ef7e88b844e",
+    "place": "old_station",
+    "prim": null,
+    "record_key": "3ed4243f9f23bc248e6d247ff374a264ebbdbd836aada2d6120634594a338108",
+    "route": "9cac12e1aec8eac15144ea1c2d5240d20f8d8161ff7b6313a8df71dce66ee0dc",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "old_station"
+  ],
+  "state": "draft",
+  "tags": {
+    "category": [
+      "loop"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "made_by": [
+      "moss"
+    ],
+    "place_kind": []
+  },
+  "title": "Helmet radio talk",
+  "usd": null,
+  "version": 1
+}
