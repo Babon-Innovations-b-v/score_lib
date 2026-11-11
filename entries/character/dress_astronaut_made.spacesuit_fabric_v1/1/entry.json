@@ -1,0 +1,110 @@
+{
+  "address": "character/dress_astronaut_made.spacesuit_fabric_v1@1",
+  "files": {
+    "body.glb": {
+      "bytes": 27901168,
+      "role": "gltf",
+      "sha256": "8e9ee43afefd7e916b5d9ad086589b306a15ba9aadeca48d6dafdd7264b866bd"
+    },
+    "character.usdc": {
+      "bytes": 4250044,
+      "role": "usd",
+      "sha256": "ec42dce1e769c8a7021e56704d7199671bb2ec7ccc573e7c2e693a814b95293e"
+    },
+    "dress.json": {
+      "bytes": 6943,
+      "role": "record",
+      "sha256": "820640933b3e79977d3bb0758fc454d0116216fe776c6439b94c1e80de48ea28"
+    },
+    "look.json": {
+      "bytes": 278,
+      "role": "record",
+      "sha256": "d58a39eb609380b8f18036344783a030ff377d0a2e49426d4d74af09b8625417"
+    },
+    "textures/body_0.png": {
+      "bytes": 1414501,
+      "role": "texture",
+      "sha256": "1bace425e0619f73889d8df3427192ae4b01eb3dc61635197d83b107544e0696"
+    },
+    "textures/body_1.png": {
+      "bytes": 1055107,
+      "role": "texture",
+      "sha256": "ff171d065532bf5e96f5fa83e3903fab30e151a45b4fd3891c46a0a719add9d7"
+    },
+    "textures/body_2.png": {
+      "bytes": 18535651,
+      "role": "texture",
+      "sha256": "4e02f537579cb2a6747399859992b222ffe6cd1098d136db5b2b1bd4018c6f16"
+    }
+  },
+  "id": "dress_astronaut_made.spacesuit_fabric_v1",
+  "kind": "character",
+  "picture": null,
+  "picture_reason": "no accepted people-take close-up of this look",
+  "provenance": {
+    "accept": {
+      "at": "2026-11-11T18:40:53.189688+00:00",
+      "by": "runner"
+    },
+    "code": "9c059bbb8bd7cc61786708626dcbe3a930b055ef4f132522b2af157d28243664",
+    "commit": "7a73a719713bbc3c86f26529a5d2b05f09264c4b",
+    "look": "astronaut-made",
+    "made_with": [
+      {
+        "by": "gemini_31_pro",
+        "what": "finishes listed and named (surface stage)"
+      },
+      {
+        "by": "nano_banana_pro",
+        "what": "finish maps (surface stage)"
+      },
+      {
+        "by": "pixal3d",
+        "what": "the body's shape"
+      },
+      {
+        "by": "score",
+        "what": "made by score"
+      },
+      {
+        "by": "segvigen",
+        "what": "the finish map laid on the shape (surface stage)"
+      },
+      {
+        "by": "soma_x",
+        "what": "the skeleton fitted inside the shape and its skin weights"
+      }
+    ],
+    "models": [],
+    "node": "people-dress-astronaut-made-in-spacesuit_fabric-v1",
+    "output": "05e92685d0f98e3daeb1f0d2cc48c9d2f056cda912c525d04b26e68937607f6d",
+    "place": "spacesuit_fabric-v1",
+    "record_key": "376e86947e3f0fa4a310ad08ba3d55ff66844b3956b41c1a8145eb3427c679ce",
+    "route": "dc76c23298e38685b3f14140ba65d81393eca8a5b31e6d31d392983562d1a7d0",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "character": [
+      "dress"
+    ],
+    "engine": [
+      "usd"
+    ]
+  },
+  "title": "Astronaut made",
+  "usd": {
+    "default_prim": "/Character",
+    "layer": "characters",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/character/dress_astronaut_made.spacesuit_fabric_v1/1/character.usdc",
+    "root": "character.usdc",
+    "time_codes_per_second": 30.0,
+    "up_axis": "Y",
+    "use": "payload"
+  },
+  "version": 1
+}
