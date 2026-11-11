@@ -1,0 +1,144 @@
+{
+  "address": "place/hub@2",
+  "files": {
+    "contract.json": {
+      "bytes": 99,
+      "role": "record",
+      "sha256": "c2b7151f92e6a67ca4666ea747ad262b67b4d0af824cc83862ce64d8cc49d12c"
+    },
+    "edit.usda": {
+      "bytes": 183,
+      "role": "usd",
+      "sha256": "8fc5485ea9a58537dd8289c516a85733e069ad7a17b866471667b8795142454f"
+    },
+    "hub.usda": {
+      "bytes": 453,
+      "role": "usd",
+      "sha256": "1fb9bbb46c6878bc16c29e200fac7dc64704f738cc6e843ee1368e22bd12841e"
+    },
+    "inputs.json": {
+      "bytes": 510,
+      "role": "record",
+      "sha256": "db927958916f5c798ce1ea966f5318f76144ab8203a79591cca47f82a21fdd41"
+    },
+    "origin.json": {
+      "bytes": 880,
+      "role": "record",
+      "sha256": "bcf886fb8d691fb7d781daeb39f7944de65f5a6257142da810e83d91dda32aea"
+    },
+    "picture.png": {
+      "bytes": 287841,
+      "role": "picture",
+      "sha256": "fd609cf06c7167361a979d5c87455b8b37dfb2b94c82cba3c33da50ab3cdccaf"
+    },
+    "plan/plan.json": {
+      "bytes": 13179,
+      "role": "record",
+      "sha256": "f8e50fca2128e1e05848b20f9c70aba358e94d97d92be8813ae7a277de26611c"
+    },
+    "scene.json": {
+      "bytes": 46268,
+      "role": "record",
+      "sha256": "5b151f5d2f71f2c767028194a06f83aae77f4eb79b42f2e60ee7fd358e3d2c4a"
+    }
+  },
+  "id": "hub",
+  "kind": "place",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@hub: looks/hub/from-door-1-look.png"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-11-11T15:18:28.362088+00:00",
+      "by": "runner"
+    },
+    "code": "2205d9a0417c88ac8cc84e2948cbca930dd3b4797820c8cc866fcbd4224b4c49",
+    "commit": "f9923acad5e0f97195ad52d612bcb630f30cb886",
+    "complete": {
+      "accept": {
+        "at": null,
+        "by": null
+      },
+      "code": null,
+      "models": [],
+      "node": "complete@hub",
+      "output": null,
+      "record_key": null,
+      "route": "374b0f515859fb6e0d9f64503153d3c8196528863cfb8d7493cf944d3ab9ad80"
+    },
+    "complete_failing": [],
+    "files_from": {
+      "inputs.json": {
+        "path": "inputs.json",
+        "sha256": "0411d12bc6de86fb1332d23139d0a3986e9bd78f7edbec0fa03e5d85450bde8c"
+      },
+      "origin.json": {
+        "path": "origin.json",
+        "sha256": "21dde7faecbc3a184cdd1db0a4fe993b3dfec85e081a39ea12e8568fca744c91"
+      }
+    },
+    "gaps": null,
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
+    "models": [],
+    "node": "assembly@hub",
+    "output": "3575927d8f95d5e83e8644fbdcedd636f7d9b71816b0ab3b99b91ba7c9b08ffa",
+    "place": "hub",
+    "record_key": "1af4c717efaa99ec02c0ca477282f897c3291556b8952109c0d6dd8d805839f4",
+    "records_from": {
+      "plan": {
+        "accept": {
+          "at": "2026-11-11T09:43:52.634388+00:00",
+          "by": "runner"
+        },
+        "code": "0129e295cb8aafb862f8d5bb0d7f7015b99d5798ac7e81ca1e837f8d32f2fddb",
+        "models": [],
+        "node": "plan@hub",
+        "output": "be3ef7c6d90b03f94ae47b5d53ff405405e9d0ff8ee2aa7d88ef5c7eafa164c1",
+        "record_key": "f84afd8f04d6b7cd24188cd1381a987f4c85a999186b9ab280cc9bb006d4f40e",
+        "route": "374b0f515859fb6e0d9f64503153d3c8196528863cfb8d7493cf944d3ab9ad80"
+      }
+    },
+    "route": "374b0f515859fb6e0d9f64503153d3c8196528863cfb8d7493cf944d3ab9ad80",
+    "unresolved_sublayers": [
+      "./layers/base.usda"
+    ],
+    "world": "world1"
+  },
+  "requires": [
+    "layer/ground.hub@2",
+    "layer/light.hub@2",
+    "layer/motion.hub@2",
+    "layer/sound.hub@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "hub"
+  ],
+  "state": "draft",
+  "tags": {
+    "complete": [],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Hub",
+  "usd": {
+    "default_prim": "/hub",
+    "layer": "root",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/place/hub/2/hub.usda",
+    "root": "hub.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": "Y",
+    "use": "open"
+  },
+  "version": 2
+}

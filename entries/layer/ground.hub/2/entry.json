@@ -1,0 +1,88 @@
+{
+  "address": "layer/ground.hub@2",
+  "files": {
+    "layer.usda": {
+      "bytes": 70,
+      "role": "usd",
+      "sha256": "4066728828c7c26f87f0edfc0432c94b5a59bb15975061dbc8148290cddc445f"
+    },
+    "layers/ground.usdc": {
+      "bytes": 611015,
+      "role": "usd",
+      "sha256": "859f99b334083146fd81067ae131aa96b4377e27050b6d71ea88b632fddd3e1e"
+    },
+    "preview.png": {
+      "bytes": 9386,
+      "role": "picture",
+      "sha256": "d5835bf712aec25ec160cb25f73dff04707aa701125da6d8ede5fc94688b617b"
+    }
+  },
+  "id": "ground.hub",
+  "kind": "layer",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/mesh.py",
+    "of": "the place's ground.usdc"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-11-11T15:18:28.362088+00:00",
+      "by": "runner"
+    },
+    "code": "2205d9a0417c88ac8cc84e2948cbca930dd3b4797820c8cc866fcbd4224b4c49",
+    "commit": "f9923acad5e0f97195ad52d612bcb630f30cb886",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/ground.usdc",
+        "sha256": "859f99b334083146fd81067ae131aa96b4377e27050b6d71ea88b632fddd3e1e"
+      }
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
+    "models": [],
+    "node": "assembly@hub",
+    "output": "3575927d8f95d5e83e8644fbdcedd636f7d9b71816b0ab3b99b91ba7c9b08ffa",
+    "own_files": [
+      "layers/ground.usdc"
+    ],
+    "place": "hub",
+    "record_key": "1af4c717efaa99ec02c0ca477282f897c3291556b8952109c0d6dd8d805839f4",
+    "route": "374b0f515859fb6e0d9f64503153d3c8196528863cfb8d7493cf944d3ab9ad80",
+    "side_records_from": null,
+    "source_name": "layers/ground.usdc",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": null
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "hub"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "ground"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Hub ground layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "ground",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/ground.hub/2/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 2
+}

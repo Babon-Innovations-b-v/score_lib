@@ -1,0 +1,90 @@
+{
+  "address": "layer/sound.hub@2",
+  "files": {
+    "layer.usda": {
+      "bytes": 4182,
+      "role": "usd",
+      "sha256": "6e6eff35a911130440d3c02a599fd5c67410e55c41aac9f2f0230aa6b04b93d1"
+    },
+    "preview.png": {
+      "bytes": 1786,
+      "role": "picture",
+      "sha256": "9375b6417903e9a9f0b2676b5aced6c61248332be6292cf864c726dce6f56a8d"
+    },
+    "sound.json": {
+      "bytes": 25863,
+      "role": "record",
+      "sha256": "6d82cada965d48cd31f5a9ba0bfd25c6f0d05754b6cc2df9ba07c072fee66834"
+    }
+  },
+  "id": "sound.hub",
+  "kind": "layer",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "4 prim positions from above over data/kit/hub.json"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-11-11T15:18:28.362088+00:00",
+      "by": "runner"
+    },
+    "code": "2205d9a0417c88ac8cc84e2948cbca930dd3b4797820c8cc866fcbd4224b4c49",
+    "commit": "f9923acad5e0f97195ad52d612bcb630f30cb886",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/sound.usda",
+        "sha256": "7242684bc112557f9952f113961a7c9939a05059b5dc0c1e12751bc39d792b73"
+      }
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
+    "models": [],
+    "node": "assembly@hub",
+    "output": "3575927d8f95d5e83e8644fbdcedd636f7d9b71816b0ab3b99b91ba7c9b08ffa",
+    "own_files": [],
+    "place": "hub",
+    "record_key": "1af4c717efaa99ec02c0ca477282f897c3291556b8952109c0d6dd8d805839f4",
+    "route": "374b0f515859fb6e0d9f64503153d3c8196528863cfb8d7493cf944d3ab9ad80",
+    "side_records_from": "f98ca7e4cf819a642fff912a99409d73c9d9b083ac9aec42beae4b97544df6e3",
+    "source_name": "layers/sound.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": null
+  },
+  "requires": [
+    "sound/base_hum@2",
+    "sound/console_hum@2",
+    "sound/habitat@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "hub"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "sound"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Hub sound layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "sound",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/sound.hub/2/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 2
+}

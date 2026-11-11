@@ -1,0 +1,91 @@
+{
+  "address": "layer/light.hub@2",
+  "files": {
+    "lamps.json": {
+      "bytes": 6182,
+      "role": "record",
+      "sha256": "98daa4445462b1dce548f5794dee3ac0a7f6a3fa5c1d831904002e06e4ef3c73"
+    },
+    "layer.usda": {
+      "bytes": 345466,
+      "role": "usd",
+      "sha256": "a67dcb382a9d9cb4b729bec87b692197ecb3b8c821cba68350c323a58811da13"
+    },
+    "measures.json": {
+      "bytes": 18458,
+      "role": "record",
+      "sha256": "dff63cb4154162381b69261234e225919adaea937f21983fe332c65f371d5510"
+    },
+    "picture.png": {
+      "bytes": 287841,
+      "role": "picture",
+      "sha256": "fd609cf06c7167361a979d5c87455b8b37dfb2b94c82cba3c33da50ab3cdccaf"
+    }
+  },
+  "id": "light.hub",
+  "kind": "layer",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@hub: looks/hub/from-door-1-look.png"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-11-11T15:18:28.362088+00:00",
+      "by": "runner"
+    },
+    "code": "2205d9a0417c88ac8cc84e2948cbca930dd3b4797820c8cc866fcbd4224b4c49",
+    "commit": "f9923acad5e0f97195ad52d612bcb630f30cb886",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/light.usda",
+        "sha256": "a67dcb382a9d9cb4b729bec87b692197ecb3b8c821cba68350c323a58811da13"
+      }
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
+    "models": [],
+    "node": "assembly@hub",
+    "output": "3575927d8f95d5e83e8644fbdcedd636f7d9b71816b0ab3b99b91ba7c9b08ffa",
+    "own_files": [],
+    "place": "hub",
+    "record_key": "1af4c717efaa99ec02c0ca477282f897c3291556b8952109c0d6dd8d805839f4",
+    "route": "374b0f515859fb6e0d9f64503153d3c8196528863cfb8d7493cf944d3ab9ad80",
+    "side_records_from": "4428b3e9841ccecf1b5c18b0e87d53cf5c583421f3805059015d30690bbaf6b9",
+    "source_name": "layers/light.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": null
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "hub"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "light"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Hub light layer",
+  "usd": {
+    "default_prim": "/hub",
+    "layer": "light",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/layer/light.hub/2/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "sublayer"
+  },
+  "version": 2
+}
