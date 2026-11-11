@@ -2,49 +2,54 @@
   "address": "character/body_crowd_made@1",
   "files": {
     "body.glb": {
-      "bytes": 938500,
+      "bytes": 980148,
       "role": "gltf",
-      "sha256": "e123399d87966eb2dde834039a7188cc2a3fa313a7a1db725866063582870eb1"
+      "sha256": "2ebec2db15a6ae0f161b88acd63ad0d04340e72dfa0c7233767ca4bf4a43985f"
     },
     "character.usdc": {
-      "bytes": 806158,
+      "bytes": 809273,
       "role": "usd",
-      "sha256": "3e80c427f46d38b60eb701648d4429a7da27bf6024f92a7af0b6b6f0fa992730"
+      "sha256": "1fbe3bad62444befb6d3f0d9c31bafb025b0a62eec99868abd47c81eda290895"
     },
     "checks/build.json": {
-      "bytes": 4298,
+      "bytes": 4474,
       "role": "record",
-      "sha256": "845a72c5d5ce5d808a68a738d3a9a78d18c04500d30272cdc16db5356db5ec7d"
+      "sha256": "7388ff44fbd3e967e560ae60638f93bb2820f6b0913b13f204a33d6bdc8155a5"
     },
     "checks/joins.json": {
-      "bytes": 1077,
+      "bytes": 1763,
       "role": "record",
-      "sha256": "5c4ea36ba270280aed8cf4aada0cbafb3835ec0f5aa4cb2f981a3e872492b295"
+      "sha256": "6aac12fd8e7bc50359e05c43ed771953362e7c7592d5c1728a2ae0e07a3f6d80"
     },
     "checks/likeness.json": {
       "bytes": 147,
       "role": "record",
-      "sha256": "04535660be49eb2a0eb1c9bf544306bfb59839216758b85c4e839bd5a934d67d"
+      "sha256": "ea1b9ac67ee7451c1d2ad43f12d16cf8b2067b03b5a20ef32310400862500f1c"
     },
     "checks/parts.json": {
-      "bytes": 1845,
+      "bytes": 1582,
       "role": "record",
-      "sha256": "97a8ce60568dae8a6426af0d4b935b4c305bf34a5466b727d514adf4bf8b2cbd"
+      "sha256": "f17dc8aaacbf90b1fe78b61cc30afc14887e5077e0a01309e32cc7c447fa9c6a"
     },
     "checks/rig.json": {
-      "bytes": 4275,
+      "bytes": 4248,
       "role": "record",
-      "sha256": "69b35f8ffb074f74c499e7a802ae5ec4aadf316b8cdea7214657bcbf0d0c49bb"
+      "sha256": "78c846b6c156ec86b265924fbec8f7945069ff1c9c18d0c920fe9a462d010c55"
     },
     "checks/shell.json": {
-      "bytes": 4159,
+      "bytes": 4598,
       "role": "record",
-      "sha256": "3f2ad39976a758091430068206e5cdfc0e97c2c12dd9ee979c1f2c19f68a8e55"
+      "sha256": "9c90ac4d2f843865dde58df3eb240bf1ced8fd46549cdec78067d02882f7256e"
     },
     "look.json": {
       "bytes": 285,
       "role": "record",
       "sha256": "3e74a2fd44af10adc68bbe33af117f1612f7610b62dcf3f794aea62f8fbc6169"
+    },
+    "textures/crowd_0.png": {
+      "bytes": 10324,
+      "role": "texture",
+      "sha256": "1c3dac730dd9c14d5714f7aca460b4efd6e59d757d6720f9115d46edef672379"
     }
   },
   "id": "body_crowd_made",
@@ -53,11 +58,17 @@
   "picture_reason": "no accepted people-take close-up of this look",
   "provenance": {
     "accept": {
-      "at": "2026-11-09T18:22:32.737844+00:00",
+      "at": "2026-11-11T06:11:46.134246+00:00",
       "by": "runner"
     },
-    "code": "3c31a97478a81a0b8e8575adf951f78367742473d08047f76cdbe507193a3f8d",
-    "commit": "c1b04fb6e7942b4a2e9e24e26d39ce443a7fb464",
+    "code": "192c943819ccf50ee00c5617c5e4efe61bdcf4c939f6b02ed377348e7063b543",
+    "commit": "a106fddb0e63e042cd74e1266e5756e664287e88",
+    "files_from": {
+      "checks/rig.json": {
+        "path": "checks/rig.json",
+        "sha256": "8914bd10b08caee804bfcca8a5496433b50dcbe7de0a4aa271981e3796298767"
+      }
+    },
     "look": "crowd-made",
     "made_with": [
       {
@@ -87,9 +98,9 @@
     ],
     "models": [],
     "node": "people-body-crowd-made",
-    "output": "59c92d64e284838f817694cbb96f8f2423b57facedee0fd1565c64127fec99df",
+    "output": "4053a61bad726658cd876804702cca2ccf514007567c2465a038b5376affb2fb",
     "place": null,
-    "record_key": "0759c674bcc809b4c98585b76b60fbefffe6098a0052e13f20178d5017f4bb0f",
+    "record_key": "2c016e45b417391a2ee03144dcc98ff1046ff952294b2ee01842d2fd49c49a39",
     "route": "fe2d136cb0940a39e1aef06f4df64f62cbd007d7c48794969254e086bee9e3ce",
     "world": "world1"
   },
