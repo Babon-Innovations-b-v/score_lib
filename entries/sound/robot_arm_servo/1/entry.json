@@ -1,0 +1,88 @@
+{
+  "address": "sound/robot_arm_servo@1",
+  "files": {
+    "audio/generated/machines/robot_arm_servo.wav": {
+      "bytes": 393712,
+      "role": "audio",
+      "sha256": "f62c4ac325313d2cf7d47c37e4c64b301fbf81b603a88e6d78488f7fddc24d1d"
+    },
+    "preview.png": {
+      "bytes": 2549,
+      "role": "picture",
+      "sha256": "5b8c36796c414e0b94d05468b0ca6443caa1b9dc8a0a4b0060fdd5a82ef80214"
+    },
+    "sound.json": {
+      "bytes": 1026,
+      "role": "record",
+      "sha256": "d861671e7dbf924d010ad28eb7a0339b712fdc436c83c41e150632a84072958e"
+    }
+  },
+  "id": "robot_arm_servo",
+  "kind": "sound",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/audio.py",
+    "of": "audio/generated/machines/robot_arm_servo.wav"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-11-11T06:44:23.867795+00:00",
+      "by": "runner"
+    },
+    "code": "c2968fc05797ec80ee28dcd9c800296292c6b3a053807b236cfa46101827c8f2",
+    "commit": "a106fddb0e63e042cd74e1266e5756e664287e88",
+    "files_source": {
+      "audio/generated/machines/robot_arm_servo.wav": "files/sound/generated/machines/robot_arm_servo.wav"
+    },
+    "made_with": [
+      {
+        "by": "moss_soundeffect",
+        "what": "sound/generated/machines/robot_arm_servo.wav"
+      }
+    ],
+    "models": [
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "clap-larger-general",
+        "revision": "ada0c23a36c4e8582805bb38fec3905903f18b41",
+        "sha256": "b8e001a32b37111261ccc28541ae07960a8cc047837f76a1a0877e9b2c59dc45",
+        "source": "hf:laion/larger_clap_general"
+      },
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "moss-soundeffect-v2",
+        "revision": "e35df4d82fbe87fcd5d14e5d100e349c0c3c076d",
+        "sha256": "d74b38a3387c5e670754edde2d06a71d1940c3a603e5a0489550159e79d18885",
+        "source": "hf:OpenMOSS-Team/MOSS-SoundEffect-v2.0"
+      }
+    ],
+    "node": "sound@workshop",
+    "output": "2624ccee972fd3b545e2a4e7cd1bf38c48ac7c11d6824b46e120283e8509f52c",
+    "place": "workshop",
+    "prim": null,
+    "record_key": "0c7e1331028648095053ec244e2edc3313705f6196e4152d4fddb93dcd4afce1",
+    "route": "fe2d136cb0940a39e1aef06f4df64f62cbd007d7c48794969254e086bee9e3ce",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "workshop"
+  ],
+  "state": "draft",
+  "tags": {
+    "category": [
+      "loop"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "made_by": [
+      "moss"
+    ],
+    "place_kind": []
+  },
+  "title": "Robot arm servo",
+  "usd": null,
+  "version": 1
+}
