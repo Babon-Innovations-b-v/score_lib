@@ -1,0 +1,88 @@
+{
+  "address": "sound/car_idle@2",
+  "files": {
+    "audio/generated/machines/car_idle.wav": {
+      "bytes": 621808,
+      "role": "audio",
+      "sha256": "6e3795d1186a894a6c0976053a8f559315b5a0ae47c748139924167bd24505db"
+    },
+    "preview.png": {
+      "bytes": 2842,
+      "role": "picture",
+      "sha256": "9f2b0aec1f9839c707e96aeb3e06ccf924703ae87ade4cee46c7249483dfcc50"
+    },
+    "sound.json": {
+      "bytes": 1073,
+      "role": "record",
+      "sha256": "a69e22ce54a6ffd98eed1d2677a67d0c1d8979cb25db69887f3a6340a3ab9fde"
+    }
+  },
+  "id": "car_idle",
+  "kind": "sound",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/audio.py",
+    "of": "audio/generated/machines/car_idle.wav"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-11-11T09:20:25.656478+00:00",
+      "by": "runner"
+    },
+    "code": "c2968fc05797ec80ee28dcd9c800296292c6b3a053807b236cfa46101827c8f2",
+    "commit": "9d5f95d962f418a78c643565c98f800fd7c7aec4",
+    "files_source": {
+      "audio/generated/machines/car_idle.wav": "files/sound/generated/machines/car_idle.wav"
+    },
+    "made_with": [
+      {
+        "by": "moss_soundeffect",
+        "what": "sound/generated/machines/car_idle.wav"
+      }
+    ],
+    "models": [
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "clap-larger-general",
+        "revision": "ada0c23a36c4e8582805bb38fec3905903f18b41",
+        "sha256": "b8e001a32b37111261ccc28541ae07960a8cc047837f76a1a0877e9b2c59dc45",
+        "source": "hf:laion/larger_clap_general"
+      },
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "moss-soundeffect-v2",
+        "revision": "e35df4d82fbe87fcd5d14e5d100e349c0c3c076d",
+        "sha256": "d74b38a3387c5e670754edde2d06a71d1940c3a603e5a0489550159e79d18885",
+        "source": "hf:OpenMOSS-Team/MOSS-SoundEffect-v2.0"
+      }
+    ],
+    "node": "sound@street",
+    "output": "0ed3f03f69155fa8795cc4730a59988b8f69bc9c8525e7553dd734ffacd2ed7d",
+    "place": "street",
+    "prim": null,
+    "record_key": "a41fdb785882d2bd2f9534acd538c7948d6f891d9140dbf7a2e6065061583925",
+    "route": "374b0f515859fb6e0d9f64503153d3c8196528863cfb8d7493cf944d3ab9ad80",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "street"
+  ],
+  "state": "draft",
+  "tags": {
+    "category": [
+      "loop"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "made_by": [
+      "moss"
+    ],
+    "place_kind": []
+  },
+  "title": "Car idle",
+  "usd": null,
+  "version": 2
+}
