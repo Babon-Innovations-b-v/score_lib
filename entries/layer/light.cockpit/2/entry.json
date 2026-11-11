@@ -1,0 +1,91 @@
+{
+  "address": "layer/light.cockpit@2",
+  "files": {
+    "lamps.json": {
+      "bytes": 3530,
+      "role": "record",
+      "sha256": "773c8cdc1f0680dd5e5e1149bb2b3594c169039a0b0faf3d38d91908f0e2dfe6"
+    },
+    "layer.usda": {
+      "bytes": 343911,
+      "role": "usd",
+      "sha256": "d945235c1fb8e255c3232ed0a3fd3013b068bf313444495e09d3321dc046da5d"
+    },
+    "measures.json": {
+      "bytes": 7580,
+      "role": "record",
+      "sha256": "05075a7990f1ac4038118aa5a408e85afc198bda499ea2627f0627a21362a217"
+    },
+    "picture.png": {
+      "bytes": 398483,
+      "role": "picture",
+      "sha256": "7ec7da2eb2d35cc4e814e62efc19efb05bc2c45ba3b61e72d47705a311757fe3"
+    }
+  },
+  "id": "light.cockpit",
+  "kind": "layer",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@cockpit: looks/cockpit/from-door-1-look.png"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-11-11T20:10:21.254311+00:00",
+      "by": "runner"
+    },
+    "code": "06d2350cdc50836a611dce5fba17b390587bf388f9cd99add6ce9badfd0b300f",
+    "commit": "7a73a719713bbc3c86f26529a5d2b05f09264c4b",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/light.usda",
+        "sha256": "d945235c1fb8e255c3232ed0a3fd3013b068bf313444495e09d3321dc046da5d"
+      }
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
+    "models": [],
+    "node": "assembly@cockpit",
+    "output": "0baaa5c674453e727b16140891c60d540033c893236578d82c744348a29b0abe",
+    "own_files": [],
+    "place": "cockpit",
+    "record_key": "866cdcd11073df46a528099df49c7a79a47d59d88031137698a6789ad7ff648c",
+    "route": "dc76c23298e38685b3f14140ba65d81393eca8a5b31e6d31d392983562d1a7d0",
+    "side_records_from": "6992aad306c7cef8e8aae6115b17856c9f218aeb6283abd10f56e37c1444e2ca",
+    "source_name": "layers/light.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": null
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "cockpit"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "light"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Cockpit light layer",
+  "usd": {
+    "default_prim": "/cockpit",
+    "layer": "light",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/layer/light.cockpit/2/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "sublayer"
+  },
+  "version": 2
+}

@@ -1,0 +1,90 @@
+{
+  "address": "layer/sound.cockpit@2",
+  "files": {
+    "layer.usda": {
+      "bytes": 4212,
+      "role": "usd",
+      "sha256": "047022935f6ef2a1724b9d86fd977342f3c070519c0cb802e7851f3976245e37"
+    },
+    "preview.png": {
+      "bytes": 1748,
+      "role": "picture",
+      "sha256": "f7c1b3aa09a3a647a5e5b43a0fd7f4544f854ae02d7b105877e8f1fccaa4bbde"
+    },
+    "sound.json": {
+      "bytes": 25556,
+      "role": "record",
+      "sha256": "f97375f3098033d8e5e0c797a48bd88087cf87a329eca83cb355cf68277cf62d"
+    }
+  },
+  "id": "sound.cockpit",
+  "kind": "layer",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "5 prim positions from above over data/kit/cockpit.json"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-11-11T20:10:21.254311+00:00",
+      "by": "runner"
+    },
+    "code": "06d2350cdc50836a611dce5fba17b390587bf388f9cd99add6ce9badfd0b300f",
+    "commit": "7a73a719713bbc3c86f26529a5d2b05f09264c4b",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/sound.usda",
+        "sha256": "d0563363d3878e3ddfe81340b23c581d820e4760fd2f0587ae8e62bfba338523"
+      }
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
+    "models": [],
+    "node": "assembly@cockpit",
+    "output": "0baaa5c674453e727b16140891c60d540033c893236578d82c744348a29b0abe",
+    "own_files": [],
+    "place": "cockpit",
+    "record_key": "866cdcd11073df46a528099df49c7a79a47d59d88031137698a6789ad7ff648c",
+    "route": "dc76c23298e38685b3f14140ba65d81393eca8a5b31e6d31d392983562d1a7d0",
+    "side_records_from": "468b54f1a7a5c4846fe5901b0793aafd0f5ed86046843f00e9277524cf4b4a6a",
+    "source_name": "layers/sound.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": null
+  },
+  "requires": [
+    "sound/console_hum@2",
+    "sound/lamp_buzz@2",
+    "sound/ship_inside@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "cockpit"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "sound"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Cockpit sound layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "sound",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/sound.cockpit/2/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 2
+}

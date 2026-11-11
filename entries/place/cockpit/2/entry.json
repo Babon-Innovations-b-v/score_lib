@@ -1,0 +1,171 @@
+{
+  "address": "place/cockpit@2",
+  "files": {
+    "cast/cast.json": {
+      "bytes": 1158,
+      "role": "record",
+      "sha256": "c6d439141760d7d80abe8471da1de941f2088560feed8e94d39ac4614213f9e2"
+    },
+    "cast/measures.json": {
+      "bytes": 450,
+      "role": "record",
+      "sha256": "63fb3509dd7003fbff5c90582a7e46987534312109404eca044acee7762cf659"
+    },
+    "cockpit.usda": {
+      "bytes": 477,
+      "role": "usd",
+      "sha256": "0808d547960b62d7464540b518cee5a8a95b3298fd0f1c65ada1ad07d991ed55"
+    },
+    "contract.json": {
+      "bytes": 99,
+      "role": "record",
+      "sha256": "c2b7151f92e6a67ca4666ea747ad262b67b4d0af824cc83862ce64d8cc49d12c"
+    },
+    "edit.usda": {
+      "bytes": 183,
+      "role": "usd",
+      "sha256": "8fc5485ea9a58537dd8289c516a85733e069ad7a17b866471667b8795142454f"
+    },
+    "gaps.json": {
+      "bytes": 1384,
+      "role": "record",
+      "sha256": "042c18ddf25b3a5404b75c4dc3a95755df4d5b32f0ab3850076eaa460a8bef55"
+    },
+    "inputs.json": {
+      "bytes": 561,
+      "role": "record",
+      "sha256": "acdde88cb1ec30976e55370839cf44104671807f3d878321c3ae06ed328aad29"
+    },
+    "origin.json": {
+      "bytes": 891,
+      "role": "record",
+      "sha256": "81980f3d141b80e74fca15c70c8406172ad291205480b669a4526dfcfaaff183"
+    },
+    "picture.png": {
+      "bytes": 398483,
+      "role": "picture",
+      "sha256": "7ec7da2eb2d35cc4e814e62efc19efb05bc2c45ba3b61e72d47705a311757fe3"
+    },
+    "plan/plan.json": {
+      "bytes": 7505,
+      "role": "record",
+      "sha256": "376056a0436dd3c8f3652ce4ce910c82a4a9d4b000be77b7e6ec33ce55d7b526"
+    },
+    "scene.json": {
+      "bytes": 19452,
+      "role": "record",
+      "sha256": "1a1d7fcea737977dbfe033c0dbdab52fe62fa360262be8f311930316f90c8b77"
+    }
+  },
+  "id": "cockpit",
+  "kind": "place",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@cockpit: looks/cockpit/from-door-1-look.png"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-11-11T20:10:21.254311+00:00",
+      "by": "runner"
+    },
+    "code": "06d2350cdc50836a611dce5fba17b390587bf388f9cd99add6ce9badfd0b300f",
+    "commit": "7a73a719713bbc3c86f26529a5d2b05f09264c4b",
+    "complete": {
+      "accept": {
+        "at": "2026-11-11T20:10:28.367984+00:00",
+        "by": "runner"
+      },
+      "code": "c48d12ecdb54200712f5143fcac72ec7c0f81e34d26512ec546b54043fa83200",
+      "models": [],
+      "node": "complete@cockpit",
+      "output": "88d8e8a6e076727fad833ac14b6a34ecbdb538b41d3405abd9cc600ac3fc33c8",
+      "record_key": "e1541316ef9c35c970d1dfa58fa565ac85ce34b07cbe7504681901dff3289a46",
+      "route": "dc76c23298e38685b3f14140ba65d81393eca8a5b31e6d31d392983562d1a7d0"
+    },
+    "complete_failing": [
+      "accepted gaps"
+    ],
+    "files_from": {
+      "origin.json": {
+        "path": "origin.json",
+        "sha256": "edbb9316e51309b988d0606b2e03db3988ce9fa29784010e6c349df220ea12a6"
+      }
+    },
+    "gaps": "data/checks/gaps/cockpit.json",
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
+    "models": [],
+    "node": "assembly@cockpit",
+    "output": "0baaa5c674453e727b16140891c60d540033c893236578d82c744348a29b0abe",
+    "place": "cockpit",
+    "record_key": "866cdcd11073df46a528099df49c7a79a47d59d88031137698a6789ad7ff648c",
+    "records_from": {
+      "cast": {
+        "accept": {
+          "at": "2026-11-11T18:39:06.223553+00:00",
+          "by": "runner"
+        },
+        "code": "6445f3eaf2ca783d14aa9534c23e5d6a14ce2b0154639a8926af42a10cad6bec",
+        "models": [],
+        "node": "cast@cockpit",
+        "output": "dceecd656e3f24c4be7db5424dd82e2122794a9d4621ae9f6b5e497e0257ca78",
+        "record_key": "8e611f7e4151185fe2889daad5c14bc9d7186073fe74eb638f0ce1928e533ab0",
+        "route": "dc76c23298e38685b3f14140ba65d81393eca8a5b31e6d31d392983562d1a7d0"
+      },
+      "plan": {
+        "accept": {
+          "at": "2026-11-05T03:07:06.157373+00:00",
+          "by": "runner"
+        },
+        "code": "985bd19376b13aa34f4738bb055ec8339fdc69407d026062a7499e22936ed809",
+        "models": [],
+        "node": "plan@cockpit",
+        "output": "d35ce1ac9e0d76efc4b5e23f7684c5a5462d0589e6a82cf6c1ce17322f2d0a3d",
+        "record_key": "8f3a1330d69d204d2dabbbb89ee26deecaff9fd4854172abc48bef093174ded7",
+        "route": "dc76c23298e38685b3f14140ba65d81393eca8a5b31e6d31d392983562d1a7d0"
+      }
+    },
+    "route": "dc76c23298e38685b3f14140ba65d81393eca8a5b31e6d31d392983562d1a7d0",
+    "unresolved_sublayers": [
+      "./layers/base.usda"
+    ],
+    "world": "world1"
+  },
+  "requires": [
+    "layer/characters.cockpit@2",
+    "layer/light.cockpit@2",
+    "layer/motion.cockpit@1",
+    "layer/sound.cockpit@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "cockpit"
+  ],
+  "state": "draft",
+  "tags": {
+    "complete": [
+      "fail"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Cockpit",
+  "usd": {
+    "default_prim": "/cockpit",
+    "layer": "root",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/place/cockpit/2/cockpit.usda",
+    "root": "cockpit.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": "Y",
+    "use": "open"
+  },
+  "version": 2
+}

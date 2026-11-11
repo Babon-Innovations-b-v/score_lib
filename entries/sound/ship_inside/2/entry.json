@@ -20,6 +20,11 @@
       "bytes": 998,
       "role": "record",
       "sha256": "4e00a8552cd333686570fbb25aecd57f33265949a9aed5b770e0274da8a3c89b"
+    },
+    "sound.usda": {
+      "bytes": 596,
+      "role": "usd",
+      "sha256": "58a4454b8103c1b2b2f8c361a96ca9c2df00c66e3df0f6404d2d4b2ac56068ca"
     }
   },
   "id": "ship_inside",
@@ -35,12 +40,12 @@
       "by": "runner"
     },
     "code": "ea2d96490fb90e020b3b5abf9ba17a6f3e635f8a52f960b3beabb2862fac8301",
-    "commit": "b50d6f469c78e80017f60066265b38d6d5fd32ff",
+    "commit": "7a73a719713bbc3c86f26529a5d2b05f09264c4b",
     "files_from": {
       "audio/recordings/places/ship_inside.ogg": "sound/recordings/places/ship_inside.ogg"
     },
     "files_source": {
-      "audio/generated/places/ship_inside.wav": "files/sound/generated/places/ship_inside.wav"
+      "audio/generated/places/ship_inside.wav": "assets/sound/generated/places/ship_inside.wav"
     },
     "made_with": [
       {
@@ -72,7 +77,7 @@
     "node": "sound@cockpit",
     "output": "468b54f1a7a5c4846fe5901b0793aafd0f5ed86046843f00e9277524cf4b4a6a",
     "place": "cockpit",
-    "prim": null,
+    "prim": "/cockpit/Sound/Room/ship_inside",
     "record_key": "1b73436b88f2b1dd608a398f0e7e163bdd621d296b7aac0622c9501fcd8dc7bf",
     "route": "dc76c23298e38685b3f14140ba65d81393eca8a5b31e6d31d392983562d1a7d0",
     "world": "world1"
@@ -105,6 +110,15 @@
     ]
   },
   "title": "Ship inside",
-  "usd": null,
+  "usd": {
+    "default_prim": "/ship_inside",
+    "layer": "sound",
+    "meters_per_unit": null,
+    "path": "score_lib/sound/ship_inside/2/sound.usda",
+    "root": "sound.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
   "version": 2
 }

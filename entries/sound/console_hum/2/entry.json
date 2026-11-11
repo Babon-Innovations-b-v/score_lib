@@ -15,6 +15,11 @@
       "bytes": 1025,
       "role": "record",
       "sha256": "15863ab23e5a1c8bdb2a69f3dac26b2db61cc39f53330c09f11873e6593081ac"
+    },
+    "sound.usda": {
+      "bytes": 621,
+      "role": "usd",
+      "sha256": "3c0d80c9d4acfcbf1eb9e505a2dd1ee6ba8f24e3579ce71c055f6ee3e1ef5c79"
     }
   },
   "id": "console_hum",
@@ -30,9 +35,9 @@
       "by": "runner"
     },
     "code": "ea2d96490fb90e020b3b5abf9ba17a6f3e635f8a52f960b3beabb2862fac8301",
-    "commit": "b50d6f469c78e80017f60066265b38d6d5fd32ff",
+    "commit": "7a73a719713bbc3c86f26529a5d2b05f09264c4b",
     "files_source": {
-      "audio/generated/machines/console_hum.wav": "files/sound/generated/machines/console_hum.wav"
+      "audio/generated/machines/console_hum.wav": "assets/sound/generated/machines/console_hum.wav"
     },
     "made_with": [
       {
@@ -59,7 +64,7 @@
     "node": "sound@cockpit",
     "output": "468b54f1a7a5c4846fe5901b0793aafd0f5ed86046843f00e9277524cf4b4a6a",
     "place": "cockpit",
-    "prim": null,
+    "prim": "/cockpit/Objects/comms_console_1/Sound",
     "record_key": "1b73436b88f2b1dd608a398f0e7e163bdd621d296b7aac0622c9501fcd8dc7bf",
     "route": "dc76c23298e38685b3f14140ba65d81393eca8a5b31e6d31d392983562d1a7d0",
     "world": "world1"
@@ -94,6 +99,15 @@
     ]
   },
   "title": "Console hum",
-  "usd": null,
+  "usd": {
+    "default_prim": "/console_hum",
+    "layer": "sound",
+    "meters_per_unit": null,
+    "path": "score_lib/sound/console_hum/2/sound.usda",
+    "root": "sound.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "reference"
+  },
   "version": 2
 }

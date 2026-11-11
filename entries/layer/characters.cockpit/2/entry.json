@@ -1,0 +1,135 @@
+{
+  "address": "layer/characters.cockpit@2",
+  "files": {
+    "assets/characters/officer-made.usdc": {
+      "bytes": 5096394,
+      "role": "usd",
+      "sha256": "6c15ee221ed4828cef3bd180319c25f20ed974c21de1af6f773ce77d6e8effa5"
+    },
+    "assets/characters/pilot-made.usdc": {
+      "bytes": 4453826,
+      "role": "usd",
+      "sha256": "0aefa4f46396055ffb641dc222e6204fedd1a407c23f9f52367624906337a885"
+    },
+    "assets/characters/textures/officer-made_0.png": {
+      "bytes": 1879042,
+      "role": "texture",
+      "sha256": "a2425f8ef59e8cbfbe25cae60c3d4d7a1ebe3150d247165889b7788869fdf126"
+    },
+    "assets/characters/textures/officer-made_1.png": {
+      "bytes": 915441,
+      "role": "texture",
+      "sha256": "e381dc7947e04a10a5746c305ec11b75dbcdb1c7f31375e0c262f27b9fd7fbb5"
+    },
+    "assets/characters/textures/officer-made_2.png": {
+      "bytes": 11821128,
+      "role": "texture",
+      "sha256": "1a116297e4d8a6608b4765fff9a2789dd2fd113e617079bd96d7b50680886e93"
+    },
+    "assets/characters/textures/pilot-made_0.png": {
+      "bytes": 1506578,
+      "role": "texture",
+      "sha256": "52e42ea6cf7feda1325181aa277e630277e39e2a8f5b39a9adde5611112d9d17"
+    },
+    "assets/characters/textures/pilot-made_1.png": {
+      "bytes": 779470,
+      "role": "texture",
+      "sha256": "7f9577e60c72dd04f18e1101d17eacca1748b14dc27bafa747b11d5749046dd3"
+    },
+    "assets/characters/textures/pilot-made_2.png": {
+      "bytes": 16807549,
+      "role": "texture",
+      "sha256": "e0baa5b9d9b49e3b25ed450fbcca00bd3dda550303ab35e85ee6fb96605908aa"
+    },
+    "characters.json": {
+      "bytes": 334,
+      "role": "record",
+      "sha256": "4165e999acd8dcb0e06cf3f062ee29dc2bb7cb2f6218a327dc5e474cab16b13a"
+    },
+    "layer.usda": {
+      "bytes": 1768,
+      "role": "usd",
+      "sha256": "85bc9391520cb9f702fd4e91db2313a6d1e84b04c7769840c4645ac4269bce0f"
+    },
+    "preview.png": {
+      "bytes": 1602,
+      "role": "picture",
+      "sha256": "f37ca772dd7ec62a71a94dcd3f2ef88ff80804c8851c1b9363f26aad734da82d"
+    }
+  },
+  "id": "characters.cockpit",
+  "kind": "layer",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "2 prim positions from above over data/kit/cockpit.json"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-11-11T20:10:21.254311+00:00",
+      "by": "runner"
+    },
+    "code": "06d2350cdc50836a611dce5fba17b390587bf388f9cd99add6ce9badfd0b300f",
+    "commit": "7a73a719713bbc3c86f26529a5d2b05f09264c4b",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/characters.usda",
+        "sha256": "61bc67c78582b5b93600e5e77a29daaea9d6d63db632bff6080938fdecc8056a"
+      }
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
+    "models": [],
+    "node": "assembly@cockpit",
+    "output": "0baaa5c674453e727b16140891c60d540033c893236578d82c744348a29b0abe",
+    "own_files": [
+      "assets/characters/officer-made.usdc",
+      "assets/characters/pilot-made.usdc",
+      "assets/characters/textures/officer-made_0.png",
+      "assets/characters/textures/officer-made_1.png",
+      "assets/characters/textures/officer-made_2.png",
+      "assets/characters/textures/pilot-made_0.png",
+      "assets/characters/textures/pilot-made_1.png",
+      "assets/characters/textures/pilot-made_2.png"
+    ],
+    "place": "cockpit",
+    "record_key": "866cdcd11073df46a528099df49c7a79a47d59d88031137698a6789ad7ff648c",
+    "route": "dc76c23298e38685b3f14140ba65d81393eca8a5b31e6d31d392983562d1a7d0",
+    "side_records_from": "9fb0c97cdc2655d51367721e07a83b817f57f87346ec06d41cd1a72c234a17fe",
+    "source_name": "layers/characters.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": null
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "cockpit"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "characters"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Cockpit characters layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "characters",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/characters.cockpit/2/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": 30.0,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 2
+}
