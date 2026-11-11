@@ -1,0 +1,88 @@
+{
+  "address": "sound/room_talk@1",
+  "files": {
+    "audio/generated/machines/room_talk.wav": {
+      "bytes": 816112,
+      "role": "audio",
+      "sha256": "f2b0c0039c8d0919b0c43228b884020a360fb847ee56a46c3bd55eb6bc7d4495"
+    },
+    "preview.png": {
+      "bytes": 2094,
+      "role": "picture",
+      "sha256": "a4bb832e2b95d1ba3edde4a86011e056fa8e6f2c4f28812e0846ecc7cfb95d7e"
+    },
+    "sound.json": {
+      "bytes": 1050,
+      "role": "record",
+      "sha256": "85aaa4e036ae53e69bf137ee491929392d97acee33de9c15e12b54d461dd72cc"
+    }
+  },
+  "id": "room_talk",
+  "kind": "sound",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/audio.py",
+    "of": "audio/generated/machines/room_talk.wav"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-11-11T05:37:13.468480+00:00",
+      "by": "runner"
+    },
+    "code": "c2968fc05797ec80ee28dcd9c800296292c6b3a053807b236cfa46101827c8f2",
+    "commit": "09835515dfdd56841bc6838a6a30edf09d4c18b7",
+    "files_source": {
+      "audio/generated/machines/room_talk.wav": "files/sound/generated/machines/room_talk.wav"
+    },
+    "made_with": [
+      {
+        "by": "moss_soundeffect",
+        "what": "sound/generated/machines/room_talk.wav"
+      }
+    ],
+    "models": [
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "clap-larger-general",
+        "revision": "ada0c23a36c4e8582805bb38fec3905903f18b41",
+        "sha256": "b8e001a32b37111261ccc28541ae07960a8cc047837f76a1a0877e9b2c59dc45",
+        "source": "hf:laion/larger_clap_general"
+      },
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "moss-soundeffect-v2",
+        "revision": "e35df4d82fbe87fcd5d14e5d100e349c0c3c076d",
+        "sha256": "d74b38a3387c5e670754edde2d06a71d1940c3a603e5a0489550159e79d18885",
+        "source": "hf:OpenMOSS-Team/MOSS-SoundEffect-v2.0"
+      }
+    ],
+    "node": "sound@stairwell",
+    "output": "1b2cd5c948ce30ba4483d0958a9dc3ad175ed48dc72e84234778d87b1dc4b9a1",
+    "place": "stairwell",
+    "prim": null,
+    "record_key": "3d1dab0460a5b0413e78e5986becba8b7d56458a3259c8eab63acf77f90b2f5f",
+    "route": "fe2d136cb0940a39e1aef06f4df64f62cbd007d7c48794969254e086bee9e3ce",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "stairwell"
+  ],
+  "state": "draft",
+  "tags": {
+    "category": [
+      "loop"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "made_by": [
+      "moss"
+    ],
+    "place_kind": []
+  },
+  "title": "Room talk",
+  "usd": null,
+  "version": 1
+}
