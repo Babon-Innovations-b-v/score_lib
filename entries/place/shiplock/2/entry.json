@@ -1,0 +1,143 @@
+{
+  "address": "place/shiplock@2",
+  "files": {
+    "contract.json": {
+      "bytes": 99,
+      "role": "record",
+      "sha256": "c2b7151f92e6a67ca4666ea747ad262b67b4d0af824cc83862ce64d8cc49d12c"
+    },
+    "edit.usda": {
+      "bytes": 183,
+      "role": "usd",
+      "sha256": "8fc5485ea9a58537dd8289c516a85733e069ad7a17b866471667b8795142454f"
+    },
+    "inputs.json": {
+      "bytes": 563,
+      "role": "record",
+      "sha256": "3b97067850ce4d9dbbbf194bbd42554d7aa7e4d9dbdb38a04463b47e51a33bd7"
+    },
+    "origin.json": {
+      "bytes": 803,
+      "role": "record",
+      "sha256": "4abc83a03f903709cf966c981f4f8607e15b54e8e5139cce41d5f05fbac40624"
+    },
+    "picture.png": {
+      "bytes": 266298,
+      "role": "picture",
+      "sha256": "1c423f43f2fcafc980a817ba4093d5df8c31f2a044974c20c19faec8bdfb5854"
+    },
+    "plan/plan.json": {
+      "bytes": 6049,
+      "role": "record",
+      "sha256": "0bacb2ce205bf61e4b24e340ab2d6c613dff1708ec6a68afdc04179fff325bf9"
+    },
+    "scene.json": {
+      "bytes": 14347,
+      "role": "record",
+      "sha256": "c9513cee355d60455429a6ada06c58a02258476f4b8fb16b56d7abd514d286d6"
+    },
+    "shiplock.usda": {
+      "bytes": 422,
+      "role": "usd",
+      "sha256": "76dc42bddb6a38353a6fb2654bc63e3ed087164c96507262a5deaf76c1503b67"
+    }
+  },
+  "id": "shiplock",
+  "kind": "place",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@shiplock: looks/shiplock/from-door-1-look.png"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-11-11T16:01:05.743471+00:00",
+      "by": "runner"
+    },
+    "code": "2205d9a0417c88ac8cc84e2948cbca930dd3b4797820c8cc866fcbd4224b4c49",
+    "commit": "fbad455552cc46cce618468a4e42051d8f6252dc",
+    "complete": {
+      "accept": {
+        "at": "2026-11-11T16:01:15.600252+00:00",
+        "by": "runner"
+      },
+      "code": "e1c796ea821434189679e9a69975198dc082acd2db60defb721a0f3c60cf82be",
+      "models": [],
+      "node": "complete@shiplock",
+      "output": "b0bf77ec5167032474f5a6065e42fe9dd43673a91b9e590affbd4b998a0c0889",
+      "record_key": "9f4f97bfbf2ff555abc296ba2d837d909f012458356220bc7c29d306be8317b1",
+      "route": "ad0f3fcba2111ee3aaa10617a65d073648e90d3a1c281a42540f88f9a97a4eb7"
+    },
+    "complete_failing": [
+      "accepted gaps"
+    ],
+    "files_from": {
+      "origin.json": {
+        "path": "origin.json",
+        "sha256": "c1989b19e483bfb687a12ff14e5f37fc0475da431f03ca86e4c6ccad49729fa3"
+      }
+    },
+    "gaps": null,
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
+    "models": [],
+    "node": "assembly@shiplock",
+    "output": "61c6a80ae045268b40a45dcb7385e76da836e30deb6b9f3833cd39b4d11a2087",
+    "place": "shiplock",
+    "record_key": "df30ef0e26b958106a7d74d95359631ef109804abc3ab205d3d9ec10efbe7603",
+    "records_from": {
+      "plan": {
+        "accept": {
+          "at": "2026-11-05T03:16:34.865256+00:00",
+          "by": "runner"
+        },
+        "code": "0129e295cb8aafb862f8d5bb0d7f7015b99d5798ac7e81ca1e837f8d32f2fddb",
+        "models": [],
+        "node": "plan@shiplock",
+        "output": "c0e1ab1cf2cf7d35122448c0bb62c55039220e94e7e69f8dde82fa2bc8d3c340",
+        "record_key": "9bb7620262e4adf42f3cb94d68111d9f26b9886b7b4dd728dde674c3f90bb9f4",
+        "route": "ad0f3fcba2111ee3aaa10617a65d073648e90d3a1c281a42540f88f9a97a4eb7"
+      }
+    },
+    "route": "ad0f3fcba2111ee3aaa10617a65d073648e90d3a1c281a42540f88f9a97a4eb7",
+    "unresolved_sublayers": [
+      "./layers/base.usda"
+    ],
+    "world": "world1"
+  },
+  "requires": [
+    "layer/light.shiplock@2",
+    "layer/motion.shiplock@1",
+    "layer/sound.shiplock@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "shiplock"
+  ],
+  "state": "draft",
+  "tags": {
+    "complete": [
+      "fail"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Shiplock",
+  "usd": {
+    "default_prim": "/shiplock",
+    "layer": "root",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/place/shiplock/2/shiplock.usda",
+    "root": "shiplock.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": "Y",
+    "use": "open"
+  },
+  "version": 2
+}

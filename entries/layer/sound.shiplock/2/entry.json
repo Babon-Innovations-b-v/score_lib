@@ -1,0 +1,89 @@
+{
+  "address": "layer/sound.shiplock@2",
+  "files": {
+    "layer.usda": {
+      "bytes": 4185,
+      "role": "usd",
+      "sha256": "5f87497039e91c1d151295692fcf276bdf6a75969fa21c55c929d2fafd3d073b"
+    },
+    "preview.png": {
+      "bytes": 1681,
+      "role": "picture",
+      "sha256": "0e904a462541cb630eaf82d96ea49991106b99721c3bb5eab1e323e728585e4b"
+    },
+    "sound.json": {
+      "bytes": 24323,
+      "role": "record",
+      "sha256": "8c2440d2e2da7b9ad52e3d6ea58d10e57dc216bfb021f69d9ff3b5f655b5e238"
+    }
+  },
+  "id": "sound.shiplock",
+  "kind": "layer",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "5 prim positions from above over data/kit/shiplock.json"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-11-11T16:01:05.743471+00:00",
+      "by": "runner"
+    },
+    "code": "2205d9a0417c88ac8cc84e2948cbca930dd3b4797820c8cc866fcbd4224b4c49",
+    "commit": "fbad455552cc46cce618468a4e42051d8f6252dc",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/sound.usda",
+        "sha256": "9260f9b4173594701a9530ef3cf1f7dc3cd66ea1fb1835a6ffb0a9514ca46f56"
+      }
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
+    "models": [],
+    "node": "assembly@shiplock",
+    "output": "61c6a80ae045268b40a45dcb7385e76da836e30deb6b9f3833cd39b4d11a2087",
+    "own_files": [],
+    "place": "shiplock",
+    "record_key": "df30ef0e26b958106a7d74d95359631ef109804abc3ab205d3d9ec10efbe7603",
+    "route": "ad0f3fcba2111ee3aaa10617a65d073648e90d3a1c281a42540f88f9a97a4eb7",
+    "side_records_from": "da61ba2363e39602ef0a972ac202e8b9681182f20feef85009855248b1b496b2",
+    "source_name": "layers/sound.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": null
+  },
+  "requires": [
+    "sound/lamp_buzz@2",
+    "sound/ship_inside@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "shiplock"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "sound"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Shiplock sound layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "sound",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/sound.shiplock/2/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 2
+}

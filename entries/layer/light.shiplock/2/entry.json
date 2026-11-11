@@ -1,0 +1,91 @@
+{
+  "address": "layer/light.shiplock@2",
+  "files": {
+    "lamps.json": {
+      "bytes": 4413,
+      "role": "record",
+      "sha256": "6c12cbe889cfef581a72000a94a879c27ac8c1624e0980f80f759596faf6683a"
+    },
+    "layer.usda": {
+      "bytes": 344810,
+      "role": "usd",
+      "sha256": "95c811a356c0d51a311accb478909aad98c631f9c23b0ccb3612c1bd96b87925"
+    },
+    "measures.json": {
+      "bytes": 8710,
+      "role": "record",
+      "sha256": "7aedfd88e1ab82bd3b8706afe3581e4c8bf090d9b2663076ebcd83057aed3b6c"
+    },
+    "picture.png": {
+      "bytes": 266298,
+      "role": "picture",
+      "sha256": "1c423f43f2fcafc980a817ba4093d5df8c31f2a044974c20c19faec8bdfb5854"
+    }
+  },
+  "id": "light.shiplock",
+  "kind": "layer",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@shiplock: looks/shiplock/from-door-1-look.png"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-11-11T16:01:05.743471+00:00",
+      "by": "runner"
+    },
+    "code": "2205d9a0417c88ac8cc84e2948cbca930dd3b4797820c8cc866fcbd4224b4c49",
+    "commit": "fbad455552cc46cce618468a4e42051d8f6252dc",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/light.usda",
+        "sha256": "95c811a356c0d51a311accb478909aad98c631f9c23b0ccb3612c1bd96b87925"
+      }
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
+    "models": [],
+    "node": "assembly@shiplock",
+    "output": "61c6a80ae045268b40a45dcb7385e76da836e30deb6b9f3833cd39b4d11a2087",
+    "own_files": [],
+    "place": "shiplock",
+    "record_key": "df30ef0e26b958106a7d74d95359631ef109804abc3ab205d3d9ec10efbe7603",
+    "route": "ad0f3fcba2111ee3aaa10617a65d073648e90d3a1c281a42540f88f9a97a4eb7",
+    "side_records_from": "5446fd22de8639a6e9b28e24b266e4365f53565c1ce306304887bfe607634435",
+    "source_name": "layers/light.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": null
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "shiplock"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "light"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Shiplock light layer",
+  "usd": {
+    "default_prim": "/shiplock",
+    "layer": "light",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/layer/light.shiplock/2/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "sublayer"
+  },
+  "version": 2
+}
