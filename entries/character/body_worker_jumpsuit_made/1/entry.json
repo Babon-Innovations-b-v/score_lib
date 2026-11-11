@@ -2,49 +2,59 @@
   "address": "character/body_worker_jumpsuit_made@1",
   "files": {
     "body.glb": {
-      "bytes": 942792,
+      "bytes": 985644,
       "role": "gltf",
-      "sha256": "ac831d4cc16ea0c42fa35a2bba728751f0a5a6fa912db0eb2917bec69effcd94"
+      "sha256": "c8fc7f019487b5e98d7f1974cd574d9e01f2f060340b6a880c97b8800ac58d74"
     },
     "character.usdc": {
-      "bytes": 797193,
+      "bytes": 779094,
       "role": "usd",
-      "sha256": "a493bc4ff65b126b27318303feaffeb8bcff4e684fec3847c46d603baa33b235"
+      "sha256": "3dd052450ec86f7d15f7d9328631bd029ee30d50076765ef5559c653d39f4097"
     },
     "checks/build.json": {
-      "bytes": 4096,
+      "bytes": 4579,
       "role": "record",
-      "sha256": "a9f03dad14b2ff7c74046a8dd27bde61234bbffdd2ab87fc37a3d535f08bd00d"
+      "sha256": "0b754f578f92fdcc21cb78206683e15787c7c52d8744c15893ff3251ef71f230"
     },
     "checks/joins.json": {
-      "bytes": 1097,
+      "bytes": 1785,
       "role": "record",
-      "sha256": "92f742f11cd213eaf0cfb82a0958371e847da3fe132eff24d43d0a85c130f431"
+      "sha256": "a209b4d0e3f252f54c099aceffa52f3521ba855390229595ab3e1ca60995b343"
     },
     "checks/likeness.json": {
-      "bytes": 147,
+      "bytes": 146,
       "role": "record",
-      "sha256": "ea7a37f9983936d5827bf053f571813a03768a835e1b926e506530e9f5015365"
+      "sha256": "1f84544b98e5726b99735c0f35a62c11ce7ef6415429486b33440d7b45930da3"
     },
     "checks/parts.json": {
-      "bytes": 2206,
+      "bytes": 1770,
       "role": "record",
-      "sha256": "8d2c2ee3216387254231abc65514d81b7c20463eb5ecd1044ecc5c5cb4654d16"
+      "sha256": "c1d556114cb1c2c065ae57279580251275f013349c694aaf5f7de29e57baab98"
     },
     "checks/rig.json": {
-      "bytes": 4285,
+      "bytes": 4267,
       "role": "record",
-      "sha256": "1e68f75b05e57a2bff0e1d2b4b840a26aa569992989c516233d293efb0fdceb4"
+      "sha256": "26a04e4161e3f2b17785642b01c9d87ae172a26e1e7078f970ee92658f21914c"
     },
     "checks/shell.json": {
-      "bytes": 4185,
+      "bytes": 4464,
       "role": "record",
-      "sha256": "19692814ce4362a2a677097543ca100916fd0c4872a025b8b7ffe4053ce7b892"
+      "sha256": "550da5ca6e37941294d8af42669d9a4ea3ee4b780881039b5f612e3ba7078fce"
     },
     "look.json": {
       "bytes": 315,
       "role": "record",
       "sha256": "056019a8ddcfe122955abee66c9162a1742199f361b564c21d3fdd3cfb59a2cf"
+    },
+    "textures/worker_jumpsuit_0.png": {
+      "bytes": 9487,
+      "role": "texture",
+      "sha256": "4492118d0ef3faab9fbc763b709e573bf9695817355e2dbbc3e47b0fe3dc4243"
+    },
+    "textures/worker_jumpsuit_1.png": {
+      "bytes": 493,
+      "role": "texture",
+      "sha256": "9efffb669148b853538d629ff03c28c4b1a32df14a393b99cd53bafa1eb0b133"
     }
   },
   "id": "body_worker_jumpsuit_made",
@@ -53,11 +63,17 @@
   "picture_reason": "no accepted people-take close-up of this look",
   "provenance": {
     "accept": {
-      "at": "2026-11-09T18:19:37.364366+00:00",
+      "at": "2026-11-11T06:24:41.988693+00:00",
       "by": "runner"
     },
-    "code": "3c31a97478a81a0b8e8575adf951f78367742473d08047f76cdbe507193a3f8d",
-    "commit": "c1b04fb6e7942b4a2e9e24e26d39ce443a7fb464",
+    "code": "192c943819ccf50ee00c5617c5e4efe61bdcf4c939f6b02ed377348e7063b543",
+    "commit": "a106fddb0e63e042cd74e1266e5756e664287e88",
+    "files_from": {
+      "checks/rig.json": {
+        "path": "checks/rig.json",
+        "sha256": "ae3a20cc7dacc55f019f8266685238e29a9236fe01db35da9b4189c7d644da50"
+      }
+    },
     "look": "worker_jumpsuit-made",
     "made_with": [
       {
@@ -87,9 +103,9 @@
     ],
     "models": [],
     "node": "people-body-worker_jumpsuit-made",
-    "output": "ceeb6b6dc1f14e634959cd7261e695b9e8324c63881b701832f8d85a3349a8bc",
+    "output": "507e2b1a313bf17cbfbe808f018d778ab74768b6a0534b7ccb9ce0e18f2dd056",
     "place": null,
-    "record_key": "8ddae118cf4787e46f9431ed83e642bc5963375be24756049983e43f0ab848ad",
+    "record_key": "9329edd46c1da908287bf1d30b8341e7b570a31e8e12117dd0cafc0c6e7e5873",
     "route": "fe2d136cb0940a39e1aef06f4df64f62cbd007d7c48794969254e086bee9e3ce",
     "world": "world1"
   },
