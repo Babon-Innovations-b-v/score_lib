@@ -2,9 +2,9 @@
   "address": "sound/lift_stop@2",
   "files": {
     "audio/generated/doors/lift_stop.ogg": {
-      "bytes": 36417,
+      "bytes": 36505,
       "role": "audio",
-      "sha256": "5e2a3544fe106eb84de57c32ebc98cbc13348ec0c87f476f716c130b8ccb4912"
+      "sha256": "a9a8f3bff97d6fb5b649d4391422ed463268dbb8ecbe7ca3f97d1028ecdd9609"
     },
     "audio/recordings/doors/lift_stop.ogg": {
       "bytes": 61553,
@@ -12,14 +12,14 @@
       "sha256": "5f3fbc094eb539107c0026c3278dc757c0b8eb9fe6acc4b6cb302dec30e4df9d"
     },
     "preview.png": {
-      "bytes": 2789,
+      "bytes": 2800,
       "role": "picture",
-      "sha256": "8c224971128da06917c334fd67d6e203e6289ddfd20d8c4c9fa49a383c6d6ded"
+      "sha256": "e6e0f1fb88e97de72c37b41c7fa447572a2f90bf31a05f5e0d69e052d07cbbf6"
     },
     "sound.json": {
       "bytes": 923,
       "role": "record",
-      "sha256": "a4c45332b7c1d2d07e64c7969e0f780ecae0cfad59318408534c91b4ac5c8224"
+      "sha256": "94a8845672750c541601ab212b3c840683e92d053dcc63a20d058fdc114bac45"
     }
   },
   "id": "lift_stop",
@@ -31,17 +31,11 @@
   },
   "provenance": {
     "accept": {
-      "at": "2026-11-03T19:27:43.652758+00:00",
+      "at": "2026-11-11T00:06:19.952499+00:00",
       "by": "runner"
     },
-    "aliases": [
-      [
-        "a9a8f3bff97d6fb5b649d4391422ed463268dbb8ecbe7ca3f97d1028ecdd9609",
-        "audio/generated/doors/lift_stop.ogg"
-      ]
-    ],
-    "code": "9c286aa2bb7e7a00eaf08e144dcddc92df567179a7a6e925fc3348e03c0cfd22",
-    "commit": "ae117c75554457e24ae2db8740bdb28b37fccb71",
+    "code": "c2968fc05797ec80ee28dcd9c800296292c6b3a053807b236cfa46101827c8f2",
+    "commit": "a106fddb0e63e042cd74e1266e5756e664287e88",
     "files_from": {
       "audio/recordings/doors/lift_stop.ogg": "sound/recordings/doors/lift_stop.ogg"
     },
@@ -75,18 +69,17 @@
         "source": "hf:OpenMOSS-Team/MOSS-SoundEffect-v2.0"
       }
     ],
-    "node": "sound@campgrounds",
-    "output": "0b911fb1d66abbf8c8093ef6b23cba09261ad9fee3a7072791b0685e9d8b27d0",
-    "place": "campgrounds",
+    "node": "sound@hangar",
+    "output": "14f47dc42192c136d4b32b549a375697f30c17d5e3e43ffcba411c98fe3e7dbb",
+    "place": "hangar",
     "prim": null,
-    "record_key": "87aa045156b06908cbca92535a185e6039e731acff95d9bf41eb3ab4e647e18f",
+    "record_key": "cf113b5d9c6ffbdc098e1cc24f9ac2d76261a6fc1689c0355e9f1f09045d94e9",
     "route": "fe2d136cb0940a39e1aef06f4df64f62cbd007d7c48794969254e086bee9e3ce",
     "world": "world1"
   },
   "requires": [],
   "schema": "score-lib-entry/1",
   "seen_in": [
-    "campgrounds",
     "hangar"
   ],
   "state": "draft",
