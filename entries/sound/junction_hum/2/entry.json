@@ -4,17 +4,17 @@
     "audio/generated/machines/junction_hum.wav": {
       "bytes": 1103152,
       "role": "audio",
-      "sha256": "8ceb5f4750d3a387ba52be9fcfa97c505352f37846ce4b530e89e3aa11d86d7d"
+      "sha256": "891f366254ea5e26872039ca2d7f1cabc63d190b64ad0889b79c693f822398c0"
     },
     "preview.png": {
-      "bytes": 2349,
+      "bytes": 2350,
       "role": "picture",
-      "sha256": "eaf4aa55a8ab76a3c04cfd8e076dd58fd5ed34501325f2383962528a2c67f370"
+      "sha256": "a8d5e9a897832fe33e490b7e17912895948de943f1cf8309aed795d041bf6bed"
     },
     "sound.json": {
       "bytes": 972,
       "role": "record",
-      "sha256": "519df1684f323644d1008051daa4ad331a47f3c9441162e984ccb282a7f84790"
+      "sha256": "1b300197971f118fff97f4d8c9bf6672ed1969a403dfedb71085c1fdd97c48c0"
     }
   },
   "id": "junction_hum",
@@ -26,17 +26,11 @@
   },
   "provenance": {
     "accept": {
-      "at": "2026-11-03T19:19:17.237692+00:00",
+      "at": "2026-11-10T03:32:08.437371+00:00",
       "by": "runner"
     },
-    "aliases": [
-      [
-        "891f366254ea5e26872039ca2d7f1cabc63d190b64ad0889b79c693f822398c0",
-        "audio/generated/machines/junction_hum.wav"
-      ]
-    ],
-    "code": "9c286aa2bb7e7a00eaf08e144dcddc92df567179a7a6e925fc3348e03c0cfd22",
-    "commit": "c1b04fb6e7942b4a2e9e24e26d39ce443a7fb464",
+    "code": "1a2a7eb3e2d0b5b9a01ada54cd9879ba10330f6619ac6b6247e0263365e06f41",
+    "commit": "09835515dfdd56841bc6838a6a30edf09d4c18b7",
     "files_source": {
       "audio/generated/machines/junction_hum.wav": "files/sound/generated/machines/junction_hum.wav"
     },
@@ -62,18 +56,17 @@
         "source": "hf:OpenMOSS-Team/MOSS-SoundEffect-v2.0"
       }
     ],
-    "node": "sound@camp",
-    "output": "48ed56183658f677008da36567164bf5f39589ff5bb46a464e565167aca81db9",
-    "place": "camp",
+    "node": "sound@greenhouse",
+    "output": "3ddaefd5df92046934699f17ab739177afe616312750b20f6e8ebe6fc9be2c74",
+    "place": "greenhouse",
     "prim": null,
-    "record_key": "3603a4b3f8b9fe60726b93803cc2d99bd2aae530278fa0bfb9faa5d18106f6b0",
+    "record_key": "cfe62b980179c82bc887ef676c5b88918e790da2b3a20aed9bcab6b1ceb845a4",
     "route": "fe2d136cb0940a39e1aef06f4df64f62cbd007d7c48794969254e086bee9e3ce",
     "world": "world1"
   },
   "requires": [],
   "schema": "score-lib-entry/1",
   "seen_in": [
-    "camp",
     "greenhouse"
   ],
   "state": "draft",

@@ -1,0 +1,88 @@
+{
+  "address": "sound/coffee_maker_brew@1",
+  "files": {
+    "audio/generated/machines/coffee_maker_brew.wav": {
+      "bytes": 816112,
+      "role": "audio",
+      "sha256": "185bfd7d1e11d1bec4c6437f59bb53b74fd3f7c7c2346a4e04d07a289f8a2685"
+    },
+    "preview.png": {
+      "bytes": 2487,
+      "role": "picture",
+      "sha256": "80a6f8635199b0b6e20635ab1e120d1ba4cf2e82f1a1224a5fb064cffad3f7b7"
+    },
+    "sound.json": {
+      "bytes": 1033,
+      "role": "record",
+      "sha256": "192624dfec1b0eafbb825d8cfb6a881b1aa264d2c1f887c8ce68565c8b6e0446"
+    }
+  },
+  "id": "coffee_maker_brew",
+  "kind": "sound",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/audio.py",
+    "of": "audio/generated/machines/coffee_maker_brew.wav"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-11-11T05:38:28.616661+00:00",
+      "by": "runner"
+    },
+    "code": "c2968fc05797ec80ee28dcd9c800296292c6b3a053807b236cfa46101827c8f2",
+    "commit": "09835515dfdd56841bc6838a6a30edf09d4c18b7",
+    "files_source": {
+      "audio/generated/machines/coffee_maker_brew.wav": "files/sound/generated/machines/coffee_maker_brew.wav"
+    },
+    "made_with": [
+      {
+        "by": "moss_soundeffect",
+        "what": "sound/generated/machines/coffee_maker_brew.wav"
+      }
+    ],
+    "models": [
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "clap-larger-general",
+        "revision": "ada0c23a36c4e8582805bb38fec3905903f18b41",
+        "sha256": "b8e001a32b37111261ccc28541ae07960a8cc047837f76a1a0877e9b2c59dc45",
+        "source": "hf:laion/larger_clap_general"
+      },
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "moss-soundeffect-v2",
+        "revision": "e35df4d82fbe87fcd5d14e5d100e349c0c3c076d",
+        "sha256": "d74b38a3387c5e670754edde2d06a71d1940c3a603e5a0489550159e79d18885",
+        "source": "hf:OpenMOSS-Team/MOSS-SoundEffect-v2.0"
+      }
+    ],
+    "node": "sound@camp",
+    "output": "c2d105a87c5d9a279458a8c12556fe354dc13cc53e50436e1f5e5472315cf532",
+    "place": "camp",
+    "prim": null,
+    "record_key": "50a9443ba982e0f208ed17b4f774b02969b8e1e7a0f083ca6f90cd7b0cbf37ce",
+    "route": "fe2d136cb0940a39e1aef06f4df64f62cbd007d7c48794969254e086bee9e3ce",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "camp"
+  ],
+  "state": "draft",
+  "tags": {
+    "category": [
+      "loop"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "made_by": [
+      "moss"
+    ],
+    "place_kind": []
+  },
+  "title": "Coffee maker brew",
+  "usd": null,
+  "version": 1
+}
