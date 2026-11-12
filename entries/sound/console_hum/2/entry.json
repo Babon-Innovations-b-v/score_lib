@@ -30,9 +30,12 @@
     "of": "audio/generated/machines/console_hum.wav"
   },
   "provenance": {
-    "accept": null,
-    "code": null,
-    "commit": "e8da6e0bb25336119ba47a24766a8f6bf0d572af",
+    "accept": {
+      "at": "2026-11-12T02:33:28.049007+00:00",
+      "by": "runner"
+    },
+    "code": "ea2d96490fb90e020b3b5abf9ba17a6f3e635f8a52f960b3beabb2862fac8301",
+    "commit": "d42b4b56919b01c4cd6a6192c005949d2c53fbee",
     "files_source": {
       "audio/generated/machines/console_hum.wav": "assets/sound/generated/machines/console_hum.wav"
     },
@@ -42,12 +45,27 @@
         "what": "sound/generated/machines/console_hum.wav"
       }
     ],
-    "models": [],
+    "models": [
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "clap-larger-general",
+        "revision": "ada0c23a36c4e8582805bb38fec3905903f18b41",
+        "sha256": "b8e001a32b37111261ccc28541ae07960a8cc047837f76a1a0877e9b2c59dc45",
+        "source": "hf:laion/larger_clap_general"
+      },
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "moss-soundeffect-v2",
+        "revision": "e35df4d82fbe87fcd5d14e5d100e349c0c3c076d",
+        "sha256": "d74b38a3387c5e670754edde2d06a71d1940c3a603e5a0489550159e79d18885",
+        "source": "hf:OpenMOSS-Team/MOSS-SoundEffect-v2.0"
+      }
+    ],
     "node": "sound@cockpit",
-    "output": "468b54f1a7a5c4846fe5901b0793aafd0f5ed86046843f00e9277524cf4b4a6a",
+    "output": "683cbb5b93404d9d9824b697c65a88addcdb93d270ab92fcdfe617a298e91dde",
     "place": "cockpit",
     "prim": "/cockpit/Objects/comms_console_1/Sound",
-    "record_key": null,
+    "record_key": "a516502250894fdcec62c97d49e95fe558c1506a1843ca4dfd2c42094cbfc3d2",
     "route": "dc76c23298e38685b3f14140ba65d81393eca8a5b31e6d31d392983562d1a7d0",
     "world": "world1"
   },

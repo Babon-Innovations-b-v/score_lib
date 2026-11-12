@@ -2,19 +2,19 @@
   "address": "layer/sound.cockpit@2",
   "files": {
     "layer.usda": {
-      "bytes": 4212,
+      "bytes": 5046,
       "role": "usd",
-      "sha256": "047022935f6ef2a1724b9d86fd977342f3c070519c0cb802e7851f3976245e37"
+      "sha256": "3e26d929cc7af5c14c4f2bf5cf1d4de72d029cf8711ce33432bb3ca88e1da1e9"
     },
     "preview.png": {
-      "bytes": 1748,
+      "bytes": 1848,
       "role": "picture",
-      "sha256": "f7c1b3aa09a3a647a5e5b43a0fd7f4544f854ae02d7b105877e8f1fccaa4bbde"
+      "sha256": "05d0caab3e539f430d186f571882bc7f05a404d471ca68bfe6f6cc3b022e7132"
     },
     "sound.json": {
-      "bytes": 25556,
+      "bytes": 26937,
       "role": "record",
-      "sha256": "f97375f3098033d8e5e0c797a48bd88087cf87a329eca83cb355cf68277cf62d"
+      "sha256": "4f2df7cb06a207c48a8f06bfd42ad5ff701c8a03b813fde54e5c376f3663e07e"
     }
   },
   "id": "sound.cockpit",
@@ -22,19 +22,19 @@
   "picture": {
     "file": "preview.png",
     "made_by": "preview/layer_map.py",
-    "of": "5 prim positions from above over data/kit/cockpit.json"
+    "of": "6 prim positions from above over data/kit/cockpit.json"
   },
   "provenance": {
     "accept": {
-      "at": "2026-11-11T20:10:21.254311+00:00",
+      "at": "2026-11-12T04:38:22.017907+00:00",
       "by": "runner"
     },
-    "code": "06d2350cdc50836a611dce5fba17b390587bf388f9cd99add6ce9badfd0b300f",
-    "commit": "7a73a719713bbc3c86f26529a5d2b05f09264c4b",
+    "code": "202dc3a0f70784e245da1236f778b687c0b7eb17edef113bcb249a3fa63d8307",
+    "commit": "d42b4b56919b01c4cd6a6192c005949d2c53fbee",
     "files_from": {
       "layer.usda": {
         "path": "layers/sound.usda",
-        "sha256": "d0563363d3878e3ddfe81340b23c581d820e4760fd2f0587ae8e62bfba338523"
+        "sha256": "040ded62e244bdd1854089324f819771ad27456c36378b90338c43e8a66eda55"
       }
     },
     "made_with": [
@@ -45,12 +45,12 @@
     ],
     "models": [],
     "node": "assembly@cockpit",
-    "output": "0baaa5c674453e727b16140891c60d540033c893236578d82c744348a29b0abe",
+    "output": "c999c88510da5490257d8cb431008d59936d45844a4b3d50d9de694602c0876d",
     "own_files": [],
     "place": "cockpit",
-    "record_key": "866cdcd11073df46a528099df49c7a79a47d59d88031137698a6789ad7ff648c",
+    "record_key": "7e41a0e7c8f51c5162475467c318018fd354bc60990f855fb8228b0005cfb0dd",
     "route": "dc76c23298e38685b3f14140ba65d81393eca8a5b31e6d31d392983562d1a7d0",
-    "side_records_from": "468b54f1a7a5c4846fe5901b0793aafd0f5ed86046843f00e9277524cf4b4a6a",
+    "side_records_from": "683cbb5b93404d9d9824b697c65a88addcdb93d270ab92fcdfe617a298e91dde",
     "source_name": "layers/sound.usda",
     "unresolved": [],
     "world": "world1",
@@ -58,6 +58,7 @@
   },
   "requires": [
     "sound/console_hum@2",
+    "sound/crew_talk@1",
     "sound/lamp_buzz@2",
     "sound/ship_inside@2"
   ],
