@@ -2,9 +2,9 @@
   "address": "algorithm/planet_gravity@1",
   "files": {
     "code.json": {
-      "bytes": 12200,
+      "bytes": 13081,
       "role": "record",
-      "sha256": "fc17646ab42ba6428b9f929196e70ecfa8366bd90ca1400bf19ce5ba3c661c34"
+      "sha256": "af6d3d1a569d074393471ececbd97f6dcea28171dc17ac13501b01acd4c4a601"
     },
     "code/score/__init__.py": {
       "bytes": 0,
@@ -72,9 +72,19 @@
       "sha256": "10189b2e9e4a537eb5d82efa2d4ec3b9b132bdc613fd27cb42497033748252ed"
     },
     "code/score/review/holders/__init__.py": {
-      "bytes": 147295,
+      "bytes": 150093,
       "role": "code",
-      "sha256": "1641c0f456a27ee7e038867497dc1214871feb09a3d2f61ee64e6fbedc0c1bf8"
+      "sha256": "097bf6bbdd0fc0c0dfdbe00daad9586dbcc2cb224e5a18b19188c70d1697f170"
+    },
+    "code/score/review/holders/named_top.py": {
+      "bytes": 2473,
+      "role": "code",
+      "sha256": "a9a54d2d4da23f35335e0d8a9522a06909cfc56cba19e7676c719bed09adb3b4"
+    },
+    "code/score/review/holders/stacked.py": {
+      "bytes": 2036,
+      "role": "code",
+      "sha256": "e1b433de8a98209b2d161a8a14da072d8efbd621f1963f1ab47614166dbed1e4"
     },
     "code/score/review/overhead.py": {
       "bytes": 12280,
@@ -137,9 +147,9 @@
       "sha256": "9ada8b6e1c12e6ab7afb91694ea7cfe7070eee5efcacb4ca535a70c74c141a19"
     },
     "code/score/stages/__init__.py": {
-      "bytes": 127563,
+      "bytes": 130061,
       "role": "code",
-      "sha256": "dbfdf3c6be58ae1f2cbe6a402e4f9c31a139da351953e93935539e0f6558bb0f"
+      "sha256": "6d0dd06a5dd541b4297c951d48de7ca52d63c7c92a3208c39482dde3f5c5bd4c"
     },
     "code/score/stages/assembly/__init__.py": {
       "bytes": 25355,
@@ -156,15 +166,30 @@
       "role": "code",
       "sha256": "cbeb48db8466827153a0703004d36c2a28454ce450acaf4ff73ff8546fba83a3"
     },
+    "code/score/stages/assembly/built_tops.py": {
+      "bytes": 12853,
+      "role": "code",
+      "sha256": "dee417de307c701306b172b507a7186174f71a665c40c6c80467b8068b379dd0"
+    },
     "code/score/stages/assembly/even_feet.py": {
       "bytes": 7322,
       "role": "code",
       "sha256": "df6722c3b6bce2432ed26b83038ccc10f2ccc979528e7ccf43aea5bb3c486a6e"
     },
-    "code/score/stages/assembly/fitting.py": {
-      "bytes": 195647,
+    "code/score/stages/assembly/face_spots.py": {
+      "bytes": 3069,
       "role": "code",
-      "sha256": "e2b0bb7656d60a9efd5ed8a8b84841bc71cb85c355ee0a269b0980538e0f3771"
+      "sha256": "95452e75f196af54719621ea13aff5763a39b8511539704abd37b3cd10d8d24c"
+    },
+    "code/score/stages/assembly/fitting.py": {
+      "bytes": 197702,
+      "role": "code",
+      "sha256": "c0b51ee63075229de89e108b19a5933ec8c04502e9a1f13b3e8939ded7ea962b"
+    },
+    "code/score/stages/assembly/floor_clear.py": {
+      "bytes": 10776,
+      "role": "code",
+      "sha256": "bdc2f09172d4b2c9007c0ff5cfadad59cab0fd0fc806f648f45950458d131519"
     },
     "code/score/stages/assembly/ground_finish.py": {
       "bytes": 8066,
@@ -175,6 +200,11 @@
       "bytes": 4375,
       "role": "code",
       "sha256": "8b8ebc515b786ea563b5bab4c3afb274c7a083b6539c5b5f29702bc850497a62"
+    },
+    "code/score/stages/assembly/held_along.py": {
+      "bytes": 3754,
+      "role": "code",
+      "sha256": "3055fbd79158477efc4aa45399f19daca0da40aef63d3ddd3a65f01f54550f64"
     },
     "code/score/stages/assembly/made_waiting.py": {
       "bytes": 9019,
@@ -191,6 +221,11 @@
       "role": "code",
       "sha256": "924459cfdec57c23601f291a80cbe477cb21db00b8f614695ca2650c6a647f92"
     },
+    "code/score/stages/assembly/passages.py": {
+      "bytes": 5159,
+      "role": "code",
+      "sha256": "646ad9cad22c3f84c532ab158c0de8c387ae5ff7bb3a557152e753ec9285b862"
+    },
     "code/score/stages/assembly/record.py": {
       "bytes": 12254,
       "role": "code",
@@ -200,6 +235,11 @@
       "bytes": 8542,
       "role": "code",
       "sha256": "f0f898547fc52a8cfc3e7dd0cee2cea22333944a86bb7d9b2db882e558cadb28"
+    },
+    "code/score/stages/assembly/wall_clear.py": {
+      "bytes": 6338,
+      "role": "code",
+      "sha256": "35aabe7bda86603e259f881397743e8ed92445e363c30ee4f7e561b74c9d0504"
     },
     "code/score/stages/batch_gaps.py": {
       "bytes": 2897,
@@ -612,8 +652,8 @@
   "picture": null,
   "picture_reason": "no world 1 output in the store pictures this algorithm",
   "provenance": {
-    "code": "8dc816786ca2622d72b109e904a04b5b4421e03f1081cffa4e0f14c6c8333eb1",
-    "commit": "7a73a719713bbc3c86f26529a5d2b05f09264c4b",
+    "code": "009a5523bc2b366a8cda7797fc4c6d76f90bd5f665354be2a64f4b5644ecb314",
+    "commit": "4cd26b93d644494a3a7cf2caeb69951838035faf",
     "made_with": [
       {
         "by": "score",
