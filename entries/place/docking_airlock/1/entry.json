@@ -1,0 +1,143 @@
+{
+  "address": "place/docking_airlock@1",
+  "files": {
+    "contract.json": {
+      "bytes": 99,
+      "role": "record",
+      "sha256": "c2b7151f92e6a67ca4666ea747ad262b67b4d0af824cc83862ce64d8cc49d12c"
+    },
+    "docking_airlock.usda": {
+      "bytes": 450,
+      "role": "usd",
+      "sha256": "313951658726f16ce86ffb5caa1b7215f2f79288b2565bfb64d7b81615b4c583"
+    },
+    "edit.usda": {
+      "bytes": 183,
+      "role": "usd",
+      "sha256": "8fc5485ea9a58537dd8289c516a85733e069ad7a17b866471667b8795142454f"
+    },
+    "inputs.json": {
+      "bytes": 534,
+      "role": "record",
+      "sha256": "14bb52e761e3fc1e59285c32a03a795c21751e4b4c3ec8486731415630ce17e5"
+    },
+    "origin.json": {
+      "bytes": 817,
+      "role": "record",
+      "sha256": "5c42d4440920735f4bcff04a93cb9f4eb69d9a33e9786ebebf616c745666ef60"
+    },
+    "picture.png": {
+      "bytes": 201613,
+      "role": "picture",
+      "sha256": "795c9d8244ab2c03bbd43af4036fd1dd4062685d2149062dfb702d15887fa089"
+    },
+    "plan/plan.json": {
+      "bytes": 7439,
+      "role": "record",
+      "sha256": "d0828b47ad0c343971b255bffb7dc6b89f878c524e6e9cde2c4a1ea90b3e9c29"
+    },
+    "scene.json": {
+      "bytes": 18941,
+      "role": "record",
+      "sha256": "ba94ef9ef55d7aee71ca76205f4a58ddadbdfa5bd90bfc7410933c0204c6cd2c"
+    }
+  },
+  "id": "docking_airlock",
+  "kind": "place",
+  "picture": {
+    "file": "picture.png",
+    "made_by": "source picture",
+    "of": "light@docking_airlock: looks/docking_airlock/from-door-1-look.png"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-11-12T13:55:08.402109+00:00",
+      "by": "runner"
+    },
+    "code": "14b774b59e4a4f70dbc80690dbcc59beecc4dc76eef73cfef56ae56ffd98769a",
+    "commit": "528647ac478837dbdab8791c55bec381e1eb8991",
+    "complete": {
+      "accept": {
+        "at": null,
+        "by": null
+      },
+      "code": null,
+      "models": [],
+      "node": "complete@docking_airlock",
+      "output": null,
+      "record_key": null,
+      "route": "51dcd99798270d607d0a1ab30061490552180ceb4a79a484707c03f0ce14c12f"
+    },
+    "complete_failing": [],
+    "files_from": {
+      "inputs.json": {
+        "path": "inputs.json",
+        "sha256": "186cad9bf787495f010f115e9fc2a31ff5d5c7966b431ff89ef961db11f7caed"
+      },
+      "origin.json": {
+        "path": "origin.json",
+        "sha256": "6eae85505de76ff8e3b95deee2629fd9bf856fe54074f19199f88c37b35b915f"
+      }
+    },
+    "gaps": null,
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
+    "models": [],
+    "node": "assembly@docking_airlock",
+    "output": "71b05c6aa60acf204a135d78a11d46891d6aaefcd0213c5e57cb704763272667",
+    "place": "docking_airlock",
+    "record_key": "fb6fba74b0fd215190069c735da5caa21c6264811997914b273ea019d6b60e83",
+    "records_from": {
+      "plan": {
+        "accept": {
+          "at": "2026-11-08T03:05:04.288088+00:00",
+          "by": "runner"
+        },
+        "code": "0129e295cb8aafb862f8d5bb0d7f7015b99d5798ac7e81ca1e837f8d32f2fddb",
+        "models": [],
+        "node": "plan@docking_airlock",
+        "output": "89657b0e40c75a7e697e8ad9ab6498880da079d00160445dc9e3375ba5052fcd",
+        "record_key": "b17c676ff8133734c9690f630d09079c7eab330e99507473b0d6897786641fd2",
+        "route": "51dcd99798270d607d0a1ab30061490552180ceb4a79a484707c03f0ce14c12f"
+      }
+    },
+    "route": "51dcd99798270d607d0a1ab30061490552180ceb4a79a484707c03f0ce14c12f",
+    "unresolved_sublayers": [
+      "./layers/base.usda"
+    ],
+    "world": "world1"
+  },
+  "requires": [
+    "layer/light.docking_airlock@1",
+    "layer/motion.docking_airlock@1",
+    "layer/sound.docking_airlock@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "docking_airlock"
+  ],
+  "state": "draft",
+  "tags": {
+    "complete": [],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Docking airlock",
+  "usd": {
+    "default_prim": "/docking_airlock",
+    "layer": "root",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/place/docking_airlock/1/docking_airlock.usda",
+    "root": "docking_airlock.usda",
+    "time_codes_per_second": 24.0,
+    "up_axis": "Y",
+    "use": "open"
+  },
+  "version": 1
+}
