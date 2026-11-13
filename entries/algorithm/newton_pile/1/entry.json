@@ -4,7 +4,7 @@
     "code.json": {
       "bytes": 542,
       "role": "record",
-      "sha256": "a3f30e2e2ca4c940eb842cfff2aee87618eee83a34e653ba2c1d465f799a3701"
+      "sha256": "b99f1117e408cb32e1386109ee3949be1b0270740ee7eb34ae4843a7a2b18ada"
     },
     "code/score/__init__.py": {
       "bytes": 0,
@@ -12,9 +12,9 @@
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     "code/score/stages/__init__.py": {
-      "bytes": 136701,
+      "bytes": 137551,
       "role": "code",
-      "sha256": "9c7c0986fb32cf9eac39deb76b386c92a0eb2dfa43ccabf10d5a7101097be26c"
+      "sha256": "7d650fc358043d6a5d089749a08f7970ee122248dc1f15fc6a4ba426aabfdd67"
     },
     "code/score/stages/effects/__init__.py": {
       "bytes": 47223,
@@ -37,9 +37,9 @@
       "sha256": "14204018f309cc592f83b6b302755c09a462855d19381339c74b911059f31d61"
     },
     "presets/world1/seed.json": {
-      "bytes": 166,
+      "bytes": 331,
       "role": "record",
-      "sha256": "f01ebf493ca695c8faa5cc8d7ee153054112e6bcaeb64b3aca4bb701ad8c00fd"
+      "sha256": "58c411cda46ba163673c7a86293da0e01626a4bce6d7864d91c250fb7ed24e4f"
     },
     "run.json": {
       "bytes": 406,
@@ -52,9 +52,9 @@
       "sha256": "5379f6e1c89fd83b8cbb928925911663fd0adb6558835258b180e9ef1797eb66"
     },
     "test/score/stages/effects/test_effects_ride_their_design.py": {
-      "bytes": 16611,
+      "bytes": 17802,
       "role": "code",
-      "sha256": "c80ea694f8fb61215c7640d8128a9088b2a0eee58f86cd3890e8843b770224b5"
+      "sha256": "cd89b7dca1e51a304f59330653502db2daeb3e1a9c9c09d7cb0d153a54cb284e"
     }
   },
   "id": "newton_pile",
@@ -63,21 +63,31 @@
   "picture_reason": "no world 1 output in the store pictures this algorithm",
   "provenance": {
     "code": "7ffeea9607e636191dbb0cf4ef4ca9d1b5094edc49454081eabc04c07e9b926d",
-    "commit": "ae0f57ed6ec54935c0d5a139a84faf5beb7b06b5",
+    "commit": "c5edea6181a29d5ba51f1cf09223cc90445464b8",
     "made_with": [
       {
         "by": "score",
         "what": "made by score"
       }
     ],
-    "nodes": [],
+    "nodes": [
+      "effects-layer@campgrounds",
+      "effects-layer@flat",
+      "effects-layer@galley",
+      "effects-layer@habitat"
+    ],
     "outside": [],
     "stage": "effects-layer",
     "world": "world1"
   },
   "requires": [],
   "schema": "score-lib-entry/1",
-  "seen_in": [],
+  "seen_in": [
+    "campgrounds",
+    "flat",
+    "galley",
+    "habitat"
+  ],
   "state": "draft",
   "tags": {
     "needs": [
