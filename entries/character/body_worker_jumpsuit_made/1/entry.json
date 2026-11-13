@@ -2,44 +2,44 @@
   "address": "character/body_worker_jumpsuit_made@1",
   "files": {
     "body.glb": {
-      "bytes": 985644,
+      "bytes": 1018408,
       "role": "gltf",
-      "sha256": "c8fc7f019487b5e98d7f1974cd574d9e01f2f060340b6a880c97b8800ac58d74"
+      "sha256": "7cc558a9e43dd564ff006818dfa1cbc0952a34e3e346e0447a39a1582828e2c3"
     },
     "character.usdc": {
-      "bytes": 779094,
+      "bytes": 782388,
       "role": "usd",
-      "sha256": "3dd052450ec86f7d15f7d9328631bd029ee30d50076765ef5559c653d39f4097"
+      "sha256": "1e3d5ed039279e541df8dc16b6e1f694c7393f491041f2f099aa5e6a76651d9f"
     },
     "checks/build.json": {
-      "bytes": 4579,
+      "bytes": 4465,
       "role": "record",
-      "sha256": "0b754f578f92fdcc21cb78206683e15787c7c52d8744c15893ff3251ef71f230"
+      "sha256": "16b963658f20c149cae303dc67951a028a34d43aa2005ed8bb44f163b33a0a4d"
     },
     "checks/joins.json": {
-      "bytes": 1785,
+      "bytes": 1789,
       "role": "record",
-      "sha256": "a209b4d0e3f252f54c099aceffa52f3521ba855390229595ab3e1ca60995b343"
+      "sha256": "0156b06d0683e2d0760020056eb80e3cf521bd30bcdc22c10df29f1ed8befaaf"
     },
     "checks/likeness.json": {
       "bytes": 146,
       "role": "record",
-      "sha256": "1f84544b98e5726b99735c0f35a62c11ce7ef6415429486b33440d7b45930da3"
+      "sha256": "0302f98225b0b40d0e1b0786ffd8bea4c2af527fa903db3af4cf49011b64e873"
     },
     "checks/parts.json": {
-      "bytes": 1770,
+      "bytes": 3022,
       "role": "record",
-      "sha256": "c1d556114cb1c2c065ae57279580251275f013349c694aaf5f7de29e57baab98"
+      "sha256": "cf2b2a660f9d1eaf6678b9be4411882b6cd5924fa54051cc43f83b31a96a3f8c"
     },
     "checks/rig.json": {
       "bytes": 4267,
       "role": "record",
-      "sha256": "26a04e4161e3f2b17785642b01c9d87ae172a26e1e7078f970ee92658f21914c"
+      "sha256": "9ecfdab133d879d966a4251fbbe7bbdef2528746849a307ddf66818b9cab9691"
     },
     "checks/shell.json": {
-      "bytes": 4464,
+      "bytes": 8133,
       "role": "record",
-      "sha256": "550da5ca6e37941294d8af42669d9a4ea3ee4b780881039b5f612e3ba7078fce"
+      "sha256": "88d4e6acdbd8bdfae318cb6bf765d82281b006d51af7927d9ad4a7548c8ded68"
     },
     "look.json": {
       "bytes": 315,
@@ -47,14 +47,19 @@
       "sha256": "056019a8ddcfe122955abee66c9162a1742199f361b564c21d3fdd3cfb59a2cf"
     },
     "textures/worker_jumpsuit_0.png": {
-      "bytes": 9487,
+      "bytes": 9788,
       "role": "texture",
-      "sha256": "4492118d0ef3faab9fbc763b709e573bf9695817355e2dbbc3e47b0fe3dc4243"
+      "sha256": "ca5dd3e5316aeb523a0c68a812a393c024eda057ec2d6f30c6f30c9851ce9685"
     },
     "textures/worker_jumpsuit_1.png": {
-      "bytes": 493,
+      "bytes": 1224,
       "role": "texture",
-      "sha256": "9efffb669148b853538d629ff03c28c4b1a32df14a393b99cd53bafa1eb0b133"
+      "sha256": "19e86257b30ba7024be0a492a4179c98f97e0048d517d7a918ac2356bf898cdf"
+    },
+    "textures/worker_jumpsuit_2.png": {
+      "bytes": 392,
+      "role": "texture",
+      "sha256": "5e2ace1e37705f05acd8295429016798f6d55b334bb97394be41dd6f5751adac"
     }
   },
   "id": "body_worker_jumpsuit_made",
@@ -63,15 +68,15 @@
   "picture_reason": "no accepted people-take close-up of this look",
   "provenance": {
     "accept": {
-      "at": "2026-11-11T06:24:41.988693+00:00",
+      "at": "2026-11-13T17:20:49.944480+00:00",
       "by": "runner"
     },
-    "code": "192c943819ccf50ee00c5617c5e4efe61bdcf4c939f6b02ed377348e7063b543",
-    "commit": "0fd9a91255428a93e44eebaacc9b1acb4a88c522",
+    "code": "b74bd348304d96681e7ad09d7837dd09d95ebaff897ad7aca4a620a4f0155b84",
+    "commit": "81524519dfb725cacab5b9b6fb31f1d57e45042a",
     "files_from": {
       "checks/rig.json": {
         "path": "checks/rig.json",
-        "sha256": "ae3a20cc7dacc55f019f8266685238e29a9236fe01db35da9b4189c7d644da50"
+        "sha256": "6bb379357adfe2d71b8f3c88e87c7a97c4eb106214cb2db9ad21d6a64c49b9a0"
       }
     },
     "look": "worker_jumpsuit-made",
@@ -103,9 +108,9 @@
     ],
     "models": [],
     "node": "people-body-worker_jumpsuit-made",
-    "output": "507e2b1a313bf17cbfbe808f018d778ab74768b6a0534b7ccb9ce0e18f2dd056",
+    "output": "39339791bd0c0801bdc2fdd57ba9d91968ae5f60d3e9f12e596123d7be0f879d",
     "place": null,
-    "record_key": "9329edd46c1da908287bf1d30b8341e7b570a31e8e12117dd0cafc0c6e7e5873",
+    "record_key": "76080af7792dca8cfe23d0761d29993a5c80871cb8d8423d87267d85bf5d2f52",
     "route": "04d59456d56ccc9d99acfa51bf36b94ae5e6b01ad2306d5623d1930998feb9fe",
     "world": "world1"
   },
