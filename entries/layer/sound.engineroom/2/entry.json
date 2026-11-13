@@ -1,0 +1,89 @@
+{
+  "address": "layer/sound.engineroom@2",
+  "files": {
+    "layer.usda": {
+      "bytes": 4137,
+      "role": "usd",
+      "sha256": "3fbc52b6829f79e8b049be9fe958bcfa078f0be554ddbfed36b66b47b62c1073"
+    },
+    "preview.png": {
+      "bytes": 1819,
+      "role": "picture",
+      "sha256": "d53eca52adb54578c0f161df5f0fcf8a5c5a77d297ccb0e01539f12de209acb4"
+    },
+    "sound.json": {
+      "bytes": 24323,
+      "role": "record",
+      "sha256": "1dd0c7432d2046d8deea4118941f93f7a6c0d04b7282ca4e8dec7d05feb0d175"
+    }
+  },
+  "id": "sound.engineroom",
+  "kind": "layer",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "5 prim positions from above over data/kit/engineroom.json"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-11-13T10:21:53.920120+00:00",
+      "by": "runner"
+    },
+    "code": "2bfa5e042efdf8edba9c6def67c36132cfb3cafd7fd14be6d45c49ac3b851bd5",
+    "commit": "b1bafcab13c6ca6a07a49fcdc114b440b660b300",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/sound.usda",
+        "sha256": "29f4f566dc72b192c9bf47eddca2785dda88e16138c582d24c90ded7a23820b6"
+      }
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
+    "models": [],
+    "node": "assembly@engineroom",
+    "output": "f3cc147450edae7e45b3e7a195613d48d2262e9393ee768b34d19b41c864286a",
+    "own_files": [],
+    "place": "engineroom",
+    "record_key": "4574bd71da8e19301fdc89f695a74d4535a760d05d4223a413f08e3487ff633d",
+    "route": "9fb39078e1600c8d309470d175dc941f0fb2173055d5747d081ffb6ad405fb4b",
+    "side_records_from": "32a577afb52367fa9c6e68e1c745ae8d7849ecba48e7e4ed8cc2707e9f66aab9",
+    "source_name": "layers/sound.usda",
+    "unresolved": [],
+    "world": "world1",
+    "written_by": null
+  },
+  "requires": [
+    "sound/base_hum@2",
+    "sound/ship_inside@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "engineroom"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "sound"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Engineroom sound layer",
+  "usd": {
+    "default_prim": null,
+    "layer": "sound",
+    "meters_per_unit": null,
+    "path": "score_lib/layer/sound.engineroom/2/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": null,
+    "use": "sublayer"
+  },
+  "version": 2
+}

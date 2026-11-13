@@ -1,0 +1,108 @@
+{
+  "address": "layer/physics.engineroom@1",
+  "files": {
+    "layer.usda": {
+      "bytes": 29127,
+      "role": "usd",
+      "sha256": "ed3cb6814e2eb9d964d9fb16ea2a1852215fa2ffbf91075d51bb9176305a81af"
+    },
+    "physics-layer/layers/trial.usda": {
+      "bytes": 1052,
+      "role": "usd",
+      "sha256": "a91ced736a6b03d79ec2e0926a84a2232648c9ea95792b099a3601748e63d41f"
+    },
+    "physics-layer/physics.json": {
+      "bytes": 839,
+      "role": "record",
+      "sha256": "c3b25d4711df94e90f2534f34462b164dd6fc0310750128c1dbec829ea89c51c"
+    },
+    "preview.png": {
+      "bytes": 2639,
+      "role": "picture",
+      "sha256": "5e8e238d420afdf7e377937b0be82fd291647c502ba0e9da2eecd9f4830b25e8"
+    }
+  },
+  "id": "physics.engineroom",
+  "kind": "layer",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/layer_map.py",
+    "of": "36 prim positions from above over data/kit/engineroom.json"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-11-13T10:22:08.032963+00:00",
+      "by": "runner"
+    },
+    "code": "3d07c3068de155af8f503158b63a227718fd66b49e9899e7fb5b9f0cc9678438",
+    "commit": "b1bafcab13c6ca6a07a49fcdc114b440b660b300",
+    "files_from": {
+      "layer.usda": {
+        "path": "layers/physics.usda",
+        "sha256": "ed3cb6814e2eb9d964d9fb16ea2a1852215fa2ffbf91075d51bb9176305a81af"
+      }
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
+    "models": [],
+    "node": "physics-layer@engineroom",
+    "output": "560a55d015696234f4d3b22d02c15c8bc0b8fc6c2a7f6a304571f67550324d8e",
+    "own_files": [],
+    "place": "engineroom",
+    "record_key": "aefa8a45470261f2fb0c30e489a99c4833863654aa7e516ce71d76defdf0e3c9",
+    "route": "9fb39078e1600c8d309470d175dc941f0fb2173055d5747d081ffb6ad405fb4b",
+    "source_name": "layers/physics.usda",
+    "trial": {
+      "accept": {
+        "at": null,
+        "by": null
+      },
+      "code": null,
+      "models": [],
+      "node": "physics-trial@engineroom",
+      "output": null,
+      "record_key": null,
+      "route": "9fb39078e1600c8d309470d175dc941f0fb2173055d5747d081ffb6ad405fb4b"
+    },
+    "unresolved": [],
+    "world": "world1",
+    "written_by": [
+      "algorithm/body_weight@1",
+      "algorithm/hinge_motor@1",
+      "algorithm/drop@1",
+      "algorithm/push@1",
+      "algorithm/planet_gravity@1"
+    ]
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "engineroom"
+  ],
+  "state": "draft",
+  "tags": {
+    "layer": [
+      "physics"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Engineroom physics layer",
+  "usd": {
+    "default_prim": "/engineroom",
+    "layer": "physics",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/layer/physics.engineroom/1/layer.usda",
+    "root": "layer.usda",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "sublayer"
+  },
+  "version": 1
+}
