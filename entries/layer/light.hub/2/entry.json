@@ -2,24 +2,24 @@
   "address": "layer/light.hub@2",
   "files": {
     "lamps.json": {
-      "bytes": 6167,
+      "bytes": 6182,
       "role": "record",
-      "sha256": "ab85df8071f6f9097151cfbb10a94f1b998ad84e9d4ce8fa3d4f617bea246687"
+      "sha256": "c2af2fb6abe0a54db23e07290a34367f6befb83d7f343d5a7d0555abc7a3d46f"
     },
     "layer.usda": {
-      "bytes": 345458,
+      "bytes": 345467,
       "role": "usd",
-      "sha256": "6a7386699fa66a709204fa70ec46d96b6dfebd970a3aea273ee1f04ccb9f5305"
+      "sha256": "a89a6a97b12445f9e9478e8b980fd5a24f9565567f272db3691685b3e5b1cc57"
     },
     "measures.json": {
-      "bytes": 18420,
+      "bytes": 26293,
       "role": "record",
-      "sha256": "acd30d6d47b217d1afe6e89a6c57a41152639181d058c28ebb5cd4b21818f703"
+      "sha256": "7e865c0517eac42cac28a0007960c7985dabe675022b81e03e42f19dfa728ee9"
     },
     "picture.png": {
-      "bytes": 290288,
+      "bytes": 284561,
       "role": "picture",
-      "sha256": "0f9ae300041609813da2fdb20652db481fbab36dc1832994aa4ac766a8330a9d"
+      "sha256": "05c3ccf3c90cc34755d9adb906a798a53e4c204c26750bef83fd699165fdafd9"
     }
   },
   "id": "light.hub",
@@ -30,13 +30,16 @@
     "of": "light@hub: looks/hub/from-door-1-look.png"
   },
   "provenance": {
-    "accept": null,
-    "code": null,
+    "accept": {
+      "at": "2026-11-13T17:59:10.919220+00:00",
+      "by": "runner"
+    },
+    "code": "a5864ea8d1f294019099551ca7ec5b9c4563f985494d14752a4bff62338525b0",
     "commit": "81524519dfb725cacab5b9b6fb31f1d57e45042a",
     "files_from": {
       "layer.usda": {
         "path": "layers/light.usda",
-        "sha256": "6a7386699fa66a709204fa70ec46d96b6dfebd970a3aea273ee1f04ccb9f5305"
+        "sha256": "a89a6a97b12445f9e9478e8b980fd5a24f9565567f272db3691685b3e5b1cc57"
       }
     },
     "made_with": [
@@ -47,12 +50,12 @@
     ],
     "models": [],
     "node": "assembly@hub",
-    "output": "f9b1e2b620dab387854cfde45de0fe8eb4840101d82f0f550586e1a704a09a14",
+    "output": "bb87fb52fd853b6e786afbc2d471f9ae6fa1d1a41d040db6a00f735eb77e6210",
     "own_files": [],
     "place": "hub",
-    "record_key": null,
+    "record_key": "fac23cb557f32d10dc0ac5d452b581cc375499725608161a63ecbb1ab14eadbf",
     "route": "04d59456d56ccc9d99acfa51bf36b94ae5e6b01ad2306d5623d1930998feb9fe",
-    "side_records_from": "a19a947584cf2bf5a15ab3242fde61a2f26ec2e0cd7e87861e8504cdb3106467",
+    "side_records_from": "9688d669841ed10f0413d749f3296b2327158d70839a1fedd4172fa4fcd6f8c4",
     "source_name": "layers/light.usda",
     "unresolved": [],
     "world": "world1",
