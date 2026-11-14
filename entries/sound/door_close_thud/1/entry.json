@@ -1,0 +1,88 @@
+{
+  "address": "sound/door_close_thud@1",
+  "files": {
+    "audio/generated/doors/door_close_thud.ogg": {
+      "bytes": 28309,
+      "role": "audio",
+      "sha256": "3144e156fb160049e840ce853822d475a536d5ac0b8cd259feee000ceec8d05b"
+    },
+    "preview.png": {
+      "bytes": 1700,
+      "role": "picture",
+      "sha256": "91192aead1919eb5f57bd17333985a30b8dc5b52eea2b1787565bcfaa0b67cae"
+    },
+    "sound.json": {
+      "bytes": 945,
+      "role": "record",
+      "sha256": "b338ce055cd035ddfdfef5b314114282f820dba236a0a17365d685be78c32d04"
+    }
+  },
+  "id": "door_close_thud",
+  "kind": "sound",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/audio.py",
+    "of": "audio/generated/doors/door_close_thud.ogg"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-11-14T16:22:45.390807+00:00",
+      "by": "runner"
+    },
+    "code": "ea2d96490fb90e020b3b5abf9ba17a6f3e635f8a52f960b3beabb2862fac8301",
+    "commit": "c6504d28191c96d7d823b16ea69e2fdc7e302beb",
+    "files_source": {
+      "audio/generated/doors/door_close_thud.ogg": "files/sound/generated/doors/door_close_thud.ogg"
+    },
+    "made_with": [
+      {
+        "by": "moss_soundeffect",
+        "what": "sound/generated/doors/door_close_thud.ogg"
+      }
+    ],
+    "models": [
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "clap-larger-general",
+        "revision": "ada0c23a36c4e8582805bb38fec3905903f18b41",
+        "sha256": "b8e001a32b37111261ccc28541ae07960a8cc047837f76a1a0877e9b2c59dc45",
+        "source": "hf:laion/larger_clap_general"
+      },
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "moss-soundeffect-v2",
+        "revision": "e35df4d82fbe87fcd5d14e5d100e349c0c3c076d",
+        "sha256": "d74b38a3387c5e670754edde2d06a71d1940c3a603e5a0489550159e79d18885",
+        "source": "hf:OpenMOSS-Team/MOSS-SoundEffect-v2.0"
+      }
+    ],
+    "node": "sound@camp",
+    "output": "e112e1e6908932034dbecdfd584237463e11f7a9fe1c33cf5f63d49199df70a7",
+    "place": "camp",
+    "prim": null,
+    "record_key": "2f426cc2ce636ee85176989bd23de503cfc3c458cc6336771b34e973038eea40",
+    "route": "04d59456d56ccc9d99acfa51bf36b94ae5e6b01ad2306d5623d1930998feb9fe",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "camp"
+  ],
+  "state": "draft",
+  "tags": {
+    "category": [
+      "shot"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "made_by": [
+      "moss"
+    ],
+    "place_kind": []
+  },
+  "title": "Door close thud",
+  "usd": null,
+  "version": 1
+}
