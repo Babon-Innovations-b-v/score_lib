@@ -1,0 +1,136 @@
+{
+  "address": "algorithm/wall_kit@1",
+  "files": {
+    "code.json": {
+      "bytes": 1684,
+      "role": "record",
+      "sha256": "e200c14bbd6580c1aaca991869b9ee51b22c5ce258f495dad64ab92ce0d0632c"
+    },
+    "code/score/__init__.py": {
+      "bytes": 0,
+      "role": "code",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "code/score/checks/__init__.py": {
+      "bytes": 5111,
+      "role": "code",
+      "sha256": "95c8487441b20e04f9706c0109de8e48a63e9acdb5f6c158c973824f2975b0fd"
+    },
+    "code/score/contracts/__init__.py": {
+      "bytes": 5024,
+      "role": "code",
+      "sha256": "1c0f030fd4a7110bdb7881c9e792243b87af42f60ca68dd39486808382f5edde"
+    },
+    "code/score/stages/__init__.py": {
+      "bytes": 137673,
+      "role": "code",
+      "sha256": "584cef7a1b58c8205c1fee387220646f6e2d6fb46c41b72edb87ecc6f01df0af"
+    },
+    "code/score/stages/earth_seed/__init__.py": {
+      "bytes": 12168,
+      "role": "code",
+      "sha256": "ffdaa9e9af212673c14ecd40d3d73b4621dd13f4b599a37ef55cbdfdbb87c020"
+    },
+    "code/score/stages/earth_seed/design_shell.py": {
+      "bytes": 89746,
+      "role": "code",
+      "sha256": "f14dcb4907ae77ef1f60f5baed5ae3f8398f0cd9fe803918865153d5e9c77cb3"
+    },
+    "code/score/stages/scene_record/__init__.py": {
+      "bytes": 1520,
+      "role": "code",
+      "sha256": "e60948deb1a6c02b947bf97d6e1bcd2a028192ab8b57521a795ab2298d751a43"
+    },
+    "code/score/stages/scene_record/plan.py": {
+      "bytes": 51691,
+      "role": "code",
+      "sha256": "6e632817023df4520d3ac9261b38d6d6f23acdbf776b197bed7588bb8788ea62"
+    },
+    "code/score/stages/shell_parts.py": {
+      "bytes": 4882,
+      "role": "code",
+      "sha256": "235bbc87b6648d7dddf896e7ea082891fcca3f2ceea6e682792d6d9409335770"
+    },
+    "code/score/stages/surfaces/__init__.py": {
+      "bytes": 6813,
+      "role": "code",
+      "sha256": "b2c4bf749d8303aaa8fdc4ac8ef262174f59c3d3276abdd7f4f605e28007ee6c"
+    },
+    "code/score/stages/surfaces/palette_library.py": {
+      "bytes": 6487,
+      "role": "code",
+      "sha256": "e81a87a25553f0bf69e6927de97bdcd4ba2940cc2b318725ea4991f224847634"
+    },
+    "code/score/stages/surfaces/surface_data.py": {
+      "bytes": 5036,
+      "role": "code",
+      "sha256": "82d22b30b7a13d26bbff24f0d791a9b1d665a42eeb282bbb84ac15882a2b1d1d"
+    },
+    "code/score/stages/wall_kit/__init__.py": {
+      "bytes": 30907,
+      "role": "code",
+      "sha256": "2c01bd470e06d9a53b5024b8520188f8e0c56002a2b08ba124257b7782751515"
+    },
+    "code/score/store/__init__.py": {
+      "bytes": 21142,
+      "role": "code",
+      "sha256": "72bf0a79cc5e7a00d67f851375668782053541c29573c70aca4e061c587556cf"
+    },
+    "definition.json": {
+      "bytes": 976,
+      "role": "record",
+      "sha256": "2601fa551866fb6d60cfb01a73a5d6b6d324f378810229e2be725b127e3818c4"
+    },
+    "presets/world1/seed.json": {
+      "bytes": 166,
+      "role": "record",
+      "sha256": "f01ebf493ca695c8faa5cc8d7ee153054112e6bcaeb64b3aca4bb701ad8c00fd"
+    },
+    "run.json": {
+      "bytes": 260,
+      "role": "record",
+      "sha256": "63b047e2f79d777065bc4bd54b796254f29837ba7ce0374ce688e6ef81961c69"
+    },
+    "settings.schema.json": {
+      "bytes": 1597,
+      "role": "record",
+      "sha256": "c8a33bed8c6db43ab059bc15caa9bc82f4702f371f8c2ede9aa52f01401e41cc"
+    },
+    "test/score/stages/wall_kit/test_a_wall_carries_the_kit_its_code_rows_name.py": {
+      "bytes": 8291,
+      "role": "code",
+      "sha256": "aed21090c980a735d9b0cfbdb4e5f0484493ee76e477b6257995276052f270a9"
+    }
+  },
+  "id": "wall_kit",
+  "kind": "algorithm",
+  "picture": null,
+  "picture_reason": "no world 1 output in the store pictures this algorithm",
+  "provenance": {
+    "code": "111249339df0f43b2927c4a6f7de91cbbeca0acc2d598e4c5d979ed7f55be5f0",
+    "commit": "0085c7bf530cea1d640afc20e86963b3004dd0fd",
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
+    "nodes": [],
+    "outside": [],
+    "stage": null,
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "needs": [],
+    "runnable": [
+      true
+    ]
+  },
+  "title": "Wall kit: frames, riveted panels, padded sections, dado and facades a room's code rows name (score #128)",
+  "usd": null,
+  "version": 1
+}
