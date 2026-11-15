@@ -1,0 +1,101 @@
+{
+  "address": "sound/rocket_launch@2",
+  "files": {
+    "audio/generated/doors/rocket_launch.ogg": {
+      "bytes": 140276,
+      "role": "audio",
+      "sha256": "9be5eb43f5270d54156275f4aa0903d4fd76c466ec2d6b320a08fd28ee7a9451"
+    },
+    "audio/recordings/vehicles/rocket_launch.ogg": {
+      "bytes": 132244,
+      "role": "audio",
+      "sha256": "5b1d439e024be667e3d51f2d59194d9f4f7dd0542fd288431c96199d2f69d934"
+    },
+    "preview.png": {
+      "bytes": 2499,
+      "role": "picture",
+      "sha256": "966334b15e83438f18e96179f4d9e5a7d09149e556fc620f77e44d6b877dcae7"
+    },
+    "sound.json": {
+      "bytes": 1017,
+      "role": "record",
+      "sha256": "8e20b6f6a9615281e3e48c04cd7669926d3c15e52ba458de2dca79eed7d1b64f"
+    }
+  },
+  "id": "rocket_launch",
+  "kind": "sound",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "preview/audio.py",
+    "of": "audio/generated/doors/rocket_launch.ogg"
+  },
+  "provenance": {
+    "accept": {
+      "at": "2026-11-15T01:01:51.054730+00:00",
+      "by": "runner"
+    },
+    "code": "230e04043e19fc681f589aea90f8540492545227f3c4fa30854141ada25213ac",
+    "commit": "b5d079e814db6831c23bc228022c15b42ec2345d",
+    "files_from": {
+      "audio/recordings/vehicles/rocket_launch.ogg": "sound/recordings/vehicles/rocket_launch.ogg"
+    },
+    "files_source": {
+      "audio/generated/doors/rocket_launch.ogg": "files/sound/generated/doors/rocket_launch.ogg"
+    },
+    "made_with": [
+      {
+        "by": "moss_soundeffect",
+        "what": "sound/generated/doors/rocket_launch.ogg"
+      },
+      {
+        "by": "cc0_recordings",
+        "carried": true,
+        "what": "sound/recordings/vehicles/rocket_launch.ogg: https://freesound.org/people/qubodup/sounds/211617/ (qubodup)"
+      }
+    ],
+    "models": [
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "clap-larger-general",
+        "revision": "ada0c23a36c4e8582805bb38fec3905903f18b41",
+        "sha256": "b8e001a32b37111261ccc28541ae07960a8cc047837f76a1a0877e9b2c59dc45",
+        "source": "hf:laion/larger_clap_general"
+      },
+      {
+        "digest": "sha256:57d857bc1925d10f9d0721b7c04a9dcdc479b414c6928539521d6932900bafe2",
+        "name": "moss-soundeffect-v2",
+        "revision": "e35df4d82fbe87fcd5d14e5d100e349c0c3c076d",
+        "sha256": "d74b38a3387c5e670754edde2d06a71d1940c3a603e5a0489550159e79d18885",
+        "source": "hf:OpenMOSS-Team/MOSS-SoundEffect-v2.0"
+      }
+    ],
+    "node": "sound@square",
+    "output": "1a02cce717ff81a7f1916211b4095944a4b902407d05da466dded93f9ae0dd1d",
+    "place": "square",
+    "prim": null,
+    "record_key": "8137e80f1738df79436293a724f232ce8668ccfea37e0043a1667864e3552200",
+    "route": "04d59456d56ccc9d99acfa51bf36b94ae5e6b01ad2306d5623d1930998feb9fe",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [
+    "square"
+  ],
+  "state": "draft",
+  "tags": {
+    "category": [
+      "shot"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "made_by": [
+      "moss"
+    ],
+    "place_kind": []
+  },
+  "title": "Rocket launch",
+  "usd": null,
+  "version": 2
+}
