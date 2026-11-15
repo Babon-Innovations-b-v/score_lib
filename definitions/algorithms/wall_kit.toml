@@ -1,0 +1,14 @@
+# One engine algorithm of world 1 (README.md, Layout); read by score_lib/export/algorithm.py.
+name = "wall_kit"
+title = "Wall kit: frames, riveted panels, padded sections, dado and facades a room's code rows name (score #128)"
+entry = "score.stages.wall_kit:pieces"
+roots = ["score/stages/wall_kit/__init__.py"]
+search = ["score/stages/wall_kit", "score/stages/earth_seed"]
+constants = ["score/stages/wall_kit/__init__.py:PANEL", "score/stages/wall_kit/__init__.py:SEAM", "score/stages/wall_kit/__init__.py:RELIEF", "score/stages/wall_kit/__init__.py:KICK", "score/stages/wall_kit/__init__.py:BAND", "score/stages/wall_kit/__init__.py:RIVET", "score/stages/wall_kit/__init__.py:FRAME", "score/stages/wall_kit/__init__.py:CUSHION", "score/stages/wall_kit/__init__.py:DADO"]
+preset = []
+stage = ""
+contract = []
+needs = []
+tests = ["score/stages/wall_kit/test_a_wall_carries_the_kit_its_code_rows_name.py"]
+picture = []
+requires = ["numpy"]

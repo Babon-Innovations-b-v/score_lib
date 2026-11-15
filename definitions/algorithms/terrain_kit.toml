@@ -1,0 +1,14 @@
+# One engine algorithm of world 1 (README.md, Layout); read by score_lib/export/algorithm.py.
+name = "terrain_kit"
+title = "Terrain kit: natural ground relief, craters, tyre tracks, skid marks and rocks, made by code (score #128)"
+entry = "score.stages.terrain.kit:laid"
+roots = ["score/stages/terrain/kit.py"]
+search = ["score/stages/terrain", "score/stages/scene_record"]
+constants = ["score/stages/terrain/kit.py:DEPTH_SHARE", "score/stages/terrain/kit.py:RIM_SHARE", "score/stages/terrain/kit.py:TRACK_GAUGE", "score/stages/terrain/kit.py:LEVEL_MARGIN", "score/stages/terrain/kit.py:LEVEL_BLEND", "score/stages/terrain/kit.py:FIELD_REACH", "score/stages/terrain/kit.py:SMALLEST_ROCK", "score/stages/terrain/kit.py:SUNK", "score/stages/terrain/kit.py:TERRACES"]
+preset = []
+stage = ""
+contract = []
+needs = []
+tests = ["score/stages/terrain/test_ground_follows_design.py"]
+picture = []
+requires = ["numpy"]
