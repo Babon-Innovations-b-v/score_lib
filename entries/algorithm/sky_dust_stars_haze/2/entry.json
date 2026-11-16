@@ -1,0 +1,111 @@
+{
+  "address": "algorithm/sky_dust_stars_haze@2",
+  "files": {
+    "code.json": {
+      "bytes": 1233,
+      "role": "record",
+      "sha256": "a324c1abb943d69437c1566730964026516bd4748b555dbe4d5f313ab313ffa5"
+    },
+    "code/tools/usd/builders.py": {
+      "bytes": 39340,
+      "role": "code",
+      "sha256": "6d8d25c354ccdd58b14dd7f9682f24c38fa5ef4cfd14b9444f47e6e0eaaaedca"
+    },
+    "code/tools/usd/colliders.py": {
+      "bytes": 7194,
+      "role": "code",
+      "sha256": "72f50f9704ab3848c2104baf75c66ff8f1e7edb7e829bedc5a54bf7c6f43ef61"
+    },
+    "code/tools/usd/glb_asset.py": {
+      "bytes": 9182,
+      "role": "code",
+      "sha256": "1db5adb5d33f58c5079145ef794729ff7ab3276b5e34dd2e28313ab2794e3f31"
+    },
+    "code/tools/usd/ground_detail.py": {
+      "bytes": 23433,
+      "role": "code",
+      "sha256": "2a71c1e019af1559fe1810689d42d025682b7c96c92fefb5335271ae54600538"
+    },
+    "code/tools/usd/mars_sky.py": {
+      "bytes": 4698,
+      "role": "code",
+      "sha256": "424fa5d50170f7b97e07f0f1f725e011ef9cbefd5d395711e180f3bae912d0ee"
+    },
+    "code/tools/usd/rocks.py": {
+      "bytes": 8957,
+      "role": "code",
+      "sha256": "e1a891c8d6937a5fcc59f8845d7035fa312ee89f855ca3b2bc71194d9559c6ee"
+    },
+    "code/tools/usd/scene.py": {
+      "bytes": 64135,
+      "role": "code",
+      "sha256": "b2854a9d116d8d4f9d047612f98087104aa1d6948c23723d5dc8142c058c7433"
+    },
+    "code/tools/usd/shaders.py": {
+      "bytes": 5347,
+      "role": "code",
+      "sha256": "77a2366732d9433968e1eb16411ff9dfda00929189c833aa1fe089176157d8e3"
+    },
+    "code/tools/usd/stage_inputs.py": {
+      "bytes": 3879,
+      "role": "code",
+      "sha256": "e30523ce76bbf9aa8cff2191af076722c0b186a681c82d9fc85177af5e0dc784"
+    },
+    "definition.json": {
+      "bytes": 612,
+      "role": "record",
+      "sha256": "fe7fb48bc6e1a6fe85689d219bb69048269b2a9338feab5c048905ccf0e09462"
+    },
+    "presets/world1/seed.json": {
+      "bytes": 166,
+      "role": "record",
+      "sha256": "f01ebf493ca695c8faa5cc8d7ee153054112e6bcaeb64b3aca4bb701ad8c00fd"
+    },
+    "run.json": {
+      "bytes": 405,
+      "role": "record",
+      "sha256": "e3954d16dc4c4cbadcbd123d85dfcca041ab5c9e9b30dd3fa1755ab1a5587ef2"
+    },
+    "settings.schema.json": {
+      "bytes": 292,
+      "role": "record",
+      "sha256": "4867c13b08616ef67b1896ccdf69f7f8a6b9e65e2fe7accf347db77d3ca4011b"
+    },
+    "test/tools/usd/test_a_scene_record_builds_what_it_names.py": {
+      "bytes": 42500,
+      "role": "code",
+      "sha256": "5b947d2b6ca3795795f5286586a53c55f850a34b9849ba800530fc397638e183"
+    }
+  },
+  "id": "sky_dust_stars_haze",
+  "kind": "algorithm",
+  "picture": null,
+  "picture_reason": "no world 1 output in the store pictures this algorithm",
+  "provenance": {
+    "code": "522888f47698a6baf2609f1bbdce8ea9e8b50bc2ae35d5f84fb5c4c6102fa694",
+    "commit": "1331a0120d3bc4627fedcd44f74cd79b875f2162",
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
+    "nodes": [],
+    "outside": [],
+    "stage": null,
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "needs": [],
+    "runnable": [
+      true
+    ]
+  },
+  "title": "Static sky dust, haze volume, haze ring and sky dome written into a place's stage",
+  "usd": null,
+  "version": 2
+}

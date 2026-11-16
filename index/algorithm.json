@@ -2,7 +2,7 @@
   "entries": [
     {
       "address": "algorithm/body_weight@1",
-      "digest": "99fe1a9c038b6c02f9e081aab256b296c2fc7846e37a87667c674cccdc2c3380",
+      "digest": "6c525a5fb5c22e1b3f81ddcc560967608ad3a0d22d04b8f4a35a50660f3e63d2",
       "picture_sha256": null,
       "score": null,
       "state": "draft",
@@ -29,6 +29,21 @@
       },
       "title": "Camera moves: RRT* walk paths and film shots (the render needs a GPU)",
       "version": 1
+    },
+    {
+      "address": "algorithm/camera_paths@2",
+      "digest": "625ca0b4575a5f72f68b2ac75ceb738f9ede5446865ea8080523a5cf0490c568",
+      "picture_sha256": null,
+      "score": null,
+      "state": "draft",
+      "tags": {
+        "needs": [],
+        "runnable": [
+          true
+        ]
+      },
+      "title": "Camera walks: RRT* paths at eye height through doorways, clear of every solid, smoothed into frames",
+      "version": 2
     },
     {
       "address": "algorithm/cast_spread@1",
@@ -62,7 +77,7 @@
     },
     {
       "address": "algorithm/drop@1",
-      "digest": "dbb63b39c1d72d7b5d993f2a18d86a9957d23ceaf81ab13cde7d31a69d1da8bc",
+      "digest": "5101f78ce6d3ec448d435f247ee4b236addf3180bce729568f8cd89bc8b5929d",
       "picture_sha256": null,
       "score": null,
       "state": "draft",
@@ -91,6 +106,21 @@
       "version": 1
     },
     {
+      "address": "algorithm/far_city@2",
+      "digest": "e02ccfbd2fb51e4648cfbc8d45660bffd673e4be45b075ce95f25cbf036f020f",
+      "picture_sha256": null,
+      "score": null,
+      "state": "draft",
+      "tags": {
+        "needs": [],
+        "runnable": [
+          true
+        ]
+      },
+      "title": "Far things: where a skyline building or far object stands, by the bearing and size its concept box is seen at",
+      "version": 2
+    },
+    {
       "address": "algorithm/ground_detail@1",
       "digest": "85c9e372d3780b4b4675a2a64af8b926b8a219144fe092914bae02e64ecbf207",
       "picture_sha256": "0c65ba7a0eece2503b23dccf4b72965b14bb0834987a8686e970a1c85c41398f",
@@ -106,8 +136,23 @@
       "version": 1
     },
     {
+      "address": "algorithm/ground_detail@2",
+      "digest": "25ca3848cc8116eded72763e63cc7b3e5fbe33e9ec3b00474fe99ce1255c4795",
+      "picture_sha256": null,
+      "score": null,
+      "state": "draft",
+      "tags": {
+        "needs": [],
+        "runnable": [
+          true
+        ]
+      },
+      "title": "Ground detail: levelled and dug ground, pits, pebbles and stipple baked into the near ground's maps, rocks laid",
+      "version": 2
+    },
+    {
       "address": "algorithm/hinge_motor@1",
-      "digest": "4a1d0481416208c1dab609b38efcf286855df44c0afd0bae49f76d397032ee5f",
+      "digest": "42d135d3d0817c387c98900e9b3af3ad7948868bcae4c675920d81914075eef4",
       "picture_sha256": null,
       "score": null,
       "state": "draft",
@@ -134,6 +179,21 @@
       },
       "title": "Light rig: lamps placed, strengths swept, shafts (passes and haze need a GPU)",
       "version": 1
+    },
+    {
+      "address": "algorithm/light_rig@2",
+      "digest": "fc1cc7eb7e0d622966d826dee8e0d6fe750c2792f115f33ca4b6c3a19504de90",
+      "picture_sha256": null,
+      "score": null,
+      "state": "draft",
+      "tags": {
+        "needs": [],
+        "runnable": [
+          true
+        ]
+      },
+      "title": "Light rig: lamps laid through their fixtures, strengths swept and balanced from one render of each lamp",
+      "version": 2
     },
     {
       "address": "algorithm/machines_lay@1",
@@ -166,6 +226,21 @@
       "version": 1
     },
     {
+      "address": "algorithm/mars_sky@2",
+      "digest": "2bda4bae803b7460d27f432b76d29601eefbd0ae44129488ecd54438a6c1220c",
+      "picture_sha256": null,
+      "score": null,
+      "state": "draft",
+      "tags": {
+        "needs": [],
+        "runnable": [
+          true
+        ]
+      },
+      "title": "Mars day sky: single scattering in a dusty layer, baked to a dome picture",
+      "version": 2
+    },
+    {
       "address": "algorithm/motion_movers@1",
       "digest": "5b0b23c28c82aa0a5337f509c43157f25bf54a06f737d2c9a2eb4af6091cddab",
       "picture_sha256": null,
@@ -181,8 +256,53 @@
       "version": 1
     },
     {
+      "address": "algorithm/motion_movers@2",
+      "digest": "72391af2f6a95e0b9101158b8f2ae8775f62b4bb1f4f2b78ed42406fa65088d8",
+      "picture_sha256": null,
+      "score": null,
+      "state": "draft",
+      "tags": {
+        "needs": [],
+        "runnable": [
+          true
+        ]
+      },
+      "title": "Motion layer: timed slides, climbs, turns and lights, and movers along paths, swings and spins",
+      "version": 2
+    },
+    {
+      "address": "algorithm/motor@1",
+      "digest": "481882ab45431804f43333cb8b3746a60bb5790e346db66dad5b980287657665",
+      "picture_sha256": null,
+      "score": null,
+      "state": "draft",
+      "tags": {
+        "needs": [],
+        "runnable": [
+          true
+        ]
+      },
+      "title": "MOTOR: a whole trial's coordinates as one cubic spline solve, then its dynamics and muscles, within their ranges",
+      "version": 1
+    },
+    {
+      "address": "algorithm/natural_grounds@1",
+      "digest": "6dff53523f94018d3d183424b944ad7cae8d7f5d1253db969a2a61259693aeeb",
+      "picture_sha256": null,
+      "score": null,
+      "state": "draft",
+      "tags": {
+        "needs": [],
+        "runnable": [
+          true
+        ]
+      },
+      "title": "Natural ground pick: regolith, rock, sand, ocean or ice from a body's pressure and warmth, or a ground row's words",
+      "version": 1
+    },
+    {
       "address": "algorithm/newton_pile@1",
-      "digest": "b8d44e042468e9e56cbeb4ce3ecad1afb8c49eb6301af3709657c5a2dec7fc07",
+      "digest": "7e3fe7ff51b99a048f9fda19cca38b296b7924e24e01ad969896d35478ca86b3",
       "picture_sha256": null,
       "score": null,
       "state": "draft",
@@ -198,6 +318,21 @@
       "version": 1
     },
     {
+      "address": "algorithm/night_sky@1",
+      "digest": "210f48adc3b8805cb846387aca35fbf6dc9374bbb0ca8a1cbda97414b734188b",
+      "picture_sha256": null,
+      "score": null,
+      "state": "draft",
+      "tags": {
+        "needs": [],
+        "runnable": [
+          true
+        ]
+      },
+      "title": "Night sky light: moonlight, the air it scatters and a city's skyglow, each from measured physics",
+      "version": 1
+    },
+    {
       "address": "algorithm/particle_effects@1",
       "digest": "fe7502e543b4adaebfa64d0e4b85371da57edd2b0af64a916d44381b8cb6fadc",
       "picture_sha256": "d9a2dd2af857dd53463aac0126ee24446056e795de3e269451698f120f752e84",
@@ -210,6 +345,38 @@
         ]
       },
       "title": "Particle effects (dust, devils, fog, steam, vents, exhaust)",
+      "version": 1
+    },
+    {
+      "address": "algorithm/particle_effects@2",
+      "digest": "cf07d370b00096518070c41a03d42959ed6071d73640cf9f1c134c27222b6caf",
+      "picture_sha256": null,
+      "score": null,
+      "state": "draft",
+      "tags": {
+        "needs": [],
+        "runnable": [
+          true
+        ]
+      },
+      "title": "Particle effects (dust, fog, steam, vents, exhaust) baked from their records into the effects layer",
+      "version": 2
+    },
+    {
+      "address": "algorithm/people_cloth@1",
+      "digest": "39a19aaf36a611622c920b8071b939a33947c4f6b52269993f6e8af7a76bdf3c",
+      "picture_sha256": null,
+      "score": null,
+      "state": "draft",
+      "tags": {
+        "needs": [
+          "a CUDA card (Newton and Warp)"
+        ],
+        "runnable": [
+          false
+        ]
+      },
+      "title": "People cloth: a person's loose garment simulated by Newton's VBD cloth riding its sim body, judged by measure",
       "version": 1
     },
     {
@@ -229,7 +396,7 @@
     },
     {
       "address": "algorithm/planet_gravity@1",
-      "digest": "3f09cdfb8c34fa673f065aabe4540b108302441bf2a0abafc2e8563813e0a6ec",
+      "digest": "da72735a32bf731d8696f843a0d574bba38a0fde626ffbf636c470ca4fc09ead",
       "picture_sha256": null,
       "score": null,
       "state": "draft",
@@ -244,7 +411,7 @@
     },
     {
       "address": "algorithm/push@1",
-      "digest": "c30c0bf008d62f91e4a59b16ca37556bfbf5b167abedee70ab361db341a38c2f",
+      "digest": "3871570c6b131419c0c2dc53b61c1cfee4f2b4fe1de634c5a77bf595638efff2",
       "picture_sha256": null,
       "score": null,
       "state": "draft",
@@ -273,8 +440,40 @@
       "version": 1
     },
     {
+      "address": "algorithm/room_layout@2",
+      "digest": "582a2db747f5dac43e88ddc6a1032c6d2c91dbb25d31454253060c7e2bc4e248",
+      "picture_sha256": null,
+      "score": null,
+      "state": "draft",
+      "tags": {
+        "needs": [],
+        "runnable": [
+          true
+        ]
+      },
+      "title": "Room layout: the floor things of a crowded plan parted inside their walls by a relation solver, seeded, on the CPU",
+      "version": 2
+    },
+    {
+      "address": "algorithm/scene_clip@1",
+      "digest": "e423d09b725a64603fec0c8702a6f2923fe8193c9e15341bc408e8263cde70b3",
+      "picture_sha256": null,
+      "score": null,
+      "state": "draft",
+      "tags": {
+        "needs": [
+          "a CUDA card (Kimodo)"
+        ],
+        "runnable": [
+          false
+        ]
+      },
+      "title": "Scene clip: a walker's path on its scene's ground turned into Kimodo footfall constraints, made and checked",
+      "version": 1
+    },
+    {
       "address": "algorithm/settle@1",
-      "digest": "8dd4cf518ad5f3a81b2d7de9482cf927f18c118ea660591c4ffe7f6b01ef2778",
+      "digest": "c1d0711aab578de580c0f55e01767437ada942e02a0b3f05b52b60b4ee8571cd",
       "picture_sha256": null,
       "score": null,
       "state": "draft",
@@ -285,6 +484,23 @@
         ]
       },
       "title": "Settle and rest physics (held snap and let-down run headless; the drop needs Blender)",
+      "version": 1
+    },
+    {
+      "address": "algorithm/sim_body@1",
+      "digest": "c0b16689d39dd5fe913f79e953a7eeb05557a17c644995e5f5408a74eb363148",
+      "picture_sha256": null,
+      "score": null,
+      "state": "draft",
+      "tags": {
+        "needs": [
+          "a CUDA card (Newton, Warp and MuJoCo Warp): about 2 minutes a clip on an L4"
+        ],
+        "runnable": [
+          false
+        ]
+      },
+      "title": "Sim body: each person a MyoFullBody doing its clip on its scene's ground, residuals reduced by RRA and gated",
       "version": 1
     },
     {
@@ -303,6 +519,21 @@
       "version": 1
     },
     {
+      "address": "algorithm/sky_dust_stars_haze@2",
+      "digest": "acd646cdf8485dabd1b80369d0c75bfacc64b0eae48da003672c09989332bc58",
+      "picture_sha256": null,
+      "score": null,
+      "state": "draft",
+      "tags": {
+        "needs": [],
+        "runnable": [
+          true
+        ]
+      },
+      "title": "Static sky dust, haze volume, haze ring and sky dome written into a place's stage",
+      "version": 2
+    },
+    {
       "address": "algorithm/sky_orbits@1",
       "digest": "531fe30c4a8d6c540bfd5e7c2f47cef1d04dffc96ce30a894073eb2871e78066",
       "picture_sha256": "9686e837ee85b31a5407231151def5867fe221585b98cf77b40ea71b8afc9be7",
@@ -318,8 +549,23 @@
       "version": 1
     },
     {
+      "address": "algorithm/sky_orbits@2",
+      "digest": "5736c995ad2ebec70773dc514a8f70b93ec93eb92a65ce34574dcde0b6e24436",
+      "picture_sha256": null,
+      "score": null,
+      "state": "draft",
+      "tags": {
+        "needs": [],
+        "runnable": [
+          true
+        ]
+      },
+      "title": "Sky overhead: every body where its orbit and the site's spin put it, its lights and backdrops, at a scene's time",
+      "version": 2
+    },
+    {
       "address": "algorithm/snap@1",
-      "digest": "513cfb582d6f39d0a626fce51dfb97cc6ecc10c5fb1b3966ecabe2347d01d59f",
+      "digest": "8f8375e604bcaf9cab0c846b0773f8a9f0ce0298740c4540f0502a3dfe00c5e8",
       "picture_sha256": null,
       "score": null,
       "state": "draft",
@@ -348,6 +594,21 @@
       "version": 1
     },
     {
+      "address": "algorithm/sound_layer@2",
+      "digest": "7d38c63112a3bd00f3b0bf2b75048d5c52b5318d9de1b36f457cc946c159a16e",
+      "picture_sha256": null,
+      "score": null,
+      "state": "draft",
+      "tags": {
+        "needs": [],
+        "runnable": [
+          true
+        ]
+      },
+      "title": "Sound layer: beds, moving sounds and footsteps, impacts and scrapes per surface, laid and mixed to loudness",
+      "version": 2
+    },
+    {
       "address": "algorithm/surface_recipes@1",
       "digest": "422312d563ea24c93d3b4cc9caf9976cc5d0cc965cc5705dd20bb2a389bbd831",
       "picture_sha256": null,
@@ -368,7 +629,7 @@
     },
     {
       "address": "algorithm/surface_recipes@2",
-      "digest": "ceef46c4bed80b87ac1634e57c974b749425f14aaeff58acbb12fd41b4bbe139",
+      "digest": "4c3f746525afcc02eb1f1366ca0fafe5c6e58295f0c66d538b1abc15016bf85a",
       "picture_sha256": null,
       "score": null,
       "state": "draft",
@@ -387,7 +648,7 @@
     },
     {
       "address": "algorithm/terrain_kit@1",
-      "digest": "f48f1e472511bcbd11a2074600764a9a67ee75d3bf75834b50c6a0a3c0c06235",
+      "digest": "db7a4d3aaedfd395e920ecb8fcecd9a0f914ba7a6dc8322e301474c84bc59f9f",
       "picture_sha256": null,
       "score": null,
       "state": "draft",
@@ -417,7 +678,7 @@
     },
     {
       "address": "algorithm/wall_kit@1",
-      "digest": "74e81453a4af991c3c6e17b3d40ffced71d40590d0eff959c3affd3f93722981",
+      "digest": "b69874b922bde19ff4a82d178262112588e3ecb58074065961962e5f4deb4061",
       "picture_sha256": null,
       "score": null,
       "state": "draft",

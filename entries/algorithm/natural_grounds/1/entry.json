@@ -1,0 +1,86 @@
+{
+  "address": "algorithm/natural_grounds@1",
+  "files": {
+    "code.json": {
+      "bytes": 522,
+      "role": "record",
+      "sha256": "ef99bcdd9c1ded885aab31af3d420e03230c7d3971e05ef2efa7caf15b4fedcb"
+    },
+    "code/score/__init__.py": {
+      "bytes": 0,
+      "role": "code",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "code/score/stages/__init__.py": {
+      "bytes": 137673,
+      "role": "code",
+      "sha256": "584cef7a1b58c8205c1fee387220646f6e2d6fb46c41b72edb87ecc6f01df0af"
+    },
+    "code/score/stages/natural_grounds.py": {
+      "bytes": 6511,
+      "role": "code",
+      "sha256": "ad13cdb2d09b5cf939c12ed5fad52883ace3d6bf63632240b3cba444bfd19b43"
+    },
+    "definition.json": {
+      "bytes": 908,
+      "role": "record",
+      "sha256": "e05751817bbed7c41ae3d1e249f95df9e2ad119f17245a9edc48039141fe49ea"
+    },
+    "presets/world1/data/physics/bodies.json": {
+      "bytes": 7133,
+      "role": "record",
+      "sha256": "414f30d7597559afcfec5196fb8a777e78118636ecede54cef2ec263d2602890"
+    },
+    "presets/world1/seed.json": {
+      "bytes": 166,
+      "role": "record",
+      "sha256": "f01ebf493ca695c8faa5cc8d7ee153054112e6bcaeb64b3aca4bb701ad8c00fd"
+    },
+    "run.json": {
+      "bytes": 305,
+      "role": "record",
+      "sha256": "842883a0d2be818382e24e47b1cb6854176f98488c9781e102bd69f99850188d"
+    },
+    "settings.schema.json": {
+      "bytes": 1316,
+      "role": "record",
+      "sha256": "82fe2303ee43ab682c3265211f6d0eede1f5126b3d928988d9fe38cce935fe09"
+    },
+    "test/score/stages/test_each_row_keys_waits_and_moves_only_by_its_design_and_gaps.py": {
+      "bytes": 183434,
+      "role": "code",
+      "sha256": "4cb3d1cb816c979beecc5c2a28356d8b83ae4df95d7353f47d7515b714afda65"
+    }
+  },
+  "id": "natural_grounds",
+  "kind": "algorithm",
+  "picture": null,
+  "picture_reason": "no world 1 output in the store pictures this algorithm",
+  "provenance": {
+    "code": "60f2e7a1e7dc8c0dc978702ec8cedb3248ec97866a185aeae5de2df00f894651",
+    "commit": "1331a0120d3bc4627fedcd44f74cd79b875f2162",
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
+    "nodes": [],
+    "outside": [],
+    "stage": null,
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "needs": [],
+    "runnable": [
+      true
+    ]
+  },
+  "title": "Natural ground pick: regolith, rock, sand, ocean or ice from a body's pressure and warmth, or a ground row's words",
+  "usd": null,
+  "version": 1
+}

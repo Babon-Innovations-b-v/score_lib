@@ -2,9 +2,9 @@
   "address": "algorithm/settle@1",
   "files": {
     "code.json": {
-      "bytes": 18914,
+      "bytes": 18899,
       "role": "record",
-      "sha256": "a6406ad7824f25f19e946ad2a994f043277e98cbe75fb2c219cac461bc44b878"
+      "sha256": "f64bafd3522fca61437f3388844d3a29cdd62631d86e156defadeca3fb3d4526"
     },
     "code/score/__init__.py": {
       "bytes": 0,
@@ -42,9 +42,9 @@
       "sha256": "51ac56c59f0f9b102554d3af7f956506eab838d1bd4785c890f27b9c2a131733"
     },
     "code/score/review/__init__.py": {
-      "bytes": 28540,
+      "bytes": 28640,
       "role": "code",
-      "sha256": "252ad18b933dc5cc331632b59005ce84548c2a8d2171816ba9689bfbcbc8c22d"
+      "sha256": "f5da9272e9ff3f73e613dc7b82972f7463c8e415b13f620d4285f0455f9aecfe"
     },
     "code/score/review/concepts.py": {
       "bytes": 61489,
@@ -72,9 +72,9 @@
       "sha256": "10189b2e9e4a537eb5d82efa2d4ec3b9b132bdc613fd27cb42497033748252ed"
     },
     "code/score/review/holders/__init__.py": {
-      "bytes": 165624,
+      "bytes": 166074,
       "role": "code",
-      "sha256": "3733a627651e76ef38d412ea3c6c585c367d6b6c2775f49bc8a62564af4fe7e1"
+      "sha256": "d9edc6dd42ae3dd6a87103c87ef0ee89d8ee588b1614e8cb53d32619323e10a5"
     },
     "code/score/review/holders/named_top.py": {
       "bytes": 2473,
@@ -120,16 +120,6 @@
       "bytes": 61440,
       "role": "code",
       "sha256": "b58bc0d214e52b59917e41f95c2d142647a8b15d21962779f8bb8b83741fb788"
-    },
-    "code/score/review/relation_solver/__init__.py": {
-      "bytes": 7069,
-      "role": "code",
-      "sha256": "9e488764c26bf4fa21d4fbcd7bd3c4e742031453904890a2aedbfc694876e07c"
-    },
-    "code/score/review/relation_solver/_solver.py": {
-      "bytes": 9228,
-      "role": "code",
-      "sha256": "dc7ffe82acbbf501e2843682c673ee0ab3f7082268ed0bbead61ab9beca0ca15"
     },
     "code/score/review/scene_sky.py": {
       "bytes": 2798,
@@ -447,9 +437,9 @@
       "sha256": "2647276fab9f96690df89d7c8a4fe485f8c65bcb07426dc026160fc42fca8a1c"
     },
     "code/score/stages/complete/prepare/groups.py": {
-      "bytes": 38847,
+      "bytes": 40122,
       "role": "code",
-      "sha256": "3f8874600c5497d7861abef10b503ea7eb56d8d4550032dceeec3dd26bf92af7"
+      "sha256": "21717159ecd61f11991f91354c1c153956f76ad165fbeeaf86e139415a7d45f3"
     },
     "code/score/stages/design_layers.py": {
       "bytes": 5400,
@@ -652,9 +642,9 @@
       "sha256": "6e632817023df4520d3ac9261b38d6d6f23acdbf776b197bed7588bb8788ea62"
     },
     "code/score/stages/scene_record/writer.py": {
-      "bytes": 123782,
+      "bytes": 126914,
       "role": "code",
-      "sha256": "80e4742a3064f9270f2fae68fa6e3aa70715eda0c7e10c4d8a7cc1a130c509f3"
+      "sha256": "e2e415b7172cd4b476cdb9f6ec957fcf7d0398a7b4cc7560f7e4fbf9810d0d41"
     },
     "code/score/stages/settling/__init__.py": {
       "bytes": 42503,
@@ -907,9 +897,9 @@
       "sha256": "5e9d3bcbda3d844546e98775c77855684d88f6804894df5e5ccebe400f49c5d0"
     },
     "run.json": {
-      "bytes": 438,
+      "bytes": 735,
       "role": "record",
-      "sha256": "e8bd664c1f3e36d505dfc4801893e9b0e929bcb4850f503e9222757d36b79593"
+      "sha256": "8216be60c68f092320500b21a860d9dc9eb18dab45b158737fee5a6bf59a2e1b"
     },
     "settings.schema.json": {
       "bytes": 1821,
@@ -937,8 +927,8 @@
   "picture": null,
   "picture_reason": "no world 1 output in the store pictures this algorithm",
   "provenance": {
-    "code": "28241c8a3e4fdf4d1306c27fd5437abeffc157eee9da488397712bb8906fa2e1",
-    "commit": "2e6fdaa503b9010d36f5b9f8b306c179083241cb",
+    "code": "8bed98e9268d148e92bfaa743f35ff310b339cb53a65a9d99cb809137e47a6f4",
+    "commit": "1331a0120d3bc4627fedcd44f74cd79b875f2162",
     "made_with": [
       {
         "by": "score",
@@ -962,7 +952,14 @@
       "settle@street",
       "settle@workshop"
     ],
-    "outside": [],
+    "outside": [
+      {
+        "name": "score/review/relation_solver/_solver.py",
+        "version": "score at 1331a0120d3bc4627fedcd44f74cd79b875f2162",
+        "where": "the score repository: score/review/relation_solver/_solver.py",
+        "why": "Apache-2.0: its licence and notices must stay with its code"
+      }
+    ],
     "stage": "settle",
     "world": "world1"
   },
