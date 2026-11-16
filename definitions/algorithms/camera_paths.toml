@@ -1,0 +1,16 @@
+# One engine algorithm of world 1 (README.md, Layout); read by score_lib/export/algorithm.py.
+name = "camera_paths"
+title = "Camera walks: RRT* paths at eye height through doorways, clear of every solid, smoothed into frames"
+entry = "tools.usd.camera_paths:walk"
+bake = ["tools.usd.camera_paths:walk_views"]
+roots = ["tools/usd/camera_paths.py"]
+search = ["tools/usd", "tools/review"]
+constants = ["tools/usd/camera_paths.py:CLIMB", "tools/usd/camera_paths.py:STEP_RISE", "tools/usd/camera_paths.py:FLOOR_STEP", "tools/usd/camera_paths.py:CLEARANCE", "tools/usd/camera_paths.py:BODY", "tools/usd/camera_paths.py:ITERATIONS", "tools/usd/camera_paths.py:STEP", "tools/usd/camera_paths.py:NEAR", "tools/usd/camera_paths.py:GOAL_BIAS", "tools/usd/camera_paths.py:LOOK_AHEAD", "tools/usd/camera_paths.py:FOV"]
+preset = []
+stage = ""
+contract = []
+needs = []
+paid = ["the film render: Blender on a cloud GPU"]
+tests = ["tools/usd/test_a_walk_goes_through_doorways_clear_of_everything.py"]
+picture = []
+requires = ["numpy", "trimesh", "python-fcl", "usd-core"]

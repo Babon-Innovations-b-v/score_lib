@@ -1,0 +1,15 @@
+# One engine algorithm of world 1 (README.md, Layout); read by score_lib/export/algorithm.py.
+name = "people_cloth"
+title = "People cloth: a person's loose garment simulated by Newton's VBD cloth riding its sim body, judged by measure"
+entry = "score.stages.people_cloth:make"
+roots = ["score/stages/people_cloth/__init__.py", "score/stages/people_cloth/inside/cloth.py"]
+search = ["score/stages/people_cloth/inside"]
+constants = ["score/stages/people_cloth/__init__.py:SUBSTEPS", "score/stages/people_cloth/__init__.py:ITERATIONS", "score/stages/people_cloth/__init__.py:STRETCH_MOST", "score/stages/people_cloth/__init__.py:REST_MOST", "score/stages/people_cloth/__init__.py:REST_SECONDS", "score/stages/people_cloth/__init__.py:HANG_MOST", "score/stages/people_cloth/__init__.py:SETTLE", "score/stages/people_cloth/__init__.py:WELD"]
+preset = ["data/physics/cloth.json"]
+stage = "people-cloth"
+contract = ["people-cloth", 1]
+needs = ["a CUDA card (Newton and Warp)"]
+paid = []
+tests = ["score/stages/people_cloth/test_loose_cloth_rides_its_sim_body_and_is_judged_by_measure.py"]
+picture = []
+requires = ["newton==1.7.0", "warp-lang==1.18.0", "usd-core==26.8", "numpy==2.5.3"]

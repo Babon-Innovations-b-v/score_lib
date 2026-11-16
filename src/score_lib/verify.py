@@ -117,13 +117,13 @@ def check_admission(root, records, sources):
 
 
 def outside_files(root, record):
-    """An algorithm entry's preset files that its definition's outside requirements keep out."""
+    """An algorithm entry's preset and code files that its definition's outside requirements keep out."""
     path = pathlib.Path(root) / algorithm_export.DEFINITIONS / f"{record['id']}.toml"
     if not path.is_file():
         return []
     definition = algorithm_export.load(path)
-    prefix = "presets/world1/"
-    return [name for name in sorted(record["files"])
+    prefixes = ("presets/world1/", "code/")
+    return [name for name in sorted(record["files"]) for prefix in prefixes
             if name.startswith(prefix) and algorithm_export.kept_out(name[len(prefix):], definition)]
 
 

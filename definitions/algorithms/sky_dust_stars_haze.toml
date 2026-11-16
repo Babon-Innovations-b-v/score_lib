@@ -1,0 +1,15 @@
+# One engine algorithm of world 1 (README.md, Layout); read by score_lib/export/algorithm.py.
+name = "sky_dust_stars_haze"
+title = "Static sky dust, haze volume, haze ring and sky dome written into a place's stage"
+entry = "tools.usd.scene:write_dust"
+bake = ["tools.usd.scene:write_haze_volume", "tools.usd.scene:write_haze_ring", "tools.usd.scene:write_sky_dome"]
+roots = ["tools/usd/scene.py"]
+search = ["tools/usd"]
+constants = []
+preset = []
+stage = ""
+contract = []
+needs = []
+tests = ["tools/usd/test_a_scene_record_builds_what_it_names.py"]
+picture = []
+requires = ["numpy", "usd-core"]

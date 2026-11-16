@@ -373,6 +373,7 @@ def make_repo(folder, manifest_rules):
              "data/checks/gaps/room.json": json.dumps([{"name": "a gap"}]),
              "data/demo/preset.json": json.dumps({"rate": 24}),
              "data/demo/outside.json": json.dumps({"not": "ours"}),
+             "tools/demo/ported.py": "# SPDX-License-Identifier: Apache-2.0\nSTEP = 1\n",
              "tools/demo/algo.py": ALGORITHM, "tools/demo/helper.py": HELPER, "tools/demo/algo_test.py": ALGORITHM_TEST}
     folder.mkdir(parents=True)
     git(folder, "init", "-q", "-b", "main")
@@ -384,7 +385,7 @@ def make_repo(folder, manifest_rules):
 
 def make_root(folder, commit):
     """A library root: the world toml, the MIT LICENSE, the schemas and two algorithm definitions (the first with an
-    outside requirement keeping one preset file out)."""
+    outside requirement keeping one preset file out, the second one keeping one code file out, and a ported Apache-2.0 file out by its own head)."""
     (folder / "worlds").mkdir(parents=True)
     (folder / "worlds/world1.toml").write_text(
         f'name = "world1"\nseed = 3\ncommit = "{commit}"\nplaces = ["room"]\n')
@@ -398,8 +399,11 @@ def make_root(folder, commit):
         'where = "https://example.org/outside"\nwhy = "not MIT"\npaths = ["data/demo/outside.json"]\n')
     (folder / "LICENSE").write_text((LIBRARY / "LICENSE").read_text())
     (definitions / "demo_gpu.toml").write_text(
-        'name = "demo_gpu"\ntitle = "Demo on a GPU"\nentry = "algo:write"\nroots = ["tools/demo/algo.py"]\n'
-        'search = ["tools/demo"]\nconstants = []\npreset = []\nneeds = ["gpu"]\ntests = []\n')
+        'name = "demo_gpu"\ntitle = "Demo on a GPU"\nentry = "algo:write"\n'
+        'roots = ["tools/demo/algo.py", "tools/demo/ported.py"]\n'
+        'search = ["tools/demo"]\nconstants = []\npreset = []\nneeds = ["gpu"]\ntests = []\n\n[[outside]]\n'
+        'name = "an outside helper"\nversion = "1.0"\nwhere = "https://example.org/helper"\nwhy = "not MIT"\n'
+        'paths = ["tools/demo/helper.py"]\n')
     (folder / "entries").mkdir()
 
 

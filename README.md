@@ -115,7 +115,9 @@ Our own outputs are in: code and bakes made by score, and what models make whose
 the paid APIs, MOSS-SoundEffect). CC0 recordings and NASA's public-domain pictures are in, since their terms allow
 relicensing. Code, fonts or other files whose terms require keeping their own licence (BSD-3-Clause, the SIL Open
 Font License, GPL) are never copied in: an algorithm names them as outside requirements (`outside` in its
-definition: name, version, where to get it, why), and its snapshot leaves their files out.
+definition: name, version, where to get it, why), and its snapshot leaves their files out. A code file of score's whose
+head names a licence other than MIT (`SPDX-License-Identifier`, a port of someone else's code) is left out the same
+way, hashed with the code and named as an outside requirement by its path.
 
 ## Tests
 

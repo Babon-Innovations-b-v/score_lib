@@ -29,6 +29,9 @@ FRAMEWORK = {"score/__main__.py", "score/graph/__init__.py", "score/graph/_code.
 # The cloud runners (renting machines, the paid parts) are hashed with the code, as score's recipe does, but never
 # shipped: the library carries no provider code.
 CLOUD = ("tools/props/cloud/", "tools/cloud/")
+# A code file whose head names a licence other than MIT (a port of someone else's code) is never shipped.
+SPDX = re.compile(r"SPDX-License-Identifier:\s*([\w.+-]+)")
+HEAD = 2000
 FIELD = re.compile(r"^\s*(score:[\w:]+)\s+([\w\[\]]+)\s+(.*)$")
 TYPES = {"string": "string", "token": "string", "float": "number", "double": "number", "int": "integer",
          "bool": "boolean", "float2": "array", "float3": "array", "float4": "array", "color3f": "array",
@@ -254,8 +257,26 @@ def outside_paths(definition):
 
 
 def kept_out(path, definition):
-    """Whether a repository file belongs to an outside requirement, so the snapshot leaves it out."""
+    """Whether a repository file (code or preset) belongs to an outside requirement, so the snapshot leaves it out."""
     return any(fnmatch.fnmatchcase(path, pattern) for pattern in outside_paths(definition))
+
+
+def foreign_licence(context, path):
+    """The SPDX licence a repository code file's head names when it is not MIT; None otherwise."""
+    found = SPDX.search(context.repo.read_text(path)[:HEAD])
+    return found[1] if found and found[1] != "MIT" else None
+
+
+def foreign_code(context, paths, definition):
+    """{path: licence} of the code files that name a licence other than MIT and no outside requirement keeps out."""
+    found = {path: foreign_licence(context, path) for path in paths if not kept_out(path, definition)}
+    return {path: licence for path, licence in sorted(found.items()) if licence}
+
+
+def foreign_outside(context, foreign):
+    """An outside requirement for each foreign code file: what the entry needs but may not carry."""
+    return [{"name": path, "version": f"score at {context.world['commit']}", "where": f"the score repository: {path}",
+             "why": f"{licence}: its licence and notices must stay with its code"} for path, licence in foreign.items()]
 
 
 def preset_files(context, definition):
@@ -299,12 +320,12 @@ def picture(context, definition, work, files, roles, known):
     return {"file": target, "made_by": "source picture", "of": f"{node}: {name}"}
 
 
-def run_record(definition):
+def run_record(definition, outside):
     """run.json: what a world needs to run the algorithm and the command it runs."""
     return {"python": PYTHON, "requires": definition.get("requires", []), "entry": definition["entry"],
             "bake": definition.get("bake", []), "needs": definition.get("needs", []),
             "paid": definition.get("paid", []), "contract": definition.get("contract", []),
-            "outside": outside_record(definition),
+            "outside": outside,
             "how": f"score-lib run algorithm/{definition['name']}@<version> --preset world1 --out <dir>"}
 
 
@@ -316,7 +337,10 @@ def candidate(context, definition):
                    f"algorithm {name}'s tests and constants")
     work = context.work("algorithm", name)
     hashed = closure(context, definition["roots"], definition.get("search", []))
-    shipped = [path for path in hashed if not path.startswith(CLOUD)]
+    foreign = foreign_code(context, hashed, definition)
+    outside = outside_record(definition) + foreign_outside(context, foreign)
+    shipped = [path for path in hashed
+               if not path.startswith(CLOUD) and not kept_out(path, definition) and path not in foreign]
     every = python_files(context)
     files, roles, known = {}, {}, {}
     for path in shipped + parents(shipped, every):
@@ -327,7 +351,8 @@ def candidate(context, definition):
             "files": {path: hashlib.sha256(context.repo.read_bytes(path)).hexdigest() for path in shipped},
             "left_out": {path: hashlib.sha256(context.repo.read_bytes(path)).hexdigest() for path in hashed
                          if path not in shipped},
-            "left_out_why": "cloud runner code (paid parts): hashed in code_hash, not shipped",
+            "left_out_why": "cloud runner code (paid parts) and outside requirements' code: hashed in code_hash, "
+                            "not shipped",
             "imports_only": parents(shipped, every), "reproduces": reproduces(context, definition, digest)}
     files["code.json"] = write_json(work / "code.json", code)
     files["settings.schema.json"] = write_json(work / "settings.schema.json", settings_schema(context, definition))
@@ -336,7 +361,7 @@ def candidate(context, definition):
         files[f"presets/world1/{path}"] = context.repo.export(path, work / "presets/world1" / path)
     for path in definition.get("tests", []):
         files[f"test/{path}"] = context.repo.export(path, work / "test" / path)
-    files["run.json"] = write_json(work / "run.json", run_record(definition))
+    files["run.json"] = write_json(work / "run.json", run_record(definition, outside))
     files["definition.json"] = write_json(work / "definition.json", definition)
     for each in files:
         roles.setdefault(each, "code" if each.startswith(("code/", "test/")) else "record")
@@ -344,7 +369,7 @@ def candidate(context, definition):
     made = Candidate(kind="algorithm", base_id=name, identity=digest, title=definition["title"], places=[],
                      files=files, roles=roles, made_with=[dict(SCORE)],
                      provenance={"stage": definition.get("stage") or None, "code": digest,
-                                 "outside": outside_record(definition),
+                                 "outside": outside,
                                  "nodes": stage_nodes(context, definition.get("stage"))},
                      tags={"needs": definition.get("needs", []), "runnable": [not definition.get("needs")]},
                      picture=shown, known=known)

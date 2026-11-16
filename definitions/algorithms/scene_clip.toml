@@ -1,0 +1,31 @@
+# One engine algorithm of world 1 (README.md, Layout); read by score_lib/export/algorithm.py.
+# The walkers' movement (score #128): Kimodo walks asked along a scene's own ground, footfalls as constraints.
+name = "scene_clip"
+title = "Scene clip: a walker's path on its scene's ground turned into Kimodo footfall constraints, made and checked"
+entry = "score.stages.scene_clips:make"
+bake = ["scene_clips:main"]
+roots = ["score/stages/scene_clips/__init__.py", "tools/characters/clips/scene_clips.py"]
+search = ["tools/characters/clips", "tools/characters/maker", "tools/characters/people"]
+constants = ["score/stages/scene_clips/__init__.py:RATE", "score/stages/scene_clips/__init__.py:MOST_SECONDS", "score/stages/scene_clips/__init__.py:MOST_KEYFRAMES", "score/stages/scene_clips/__init__.py:WALK_PACE", "score/stages/scene_clips/__init__.py:HIP_OVER_SOLE", "score/stages/scene_clips/__init__.py:FOOT_SIDE", "score/stages/scene_clips/__init__.py:STEP_FRAMES", "score/stages/scene_clips/__init__.py:FIRST_STANCE", "score/stages/scene_clips/__init__.py:END_MARGIN", "score/stages/scene_clips/__init__.py:FLAT_RELIEF", "score/stages/scene_clips/__init__.py:PATH_HELD", "score/stages/scene_clips/__init__.py:FOOT_HELD"]
+preset = []
+stage = "scene-clips"
+contract = ["scene-clips", 1]
+needs = ["a CUDA card (Kimodo)"]
+paid = ["the clips made on a rented GPU"]
+tests = ["score/stages/scene_clips/test_a_walk_becomes_constraints_on_its_own_ground.py", "tools/characters/clips/test_motion_lands_on_the_rigs_rest.py"]
+picture = []
+requires = ["numpy"]
+
+[[outside]]
+name = "Kimodo (code) with the Kimodo-SOMA-RP-v1.1 checkpoint"
+version = "score's vendored Kimodo at the world's commit; checkpoint Kimodo-SOMA-RP-v1.1"
+where = "https://github.com/nv-tlabs/kimodo (score vendors it at vendor/kimodo); https://huggingface.co/nvidia/Kimodo-SOMA-RP-v1.1"
+why = "Apache-2.0 code and NVIDIA Open Model License weights: neither may go out under MIT"
+paths = ["vendor/kimodo/*"]
+
+[[outside]]
+name = "SOMA-X mean rig"
+version = "NVlabs/SOMA-X as score's maker fetches it"
+where = "https://github.com/NVlabs/SOMA-X"
+why = "Apache-2.0: its files stay outside; the entry carries only score's code that fits the rig"
+paths = []

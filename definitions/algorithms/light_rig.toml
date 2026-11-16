@@ -1,0 +1,16 @@
+# One engine algorithm of world 1 (README.md, Layout); read by score_lib/export/algorithm.py.
+name = "light_rig"
+title = "Light rig: lamps laid through their fixtures, strengths swept and balanced from one render of each lamp"
+entry = "score.stages.light.layer:write"
+bake = ["score.stages.light.mix:sweep"]
+roots = ["score/stages/light/__init__.py", "score/stages/light/layer.py", "score/stages/light/mix.py", "score/stages/light/haze.py"]
+search = ["tools/usd"]
+constants = ["score/stages/light/layer.py:MOVE_MOST", "score/stages/light/layer.py:FIXTURE_MOST", "score/stages/light/layer.py:FIXTURE_GAP", "score/stages/light/layer.py:ENCLOSED", "score/stages/light/layer.py:RAYS", "score/stages/light/mix.py:SCALES", "score/stages/light/mix.py:BRIGHT_WITHIN", "score/stages/light/mix.py:VIEW_WITHIN", "score/stages/light/mix.py:WHITE", "score/stages/light/mix.py:BLOWN_MOST", "score/stages/light/mix.py:HALVINGS", "score/stages/light/mix.py:BALANCE_ROUNDS"]
+preset = ["data/library/lamps.json", "data/physics/setting.json"]
+stage = "light"
+contract = ["light", 1]
+needs = []
+paid = ["light-passes: Blender Cycles, one render of each lamp, on a cloud GPU"]
+tests = ["score/stages/light/test_light_measured_against_design.py"]
+picture = []
+requires = ["numpy", "pillow", "usd-core"]

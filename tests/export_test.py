@@ -181,6 +181,11 @@ def test_an_outside_requirement_stays_out_of_the_snapshot(world):
     assert demo["provenance"]["outside"] == [{"name": "an outside library", "version": "1.0",
                                               "where": "https://example.org/outside", "why": "not MIT"}]
     assert json.loads(blob_text(demo, "run.json"))["outside"] == demo["provenance"]["outside"]
+    gpu = entries.load_address(world.root, "algorithm/demo_gpu@1")
+    assert "code/tools/demo/algo.py" in gpu["files"] and "code/tools/demo/helper.py" not in gpu["files"]
+    assert "code/tools/demo/ported.py" not in gpu["files"]
+    assert {"tools/demo/helper.py", "tools/demo/ported.py"} <= set(json.loads(blob_text(gpu, "code.json"))["left_out"])
+    assert [each["name"] for each in gpu["provenance"]["outside"]] == ["an outside helper", "tools/demo/ported.py"]
 
 
 def test_locked_change_becomes_a_new_version(world):

@@ -1,0 +1,16 @@
+# One engine algorithm of world 1 (README.md, Layout); read by score_lib/export/algorithm.py.
+# MOTOR (score #98, paper/motor): one whole-trial solve; the sim body's step chain is only its warm start.
+name = "motor"
+title = "MOTOR: a whole trial's coordinates as one cubic spline solve, then its dynamics and muscles, within their ranges"
+entry = "motor:solved"
+bake = ["motor:dynamics_solved", "motor:muscles_solved"]
+roots = ["score/stages/sim_body/inside/motor/__init__.py"]
+search = ["score/stages/sim_body/inside"]
+constants = ["score/stages/sim_body/inside/motor/__init__.py:MOST_ROUNDS", "score/stages/sim_body/inside/motor/__init__.py:RELATIVE_DONE", "score/stages/sim_body/inside/motor/__init__.py:HOLD_PASSES", "score/stages/sim_body/inside/motor/__init__.py:STIFFNESS_FLOOR"]
+preset = []
+stage = ""
+contract = []
+needs = []
+tests = ["score/stages/sim_body/inside/motor/test_one_spline_solve_lowers_the_trials_cost_and_jerk_within_its_ranges.py"]
+picture = []
+requires = ["numpy==2.5.3", "scipy==1.18.1", "mujoco==3.15.0"]

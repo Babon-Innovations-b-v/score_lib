@@ -1,0 +1,15 @@
+# One engine algorithm of world 1 (README.md, Layout); read by score_lib/export/algorithm.py.
+name = "particle_effects"
+title = "Particle effects (dust, fog, steam, vents, exhaust) baked from their records into the effects layer"
+entry = "tools.usd.effects:write_layer"
+bake = ["tools.usd.effects:bake", "tools.usd.effects:bake_once"]
+roots = ["score/stages/effects/__init__.py", "tools/usd/effects.py"]
+search = ["tools/usd"]
+constants = ["tools/usd/effects.py:RATE", "tools/usd/effects.py:SAMPLES", "tools/usd/effects.py:STEP", "tools/usd/effects.py:TRAVEL_STEP", "tools/usd/effects.py:HORIZON", "score/stages/effects/__init__.py:DRIFT_MOST", "score/stages/effects/__init__.py:READ_EVERY"]
+preset = ["data/effects/*.json", "data/checks/effects.json"]
+stage = "effects-layer"
+contract = ["effects-layer", 1]
+needs = []
+tests = ["score/stages/effects/test_effects_ride_their_design.py", "tools/usd/test_baked_particles_follow_their_record.py"]
+picture = []
+requires = ["numpy", "usd-core"]

@@ -1,0 +1,14 @@
+# One engine algorithm of world 1 (README.md, Layout); read by score_lib/export/algorithm.py.
+name = "night_sky"
+title = "Night sky light: moonlight, the air it scatters and a city's skyglow, each from measured physics"
+entry = "score.stages.light.night:write_layer"
+roots = ["score/stages/light/night.py"]
+search = []
+constants = ["score/stages/light/night.py:TWILIGHT_END", "score/stages/light/night.py:ZERO_MAG", "score/stages/light/night.py:MOON_MAGNITUDE", "score/stages/light/night.py:BLUE_SHIFT", "score/stages/light/night.py:ADAPTING_SHARE", "score/stages/light/night.py:ROOFED_LEAST"]
+preset = ["data/physics/night.json", "data/physics/bodies.json"]
+stage = "light-layer"
+contract = ["light-layer", 1]
+needs = []
+tests = ["score/stages/light/test_light_measured_against_design.py"]
+picture = []
+requires = ["numpy", "usd-core"]

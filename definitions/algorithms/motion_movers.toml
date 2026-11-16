@@ -1,0 +1,15 @@
+# One engine algorithm of world 1 (README.md, Layout); read by score_lib/export/algorithm.py.
+name = "motion_movers"
+title = "Motion layer: timed slides, climbs, turns and lights, and movers along paths, swings and spins"
+entry = "score.stages.motion:make"
+bake = ["tools.usd.motion:write_layer", "tools.usd.motion_layer:write_layer"]
+roots = ["score/stages/motion/__init__.py", "tools/usd/motion.py", "tools/usd/motion_layer.py"]
+search = ["tools/usd"]
+constants = ["score/stages/motion/__init__.py:STEP", "score/stages/motion/__init__.py:TURN_STEP", "score/stages/motion/__init__.py:REACH_MOST", "score/stages/motion/__init__.py:HEIGHT_MOST", "score/stages/motion/__init__.py:TOUCH", "score/stages/motion/__init__.py:CLIMB_MOST", "tools/usd/motion.py:WRITTEN_SECONDS", "tools/usd/motion_layer.py:PATH_SAMPLES", "tools/usd/motion_layer.py:CURVE_PIECES"]
+preset = ["data/checks/motion.json"]
+stage = "motion"
+contract = ["motion-layer", 2]
+needs = []
+tests = ["score/stages/motion/test_a_thing_moves_as_its_design_says.py", "tools/usd/test_a_motion_that_cannot_play_is_refused.py"]
+picture = []
+requires = ["numpy", "usd-core", "trimesh", "python-fcl"]

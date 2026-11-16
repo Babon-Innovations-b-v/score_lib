@@ -1,0 +1,23 @@
+# One engine algorithm of world 1 (README.md, Layout); read by score_lib/export/algorithm.py.
+# Re-entered for score #128 from the relation solver (the old entry named tools/props/scene/layout.py, deleted).
+name = "room_layout"
+title = "Room layout: the floor things of a crowded plan parted inside their walls by a relation solver, seeded, on the CPU"
+entry = "score.review.relation_solver:parted"
+roots = ["score/review/relation_solver/__init__.py"]
+search = []
+constants = ["score/review/relation_solver/__init__.py:SOFT", "score/review/relation_solver/__init__.py:PIECE", "score/review/relation_solver/__init__.py:NEIGHBOURS", "score/review/relation_solver/__init__.py:SEED", "score/review/relation_solver/_solver.py:NO_COLLISION_SLOPE", "score/review/relation_solver/_solver.py:ON_SLOPE", "score/review/relation_solver/_solver.py:MAX_ITERS", "score/review/relation_solver/_solver.py:LEARNING_RATE", "score/review/relation_solver/_solver.py:ATTEMPTS", "score/review/relation_solver/_solver.py:TOLERANCE"]
+preset = []
+stage = ""
+contract = []
+needs = []
+tests = ["score/review/relation_solver/test_a_crowded_plan_is_parted_inside_its_walls_the_same_way_every_run.py"]
+picture = []
+requires = ["numpy"]
+
+# The solver itself is a modified numpy port of IsaacLab-Arena's: hashed with the code, never shipped.
+[[outside]]
+name = "IsaacLab-Arena relation solver (score's numpy port)"
+version = "isaac-sim/IsaacLab-Arena commit 38b200cdb4b506ee8329e89480c6479cae5bc2dc, ported 2026-10-26"
+where = "score/review/relation_solver/_solver.py with its LICENSE, at the world's commit; the original at https://github.com/isaac-sim/IsaacLab-Arena"
+why = "Apache-2.0: its licence and notices must stay with its code"
+paths = ["score/review/relation_solver/_solver.py"]

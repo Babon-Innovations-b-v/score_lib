@@ -1,0 +1,15 @@
+# One engine algorithm of world 1 (README.md, Layout); read by score_lib/export/algorithm.py.
+name = "ground_detail"
+title = "Ground detail: levelled and dug ground, pits, pebbles and stipple baked into the near ground's maps, rocks laid"
+entry = "tools.usd.ground_detail:bake"
+bake = ["tools.usd.rocks:laid_rocks"]
+roots = ["tools/usd/ground.py", "tools/usd/ground_detail.py", "tools/usd/rocks.py"]
+search = ["tools/usd", "tools/library"]
+constants = ["tools/usd/ground.py:GROUND_STEP", "tools/usd/ground.py:GROUND_MARGIN", "tools/usd/ground.py:DUG_PAST", "tools/usd/ground.py:DUG_CLEAR", "tools/usd/ground.py:DUG_BACK", "tools/usd/ground_detail.py:LAYING_SHARPNESS", "tools/usd/ground_detail.py:PITS_FADE", "tools/usd/ground_detail.py:PIT_CELLS", "tools/usd/ground_detail.py:PIT_CHANCES", "tools/usd/ground_detail.py:RIM_REACH", "tools/usd/ground_detail.py:INK_FADE", "tools/usd/ground_detail.py:SCAN_STIPPLE", "tools/usd/rocks.py:DRAWS_A_ROCK"]
+preset = []
+stage = ""
+contract = []
+needs = []
+tests = ["tools/usd/test_a_scene_record_builds_what_it_names.py"]
+picture = []
+requires = ["numpy", "pillow", "trimesh", "usd-core"]

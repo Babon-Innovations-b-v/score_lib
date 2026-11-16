@@ -1,0 +1,15 @@
+# One engine algorithm of world 1 (README.md, Layout); read by score_lib/export/algorithm.py.
+name = "natural_grounds"
+title = "Natural ground pick: regolith, rock, sand, ocean or ice from a body's pressure and warmth, or a ground row's words"
+entry = "score.stages.natural_grounds:of_row"
+bake = ["score.stages.natural_grounds:of_body"]
+roots = ["score/stages/natural_grounds.py"]
+search = []
+constants = ["score/stages/natural_grounds.py:RECIPES", "score/stages/natural_grounds.py:WATER_TRIPLE_KPA", "score/stages/natural_grounds.py:WATER_TRIPLE_K", "score/stages/natural_grounds.py:VAPORISATION_J_MOL", "score/stages/natural_grounds.py:ICE_K", "score/stages/natural_grounds.py:WIND_KPA"]
+preset = ["data/physics/bodies.json"]
+stage = ""
+contract = []
+needs = []
+tests = ["score/stages/test_each_row_keys_waits_and_moves_only_by_its_design_and_gaps.py"]
+picture = []
+requires = []

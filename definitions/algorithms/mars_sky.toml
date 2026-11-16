@@ -1,0 +1,14 @@
+# One engine algorithm of world 1 (README.md, Layout); read by score_lib/export/algorithm.py.
+name = "mars_sky"
+title = "Mars day sky: single scattering in a dusty layer, baked to a dome picture"
+entry = "tools.usd.mars_sky:write"
+roots = ["tools/usd/mars_sky.py"]
+search = ["tools/usd"]
+constants = ["tools/usd/mars_sky.py:LOWEST"]
+preset = []
+stage = "light-layer"
+contract = []
+needs = []
+tests = ["tools/usd/test_a_scene_record_builds_what_it_names.py"]
+picture = []
+requires = ["numpy", "pillow"]

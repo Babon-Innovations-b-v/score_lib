@@ -1,0 +1,16 @@
+# One engine algorithm of world 1 (README.md, Layout); read by score_lib/export/algorithm.py.
+# Re-entered for score #128 from today's code (the old entry named tools/usd/orbits.py and earth.py, deleted).
+name = "sky_orbits"
+title = "Sky overhead: every body where its orbit and the site's spin put it, its lights and backdrops, at a scene's time"
+entry = "score.review.overhead:seen"
+bake = ["score.stages.light.sky:write"]
+roots = ["score/review/overhead.py", "score/review/scene_sky.py", "score/stages/light/sky.py"]
+search = []
+constants = ["score/review/overhead.py:DAY_ZERO", "score/review/overhead.py:J2000_DAY", "score/stages/light/sky.py:SKY_DISTANCE", "score/stages/light/sky.py:LUMENS_PER_WATT", "score/stages/light/sky.py:DUST_FORWARD_POWER"]
+preset = ["data/physics/setting.json", "data/physics/bodies.json"]
+stage = "light-layer"
+contract = ["light-layer", 1]
+needs = []
+tests = ["score/stages/light/test_light_measured_against_design.py"]
+picture = []
+requires = ["numpy", "usd-core"]

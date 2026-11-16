@@ -1,0 +1,15 @@
+# One engine algorithm of world 1 (README.md, Layout); read by score_lib/export/algorithm.py.
+# Re-entered for score #128 from today's code (the old entry named tools/usd/far_city.py, deleted).
+name = "far_city"
+title = "Far things: where a skyline building or far object stands, by the bearing and size its concept box is seen at"
+entry = "score.stages.scene_record.far:spot"
+roots = ["score/stages/scene_record/far.py"]
+search = []
+constants = ["score/stages/scene_record/far.py:VIEW_FOV", "score/stages/scene_record/far.py:FAR_ANCHORS"]
+preset = []
+stage = ""
+contract = []
+needs = []
+tests = ["score/stages/scene_record/test_a_scene_record_is_written_from_its_design.py"]
+picture = []
+requires = ["numpy"]
