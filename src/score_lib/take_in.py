@@ -5,15 +5,19 @@ The list is one JSON file:
 
     {"world": "world1", "commit": "<the score commit that named the files>", "taken_from": "<where the bytes came
      from, in words>",
-     "entries": [{"kind": "sound" | "model", "id": "<entry id>", "title": "<title>",
+     "entries": [{"kind": "sound" | "model" | "kit" | "character", "id": "<entry id>", "title": "<title>",
                   "files": {"<name in the entry>": {"path": "<local file>", "from": "<its name where it came from>"}},
                   "made_with": [{"what": "<part>", "source": "<a sources.toml id or credit text>",
-                                 "carried": true when the source's own bytes are copied in}]}]}
+                                 "carried": true when the source's own bytes are copied in}],
+                  "tags": {<optional tags, {name: [values]}>}}]}
 
 Each entry is admitted by the MIT rule (config/sources.toml) or refused. Its record has no OpenUSD form and no
 picture (`usd` null, `picture_reason` says why) and keeps `provenance.taken_from` and `files_from`, which
 `score-lib verify` checks (verify.check_taken_in). An entry whose newest version holds the same content is left as it
 is; a changed draft is written over; a changed locked entry becomes the next version as a draft.
+
+A `kit` entry is one building kit piece (its geometry, `.usdc`, and its record); a `character` entry may hold motion
+clips (`.npz`) and their records. A `.json` file of any kind is a record.
 
 A `take` entry is one Pixal3D take whole (score's work/pixal, 2026-10-28: its only copy lay on one disk): its models
 and record (`<take>.glb`, `<take>-final.glb`, `<take>-<faces>.glb`, `<take>.json`) and its camera folder
@@ -30,8 +34,8 @@ from score_lib import handover, index
 from score_lib.admission import NotAdmitted, Sources
 from score_lib.blobs import file_sha256
 
-KINDS = ("sound", "model", "take")
-ROLES = {".ogg": "audio", ".wav": "audio", ".mp3": "audio", ".flac": "audio", ".gltf": "gltf", ".glb": "gltf",
+KINDS = ("sound", "model", "take", "kit", "character")
+ROLES = {".json": "record", ".npz": "motion", ".usdc": "usd", ".usda": "usd", ".ogg": "audio", ".wav": "audio", ".mp3": "audio", ".flac": "audio", ".gltf": "gltf", ".glb": "gltf",
          ".bin": "gltf", ".png": "texture", ".jpg": "texture", ".jpeg": "texture", ".webp": "texture"}
 # A take's files: its models and its record, and in its `.svviews` folder the close-up and its camera.
 TAKE_ROLES = {".glb": "gltf", ".json": "record"}
@@ -73,7 +77,7 @@ def record_of(listed, about, sources, version):
     return {"schema": entries.SCHEMA, "address": address, "kind": listed["kind"], "id": listed["id"],
             "version": version, "title": listed["title"], "state": "draft", "picture": None,
             "picture_reason": NO_PICTURE, "files": file_table(listed["files"], listed["kind"]), "usd": None, "requires": [],
-            "provenance": provenance, "tags": {}, "seen_in": []}
+            "provenance": provenance, "tags": listed.get("tags", {}), "seen_in": []}
 
 
 def comparable(record):

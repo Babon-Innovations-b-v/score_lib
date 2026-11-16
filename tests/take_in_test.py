@@ -64,6 +64,28 @@ def test_take_in_writes_drafts_and_blobs_once(library, tmp_path):
     assert sorted(again["unchanged"]) == ["model/box.gltf@1", "sound/hum.recordings@1"], again
 
 
+def test_a_kit_piece_and_motion_clips_take_their_roles_and_tags(library, tmp_path):
+    blobs = from_environment()
+    folder = loose(tmp_path / "loose")
+    (folder / "piece.usda").write_text("#usda 1.0\n")
+    (folder / "walking.npz").write_bytes(b"PK a clip")
+    listed = listing(folder)
+    listed["entries"] = [
+        {"kind": "kit", "id": "door_frame_1", "title": "Door frame", "tags": {"kit": ["piece"]},
+         "files": {"piece.usda": {"path": str(folder / "piece.usda"), "from": "model/door_frame_1@1/model.usdc"}},
+         "made_with": [{"what": "model/door_frame_1@1", "source": MADE}]},
+        {"kind": "character", "id": "clips", "title": "Clips",
+         "files": {"motions/walking.npz": {"path": str(folder / "walking.npz"), "from": "motions/walking.npz"}},
+         "made_with": [{"what": "motions/walking.npz", "source": MADE}]}]
+    assert take_in.take_in(library, blobs, listed)["new"] == ["kit/door_frame_1@1", "character/clips@1"]
+    kit = entries.load_address(library, "kit/door_frame_1@1")
+    clips = entries.load_address(library, "character/clips@1")
+    assert kit["files"]["piece.usda"]["role"] == "usd" and kit["tags"] == {"kit": ["piece"]}
+    assert clips["files"]["motions/walking.npz"]["role"] == "motion"
+    records = entries.all_entries(library)
+    assert verify.check_taken_in(blobs, records) == [] and verify.check_schemas(library, records) == []
+
+
 def test_a_changed_draft_is_written_over_and_a_locked_one_gets_a_version(library, tmp_path):
     blobs = from_environment()
     folder = loose(tmp_path / "loose")

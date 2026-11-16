@@ -112,6 +112,14 @@ why = "Apache-2.0 (NVlabs/SOMA-X, nvidia/SOMA-X; MHR): the entries carry only th
 from = "github.com/NVlabs/SOMA-X licence section; huggingface.co/nvidia/SOMA-X; score tools/characters/maker/prop_skeleton.py:1-10"
 
 [[source]]
+id = "kimodo"
+name = "Kimodo-SOMA-RP-v1.1 (a person's motion from a sentence)"
+output = true
+copy = false
+why = "Apache-2.0 code; the model's Open Model License claims no ownership of its outputs (section 2.4) and sets no term on sharing them; the entries carry only the motions it made (joint rotations on the SOMA skeleton), never its weights"
+from = "score vendor/kimodo/LICENSE and README.md model table; the Open Model License's sections 1.1 and 2.4 (read 2026-11-16)"
+
+[[source]]
 id = "procfunc"
 name = "ProcFunc 0.36.1"
 output = true
