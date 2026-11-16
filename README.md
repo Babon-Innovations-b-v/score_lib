@@ -13,11 +13,11 @@ The index lives in git; the bytes live in a blob store. Every entry is versioned
 | light | one sky picture with the prims that draw it |
 | sound | one sound source: its SpatialAudio prim, takes and levels |
 | character | one body look or dress |
-| ~~ground~~ | retired 2026-10-20: a terrain piece is a `model` (tagged `terrain`, made through the prop pipeline), a ground finish a `surface`; the old ground drafts are kept withdrawn |
-| kit | one place kit (and a ship place's kit layout) |
+| ~~ground~~ | retired 2026-10-20: a terrain piece is a `model` (tagged `terrain`, made through the prop pipeline), a ground finish a `surface`; the old ground entries were removed 2026-11-16 (score #128) |
+| kit | one place kit (and a ship place's kit layout); the old per-place kits were removed 2026-11-16 (score #128) |
 | algorithm | one engine algorithm: code snapshot, settings schema, world 1 preset, tests, run line |
-| layer | one sublayer of one place (the physics layer too), its paths pointing at library addresses: a part of its place, shown under it, never a shelf of its own |
-| place | one place's root, its sublayers pointing at layer entries, with its plan and cast (a place only others show, such as world 1's far city, too: `shown` in the world toml) |
+| layer | one sublayer of one place (the physics layer too), its paths pointing at library addresses: a part of its place, shown under it, never a shelf of its own; the old per-place layers were removed 2026-11-16 (score #128) |
+| place | one place's root, its sublayers pointing at layer entries, with its plan and cast (a place only others show, such as world 1's far city, too: `shown` in the world toml); the old place entries were removed 2026-11-16 (score #128) |
 | concept | one place's locked concept (`concept.png`) and `concept.json`: its pick, the prompt, marks and notes of every draw that led to it, and every draw of the place by its sha; made by `score-lib concept` only, on the creator's pick in score's concept review, never shipped |
 
 An address is `<kind>/<id>@<version>`, for example `effect/devil_east.camp@1`.
@@ -25,8 +25,8 @@ An address is `<kind>/<id>@<version>`, for example `effect/devil_east.camp@1`.
 ## Use an entry in a world
 
 ```
-score-lib fetch layer/base.hub@1 --into <root> --with-requires
-PXR_AR_DEFAULT_SEARCH_PATH=<root> usdview <root>/score_lib/layer/base.hub/1/layer.usda
+score-lib fetch model/<id>@1 --into <root> --with-requires
+PXR_AR_DEFAULT_SEARCH_PATH=<root> usdview <root>/score_lib/model/<id>/1/model.usdc
 ```
 
 USD asset paths inside entries are search paths (`@score_lib/model/door_leaf/1/model.usdc@`); paths inside one entry
