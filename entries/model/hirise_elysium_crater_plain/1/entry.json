@@ -1,0 +1,50 @@
+{
+  "address": "model/hirise_elysium_crater_plain@1",
+  "files": {
+    "terrain.json": {
+      "bytes": 888,
+      "role": "record",
+      "sha256": "902dce96f3c97d3bed7b7b133717cd42d3e1afb4189e2e3829f764fd5608e0ec"
+    },
+    "terrain.usdc": {
+      "bytes": 4881042,
+      "role": "usd",
+      "sha256": "ee9a1ce43555106f81216c038c2084b24953e878ae767d3fe5a7099a98cb1f99"
+    }
+  },
+  "id": "hirise_elysium_crater_plain",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "aacc6bf427bc4de90052fb4f3f962c68ab638c34",
+    "files_from": {
+      "terrain.json": "written by score's place_build take-in of the DTM window (its source, window and posts)",
+      "terrain.usdc": "written by score's place_build relief.py from DTEEC_037262_1845_036761_1845_U01.IMG lines 5950-8530, samples 810-3390"
+    },
+    "made_with": [
+      {
+        "by": "hirise",
+        "carried": true,
+        "what": "the DTM's heights"
+      }
+    ],
+    "taken_from": "HiRISE DTM (uahirise.org, public domain) read by score place_build relief.py, and Poly Haven (polyhaven.com) 2K-JPG texture set, CC0 1.0; downloaded 2026-11-16",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "category": [
+      "terrain"
+    ],
+    "family": [
+      "heightfield"
+    ]
+  },
+  "title": "Elysium Planitia plain by a fresh 190 m crater near InSight, 2.6 km (HiRISE DTM, public domain)",
+  "usd": null,
+  "version": 1
+}
