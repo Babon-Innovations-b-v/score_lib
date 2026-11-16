@@ -33,7 +33,12 @@ def test_every_kind_writes_its_entries(world):
     report = world.export()
     counts = {kind: found["counts"]["new"] for kind, found in report["kinds"].items()}
     assert counts["model"] == 1 and counts["effect"] == 1 and counts["sound"] == 1 and counts["place"] == 1
-    assert counts["surface"] == 2 and counts["kit"] == 1 and counts["algorithm"] == 2
+    assert counts["surface"] == 3 and counts["kit"] == 1 and counts["algorithm"] == 2
+    recipe = entries.load_address(world.root, "surface/bare_metal@1")
+    stored = LocalBlobStore(pathlib.Path(os.environ["SCORE_LIB_BLOBS_DIR"]))
+    held = json.loads(stored.path(recipe["files"]["surface.json"]["sha256"]).read_text())
+    assert held["settings"]["metal"] == 0.5 and held["wear_levels"] == {"new": 0.0} and recipe["picture"] is None
+    assert entries.load_address(world.root, "light/lamp@1")["files"]["lamps.json"]["role"] == "record"
     assert counts["layer"] == 3  # base, effects, sound; the edit slot rides in the place
 
 

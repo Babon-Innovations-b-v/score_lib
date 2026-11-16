@@ -365,9 +365,11 @@ def make_repo(folder, manifest_rules):
     library = {"families": {"painted": {"variants": {"panel_paint": {"recipe": "painted_metal", "token": "hull",
                                                                     "roughness": 0.4,
                                                                     "reference": {"picture": "WORK/x.jpg"}},
-                                                    "unused_paint": {"recipe": "painted_metal", "token": "deck"}}}}}
+                                                    "unused_paint": {"recipe": "painted_metal", "token": "deck"}}}},
+               "recipes": {"bare_metal": {"roughness": 0.38, "metal": 0.5}}, "wear_levels": {"new": 0.0}}
     files = {"data/assets/world1.json": json.dumps({"licences": manifest_rules, "files": {}}),
              "data/kit/room.json": json.dumps(kit), "data/library/materials.json": json.dumps(library),
+             "data/library/lamps.json": json.dumps({"ceiling": {"high": 0.9}}),
              "data/checks/gaps/room.json": json.dumps([{"name": "a gap"}]),
              "data/demo/preset.json": json.dumps({"rate": 24}),
              "data/demo/outside.json": json.dumps({"not": "ours"}),

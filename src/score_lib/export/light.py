@@ -1,5 +1,6 @@
 """light entries: each sky picture of a place's assembly (assets/light/*.png) with the prims that draw it and the
-place's Environment dome light (spec 4.5). Lamp rigs stay in the layer entries."""
+place's Environment dome light (spec 4.5), and the library's lamp (`data/library/lamps.json`: how a glowing piece is
+lit by how it is mounted) as the entry `lamp`. Lamp rigs stay in the layer entries."""
 import posixpath
 
 from pxr import Sdf, Usd
@@ -7,9 +8,12 @@ from pxr import Sdf, Usd
 from score_lib.export import places as place_reads
 from score_lib.export.run import Candidate
 from score_lib.admission import SCORE, carried
+from score_lib.blobs import file_sha256
 from score_lib.rewrite import asset_paths, export, gathered, rewrite
 
 EARTH = "nasa_visible_earth"
+LAMPS = "data/library/lamps.json"
+LAMP_UNSHOWN = "a lamp recipe: its light is laid per piece in a scene, no picture of its own"
 
 
 def plan(context):
@@ -20,7 +24,19 @@ def plan(context):
         for name, sha in sorted(listing.items()):
             if name.startswith("assets/light/") and name.endswith(".png"):
                 groups.setdefault(sha, []).append((place, name))
-    return [candidate(context, sha, uses) for sha, uses in sorted(groups.items(), key=lambda item: item[1][0])]
+    found = [candidate(context, sha, uses) for sha, uses in sorted(groups.items(), key=lambda item: item[1][0])]
+    return found + ([lamp_candidate(context)] if context.repo.exists(LAMPS) else [])
+
+
+def lamp_candidate(context):
+    """The library's lamp recipe as one light candidate."""
+    work = context.work("light-lamp")
+    path = context.repo.export(LAMPS, work / "lamps.json")
+    identity = file_sha256(path)
+    return Candidate(kind="light", base_id="lamp", identity=identity, title="Lamp", places=[],
+                     files={"lamps.json": path}, roles={"lamps.json": "record"}, made_with=[dict(SCORE)],
+                     provenance={"source": f"{LAMPS} at the world's commit"}, tags={"engine": ["usd"]},
+                     picture={"reason": LAMP_UNSHOWN})
 
 
 def picture_users(layer, picture):

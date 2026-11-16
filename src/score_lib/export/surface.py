@@ -1,5 +1,7 @@
 """surface entries: every variant of the surface library (`data/library/materials.json`) with the Material a place's
-base layer writes for it (spec 4.3)."""
+base layer writes for it (spec 4.3), and every ProcFunc recipe of its method (`recipes`: since 2026-10-21 the library
+holds no families, only each recipe's default settings, the wear levels and the colour settings a palette token
+gives it) as one surface entry of its own."""
 import hashlib
 import json
 import posixpath
@@ -15,14 +17,16 @@ from score_lib.rewrite import copy_prim, export, open_copy
 LIBRARY = "data/library/materials.json"
 PICTURES = "data/library/pictures"
 SPLIT = ("recipe", "token", "reference")
+RECIPE_UNSHOWN = "a recipe has no colour of its own (a palette token gives it): no picture until a token is set"
 
 
 def plan(context):
-    """Every library variant as a candidate (one per distinct Material when places write it differently)."""
+    """Every recipe, and every library variant (one per distinct Material when places write it differently), as a
+    candidate."""
     library = context.repo.read_json(LIBRARY)
     variants = library_variants(library)
     written = place_materials(context, set(variants))
-    candidates = []
+    candidates = [recipe_candidate(context, name, library) for name in sorted(library.get("recipes", {}))]
     for name, (family, variant) in sorted(variants.items()):
         groups = {}
         for place, text_path in written.get(name, []):
@@ -140,3 +144,25 @@ def candidate(context, name, family, variant, places, material):
                      tags={"family": [family], "recipe": [variant.get("recipe")] if variant.get("recipe") else []},
                      picture=shown)
 
+
+
+def recipe_record(name, library):
+    """surface.json of one recipe: its default settings, the colour settings a palette token gives it and the wear
+    levels."""
+    return {"recipe": name, "settings": library["recipes"][name], "colour_settings": library.get("colour_settings",
+            {}).get(name, []), "wear_levels": library.get("wear_levels", {})}
+
+
+def recipe_candidate(context, name, library):
+    """One surface candidate of a ProcFunc recipe at its default settings."""
+    record = recipe_record(name, library)
+    identity = hashlib.sha256(json.dumps(record, sort_keys=True).encode()).hexdigest()
+    work = context.work("surface-recipe", name, identity[:12])
+    algorithm = context.by_id.get(("algorithm", "surface_recipes"))
+    return Candidate(kind="surface", base_id=place_reads.sanitised(name), identity=identity,
+                     title=name.replace("_", " ").capitalize(), places=[],
+                     files={"surface.json": write_json(work / "surface.json", record)}, roles={"surface.json": "record"},
+                     made_with=[dict(SCORE), made_by("baked by the surface recipes on ProcFunc", "procfunc")],
+                     requires=[algorithm] if algorithm else [],
+                     provenance={"source": f"{LIBRARY} recipes at the world's commit", "recipe": name},
+                     tags={"recipe": [name]}, picture={"reason": RECIPE_UNSHOWN})
