@@ -1,0 +1,46 @@
+{
+  "address": "kit/dome_wall_panel_1@1",
+  "files": {
+    "piece.json": {
+      "bytes": 336,
+      "role": "record",
+      "sha256": "c5015337fb0a3d9bec07c423000954824e9057b15fe952f23dc59aeed422bd0b"
+    },
+    "piece.usdc": {
+      "bytes": 14787,
+      "role": "usd",
+      "sha256": "50ac12d56626bd7a382619fb69f295eee244c6c61d6731d35d2fe4ef33db2324"
+    }
+  },
+  "id": "dome_wall_panel_1",
+  "kind": "kit",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "1331a0120d3bc4627fedcd44f74cd79b875f2162",
+    "files_from": {
+      "piece.json": "model/dome_wall_panel_1@1/model.json",
+      "piece.usdc": "model/dome_wall_panel_1@1/model.usdc, its baked finish taken off"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "model/dome_wall_panel_1@1: a code-built piece"
+      }
+    ],
+    "taken_from": "kit pieces: world 1's withdrawn code-built models, geometry only (their finish comes from the library's surfaces); the plan: score's data/definitions/ship_floor.json",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "kit": [
+      "piece"
+    ]
+  },
+  "title": "Dome wall panel 1",
+  "usd": null,
+  "version": 1
+}

@@ -1,0 +1,46 @@
+{
+  "address": "kit/ceiling_duct@1",
+  "files": {
+    "piece.json": {
+      "bytes": 324,
+      "role": "record",
+      "sha256": "bec778a804d941b3ff3ac2cdb40ced3841a41b4a4184e05cb3b40f66d9014835"
+    },
+    "piece.usdc": {
+      "bytes": 59033,
+      "role": "usd",
+      "sha256": "415033ec4753d6295005ce17131493ee044ec01e66251b5f9ce1e140d771ea99"
+    }
+  },
+  "id": "ceiling_duct",
+  "kind": "kit",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "1331a0120d3bc4627fedcd44f74cd79b875f2162",
+    "files_from": {
+      "piece.json": "model/ceiling_duct_1@1/model.json",
+      "piece.usdc": "model/ceiling_duct_1@1/model.usdc, its baked finish taken off"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "model/ceiling_duct_1@1: a code-built piece"
+      }
+    ],
+    "taken_from": "kit pieces: world 1's withdrawn code-built models, geometry only (their finish comes from the library's surfaces); the plan: score's data/definitions/ship_floor.json",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "kit": [
+      "piece"
+    ]
+  },
+  "title": "Ceiling duct, 2.0 m",
+  "usd": null,
+  "version": 1
+}

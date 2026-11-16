@@ -1,0 +1,46 @@
+{
+  "address": "kit/door_frame@1",
+  "files": {
+    "piece.json": {
+      "bytes": 319,
+      "role": "record",
+      "sha256": "8e18d9a254d8ff7474dc24137d76ef43ff4cb7f069b43110d7319ae09c0d0285"
+    },
+    "piece.usdc": {
+      "bytes": 107072,
+      "role": "usd",
+      "sha256": "fe0f37b3ef00165d28ec6326f09f00a10bd3ef4b418a38b6d95b9949a61b3296"
+    }
+  },
+  "id": "door_frame",
+  "kind": "kit",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "1331a0120d3bc4627fedcd44f74cd79b875f2162",
+    "files_from": {
+      "piece.json": "model/door_frame_1@1/model.json",
+      "piece.usdc": "model/door_frame_1@1/model.usdc, its baked finish taken off"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "model/door_frame_1@1: a code-built piece"
+      }
+    ],
+    "taken_from": "kit pieces: world 1's withdrawn code-built models, geometry only (their finish comes from the library's surfaces); the plan: score's data/definitions/ship_floor.json",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "kit": [
+      "piece"
+    ]
+  },
+  "title": "Door frame, 2.76 x 2.78 m",
+  "usd": null,
+  "version": 1
+}

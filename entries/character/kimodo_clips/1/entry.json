@@ -1,0 +1,115 @@
+{
+  "address": "character/kimodo_clips@1",
+  "files": {
+    "make.json": {
+      "bytes": 427,
+      "role": "record",
+      "sha256": "8eb4a1ea6f165d4e7061ef412a16fad197d20da910b23c0c50764ada4418d1ce"
+    },
+    "motions/bench.npz": {
+      "bytes": 1172930,
+      "role": "motion",
+      "sha256": "34ee6406a8c8216cc3f9a13bf2dfe60697f86a86d64ed6fe3506634c58b357b2"
+    },
+    "motions/bench.record.json": {
+      "bytes": 173,
+      "role": "record",
+      "sha256": "1bfa3ced78feb34ead9f62c74c433c9d0acdbc14893d48d233369600688ae9b5"
+    },
+    "motions/seated.npz": {
+      "bytes": 977750,
+      "role": "motion",
+      "sha256": "6d153bf976d864426f4c67fc39be6dd83117300f44bbd971ea633008839769e1"
+    },
+    "motions/seated.record.json": {
+      "bytes": 231,
+      "role": "record",
+      "sha256": "e02e698b7de5741b6d5e67ba9ed6e915e022d31d5cfa50c37e4cf2e6fac4464e"
+    },
+    "motions/sitting.npz": {
+      "bytes": 977750,
+      "role": "motion",
+      "sha256": "de23fb89495f85efade2b6455b8c7e6ff3da92e133693204fd17931655b3a8dc"
+    },
+    "motions/sitting.record.json": {
+      "bytes": 204,
+      "role": "record",
+      "sha256": "069874a886d0c7dca15223ab73cbf3bc8b7a23bd0f92cffb49a3606b93965d68"
+    },
+    "motions/standing.npz": {
+      "bytes": 977750,
+      "role": "motion",
+      "sha256": "9eaa86a9753436618df0aac9ee57fe863fb9d119d36973f69ce6f581551267d3"
+    },
+    "motions/standing.record.json": {
+      "bytes": 169,
+      "role": "record",
+      "sha256": "97630efc5e26c0f577e3f5224d2cceecf10440327f89cb43919819d81dba10f3"
+    },
+    "motions/walking.npz": {
+      "bytes": 977750,
+      "role": "motion",
+      "sha256": "0068c56537b3bbe09601db52091191195584e213cc6eaa21823ca49e307e7d95"
+    },
+    "motions/walking.record.json": {
+      "bytes": 148,
+      "role": "record",
+      "sha256": "49336bef65d1f8f93e60282224078005bb4e6aed880353b275388b05ca625ae6"
+    }
+  },
+  "id": "kimodo_clips",
+  "kind": "character",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "2d7ce28795b0819b7a55c302f8c0dd04acd1e579",
+    "files_from": {
+      "make.json": "people-clips-made output 93cab33c6c40: make.json",
+      "motions/bench.npz": "people-clips-made output 93cab33c6c40: motions/bench.npz",
+      "motions/bench.record.json": "people-clips-made output 93cab33c6c40: motions/bench.record.json",
+      "motions/seated.npz": "people-clips-made output 93cab33c6c40: motions/seated.npz",
+      "motions/seated.record.json": "people-clips-made output 93cab33c6c40: motions/seated.record.json",
+      "motions/sitting.npz": "people-clips-made output 93cab33c6c40: motions/sitting.npz",
+      "motions/sitting.record.json": "people-clips-made output 93cab33c6c40: motions/sitting.record.json",
+      "motions/standing.npz": "people-clips-made output 93cab33c6c40: motions/standing.npz",
+      "motions/standing.record.json": "people-clips-made output 93cab33c6c40: motions/standing.record.json",
+      "motions/walking.npz": "people-clips-made output 93cab33c6c40: motions/walking.npz",
+      "motions/walking.record.json": "people-clips-made output 93cab33c6c40: motions/walking.record.json"
+    },
+    "made_with": [
+      {
+        "by": "kimodo",
+        "what": "the five motions, each from its sentence (motions/<clip>.record.json)"
+      },
+      {
+        "by": "score",
+        "what": "the clip list and the make"
+      },
+      {
+        "by": "soma_x",
+        "what": "the skeleton the motions turn"
+      }
+    ],
+    "taken_from": "the SCORE store's accepted people-clips-made output 93cab33c6c40 (2026-11-08); rig.npz stays out (the fitted body's mesh and weights)",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "character": [
+      "clips"
+    ],
+    "clip": [
+      "standing",
+      "walking",
+      "bench",
+      "sitting",
+      "seated"
+    ]
+  },
+  "title": "Kimodo clips: standing, walking, bench, sitting, seated",
+  "usd": null,
+  "version": 1
+}

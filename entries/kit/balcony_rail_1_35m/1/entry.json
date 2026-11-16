@@ -1,0 +1,46 @@
+{
+  "address": "kit/balcony_rail_1_35m@1",
+  "files": {
+    "piece.json": {
+      "bytes": 298,
+      "role": "record",
+      "sha256": "277b657cffa7733f0a0e711375cf60aca52402af088cfde97628099ab8730567"
+    },
+    "piece.usdc": {
+      "bytes": 56135,
+      "role": "usd",
+      "sha256": "e533110219ff2e860968550e3c5c9db66fd9d2dd61bab73ce47fe6b8c4c6fc7c"
+    }
+  },
+  "id": "balcony_rail_1_35m",
+  "kind": "kit",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "1331a0120d3bc4627fedcd44f74cd79b875f2162",
+    "files_from": {
+      "piece.json": "model/balcony_rail_1.stairwell@1/model.json",
+      "piece.usdc": "model/balcony_rail_1.stairwell@1/model.usdc, its baked finish taken off"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "model/balcony_rail_1.stairwell@1: a code-built piece"
+      }
+    ],
+    "taken_from": "kit pieces: world 1's withdrawn code-built models, geometry only (their finish comes from the library's surfaces); the plan: score's data/definitions/ship_floor.json",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "kit": [
+      "piece"
+    ]
+  },
+  "title": "Balcony rail, 1.35 m",
+  "usd": null,
+  "version": 1
+}
