@@ -1,0 +1,50 @@
+{
+  "address": "model/hirise_elysium_insight_plain@1",
+  "files": {
+    "terrain.json": {
+      "bytes": 732,
+      "role": "record",
+      "sha256": "9e5200b9667279c0663d5cae99ad88083bbc7ab7dab9e596db0ddd441bffd45a"
+    },
+    "terrain.usdc": {
+      "bytes": 4881044,
+      "role": "usd",
+      "sha256": "42b2e8fc71174ecebbdd151eb87bc3b403280361ff2a741ec5a51c7508a48e97"
+    }
+  },
+  "id": "hirise_elysium_insight_plain",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "aacc6bf427bc4de90052fb4f3f962c68ab638c34",
+    "files_from": {
+      "terrain.json": "written by score's place_build take-in of the DTM window (its source, window and posts)",
+      "terrain.usdc": "written by score's place_build relief.py from DTEEC_037262_1845_036761_1845_U01.IMG lines 9950-12530, samples 2130-4710"
+    },
+    "made_with": [
+      {
+        "by": "hirise",
+        "carried": true,
+        "what": "the DTM's heights"
+      }
+    ],
+    "taken_from": "HiRISE DTM (uahirise.org, public domain) read by score place_build relief.py, and Poly Haven (polyhaven.com) 2K-JPG texture set, CC0 1.0; downloaded 2026-11-16",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "category": [
+      "terrain"
+    ],
+    "family": [
+      "heightfield"
+    ]
+  },
+  "title": "Elysium Planitia plain near InSight, 2.6 km (HiRISE DTM, public domain)",
+  "usd": null,
+  "version": 1
+}
