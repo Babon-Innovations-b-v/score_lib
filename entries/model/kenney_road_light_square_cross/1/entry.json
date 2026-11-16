@@ -1,0 +1,57 @@
+{
+  "address": "model/kenney_road_light_square_cross@1",
+  "files": {
+    "model.json": {
+      "bytes": 603,
+      "role": "record",
+      "sha256": "b664e7874dcffc08fbc54b253d3fadfa1946267dde892a25dc8bb09e8976b6a8"
+    },
+    "model.usdc": {
+      "bytes": 16827,
+      "role": "usd",
+      "sha256": "c64ca64f148ce4653cb1bff62b9f75cbb0f9263a06b0565e7b061f388e3ac872"
+    }
+  },
+  "id": "kenney_road_light_square_cross",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "c72f06db0f86c944ff9ad623c49d01232596012c",
+    "files_from": {
+      "model.json": "its record, made from kenney-city-kit-roads/Models/GLB format/light-square-cross.glb",
+      "model.usdc": "kenney-city-kit-roads/Models/GLB format/light-square-cross.glb, geometry only at 7.5 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "kenney",
+        "carried": true,
+        "what": "kenney-city-kit-roads/Models/GLB format/light-square-cross.glb: its geometry (Kenney City Kit Roads 2.2, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Kenney City Kit Roads 2.2"
+    ],
+    "place": [
+      "street"
+    ]
+  },
+  "title": "Light square cross (Kenney City Kit Roads 2.2)",
+  "usd": null,
+  "version": 1
+}

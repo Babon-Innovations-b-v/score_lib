@@ -1,0 +1,57 @@
+{
+  "address": "model/kenney_car_firetruck@1",
+  "files": {
+    "model.json": {
+      "bytes": 680,
+      "role": "record",
+      "sha256": "02af2b93347f578bf3a8b33f657ece401c2ad79550a9b59d93429a4d5e136f87"
+    },
+    "model.usdc": {
+      "bytes": 599192,
+      "role": "usd",
+      "sha256": "3f12d246abc26f3af58793578cd5fd47f20067e73f44de9b9284b8f73da91a94"
+    }
+  },
+  "id": "kenney_car_firetruck",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "153946e1cee2e8092dfcc356fda4477002f11577",
+    "files_from": {
+      "model.json": "its record, made from kenney-car-kit/Models/GLB format/firetruck.glb",
+      "model.usdc": "kenney-car-kit/Models/GLB format/firetruck.glb, geometry only at 1.45 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "kenney",
+        "carried": true,
+        "what": "kenney-car-kit/Models/GLB format/firetruck.glb: its geometry (Kenney Car Kit 3.1, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Kenney Car Kit 3.1"
+    ],
+    "place": [
+      "street"
+    ]
+  },
+  "title": "Firetruck (Kenney Car Kit 3.1)",
+  "usd": null,
+  "version": 1
+}

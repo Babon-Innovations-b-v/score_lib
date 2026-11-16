@@ -1,0 +1,60 @@
+{
+  "address": "kit/kenney_road_tile_high@1",
+  "files": {
+    "piece.json": {
+      "bytes": 547,
+      "role": "record",
+      "sha256": "27e4920db767033c343eba262bb2c262785f677c31269f6a37d454458de05d7f"
+    },
+    "piece.usdc": {
+      "bytes": 2031,
+      "role": "usd",
+      "sha256": "37716712af0b831e72c35b845d5a04aace2110b0de6b9668cb00fd6fadaf8a25"
+    }
+  },
+  "id": "kenney_road_tile_high",
+  "kind": "kit",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "c72f06db0f86c944ff9ad623c49d01232596012c",
+    "files_from": {
+      "piece.json": "its record, made from kenney-city-kit-roads/Models/GLB format/tile-high.glb",
+      "piece.usdc": "kenney-city-kit-roads/Models/GLB format/tile-high.glb, geometry only at 7.5 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "kenney",
+        "carried": true,
+        "what": "kenney-city-kit-roads/Models/GLB format/tile-high.glb: its geometry (Kenney City Kit Roads 2.2, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "kit": [
+      "piece"
+    ],
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Kenney City Kit Roads 2.2"
+    ],
+    "place": [
+      "street"
+    ]
+  },
+  "title": "Tile high (Kenney City Kit Roads 2.2)",
+  "usd": null,
+  "version": 1
+}

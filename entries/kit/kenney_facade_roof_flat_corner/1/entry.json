@@ -1,0 +1,61 @@
+{
+  "address": "kit/kenney_facade_roof_flat_corner@1",
+  "files": {
+    "piece.json": {
+      "bytes": 598,
+      "role": "record",
+      "sha256": "6b17c955539677850d72d9ac8d49f7092f037c6a623c38cea19d0f56e61c439f"
+    },
+    "piece.usdc": {
+      "bytes": 2223,
+      "role": "usd",
+      "sha256": "1cadaf90ebe172fe1a941e51cb00a2b8d4c654d48ff4c33a839250335ad2d899"
+    }
+  },
+  "id": "kenney_facade_roof_flat_corner",
+  "kind": "kit",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "c72f06db0f86c944ff9ad623c49d01232596012c",
+    "files_from": {
+      "piece.json": "its record, made from kenney-modular-buildings/Models/GLB format/roof-flat-corner.glb",
+      "piece.usdc": "kenney-modular-buildings/Models/GLB format/roof-flat-corner.glb, geometry only at 4.5 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "kenney",
+        "carried": true,
+        "what": "kenney-modular-buildings/Models/GLB format/roof-flat-corner.glb: its geometry (Kenney Modular Buildings 2.1, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "kit": [
+      "piece"
+    ],
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Kenney Modular Buildings 2.1"
+    ],
+    "place": [
+      "stairwell",
+      "street"
+    ]
+  },
+  "title": "Roof flat corner (Kenney Modular Buildings 2.1)",
+  "usd": null,
+  "version": 1
+}

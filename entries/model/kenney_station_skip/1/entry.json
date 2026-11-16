@@ -1,0 +1,57 @@
+{
+  "address": "model/kenney_station_skip@1",
+  "files": {
+    "model.json": {
+      "bytes": 616,
+      "role": "record",
+      "sha256": "ab27cef0016589de1ab07e65f6b551d00c417fc5970f2e6f8264b8af37ef89d6"
+    },
+    "model.usdc": {
+      "bytes": 19940,
+      "role": "usd",
+      "sha256": "12feec5e399d42a15321ca7b6d9f3aea40153e24ee9c67cf03ddff18f7b9eacd"
+    }
+  },
+  "id": "kenney_station_skip",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "c72f06db0f86c944ff9ad623c49d01232596012c",
+    "files_from": {
+      "model.json": "its record, made from kenney-space-station-kit/Models/GLB format/skip.glb",
+      "model.usdc": "kenney-space-station-kit/Models/GLB format/skip.glb, geometry only at 2.0 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "kenney",
+        "carried": true,
+        "what": "kenney-space-station-kit/Models/GLB format/skip.glb: its geometry (Kenney Space Station Kit 1.0, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Kenney Space Station Kit 1.0"
+    ],
+    "place": [
+      "camp"
+    ]
+  },
+  "title": "Skip (Kenney Space Station Kit 1.0)",
+  "usd": null,
+  "version": 1
+}

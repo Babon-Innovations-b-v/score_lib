@@ -1,0 +1,58 @@
+{
+  "address": "model/kenney_spacebase_barrel@1",
+  "files": {
+    "model.json": {
+      "bytes": 557,
+      "role": "record",
+      "sha256": "61fcfc9104c62d61b9e1945e609dcd7d6fe46d93932ac824e4450fcec080ce8e"
+    },
+    "model.usdc": {
+      "bytes": 5831,
+      "role": "usd",
+      "sha256": "b6757c7d3186ed7cf079824912b09deb1c3f4f5a06e14319d94c6e0ee6a52742"
+    }
+  },
+  "id": "kenney_spacebase_barrel",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "c72f06db0f86c944ff9ad623c49d01232596012c",
+    "files_from": {
+      "model.json": "its record, made from kenney-space-kit/Models/GLTF format/barrel.glb",
+      "model.usdc": "kenney-space-kit/Models/GLTF format/barrel.glb, geometry only at 2.33 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "kenney",
+        "carried": true,
+        "what": "kenney-space-kit/Models/GLTF format/barrel.glb: its geometry (Kenney Space Kit 2.0, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Kenney Space Kit 2.0"
+    ],
+    "place": [
+      "camp",
+      "campgrounds"
+    ]
+  },
+  "title": "Barrel (Kenney Space Kit 2.0)",
+  "usd": null,
+  "version": 1
+}

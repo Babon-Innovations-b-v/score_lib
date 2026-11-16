@@ -1,0 +1,58 @@
+{
+  "address": "model/kenney_furniture_cabinet_bed_drawer@1",
+  "files": {
+    "model.json": {
+      "bytes": 616,
+      "role": "record",
+      "sha256": "2fb6dd68f5f0fea8c24a50311761261d208f87964ae3c587e13e2d049bddaa71"
+    },
+    "model.usdc": {
+      "bytes": 20698,
+      "role": "usd",
+      "sha256": "d792b86dcea33711a76446e1fb3f73f415fec3628f73277525d21c2712081333"
+    }
+  },
+  "id": "kenney_furniture_cabinet_bed_drawer",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "c72f06db0f86c944ff9ad623c49d01232596012c",
+    "files_from": {
+      "model.json": "its record, made from kenney-furniture-kit/Models/GLTF format/cabinetBedDrawer.glb",
+      "model.usdc": "kenney-furniture-kit/Models/GLTF format/cabinetBedDrawer.glb, geometry only at 1.83 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "kenney",
+        "carried": true,
+        "what": "kenney-furniture-kit/Models/GLTF format/cabinetBedDrawer.glb: its geometry (Kenney Furniture Kit 2.0, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Kenney Furniture Kit 2.0"
+    ],
+    "place": [
+      "camp",
+      "stairwell"
+    ]
+  },
+  "title": "Cabinet bed drawer (Kenney Furniture Kit 2.0)",
+  "usd": null,
+  "version": 1
+}

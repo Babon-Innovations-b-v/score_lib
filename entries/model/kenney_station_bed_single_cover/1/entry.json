@@ -1,0 +1,57 @@
+{
+  "address": "model/kenney_station_bed_single_cover@1",
+  "files": {
+    "model.json": {
+      "bytes": 580,
+      "role": "record",
+      "sha256": "b3206e13618e79218ff3fbc086fc45ef9f60b968c78d6c5482e872bdd02605d4"
+    },
+    "model.usdc": {
+      "bytes": 3600,
+      "role": "usd",
+      "sha256": "771a79a5f293859bad5f55c9abbc75d0b846f9183d7f9f6770926c9d490b1ffd"
+    }
+  },
+  "id": "kenney_station_bed_single_cover",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "c72f06db0f86c944ff9ad623c49d01232596012c",
+    "files_from": {
+      "model.json": "its record, made from kenney-space-station-kit/Models/GLB format/bed-single-cover.glb",
+      "model.usdc": "kenney-space-station-kit/Models/GLB format/bed-single-cover.glb, geometry only at 2.0 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "kenney",
+        "carried": true,
+        "what": "kenney-space-station-kit/Models/GLB format/bed-single-cover.glb: its geometry (Kenney Space Station Kit 1.0, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Kenney Space Station Kit 1.0"
+    ],
+    "place": [
+      "camp"
+    ]
+  },
+  "title": "Bed single cover (Kenney Space Station Kit 1.0)",
+  "usd": null,
+  "version": 1
+}

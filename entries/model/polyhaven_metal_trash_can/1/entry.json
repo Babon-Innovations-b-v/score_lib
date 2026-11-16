@@ -1,0 +1,57 @@
+{
+  "address": "model/polyhaven_metal_trash_can@1",
+  "files": {
+    "model.json": {
+      "bytes": 522,
+      "role": "record",
+      "sha256": "197a1e6bc23a3a2d5a7b572743da48beca0a5a142924217f8caa1d2fad7ae7ef"
+    },
+    "model.usdc": {
+      "bytes": 156879,
+      "role": "usd",
+      "sha256": "d0b7c88a8e2ddcf09da14fdb57ea6b6ea7b41a11f65382b839984084e2af3a41"
+    }
+  },
+  "id": "polyhaven_metal_trash_can",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "c72f06db0f86c944ff9ad623c49d01232596012c",
+    "files_from": {
+      "model.json": "its record, made from polyhaven.com/a/metal_trash_can (1k glTF)",
+      "model.usdc": "polyhaven.com/a/metal_trash_can (1k glTF), geometry only at 1.0 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "polyhaven",
+        "carried": true,
+        "what": "polyhaven.com/a/metal_trash_can (1k glTF): its geometry (Poly Haven, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Poly Haven"
+    ],
+    "place": [
+      "street"
+    ]
+  },
+  "title": "Metal trash can (Poly Haven)",
+  "usd": null,
+  "version": 1
+}

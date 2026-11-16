@@ -1,0 +1,58 @@
+{
+  "address": "model/kenney_furniture_shower_round@1",
+  "files": {
+    "model.json": {
+      "bytes": 623,
+      "role": "record",
+      "sha256": "731faef8a040e3636d283da22fc34d0a9006ebc04fa834c9a029137649e95ac3"
+    },
+    "model.usdc": {
+      "bytes": 79454,
+      "role": "usd",
+      "sha256": "08823d7085ebfa7a39217680bd7f882b4ceb194691c32ff3879ffddc4be6c3c3"
+    }
+  },
+  "id": "kenney_furniture_shower_round",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "c72f06db0f86c944ff9ad623c49d01232596012c",
+    "files_from": {
+      "model.json": "its record, made from kenney-furniture-kit/Models/GLTF format/showerRound.glb",
+      "model.usdc": "kenney-furniture-kit/Models/GLTF format/showerRound.glb, geometry only at 1.83 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "kenney",
+        "carried": true,
+        "what": "kenney-furniture-kit/Models/GLTF format/showerRound.glb: its geometry (Kenney Furniture Kit 2.0, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Kenney Furniture Kit 2.0"
+    ],
+    "place": [
+      "camp",
+      "stairwell"
+    ]
+  },
+  "title": "Shower round (Kenney Furniture Kit 2.0)",
+  "usd": null,
+  "version": 1
+}

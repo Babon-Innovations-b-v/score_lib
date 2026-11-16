@@ -1,0 +1,58 @@
+{
+  "address": "model/kenney_spacebase_rocket_top_a@1",
+  "files": {
+    "model.json": {
+      "bytes": 608,
+      "role": "record",
+      "sha256": "1ac51ba4ff810db386ca2f9ddeed4b6a0fd231fa5bcbf83c9878fe4b1c3c3d9f"
+    },
+    "model.usdc": {
+      "bytes": 14228,
+      "role": "usd",
+      "sha256": "30b4008ed7838510365e86c5d91942a03b2ce746fa392987b556e08034787a30"
+    }
+  },
+  "id": "kenney_spacebase_rocket_top_a",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "c72f06db0f86c944ff9ad623c49d01232596012c",
+    "files_from": {
+      "model.json": "its record, made from kenney-space-kit/Models/GLTF format/rocket_topA.glb",
+      "model.usdc": "kenney-space-kit/Models/GLTF format/rocket_topA.glb, geometry only at 2.33 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "kenney",
+        "carried": true,
+        "what": "kenney-space-kit/Models/GLTF format/rocket_topA.glb: its geometry (Kenney Space Kit 2.0, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Kenney Space Kit 2.0"
+    ],
+    "place": [
+      "camp",
+      "campgrounds"
+    ]
+  },
+  "title": "Rocket top a (Kenney Space Kit 2.0)",
+  "usd": null,
+  "version": 1
+}

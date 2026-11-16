@@ -1,0 +1,60 @@
+{
+  "address": "kit/kenney_city_building_i@1",
+  "files": {
+    "piece.json": {
+      "bytes": 690,
+      "role": "record",
+      "sha256": "16495f8604b57f7885e0b65df883b8f9d127486f2abe438bce55ad598e932799"
+    },
+    "piece.usdc": {
+      "bytes": 773826,
+      "role": "usd",
+      "sha256": "543a03e678b5203433276cfc7090ebaf93d5a8c650ddb231ec51f21873167c9f"
+    }
+  },
+  "id": "kenney_city_building_i",
+  "kind": "kit",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "c72f06db0f86c944ff9ad623c49d01232596012c",
+    "files_from": {
+      "piece.json": "its record, made from kenney-city-kit-commercial/Models/GLB format/building-i.glb",
+      "piece.usdc": "kenney-city-kit-commercial/Models/GLB format/building-i.glb, geometry only at 7.5 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "kenney",
+        "carried": true,
+        "what": "kenney-city-kit-commercial/Models/GLB format/building-i.glb: its geometry (Kenney City Kit Commercial 2.1, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "kit": [
+      "piece"
+    ],
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Kenney City Kit Commercial 2.1"
+    ],
+    "place": [
+      "street"
+    ]
+  },
+  "title": "Building i (Kenney City Kit Commercial 2.1)",
+  "usd": null,
+  "version": 1
+}

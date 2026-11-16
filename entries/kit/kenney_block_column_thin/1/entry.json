@@ -1,0 +1,60 @@
+{
+  "address": "kit/kenney_block_column_thin@1",
+  "files": {
+    "piece.json": {
+      "bytes": 598,
+      "role": "record",
+      "sha256": "85d82d0ec4f143f151d721985b81cf3752af1cf8882d7b66299accbde50275ec"
+    },
+    "piece.usdc": {
+      "bytes": 6646,
+      "role": "usd",
+      "sha256": "185d77dc9f83e55b7f4186bfda9cf70fd0af1cf3281e43c2278f3cc3436f21d7"
+    }
+  },
+  "id": "kenney_block_column_thin",
+  "kind": "kit",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "c72f06db0f86c944ff9ad623c49d01232596012c",
+    "files_from": {
+      "piece.json": "its record, made from kenney-building-kit/Models/GLB format/column-thin.glb",
+      "piece.usdc": "kenney-building-kit/Models/GLB format/column-thin.glb, geometry only at 1.25 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "kenney",
+        "carried": true,
+        "what": "kenney-building-kit/Models/GLB format/column-thin.glb: its geometry (Kenney Building Kit 1.0, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "kit": [
+      "piece"
+    ],
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Kenney Building Kit 1.0"
+    ],
+    "place": [
+      "stairwell"
+    ]
+  },
+  "title": "Column thin (Kenney Building Kit 1.0)",
+  "usd": null,
+  "version": 1
+}

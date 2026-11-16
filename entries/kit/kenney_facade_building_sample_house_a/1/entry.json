@@ -1,0 +1,61 @@
+{
+  "address": "kit/kenney_facade_building_sample_house_a@1",
+  "files": {
+    "piece.json": {
+      "bytes": 670,
+      "role": "record",
+      "sha256": "aefaff26cb0a8efc1d95956e12b7439495909e167bb1b4c1b259c815925d77a9"
+    },
+    "piece.usdc": {
+      "bytes": 51125,
+      "role": "usd",
+      "sha256": "b6d3d4dd0bef0ac5a3cf3b027065a39606546be130a9f021215f6d1596a3fe18"
+    }
+  },
+  "id": "kenney_facade_building_sample_house_a",
+  "kind": "kit",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "c72f06db0f86c944ff9ad623c49d01232596012c",
+    "files_from": {
+      "piece.json": "its record, made from kenney-modular-buildings/Models/GLB format/building-sample-house-a.glb",
+      "piece.usdc": "kenney-modular-buildings/Models/GLB format/building-sample-house-a.glb, geometry only at 4.5 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "kenney",
+        "carried": true,
+        "what": "kenney-modular-buildings/Models/GLB format/building-sample-house-a.glb: its geometry (Kenney Modular Buildings 2.1, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "kit": [
+      "piece"
+    ],
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Kenney Modular Buildings 2.1"
+    ],
+    "place": [
+      "stairwell",
+      "street"
+    ]
+  },
+  "title": "Building sample house a (Kenney Modular Buildings 2.1)",
+  "usd": null,
+  "version": 1
+}

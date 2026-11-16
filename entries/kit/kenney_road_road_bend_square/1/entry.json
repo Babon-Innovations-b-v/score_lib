@@ -1,0 +1,60 @@
+{
+  "address": "kit/kenney_road_road_bend_square@1",
+  "files": {
+    "piece.json": {
+      "bytes": 590,
+      "role": "record",
+      "sha256": "dfa060c59a519b89144c92557e0e4d69dd3938de1bef611b5717fc8606c55a83"
+    },
+    "piece.usdc": {
+      "bytes": 7527,
+      "role": "usd",
+      "sha256": "f3652748b7f81ede57a2c9bd0118ee49ea71c077e9c9bf9efa416a50e95ff737"
+    }
+  },
+  "id": "kenney_road_road_bend_square",
+  "kind": "kit",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "c72f06db0f86c944ff9ad623c49d01232596012c",
+    "files_from": {
+      "piece.json": "its record, made from kenney-city-kit-roads/Models/GLB format/road-bend-square.glb",
+      "piece.usdc": "kenney-city-kit-roads/Models/GLB format/road-bend-square.glb, geometry only at 7.5 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "kenney",
+        "carried": true,
+        "what": "kenney-city-kit-roads/Models/GLB format/road-bend-square.glb: its geometry (Kenney City Kit Roads 2.2, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "kit": [
+      "piece"
+    ],
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Kenney City Kit Roads 2.2"
+    ],
+    "place": [
+      "street"
+    ]
+  },
+  "title": "Road bend square (Kenney City Kit Roads 2.2)",
+  "usd": null,
+  "version": 1
+}

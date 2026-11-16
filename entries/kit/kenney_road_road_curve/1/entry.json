@@ -1,0 +1,60 @@
+{
+  "address": "kit/kenney_road_road_curve@1",
+  "files": {
+    "piece.json": {
+      "bytes": 574,
+      "role": "record",
+      "sha256": "4d3ff7d778588e514ee4bfed6448d44d69b1d4023587c0e2c1ea33feeb0810ba"
+    },
+    "piece.usdc": {
+      "bytes": 28993,
+      "role": "usd",
+      "sha256": "cf606200a28a7411707ffd4bd3697641a265014618cd7c592651e74da09e811f"
+    }
+  },
+  "id": "kenney_road_road_curve",
+  "kind": "kit",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "c72f06db0f86c944ff9ad623c49d01232596012c",
+    "files_from": {
+      "piece.json": "its record, made from kenney-city-kit-roads/Models/GLB format/road-curve.glb",
+      "piece.usdc": "kenney-city-kit-roads/Models/GLB format/road-curve.glb, geometry only at 7.5 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "kenney",
+        "carried": true,
+        "what": "kenney-city-kit-roads/Models/GLB format/road-curve.glb: its geometry (Kenney City Kit Roads 2.2, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "kit": [
+      "piece"
+    ],
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Kenney City Kit Roads 2.2"
+    ],
+    "place": [
+      "street"
+    ]
+  },
+  "title": "Road curve (Kenney City Kit Roads 2.2)",
+  "usd": null,
+  "version": 1
+}

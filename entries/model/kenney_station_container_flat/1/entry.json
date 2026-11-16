@@ -1,0 +1,57 @@
+{
+  "address": "model/kenney_station_container_flat@1",
+  "files": {
+    "model.json": {
+      "bytes": 626,
+      "role": "record",
+      "sha256": "54fb73f26871a0d8c5ed820e9665c750b286bc46b257fec2bf21873a22235ef2"
+    },
+    "model.usdc": {
+      "bytes": 21649,
+      "role": "usd",
+      "sha256": "4452398a1629f49a70e5585e4b06082ee1049f70d5a804e2f9382135883120b1"
+    }
+  },
+  "id": "kenney_station_container_flat",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "c72f06db0f86c944ff9ad623c49d01232596012c",
+    "files_from": {
+      "model.json": "its record, made from kenney-space-station-kit/Models/GLB format/container-flat.glb",
+      "model.usdc": "kenney-space-station-kit/Models/GLB format/container-flat.glb, geometry only at 2.0 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "kenney",
+        "carried": true,
+        "what": "kenney-space-station-kit/Models/GLB format/container-flat.glb: its geometry (Kenney Space Station Kit 1.0, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Kenney Space Station Kit 1.0"
+    ],
+    "place": [
+      "camp"
+    ]
+  },
+  "title": "Container flat (Kenney Space Station Kit 1.0)",
+  "usd": null,
+  "version": 1
+}

@@ -1,0 +1,57 @@
+{
+  "address": "model/kenney_road_electricity_pole@1",
+  "files": {
+    "model.json": {
+      "bytes": 624,
+      "role": "record",
+      "sha256": "331baff9003ff1c073ddb0aaf0d3b3b97cc6fc8d0f3c4596848a82ad67e03ffa"
+    },
+    "model.usdc": {
+      "bytes": 80502,
+      "role": "usd",
+      "sha256": "b65fa1813afe3c07f552d5690f1356f8dbffb87937107a82f1e8d5f1a9a89473"
+    }
+  },
+  "id": "kenney_road_electricity_pole",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "c72f06db0f86c944ff9ad623c49d01232596012c",
+    "files_from": {
+      "model.json": "its record, made from kenney-city-kit-roads/Models/GLB format/electricity-pole.glb",
+      "model.usdc": "kenney-city-kit-roads/Models/GLB format/electricity-pole.glb, geometry only at 7.5 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "kenney",
+        "carried": true,
+        "what": "kenney-city-kit-roads/Models/GLB format/electricity-pole.glb: its geometry (Kenney City Kit Roads 2.2, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Kenney City Kit Roads 2.2"
+    ],
+    "place": [
+      "street"
+    ]
+  },
+  "title": "Electricity pole (Kenney City Kit Roads 2.2)",
+  "usd": null,
+  "version": 1
+}

@@ -1,0 +1,58 @@
+{
+  "address": "model/kenney_furniture_toilet_square@1",
+  "files": {
+    "model.json": {
+      "bytes": 595,
+      "role": "record",
+      "sha256": "0cb97eea4780baebe1e1006444a83b8c804cf4d1a638e138565c2167ad6ded92"
+    },
+    "model.usdc": {
+      "bytes": 24230,
+      "role": "usd",
+      "sha256": "ebf05d7e87fdbccd2ce47a12dc5f5ffeadf64f9050d1b71cb351aa0c68041d14"
+    }
+  },
+  "id": "kenney_furniture_toilet_square",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "c72f06db0f86c944ff9ad623c49d01232596012c",
+    "files_from": {
+      "model.json": "its record, made from kenney-furniture-kit/Models/GLTF format/toiletSquare.glb",
+      "model.usdc": "kenney-furniture-kit/Models/GLTF format/toiletSquare.glb, geometry only at 1.83 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "kenney",
+        "carried": true,
+        "what": "kenney-furniture-kit/Models/GLTF format/toiletSquare.glb: its geometry (Kenney Furniture Kit 2.0, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Kenney Furniture Kit 2.0"
+    ],
+    "place": [
+      "camp",
+      "stairwell"
+    ]
+  },
+  "title": "Toilet square (Kenney Furniture Kit 2.0)",
+  "usd": null,
+  "version": 1
+}

@@ -1,0 +1,61 @@
+{
+  "address": "kit/kenney_furniture_doorway_front@1",
+  "files": {
+    "piece.json": {
+      "bytes": 618,
+      "role": "record",
+      "sha256": "bdcd87d4ace35f35e659be5137e5cb13181b4dcce24f08ecff81956ef1f4819f"
+    },
+    "piece.usdc": {
+      "bytes": 21849,
+      "role": "usd",
+      "sha256": "a6cf494e91d00a6e71eaf8a742a2c6677e2f896cddf7d62f478d6448ded3c0e0"
+    }
+  },
+  "id": "kenney_furniture_doorway_front",
+  "kind": "kit",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "c72f06db0f86c944ff9ad623c49d01232596012c",
+    "files_from": {
+      "piece.json": "its record, made from kenney-furniture-kit/Models/GLTF format/doorwayFront.glb",
+      "piece.usdc": "kenney-furniture-kit/Models/GLTF format/doorwayFront.glb, geometry only at 1.83 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "kenney",
+        "carried": true,
+        "what": "kenney-furniture-kit/Models/GLTF format/doorwayFront.glb: its geometry (Kenney Furniture Kit 2.0, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "kit": [
+      "piece"
+    ],
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Kenney Furniture Kit 2.0"
+    ],
+    "place": [
+      "camp",
+      "stairwell"
+    ]
+  },
+  "title": "Doorway front (Kenney Furniture Kit 2.0)",
+  "usd": null,
+  "version": 1
+}

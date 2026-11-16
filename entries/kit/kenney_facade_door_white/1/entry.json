@@ -1,0 +1,61 @@
+{
+  "address": "kit/kenney_facade_door_white@1",
+  "files": {
+    "piece.json": {
+      "bytes": 581,
+      "role": "record",
+      "sha256": "f344b1a5b5f481f17fe3cde7ffb600887d6c2f1bd1f08fcf04814867833f64ba"
+    },
+    "piece.usdc": {
+      "bytes": 2801,
+      "role": "usd",
+      "sha256": "556ab3409c6429ffcdb9696ce9dc1488198d2f44ef704d3a6489f11b2a0cfdbf"
+    }
+  },
+  "id": "kenney_facade_door_white",
+  "kind": "kit",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "c72f06db0f86c944ff9ad623c49d01232596012c",
+    "files_from": {
+      "piece.json": "its record, made from kenney-modular-buildings/Models/GLB format/door-white.glb",
+      "piece.usdc": "kenney-modular-buildings/Models/GLB format/door-white.glb, geometry only at 4.5 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "kenney",
+        "carried": true,
+        "what": "kenney-modular-buildings/Models/GLB format/door-white.glb: its geometry (Kenney Modular Buildings 2.1, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "kit": [
+      "piece"
+    ],
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Kenney Modular Buildings 2.1"
+    ],
+    "place": [
+      "stairwell",
+      "street"
+    ]
+  },
+  "title": "Door white (Kenney Modular Buildings 2.1)",
+  "usd": null,
+  "version": 1
+}

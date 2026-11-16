@@ -1,0 +1,60 @@
+{
+  "address": "kit/kenney_road_road_side_barrier@1",
+  "files": {
+    "piece.json": {
+      "bytes": 571,
+      "role": "record",
+      "sha256": "079f65aa919ac4bf814ded3742e5185b817b99330f68031b1b80f3889fda4d5d"
+    },
+    "piece.usdc": {
+      "bytes": 2768,
+      "role": "usd",
+      "sha256": "1ee19e6657c989eef6c8b1784b01e1e036dfe4cf8e4a86f1b37d687ab039febf"
+    }
+  },
+  "id": "kenney_road_road_side_barrier",
+  "kind": "kit",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "c72f06db0f86c944ff9ad623c49d01232596012c",
+    "files_from": {
+      "piece.json": "its record, made from kenney-city-kit-roads/Models/GLB format/road-side-barrier.glb",
+      "piece.usdc": "kenney-city-kit-roads/Models/GLB format/road-side-barrier.glb, geometry only at 7.5 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "kenney",
+        "carried": true,
+        "what": "kenney-city-kit-roads/Models/GLB format/road-side-barrier.glb: its geometry (Kenney City Kit Roads 2.2, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "kit": [
+      "piece"
+    ],
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Kenney City Kit Roads 2.2"
+    ],
+    "place": [
+      "street"
+    ]
+  },
+  "title": "Road side barrier (Kenney City Kit Roads 2.2)",
+  "usd": null,
+  "version": 1
+}

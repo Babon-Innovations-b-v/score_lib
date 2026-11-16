@@ -1,0 +1,60 @@
+{
+  "address": "kit/kenney_block_roof_flat_patch@1",
+  "files": {
+    "piece.json": {
+      "bytes": 590,
+      "role": "record",
+      "sha256": "1e652c6d43eece429f757aa8940ae638e586712ebada98b7aa94d71cc794eeda"
+    },
+    "piece.usdc": {
+      "bytes": 6211,
+      "role": "usd",
+      "sha256": "ae8e94f25e9f8684d5efeeb4ca7d93458fba78e02272da252cc82980a7ab7aa4"
+    }
+  },
+  "id": "kenney_block_roof_flat_patch",
+  "kind": "kit",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "c72f06db0f86c944ff9ad623c49d01232596012c",
+    "files_from": {
+      "piece.json": "its record, made from kenney-building-kit/Models/GLB format/roof-flat-patch.glb",
+      "piece.usdc": "kenney-building-kit/Models/GLB format/roof-flat-patch.glb, geometry only at 1.25 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "kenney",
+        "carried": true,
+        "what": "kenney-building-kit/Models/GLB format/roof-flat-patch.glb: its geometry (Kenney Building Kit 1.0, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "kit": [
+      "piece"
+    ],
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Kenney Building Kit 1.0"
+    ],
+    "place": [
+      "stairwell"
+    ]
+  },
+  "title": "Roof flat patch (Kenney Building Kit 1.0)",
+  "usd": null,
+  "version": 1
+}

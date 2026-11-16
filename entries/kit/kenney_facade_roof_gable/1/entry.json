@@ -1,0 +1,61 @@
+{
+  "address": "kit/kenney_facade_roof_gable@1",
+  "files": {
+    "piece.json": {
+      "bytes": 606,
+      "role": "record",
+      "sha256": "bef356b7d8d262a209f891f6f2bbe73d5388f6f62208e4bc0f749a926c491d35"
+    },
+    "piece.usdc": {
+      "bytes": 3966,
+      "role": "usd",
+      "sha256": "3b6ff1c636ebf154abbae91dcb05648aa0a1957aa1f047162d665dd1f1f85156"
+    }
+  },
+  "id": "kenney_facade_roof_gable",
+  "kind": "kit",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "c72f06db0f86c944ff9ad623c49d01232596012c",
+    "files_from": {
+      "piece.json": "its record, made from kenney-modular-buildings/Models/GLB format/roof-gable.glb",
+      "piece.usdc": "kenney-modular-buildings/Models/GLB format/roof-gable.glb, geometry only at 4.5 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "kenney",
+        "carried": true,
+        "what": "kenney-modular-buildings/Models/GLB format/roof-gable.glb: its geometry (Kenney Modular Buildings 2.1, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "kit": [
+      "piece"
+    ],
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Kenney Modular Buildings 2.1"
+    ],
+    "place": [
+      "stairwell",
+      "street"
+    ]
+  },
+  "title": "Roof gable (Kenney Modular Buildings 2.1)",
+  "usd": null,
+  "version": 1
+}

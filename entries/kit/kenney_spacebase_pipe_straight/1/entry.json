@@ -1,0 +1,61 @@
+{
+  "address": "kit/kenney_spacebase_pipe_straight@1",
+  "files": {
+    "piece.json": {
+      "bytes": 588,
+      "role": "record",
+      "sha256": "ff73ca6c4e00145ff84403db0dd7e32edf5e4150cbac935db9fd43ae2b447d22"
+    },
+    "piece.usdc": {
+      "bytes": 11399,
+      "role": "usd",
+      "sha256": "236461f1f90722e6810fdf49d364b597ddff464c114dd13ca987f68eb105a6eb"
+    }
+  },
+  "id": "kenney_spacebase_pipe_straight",
+  "kind": "kit",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "c72f06db0f86c944ff9ad623c49d01232596012c",
+    "files_from": {
+      "piece.json": "its record, made from kenney-space-kit/Models/GLTF format/pipe_straight.glb",
+      "piece.usdc": "kenney-space-kit/Models/GLTF format/pipe_straight.glb, geometry only at 2.33 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "kenney",
+        "carried": true,
+        "what": "kenney-space-kit/Models/GLTF format/pipe_straight.glb: its geometry (Kenney Space Kit 2.0, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "kit": [
+      "piece"
+    ],
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Kenney Space Kit 2.0"
+    ],
+    "place": [
+      "camp",
+      "campgrounds"
+    ]
+  },
+  "title": "Pipe straight (Kenney Space Kit 2.0)",
+  "usd": null,
+  "version": 1
+}

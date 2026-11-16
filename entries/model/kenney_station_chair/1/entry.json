@@ -1,0 +1,57 @@
+{
+  "address": "model/kenney_station_chair@1",
+  "files": {
+    "model.json": {
+      "bytes": 595,
+      "role": "record",
+      "sha256": "90aaac5cb30dc253a45ed804fcd45f73860ec15be665bc9726bc8d7edc1b7951"
+    },
+    "model.usdc": {
+      "bytes": 11699,
+      "role": "usd",
+      "sha256": "e8b493831fd45eddd66a85351ff4396e9754031bd06410b1a744ea135217cc87"
+    }
+  },
+  "id": "kenney_station_chair",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "c72f06db0f86c944ff9ad623c49d01232596012c",
+    "files_from": {
+      "model.json": "its record, made from kenney-space-station-kit/Models/GLB format/chair.glb",
+      "model.usdc": "kenney-space-station-kit/Models/GLB format/chair.glb, geometry only at 2.0 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "kenney",
+        "carried": true,
+        "what": "kenney-space-station-kit/Models/GLB format/chair.glb: its geometry (Kenney Space Station Kit 1.0, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Kenney Space Station Kit 1.0"
+    ],
+    "place": [
+      "camp"
+    ]
+  },
+  "title": "Chair (Kenney Space Station Kit 1.0)",
+  "usd": null,
+  "version": 1
+}

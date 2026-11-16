@@ -1,0 +1,57 @@
+{
+  "address": "model/kenney_car_police@1",
+  "files": {
+    "model.json": {
+      "bytes": 672,
+      "role": "record",
+      "sha256": "c4222644d4442e780948a75417ac5c11273e7fb3a1364a18944dceae9f222646"
+    },
+    "model.usdc": {
+      "bytes": 437544,
+      "role": "usd",
+      "sha256": "d99f8ef82a9a72c46249c44b20f4010271d33bfe6d90c3ff539b600490594d52"
+    }
+  },
+  "id": "kenney_car_police",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "153946e1cee2e8092dfcc356fda4477002f11577",
+    "files_from": {
+      "model.json": "its record, made from kenney-car-kit/Models/GLB format/police.glb",
+      "model.usdc": "kenney-car-kit/Models/GLB format/police.glb, geometry only at 1.45 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "kenney",
+        "carried": true,
+        "what": "kenney-car-kit/Models/GLB format/police.glb: its geometry (Kenney Car Kit 3.1, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Kenney Car Kit 3.1"
+    ],
+    "place": [
+      "street"
+    ]
+  },
+  "title": "Police (Kenney Car Kit 3.1)",
+  "usd": null,
+  "version": 1
+}

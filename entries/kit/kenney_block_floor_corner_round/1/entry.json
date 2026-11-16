@@ -1,0 +1,60 @@
+{
+  "address": "kit/kenney_block_floor_corner_round@1",
+  "files": {
+    "piece.json": {
+      "bytes": 598,
+      "role": "record",
+      "sha256": "fa13ef385a0900b1fbf027f37099491a74d56bb9725d346c5db2475b778a66d3"
+    },
+    "piece.usdc": {
+      "bytes": 6995,
+      "role": "usd",
+      "sha256": "78aa72878a367f1fe21c3b8e8027c8c689ffafc066e6ac54fb6ab2fdac9277f2"
+    }
+  },
+  "id": "kenney_block_floor_corner_round",
+  "kind": "kit",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "c72f06db0f86c944ff9ad623c49d01232596012c",
+    "files_from": {
+      "piece.json": "its record, made from kenney-building-kit/Models/GLB format/floor-corner-round.glb",
+      "piece.usdc": "kenney-building-kit/Models/GLB format/floor-corner-round.glb, geometry only at 1.25 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "kenney",
+        "carried": true,
+        "what": "kenney-building-kit/Models/GLB format/floor-corner-round.glb: its geometry (Kenney Building Kit 1.0, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "kit": [
+      "piece"
+    ],
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Kenney Building Kit 1.0"
+    ],
+    "place": [
+      "stairwell"
+    ]
+  },
+  "title": "Floor corner round (Kenney Building Kit 1.0)",
+  "usd": null,
+  "version": 1
+}

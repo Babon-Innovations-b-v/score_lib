@@ -1,0 +1,57 @@
+{
+  "address": "model/polyhaven_street_lamp_01@1",
+  "files": {
+    "model.json": {
+      "bytes": 573,
+      "role": "record",
+      "sha256": "67f7d63c1f2689e30c69c5e7eb08a9e689c465c91176c037140959182600a25d"
+    },
+    "model.usdc": {
+      "bytes": 710774,
+      "role": "usd",
+      "sha256": "9bcf37131c680216d7c777a223a62595f5f2f89010ec50e6347ad1a62ef9409e"
+    }
+  },
+  "id": "polyhaven_street_lamp_01",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "c72f06db0f86c944ff9ad623c49d01232596012c",
+    "files_from": {
+      "model.json": "its record, made from polyhaven.com/a/street_lamp_01 (1k glTF)",
+      "model.usdc": "polyhaven.com/a/street_lamp_01 (1k glTF), geometry only at 1.0 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "polyhaven",
+        "carried": true,
+        "what": "polyhaven.com/a/street_lamp_01 (1k glTF): its geometry (Poly Haven, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Poly Haven"
+    ],
+    "place": [
+      "street"
+    ]
+  },
+  "title": "Street lamp 01 (Poly Haven)",
+  "usd": null,
+  "version": 1
+}

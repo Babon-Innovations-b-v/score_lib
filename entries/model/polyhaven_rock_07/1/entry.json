@@ -1,0 +1,57 @@
+{
+  "address": "model/polyhaven_rock_07@1",
+  "files": {
+    "model.json": {
+      "bytes": 494,
+      "role": "record",
+      "sha256": "c9150d24e0fb67c1ff794788c40caf27139a75ebea61fc379b0b3095a4cbd6ac"
+    },
+    "model.usdc": {
+      "bytes": 312087,
+      "role": "usd",
+      "sha256": "709b49597eeef97e29e77a98af30171ebfb2b10921ea59683566123335ef9703"
+    }
+  },
+  "id": "polyhaven_rock_07",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "c72f06db0f86c944ff9ad623c49d01232596012c",
+    "files_from": {
+      "model.json": "its record, made from polyhaven.com/a/rock_07 (1k glTF)",
+      "model.usdc": "polyhaven.com/a/rock_07 (1k glTF), geometry only at 1.0 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "polyhaven",
+        "carried": true,
+        "what": "polyhaven.com/a/rock_07 (1k glTF): its geometry (Poly Haven, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Poly Haven"
+    ],
+    "place": [
+      "campgrounds"
+    ]
+  },
+  "title": "Rock 07 (Poly Haven)",
+  "usd": null,
+  "version": 1
+}

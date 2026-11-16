@@ -1,0 +1,60 @@
+{
+  "address": "kit/kenney_block_floor_corner_diagonal@1",
+  "files": {
+    "piece.json": {
+      "bytes": 607,
+      "role": "record",
+      "sha256": "99447aba6d95f21fdfb4b56c8ace8f13544700aa34958cdd3214dd7489b28962"
+    },
+    "piece.usdc": {
+      "bytes": 3474,
+      "role": "usd",
+      "sha256": "86b4dfa872fb1da3b28868d1ebcdedb8bcbc5571a3f4a4da13d0f0893a8de50c"
+    }
+  },
+  "id": "kenney_block_floor_corner_diagonal",
+  "kind": "kit",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "c72f06db0f86c944ff9ad623c49d01232596012c",
+    "files_from": {
+      "piece.json": "its record, made from kenney-building-kit/Models/GLB format/floor-corner-diagonal.glb",
+      "piece.usdc": "kenney-building-kit/Models/GLB format/floor-corner-diagonal.glb, geometry only at 1.25 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "kenney",
+        "carried": true,
+        "what": "kenney-building-kit/Models/GLB format/floor-corner-diagonal.glb: its geometry (Kenney Building Kit 1.0, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "kit": [
+      "piece"
+    ],
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Kenney Building Kit 1.0"
+    ],
+    "place": [
+      "stairwell"
+    ]
+  },
+  "title": "Floor corner diagonal (Kenney Building Kit 1.0)",
+  "usd": null,
+  "version": 1
+}

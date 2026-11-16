@@ -1,0 +1,61 @@
+{
+  "address": "kit/kenney_furniture_wall@1",
+  "files": {
+    "piece.json": {
+      "bytes": 576,
+      "role": "record",
+      "sha256": "8b7ff238f990f38eb13748f8a46fd0a9fed60bb12d0743c140520a370a888888"
+    },
+    "piece.usdc": {
+      "bytes": 4471,
+      "role": "usd",
+      "sha256": "4989cab2705a88b78a26f3aa28933ac921362e802b13667933aef2109e0b40b4"
+    }
+  },
+  "id": "kenney_furniture_wall",
+  "kind": "kit",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "c72f06db0f86c944ff9ad623c49d01232596012c",
+    "files_from": {
+      "piece.json": "its record, made from kenney-furniture-kit/Models/GLTF format/wall.glb",
+      "piece.usdc": "kenney-furniture-kit/Models/GLTF format/wall.glb, geometry only at 1.83 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "kenney",
+        "carried": true,
+        "what": "kenney-furniture-kit/Models/GLTF format/wall.glb: its geometry (Kenney Furniture Kit 2.0, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "kit": [
+      "piece"
+    ],
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Kenney Furniture Kit 2.0"
+    ],
+    "place": [
+      "camp",
+      "stairwell"
+    ]
+  },
+  "title": "Wall (Kenney Furniture Kit 2.0)",
+  "usd": null,
+  "version": 1
+}

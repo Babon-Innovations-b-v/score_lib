@@ -1,0 +1,61 @@
+{
+  "address": "kit/kenney_furniture_wall_corner@1",
+  "files": {
+    "piece.json": {
+      "bytes": 597,
+      "role": "record",
+      "sha256": "7a872a98627af13b931df47bfacd127ce0148ddbc38f5926e93b9aee7b23b493"
+    },
+    "piece.usdc": {
+      "bytes": 7233,
+      "role": "usd",
+      "sha256": "450be2937bbe506635fff2eacb8700d52b718461d633e2c99ccc21675db6fdd0"
+    }
+  },
+  "id": "kenney_furniture_wall_corner",
+  "kind": "kit",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "c72f06db0f86c944ff9ad623c49d01232596012c",
+    "files_from": {
+      "piece.json": "its record, made from kenney-furniture-kit/Models/GLTF format/wallCorner.glb",
+      "piece.usdc": "kenney-furniture-kit/Models/GLTF format/wallCorner.glb, geometry only at 1.83 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "kenney",
+        "carried": true,
+        "what": "kenney-furniture-kit/Models/GLTF format/wallCorner.glb: its geometry (Kenney Furniture Kit 2.0, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "kit": [
+      "piece"
+    ],
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Kenney Furniture Kit 2.0"
+    ],
+    "place": [
+      "camp",
+      "stairwell"
+    ]
+  },
+  "title": "Wall corner (Kenney Furniture Kit 2.0)",
+  "usd": null,
+  "version": 1
+}

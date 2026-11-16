@@ -1,0 +1,58 @@
+{
+  "address": "model/kenney_spacebase_chimney@1",
+  "files": {
+    "model.json": {
+      "bytes": 555,
+      "role": "record",
+      "sha256": "1126d0b7cd2d71b8b714cd87f38b85b851a74802df66f5033819b1647ebc8d25"
+    },
+    "model.usdc": {
+      "bytes": 12485,
+      "role": "usd",
+      "sha256": "b6b2aef1c18faa8e066efa766d4310e1663499ae5e8f1c9f2b40ad8601b26a58"
+    }
+  },
+  "id": "kenney_spacebase_chimney",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "c72f06db0f86c944ff9ad623c49d01232596012c",
+    "files_from": {
+      "model.json": "its record, made from kenney-space-kit/Models/GLTF format/chimney.glb",
+      "model.usdc": "kenney-space-kit/Models/GLTF format/chimney.glb, geometry only at 2.33 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "kenney",
+        "carried": true,
+        "what": "kenney-space-kit/Models/GLTF format/chimney.glb: its geometry (Kenney Space Kit 2.0, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Kenney Space Kit 2.0"
+    ],
+    "place": [
+      "camp",
+      "campgrounds"
+    ]
+  },
+  "title": "Chimney (Kenney Space Kit 2.0)",
+  "usd": null,
+  "version": 1
+}

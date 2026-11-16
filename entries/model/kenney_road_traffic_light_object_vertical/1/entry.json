@@ -1,0 +1,57 @@
+{
+  "address": "model/kenney_road_traffic_light_object_vertical@1",
+  "files": {
+    "model.json": {
+      "bytes": 710,
+      "role": "record",
+      "sha256": "ca248d77d4cd8eb60bc08e275412bac7b805922a2dfe863a3a7c82f681c7e319"
+    },
+    "model.usdc": {
+      "bytes": 35856,
+      "role": "usd",
+      "sha256": "d795f6b7de817ceaf2e1afe98bce1d858634ec5006229172c233704358e4a4d3"
+    }
+  },
+  "id": "kenney_road_traffic_light_object_vertical",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "c72f06db0f86c944ff9ad623c49d01232596012c",
+    "files_from": {
+      "model.json": "its record, made from kenney-city-kit-roads/Models/GLB format/traffic-light-object-vertical.glb",
+      "model.usdc": "kenney-city-kit-roads/Models/GLB format/traffic-light-object-vertical.glb, geometry only at 7.5 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "kenney",
+        "carried": true,
+        "what": "kenney-city-kit-roads/Models/GLB format/traffic-light-object-vertical.glb: its geometry (Kenney City Kit Roads 2.2, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Kenney City Kit Roads 2.2"
+    ],
+    "place": [
+      "street"
+    ]
+  },
+  "title": "Traffic light object vertical (Kenney City Kit Roads 2.2)",
+  "usd": null,
+  "version": 1
+}

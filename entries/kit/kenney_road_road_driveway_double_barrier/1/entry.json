@@ -1,0 +1,60 @@
+{
+  "address": "kit/kenney_road_road_driveway_double_barrier@1",
+  "files": {
+    "piece.json": {
+      "bytes": 602,
+      "role": "record",
+      "sha256": "b4f5ad97c5db3701196d4ecd692df92ee23639fbc533b11eb1ec17896ea21b40"
+    },
+    "piece.usdc": {
+      "bytes": 5659,
+      "role": "usd",
+      "sha256": "5db465fc598fd0fa522030b3ef600cc19545353b653b53cc5c3d7002ac07450a"
+    }
+  },
+  "id": "kenney_road_road_driveway_double_barrier",
+  "kind": "kit",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "c72f06db0f86c944ff9ad623c49d01232596012c",
+    "files_from": {
+      "piece.json": "its record, made from kenney-city-kit-roads/Models/GLB format/road-driveway-double-barrier.glb",
+      "piece.usdc": "kenney-city-kit-roads/Models/GLB format/road-driveway-double-barrier.glb, geometry only at 7.5 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "kenney",
+        "carried": true,
+        "what": "kenney-city-kit-roads/Models/GLB format/road-driveway-double-barrier.glb: its geometry (Kenney City Kit Roads 2.2, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "kit": [
+      "piece"
+    ],
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Kenney City Kit Roads 2.2"
+    ],
+    "place": [
+      "street"
+    ]
+  },
+  "title": "Road driveway double barrier (Kenney City Kit Roads 2.2)",
+  "usd": null,
+  "version": 1
+}

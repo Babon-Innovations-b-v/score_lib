@@ -1,0 +1,60 @@
+{
+  "address": "kit/kenney_block_stairs_center@1",
+  "files": {
+    "piece.json": {
+      "bytes": 583,
+      "role": "record",
+      "sha256": "f4b2904daa7894f1af84465a4b8af97f576fb1a7030cdb96ffa3bdd56c4ef70e"
+    },
+    "piece.usdc": {
+      "bytes": 15920,
+      "role": "usd",
+      "sha256": "e91522fba2af776d91c08751b2db018a8662acb73fe4d6c711f17cf81968aab0"
+    }
+  },
+  "id": "kenney_block_stairs_center",
+  "kind": "kit",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "c72f06db0f86c944ff9ad623c49d01232596012c",
+    "files_from": {
+      "piece.json": "its record, made from kenney-building-kit/Models/GLB format/stairs-center.glb",
+      "piece.usdc": "kenney-building-kit/Models/GLB format/stairs-center.glb, geometry only at 1.25 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "kenney",
+        "carried": true,
+        "what": "kenney-building-kit/Models/GLB format/stairs-center.glb: its geometry (Kenney Building Kit 1.0, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "kit": [
+      "piece"
+    ],
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Kenney Building Kit 1.0"
+    ],
+    "place": [
+      "stairwell"
+    ]
+  },
+  "title": "Stairs center (Kenney Building Kit 1.0)",
+  "usd": null,
+  "version": 1
+}

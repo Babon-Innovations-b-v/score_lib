@@ -1,0 +1,61 @@
+{
+  "address": "kit/kenney_facade_door_brown_glass@1",
+  "files": {
+    "piece.json": {
+      "bytes": 627,
+      "role": "record",
+      "sha256": "722f6072594d8f0111c1983bbdb708a794c9810f451a377fbf3d072e1aae044f"
+    },
+    "piece.usdc": {
+      "bytes": 4596,
+      "role": "usd",
+      "sha256": "377f5e0d9f91d2d3657aa187a9a8a46818861b96ca1d44795a89bd238903a30c"
+    }
+  },
+  "id": "kenney_facade_door_brown_glass",
+  "kind": "kit",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "c72f06db0f86c944ff9ad623c49d01232596012c",
+    "files_from": {
+      "piece.json": "its record, made from kenney-modular-buildings/Models/GLB format/door-brown-glass.glb",
+      "piece.usdc": "kenney-modular-buildings/Models/GLB format/door-brown-glass.glb, geometry only at 4.5 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "kenney",
+        "carried": true,
+        "what": "kenney-modular-buildings/Models/GLB format/door-brown-glass.glb: its geometry (Kenney Modular Buildings 2.1, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "kit": [
+      "piece"
+    ],
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Kenney Modular Buildings 2.1"
+    ],
+    "place": [
+      "stairwell",
+      "street"
+    ]
+  },
+  "title": "Door brown glass (Kenney Modular Buildings 2.1)",
+  "usd": null,
+  "version": 1
+}

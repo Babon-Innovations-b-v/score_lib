@@ -1,0 +1,57 @@
+{
+  "address": "model/polyhaven_propane_tank@1",
+  "files": {
+    "model.json": {
+      "bytes": 515,
+      "role": "record",
+      "sha256": "c552e043ce02f838c78a0894ffd2049bccdb0e0d15190abfe9314b4e77300645"
+    },
+    "model.usdc": {
+      "bytes": 166099,
+      "role": "usd",
+      "sha256": "7723ad3ce9f209e7d68d371e8128fdbab7c6baed9d749eb8183f187e62d5fce4"
+    }
+  },
+  "id": "polyhaven_propane_tank",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "c72f06db0f86c944ff9ad623c49d01232596012c",
+    "files_from": {
+      "model.json": "its record, made from polyhaven.com/a/propane_tank (1k glTF)",
+      "model.usdc": "polyhaven.com/a/propane_tank (1k glTF), geometry only at 1.0 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "polyhaven",
+        "carried": true,
+        "what": "polyhaven.com/a/propane_tank (1k glTF): its geometry (Poly Haven, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Poly Haven"
+    ],
+    "place": [
+      "campgrounds"
+    ]
+  },
+  "title": "Propane tank (Poly Haven)",
+  "usd": null,
+  "version": 1
+}

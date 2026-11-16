@@ -1,0 +1,61 @@
+{
+  "address": "kit/kenney_spacebase_gate_simple@1",
+  "files": {
+    "piece.json": {
+      "bytes": 582,
+      "role": "record",
+      "sha256": "1dbf5763969c7ed39b86f8c86ef37b6cd26310fe112d5a695252979a8850a4c0"
+    },
+    "piece.usdc": {
+      "bytes": 32476,
+      "role": "usd",
+      "sha256": "b9d98845ab38c5afd774d98e178f28151f8a77bd7535f4cbf200b48f67b115ff"
+    }
+  },
+  "id": "kenney_spacebase_gate_simple",
+  "kind": "kit",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "c72f06db0f86c944ff9ad623c49d01232596012c",
+    "files_from": {
+      "piece.json": "its record, made from kenney-space-kit/Models/GLTF format/gate_simple.glb",
+      "piece.usdc": "kenney-space-kit/Models/GLTF format/gate_simple.glb, geometry only at 2.33 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "kenney",
+        "carried": true,
+        "what": "kenney-space-kit/Models/GLTF format/gate_simple.glb: its geometry (Kenney Space Kit 2.0, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "kit": [
+      "piece"
+    ],
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Kenney Space Kit 2.0"
+    ],
+    "place": [
+      "camp",
+      "campgrounds"
+    ]
+  },
+  "title": "Gate simple (Kenney Space Kit 2.0)",
+  "usd": null,
+  "version": 1
+}

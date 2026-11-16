@@ -1,0 +1,60 @@
+{
+  "address": "kit/kenney_station_door_single@1",
+  "files": {
+    "piece.json": {
+      "bytes": 584,
+      "role": "record",
+      "sha256": "edeafca29200527575b341674798a0789736f28637beb2820a8f68527ff270c6"
+    },
+    "piece.usdc": {
+      "bytes": 6229,
+      "role": "usd",
+      "sha256": "b32ab3aa8e4abdbc68306cc58be8776850b9a425c7842de5b6782b6771578d81"
+    }
+  },
+  "id": "kenney_station_door_single",
+  "kind": "kit",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "c72f06db0f86c944ff9ad623c49d01232596012c",
+    "files_from": {
+      "piece.json": "its record, made from kenney-space-station-kit/Models/GLB format/door-single.glb",
+      "piece.usdc": "kenney-space-station-kit/Models/GLB format/door-single.glb, geometry only at 3.0 m a unit"
+    },
+    "made_with": [
+      {
+        "by": "kenney",
+        "carried": true,
+        "what": "kenney-space-station-kit/Models/GLB format/door-single.glb: its geometry (Kenney Space Station Kit 1.0, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      }
+    ],
+    "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "kit": [
+      "piece"
+    ],
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Kenney Space Station Kit 1.0"
+    ],
+    "place": [
+      "camp"
+    ]
+  },
+  "title": "Door single (Kenney Space Station Kit 1.0)",
+  "usd": null,
+  "version": 1
+}
