@@ -64,7 +64,7 @@ def test_take_in_writes_drafts_and_blobs_once(library, tmp_path):
     assert sorted(again["unchanged"]) == ["model/box.gltf@1", "sound/hum.recordings@1"], again
 
 
-def test_a_kit_piece_and_motion_clips_take_their_roles_and_tags(library, tmp_path):
+def test_a_kit_piece_a_surface_and_motion_clips_take_their_roles_and_tags(library, tmp_path):
     blobs = from_environment()
     folder = loose(tmp_path / "loose")
     (folder / "piece.usda").write_text("#usda 1.0\n")
@@ -76,8 +76,16 @@ def test_a_kit_piece_and_motion_clips_take_their_roles_and_tags(library, tmp_pat
          "made_with": [{"what": "model/door_frame_1@1", "source": MADE}]},
         {"kind": "character", "id": "clips", "title": "Clips",
          "files": {"motions/walking.npz": {"path": str(folder / "walking.npz"), "from": "motions/walking.npz"}},
-         "made_with": [{"what": "motions/walking.npz", "source": MADE}]}]
-    assert take_in.take_in(library, blobs, listed)["new"] == ["kit/door_frame_1@1", "character/clips@1"]
+         "made_with": [{"what": "motions/walking.npz", "source": MADE}]},
+        {"kind": "surface", "id": "concrete_maps", "title": "Concrete maps",
+         "files": {"material.usda": {"path": str(folder / "piece.usda"), "from": "material.usda"},
+                   "colour.jpg": {"path": str(folder / "walking.npz"), "from": "Concrete_Color.jpg"}},
+         "made_with": [{"what": "the maps", "source": MADE}]}]
+    assert take_in.take_in(library, blobs, listed)["new"] == ["kit/door_frame_1@1", "character/clips@1",
+                                                              "surface/concrete_maps@1"]
+    surface = entries.load_address(library, "surface/concrete_maps@1")
+    assert {name: about["role"] for name, about in surface["files"].items()} == {"colour.jpg": "texture",
+                                                                                "material.usda": "usd"}
     kit = entries.load_address(library, "kit/door_frame_1@1")
     clips = entries.load_address(library, "character/clips@1")
     assert kit["files"]["piece.usda"]["role"] == "usd" and kit["tags"] == {"kit": ["piece"]}
@@ -102,11 +110,11 @@ def test_refused_unknown_source_kind_and_ending(library, tmp_path):
     folder = loose(tmp_path / "loose")
     listed = listing(folder)
     listed["entries"][0]["made_with"] = [{"what": "x", "source": "a stranger's sounds"}]
-    listed["entries"][1]["kind"] = "surface"
+    listed["entries"][1]["kind"] = "effect"
     listed["entries"].append({"kind": "sound", "id": "odd", "title": "Odd", "made_with": [{"what": "x", "source": CC0}],
                               "files": {"audio/odd.txt": {"path": str(folder / "hum.ogg"), "from": "odd.txt"}}})
     report = take_in.take_in(library, from_environment(), listed)
-    assert [row["id"] for row in report["refused"]] == ["sound/hum.recordings", "surface/box.gltf", "sound/odd"]
+    assert [row["id"] for row in report["refused"]] == ["sound/hum.recordings", "effect/box.gltf", "sound/odd"]
     assert "not in sources.toml" in report["refused"][0]["why"]
     assert not list((library / "entries").rglob("entry.json"))
 

@@ -17,7 +17,8 @@ picture (`usd` null, `picture_reason` says why) and keeps `provenance.taken_from
 is; a changed draft is written over; a changed locked entry becomes the next version as a draft.
 
 A `kit` entry is one building kit piece (its geometry, `.usdc`, and its record); a `character` entry may hold motion
-clips (`.npz`) and their records. A `.json` file of any kind is a record.
+clips (`.npz`) and their records; a `surface` entry is one image-mapped finish (its look, `material.usda`, its maps
+and its record, `surface.json`), such as a CC0 PBR set. A `.json` file of any kind is a record.
 
 A `take` entry is one Pixal3D take whole (score's work/pixal, 2026-10-28: its only copy lay on one disk): its models
 and record (`<take>.glb`, `<take>-final.glb`, `<take>-<faces>.glb`, `<take>.json`) and its camera folder
@@ -34,7 +35,7 @@ from score_lib import handover, index
 from score_lib.admission import NotAdmitted, Sources
 from score_lib.blobs import file_sha256
 
-KINDS = ("sound", "model", "take", "kit", "character")
+KINDS = ("sound", "model", "take", "kit", "character", "surface")
 ROLES = {".json": "record", ".npz": "motion", ".usdc": "usd", ".usda": "usd", ".ogg": "audio", ".wav": "audio", ".mp3": "audio", ".flac": "audio", ".gltf": "gltf", ".glb": "gltf",
          ".bin": "gltf", ".png": "texture", ".jpg": "texture", ".jpeg": "texture", ".webp": "texture"}
 # A take's files: its models and its record, and in its `.svviews` folder the close-up and its camera.
