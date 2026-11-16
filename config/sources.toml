@@ -45,6 +45,14 @@ why = "MIT code on TRELLIS.2 (MIT); DINOv3 licence for its encoder's weights onl
 from = "score paper/source/score.md Table C1"
 
 [[source]]
+id = "trellis2"
+name = "TRELLIS.2 (picture to 3D, TRELLIS.2-4B)"
+output = true
+copy = false
+why = "MIT code and MIT weights (TRELLIS.2-4B, TRELLIS-image-large); DINOv3's licence covers its encoder's weights, not what the model makes; no weights are copied in"
+from = "github.com/microsoft/TRELLIS.2 LICENSE (MIT License, Copyright (c) Microsoft Corporation) at 75fbf0183001ed9876c8dbb35de6b68552ee08bd; huggingface.co/microsoft/TRELLIS.2-4B model card ('license: mit', 'This model is released under the MIT License'; read 2026-11-16)"
+
+[[source]]
 id = "nano_banana_pro"
 name = "Nano Banana Pro (paid API)"
 output = true
