@@ -1,0 +1,44 @@
+{
+  "address": "surface/screen@1",
+  "files": {
+    "surface.json": {
+      "bytes": 167,
+      "role": "record",
+      "sha256": "5c2b83860a4f788146c2a01940ee4b09c2f236f111af738bf267ce706ee15e82"
+    }
+  },
+  "id": "screen",
+  "kind": "surface",
+  "picture": null,
+  "picture_reason": "a recipe has no colour of its own (a palette token gives it): no picture until a token is set",
+  "provenance": {
+    "commit": "1331a0120d3bc4627fedcd44f74cd79b875f2162",
+    "made_with": [
+      {
+        "by": "procfunc",
+        "what": "baked by the surface recipes on ProcFunc"
+      },
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
+    "recipe": "screen",
+    "source": "data/library/materials.json recipes at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "recipe": [
+      "screen"
+    ]
+  },
+  "title": "Screen",
+  "usd": null,
+  "version": 1
+}

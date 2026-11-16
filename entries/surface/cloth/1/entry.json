@@ -1,0 +1,44 @@
+{
+  "address": "surface/cloth@1",
+  "files": {
+    "surface.json": {
+      "bytes": 232,
+      "role": "record",
+      "sha256": "9593a7c5872f9f6061a99a9f75ba35ec8e1acda8c506a60cded495bc7de9d5da"
+    }
+  },
+  "id": "cloth",
+  "kind": "surface",
+  "picture": null,
+  "picture_reason": "a recipe has no colour of its own (a palette token gives it): no picture until a token is set",
+  "provenance": {
+    "commit": "1331a0120d3bc4627fedcd44f74cd79b875f2162",
+    "made_with": [
+      {
+        "by": "procfunc",
+        "what": "baked by the surface recipes on ProcFunc"
+      },
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
+    "recipe": "cloth",
+    "source": "data/library/materials.json recipes at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "recipe": [
+      "cloth"
+    ]
+  },
+  "title": "Cloth",
+  "usd": null,
+  "version": 1
+}

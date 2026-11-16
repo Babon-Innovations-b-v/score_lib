@@ -1,0 +1,44 @@
+{
+  "address": "surface/painted_plaster@1",
+  "files": {
+    "surface.json": {
+      "bytes": 334,
+      "role": "record",
+      "sha256": "a2301458b8d6247821f00d33ec535ea277b4b29a7cd045d556a96c53002ff8a1"
+    }
+  },
+  "id": "painted_plaster",
+  "kind": "surface",
+  "picture": null,
+  "picture_reason": "a recipe has no colour of its own (a palette token gives it): no picture until a token is set",
+  "provenance": {
+    "commit": "1331a0120d3bc4627fedcd44f74cd79b875f2162",
+    "made_with": [
+      {
+        "by": "procfunc",
+        "what": "baked by the surface recipes on ProcFunc"
+      },
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
+    "recipe": "painted_plaster",
+    "source": "data/library/materials.json recipes at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "recipe": [
+      "painted_plaster"
+    ]
+  },
+  "title": "Painted plaster",
+  "usd": null,
+  "version": 1
+}

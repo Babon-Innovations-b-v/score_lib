@@ -1,0 +1,44 @@
+{
+  "address": "surface/wood@1",
+  "files": {
+    "surface.json": {
+      "bytes": 232,
+      "role": "record",
+      "sha256": "7212c4217cbe903a6f347797f0b6de1f8e67c05903e700a3d8325873850c8c2e"
+    }
+  },
+  "id": "wood",
+  "kind": "surface",
+  "picture": null,
+  "picture_reason": "a recipe has no colour of its own (a palette token gives it): no picture until a token is set",
+  "provenance": {
+    "commit": "1331a0120d3bc4627fedcd44f74cd79b875f2162",
+    "made_with": [
+      {
+        "by": "procfunc",
+        "what": "baked by the surface recipes on ProcFunc"
+      },
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
+    "recipe": "wood",
+    "source": "data/library/materials.json recipes at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "recipe": [
+      "wood"
+    ]
+  },
+  "title": "Wood",
+  "usd": null,
+  "version": 1
+}

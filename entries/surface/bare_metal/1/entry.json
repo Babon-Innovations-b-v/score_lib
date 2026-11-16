@@ -1,0 +1,44 @@
+{
+  "address": "surface/bare_metal@1",
+  "files": {
+    "surface.json": {
+      "bytes": 257,
+      "role": "record",
+      "sha256": "df99527923feef2dc7954978cf1738be51f12015ae8a81a52f93c8a98b9b2398"
+    }
+  },
+  "id": "bare_metal",
+  "kind": "surface",
+  "picture": null,
+  "picture_reason": "a recipe has no colour of its own (a palette token gives it): no picture until a token is set",
+  "provenance": {
+    "commit": "1331a0120d3bc4627fedcd44f74cd79b875f2162",
+    "made_with": [
+      {
+        "by": "procfunc",
+        "what": "baked by the surface recipes on ProcFunc"
+      },
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
+    "recipe": "bare_metal",
+    "source": "data/library/materials.json recipes at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "recipe": [
+      "bare_metal"
+    ]
+  },
+  "title": "Bare metal",
+  "usd": null,
+  "version": 1
+}

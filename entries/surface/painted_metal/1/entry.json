@@ -1,0 +1,44 @@
+{
+  "address": "surface/painted_metal@1",
+  "files": {
+    "surface.json": {
+      "bytes": 353,
+      "role": "record",
+      "sha256": "05e9f9792ec6280a51d4a69f651e3c6c55c04ac73a793e48ac6c80fad8929b61"
+    }
+  },
+  "id": "painted_metal",
+  "kind": "surface",
+  "picture": null,
+  "picture_reason": "a recipe has no colour of its own (a palette token gives it): no picture until a token is set",
+  "provenance": {
+    "commit": "1331a0120d3bc4627fedcd44f74cd79b875f2162",
+    "made_with": [
+      {
+        "by": "procfunc",
+        "what": "baked by the surface recipes on ProcFunc"
+      },
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
+    "recipe": "painted_metal",
+    "source": "data/library/materials.json recipes at the world's commit",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "recipe": [
+      "painted_metal"
+    ]
+  },
+  "title": "Painted metal",
+  "usd": null,
+  "version": 1
+}
