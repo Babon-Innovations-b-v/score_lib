@@ -1,0 +1,14 @@
+# One engine algorithm of world 1 (README.md, Layout); read by score_lib/export/algorithm.py.
+name = "rain"
+title = "Rain: falling streak cards on a looping slide and splash crowns on the ground, laid as an effect (score #128)"
+entry = "score.stages.place_build.rainfall:rain_file"
+roots = ["score/stages/place_build/rainfall.py"]
+search = ["score/stages/place_build"]
+constants = ["score/stages/place_build/rainfall.py:FALL", "score/stages/place_build/rainfall.py:STREAK_LONG", "score/stages/place_build/rainfall.py:STREAK_WIDE", "score/stages/place_build/rainfall.py:LEAN", "score/stages/place_build/rainfall.py:SPLASH_SHARE"]
+preset = []
+stage = ""
+contract = []
+needs = []
+tests = ["score/stages/place_build/test_a_laid_scene_holds_its_library_entries_where_the_agent_put_them.py"]
+picture = []
+requires = ["numpy", "usd-core"]

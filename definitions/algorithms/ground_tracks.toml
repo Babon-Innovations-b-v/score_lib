@@ -1,0 +1,14 @@
+# One engine algorithm of world 1 (README.md, Layout); read by score_lib/export/algorithm.py.
+name = "ground_tracks"
+title = "Ground tracks: a rover's ruts with berms and tread, boot prints, over the laid ground as an effect (score #128)"
+entry = "score.stages.place_build.ground_tracks:tracks_file"
+roots = ["score/stages/place_build/ground_tracks.py"]
+search = ["score/stages/place_build"]
+constants = ["score/stages/place_build/ground_tracks.py:GAUGE", "score/stages/place_build/ground_tracks.py:RUT_WIDE", "score/stages/place_build/ground_tracks.py:BERM_HIGH", "score/stages/place_build/ground_tracks.py:TREAD", "score/stages/place_build/ground_tracks.py:STRIDE"]
+preset = []
+stage = ""
+contract = []
+needs = []
+tests = ["score/stages/place_build/test_a_laid_scene_holds_its_library_entries_where_the_agent_put_them.py"]
+picture = []
+requires = ["numpy", "usd-core", "trimesh"]
