@@ -1,0 +1,86 @@
+{
+  "address": "algorithm/dome_shell@1",
+  "files": {
+    "code.json": {
+      "bytes": 573,
+      "role": "record",
+      "sha256": "3a292144f9a11c25259216d53ec7f12f2d0030ac7ea7bdec66f382e0575ab615"
+    },
+    "code/score/__init__.py": {
+      "bytes": 0,
+      "role": "code",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "code/score/stages/__init__.py": {
+      "bytes": 135918,
+      "role": "code",
+      "sha256": "5a9994fa9033e25f25c70509a529bcee77a13bb1658bb98d96001e2ea9cbc0d5"
+    },
+    "code/score/stages/place_build/__init__.py": {
+      "bytes": 63089,
+      "role": "code",
+      "sha256": "71b1d2fdca77141836db2c2c5a8842905ef9e67fe0a773d9695fc3c80cdf5442"
+    },
+    "code/score/stages/place_build/dome_shell.py": {
+      "bytes": 30404,
+      "role": "code",
+      "sha256": "c8b3b2dfa8bd3130f8bf6b6b2451da85d5851d7c779d2883a15fc4e031e281de"
+    },
+    "definition.json": {
+      "bytes": 1034,
+      "role": "record",
+      "sha256": "6c1584c0584d1a6923075b7fc1c4db41a49a71f8692d6afa5b5200cd0074a4be"
+    },
+    "presets/world1/seed.json": {
+      "bytes": 166,
+      "role": "record",
+      "sha256": "f01ebf493ca695c8faa5cc8d7ee153054112e6bcaeb64b3aca4bb701ad8c00fd"
+    },
+    "run.json": {
+      "bytes": 291,
+      "role": "record",
+      "sha256": "de676af56afde3ed00ff72b0614be40a4ef846f8123ffafc50a3ac5fe9ca9cb4"
+    },
+    "settings.schema.json": {
+      "bytes": 1495,
+      "role": "record",
+      "sha256": "fbbe1a074e7b0a13a46e14e083215891b2c7423101d55b1d7d4961f7c0a51b17"
+    },
+    "test/score/stages/place_build/test_a_laid_scene_holds_its_library_entries_where_the_agent_put_them.py": {
+      "bytes": 42669,
+      "role": "code",
+      "sha256": "e1be13facd7cb263b552d82cc39af6f8eea3f86b4ac94cfe492463bf84df1a9c"
+    }
+  },
+  "id": "dome_shell",
+  "kind": "algorithm",
+  "picture": null,
+  "picture_reason": "no world 1 output in the store pictures this algorithm",
+  "provenance": {
+    "code": "99ca313bdbaf6aeacbc1784ebbeeaa2ab046af8677333595553833812ff91376",
+    "commit": "e88348ed92ef3f98c6afb82bc26f0226905067c3",
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
+    "nodes": [],
+    "outside": [],
+    "stage": null,
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "needs": [],
+    "runnable": [
+      true
+    ]
+  },
+  "title": "Dome shell: ribbed glass domes, tunnels, ground discs and chamfered blocks as solids with named parts, cut for doors (score #128)",
+  "usd": null,
+  "version": 1
+}

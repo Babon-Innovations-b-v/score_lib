@@ -1,0 +1,86 @@
+{
+  "address": "algorithm/rain@1",
+  "files": {
+    "code.json": {
+      "bytes": 571,
+      "role": "record",
+      "sha256": "64c3991b9db14d3bc0caefa9422c871d7450ec5bd4afce9e1f939e9a179e71a2"
+    },
+    "code/score/__init__.py": {
+      "bytes": 0,
+      "role": "code",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "code/score/stages/__init__.py": {
+      "bytes": 135918,
+      "role": "code",
+      "sha256": "5a9994fa9033e25f25c70509a529bcee77a13bb1658bb98d96001e2ea9cbc0d5"
+    },
+    "code/score/stages/place_build/__init__.py": {
+      "bytes": 63089,
+      "role": "code",
+      "sha256": "71b1d2fdca77141836db2c2c5a8842905ef9e67fe0a773d9695fc3c80cdf5442"
+    },
+    "code/score/stages/place_build/rainfall.py": {
+      "bytes": 6692,
+      "role": "code",
+      "sha256": "afcef879260a6f2a56e769576b982331f5710b1bb2d88825edb765d388bbdd9e"
+    },
+    "definition.json": {
+      "bytes": 853,
+      "role": "record",
+      "sha256": "e3339fe3bce9d8ca76354079771462bcb2e6a257496d4ea564e32c01408b57dd"
+    },
+    "presets/world1/seed.json": {
+      "bytes": 166,
+      "role": "record",
+      "sha256": "f01ebf493ca695c8faa5cc8d7ee153054112e6bcaeb64b3aca4bb701ad8c00fd"
+    },
+    "run.json": {
+      "bytes": 287,
+      "role": "record",
+      "sha256": "13ea211be442d4acb5ba34dcc920bbe28b884771f8941506c0eff1d561f31460"
+    },
+    "settings.schema.json": {
+      "bytes": 1044,
+      "role": "record",
+      "sha256": "cacd2986d66715729379c760476a14c714423d9550610cb590aa13380ad91f03"
+    },
+    "test/score/stages/place_build/test_a_laid_scene_holds_its_library_entries_where_the_agent_put_them.py": {
+      "bytes": 42669,
+      "role": "code",
+      "sha256": "e1be13facd7cb263b552d82cc39af6f8eea3f86b4ac94cfe492463bf84df1a9c"
+    }
+  },
+  "id": "rain",
+  "kind": "algorithm",
+  "picture": null,
+  "picture_reason": "no world 1 output in the store pictures this algorithm",
+  "provenance": {
+    "code": "0ad4536df9d9b2a1614545b5d2793747ee291dc969fe825657e0530e1e716fa9",
+    "commit": "e88348ed92ef3f98c6afb82bc26f0226905067c3",
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
+    "nodes": [],
+    "outside": [],
+    "stage": null,
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "needs": [],
+    "runnable": [
+      true
+    ]
+  },
+  "title": "Rain: falling streak cards on a looping slide and splash crowns on the ground, laid as an effect (score #128)",
+  "usd": null,
+  "version": 1
+}

@@ -1,0 +1,14 @@
+# One engine algorithm of world 1 (README.md, Layout); read by score_lib/export/algorithm.py.
+name = "stair_core"
+title = "Stair core: a switchback stairwell of real size as closed solids, flights, landings, railings, glazed front and doorways (score #128)"
+entry = "score.stages.place_build.stair_core:core"
+roots = ["score/stages/place_build/stair_core.py"]
+search = ["score/stages/place_build"]
+constants = ["score/stages/place_build/stair_core.py:STOREYS", "score/stages/place_build/stair_core.py:STOREY", "score/stages/place_build/stair_core.py:STEPS", "score/stages/place_build/stair_core.py:TREAD", "score/stages/place_build/stair_core.py:WIDE", "score/stages/place_build/stair_core.py:WELL", "score/stages/place_build/stair_core.py:LANDING", "score/stages/place_build/stair_core.py:HALF", "score/stages/place_build/stair_core.py:SLAB", "score/stages/place_build/stair_core.py:WALL", "score/stages/place_build/stair_core.py:WAIST", "score/stages/place_build/stair_core.py:HEADROOM", "score/stages/place_build/stair_core.py:RAIL", "score/stages/place_build/stair_core.py:LANDING_RAIL"]
+preset = []
+stage = ""
+contract = []
+needs = []
+tests = ["score/stages/place_build/test_a_laid_scene_holds_its_library_entries_where_the_agent_put_them.py"]
+picture = []
+requires = ["numpy", "usd-core"]

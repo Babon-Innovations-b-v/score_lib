@@ -1,0 +1,16 @@
+# One engine algorithm of world 1 (README.md, Layout); read by score_lib/export/algorithm.py.
+# The placing method (score #128, owner 2026-11-16): an agent lays library entries, renders the concept's view,
+# compares and corrects; its physics-readiness check and its model maker are parts of it.
+name = "place_build"
+title = "Place build: a place laid from library entries until its render reads as its locked concept, checked physics-ready (score #128)"
+entry = "score.stages.place_build:start"
+roots = ["score/stages/place_build/__init__.py", "score/stages/place_build/__main__.py", "score/stages/place_build/ready/__init__.py", "score/stages/place_build/ready/people.py", "score/stages/place_build/ready/settle_mujoco.py", "score/stages/place_build/review.py", "score/stages/place_build/measure.py", "score/stages/place_build/relief.py"]
+search = ["score/stages/place_build", "score/stages/place_build/ready", "score/stages/wall_kit", "score/stages/terrain", "tools/library", "tools/usd"]
+constants = ["score/stages/place_build/__init__.py:TRACKS", "score/stages/place_build/__init__.py:RAIN", "score/stages/place_build/__init__.py:DOME", "score/stages/place_build/__init__.py:STAIRS"]
+preset = []
+stage = ""
+contract = []
+needs = ["Blender for its renders and compares; MuJoCo for the settle run of its physics-readiness check"]
+tests = ["score/stages/place_build/test_a_laid_scene_holds_its_library_entries_where_the_agent_put_them.py", "score/stages/place_build/ready/test_every_planted_physics_fault_is_told_by_name.py"]
+picture = []
+requires = ["numpy", "usd-core", "trimesh", "mujoco"]

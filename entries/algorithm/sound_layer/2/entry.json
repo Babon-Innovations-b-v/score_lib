@@ -2,9 +2,9 @@
   "address": "algorithm/sound_layer@2",
   "files": {
     "code.json": {
-      "bytes": 5031,
+      "bytes": 2472,
       "role": "record",
-      "sha256": "05774106fd766ee9863bdbda897c288b2da1aaf49cbc495ffcb42e8b2d7cef00"
+      "sha256": "5f365aedff0b51e5e55a8360d8ba0f345a7cda5f50e6375a0486acb4a9fd94c9"
     },
     "code/score/__init__.py": {
       "bytes": 0,
@@ -32,9 +32,9 @@
       "sha256": "1c0f030fd4a7110bdb7881c9e792243b87af42f60ca68dd39486808382f5edde"
     },
     "code/score/stages/__init__.py": {
-      "bytes": 137673,
+      "bytes": 135918,
       "role": "code",
-      "sha256": "584cef7a1b58c8205c1fee387220646f6e2d6fb46c41b72edb87ecc6f01df0af"
+      "sha256": "5a9994fa9033e25f25c70509a529bcee77a13bb1658bb98d96001e2ea9cbc0d5"
     },
     "code/score/stages/batch_gaps.py": {
       "bytes": 2897,
@@ -42,64 +42,19 @@
       "sha256": "f0936acdb096654b9b5c69ef1365a0e7922b7476ecf8e85d3f5d619aa8f2574a"
     },
     "code/score/stages/design_layers.py": {
-      "bytes": 5400,
+      "bytes": 5134,
       "role": "code",
-      "sha256": "0b31c68d33bbd4fe2fea4c09ffe1f681e3b5b7c557f6906f0f5fb6e2f9efe235"
-    },
-    "code/score/stages/people_bodies/__init__.py": {
-      "bytes": 382,
-      "role": "code",
-      "sha256": "e1d6a5eede46b22fa55fa8216355c077fe02e8a3725861e3f7fee1d063651eec"
-    },
-    "code/score/stages/people_bodies/bodies.py": {
-      "bytes": 33065,
-      "role": "code",
-      "sha256": "a1896c2a9df052a12ad9d29d1bd75d7fa7da51715e4635dc49fcfbaedb3f2a1c"
-    },
-    "code/score/stages/people_bodies/clips.py": {
-      "bytes": 6475,
-      "role": "code",
-      "sha256": "372d00deb2f66e87fd0a025322db1039375e4fa134e32c2ac1ab10e531ad8e08"
-    },
-    "code/score/stages/people_bodies/full.py": {
-      "bytes": 1284,
-      "role": "code",
-      "sha256": "8e989d73b07f2fb1efb40e98d52627300b832422ab8b0aff36d1324720198bd5"
-    },
-    "code/score/stages/people_bodies/made_clips.py": {
-      "bytes": 3444,
-      "role": "code",
-      "sha256": "3fa645881bdede5561573d104698a92fa008272fb7454943813c7e6cd6befc07"
-    },
-    "code/score/stages/people_clothes.py": {
-      "bytes": 6499,
-      "role": "code",
-      "sha256": "530c3a454471b25557f746819aff9dc2d9171a6f43795018c10ea14737301cfd"
+      "sha256": "8f92e9be1117d057235d9c2fc6bc937658b9ff720219103dfafd7985b9f89290"
     },
     "code/score/stages/people_rows.py": {
-      "bytes": 33616,
+      "bytes": 17426,
       "role": "code",
-      "sha256": "683f2988dde71f94ce5434f48d9f6ba4d30c4fcf1db6359d98ee1747559fe0ab"
-    },
-    "code/score/stages/props/__init__.py": {
-      "bytes": 4295,
-      "role": "code",
-      "sha256": "2646d50a9913c2acb4e471283145425fe020be0af52418fe726bc62d527e9c17"
-    },
-    "code/score/stages/props/likeness.py": {
-      "bytes": 8602,
-      "role": "code",
-      "sha256": "bc88a65d0a319690c8ae2741246d657fa651366fb7c718c315a98c5367666c5e"
-    },
-    "code/score/stages/props/prop_data.py": {
-      "bytes": 9807,
-      "role": "code",
-      "sha256": "0ee57dbf9c2fe95dd5fd1e8366b32e657d860ecca7e3751386c0efdbc85e1ff7"
+      "sha256": "8284ce0b07116a72aeb88e7bd093d5bf40538d28021c47dd36a42f7acaca1961"
     },
     "code/score/stages/row_kinds.py": {
-      "bytes": 7710,
+      "bytes": 7673,
       "role": "code",
-      "sha256": "359367ae3a3855038ae4cf64f17d127fe03339443664d9d4ae8e91a837ea0824"
+      "sha256": "c1abe91cc2673cfd78a37376107d97ae931cdceb1b1eddcc966953bf3405e74a"
     },
     "code/score/stages/scene_record/__init__.py": {
       "bytes": 1520,
@@ -151,86 +106,6 @@
       "role": "code",
       "sha256": "919442171757d1084c280dc8f4a3940fb239b81f4d0d660c7ae3ce806cef0ca8"
     },
-    "code/tools/usd/annotate.py": {
-      "bytes": 7762,
-      "role": "code",
-      "sha256": "33e000a97e568f0774a48355d474a86cfb31c9d61ee0f4301a46e6ac3029bb5a"
-    },
-    "code/tools/usd/builders.py": {
-      "bytes": 39340,
-      "role": "code",
-      "sha256": "6d8d25c354ccdd58b14dd7f9682f24c38fa5ef4cfd14b9444f47e6e0eaaaedca"
-    },
-    "code/tools/usd/collide.py": {
-      "bytes": 7744,
-      "role": "code",
-      "sha256": "e0dd476ad4181d4db80b377110779182b2e2d4e7568b68dda48cbd8171474daf"
-    },
-    "code/tools/usd/colliders.py": {
-      "bytes": 7194,
-      "role": "code",
-      "sha256": "72f50f9704ab3848c2104baf75c66ff8f1e7edb7e829bedc5a54bf7c6f43ef61"
-    },
-    "code/tools/usd/compare.py": {
-      "bytes": 11521,
-      "role": "code",
-      "sha256": "09d20e9b6d407ef7774e2ec9676f7af85f6e40302e9e7190bf5e8b77112c5e2b"
-    },
-    "code/tools/usd/export.py": {
-      "bytes": 51029,
-      "role": "code",
-      "sha256": "996b528c7a15a082e3c91dfa073d9e1f57773eeb3673efdd73d06c72896f9ee9"
-    },
-    "code/tools/usd/glb_asset.py": {
-      "bytes": 9182,
-      "role": "code",
-      "sha256": "1db5adb5d33f58c5079145ef794729ff7ab3276b5e34dd2e28313ab2794e3f31"
-    },
-    "code/tools/usd/ground.py": {
-      "bytes": 9711,
-      "role": "code",
-      "sha256": "848251d4f5ce39039da5b970538bf0c1c6798147977ae829aa97e9b15c4ec934"
-    },
-    "code/tools/usd/ground_detail.py": {
-      "bytes": 23433,
-      "role": "code",
-      "sha256": "2a71c1e019af1559fe1810689d42d025682b7c96c92fefb5335271ae54600538"
-    },
-    "code/tools/usd/mars_sky.py": {
-      "bytes": 4698,
-      "role": "code",
-      "sha256": "424fa5d50170f7b97e07f0f1f725e011ef9cbefd5d395711e180f3bae912d0ee"
-    },
-    "code/tools/usd/pick_lock.py": {
-      "bytes": 2588,
-      "role": "code",
-      "sha256": "af11a3524ca12ed87b684e71dea5820006e1bad6913c5973d3e7e2e2867f2f0c"
-    },
-    "code/tools/usd/resting.py": {
-      "bytes": 16475,
-      "role": "code",
-      "sha256": "8cf8c2356b947b9e746473d9a0201a0236393028442112ca0cbbc6acc3879ce0"
-    },
-    "code/tools/usd/rocks.py": {
-      "bytes": 8957,
-      "role": "code",
-      "sha256": "e1a891c8d6937a5fcc59f8845d7035fa312ee89f855ca3b2bc71194d9559c6ee"
-    },
-    "code/tools/usd/scene.py": {
-      "bytes": 64135,
-      "role": "code",
-      "sha256": "b2854a9d116d8d4f9d047612f98087104aa1d6948c23723d5dc8142c058c7433"
-    },
-    "code/tools/usd/settle.py": {
-      "bytes": 47982,
-      "role": "code",
-      "sha256": "85a27ce41617d908600f2705b0d2a2a39480375cf1ac253a2a52f3351e0d2f84"
-    },
-    "code/tools/usd/shaders.py": {
-      "bytes": 5347,
-      "role": "code",
-      "sha256": "77a2366732d9433968e1eb16411ff9dfda00929189c833aa1fe089176157d8e3"
-    },
     "code/tools/usd/sound.py": {
       "bytes": 13587,
       "role": "code",
@@ -240,11 +115,6 @@
       "bytes": 3879,
       "role": "code",
       "sha256": "e30523ce76bbf9aa8cff2191af076722c0b186a681c82d9fc85177af5e0dc784"
-    },
-    "code/tools/usd/triage.py": {
-      "bytes": 41213,
-      "role": "code",
-      "sha256": "7dc0f447344ec6ac8e38cc21f63321b6198421de8ea91d737ba03f8343d5f73e"
     },
     "definition.json": {
       "bytes": 1041,
@@ -287,9 +157,9 @@
       "sha256": "a62b52b3e1bb0ab0e73992d136081a605d7cfe93237ed60fc33c878b795fe5e0"
     },
     "presets/world1/seed.json": {
-      "bytes": 1018,
+      "bytes": 166,
       "role": "record",
-      "sha256": "cbbcb637260ec589c4467c2da151b48713e6f53454c7d7495d1433c86573cb97"
+      "sha256": "f01ebf493ca695c8faa5cc8d7ee153054112e6bcaeb64b3aca4bb701ad8c00fd"
     },
     "run.json": {
       "bytes": 404,
@@ -317,76 +187,22 @@
   "picture": null,
   "picture_reason": "no world 1 output in the store pictures this algorithm",
   "provenance": {
-    "code": "20db86630ae106aaa39db6c453eb036fd0022c77ca64454b7bd38b6c2f38585c",
-    "commit": "1331a0120d3bc4627fedcd44f74cd79b875f2162",
+    "code": "fb2f7c71b4c023c76206b9fa6ce6b90203e52d9a889cc80c1ec727949d330440",
+    "commit": "e88348ed92ef3f98c6afb82bc26f0226905067c3",
     "made_with": [
       {
         "by": "score",
         "what": "made by score"
       }
     ],
-    "nodes": [
-      "sound@airlock",
-      "sound@base",
-      "sound@camp",
-      "sound@campgrounds",
-      "sound@cockpit",
-      "sound@docking_airlock",
-      "sound@engineroom",
-      "sound@flat",
-      "sound@galley",
-      "sound@garage",
-      "sound@greenhouse",
-      "sound@habitat",
-      "sound@hangar",
-      "sound@hub",
-      "sound@lab",
-      "sound@old_station",
-      "sound@quarters",
-      "sound@shiplock",
-      "sound@square",
-      "sound@stairwell",
-      "sound@storage",
-      "sound@street",
-      "sound@tube",
-      "sound@walkway",
-      "sound@workshop",
-      "sound@wreck"
-    ],
+    "nodes": [],
     "outside": [],
     "stage": "sound",
     "world": "world1"
   },
   "requires": [],
   "schema": "score-lib-entry/1",
-  "seen_in": [
-    "airlock",
-    "base",
-    "camp",
-    "campgrounds",
-    "cockpit",
-    "docking_airlock",
-    "engineroom",
-    "flat",
-    "galley",
-    "garage",
-    "greenhouse",
-    "habitat",
-    "hangar",
-    "hub",
-    "lab",
-    "old_station",
-    "quarters",
-    "shiplock",
-    "square",
-    "stairwell",
-    "storage",
-    "street",
-    "tube",
-    "walkway",
-    "workshop",
-    "wreck"
-  ],
+  "seen_in": [],
   "state": "draft",
   "tags": {
     "needs": [],

@@ -1,0 +1,126 @@
+{
+  "address": "algorithm/stair_core@1",
+  "files": {
+    "code.json": {
+      "bytes": 1605,
+      "role": "record",
+      "sha256": "3c2c85dad94fff4f1e4a33d8da1a53eda49986db6028ed7ec61afc2d557edcff"
+    },
+    "code/score/__init__.py": {
+      "bytes": 0,
+      "role": "code",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "code/score/library/__init__.py": {
+      "bytes": 2432,
+      "role": "code",
+      "sha256": "51ac56c59f0f9b102554d3af7f956506eab838d1bd4785c890f27b9c2a131733"
+    },
+    "code/score/stages/__init__.py": {
+      "bytes": 135918,
+      "role": "code",
+      "sha256": "5a9994fa9033e25f25c70509a529bcee77a13bb1658bb98d96001e2ea9cbc0d5"
+    },
+    "code/score/stages/place_build/__init__.py": {
+      "bytes": 63089,
+      "role": "code",
+      "sha256": "71b1d2fdca77141836db2c2c5a8842905ef9e67fe0a773d9695fc3c80cdf5442"
+    },
+    "code/score/stages/place_build/dome_shell.py": {
+      "bytes": 30404,
+      "role": "code",
+      "sha256": "c8b3b2dfa8bd3130f8bf6b6b2451da85d5851d7c779d2883a15fc4e031e281de"
+    },
+    "code/score/stages/place_build/gltf.py": {
+      "bytes": 7887,
+      "role": "code",
+      "sha256": "2f226615d12d22a0b5629362630753ba815eb1a8fbe38d676c7e2e27084bb56c"
+    },
+    "code/score/stages/place_build/ground_tracks.py": {
+      "bytes": 7372,
+      "role": "code",
+      "sha256": "a380d0ed5ef07422cac7c29ede80bee40f140a375448d83ebd50c25ec10b416a"
+    },
+    "code/score/stages/place_build/rainfall.py": {
+      "bytes": 6692,
+      "role": "code",
+      "sha256": "afcef879260a6f2a56e769576b982331f5710b1bb2d88825edb765d388bbdd9e"
+    },
+    "code/score/stages/place_build/ready/__init__.py": {
+      "bytes": 60592,
+      "role": "code",
+      "sha256": "41af042e0ffbbd68f68bcd412eaae146f26b230a2a8780079420a7847343d115"
+    },
+    "code/score/stages/place_build/ready/people.py": {
+      "bytes": 9634,
+      "role": "code",
+      "sha256": "6f0f0cc8b43e696c348e16bb8473179672b90bf471665be2bdf937c173d8f6e4"
+    },
+    "code/score/stages/place_build/relief.py": {
+      "bytes": 10825,
+      "role": "code",
+      "sha256": "a12cde710e22513adcb832423f93c60b7d74b108826b9e48f70edf290814dab6"
+    },
+    "code/score/stages/place_build/stair_core.py": {
+      "bytes": 23880,
+      "role": "code",
+      "sha256": "ee9dc20dd09320e33a16eb18567a40d5366ca897dca81d28ed942c7faea55bdb"
+    },
+    "definition.json": {
+      "bytes": 1352,
+      "role": "record",
+      "sha256": "3f720430582586a31b9fa65ae2c90763a0cb6b3a0ea5a1df60d6ae48483ec92f"
+    },
+    "presets/world1/seed.json": {
+      "bytes": 166,
+      "role": "record",
+      "sha256": "f01ebf493ca695c8faa5cc8d7ee153054112e6bcaeb64b3aca4bb701ad8c00fd"
+    },
+    "run.json": {
+      "bytes": 290,
+      "role": "record",
+      "sha256": "bbc3f56e378210eec6936f503ba82c03040eab80b72d0967e0b0052bc4761a9a"
+    },
+    "settings.schema.json": {
+      "bytes": 2397,
+      "role": "record",
+      "sha256": "89d82812d54c2ff75cf718b2603787605abe664312f4d3005de29e5b5813be56"
+    },
+    "test/score/stages/place_build/test_a_laid_scene_holds_its_library_entries_where_the_agent_put_them.py": {
+      "bytes": 42669,
+      "role": "code",
+      "sha256": "e1be13facd7cb263b552d82cc39af6f8eea3f86b4ac94cfe492463bf84df1a9c"
+    }
+  },
+  "id": "stair_core",
+  "kind": "algorithm",
+  "picture": null,
+  "picture_reason": "no world 1 output in the store pictures this algorithm",
+  "provenance": {
+    "code": "c1d5bd7b50b2c1c6b9b95006f40e1170215d6a7cea52011c5ab93f9c0cca74c2",
+    "commit": "e88348ed92ef3f98c6afb82bc26f0226905067c3",
+    "made_with": [
+      {
+        "by": "score",
+        "what": "made by score"
+      }
+    ],
+    "nodes": [],
+    "outside": [],
+    "stage": null,
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "needs": [],
+    "runnable": [
+      true
+    ]
+  },
+  "title": "Stair core: a switchback stairwell of real size as closed solids, flights, landings, railings, glazed front and doorways (score #128)",
+  "usd": null,
+  "version": 1
+}

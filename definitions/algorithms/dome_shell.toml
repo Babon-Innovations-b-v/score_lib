@@ -1,0 +1,14 @@
+# One engine algorithm of world 1 (README.md, Layout); read by score_lib/export/algorithm.py.
+name = "dome_shell"
+title = "Dome shell: ribbed glass domes, tunnels, ground discs and chamfered blocks as solids with named parts, cut for doors (score #128)"
+entry = "score.stages.place_build.dome_shell:shell"
+roots = ["score/stages/place_build/dome_shell.py"]
+search = ["score/stages/place_build"]
+constants = ["score/stages/place_build/dome_shell.py:MERIDIANS", "score/stages/place_build/dome_shell.py:RINGS", "score/stages/place_build/dome_shell.py:RIB", "score/stages/place_build/dome_shell.py:DECK", "score/stages/place_build/dome_shell.py:HOOPS", "score/stages/place_build/dome_shell.py:FLOOR", "score/stages/place_build/dome_shell.py:STEPS", "score/stages/place_build/dome_shell.py:TUBE_STEPS"]
+preset = []
+stage = ""
+contract = []
+needs = []
+tests = ["score/stages/place_build/test_a_laid_scene_holds_its_library_entries_where_the_agent_put_them.py"]
+picture = []
+requires = ["numpy", "usd-core"]

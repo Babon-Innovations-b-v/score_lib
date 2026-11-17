@@ -1,0 +1,30 @@
+# One engine algorithm of world 1 (README.md, Layout); read by score_lib/export/algorithm.py.
+# The walkers' routes (score #128, owner 2026-11-17): a pathfinder on the walkable floor, the route cut into pieces
+# Kimodo makes one after another from the pose the last ended in, joined into one motion.
+name = "walker_route"
+title = "Walker route: a walker's shortest way on its place's walkable floor, cut into Kimodo pieces and joined into one motion (score #128)"
+entry = "score.stages.walker_route:route"
+roots = ["score/stages/walker_route/__init__.py", "score/stages/walker_route/__main__.py", "tools/characters/clips/walker_route.py"]
+search = ["score/stages/walker_route", "tools/characters/clips", "tools/characters/people"]
+constants = ["score/stages/walker_route/__init__.py:RATE", "score/stages/walker_route/__init__.py:PACE", "score/stages/walker_route/__init__.py:STEP_FRAMES", "score/stages/walker_route/__init__.py:EASE", "score/stages/walker_route/__init__.py:PIECE_FRAMES", "score/stages/walker_route/__init__.py:LEAST_FRAMES", "score/stages/walker_route/__init__.py:OVERLAP", "score/stages/walker_route/__init__.py:TAIL", "score/stages/walker_route/__init__.py:HOLD", "score/stages/walker_route/__init__.py:FLIGHT_SLOPE", "score/stages/walker_route/__init__.py:SKATE_MOST", "score/stages/walker_route/__init__.py:ROUTE_MOST"]
+preset = []
+stage = ""
+contract = []
+needs = ["a CUDA card (Kimodo)"]
+tests = ["score/stages/walker_route/test_a_walker_keeps_off_every_solid_and_its_pieces_join.py"]
+picture = []
+requires = ["numpy"]
+
+[[outside]]
+name = "Kimodo (code) with the Kimodo-SOMA-RP-v1.1 checkpoint"
+version = "score's vendored Kimodo at the world's commit; checkpoint Kimodo-SOMA-RP-v1.1"
+where = "https://github.com/nv-tlabs/kimodo (score vendors it at vendor/kimodo); https://huggingface.co/nvidia/Kimodo-SOMA-RP-v1.1"
+why = "Apache-2.0 code and NVIDIA Open Model License weights: neither may go out under MIT"
+paths = ["vendor/kimodo/*"]
+
+[[outside]]
+name = "SOMA-X mean rig"
+version = "NVlabs/SOMA-X as score's maker fetches it"
+where = "https://github.com/NVlabs/SOMA-X"
+why = "Apache-2.0: its files stay outside; the entry carries only score's code that fits the rig"
+paths = []
