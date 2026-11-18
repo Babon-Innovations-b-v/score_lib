@@ -1,0 +1,77 @@
+{
+  "address": "character/astronaut_trellis@1",
+  "files": {
+    "body.glb": {
+      "bytes": 2506156,
+      "role": "gltf",
+      "sha256": "8a5cfbabd2c3057ed0272d81d1d08997a5f0f8ddf042985302838110bc5cca2f"
+    },
+    "character.usdc": {
+      "bytes": 1885488,
+      "role": "usd",
+      "sha256": "658a3efa0225a5dbbfab2b611900002c812da73337558dfbaaf588a6da18ed28"
+    },
+    "rig.json": {
+      "bytes": 2266,
+      "role": "record",
+      "sha256": "9c472e859fdb633eae9bf33847a638ef5673bf6464858b5aac7dcde7eecda810"
+    },
+    "source.json": {
+      "bytes": 1178,
+      "role": "record",
+      "sha256": "012fd40dd5c0f2c6166237cdebfaf5c3a230ecd6601207def8f304b4b00c0858"
+    }
+  },
+  "id": "astronaut_trellis",
+  "kind": "character",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "6e25574a290e3d46c807955e3a18ede4e4fd5b40",
+    "files_from": {
+      "body.glb": "still_rig/body.glb",
+      "character.usdc": "still_rig/character.usdc",
+      "rig.json": "still_rig/rig.json",
+      "source.json": "still_rig/source.json"
+    },
+    "made_with": [
+      {
+        "by": "kimodo",
+        "what": "the clips"
+      },
+      {
+        "by": "procfunc",
+        "what": "each part's finish, a palette library surface (ProcFunc recipe)"
+      },
+      {
+        "by": "score",
+        "what": "rigged by score (tools/characters/still_rig)"
+      },
+      {
+        "by": "soma_x",
+        "what": "the skeleton, clips and the SOMA surface its skin weights are moved from"
+      },
+      {
+        "by": "trellis2",
+        "what": "the suit's shape (TRELLIS.2-4B from the people line's astronaut picture)"
+      }
+    ],
+    "taken_from": "score tools/characters/still_rig on this PC: the SCORE paper's TRELLIS.2 astronaut (Figure 2) rigged on people-dress-astronaut-made's skeleton",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "look": [
+      "astronaut"
+    ],
+    "maker": [
+      "trellis2"
+    ]
+  },
+  "title": "Astronaut (TRELLIS.2 suit, rigged)",
+  "usd": null,
+  "version": 1
+}
