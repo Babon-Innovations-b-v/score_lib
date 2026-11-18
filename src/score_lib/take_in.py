@@ -41,6 +41,10 @@ ROLES = {".json": "record", ".npz": "motion", ".usdc": "usd", ".usda": "usd", ".
 # A take's files: its models and its record, and in its `.svviews` folder the close-up and its camera.
 TAKE_ROLES = {".glb": "gltf", ".json": "record"}
 CAMERA_ROLES = {".png": "closeup", ".json": "record"}
+# A place built by score's placing method (take_in_place.py): its named files' roles, and its scene package's.
+PLACE_ROLES = {"scene.usda": "usd", "concept.png": "concept", "render.png": "render", "review/sheet.jpg": "review",
+               "viewer.glb": "viewer"}
+PACKAGE = "package/"
 NO_PICTURE = "a loose made file taken in (score-lib take-in): no picture made yet"
 COMPARED_OUT = ("address", "version", "state", "locked") + entries.QUALITY
 
@@ -50,8 +54,11 @@ class Refused(ValueError):
 
 
 def role_of(name, kind=None):
-    """A file's role by its ending (a take's by TAKE_ROLES, and CAMERA_ROLES inside its `.svviews` folder); Refused
-    for an ending the take-in does not know."""
+    """A file's role by its ending (a take's by TAKE_ROLES, and CAMERA_ROLES inside its `.svviews` folder; a place's
+    named files by PLACE_ROLES and its scene package's as `package`); Refused for an ending the take-in does not
+    know."""
+    if kind == "place" and (name in PLACE_ROLES or name.startswith(PACKAGE)):
+        return PLACE_ROLES.get(name, "package")
     path = pathlib.PurePosixPath(name)
     roles = ROLES if kind != "take" else CAMERA_ROLES if path.parent.suffix == ".svviews" else TAKE_ROLES
     role = roles.get(path.suffix.lower())

@@ -81,11 +81,23 @@ def command_fetch(options):
     print(f"fetched {len(records)} entries into {options.into}")
 
 
-def command_take_in(options):
+def take_in_report(options):
+    """The take-in's report: a place_build folder's (--place) or a list's."""
+    if options.place:
+        from score_lib import take_in_place
+        if not options.commit:
+            raise SystemExit("take-in --place needs --commit <the score commit that built the place>")
+        taking = take_in_place.taken_in_place_saved if options.save else take_in_place.taken_in_place
+        return taking(options.root, blob_store(), options.place, options.commit, options.world)
     from score_lib import take_in
-    listing = take_in.read_listing(options.listing)
+    if not options.listing:
+        raise SystemExit("take-in needs a list file or --place <folder>")
     taking = take_in.taken_in_saved if options.save else take_in.take_in
-    report = taking(options.root, blob_store(), listing)
+    return taking(options.root, blob_store(), take_in.read_listing(options.listing))
+
+
+def command_take_in(options):
+    report = take_in_report(options)
     if options.report:
         pathlib.Path(options.report).write_text(json.dumps(report, indent=2, sort_keys=True) + "\n")
     print(", ".join(f"{status} {len(found)}" for status, found in report.items() if status != "saved"))
@@ -225,8 +237,14 @@ def parser():
     fetched.add_argument("--with-requires", action="store_true")
     fetched.add_argument("--file", action="append", help="only this file of the entries (repeatable)")
     fetched.set_defaults(handle=command_fetch)
-    taken = commands.add_parser("take-in", help="take loose made files (no store outputs) in as draft entries")
-    taken.add_argument("listing", help="the list of entries and their files (take_in.py's docstring has its shape)")
+    taken = commands.add_parser("take-in", help="take loose made files (no store outputs), or a place built by score's "
+                                                "placing method, in as draft entries")
+    taken.add_argument("listing", nargs="?",
+                       help="the list of entries and their files (take_in.py's docstring has its shape)")
+    taken.add_argument("--place", help="a place built by score's placing method (a place_build folder), taken in "
+                                       "as a draft place entry (take_in_place.py)")
+    taken.add_argument("--commit", help="with --place: the score commit that built the place")
+    taken.add_argument("--world", default="world1", help="with --place: the world the place belongs to")
     taken.add_argument("--report", help="write the report (every address by status, every refusal) as JSON")
     taken.add_argument("--save", action="store_true",
                        help="under the handover's lock, commit and push the entries written and the index")

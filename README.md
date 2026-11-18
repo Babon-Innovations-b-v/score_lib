@@ -17,7 +17,7 @@ The index lives in git; the bytes live in a blob store. Every entry is versioned
 | kit | one kit piece (a wall panel, a frame, a CC0 kit's piece such as a barricade or a dome wall panel) or one place kit (and a ship place's kit layout); the old per-place kits were removed 2026-11-16 (score #128) |
 | algorithm | one engine algorithm: code snapshot, settings schema, world 1 preset, tests, run line; among them the placing method (`place_build`) and the code-made parts it lays (`dome_shell`, `stair_core`, `wall_kit`, `terrain_kit`, `rain`, `ground_tracks`), and the walkers' `walker_route` |
 | layer | one sublayer of one place (the physics layer too), its paths pointing at library addresses: a part of its place, shown under it, never a shelf of its own; the old per-place layers were removed 2026-11-16 (score #128) |
-| place | one place's root, its sublayers pointing at layer entries, with its plan and cast (a place only others show, such as world 1's far city, too: `shown` in the world toml); the old place entries were removed 2026-11-16 (score #128); a scene laid by score's `place_build` is not yet a place entry, since this kind is read from a store's assembly and `take-in` takes no place |
+| place | one place's root, its sublayers pointing at layer entries, with its plan and cast (a place only others show, such as world 1's far city, too: `shown` in the world toml); the old place entries were removed 2026-11-16 (score #128); a scene laid by score's `place_build` comes in by `take-in --place`: its `scene.usda` pointing at the library entries it lays (`requires`), its own files (code-made parts, the palette), concept, render, review sheet, viewer GLB and scene package |
 | concept | one place's locked concept (`concept.png`) and `concept.json`: its pick, the prompt, marks and notes of every draw that led to it, and every draw of the place by its sha; made by `score-lib concept` only, on the creator's pick in score's concept review, never shipped |
 
 An address is `<kind>/<id>@<version>`, for example `effect/devil_east.camp@1`.
@@ -60,6 +60,7 @@ score-lib lock <address>... | --all-drafts --kind k
 score-lib withdraw <address>          (a locked entry, or a draft: frozen as it stood)
 score-lib fetch <address>... --into <root> [--with-requires] [--file <name>]...
 score-lib take-in <list.json> [--report <file>]
+score-lib take-in --place <place_build folder> --commit <score sha> [--world w] [--save]
 score-lib test algorithm/<name>@<v>
 score-lib run algorithm/<name>@<v> --preset world1 --out <dir> [--arg name=value]
 score-lib index
@@ -96,6 +97,13 @@ files, where each came from and its sources, admitted by the same MIT rule; the 
 entry has no OpenUSD form and no picture yet (a model is its glTF, `gltf/...`), so `quality` and `web3d` pass a model
 of it by, and `verify` checks it whole: every file named where it came from, its role by its ending, and every buffer
 and picture its `.gltf` names held beside it. score fetches one file of an entry with `fetch <address> --file <name>`.
+
+`take-in --place <folder> --commit <score sha> [--world w] [--save]` takes a place built by score's placing method
+(a `place_build` folder) in as the draft `place/<place>@<next>` (`src/score_lib/take_in_place.py`): every asset path
+of its scene (and of its own USD) that named a library copy under `assets/` points at that entry's search path
+(`score_lib/<kind>/<id>/<v>/<file>`), so the library's bytes are not copied again; the place's own files keep their
+paths. `fetch place/<place>@<v> --into <root> --with-requires` then gives a stage that opens with
+`PXR_AR_DEFAULT_SEARCH_PATH=<root>`.
 
 ## Web copies and the audit
 
