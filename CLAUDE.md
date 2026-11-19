@@ -18,7 +18,8 @@ A library of reusable parts of SCORE worlds: records in git (`entries/`), bytes 
 - A locked entry is never rewritten; changed content becomes the next version as a draft.
 - The export reads the SCORE store and the score repository and never writes to either.
 - One function, one purpose; no single-letter names outside one-line comprehensions and lambdas.
-- No new `.md` files beyond README.md and CLAUDE.md overlays.
+- No new `.md` files beyond README.md, CLAUDE.md overlays, CONTRIBUTING.md and `.github/pull_request_template.md`
+  (owner, 2026-11-19: "make a contributions tab in the score lib repo, with contribution rules and a pr template").
 - Commits: imperative and scoped (`export: ...`).
 
 ## Where things are
