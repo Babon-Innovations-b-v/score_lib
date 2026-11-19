@@ -271,10 +271,14 @@ def committed(root, message, paths=SAVED_PATHS):
 
 def caught_up(root):
     """(caught up, why): the current branch rebased onto origin's, so a push after other writers' commits (take-in,
-    another handover's checkout) is a fast-forward; a rebase that stops is aborted, the branch left as it was."""
+    another handover's checkout) is a fast-forward; a rebase that stops is aborted, the branch left as it was. A branch
+    origin does not hold yet has nothing to rebase onto, so its first push goes as it is."""
     branch = git(root, "rev-parse", "--abbrev-ref", "HEAD")
     if branch.returncode != 0 or branch.stdout.strip() == "HEAD":
         return False, "the library is on no branch" if branch.returncode == 0 else last_line(branch)
+    remote = git(root, "ls-remote", "--exit-code", "--heads", "origin", branch.stdout.strip())
+    if remote.returncode == 2:
+        return True, ""
     done = git(root, "pull", "-q", "--rebase", "origin", branch.stdout.strip())
     if done.returncode != 0:
         git(root, "rebase", "--abort")
