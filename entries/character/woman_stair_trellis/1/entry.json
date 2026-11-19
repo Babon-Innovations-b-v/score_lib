@@ -1,0 +1,85 @@
+{
+  "address": "character/woman_stair_trellis@1",
+  "files": {
+    "body.glb": {
+      "bytes": 7906828,
+      "role": "gltf",
+      "sha256": "efd834e48fa4e9d45c3f2fd32bb87f1bf870f2c0cf87a9f5e253fb13f70090d1"
+    },
+    "character.usdc": {
+      "bytes": 3126138,
+      "role": "usd",
+      "sha256": "cce0fe6b312e324bbbb46c33f571723e3fff57e3cf05eb0bd78969692f467d69"
+    },
+    "rig.json": {
+      "bytes": 2437,
+      "role": "record",
+      "sha256": "f80ac55c4b21dbd9ade0aa636ad48d171503550250129be00478f8e9aef76e79"
+    },
+    "source.json": {
+      "bytes": 2064,
+      "role": "record",
+      "sha256": "fac81be833c15b31b55824e710bef09b5581df786f311fbd4227872b19c1c68e"
+    },
+    "textures/body_0.png": {
+      "bytes": 2730026,
+      "role": "texture",
+      "sha256": "ff4fa2ac28903136297cedbb0e00bc8957bd2378a06445f3e4272ce13fb76140"
+    },
+    "textures/body_1.png": {
+      "bytes": 1177312,
+      "role": "texture",
+      "sha256": "3391a132c9f0d0a048cb216ff512d2b760894531b0bb818e962a3673d8ff7947"
+    }
+  },
+  "id": "woman_stair_trellis",
+  "kind": "character",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "44590e10f",
+    "files_from": {
+      "body.glb": "still_rig/body.glb",
+      "character.usdc": "still_rig/character.usdc",
+      "rig.json": "still_rig/rig.json",
+      "source.json": "still_rig/source.json",
+      "textures/body_0.png": "still_rig/usd/textures/body_0.png",
+      "textures/body_1.png": "still_rig/usd/textures/body_1.png"
+    },
+    "made_with": [
+      {
+        "by": "kimodo",
+        "what": "the clips"
+      },
+      {
+        "by": "score",
+        "what": "rigged by score (tools/characters/still_rig)"
+      },
+      {
+        "by": "soma_x",
+        "what": "the skeleton, clips and the SOMA surface its skin weights are moved from"
+      },
+      {
+        "by": "trellis2",
+        "what": "the body's shape and paint (TRELLIS.2-4B from the people line's woman_stair close-up)"
+      }
+    ],
+    "taken_from": "score tools/characters/still_rig on this PC: the stairwell woman, the street man and two crowd members as TRELLIS.2 player models in their own graded paint, rigged on their dressed bodies' skeletons",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "look": [
+      "woman_stair"
+    ],
+    "maker": [
+      "trellis2"
+    ]
+  },
+  "title": "Stairwell woman (TRELLIS.2, rigged)",
+  "usd": null,
+  "version": 1
+}

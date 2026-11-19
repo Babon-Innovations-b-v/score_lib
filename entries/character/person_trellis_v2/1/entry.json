@@ -1,0 +1,85 @@
+{
+  "address": "character/person_trellis_v2@1",
+  "files": {
+    "body.glb": {
+      "bytes": 6726180,
+      "role": "gltf",
+      "sha256": "6f2294270e4e4240dab5e7519d4ead681c2f26603c888143085bc0e9923a3088"
+    },
+    "character.usdc": {
+      "bytes": 2524845,
+      "role": "usd",
+      "sha256": "3b070535f4c5d69e515b95303f1a813394f76fcab0ef1b9de58b8a12b72c9753"
+    },
+    "rig.json": {
+      "bytes": 2457,
+      "role": "record",
+      "sha256": "1fadf4d6560db351022f367e6807ed5987d892a2b9f5a39bcc6340a3a17a932f"
+    },
+    "source.json": {
+      "bytes": 2052,
+      "role": "record",
+      "sha256": "73d148675ca0184184415c80997c02973a37640e79d53be1e7338ea530cc1736"
+    },
+    "textures/body_0.png": {
+      "bytes": 2582026,
+      "role": "texture",
+      "sha256": "8fc06814036b37040d584ba57655bcc9cd58872dbc3810a12edf2630e559c6c7"
+    },
+    "textures/body_1.png": {
+      "bytes": 851114,
+      "role": "texture",
+      "sha256": "636d0b1d9e3f1f245a69afb66c44989aa1db3bbe03aeca468b9d6f7289ecd1b1"
+    }
+  },
+  "id": "person_trellis_v2",
+  "kind": "character",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "44590e10f",
+    "files_from": {
+      "body.glb": "still_rig/body.glb",
+      "character.usdc": "still_rig/character.usdc",
+      "rig.json": "still_rig/rig.json",
+      "source.json": "still_rig/source.json",
+      "textures/body_0.png": "still_rig/usd/textures/body_0.png",
+      "textures/body_1.png": "still_rig/usd/textures/body_1.png"
+    },
+    "made_with": [
+      {
+        "by": "kimodo",
+        "what": "the clips"
+      },
+      {
+        "by": "score",
+        "what": "rigged by score (tools/characters/still_rig)"
+      },
+      {
+        "by": "soma_x",
+        "what": "the skeleton, clips and the SOMA surface its skin weights are moved from"
+      },
+      {
+        "by": "trellis2",
+        "what": "the body's shape and paint (TRELLIS.2-4B from the people line's man_stair close-up)"
+      }
+    ],
+    "taken_from": "score tools/characters/still_rig on this PC: the stairwell woman, the street man and two crowd members as TRELLIS.2 player models in their own graded paint, rigged on their dressed bodies' skeletons",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "look": [
+      "person"
+    ],
+    "maker": [
+      "trellis2"
+    ]
+  },
+  "title": "Street crowd member 2 (TRELLIS.2 from the stairwell man's picture, rigged)",
+  "usd": null,
+  "version": 1
+}
