@@ -297,7 +297,7 @@ def home_free(context, candidate):
             continue
         source = candidate.known.pop(name, None) or file_sha256(path)
         folder = hashlib.sha256(f"{candidate.kind}/{candidate.identity}".encode()).hexdigest()[:16]
-        target = context.scratch / "home_free" / folder / name
+        target = entries.inside(context.scratch / "home_free" / folder, name)
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(text.replace(home, "~/"), errors="surrogateescape")
         candidate.files[name] = target

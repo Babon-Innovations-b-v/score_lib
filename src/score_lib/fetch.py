@@ -28,8 +28,11 @@ def closure(root, addresses, with_requires):
 
 
 def destination(into, record, name):
+    """Where one file of an entry is fetched to; UnsafeName when its name would land outside the entry's folder (an
+    existing link is fetch's own and stays: place_file never writes through it)."""
     kind, entry_id, version = entries.parse_address(record["address"])
-    return pathlib.Path(into) / entries.library_path(kind, entry_id, version, name)
+    return entries.inside(pathlib.Path(into) / entries.library_path(kind, entry_id, version, ""), name,
+                          existing_link_ok=True)
 
 
 def place_file(blobs, sha, target, link):

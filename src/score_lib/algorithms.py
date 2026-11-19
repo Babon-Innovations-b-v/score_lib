@@ -28,7 +28,7 @@ def materialise(root, blobs, address, folder, preset="world1"):
     for prefix in ("code/", f"presets/{preset}/", "test/"):
         for name in sorted(record["files"]):
             if name.startswith(prefix):
-                target = pathlib.Path(folder) / name[len(prefix):]
+                target = entries.inside(folder, name[len(prefix):])
                 target.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copyfile(base / name, target)
     return record, base

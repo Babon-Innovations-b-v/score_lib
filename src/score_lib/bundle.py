@@ -79,10 +79,10 @@ def in_review_environment(environ=None):
 
 def safe_name(name):
     """Refused for a file name inside an entry that could land outside it."""
-    path = pathlib.PurePosixPath(name)
-    if (not name or "\\" in name or "//" in name or name.endswith("/") or path.is_absolute() or ".." in path.parts
-            or "." in name.split("/")):
-        raise Refused(f"{name!r}: a file of an entry is named inside it, with no absolute part, '..' or '\\'")
+    try:
+        entries.checked_name(name)
+    except entries.UnsafeName as why:
+        raise Refused(str(why)) from why
 
 
 def allowed_ending(kind, name):
@@ -215,7 +215,7 @@ def unpacked(path, folder):
         for member in packed:
             total = member_checked(member, seen, total, pathlib.Path(path).stat().st_size)
             seen.add(member.name)
-            target = folder / member.name
+            target = entries.inside(folder, member.name)
             target.parent.mkdir(parents=True, exist_ok=True)
             with packed.extractfile(member) as stream, open(target, "wb") as written:
                 shutil.copyfileobj(stream, written, CHUNK)

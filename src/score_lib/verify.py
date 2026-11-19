@@ -214,7 +214,10 @@ def check_usd_entry(root, blobs, record):
     failures = []
     folder = pathlib.Path(tempfile.mkdtemp(prefix="score-lib-verify-"))
     try:
-        fetched = fetch(root, blobs, [record["address"]], folder, with_requires=True, link=True)
+        try:
+            fetched = fetch(root, blobs, [record["address"]], folder, with_requires=True, link=True)
+        except entries.UnsafeName as why:
+            return [(record["address"], f"files: {why}")]
         allowed = allowed_unresolved(fetched)
         context = Ar.ResolverContext(Ar.DefaultResolverContext([str(folder)]))
         kind, entry_id, version = entries.parse_address(record["address"])

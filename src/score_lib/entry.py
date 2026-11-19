@@ -28,6 +28,33 @@ def parse_address(address):
     return found["kind"], found["id"], int(found["version"])
 
 
+class UnsafeName(ValueError):
+    """A file name in a record that could land outside the folder it belongs in."""
+
+
+def checked_name(name):
+    """The name when it is a plain relative POSIX file name inside an entry; UnsafeName for an absolute name, a drive
+    letter or any colon, a backslash, a NUL, or an empty, '.' or '..' segment (score_lib #1: a hand-written
+    entry.json skips take-in)."""
+    if (not isinstance(name, str) or not name or name.startswith("/") or any(each in name for each in ("\\", ":", "\0"))
+            or any(part in ("", ".", "..") for part in name.split("/"))):
+        raise UnsafeName(f"{name!r}: a file of an entry is named inside it, with no absolute part, drive, '.', '..' "
+                         f"or '\\'")
+    return name
+
+
+def inside(folder, name, existing_link_ok=False):
+    """The path of a record's file name under `folder`; UnsafeName when the name is not a plain one, when it resolves
+    outside `folder` (a symlinked folder on the way out included) or, unless `existing_link_ok`, when a symlink
+    already stands at it."""
+    path = pathlib.Path(folder) / checked_name(name)
+    if not path.parent.resolve().is_relative_to(pathlib.Path(folder).resolve()):
+        raise UnsafeName(f"{name!r}: resolves outside {folder}")
+    if path.is_symlink() and not existing_link_ok:
+        raise UnsafeName(f"{name!r}: a symlink already stands at {path}")
+    return path
+
+
 def address_of(kind, entry_id, version):
     """The address of one entry."""
     return f"{kind}/{entry_id}@{version}"

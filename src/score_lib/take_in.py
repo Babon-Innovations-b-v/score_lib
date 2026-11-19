@@ -113,8 +113,10 @@ def checked(listed):
     if not entries.ID_PATTERN.match(listed["id"]):
         raise Refused(f"{listed['id']}: not an entry id")
     for name in listed["files"]:
-        if pathlib.PurePosixPath(name).is_absolute() or ".." in pathlib.PurePosixPath(name).parts:
-            raise Refused(f"{name}: a file of an entry is named inside it")
+        try:
+            entries.checked_name(name)
+        except entries.UnsafeName as why:
+            raise Refused(str(why)) from why
 
 
 def settle(root, listed, about, sources):

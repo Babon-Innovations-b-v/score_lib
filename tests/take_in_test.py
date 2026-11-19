@@ -144,6 +144,26 @@ def test_fetch_one_file(library, tmp_path):
     with pytest.raises(MissingFile):
         fetch(library, blobs, ["model/box.gltf@1"], into, names=["gltf/nothing.bin"])
     assert pathlib.Path(into / "score_lib/model/box.gltf/1/gltf/box.bin").read_bytes() == b"\0" * 24
+    # score_lib #1: a file name written by hand into entry.json (no take-in) never lands outside the entry's folder
+    path = entries.folder_of(library, "model", "box.gltf", 1) / "entry.json"
+    record = json.loads(path.read_text())
+    held = record["files"]["gltf/box.bin"]
+    for name in ("../../../../../../escaped.bin", "/tmp/escaped.bin", "C:/escaped.bin", "gltf/./box.bin", "a\\b.bin"):
+        path.write_text(json.dumps({**record, "files": {name: held}}))
+        for link in (False, True):
+            with pytest.raises(ValueError):
+                fetch(library, blobs, ["model/box.gltf@1"], tmp_path / "escape", link=link)
+    assert not (tmp_path / "escaped.bin").exists() and not pathlib.Path("/tmp/escaped.bin").exists()
+    outside = tmp_path / "outside"
+    outside.mkdir()
+    (tmp_path / "linked/score_lib/model/box.gltf/1").mkdir(parents=True)
+    (tmp_path / "linked/score_lib/model/box.gltf/1/gltf").symlink_to(outside)
+    path.write_text(json.dumps(record))
+    with pytest.raises(ValueError):
+        fetch(library, blobs, ["model/box.gltf@1"], tmp_path / "linked")
+    assert not any(outside.iterdir())
+    path.write_text(json.dumps({**record, "files": {"../../../../../../escaped.bin": held}}))
+    assert any("escaped.bin" in fault for _, fault in verify.check_schemas(library, [entries.load(path)]))
 
 
 def a_take(folder):
