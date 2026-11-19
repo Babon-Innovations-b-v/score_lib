@@ -10,6 +10,9 @@ A library of reusable parts of SCORE worlds: records in git (`entries/`), bytes 
   `config/sources.toml` is added only from the source's real terms; a source whose own bytes cannot go out under MIT
   stays outside (an algorithm's `outside` requirement), never copied in.
 - Real data only.
+- Bytes live in the blob store, never on a local disk (the owner's rule for every machine, 2026-11-19: "everything
+  lives in the bucket instead of my local"). A checkout and its caches are throwaway: a local copy of an entry's bytes
+  is a cache that may be removed at any time, and a tool writes what it makes into the blob store, not a local folder.
 - A locked entry is never rewritten; changed content becomes the next version as a draft.
 - The export reads the SCORE store and the score repository and never writes to either.
 - One function, one purpose; no single-letter names outside one-line comprehensions and lambdas.
