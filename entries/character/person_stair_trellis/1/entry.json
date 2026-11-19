@@ -1,0 +1,85 @@
+{
+  "address": "character/person_stair_trellis@1",
+  "files": {
+    "body.glb": {
+      "bytes": 6649908,
+      "role": "gltf",
+      "sha256": "aedecd16739ff5e26bc20f19bbc7bc99a5e92651d06ef54eb1b40eed9ae548fa"
+    },
+    "character.usdc": {
+      "bytes": 2561266,
+      "role": "usd",
+      "sha256": "169eba60af07a9ca7cffea9127d94c74176e053db7af9518fc9a420f12b40331"
+    },
+    "rig.json": {
+      "bytes": 2468,
+      "role": "record",
+      "sha256": "d4934e97220611952e4f4b1f8596cc91bf07f376b95987184c2b0a2a9e1a8c76"
+    },
+    "source.json": {
+      "bytes": 2227,
+      "role": "record",
+      "sha256": "9cea27a6b6b6a3b8ec9fab7150b0ad929d5a41d80b9f0ee459a454c1aa794cd1"
+    },
+    "textures/body_0.png": {
+      "bytes": 2417259,
+      "role": "texture",
+      "sha256": "b08efddbd885d266e81af101bbe5024d10a6a4ec7f7c68cc90a292573d8f56e3"
+    },
+    "textures/body_1.png": {
+      "bytes": 901441,
+      "role": "texture",
+      "sha256": "58426d5b568d5fc6a7b0735ed6655b751223f2d9cd10b400a123897acc722076"
+    }
+  },
+  "id": "person_stair_trellis",
+  "kind": "character",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "97887c635",
+    "files_from": {
+      "body.glb": "still_rig/body.glb",
+      "character.usdc": "still_rig/character.usdc",
+      "rig.json": "still_rig/rig.json",
+      "source.json": "still_rig/source.json",
+      "textures/body_0.png": "still_rig/usd/textures/body_0.png",
+      "textures/body_1.png": "still_rig/usd/textures/body_1.png"
+    },
+    "made_with": [
+      {
+        "by": "kimodo",
+        "what": "the clips"
+      },
+      {
+        "by": "score",
+        "what": "rigged by score (tools/characters/still_rig)"
+      },
+      {
+        "by": "soma_x",
+        "what": "the skeleton, clips and the SOMA surface its skin weights are moved from"
+      },
+      {
+        "by": "trellis2",
+        "what": "the body's shape and paint (TRELLIS.2-4B from the people line's person close-up)"
+      }
+    ],
+    "taken_from": "score tools/characters/still_rig on this PC: the stairwell woman and man re-rigged, their shoes laid on the body's feet and their arms turned into their sleeves",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "look": [
+      "person"
+    ],
+    "maker": [
+      "trellis2"
+    ]
+  },
+  "title": "Stairwell man (TRELLIS.2, rigged)",
+  "usd": null,
+  "version": 1
+}
