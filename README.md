@@ -67,13 +67,16 @@ score-lib bundle <address>... --out <name>.tgz
 score-lib review --base origin/main --contributor <handle> --bundle <url> --sheet <sheet.png>
 score-lib take-bundle <url>... --pr <n> --contributor <handle> --commit <sha> [--save]
 score-lib trace <address | sha256 | handle:<h> | source:<id> | pr:<n>>
-score-lib test | run algorithm/<name>@<v> ...
+score-lib test algorithm/<name>@<v> [--score <score checkout>] | run algorithm/<name>@<v> ...
 score-lib index | verify [--deep] [--address a] | quality | audit | web3d | page | handover | held | concept
 score-lib hub-mirror <owner/name> [--check-only]
 ```
 
 - The blob store is set by environment variables only (`config/blobstore.env.template`): a local folder, an
-  S3-compatible store, or the Hugging Face dataset (`SCORE_LIB_HUB_REPO`, read with no key).
+  S3-compatible store, or the Hugging Face dataset (`SCORE_LIB_HUB_REPO`, read with no key). With none set, a command
+  that only reads (fetch, test, run, verify) reads the public copy `config/public_store.toml` names.
+- `test` runs an algorithm's tests in a throwaway Python with its requirements (uv); `--score <score checkout>`
+  (default `SCORE_REPO`) lays in the code the library may not carry (`code.json`'s `left_out`), checked by sha256.
 - `export` and `handover` read a SCORE store (`SCORE_STORE`) and the score repository (`SCORE_REPO`) and never
   write to either. `handover` is the one call score's runner makes when a place is accepted.
 - `take-in` takes loose made files in as draft entries; `take-in --place` takes in a place built by score's placing

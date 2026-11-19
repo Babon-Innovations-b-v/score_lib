@@ -2,19 +2,64 @@
   "address": "algorithm/ground_detail@2",
   "files": {
     "code.json": {
-      "bytes": 850,
+      "bytes": 2492,
       "role": "record",
-      "sha256": "8f8f11f6812965b68881583cf1de9b4109e4a372f09422fc8cf262cb023e9e6b"
+      "sha256": "dcaf817d6af536ccc3fc444b5fdfb4d99914717875f4c7054e0a90354fcbd3a0"
     },
     "code/tools/library/library_files.py": {
       "bytes": 9806,
       "role": "code",
       "sha256": "4079b484564afeb4e22331b93e1d519cc209ebfde5d1bab7e171f92618b29843"
     },
+    "code/tools/props/baked_gltf.py": {
+      "bytes": 4875,
+      "role": "code",
+      "sha256": "1adb5416ac9dac7be3377423507cd9b2788be4bf2377c2743b07f0252aef68ab"
+    },
+    "code/tools/props/glb_file.py": {
+      "bytes": 18429,
+      "role": "code",
+      "sha256": "7f5ee2b55027e758fa21f1f1ec322f3718ed11c21fd4877c9ffa25d11a524204"
+    },
+    "code/tools/props/library/library.py": {
+      "bytes": 9873,
+      "role": "code",
+      "sha256": "35f514d283de9fb426cfe0203bc215d0077da9c76bbb85fd2fd87f862ff5e76b"
+    },
+    "code/tools/props/library/package.py": {
+      "bytes": 15162,
+      "role": "code",
+      "sha256": "c1536c657ce7103ff827c9b7e1855920890b13269cf0d0a27bd026bbe63a50e3"
+    },
+    "code/tools/props/library/stored_parts.py": {
+      "bytes": 4205,
+      "role": "code",
+      "sha256": "f5daf860d4ec5a6aa65a7ffb314bb6f620db96764eb9ffd1779342ee7f145d1e"
+    },
+    "code/tools/props/paths.py": {
+      "bytes": 1883,
+      "role": "code",
+      "sha256": "649aeadaec8c2ad8aee5b58392949620bf19173ca921126ed75e286d9655ef2d"
+    },
     "code/tools/usd/builders.py": {
       "bytes": 39340,
       "role": "code",
       "sha256": "6d8d25c354ccdd58b14dd7f9682f24c38fa5ef4cfd14b9444f47e6e0eaaaedca"
+    },
+    "code/tools/usd/colliders.py": {
+      "bytes": 7194,
+      "role": "code",
+      "sha256": "72f50f9704ab3848c2104baf75c66ff8f1e7edb7e829bedc5a54bf7c6f43ef61"
+    },
+    "code/tools/usd/export.py": {
+      "bytes": 51029,
+      "role": "code",
+      "sha256": "996b528c7a15a082e3c91dfa073d9e1f57773eeb3673efdd73d06c72896f9ee9"
+    },
+    "code/tools/usd/glb_asset.py": {
+      "bytes": 9182,
+      "role": "code",
+      "sha256": "1db5adb5d33f58c5079145ef794729ff7ab3276b5e34dd2e28313ab2794e3f31"
     },
     "code/tools/usd/ground.py": {
       "bytes": 9711,
@@ -26,15 +71,75 @@
       "role": "code",
       "sha256": "2a71c1e019af1559fe1810689d42d025682b7c96c92fefb5335271ae54600538"
     },
+    "code/tools/usd/mars_sky.py": {
+      "bytes": 4698,
+      "role": "code",
+      "sha256": "424fa5d50170f7b97e07f0f1f725e011ef9cbefd5d395711e180f3bae912d0ee"
+    },
+    "code/tools/usd/pick_lock.py": {
+      "bytes": 2588,
+      "role": "code",
+      "sha256": "af11a3524ca12ed87b684e71dea5820006e1bad6913c5973d3e7e2e2867f2f0c"
+    },
+    "code/tools/usd/placeholders.py": {
+      "bytes": 9047,
+      "role": "code",
+      "sha256": "f52cbd6d07687dc02c689fdc59396c242b2774dbd8afddf4957ebd4bd22a85fa"
+    },
     "code/tools/usd/rocks.py": {
       "bytes": 8957,
       "role": "code",
       "sha256": "e1a891c8d6937a5fcc59f8845d7035fa312ee89f855ca3b2bc71194d9559c6ee"
     },
+    "code/tools/usd/scene.py": {
+      "bytes": 64135,
+      "role": "code",
+      "sha256": "b2854a9d116d8d4f9d047612f98087104aa1d6948c23723d5dc8142c058c7433"
+    },
+    "code/tools/usd/shaders.py": {
+      "bytes": 5347,
+      "role": "code",
+      "sha256": "77a2366732d9433968e1eb16411ff9dfda00929189c833aa1fe089176157d8e3"
+    },
+    "code/tools/usd/stage_inputs.py": {
+      "bytes": 3879,
+      "role": "code",
+      "sha256": "e30523ce76bbf9aa8cff2191af076722c0b186a681c82d9fc85177af5e0dc784"
+    },
     "definition.json": {
-      "bytes": 1214,
+      "bytes": 1280,
       "role": "record",
-      "sha256": "7a0a9aa46027a0eb5531607559d078bac7ffc914447f7ce98dff931c07788d4b"
+      "sha256": "2075ea694b20739f730515d19ea6f3ad1c2c6484edd4f25650d979b5bc158334"
+    },
+    "presets/world1/data/definitions/place.json": {
+      "bytes": 30510,
+      "role": "record",
+      "sha256": "94a5a86fa73bf17a8d0a2aabfdb6eac3023f91328ebb950a5ae342ee6773f528"
+    },
+    "presets/world1/data/fonts/barlow_condensed/BarlowCondensed-Bold.ttf": {
+      "bytes": 109912,
+      "role": "record",
+      "sha256": "e476562ec9c1e16cf16475895b511f08c804f438cc9a9f80a44ea50a0eeb5b65"
+    },
+    "presets/world1/data/library/lamps.json": {
+      "bytes": 5250,
+      "role": "record",
+      "sha256": "c0492d73aba9f6fcefa48a0c20d2c270a118fd749840634462e1f801c2f1176f"
+    },
+    "presets/world1/data/library/materials.json": {
+      "bytes": 5282,
+      "role": "record",
+      "sha256": "02a2e40d6d553c9baf7a302bef46b4014410d4918eb892ffe10c9eb49732a9d0"
+    },
+    "presets/world1/data/physics/materials.json": {
+      "bytes": 743,
+      "role": "record",
+      "sha256": "41e262f3cf8a7f3715646593f65d3642f48a5c6b1c3a6ceb4d17c01b0570f4c6"
+    },
+    "presets/world1/data/sound/surfaces.json": {
+      "bytes": 2178,
+      "role": "record",
+      "sha256": "75993a54c87e48cd7501c8bb5a0a13c3a617582388b94f02dedf84d2e4844405"
     },
     "presets/world1/seed.json": {
       "bytes": 166,
@@ -42,14 +147,19 @@
       "sha256": "f01ebf493ca695c8faa5cc8d7ee153054112e6bcaeb64b3aca4bb701ad8c00fd"
     },
     "run.json": {
-      "bytes": 346,
+      "bytes": 433,
       "role": "record",
-      "sha256": "3cc8ab0b75c4ee60b40eb2eba3914ef1cbb5cea2c0e4fe97bed29c5b92fa7ece"
+      "sha256": "1aee0850c65e35550fd994c58aafa891d85ac2592284f0bfc6b679462253686a"
     },
     "settings.schema.json": {
       "bytes": 2322,
       "role": "record",
       "sha256": "503f1cc9b9e67e30e6bf8400301284b2a385ad3193e11a297e37cab03c6df91a"
+    },
+    "test/conftest.py": {
+      "bytes": 5453,
+      "role": "code",
+      "sha256": "f806701c1ceeeacba599c2bcbef5d674f8b24cdb51ab031ad1042172f923367d"
     },
     "test/tools/usd/test_a_scene_record_builds_what_it_names.py": {
       "bytes": 42500,

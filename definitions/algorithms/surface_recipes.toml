@@ -12,6 +12,7 @@ needs = ["blender", "procfunc", "infinigen"]
 tests = ["tools/props/library/test_pieces_keep_true_shape_and_library_paint.py"]
 picture = []
 requires = ["numpy"]
+test_requires = ["pillow", "scipy", "trimesh", "rtree", "embreex"]
 
 # Outside requirements: what the algorithm needs but the library may not carry, since it cannot go out under MIT
 # (config/sources.toml). `paths` are the repository data files the preset leaves out for it.

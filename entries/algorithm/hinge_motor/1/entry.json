@@ -2,9 +2,9 @@
   "address": "algorithm/hinge_motor@1",
   "files": {
     "code.json": {
-      "bytes": 552,
+      "bytes": 697,
       "role": "record",
-      "sha256": "159373b36c29d7106c4414841f04a46b35e77b2bb6e496c3960f21248be0a7b7"
+      "sha256": "8e33caeac588ee5b9eff894a91327d5d2b0b10796e951d1773468ced86ae89c0"
     },
     "code/tools/usd/physics.py": {
       "bytes": 22042,
@@ -21,20 +21,30 @@
       "role": "record",
       "sha256": "b0a3c0f73b628bc0ba294b9e7eefb7a44c2060107f654ab589bea1867dd1f739"
     },
-    "presets/world1/seed.json": {
-      "bytes": 166,
+    "presets/world1/data/physics/materials.json": {
+      "bytes": 743,
       "role": "record",
-      "sha256": "f01ebf493ca695c8faa5cc8d7ee153054112e6bcaeb64b3aca4bb701ad8c00fd"
+      "sha256": "41e262f3cf8a7f3715646593f65d3642f48a5c6b1c3a6ceb4d17c01b0570f4c6"
+    },
+    "presets/world1/seed.json": {
+      "bytes": 212,
+      "role": "record",
+      "sha256": "2ccb1148a24adeee4ba7f873a320831bff01f35988887ac04a98770098b04286"
     },
     "run.json": {
-      "bytes": 381,
+      "bytes": 425,
       "role": "record",
-      "sha256": "4c119ab664c1cf5afdd704ae3c8c881b1c4afca86fa132ee6c8dab1232540332"
+      "sha256": "62de213ddf9a4b39a77e0a95dcc85404ae96e88b133e9d16d130383af0bf3e37"
     },
     "settings.schema.json": {
       "bytes": 434,
       "role": "record",
       "sha256": "8e64bc271bb3957dcc7d6758d5babd54a8b58c1bfd40ecd602721dc924a50157"
+    },
+    "test/conftest.py": {
+      "bytes": 5453,
+      "role": "code",
+      "sha256": "f806701c1ceeeacba599c2bcbef5d674f8b24cdb51ab031ad1042172f923367d"
     },
     "test/tools/usd/test_the_physics_layers_hold_mass_drop_and_hinge.py": {
       "bytes": 13743,
@@ -55,14 +65,18 @@
         "what": "made by score"
       }
     ],
-    "nodes": [],
+    "nodes": [
+      "physics-layer@engineroom"
+    ],
     "outside": [],
     "stage": "physics-layer",
     "world": "world1"
   },
   "requires": [],
   "schema": "score-lib-entry/1",
-  "seen_in": [],
+  "seen_in": [
+    "engineroom"
+  ],
   "state": "draft",
   "tags": {
     "needs": [],

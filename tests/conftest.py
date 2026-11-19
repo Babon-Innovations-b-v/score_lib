@@ -336,11 +336,28 @@ HELPER = '''def double(value):
     return value * 2
 '''
 
-ALGORITHM_TEST = '''import algo
+ALGORITHM_TEST = '''import pathlib
+import sys
+
+import algo
+
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1] / "checks"))
+import checker  # noqa: E402  only the test runs it: shipped beside the snapshot
 
 
 def test_write():
-    assert algo.write("x") == 48.0
+    assert algo.write("x") == 48.0 == checker.expected()
+'''
+
+# A module only the test imports (through a folder it puts on sys.path), reading a data file it names.
+CHECKER = '''import json
+import pathlib
+
+REPO = pathlib.Path(__file__).resolve().parents[2]
+
+
+def expected():
+    return json.loads((REPO / "data/demo/expected.json").read_text())["write"]
 '''
 
 
@@ -374,7 +391,10 @@ def make_repo(folder, manifest_rules):
              "data/demo/preset.json": json.dumps({"rate": 24}),
              "data/demo/outside.json": json.dumps({"not": "ours"}),
              "tools/demo/ported.py": "# SPDX-License-Identifier: Apache-2.0\nSTEP = 1\n",
-             "tools/demo/algo.py": ALGORITHM, "tools/demo/helper.py": HELPER, "tools/demo/algo_test.py": ALGORITHM_TEST}
+             "tools/__init__.py": "raise ImportError('the framework, not the algorithm')\n",
+             "tools/demo/algo.py": ALGORITHM, "tools/demo/helper.py": HELPER, "tools/demo/algo_test.py": ALGORITHM_TEST,
+             "tools/checks/checker.py": CHECKER, "data/demo/expected.json": json.dumps({"write": 48.0}),
+             "conftest.py": "import os\nassert os.environ.get('PROPS_HOME'), 'a sandbox home'\n"}
     folder.mkdir(parents=True)
     git(folder, "init", "-q", "-b", "main")
     write_files(folder, files)
@@ -394,7 +414,7 @@ def make_root(folder, commit):
     (definitions / "demo.toml").write_text(
         'name = "demo"\ntitle = "Demo"\nentry = "algo:write"\nroots = ["tools/demo/algo.py"]\n'
         'search = ["tools/demo"]\nconstants = ["tools/demo/algo.py:RATE", "tools/demo/algo.py:STEP", '
-        '"tools/demo/algo.py:NAMES"]\npreset = ["data/demo/*.json"]\nneeds = []\n'
+        '"tools/demo/algo.py:NAMES"]\npreset = ["data/demo/p*.json", "data/demo/o*.json"]\nneeds = []\n'
         'tests = ["tools/demo/algo_test.py"]\n\n[[outside]]\nname = "an outside library"\nversion = "1.0"\n'
         'where = "https://example.org/outside"\nwhy = "not MIT"\npaths = ["data/demo/outside.json"]\n')
     (folder / "LICENSE").write_text((LIBRARY / "LICENSE").read_text())

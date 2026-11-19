@@ -2,9 +2,9 @@
   "address": "algorithm/body_weight@1",
   "files": {
     "code.json": {
-      "bytes": 552,
+      "bytes": 697,
       "role": "record",
-      "sha256": "159373b36c29d7106c4414841f04a46b35e77b2bb6e496c3960f21248be0a7b7"
+      "sha256": "8e33caeac588ee5b9eff894a91327d5d2b0b10796e951d1773468ced86ae89c0"
     },
     "code/tools/usd/physics.py": {
       "bytes": 22042,
@@ -27,19 +27,24 @@
       "sha256": "41e262f3cf8a7f3715646593f65d3642f48a5c6b1c3a6ceb4d17c01b0570f4c6"
     },
     "presets/world1/seed.json": {
-      "bytes": 166,
+      "bytes": 212,
       "role": "record",
-      "sha256": "f01ebf493ca695c8faa5cc8d7ee153054112e6bcaeb64b3aca4bb701ad8c00fd"
+      "sha256": "2ccb1148a24adeee4ba7f873a320831bff01f35988887ac04a98770098b04286"
     },
     "run.json": {
-      "bytes": 324,
+      "bytes": 368,
       "role": "record",
-      "sha256": "b73c862a985f25f07761720763a0229319000567187bdc8aac0ae38e315d238c"
+      "sha256": "337e02b6abf0af81c1cfc17469eac54deb61c3b23e4b1e7b6af3417fa164c650"
     },
     "settings.schema.json": {
       "bytes": 284,
       "role": "record",
       "sha256": "9e03d283628ee14eaf094ae8282db1cae9e4516ccf20c12c66ea16f8a5deef5d"
+    },
+    "test/conftest.py": {
+      "bytes": 5453,
+      "role": "code",
+      "sha256": "f806701c1ceeeacba599c2bcbef5d674f8b24cdb51ab031ad1042172f923367d"
     },
     "test/tools/usd/test_the_physics_layers_hold_mass_drop_and_hinge.py": {
       "bytes": 13743,
@@ -60,14 +65,18 @@
         "what": "made by score"
       }
     ],
-    "nodes": [],
+    "nodes": [
+      "physics-layer@engineroom"
+    ],
     "outside": [],
     "stage": "physics-layer",
     "world": "world1"
   },
   "requires": [],
   "schema": "score-lib-entry/1",
-  "seen_in": [],
+  "seen_in": [
+    "engineroom"
+  ],
   "state": "draft",
   "tags": {
     "needs": [],

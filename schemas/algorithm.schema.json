@@ -96,6 +96,13 @@
         "type": "string"
       }
     },
+    "test_requires": {
+      "description": "Python distributions the tests import beyond requires (score's module tests check the whole stage)",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
     "outside": {
       "type": "array",
       "items": {

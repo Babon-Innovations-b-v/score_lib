@@ -1,6 +1,7 @@
 """score-lib: argument parsing only, one function per command."""
 import argparse
 import json
+import os
 import pathlib
 import shutil
 import sys
@@ -112,7 +113,12 @@ def command_test(options):
     import tempfile
     from score_lib import algorithms
     with tempfile.TemporaryDirectory(prefix="score-lib-test-") as folder:
-        raise SystemExit(algorithms.test(options.root, blob_store(reading=True), options.address, folder))
+        try:
+            code = algorithms.test(options.root, blob_store(reading=True), options.address, folder,
+                                   options.score or None)
+        except algorithms.Refused as error:
+            raise SystemExit(str(error))
+        raise SystemExit(code)
 
 
 def command_run(options):
@@ -321,6 +327,8 @@ def parser():
     taken.set_defaults(handle=command_take_in)
     tested = commands.add_parser("test", help="run an algorithm entry's tests")
     tested.add_argument("address")
+    tested.add_argument("--score", default=os.environ.get("SCORE_REPO", ""),
+                        help="a score checkout to lay in the code the library leaves out (default SCORE_REPO)")
     tested.set_defaults(handle=command_test)
     ran = commands.add_parser("run", help="run an algorithm entry's free core with a preset")
     ran.add_argument("address")

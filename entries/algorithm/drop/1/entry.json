@@ -2,9 +2,9 @@
   "address": "algorithm/drop@1",
   "files": {
     "code.json": {
-      "bytes": 552,
+      "bytes": 697,
       "role": "record",
-      "sha256": "159373b36c29d7106c4414841f04a46b35e77b2bb6e496c3960f21248be0a7b7"
+      "sha256": "8e33caeac588ee5b9eff894a91327d5d2b0b10796e951d1773468ced86ae89c0"
     },
     "code/tools/usd/physics.py": {
       "bytes": 22042,
@@ -21,25 +21,35 @@
       "role": "record",
       "sha256": "5052feb1246f048017504b369ff766265deb38e10d032437edb97df1326fec4c"
     },
+    "presets/world1/data/physics/materials.json": {
+      "bytes": 743,
+      "role": "record",
+      "sha256": "41e262f3cf8a7f3715646593f65d3642f48a5c6b1c3a6ceb4d17c01b0570f4c6"
+    },
     "presets/world1/data/physics/setting.json": {
       "bytes": 1821,
       "role": "record",
       "sha256": "fe122ef764437121d3015c498c2db1ad9528391b34f4b3039369e5cca8ad3389"
     },
     "presets/world1/seed.json": {
-      "bytes": 166,
+      "bytes": 212,
       "role": "record",
-      "sha256": "f01ebf493ca695c8faa5cc8d7ee153054112e6bcaeb64b3aca4bb701ad8c00fd"
+      "sha256": "2ccb1148a24adeee4ba7f873a320831bff01f35988887ac04a98770098b04286"
     },
     "run.json": {
-      "bytes": 364,
+      "bytes": 408,
       "role": "record",
-      "sha256": "a82987916fa9cad51d9e21bfdff7b5b028f406e41bd9306eb60774143b583b45"
+      "sha256": "2866fb9f333a31bffd0368f884aebe08416b850ca59266a201a12f342b5801fe"
     },
     "settings.schema.json": {
       "bytes": 423,
       "role": "record",
       "sha256": "0ff69d7523a5a74bf4d28dc22b1e744e6eec22d851daa66db0608b0d23c3f0b9"
+    },
+    "test/conftest.py": {
+      "bytes": 5453,
+      "role": "code",
+      "sha256": "f806701c1ceeeacba599c2bcbef5d674f8b24cdb51ab031ad1042172f923367d"
     },
     "test/tools/usd/test_the_physics_layers_hold_mass_drop_and_hinge.py": {
       "bytes": 13743,
@@ -60,14 +70,18 @@
         "what": "made by score"
       }
     ],
-    "nodes": [],
+    "nodes": [
+      "physics-layer@engineroom"
+    ],
     "outside": [],
     "stage": "physics-layer",
     "world": "world1"
   },
   "requires": [],
   "schema": "score-lib-entry/1",
-  "seen_in": [],
+  "seen_in": [
+    "engineroom"
+  ],
   "state": "draft",
   "tags": {
     "needs": [],

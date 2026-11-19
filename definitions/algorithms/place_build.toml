@@ -14,3 +14,4 @@ needs = ["Blender for its renders and compares; MuJoCo for the settle run of its
 tests = ["score/stages/place_build/test_a_laid_scene_holds_its_library_entries_where_the_agent_put_them.py", "score/stages/place_build/ready/test_every_planted_physics_fault_is_told_by_name.py"]
 picture = []
 requires = ["numpy", "usd-core", "trimesh", "mujoco"]
+test_requires = ["pillow", "python-fcl", "scipy", "rtree", "embreex"]

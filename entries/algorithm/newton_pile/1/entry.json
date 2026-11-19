@@ -2,54 +2,2519 @@
   "address": "algorithm/newton_pile@1",
   "files": {
     "code.json": {
-      "bytes": 573,
+      "bytes": 48152,
       "role": "record",
-      "sha256": "d013437bdcb5f82d06c51021c175f7020c8657c3f5e9d80899e777af275ae183"
+      "sha256": "d0fc5f1ccdc504ce1ab13cf3bb013ba7a124761de2fb55575221d51cb61ceda6"
     },
     "code/score/__init__.py": {
       "bytes": 0,
       "role": "code",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
+    "code/score/adapters/__init__.py": {
+      "bytes": 0,
+      "role": "code",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "code/score/adapters/compute/__init__.py": {
+      "bytes": 78757,
+      "role": "code",
+      "sha256": "141f7e0b0b3f46b2aeaa9231234e53b7b00cb41c77a625a4a345ca459c21329f"
+    },
+    "code/score/adapters/compute/guard.py": {
+      "bytes": 24613,
+      "role": "code",
+      "sha256": "35fb117b5ba6f10a68bb37c3de76774e1a56769ea47582424669f8b603b47dda"
+    },
+    "code/score/adapters/engines/__init__.py": {
+      "bytes": 2245,
+      "role": "code",
+      "sha256": "283817507640321516d8cde73b09a38f5d322fceef386d0c24a3c745c07a836d"
+    },
+    "code/score/adapters/models/__init__.py": {
+      "bytes": 3591,
+      "role": "code",
+      "sha256": "eecc1f68f88808a956542db03e16e6f3b20c0d4cb5889646d5130753cb0025fe"
+    },
+    "code/score/adapters/models/claude_code.py": {
+      "bytes": 13755,
+      "role": "code",
+      "sha256": "4dbf4456623bc60d5f490ee60dbd7539d63710df337cd9f2ccd2c6f45d2e30e7"
+    },
+    "code/score/checks/__init__.py": {
+      "bytes": 5111,
+      "role": "code",
+      "sha256": "95c8487441b20e04f9706c0109de8e48a63e9acdb5f6c158c973824f2975b0fd"
+    },
+    "code/score/checks/grain.py": {
+      "bytes": 4523,
+      "role": "code",
+      "sha256": "cfa4747140d3126c6f0bd4e242ab54f541e81d45c9d00de76883651bfe2998a4"
+    },
+    "code/score/conductor/__init__.py": {
+      "bytes": 7674,
+      "role": "code",
+      "sha256": "89456af0926877807bbdd13cb245909c2a2dc3ac390a16660bd4480ae5726773"
+    },
+    "code/score/conductor/cluster.py": {
+      "bytes": 17556,
+      "role": "code",
+      "sha256": "f3128aae359b4b9bd3c94817e73f19c1948f2fff997fbd58a968b6128b12e5c0"
+    },
+    "code/score/conductor/size.py": {
+      "bytes": 19251,
+      "role": "code",
+      "sha256": "c6424af4eb6f5e7ee19c3e200a11d0ced01112dd6a718d38a2326479604d1dcc"
+    },
+    "code/score/contracts/__init__.py": {
+      "bytes": 5024,
+      "role": "code",
+      "sha256": "1c0f030fd4a7110bdb7881c9e792243b87af42f60ca68dd39486808382f5edde"
+    },
+    "code/score/dashboard/__init__.py": {
+      "bytes": 0,
+      "role": "code",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "code/score/dashboard/films/__init__.py": {
+      "bytes": 0,
+      "role": "code",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "code/score/dashboard/films/preview/__init__.py": {
+      "bytes": 0,
+      "role": "code",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "code/score/dashboard/films/preview/scenes.py": {
+      "bytes": 15373,
+      "role": "code",
+      "sha256": "e79a7b8d49c0a628dd63d788076eb72a61f53aafaf7ce2cad1e36096bf2ed411"
+    },
+    "code/score/dashboard/pages/__init__.py": {
+      "bytes": 0,
+      "role": "code",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "code/score/dashboard/pages/setting_picture.py": {
+      "bytes": 14324,
+      "role": "code",
+      "sha256": "11bd4ec8969c9e604e88f1eb6a8903143670dddb8e9ad70337fd72ed98b3ff04"
+    },
+    "code/score/graph/__init__.py": {
+      "bytes": 183014,
+      "role": "code",
+      "sha256": "3098b0330f8763d1e33b0311235a893012b1e9c31cd5cdd286acae4b7ecbee91"
+    },
+    "code/score/graph/_code.py": {
+      "bytes": 23664,
+      "role": "code",
+      "sha256": "7622038ad0ae48d96f5639ed508016546cc46e1bd675d34c3fe16c94a9afa469"
+    },
+    "code/score/graph/chain.py": {
+      "bytes": 5470,
+      "role": "code",
+      "sha256": "e11a4e508a6af49f848c3da16e83fbbfeb6542cad8203f8acd48a2b0d97f2bd7"
+    },
+    "code/score/graph/frozen.py": {
+      "bytes": 12425,
+      "role": "code",
+      "sha256": "80ed6406804cabaf20071c208b967fc551223e0faeda34388d264b1aee2dcbc4"
+    },
+    "code/score/graph/pod.py": {
+      "bytes": 43659,
+      "role": "code",
+      "sha256": "7e2029bc6fc87fb581ca62f2dc80cde5cbb83262f423feef7ab28a936077b76e"
+    },
+    "code/score/graph/runs.py": {
+      "bytes": 26076,
+      "role": "code",
+      "sha256": "ed6b6f614b396c54fca2cc2bfe4b431e904627e9e143412a924284a39485fcc3"
+    },
+    "code/score/graph/stopped.py": {
+      "bytes": 8796,
+      "role": "code",
+      "sha256": "a5ed2d98bbcfd5540004e6b8834049978bfc84602ae7c8862b02531b909ddd9e"
+    },
+    "code/score/library/__init__.py": {
+      "bytes": 2432,
+      "role": "code",
+      "sha256": "51ac56c59f0f9b102554d3af7f956506eab838d1bd4785c890f27b9c2a131733"
+    },
+    "code/score/review/__init__.py": {
+      "bytes": 28640,
+      "role": "code",
+      "sha256": "f5da9272e9ff3f73e613dc7b82972f7463c8e415b13f620d4285f0455f9aecfe"
+    },
+    "code/score/review/concepts.py": {
+      "bytes": 61489,
+      "role": "code",
+      "sha256": "7d0b396ceab7f54e83b7bf3b64a61f426f73ecb9434b2efba0dd0fd14f8d74d9"
+    },
+    "code/score/review/discuss.py": {
+      "bytes": 8069,
+      "role": "code",
+      "sha256": "66c80feda753cf41ebfad37ef195c084389e6374a19bb77b7a12b721ac42cbb5"
+    },
+    "code/score/review/environment_concept.py": {
+      "bytes": 21341,
+      "role": "code",
+      "sha256": "bcd2ab7c36963c5e016d8a26a7f2f09a3becc41b8dd49e04db1f390c80e4324c"
+    },
+    "code/score/review/environment_plan.py": {
+      "bytes": 37398,
+      "role": "code",
+      "sha256": "71cd9bdc884f77089e2942679ea546db71b361cb5f2e97920003e3e846c645a2"
+    },
+    "code/score/review/holders/__init__.py": {
+      "bytes": 166013,
+      "role": "code",
+      "sha256": "2e83872d2a1badeae1d41dec9e974e549a0f4b7b9d8b65d6dff2a75acfa81e0c"
+    },
+    "code/score/review/holders/named_top.py": {
+      "bytes": 2473,
+      "role": "code",
+      "sha256": "a9a54d2d4da23f35335e0d8a9522a06909cfc56cba19e7676c719bed09adb3b4"
+    },
+    "code/score/review/holders/stacked.py": {
+      "bytes": 2036,
+      "role": "code",
+      "sha256": "e1b433de8a98209b2d161a8a14da072d8efbd621f1963f1ab47614166dbed1e4"
+    },
+    "code/score/review/overhead.py": {
+      "bytes": 12280,
+      "role": "code",
+      "sha256": "900f8d10ddf11e59554756cb846ff531f4e824ba236816ce6aae61d94009b17a"
+    },
+    "code/score/review/plan_checks.py": {
+      "bytes": 47991,
+      "role": "code",
+      "sha256": "fc20eef168d58f0fa4ccc06e879de5b264546f5747f5b6150da05121e37cff35"
+    },
+    "code/score/review/plans.py": {
+      "bytes": 93383,
+      "role": "code",
+      "sha256": "3251875825bfb2c9e383c4cb22f78fcfd702b9ac4486a50420d6976e4372d771"
+    },
+    "code/score/review/reading.py": {
+      "bytes": 7050,
+      "role": "code",
+      "sha256": "809f7bb64b6e6b911196b8495fb2e05f14d763e3c8e97732bd13fe293d3f9372"
+    },
+    "code/score/review/scene_sky.py": {
+      "bytes": 2798,
+      "role": "code",
+      "sha256": "714e94005a87d2be6d170e651a42b0d1cf016b4a11c7d4ffa29220fac617e792"
+    },
+    "code/score/review/setting.py": {
+      "bytes": 15393,
+      "role": "code",
+      "sha256": "d704a8d20d5c211b61612c1af098823556ad7586f8f157b3cc5cd028560822f9"
+    },
+    "code/score/review/standing.py": {
+      "bytes": 4082,
+      "role": "code",
+      "sha256": "19893d3df1c0b68100c09e80b6d84f3f24a1eaa820555eac65238468392fa81f"
+    },
     "code/score/stages/__init__.py": {
       "bytes": 135918,
       "role": "code",
       "sha256": "5a9994fa9033e25f25c70509a529bcee77a13bb1658bb98d96001e2ea9cbc0d5"
+    },
+    "code/score/stages/assembly/__init__.py": {
+      "bytes": 25937,
+      "role": "code",
+      "sha256": "99a1ee9b842555cc591ecb24782a750d058fce6e04bf14fdef69ed45df71111c"
+    },
+    "code/score/stages/assembly/baked.py": {
+      "bytes": 9407,
+      "role": "code",
+      "sha256": "39939deb9e6aea1ff7783ce697a67f55679288758349fc136ba3d6274784e895"
+    },
+    "code/score/stages/assembly/big_bases.py": {
+      "bytes": 10062,
+      "role": "code",
+      "sha256": "2d231b3f0ae5aa8b789dd749c910912427ec67ee2ce87d02422fad712de396ad"
+    },
+    "code/score/stages/assembly/board_spots.py": {
+      "bytes": 1537,
+      "role": "code",
+      "sha256": "cbeb48db8466827153a0703004d36c2a28454ce450acaf4ff73ff8546fba83a3"
+    },
+    "code/score/stages/assembly/built_tops.py": {
+      "bytes": 12853,
+      "role": "code",
+      "sha256": "dee417de307c701306b172b507a7186174f71a665c40c6c80467b8068b379dd0"
+    },
+    "code/score/stages/assembly/crest_tops.py": {
+      "bytes": 16655,
+      "role": "code",
+      "sha256": "fc60e905403f825196ed4929e2c9ddf3e9cacf25b81557f14fe96fc6b1738f43"
+    },
+    "code/score/stages/assembly/even_feet.py": {
+      "bytes": 8788,
+      "role": "code",
+      "sha256": "31faacc7eae99746775011016b0c7b10dbe9e2072db95ec0b10e29060abf52c6"
+    },
+    "code/score/stages/assembly/face_down.py": {
+      "bytes": 10605,
+      "role": "code",
+      "sha256": "45d9931983749c9c07e40626f5d5e64e6f15c4043adefec1fc6c1ce50124c970"
+    },
+    "code/score/stages/assembly/face_reach.py": {
+      "bytes": 3623,
+      "role": "code",
+      "sha256": "d5b3f9f08695e1f7a5bae4fddbf67c1c50645f538521745080cd1d9cbfccbbb0"
+    },
+    "code/score/stages/assembly/face_spots.py": {
+      "bytes": 3443,
+      "role": "code",
+      "sha256": "2f16e1d8ff70e6b438a13234a2551041b0a012560778f71de12322eaca591666"
+    },
+    "code/score/stages/assembly/fine_tops.py": {
+      "bytes": 15948,
+      "role": "code",
+      "sha256": "3f04ab6e862535338f6f1c985bec82121f6075c665e723789ed1904dbd1020fe"
+    },
+    "code/score/stages/assembly/fitting.py": {
+      "bytes": 212146,
+      "role": "code",
+      "sha256": "222b172381f42c21cc0594eb2b183f1160ebc217453284de30973c1ba255c80a"
+    },
+    "code/score/stages/assembly/floor_clear.py": {
+      "bytes": 10776,
+      "role": "code",
+      "sha256": "bdc2f09172d4b2c9007c0ff5cfadad59cab0fd0fc806f648f45950458d131519"
+    },
+    "code/score/stages/assembly/floor_down.py": {
+      "bytes": 6579,
+      "role": "code",
+      "sha256": "1df865baad2502c14aede40916887a04be7f4f75e65b74d10f89c1da3b998621"
+    },
+    "code/score/stages/assembly/floor_free.py": {
+      "bytes": 18816,
+      "role": "code",
+      "sha256": "1e9ebdf6bbf7c47903d7e4cd8ba9628cc3ff6652e3e3116b90cf63306831b026"
+    },
+    "code/score/stages/assembly/flush_tops.py": {
+      "bytes": 6108,
+      "role": "code",
+      "sha256": "f79655f8ecf2398b482130838878d4f02b02701f166e5d7a2be4176a01146fc1"
+    },
+    "code/score/stages/assembly/footing.py": {
+      "bytes": 5927,
+      "role": "code",
+      "sha256": "e4db5f5c2b2b305677d63491f5bade091d40b718b2bae84851e95b3c344c4880"
+    },
+    "code/score/stages/assembly/ground_finish.py": {
+      "bytes": 8066,
+      "role": "code",
+      "sha256": "cc17331f9b1efb1e0c279f4337acc0b746107fbb13cda72ec57f6ffb85f9a483"
+    },
+    "code/score/stages/assembly/grounded.py": {
+      "bytes": 5698,
+      "role": "code",
+      "sha256": "881294321f8af1e224e82e97128eba904b9faae324c630e365ff87e7b6f4f603"
+    },
+    "code/score/stages/assembly/held_along.py": {
+      "bytes": 3754,
+      "role": "code",
+      "sha256": "3055fbd79158477efc4aa45399f19daca0da40aef63d3ddd3a65f01f54550f64"
+    },
+    "code/score/stages/assembly/held_apart.py": {
+      "bytes": 4007,
+      "role": "code",
+      "sha256": "4b33c88baeda9b5dbea1e84e20da8bb4b22001f1f151ba38c9bea3bcb18379db"
+    },
+    "code/score/stages/assembly/hung_between.py": {
+      "bytes": 8319,
+      "role": "code",
+      "sha256": "58e7838b01ba81d360efae983fa6f2b56bd8b1fe10dd40ef5f9944b8818c9986"
+    },
+    "code/score/stages/assembly/laid_flat.py": {
+      "bytes": 8340,
+      "role": "code",
+      "sha256": "6b1b67f643d3b1247554519bf0d4fdb35fe548daf41daa99493f3a3080eba4e7"
+    },
+    "code/score/stages/assembly/lamps_along.py": {
+      "bytes": 8089,
+      "role": "code",
+      "sha256": "afdca19f6d7c272be5016be95dadf7da085515dc6981b91ad2aaf9e672a0a4d1"
+    },
+    "code/score/stages/assembly/level_spot.py": {
+      "bytes": 5845,
+      "role": "code",
+      "sha256": "558efad498fd71dc83295136977f0cc810546fe112d236a0b3348c2da45d9baa"
+    },
+    "code/score/stages/assembly/made_waiting.py": {
+      "bytes": 10169,
+      "role": "code",
+      "sha256": "9cc2616b1ffd607a0aa1c3fee3160469ddbe746656f185f0092c56a8b3df329d"
+    },
+    "code/score/stages/assembly/mounted.py": {
+      "bytes": 4592,
+      "role": "code",
+      "sha256": "e0c9de03b8c9298cf8ae0cd0529769e99bbde62c393a1d846c5bc67af811dc72"
+    },
+    "code/score/stages/assembly/neighbours.py": {
+      "bytes": 9265,
+      "role": "code",
+      "sha256": "619a567655370786cc51eb73ddb44d5927fc6802ee339ff18b8a86349f610527"
+    },
+    "code/score/stages/assembly/on_ground.py": {
+      "bytes": 10629,
+      "role": "code",
+      "sha256": "1a51e5810369d25c0e089a083703342a188838750734e13a7f4ea54434c8b8ad"
+    },
+    "code/score/stages/assembly/on_pads.py": {
+      "bytes": 3772,
+      "role": "code",
+      "sha256": "4a48fc5b4ffd04124431b1548c1bb006315a894335d3a6e600ba74642b8f4ccd"
+    },
+    "code/score/stages/assembly/on_tops.py": {
+      "bytes": 1521,
+      "role": "code",
+      "sha256": "cdb417b072f7112219b6f51e06c9896c05e1b63febfc038dd54770a8cca06eec"
+    },
+    "code/score/stages/assembly/opening_free.py": {
+      "bytes": 3357,
+      "role": "code",
+      "sha256": "5abd2bf6e64f9938e4d2a3a268e014bcc577f0b3c80cf5c17632d15246889220"
+    },
+    "code/score/stages/assembly/opening_walls.py": {
+      "bytes": 2448,
+      "role": "code",
+      "sha256": "cb84a8ea30f62a5cab03057991b7f7877eeb4031e9edc5e2b2dfefbdd0c79403"
+    },
+    "code/score/stages/assembly/parting.py": {
+      "bytes": 6697,
+      "role": "code",
+      "sha256": "918dd880556c24945276bad94ba40dd8e68dd002ce48693edf0631f473321d6b"
+    },
+    "code/score/stages/assembly/passages.py": {
+      "bytes": 5159,
+      "role": "code",
+      "sha256": "646ad9cad22c3f84c532ab158c0de8c387ae5ff7bb3a557152e753ec9285b862"
+    },
+    "code/score/stages/assembly/piled.py": {
+      "bytes": 2680,
+      "role": "code",
+      "sha256": "c3eedbe07f9d2ebc2ea88ddd060ce54fc3c8aa91553e2ad6bd4fc35314c19ea6"
+    },
+    "code/score/stages/assembly/post_plate.py": {
+      "bytes": 12086,
+      "role": "code",
+      "sha256": "2d2cf7b05d4055f482c48332cf1cd6e60ba6551879bf27c0f28955394e58a96e"
+    },
+    "code/score/stages/assembly/railings_held.py": {
+      "bytes": 19583,
+      "role": "code",
+      "sha256": "ad15d8d00770f147a0ff1de8ee86aef06d4e239ea37c91be466fb34dbdad01ae"
+    },
+    "code/score/stages/assembly/record.py": {
+      "bytes": 12245,
+      "role": "code",
+      "sha256": "59ce0670361271c3e7e3c5e1abb8acf577a9c453321ac8b0ef3280e0ba3dbe4f"
+    },
+    "code/score/stages/assembly/resting_within.py": {
+      "bytes": 5514,
+      "role": "code",
+      "sha256": "69490c46e3fabf81f56288a800fc6524212b951040d3d50ee070e5c929e4c4e7"
+    },
+    "code/score/stages/assembly/ribs.py": {
+      "bytes": 15511,
+      "role": "code",
+      "sha256": "312703e40d2493c1f29994d837465152e3492c85ae571c122e8f55e8f7cea9a1"
+    },
+    "code/score/stages/assembly/roof_tops.py": {
+      "bytes": 9704,
+      "role": "code",
+      "sha256": "a68ee238457420400e18750108ff01134557248cb5d5ec6c515bd146f1e29c92"
+    },
+    "code/score/stages/assembly/room_clear.py": {
+      "bytes": 8152,
+      "role": "code",
+      "sha256": "a1d20264403c031b7ae3be26e65b6a2724fd2964daf61dcd354f8b2768511354"
+    },
+    "code/score/stages/assembly/scene_tree.py": {
+      "bytes": 13172,
+      "role": "code",
+      "sha256": "046ed87d1c18de3aa933504fcc561b09a22de8ed2e106b51fdd446ab8a78746e"
+    },
+    "code/score/stages/assembly/sounds.py": {
+      "bytes": 8542,
+      "role": "code",
+      "sha256": "f0f898547fc52a8cfc3e7dd0cee2cea22333944a86bb7d9b2db882e558cadb28"
+    },
+    "code/score/stages/assembly/structure_mounted.py": {
+      "bytes": 1432,
+      "role": "code",
+      "sha256": "7735997719ce36d52302fc4a08b7f2f3e709612b55477679e04bf99b16036cac"
+    },
+    "code/score/stages/assembly/tops_levelled.py": {
+      "bytes": 4176,
+      "role": "code",
+      "sha256": "0a8792ce66d4e8649580147e9d6eccf5b45036451379ad5978b6ff0b72920145"
+    },
+    "code/score/stages/assembly/vault_feet.py": {
+      "bytes": 3818,
+      "role": "code",
+      "sha256": "3e2a21fc36393ee3753ec4f4e2b125844344c2cf0fa4c701b2a50e3b25b23010"
+    },
+    "code/score/stages/assembly/wall_clear.py": {
+      "bytes": 6338,
+      "role": "code",
+      "sha256": "35aabe7bda86603e259f881397743e8ed92445e363c30ee4f7e561b74c9d0504"
+    },
+    "code/score/stages/assembly/wired/__init__.py": {
+      "bytes": 8439,
+      "role": "code",
+      "sha256": "355ba1668b93aec1b319d6af17ca7845bf9be00bd7eb6b94ea5bdcabdf3b2498"
+    },
+    "code/score/stages/batch_gaps.py": {
+      "bytes": 2897,
+      "role": "code",
+      "sha256": "f0936acdb096654b9b5c69ef1365a0e7922b7476ecf8e85d3f5d619aa8f2574a"
+    },
+    "code/score/stages/cast/__init__.py": {
+      "bytes": 39727,
+      "role": "code",
+      "sha256": "aff239313056d6cbb211d57046fc5bc8fccf05886d9ce2019e88bcdeda9ebd0c"
+    },
+    "code/score/stages/cast/driven.py": {
+      "bytes": 19930,
+      "role": "code",
+      "sha256": "5e9b71da4d1690a19a5dd951607ed983548549df570ae49e509577c557172a82"
+    },
+    "code/score/stages/cast/feet.py": {
+      "bytes": 12842,
+      "role": "code",
+      "sha256": "459e5c73239d649f5c77d12a90df3eecf5bd62cf02a6ab79c55ec0b4ffdd9b72"
+    },
+    "code/score/stages/cast/layer.py": {
+      "bytes": 12169,
+      "role": "code",
+      "sha256": "44ba1b72866a7693bd47e1f0312152ba2f8a9c7e0c43124462b6a55292eb36aa"
+    },
+    "code/score/stages/cast/measure.py": {
+      "bytes": 13609,
+      "role": "code",
+      "sha256": "8faef4fb4b73cbf1e31d899e7e955e5d1a3d48f09f823cf71830d2dde66d5734"
+    },
+    "code/score/stages/cast/seated.py": {
+      "bytes": 9766,
+      "role": "code",
+      "sha256": "6280be13b223ac5e9e4fc5adad6c8d20a65d8dee50c8a3a4d60283fd2beb2dd5"
+    },
+    "code/score/stages/cast/spread.py": {
+      "bytes": 9431,
+      "role": "code",
+      "sha256": "1eb3fb3129a74ffe731da6b826ae1546cf5b67b676a05ce3f9888404e27f55d7"
+    },
+    "code/score/stages/cast/walks.py": {
+      "bytes": 8265,
+      "role": "code",
+      "sha256": "6c70f422f9a7338a006381e68d127ae0e1b5dbf6d00fbd728f45f7b051a44e25"
+    },
+    "code/score/stages/complete/__init__.py": {
+      "bytes": 6127,
+      "role": "code",
+      "sha256": "4da1d383445492a297ca781032da38cda639a4da4a176dce0587c7644fc165d4"
+    },
+    "code/score/stages/complete/gaps/__init__.py": {
+      "bytes": 609,
+      "role": "code",
+      "sha256": "d308c55af1393be0c09211445891bbf1cd883276e1081a8911922fe130e31805"
+    },
+    "code/score/stages/complete/gaps/fill.py": {
+      "bytes": 4057,
+      "role": "code",
+      "sha256": "bd16b81a8d31d5941cdc33fa46b6375a6b5926b853084f502de04630abfdf0c2"
+    },
+    "code/score/stages/complete/gaps/inputs.py": {
+      "bytes": 8991,
+      "role": "code",
+      "sha256": "04a97eccbf26e3f3150195317dceac8b027350584a2cf09bf9a9783384fa7f45"
+    },
+    "code/score/stages/complete/gaps/layer.py": {
+      "bytes": 4995,
+      "role": "code",
+      "sha256": "75847c815a860fe7bf4e42aa7309a12915492dfd68ce4f0b3f43dc85c3522bf7"
+    },
+    "code/score/stages/complete/gaps/milestones.py": {
+      "bytes": 14955,
+      "role": "code",
+      "sha256": "78056b49004194e9f9c52740ffc129567e07e4a9b02f0dc5956046bc10aec460"
+    },
+    "code/score/stages/complete/gaps/price.py": {
+      "bytes": 29894,
+      "role": "code",
+      "sha256": "61eb4d5683bf98b0c094f848fb7feac4dacba443737f099f34a4af6c112b04ce"
+    },
+    "code/score/stages/complete/gaps/rows.py": {
+      "bytes": 10815,
+      "role": "code",
+      "sha256": "d8ea1f48bf917cc4deca6e168b1d8658757a7de343fb924358d78a82fae1d4c4"
+    },
+    "code/score/stages/complete/gaps/schedule.py": {
+      "bytes": 6959,
+      "role": "code",
+      "sha256": "dc10b13d79176f1d2102c49a9dfe4720d96fffa01f1a11e2f19671b3ca3f1e75"
+    },
+    "code/score/stages/complete/library/__init__.py": {
+      "bytes": 0,
+      "role": "code",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "code/score/stages/complete/library/entries.py": {
+      "bytes": 5007,
+      "role": "code",
+      "sha256": "bfb702081aba130e182222cdf88b1e2a16b949097d0ba1cfeb6a689ecc401039"
+    },
+    "code/score/stages/complete/library/exceptions.py": {
+      "bytes": 3201,
+      "role": "code",
+      "sha256": "1c93edff58cf847e7dbe7b8fbcb400e7f402e0102ab5f7e9e9ac5d4f0bf69e63"
+    },
+    "code/score/stages/complete/library/findings.py": {
+      "bytes": 2912,
+      "role": "code",
+      "sha256": "7f202de91e6ca65e4f1e6997946c279c195ca2059499f973f847862bc041ed7a"
+    },
+    "code/score/stages/complete/library/stored.py": {
+      "bytes": 2960,
+      "role": "code",
+      "sha256": "64391499a69c38207073104ecbe75bb87bf818406303fe0cc83e32fb39d8ceef"
+    },
+    "code/score/stages/complete/library/trace.py": {
+      "bytes": 14757,
+      "role": "code",
+      "sha256": "61f6cfb81d0c543f5d173fe6adbb8749a06dab38ef5972d3412d6262180c453a"
+    },
+    "code/score/stages/complete/prepare/__init__.py": {
+      "bytes": 0,
+      "role": "code",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "code/score/stages/complete/prepare/contract.py": {
+      "bytes": 4281,
+      "role": "code",
+      "sha256": "2647276fab9f96690df89d7c8a4fe485f8c65bcb07426dc026160fc42fca8a1c"
+    },
+    "code/score/stages/complete/prepare/groups.py": {
+      "bytes": 40122,
+      "role": "code",
+      "sha256": "21717159ecd61f11991f91354c1c153956f76ad165fbeeaf86e139415a7d45f3"
+    },
+    "code/score/stages/demo_film/__init__.py": {
+      "bytes": 41181,
+      "role": "code",
+      "sha256": "65a92fef0b1b67d6ea151756affac0c631ca83cde569441055b8440ff51e1490"
+    },
+    "code/score/stages/demo_film/final.py": {
+      "bytes": 33963,
+      "role": "code",
+      "sha256": "bafbad40ec182b46143b0b20e70ac12736b5e41248b7beae5a2ef2a108d6efbb"
+    },
+    "code/score/stages/demo_film/lettering.py": {
+      "bytes": 6558,
+      "role": "code",
+      "sha256": "50bfd8d9e24180d456e6912948f02393faaa35b8415d415be071343ca877d3c2"
+    },
+    "code/score/stages/demo_film/peel.py": {
+      "bytes": 45822,
+      "role": "code",
+      "sha256": "2375fa044c9870f1ba1dbc8299c9f175f5a7489d9f36312b5b8549b279395d4d"
+    },
+    "code/score/stages/demo_film/peel_rows.py": {
+      "bytes": 22008,
+      "role": "code",
+      "sha256": "9ceec7077d2911164858a04c23f0aba1628acdeaf7f0a7c704fd6e5e40452c35"
+    },
+    "code/score/stages/demo_film/shots.py": {
+      "bytes": 4968,
+      "role": "code",
+      "sha256": "4cb614a69917fb1cdf432e89f06ccdf9988f087fa97606f2d0af39a1a6b343da"
+    },
+    "code/score/stages/design_layers.py": {
+      "bytes": 5134,
+      "role": "code",
+      "sha256": "8f92e9be1117d057235d9c2fc6bc937658b9ff720219103dfafd7985b9f89290"
+    },
+    "code/score/stages/earth_seed/__init__.py": {
+      "bytes": 12168,
+      "role": "code",
+      "sha256": "ffdaa9e9af212673c14ecd40d3d73b4621dd13f4b599a37ef55cbdfdbb87c020"
+    },
+    "code/score/stages/earth_seed/design_shell.py": {
+      "bytes": 91893,
+      "role": "code",
+      "sha256": "3494700adc801b1c52fe4f6d26fd0ff45945a73373884aa91425aee5e4918ec5"
     },
     "code/score/stages/effects/__init__.py": {
       "bytes": 47223,
       "role": "code",
       "sha256": "daa3d2dc99adc1c07ec4793970e88a39a25587b3ea83223b7c07c1fc5f6c1747"
     },
+    "code/score/stages/effects/asked.py": {
+      "bytes": 4000,
+      "role": "code",
+      "sha256": "310383058cfb06e0d178ab48f3e517f2e0b693334d4b2a2995c320d5d97af254"
+    },
+    "code/score/stages/effects/from_design.py": {
+      "bytes": 5212,
+      "role": "code",
+      "sha256": "8a0662cfa622d00292d5a61da3b886c996a4178978c60f7df9d0e775acea4fd0"
+    },
     "code/score/stages/effects/inside/newton_pile.py": {
       "bytes": 9859,
       "role": "code",
       "sha256": "39dedb165c8fb45c385d1b577cc737d868669f310eae1d430c6279253bf93d98"
     },
+    "code/score/stages/gaps.py": {
+      "bytes": 6971,
+      "role": "code",
+      "sha256": "bce71714fbc75df6e3a4754475ca5518f7b24cfb2affc4f37918ea3b27fc0439"
+    },
+    "code/score/stages/images/__init__.py": {
+      "bytes": 29727,
+      "role": "code",
+      "sha256": "7e8db461724fc0fa27a03de8a4e7adec456ad3d0f1ac779834dcc30eb20682ed"
+    },
+    "code/score/stages/layer_base.py": {
+      "bytes": 3881,
+      "role": "code",
+      "sha256": "3a6bab4ef6d978540c4cce41c71e539da1d972b7e618af221f12ca4c304ac139"
+    },
+    "code/score/stages/library/__init__.py": {
+      "bytes": 10863,
+      "role": "code",
+      "sha256": "b71f8784c5a43188f11ea2523d2289294453b3254a070a6ff1b97d815a885898"
+    },
+    "code/score/stages/library/backend.py": {
+      "bytes": 11594,
+      "role": "code",
+      "sha256": "2864316506ecc0e5ed093f5d8692b5dde4743b900a7716fe7a2583edfce75a5e"
+    },
+    "code/score/stages/library/checks.py": {
+      "bytes": 9722,
+      "role": "code",
+      "sha256": "52d900d0ffe98491fe45251e682216f74a240b4043db9c3c6625dd7f5bc4a129"
+    },
+    "code/score/stages/library/handed.py": {
+      "bytes": 14015,
+      "role": "code",
+      "sha256": "d5c318c3f81f00c931b8ca2e4db2af3e4460e59b5bb8d497e2dd1acf6024ffac"
+    },
+    "code/score/stages/library/handover.py": {
+      "bytes": 4395,
+      "role": "code",
+      "sha256": "1579372359158a4d78b023458e042ee200b8569f18f9a53e8b77b7f8cd20a62d"
+    },
+    "code/score/stages/library/traced.py": {
+      "bytes": 2451,
+      "role": "code",
+      "sha256": "f76bfffc840d51bd2bcc39106ac0ac140cdd6dd9c2b224dd4d4780ae92eb7441"
+    },
+    "code/score/stages/light/__init__.py": {
+      "bytes": 115935,
+      "role": "code",
+      "sha256": "69cb454adff3ada62a2b6707ec22c47a9f022bb08a6c4a2d09d150b09e825f8f"
+    },
+    "code/score/stages/light/bare.py": {
+      "bytes": 3092,
+      "role": "code",
+      "sha256": "4867b2a8efcdc0d2eb69f20e264f1fafb46d93000170431689d70f70c38dec65"
+    },
+    "code/score/stages/light/haze.py": {
+      "bytes": 1866,
+      "role": "code",
+      "sha256": "d1821d8fbf2c588c64b9057c3932fb60e776c13e795c547c51a18e9dfdf83581"
+    },
+    "code/score/stages/light/layer.py": {
+      "bytes": 22360,
+      "role": "code",
+      "sha256": "4bdebb7476a28def5c1e045b73b13960ea5897ada20f26ac396d9526e5880757"
+    },
+    "code/score/stages/light/measure.py": {
+      "bytes": 10887,
+      "role": "code",
+      "sha256": "f7973076477bfc5b7ec640cbeeff33730a4b3f46bd0cff2ab8129e2cd5bebec2"
+    },
+    "code/score/stages/light/mix.py": {
+      "bytes": 33115,
+      "role": "code",
+      "sha256": "78e2682ed6e963b05392089d2734bc65dd505da23ee303cea1c3c20b0f812c1a"
+    },
+    "code/score/stages/light/needs.py": {
+      "bytes": 2885,
+      "role": "code",
+      "sha256": "4498dfe82a460471a3b0090ea2631ac89d6bc6e7e263c6826c3bbf8d253d6b3f"
+    },
+    "code/score/stages/light/night.py": {
+      "bytes": 21969,
+      "role": "code",
+      "sha256": "ce91d3f2355bf097d1966af726b3717cf686b742435f37e99f43e4fe96e52375"
+    },
+    "code/score/stages/light/passes.py": {
+      "bytes": 21335,
+      "role": "code",
+      "sha256": "d096deb86f6e9b68afa29665f795c2e9246e3101a0e2023a780272c7246b8a9e"
+    },
+    "code/score/stages/light/sky.py": {
+      "bytes": 23073,
+      "role": "code",
+      "sha256": "cf314a16613fddf4b2184a3c7bd383c6e70a8ba7dc6ed8a268b0647537481ba2"
+    },
+    "code/score/stages/motion/__init__.py": {
+      "bytes": 52046,
+      "role": "code",
+      "sha256": "b953325036f2b03ef459f2488f9e87e00e22fef608099728178c2feddab1405b"
+    },
+    "code/score/stages/motion/check.py": {
+      "bytes": 12100,
+      "role": "code",
+      "sha256": "36f4e6150ab10d8b40e19f2b40bc84e8bd564b50df1bf011fcd5eec1ef6d2cd0"
+    },
+    "code/score/stages/motion/cloth.py": {
+      "bytes": 21450,
+      "role": "code",
+      "sha256": "4d29fae23447136c41aa2a99d2bebf32f149b80eb1728788a6a1bf9a081ae228"
+    },
+    "code/score/stages/motion/cloth_layer.py": {
+      "bytes": 8592,
+      "role": "code",
+      "sha256": "c674dfe2b7f56dd2f0ebf934b0d41e1ed39f9997a3e2a7b7fa9952b06d09fb10"
+    },
+    "code/score/stages/motion/cloth_rig.py": {
+      "bytes": 12179,
+      "role": "code",
+      "sha256": "a89780d3fd74e91041559e1663665d21fd344da9f5ea87f5ded10aeeb10b851d"
+    },
+    "code/score/stages/motion/exhaust.py": {
+      "bytes": 17071,
+      "role": "code",
+      "sha256": "09f1a9dc2a64e7b05f8b4fd5aa4668e66d6666bc0c42f79626afc0b2fb88f9ad"
+    },
+    "code/score/stages/motion/from_design.py": {
+      "bytes": 27497,
+      "role": "code",
+      "sha256": "1b60d906a3c2afa06ec3fb7cf9f743b83943d780a4ff168ebd8b8b1162f7c68f"
+    },
+    "code/score/stages/motion/ripple.py": {
+      "bytes": 7818,
+      "role": "code",
+      "sha256": "9690bf7ed88ea85f03b0c8a5591f7cc6f801c0241867a9faa12a2e134c8c2ef2"
+    },
+    "code/score/stages/motion/shown_rows.py": {
+      "bytes": 2786,
+      "role": "code",
+      "sha256": "d3d99af80a683175c2218061eeca3b981ef88060ec196e209d82a1d988ccd431"
+    },
+    "code/score/stages/motion/space.py": {
+      "bytes": 14023,
+      "role": "code",
+      "sha256": "3712b0f7c1bc2ac7cd5f9f640570b77e0eaad5216747d66a9743e87bd074815c"
+    },
+    "code/score/stages/motion/tagged_rows.py": {
+      "bytes": 3522,
+      "role": "code",
+      "sha256": "0ab789df9707aa5a2b7b2a3f2e83e213ea859688611de3d63aa1f3ce1b3117c8"
+    },
+    "code/score/stages/motion/water_rows.py": {
+      "bytes": 9931,
+      "role": "code",
+      "sha256": "e144a1db3406ecfff89944529b885c725f7a71cd59008279aa118be3b2952aab"
+    },
+    "code/score/stages/natural_grounds.py": {
+      "bytes": 6511,
+      "role": "code",
+      "sha256": "ad13cdb2d09b5cf939c12ed5fad52883ace3d6bf63632240b3cba444bfd19b43"
+    },
+    "code/score/stages/people/__init__.py": {
+      "bytes": 6120,
+      "role": "code",
+      "sha256": "0891865f52d343bdd4dd3a5943e9f0ce1a7f43d7e0cd7b5b18b0d618e094c6df"
+    },
+    "code/score/stages/people/baked_body.py": {
+      "bytes": 13302,
+      "role": "code",
+      "sha256": "2ae304a34e2349d75b6186440249e7829bb3d52b7f5f75973f73cb29bcebd302"
+    },
+    "code/score/stages/people/dress.py": {
+      "bytes": 31106,
+      "role": "code",
+      "sha256": "4293655d69cb191f2f9fd05137076b083ae810edad63daa67c8c076717e440ce"
+    },
+    "code/score/stages/people/look.py": {
+      "bytes": 5358,
+      "role": "code",
+      "sha256": "4f7ee0a0c8251050b88ca2f9c2868d9a38d6af8cdf9d3066cda04f7326a8af0b"
+    },
+    "code/score/stages/people/loop.py": {
+      "bytes": 5840,
+      "role": "code",
+      "sha256": "ab485b1b29740b3efb56a3f9f5594832c824f15f8320a65b398983efda819184"
+    },
+    "code/score/stages/people_bodies/__init__.py": {
+      "bytes": 0,
+      "role": "code",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "code/score/stages/people_bodies/bodies.py": {
+      "bytes": 33065,
+      "role": "code",
+      "sha256": "a1896c2a9df052a12ad9d29d1bd75d7fa7da51715e4635dc49fcfbaedb3f2a1c"
+    },
+    "code/score/stages/people_bodies/clips.py": {
+      "bytes": 6475,
+      "role": "code",
+      "sha256": "372d00deb2f66e87fd0a025322db1039375e4fa134e32c2ac1ab10e531ad8e08"
+    },
+    "code/score/stages/people_bodies/far.py": {
+      "bytes": 1816,
+      "role": "code",
+      "sha256": "3d548e6e9dc48828978f1372305857aafa3346249b02c5cf66770d5c764e4e32"
+    },
+    "code/score/stages/people_bodies/full.py": {
+      "bytes": 1284,
+      "role": "code",
+      "sha256": "8e989d73b07f2fb1efb40e98d52627300b832422ab8b0aff36d1324720198bd5"
+    },
+    "code/score/stages/people_bodies/made_clips.py": {
+      "bytes": 3444,
+      "role": "code",
+      "sha256": "3fa645881bdede5561573d104698a92fa008272fb7454943813c7e6cd6befc07"
+    },
+    "code/score/stages/people_cloth/__init__.py": {
+      "bytes": 31355,
+      "role": "code",
+      "sha256": "a37849b13ec3a0b3a5bee9ab5ff0801be22d7c59d3132638f47f2c3aee6edf68"
+    },
+    "code/score/stages/people_gaps.py": {
+      "bytes": 3905,
+      "role": "code",
+      "sha256": "3392e1b0f8b1d78c1177d48c0c44dee11221e94dff99e0baf0c0363cceb7e5a6"
+    },
+    "code/score/stages/people_rows.py": {
+      "bytes": 17426,
+      "role": "code",
+      "sha256": "8284ce0b07116a72aeb88e7bd093d5bf40538d28021c47dd36a42f7acaca1961"
+    },
+    "code/score/stages/physics/__init__.py": {
+      "bytes": 19814,
+      "role": "code",
+      "sha256": "68a1577df39f510ca4c38caa7b7597b7436e321bda221957072ab023e4066134"
+    },
+    "code/score/stages/physics/design.py": {
+      "bytes": 4743,
+      "role": "code",
+      "sha256": "3b5e513f736a694eac8b3a0a3ac2b931d62bd347c79c2ef75c2127c679a64ce8"
+    },
+    "code/score/stages/place_build/__init__.py": {
+      "bytes": 63089,
+      "role": "code",
+      "sha256": "71b1d2fdca77141836db2c2c5a8842905ef9e67fe0a773d9695fc3c80cdf5442"
+    },
+    "code/score/stages/place_build/dome_shell.py": {
+      "bytes": 30404,
+      "role": "code",
+      "sha256": "c8b3b2dfa8bd3130f8bf6b6b2451da85d5851d7c779d2883a15fc4e031e281de"
+    },
+    "code/score/stages/place_build/film.py": {
+      "bytes": 17112,
+      "role": "code",
+      "sha256": "8e77629796d5405d50408894c0170bde70ab3053fe022497630fe0385249f49a"
+    },
+    "code/score/stages/place_build/gltf.py": {
+      "bytes": 7887,
+      "role": "code",
+      "sha256": "2f226615d12d22a0b5629362630753ba815eb1a8fbe38d676c7e2e27084bb56c"
+    },
+    "code/score/stages/place_build/ground_tracks.py": {
+      "bytes": 7372,
+      "role": "code",
+      "sha256": "a380d0ed5ef07422cac7c29ede80bee40f140a375448d83ebd50c25ec10b416a"
+    },
+    "code/score/stages/place_build/rainfall.py": {
+      "bytes": 6692,
+      "role": "code",
+      "sha256": "afcef879260a6f2a56e769576b982331f5710b1bb2d88825edb765d388bbdd9e"
+    },
+    "code/score/stages/place_build/ready/__init__.py": {
+      "bytes": 60592,
+      "role": "code",
+      "sha256": "41af042e0ffbbd68f68bcd412eaae146f26b230a2a8780079420a7847343d115"
+    },
+    "code/score/stages/place_build/ready/people.py": {
+      "bytes": 9634,
+      "role": "code",
+      "sha256": "6f0f0cc8b43e696c348e16bb8473179672b90bf471665be2bdf937c173d8f6e4"
+    },
+    "code/score/stages/place_build/relief.py": {
+      "bytes": 10825,
+      "role": "code",
+      "sha256": "a12cde710e22513adcb832423f93c60b7d74b108826b9e48f70edf290814dab6"
+    },
+    "code/score/stages/place_build/render.py": {
+      "bytes": 6361,
+      "role": "code",
+      "sha256": "cbb782728ac295171b2cf371f0e456d665a9d776b999f69e3def9cdc58a506f2"
+    },
+    "code/score/stages/place_build/stair_core.py": {
+      "bytes": 23880,
+      "role": "code",
+      "sha256": "ee9dc20dd09320e33a16eb18567a40d5366ca897dca81d28ed942c7faea55bdb"
+    },
+    "code/score/stages/props/__init__.py": {
+      "bytes": 4295,
+      "role": "code",
+      "sha256": "2646d50a9913c2acb4e471283145425fe020be0af52418fe726bc62d527e9c17"
+    },
+    "code/score/stages/props/calibration_row.py": {
+      "bytes": 2892,
+      "role": "code",
+      "sha256": "54085daf246d8f7d0599af52d31691a01791e7d0eb10cb997dfedd951c5d9ebb"
+    },
+    "code/score/stages/props/closeup_row.py": {
+      "bytes": 19756,
+      "role": "code",
+      "sha256": "1d853aed92375a30293bd5eaa68363345b6a03469912b252e497300951842cad"
+    },
+    "code/score/stages/props/flat_drawn.py": {
+      "bytes": 8180,
+      "role": "code",
+      "sha256": "25095ab301cbd01bfd71594ba97a9cc97212cb9d4d8df34c9e10d386cd1824ae"
+    },
+    "code/score/stages/props/flat_sheet.py": {
+      "bytes": 10159,
+      "role": "code",
+      "sha256": "38ca9e5879688461d069f59645c7c0509551226067bd7d93475e02b92cf63803"
+    },
+    "code/score/stages/props/likeness.py": {
+      "bytes": 8602,
+      "role": "code",
+      "sha256": "bc88a65d0a319690c8ae2741246d657fa651366fb7c718c315a98c5367666c5e"
+    },
+    "code/score/stages/props/likeness_row.py": {
+      "bytes": 42844,
+      "role": "code",
+      "sha256": "6c9f6be680da359ddd8fbfc61599a9404372e8ab07dbee8aa7d2473163c742d1"
+    },
+    "code/score/stages/props/masks_row.py": {
+      "bytes": 3792,
+      "role": "code",
+      "sha256": "eda59e1c7f293837feae4b815ffaaeac58baedc63491cd594bf143275f64a50d"
+    },
+    "code/score/stages/props/pixal_row.py": {
+      "bytes": 18744,
+      "role": "code",
+      "sha256": "7f22bc6afba7dfa4eba22ab5fc60fad0311e3fca087d56ab4dbb2ca89224dcf4"
+    },
+    "code/score/stages/props/prop_data.py": {
+      "bytes": 9807,
+      "role": "code",
+      "sha256": "0ee57dbf9c2fe95dd5fd1e8366b32e657d860ecca7e3751386c0efdbc85e1ff7"
+    },
+    "code/score/stages/props/railing_hold.py": {
+      "bytes": 3684,
+      "role": "code",
+      "sha256": "496341069b265199d5529e84cdd18c68a489502518fac41b245c086765801834"
+    },
+    "code/score/stages/props/thin_straight.py": {
+      "bytes": 66145,
+      "role": "code",
+      "sha256": "cdb123f8f36adb943e8c52a5adfffbf3a93bb324c283e227a2d3563a39ccd025"
+    },
+    "code/score/stages/root_stage.py": {
+      "bytes": 537,
+      "role": "code",
+      "sha256": "6a33eef2478d9f29c2d2df7cf1d72529335bc4382a5da4c65a929982c4e5423a"
+    },
+    "code/score/stages/rough_model/__init__.py": {
+      "bytes": 10111,
+      "role": "code",
+      "sha256": "c94ab113c99042c2fe7ed92533db79fac68140d8bd94692adaacc5c88c3dfa4a"
+    },
+    "code/score/stages/row_kinds.py": {
+      "bytes": 7673,
+      "role": "code",
+      "sha256": "c1abe91cc2673cfd78a37376107d97ae931cdceb1b1eddcc966953bf3405e74a"
+    },
+    "code/score/stages/scene_clips/__init__.py": {
+      "bytes": 28979,
+      "role": "code",
+      "sha256": "9cebf7337fb60f88f878555d452bb1b14e8b108d25efe639707c0d6568f9266e"
+    },
+    "code/score/stages/scene_record/__init__.py": {
+      "bytes": 1520,
+      "role": "code",
+      "sha256": "e60948deb1a6c02b947bf97d6e1bcd2a028192ab8b57521a795ab2298d751a43"
+    },
+    "code/score/stages/scene_record/concept_light.py": {
+      "bytes": 722,
+      "role": "code",
+      "sha256": "e7f02960a2f8bad361fcc6391d2cb5b1fd69b09ccc01595d78dfbf8500b0f773"
+    },
+    "code/score/stages/scene_record/far.py": {
+      "bytes": 4666,
+      "role": "code",
+      "sha256": "852f8702899ea8c6b85618391865435f96cf7837e9b19ae2932168992427bbbb"
+    },
+    "code/score/stages/scene_record/gates.py": {
+      "bytes": 42800,
+      "role": "code",
+      "sha256": "cbd2039a911a49e8d307dee6627f69c7999845b32619cfba2d9baaef5f2a9d53"
+    },
+    "code/score/stages/scene_record/plan.py": {
+      "bytes": 51691,
+      "role": "code",
+      "sha256": "6e632817023df4520d3ac9261b38d6d6f23acdbf776b197bed7588bb8788ea62"
+    },
+    "code/score/stages/scene_record/writer.py": {
+      "bytes": 126914,
+      "role": "code",
+      "sha256": "e2e415b7172cd4b476cdb9f6ec957fcf7d0398a7b4cc7560f7e4fbf9810d0d41"
+    },
+    "code/score/stages/screens/__init__.py": {
+      "bytes": 20204,
+      "role": "code",
+      "sha256": "d3119f902dffe7bb43863fdc4788b35e20b88ee9576b0a5880a90dc684eea7b2"
+    },
+    "code/score/stages/settling/__init__.py": {
+      "bytes": 42503,
+      "role": "code",
+      "sha256": "b9759c4142107a717abc2f0ee51af5fa825a336dc263d07b4cd872d2e6adf26e"
+    },
+    "code/score/stages/settling/held.py": {
+      "bytes": 18173,
+      "role": "code",
+      "sha256": "1fb5c4b7911d4c0ac046f9e034f865f4906076ef261f3d7d37205c2bceca4603"
+    },
+    "code/score/stages/shapes_first/__init__.py": {
+      "bytes": 7716,
+      "role": "code",
+      "sha256": "f123e686802d8f85e658866fc3ad5c8bbde3a6dab87ba3d9dc0e94c5205a7eb3"
+    },
+    "code/score/stages/shapes_first/align.py": {
+      "bytes": 11707,
+      "role": "code",
+      "sha256": "f3e1abb3f45d918cfa1a6d17cc225f7d6355f6ca768bb0bd67c9a7fcfde449ed"
+    },
+    "code/score/stages/shapes_first/floor_fit.py": {
+      "bytes": 5765,
+      "role": "code",
+      "sha256": "157d0047525f383713c0663aca2b4839925880bbaeeb5742d1559fb938a785b3"
+    },
+    "code/score/stages/shapes_first/made.py": {
+      "bytes": 2729,
+      "role": "code",
+      "sha256": "32fd9fb2c31b6b61115a5261fd090fc0f0ebb43b06de33b30e1e2a6951348eb8"
+    },
+    "code/score/stages/shell_parts.py": {
+      "bytes": 4882,
+      "role": "code",
+      "sha256": "235bbc87b6648d7dddf896e7ea082891fcca3f2ceea6e682792d6d9409335770"
+    },
+    "code/score/stages/sim_body/__init__.py": {
+      "bytes": 31258,
+      "role": "code",
+      "sha256": "19bd8c3af848745c50c7fcb620a6761bf509a50058b9a8a3025b373c9db5aac1"
+    },
+    "code/score/stages/sim_body/_body.py": {
+      "bytes": 42808,
+      "role": "code",
+      "sha256": "b4f4814535172f777a550734d1d5e48a34d8f880386fd4457a8d9699ee819a71"
+    },
+    "code/score/stages/sim_body/_gates.py": {
+      "bytes": 14104,
+      "role": "code",
+      "sha256": "9ad39defb5b3508ecb2cf13e4a857e97b9c91d7d841d0000ea44d1ed4ed4bfbe"
+    },
+    "code/score/stages/sim_body/_ground.py": {
+      "bytes": 2697,
+      "role": "code",
+      "sha256": "1ebc9beb9c4489d8e22592890c2024fad9485c40900bc4b5fd654dd108764e7e"
+    },
+    "code/score/stages/sim_body/_layer.py": {
+      "bytes": 5544,
+      "role": "code",
+      "sha256": "2a8261c0fbd102c7e39e31c0542e40b0131dbda4525531e5eb69af654af468a5"
+    },
+    "code/score/stages/sound/__init__.py": {
+      "bytes": 25128,
+      "role": "code",
+      "sha256": "cffc232ba0b7b9eb71c655ca2d389e247d0377d9dd741bc37ee8b4ef8132decb"
+    },
+    "code/score/stages/sound/beds.py": {
+      "bytes": 10558,
+      "role": "code",
+      "sha256": "54b379e8f18e09768d3dfaa45438602ddb8fd2c689a78e6a5b77627922eec84f"
+    },
+    "code/score/stages/sound/gates.py": {
+      "bytes": 17262,
+      "role": "code",
+      "sha256": "c539c3c9acbb8c8bb1593d99d58f809242dcb9987b988ad4e57ae5ba87a2fee1"
+    },
+    "code/score/stages/sound/moving.py": {
+      "bytes": 6894,
+      "role": "code",
+      "sha256": "73702d36fc822e1edd27b53d54ec79b26c49a04467193d3f0e848bb7fba96b1a"
+    },
+    "code/score/stages/sound/needs.py": {
+      "bytes": 9128,
+      "role": "code",
+      "sha256": "14bb801f793d42e905bd3685a90896c1ebf3ff4cd73dd42fd928657b2101cae8"
+    },
+    "code/score/stages/sound/takes.py": {
+      "bytes": 12878,
+      "role": "code",
+      "sha256": "7790753a5f399319534a84c5b56cef86cbb69b045d1f0897042eb8b558869827"
+    },
+    "code/score/stages/surface_tiles/__init__.py": {
+      "bytes": 7633,
+      "role": "code",
+      "sha256": "e772279b1be1c87b19fa6e82d6cd943c60b74b0751cd8ed8f8184ed729a05f4f"
+    },
+    "code/score/stages/surfaces/__init__.py": {
+      "bytes": 6813,
+      "role": "code",
+      "sha256": "b2c4bf749d8303aaa8fdc4ac8ef262174f59c3d3276abdd7f4f605e28007ee6c"
+    },
+    "code/score/stages/surfaces/bake_check.py": {
+      "bytes": 38417,
+      "role": "code",
+      "sha256": "604927c414565bebda5a185fb09f992f400813146b5ec2c665854f1feae68ac5"
+    },
+    "code/score/stages/surfaces/bake_fitted.py": {
+      "bytes": 995,
+      "role": "code",
+      "sha256": "5a4509a3d467311ff8bb7fc47fe00d3994c655a3977c687f874b37a697f09398"
+    },
+    "code/score/stages/surfaces/bake_job.py": {
+      "bytes": 15472,
+      "role": "code",
+      "sha256": "9b52dc2b268b26c49acdfb4787201cb9bea22c94bcfa0bbb86e37bac66b8d789"
+    },
+    "code/score/stages/surfaces/baked_colour.py": {
+      "bytes": 10450,
+      "role": "code",
+      "sha256": "2af116627599cdfa894b1c9c4c708227f91e831a32600493eaa4c88d9a4892c2"
+    },
+    "code/score/stages/surfaces/body_faces.py": {
+      "bytes": 13448,
+      "role": "code",
+      "sha256": "81862d4540dacf0b983f5f688c4fc8a9272f6c9a07d991b3ee0cd3e728860e16"
+    },
+    "code/score/stages/surfaces/carry.py": {
+      "bytes": 27703,
+      "role": "code",
+      "sha256": "4ea217791c88c5094e4fcab7fb32ed8cfb0158c14504257f92c697a87fb61070"
+    },
+    "code/score/stages/surfaces/check_seen.py": {
+      "bytes": 4970,
+      "role": "code",
+      "sha256": "f3a52692b4070af578540061d82fe7099348b07d7bde0bbe5d73fdd62f99e068"
+    },
+    "code/score/stages/surfaces/claude_asks.py": {
+      "bytes": 3766,
+      "role": "code",
+      "sha256": "5d1d2fcdff241f3ffe78eb1aa59b495046911f883fcc06584e6b016b0e852c77"
+    },
+    "code/score/stages/surfaces/colour_picks.py": {
+      "bytes": 7045,
+      "role": "code",
+      "sha256": "f02e6bdf99871aef9d3df754089295d5d10b5ecc5842792de9a05c265abaeb21"
+    },
+    "code/score/stages/surfaces/feet_stand.py": {
+      "bytes": 7802,
+      "role": "code",
+      "sha256": "4b64b1d14fd3a40d12cde3ef3cd0ff82500570dffdf54984e78a8c5fff0e9d42"
+    },
+    "code/score/stages/surfaces/finish_ask.py": {
+      "bytes": 11718,
+      "role": "code",
+      "sha256": "b50ca662c534723d5c6569d68298e3272030ec8c0056eb430b19b4a8b44c7125"
+    },
+    "code/score/stages/surfaces/finish_parts.py": {
+      "bytes": 40935,
+      "role": "code",
+      "sha256": "d918aa3bb1d18025a52b037d287c357943509c5468afef7227b9c229b745db0a"
+    },
+    "code/score/stages/surfaces/library_reads.py": {
+      "bytes": 5169,
+      "role": "code",
+      "sha256": "2dec12e3804f9b98d549695aee5e3deb2378f67d6de7add3b574856be37d5821"
+    },
+    "code/score/stages/surfaces/palette_library.py": {
+      "bytes": 6487,
+      "role": "code",
+      "sha256": "e81a87a25553f0bf69e6927de97bdcd4ba2940cc2b318725ea4991f224847634"
+    },
+    "code/score/stages/surfaces/parts_kept.py": {
+      "bytes": 6941,
+      "role": "code",
+      "sha256": "299159fce7b7a030ef5d40101d9ac0c8f856faa2550cb88b15aecf69d31e9696"
+    },
+    "code/score/stages/surfaces/place_line.py": {
+      "bytes": 51777,
+      "role": "code",
+      "sha256": "5bea6c3fbe43e49c71119c9ec2bc4017814944e3edc1a16f934a34dbad368f33"
+    },
+    "code/score/stages/surfaces/prop_env.py": {
+      "bytes": 2381,
+      "role": "code",
+      "sha256": "70e33e1ca2dd376987a35742b8db744fda274eef9a36fc4cfe6b16d0b26a4c8e"
+    },
+    "code/score/stages/surfaces/recheck_picks.py": {
+      "bytes": 14837,
+      "role": "code",
+      "sha256": "80f701eb427f3cd5388243c3a01ea4dcac926d887568d910d31201f9f05493af"
+    },
+    "code/score/stages/surfaces/registry.py": {
+      "bytes": 1878,
+      "role": "code",
+      "sha256": "bb210128943ad978d2d0415acf10cb3ffafeadf94fad253708d5e81cf4971b59"
+    },
+    "code/score/stages/surfaces/route_ask.py": {
+      "bytes": 2473,
+      "role": "code",
+      "sha256": "e178481841d2ca2c03c2d0539ce2ad4dfda09069b409e6a89ba88ae3760e41d5"
+    },
+    "code/score/stages/surfaces/route_bake.py": {
+      "bytes": 30775,
+      "role": "code",
+      "sha256": "d2db9200f239fa1366a1412be3e9f5567325b2b8e12479819ab9ba9239a7c088"
+    },
+    "code/score/stages/surfaces/route_cast.py": {
+      "bytes": 11670,
+      "role": "code",
+      "sha256": "3b13e997921b02ff7740d567a5d6ff91f65184a819b8a37cbab791efb6ef5212"
+    },
+    "code/score/stages/surfaces/route_check.py": {
+      "bytes": 5029,
+      "role": "code",
+      "sha256": "aa1e3a3146884566d852e254311ad9913d4323c845f0b30edbba527483a84a98"
+    },
+    "code/score/stages/surfaces/route_data.py": {
+      "bytes": 3844,
+      "role": "code",
+      "sha256": "1f491a00de8dfbeee3cf7ee4c1ae0fbfc41c3eb30bb8a5d57403a02021cf51ce"
+    },
+    "code/score/stages/surfaces/route_list.py": {
+      "bytes": 22392,
+      "role": "code",
+      "sha256": "3630f6d9d6db710b2a278dde06b2336126d734f0ca08504b313b488725f83928"
+    },
+    "code/score/stages/surfaces/route_paint.py": {
+      "bytes": 4864,
+      "role": "code",
+      "sha256": "68a16db4eed2a0741278a2df0958122a82b9a6ed4858e789c0b2b0c55d416660"
+    },
+    "code/score/stages/surfaces/route_parts.py": {
+      "bytes": 13806,
+      "role": "code",
+      "sha256": "01e078d75d8a04381151ac3bff994bfcc8272a41baca2304f0c3ce215f315f90"
+    },
+    "code/score/stages/surfaces/route_recheck.py": {
+      "bytes": 12858,
+      "role": "code",
+      "sha256": "77ff87613866395612a29c437c93bb10c647d79e869027f663ab688aa50d3d21"
+    },
+    "code/score/stages/surfaces/route_settings.py": {
+      "bytes": 2902,
+      "role": "code",
+      "sha256": "d31a7712dbd089524d2de090b0ca34f720a6fb10a90664813f0dca81242a9c80"
+    },
+    "code/score/stages/surfaces/route_split.py": {
+      "bytes": 13648,
+      "role": "code",
+      "sha256": "61bfede483f50c4ccdf4f7c73ed2218d569b8224189dfbcb1484459eabafc2b3"
+    },
+    "code/score/stages/surfaces/route_views.py": {
+      "bytes": 21360,
+      "role": "code",
+      "sha256": "44d02f3f9d86ec41def30da0443e804ae534296b87ea68a5011cc5fdcd0066a8"
+    },
+    "code/score/stages/surfaces/scene_library.py": {
+      "bytes": 27513,
+      "role": "code",
+      "sha256": "42ea86e982a9969656a7fcfda083927680b326fa7263dedafd2e0b2991a8e487"
+    },
+    "code/score/stages/surfaces/scene_palette.py": {
+      "bytes": 13906,
+      "role": "code",
+      "sha256": "5cb2337811560bac4fde6e674ef4b3bf0ade4caa7b373e0f26f70a24a73615b4"
+    },
+    "code/score/stages/surfaces/surface_data.py": {
+      "bytes": 5036,
+      "role": "code",
+      "sha256": "82d22b30b7a13d26bbff24f0d791a9b1d665a42eeb282bbb84ac15882a2b1d1d"
+    },
+    "code/score/stages/surfaces/surface_gates.py": {
+      "bytes": 1343,
+      "role": "code",
+      "sha256": "358f4831813853c022772ad946525eac6fc0b11189bc8c7de9c4446dfc25cdf8"
+    },
+    "code/score/stages/surfaces/take_outline.py": {
+      "bytes": 6259,
+      "role": "code",
+      "sha256": "fc7078b6f8896cf38fe2294110123769bb45e75fdb8338e2a386cd677ffcad51"
+    },
+    "code/score/stages/surfaces/tumble.py": {
+      "bytes": 9288,
+      "role": "code",
+      "sha256": "c6700c26ae322fa162797c09467ac730db98b9e91bf1ddd495593860d64e5b0d"
+    },
+    "code/score/stages/surfaces/uv_layout.py": {
+      "bytes": 14704,
+      "role": "code",
+      "sha256": "c98d47ead8110945fe32e1739b9a06567c6681b28092b25d5b7fc3c2ac6c76c7"
+    },
+    "code/score/stages/terrain/__init__.py": {
+      "bytes": 9005,
+      "role": "code",
+      "sha256": "ec5ea3781838603b28c9663d242db134100f577c0fb6abd98dee436ae0cd785f"
+    },
+    "code/score/stages/terrain/bounded.py": {
+      "bytes": 5205,
+      "role": "code",
+      "sha256": "8225775fec1703ae8e01ce74c85f03acc513d333114126fcaa7f2437c13529ad"
+    },
+    "code/score/stages/terrain/design.py": {
+      "bytes": 25114,
+      "role": "code",
+      "sha256": "82bddf7349fa99fba3b5119c5aed216b38f8d9dea8169075e0687eae3b95f25c"
+    },
+    "code/score/stages/terrain/fit.py": {
+      "bytes": 9116,
+      "role": "code",
+      "sha256": "073b0ff0e3fe6c00c3f22d0be83095a048b308d69567bc077434823b754f3440"
+    },
+    "code/score/stages/terrain/gates.py": {
+      "bytes": 11073,
+      "role": "code",
+      "sha256": "c8173e04eaa6fceea60c0dcabba560e7f995fc0a2dda8c26820f07ad6d50a14c"
+    },
+    "code/score/stages/terrain/join.py": {
+      "bytes": 15061,
+      "role": "code",
+      "sha256": "c8863233ff6dedd67d1011ce00a530da1c5f498fce42ac8e1d905285c9c975f8"
+    },
+    "code/score/stages/terrain/kit.py": {
+      "bytes": 28924,
+      "role": "code",
+      "sha256": "576f1f1cbde215c9e50123db5697dd2c3f572b02eaad226a0cbc0f250cf66453"
+    },
+    "code/score/stages/terrain/outside.py": {
+      "bytes": 9273,
+      "role": "code",
+      "sha256": "f97cc40b518d9c315fa966e8175ea6df4380dac996f09e6f407beab2a649a342"
+    },
+    "code/score/stages/terrain/sight.py": {
+      "bytes": 9126,
+      "role": "code",
+      "sha256": "f351967f17f6ff8512b7c2dc613226c9f2b2f8384709e9f6edf0a11512e6c774"
+    },
+    "code/score/stages/wall_kit/__init__.py": {
+      "bytes": 30907,
+      "role": "code",
+      "sha256": "2c01bd470e06d9a53b5024b8520188f8e0c56002a2b08ba124257b7782751515"
+    },
+    "code/score/store/__init__.py": {
+      "bytes": 21142,
+      "role": "code",
+      "sha256": "72bf0a79cc5e7a00d67f851375668782053541c29573c70aca4e061c587556cf"
+    },
+    "code/score/store/durable.py": {
+      "bytes": 10062,
+      "role": "code",
+      "sha256": "bd6813f2695741ccd1ac85194e66fd43a071591c328e82573a93c2fffb4ac4ed"
+    },
+    "code/score/store/offload/__init__.py": {
+      "bytes": 19012,
+      "role": "code",
+      "sha256": "08d11bf8119147990e647ce39a3fd3f51fe1457500beefeda5c827da0bf348c4"
+    },
+    "code/tools/characters/cast.py": {
+      "bytes": 17817,
+      "role": "code",
+      "sha256": "6a6c4ec6951df83fd51b2876012f88df4a42e989efc7bec80f7ce4c470a35177"
+    },
+    "code/tools/characters/cast_check.py": {
+      "bytes": 9048,
+      "role": "code",
+      "sha256": "2cd90f96132ec8026362720b679423f1a099d4a9d95d61756522dc14d303bcc2"
+    },
+    "code/tools/characters/maker/prop_person.py": {
+      "bytes": 35935,
+      "role": "code",
+      "sha256": "299b49f377e6fdfb83171dc3d8361096d19a655e6517a3a2ea873629452526f9"
+    },
+    "code/tools/characters/maker/route_stretch.py": {
+      "bytes": 8387,
+      "role": "code",
+      "sha256": "370f1539832582a34e115c380afb45b29333ddc1005afe90f2d0fc8ee96cdc21"
+    },
+    "code/tools/characters/maker/spec.py": {
+      "bytes": 3377,
+      "role": "code",
+      "sha256": "511e6579b709e80d42c799e9db113ea38d0b19f4461180ae4e741c052f1b0347"
+    },
+    "code/tools/characters/people/clips.py": {
+      "bytes": 7195,
+      "role": "code",
+      "sha256": "239250a9199f70e9576a2688de6e8f831bb5b99373978154fa87e38f16d606ac"
+    },
+    "code/tools/characters/people/joins.py": {
+      "bytes": 26136,
+      "role": "code",
+      "sha256": "4b6498b484042f673af969742def274ddab81deabf96d8964e7508167f9869ad"
+    },
+    "code/tools/characters/people/paths.py": {
+      "bytes": 1002,
+      "role": "code",
+      "sha256": "569cc6e5c660be634f09bb453dc57911e6a3188c955bf4151bbf60844809e86b"
+    },
+    "code/tools/characters/people/regions.py": {
+      "bytes": 1783,
+      "role": "code",
+      "sha256": "feca5ebf8295511ae3d442e66d07023c4a58b85eb09eebbc47452c72cc311447"
+    },
+    "code/tools/characters/played/__init__.py": {
+      "bytes": 16159,
+      "role": "code",
+      "sha256": "79df000cd5ed5878a4131e9de639a77cec2d227fa3187cb9bc096a77857ec7ca"
+    },
+    "code/tools/characters/skel_usd.py": {
+      "bytes": 26188,
+      "role": "code",
+      "sha256": "346a01ffcfd067132ab65c1b4900dee344eaf8beae8dbde806faed11862b6f8e"
+    },
+    "code/tools/costs/costs.py": {
+      "bytes": 43990,
+      "role": "code",
+      "sha256": "a0c4eb27ce26a6c55e3727c09183694a042242d6fabb000c8ddaf8784c1452d4"
+    },
+    "code/tools/costs/per_unit.py": {
+      "bytes": 64838,
+      "role": "code",
+      "sha256": "8dfdc27d106b9ca4b287a5acfd26d0ce5dbbc61eb90e073b4d913bc0f386b22a"
+    },
+    "code/tools/library/library_files.py": {
+      "bytes": 9806,
+      "role": "code",
+      "sha256": "4079b484564afeb4e22331b93e1d519cc209ebfde5d1bab7e171f92618b29843"
+    },
+    "code/tools/library/pixal_takes.py": {
+      "bytes": 11124,
+      "role": "code",
+      "sha256": "cd70d5585708e6431c7c4b7629b2f9e24ffc7102f30ea17d4c0fc1582b5dd84f"
+    },
+    "code/tools/props/baked_gltf.py": {
+      "bytes": 4875,
+      "role": "code",
+      "sha256": "1adb5416ac9dac7be3377423507cd9b2788be4bf2377c2743b07f0252aef68ab"
+    },
+    "code/tools/props/card.py": {
+      "bytes": 8633,
+      "role": "code",
+      "sha256": "33aabb55abeab3b5293d9c71bd688c508238e23fed8d36985097bdc1e0919e12"
+    },
+    "code/tools/props/clean_finish.py": {
+      "bytes": 11253,
+      "role": "code",
+      "sha256": "815972ced6d4e4ead2598cccf25c3b02ed385542f55388b180ee7f66d5e70858"
+    },
+    "code/tools/props/closeup/check.py": {
+      "bytes": 16522,
+      "role": "code",
+      "sha256": "9689bdffed497bdf52591b1ab97424a845936f4665feeb086119960968b3cb44"
+    },
+    "code/tools/props/closeup/pro.py": {
+      "bytes": 5465,
+      "role": "code",
+      "sha256": "947521e86823e3503f2946159b1d20c3a50667d45e613021447806f130fd6f1a"
+    },
+    "code/tools/props/closeup/stage.py": {
+      "bytes": 26103,
+      "role": "code",
+      "sha256": "1471a976489ecc8f310e524359d644d8782e681e518de556a874c4c0b5a60eff"
+    },
+    "code/tools/props/gates/model.py": {
+      "bytes": 7856,
+      "role": "code",
+      "sha256": "04c9ad59e5eb4da0f286efeb0d758e9ca624ad6704ea834910f1c1c9aa40a6d4"
+    },
+    "code/tools/props/gates/room.py": {
+      "bytes": 3653,
+      "role": "code",
+      "sha256": "a20612fc5906c64d5fe8d7bf51c80415af520c6a18adbf304a23d8a00d6ff775"
+    },
+    "code/tools/props/glb_file.py": {
+      "bytes": 18429,
+      "role": "code",
+      "sha256": "7f5ee2b55027e758fa21f1f1ec322f3718ed11c21fd4877c9ffa25d11a524204"
+    },
+    "code/tools/props/heavy.py": {
+      "bytes": 799,
+      "role": "code",
+      "sha256": "7bdd47e17c6b8fe5a71faf6b94dd6cc39c706a45fc2a7a5323c5d4b28df20602"
+    },
+    "code/tools/props/library/feet.py": {
+      "bytes": 6408,
+      "role": "code",
+      "sha256": "164d849dfe78be7d744c32d58b663a2cbb6979b16a31f7375854f1eb93cf30b1"
+    },
+    "code/tools/props/library/finish_split.py": {
+      "bytes": 7042,
+      "role": "code",
+      "sha256": "ce7837ffb7e2105fec4dddac8bda28ba77d0da175cb454066071ec1a531eda89"
+    },
+    "code/tools/props/library/labels.py": {
+      "bytes": 53861,
+      "role": "code",
+      "sha256": "084148f1c213e81953fad2767c7d9319b33b13b1199296dabfd87485e1bab83f"
+    },
+    "code/tools/props/library/library.py": {
+      "bytes": 9873,
+      "role": "code",
+      "sha256": "35f514d283de9fb426cfe0203bc215d0077da9c76bbb85fd2fd87f862ff5e76b"
+    },
+    "code/tools/props/library/package.py": {
+      "bytes": 15162,
+      "role": "code",
+      "sha256": "c1536c657ce7103ff827c9b7e1855920890b13269cf0d0a27bd026bbe63a50e3"
+    },
+    "code/tools/props/library/part_judge.py": {
+      "bytes": 8597,
+      "role": "code",
+      "sha256": "f72c2203e33e0fe3269b9d0652f094ed08beb91b15ea33600e8d1b961897465e"
+    },
+    "code/tools/props/library/patchy.py": {
+      "bytes": 22830,
+      "role": "code",
+      "sha256": "e1c9e54f2ff34350a1a6666745015b4674f54699ba890340b6f3961ffbbb7c43"
+    },
+    "code/tools/props/library/place_route.py": {
+      "bytes": 14434,
+      "role": "code",
+      "sha256": "299055682d4174e0f82317d44adf711a085f026b47470e893f7cb956b7aa28cc"
+    },
+    "code/tools/props/library/regions.py": {
+      "bytes": 3953,
+      "role": "code",
+      "sha256": "bc904dde0d928a0f5c83cf00b57ec6e1a6206dde102160d6ddf49d29b3ced6c1"
+    },
+    "code/tools/props/library/register.py": {
+      "bytes": 5588,
+      "role": "code",
+      "sha256": "a33f02e2ae4bf060629a61435e695565958e7ffc0c7a637fbb6b6b96deffe571"
+    },
+    "code/tools/props/library/route.py": {
+      "bytes": 4078,
+      "role": "code",
+      "sha256": "02dcda0f252d3bbafd68f5d834993be83e5024845dbcf0c7171b15489b4f7785"
+    },
+    "code/tools/props/library/split_compare.py": {
+      "bytes": 20098,
+      "role": "code",
+      "sha256": "a6df3ac8666cb70b2565a77f3a0ed73c3f43279d5c29c1c52d0572c89fb9f11e"
+    },
+    "code/tools/props/library/split_html.py": {
+      "bytes": 13698,
+      "role": "code",
+      "sha256": "09263e60efbf5784a8c59cf07f3c8f2166f5b201f4186a83133426103d6411c5"
+    },
+    "code/tools/props/library/split_page.py": {
+      "bytes": 11562,
+      "role": "code",
+      "sha256": "84bb69ef11c431f3a764006c54beb126dafbcbb1c03bd2196ee0e6f95836e13c"
+    },
+    "code/tools/props/library/split_spread.py": {
+      "bytes": 12970,
+      "role": "code",
+      "sha256": "f8fe719a7df56ff5b35b76fcbe2a6e60ea2ec5a1ccccdb3d70f8a261afa69354"
+    },
+    "code/tools/props/library/stored_parts.py": {
+      "bytes": 4205,
+      "role": "code",
+      "sha256": "f5daf860d4ec5a6aa65a7ffb314bb6f620db96764eb9ffd1779342ee7f145d1e"
+    },
+    "code/tools/props/library/straight.py": {
+      "bytes": 3678,
+      "role": "code",
+      "sha256": "4871873f7d06dad41307938ab8a446a778a8f7bfc974652ac7b4f04e3984d537"
+    },
+    "code/tools/props/library/surface_check.py": {
+      "bytes": 7030,
+      "role": "code",
+      "sha256": "e4bbcb382cd5fff46df695c90822b8eb5b1025b1696c02030d54cdf5d2bf3429"
+    },
+    "code/tools/props/library/sweep.py": {
+      "bytes": 3643,
+      "role": "code",
+      "sha256": "43a5714e56818fae0541e366c94ddf87b4568c33699c2f990dcd55d74ba616f9"
+    },
+    "code/tools/props/local_models.py": {
+      "bytes": 1311,
+      "role": "code",
+      "sha256": "734301dd944657ede1f1fc666f54688b01e1ef22bc0c3c201482ba0d3325df85"
+    },
+    "code/tools/props/paths.py": {
+      "bytes": 1883,
+      "role": "code",
+      "sha256": "649aeadaec8c2ad8aee5b58392949620bf19173ca921126ed75e286d9655ef2d"
+    },
+    "code/tools/props/picture.py": {
+      "bytes": 8969,
+      "role": "code",
+      "sha256": "69fc18824205de583db32b42e4f9d7b97038e0e2668158b667171e8fcdcec477"
+    },
+    "code/tools/props/pixal.py": {
+      "bytes": 11593,
+      "role": "code",
+      "sha256": "0e62e60ada35ed6edb7c5f4dc7e3a9aa1cfd2923a2354e34541915d8af04425b"
+    },
+    "code/tools/props/scene/box_check.py": {
+      "bytes": 31753,
+      "role": "code",
+      "sha256": "72654ca8dba4968f05daf88e3eed208b64206511c11a24c00cd4a7614e19fb41"
+    },
+    "code/tools/props/scene/inventory.py": {
+      "bytes": 9317,
+      "role": "code",
+      "sha256": "9ec14818abaa74a263c525c8796499f61df655768e32702d01cba799b0e4dfdb"
+    },
+    "code/tools/props/scene/lamps.py": {
+      "bytes": 4831,
+      "role": "code",
+      "sha256": "b4eb4c17f34cad9e3dd5a8d8683aedf7897ab8d70ad6cd1503c865594d7e9365"
+    },
+    "code/tools/props/scene/place.py": {
+      "bytes": 7856,
+      "role": "code",
+      "sha256": "d856ae180c8530f766551bd713432a45b0a8984e74b7f753dc04a6d2b60635dc"
+    },
+    "code/tools/props/screens/content.py": {
+      "bytes": 12690,
+      "role": "code",
+      "sha256": "a8562e7eff39c72eeb7b5ad90ab0101fcff3ef95607d5a19852c865f5fa8c7b8"
+    },
+    "code/tools/props/stand.py": {
+      "bytes": 1984,
+      "role": "code",
+      "sha256": "fc0055568dddc2cb5802b7677856a0be29546c81e0a81b1a19954fee6dc772ae"
+    },
+    "code/tools/review/characters.py": {
+      "bytes": 8644,
+      "role": "code",
+      "sha256": "df288c9ddd09caaf9384545fd8e6db2ddd6254ec9eee941afdeee95f831fb434"
+    },
+    "code/tools/review/demo.py": {
+      "bytes": 36462,
+      "role": "code",
+      "sha256": "25adc484b9aeb31c88db277ccbbad34a4420fd3681a484cb4359af4fcf75e48c"
+    },
+    "code/tools/review/film_checks.py": {
+      "bytes": 13890,
+      "role": "code",
+      "sha256": "2ed7200e4434634e79c5bb226b9993b2cdc989c9986692fe33a1411ae2d20a7c"
+    },
+    "code/tools/review/page.py": {
+      "bytes": 49460,
+      "role": "code",
+      "sha256": "fb978ab4cf4985c4af3f34921c6923cee5c5c8d01d41f33cbca1c84b61fe1247"
+    },
+    "code/tools/review/records.py": {
+      "bytes": 9731,
+      "role": "code",
+      "sha256": "95982a556efd4b5cb641a88481354059654b1cbadc22cf3e4d480d7ec7358f11"
+    },
+    "code/tools/review/renders.py": {
+      "bytes": 20653,
+      "role": "code",
+      "sha256": "f8693df1777071bc8ba003a9a471b6b10d40f1eb47fdf8ba63449542ac57f2ad"
+    },
+    "code/tools/review/showcase.py": {
+      "bytes": 46341,
+      "role": "code",
+      "sha256": "88d51e2b959cffafed58f3840c89e332a2bfb2475104653a994217b41d3b2914"
+    },
+    "code/tools/review/viewer/export.py": {
+      "bytes": 30226,
+      "role": "code",
+      "sha256": "dc5added7d7d1fffe725d41e7cb9a604ff33e65d113ae086367c5155c4bfd95d"
+    },
+    "code/tools/review/viewer/viewpoints.py": {
+      "bytes": 2935,
+      "role": "code",
+      "sha256": "4f96812c2e53a41fe23d2a861bf785ae65e27bf312a8a991cad1a1bae0dbf11a"
+    },
+    "code/tools/sound/loudness/loudness.py": {
+      "bytes": 8193,
+      "role": "code",
+      "sha256": "ac5cdbeb13f7c3e5ebdc8bb6982db618c2cb21d7a898031f0ef3b9d1deda5b27"
+    },
+    "code/tools/sound/picker/apply.py": {
+      "bytes": 8813,
+      "role": "code",
+      "sha256": "0db646f0a9196c3408b505d2ac064942bb4aec4d6fdc388b3c2b85903d527675"
+    },
+    "code/tools/sound/picker/choose.py": {
+      "bytes": 4466,
+      "role": "code",
+      "sha256": "73ff5f7c4f5ec42a8ce226234ae447a931186feb49a782f33d54082c8a5ea784"
+    },
+    "code/tools/sound/picker/needs.py": {
+      "bytes": 4329,
+      "role": "code",
+      "sha256": "a48797d193f8ee149a92819ada490a685f5a03ed43a3c2763e16c225b129021b"
+    },
+    "code/tools/sound/picker/page.py": {
+      "bytes": 5925,
+      "role": "code",
+      "sha256": "e73e133685a94f661ba710144867636c3a493fdd90abebed5a8060bb50964c37"
+    },
+    "code/tools/sound/picker/sources.py": {
+      "bytes": 12688,
+      "role": "code",
+      "sha256": "d1a44f98e9dee8537925965e8237cf647f5639cf1adf6f5e566d2f470dbc6042"
+    },
+    "code/tools/sound/picker/takes.py": {
+      "bytes": 12853,
+      "role": "code",
+      "sha256": "df71794e0a4af91a12d5a26a0ae6ccd4628763e088afa49a98365cf283d25149"
+    },
+    "code/tools/usd/annotate.py": {
+      "bytes": 7762,
+      "role": "code",
+      "sha256": "33e000a97e568f0774a48355d474a86cfb31c9d61ee0f4301a46e6ac3029bb5a"
+    },
+    "code/tools/usd/builders.py": {
+      "bytes": 39340,
+      "role": "code",
+      "sha256": "6d8d25c354ccdd58b14dd7f9682f24c38fa5ef4cfd14b9444f47e6e0eaaaedca"
+    },
+    "code/tools/usd/camera_paths.py": {
+      "bytes": 39541,
+      "role": "code",
+      "sha256": "f9cf395c758cd4844a1cc02bc97c51bb174ee6ac0c01f3f728a23aa6fbc94959"
+    },
+    "code/tools/usd/collide.py": {
+      "bytes": 7744,
+      "role": "code",
+      "sha256": "e0dd476ad4181d4db80b377110779182b2e2d4e7568b68dda48cbd8171474daf"
+    },
+    "code/tools/usd/colliders.py": {
+      "bytes": 7194,
+      "role": "code",
+      "sha256": "72f50f9704ab3848c2104baf75c66ff8f1e7edb7e829bedc5a54bf7c6f43ef61"
+    },
+    "code/tools/usd/compare.py": {
+      "bytes": 11521,
+      "role": "code",
+      "sha256": "09d20e9b6d407ef7774e2ec9676f7af85f6e40302e9e7190bf5e8b77112c5e2b"
+    },
+    "code/tools/usd/complete.py": {
+      "bytes": 39359,
+      "role": "code",
+      "sha256": "ca24d750e0aee6949be6316aface6815964a21b467df897034cfd79a2e171de7"
+    },
+    "code/tools/usd/contents.py": {
+      "bytes": 36629,
+      "role": "code",
+      "sha256": "e79e086ec038b2b1121f7927610721336175c83fcc6f8fb37415d15f40302dd8"
+    },
+    "code/tools/usd/convex_parts.py": {
+      "bytes": 8394,
+      "role": "code",
+      "sha256": "68a207d33e70f30b0706007d1e5a4c85e047e66bc2f1043001a5618f365dbfa6"
+    },
+    "code/tools/usd/drop.py": {
+      "bytes": 4562,
+      "role": "code",
+      "sha256": "2e8aed1b0f3727d1fc8a8a59dbe35bb204dde41bf1301bff244b6b99d47aaaec"
+    },
+    "code/tools/usd/effects.py": {
+      "bytes": 58438,
+      "role": "code",
+      "sha256": "9e40660b58ade79011cbc6f0c3e58e0082aa9c27f968c08ef802dd9cc5ff4ae4"
+    },
+    "code/tools/usd/export.py": {
+      "bytes": 51029,
+      "role": "code",
+      "sha256": "996b528c7a15a082e3c91dfa073d9e1f57773eeb3673efdd73d06c72896f9ee9"
+    },
+    "code/tools/usd/glb_asset.py": {
+      "bytes": 9182,
+      "role": "code",
+      "sha256": "1db5adb5d33f58c5079145ef794729ff7ab3276b5e34dd2e28313ab2794e3f31"
+    },
+    "code/tools/usd/ground.py": {
+      "bytes": 9711,
+      "role": "code",
+      "sha256": "848251d4f5ce39039da5b970538bf0c1c6798147977ae829aa97e9b15c4ec934"
+    },
+    "code/tools/usd/ground_detail.py": {
+      "bytes": 23433,
+      "role": "code",
+      "sha256": "2a71c1e019af1559fe1810689d42d025682b7c96c92fefb5335271ae54600538"
+    },
+    "code/tools/usd/hearing.py": {
+      "bytes": 17574,
+      "role": "code",
+      "sha256": "48f299f97cb151a721f5c376e0ccc16b1b7834632db4c97d89dd5c6b92e39bc4"
+    },
+    "code/tools/usd/made_only.py": {
+      "bytes": 3661,
+      "role": "code",
+      "sha256": "51220ddb730349a4019950d26e4927becfe2680d861d808780e1200732db164f"
+    },
+    "code/tools/usd/mars_sky.py": {
+      "bytes": 4698,
+      "role": "code",
+      "sha256": "424fa5d50170f7b97e07f0f1f725e011ef9cbefd5d395711e180f3bae912d0ee"
+    },
+    "code/tools/usd/motion.py": {
+      "bytes": 17271,
+      "role": "code",
+      "sha256": "367d612dc15d667e78b8a877e8d3a90c9c9ed4c598bf053f2b75470e635d9bb0"
+    },
+    "code/tools/usd/motion_layer.py": {
+      "bytes": 23087,
+      "role": "code",
+      "sha256": "c8eb06f92f08a492a338478e37e0a82337fec17a4760e5f1b9d466fc9cba9d16"
+    },
+    "code/tools/usd/physics.py": {
+      "bytes": 22042,
+      "role": "code",
+      "sha256": "56e3e795f82333b428d291702197a4ce5990f55525da9fa63287fe7473471e20"
+    },
+    "code/tools/usd/pick_lock.py": {
+      "bytes": 2588,
+      "role": "code",
+      "sha256": "af11a3524ca12ed87b684e71dea5820006e1bad6913c5973d3e7e2e2867f2f0c"
+    },
+    "code/tools/usd/picks.py": {
+      "bytes": 5338,
+      "role": "code",
+      "sha256": "06c09af42b3180c1693f1b3b1851a0e28b4ac61fdae566ac5a7d9b361321a314"
+    },
+    "code/tools/usd/placeholders.py": {
+      "bytes": 9047,
+      "role": "code",
+      "sha256": "f52cbd6d07687dc02c689fdc59396c242b2774dbd8afddf4957ebd4bd22a85fa"
+    },
+    "code/tools/usd/reach.py": {
+      "bytes": 24145,
+      "role": "code",
+      "sha256": "37032af9af8a9b3feb9bcf4ac3e88801463f90b6c706fc133065126cd3655cf4"
+    },
+    "code/tools/usd/resting.py": {
+      "bytes": 16475,
+      "role": "code",
+      "sha256": "8cf8c2356b947b9e746473d9a0201a0236393028442112ca0cbbc6acc3879ce0"
+    },
+    "code/tools/usd/rocks.py": {
+      "bytes": 8957,
+      "role": "code",
+      "sha256": "e1a891c8d6937a5fcc59f8845d7035fa312ee89f855ca3b2bc71194d9559c6ee"
+    },
+    "code/tools/usd/scene.py": {
+      "bytes": 64135,
+      "role": "code",
+      "sha256": "b2854a9d116d8d4f9d047612f98087104aa1d6948c23723d5dc8142c058c7433"
+    },
+    "code/tools/usd/settle.py": {
+      "bytes": 47982,
+      "role": "code",
+      "sha256": "85a27ce41617d908600f2705b0d2a2a39480375cf1ac253a2a52f3351e0d2f84"
+    },
+    "code/tools/usd/shaders.py": {
+      "bytes": 5347,
+      "role": "code",
+      "sha256": "77a2366732d9433968e1eb16411ff9dfda00929189c833aa1fe089176157d8e3"
+    },
+    "code/tools/usd/snap.py": {
+      "bytes": 16870,
+      "role": "code",
+      "sha256": "3a16d60aef250cd037ae5c8374862deab94314562f10096fed6670b2a9cf6ae6"
+    },
+    "code/tools/usd/sound.py": {
+      "bytes": 13587,
+      "role": "code",
+      "sha256": "b76e9abcde8df0ff408d4081d65a2ef2ee4dc93e9b7aa37f3170a42afad809a0"
+    },
+    "code/tools/usd/stage_inputs.py": {
+      "bytes": 3879,
+      "role": "code",
+      "sha256": "e30523ce76bbf9aa8cff2191af076722c0b186a681c82d9fc85177af5e0dc784"
+    },
+    "code/tools/usd/triage.py": {
+      "bytes": 41213,
+      "role": "code",
+      "sha256": "7dc0f447344ec6ac8e38cc21f63321b6198421de8ea91d737ba03f8343d5f73e"
+    },
+    "code/tools/usd/views.py": {
+      "bytes": 7915,
+      "role": "code",
+      "sha256": "346bdfc1ff97cd6a3dd822c646cfe145294579bce2655799d08f1f15f46cde52"
+    },
+    "code/tools/usd/whole_layer.py": {
+      "bytes": 1427,
+      "role": "code",
+      "sha256": "7fad884eafa859da079ee0c69fe83cb31ad6b7f7d70e1558fd1c3c89ece6d984"
+    },
     "definition.json": {
-      "bytes": 979,
+      "bytes": 1108,
       "role": "record",
-      "sha256": "c6f8791008d469d2b4e929e22bc50c3427df08af6a9178749ea8c85116487e65"
+      "sha256": "c8f66a20e92dd9959c76e265882f7cfddc54fcb8a24e8aa5638c0e755bd50ba4"
     },
     "presets/world1/data/checks/effects.json": {
       "bytes": 17416,
       "role": "record",
       "sha256": "14204018f309cc592f83b6b302755c09a462855d19381339c74b911059f31d61"
     },
-    "presets/world1/seed.json": {
-      "bytes": 166,
+    "presets/world1/data/checks/library-exceptions.json": {
+      "bytes": 492,
       "role": "record",
-      "sha256": "f01ebf493ca695c8faa5cc8d7ee153054112e6bcaeb64b3aca4bb701ad8c00fd"
+      "sha256": "80b93dcb10ef3494f882653f056f0b380f368c3343ef58de49364a4b20ed8eea"
+    },
+    "presets/world1/data/checks/library-free.json": {
+      "bytes": 416,
+      "role": "record",
+      "sha256": "c164633676a544e4f37edca4a693699d9aeef6dd2a428bc75d6fa4dae4abe1be"
+    },
+    "presets/world1/data/checks/motion.json": {
+      "bytes": 8087,
+      "role": "record",
+      "sha256": "eb03ecf870d58e6e2c7c3eb1b44ea8d9e25151b96527f36a62ba6d33ca1add20"
+    },
+    "presets/world1/data/checks/resting.json": {
+      "bytes": 1860,
+      "role": "record",
+      "sha256": "f1bea80afea4f4d7e618a42183996fbb0f35436f264223d6b414dff60fa9c188"
+    },
+    "presets/world1/data/checks/row-kinds.json": {
+      "bytes": 13091,
+      "role": "record",
+      "sha256": "359e942e667975e1335c147dc2205d5225d05a6e22d4625547aa63281f25e584"
+    },
+    "presets/world1/data/checks/screens.json": {
+      "bytes": 630,
+      "role": "record",
+      "sha256": "e97fcf9a5c22771f2860df9589f2a3889f3c19b2ae226393038429af1c0c0cb1"
+    },
+    "presets/world1/data/checks/stance.json": {
+      "bytes": 453,
+      "role": "record",
+      "sha256": "5a119c545bbd916a126c87bcf9e20eeefb803a4b0e8cd1eeac45e3747f43ec32"
+    },
+    "presets/world1/data/costs/per-unit.json": {
+      "bytes": 36608,
+      "role": "record",
+      "sha256": "3fb0577ec7cdad05bd31dea4b449c9b296374cb1d3dd53ca8bd456e188617328"
+    },
+    "presets/world1/data/definitions/concept_views.json": {
+      "bytes": 104,
+      "role": "record",
+      "sha256": "e106270ee677643c6c5bc02acef91884f2d297c614a095781e6a4a552de1fdc5"
+    },
+    "presets/world1/data/definitions/place.json": {
+      "bytes": 30510,
+      "role": "record",
+      "sha256": "94a5a86fa73bf17a8d0a2aabfdb6eac3023f91328ebb950a5ae342ee6773f528"
+    },
+    "presets/world1/data/definitions/world.json": {
+      "bytes": 257,
+      "role": "record",
+      "sha256": "6165adbe072f279d032dfecbe79a73ffa2ec5e052bf3e2ff2877159d29811f83"
+    },
+    "presets/world1/data/effects/exhaust.json": {
+      "bytes": 4745,
+      "role": "record",
+      "sha256": "8557e72c3814e7defb81f1462521e0cd5549734360d44b83c7f3eda25c95fb13"
+    },
+    "presets/world1/data/effects/flag_cloth.json": {
+      "bytes": 3402,
+      "role": "record",
+      "sha256": "1fe4f7251cb0e530d1cff6e8f3b2f6437ea7789422cabbab281419609b397ae6"
+    },
+    "presets/world1/data/library/lamps.json": {
+      "bytes": 5250,
+      "role": "record",
+      "sha256": "c0492d73aba9f6fcefa48a0c20d2c270a118fd749840634462e1f801c2f1176f"
+    },
+    "presets/world1/data/library/materials.json": {
+      "bytes": 5282,
+      "role": "record",
+      "sha256": "02a2e40d6d553c9baf7a302bef46b4014410d4918eb892ffe10c9eb49732a9d0"
+    },
+    "presets/world1/data/people/rows.json": {
+      "bytes": 21752,
+      "role": "record",
+      "sha256": "abf46df8d6d5b68e7e186d99b21b65c465bb9b000a3b6e45d6ba09928b4160e1"
+    },
+    "presets/world1/data/people/specs/astronaut.json": {
+      "bytes": 623,
+      "role": "record",
+      "sha256": "c38619a740263e4edc199ebd4439f5cd40d509ef276a72f53338c2ede8fa4263"
+    },
+    "presets/world1/data/people/specs/crowd.json": {
+      "bytes": 658,
+      "role": "record",
+      "sha256": "9f0309603938974c62b30b418e6ab3dddb947eb65d749573d339308ef62aa620"
+    },
+    "presets/world1/data/people/specs/man_stair.json": {
+      "bytes": 674,
+      "role": "record",
+      "sha256": "b6ebd9d491429fc2b6856ae3f4a456cd27386355e64d7c7adb5832073b864631"
+    },
+    "presets/world1/data/people/specs/officer.json": {
+      "bytes": 634,
+      "role": "record",
+      "sha256": "2881625c1ce1295e7a5a039e674089520ae3f5eb96260137bfb7fb4c43934df8"
+    },
+    "presets/world1/data/people/specs/person.json": {
+      "bytes": 621,
+      "role": "record",
+      "sha256": "9ce34a8561006ca915f8c3ebe6c1b5348d5b4d18f004d354c75672be57634663"
+    },
+    "presets/world1/data/people/specs/person_uniform.json": {
+      "bytes": 647,
+      "role": "record",
+      "sha256": "2fa255ac2690c285e39c8605ee99a1da53870ddeb8cae9376d3be987c34ba29f"
+    },
+    "presets/world1/data/people/specs/pilot.json": {
+      "bytes": 619,
+      "role": "record",
+      "sha256": "811d8b7d31551ac69c7a00593ed0029c7593d41f42f636b8c0aeb2ff50057a53"
+    },
+    "presets/world1/data/people/specs/woman_stair.json": {
+      "bytes": 686,
+      "role": "record",
+      "sha256": "9f33c13fe08062c499d096a0b05313d4f7df842262733bd79707c6e13fac2802"
+    },
+    "presets/world1/data/people/specs/worker_jumpsuit.json": {
+      "bytes": 669,
+      "role": "record",
+      "sha256": "a08946e9a6cd891d7d443561c71b83758ebe6bfb677dbbb6ea4e73c1011825f3"
+    },
+    "presets/world1/data/physics/bodies.json": {
+      "bytes": 7133,
+      "role": "record",
+      "sha256": "414f30d7597559afcfec5196fb8a777e78118636ecede54cef2ec263d2602890"
+    },
+    "presets/world1/data/physics/cloth.json": {
+      "bytes": 1499,
+      "role": "record",
+      "sha256": "d886b497b41c3e24f583cb51a8c971a40be940c005bec625b2ae2cc691d1074c"
+    },
+    "presets/world1/data/physics/dust.json": {
+      "bytes": 1409,
+      "role": "record",
+      "sha256": "1c432ca980a4276e977a06a82dd70c5616cf72712e05c6b9d69827fa1f3b8a10"
+    },
+    "presets/world1/data/physics/materials.json": {
+      "bytes": 743,
+      "role": "record",
+      "sha256": "41e262f3cf8a7f3715646593f65d3642f48a5c6b1c3a6ceb4d17c01b0570f4c6"
+    },
+    "presets/world1/data/physics/night.json": {
+      "bytes": 3233,
+      "role": "record",
+      "sha256": "f9f83cafbf470fca5ff1f2afd975dac2b7998e09e29d544e3b4bfb760d4efd98"
+    },
+    "presets/world1/data/physics/setting.json": {
+      "bytes": 1821,
+      "role": "record",
+      "sha256": "fe122ef764437121d3015c498c2db1ad9528391b34f4b3039369e5cca8ad3389"
+    },
+    "presets/world1/data/places/concept_inputs.json": {
+      "bytes": 1416,
+      "role": "record",
+      "sha256": "70d825d3fec0ce6063dc92957eb4e3f6bd9e00fcf0b6b6e2a0b10c1cf0e4594d"
+    },
+    "presets/world1/data/places/shapes.json": {
+      "bytes": 1612,
+      "role": "record",
+      "sha256": "b9a86b5920d35330476dacd1584e72a847fcb5a0d4cc3491a526ab12b7459656"
+    },
+    "presets/world1/data/places/within.json": {
+      "bytes": 5491,
+      "role": "record",
+      "sha256": "84c79ec5bfa295741cc4ad489de43aeee191c0a560b7375691dc174b5d6cdb6b"
+    },
+    "presets/world1/data/sound/catalogue.json": {
+      "bytes": 4334,
+      "role": "record",
+      "sha256": "490b077d07480d383fb9594cd57609aa78e1f1aecd1a4d4dd299fda798f9ae2e"
+    },
+    "presets/world1/data/sound/licences.json": {
+      "bytes": 3,
+      "role": "record",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "presets/world1/data/sound/loudness.json": {
+      "bytes": 3,
+      "role": "record",
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "presets/world1/data/sound/moving.json": {
+      "bytes": 5738,
+      "role": "record",
+      "sha256": "4d04b5c6b7501394fae55aa6d46c41a4d1bda229111cca66e7f6531e5513e2ee"
+    },
+    "presets/world1/data/sound/sounds.json": {
+      "bytes": 39253,
+      "role": "record",
+      "sha256": "e6599ffb1147ecf0289821251dd3bcd202ec5f2536a249024240950b460bf6db"
+    },
+    "presets/world1/data/sound/surfaces.json": {
+      "bytes": 2178,
+      "role": "record",
+      "sha256": "75993a54c87e48cd7501c8bb5a0a13c3a617582388b94f02dedf84d2e4844405"
+    },
+    "presets/world1/data/sound/voices.json": {
+      "bytes": 1179,
+      "role": "record",
+      "sha256": "a62b52b3e1bb0ab0e73992d136081a605d7cfe93237ed60fc33c878b795fe5e0"
+    },
+    "presets/world1/data/surfaces/people.json": {
+      "bytes": 5540,
+      "role": "record",
+      "sha256": "59e81767c617f3cb5a712a6486a2e6b2e0c2bd92c303e5398da5bd6b6504b6f4"
+    },
+    "presets/world1/design/tokens/colours.css": {
+      "bytes": 5553,
+      "role": "record",
+      "sha256": "a18f8ab1df9a0b1c855a282504dbc459fc23efae376a01cf6f73f339856af292"
+    },
+    "presets/world1/paper/evidence/cloud/bill-2026-10-10T0136Z.json": {
+      "bytes": 7024,
+      "role": "record",
+      "sha256": "0093b6ac8173d326828ab70803785172c16bde843a18d09be258d4c36c065878"
+    },
+    "presets/world1/paper/evidence/cloud/forecast-2026-10-15.txt": {
+      "bytes": 12933,
+      "role": "record",
+      "sha256": "5c82fbf0a48ead59789134ff451d099a2f15ca42266427754f59badf6031d8d3"
+    },
+    "presets/world1/paper/evidence/cloud/ledger.jsonl": {
+      "bytes": 853295,
+      "role": "record",
+      "sha256": "6d3abe546b26bcee3aff9d4b452226db4801b4192cf55061d1580ddcdc841cba"
+    },
+    "presets/world1/score/__main__.py": {
+      "bytes": 111861,
+      "role": "record",
+      "sha256": "8285553b2787ac27be0aad408bb7c328f8ab2a4a34a2543e2660a1b8fec9c404"
+    },
+    "presets/world1/score/review/__main__.py": {
+      "bytes": 6408,
+      "role": "record",
+      "sha256": "97f8dd99375810301b39f0449b56390d0a362d64a666de8d1e1a05f96034d1ed"
+    },
+    "presets/world1/score/stages/__main__.py": {
+      "bytes": 1814,
+      "role": "record",
+      "sha256": "8c2a4ee8425bb996fd0dabc4d45c04e56d4de1f38aeb01a1930773255a4f95f3"
+    },
+    "presets/world1/score/stages/complete/library/pictures.py": {
+      "bytes": 6970,
+      "role": "record",
+      "sha256": "f6748312027a8dd17dfa4061e07f328f220d71d90565a58370ab0c0c690bb315"
+    },
+    "presets/world1/score/stages/demo_film/blender/body_peel.py": {
+      "bytes": 20000,
+      "role": "record",
+      "sha256": "eb2fdc3da9d7d01a63854323f0eedbff308d7e90008579fd68ab451a06126ad3"
+    },
+    "presets/world1/score/stages/demo_film/blender/film_frames.py": {
+      "bytes": 4061,
+      "role": "record",
+      "sha256": "81e10da2e7cfcbd928ae93804b54dc2ac4d01f2e9e3e1e9b536cc7b7cc6bf738"
+    },
+    "presets/world1/score/stages/demo_film/blender/walker_peel.py": {
+      "bytes": 4270,
+      "role": "record",
+      "sha256": "d3616e4f894a105e0c1bc3f4f0cccc4791a2095a49a3f82e7f6dfac8d2038773"
+    },
+    "presets/world1/score/stages/library/pictures.py": {
+      "bytes": 7077,
+      "role": "record",
+      "sha256": "be22346326dea83d6bba4ab15ff8778eb7421aa66ae936dced270a3237550f29"
+    },
+    "presets/world1/score/stages/light/inside/light_passes.py": {
+      "bytes": 13413,
+      "role": "record",
+      "sha256": "6af8db4e5539bd5c7f4ee86ab7f3ab59a3c1e8d2d857895f02a046adc0de0f2e"
+    },
+    "presets/world1/score/stages/motion/inside/flag_cloth.py": {
+      "bytes": 5883,
+      "role": "record",
+      "sha256": "7bad6ce06e44273282fa8d2fbb2cfb13f0beb305dd67a4887ad2efea6ed3dbb2"
+    },
+    "presets/world1/score/stages/people/inside/bake_body.py": {
+      "bytes": 4360,
+      "role": "record",
+      "sha256": "b4b71b0716e1bc73989b6d1482e38cc1e351107b090d9e31fc4223d20effc80d"
+    },
+    "presets/world1/score/stages/people/same_content.py": {
+      "bytes": 2437,
+      "role": "record",
+      "sha256": "0b2d8d239e625acb4f40d9913067c8839bf0b88a86c221afff82e57d7f86541a"
+    },
+    "presets/world1/score/stages/people_cloth/inside/cloth.py": {
+      "bytes": 11632,
+      "role": "record",
+      "sha256": "c0c18ac372883a62103909ced3939c7a09a4ab9cca88e8bfcb8835bc72559f5d"
+    },
+    "presets/world1/score/stages/physics/inside/newton_env.sh": {
+      "bytes": 1476,
+      "role": "record",
+      "sha256": "ed8adbf3540b769edfbc24820977087196288070ef16ee433f20858e8650bd0b"
+    },
+    "presets/world1/score/stages/physics/inside/physics_trial.py": {
+      "bytes": 16858,
+      "role": "record",
+      "sha256": "9472a6a90c38e0a127f75a04740148f8da4982f843693f44994fe1c684be0e77"
+    },
+    "presets/world1/score/stages/place_build/blender_views.py": {
+      "bytes": 16709,
+      "role": "record",
+      "sha256": "7670b6c48e99a8a29cb7fabd5d0812d41b908532863ed5a4338ae52cd00540e0"
+    },
+    "presets/world1/score/stages/place_build/ready/settle_mujoco.py": {
+      "bytes": 5236,
+      "role": "record",
+      "sha256": "da208295d2cff88a772f9e79e328508c49c1412f337b5fc99d00f8ce0d4ab5e7"
+    },
+    "presets/world1/score/stages/props/same_content.py": {
+      "bytes": 2924,
+      "role": "record",
+      "sha256": "33d97824e047500682d87325ccf436613c9beb044bd6e2ff1d0955be2bcf0292"
+    },
+    "presets/world1/score/stages/rough_model/_cloud.py": {
+      "bytes": 1922,
+      "role": "record",
+      "sha256": "a587cd24bdd9ec8cde482d8b333c3279c3a9a47a479b580419218816c8762fce"
+    },
+    "presets/world1/score/stages/rough_model/_finish.py": {
+      "bytes": 3006,
+      "role": "record",
+      "sha256": "9570c1c5e592d3ba00a9defcfa44a53428a5138aabbdc1c5a92d296f5a4cd1cf"
+    },
+    "presets/world1/score/stages/rough_model/same_content.py": {
+      "bytes": 1697,
+      "role": "record",
+      "sha256": "0d28dc03bbd3ca9fe13fc38f773ef8385834705c485b4a752769c2234bba37fc"
+    },
+    "presets/world1/score/stages/settling/inside/settle_drop.py": {
+      "bytes": 21154,
+      "role": "record",
+      "sha256": "f57238c82310e9d2aaa0324966caf19158f04f970dd0f2f290347bc6e5345fdf"
+    },
+    "presets/world1/score/stages/sim_body/inside/sim_body.py": {
+      "bytes": 29709,
+      "role": "record",
+      "sha256": "476e7633bd5f34555e5b2cee3f25a402914309f91f85b42656bdf200da90f810"
+    },
+    "presets/world1/score/stages/surfaces/flat_fit.py": {
+      "bytes": 4572,
+      "role": "record",
+      "sha256": "1708b19f030fcf1f77d57c82b65a7a3aabc9a5b8c978bbae30f5094c3781c1d0"
+    },
+    "presets/world1/score/stages/surfaces/inside/layout_fit.py": {
+      "bytes": 14180,
+      "role": "record",
+      "sha256": "5ce2f21ab1d9c720e7d7507e1aa4d94e0141d57ddbef8828bbe794d9a7c01753"
+    },
+    "presets/world1/score/stages/surfaces/inside/paint_bake.py": {
+      "bytes": 2451,
+      "role": "record",
+      "sha256": "ba5fdc3614739d56046b982fe76e4b654c91e5dfbf21c5fa5940b7d9fde0fd4a"
+    },
+    "presets/world1/score/stages/surfaces/inside/paint_fit.py": {
+      "bytes": 3348,
+      "role": "record",
+      "sha256": "bac2db5c6e3b05ce19ed739736a3f8118761411f42951ccf8e70a42e550c52fd"
+    },
+    "presets/world1/score/stages/surfaces/inside/paint_take.py": {
+      "bytes": 2701,
+      "role": "record",
+      "sha256": "27b2dbd37f63ab9015759612ac94431eb91819c36bcde242db6c8070c7b11c4c"
+    },
+    "presets/world1/seed.json": {
+      "bytes": 331,
+      "role": "record",
+      "sha256": "58c411cda46ba163673c7a86293da0e01626a4bce6d7864d91c250fb7ed24e4f"
+    },
+    "presets/world1/tools/blender/inside/annotate_stage.py": {
+      "bytes": 4226,
+      "role": "record",
+      "sha256": "02ec8576a3d8012f4f8378c421ab01e7d93108752556ab188594e8d5a3bca916"
+    },
+    "presets/world1/tools/blender/inside/review_models.py": {
+      "bytes": 6974,
+      "role": "record",
+      "sha256": "900ad0f20a2b52d879e2c148455925a3bc57fe98c96b8695f6f9c5c63f4fdeae"
+    },
+    "presets/world1/tools/blender/inside/usd_views.py": {
+      "bytes": 70295,
+      "role": "record",
+      "sha256": "e524e2a874b09174e575926c3283b543cd8f1b7bb267255d98590d1a58a6a76b"
+    },
+    "presets/world1/tools/blender/inside/warm_kernels.py": {
+      "bytes": 4414,
+      "role": "record",
+      "sha256": "50ce9d8a68222b4d3b6c724fd8c6435f32c851f00862ecdf4f4a6a2646daad3a"
+    },
+    "presets/world1/tools/blender/session.py": {
+      "bytes": 15470,
+      "role": "record",
+      "sha256": "f5fa2f62dcc1c1e8d09395bf1680e55a6bc65737cb785eebcdd8b334658b88f5"
+    },
+    "presets/world1/tools/characters/clips/scene_clips.py": {
+      "bytes": 3649,
+      "role": "record",
+      "sha256": "6a950e82ef013bf41be3329e4f0aeddde9a859fadc0a34c9a911192174d41ef4"
+    },
+    "presets/world1/tools/characters/maker/blender_shots.py": {
+      "bytes": 6415,
+      "role": "record",
+      "sha256": "ee7fe3288dd6d3dd1a9bae22727cbed28c6811e45626517f36ef347d46f3829d"
+    },
+    "presets/world1/tools/characters/maker/bodycloth.py": {
+      "bytes": 11768,
+      "role": "record",
+      "sha256": "1559748ec3672387245ac36b2b675302d082d94d1d438f025c6428b0ed1bb218"
+    },
+    "presets/world1/tools/characters/maker/bodycloth_shaped.py": {
+      "bytes": 3470,
+      "role": "record",
+      "sha256": "9b3c349ce5558443998bf1df6f1f67f0e3057501140520b3cf0877a3b1bfaa0b"
+    },
+    "presets/world1/tools/characters/maker/inside/body_checks.py": {
+      "bytes": 2337,
+      "role": "record",
+      "sha256": "c1b3fb743b0d214357aae553c508f89732c101fa7886f63038aa5899ed6eaf18"
+    },
+    "presets/world1/tools/characters/maker/outline.py": {
+      "bytes": 7019,
+      "role": "record",
+      "sha256": "db673dc759afebd641d216e997c123ac1ca40871fbbf108f8769c7c1b83c6b50"
+    },
+    "presets/world1/tools/characters/maker/pokes.py": {
+      "bytes": 19239,
+      "role": "record",
+      "sha256": "d8dca18471e8103b1ecbadf88ad954108d4370a892bdc64f719174676a774575"
+    },
+    "presets/world1/tools/characters/maker/prop_chain.py": {
+      "bytes": 6590,
+      "role": "record",
+      "sha256": "dc24404c49cad4e476e5bd771e05f536b849bc5604eba3699733b1e70a268375"
+    },
+    "presets/world1/tools/characters/maker/prop_far.py": {
+      "bytes": 2322,
+      "role": "record",
+      "sha256": "3d291aa75aa060403586e49f45ea81d570ac2208e98cb532300d855946175bc4"
+    },
+    "presets/world1/tools/characters/maker/prop_parts.py": {
+      "bytes": 23920,
+      "role": "record",
+      "sha256": "6d09bc4712e3a0f9027224b4e1746e5c58dcc23a77dde9ff52f3b650f804fed2"
+    },
+    "presets/world1/tools/characters/maker/prop_prints.py": {
+      "bytes": 8360,
+      "role": "record",
+      "sha256": "5514a5af3728fcc5dd4cc8aefc07172bed9e5f5fa721f2aacd5d7fa410b4da90"
+    },
+    "presets/world1/tools/characters/maker/prop_rig.py": {
+      "bytes": 39670,
+      "role": "record",
+      "sha256": "128eec2c2e387cd88d42c172bd686213446e61200c309621edbe3d82b981e859"
+    },
+    "presets/world1/tools/characters/maker/prop_shell.py": {
+      "bytes": 17113,
+      "role": "record",
+      "sha256": "54953b6d2501f4beb1ef48a14e35afc3a829c78080e0a155315dfa650b5420c5"
+    },
+    "presets/world1/tools/characters/maker/route_build.py": {
+      "bytes": 49462,
+      "role": "record",
+      "sha256": "8402152a4126231b3a51df06d7e28aa03cbaf362a80593f318d931861285c2a6"
+    },
+    "presets/world1/tools/props/blender_clean_bake.py": {
+      "bytes": 7000,
+      "role": "record",
+      "sha256": "992c54eb897e1867c8ece0e0b1055e5c9a856034b27788977a0e32524dc2551e"
+    },
+    "presets/world1/tools/props/finish_elsewhere.py": {
+      "bytes": 3073,
+      "role": "record",
+      "sha256": "096b6a2999827b276e65fb7ada9c011cb0bfef32608e811c46bc957afd55e528"
+    },
+    "presets/world1/tools/props/library/inside/make_chunky.py": {
+      "bytes": 40727,
+      "role": "record",
+      "sha256": "66bbdc3f1e8ba7102f1f37bc9d9259478af235f7bdceb3ecd2d1fc7ad73b1864"
+    },
+    "presets/world1/tools/props/library/inside/make_tiles.py": {
+      "bytes": 6740,
+      "role": "record",
+      "sha256": "6d8ca4742eeb767d52b0d91cb2137ed5abeeb016097969c14d3d009e1a0b0622"
+    },
+    "presets/world1/tools/props/scene/cutout.py": {
+      "bytes": 8027,
+      "role": "record",
+      "sha256": "68cdc581447399e76cb115fe374a8cc409b064b83585accd13f8c1a26e47af37"
+    },
+    "presets/world1/tools/props/scene/depth.py": {
+      "bytes": 2931,
+      "role": "record",
+      "sha256": "22f1009f5c42ee809d6f00ba97d2f9a85bf523291adf3275359a7e5fd6fcbca7"
+    },
+    "presets/world1/tools/props/scene/redraw.py": {
+      "bytes": 9383,
+      "role": "record",
+      "sha256": "6a19ac72fbf2139d4c12ebf7c1b83bf089199dd21798f2175f3c682d53229600"
+    },
+    "presets/world1/tools/props/scene/target.py": {
+      "bytes": 4531,
+      "role": "record",
+      "sha256": "1ed02b1df9aa53b60574b79e6281a6bd884a459673ef2653fa84710ae83a5371"
+    },
+    "presets/world1/tools/review/page.html": {
+      "bytes": 5785,
+      "role": "record",
+      "sha256": "fcfe872fe7537e3c3c95704a298efd513843fc187c2f927ec5611f56c2359bd6"
+    },
+    "presets/world1/tools/sound/picker/page.html": {
+      "bytes": 22453,
+      "role": "record",
+      "sha256": "d35290e97ee110c2855819bb5d0c9cc752cd4938ddd5a75c471c5634ffe4143b"
+    },
+    "presets/world1/uv.lock": {
+      "bytes": 181915,
+      "role": "record",
+      "sha256": "52b6696aaa2a5d593124268609c80d493e83647839e26d35f729d35c466909e7"
     },
     "run.json": {
-      "bytes": 406,
+      "bytes": 556,
       "role": "record",
-      "sha256": "597afe136924dc66a7e5ba42c42c5f6de439fff3cdece19ca3cbb276bc6dd0d8"
+      "sha256": "2896ab30aa1fddfb9a0f983059ede3d377092998100392b642fe0a4127a16911"
     },
     "settings.schema.json": {
       "bytes": 930,
       "role": "record",
       "sha256": "5379f6e1c89fd83b8cbb928925911663fd0adb6558835258b180e9ef1797eb66"
+    },
+    "test/conftest.py": {
+      "bytes": 5453,
+      "role": "code",
+      "sha256": "f806701c1ceeeacba599c2bcbef5d674f8b24cdb51ab031ad1042172f923367d"
     },
     "test/score/stages/effects/test_effects_ride_their_design.py": {
       "bytes": 17802,
@@ -70,14 +2535,24 @@
         "what": "made by score"
       }
     ],
-    "nodes": [],
+    "nodes": [
+      "effects-layer@campgrounds",
+      "effects-layer@flat",
+      "effects-layer@galley",
+      "effects-layer@habitat"
+    ],
     "outside": [],
     "stage": "effects-layer",
     "world": "world1"
   },
   "requires": [],
   "schema": "score-lib-entry/1",
-  "seen_in": [],
+  "seen_in": [
+    "campgrounds",
+    "flat",
+    "galley",
+    "habitat"
+  ],
   "state": "draft",
   "tags": {
     "needs": [
