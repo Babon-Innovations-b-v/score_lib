@@ -5,6 +5,7 @@ import pathlib
 import pytest
 
 from score_lib.blobs import BadBlob, NoBlobStore, from_environment, key_of
+from score_lib.blobs.hub import HubBlobStore
 from score_lib.blobs.local import LocalBlobStore
 from score_lib.blobs.s3 import S3BlobStore
 
@@ -34,10 +35,26 @@ def test_local_put_refuses_wrong_sha(tmp_path):
         store.put("0" * 64, path)
 
 
+class NoBlobs:
+    def get(self, sha256, destination):
+        raise AssertionError(f"asked the store for {sha256}")
+
+
 def test_environment_picks_local_and_names_the_variables(tmp_path):
+    """Break: from_environment ignoring `public` (a reader with no store set gets none, not the public copy), or
+    fetch.place_file's 'if sha == EMPTY' branch removed (a store not holding the empty blob, as the public copy, fails
+    every entry with an empty __init__.py)."""
+    from score_lib import fetch
+    target = tmp_path / "pkg" / "__init__.py"
+    fetch.place_file(NoBlobs(), hashlib.sha256(b"").hexdigest(), target, link=False)
+    assert target.read_bytes() == b""
     assert isinstance(from_environment({"SCORE_LIB_BLOBS_DIR": str(tmp_path)}), LocalBlobStore)
+    setting = tmp_path / "public_store.toml"
+    setting.write_text('hub_repo = "owner/lib"\n')
+    public = from_environment({}, public=setting)
+    assert isinstance(public, HubBlobStore) and public.repo_id == "owner/lib"
     with pytest.raises(NoBlobStore, match="SCORE_LIB_BLOBS_DIR"):
-        from_environment({})
+        from_environment({}, public=tmp_path / "none.toml")
 
 
 class Missing(Exception):
@@ -151,7 +168,6 @@ def test_hub_store_reads_without_a_key_and_the_mirror_copies_resumes_and_checks(
     whose bytes differ."""
     import json
     from score_lib.blobs import MissingBlob, mirror
-    from score_lib.blobs.hub import HubBlobStore
     hub = FakeHub()
     store = HubBlobStore(hub, "owner/lib")
     path, sha = a_file(tmp_path)
@@ -198,3 +214,4 @@ def test_hub_store_reads_without_a_key_and_the_mirror_copies_resumes_and_checks(
     target.files[key_of(shas[0])] = b"other"
     checked = mirror.mirror(root, source, target, "owner/lib", check_only=True, say=lambda line: None)
     assert checked["copied"] == 0 and len(checked["failures"]) == 1 and shas[0] in checked["failures"][0]
+

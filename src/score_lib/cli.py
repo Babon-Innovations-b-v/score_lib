@@ -8,10 +8,11 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 
 
-def blob_store():
-    from score_lib.blobs import NoBlobStore, from_environment
+def blob_store(reading=False):
+    """The configured blob store; for a command that only reads, the library's public copy when none is set."""
+    from score_lib.blobs import PUBLIC_STORE, NoBlobStore, from_environment
     try:
-        return from_environment()
+        return from_environment(public=PUBLIC_STORE if reading else None)
     except NoBlobStore as error:
         raise SystemExit(str(error))
 
@@ -74,7 +75,7 @@ def command_withdraw(options):
 def command_fetch(options):
     from score_lib.fetch import MissingEntry, MissingFile, fetch
     try:
-        records = fetch(options.root, blob_store(), options.address, options.into, options.with_requires,
+        records = fetch(options.root, blob_store(reading=True), options.address, options.into, options.with_requires,
                         names=options.file)
     except (MissingEntry, MissingFile) as missing:
         raise SystemExit(f"not in the library: {missing}")
@@ -111,13 +112,13 @@ def command_test(options):
     import tempfile
     from score_lib import algorithms
     with tempfile.TemporaryDirectory(prefix="score-lib-test-") as folder:
-        raise SystemExit(algorithms.test(options.root, blob_store(), options.address, folder))
+        raise SystemExit(algorithms.test(options.root, blob_store(reading=True), options.address, folder))
 
 
 def command_run(options):
     from score_lib import algorithms
     try:
-        result = algorithms.run(options.root, blob_store(), options.address, options.out, options.preset,
+        result = algorithms.run(options.root, blob_store(reading=True), options.address, options.out, options.preset,
                                 options.arg or [])
     except algorithms.Refused as error:
         raise SystemExit(str(error))
@@ -132,7 +133,7 @@ def command_index(options):
 
 def command_verify(options):
     from score_lib.verify import verify
-    failures = verify(options.root, blob_store(), options.address or None, options.deep, not options.no_usd,
+    failures = verify(options.root, blob_store(reading=True), options.address or None, options.deep, not options.no_usd,
                       options.contribution_pending)
     for address, message in failures:
         print(f"FAIL {address}: {message}")
@@ -174,7 +175,7 @@ def command_handover(options):
 
 def command_clip_plan(options):
     from score_lib.clip import plan
-    rows = plan(options.root, blob_store(), options.address, options.into)
+    rows = plan(options.root, blob_store(reading=True), options.address, options.into)
     print(f"planned {sum(not row['why'] for row in rows)} clips of {len(rows)} entries into {options.into}")
 
 
@@ -221,7 +222,7 @@ def command_hub_mirror(options):
 def command_bundle(options):
     from score_lib import bundle
     try:
-        packed = bundle.pack(options.root, blob_store(), options.address, options.out)
+        packed = bundle.pack(options.root, blob_store(reading=True), options.address, options.out)
     except bundle.Refused as why:
         raise SystemExit(f"refused: {why}")
     print(json.dumps(packed, sort_keys=True))

@@ -35,9 +35,18 @@ def destination(into, record, name):
                           existing_link_ok=True)
 
 
+# The sha256 of no bytes: an empty file (a package's __init__.py) is written as it is, never asked of the store.
+EMPTY = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+
+
 def place_file(blobs, sha, target, link):
-    """One file into place: a link to a local blob (verify's read-only use) or a checked copy."""
+    """One file into place: an empty file written, a link to a local blob (verify's read-only use) or a checked
+    copy."""
     if target.exists() or target.is_symlink():
+        return
+    if sha == EMPTY:
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_bytes(b"")
         return
     if link and hasattr(blobs, "path"):
         target.parent.mkdir(parents=True, exist_ok=True)
