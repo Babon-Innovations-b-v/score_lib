@@ -76,7 +76,9 @@ score-lib concept --world w --place p --commit <score sha> --store <objects>
 
 The export reads a SCORE store (`SCORE_STORE`, its `objects` folder) and the score repository (`SCORE_REPO`) at the
 commit `worlds/<world>.toml` names, both read only. The blob store is set by environment variables only; see
-`config/blobstore.env.template`.
+`config/blobstore.env.template`. The public copy is a Hugging Face dataset repository: `SCORE_LIB_HUB_REPO=<owner/name>`
+reads it with no key (a write uses the standard Hugging Face login), and `score-lib hub-mirror <owner/name>` copies the
+S3 store's named blobs into it, resumably, and checks the copy (`--check-only`, `--deep N`).
 
 `handover` is what score's runner calls once a place (or, without `--place`, the world's own node) is accepted: under
 a lock (`.handover.lock`) it records the place in `worlds/<w>.toml`, exports the place kinds over every place of the

@@ -3,6 +3,8 @@
     local:          SCORE_LIB_BLOBS_DIR=<folder>
     S3-compatible:  SCORE_LIB_S3_ENDPOINT, SCORE_LIB_S3_BUCKET, SCORE_LIB_S3_PREFIX (optional), SCORE_LIB_S3_REGION
                     (optional), AWS_ACCESS_KEY_ID / AWS_SECRET_ACCESS_KEY, SCORE_LIB_PUBLIC_URL (optional)
+    Hugging Face:   SCORE_LIB_HUB_REPO (a dataset repository), SCORE_LIB_HUB_REVISION (optional), SCORE_LIB_HUB_PREFIX
+                    (optional); read with no key, written with the standard Hugging Face login's token
 """
 import hashlib
 import os
@@ -11,7 +13,8 @@ from typing import Protocol
 
 CHUNK = 1 << 20
 VARIABLES = ("SCORE_LIB_BLOBS_DIR", "SCORE_LIB_S3_ENDPOINT", "SCORE_LIB_S3_BUCKET", "SCORE_LIB_S3_PREFIX",
-             "SCORE_LIB_S3_REGION", "AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_KEY", "SCORE_LIB_PUBLIC_URL")
+             "SCORE_LIB_S3_REGION", "AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_KEY", "SCORE_LIB_PUBLIC_URL",
+             "SCORE_LIB_HUB_REPO", "SCORE_LIB_HUB_REVISION", "SCORE_LIB_HUB_PREFIX")
 
 
 class BlobStore(Protocol):
@@ -66,6 +69,10 @@ def from_environment(environ=None):
     if environ.get("SCORE_LIB_S3_ENDPOINT") and environ.get("SCORE_LIB_S3_BUCKET"):
         from score_lib.blobs.s3 import S3BlobStore
         return S3BlobStore.from_environment(environ)
-    raise NoBlobStore("no blob store configured: set SCORE_LIB_BLOBS_DIR for a local folder, or SCORE_LIB_S3_ENDPOINT "
+    if environ.get("SCORE_LIB_HUB_REPO"):
+        from score_lib.blobs.hub import HubBlobStore
+        return HubBlobStore.from_environment(environ)
+    raise NoBlobStore("no blob store configured: set SCORE_LIB_BLOBS_DIR for a local folder, SCORE_LIB_S3_ENDPOINT "
                       "and SCORE_LIB_S3_BUCKET (with AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY) for an "
-                      "S3-compatible store; see config/blobstore.env.template")
+                      "S3-compatible store, or SCORE_LIB_HUB_REPO for a Hugging Face dataset repository; see "
+                      "config/blobstore.env.template")

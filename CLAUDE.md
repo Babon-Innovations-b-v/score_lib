@@ -5,7 +5,9 @@ A library of reusable parts of SCORE worlds: records in git (`entries/`), bytes 
 ## Rules
 
 - Provider agnostic: no cloud provider, endpoint, bucket or company name in code, tests, docs or config. The blob
-  store is configured by environment variables only (`config/blobstore.env.template`, placeholders only).
+  store is configured by environment variables only (`config/blobstore.env.template`, placeholders only). The one
+  named host is the Hugging Face Hub backend (`blobs/hub.py`, the public copy, score #141), which names its own
+  library; its repository is a setting too, never in code.
 - Everything in the library is MIT (`LICENSE`); what cannot be released under MIT is not let in. A row in
   `config/sources.toml` is added only from the source's real terms; a source whose own bytes cannot go out under MIT
   stays outside (an algorithm's `outside` requirement), never copied in.
@@ -35,4 +37,6 @@ A library of reusable parts of SCORE worlds: records in git (`entries/`), bytes 
 - `src/score_lib/quality/<kind>.py`: one quality score system per kind (its parts and their marks); `quality/refine.py`
   the refine options and their measured prices. `score-lib quality` writes `score`, `score_parts`, `refine_options`
   and `score_made` into entries; they stay out of the digest, so scoring never rewrites a locked entry's content.
+- `src/score_lib/blobs/`: the blob store backends (local folder, S3-compatible, Hugging Face Hub dataset repository)
+  and `mirror.py`, `score-lib hub-mirror`: the S3 store's named blobs copied into a Hub repository and checked.
 - `tests/conftest.py`: a small SCORE world (store, repo, library root) built per test.

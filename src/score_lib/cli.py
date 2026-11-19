@@ -201,6 +201,22 @@ def command_held(options):
     sys.stdout.write(json.dumps(rows, indent=2, sort_keys=True) + "\n")
 
 
+def command_hub_mirror(options):
+    from huggingface_hub import HfApi
+    from score_lib.blobs import mirror
+    from score_lib.blobs.s3 import S3BlobStore
+    source = blob_store()
+    if not isinstance(source, S3BlobStore):
+        raise SystemExit("hub-mirror copies from the S3-compatible store: set SCORE_LIB_S3_ENDPOINT and "
+                         "SCORE_LIB_S3_BUCKET (and its keys), and leave SCORE_LIB_BLOBS_DIR unset")
+    report = mirror.mirror(pathlib.Path(options.root), source, HfApi(), options.repo, options.revision,
+                           options.prefix, options.public, options.deep, options.records, options.check_only)
+    if options.report:
+        pathlib.Path(options.report).write_text(json.dumps(report, indent=2, sort_keys=True) + "\n")
+    print(mirror.report_line(report))
+    raise SystemExit(1 if report["failures"] else 0)
+
+
 def parser():
     found = argparse.ArgumentParser(prog="score-lib", description=__doc__)
     found.add_argument("--root", default=str(ROOT), help="the score_lib repository (default: this checkout)")
@@ -309,6 +325,17 @@ def parser():
     clip_attach.add_argument("--out", required=True, help="the report written")
     clip_attach.add_argument("--message", default="clips: preview clips made at handover")
     clip_attach.set_defaults(handle=command_clip_attach)
+    hub = commands.add_parser("hub-mirror", help="copy the blobs the entries name from the S3-compatible store into a "
+                                                 "Hugging Face dataset repository, then check the copy")
+    hub.add_argument("repo", help="the dataset repository, owner/name")
+    hub.add_argument("--revision", default="main")
+    hub.add_argument("--prefix", default="", help="a path prefix in the repository")
+    hub.add_argument("--public", action="store_true", help="make the repository public when it is created")
+    hub.add_argument("--deep", type=int, default=0, help="also download and hash this many random blobs")
+    hub.add_argument("--records", help="the records' link for the card (default: this checkout's origin)")
+    hub.add_argument("--check-only", action="store_true", help="only check the copy, write nothing")
+    hub.add_argument("--report", help="write the report (every failure) as JSON")
+    hub.set_defaults(handle=command_hub_mirror)
     return found
 
 
