@@ -42,4 +42,10 @@ A library of reusable parts of SCORE worlds: records in git (`entries/`), bytes 
   and `score_made` into entries; they stay out of the digest, so scoring never rewrites a locked entry's content.
 - `src/score_lib/blobs/`: the blob store backends (local folder, S3-compatible, Hugging Face Hub dataset repository)
   and `mirror.py`, `score-lib hub-mirror`: the S3 store's named blobs copied into a Hub repository and checked.
+- `src/score_lib/bundle.py`: `score-lib bundle` (a contributor's new entries and their bytes in one file for the pull
+  request) and `score-lib take-bundle` (a maintainer, on merge: every hash checked, the bytes into every blob store,
+  each entry traced); `review.py`: `score-lib review`, an outside pull request's diff (new files only), sign-offs,
+  entries and bundles checked and its contact sheet drawn; `contribution.py`: an outside entry's trace and `score-lib
+  trace`. All of them open a bundle only inside the isolated review environment (a setting, no default).
+- `docs/demo/`: the README's small pictures, one per kind, made from real entries (owner, 2026-11-19).
 - `tests/conftest.py`: a small SCORE world (store, repo, library root) built per test.
