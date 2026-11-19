@@ -9,7 +9,11 @@ The list is one JSON file:
                   "files": {"<name in the entry>": {"path": "<local file>", "from": "<its name where it came from>"}},
                   "made_with": [{"what": "<part>", "source": "<a sources.toml id or credit text>",
                                  "carried": true when the source's own bytes are copied in}],
-                  "tags": {<optional tags, {name: [values]}>}}]}
+                  "tags": {<optional tags, {name: [values]}>}}],
+     "contributor": {"handle": "<GitHub handle>", "claim": "<own work, or the source and its terms>"}}
+
+`contributor` is given by an outside contributor only (CONTRIBUTING.md): each entry then names its contributor
+(`provenance.contributor`) and keeps the contribution block (contribution.py), which `score-lib take-bundle` completes.
 
 Each entry is admitted by the MIT rule (config/sources.toml) or refused. Its record has no OpenUSD form and no
 picture (`usd` null, `picture_reason` says why) and keeps `provenance.taken_from` and `files_from`, which
@@ -30,6 +34,7 @@ import json
 import os
 import pathlib
 
+from score_lib import contribution
 from score_lib import entry as entries
 from score_lib import handover, index
 from score_lib.admission import NotAdmitted, Sources
@@ -82,10 +87,18 @@ def record_of(listed, about, sources, version):
     provenance = {"world": about["world"], "commit": about["commit"], "taken_from": about["taken_from"],
                   "made_with": sources.made_with(listed["made_with"]),
                   "files_from": {name: file["from"] for name, file in sorted(listed["files"].items())}}
-    return {"schema": entries.SCHEMA, "address": address, "kind": listed["kind"], "id": listed["id"],
-            "version": version, "title": listed["title"], "state": "draft", "picture": None,
-            "picture_reason": NO_PICTURE, "files": file_table(listed["files"], listed["kind"]), "usd": None, "requires": [],
-            "provenance": provenance, "tags": listed.get("tags", {}), "seen_in": []}
+    record = {"schema": entries.SCHEMA, "address": address, "kind": listed["kind"], "id": listed["id"],
+              "version": version, "title": listed["title"], "state": "draft", "picture": None,
+              "picture_reason": NO_PICTURE, "files": file_table(listed["files"], listed["kind"]), "usd": None,
+              "requires": [], "provenance": provenance, "tags": listed.get("tags", {}), "seen_in": []}
+    if about.get("contributor"):
+        try:
+            block = contribution.block_of(about["contributor"].get("handle"), about["contributor"].get("claim"))
+        except ValueError as why:
+            raise Refused(str(why)) from why
+        provenance["contributor"] = block["handle"]
+        record["contribution"] = block
+    return record
 
 
 def comparable(record):

@@ -5,6 +5,7 @@ import pathlib
 import shutil
 import tempfile
 
+from score_lib import contribution
 from score_lib import entry as entries
 from score_lib import index, locks, schema
 from score_lib.blobs import BadBlob, check_sha
@@ -179,6 +180,13 @@ def check_taken_in(blobs, records):
             for fault in taken_in_faults(blobs, record)]
 
 
+def check_contributed(records, pending=False):
+    """9. every outside entry traced to its contributor, pull request, signed-off commit, claim and bundle
+    (contribution.py); `pending` checks only the contributor's half, before the pull request is merged."""
+    return [(record["address"], f"contribution: {fault}") for record in records if record["state"] != "withdrawn"
+            for fault in contribution.faults(record, pending)]
+
+
 def tail(path):
     """A relative path without its leading ./ and ../ parts (how it ends once anchored to any folder)."""
     parts = path.split("/")
@@ -248,14 +256,15 @@ def selected(root, addresses):
     return records
 
 
-def verify(root, blobs, addresses=None, deep=False, usd=True):
-    """Every failure as (address or file, message)."""
+def verify(root, blobs, addresses=None, deep=False, usd=True, pending=False):
+    """Every failure as (address or file, message); `pending` for an outside contribution not yet merged."""
     records = selected(root, addresses)
     failures = check_schemas(root, records) + check_index(root) + check_locks(root, records)
     failures += check_blobs(records, blobs, deep) + check_licence_file(root)
     failures += check_admission(root, records, Sources.load())
     failures += check_requires(root, records)
     failures += check_taken_in(blobs, records)
+    failures += check_contributed(records, pending)
     if usd:
         failures += check_usd(root, blobs, records)
     return failures

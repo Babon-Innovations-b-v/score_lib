@@ -132,7 +132,8 @@ def command_index(options):
 
 def command_verify(options):
     from score_lib.verify import verify
-    failures = verify(options.root, blob_store(), options.address or None, options.deep, not options.no_usd)
+    failures = verify(options.root, blob_store(), options.address or None, options.deep, not options.no_usd,
+                      options.contribution_pending)
     for address, message in failures:
         print(f"FAIL {address}: {message}")
     print(f"{len(failures)} failures")
@@ -217,6 +218,58 @@ def command_hub_mirror(options):
     raise SystemExit(1 if report["failures"] else 0)
 
 
+def command_bundle(options):
+    from score_lib import bundle
+    try:
+        packed = bundle.pack(options.root, blob_store(), options.address, options.out)
+    except bundle.Refused as why:
+        raise SystemExit(f"refused: {why}")
+    print(json.dumps(packed, sort_keys=True))
+
+
+def command_take_bundle(options):
+    from score_lib import bundle, handover
+    from score_lib.blobs import NoBlobStore
+    try:
+        report = bundle.take(options.root, bundle.stores_from_environment(), options.source, options.pr,
+                             options.contributor, options.commit)
+    except (bundle.Refused, NoBlobStore) as why:
+        raise SystemExit(f"refused: {why}")
+    if options.save and report["entries"]:
+        folders = sorted({"entries/{0}/{1}".format(*entries_of(address)) for address in report["entries"]})
+        report["saved"] = handover.saved(options.root, f"take-bundle: {len(report['entries'])} entries from "
+                                                       f"#{options.pr} by {options.contributor}", (*folders, "index"))
+    print(json.dumps(report, sort_keys=True))
+
+
+def entries_of(address):
+    from score_lib import entry
+    return entry.parse_address(address)[:2]
+
+
+def command_review(options):
+    from score_lib import bundle, review
+    try:
+        faults, tiles = review.review(options.root, options.base, options.contributor, options.bundle or (),
+                                      options.sheet)
+    except bundle.Refused as why:
+        raise SystemExit(f"refused: {why}")
+    for fault in faults:
+        print(f"FAIL {fault}")
+    if options.sheet:
+        print(f"contact sheet: {options.sheet} ({tiles} pictures, model views and sounds); look at every one")
+    print(f"{len(faults)} faults")
+    raise SystemExit(1 if faults else 0)
+
+
+def command_trace(options):
+    from score_lib import contribution
+    rows = contribution.traced(options.root, options.query)
+    for row in rows:
+        print(json.dumps(row, sort_keys=True))
+    print(f"{len(rows)} entries")
+
+
 def parser():
     found = argparse.ArgumentParser(prog="score-lib", description=__doc__)
     found.add_argument("--root", default=str(ROOT), help="the score_lib repository (default: this checkout)")
@@ -280,6 +333,9 @@ def parser():
     verified.add_argument("--deep", action="store_true")
     verified.add_argument("--address", action="append")
     verified.add_argument("--no-usd", action="store_true", help="skip the USD check (section 8.7)")
+    verified.add_argument("--contribution-pending", action="store_true",
+                          help="an outside contribution before its merge: check only the contributor's half of its "
+                               "trace")
     verified.set_defaults(handle=command_verify)
     scored = commands.add_parser("quality", help="score entries' quality from free local measures (reads "
                                  "SCORE_STORE and SCORE_REPO; run with stdin from /dev/null when detached)")
@@ -336,6 +392,29 @@ def parser():
     hub.add_argument("--check-only", action="store_true", help="only check the copy, write nothing")
     hub.add_argument("--report", help="write the report (every failure) as JSON")
     hub.set_defaults(handle=command_hub_mirror)
+    packing = commands.add_parser("bundle", help="pack your new entries' records and bytes into one bundle file for "
+                                                 "your pull request")
+    packing.add_argument("address", nargs="+")
+    packing.add_argument("--out", required=True, help="the bundle file (<name>.tgz)")
+    packing.set_defaults(handle=command_bundle)
+    taking = commands.add_parser("take-bundle", help="maintainers, on merge: check a pull request's bundles, put "
+                                                     "their bytes in every blob store and trace each entry")
+    taking.add_argument("source", nargs="+", help="a bundle's https URL or file")
+    taking.add_argument("--pr", type=int, required=True)
+    taking.add_argument("--contributor", required=True, help="the pull request author's GitHub handle")
+    taking.add_argument("--commit", required=True, help="the pull request's signed-off head commit (full sha)")
+    taking.add_argument("--save", action="store_true", help="commit and push the traced entries and the index")
+    taking.set_defaults(handle=command_take_bundle)
+    reviewed = commands.add_parser("review", help="maintainers: check an outside pull request (its diff, sign-offs, "
+                                                  "entries and bundles) and draw its contact sheet")
+    reviewed.add_argument("--base", required=True, help="the branch it goes into, e.g. origin/main")
+    reviewed.add_argument("--contributor", required=True, help="the pull request author's GitHub handle")
+    reviewed.add_argument("--bundle", action="append", help="a bundle's https URL or file")
+    reviewed.add_argument("--sheet", help="where to draw the contact sheet (a .png)")
+    reviewed.set_defaults(handle=command_review)
+    traced = commands.add_parser("trace", help="who added an entry or a blob, from which pull request, on what claim")
+    traced.add_argument("query", help="an address, a blob's sha256, handle:<h>, source:<id> or pr:<n>")
+    traced.set_defaults(handle=command_trace)
     return found
 
 
