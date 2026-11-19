@@ -2,24 +2,34 @@
   "address": "character/astronaut_trellis@1",
   "files": {
     "body.glb": {
-      "bytes": 2537256,
+      "bytes": 9105664,
       "role": "gltf",
-      "sha256": "b582bc86f83a3d915be8b3a156d9b533e65deb1d2b18f83709bf3425775ffca5"
+      "sha256": "63f7714b53deb825615a24a24096fef01fb86500eff629af0d644d1ae42c15f9"
     },
     "character.usdc": {
-      "bytes": 1896269,
+      "bytes": 2815579,
       "role": "usd",
-      "sha256": "617945f38de74e94c5dd89f68a1300276523dfd939979b6d30f88ca7d216aac1"
+      "sha256": "613d76a0447a0f903f555df316767073e7d6014850912b0f6fe2b6722c9dfff0"
     },
     "rig.json": {
-      "bytes": 2538,
+      "bytes": 3252,
       "role": "record",
-      "sha256": "01563c35287f2c87df89aa68325c8c115888966283814353ee0492074ae0fecf"
+      "sha256": "7e7ac4adbab056deca3d042b7e0055a5eea9134022eba374c7ef1e83cad0a954"
     },
     "source.json": {
-      "bytes": 1514,
+      "bytes": 1507,
       "role": "record",
-      "sha256": "a47620b5b649c4e26f4e922aa37cb19a0895fbe1746744e159db91a83a4471ba"
+      "sha256": "648ea89ab182bce18472ac25649bacdf0f6e01fbdce36d2b49d0dc02b49847bc"
+    },
+    "textures/body_0.png": {
+      "bytes": 3236828,
+      "role": "texture",
+      "sha256": "b659d3f708cd854f6cdd08c598f2a84c85c29e8f0033bbf68478d72b41f96ea2"
+    },
+    "textures/body_1.png": {
+      "bytes": 2214767,
+      "role": "texture",
+      "sha256": "849c464d1ff71fab524aa13fde172ae4c759a1ad016b28bd57ddac22490640a7"
     }
   },
   "id": "astronaut_trellis",
@@ -27,21 +37,19 @@
   "picture": null,
   "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
   "provenance": {
-    "commit": "eb66d70fb",
+    "commit": "68e3bd097",
     "files_from": {
       "body.glb": "still_rig/body.glb",
       "character.usdc": "still_rig/character.usdc",
       "rig.json": "still_rig/rig.json",
-      "source.json": "still_rig/source.json"
+      "source.json": "still_rig/source.json",
+      "textures/body_0.png": "still_rig/usd/textures/body_0.png",
+      "textures/body_1.png": "still_rig/usd/textures/body_1.png"
     },
     "made_with": [
       {
         "by": "kimodo",
         "what": "the clips"
-      },
-      {
-        "by": "procfunc",
-        "what": "each part's finish, a palette library surface (ProcFunc recipe)"
       },
       {
         "by": "score",
@@ -53,10 +61,10 @@
       },
       {
         "by": "trellis2",
-        "what": "the suit's shape (TRELLIS.2-4B from the people line's astronaut picture)"
+        "what": "the suit's shape and its own paint (TRELLIS.2-4B from the people line's astronaut picture), graded to the palette"
       }
     ],
-    "taken_from": "score tools/characters/still_rig on this PC: the SCORE paper's TRELLIS.2 astronaut (Figure 2) rigged on people-dress-astronaut-made's skeleton",
+    "taken_from": "score tools/characters/still_rig on this PC: the SCORE paper's TRELLIS.2 astronaut (Figure 2) in its own graded paint, rigged on people-dress-astronaut-made's skeleton",
     "world": "world1"
   },
   "requires": [],
