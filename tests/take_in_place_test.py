@@ -146,7 +146,8 @@ def test_a_place_keeps_its_own_files_points_at_the_library_and_opens_fetched(tmp
     surface.json copy is left out as the library's); mapping_of: drop 'mapping[path] = entries.library_path(...)'
     (the scene names ./assets/kit/crate/1/piece.usdc, which the entry does not hold, so verify and the fetched stage
     fail); take_in.role_of: drop the PLACE_ROLES branch (concept.png gets role texture, the package's scene.json
-    record)."""
+    record); take_in_place.settle: write a changed draft over its own version (the changed yard is taken in as
+    place/yard@1 again, not @2, and @1's bytes change under whatever reads it)."""
     root = tmp_path / "library"
     (root / "entries").mkdir(parents=True)
     shutil.copyfile(LIBRARY / "LICENSE", root / "LICENSE")
@@ -170,6 +171,12 @@ def test_a_place_keeps_its_own_files_points_at_the_library_and_opens_fetched(tmp
     assert record["usd"]["default_prim"] == "/yard" and record["picture"]["file"] == "render.png"
     assert verify.verify(root, blobs) == []
     assert take_in_place.taken_in_place(root, blobs, folder, "a" * 40, "world1")["unchanged"] == ["place/yard@1"]
+    kept = entries.load_address(root, "place/yard@1")
+    (folder / "objects.json").write_text(json.dumps([{"word": "crate", "box": [0, 0, 1, 1]}]))
+    again = take_in_place.taken_in_place(root, blobs, folder, "a" * 40, "world1")
+    assert again["new version"] == ["place/yard@2"] and not again.get("changed draft"), again
+    assert entries.load_address(root, "place/yard@1") == kept, "a kept version was written over"
+    assert verify.verify(root, blobs) == []
     into = tmp_path / "fetched"
     try:
         main(["--root", str(root), "fetch", "place/yard@1", "--into", str(into), "--with-requires"])

@@ -18,7 +18,8 @@ An asset copy whose bytes differ from its entry's is the place's own. `requires`
 every held entry the scene's `score:library` and `score:surface` name; `provenance` names the place_build commit,
 the folder (`taken_from`), every file's path in it (`files_from`) and every address the scene names (`lays`).
 `score-lib fetch place/<place>@<v> --into <root> --with-requires` then gives a stage that opens with <root> as its
-search path. An unchanged place is left as it is, a changed draft written over, a changed locked one the next version.
+search path. An unchanged place is left as it is; a changed one, draft or locked, becomes the next version, so a version
+a game or a later step already reads is never written over (score #148: closing the flat wrote over place/flat@1).
 """
 import json
 import os
@@ -192,7 +193,7 @@ def record_of(root, folder, about, kept, named, version):
 
 
 def settle(root, folder, about, kept, named):
-    """(status, record) of the place: new, unchanged, changed draft or new version."""
+    """(status, record) of the place: new, unchanged or new version (a changed place never writes over a kept one)."""
     found = entries.versions(root, "place", entry_id_of(about["place"]))
     newest = found[-1] if found else None
     if newest is None:
@@ -200,8 +201,6 @@ def settle(root, folder, about, kept, named):
     same = record_of(root, folder, about, kept, named, newest["version"])
     if take_in.comparable(same) == take_in.comparable(newest):
         return "unchanged", newest
-    if newest["state"] == "draft":
-        return "changed draft", same
     return "new version", record_of(root, folder, about, kept, named, newest["version"] + 1)
 
 
@@ -240,7 +239,7 @@ def taken_in_place_saved(root, blobs, folder, commit, world):
     wait = float(os.environ.get("SCORE_LIB_LOCK_WAIT", handover.LOCK_WAIT))
     with handover.locked(root, wait):
         report = taken_in_place(root, blobs, folder, commit, world)
-        written = [address for status in ("new", "changed draft", "new version") for address in report[status]]
+        written = [address for status in ("new", "new version") for address in report[status]]
         if not written:
             return {**report, "saved": None}
         kind, entry_id, _ = entries.parse_address(written[0])
