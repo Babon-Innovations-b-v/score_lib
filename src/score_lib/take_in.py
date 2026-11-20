@@ -5,7 +5,8 @@ The list is one JSON file:
 
     {"world": "world1", "commit": "<the score commit that named the files>", "taken_from": "<where the bytes came
      from, in words>",
-     "entries": [{"kind": "sound" | "model" | "kit" | "character", "id": "<entry id>", "title": "<title>",
+     "entries": [{"kind": "sound" | "model" | "kit" | "character" | "surface" | "take" | "effect",
+                  "id": "<entry id>", "title": "<title>",
                   "files": {"<name in the entry>": {"path": "<local file>", "from": "<its name where it came from>"}},
                   "made_with": [{"what": "<part>", "source": "<a sources.toml id or credit text>",
                                  "carried": true when the source's own bytes are copied in}],
@@ -22,7 +23,10 @@ is; a changed draft is written over; a changed locked entry becomes the next ver
 
 A `kit` entry is one building kit piece (its geometry, `.usdc`, and its record); a `character` entry may hold motion
 clips (`.npz`) and their records; a `surface` entry is one image-mapped finish (its look, `material.usda`, its maps
-and its record, `surface.json`), such as a CC0 PBR set. A `.json` file of any kind is a record.
+and its record, `surface.json`), such as a CC0 PBR set; an `effect` entry is one emitter score's particle effects
+algorithm baked (its schema prim, `effect.usda`, the root its record's `usd` names as the export's effects do, the
+clip it plays, `.usdc`, and its settings record), never one from outside (CONTRIBUTING.md). A `.json` file of any kind
+is a record.
 
 A `take` entry is one Pixal3D take whole (score's work/pixal, 2026-10-28: its only copy lay on one disk): its models
 and record (`<take>.glb`, `<take>-final.glb`, `<take>-<faces>.glb`, `<take>.json`) and its camera folder
@@ -40,7 +44,9 @@ from score_lib import handover, index
 from score_lib.admission import NotAdmitted, Sources
 from score_lib.blobs import file_sha256, put_all
 
-KINDS = ("sound", "model", "take", "kit", "character", "surface")
+KINDS = ("sound", "model", "take", "kit", "character", "surface", "effect")
+# An effect entry's emitter file, laid by reference as the export's effect entries are (export/effect.py).
+EFFECT_USD = {"root": "effect.usda", "layer": "effects", "use": "reference"}
 ROLES = {".json": "record", ".npz": "motion", ".usdc": "usd", ".usda": "usd", ".ogg": "audio", ".wav": "audio", ".mp3": "audio", ".flac": "audio", ".gltf": "gltf", ".glb": "gltf",
          ".bin": "gltf", ".png": "texture", ".jpg": "texture", ".jpeg": "texture", ".webp": "texture"}
 # A take's files: its models and its record, and in its `.svviews` folder the close-up and its camera.
@@ -81,6 +87,12 @@ def file_table(files, kind):
     return table
 
 
+def effect_usd(listed, version):
+    """An effect entry's `usd` block: its emitter file laid by reference, at its path in the library."""
+    path = entries.library_path("effect", listed["id"], version, EFFECT_USD["root"])
+    return {**EFFECT_USD, "path": str(path)}
+
+
 def record_of(listed, about, sources, version):
     """The draft record of one listed entry at a version; Refused or NotAdmitted when it cannot go in."""
     address = entries.address_of(listed["kind"], listed["id"], version)
@@ -89,7 +101,8 @@ def record_of(listed, about, sources, version):
                   "files_from": {name: file["from"] for name, file in sorted(listed["files"].items())}}
     record = {"schema": entries.SCHEMA, "address": address, "kind": listed["kind"], "id": listed["id"],
               "version": version, "title": listed["title"], "state": "draft", "picture": None,
-              "picture_reason": NO_PICTURE, "files": file_table(listed["files"], listed["kind"]), "usd": None,
+              "picture_reason": NO_PICTURE, "files": file_table(listed["files"], listed["kind"]),
+              "usd": effect_usd(listed, version) if listed["kind"] == "effect" else None,
               "requires": [], "provenance": provenance, "tags": listed.get("tags", {}), "seen_in": []}
     if about.get("contributor"):
         try:
@@ -112,6 +125,8 @@ def checked(listed):
         raise Refused(f"{listed['kind']}: take-in takes {' and '.join(KINDS)} entries only")
     if not entries.ID_PATTERN.match(listed["id"]):
         raise Refused(f"{listed['id']}: not an entry id")
+    if listed["kind"] == "effect" and EFFECT_USD["root"] not in listed["files"]:
+        raise Refused(f"{listed['id']}: an effect entry holds its emitter as {EFFECT_USD['root']}")
     for name in listed["files"]:
         try:
             entries.checked_name(name)
@@ -122,6 +137,8 @@ def checked(listed):
 def settle(root, listed, about, sources):
     """(status, record) of one listed entry: new, unchanged, changed draft or new version."""
     checked(listed)
+    if listed["kind"] == "effect" and about.get("contributor"):
+        raise Refused(f"{listed['id']}: an effect is score's bake, not taken in from outside (CONTRIBUTING.md)")
     found = entries.versions(root, listed["kind"], listed["id"])
     newest = found[-1] if found else None
     if newest is None:
