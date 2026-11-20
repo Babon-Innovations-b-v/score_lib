@@ -22,6 +22,7 @@ from score_lib.blobs import BadBlob, key_of
 REPO_TYPE = "dataset"
 BATCH_FILES = 100
 WORKERS = 8
+EMPTY = hashlib.sha256(b"").hexdigest()  # the sha256 of no bytes
 ATTRIBUTES = "blobs/** filter=lfs diff=lfs merge=lfs -text\n"
 
 
@@ -44,14 +45,16 @@ def source_sizes(source):
 
 
 def hub_held(api, repo_id, revision, prefix):
-    """{sha256: (size, recorded sha256 or None)} of every blob the repository holds; empty when it holds none."""
+    """{sha256: (size, recorded sha256 or None)} of every blob the repository holds; empty when it holds none. An empty
+    file is kept outside large-file storage, so nothing records its sha256: its size, 0, is its bytes, and its sha256
+    is EMPTY's (the library's one empty blob read as a failure, 2026-11-20)."""
     from huggingface_hub.errors import EntryNotFoundError, RepositoryNotFoundError, RevisionNotFoundError
     folder = f"{prefix}/blobs" if prefix else "blobs"
     try:
         listing = list(api.list_repo_tree(repo_id, folder, recursive=True, repo_type=REPO_TYPE, revision=revision))
     except (EntryNotFoundError, RepositoryNotFoundError, RevisionNotFoundError):
         return {}
-    return {item.path.rsplit("/", 1)[1]: (item.size, item.lfs.sha256 if item.lfs else None)
+    return {item.path.rsplit("/", 1)[1]: (item.size, item.lfs.sha256 if item.lfs else EMPTY if item.size == 0 else None)
             for item in listing if hasattr(item, "lfs")}
 
 

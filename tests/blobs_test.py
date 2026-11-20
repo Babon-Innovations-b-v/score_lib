@@ -142,7 +142,8 @@ class FakeHub:
 
     def list_repo_tree(self, repo_id, path_in_repo, recursive, repo_type, revision):
         from types import SimpleNamespace
-        return [SimpleNamespace(path=path, size=len(data), lfs=SimpleNamespace(sha256=hashlib.sha256(data).hexdigest()))
+        return [SimpleNamespace(path=path, size=len(data), lfs=SimpleNamespace(sha256=hashlib.sha256(data).hexdigest())
+                                if data else None)  # as the hub: an empty file is no large file
                 for path, data in self.files.items() if path.startswith(path_in_repo + "/")]
 
 
@@ -165,7 +166,7 @@ def test_hub_store_reads_without_a_key_and_the_mirror_copies_resumes_and_checks(
     """Red when: the environment does not pick the hub store from SCORE_LIB_HUB_REPO; a hub put, get or has loses or
     changes bytes or a missing blob is not MissingBlob; the url is not the public resolve link; the mirror leaves a
     named blob behind, copies one no entry names, re-uploads what the repository holds, or its check misses a blob
-    whose bytes differ."""
+    whose bytes differ, or an empty blob (no sha256 recorded) is told a failure."""
     import json
     from score_lib.blobs import MissingBlob, mirror
     hub = FakeHub()
@@ -188,7 +189,7 @@ def test_hub_store_reads_without_a_key_and_the_mirror_copies_resumes_and_checks(
     (root / "config").mkdir(parents=True)
     (root / "config/sources.toml").write_text('[[source]]\nid = "score"\nname = "made by score"\ncopy = true\n'
                                               'why = "our own work"\n')
-    datas = [b"one", b"two", b"three", b"four", b"five"]
+    datas = [b"one", b"", b"three", b"four", b"five"]  # the second empty: the hub records no sha256 for it
     shas = [hashlib.sha256(data).hexdigest() for data in datas]
     files = {f"file{number}": {"sha256": shas[number]} for number in range(4)}  # the fifth no entry names
     entry_path = root / "entries/model/thing/1/entry.json"
