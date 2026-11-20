@@ -1,0 +1,54 @@
+{
+  "address": "surface/mars_face@1",
+  "files": {
+    "face.json": {
+      "bytes": 415,
+      "role": "record",
+      "sha256": "ee43458c4664ac166c4cc843b4bfdb0b0a40688f289b03ec11b12321c5f2762d"
+    },
+    "materials.json": {
+      "bytes": 5112,
+      "role": "record",
+      "sha256": "98f393bc903f4c5ca54bba1e4223742ac9f853ccf9e8688320d083fa883fd86a"
+    }
+  },
+  "id": "mars_face",
+  "kind": "surface",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "2d7ce28795b0819b7a55c302f8c0dd04acd1e579",
+    "files_from": {
+      "face.json": "score store: body-face-mars's accepted output be8ba0d6e539f127008d8ca8df8bcdb55a7e042f39189cd7b68f0afaed8a1e17, its face.json",
+      "materials.json": "score store: body-face-mars's accepted output be8ba0d6e539f127008d8ca8df8bcdb55a7e042f39189cd7b68f0afaed8a1e17, its materials.json"
+    },
+    "made_with": [
+      {
+        "by": "gemini_31_pro",
+        "what": "the face's palette, token, family, roughness and metal: one Gemini 3.1 Pro answer through the Batch API"
+      },
+      {
+        "by": "procfunc",
+        "what": "the face's recipe, a natural ground of the surface recipes on ProcFunc (score data/library/materials.json); no ProcFunc bytes copied in"
+      },
+      {
+        "by": "score",
+        "what": "the row body-face-mars (score/stages/surfaces/body_faces.py): its question, the body's physics from score's reference table data/physics/bodies.json (values cited from NASA GSFC planetary fact sheets, facts of the US government) and the face's records"
+      }
+    ],
+    "taken_from": "score's body-face rows (body-face-earth, body-face-moon, body-face-mars), their accepted outputs of 2026-11-08 in this PC's store, each face.json and materials.json exactly as its row made them",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "body": [
+      "mars"
+    ]
+  },
+  "title": "The face of Mars",
+  "usd": null,
+  "version": 1
+}

@@ -1,0 +1,54 @@
+{
+  "address": "surface/moon_face@2",
+  "files": {
+    "face.json": {
+      "bytes": 418,
+      "role": "record",
+      "sha256": "f5499cf2f8e04215571798213843be974c2a4778178e3512bd93457fef5a062d"
+    },
+    "materials.json": {
+      "bytes": 5120,
+      "role": "record",
+      "sha256": "5ab1efb501a2635510b718e364717193feb90a1eca25bf01ee9915b741539e64"
+    }
+  },
+  "id": "moon_face",
+  "kind": "surface",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "2d7ce28795b0819b7a55c302f8c0dd04acd1e579",
+    "files_from": {
+      "face.json": "score store: body-face-moon's accepted output 23fd817fd63dcdc3bbc22b90a15351ce7e94978712e7818c68f3829392a9da49, its face.json",
+      "materials.json": "score store: body-face-moon's accepted output 23fd817fd63dcdc3bbc22b90a15351ce7e94978712e7818c68f3829392a9da49, its materials.json"
+    },
+    "made_with": [
+      {
+        "by": "gemini_31_pro",
+        "what": "the face's palette, token, family, roughness and metal: one Gemini 3.1 Pro answer through the Batch API"
+      },
+      {
+        "by": "procfunc",
+        "what": "the face's recipe, a natural ground of the surface recipes on ProcFunc (score data/library/materials.json); no ProcFunc bytes copied in"
+      },
+      {
+        "by": "score",
+        "what": "the row body-face-moon (score/stages/surfaces/body_faces.py): its question, the body's physics from score's reference table data/physics/bodies.json (values cited from NASA GSFC planetary fact sheets, facts of the US government) and the face's records"
+      }
+    ],
+    "taken_from": "score's body-face rows (body-face-earth, body-face-moon, body-face-mars), their accepted outputs of 2026-11-08 in this PC's store, each face.json and materials.json exactly as its row made them",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "body": [
+      "moon"
+    ]
+  },
+  "title": "The face of the Moon",
+  "usd": null,
+  "version": 2
+}

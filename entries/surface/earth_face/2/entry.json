@@ -1,0 +1,54 @@
+{
+  "address": "surface/earth_face@2",
+  "files": {
+    "face.json": {
+      "bytes": 383,
+      "role": "record",
+      "sha256": "f16f18aaca663c43235cc338d8ea51f95ce2b52b7e1a42eab3b7049399184da0"
+    },
+    "materials.json": {
+      "bytes": 5084,
+      "role": "record",
+      "sha256": "ff66a4ec0fad6bb2696570ba825e20f2332f750faa7965ae1e69ff61b08880ee"
+    }
+  },
+  "id": "earth_face",
+  "kind": "surface",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "2d7ce28795b0819b7a55c302f8c0dd04acd1e579",
+    "files_from": {
+      "face.json": "score store: body-face-earth's accepted output 1329002b0e117819175c7d73a018d568f964fb7cc19819dcfd4258c4b444984b, its face.json",
+      "materials.json": "score store: body-face-earth's accepted output 1329002b0e117819175c7d73a018d568f964fb7cc19819dcfd4258c4b444984b, its materials.json"
+    },
+    "made_with": [
+      {
+        "by": "gemini_31_pro",
+        "what": "the face's palette, token, family, roughness and metal: one Gemini 3.1 Pro answer through the Batch API"
+      },
+      {
+        "by": "procfunc",
+        "what": "the face's recipe, a natural ground of the surface recipes on ProcFunc (score data/library/materials.json); no ProcFunc bytes copied in"
+      },
+      {
+        "by": "score",
+        "what": "the row body-face-earth (score/stages/surfaces/body_faces.py): its question, the body's physics from score's reference table data/physics/bodies.json (values cited from NASA GSFC planetary fact sheets, facts of the US government) and the face's records"
+      }
+    ],
+    "taken_from": "score's body-face rows (body-face-earth, body-face-moon, body-face-mars), their accepted outputs of 2026-11-08 in this PC's store, each face.json and materials.json exactly as its row made them",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "body": [
+      "earth"
+    ]
+  },
+  "title": "The face of Earth",
+  "usd": null,
+  "version": 2
+}
