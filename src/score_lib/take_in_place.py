@@ -32,7 +32,7 @@ import tempfile
 from score_lib import entry as entries
 from score_lib import handover, index, take_in
 from score_lib.admission import NotAdmitted, Sources, made_by
-from score_lib.blobs import file_sha256
+from score_lib.blobs import file_sha256, put_all
 from score_lib.rewrite import asset_paths, export, info, local, open_copy, rewrite
 
 NAMED = ("scene.usda", "place.json", "objects.json", "palette.json", "check.json", "concept.png", "render.png",
@@ -221,8 +221,8 @@ def taken_in_place(root, blobs, folder, commit, world):
         kept, named = kept_files(root, folder, work)
         status, record = settle(root, folder, about, kept, named)
         if status != "unchanged":
-            for name, path in sorted(kept.items()):
-                blobs.put(record["files"][name]["sha256"], pathlib.Path(path))
+            put_all(blobs, [(record["files"][name]["sha256"], pathlib.Path(path))
+                            for name, path in sorted(kept.items())])
             entries.write(root, record)
         report[status].append(record["address"])
     except (take_in.Refused, NotAdmitted) as why:

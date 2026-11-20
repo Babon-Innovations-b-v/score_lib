@@ -38,7 +38,7 @@ from score_lib import contribution
 from score_lib import entry as entries
 from score_lib import handover, index
 from score_lib.admission import NotAdmitted, Sources
-from score_lib.blobs import file_sha256
+from score_lib.blobs import file_sha256, put_all
 
 KINDS = ("sound", "model", "take", "kit", "character", "surface")
 ROLES = {".json": "record", ".npz": "motion", ".usdc": "usd", ".usda": "usd", ".ogg": "audio", ".wav": "audio", ".mp3": "audio", ".flac": "audio", ".gltf": "gltf", ".glb": "gltf",
@@ -136,8 +136,8 @@ def settle(root, listed, about, sources):
 
 def put_blobs(blobs, listed, record):
     """Every file of an entry into the blob store (checked against its sha256 on the way in)."""
-    for name, about in sorted(listed["files"].items()):
-        blobs.put(record["files"][name]["sha256"], pathlib.Path(about["path"]))
+    put_all(blobs, [(record["files"][name]["sha256"], pathlib.Path(about["path"]))
+                    for name, about in sorted(listed["files"].items())])
 
 
 def take_in(root, blobs, listing):

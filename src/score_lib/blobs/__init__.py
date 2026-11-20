@@ -45,6 +45,17 @@ class BadBlob(RuntimeError):
     """A file's bytes do not hash to the name it is put or got under."""
 
 
+def put_all(store, pairs):
+    """Files [(sha256, path)] into a store together: its put_many when it has one (the hub: one commit for many),
+    else a put each."""
+    pairs = list(pairs)
+    if hasattr(store, "put_many"):
+        store.put_many(pairs)
+        return
+    for sha256, path in pairs:
+        store.put(sha256, path)
+
+
 def file_sha256(path):
     """The sha256 of one file's bytes."""
     digest = hashlib.sha256()

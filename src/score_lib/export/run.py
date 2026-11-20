@@ -19,7 +19,7 @@ import tomllib
 
 from score_lib import entry as entries
 from score_lib import index
-from score_lib.blobs import file_sha256
+from score_lib.blobs import file_sha256, put_all
 from score_lib.admission import NotAdmitted, Sources
 from score_lib.rewrite import info
 from score_lib.source.release import Release
@@ -383,9 +383,9 @@ def write_planned(context, blobs, planned):
     """Put a planned entry's blobs (skipped when present) and write its entry.json unless it is unchanged."""
     if planned.status == "refused":
         return
-    for name, described in sorted(planned.record["files"].items()):
-        if not blobs.has(described["sha256"]):
-            blobs.put(described["sha256"], planned.candidate.files[name])
+    put_all(blobs, [(described["sha256"], planned.candidate.files[name])
+                    for name, described in sorted(planned.record["files"].items())
+                    if not blobs.has(described["sha256"])])
     if planned.status != "unchanged":
         entries.write(context.root, planned.record)
 

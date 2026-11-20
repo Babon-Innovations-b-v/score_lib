@@ -1,5 +1,6 @@
 """Blob stores: the local folder, and the S3-compatible backend against a stub client (no network)."""
 import hashlib
+from types import SimpleNamespace
 import pathlib
 
 import pytest
@@ -109,8 +110,8 @@ class FakeHub:
     """The few huggingface_hub calls the hub store and the mirror make, kept in a dict; blobs/ files are large files,
     so the listing records their sha256 (as the repository's .gitattributes makes them)."""
 
-    def __init__(self):
-        self.files, self.pending, self.commits, self.made = {}, {}, [], []
+    def __init__(self, refusals=0):
+        self.files, self.pending, self.commits, self.made, self.refusals = {}, {}, [], [], refusals
 
     def create_repo(self, repo_id, repo_type, private, exist_ok):
         self.made.append((repo_id, repo_type, private))
@@ -136,12 +137,17 @@ class FakeHub:
             self.pending[operation.path_in_repo] = operation.path_or_fileobj
 
     def create_commit(self, repo_id, operations, commit_message, repo_type, revision):
+        if self.refusals:  # the hub's commit rate, 128 an hour: refused, naming the wait
+            from huggingface_hub.errors import HfHubHTTPError
+            self.refusals -= 1
+            raise HfHubHTTPError("429 Too Many Requests", response=SimpleNamespace(status_code=429, request=None,
+                                                                                   headers={"Retry-After": "7"}))
         for operation in operations:
-            self.files[operation.path_in_repo] = self.pending.pop(operation.path_in_repo, operation.path_or_fileobj)
+            given = self.pending.pop(operation.path_in_repo, operation.path_or_fileobj)
+            self.files[operation.path_in_repo] = pathlib.Path(given).read_bytes() if isinstance(given, str) else given
         self.commits.append([operation.path_in_repo for operation in operations])
 
     def list_repo_tree(self, repo_id, path_in_repo, recursive, repo_type, revision):
-        from types import SimpleNamespace
         return [SimpleNamespace(path=path, size=len(data), lfs=SimpleNamespace(sha256=hashlib.sha256(data).hexdigest())
                                 if data else None)  # as the hub: an empty file is no large file
                 for path, data in self.files.items() if path.startswith(path_in_repo + "/")]
@@ -166,7 +172,8 @@ def test_hub_store_reads_without_a_key_and_the_mirror_copies_resumes_and_checks(
     """Red when: the environment does not pick the hub store from SCORE_LIB_HUB_REPO; a hub put, get or has loses or
     changes bytes or a missing blob is not MissingBlob; the url is not the public resolve link; the mirror leaves a
     named blob behind, copies one no entry names, re-uploads what the repository holds, or its check misses a blob
-    whose bytes differ, or an empty blob (no sha256 recorded) is told a failure."""
+    whose bytes differ, or an empty blob (no sha256 recorded) is told a failure; an entry's files go up one commit a file,
+    or a commit refused for the hub's rate is not tried again after its named wait."""
     import json
     from score_lib.blobs import MissingBlob, mirror
     hub = FakeHub()
@@ -182,6 +189,19 @@ def test_hub_store_reads_without_a_key_and_the_mirror_copies_resumes_and_checks(
     assert (tmp_path / "out" / "copy.bin").read_bytes() == b"bytes"
     assert sorted(item.name for item in (tmp_path / "out").iterdir()) == ["copy.bin"]  # the download folder is gone
     assert store.url(sha) == f"https://huggingface.co/datasets/owner/lib/resolve/main/{key_of(sha)}"
+    # an entry's files go up in one commit, one held already left out, after the waits the hub's rate names
+    from score_lib.blobs import hub as hub_module, put_all
+    waits = []
+    monkeypatch.setattr(hub_module.time, "sleep", waits.append)
+    rated = FakeHub(refusals=2)
+    rated.files[key_of(sha)] = b"bytes"
+    pairs = [(sha, path)]
+    for number in range(3):
+        (tmp_path / f"part{number}.bin").write_bytes(b"part %d" % number)
+        pairs.append((hashlib.sha256(b"part %d" % number).hexdigest(), tmp_path / f"part{number}.bin"))
+    put_all(HubBlobStore(rated, "owner/lib"), pairs)
+    assert rated.commits == [sorted(key_of(blob) for blob, _ in pairs[1:])] and waits == [7.0, 7.0], (rated.commits,
+                                                                                                    waits)
     picked = from_environment({"SCORE_LIB_HUB_REPO": "owner/lib", "SCORE_LIB_HUB_PREFIX": "lib"})
     assert isinstance(picked, HubBlobStore) and picked.key(sha) == f"lib/{key_of(sha)}"
 
