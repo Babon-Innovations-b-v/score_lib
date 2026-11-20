@@ -1,0 +1,60 @@
+{
+  "address": "effect/wisp@2",
+  "files": {
+    "clip.usdc": {
+      "bytes": 3940721,
+      "role": "usd",
+      "sha256": "b497b0d099f6fd81f8f67cd6ea3a610590ef59c86c745ccf529d784846e20b5f"
+    },
+    "effect.usda": {
+      "bytes": 8434,
+      "role": "usd",
+      "sha256": "aa2d17bce8ea686290a09b786edd480cdbef4adc8bd41dba9933c5368ced014a"
+    },
+    "settings.json": {
+      "bytes": 3419,
+      "role": "record",
+      "sha256": "2940d50c882b1147f39f52a9733e3deb0510cc04d79cd2bac57a1b994b3933b7"
+    }
+  },
+  "id": "wisp",
+  "kind": "effect",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "cb94a44ace87f22bac711dfd80b5a6c79e7b4b3f",
+    "files_from": {
+      "clip.usdc": "clip.usdc",
+      "effect.usda": "effect.usda",
+      "settings.json": "settings.json"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "baked by score's particle effects algorithm (tools/props/smoke_beat/wisp/wisp.py) from the flat's footage-measured wisp"
+      }
+    ],
+    "taken_from": "score tools/props/smoke_beat on this PC: the 2099 prologue's smoke beat, the cigarette's wisp baked by the particle effects algorithm and the smoker's right-hand hold solved on character/dress_person_made_v4@1 (score #152)",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "effect": [
+      "smoke_wisp"
+    ],
+    "engine": [
+      "usd"
+    ]
+  },
+  "title": "Cigarette wisp",
+  "usd": {
+    "layer": "effects",
+    "path": "score_lib/effect/wisp/2/effect.usda",
+    "root": "effect.usda",
+    "use": "reference"
+  },
+  "version": 2
+}
