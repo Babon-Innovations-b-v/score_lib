@@ -7,9 +7,9 @@ tie is settled by taking the first of equal candidates rather than by evidence (
 the only one within twice our size, the same maps), when a pair more than twice or half our size is accepted, when a
 size is misread from a record, a glTF's node transforms or a USD stage, or when the full run's wrong pairs come back
 (score #155: a crate for the first of 59 boxes, a bowl stack for one bowl, a plant pot for a potted plant, a car's
-radiator, a floor lamp for a floor, a tilt truck classed as a dumpster, a khaki case for a blue box, a tire-pressure
-gauge, a surgery room's control panel, a building's wall piece, a suit's or a tarp's fabric for a blanket's or a
-body's)."""
+radiator, a floor lamp for a floor, a tilt truck classed as a dumpster, a khaki case for a blue box, an exam couch for a
+sofa, a tire-pressure gauge, a surgery room's control panel, a building's wall piece, a suit's or a tarp's fabric for a
+blanket's or a body's)."""
 import hashlib
 import json
 
@@ -112,6 +112,7 @@ def library(tmp_path):
     put(root, "model", "demo_surgery_panel", "panel_control_surgery_room_b01", {"wikidata_class": ["control panel"]},
         set_entry=True)
     put(root, "model", "demo_wall", "structure_wall_straight_a01", {"wikidata_class": ["wall"]}, set_entry=True)
+    put(root, "model", "demo_couch", "sofa_soft_b01", {"wikidata_class": ["couch"]}, set_entry=True)
     put(root, "model", "demo_stool", "stool_a01", {"wikidata_class": ["stool"]}, set_entry=True)
     put(root, "model", "demo_bar_stool", "stool_bar_a01", {"wikidata_class": ["stool"]}, set_entry=True)
     # One finish taken from two models with the same maps, and one with other maps.
@@ -166,6 +167,7 @@ ROWS = [  # (our kind, id, tags, expected status, expected new id or None, a wor
     ("model", "radiator_1.old_station", {}, "refused", "demo_car_radiator", "a part of a whole"),
     ("model", "kenney_furniture_lamp_round_floor", {}, "refused", "demo_floor", "floor light; it is floor"),
     ("model", "kenney_road_dumpster", {}, "refused", "demo_tilt_truck", "names no dumpster"),
+    ("model", "exam_couch_1", {}, "refused", "demo_couch", "a medical object"),
     ("model", "pressure_gauge_1", {}, "refused", "demo_tire_gauge", "not the same kind of object (pressure gauge"),
     ("model", "control_panel_1.habitat", {}, "refused", "demo_surgery_panel", "medical setting"),
     ("model", "plaster_wall_1.flat", {}, "refused", "demo_wall", "a piece of a building"),

@@ -374,6 +374,8 @@ def model_refusal(record, words, places, candidate):
     if missing:
         return (f"it is made for a {', '.join(sorted(missing))} setting, and ours is "
                 f"{', '.join(sorted(settings)) or 'named for none'}")
+    if "medical" in settings_of(words) - candidate.settings:
+        return "ours is a medical object (an exam couch is not a sofa), and it is made for no medical setting"
     return None
 
 
