@@ -143,6 +143,13 @@ def check_requires(root, records):
     return failures
 
 
+def check_replacements(root, records):
+    """6. a withdrawn entry's replacement (`replaced_by`): an entry of the same kind that exists and is not withdrawn
+    (locks.replacement_fault)."""
+    return [(record["address"], fault) for record in records if record.get("replaced_by")
+            for fault in [locks.replacement_fault(root, record["address"], record["replaced_by"])] if fault]
+
+
 def taken_in_faults(blobs, record):
     """A taken-in entry's faults: every file named where it came from and back, its role by its ending, and every
     buffer and picture a .gltf file names held by the entry (the .gltf read from the blob store)."""
@@ -265,7 +272,7 @@ def verify(root, blobs, addresses=None, deep=False, usd=True, pending=False):
     failures = check_schemas(root, records) + check_index(root) + check_locks(root, records)
     failures += check_blobs(records, blobs, deep) + check_licence_file(root)
     failures += check_admission(root, records, Sources.load())
-    failures += check_requires(root, records)
+    failures += check_requires(root, records) + check_replacements(root, records)
     failures += check_taken_in(blobs, records)
     failures += check_contributed(records, pending)
     if usd:

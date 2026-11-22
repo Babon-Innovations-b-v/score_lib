@@ -115,6 +115,9 @@ def test_a_changed_draft_is_written_over_and_a_locked_one_gets_a_version(library
     entries.write(library, dict(record, state="locked", locked="2026-10-20"))
     (folder / "hum.ogg").write_bytes(b"OggS a third hum")
     assert take_in.take_in(library, blobs, listing(folder))["new version"] == ["sound/hum.recordings@2"]
+    newest = entries.load_address(library, "sound/hum.recordings@2")  # withdrawn naming its replacement (score #155)
+    entries.write(library, dict(newest, state="withdrawn", locked="2026-11-22", replaced_by="sound/hum.recordings@1"))
+    assert "sound/hum.recordings@2" in take_in.take_in(library, blobs, listing(folder))["unchanged"]
 
 
 def test_refused_unknown_source_kind_and_ending(library, tmp_path):

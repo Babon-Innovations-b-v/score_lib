@@ -57,17 +57,20 @@ def drafts(root, kind):
 
 
 def replacement_fault(root, address, replaced_by):
-    """Why `replaced_by` cannot replace the entry at `address`, or None: it must be an entry address that exists, is
-    not withdrawn and is not the entry itself. A withdrawn entry is never a target, so no chain of replacements can
-    lead back to where it started."""
+    """Why `replaced_by` cannot replace the entry at `address`, or None: it must be an entry address of the same kind
+    that exists, is not withdrawn and is not the entry itself. A withdrawn entry is never a target, so no chain of
+    replacements can lead back to where it started."""
     try:
         target = entries.load_address(root, replaced_by)
+        kind, target_kind = entries.parse_address(address)[0], entries.parse_address(replaced_by)[0]
     except ValueError as malformed:
         return str(malformed)
     if target is None:
         return f"its replacement {replaced_by} is not in the library"
     if replaced_by == address:
         return "names itself as its replacement, a loop"
+    if target_kind != kind:
+        return f"its replacement {replaced_by} is a {target_kind}, not a {kind}"
     if target["state"] == "withdrawn":
         return f"its replacement {replaced_by} is withdrawn itself"
     return None

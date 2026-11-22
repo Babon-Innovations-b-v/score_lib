@@ -207,26 +207,31 @@ def test_5_the_schema_takes_a_licence_block(world):
 
 
 def test_a_withdrawn_entry_names_its_replacement(world):
-    """Break: locks.withdraw ignoring replaced_by, replacement_fault returning None (a missing, withdrawn or self
-    target), replaced_by left out of entry.UNSTAMPED (its locks row's digest no longer holds), or index.row dropping
-    it."""
+    """Break: locks.withdraw ignoring replaced_by, replacement_fault returning None (a missing, withdrawn, self or
+    other-kind target), replaced_by left out of entry.UNSTAMPED (its locks row's digest no longer holds), index.row
+    dropping it, or verify not checking a replaced_by written past withdraw (missing, withdrawn, other kind)."""
     world.export()
-    locks.lock_many(world.root, ["kit/room@1"] + entries.load_address(world.root, "kit/room@1")["requires"])
-    locks.withdraw(world.root, "sound/hum@1")
+    old, new = "surface/unused_paint@1", "surface/panel_paint@1"
+    locks.withdraw(world.root, old)
     rows = locks.read(world.root)
-    locks.withdraw(world.root, "sound/hum@1", replaced_by="kit/room@1")
-    record = entries.load_address(world.root, "sound/hum@1")
-    assert record["state"] == "withdrawn" and record["replaced_by"] == "kit/room@1"
+    locks.withdraw(world.root, old, replaced_by=new)
+    record = entries.load_address(world.root, old)
+    assert record["state"] == "withdrawn" and record["replaced_by"] == new
     assert locks.read(world.root) == rows and rows[-1]["digest"] == entries.digest(record)
-    for target, refusal in (("kit/none@1", "not in the library"), ("kit/room@1", "a loop"),
-                            ("hum", "not an entry address")):
+    for target, refusal in (("surface/none@1", "not in the library"), (new, "a loop"),
+                            ("hum", "not an entry address"), ("model/crate_1@1", "is a model, not a surface")):
         with pytest.raises(locks.LockRefused, match=refusal):
-            locks.withdraw(world.root, "kit/room@1", replaced_by=target)
-    with pytest.raises(locks.LockRefused, match="withdrawn itself"):  # kit/room -> sound/hum -> kit/room
-        locks.withdraw(world.root, "kit/room@1", replaced_by="sound/hum@1")
+            locks.withdraw(world.root, new, replaced_by=target)
+    with pytest.raises(locks.LockRefused, match="withdrawn itself"):  # panel_paint -> unused_paint -> panel_paint
+        locks.withdraw(world.root, new, replaced_by=old)
     with pytest.raises(locks.LockRefused, match="only a locked entry or a draft"):
-        locks.withdraw(world.root, "sound/hum@1")
+        locks.withdraw(world.root, old)
     index.rebuild(world.root)
-    row = next(each for each in index.kind_index(world.root, "sound")["entries"] if each["address"] == "sound/hum@1")
-    assert row["replaced_by"] == "kit/room@1"
+    row = next(each for each in index.kind_index(world.root, "surface")["entries"] if each["address"] == old)
+    assert row["replaced_by"] == new
     assert messages(world) == []
+    for target, fault in (("model/crate_1@1", "is a model, not a surface"), ("surface/none@1", "not in the library"),
+                          (old, "a loop")):
+        entries.write(world.root, dict(record, replaced_by=target))
+        index.rebuild(world.root)
+        assert any(each.startswith(f"{old}: ") and fault in each for each in messages(world)), (target, messages(world))

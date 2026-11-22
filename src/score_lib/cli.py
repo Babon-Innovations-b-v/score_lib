@@ -365,8 +365,9 @@ def parser():
     adopting.add_argument("action", choices=["match"])
     adopting.add_argument("--source", action="append", help="the adopted set's config/sources.toml row id "
                                                             "(repeatable; default every row with a take_in table)")
-    adopting.add_argument("--proposals", default="adopted-proposals.json",
-                          help="where to write the proposals (every older entry's row, its pair, score and reason)")
+    adopting.add_argument("--proposals", required=True,
+                          help="where to write the proposals (every older entry's row, its pair, score and "
+                               "reason); a path outside the checkout")
     adopting.add_argument("--apply", action="store_true",
                           help="withdraw each accepted pair's older entry naming its replacement, and rebuild the index")
     adopting.set_defaults(handle=command_adopted)

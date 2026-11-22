@@ -63,7 +63,7 @@ PLACE_ROLES = {"scene.usda": "usd", "concept.png": "concept", "render.png": "ren
                "viewer.glb": "viewer"}
 PACKAGE = "package/"
 NO_PICTURE = "a loose made file taken in (score-lib take-in): no picture made yet"
-COMPARED_OUT = ("address", "version", "state", "locked") + entries.QUALITY
+COMPARED_OUT = ("address", "version") + entries.UNSTAMPED
 
 
 class Refused(ValueError):
