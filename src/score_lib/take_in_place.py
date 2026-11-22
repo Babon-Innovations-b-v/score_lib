@@ -8,7 +8,8 @@ The entry keeps:
 
 - `scene.usda`, every asset path that named a library copy pointed at its library search path
   (`score_lib/<kind>/<id>/<version>/<file>`), so the library's bytes are never copied again;
-- every own file under `assets/` at its own path (an own USD layer's paths into library copies pointed so too);
+- every own file under `assets/` and under `layers/` (the place's own layers its scene sublayers, such as its
+  walkers at `layers/walkers/`) at its own path (an own USD layer's paths into library copies pointed so too);
 - the records `place.json`, `objects.json`, `palette.json` (the place's surface library) and `check.json`, and,
   when present, `concept.png` (role concept), the final render `render.png` (render, the entry's picture), the
   review sheet `review/sheet.jpg` (review), the viewer GLB `viewer.glb` (viewer) and the scene package
@@ -41,6 +42,8 @@ NAMED = ("scene.usda", "place.json", "objects.json", "palette.json", "check.json
          "review/sheet.jpg", "viewer.glb")
 SCENE = "scene.usda"
 ASSETS = "assets/"
+OWN_PARTS = ("package", "assets", "layers")  # the folder's parts kept whole: the scene package, own assets, own layers
+LAYERED = (ASSETS, "layers/")  # the parts whose USD layers get their paths pointed
 LAYER_ENDINGS = (".usda", ".usdc")
 NAMES = ("score:library", "score:surface")  # the scene's attributes that name a laid entry's address
 RENDERED = ("render.png", "review/sheet.jpg", "viewer.glb")
@@ -54,10 +57,10 @@ def entry_id_of(place):
 
 
 def folder_files(folder):
-    """{name in the folder: path} of the files a place entry keeps: NAMED that are present, package/ and assets/."""
+    """{name in the folder: path} of the files a place entry keeps: NAMED that are present, and OWN_PARTS whole."""
     folder = pathlib.Path(folder)
     found = {name: folder / name for name in NAMED if (folder / name).is_file()}
-    for part in ("package", "assets"):
+    for part in OWN_PARTS:
         found.update({path.relative_to(folder).as_posix(): path for path in sorted((folder / part).rglob("*"))
                       if path.is_file()})
     return found
@@ -154,7 +157,7 @@ def kept_files(root, folder, work):
     for name, path in files.items():
         if name in copies:
             continue
-        if name.endswith(LAYER_ENDINGS) and (name == SCENE or name.startswith(ASSETS)):
+        if name.endswith(LAYER_ENDINGS) and (name == SCENE or name.startswith(LAYERED)):
             kept[name], names = rewritten(folder, work, name, copies, files)
             named |= names
         else:

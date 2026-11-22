@@ -46,10 +46,27 @@ def Mesh "dome"
     point3f[] points = [(0, 0, 0), (3, 0, 0), (0, 3, 0)]
 }
 """
+WALKERS = """#usda 1.0
+
+def "yard"
+{
+    def Scope "Characters"
+    {
+        def "walker" (
+            prepend references = @../assets/characters/walker.usda@
+        )
+        {
+        }
+    }
+}
+"""
 SCENE = """#usda 1.0
 (
     defaultPrim = "yard"
     metersPerUnit = 1
+    subLayers = [
+        @layers/walkers/layers/characters.usda@
+    ]
     upAxis = "Y"
 )
 
@@ -95,7 +112,8 @@ OPENS = """import sys
 from pxr import Usd, UsdUtils
 stage = Usd.Stage.Open(sys.argv[1])
 _, _, unresolved = UsdUtils.ComputeAllDependencies(sys.argv[1])
-print(bool(stage) and bool(stage.GetPrimAtPath('/yard/Objects/crate/geo')), unresolved)
+print(bool(stage) and bool(stage.GetPrimAtPath('/yard/Objects/crate/geo'))
+      and bool(stage.GetPrimAtPath('/yard/Characters/walker')), unresolved)
 """
 
 
@@ -125,7 +143,8 @@ def library_entries(root, made):
 
 def place_folder(root, folder):
     """A place_build folder: every laid entry's files copied under assets/ (one copy changed since), its own dome and
-    a glTF's converted USD, its records, render, review sheet, viewer GLB and scene package."""
+    a glTF's converted USD, its walkers' layer (sublayered, its own character beside it), its records, render, review
+    sheet, viewer GLB and scene package."""
     fetch(root, from_environment(), ["kit/crate@1", "surface/steel@1", "model/lamp@1"], folder / "copied")
     shutil.copytree(folder / "copied/score_lib", folder / "assets")
     shutil.rmtree(folder / "copied")
@@ -136,7 +155,9 @@ def place_folder(root, folder):
                    "package/objects/crate.gltf": json.dumps({"buffers": [{"uri": "crate.bin"}]}).encode(),
                    "assets/surface/steel/1/surface.json": b'{"settings": {"roughness": 0.9}}',
                    "assets/model/lamp/1/gltf/lamp.usdc": usd_text(LAMP, ".usdc", folder),
-                   "assets/algorithm/dome_shell/dome_r3.usda": DOME.encode()})
+                   "assets/algorithm/dome_shell/dome_r3.usda": DOME.encode(),
+                   "layers/walkers/layers/characters.usda": WALKERS.encode(),
+                   "layers/walkers/assets/characters/walker.usda": DOME.encode()})
     (folder / "made.usdc").unlink()
     return folder
 
@@ -148,7 +169,8 @@ def test_a_place_keeps_its_own_files_points_at_the_library_and_opens_fetched(tmp
     fail); take_in.role_of: drop the PLACE_ROLES branch (concept.png gets role texture, the package's scene.json
     record); take_in_place.settle: write a changed draft over its own version (the changed yard is taken in as
     place/yard@1 again, not @2, and @1's bytes change under whatever reads it); take_in_place.undrafted: never called
-    (the yard with a draft package is taken in as place/yard@3)."""
+    (the yard with a draft package is taken in as place/yard@3); take_in_place.OWN_PARTS: drop "layers" (the scene's
+    walkers sublayer is not kept, so verify and the fetched stage fail)."""
     root = tmp_path / "library"
     (root / "entries").mkdir(parents=True)
     shutil.copyfile(LIBRARY / "LICENSE", root / "LICENSE")
@@ -162,6 +184,8 @@ def test_a_place_keeps_its_own_files_points_at_the_library_and_opens_fetched(tmp
     assert {name for name in roles if name.startswith("assets/")} == {
         "assets/algorithm/dome_shell/dome_r3.usda", "assets/model/lamp/1/gltf/lamp.usdc",
         "assets/surface/steel/1/surface.json"}, roles
+    assert {name for name in roles if name.startswith("layers/")} == {
+        "layers/walkers/layers/characters.usda", "layers/walkers/assets/characters/walker.usda"}, roles
     assert {name: roles[name] for name in ("scene.usda", "concept.png", "render.png", "review/sheet.jpg", "viewer.glb",
                                            "package/scene.json", "package/objects/crate.gltf", "palette.json")} == {
         "scene.usda": "usd", "concept.png": "concept", "render.png": "render", "review/sheet.jpg": "review",
