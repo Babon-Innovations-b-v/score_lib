@@ -1,0 +1,72 @@
+{
+  "address": "surface/simready_m_trans_glass_lens_colored_glossy_b01_1373e422@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 1563442,
+      "role": "texture",
+      "sha256": "e8bef597a74f77f5b34a6f6bbf983433e6d8aa6f8ded3a9463b1e142d9c76418"
+    },
+    "material.usda": {
+      "bytes": 1899,
+      "role": "usd",
+      "sha256": "8a3cf0b688ef60271a5816d50e5aff10132134ef1a556565525eb50e9b601c1f"
+    },
+    "roughness.png": {
+      "bytes": 3170686,
+      "role": "texture",
+      "sha256": "e39ac8cd48d3f4be20d12c3b405bccc3042f0faf18b00c506a26cada770817e4"
+    },
+    "surface.json": {
+      "bytes": 827,
+      "role": "record",
+      "sha256": "5913269ae74e87cdeb3c40109f1232753b0e70cd39689eab2ccf2b66f81af0f5"
+    }
+  },
+  "id": "simready_m_trans_glass_lens_colored_glossy_b01_1373e422",
+  "kind": "surface",
+  "licence": {
+    "credit": "bodyPart_car_side_mirror_b01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "bodyPart_car_side_mirror_b01/simready_usd/Textures/t_glass_lensColoredGlossy_b01_tile_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "roughness.png": "bodyPart_car_side_mirror_b01/simready_usd/Textures/t_glass_lensColoredGlossy_b01_tile_rou.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_trans__glass__lensColoredGlossy_b01 maps of bodyPart_car_side_mirror_b01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: bodyPart_car_side_mirror_b01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "1373e4222a397e25cb804b118e3a01eca7d94f289434d9df790985236dfd44de"
+    ]
+  },
+  "title": "m_trans__glass__lensColoredGlossy_b01",
+  "usd": null,
+  "version": 1
+}

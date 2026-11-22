@@ -1,0 +1,72 @@
+{
+  "address": "surface/simready_m_opaque_metal_painted_gray_a01_d5428036@1",
+  "files": {
+    "material.usda": {
+      "bytes": 1999,
+      "role": "usd",
+      "sha256": "73ee14832eab30d5805220b90e7a0fd8338b482923bfe536b6483df1f1c30265"
+    },
+    "metallic.png": {
+      "bytes": 9598384,
+      "role": "texture",
+      "sha256": "6f7f9860122cb0d88b43a6ef255da3b6cda275fecae70463758b0a30d2cd9848"
+    },
+    "normal.png": {
+      "bytes": 10390884,
+      "role": "texture",
+      "sha256": "03f598a85db402a5807006cf218e051d56786493c074d912ee927f25c9125238"
+    },
+    "surface.json": {
+      "bytes": 902,
+      "role": "record",
+      "sha256": "bcbcbc7fa99597e3923879a70792a5b8640de849994d4c171cde73b77158226b"
+    }
+  },
+  "id": "simready_m_opaque_metal_painted_gray_a01_d5428036",
+  "kind": "surface",
+  "licence": {
+    "credit": "bodyPart_bumper_rear_d01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "metallic.png": "bodyPart_bumper_rear_d01/simready_usd/Textures/t_metal_painted_gray_a01_tile_orm.png",
+      "normal.png": "bodyPart_bumper_rear_d01/simready_usd/Textures/t_metal_painted_gray_a01_tile_nor.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__metal__painted_gray_a01 maps of bodyPart_bumper_rear_d01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: bodyPart_bumper_rear_d01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "d5428036f9626c96217c1ed60a06fff5b07a8b80ae122d164f896b73306c424b"
+    ]
+  },
+  "title": "m_opaque__metal__painted_gray_a01",
+  "usd": null,
+  "version": 1
+}

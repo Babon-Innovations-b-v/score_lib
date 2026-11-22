@@ -1,0 +1,81 @@
+{
+  "address": "surface/simready_opaque_cardboard_glovebox_a01_9e8536e6@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 3439177,
+      "role": "texture",
+      "sha256": "1eb4c0ad7f0b98e85a15672341be338a83043abcdffc6f8b5f03500ba5508255"
+    },
+    "material.usda": {
+      "bytes": 2543,
+      "role": "usd",
+      "sha256": "653a2d59755cf419e5a097227d140edc50adbc13d09829e8dbf4fde80bd69711"
+    },
+    "normal.png": {
+      "bytes": 12990899,
+      "role": "texture",
+      "sha256": "6bb221ada5a9269daa42dbb922feacff5d53f0d38a031872a6bc45a5a8cea161"
+    },
+    "orm.png": {
+      "bytes": 17719794,
+      "role": "texture",
+      "sha256": "0c8e7e4c3ac193c87a1055b79784561a17f9be778af565c971163c57fe79b334"
+    },
+    "surface.json": {
+      "bytes": 1011,
+      "role": "record",
+      "sha256": "bccaa6020b1664722af124b0c0953d3b20f9f1ca84b5141cba37a9772b487de1"
+    }
+  },
+  "id": "simready_opaque_cardboard_glovebox_a01_9e8536e6",
+  "kind": "surface",
+  "licence": {
+    "credit": "box_glove_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "box_glove_a01/simready_usd/Textures/t_gloveBox_a01_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "box_glove_a01/simready_usd/Textures/t_cardboard_standard_white_a01_tile_nor.png",
+      "orm.png": "box_glove_a01/simready_usd/Textures/t_cardboard_standard_white_a01_tile_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the opaque__cardboard__glovebox_a01 maps of box_glove_a01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: box_glove_a01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "9e8536e63557d005d5515e3d193a1e426b0dadc1ebc3caccd31bbc7557c7af2c"
+    ],
+    "painted_for": [
+      "box_glove_a01"
+    ]
+  },
+  "title": "opaque__cardboard__glovebox_a01",
+  "usd": null,
+  "version": 1
+}

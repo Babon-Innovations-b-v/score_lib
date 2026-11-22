@@ -1,0 +1,78 @@
+{
+  "address": "surface/simready_m_opaque_fabric_cotton_gray_c01_8d933971@1",
+  "files": {
+    "albedo.jpg": {
+      "bytes": 5824900,
+      "role": "texture",
+      "sha256": "e03228ddfb49cd5455918688dcd6730140c831379ab24787fb153f8557cdd2ad"
+    },
+    "material.usda": {
+      "bytes": 2571,
+      "role": "usd",
+      "sha256": "c73ed4754b86153f5726df8fc68024bfa632e2732633bf241afb526294169e0d"
+    },
+    "normal.png": {
+      "bytes": 27769295,
+      "role": "texture",
+      "sha256": "9f4cdaf45753f60320ca58c154c220ac13a4d28c8b341239a176d2fad0dd56fa"
+    },
+    "orm.png": {
+      "bytes": 18289683,
+      "role": "texture",
+      "sha256": "156ca05fe4e087ccc0defc20c25297182d47c6347d083509d4c7df13bf0cf53a"
+    },
+    "surface.json": {
+      "bytes": 808,
+      "role": "record",
+      "sha256": "d4a085a52410b6c68ecd3f5f421f167fa721e51e3a243e6ca4f353fcadc4ba5c"
+    }
+  },
+  "id": "simready_m_opaque_fabric_cotton_gray_c01_8d933971",
+  "kind": "surface",
+  "licence": {
+    "credit": "bodyPart_interior_roof_panel_c01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.jpg": "bodyPart_interior_roof_panel_c01/simready_usd/Textures/t_fabric_gray_c01_tile_alb.jpg",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "bodyPart_interior_roof_panel_c01/simready_usd/Textures/t_fabric_c01_tile_nor.png",
+      "orm.png": "bodyPart_interior_roof_panel_c01/simready_usd/Textures/t_fabric_c01_tile_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__fabric__cotton_gray_c01 maps of bodyPart_interior_roof_panel_c01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: bodyPart_interior_roof_panel_c01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "8d9339715555e08f6e2d35d5d04afe573b95eaf4012d844f150d331d54282bd8"
+    ]
+  },
+  "title": "m_opaque__fabric__cotton_gray_c01",
+  "usd": null,
+  "version": 1
+}

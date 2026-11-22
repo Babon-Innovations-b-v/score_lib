@@ -1,0 +1,72 @@
+{
+  "address": "surface/simready_m_opaque_glass_mirror_a01_91e95cf3@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 58636,
+      "role": "texture",
+      "sha256": "dc63dbdd09f8c4b084b7443be11487b9c5ca86dca9b8c122e410c802864194a7"
+    },
+    "material.usda": {
+      "bytes": 1793,
+      "role": "usd",
+      "sha256": "ec31234c054107ad971563b17dc14df795af4f813a0c93b97b294c5eca3fa1bf"
+    },
+    "metallic.png": {
+      "bytes": 2580457,
+      "role": "texture",
+      "sha256": "0564b810e1a9f8969a750a4621c728d7ef47529e40af28f662f183ef44b9ad0b"
+    },
+    "surface.json": {
+      "bytes": 805,
+      "role": "record",
+      "sha256": "4e9b34ceccb576ee4fe2ca4136365a1ebef9c7362da623d99c833c0a37cdb0ad"
+    }
+  },
+  "id": "simready_m_opaque_glass_mirror_a01_91e95cf3",
+  "kind": "surface",
+  "licence": {
+    "credit": "bodyPart_car_view_mirror_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "bodyPart_car_view_mirror_a01/simready_usd/Textures/t_metal_chromeClean_a01_tile_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "metallic.png": "bodyPart_car_view_mirror_a01/simready_usd/Textures/t_metal_chromeClean_a01_tile_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__glass__mirror_a01 maps of bodyPart_car_view_mirror_a01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: bodyPart_car_view_mirror_a01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "91e95cf363c26dde3454be5cc0e614784b514595718bd695227329fedb41f046"
+    ]
+  },
+  "title": "m_opaque__glass__mirror_a01",
+  "usd": null,
+  "version": 1
+}

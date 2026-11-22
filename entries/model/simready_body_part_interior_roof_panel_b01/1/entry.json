@@ -1,0 +1,195 @@
+{
+  "address": "model/simready_body_part_interior_roof_panel_b01@1",
+  "files": {
+    "Textures/t_fabric_b01_tile_nor.png": {
+      "bytes": 33405608,
+      "role": "texture",
+      "sha256": "874351db5ee43a3e959464b8372642e6d902d234438be82f8809ccb1baaa19e6"
+    },
+    "Textures/t_fabric_b01_tile_orm.png": {
+      "bytes": 12421451,
+      "role": "texture",
+      "sha256": "73bdd42918626843146d4888e13184c1dcdd14f126cc5758abd29de487e701d8"
+    },
+    "Textures/t_fabric_black_b01_tile_alb.jpg": {
+      "bytes": 4781484,
+      "role": "texture",
+      "sha256": "56c0ac1779a265d9cd6119b75130ab08e9d67c47047476ee9d33af3dc42aa6d8"
+    },
+    "payloads/MuJoCo/disabled.usda": {
+      "bytes": 4443,
+      "role": "usd",
+      "sha256": "ef9669480f242cdb29b233e3165f4289151a3d201f3c797214aa2fbf15439f53"
+    },
+    "payloads/MuJoCo/enabled.usda": {
+      "bytes": 5205,
+      "role": "usd",
+      "sha256": "2c4a595e1e118f9dd8c8f003ba3a3142d36b72ba7cca58e20c63a5139645a84e"
+    },
+    "payloads/Newton/disabled.usda": {
+      "bytes": 4443,
+      "role": "usd",
+      "sha256": "ef9669480f242cdb29b233e3165f4289151a3d201f3c797214aa2fbf15439f53"
+    },
+    "payloads/Newton/enabled.usda": {
+      "bytes": 5027,
+      "role": "usd",
+      "sha256": "340a31fb485a5155451d52e05e1f693f36bd0484fee27fcfd652a70bbb9d87d0"
+    },
+    "payloads/PhysX/disabled.usda": {
+      "bytes": 4443,
+      "role": "usd",
+      "sha256": "ef9669480f242cdb29b233e3165f4289151a3d201f3c797214aa2fbf15439f53"
+    },
+    "payloads/PhysX/enabled.usda": {
+      "bytes": 4734,
+      "role": "usd",
+      "sha256": "9fff8bd70f1922890d92377649f4caa589c3e1ffc0e02824b471fd82e2a8c125"
+    },
+    "payloads/Physics/physics.usda": {
+      "bytes": 4971,
+      "role": "usd",
+      "sha256": "79ca81cc5651f76be0317eacfb7610c597d0d6bddc662fa324f26cd65b31e65c"
+    },
+    "payloads/base.usda": {
+      "bytes": 9422,
+      "role": "usd",
+      "sha256": "8f88700c14b63967ceaaa9b3268ffec24a69e69ba0081897bcfdc5acbdf04080"
+    },
+    "payloads/geometries.usd": {
+      "bytes": 17778162,
+      "role": "usd",
+      "sha256": "536746249ef71382ef2bb5fb54cae3c8c79c8fbea636d887d315091d518203e8"
+    },
+    "payloads/instances.usda": {
+      "bytes": 5447,
+      "role": "usd",
+      "sha256": "196f42a2d93c374153f89439341144fd698d159571c771b28553789d2a971f15"
+    },
+    "payloads/instances_mujoco.usda": {
+      "bytes": 5719,
+      "role": "usd",
+      "sha256": "1b54ee07ea95f1b09a340d735ce9ca80b8e1d9a0082346434b36d4a87619332d"
+    },
+    "payloads/instances_newton.usda": {
+      "bytes": 5570,
+      "role": "usd",
+      "sha256": "8742fedfa2f16d304588b218acf37a070b280ae927263a78da0d1acfa9e9ce6a"
+    },
+    "payloads/instances_physx.usda": {
+      "bytes": 5587,
+      "role": "usd",
+      "sha256": "83a593590acf1fa57e500bd460c7912b2381c87e6f1e59e48fb96224b7049aae"
+    },
+    "payloads/materials.usda": {
+      "bytes": 10266,
+      "role": "usd",
+      "sha256": "0e56499ace96b76c7bb59b52718755abf85733fcaa4947b5b91daaf29de94e51"
+    },
+    "sm_bodyPart_interior_roof_panel_b01_01.usd": {
+      "bytes": 22088,
+      "role": "usd",
+      "sha256": "102c708a349cd053c3b7bdaea6c3b2e769898817fefd8b21a62d7ce980f2165c"
+    },
+    "source_assets/OmniPBR.mdl": {
+      "bytes": 16010,
+      "role": "code",
+      "sha256": "6e6b3acbccd236e21a6c29964a431d2a53e77251cc6b8b1bc975eb1c62da1781"
+    },
+    "source_assets/OmniPBRBase.mdl": {
+      "bytes": 19369,
+      "role": "code",
+      "sha256": "a8fd9fe174e91892e94d06da90ba453a124024c2ce2c033be9d82c9e2f76a3b7"
+    },
+    "source_assets/OmniPBR_ClearCoat.mdl": {
+      "bytes": 29789,
+      "role": "code",
+      "sha256": "d84c5ba482561c0eaea2e0c5b607358af549e36cd921773462f92dbc4f32cbc3"
+    }
+  },
+  "id": "simready_body_part_interior_roof_panel_b01",
+  "kind": "model",
+  "licence": {
+    "credit": "bodyPart_interior_roof_panel_b01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0; changed: each Material names its library surface (score:surface)",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "Textures/t_fabric_b01_tile_nor.png": "bodyPart_interior_roof_panel_b01/simready_usd/Textures/t_fabric_b01_tile_nor.png",
+      "Textures/t_fabric_b01_tile_orm.png": "bodyPart_interior_roof_panel_b01/simready_usd/Textures/t_fabric_b01_tile_orm.png",
+      "Textures/t_fabric_black_b01_tile_alb.jpg": "bodyPart_interior_roof_panel_b01/simready_usd/Textures/t_fabric_black_b01_tile_alb.jpg",
+      "payloads/MuJoCo/disabled.usda": "bodyPart_interior_roof_panel_b01/simready_usd/payloads/MuJoCo/disabled.usda",
+      "payloads/MuJoCo/enabled.usda": "bodyPart_interior_roof_panel_b01/simready_usd/payloads/MuJoCo/enabled.usda",
+      "payloads/Newton/disabled.usda": "bodyPart_interior_roof_panel_b01/simready_usd/payloads/Newton/disabled.usda",
+      "payloads/Newton/enabled.usda": "bodyPart_interior_roof_panel_b01/simready_usd/payloads/Newton/enabled.usda",
+      "payloads/PhysX/disabled.usda": "bodyPart_interior_roof_panel_b01/simready_usd/payloads/PhysX/disabled.usda",
+      "payloads/PhysX/enabled.usda": "bodyPart_interior_roof_panel_b01/simready_usd/payloads/PhysX/enabled.usda",
+      "payloads/Physics/physics.usda": "bodyPart_interior_roof_panel_b01/simready_usd/payloads/Physics/physics.usda",
+      "payloads/base.usda": "bodyPart_interior_roof_panel_b01/simready_usd/payloads/base.usda",
+      "payloads/geometries.usd": "bodyPart_interior_roof_panel_b01/simready_usd/payloads/geometries.usd",
+      "payloads/instances.usda": "bodyPart_interior_roof_panel_b01/simready_usd/payloads/instances.usda",
+      "payloads/instances_mujoco.usda": "bodyPart_interior_roof_panel_b01/simready_usd/payloads/instances_mujoco.usda",
+      "payloads/instances_newton.usda": "bodyPart_interior_roof_panel_b01/simready_usd/payloads/instances_newton.usda",
+      "payloads/instances_physx.usda": "bodyPart_interior_roof_panel_b01/simready_usd/payloads/instances_physx.usda",
+      "payloads/materials.usda": "bodyPart_interior_roof_panel_b01/simready_usd/payloads/materials.usda (changed: each Material names its library surface (score:surface))",
+      "sm_bodyPart_interior_roof_panel_b01_01.usd": "bodyPart_interior_roof_panel_b01/simready_usd/sm_bodyPart_interior_roof_panel_b01_01.usd",
+      "source_assets/OmniPBR.mdl": "bodyPart_interior_roof_panel_b01/simready_usd/source_assets/OmniPBR.mdl",
+      "source_assets/OmniPBRBase.mdl": "bodyPart_interior_roof_panel_b01/simready_usd/source_assets/OmniPBRBase.mdl",
+      "source_assets/OmniPBR_ClearCoat.mdl": "bodyPart_interior_roof_panel_b01/simready_usd/source_assets/OmniPBR_ClearCoat.mdl"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "bodyPart_interior_roof_panel_b01: its model, physics and maps"
+      },
+      {
+        "by": "score",
+        "what": "the library surface each material names (score:surface)"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: bodyPart_interior_roof_panel_b01",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/simready_m_opaque_fabric_cotton_black_b01_704aa067@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "description": [
+      "panel covering the interior surface of a roof in vehicles or buildings for aesthetic, acoustic, and thermal purposes"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "simulators": [
+      "mujoco",
+      "newton",
+      "physx"
+    ],
+    "wikidata_class": [
+      "automotive part"
+    ],
+    "wikidata_qcode": [
+      "Q6405028"
+    ]
+  },
+  "title": "bodyPart_interior_roof_panel_b01",
+  "usd": {
+    "default_prim": "/RootNode",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/simready_body_part_interior_roof_panel_b01/1/sm_bodyPart_interior_roof_panel_b01_01.usd",
+    "root": "sm_bodyPart_interior_roof_panel_b01_01.usd",
+    "up_axis": "Z",
+    "use": "reference"
+  },
+  "version": 1
+}
