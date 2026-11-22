@@ -1,0 +1,81 @@
+{
+  "address": "surface/simready_m_opaque_paper_surgical_drape_a01_86b85918@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 25500417,
+      "role": "texture",
+      "sha256": "747c3cc301230f504ea97be23a6d464bd62d619d2531018fa9cb25f6dfa66200"
+    },
+    "material.usda": {
+      "bytes": 2591,
+      "role": "usd",
+      "sha256": "71ddfb080fbe4cb2cfaab9d9b504015728c891ab2d6893b37a83c2eec812b631"
+    },
+    "normal.png": {
+      "bytes": 17141668,
+      "role": "texture",
+      "sha256": "620186fa71b2a7eb184413d18fe96337066476924faf852533aa585177a17c1a"
+    },
+    "orm.png": {
+      "bytes": 12663511,
+      "role": "texture",
+      "sha256": "17c367ca905a327b9635ce98517a90b8171af5d9355cb79102c37f7ab29232bc"
+    },
+    "surface.json": {
+      "bytes": 1009,
+      "role": "record",
+      "sha256": "1d5fd05a5dc55262ffba10092d66c3fac6e38096affc0923f314df5da4d0f040"
+    }
+  },
+  "id": "simready_m_opaque_paper_surgical_drape_a01_86b85918",
+  "kind": "surface",
+  "licence": {
+    "credit": "drape_surgical_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "drape_surgical_a01/simready_usd/Textures/t_surgicalDrape_a01_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "drape_surgical_a01/simready_usd/Textures/t_surgicalDrape_a01_nor.png",
+      "orm.png": "drape_surgical_a01/simready_usd/Textures/t_surgicalDrape_a01_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__paper__surgicalDrape_a01 maps of drape_surgical_a01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: drape_surgical_a01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "86b859182e9321da84f072059e4f9f67fa5120d400e33db1ca54435c7a40eb69"
+    ],
+    "painted_for": [
+      "drape_surgical_a01"
+    ]
+  },
+  "title": "m_opaque__paper__surgicalDrape_a01",
+  "usd": null,
+  "version": 1
+}

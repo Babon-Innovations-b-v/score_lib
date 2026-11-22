@@ -1,0 +1,78 @@
+{
+  "address": "surface/simready_m_opaque_plastic_yellow_a01_4f571c2d@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 14756165,
+      "role": "texture",
+      "sha256": "3e62a0fcd02128d8aa74b1eaef9c666adf8c0bfb5b1954c4b0a3901f5dc7b011"
+    },
+    "material.usda": {
+      "bytes": 2519,
+      "role": "usd",
+      "sha256": "36b7ef89d88f94198a16278a72886f9c759a1e68b22f393dfa030e96e54df954"
+    },
+    "normal.png": {
+      "bytes": 25705808,
+      "role": "texture",
+      "sha256": "25a3f489614b9fc8d2c58b6582f604974bbbc84b272997fe6c29f43400c242b8"
+    },
+    "orm.png": {
+      "bytes": 13170426,
+      "role": "texture",
+      "sha256": "64e39c52a0ced39fb01295d1ec6a1a3a3aef292033438ff471bc27961f5c90dd"
+    },
+    "surface.json": {
+      "bytes": 807,
+      "role": "record",
+      "sha256": "0752b9d81fcbb036db8aaeb4f28d9f7e0ee9e03fe368d595b200eed69a83988d"
+    }
+  },
+  "id": "simready_m_opaque_plastic_yellow_a01_4f571c2d",
+  "kind": "surface",
+  "licence": {
+    "credit": "electricalSystem_alternator_d01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "electricalSystem_alternator_d01/simready_usd/Textures/t_plastic_yellow_a01_tile_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "electricalSystem_alternator_d01/simready_usd/Textures/t_plastic_yellow_a01_tile_nor.png",
+      "orm.png": "electricalSystem_alternator_d01/simready_usd/Textures/t_plastic_yellow_a01_tile_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__plastic__yellow_a01 maps of electricalSystem_alternator_d01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: electricalSystem_alternator_d01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "4f571c2db6fca84e0413b97b641ea04378cb60fb2b66f5e89ec08ac98104b03d"
+    ]
+  },
+  "title": "m_opaque__plastic__yellow_a01",
+  "usd": null,
+  "version": 1
+}

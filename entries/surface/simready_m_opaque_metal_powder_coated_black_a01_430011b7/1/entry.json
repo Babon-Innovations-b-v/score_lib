@@ -1,0 +1,78 @@
+{
+  "address": "surface/simready_m_opaque_metal_powder_coated_black_a01_430011b7@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 10976738,
+      "role": "texture",
+      "sha256": "9ca70dd95ebb18904f3d59abc42709396bbae71bf6c43f649d3d656e02ef023d"
+    },
+    "material.usda": {
+      "bytes": 2651,
+      "role": "usd",
+      "sha256": "1c460a81dd19889d65ff9de30d2d97ae09fe2c7680585aafdd9e3364c687053e"
+    },
+    "normal.png": {
+      "bytes": 11927139,
+      "role": "texture",
+      "sha256": "3b2f56844c289dd17c835b8d40360aa49e9372161a22341010f72431017c342e"
+    },
+    "orm.png": {
+      "bytes": 14521241,
+      "role": "texture",
+      "sha256": "65f269597374645aaf12568a82f773ca140229c2834bd5e656b01a73b9accfa6"
+    },
+    "surface.json": {
+      "bytes": 820,
+      "role": "record",
+      "sha256": "af29a5d3badfca2af1c41ddbe98fe368506c730ac99ae109b46280af5860ad43"
+    }
+  },
+  "id": "simready_m_opaque_metal_powder_coated_black_a01_430011b7",
+  "kind": "surface",
+  "licence": {
+    "credit": "engineComponent_engine_mount_d01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "engineComponent_engine_mount_d01/simready_usd/Textures/t_metal_powdercoated_black_a01_tile_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "engineComponent_engine_mount_d01/simready_usd/Textures/t_metal_powdercoated_black_a01_tile_nor.png",
+      "orm.png": "engineComponent_engine_mount_d01/simready_usd/Textures/t_metal_powdercoated_black_a01_tile_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__metal__powderCoated_black_a01 maps of engineComponent_engine_mount_d01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: engineComponent_engine_mount_d01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "430011b72c1b332487e894d60506d3fdff2a388249cd7cdc421f436916fba9fd"
+    ]
+  },
+  "title": "m_opaque__metal__powderCoated_black_a01",
+  "usd": null,
+  "version": 1
+}

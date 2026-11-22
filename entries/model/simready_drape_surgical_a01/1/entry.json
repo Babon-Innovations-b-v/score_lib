@@ -1,0 +1,195 @@
+{
+  "address": "model/simready_drape_surgical_a01@1",
+  "files": {
+    "Textures/t_surgicalDrape_a01_alb.png": {
+      "bytes": 25500417,
+      "role": "texture",
+      "sha256": "747c3cc301230f504ea97be23a6d464bd62d619d2531018fa9cb25f6dfa66200"
+    },
+    "Textures/t_surgicalDrape_a01_nor.png": {
+      "bytes": 17141668,
+      "role": "texture",
+      "sha256": "620186fa71b2a7eb184413d18fe96337066476924faf852533aa585177a17c1a"
+    },
+    "Textures/t_surgicalDrape_a01_orm.png": {
+      "bytes": 12663511,
+      "role": "texture",
+      "sha256": "17c367ca905a327b9635ce98517a90b8171af5d9355cb79102c37f7ab29232bc"
+    },
+    "payloads/MuJoCo/disabled.usda": {
+      "bytes": 6715,
+      "role": "usd",
+      "sha256": "64c80a90c67ff44dc7395005852899b1d0f51cb6b659c90ff1877687be0cedc6"
+    },
+    "payloads/MuJoCo/enabled.usda": {
+      "bytes": 7471,
+      "role": "usd",
+      "sha256": "d12cfae16aabbdc1baa690e5a437ad27309ae2282d92b66a6675a3f70ae767b0"
+    },
+    "payloads/Newton/disabled.usda": {
+      "bytes": 6715,
+      "role": "usd",
+      "sha256": "64c80a90c67ff44dc7395005852899b1d0f51cb6b659c90ff1877687be0cedc6"
+    },
+    "payloads/Newton/enabled.usda": {
+      "bytes": 7293,
+      "role": "usd",
+      "sha256": "1df39a6bbc61f51b81e2b72e374c9980117da4767c7eaa8e42058b3d341c96a9"
+    },
+    "payloads/PhysX/disabled.usda": {
+      "bytes": 6715,
+      "role": "usd",
+      "sha256": "64c80a90c67ff44dc7395005852899b1d0f51cb6b659c90ff1877687be0cedc6"
+    },
+    "payloads/PhysX/enabled.usda": {
+      "bytes": 7000,
+      "role": "usd",
+      "sha256": "97cef90f60f98c57b42e62791447d639abb8b7159ec45cd2e145c8483aad02dc"
+    },
+    "payloads/Physics/physics.usda": {
+      "bytes": 7248,
+      "role": "usd",
+      "sha256": "821b1a5d4f2968a1512965aba6e86fda9e04b1f8dee1b55b81133a81d61271a3"
+    },
+    "payloads/base.usda": {
+      "bytes": 11348,
+      "role": "usd",
+      "sha256": "7865d6d7886d689b15a1cf9373ae21013889276198aad59948762a1c07becee2"
+    },
+    "payloads/geometries.usd": {
+      "bytes": 2771369,
+      "role": "usd",
+      "sha256": "977a6076e10661e8c7991f5e0e8e77ade4c7c47bc549689c3dd1197c138d7faa"
+    },
+    "payloads/instances.usda": {
+      "bytes": 7746,
+      "role": "usd",
+      "sha256": "88787d62d81bbdb931c550659a9a1d9cb5c5fe7a6ae9a130436cbf4450e25223"
+    },
+    "payloads/instances_mujoco.usda": {
+      "bytes": 8018,
+      "role": "usd",
+      "sha256": "06fc4d668a206e81c663cacc204c0e392ed10895aa457bc7149c210614605947"
+    },
+    "payloads/instances_newton.usda": {
+      "bytes": 7869,
+      "role": "usd",
+      "sha256": "d4f19466b0d8c63691f94ef8e96734666c5c7516e4a82a0de303e541bb77ccaa"
+    },
+    "payloads/instances_physx.usda": {
+      "bytes": 7886,
+      "role": "usd",
+      "sha256": "1ad5a79f8698623b643075973e8a95539db28608990b89f41c87bad3bbef5e15"
+    },
+    "payloads/materials.usda": {
+      "bytes": 12578,
+      "role": "usd",
+      "sha256": "19205c7e96b814d15569af014e1df69ebf99800cb93eb6667d455e49d90dec14"
+    },
+    "sm_drape_surgical_a01_01.usd": {
+      "bytes": 21797,
+      "role": "usd",
+      "sha256": "8cba62fa5fc6452f11c3e1729370f89930cd30525692770c9c6a1f65bb5efdf0"
+    },
+    "source_assets/OmniPBR.mdl": {
+      "bytes": 16010,
+      "role": "code",
+      "sha256": "6e6b3acbccd236e21a6c29964a431d2a53e77251cc6b8b1bc975eb1c62da1781"
+    },
+    "source_assets/OmniPBRBase.mdl": {
+      "bytes": 19369,
+      "role": "code",
+      "sha256": "a8fd9fe174e91892e94d06da90ba453a124024c2ce2c033be9d82c9e2f76a3b7"
+    },
+    "source_assets/OmniPBR_ClearCoat.mdl": {
+      "bytes": 29789,
+      "role": "code",
+      "sha256": "d84c5ba482561c0eaea2e0c5b607358af549e36cd921773462f92dbc4f32cbc3"
+    }
+  },
+  "id": "simready_drape_surgical_a01",
+  "kind": "model",
+  "licence": {
+    "credit": "drape_surgical_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0; changed: each Material names its library surface (score:surface)",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "Textures/t_surgicalDrape_a01_alb.png": "drape_surgical_a01/simready_usd/Textures/t_surgicalDrape_a01_alb.png",
+      "Textures/t_surgicalDrape_a01_nor.png": "drape_surgical_a01/simready_usd/Textures/t_surgicalDrape_a01_nor.png",
+      "Textures/t_surgicalDrape_a01_orm.png": "drape_surgical_a01/simready_usd/Textures/t_surgicalDrape_a01_orm.png",
+      "payloads/MuJoCo/disabled.usda": "drape_surgical_a01/simready_usd/payloads/MuJoCo/disabled.usda",
+      "payloads/MuJoCo/enabled.usda": "drape_surgical_a01/simready_usd/payloads/MuJoCo/enabled.usda",
+      "payloads/Newton/disabled.usda": "drape_surgical_a01/simready_usd/payloads/Newton/disabled.usda",
+      "payloads/Newton/enabled.usda": "drape_surgical_a01/simready_usd/payloads/Newton/enabled.usda",
+      "payloads/PhysX/disabled.usda": "drape_surgical_a01/simready_usd/payloads/PhysX/disabled.usda",
+      "payloads/PhysX/enabled.usda": "drape_surgical_a01/simready_usd/payloads/PhysX/enabled.usda",
+      "payloads/Physics/physics.usda": "drape_surgical_a01/simready_usd/payloads/Physics/physics.usda",
+      "payloads/base.usda": "drape_surgical_a01/simready_usd/payloads/base.usda",
+      "payloads/geometries.usd": "drape_surgical_a01/simready_usd/payloads/geometries.usd",
+      "payloads/instances.usda": "drape_surgical_a01/simready_usd/payloads/instances.usda",
+      "payloads/instances_mujoco.usda": "drape_surgical_a01/simready_usd/payloads/instances_mujoco.usda",
+      "payloads/instances_newton.usda": "drape_surgical_a01/simready_usd/payloads/instances_newton.usda",
+      "payloads/instances_physx.usda": "drape_surgical_a01/simready_usd/payloads/instances_physx.usda",
+      "payloads/materials.usda": "drape_surgical_a01/simready_usd/payloads/materials.usda (changed: each Material names its library surface (score:surface))",
+      "sm_drape_surgical_a01_01.usd": "drape_surgical_a01/simready_usd/sm_drape_surgical_a01_01.usd",
+      "source_assets/OmniPBR.mdl": "drape_surgical_a01/simready_usd/source_assets/OmniPBR.mdl",
+      "source_assets/OmniPBRBase.mdl": "drape_surgical_a01/simready_usd/source_assets/OmniPBRBase.mdl",
+      "source_assets/OmniPBR_ClearCoat.mdl": "drape_surgical_a01/simready_usd/source_assets/OmniPBR_ClearCoat.mdl"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "drape_surgical_a01: its model, physics and maps"
+      },
+      {
+        "by": "score",
+        "what": "the library surface each material names (score:surface)"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: drape_surgical_a01",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/simready_m_opaque_paper_surgical_drape_a01_86b85918@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "description": [
+      "sterile fabric or fabric-like material used to isolate the surgical site"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "simulators": [
+      "mujoco",
+      "newton",
+      "physx"
+    ],
+    "wikidata_class": [
+      "surgical drapes"
+    ],
+    "wikidata_qcode": [
+      "Q2948578"
+    ]
+  },
+  "title": "drape_surgical_a01",
+  "usd": {
+    "default_prim": "/RootNode",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/simready_drape_surgical_a01/1/sm_drape_surgical_a01_01.usd",
+    "root": "sm_drape_surgical_a01_01.usd",
+    "up_axis": "Z",
+    "use": "reference"
+  },
+  "version": 1
+}

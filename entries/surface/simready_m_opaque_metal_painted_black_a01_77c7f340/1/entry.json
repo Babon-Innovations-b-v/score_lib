@@ -1,0 +1,78 @@
+{
+  "address": "surface/simready_m_opaque_metal_painted_black_a01_77c7f340@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 7914974,
+      "role": "texture",
+      "sha256": "1efdc505cf6c74cc36b3139767eb4e1ef416ef50f43573ed209848a2e3e05c79"
+    },
+    "material.usda": {
+      "bytes": 2579,
+      "role": "usd",
+      "sha256": "941570eac90f470e0e3f56bd21646e92834b8bce62bb163a6d2c55145b7ec8a6"
+    },
+    "normal.png": {
+      "bytes": 10390884,
+      "role": "texture",
+      "sha256": "03f598a85db402a5807006cf218e051d56786493c074d912ee927f25c9125238"
+    },
+    "orm.png": {
+      "bytes": 9598384,
+      "role": "texture",
+      "sha256": "6f7f9860122cb0d88b43a6ef255da3b6cda275fecae70463758b0a30d2cd9848"
+    },
+    "surface.json": {
+      "bytes": 818,
+      "role": "record",
+      "sha256": "6e0bd3e89749741319e9f1f7c7964e0ebe5525891a281c1aed33c45dd85c49c5"
+    }
+  },
+  "id": "simready_m_opaque_metal_painted_black_a01_77c7f340",
+  "kind": "surface",
+  "licence": {
+    "credit": "engineComponent_engine_mount_d01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "engineComponent_engine_mount_d01/simready_usd/Textures/t_metal_painted_black_a01_tile_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "engineComponent_engine_mount_d01/simready_usd/Textures/t_metal_painted_black_a01_tile_nor.png",
+      "orm.png": "engineComponent_engine_mount_d01/simready_usd/Textures/t_metal_painted_black_a01_tile_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__metal__painted_black_a01 maps of engineComponent_engine_mount_d01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: engineComponent_engine_mount_d01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "77c7f340e4c89456e30e755c33d3ad91c73e3b0f0360daa3f90ea6235eeb2623"
+    ]
+  },
+  "title": "m_opaque__metal__painted_black_a01",
+  "usd": null,
+  "version": 1
+}

@@ -1,0 +1,72 @@
+{
+  "address": "surface/simready_m_opaque_plastic_emissive_red_a01_b0c5c501@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 15312272,
+      "role": "texture",
+      "sha256": "8b7dc725b13765edf8872962b784b1f965e12d0826809afbd7757d198b908df3"
+    },
+    "material.usda": {
+      "bytes": 2145,
+      "role": "usd",
+      "sha256": "a89e2ad082e6ec3b012e6f1bc5525120d8474f400bf93f52d150203170a5f8e3"
+    },
+    "orm.png": {
+      "bytes": 13821486,
+      "role": "texture",
+      "sha256": "fa399c8d5f221d3bcff5e82d5ee049145778b3aace5adad43e74cf6345cfb2a5"
+    },
+    "surface.json": {
+      "bytes": 861,
+      "role": "record",
+      "sha256": "c2a225da6aeb581f184a605de210976df94aab2d12449134841ceabbd94f8f1c"
+    }
+  },
+  "id": "simready_m_opaque_plastic_emissive_red_a01_b0c5c501",
+  "kind": "surface",
+  "licence": {
+    "credit": "electrical_power_terminal_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "electrical_power_terminal_a01/simready_usd/Textures/t_plastic_red_a01_tile_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "orm.png": "electrical_power_terminal_a01/simready_usd/Textures/t_plastic_red_a01_tile_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__plastic__emissive__red_a01 maps of electrical_power_terminal_a01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: electrical_power_terminal_a01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "b0c5c5019df248dee00051513150a61bebf4900cafaa7ac06ab20aa7f671dfb2"
+    ]
+  },
+  "title": "m_opaque__plastic__emissive__red_a01",
+  "usd": null,
+  "version": 1
+}

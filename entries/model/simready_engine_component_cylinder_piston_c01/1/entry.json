@@ -1,0 +1,195 @@
+{
+  "address": "model/simready_engine_component_cylinder_piston_c01@1",
+  "files": {
+    "Textures/t_cylinderPiston_c01_alb.png": {
+      "bytes": 168328,
+      "role": "texture",
+      "sha256": "6b91de5f6377e42e3b9192f407e9c8f6acd81a91a076de51c94f4b7ba48a65d2"
+    },
+    "Textures/t_cylinderPiston_c01_nor.png": {
+      "bytes": 8669737,
+      "role": "texture",
+      "sha256": "8930da418120ea2a531cbf347bf82ba961697190ac63089cc46011302e1f7d5a"
+    },
+    "Textures/t_cylinderPiston_c01_orm.png": {
+      "bytes": 7392128,
+      "role": "texture",
+      "sha256": "962ad64eb8aa0cd15275b061386a7c77b45d157dbfab2d1a090f8544293bfa6c"
+    },
+    "payloads/MuJoCo/disabled.usda": {
+      "bytes": 4299,
+      "role": "usd",
+      "sha256": "ffa14bc8907924c29c7599eff4a0f643aca381208e04c9007f6244491b728811"
+    },
+    "payloads/MuJoCo/enabled.usda": {
+      "bytes": 5420,
+      "role": "usd",
+      "sha256": "d690be204685be169ca7ad21e6f73b98f704db8211ca391b61ac01140960912c"
+    },
+    "payloads/Newton/disabled.usda": {
+      "bytes": 4299,
+      "role": "usd",
+      "sha256": "ffa14bc8907924c29c7599eff4a0f643aca381208e04c9007f6244491b728811"
+    },
+    "payloads/Newton/enabled.usda": {
+      "bytes": 5052,
+      "role": "usd",
+      "sha256": "b2c7f9b1d08a139eedabbb0521bf134bd5099ab7bc0a432fcc4e2cb66627c100"
+    },
+    "payloads/PhysX/disabled.usda": {
+      "bytes": 4299,
+      "role": "usd",
+      "sha256": "ffa14bc8907924c29c7599eff4a0f643aca381208e04c9007f6244491b728811"
+    },
+    "payloads/PhysX/enabled.usda": {
+      "bytes": 4757,
+      "role": "usd",
+      "sha256": "5286aed3e283f647f90fd1338ba556e2d3e396dd57ec288802ec55b0fb602f74"
+    },
+    "payloads/Physics/physics.usda": {
+      "bytes": 5768,
+      "role": "usd",
+      "sha256": "cf7f4002111e16b83c3042e79fb3484ff489349071ac1a31d332ceeddc074676"
+    },
+    "payloads/base.usda": {
+      "bytes": 12361,
+      "role": "usd",
+      "sha256": "1b157b427b353a6480f3127dfd9a8d7e71866acd94d451f002da7e4d5bd7cfcf"
+    },
+    "payloads/geometries.usd": {
+      "bytes": 6847291,
+      "role": "usd",
+      "sha256": "852e6482eda630e055a8aa58f5f3c97772826a99e409cc64a0f18e6720c2984d"
+    },
+    "payloads/instances.usda": {
+      "bytes": 6305,
+      "role": "usd",
+      "sha256": "0ea9ce22d66e472d51f56cebedec596974342d10c51dc0d6793466b661e53b56"
+    },
+    "payloads/instances_mujoco.usda": {
+      "bytes": 6849,
+      "role": "usd",
+      "sha256": "47448a614bdd0b03b2fd74d8cd03310f6c3dcc770d27f66d32b588b42f1fe942"
+    },
+    "payloads/instances_newton.usda": {
+      "bytes": 6551,
+      "role": "usd",
+      "sha256": "df254701571e328c40021492aee9f0609ef8c1648c20bb332d03f1ddb3a4411b"
+    },
+    "payloads/instances_physx.usda": {
+      "bytes": 6585,
+      "role": "usd",
+      "sha256": "9864b11a86f29063df80a38798171a788eda524a6b3057c8cb5bebb6e779d986"
+    },
+    "payloads/materials.usda": {
+      "bytes": 10138,
+      "role": "usd",
+      "sha256": "50f4f11bb51442db404be056f40985abc2fd39eac707c541b2279807450e2d2f"
+    },
+    "sm_engineComponent_cylinder_piston_c01_01.usd": {
+      "bytes": 20606,
+      "role": "usd",
+      "sha256": "0f46027fed2af9a56f40b35df9d6ca634172a0e00e40e31e105f4c1edb3f4ac2"
+    },
+    "source_assets/OmniPBR.mdl": {
+      "bytes": 16010,
+      "role": "code",
+      "sha256": "6e6b3acbccd236e21a6c29964a431d2a53e77251cc6b8b1bc975eb1c62da1781"
+    },
+    "source_assets/OmniPBRBase.mdl": {
+      "bytes": 19369,
+      "role": "code",
+      "sha256": "a8fd9fe174e91892e94d06da90ba453a124024c2ce2c033be9d82c9e2f76a3b7"
+    },
+    "source_assets/OmniPBR_ClearCoat.mdl": {
+      "bytes": 29789,
+      "role": "code",
+      "sha256": "d84c5ba482561c0eaea2e0c5b607358af549e36cd921773462f92dbc4f32cbc3"
+    }
+  },
+  "id": "simready_engine_component_cylinder_piston_c01",
+  "kind": "model",
+  "licence": {
+    "credit": "engineComponent_cylinder_piston_c01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0; changed: each Material names its library surface (score:surface)",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "Textures/t_cylinderPiston_c01_alb.png": "engineComponent_cylinder_piston_c01/simready_usd/Textures/t_cylinderPiston_c01_alb.png",
+      "Textures/t_cylinderPiston_c01_nor.png": "engineComponent_cylinder_piston_c01/simready_usd/Textures/t_cylinderPiston_c01_nor.png",
+      "Textures/t_cylinderPiston_c01_orm.png": "engineComponent_cylinder_piston_c01/simready_usd/Textures/t_cylinderPiston_c01_orm.png",
+      "payloads/MuJoCo/disabled.usda": "engineComponent_cylinder_piston_c01/simready_usd/payloads/MuJoCo/disabled.usda",
+      "payloads/MuJoCo/enabled.usda": "engineComponent_cylinder_piston_c01/simready_usd/payloads/MuJoCo/enabled.usda",
+      "payloads/Newton/disabled.usda": "engineComponent_cylinder_piston_c01/simready_usd/payloads/Newton/disabled.usda",
+      "payloads/Newton/enabled.usda": "engineComponent_cylinder_piston_c01/simready_usd/payloads/Newton/enabled.usda",
+      "payloads/PhysX/disabled.usda": "engineComponent_cylinder_piston_c01/simready_usd/payloads/PhysX/disabled.usda",
+      "payloads/PhysX/enabled.usda": "engineComponent_cylinder_piston_c01/simready_usd/payloads/PhysX/enabled.usda",
+      "payloads/Physics/physics.usda": "engineComponent_cylinder_piston_c01/simready_usd/payloads/Physics/physics.usda",
+      "payloads/base.usda": "engineComponent_cylinder_piston_c01/simready_usd/payloads/base.usda",
+      "payloads/geometries.usd": "engineComponent_cylinder_piston_c01/simready_usd/payloads/geometries.usd",
+      "payloads/instances.usda": "engineComponent_cylinder_piston_c01/simready_usd/payloads/instances.usda",
+      "payloads/instances_mujoco.usda": "engineComponent_cylinder_piston_c01/simready_usd/payloads/instances_mujoco.usda",
+      "payloads/instances_newton.usda": "engineComponent_cylinder_piston_c01/simready_usd/payloads/instances_newton.usda",
+      "payloads/instances_physx.usda": "engineComponent_cylinder_piston_c01/simready_usd/payloads/instances_physx.usda",
+      "payloads/materials.usda": "engineComponent_cylinder_piston_c01/simready_usd/payloads/materials.usda (changed: each Material names its library surface (score:surface))",
+      "sm_engineComponent_cylinder_piston_c01_01.usd": "engineComponent_cylinder_piston_c01/simready_usd/sm_engineComponent_cylinder_piston_c01_01.usd",
+      "source_assets/OmniPBR.mdl": "engineComponent_cylinder_piston_c01/simready_usd/source_assets/OmniPBR.mdl",
+      "source_assets/OmniPBRBase.mdl": "engineComponent_cylinder_piston_c01/simready_usd/source_assets/OmniPBRBase.mdl",
+      "source_assets/OmniPBR_ClearCoat.mdl": "engineComponent_cylinder_piston_c01/simready_usd/source_assets/OmniPBR_ClearCoat.mdl"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "engineComponent_cylinder_piston_c01: its model, physics and maps"
+      },
+      {
+        "by": "score",
+        "what": "the library surface each material names (score:surface)"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: engineComponent_cylinder_piston_c01",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/simready_m_opaque_metal_cylinder_piston_c01_fff49a4b@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "description": [
+      "moving component of reciprocating engines that is contained by a cylinder and is made gas tight by piston rings"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "simulators": [
+      "mujoco",
+      "newton",
+      "physx"
+    ],
+    "wikidata_class": [
+      "piston"
+    ],
+    "wikidata_qcode": [
+      "Q45227"
+    ]
+  },
+  "title": "engineComponent_cylinder_piston_c01",
+  "usd": {
+    "default_prim": "/RootNode",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/simready_engine_component_cylinder_piston_c01/1/sm_engineComponent_cylinder_piston_c01_01.usd",
+    "root": "sm_engineComponent_cylinder_piston_c01_01.usd",
+    "up_axis": "Z",
+    "use": "reference"
+  },
+  "version": 1
+}
