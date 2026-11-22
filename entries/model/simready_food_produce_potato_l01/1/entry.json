@@ -1,0 +1,195 @@
+{
+  "address": "model/simready_food_produce_potato_l01@1",
+  "files": {
+    "Textures/t_potato_lightbrown_l01_alb.png": {
+      "bytes": 266329,
+      "role": "texture",
+      "sha256": "224f0b88517d424e181b3ec745eaa3a878e49850545370ca7b080e4660aefb2f"
+    },
+    "Textures/t_potato_lightbrown_l01_nor.png": {
+      "bytes": 329813,
+      "role": "texture",
+      "sha256": "b5bd98b75d1958654dee05c2477b6b0e77200ba27e25853d3455edfa15f5e1a3"
+    },
+    "Textures/t_potato_lightbrown_l01_orm.png": {
+      "bytes": 146531,
+      "role": "texture",
+      "sha256": "cfcddc265c799cbbc6fa9f5ddd6babed40dac39b49f7428e5a0672390495f86b"
+    },
+    "payloads/MuJoCo/disabled.usda": {
+      "bytes": 4235,
+      "role": "usd",
+      "sha256": "03fea27ae7478ad2ad96490d06a0cbc19395fbfecbcebf27121da28dc522c700"
+    },
+    "payloads/MuJoCo/enabled.usda": {
+      "bytes": 5233,
+      "role": "usd",
+      "sha256": "575479f36196555d567f43be112be236880f104e98a98fe4de99d905cc2c4173"
+    },
+    "payloads/Newton/disabled.usda": {
+      "bytes": 4235,
+      "role": "usd",
+      "sha256": "03fea27ae7478ad2ad96490d06a0cbc19395fbfecbcebf27121da28dc522c700"
+    },
+    "payloads/Newton/enabled.usda": {
+      "bytes": 4927,
+      "role": "usd",
+      "sha256": "b7ee5305ab88c30186cb9fcf40aff89cfc5ef2df4a38938414790d5218a4b344"
+    },
+    "payloads/PhysX/disabled.usda": {
+      "bytes": 4235,
+      "role": "usd",
+      "sha256": "03fea27ae7478ad2ad96490d06a0cbc19395fbfecbcebf27121da28dc522c700"
+    },
+    "payloads/PhysX/enabled.usda": {
+      "bytes": 4639,
+      "role": "usd",
+      "sha256": "63e50383c0ea3f12e61308c34bd1d4ac602aad6d9f449d22703e241ac83da0d8"
+    },
+    "payloads/Physics/physics.usda": {
+      "bytes": 5068,
+      "role": "usd",
+      "sha256": "1f529e765db772428639b517c395d61229d55356a8f1993c409244c0d76680ca"
+    },
+    "payloads/base.usda": {
+      "bytes": 9252,
+      "role": "usd",
+      "sha256": "45e003bc7a8f534388c5670ab62ccf3f5c130a1fdff43fdc5081b1e0380f9d29"
+    },
+    "payloads/geometries.usd": {
+      "bytes": 448222,
+      "role": "usd",
+      "sha256": "d91279b125851773431eb7a18c4d3888b8bbb1c59a73a28a694ed0bad02c75a9"
+    },
+    "payloads/instances.usda": {
+      "bytes": 5295,
+      "role": "usd",
+      "sha256": "ec31925dedb87e0c23a614748cd23daf50a1838deb43be8821324bc119f29c19"
+    },
+    "payloads/instances_mujoco.usda": {
+      "bytes": 5567,
+      "role": "usd",
+      "sha256": "dbf1b2df3ed95a99dc061a077304d69c4e1cba5d7539e5fa55b7e81e9b3ed6c4"
+    },
+    "payloads/instances_newton.usda": {
+      "bytes": 5418,
+      "role": "usd",
+      "sha256": "91e69eb11c69ddd2338fc88c1c37ab55937d4e739250d5f120ebeb7bcad364bb"
+    },
+    "payloads/instances_physx.usda": {
+      "bytes": 5435,
+      "role": "usd",
+      "sha256": "ddbe900400cfdb7c1f2d14bbed10f1de816491675b0ca5feb4fada00309ceb47"
+    },
+    "payloads/materials.usda": {
+      "bytes": 9583,
+      "role": "usd",
+      "sha256": "069a74a5071cd41d51a77149182f316ba263bdaf9a842d7cea8067679dc736fc"
+    },
+    "sm_food_produce_potato_l01_01.usd": {
+      "bytes": 21551,
+      "role": "usd",
+      "sha256": "73a08acccb392a489a9852f3eb09059696c1d5405ed3dd61daa9c9944b486ae6"
+    },
+    "source_assets/OmniPBR.mdl": {
+      "bytes": 16010,
+      "role": "code",
+      "sha256": "6e6b3acbccd236e21a6c29964a431d2a53e77251cc6b8b1bc975eb1c62da1781"
+    },
+    "source_assets/OmniPBRBase.mdl": {
+      "bytes": 19369,
+      "role": "code",
+      "sha256": "a8fd9fe174e91892e94d06da90ba453a124024c2ce2c033be9d82c9e2f76a3b7"
+    },
+    "source_assets/OmniPBR_ClearCoat.mdl": {
+      "bytes": 29789,
+      "role": "code",
+      "sha256": "d84c5ba482561c0eaea2e0c5b607358af549e36cd921773462f92dbc4f32cbc3"
+    }
+  },
+  "id": "simready_food_produce_potato_l01",
+  "kind": "model",
+  "licence": {
+    "credit": "food_produce_potato_l01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0; changed: each Material names its library surface (score:surface)",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "Textures/t_potato_lightbrown_l01_alb.png": "food_produce_potato_l01/simready_usd/Textures/t_potato_lightbrown_l01_alb.png",
+      "Textures/t_potato_lightbrown_l01_nor.png": "food_produce_potato_l01/simready_usd/Textures/t_potato_lightbrown_l01_nor.png",
+      "Textures/t_potato_lightbrown_l01_orm.png": "food_produce_potato_l01/simready_usd/Textures/t_potato_lightbrown_l01_orm.png",
+      "payloads/MuJoCo/disabled.usda": "food_produce_potato_l01/simready_usd/payloads/MuJoCo/disabled.usda",
+      "payloads/MuJoCo/enabled.usda": "food_produce_potato_l01/simready_usd/payloads/MuJoCo/enabled.usda",
+      "payloads/Newton/disabled.usda": "food_produce_potato_l01/simready_usd/payloads/Newton/disabled.usda",
+      "payloads/Newton/enabled.usda": "food_produce_potato_l01/simready_usd/payloads/Newton/enabled.usda",
+      "payloads/PhysX/disabled.usda": "food_produce_potato_l01/simready_usd/payloads/PhysX/disabled.usda",
+      "payloads/PhysX/enabled.usda": "food_produce_potato_l01/simready_usd/payloads/PhysX/enabled.usda",
+      "payloads/Physics/physics.usda": "food_produce_potato_l01/simready_usd/payloads/Physics/physics.usda",
+      "payloads/base.usda": "food_produce_potato_l01/simready_usd/payloads/base.usda",
+      "payloads/geometries.usd": "food_produce_potato_l01/simready_usd/payloads/geometries.usd",
+      "payloads/instances.usda": "food_produce_potato_l01/simready_usd/payloads/instances.usda",
+      "payloads/instances_mujoco.usda": "food_produce_potato_l01/simready_usd/payloads/instances_mujoco.usda",
+      "payloads/instances_newton.usda": "food_produce_potato_l01/simready_usd/payloads/instances_newton.usda",
+      "payloads/instances_physx.usda": "food_produce_potato_l01/simready_usd/payloads/instances_physx.usda",
+      "payloads/materials.usda": "food_produce_potato_l01/simready_usd/payloads/materials.usda (changed: each Material names its library surface (score:surface))",
+      "sm_food_produce_potato_l01_01.usd": "food_produce_potato_l01/simready_usd/sm_food_produce_potato_l01_01.usd",
+      "source_assets/OmniPBR.mdl": "food_produce_potato_l01/simready_usd/source_assets/OmniPBR.mdl",
+      "source_assets/OmniPBRBase.mdl": "food_produce_potato_l01/simready_usd/source_assets/OmniPBRBase.mdl",
+      "source_assets/OmniPBR_ClearCoat.mdl": "food_produce_potato_l01/simready_usd/source_assets/OmniPBR_ClearCoat.mdl"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "food_produce_potato_l01: its model, physics and maps"
+      },
+      {
+        "by": "score",
+        "what": "the library surface each material names (score:surface)"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: food_produce_potato_l01",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/simready_m_opaque_organic_potato_l01_3a9dd94f@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "description": [
+      "potato"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "simulators": [
+      "mujoco",
+      "newton",
+      "physx"
+    ],
+    "wikidata_class": [
+      "potato"
+    ],
+    "wikidata_qcode": [
+      "Q16587531"
+    ]
+  },
+  "title": "food_produce_potato_l01",
+  "usd": {
+    "default_prim": "/RootNode",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/simready_food_produce_potato_l01/1/sm_food_produce_potato_l01_01.usd",
+    "root": "sm_food_produce_potato_l01_01.usd",
+    "up_axis": "Z",
+    "use": "reference"
+  },
+  "version": 1
+}

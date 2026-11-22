@@ -1,0 +1,195 @@
+{
+  "address": "model/simready_food_produce_tomato_c01@1",
+  "files": {
+    "Textures/t_tomato_red_c01_alb.png": {
+      "bytes": 320481,
+      "role": "texture",
+      "sha256": "eaffdf7a036434a4dcd3c30e1f7cf937682fcd8bdf102e1728b479e8a05d34a8"
+    },
+    "Textures/t_tomato_red_c01_nor.png": {
+      "bytes": 269004,
+      "role": "texture",
+      "sha256": "d325378bcd3b38482006abdb1b123088bb167b772089d7d7087f51df738428df"
+    },
+    "Textures/t_tomato_red_c01_orm.png": {
+      "bytes": 292807,
+      "role": "texture",
+      "sha256": "8dbee2cf4d04f20a45370e3f25dac3dede1f243072d015b1383e483635fa7e92"
+    },
+    "payloads/MuJoCo/disabled.usda": {
+      "bytes": 4279,
+      "role": "usd",
+      "sha256": "9a53f263be3172a67daf286bf10cf75dbb7271921dcbb9f472d69f3ec91ad217"
+    },
+    "payloads/MuJoCo/enabled.usda": {
+      "bytes": 5302,
+      "role": "usd",
+      "sha256": "d78341767426c80dc752ca7771013ef7e2f8760669747774008fa849a40808fa"
+    },
+    "payloads/Newton/disabled.usda": {
+      "bytes": 4279,
+      "role": "usd",
+      "sha256": "9a53f263be3172a67daf286bf10cf75dbb7271921dcbb9f472d69f3ec91ad217"
+    },
+    "payloads/Newton/enabled.usda": {
+      "bytes": 4971,
+      "role": "usd",
+      "sha256": "39afaa72cdd7b821475306da5f8117fd68d43e09621f6d7d60a65d414d094fe5"
+    },
+    "payloads/PhysX/disabled.usda": {
+      "bytes": 4279,
+      "role": "usd",
+      "sha256": "9a53f263be3172a67daf286bf10cf75dbb7271921dcbb9f472d69f3ec91ad217"
+    },
+    "payloads/PhysX/enabled.usda": {
+      "bytes": 4683,
+      "role": "usd",
+      "sha256": "c03459363f05ae883ef42a770f480e7fc1496af4cac18c30275aabc8c4834b34"
+    },
+    "payloads/Physics/physics.usda": {
+      "bytes": 4816,
+      "role": "usd",
+      "sha256": "71be9fb2fffd1ab1f97b7f15dd1049893145d7993012452e5322079866e726bf"
+    },
+    "payloads/base.usda": {
+      "bytes": 9886,
+      "role": "usd",
+      "sha256": "745db55a0a41620e9d4b0c2eca2f6cdb62afd387b65a74e8732ebb6582906a61"
+    },
+    "payloads/geometries.usd": {
+      "bytes": 460890,
+      "role": "usd",
+      "sha256": "5b9e4ef4575ca559e3054b79f8f98abd660dff54cd98ebcb5c2838f5613faa83"
+    },
+    "payloads/instances.usda": {
+      "bytes": 5345,
+      "role": "usd",
+      "sha256": "1675ea94c6ae07d40dee7b4556850c7a9d1a91e1e56ef12e53d9eb6437c63acc"
+    },
+    "payloads/instances_mujoco.usda": {
+      "bytes": 5617,
+      "role": "usd",
+      "sha256": "cb7b95a7faaee96283527f91163b13040f0bf0a70d3ebdc15527d8dff5af32fa"
+    },
+    "payloads/instances_newton.usda": {
+      "bytes": 5468,
+      "role": "usd",
+      "sha256": "508368fb2a978f9a48d8744febe0be923548ff69bb43bb3f4badced83cdaf332"
+    },
+    "payloads/instances_physx.usda": {
+      "bytes": 5485,
+      "role": "usd",
+      "sha256": "7fd120f25045d025e98039be4b5bdd9a78ed11624cad6c740b08b1b556de6538"
+    },
+    "payloads/materials.usda": {
+      "bytes": 9546,
+      "role": "usd",
+      "sha256": "2b99337dcf910bd18e66851d355cce5f101ff7f86265785d8bdc5cccf7447943"
+    },
+    "sm_food_produce_tomato_c01_01.usd": {
+      "bytes": 21555,
+      "role": "usd",
+      "sha256": "abb7bb6f18bba13462566e56e54e2dd60e95004b9b1daf12803d39eec53fcf03"
+    },
+    "source_assets/OmniPBR.mdl": {
+      "bytes": 16010,
+      "role": "code",
+      "sha256": "6e6b3acbccd236e21a6c29964a431d2a53e77251cc6b8b1bc975eb1c62da1781"
+    },
+    "source_assets/OmniPBRBase.mdl": {
+      "bytes": 19369,
+      "role": "code",
+      "sha256": "a8fd9fe174e91892e94d06da90ba453a124024c2ce2c033be9d82c9e2f76a3b7"
+    },
+    "source_assets/OmniPBR_ClearCoat.mdl": {
+      "bytes": 29789,
+      "role": "code",
+      "sha256": "d84c5ba482561c0eaea2e0c5b607358af549e36cd921773462f92dbc4f32cbc3"
+    }
+  },
+  "id": "simready_food_produce_tomato_c01",
+  "kind": "model",
+  "licence": {
+    "credit": "food_produce_tomato_c01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0; changed: each Material names its library surface (score:surface)",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "Textures/t_tomato_red_c01_alb.png": "food_produce_tomato_c01/simready_usd/Textures/t_tomato_red_c01_alb.png",
+      "Textures/t_tomato_red_c01_nor.png": "food_produce_tomato_c01/simready_usd/Textures/t_tomato_red_c01_nor.png",
+      "Textures/t_tomato_red_c01_orm.png": "food_produce_tomato_c01/simready_usd/Textures/t_tomato_red_c01_orm.png",
+      "payloads/MuJoCo/disabled.usda": "food_produce_tomato_c01/simready_usd/payloads/MuJoCo/disabled.usda",
+      "payloads/MuJoCo/enabled.usda": "food_produce_tomato_c01/simready_usd/payloads/MuJoCo/enabled.usda",
+      "payloads/Newton/disabled.usda": "food_produce_tomato_c01/simready_usd/payloads/Newton/disabled.usda",
+      "payloads/Newton/enabled.usda": "food_produce_tomato_c01/simready_usd/payloads/Newton/enabled.usda",
+      "payloads/PhysX/disabled.usda": "food_produce_tomato_c01/simready_usd/payloads/PhysX/disabled.usda",
+      "payloads/PhysX/enabled.usda": "food_produce_tomato_c01/simready_usd/payloads/PhysX/enabled.usda",
+      "payloads/Physics/physics.usda": "food_produce_tomato_c01/simready_usd/payloads/Physics/physics.usda",
+      "payloads/base.usda": "food_produce_tomato_c01/simready_usd/payloads/base.usda",
+      "payloads/geometries.usd": "food_produce_tomato_c01/simready_usd/payloads/geometries.usd",
+      "payloads/instances.usda": "food_produce_tomato_c01/simready_usd/payloads/instances.usda",
+      "payloads/instances_mujoco.usda": "food_produce_tomato_c01/simready_usd/payloads/instances_mujoco.usda",
+      "payloads/instances_newton.usda": "food_produce_tomato_c01/simready_usd/payloads/instances_newton.usda",
+      "payloads/instances_physx.usda": "food_produce_tomato_c01/simready_usd/payloads/instances_physx.usda",
+      "payloads/materials.usda": "food_produce_tomato_c01/simready_usd/payloads/materials.usda (changed: each Material names its library surface (score:surface))",
+      "sm_food_produce_tomato_c01_01.usd": "food_produce_tomato_c01/simready_usd/sm_food_produce_tomato_c01_01.usd",
+      "source_assets/OmniPBR.mdl": "food_produce_tomato_c01/simready_usd/source_assets/OmniPBR.mdl",
+      "source_assets/OmniPBRBase.mdl": "food_produce_tomato_c01/simready_usd/source_assets/OmniPBRBase.mdl",
+      "source_assets/OmniPBR_ClearCoat.mdl": "food_produce_tomato_c01/simready_usd/source_assets/OmniPBR_ClearCoat.mdl"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "food_produce_tomato_c01: its model, physics and maps"
+      },
+      {
+        "by": "score",
+        "what": "the library surface each material names (score:surface)"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: food_produce_tomato_c01",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/simready_m_opaque_organic_tomato_c01_3363e007@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "description": [
+      "tomato"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "simulators": [
+      "mujoco",
+      "newton",
+      "physx"
+    ],
+    "wikidata_class": [
+      "tomato"
+    ],
+    "wikidata_qcode": [
+      "Q20638126"
+    ]
+  },
+  "title": "food_produce_tomato_c01",
+  "usd": {
+    "default_prim": "/RootNode",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/simready_food_produce_tomato_c01/1/sm_food_produce_tomato_c01_01.usd",
+    "root": "sm_food_produce_tomato_c01_01.usd",
+    "up_axis": "Z",
+    "use": "reference"
+  },
+  "version": 1
+}

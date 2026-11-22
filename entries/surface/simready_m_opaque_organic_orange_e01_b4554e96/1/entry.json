@@ -1,0 +1,81 @@
+{
+  "address": "surface/simready_m_opaque_organic_orange_e01_b4554e96@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 293988,
+      "role": "texture",
+      "sha256": "08bbda318fa869052c91fb0dcc226971e45e061fdef2b4b85b2378b6daec3c72"
+    },
+    "material.usda": {
+      "bytes": 2482,
+      "role": "usd",
+      "sha256": "7f1e6b2a8b80bad859639f83d8463dbbb1db908087d40ba40fcee1445becb3ed"
+    },
+    "normal.png": {
+      "bytes": 332954,
+      "role": "texture",
+      "sha256": "5ba4ddc914454e7c615e9813c3731941e43cb4122716089bd07d577549af4a95"
+    },
+    "orm.png": {
+      "bytes": 256446,
+      "role": "texture",
+      "sha256": "78e568984b0eba7c85dc3114ffc5d69cec3de9f8f2c4182b08c6a0a1dbcca52d"
+    },
+    "surface.json": {
+      "bytes": 982,
+      "role": "record",
+      "sha256": "9f29e52bb1201b4829ec769568892fa31b2f98c9b2e25c0a25d18a60c5c67585"
+    }
+  },
+  "id": "simready_m_opaque_organic_orange_e01_b4554e96",
+  "kind": "surface",
+  "licence": {
+    "credit": "food_produce_orange_e01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "food_produce_orange_e01/simready_usd/Textures/t_orange_orange_e01_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "food_produce_orange_e01/simready_usd/Textures/t_orange_orange_e01_nor.png",
+      "orm.png": "food_produce_orange_e01/simready_usd/Textures/t_orange_orange_e01_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__organic__orange_e01 maps of food_produce_orange_e01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: food_produce_orange_e01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "b4554e961b3ce54a7e10e0206213e3200f8a8164bcdb40074be2d78d33fa77fc"
+    ],
+    "painted_for": [
+      "food_produce_orange_e01"
+    ]
+  },
+  "title": "m_opaque__organic__orange_e01",
+  "usd": null,
+  "version": 1
+}

@@ -1,0 +1,75 @@
+{
+  "address": "surface/simready_m_trans_glass_olive_oil_a01_16be2c71@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 1706352,
+      "role": "texture",
+      "sha256": "413200a759b3c8c5edff939042d1f5333bc16c93cbd2e6335887e921050cc4c5"
+    },
+    "material.usda": {
+      "bytes": 1812,
+      "role": "usd",
+      "sha256": "ef85b2a2c80ada6921d48c1857222ee0e869ea8c76ff9a3bfd8bc87e7b08a30a"
+    },
+    "roughness.png": {
+      "bytes": 2221637,
+      "role": "texture",
+      "sha256": "a09e1a6e7f27482167a60017a12a1dd82f911cfe8c8454da4494e4cc52b28a18"
+    },
+    "surface.json": {
+      "bytes": 1012,
+      "role": "record",
+      "sha256": "c8c7458f2b5504c2cefebff2fa16466b1f1e2e236cf9f9dbe11c9c4c0dadbb5b"
+    }
+  },
+  "id": "simready_m_trans_glass_olive_oil_a01_16be2c71",
+  "kind": "surface",
+  "licence": {
+    "credit": "grocery_condiment_oliveOil_bottled_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "grocery_condiment_oliveOil_bottled_a01/simready_usd/Textures/t_grocery_condiment_oliveOil_bottled_a01_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "roughness.png": "grocery_condiment_oliveOil_bottled_a01/simready_usd/Textures/t_grocery_condiment_oliveOil_bottled_a01_rou.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_trans__glass__oliveOil_a01 maps of grocery_condiment_oliveOil_bottled_a01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: grocery_condiment_oliveOil_bottled_a01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "16be2c711c790b7436c7a9fc4b55604d9889e734681ce44b07bc96756413e81e"
+    ],
+    "painted_for": [
+      "grocery_condiment_oliveOil_bottled_a01"
+    ]
+  },
+  "title": "m_trans__glass__oliveOil_a01",
+  "usd": null,
+  "version": 1
+}

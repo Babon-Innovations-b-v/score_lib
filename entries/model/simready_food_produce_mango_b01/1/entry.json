@@ -1,0 +1,195 @@
+{
+  "address": "model/simready_food_produce_mango_b01@1",
+  "files": {
+    "Textures/t_mango_yellow_b01_alb.png": {
+      "bytes": 381465,
+      "role": "texture",
+      "sha256": "8f5582c785cec9998e09d3e8c54df9ab202baf47aef30a1b323fd5721965e70d"
+    },
+    "Textures/t_mango_yellow_b01_nor.png": {
+      "bytes": 407605,
+      "role": "texture",
+      "sha256": "8ee677a80e5547060083e8305bf3939a33ccd8db2a5f07151a82a1ec415db34b"
+    },
+    "Textures/t_mango_yellow_b01_orm.png": {
+      "bytes": 166508,
+      "role": "texture",
+      "sha256": "d529737cf4c4f73055f35b6732d490909463653ff96c741bb32aee5ab4cea68c"
+    },
+    "payloads/MuJoCo/disabled.usda": {
+      "bytes": 4295,
+      "role": "usd",
+      "sha256": "9957e200631bd8bde105df9e0ed3053f79ccea1a6bc28cb64b7b74f88bfc7cb5"
+    },
+    "payloads/MuJoCo/enabled.usda": {
+      "bytes": 5313,
+      "role": "usd",
+      "sha256": "76971b140b92a6b02e9b40e7bddecf67dbec4b82c1cb20653fcdb63edbae1a33"
+    },
+    "payloads/Newton/disabled.usda": {
+      "bytes": 4295,
+      "role": "usd",
+      "sha256": "9957e200631bd8bde105df9e0ed3053f79ccea1a6bc28cb64b7b74f88bfc7cb5"
+    },
+    "payloads/Newton/enabled.usda": {
+      "bytes": 4982,
+      "role": "usd",
+      "sha256": "aeb228c8378f02d57eef551639be5f207f6f3b803b3b4776e0417b45e0c01677"
+    },
+    "payloads/PhysX/disabled.usda": {
+      "bytes": 4295,
+      "role": "usd",
+      "sha256": "9957e200631bd8bde105df9e0ed3053f79ccea1a6bc28cb64b7b74f88bfc7cb5"
+    },
+    "payloads/PhysX/enabled.usda": {
+      "bytes": 4695,
+      "role": "usd",
+      "sha256": "d0db953342ddf9a53e69082e8b39b7a68078c681cf76b6e98bfe9099cbd8f843"
+    },
+    "payloads/Physics/physics.usda": {
+      "bytes": 4830,
+      "role": "usd",
+      "sha256": "5b621a2e0620368ae5d01ac04d2c78336d9a25b824f04084e283dd2c68658848"
+    },
+    "payloads/base.usda": {
+      "bytes": 9987,
+      "role": "usd",
+      "sha256": "d50cbe01415faba02cb2b84a832d97438d84183e295c3517d8b113d8ed86afac"
+    },
+    "payloads/geometries.usd": {
+      "bytes": 251261,
+      "role": "usd",
+      "sha256": "bce01bffe54245adefd76abdd556fee7046a5bff6393222c8a278720d904240a"
+    },
+    "payloads/instances.usda": {
+      "bytes": 5350,
+      "role": "usd",
+      "sha256": "5aad4b04b446d007f03900b77126bc66ec31b95f4784208e801b4d0f144067f8"
+    },
+    "payloads/instances_mujoco.usda": {
+      "bytes": 5622,
+      "role": "usd",
+      "sha256": "f583cbffa500a5ad85a469ca5382c6a97beec805d40e18df07ff90cb238ba767"
+    },
+    "payloads/instances_newton.usda": {
+      "bytes": 5473,
+      "role": "usd",
+      "sha256": "579534759552494350272eb62e95b875864b3b0870600eec8c798cf46e13da70"
+    },
+    "payloads/instances_physx.usda": {
+      "bytes": 5490,
+      "role": "usd",
+      "sha256": "21fd575d5c890c899ea31326169d0d211eb10285790fc518fd0cac91f8d38650"
+    },
+    "payloads/materials.usda": {
+      "bytes": 9563,
+      "role": "usd",
+      "sha256": "eb62557e382cbd50e6846e33bac2de2642bb3172b167995727529e8ef4042a4d"
+    },
+    "sm_food_produce_mango_b01_01.usd": {
+      "bytes": 21619,
+      "role": "usd",
+      "sha256": "606564644e579d56cd570865dbc7ae501cde10cbf7c9e9950f05d9fcad8d7630"
+    },
+    "source_assets/OmniPBR.mdl": {
+      "bytes": 16010,
+      "role": "code",
+      "sha256": "6e6b3acbccd236e21a6c29964a431d2a53e77251cc6b8b1bc975eb1c62da1781"
+    },
+    "source_assets/OmniPBRBase.mdl": {
+      "bytes": 19369,
+      "role": "code",
+      "sha256": "a8fd9fe174e91892e94d06da90ba453a124024c2ce2c033be9d82c9e2f76a3b7"
+    },
+    "source_assets/OmniPBR_ClearCoat.mdl": {
+      "bytes": 29789,
+      "role": "code",
+      "sha256": "d84c5ba482561c0eaea2e0c5b607358af549e36cd921773462f92dbc4f32cbc3"
+    }
+  },
+  "id": "simready_food_produce_mango_b01",
+  "kind": "model",
+  "licence": {
+    "credit": "food_produce_mango_b01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0; changed: each Material names its library surface (score:surface)",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "Textures/t_mango_yellow_b01_alb.png": "food_produce_mango_b01/simready_usd/Textures/t_mango_yellow_b01_alb.png",
+      "Textures/t_mango_yellow_b01_nor.png": "food_produce_mango_b01/simready_usd/Textures/t_mango_yellow_b01_nor.png",
+      "Textures/t_mango_yellow_b01_orm.png": "food_produce_mango_b01/simready_usd/Textures/t_mango_yellow_b01_orm.png",
+      "payloads/MuJoCo/disabled.usda": "food_produce_mango_b01/simready_usd/payloads/MuJoCo/disabled.usda",
+      "payloads/MuJoCo/enabled.usda": "food_produce_mango_b01/simready_usd/payloads/MuJoCo/enabled.usda",
+      "payloads/Newton/disabled.usda": "food_produce_mango_b01/simready_usd/payloads/Newton/disabled.usda",
+      "payloads/Newton/enabled.usda": "food_produce_mango_b01/simready_usd/payloads/Newton/enabled.usda",
+      "payloads/PhysX/disabled.usda": "food_produce_mango_b01/simready_usd/payloads/PhysX/disabled.usda",
+      "payloads/PhysX/enabled.usda": "food_produce_mango_b01/simready_usd/payloads/PhysX/enabled.usda",
+      "payloads/Physics/physics.usda": "food_produce_mango_b01/simready_usd/payloads/Physics/physics.usda",
+      "payloads/base.usda": "food_produce_mango_b01/simready_usd/payloads/base.usda",
+      "payloads/geometries.usd": "food_produce_mango_b01/simready_usd/payloads/geometries.usd",
+      "payloads/instances.usda": "food_produce_mango_b01/simready_usd/payloads/instances.usda",
+      "payloads/instances_mujoco.usda": "food_produce_mango_b01/simready_usd/payloads/instances_mujoco.usda",
+      "payloads/instances_newton.usda": "food_produce_mango_b01/simready_usd/payloads/instances_newton.usda",
+      "payloads/instances_physx.usda": "food_produce_mango_b01/simready_usd/payloads/instances_physx.usda",
+      "payloads/materials.usda": "food_produce_mango_b01/simready_usd/payloads/materials.usda (changed: each Material names its library surface (score:surface))",
+      "sm_food_produce_mango_b01_01.usd": "food_produce_mango_b01/simready_usd/sm_food_produce_mango_b01_01.usd",
+      "source_assets/OmniPBR.mdl": "food_produce_mango_b01/simready_usd/source_assets/OmniPBR.mdl",
+      "source_assets/OmniPBRBase.mdl": "food_produce_mango_b01/simready_usd/source_assets/OmniPBRBase.mdl",
+      "source_assets/OmniPBR_ClearCoat.mdl": "food_produce_mango_b01/simready_usd/source_assets/OmniPBR_ClearCoat.mdl"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "food_produce_mango_b01: its model, physics and maps"
+      },
+      {
+        "by": "score",
+        "what": "the library surface each material names (score:surface)"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: food_produce_mango_b01",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/simready_m_opaque_organic_mango_b01_990d10bb@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "description": [
+      "mango fruit"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "simulators": [
+      "mujoco",
+      "newton",
+      "physx"
+    ],
+    "wikidata_class": [
+      "mango"
+    ],
+    "wikidata_qcode": [
+      "Q169"
+    ]
+  },
+  "title": "food_produce_mango_b01",
+  "usd": {
+    "default_prim": "/RootNode",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/simready_food_produce_mango_b01/1/sm_food_produce_mango_b01_01.usd",
+    "root": "sm_food_produce_mango_b01_01.usd",
+    "up_axis": "Z",
+    "use": "reference"
+  },
+  "version": 1
+}

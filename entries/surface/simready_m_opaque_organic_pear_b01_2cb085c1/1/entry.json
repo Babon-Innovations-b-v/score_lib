@@ -1,0 +1,81 @@
+{
+  "address": "surface/simready_m_opaque_organic_pear_b01_2cb085c1@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 275828,
+      "role": "texture",
+      "sha256": "2be51ee72e958ecaa49a5d36e19b6f20e8cf9cdfa2fbeaa26575f75ae51ab897"
+    },
+    "material.usda": {
+      "bytes": 2458,
+      "role": "usd",
+      "sha256": "2e9726dd870e6847daee9a7a8fa855e5263a038ee4c3b47b5982788e5cb94743"
+    },
+    "normal.png": {
+      "bytes": 224191,
+      "role": "texture",
+      "sha256": "33255386774fdb26edcf2c17887a3806ef7ec6337de55e82ed69b24605759992"
+    },
+    "orm.png": {
+      "bytes": 173669,
+      "role": "texture",
+      "sha256": "591a694fd45772f5d86cb91dec4892cb5ca252df0218618c460308b90be4dad3"
+    },
+    "surface.json": {
+      "bytes": 980,
+      "role": "record",
+      "sha256": "43c64f9dd3c7cb18679d43aba220417dbd63fb604d2dae665dc27f3e5b28357e"
+    }
+  },
+  "id": "simready_m_opaque_organic_pear_b01_2cb085c1",
+  "kind": "surface",
+  "licence": {
+    "credit": "food_produce_pear_b01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "food_produce_pear_b01/simready_usd/Textures/t_pear_green_b01_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "food_produce_pear_b01/simready_usd/Textures/t_pear_green_b01_nor.png",
+      "orm.png": "food_produce_pear_b01/simready_usd/Textures/t_pear_green_b01_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__organic__pear_b01 maps of food_produce_pear_b01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: food_produce_pear_b01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "2cb085c16383ec319d10d63536192dd8cb9d6b3b481d9f6692a49cb0fb6da471"
+    ],
+    "painted_for": [
+      "food_produce_pear_b01"
+    ]
+  },
+  "title": "m_opaque__organic__pear_b01",
+  "usd": null,
+  "version": 1
+}

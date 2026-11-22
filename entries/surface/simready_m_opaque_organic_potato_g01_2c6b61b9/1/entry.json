@@ -1,0 +1,81 @@
+{
+  "address": "surface/simready_m_opaque_organic_potato_g01_2c6b61b9@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 304765,
+      "role": "texture",
+      "sha256": "0eee885ff40b8243757a71cfb76f6a7e4e15966602d47e4099d03e9337ee87d0"
+    },
+    "material.usda": {
+      "bytes": 2482,
+      "role": "usd",
+      "sha256": "5ce9e2fe7315fd0417eb8d60eb5c44d69cc11c98cb74d7e17a1613316edaaeb5"
+    },
+    "normal.png": {
+      "bytes": 193756,
+      "role": "texture",
+      "sha256": "992c1fc73076abccc3981251c4f310923cbb556a8efaf77f9b975a48389c329e"
+    },
+    "orm.png": {
+      "bytes": 207080,
+      "role": "texture",
+      "sha256": "ab5ab0b4970b44e0315571d0706ce815db305f709478a8034b82c2438a86c480"
+    },
+    "surface.json": {
+      "bytes": 982,
+      "role": "record",
+      "sha256": "bf449a88fe395688f43038edacb1517a5d3a4d9706b86ac933db83f5b3d17ba0"
+    }
+  },
+  "id": "simready_m_opaque_organic_potato_g01_2c6b61b9",
+  "kind": "surface",
+  "licence": {
+    "credit": "food_produce_potato_h01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "food_produce_potato_h01/simready_usd/Textures/t_potato_brown_h01_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "food_produce_potato_h01/simready_usd/Textures/t_potato_brown_h01_nor.png",
+      "orm.png": "food_produce_potato_h01/simready_usd/Textures/t_potato_brown_h01_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__organic__potato_g01 maps of food_produce_potato_h01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: food_produce_potato_h01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "2c6b61b9cc28bce1b07525997b16f9938dc8a9af400c8fd63c8b6909ffd17cab"
+    ],
+    "painted_for": [
+      "food_produce_potato_h01"
+    ]
+  },
+  "title": "m_opaque__organic__potato_g01",
+  "usd": null,
+  "version": 1
+}

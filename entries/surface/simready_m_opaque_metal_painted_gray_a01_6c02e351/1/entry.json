@@ -1,0 +1,78 @@
+{
+  "address": "surface/simready_m_opaque_metal_painted_gray_a01_6c02e351@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 7757947,
+      "role": "texture",
+      "sha256": "c38363680806c9aae7ef5823b5ef844fc6cb171546a0eb6450ffb73a9912aad0"
+    },
+    "material.usda": {
+      "bytes": 2567,
+      "role": "usd",
+      "sha256": "6d0ebde3117cd665577ce1192d14e93cc0f4d38fb8f230b2a1dabf8b1e29f8e1"
+    },
+    "normal.png": {
+      "bytes": 10190247,
+      "role": "texture",
+      "sha256": "ff76bc7d1662a539bce674aabd2fb2659edbd4dc49276c9167b031ab0ef262fe"
+    },
+    "orm.png": {
+      "bytes": 9121020,
+      "role": "texture",
+      "sha256": "ae854dea3ea7c49eeaf0b07764e74cb54d464543a376d925ac16ba3b9bc595d3"
+    },
+    "surface.json": {
+      "bytes": 817,
+      "role": "record",
+      "sha256": "c7bc8c4698ccb81be125e035fa89651e4545cd25ea57071bc703c0ef1afb4464"
+    }
+  },
+  "id": "simready_m_opaque_metal_painted_gray_a01_6c02e351",
+  "kind": "surface",
+  "licence": {
+    "credit": "furniture_workbench_standard_e01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "furniture_workbench_standard_e01/simready_usd/Textures/t_metal_painted_gray_a01_tile_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "furniture_workbench_standard_e01/simready_usd/Textures/t_metal_painted_gray_a01_tile_nor.png",
+      "orm.png": "furniture_workbench_standard_e01/simready_usd/Textures/t_metal_painted_gray_a01_tile_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__metal__painted_gray_a01 maps of furniture_workbench_standard_e01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: furniture_workbench_standard_e01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "6c02e351f905c23dc452b0e52f79225c3cfdd43a66eed9ad73fe633db6451989"
+    ]
+  },
+  "title": "m_opaque__metal__painted_gray_a01",
+  "usd": null,
+  "version": 1
+}

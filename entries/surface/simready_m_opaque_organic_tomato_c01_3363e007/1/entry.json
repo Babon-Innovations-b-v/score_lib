@@ -1,0 +1,81 @@
+{
+  "address": "surface/simready_m_opaque_organic_tomato_c01_3363e007@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 320481,
+      "role": "texture",
+      "sha256": "eaffdf7a036434a4dcd3c30e1f7cf937682fcd8bdf102e1728b479e8a05d34a8"
+    },
+    "material.usda": {
+      "bytes": 2482,
+      "role": "usd",
+      "sha256": "aee205cfe207fb830adbb85b6477656d8226668227af467945e1b80183b8b51a"
+    },
+    "normal.png": {
+      "bytes": 269004,
+      "role": "texture",
+      "sha256": "d325378bcd3b38482006abdb1b123088bb167b772089d7d7087f51df738428df"
+    },
+    "orm.png": {
+      "bytes": 292807,
+      "role": "texture",
+      "sha256": "8dbee2cf4d04f20a45370e3f25dac3dede1f243072d015b1383e483635fa7e92"
+    },
+    "surface.json": {
+      "bytes": 982,
+      "role": "record",
+      "sha256": "14633c2e14c589ad64737d48f9411e685fd620a310c57d55acf7978634b7c2fa"
+    }
+  },
+  "id": "simready_m_opaque_organic_tomato_c01_3363e007",
+  "kind": "surface",
+  "licence": {
+    "credit": "food_produce_tomato_c01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "food_produce_tomato_c01/simready_usd/Textures/t_tomato_red_c01_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "food_produce_tomato_c01/simready_usd/Textures/t_tomato_red_c01_nor.png",
+      "orm.png": "food_produce_tomato_c01/simready_usd/Textures/t_tomato_red_c01_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__organic__tomato_c01 maps of food_produce_tomato_c01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: food_produce_tomato_c01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "3363e00738d4ad6b342d44026b0920b8743ab972a00cd894cbb2b81915494ba0"
+    ],
+    "painted_for": [
+      "food_produce_tomato_c01"
+    ]
+  },
+  "title": "m_opaque__organic__tomato_c01",
+  "usd": null,
+  "version": 1
+}
