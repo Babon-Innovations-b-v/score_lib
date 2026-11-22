@@ -9,7 +9,7 @@ from score_lib import index, locks
 from score_lib.blobs.local import LocalBlobStore
 from score_lib import schema
 from score_lib.admission import Sources
-from score_lib.verify import verify
+from score_lib.verify import lost_notes, verify
 
 
 def blobs():
@@ -235,3 +235,29 @@ def test_a_withdrawn_entry_names_its_replacement(world):
         entries.write(world.root, dict(record, replaced_by=target))
         index.rebuild(world.root)
         assert any(each.startswith(f"{old}: ") and fault in each for each in messages(world)), (target, messages(world))
+
+
+def test_a_withdrawn_entry_whose_bytes_are_lost_is_a_note_not_a_failure(world):
+    """Break: verify.check_blobs not skipping a lost entry (its missing blob fails verify); lost_notes giving none (the
+    loss goes unsaid); `lost` left out of entry.UNSTAMPED (its locks row's digest no longer holds); the schema's
+    `lost` rule dropped (a current entry marked lost by hand passes); locks.mark_lost taking a current entry."""
+    world.export()
+    address = "sound/hum@1"
+    with pytest.raises(locks.LockRefused, match="only a withdrawn entry"):
+        locks.mark_lost(world.root, address, "its blobs are gone")
+    locks.withdraw(world.root, address)
+    rows = locks.read(world.root)
+    record = locks.mark_lost(world.root, address, "none of its blobs is on any store", date="2026-11-22")
+    index.rebuild(world.root)
+    assert locks.read(world.root) == rows and rows[-1]["digest"] == entries.digest(record)
+    path = blobs().path(record["files"]["sound.json"]["sha256"])
+    path.chmod(0o644)
+    path.unlink()
+    assert messages(world) == []
+    notes = lost_notes(world.root)
+    assert notes == [(address, f"bytes lost since 2026-11-22: none of its blobs is on any store "
+                               f"({len(record['files'])} files, kept for traceability)")], notes
+    current = entries.load_address(world.root, "kit/room@1")
+    rewrite_entry(world, "kit", "room", lambda changed: changed.update(lost={"date": "2026-11-22", "why": "by hand"}))
+    assert any(each.startswith("kit/room@1: schema") for each in messages(world)), messages(world)
+    assert lost_notes(world.root) == notes and current["state"] != "withdrawn"

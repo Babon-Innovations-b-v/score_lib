@@ -18,8 +18,9 @@ ADDRESS_PATTERN = re.compile(r"^(?P<kind>[a-z]+)/(?P<id>[a-z0-9_]+(\.[a-z0-9_]+)
 # again without its digest moving.
 QUALITY = ("score", "score_parts", "refine_options", "score_made")
 # `replaced_by` points a withdrawn entry at the entry that replaces it (score #155); naming the replacement later never
-# moves a locked entry's digest.
-UNSTAMPED = ("state", "locked", "replaced_by") + QUALITY
+# moves a locked entry's digest. `lost` records that a withdrawn entry's bytes are gone for good (its date and why, score
+# #156): kept for traceability, noted by verify, and outside the digest so writing it never moves the locks row.
+UNSTAMPED = ("state", "locked", "replaced_by", "lost") + QUALITY
 
 
 def parse_address(address):

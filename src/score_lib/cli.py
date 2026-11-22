@@ -73,6 +73,13 @@ def command_withdraw(options):
     print(f"withdrawn {options.address}" + (f", replaced by {options.replaced_by}" if options.replaced_by else ""))
 
 
+def command_lost(options):
+    from score_lib import index, locks
+    record = locks.mark_lost(options.root, options.address, options.why)
+    index.rebuild(options.root)
+    print(f"{options.address}: its bytes recorded as lost on {record['lost']['date']}")
+
+
 def command_fetch(options):
     from score_lib.fetch import MissingEntry, MissingFile, fetch
     try:
@@ -170,9 +177,11 @@ def command_index(options):
 
 
 def command_verify(options):
-    from score_lib.verify import verify
+    from score_lib.verify import lost_notes, verify
     failures = verify(options.root, blob_store(reading=True), options.address or None, options.deep, not options.no_usd,
                       options.contribution_pending)
+    for address, message in lost_notes(options.root, options.address or None):
+        print(f"NOTE {address}: {message}")
     for address, message in failures:
         print(f"FAIL {address}: {message}")
     print(f"{len(failures)} failures")
@@ -350,6 +359,10 @@ def parser():
     withdraw.add_argument("--replaced-by", help="the entry that replaces it (<kind>/<id>@<version>); also on an entry "
                                                 "already withdrawn")
     withdraw.set_defaults(handle=command_withdraw)
+    lost = commands.add_parser("lost", help="record that a withdrawn entry's bytes are lost for good (kept for its trace)")
+    lost.add_argument("address")
+    lost.add_argument("--why", required=True, help="why its bytes are gone and where they were looked for")
+    lost.set_defaults(handle=command_lost)
     fetched = commands.add_parser("fetch", help="materialise entries into a folder")
     fetched.add_argument("address", nargs="+")
     fetched.add_argument("--into", required=True)

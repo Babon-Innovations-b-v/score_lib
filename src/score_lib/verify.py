@@ -80,10 +80,12 @@ def listed_fault(blobs, described):
 
 def check_blobs(records, blobs, deep):
     """4. every blob present, its listed size and sha256 its record's (a store that lists them); with deep (always for
-    a local store) its bytes hash to its name."""
+    a local store) its bytes hash to its name. A withdrawn entry whose bytes are recorded as lost is lost_notes'."""
     failures = []
     checked = set()
     for record in records:
+        if lost(record):
+            continue
         for name, described in sorted(record["files"].items()):
             sha = described["sha256"]
             if not blobs.has(sha):
@@ -99,6 +101,18 @@ def check_blobs(records, blobs, deep):
                 except BadBlob as error:
                     failures.append((record["address"], f"blob corrupt: {name}: {error}"))
     return failures
+
+
+def lost(record):
+    """True for a withdrawn entry whose bytes are recorded as lost (`lost`); on any other entry the schema refuses it."""
+    return record.get("state") == "withdrawn" and bool(record.get("lost"))
+
+
+def lost_notes(root, addresses=None):
+    """A note for every withdrawn entry whose bytes are recorded as lost, as (address, message): never a failure."""
+    return [(record["address"], f"bytes lost since {record['lost']['date']}: {record['lost']['why']} "
+                                f"({len(record['files'])} files, kept for traceability)")
+            for record in selected(root, addresses) if lost(record)]
 
 
 def check_blob(blobs, sha):

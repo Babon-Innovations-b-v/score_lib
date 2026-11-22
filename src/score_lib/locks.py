@@ -98,6 +98,19 @@ def withdraw(root, address, date=None, replaced_by=None):
     return record
 
 
+def mark_lost(root, address, why, date=None):
+    """A withdrawn entry's bytes recorded as lost for good (`lost`: {date, why}); kept for traceability, its record
+    and locks row as they were. Refused for an entry that is not withdrawn: a current entry's bytes are never lost."""
+    record = entries.load_address(root, address)
+    if record is None or record["state"] != "withdrawn":
+        raise LockRefused(f"{address}: only a withdrawn entry's bytes can be recorded as lost")
+    if not why.strip():
+        raise LockRefused(f"{address}: say why its bytes are lost")
+    record["lost"] = {"date": date or today(), "why": why}
+    entries.write(root, record)
+    return record
+
+
 def lock_many(root, addresses, date=None):
     """Lock several drafts in an order that locks what each requires first; the index rebuilt."""
     pending = list(addresses)

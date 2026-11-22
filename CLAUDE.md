@@ -30,7 +30,8 @@ A library of reusable parts of SCORE worlds: records in git (`entries/`), bytes 
 ## Where things are
 
 - `src/score_lib/export/<kind>.py`: one exporter per kind; `export/run.py` the order, versions and writes.
-- `src/score_lib/verify.py`: every check of `score-lib verify`.
+- `src/score_lib/verify.py`: every check of `score-lib verify`; a withdrawn entry whose bytes are gone for good carries
+  a `lost` block (`score-lib lost <address> --why`, score #156), which verify prints as a note, never a failure.
 - `src/score_lib/take_in.py`: `score-lib take-in`, loose made files (no store outputs) in as draft entries; a `take`
   entry is one Pixal3D take whole with its `.svviews` camera folder; `--save` commits and pushes what it wrote.
 - `src/score_lib/kit_parts.py`: `score-lib kit-parts`, taken-in kit pieces and models whose GeomSubset parts had no
