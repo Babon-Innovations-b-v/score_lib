@@ -267,3 +267,36 @@ def test_a_sound_written_again_keeps_its_taken_in_takes(world, tmp_path):
     again = entries.load_address(world.root, "sound/hum@1")
     assert again["files"][name] == record["files"][name] and row in again["provenance"]["made_with"]
     assert again["provenance"]["files_from"][name] == "sound/recordings/places/hum.ogg"
+
+
+def body_file(far_shown):
+    """A body.glb whose far body hangs under its armature with the near one (as score wrote them before #156) or stands
+    out of its default scene."""
+    document = {"asset": {"version": "2.0"}, "scene": 0, "scenes": [{"nodes": [0]}],
+                "nodes": [{"name": "Person", "children": [1, 2, 3] if far_shown else [1, 3]}, {"name": "Root"},
+                          {"name": "far", "mesh": 0, "skin": 0}, {"name": "made", "mesh": 1, "skin": 0}]}
+    if not far_shown:
+        document["scenes"] = [{"name": "near", "nodes": [0]}, {"name": "levels", "nodes": [0, 2]}]
+    text = json.dumps(document).encode()
+    text += b" " * (-len(text) % 4)
+    rest = (8).to_bytes(4, "little") + b"BIN\x00" + bytes(8)
+    body = len(text).to_bytes(4, "little") + b"JSON" + text + rest
+    return b"glTF" + (2).to_bytes(4, "little") + (12 + len(body)).to_bytes(4, "little") + body
+
+
+def test_a_body_is_carried_with_its_far_body_out_of_its_default_scene(world):
+    from score_lib.export import character
+    old, apart = body_file(True), body_file(False)
+    stored(world, "people-dress-crew-made", {"body.glb": old, "look.json": b"{}"})
+    stored(world, "people-dress-pilot-made", {"body.glb": apart, "look.json": b"{}"})
+    world.export()
+    crew, pilot = (entries.load_address(world.root, f"character/dress_{name}_made@1") for name in ("crew", "pilot"))
+    store = LocalBlobStore(os.environ["SCORE_LIB_BLOBS_DIR"])
+    document, rest = character.read_glb(store.path(crew["files"]["body.glb"]["sha256"]))
+    scenes = {scene["name"]: scene["nodes"] for scene in document["scenes"]}
+    assert scenes == {"near": [0], "levels": [0, 2]} and document["nodes"][0]["children"] == [1, 3]
+    assert document["nodes"][3]["extensions"] == {"MSFT_lod": {"ids": [2]}} and rest == old[-len(rest):]
+    assert crew["provenance"]["files_from"]["body.glb"] == {"path": "body.glb", "sha256": sha256(old)}
+    assert pilot["files"]["body.glb"]["sha256"] == sha256(apart) and "files_from" not in pilot["provenance"]
+    again = world.export()["kinds"]["character"]["counts"]
+    assert again["unchanged"] == 2 and again["changed draft"] == 0, again
