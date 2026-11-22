@@ -126,6 +126,17 @@ def command_take_in(options):
     raise SystemExit(1 if report["refused"] or any(not saved["pushed"] for saved in saves) else 0)
 
 
+def command_adopted(options):
+    from score_lib import adopted
+    report = adopted.match(options.root, source_ids=options.source or None)
+    if options.apply:
+        report["withdrawn"] = adopted.apply(options.root, report)
+    adopted.write_report(options.proposals, report)
+    counts = report["counts"]
+    print(f"accepted {counts['accepted']}, refused {counts['refused']}, no match {counts['no match']}"
+          + (f", withdrawn {len(report['withdrawn'])}" if options.apply else "") + f"; proposals in {options.proposals}")
+
+
 def command_test(options):
     import tempfile
     from score_lib import algorithms
@@ -349,6 +360,16 @@ def parser():
     taken.add_argument("--save", action="store_true",
                        help="under the handover's lock, commit and push the entries written and the index")
     taken.set_defaults(handle=command_take_in)
+    adopting = commands.add_parser("adopted", help="an adopted set against our older entries: `match` proposes the "
+                                                   "adopted entry each older model and surface overlaps (adopted.py)")
+    adopting.add_argument("action", choices=["match"])
+    adopting.add_argument("--source", action="append", help="the adopted set's config/sources.toml row id "
+                                                            "(repeatable; default every row with a take_in table)")
+    adopting.add_argument("--proposals", default="adopted-proposals.json",
+                          help="where to write the proposals (every older entry's row, its pair, score and reason)")
+    adopting.add_argument("--apply", action="store_true",
+                          help="withdraw each accepted pair's older entry naming its replacement, and rebuild the index")
+    adopting.set_defaults(handle=command_adopted)
     tested = commands.add_parser("test", help="run an algorithm entry's tests")
     tested.add_argument("address")
     tested.add_argument("--score", default=os.environ.get("SCORE_REPO", ""),

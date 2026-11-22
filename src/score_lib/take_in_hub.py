@@ -550,6 +550,8 @@ class Run:
             made_with.append({"what": f"the {material['name']} settings of {asset}", "source": self.row["id"]})
         listed = {"kind": "surface", "id": entry_id, "title": material["name"], "files": files,
                   "made_with": made_with, "tags": {"maps_key": [key], "engine": ["usd"]}}
+        if not tiling:
+            listed["tags"]["painted_for"] = [asset]
         if material["maps"]:
             listed["licence"] = licence_of(self.row, self.source.repo, self.source.revision, asset)
         return listed
