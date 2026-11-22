@@ -215,9 +215,10 @@ from = "huggingface.co/datasets/nvidia/simready-assets at 99bb6c7c1247ff3a1f63e4
 
 # How `score-lib take-in hub` reads this source (take_in_hub.py): the dataset repository it lists, each asset's bill of
 # materials (every file's path, size and sha256) and root file list, the prefix of the entry ids it writes, and the
-# credit and licence words each entry's licence block carries.
+# credit and licence words each entry's licence block carries; `url` is where the repository is, as the credit says.
 [source.take_in]
 repo = "nvidia/simready-assets"
+url = "huggingface.co/datasets/{repo}"
 bom = ".metadata/com.nvidia.simready.packaging.bom.json"
 roots = ".metadata/com.nvidia.simready.root_usds.json"
 prefix = "simready"

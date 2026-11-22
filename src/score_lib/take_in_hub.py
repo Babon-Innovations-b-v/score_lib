@@ -4,7 +4,8 @@ taken in whole as draft entries (score #155), its bytes copied into the blob sto
 The source is a `config/sources.toml` row with a `take_in` table: the repository (`repo`), where each asset folder
 keeps its bill of materials (`bom`: {items: [{relative_path, size, hash: {sha256}}]}) and its root file list
 (`roots`: {entries: [<path>]}), the prefix of the ids it writes and the credit and licence words of each entry's
-licence block. The repository's company and name live in that row only.
+licence block, and where the repository is (`url`, a form naming `{repo}`). The repository's host, company and name
+live in that row only.
 
 Per asset folder, at the revision given (a 40-hex commit, never a branch):
 
@@ -15,10 +16,11 @@ Per asset folder, at the revision given (a 40-hex commit, never a branch):
 - one `surface` entry per distinct material, keyed by the sha256 of its maps (a material with no maps by its
   constants), shared by every model that uses the same maps: the maps under their role (`albedo.png`, `normal.png`,
   `orm.png`, ...), our own `material.usda` (a UsdPreviewSurface over them, ORM's green to roughness and blue to
-  metallic) and `surface.json` (the material's settings as the source gives them); a set painted for one model (its
+  metallic) and `surface.json` (the material's settings as the source gives them, its normal map's convention and
+  `tile_metres`, the metres one repeat of its maps covers on the asset); a set painted for one model (its
   maps unwrapped on that model's own UVs, no `tile` in their names) keeps its maps only, its recipe a written gap;
 - each of the model's own materials names its surface (`score:surface`, the USD attribute, written into the layer
-  that defines it; that change is marked on the file's files_from row).
+  that defines it; that change is marked on the file's files_from row and in the model's credit).
 
 Every entry carrying the source's bytes names its licence and credit (the top-level `licence` block). Bytes go from
 the source into a capped cache and from there into the blob store, and the cache is emptied after each put (the disk
@@ -63,6 +65,11 @@ INPUT_ROLES = {"diffuseColor": "albedo", "normal": "normal", "roughness": "rough
 SRGB_ROLES = ("albedo", "emission")
 LOOK_WRITTEN = "written by score-lib take-in hub (a UsdPreviewSurface over the maps)"
 RECORD_WRITTEN = "written by score-lib take-in hub (the material's settings as the source gives them)"
+NORMAL_WORDS = {"directx": ("directx", "_dx"), "opengl": ("opengl", "normalgl", "_gl")}  # a normal map's name says
+NO_MAPS = "no maps: a constant finish has no repeat"
+ONE_MODEL_TILE = "painted for one model: its maps cover that model once, not as a repeat"
+NO_MESH = "no mesh of the asset is bound to this material"
+NO_UV_AREA = "the meshes bound to this material have no UV area in the UV set it reads"
 ONE_MODEL_GAP = ("painted for one model: its maps are unwrapped on that model's own UVs, so no tiling recipe can look "
                  "the same; the maps are the surface")
 
@@ -144,16 +151,22 @@ def snake(name):
     return re.sub(r"_+", "_", re.sub(r"[^a-z0-9_]", "_", split)).strip("_")
 
 
-def credit_of(row, repo, revision, asset):
-    """The credit line of an entry carrying one asset's bytes."""
+def where_of(row, repo, revision):
+    """Where a revision of the source is: the row's `url` form filled with the repository, at the revision."""
+    return f"{row['take_in']['url'].format(repo=repo)} at revision {revision}"
+
+
+def credit_of(row, repo, revision, asset, changed=False):
+    """The credit line of an entry carrying one asset's bytes, its change marked when a layer was changed (CC BY 4.0
+    Section 3(a)(1)(B))."""
     words = row["take_in"]
-    return (f"{asset} by {words['creator']}, from huggingface.co/datasets/{repo} at revision {revision}, "
-            f"{words['licence_name']}")
+    credit = f"{asset} by {words['creator']}, from {where_of(row, repo, revision)}, {words['licence_name']}"
+    return f"{credit}; {CHANGED}" if changed else credit
 
 
-def licence_of(row, repo, revision, asset):
-    """The licence block of an entry carrying one asset's bytes."""
-    return {"id": row["licence"], "source": row["id"], "credit": credit_of(row, repo, revision, asset),
+def licence_of(row, repo, revision, asset, changed=False):
+    """The licence block of an entry carrying one asset's bytes (`changed` when a layer of it was changed)."""
+    return {"id": row["licence"], "source": row["id"], "credit": credit_of(row, repo, revision, asset, changed),
             "url": row["take_in"]["licence_url"]}
 
 
@@ -294,6 +307,26 @@ def preview_of(layer, material, layer_name, kept):
     return maps, constants
 
 
+def normal_convention_of(layer, material):
+    """(convention, assumed) of a Material spec's normal map: `directx` when the map's reader flips green (a negative
+    green scale) or its name says DirectX, `opengl` when its name says OpenGL, else ("opengl", True)."""
+    shaders = shaders_under(material).get("UsdPreviewSurface") or []
+    attribute = shaders[0].attributes["inputs:normal"] if shaders and "inputs:normal" in shaders[0].attributes else None
+    source = attribute.connectionPathList.GetAddedOrExplicitItems() if attribute else []
+    texture = layer.GetPrimAtPath(source[0].GetPrimPath()) if source else None
+    if texture is None:
+        return "opengl", True
+    scale = default_of(texture, "inputs:scale")
+    if scale is not None and scale[1] < 0:
+        return "directx", False
+    file_path = default_of(texture, "inputs:file")
+    name = posixpath.basename(file_path.path).lower() if file_path is not None else ""
+    for convention, words in NORMAL_WORDS.items():
+        if any(word in name for word in words):
+            return convention, False
+    return "opengl", True
+
+
 def settings_of(material):
     """The material's own settings: the tile scale of its UV transform, its non-visual tags and its physics."""
     scale = [default_of(spec, "inputs:scale") for spec in shaders_under(material).get("UsdTransform2d", [])]
@@ -319,9 +352,134 @@ def materials_in(folder, kept):
             if material.specifier != Sdf.SpecifierDef:
                 continue
             maps, constants = preview_of(layer, material, name, kept)
+            convention, assumed = normal_convention_of(layer, material)
             found.append({"layer": name, "prim": str(material.path), "name": material.name, "maps": maps,
-                          "constants": constants, "settings": settings_of(material)})
+                          "constants": constants, "settings": {**settings_of(material), "normal_convention": convention,
+                                                               "normal_convention_assumed": assumed}})
     return found
+
+
+def face_areas(mesh, uv_name, xform):
+    """(world area per face, UV area per face) of a mesh, each face fanned into triangles; the UV areas zero when
+    the mesh has no per-vertex or per-face-vertex UVs of that name."""
+    import numpy
+    from pxr import UsdGeom
+    counts = numpy.array(mesh.GetFaceVertexCountsAttr().Get() or [], dtype=numpy.int64)
+    indices = numpy.array(mesh.GetFaceVertexIndicesAttr().Get() or [], dtype=numpy.int64)
+    points = numpy.array(mesh.GetPointsAttr().Get() or [], dtype=numpy.float64).reshape(-1, 3)
+    if counts.sum() != len(indices) or (len(indices) and indices.max() >= len(points)) or (counts < 0).any():
+        return numpy.zeros(len(counts)), numpy.zeros(len(counts))  # a mesh its own counts do not describe: no area
+    world = (numpy.hstack([points, numpy.ones((len(points), 1))]) @ numpy.array(xform))[:, :3]
+    triangles = numpy.clip(counts - 2, 0, None)
+    face = numpy.repeat(numpy.arange(len(counts)), triangles)
+    step = numpy.arange(len(face)) - numpy.repeat(numpy.cumsum(triangles) - triangles, triangles) + 1
+    first = (numpy.cumsum(counts) - counts)[face]
+    corners = [first, first + step, first + step + 1]
+    spans = [world[indices[corner]] for corner in corners]
+    world_area = numpy.linalg.norm(numpy.cross(spans[1] - spans[0], spans[2] - spans[0]), axis=1) / 2
+    uv_area = numpy.zeros(len(face))
+    primvar = UsdGeom.PrimvarsAPI(mesh.GetPrim()).GetPrimvar(uv_name)
+    values = primvar.ComputeFlattened() if primvar and primvar.HasValue() else None
+    interpolation = primvar.GetInterpolation() if values is not None else None
+    if interpolation in ("faceVarying", "vertex", "varying"):
+        uv = numpy.array(values, dtype=numpy.float64).reshape(-1, 2)
+        at = [corner if interpolation == "faceVarying" else indices[corner] for corner in corners]
+        if all(len(each) == 0 or each.max() < len(uv) for each in at):
+            edges = [uv[at[1]] - uv[at[0]], uv[at[2]] - uv[at[0]]]
+            uv_area = numpy.abs(edges[0][:, 0] * edges[1][:, 1] - edges[0][:, 1] * edges[1][:, 0]) / 2
+    sums = numpy.zeros((2, len(counts)))
+    numpy.add.at(sums[0], face, world_area)
+    numpy.add.at(sums[1], face, uv_area)
+    return sums[0], sums[1]
+
+
+def bound_areas(stage, uv_name_of):
+    """{material prim path: [world area, UV area]} over every mesh of a stage, each face counted under the material
+    bound to it (a material-bind subset's, else its mesh's); `uv_name_of(material prim)` names the UV set read."""
+    from pxr import Usd, UsdGeom, UsdShade
+    found = collections.defaultdict(lambda: [0.0, 0.0])
+    for prim in stage.Traverse(Usd.TraverseInstanceProxies()):
+        if not prim.IsA(UsdGeom.Mesh):
+            continue
+        binding = UsdShade.MaterialBindingAPI(prim)
+        own = binding.ComputeBoundMaterial()[0]
+        bound = [(UsdShade.MaterialBindingAPI(subset.GetPrim()).ComputeBoundMaterial()[0],
+                  list(subset.GetIndicesAttr().Get() or [])) for subset in binding.GetMaterialBindSubsets()]
+        mesh = UsdGeom.Mesh(prim)
+        counts = len(mesh.GetFaceVertexCountsAttr().Get() or [])
+        bound = [(material, [index for index in faces if 0 <= index < counts]) for material, faces in bound]
+        taken = {index for _, faces in bound for index in faces}
+        bound.append((own, [index for index in range(counts) if index not in taken]))
+        xform = UsdGeom.Xformable(prim).ComputeLocalToWorldTransform(Usd.TimeCode.Default())
+        cache = {}
+        for material, faces in bound:
+            if not material or not faces:
+                continue
+            uv_name = uv_name_of(material.GetPrim())
+            if uv_name not in cache:
+                cache[uv_name] = face_areas(mesh, uv_name, xform)
+            world_area, uv_area = cache[uv_name]
+            found[material.GetPath()][0] += float(world_area[faces].sum())
+            found[material.GetPath()][1] += float(uv_area[faces].sum())
+    return found
+
+
+def uv_name_of(material):
+    """The UV set a composed Material reads (its UsdPrimvarReader_float2's varname), `st` when it names none."""
+    from pxr import Usd
+    for prim in Usd.PrimRange(material):
+        if prim.GetAttribute("info:id").Get() == "UsdPrimvarReader_float2":
+            name = prim.GetAttribute("inputs:varname").Get()
+            if name:
+                return str(name)
+    return "st"
+
+
+def composed_materials(stage, folder):
+    """{(prim path, layer name): [composed Material path]}: where each Material spec of the asset's layers lands on
+    its stage (a referenced or sublayered spec may land under another path, or more than once)."""
+    from pxr import Usd
+    found = collections.defaultdict(list)
+    base = pathlib.Path(folder).resolve()
+    for prim in stage.Traverse(Usd.TraverseInstanceProxies()):
+        if prim.GetTypeName() != "Material":
+            continue
+        for spec in prim.GetPrimStack():
+            if spec.layer.realPath and pathlib.Path(spec.layer.realPath).resolve().is_relative_to(base):
+                name = pathlib.Path(spec.layer.realPath).resolve().relative_to(base).as_posix()
+                found[str(spec.path), name].append(prim.GetPath())
+    return found
+
+
+def tile_reason(material, kept, world_area, uv_area, scale):
+    """Why a material's maps have no tile size on the asset, or None."""
+    if not material["maps"]:
+        return NO_MAPS
+    if not is_tiling(material, kept):
+        return ONE_MODEL_TILE
+    if world_area <= 0:
+        return NO_MESH
+    if uv_area <= 0 or scale[0] * scale[1] == 0:
+        return NO_UV_AREA
+    return None
+
+
+def tile_metres_of(folder, root_name, materials, kept):
+    """Each material's `tile_metres` (the metres one repeat of its maps covers on the asset: the square root of its
+    meshes' world area over their UV area, over its UV transform's scale, in the stage's meters per unit) and
+    `tile_metres_reason` (None, or why there is no size), written into its settings."""
+    from pxr import Usd, UsdGeom
+    stage = Usd.Stage.Open(str(pathlib.Path(folder) / root_name))
+    units = UsdGeom.GetStageMetersPerUnit(stage)
+    areas = bound_areas(stage, uv_name_of)
+    landed = composed_materials(stage, folder)
+    for material in materials:
+        paths = [path for path in landed.get((material["prim"], material["layer"]), []) if path in areas]
+        world_area, uv_area = (sum(areas[path][axis] for path in paths) for axis in (0, 1))
+        scale = material["settings"]["tile_scale"] or [1.0, 1.0]
+        reason = tile_reason(material, kept, world_area, uv_area, scale)
+        size = None if reason else (world_area / uv_area) ** 0.5 * units / abs(scale[0] * scale[1]) ** 0.5
+        material["settings"].update(tile_metres=None if reason else round(size, 4), tile_metres_reason=reason)
 
 
 def maps_key(material, kept):
@@ -336,8 +494,9 @@ def is_tiling(material, kept):
     return all("tile" in posixpath.basename(kept[name]["path"]).lower() for name in material["maps"].values())
 
 
-def look_layer(prim_name, maps, constants, scale):
-    """Our own material.usda text: a UsdPreviewSurface over the surface's maps under their entry names."""
+def look_layer(prim_name, maps, constants, scale, convention="opengl"):
+    """Our own material.usda text: a UsdPreviewSurface over the surface's maps under their entry names, a normal map
+    read in its `convention`."""
     from pxr import Sdf, Usd, UsdShade
     types = Sdf.ValueTypeNames
     wiring = {"albedo": [("diffuseColor", "rgb", types.Color3f)], "normal": [("normal", "rgb", types.Normal3f)],
@@ -370,9 +529,10 @@ def look_layer(prim_name, maps, constants, scale):
             texture.CreateInput("file", types.Asset).Set(Sdf.AssetPath(f"./{name}"))
             texture.CreateInput("st", types.Float2).ConnectToSource(mapping.CreateOutput("result", types.Float2))
             texture.CreateInput("sourceColorSpace", types.Token).Set("sRGB" if role in SRGB_ROLES else "raw")
-            if role == "normal":
-                texture.CreateInput("scale", types.Float4).Set((2.0, 2.0, 2.0, 1.0))
-                texture.CreateInput("bias", types.Float4).Set((-1.0, -1.0, -1.0, 0.0))
+            if role == "normal":  # a DirectX map's green flipped into the OpenGL tangent space USD reads
+                green = -1.0 if convention == "directx" else 1.0
+                texture.CreateInput("scale", types.Float4).Set((2.0, 2.0 * green, 2.0, 1.0))
+                texture.CreateInput("bias", types.Float4).Set((-1.0, -green, -1.0, 0.0))
             for field, channel, kind in wiring.get(role, []):
                 output = texture.CreateOutput(channel, types.Float3 if channel == "rgb" else types.Float)
                 surface.CreateInput(field, kind).ConnectToSource(output)
@@ -476,7 +636,7 @@ class Run:
     def about(self, asset):
         """The provenance an entry of one asset is taken in with."""
         return {"world": self.world, "commit": self.source.revision,
-                "taken_from": f"huggingface.co/datasets/{self.source.repo} at revision {self.source.revision}: {asset}"}
+                "taken_from": f"{where_of(self.row, self.source.repo, self.source.revision)}: {asset}"}
 
     def held(self, sha256):
         """Whether the blob store holds a blob, or this run puts it before any record naming it is written."""
@@ -534,7 +694,8 @@ class Run:
         folder.mkdir(parents=True, exist_ok=True)
         (folder / "material.usda").write_text(look_layer(entry_id, {role: role + posixpath.splitext(name)[1].lower()
                                                                     for role, name in material["maps"].items()},
-                                                         material["constants"], material["settings"]["tile_scale"]))
+                                                         material["constants"], material["settings"]["tile_scale"],
+                                                         material["settings"]["normal_convention"]))
         (folder / "surface.json").write_text(entries.dumps(surface_record(self.row, material, tiling)))
         files = {"material.usda": {"path": str(folder / "material.usda"), "from": LOOK_WRITTEN},
                  "surface.json": {"path": str(folder / "surface.json"), "from": RECORD_WRITTEN}}
@@ -586,7 +747,7 @@ class Run:
                 "made_with": [{"what": f"{asset}: its model, physics and maps", "source": self.row["id"],
                                "carried": True},
                               {"what": "the library surface each material names (score:surface)", "source": "score"}],
-                "licence": licence_of(self.row, self.source.repo, self.source.revision, asset)}
+                "licence": licence_of(self.row, self.source.repo, self.source.revision, asset, bool(changed))}
 
     def entry_id(self, asset):
         """The model entry id of an asset; Gap when another asset of the run maps to the same id."""
@@ -629,6 +790,7 @@ class Run:
         pairs, queued = {}, []
         outside = self.completed(asset, root_name, kept, left, folder, pairs)
         materials = materials_in(folder, kept)
+        tile_metres_of(folder, root_name, materials, kept)
         addresses, mine = self.surfaces_of(asset, materials, kept, folder, queued, pairs)
         changed = named_surfaces(folder, materials, addresses)
         unchanged_copies(changed, kept, folder, pairs)

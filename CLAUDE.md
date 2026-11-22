@@ -7,7 +7,8 @@ A library of reusable parts of SCORE worlds: records in git (`entries/`), bytes 
 - Provider agnostic: no cloud provider, endpoint, bucket or company name in code, tests, docs or config. The blob
   store is configured by environment variables only (`config/blobstore.env.template`, placeholders only). The one
   named host is the Hugging Face Hub backend (`blobs/hub.py`, the public copy, score #141), which names its own
-  library; its repository is a setting too, never in code.
+  library; its repository is a setting too, never in code. `take_in_hub.py` reads an adopted set through the same
+  library; the set's host, URL form and repository are its `config/sources.toml` row's `take_in` table, never code.
 - Everything in the library is MIT (`LICENSE`), except parts from a source whose row names another licence, each
   entry naming it and its credit (its top-level `licence` block; owner, 2026-11-22, score #155); what cannot go out
   under MIT or under its row's own licence is not let in. A row in `config/sources.toml` is added only from the
@@ -39,7 +40,7 @@ A library of reusable parts of SCORE worlds: records in git (`entries/`), bytes 
   row's `take_in` table, taken in whole as model entries and the surfaces their materials name (`score:surface`),
   each under the row's licence and credit; bytes through a capped cache into the blob store; a gap row per asset it
   cannot take.
-- `src/score_lib/adopted.py`: `score-lib adopted match [--source ID] [--proposals FILE] [--apply]`, an adopted set's
+- `src/score_lib/adopted.py`: `score-lib adopted match [--source ID] --proposals FILE [--apply]`, an adopted set's
   overlap with our older models and surfaces (score #155): each paired with the adopted entry of the same kind of
   object or finish (core noun, synonyms, Wikidata class), or refused naming the clash (setting, colour, a finish
   painted for one model, a far copy); `--apply` withdraws the accepted ones naming their replacement (`replaced_by`).

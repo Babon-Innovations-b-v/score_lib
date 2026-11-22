@@ -36,6 +36,7 @@ from = "a test"
 
 [source.take_in]
 repo = "example/fake-assets"
+url = "example.org/datasets/{repo}"
 bom = ".metadata/bom.json"
 roots = ".metadata/roots.json"
 prefix = "demo"
@@ -46,19 +47,20 @@ licence_url = "https://creativecommons.org/licenses/by/4.0/"
 TILE = "t_plastic_black_a01_tile"
 
 
-def texture(name, role):
-    """A UsdUVTexture shader spec over one map."""
+def texture(name, role, directx=False):
+    """A UsdUVTexture shader spec over one map (a normal map's green flipped when it is a DirectX one)."""
     channel = "float3 outputs:rgb" if role != "orm" else "float outputs:g\n        float outputs:b"
+    flip = "float4 inputs:scale = (2, -2, 2, 1)\n        " if directx and role == "normal" else ""
     return f"""
     def Shader "{role}"
     {{
         uniform token info:id = "UsdUVTexture"
         asset inputs:file = @../Textures/{name}@
-        {channel}
+        {flip}{channel}
     }}"""
 
 
-def material(name, maps=None, constant=None, mdl=None):
+def material(name, maps=None, constant=None, mdl=None, directx=False):
     """A Material spec: a UsdPreviewSurface over maps {role: file} (albedo, normal, orm) or a constant colour."""
     base = f"/RootNode/Materials/{name}"
     wires = {"albedo": "color3f inputs:diffuseColor.connect = <{0}/albedo.outputs:rgb>",
@@ -68,7 +70,7 @@ def material(name, maps=None, constant=None, mdl=None):
     inputs = [wires[role].format(base) for role in maps or {}]
     if constant:
         inputs.append(f"color3f inputs:diffuseColor = {constant}")
-    shaders = "".join(texture(file, role) for role, file in (maps or {}).items())
+    shaders = "".join(texture(file, role, directx) for role, file in (maps or {}).items())
     shader_lines = "\n            ".join(inputs)
     look = (f'\n    def Shader "look"\n    {{\n        uniform token info:id = "mdl:look"\n'
             f'        uniform asset info:mdl:sourceAsset = @{mdl}@\n    }}' if mdl else "")
@@ -94,8 +96,23 @@ def Material "{name}"
 }}"""
 
 
-def layer(materials, documentation=None, sub=None):
-    """A payload layer: RootNode with its Wikidata tags and description, and its Materials scope."""
+QUAD = """    def Mesh "seat" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        int[] faceVertexCounts = [4]
+        int[] faceVertexIndices = [0, 1, 2, 3]
+        point3f[] points = [(0, 0, 0), (2, 0, 0), (2, 2, 0), (0, 2, 0)]
+        texCoord2f[] primvars:st = [(0, 0), (1, 0), (1, 1), (0, 1)] (
+            interpolation = "faceVarying"
+        )
+        rel material:binding = </RootNode/Materials/m_plastic_black>
+    }
+"""  # 2 by 2 units over the whole UV square once: at 1 m per unit and a UV scale of 3, one repeat is 2/3 m
+
+
+def layer(materials, documentation=None, sub=None, mesh=""):
+    """A payload layer: RootNode with its Wikidata tags and description, its Materials scope and a mesh."""
     head = f"(\n    defaultPrim = \"RootNode\"\n    subLayers = [@./{sub}@]\n)" if sub else "(\n    defaultPrim = \"RootNode\"\n)"
     tags = (f'    custom string acme:documentation = "{documentation}"\n'
             '    custom string semantics:wikidata_class = "Crates"\n'
@@ -106,7 +123,7 @@ def layer(materials, documentation=None, sub=None):
 
 {"def Xform" if documentation else "over"} "RootNode"
 {{
-{tags}    def Scope "Materials"
+{tags}{mesh}    def Scope "Materials"
     {{{body}
     }}
 }}
@@ -152,14 +169,15 @@ def bowl(folder):
     (usd / "payloads").mkdir(parents=True)
     (usd / "runnables/physics").mkdir(parents=True)
     (usd / "sm_bowl_b01_01.usda").write_text(
-        '#usda 1.0\n(\n    defaultPrim = "RootNode"\n)\n\ndef Xform "RootNode" (\n'
+        '#usda 1.0\n(\n    defaultPrim = "RootNode"\n    metersPerUnit = 1\n)\n\ndef Xform "RootNode" (\n'
         '    prepend references = @./payloads/base.usda@\n    variants = {\n        string Newton = "on"\n    }\n'
         '    prepend variantSets = "Newton"\n)\n{\n    variantSet "Newton" = {\n        "on" (\n'
         '            prepend payload = @./runnables/physics/newton.usda@\n        ) {\n        }\n    }\n}\n')
     (usd / "runnables/physics/newton.usda").write_text('#usda 1.0\n(\n    defaultPrim = "RootNode"\n)\n\n'
                                                        'def "RootNode"\n{\n}\n')
     tile = {"albedo": f"{TILE}_alb.png", "normal": f"{TILE}_nor.png", "orm": f"{TILE}_orm.png"}
-    (usd / "payloads/base.usda").write_text(layer([material("m_plastic_black", tile)], documentation="A bowl"))
+    (usd / "payloads/base.usda").write_text(layer([material("m_plastic_black", tile, directx=True)],
+                                                  documentation="A bowl", mesh=QUAD))
     tiles(usd / "Textures")
     return "assets_usd/sm_bowl_b01_01.usda"
 
@@ -240,23 +258,33 @@ def test_an_adopted_set_is_taken_in_whole_under_its_licence(repository, tmp_path
     assert not [name for name in model["files"] if ".thumbs" in name or name == f"source_assets/{TILE}_alb.png"]
     assert model["licence"] == {"id": "CC-BY-4.0", "source": "example_assets", "url":
                                 "https://creativecommons.org/licenses/by/4.0/", "credit":
-                                f"crate_A01 by Example Corp, from huggingface.co/datasets/{REPO} at revision "
-                                f"{REVISION}, CC BY 4.0"}
+                                f"crate_A01 by Example Corp, from example.org/datasets/{REPO} at revision "
+                                f"{REVISION}, CC BY 4.0; {take_in_hub.CHANGED}"}
     assert model["tags"]["wikidata_qcode"] == ["Q1"] and model["tags"]["description"] == ["A crate"]
     assert model["tags"]["simulators"] == ["newton"]
     assert "changed" in model["provenance"]["files_from"]["payloads/materials.usda"]
     assert sorted(model["requires"]) == sorted(record["address"] for record in surfaces)
+    from pxr import Sdf
     by_material = {json.loads((blob(blobs, record, "surface.json", tmp_path)).read_text())["material"]: record
                    for record in surfaces}
     assert json.loads(blob(blobs, by_material["m_logo"], "surface.json", tmp_path).read_text())["recipe_gap"]
-    assert not json.loads(blob(blobs, by_material["m_plastic_black"], "surface.json", tmp_path).read_text())[
-        "recipe_gap"]
+    tiled = json.loads(blob(blobs, by_material["m_plastic_black"], "surface.json", tmp_path).read_text())
+    assert not tiled["recipe_gap"] and tiled["tile_metres"] == pytest.approx(2 / 3, abs=1e-4), tiled
+    assert (tiled["normal_convention"], tiled["normal_convention_assumed"], tiled["tile_metres_reason"]) == (
+        "directx", False, None)
+    assert tiled["maps"] == {"albedo": "albedo.png", "normal": "normal.png", "orm": "orm.png"}
+    for name, reason in (("m_logo", take_in_hub.ONE_MODEL_TILE), ("m_paint", take_in_hub.NO_MAPS)):
+        record = json.loads(blob(blobs, by_material[name], "surface.json", tmp_path).read_text())
+        assert (record["tile_metres"], record["tile_metres_reason"], record["normal_convention_assumed"]) == (
+            None, reason, True)
+    look = Sdf.Layer.FindOrOpen(str(blob(blobs, by_material["m_plastic_black"], "material.usda", tmp_path)))
+    normal = look.GetPrimAtPath(f"/{by_material['m_plastic_black']['id']}/normal")
+    assert normal.attributes["inputs:scale"].default[1] < 0 < normal.attributes["inputs:bias"].default[1]
     assert "licence" not in by_material["m_paint"] and "licence" in by_material["m_plastic_black"]
     assert sorted(by_material["m_plastic_black"]["files"]) == ["albedo.png", "material.usda", "normal.png", "orm.png",
                                                               "surface.json"]
     bowl = entries.load_address(root, "model/demo_bowl_b01@1")
     assert by_material["m_plastic_black"]["address"] in bowl["requires"]
-    from pxr import Sdf
     named = Sdf.Layer.FindOrOpen(str(blob(blobs, model, "payloads/materials.usda", tmp_path)))
     assert named.GetPrimAtPath("/RootNode/Materials/m_logo").attributes["score:surface"].default == \
         by_material["m_logo"]["address"]
