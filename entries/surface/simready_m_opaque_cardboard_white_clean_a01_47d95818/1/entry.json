@@ -1,0 +1,81 @@
+{
+  "address": "surface/simready_m_opaque_cardboard_white_clean_a01_47d95818@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 623550,
+      "role": "texture",
+      "sha256": "b025766473d4e58092508e98b65cadebbf1ec0ceeabff1fca276a99693df8109"
+    },
+    "material.usda": {
+      "bytes": 2603,
+      "role": "usd",
+      "sha256": "bc95c6533ff5cf13dcf7182b14d82f1bba5455bdec0bc1f6799c3657386fd000"
+    },
+    "normal.png": {
+      "bytes": 13130817,
+      "role": "texture",
+      "sha256": "f64ae621b69306977c49008641603cf960af96e376dde85c102de7ae9eb7ae5a"
+    },
+    "orm.png": {
+      "bytes": 17954973,
+      "role": "texture",
+      "sha256": "01af5071a5fe63725809dc0ca577434c75dc39e91fec45cf358538deac3d5544"
+    },
+    "surface.json": {
+      "bytes": 1016,
+      "role": "record",
+      "sha256": "e056c12e9b5e530cf6f8bd9481fbf7d7f42ea7d5c4df6e2784693998a9c09b61"
+    }
+  },
+  "id": "simready_m_opaque_cardboard_white_clean_a01_47d95818",
+  "kind": "surface",
+  "licence": {
+    "credit": "needle_surgical_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "needle_surgical_a01/simready_usd/Textures/t_surgicalNeedles_a01_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "needle_surgical_a01/simready_usd/Textures/t_cardboard_standard_white_a01_tile_nor.png",
+      "orm.png": "needle_surgical_a01/simready_usd/Textures/t_cardboard_standard_white_a01_tile_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__cardboard__white_clean_a01 maps of needle_surgical_a01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: needle_surgical_a01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "47d958188540768fa728f33d7be89fea92137f81acb0f6b4a5319e2a64d44f17"
+    ],
+    "painted_for": [
+      "needle_surgical_a01"
+    ]
+  },
+  "title": "m_opaque__cardboard__white_clean_a01",
+  "usd": null,
+  "version": 1
+}

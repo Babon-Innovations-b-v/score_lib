@@ -1,0 +1,75 @@
+{
+  "address": "surface/simready_m_opaque_plastic_white_a01_53a93ccb@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 623550,
+      "role": "texture",
+      "sha256": "b025766473d4e58092508e98b65cadebbf1ec0ceeabff1fca276a99693df8109"
+    },
+    "material.usda": {
+      "bytes": 2005,
+      "role": "usd",
+      "sha256": "c8cb665837550f237eb0970178b3d8e8fde939be096f95a3bddaa147ba649d35"
+    },
+    "orm.png": {
+      "bytes": 12876795,
+      "role": "texture",
+      "sha256": "9a4389739da9ee7325972569e730a32a98ddeb6903d46a8d26fc0a136078f5ad"
+    },
+    "surface.json": {
+      "bytes": 975,
+      "role": "record",
+      "sha256": "3dab9717bb29f2c687d593194d7e14ccd23ca43a79a6cf214e1e8365501e256a"
+    }
+  },
+  "id": "simready_m_opaque_plastic_white_a01_53a93ccb",
+  "kind": "surface",
+  "licence": {
+    "credit": "needle_surgical_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "needle_surgical_a01/simready_usd/Textures/t_surgicalNeedles_a01_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "orm.png": "needle_surgical_a01/simready_usd/Textures/t_plastic_glossy_white_a01_tile_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__plastic__white_a01 maps of needle_surgical_a01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: needle_surgical_a01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "53a93ccb6fca04de5a14b57c167ce7b051224ebb37d02fd5ecef300f09cdc134"
+    ],
+    "painted_for": [
+      "needle_surgical_a01"
+    ]
+  },
+  "title": "m_opaque__plastic__white_a01",
+  "usd": null,
+  "version": 1
+}

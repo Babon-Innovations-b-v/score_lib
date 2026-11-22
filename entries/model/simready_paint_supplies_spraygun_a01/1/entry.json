@@ -1,0 +1,195 @@
+{
+  "address": "model/simready_paint_supplies_spraygun_a01@1",
+  "files": {
+    "Textures/t_paint_supplies_spraygun_alb.png": {
+      "bytes": 6166545,
+      "role": "texture",
+      "sha256": "da6d984da53e0d4d9926615a96149dca5459f2b47f86438591f5388ae7af7ab8"
+    },
+    "Textures/t_paint_supplies_spraygun_nor.png": {
+      "bytes": 3633159,
+      "role": "texture",
+      "sha256": "dcb1a08cce0c83ff5e2d668df8506a232dc1f517bff4313afdfddfa336519789"
+    },
+    "Textures/t_paint_supplies_spraygun_orm.png": {
+      "bytes": 6965044,
+      "role": "texture",
+      "sha256": "0165698bb3d5f90de5b747eb42102ff593b0802717b356eccfb458d5d9da772e"
+    },
+    "payloads/MuJoCo/disabled.usda": {
+      "bytes": 6389,
+      "role": "usd",
+      "sha256": "720434c641fbe7f215c3303396198da445caba58f32eb643102324231260d07d"
+    },
+    "payloads/MuJoCo/enabled.usda": {
+      "bytes": 8032,
+      "role": "usd",
+      "sha256": "3ffbde5f4b9136c5547bdad12ae43fb7550d394fc66585dd6bcb263054fc7e48"
+    },
+    "payloads/Newton/disabled.usda": {
+      "bytes": 6389,
+      "role": "usd",
+      "sha256": "720434c641fbe7f215c3303396198da445caba58f32eb643102324231260d07d"
+    },
+    "payloads/Newton/enabled.usda": {
+      "bytes": 7585,
+      "role": "usd",
+      "sha256": "f44e26a463f42d6e988efe15fb2bfb18ef6b317bab856ef58bdc8fa971947fb1"
+    },
+    "payloads/PhysX/disabled.usda": {
+      "bytes": 6389,
+      "role": "usd",
+      "sha256": "720434c641fbe7f215c3303396198da445caba58f32eb643102324231260d07d"
+    },
+    "payloads/PhysX/enabled.usda": {
+      "bytes": 7017,
+      "role": "usd",
+      "sha256": "f2e53d300309ce81ea31277692e4ab3e5a1426e9fdb6df18dc16847cccbd51b9"
+    },
+    "payloads/Physics/physics.usda": {
+      "bytes": 9636,
+      "role": "usd",
+      "sha256": "240e8929bc320f2810199c1e5cef66d894686b4ba4f4eb453623f2c980e39b38"
+    },
+    "payloads/base.usda": {
+      "bytes": 15910,
+      "role": "usd",
+      "sha256": "f5c76590d63b50738f143b05952c9b09c7285ccc759adba0fbd300ec2e6f692a"
+    },
+    "payloads/geometries.usd": {
+      "bytes": 11039254,
+      "role": "usd",
+      "sha256": "b0e7fcfc6d93297568a96186b5bf0cfa12236bf01a53a9fdca79a1f3025f0e0c"
+    },
+    "payloads/instances.usda": {
+      "bytes": 10559,
+      "role": "usd",
+      "sha256": "9f2613f2ed2acd5767c1512c9452cafb99fe27bc95d645af683436c4dcf616be"
+    },
+    "payloads/instances_mujoco.usda": {
+      "bytes": 11375,
+      "role": "usd",
+      "sha256": "f3c08ef485356124aacfc5a7950b0216798fbc3764d8b16c15a62e3e014823bd"
+    },
+    "payloads/instances_newton.usda": {
+      "bytes": 10928,
+      "role": "usd",
+      "sha256": "36ead59fa4ea8a8aaf8b4c93a7a466483989c929a82b18ad29144d6945b12a68"
+    },
+    "payloads/instances_physx.usda": {
+      "bytes": 11150,
+      "role": "usd",
+      "sha256": "192e8d95308ef5f982730d7ae589dfefc15cd4148431b3a16312ca95623656fd"
+    },
+    "payloads/materials.usda": {
+      "bytes": 18473,
+      "role": "usd",
+      "sha256": "cbdcacc7b8ac3bcfb81820cf14217f2d2053af11935601b2faf0687193188c61"
+    },
+    "sm_paint_supplies_spraygun_a01_01.usd": {
+      "bytes": 20056,
+      "role": "usd",
+      "sha256": "de2860700fe3bb6ae3afe4b0f2c41a3a86423d964789ba24f370a9ae4f95e2a4"
+    },
+    "source_assets/OmniPBR.mdl": {
+      "bytes": 16010,
+      "role": "code",
+      "sha256": "6e6b3acbccd236e21a6c29964a431d2a53e77251cc6b8b1bc975eb1c62da1781"
+    },
+    "source_assets/OmniPBRBase.mdl": {
+      "bytes": 19369,
+      "role": "code",
+      "sha256": "a8fd9fe174e91892e94d06da90ba453a124024c2ce2c033be9d82c9e2f76a3b7"
+    },
+    "source_assets/OmniPBR_ClearCoat.mdl": {
+      "bytes": 29789,
+      "role": "code",
+      "sha256": "d84c5ba482561c0eaea2e0c5b607358af549e36cd921773462f92dbc4f32cbc3"
+    }
+  },
+  "id": "simready_paint_supplies_spraygun_a01",
+  "kind": "model",
+  "licence": {
+    "credit": "paint_supplies_spraygun_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0; changed: each Material names its library surface (score:surface)",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "Textures/t_paint_supplies_spraygun_alb.png": "paint_supplies_spraygun_a01/simready_usd/Textures/t_paint_supplies_spraygun_alb.png",
+      "Textures/t_paint_supplies_spraygun_nor.png": "paint_supplies_spraygun_a01/simready_usd/Textures/t_paint_supplies_spraygun_nor.png",
+      "Textures/t_paint_supplies_spraygun_orm.png": "paint_supplies_spraygun_a01/simready_usd/Textures/t_paint_supplies_spraygun_orm.png",
+      "payloads/MuJoCo/disabled.usda": "paint_supplies_spraygun_a01/simready_usd/payloads/MuJoCo/disabled.usda",
+      "payloads/MuJoCo/enabled.usda": "paint_supplies_spraygun_a01/simready_usd/payloads/MuJoCo/enabled.usda",
+      "payloads/Newton/disabled.usda": "paint_supplies_spraygun_a01/simready_usd/payloads/Newton/disabled.usda",
+      "payloads/Newton/enabled.usda": "paint_supplies_spraygun_a01/simready_usd/payloads/Newton/enabled.usda",
+      "payloads/PhysX/disabled.usda": "paint_supplies_spraygun_a01/simready_usd/payloads/PhysX/disabled.usda",
+      "payloads/PhysX/enabled.usda": "paint_supplies_spraygun_a01/simready_usd/payloads/PhysX/enabled.usda",
+      "payloads/Physics/physics.usda": "paint_supplies_spraygun_a01/simready_usd/payloads/Physics/physics.usda",
+      "payloads/base.usda": "paint_supplies_spraygun_a01/simready_usd/payloads/base.usda",
+      "payloads/geometries.usd": "paint_supplies_spraygun_a01/simready_usd/payloads/geometries.usd",
+      "payloads/instances.usda": "paint_supplies_spraygun_a01/simready_usd/payloads/instances.usda",
+      "payloads/instances_mujoco.usda": "paint_supplies_spraygun_a01/simready_usd/payloads/instances_mujoco.usda",
+      "payloads/instances_newton.usda": "paint_supplies_spraygun_a01/simready_usd/payloads/instances_newton.usda",
+      "payloads/instances_physx.usda": "paint_supplies_spraygun_a01/simready_usd/payloads/instances_physx.usda",
+      "payloads/materials.usda": "paint_supplies_spraygun_a01/simready_usd/payloads/materials.usda (changed: each Material names its library surface (score:surface))",
+      "sm_paint_supplies_spraygun_a01_01.usd": "paint_supplies_spraygun_a01/simready_usd/sm_paint_supplies_spraygun_a01_01.usd",
+      "source_assets/OmniPBR.mdl": "paint_supplies_spraygun_a01/simready_usd/source_assets/OmniPBR.mdl",
+      "source_assets/OmniPBRBase.mdl": "paint_supplies_spraygun_a01/simready_usd/source_assets/OmniPBRBase.mdl",
+      "source_assets/OmniPBR_ClearCoat.mdl": "paint_supplies_spraygun_a01/simready_usd/source_assets/OmniPBR_ClearCoat.mdl"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "paint_supplies_spraygun_a01: its model, physics and maps"
+      },
+      {
+        "by": "score",
+        "what": "the library surface each material names (score:surface)"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: paint_supplies_spraygun_a01",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/simready_m_opaque_plastic_paint_supplies_spraygun_a01_737055ce@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "description": [
+      "spray gun"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "simulators": [
+      "mujoco",
+      "newton",
+      "physx"
+    ],
+    "wikidata_class": [
+      "spray gun"
+    ],
+    "wikidata_qcode": [
+      "Q3389292"
+    ]
+  },
+  "title": "paint_supplies_spraygun_a01",
+  "usd": {
+    "default_prim": "/RootNode",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/simready_paint_supplies_spraygun_a01/1/sm_paint_supplies_spraygun_a01_01.usd",
+    "root": "sm_paint_supplies_spraygun_a01_01.usd",
+    "up_axis": "Z",
+    "use": "reference"
+  },
+  "version": 1
+}
