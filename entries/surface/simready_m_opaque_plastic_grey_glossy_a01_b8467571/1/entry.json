@@ -1,0 +1,78 @@
+{
+  "address": "surface/simready_m_opaque_plastic_grey_glossy_a01_b8467571@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 58788,
+      "role": "texture",
+      "sha256": "2b620b521e1b223feed5250b4b4df5630314c6daca28929e098616740bd5550a"
+    },
+    "material.usda": {
+      "bytes": 2542,
+      "role": "usd",
+      "sha256": "08ff090d22d36ec310fe715ec17f34c503366ebbe4c8e2a5c534193628804d20"
+    },
+    "normal.png": {
+      "bytes": 9079090,
+      "role": "texture",
+      "sha256": "085b1bfb26b38ec6be59778fddb9bf0b82a5476c15ab225106d636e779508adc"
+    },
+    "orm.png": {
+      "bytes": 5491900,
+      "role": "texture",
+      "sha256": "3e85854e225cdb984a0d7395e7ef0a05e6286d4089992693c4396f1aa4dbd395"
+    },
+    "surface.json": {
+      "bytes": 793,
+      "role": "record",
+      "sha256": "1004f76e7bd7918f2c7a561ba4a27698f220f212cf529ed79787ffb87178b69d"
+    }
+  },
+  "id": "simready_m_opaque_plastic_grey_glossy_a01_b8467571",
+  "kind": "surface",
+  "licence": {
+    "credit": "warehouse_barrel_plastic_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "warehouse_barrel_plastic_a01/simready_usd/Textures/t_plastic_glossy_grey_a01_tile_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "warehouse_barrel_plastic_a01/simready_usd/Textures/t_plastic_glossy_grey_a01_tile_nor.png",
+      "orm.png": "warehouse_barrel_plastic_a01/simready_usd/Textures/t_plastic_glossy_grey_a01_tile_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__plastic__grey_glossy_a01 maps of warehouse_barrel_plastic_a01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: warehouse_barrel_plastic_a01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "b8467571da828753175030fd6d1ddf7956ebd65735e8a8a983b1cf7220441064"
+    ]
+  },
+  "title": "m_opaque__plastic__grey_glossy_a01",
+  "usd": null,
+  "version": 1
+}
