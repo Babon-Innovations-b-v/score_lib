@@ -123,15 +123,6 @@ class FakeHub:
         self.files[path_in_repo] = pathlib.Path(path_or_fileobj).read_bytes()
         self.commits.append([path_in_repo])
 
-    def hf_hub_download(self, repo_id, filename, repo_type, revision, local_dir):
-        from huggingface_hub.errors import EntryNotFoundError
-        if filename not in self.files:
-            raise EntryNotFoundError(filename)
-        target = pathlib.Path(local_dir) / filename
-        target.parent.mkdir(parents=True, exist_ok=True)
-        target.write_bytes(self.files[filename])
-        return str(target)
-
     def preupload_lfs_files(self, repo_id, additions, repo_type, revision):
         for operation in additions:
             self.pending[operation.path_in_repo] = operation.path_or_fileobj
@@ -168,17 +159,43 @@ class ListingClient(StubClient):
         return {"Body": io.BytesIO(self.objects[(Bucket, Key)])}
 
 
+def read_from(hub, monkeypatch, hub_module, refusals=0):
+    """Plain link reads answered from the fake hub's files (a 404 for a missing one, a 429 for the first `refusals`
+    reads of a held one); the reads' keys, in order, "refused" for each refusal."""
+    import io
+    import urllib.error
+    reads, left = [], [refusals]
+    monkeypatch.setattr(hub_module.time, "sleep", lambda seconds: None)
+
+    def urlopen(request, timeout):
+        key = request.full_url.split("/resolve/main/", 1)[1]
+        if key not in hub.files:
+            raise urllib.error.HTTPError(request.full_url, 404, "Not Found", {}, None)
+        if left[0]:
+            left[0] -= 1
+            reads.append("refused")
+            raise urllib.error.HTTPError(request.full_url, 429, "Too Many Requests", {"Retry-After": "3"}, None)
+        reads.append(key)
+        return io.BytesIO(hub.files[key])
+    monkeypatch.setattr(hub_module.urllib.request, "urlopen", urlopen)
+    monkeypatch.setattr("huggingface_hub.get_token", lambda: None)
+    return reads
+
+
 def test_hub_store_reads_without_a_key_and_the_mirror_copies_resumes_and_checks(tmp_path, monkeypatch):
     """Red when: the environment does not pick the hub store from SCORE_LIB_HUB_REPO; a hub put, get or has loses or
     changes bytes or a missing blob is not MissingBlob; the url is not the public resolve link; the mirror leaves a
     named blob behind, copies one no entry names, re-uploads what the repository holds, or its check misses a blob
-    whose bytes differ, or an empty blob (no sha256 recorded) is told a failure; an entry's files go up one commit a file,
+    whose bytes differ, or an empty blob (no sha256 recorded) is told a failure; a read asks the hub for anything but
+    the blob's resolve link, or is not tried again after a 429; an entry's files go up one commit a file,
     or a commit refused for the hub's rate is not tried again after its named wait."""
     import json
     from score_lib.blobs import MissingBlob, mirror
     hub = FakeHub()
     store = HubBlobStore(hub, "owner/lib")
     path, sha = a_file(tmp_path)
+    from score_lib.blobs import hub as hub_module
+    reads = read_from(hub, monkeypatch, hub_module, refusals=1)
     assert not store.has(sha)
     with pytest.raises(MissingBlob):
         store.get(sha, tmp_path / "missing.bin")
@@ -188,9 +205,10 @@ def test_hub_store_reads_without_a_key_and_the_mirror_copies_resumes_and_checks(
     store.get(sha, tmp_path / "out" / "copy.bin")
     assert (tmp_path / "out" / "copy.bin").read_bytes() == b"bytes"
     assert sorted(item.name for item in (tmp_path / "out").iterdir()) == ["copy.bin"]  # the download folder is gone
+    assert reads == ["refused", key_of(sha)]  # a plain read of the resolve link, tried again after a 429
     assert store.url(sha) == f"https://huggingface.co/datasets/owner/lib/resolve/main/{key_of(sha)}"
     # an entry's files go up in one commit, one held already left out, after the waits the hub's rate names
-    from score_lib.blobs import hub as hub_module, put_all
+    from score_lib.blobs import put_all
     waits = []
     monkeypatch.setattr(hub_module.time, "sleep", waits.append)
     rated = FakeHub(refusals=2)
@@ -220,6 +238,7 @@ def test_hub_store_reads_without_a_key_and_the_mirror_copies_resumes_and_checks(
         client.objects[("bucket", f"lib/{key_of(blob)}")] = data
     source = S3BlobStore(client, "bucket", prefix="lib")
     target = FakeHub()
+    read_from(target, monkeypatch, hub_module)  # the mirror's check reads the target hub's links
     monkeypatch.setattr(mirror, "BATCH_FILES", 3)
     first = mirror.mirror(root, source, target, "owner/lib", deep=4, records="https://example.org/records",
                           say=lambda line: None)

@@ -6,12 +6,19 @@ login`, or HF_TOKEN), which huggingface_hub finds on its own. An entry's files g
 of at most COMMIT_FILES files, since the hub allows 128 commits a repository an hour (2026-11-20: a commit a file
 spent the hour on one place, and every other take-in failed with 429); a commit refused for that rate is tried again
 after the wait the hub names (Retry-After), up to RATE_TRIES times.
+
+A read is one plain GET of the blob's resolve link (`url`), with the login's token only when there is one: the hub's
+own download asks for a read token before each file, and with no login it refuses after a few (2026-11-22: HTTP 429
+with 215 s waits, so the README's `score-lib fetch` failed for every visitor), while the resolve links fetched 386 files
+in 77 s. A read refused for rate or a passing server fault is tried again after the wait it names, up to RATE_TRIES.
 """
 import pathlib
 import shutil
 import sys
 import tempfile
 import time
+import urllib.error
+import urllib.request
 
 from score_lib.blobs import MissingBlob, check_sha, key_of
 
@@ -19,6 +26,8 @@ REPO_TYPE = "dataset"
 COMMIT_FILES = 500  # files in one commit
 RATE_TRIES = 30  # commits refused for the hub's commit rate tried again, each after the wait it names
 RATE_WAIT = 120  # seconds to wait when the hub names none
+READ_RETRY = (429, 500, 502, 503, 504)  # a read refused for these is tried again
+READ_TIMEOUT = 600  # seconds one read may take (a large model over a slow link)
 
 
 class HubBlobStore:
@@ -82,20 +91,37 @@ class HubBlobStore:
                 time.sleep(wait)
 
     def get(self, sha256, destination):
-        """Download a blob to a path and check its bytes; the download's own folder is removed after."""
-        from huggingface_hub.errors import EntryNotFoundError
+        """Download a blob to a path by its resolve link and check its bytes; a partial download never stays."""
         destination = pathlib.Path(destination)
         destination.parent.mkdir(parents=True, exist_ok=True)
         with tempfile.TemporaryDirectory(dir=destination.parent, prefix=".hub-") as folder:
-            try:
-                found = self.api.hf_hub_download(self.repo_id, self.key(sha256), repo_type=REPO_TYPE,
-                                                 revision=self.revision, local_dir=folder)
-            except EntryNotFoundError as error:
-                raise MissingBlob(f"the blob store holds no {sha256}") from error
-            shutil.move(found, destination)
+            part = pathlib.Path(folder) / "blob"
+            read_link(self.url(sha256), part, sha256)
+            shutil.move(part, destination)
         check_sha(destination, sha256)
 
     def url(self, sha256):
         """The public read link of the blob."""
         from huggingface_hub import hf_hub_url
         return hf_hub_url(self.repo_id, self.key(sha256), repo_type=REPO_TYPE, revision=self.revision)
+
+
+def read_link(url, target, sha256):
+    """One public link's bytes into `target`, with the login's token when there is one; MissingBlob for a 404, tried
+    again after the named wait for a refusal in READ_RETRY, up to RATE_TRIES times."""
+    from huggingface_hub import get_token
+    token = get_token()
+    request = urllib.request.Request(url, headers={"Authorization": f"Bearer {token}"} if token else {})
+    for attempt in range(RATE_TRIES):
+        try:
+            with urllib.request.urlopen(request, timeout=READ_TIMEOUT) as answer, open(target, "wb") as out:
+                shutil.copyfileobj(answer, out)
+            return
+        except urllib.error.HTTPError as error:
+            if error.code == 404:
+                raise MissingBlob(f"the blob store holds no {sha256}") from error
+            if error.code not in READ_RETRY or attempt == RATE_TRIES - 1:
+                raise
+            wait = float(error.headers.get("Retry-After") or RATE_WAIT) if error.headers else RATE_WAIT
+            print(f"hub: {url} refused ({error.code}); trying again in {wait:.0f} s", file=sys.stderr, flush=True)
+            time.sleep(wait)
