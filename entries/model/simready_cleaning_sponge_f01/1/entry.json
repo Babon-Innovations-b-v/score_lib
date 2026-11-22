@@ -1,0 +1,195 @@
+{
+  "address": "model/simready_cleaning_sponge_f01@1",
+  "files": {
+    "Textures/t_sponge_blue_f01_alb.png": {
+      "bytes": 304536,
+      "role": "texture",
+      "sha256": "eace62ef6e9837cb85faca52e1b5c2ab4185214988f55344c85bf168180b2033"
+    },
+    "Textures/t_sponge_blue_f01_nor.png": {
+      "bytes": 387487,
+      "role": "texture",
+      "sha256": "d47e95dc8bbf5d71622a432d4e36313a3b542c0772ba1c278725e041f6642203"
+    },
+    "Textures/t_sponge_blue_f01_orm.png": {
+      "bytes": 149647,
+      "role": "texture",
+      "sha256": "14525a8366221623aa541602069a42760ed0809262eb78f89c0fdac994f2b2e9"
+    },
+    "payloads/MuJoCo/disabled.usda": {
+      "bytes": 4223,
+      "role": "usd",
+      "sha256": "0c20a554e566e2accf002a655868f789d83fdb36a31f716d82acd080b210dbe8"
+    },
+    "payloads/MuJoCo/enabled.usda": {
+      "bytes": 5227,
+      "role": "usd",
+      "sha256": "f1ac472db971e8c55a3301b3eddb3339fa034d4934258e9db832aadfd4f8c777"
+    },
+    "payloads/Newton/disabled.usda": {
+      "bytes": 4223,
+      "role": "usd",
+      "sha256": "0c20a554e566e2accf002a655868f789d83fdb36a31f716d82acd080b210dbe8"
+    },
+    "payloads/Newton/enabled.usda": {
+      "bytes": 4896,
+      "role": "usd",
+      "sha256": "611d658fb28624dca2002483606f8fd8bbaf18b37cb85095df9af26c956d20b6"
+    },
+    "payloads/PhysX/disabled.usda": {
+      "bytes": 4223,
+      "role": "usd",
+      "sha256": "0c20a554e566e2accf002a655868f789d83fdb36a31f716d82acd080b210dbe8"
+    },
+    "payloads/PhysX/enabled.usda": {
+      "bytes": 4611,
+      "role": "usd",
+      "sha256": "d5ed7c380e6ab7cbb9f1a018d8d10a69e29321aabf72d80548c192af3c3a8da0"
+    },
+    "payloads/Physics/physics.usda": {
+      "bytes": 4751,
+      "role": "usd",
+      "sha256": "87118a955d5f8585a5ddaa0e59254b2dc897538cd3189c2b6db7009e4e810ae8"
+    },
+    "payloads/base.usda": {
+      "bytes": 9700,
+      "role": "usd",
+      "sha256": "c3fa77ea8c58d81ccedd2e774a9c9b64e8f6414e792105b901310c4bf92e21bd"
+    },
+    "payloads/geometries.usd": {
+      "bytes": 203225,
+      "role": "usd",
+      "sha256": "a3f9d9e0435bff849be0f33d0596da18eb9354fbf02a6f334f42a4e5a5ca92a3"
+    },
+    "payloads/instances.usda": {
+      "bytes": 5264,
+      "role": "usd",
+      "sha256": "3b8700c7d42ec7eb919d4c5da5a9b884f8bc5009ab68c9f895b685b7d4b64dbf"
+    },
+    "payloads/instances_mujoco.usda": {
+      "bytes": 5536,
+      "role": "usd",
+      "sha256": "b97cb67cc2294580fde39de1a174568f3b53c1c34c663847cda178e42fe5b112"
+    },
+    "payloads/instances_newton.usda": {
+      "bytes": 5387,
+      "role": "usd",
+      "sha256": "5bfa5a9a718e9a31a6a3d8ef7576a7412c187625a5df9821012eafab95b0008c"
+    },
+    "payloads/instances_physx.usda": {
+      "bytes": 5404,
+      "role": "usd",
+      "sha256": "dc0a11099a3b93fa78ceca629085ece64f4a894b6d6ddbdbf57947960aed079d"
+    },
+    "payloads/materials.usda": {
+      "bytes": 9504,
+      "role": "usd",
+      "sha256": "dc4b0c7bfee549a00ab105ea5867e7e36e9b0a907c1554284cecf5a8d2ba43da"
+    },
+    "sm_cleaning_sponge_f01_01.usd": {
+      "bytes": 21514,
+      "role": "usd",
+      "sha256": "f036a18f5f20f7c5446d218abc2f7b0dcd1c460c129ce48ce5c991ce51ae1d84"
+    },
+    "source_assets/OmniPBR.mdl": {
+      "bytes": 16010,
+      "role": "code",
+      "sha256": "6e6b3acbccd236e21a6c29964a431d2a53e77251cc6b8b1bc975eb1c62da1781"
+    },
+    "source_assets/OmniPBRBase.mdl": {
+      "bytes": 19369,
+      "role": "code",
+      "sha256": "a8fd9fe174e91892e94d06da90ba453a124024c2ce2c033be9d82c9e2f76a3b7"
+    },
+    "source_assets/OmniPBR_ClearCoat.mdl": {
+      "bytes": 29789,
+      "role": "code",
+      "sha256": "d84c5ba482561c0eaea2e0c5b607358af549e36cd921773462f92dbc4f32cbc3"
+    }
+  },
+  "id": "simready_cleaning_sponge_f01",
+  "kind": "model",
+  "licence": {
+    "credit": "cleaning_sponge_f01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0; changed: each Material names its library surface (score:surface)",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "Textures/t_sponge_blue_f01_alb.png": "cleaning_sponge_f01/simready_usd/Textures/t_sponge_blue_f01_alb.png",
+      "Textures/t_sponge_blue_f01_nor.png": "cleaning_sponge_f01/simready_usd/Textures/t_sponge_blue_f01_nor.png",
+      "Textures/t_sponge_blue_f01_orm.png": "cleaning_sponge_f01/simready_usd/Textures/t_sponge_blue_f01_orm.png",
+      "payloads/MuJoCo/disabled.usda": "cleaning_sponge_f01/simready_usd/payloads/MuJoCo/disabled.usda",
+      "payloads/MuJoCo/enabled.usda": "cleaning_sponge_f01/simready_usd/payloads/MuJoCo/enabled.usda",
+      "payloads/Newton/disabled.usda": "cleaning_sponge_f01/simready_usd/payloads/Newton/disabled.usda",
+      "payloads/Newton/enabled.usda": "cleaning_sponge_f01/simready_usd/payloads/Newton/enabled.usda",
+      "payloads/PhysX/disabled.usda": "cleaning_sponge_f01/simready_usd/payloads/PhysX/disabled.usda",
+      "payloads/PhysX/enabled.usda": "cleaning_sponge_f01/simready_usd/payloads/PhysX/enabled.usda",
+      "payloads/Physics/physics.usda": "cleaning_sponge_f01/simready_usd/payloads/Physics/physics.usda",
+      "payloads/base.usda": "cleaning_sponge_f01/simready_usd/payloads/base.usda",
+      "payloads/geometries.usd": "cleaning_sponge_f01/simready_usd/payloads/geometries.usd",
+      "payloads/instances.usda": "cleaning_sponge_f01/simready_usd/payloads/instances.usda",
+      "payloads/instances_mujoco.usda": "cleaning_sponge_f01/simready_usd/payloads/instances_mujoco.usda",
+      "payloads/instances_newton.usda": "cleaning_sponge_f01/simready_usd/payloads/instances_newton.usda",
+      "payloads/instances_physx.usda": "cleaning_sponge_f01/simready_usd/payloads/instances_physx.usda",
+      "payloads/materials.usda": "cleaning_sponge_f01/simready_usd/payloads/materials.usda (changed: each Material names its library surface (score:surface))",
+      "sm_cleaning_sponge_f01_01.usd": "cleaning_sponge_f01/simready_usd/sm_cleaning_sponge_f01_01.usd",
+      "source_assets/OmniPBR.mdl": "cleaning_sponge_f01/simready_usd/source_assets/OmniPBR.mdl",
+      "source_assets/OmniPBRBase.mdl": "cleaning_sponge_f01/simready_usd/source_assets/OmniPBRBase.mdl",
+      "source_assets/OmniPBR_ClearCoat.mdl": "cleaning_sponge_f01/simready_usd/source_assets/OmniPBR_ClearCoat.mdl"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "cleaning_sponge_f01: its model, physics and maps"
+      },
+      {
+        "by": "score",
+        "what": "the library surface each material names (score:surface)"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: cleaning_sponge_f01",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/simready_m_opaque_foam_sponge_f01_c99e38a8@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "description": [
+      "sponge"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "simulators": [
+      "mujoco",
+      "newton",
+      "physx"
+    ],
+    "wikidata_class": [
+      "sponge"
+    ],
+    "wikidata_qcode": [
+      "Q1210980"
+    ]
+  },
+  "title": "cleaning_sponge_f01",
+  "usd": {
+    "default_prim": "/RootNode",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/simready_cleaning_sponge_f01/1/sm_cleaning_sponge_f01_01.usd",
+    "root": "sm_cleaning_sponge_f01_01.usd",
+    "up_axis": "Z",
+    "use": "reference"
+  },
+  "version": 1
+}

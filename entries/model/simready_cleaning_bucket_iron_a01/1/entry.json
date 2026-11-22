@@ -1,0 +1,195 @@
+{
+  "address": "model/simready_cleaning_bucket_iron_a01@1",
+  "files": {
+    "Textures/t_cleaning_bucket_alb.png": {
+      "bytes": 11827274,
+      "role": "texture",
+      "sha256": "e051492d7f475590f294f8b04d65b571542b81e02fa9e1b1ec985d02f143c39f"
+    },
+    "Textures/t_cleaning_bucket_nor.png": {
+      "bytes": 9002502,
+      "role": "texture",
+      "sha256": "e26dbe26da1a105d38b749c60001cd483b347dbecf5bffbc689a7e09bb2b77e1"
+    },
+    "Textures/t_cleaning_bucket_orm.png": {
+      "bytes": 15582512,
+      "role": "texture",
+      "sha256": "f308e6b5db9175105fbe8993e9270231ce39ef29277cdebf29d41927ccf70531"
+    },
+    "payloads/MuJoCo/disabled.usda": {
+      "bytes": 6678,
+      "role": "usd",
+      "sha256": "865ae884c85cf71eccb031c53cbab59df9267cf031d62fbf9da8dd9a869e6d88"
+    },
+    "payloads/MuJoCo/enabled.usda": {
+      "bytes": 7428,
+      "role": "usd",
+      "sha256": "7119d311954d6f399a4776f5881d1d3f9d6bbb3b679168556c669feb7bbbe882"
+    },
+    "payloads/Newton/disabled.usda": {
+      "bytes": 6678,
+      "role": "usd",
+      "sha256": "865ae884c85cf71eccb031c53cbab59df9267cf031d62fbf9da8dd9a869e6d88"
+    },
+    "payloads/Newton/enabled.usda": {
+      "bytes": 7250,
+      "role": "usd",
+      "sha256": "24331485e32f42b5a38edc53108073e91d51380a9c7d2887104aae2fe690c3ec"
+    },
+    "payloads/PhysX/disabled.usda": {
+      "bytes": 6678,
+      "role": "usd",
+      "sha256": "865ae884c85cf71eccb031c53cbab59df9267cf031d62fbf9da8dd9a869e6d88"
+    },
+    "payloads/PhysX/enabled.usda": {
+      "bytes": 6955,
+      "role": "usd",
+      "sha256": "7fcd83bd233a01c8230195e28b00ff79ed5b4c135cd0134283b0735ec623876c"
+    },
+    "payloads/Physics/physics.usda": {
+      "bytes": 7494,
+      "role": "usd",
+      "sha256": "6b5c5d029af15defd3db10ab89848715be0d56e051ca58885ce1978380d1e37c"
+    },
+    "payloads/base.usda": {
+      "bytes": 10893,
+      "role": "usd",
+      "sha256": "4ffe727c3c4fde37b8df5b470b4c0f9b5bafd97be6c503f3757cb232d141c3cf"
+    },
+    "payloads/geometries.usd": {
+      "bytes": 3985812,
+      "role": "usd",
+      "sha256": "a70407a7d910f43da72f0ede52e7b76fa5c3bdfe4b616bbc2a410ca3c064b473"
+    },
+    "payloads/instances.usda": {
+      "bytes": 7678,
+      "role": "usd",
+      "sha256": "0980cfe3908b36dc6d8fae72fdf37c6f463eae2c6a8367ca4b8bd029a2da3935"
+    },
+    "payloads/instances_mujoco.usda": {
+      "bytes": 7950,
+      "role": "usd",
+      "sha256": "c5440008260f861638726f527cfd2b33df52b8162b73ed1a827cbc95af27685f"
+    },
+    "payloads/instances_newton.usda": {
+      "bytes": 7801,
+      "role": "usd",
+      "sha256": "311130b6ae5f6fb178c144193a3e474334fdf85971e50bb589b5c5d9b1bd0950"
+    },
+    "payloads/instances_physx.usda": {
+      "bytes": 7818,
+      "role": "usd",
+      "sha256": "24bd75ad4367c149e00b913acff06fd3ee3c8ead6b58d61c29610d835683aaa6"
+    },
+    "payloads/materials.usda": {
+      "bytes": 12549,
+      "role": "usd",
+      "sha256": "34960b950f72dcf35cac1af0691f66a4a212bb8bde8c0e693cc797dc4fb5f519"
+    },
+    "sm_cleaning_bucket_iron_a01_01.usd": {
+      "bytes": 21554,
+      "role": "usd",
+      "sha256": "8cb6f412d48fd5d72aad495793f83610683507550ef4c9aec2189ceb83219ac5"
+    },
+    "source_assets/OmniPBR.mdl": {
+      "bytes": 16010,
+      "role": "code",
+      "sha256": "6e6b3acbccd236e21a6c29964a431d2a53e77251cc6b8b1bc975eb1c62da1781"
+    },
+    "source_assets/OmniPBRBase.mdl": {
+      "bytes": 19369,
+      "role": "code",
+      "sha256": "a8fd9fe174e91892e94d06da90ba453a124024c2ce2c033be9d82c9e2f76a3b7"
+    },
+    "source_assets/OmniPBR_ClearCoat.mdl": {
+      "bytes": 29789,
+      "role": "code",
+      "sha256": "d84c5ba482561c0eaea2e0c5b607358af549e36cd921773462f92dbc4f32cbc3"
+    }
+  },
+  "id": "simready_cleaning_bucket_iron_a01",
+  "kind": "model",
+  "licence": {
+    "credit": "cleaning_bucket_iron_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0; changed: each Material names its library surface (score:surface)",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "Textures/t_cleaning_bucket_alb.png": "cleaning_bucket_iron_a01/simready_usd/Textures/t_cleaning_bucket_alb.png",
+      "Textures/t_cleaning_bucket_nor.png": "cleaning_bucket_iron_a01/simready_usd/Textures/t_cleaning_bucket_nor.png",
+      "Textures/t_cleaning_bucket_orm.png": "cleaning_bucket_iron_a01/simready_usd/Textures/t_cleaning_bucket_orm.png",
+      "payloads/MuJoCo/disabled.usda": "cleaning_bucket_iron_a01/simready_usd/payloads/MuJoCo/disabled.usda",
+      "payloads/MuJoCo/enabled.usda": "cleaning_bucket_iron_a01/simready_usd/payloads/MuJoCo/enabled.usda",
+      "payloads/Newton/disabled.usda": "cleaning_bucket_iron_a01/simready_usd/payloads/Newton/disabled.usda",
+      "payloads/Newton/enabled.usda": "cleaning_bucket_iron_a01/simready_usd/payloads/Newton/enabled.usda",
+      "payloads/PhysX/disabled.usda": "cleaning_bucket_iron_a01/simready_usd/payloads/PhysX/disabled.usda",
+      "payloads/PhysX/enabled.usda": "cleaning_bucket_iron_a01/simready_usd/payloads/PhysX/enabled.usda",
+      "payloads/Physics/physics.usda": "cleaning_bucket_iron_a01/simready_usd/payloads/Physics/physics.usda",
+      "payloads/base.usda": "cleaning_bucket_iron_a01/simready_usd/payloads/base.usda",
+      "payloads/geometries.usd": "cleaning_bucket_iron_a01/simready_usd/payloads/geometries.usd",
+      "payloads/instances.usda": "cleaning_bucket_iron_a01/simready_usd/payloads/instances.usda",
+      "payloads/instances_mujoco.usda": "cleaning_bucket_iron_a01/simready_usd/payloads/instances_mujoco.usda",
+      "payloads/instances_newton.usda": "cleaning_bucket_iron_a01/simready_usd/payloads/instances_newton.usda",
+      "payloads/instances_physx.usda": "cleaning_bucket_iron_a01/simready_usd/payloads/instances_physx.usda",
+      "payloads/materials.usda": "cleaning_bucket_iron_a01/simready_usd/payloads/materials.usda (changed: each Material names its library surface (score:surface))",
+      "sm_cleaning_bucket_iron_a01_01.usd": "cleaning_bucket_iron_a01/simready_usd/sm_cleaning_bucket_iron_a01_01.usd",
+      "source_assets/OmniPBR.mdl": "cleaning_bucket_iron_a01/simready_usd/source_assets/OmniPBR.mdl",
+      "source_assets/OmniPBRBase.mdl": "cleaning_bucket_iron_a01/simready_usd/source_assets/OmniPBRBase.mdl",
+      "source_assets/OmniPBR_ClearCoat.mdl": "cleaning_bucket_iron_a01/simready_usd/source_assets/OmniPBR_ClearCoat.mdl"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "cleaning_bucket_iron_a01: its model, physics and maps"
+      },
+      {
+        "by": "score",
+        "what": "the library surface each material names (score:surface)"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: cleaning_bucket_iron_a01",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/simready_m_opaque_metal_cleaning_bucket_a01_037bf02c@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "description": [
+      "tube-shaped container used to hold or transport liquids or other materials"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "simulators": [
+      "mujoco",
+      "newton",
+      "physx"
+    ],
+    "wikidata_class": [
+      "bucket"
+    ],
+    "wikidata_qcode": [
+      "Q47107"
+    ]
+  },
+  "title": "cleaning_bucket_iron_a01",
+  "usd": {
+    "default_prim": "/RootNode",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/simready_cleaning_bucket_iron_a01/1/sm_cleaning_bucket_iron_a01_01.usd",
+    "root": "sm_cleaning_bucket_iron_a01_01.usd",
+    "up_axis": "Z",
+    "use": "reference"
+  },
+  "version": 1
+}

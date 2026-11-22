@@ -1,0 +1,81 @@
+{
+  "address": "surface/simready_m_opaque_foam_sponge_g01_f1ec84bc@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 368537,
+      "role": "texture",
+      "sha256": "4056616865361df8ffe6c0e161377068789f05c65a5aab03765048b95a226b45"
+    },
+    "material.usda": {
+      "bytes": 2446,
+      "role": "usd",
+      "sha256": "4c22113e899829cd5b45a448f7fee188614578bc40f948857982a21ddae81f2e"
+    },
+    "normal.png": {
+      "bytes": 427192,
+      "role": "texture",
+      "sha256": "ac4638333990f3757c21473257aa88d232e7216acf1f3093dbce2cfe863a2019"
+    },
+    "orm.png": {
+      "bytes": 220803,
+      "role": "texture",
+      "sha256": "3ee2e7fb8cebfa8900027872b999905be39b09e1e31a9dbae599849c38bafd33"
+    },
+    "surface.json": {
+      "bytes": 978,
+      "role": "record",
+      "sha256": "31d72ae51f4ac0bc7fabef3dffdb8411cd44a5179cf05fb267133b5192271984"
+    }
+  },
+  "id": "simready_m_opaque_foam_sponge_g01_f1ec84bc",
+  "kind": "surface",
+  "licence": {
+    "credit": "cleaning_sponge_g01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "cleaning_sponge_g01/simready_usd/Textures/t_sponge_yellow_g01_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "cleaning_sponge_g01/simready_usd/Textures/t_sponge_yellow_g01_nor.png",
+      "orm.png": "cleaning_sponge_g01/simready_usd/Textures/t_sponge_yellow_g01_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__foam__sponge_g01 maps of cleaning_sponge_g01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: cleaning_sponge_g01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "f1ec84bcfb47e10bb1c0dd853302ba9f7a4cc65a8d8a479858b3051907e1c162"
+    ],
+    "painted_for": [
+      "cleaning_sponge_g01"
+    ]
+  },
+  "title": "m_opaque__foam__sponge_g01",
+  "usd": null,
+  "version": 1
+}
