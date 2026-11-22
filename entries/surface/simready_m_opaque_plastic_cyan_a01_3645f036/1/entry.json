@@ -1,0 +1,78 @@
+{
+  "address": "surface/simready_m_opaque_plastic_cyan_a01_3645f036@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 14823455,
+      "role": "texture",
+      "sha256": "db8898a0145e598ab3c010e4c76651c48bb74ae33ff2da73bf5789c6957534b9"
+    },
+    "material.usda": {
+      "bytes": 2495,
+      "role": "usd",
+      "sha256": "fc8c938019b3c4af5360aa06c0feec7016a2aaad959833fabc286f21cfd926ac"
+    },
+    "normal.png": {
+      "bytes": 23536016,
+      "role": "texture",
+      "sha256": "db53f2f66592db03f87c0e38d1f8168e0ed971b137d3882fbeecd0a51edbb5c6"
+    },
+    "orm.png": {
+      "bytes": 13785226,
+      "role": "texture",
+      "sha256": "2ac9dea18c5b6a1971addc6b3fd8a935853256b736aedb5fc5a6e105c1a1c9b7"
+    },
+    "surface.json": {
+      "bytes": 803,
+      "role": "record",
+      "sha256": "8c2b8e538f776d463b88a8b080905970241de127ae50f7b7ade914b6b32e356e"
+    }
+  },
+  "id": "simready_m_opaque_plastic_cyan_a01_3645f036",
+  "kind": "surface",
+  "licence": {
+    "credit": "serviceTool_dispensing_system_c01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "serviceTool_dispensing_system_c01/simready_usd/Textures/t_plastic_cyan_a01_tile_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "serviceTool_dispensing_system_c01/simready_usd/Textures/t_plastic_cyan_a01_tile_nor.png",
+      "orm.png": "serviceTool_dispensing_system_c01/simready_usd/Textures/t_plastic_cyan_a01_tile_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__plastic__cyan_a01 maps of serviceTool_dispensing_system_c01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: serviceTool_dispensing_system_c01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "3645f0368836427379716619fcffbda84b6c0749ae0b8e0fbc52216aca8202fa"
+    ]
+  },
+  "title": "m_opaque__plastic__cyan_a01",
+  "usd": null,
+  "version": 1
+}

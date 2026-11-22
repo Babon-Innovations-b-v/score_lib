@@ -1,0 +1,78 @@
+{
+  "address": "surface/simready_m_opaque_rubber_new_black_a01_adc9dfba@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 58789,
+      "role": "texture",
+      "sha256": "3ec67f9e1bf23eb38226c4722daaf691d0e4fef9313551cb27b1f2a1b6df5880"
+    },
+    "material.usda": {
+      "bytes": 2340,
+      "role": "usd",
+      "sha256": "2fbe644f1f16db85a5e4b4f1a88615bf69f6762f1f00e1a9dfa4739f9ee28737"
+    },
+    "metallic.png": {
+      "bytes": 9447072,
+      "role": "texture",
+      "sha256": "60af1f5ed7df5be29668922a5be6f30e3d0ee1d52f3b3b865ca201def43f166e"
+    },
+    "normal.png": {
+      "bytes": 18709157,
+      "role": "texture",
+      "sha256": "e71a6ef5facd308179c3c8bcca2b371223698b43b3e326fd3761a67a9fbd8e31"
+    },
+    "surface.json": {
+      "bytes": 842,
+      "role": "record",
+      "sha256": "90a4746b9e1e665fc8a99c21fc663fcc2ed2c2c24dccc1eb3e330ad8cc99a4ba"
+    }
+  },
+  "id": "simready_m_opaque_rubber_new_black_a01_adc9dfba",
+  "kind": "surface",
+  "licence": {
+    "credit": "screen_hospital_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "screen_hospital_a01/simready_usd/Textures/t_rubber_new_a01_tile_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "metallic.png": "screen_hospital_a01/simready_usd/Textures/t_rubber_new_a01_tile_orm.png",
+      "normal.png": "screen_hospital_a01/simready_usd/Textures/t_rubber_new_a01_tile_nor.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__rubber__new_black_a01 maps of screen_hospital_a01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: screen_hospital_a01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "adc9dfbac5294f790d647af83d7f0f8d03e780f71c827ba7eb0c2557cf826b6f"
+    ]
+  },
+  "title": "m_opaque__rubber__new_black_a01",
+  "usd": null,
+  "version": 1
+}

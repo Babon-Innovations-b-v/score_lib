@@ -1,0 +1,72 @@
+{
+  "address": "surface/simready_m_trans_glass_lens_colored_glossy_b01_32333d72@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 1838087,
+      "role": "texture",
+      "sha256": "0654a2bd1fba11bc460f217da85ab2d1b455227b97609c3d80632a832b140b76"
+    },
+    "material.usda": {
+      "bytes": 1892,
+      "role": "usd",
+      "sha256": "401210e88a1aea049e9e41af1de2c201dee02afc36431750ecc93f99e5b0ff61"
+    },
+    "roughness.png": {
+      "bytes": 3184331,
+      "role": "texture",
+      "sha256": "cdc0c1be84f1ae1a4f2e31b089781e192b72dbe377445d19f7edaa45a6e086f3"
+    },
+    "surface.json": {
+      "bytes": 1033,
+      "role": "record",
+      "sha256": "24129b42bd65da8e87be93e2ff69eecc1e0a94ceaaf00c91c9dcfb51615a5619"
+    }
+  },
+  "id": "simready_m_trans_glass_lens_colored_glossy_b01_32333d72",
+  "kind": "surface",
+  "licence": {
+    "credit": "security_terminal_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "security_terminal_a01/simready_usd/Textures/t_glass_lensColoredGlossy_b01_tile_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "roughness.png": "security_terminal_a01/simready_usd/Textures/t_glass_lensColoredGlossy_b01_tile_rou.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_trans__glass__lensColoredGlossy_b01 maps of security_terminal_a01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: security_terminal_a01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "32333d72b564192dc6972e163db06e0b5d1458f06a8ce4f80774153000bd49c5"
+    ]
+  },
+  "title": "m_trans__glass__lensColoredGlossy_b01",
+  "usd": null,
+  "version": 1
+}

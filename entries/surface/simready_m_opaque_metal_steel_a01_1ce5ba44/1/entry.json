@@ -1,0 +1,78 @@
+{
+  "address": "surface/simready_m_opaque_metal_steel_a01_1ce5ba44@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 6660561,
+      "role": "texture",
+      "sha256": "c8ef954d546dd6516a607dce95c19697575a1ec7e2ecfa9969d1e650a439413d"
+    },
+    "material.usda": {
+      "bytes": 2483,
+      "role": "usd",
+      "sha256": "6d2b6b29a624ec65d0a5003586cdbcce2ef3a7f0be5d52e8acb0983417c23a4a"
+    },
+    "normal.png": {
+      "bytes": 2279404,
+      "role": "texture",
+      "sha256": "c6a0ba336a804cd04da8406859bd40323c3eee783ef879ee8cf1699de5d82f60"
+    },
+    "orm.png": {
+      "bytes": 3467812,
+      "role": "texture",
+      "sha256": "6c6bd0ceeae5a919822a253812fdfd07d657e52a5ec64883b171219ce8456fba"
+    },
+    "surface.json": {
+      "bytes": 799,
+      "role": "record",
+      "sha256": "fdf747d52162a858b7a4dbfeceab0f84b7afeeafc7dccc2376bcdc9ea6815110"
+    }
+  },
+  "id": "simready_m_opaque_metal_steel_a01_1ce5ba44",
+  "kind": "surface",
+  "licence": {
+    "credit": "serviceTool_dispensing_system_c01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "serviceTool_dispensing_system_c01/simready_usd/Textures/t_metal_steel_a01_tile_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "serviceTool_dispensing_system_c01/simready_usd/Textures/t_metal_steel_a01_tile_nor.png",
+      "orm.png": "serviceTool_dispensing_system_c01/simready_usd/Textures/t_metal_steel_a01_tile_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__metal__steel_a01 maps of serviceTool_dispensing_system_c01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: serviceTool_dispensing_system_c01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "1ce5ba4473c94586ff0a8b6109a6698d7c965e3bce24298b6a7a810d7d3972ab"
+    ]
+  },
+  "title": "m_opaque__metal__steel_a01",
+  "usd": null,
+  "version": 1
+}

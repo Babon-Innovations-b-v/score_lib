@@ -1,0 +1,195 @@
+{
+  "address": "model/simready_ramp_long_a01@1",
+  "files": {
+    "Textures/T_RampLong_A1_Albedo.png": {
+      "bytes": 2040278,
+      "role": "texture",
+      "sha256": "31c7249eac7772dbf31aefb5fff51d9e1458c97bfdc9ad9f6805fcf850915c5b"
+    },
+    "Textures/T_RampLong_A1_Normal.png": {
+      "bytes": 3614855,
+      "role": "texture",
+      "sha256": "70bb57d2e0dc11ae9ccb9995fe97a671c0cc8a6f0060edcef27af1ea62d189bc"
+    },
+    "Textures/T_RampLong_A1_ORM.png": {
+      "bytes": 2454033,
+      "role": "texture",
+      "sha256": "70d79a56169d2388cf37ce98037b4ba001e8a32b322fcc8dfe22e9ae9e944355"
+    },
+    "payloads/MuJoCo/disabled.usda": {
+      "bytes": 6008,
+      "role": "usd",
+      "sha256": "7f6151adab35302f9a4d6a7159c9f4a0b60f9b71fd4f54ffa905c51af18571c5"
+    },
+    "payloads/MuJoCo/enabled.usda": {
+      "bytes": 6629,
+      "role": "usd",
+      "sha256": "a49b6293457bb39a7e9e3797178711bdf42af0a8fba83fecb83ad61ce63f8c56"
+    },
+    "payloads/Newton/disabled.usda": {
+      "bytes": 6008,
+      "role": "usd",
+      "sha256": "7f6151adab35302f9a4d6a7159c9f4a0b60f9b71fd4f54ffa905c51af18571c5"
+    },
+    "payloads/Newton/enabled.usda": {
+      "bytes": 6573,
+      "role": "usd",
+      "sha256": "5aaeac906a7fc8bd6824bd1cfce4497986195c3132ef950ffd4402e60b12dd64"
+    },
+    "payloads/PhysX/disabled.usda": {
+      "bytes": 6008,
+      "role": "usd",
+      "sha256": "7f6151adab35302f9a4d6a7159c9f4a0b60f9b71fd4f54ffa905c51af18571c5"
+    },
+    "payloads/PhysX/enabled.usda": {
+      "bytes": 6278,
+      "role": "usd",
+      "sha256": "722c024db7f76ff5c187cc463908f01a152df265a5869260e89f2c8d49de3dae"
+    },
+    "payloads/Physics/physics.usda": {
+      "bytes": 6537,
+      "role": "usd",
+      "sha256": "8c382e157eca7c9ca3e0d133f8a726958d3b4b13fd4d380bc064d2dea688e60a"
+    },
+    "payloads/base.usda": {
+      "bytes": 9065,
+      "role": "usd",
+      "sha256": "c24fe17cdb7b102b4757d4bc17d067d2b577c0d8a172a0841661c413d80c7dda"
+    },
+    "payloads/geometries.usd": {
+      "bytes": 80259,
+      "role": "usd",
+      "sha256": "7afaf31c7b03c80873e7fbc545969f5f436846eec3158fa9ec6515a33533e1a5"
+    },
+    "payloads/instances.usda": {
+      "bytes": 7014,
+      "role": "usd",
+      "sha256": "e154939606f42a4daa9ad6b93ea1e0411ed0e8791217e5b7211884a90e799c97"
+    },
+    "payloads/instances_mujoco.usda": {
+      "bytes": 7286,
+      "role": "usd",
+      "sha256": "b8799e511575fa45ffa7ad17699360a776195a50d2909cf3bcfe198ed63c66fe"
+    },
+    "payloads/instances_newton.usda": {
+      "bytes": 7137,
+      "role": "usd",
+      "sha256": "bd9b6e07efeec8301e4b44370a40c4f844d404399fb8310d66d73985de69eedb"
+    },
+    "payloads/instances_physx.usda": {
+      "bytes": 7154,
+      "role": "usd",
+      "sha256": "dead0f0317354aee30824b14d84725b9bf63d66469c907f4097e23e0411523a8"
+    },
+    "payloads/materials.usda": {
+      "bytes": 11729,
+      "role": "usd",
+      "sha256": "2ed53560fd4eb272b44ed04df8eda217b9cd29bddb76f306206c21797132e9d4"
+    },
+    "sm_ramp_long_a01_01.usd": {
+      "bytes": 24899,
+      "role": "usd",
+      "sha256": "4cc661080758c75943b396120cd655585f565013ba388076fb78f93c2346f1e0"
+    },
+    "source_assets/OmniPBR.mdl": {
+      "bytes": 16010,
+      "role": "code",
+      "sha256": "6e6b3acbccd236e21a6c29964a431d2a53e77251cc6b8b1bc975eb1c62da1781"
+    },
+    "source_assets/OmniPBRBase.mdl": {
+      "bytes": 19369,
+      "role": "code",
+      "sha256": "a8fd9fe174e91892e94d06da90ba453a124024c2ce2c033be9d82c9e2f76a3b7"
+    },
+    "source_assets/OmniPBR_ClearCoat.mdl": {
+      "bytes": 29789,
+      "role": "code",
+      "sha256": "d84c5ba482561c0eaea2e0c5b607358af549e36cd921773462f92dbc4f32cbc3"
+    }
+  },
+  "id": "simready_ramp_long_a01",
+  "kind": "model",
+  "licence": {
+    "credit": "ramp_long_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0; changed: each Material names its library surface (score:surface)",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "Textures/T_RampLong_A1_Albedo.png": "ramp_long_a01/simready_usd/Textures/T_RampLong_A1_Albedo.png",
+      "Textures/T_RampLong_A1_Normal.png": "ramp_long_a01/simready_usd/Textures/T_RampLong_A1_Normal.png",
+      "Textures/T_RampLong_A1_ORM.png": "ramp_long_a01/simready_usd/Textures/T_RampLong_A1_ORM.png",
+      "payloads/MuJoCo/disabled.usda": "ramp_long_a01/simready_usd/payloads/MuJoCo/disabled.usda",
+      "payloads/MuJoCo/enabled.usda": "ramp_long_a01/simready_usd/payloads/MuJoCo/enabled.usda",
+      "payloads/Newton/disabled.usda": "ramp_long_a01/simready_usd/payloads/Newton/disabled.usda",
+      "payloads/Newton/enabled.usda": "ramp_long_a01/simready_usd/payloads/Newton/enabled.usda",
+      "payloads/PhysX/disabled.usda": "ramp_long_a01/simready_usd/payloads/PhysX/disabled.usda",
+      "payloads/PhysX/enabled.usda": "ramp_long_a01/simready_usd/payloads/PhysX/enabled.usda",
+      "payloads/Physics/physics.usda": "ramp_long_a01/simready_usd/payloads/Physics/physics.usda",
+      "payloads/base.usda": "ramp_long_a01/simready_usd/payloads/base.usda",
+      "payloads/geometries.usd": "ramp_long_a01/simready_usd/payloads/geometries.usd",
+      "payloads/instances.usda": "ramp_long_a01/simready_usd/payloads/instances.usda",
+      "payloads/instances_mujoco.usda": "ramp_long_a01/simready_usd/payloads/instances_mujoco.usda",
+      "payloads/instances_newton.usda": "ramp_long_a01/simready_usd/payloads/instances_newton.usda",
+      "payloads/instances_physx.usda": "ramp_long_a01/simready_usd/payloads/instances_physx.usda",
+      "payloads/materials.usda": "ramp_long_a01/simready_usd/payloads/materials.usda (changed: each Material names its library surface (score:surface))",
+      "sm_ramp_long_a01_01.usd": "ramp_long_a01/simready_usd/sm_ramp_long_a01_01.usd",
+      "source_assets/OmniPBR.mdl": "ramp_long_a01/simready_usd/source_assets/OmniPBR.mdl",
+      "source_assets/OmniPBRBase.mdl": "ramp_long_a01/simready_usd/source_assets/OmniPBRBase.mdl",
+      "source_assets/OmniPBR_ClearCoat.mdl": "ramp_long_a01/simready_usd/source_assets/OmniPBR_ClearCoat.mdl"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "ramp_long_a01: its model, physics and maps"
+      },
+      {
+        "by": "score",
+        "what": "the library surface each material names (score:surface)"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: ramp_long_a01",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/simready_opaque_metal_painted_unique_ramp_a_22427045@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "description": [
+      "component which prevents passage into a dangerous area, commonly used to mitigate risk"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "simulators": [
+      "mujoco",
+      "newton",
+      "physx"
+    ],
+    "wikidata_class": [
+      "safety barrier"
+    ],
+    "wikidata_qcode": [
+      "Q2252307"
+    ]
+  },
+  "title": "ramp_long_a01",
+  "usd": {
+    "default_prim": "/RootNode",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/simready_ramp_long_a01/1/sm_ramp_long_a01_01.usd",
+    "root": "sm_ramp_long_a01_01.usd",
+    "up_axis": "Z",
+    "use": "reference"
+  },
+  "version": 1
+}
