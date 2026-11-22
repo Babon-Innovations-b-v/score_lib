@@ -1,0 +1,81 @@
+{
+  "address": "surface/simready_m_opaque_metal_glossy_a01_fea532c8@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 2607266,
+      "role": "texture",
+      "sha256": "9bbcf946ed07ddd8dc373564d0f925568c57f29696eddc66feb9f25cc78bd5b3"
+    },
+    "material.usda": {
+      "bytes": 2495,
+      "role": "usd",
+      "sha256": "1844471301aa933eff69841c300cc2423b4f0e10746245d5372df9c37a76ba11"
+    },
+    "normal.png": {
+      "bytes": 25877873,
+      "role": "texture",
+      "sha256": "d01ae615f4f67dfad487e5bdb77621ceb2fe8d68d91dc898137e4300ceb89253"
+    },
+    "orm.png": {
+      "bytes": 15968521,
+      "role": "texture",
+      "sha256": "c363e97392eec1af95aacf655714f32f0dded13b12a85f291bcba8e0955dd394"
+    },
+    "surface.json": {
+      "bytes": 1000,
+      "role": "record",
+      "sha256": "5fc5db05cf2462e032fb0ff1802404fca6adf4a6ad44e10a41a08291fe6a6630"
+    }
+  },
+  "id": "simready_m_opaque_metal_glossy_a01_fea532c8",
+  "kind": "surface",
+  "licence": {
+    "credit": "engineComponent_supercharger_c01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "engineComponent_supercharger_c01/simready_usd/Textures/t_superCharger_black_c01_01_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "engineComponent_supercharger_c01/simready_usd/Textures/t_superCharger_black_c01_01_nor.png",
+      "orm.png": "engineComponent_supercharger_c01/simready_usd/Textures/t_superCharger_black_c01_01_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__metal__glossy_a01 maps of engineComponent_supercharger_c01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: engineComponent_supercharger_c01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "fea532c8ca3f1eb92c74fb93a703fda1cd7ffc0141083b258fe0e612961c41c0"
+    ],
+    "painted_for": [
+      "engineComponent_supercharger_c01"
+    ]
+  },
+  "title": "m_opaque__metal__glossy_a01",
+  "usd": null,
+  "version": 1
+}

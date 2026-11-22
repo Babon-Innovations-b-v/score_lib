@@ -1,0 +1,195 @@
+{
+  "address": "model/simready_engine_component_timing_chain_b01@1",
+  "files": {
+    "Textures/t_metal_steel_a01_tile_alb.png": {
+      "bytes": 5557085,
+      "role": "texture",
+      "sha256": "e61898b1e1a7b64dba44ee6e3b8b0d66f873508c09e141394d5535d208d96b12"
+    },
+    "Textures/t_metal_steel_a01_tile_nor.png": {
+      "bytes": 2279404,
+      "role": "texture",
+      "sha256": "c6a0ba336a804cd04da8406859bd40323c3eee783ef879ee8cf1699de5d82f60"
+    },
+    "Textures/t_metal_steel_a01_tile_orm.png": {
+      "bytes": 3254657,
+      "role": "texture",
+      "sha256": "20fe51937828869ed01a3fdd330de761802d080dbe052250f2a26720d1f73335"
+    },
+    "payloads/MuJoCo/disabled.usda": {
+      "bytes": 4362,
+      "role": "usd",
+      "sha256": "32876f0761060be6f379d20841a81514dd83dbb07296e15ed1e287ad862353aa"
+    },
+    "payloads/MuJoCo/enabled.usda": {
+      "bytes": 5108,
+      "role": "usd",
+      "sha256": "ae62e48a50550fed7d58c9afcde83fa17d5fd614f8603592172a48ca620b4503"
+    },
+    "payloads/Newton/disabled.usda": {
+      "bytes": 4362,
+      "role": "usd",
+      "sha256": "32876f0761060be6f379d20841a81514dd83dbb07296e15ed1e287ad862353aa"
+    },
+    "payloads/Newton/enabled.usda": {
+      "bytes": 4930,
+      "role": "usd",
+      "sha256": "a768492abd9a77f3b876d597fec509a309d2ce66817c1ac7df0ba59efc4f0117"
+    },
+    "payloads/PhysX/disabled.usda": {
+      "bytes": 4362,
+      "role": "usd",
+      "sha256": "32876f0761060be6f379d20841a81514dd83dbb07296e15ed1e287ad862353aa"
+    },
+    "payloads/PhysX/enabled.usda": {
+      "bytes": 4645,
+      "role": "usd",
+      "sha256": "46d901689d3a46de851716e3f0cf035c10f61d37ee315cdd67303a5be314153a"
+    },
+    "payloads/Physics/physics.usda": {
+      "bytes": 4878,
+      "role": "usd",
+      "sha256": "e92093c65ac92f0f9763c0652ee86309e70ab640d3080890e8b2191b074ce360"
+    },
+    "payloads/base.usda": {
+      "bytes": 9108,
+      "role": "usd",
+      "sha256": "1c4507636e31d7c06a2355079548d2cb1c36d67903d71c8dd5bf45209afbf02d"
+    },
+    "payloads/geometries.usd": {
+      "bytes": 26380755,
+      "role": "usd",
+      "sha256": "fca73771be73a11f1a0e932e22c05fa19bc7d5ec7ec55ed282ebcf28dc093c2e"
+    },
+    "payloads/instances.usda": {
+      "bytes": 5337,
+      "role": "usd",
+      "sha256": "9c50fff8e0f74d6137275243362d6bb2da6d710c8f3c1c68e235ff1fed1237ee"
+    },
+    "payloads/instances_mujoco.usda": {
+      "bytes": 5609,
+      "role": "usd",
+      "sha256": "8fb7e6d4b48d794cd04a3c93db789bb2601f99e7f0431243790dbab01671f783"
+    },
+    "payloads/instances_newton.usda": {
+      "bytes": 5460,
+      "role": "usd",
+      "sha256": "451f6317c8f8c6ec69946a22b85ac43fc9e61c6f696cdafe2fb8e92aa5ea941a"
+    },
+    "payloads/instances_physx.usda": {
+      "bytes": 5517,
+      "role": "usd",
+      "sha256": "6709d7f3c3302c877245d1fbd87105dfa6a78260c50166ab8233e03889d019ac"
+    },
+    "payloads/materials.usda": {
+      "bytes": 10108,
+      "role": "usd",
+      "sha256": "6ec704064ffe6ec80c7ebf01b135ee55c55a3298a383781b9288794de40912e5"
+    },
+    "sm_engineComponent_timing_chain_b01_01.usd": {
+      "bytes": 21667,
+      "role": "usd",
+      "sha256": "919633aa17d13a917e03bbdaa8bb73a41b7b37208f86587bea6542cac2d37943"
+    },
+    "source_assets/OmniPBR.mdl": {
+      "bytes": 16010,
+      "role": "code",
+      "sha256": "6e6b3acbccd236e21a6c29964a431d2a53e77251cc6b8b1bc975eb1c62da1781"
+    },
+    "source_assets/OmniPBRBase.mdl": {
+      "bytes": 19369,
+      "role": "code",
+      "sha256": "a8fd9fe174e91892e94d06da90ba453a124024c2ce2c033be9d82c9e2f76a3b7"
+    },
+    "source_assets/OmniPBR_ClearCoat.mdl": {
+      "bytes": 29789,
+      "role": "code",
+      "sha256": "d84c5ba482561c0eaea2e0c5b607358af549e36cd921773462f92dbc4f32cbc3"
+    }
+  },
+  "id": "simready_engine_component_timing_chain_b01",
+  "kind": "model",
+  "licence": {
+    "credit": "engineComponent_timing_chain_b01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0; changed: each Material names its library surface (score:surface)",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "Textures/t_metal_steel_a01_tile_alb.png": "engineComponent_timing_chain_b01/simready_usd/Textures/t_metal_steel_a01_tile_alb.png",
+      "Textures/t_metal_steel_a01_tile_nor.png": "engineComponent_timing_chain_b01/simready_usd/Textures/t_metal_steel_a01_tile_nor.png",
+      "Textures/t_metal_steel_a01_tile_orm.png": "engineComponent_timing_chain_b01/simready_usd/Textures/t_metal_steel_a01_tile_orm.png",
+      "payloads/MuJoCo/disabled.usda": "engineComponent_timing_chain_b01/simready_usd/payloads/MuJoCo/disabled.usda",
+      "payloads/MuJoCo/enabled.usda": "engineComponent_timing_chain_b01/simready_usd/payloads/MuJoCo/enabled.usda",
+      "payloads/Newton/disabled.usda": "engineComponent_timing_chain_b01/simready_usd/payloads/Newton/disabled.usda",
+      "payloads/Newton/enabled.usda": "engineComponent_timing_chain_b01/simready_usd/payloads/Newton/enabled.usda",
+      "payloads/PhysX/disabled.usda": "engineComponent_timing_chain_b01/simready_usd/payloads/PhysX/disabled.usda",
+      "payloads/PhysX/enabled.usda": "engineComponent_timing_chain_b01/simready_usd/payloads/PhysX/enabled.usda",
+      "payloads/Physics/physics.usda": "engineComponent_timing_chain_b01/simready_usd/payloads/Physics/physics.usda",
+      "payloads/base.usda": "engineComponent_timing_chain_b01/simready_usd/payloads/base.usda",
+      "payloads/geometries.usd": "engineComponent_timing_chain_b01/simready_usd/payloads/geometries.usd",
+      "payloads/instances.usda": "engineComponent_timing_chain_b01/simready_usd/payloads/instances.usda",
+      "payloads/instances_mujoco.usda": "engineComponent_timing_chain_b01/simready_usd/payloads/instances_mujoco.usda",
+      "payloads/instances_newton.usda": "engineComponent_timing_chain_b01/simready_usd/payloads/instances_newton.usda",
+      "payloads/instances_physx.usda": "engineComponent_timing_chain_b01/simready_usd/payloads/instances_physx.usda",
+      "payloads/materials.usda": "engineComponent_timing_chain_b01/simready_usd/payloads/materials.usda (changed: each Material names its library surface (score:surface))",
+      "sm_engineComponent_timing_chain_b01_01.usd": "engineComponent_timing_chain_b01/simready_usd/sm_engineComponent_timing_chain_b01_01.usd",
+      "source_assets/OmniPBR.mdl": "engineComponent_timing_chain_b01/simready_usd/source_assets/OmniPBR.mdl",
+      "source_assets/OmniPBRBase.mdl": "engineComponent_timing_chain_b01/simready_usd/source_assets/OmniPBRBase.mdl",
+      "source_assets/OmniPBR_ClearCoat.mdl": "engineComponent_timing_chain_b01/simready_usd/source_assets/OmniPBR_ClearCoat.mdl"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "engineComponent_timing_chain_b01: its model, physics and maps"
+      },
+      {
+        "by": "score",
+        "what": "the library surface each material names (score:surface)"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: engineComponent_timing_chain_b01",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/simready_m_opaque_metal_steel_a01_ff5c7f30@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "description": [
+      "internal combustion engine component"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "simulators": [
+      "mujoco",
+      "newton",
+      "physx"
+    ],
+    "wikidata_class": [
+      "timing chain"
+    ],
+    "wikidata_qcode": [
+      "Q108031161"
+    ]
+  },
+  "title": "engineComponent_timing_chain_b01",
+  "usd": {
+    "default_prim": "/RootNode",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/simready_engine_component_timing_chain_b01/1/sm_engineComponent_timing_chain_b01_01.usd",
+    "root": "sm_engineComponent_timing_chain_b01_01.usd",
+    "up_axis": "Z",
+    "use": "reference"
+  },
+  "version": 1
+}

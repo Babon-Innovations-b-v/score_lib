@@ -1,0 +1,81 @@
+{
+  "address": "surface/simready_m_opaque_concrete_plain_d_9cbde144@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 25321353,
+      "role": "texture",
+      "sha256": "989cfc43343967dd74d3c4cb6a0524119fe2a0d9c764d8087516465577efc22d"
+    },
+    "material.usda": {
+      "bytes": 2495,
+      "role": "usd",
+      "sha256": "1ad216a835f8d09f4fa57996e59ef68bb193431bb1bc825982525f9dae7ea371"
+    },
+    "normal.png": {
+      "bytes": 25074814,
+      "role": "texture",
+      "sha256": "b88d9b91082ca86366595e2dfdf260c9a01c5510c11b59dec078c82ceff8e533"
+    },
+    "orm.png": {
+      "bytes": 15477849,
+      "role": "texture",
+      "sha256": "bf8433087c9266493ce3aab4963cf0a40a8a05edd8c8e79a6ba182fafb2e498b"
+    },
+    "surface.json": {
+      "bytes": 1006,
+      "role": "record",
+      "sha256": "454719f0f757f62c98ee8c30731e7549f0fca5b35e80b44634fda354ef7647dd"
+    }
+  },
+  "id": "simready_m_opaque_concrete_plain_d_9cbde144",
+  "kind": "surface",
+  "licence": {
+    "credit": "environment_floor_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "environment_floor_a01/simready_usd/Textures/t_concretePlain_d01_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "environment_floor_a01/simready_usd/Textures/t_concretePlain_d01_nor.png",
+      "orm.png": "environment_floor_a01/simready_usd/Textures/t_concretePlain_d01_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__concrete__plain_d maps of environment_floor_a01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: environment_floor_a01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "9cbde14488ba0c502ed2757d17f9fa5cbe7be6f8f5c5591519dec9a5b7a3cb29"
+    ],
+    "painted_for": [
+      "environment_floor_a01"
+    ]
+  },
+  "title": "m_opaque__concrete__plain_d",
+  "usd": null,
+  "version": 1
+}

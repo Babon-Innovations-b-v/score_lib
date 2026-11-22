@@ -1,0 +1,195 @@
+{
+  "address": "model/simready_engine_component_flywheel_c01@1",
+  "files": {
+    "Textures/t_metal_aluminiumBrushed_d01_tile_alb.png": {
+      "bytes": 14366913,
+      "role": "texture",
+      "sha256": "457995572a7465ac53c2d21e1661055336672e0ae7395cc29fd22e3d2ab92216"
+    },
+    "Textures/t_metal_aluminiumBrushed_d01_tile_nor.png": {
+      "bytes": 2629390,
+      "role": "texture",
+      "sha256": "c864beec061759314e618ca424d289c08240172b3a0d6b09c2b34607b9cd0205"
+    },
+    "Textures/t_metal_aluminiumBrushed_d01_tile_orm.png": {
+      "bytes": 8454385,
+      "role": "texture",
+      "sha256": "a6b59d5016a01d1e887fd941d74e068770c750f5987cddd12565fd160d48b393"
+    },
+    "payloads/MuJoCo/disabled.usda": {
+      "bytes": 3810,
+      "role": "usd",
+      "sha256": "c4d5fad32f1aa53d060d8c0dccbc707a7184614ff00303756e15eda5210e2732"
+    },
+    "payloads/MuJoCo/enabled.usda": {
+      "bytes": 4565,
+      "role": "usd",
+      "sha256": "e64a2a6dff274673197ebdc175c35419a2e2e8789e322c6e8c59a6bfd062c810"
+    },
+    "payloads/Newton/disabled.usda": {
+      "bytes": 3810,
+      "role": "usd",
+      "sha256": "c4d5fad32f1aa53d060d8c0dccbc707a7184614ff00303756e15eda5210e2732"
+    },
+    "payloads/Newton/enabled.usda": {
+      "bytes": 4383,
+      "role": "usd",
+      "sha256": "78fbe15401d1dc7770e409fb38901b03ba36dbc32c4ba1f1050f986087b05eae"
+    },
+    "payloads/PhysX/disabled.usda": {
+      "bytes": 3810,
+      "role": "usd",
+      "sha256": "c4d5fad32f1aa53d060d8c0dccbc707a7184614ff00303756e15eda5210e2732"
+    },
+    "payloads/PhysX/enabled.usda": {
+      "bytes": 4087,
+      "role": "usd",
+      "sha256": "fc750a8133b4af1661b6de16dad307783417d775d40e56e67581e0bf90739760"
+    },
+    "payloads/Physics/physics.usda": {
+      "bytes": 4338,
+      "role": "usd",
+      "sha256": "35cb3ae252a15f87c6cc4738f212508371a3c03cd3f8573e39adc0e04ede8788"
+    },
+    "payloads/base.usda": {
+      "bytes": 8310,
+      "role": "usd",
+      "sha256": "31d1fa973127aa923b23016d148067c8d29b770477be4a128db16069e2a92d21"
+    },
+    "payloads/geometries.usd": {
+      "bytes": 4112637,
+      "role": "usd",
+      "sha256": "8e568eb209eeaddd7b4b663193df57413eae04a202af23eeaf6f4a2a88690b18"
+    },
+    "payloads/instances.usda": {
+      "bytes": 4818,
+      "role": "usd",
+      "sha256": "abbc8c6f172aead97efbc3ed68c7701eb5e778eabd627fb757c2567054ec14bd"
+    },
+    "payloads/instances_mujoco.usda": {
+      "bytes": 5090,
+      "role": "usd",
+      "sha256": "99bb77feca5a9316e33e95614fc909a96ad763b0a9a6d05451dfb895151acfeb"
+    },
+    "payloads/instances_newton.usda": {
+      "bytes": 4941,
+      "role": "usd",
+      "sha256": "bd429bb01e690e4d2031ea655d79bec29e9192ad2a7147e4cbfd29bf2cf5371c"
+    },
+    "payloads/instances_physx.usda": {
+      "bytes": 4958,
+      "role": "usd",
+      "sha256": "7f781ce684e8c5dbe5b2d5cc8dde6263107a14a78cac1bd4d932695143dca4ac"
+    },
+    "payloads/materials.usda": {
+      "bytes": 9758,
+      "role": "usd",
+      "sha256": "af765f19a8e82065fb707ff3b8634bb91921ce0d2eea699341744bb9039d8a23"
+    },
+    "sm_engineComponent_flywheel_c01_01.usd": {
+      "bytes": 20759,
+      "role": "usd",
+      "sha256": "1132bdd327a31d3efb2ebdca52ec28d24aa2edca49f7ebbfa04b36505975e987"
+    },
+    "source_assets/OmniPBR.mdl": {
+      "bytes": 16010,
+      "role": "code",
+      "sha256": "6e6b3acbccd236e21a6c29964a431d2a53e77251cc6b8b1bc975eb1c62da1781"
+    },
+    "source_assets/OmniPBRBase.mdl": {
+      "bytes": 19369,
+      "role": "code",
+      "sha256": "a8fd9fe174e91892e94d06da90ba453a124024c2ce2c033be9d82c9e2f76a3b7"
+    },
+    "source_assets/OmniPBR_ClearCoat.mdl": {
+      "bytes": 29789,
+      "role": "code",
+      "sha256": "d84c5ba482561c0eaea2e0c5b607358af549e36cd921773462f92dbc4f32cbc3"
+    }
+  },
+  "id": "simready_engine_component_flywheel_c01",
+  "kind": "model",
+  "licence": {
+    "credit": "engineComponent_flywheel_c01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0; changed: each Material names its library surface (score:surface)",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "Textures/t_metal_aluminiumBrushed_d01_tile_alb.png": "engineComponent_flywheel_c01/simready_usd/Textures/t_metal_aluminiumBrushed_d01_tile_alb.png",
+      "Textures/t_metal_aluminiumBrushed_d01_tile_nor.png": "engineComponent_flywheel_c01/simready_usd/Textures/t_metal_aluminiumBrushed_d01_tile_nor.png",
+      "Textures/t_metal_aluminiumBrushed_d01_tile_orm.png": "engineComponent_flywheel_c01/simready_usd/Textures/t_metal_aluminiumBrushed_d01_tile_orm.png",
+      "payloads/MuJoCo/disabled.usda": "engineComponent_flywheel_c01/simready_usd/payloads/MuJoCo/disabled.usda",
+      "payloads/MuJoCo/enabled.usda": "engineComponent_flywheel_c01/simready_usd/payloads/MuJoCo/enabled.usda",
+      "payloads/Newton/disabled.usda": "engineComponent_flywheel_c01/simready_usd/payloads/Newton/disabled.usda",
+      "payloads/Newton/enabled.usda": "engineComponent_flywheel_c01/simready_usd/payloads/Newton/enabled.usda",
+      "payloads/PhysX/disabled.usda": "engineComponent_flywheel_c01/simready_usd/payloads/PhysX/disabled.usda",
+      "payloads/PhysX/enabled.usda": "engineComponent_flywheel_c01/simready_usd/payloads/PhysX/enabled.usda",
+      "payloads/Physics/physics.usda": "engineComponent_flywheel_c01/simready_usd/payloads/Physics/physics.usda",
+      "payloads/base.usda": "engineComponent_flywheel_c01/simready_usd/payloads/base.usda",
+      "payloads/geometries.usd": "engineComponent_flywheel_c01/simready_usd/payloads/geometries.usd",
+      "payloads/instances.usda": "engineComponent_flywheel_c01/simready_usd/payloads/instances.usda",
+      "payloads/instances_mujoco.usda": "engineComponent_flywheel_c01/simready_usd/payloads/instances_mujoco.usda",
+      "payloads/instances_newton.usda": "engineComponent_flywheel_c01/simready_usd/payloads/instances_newton.usda",
+      "payloads/instances_physx.usda": "engineComponent_flywheel_c01/simready_usd/payloads/instances_physx.usda",
+      "payloads/materials.usda": "engineComponent_flywheel_c01/simready_usd/payloads/materials.usda (changed: each Material names its library surface (score:surface))",
+      "sm_engineComponent_flywheel_c01_01.usd": "engineComponent_flywheel_c01/simready_usd/sm_engineComponent_flywheel_c01_01.usd",
+      "source_assets/OmniPBR.mdl": "engineComponent_flywheel_c01/simready_usd/source_assets/OmniPBR.mdl",
+      "source_assets/OmniPBRBase.mdl": "engineComponent_flywheel_c01/simready_usd/source_assets/OmniPBRBase.mdl",
+      "source_assets/OmniPBR_ClearCoat.mdl": "engineComponent_flywheel_c01/simready_usd/source_assets/OmniPBR_ClearCoat.mdl"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "engineComponent_flywheel_c01: its model, physics and maps"
+      },
+      {
+        "by": "score",
+        "what": "the library surface each material names (score:surface)"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: engineComponent_flywheel_c01",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/simready_m_opaque_metal_steel_brushed_d01_0ad18454@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "description": [
+      "mechanical device designed to store angular kinetic energy in a rotating mass"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "simulators": [
+      "mujoco",
+      "newton",
+      "physx"
+    ],
+    "wikidata_class": [
+      "flywheel"
+    ],
+    "wikidata_qcode": [
+      "Q183576"
+    ]
+  },
+  "title": "engineComponent_flywheel_c01",
+  "usd": {
+    "default_prim": "/RootNode",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/simready_engine_component_flywheel_c01/1/sm_engineComponent_flywheel_c01_01.usd",
+    "root": "sm_engineComponent_flywheel_c01_01.usd",
+    "up_axis": "Z",
+    "use": "reference"
+  },
+  "version": 1
+}

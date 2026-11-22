@@ -1,0 +1,78 @@
+{
+  "address": "surface/simready_m_opaque_plastic_black_dirty_c01_dec2aff5@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 8155424,
+      "role": "texture",
+      "sha256": "3b8b0b2608e2f3870350b06a126c0f60b7dbbf7f95f4695c1d137433655a15e0"
+    },
+    "material.usda": {
+      "bytes": 2579,
+      "role": "usd",
+      "sha256": "a234032893ebf6beb1880e7a791426bc01b0f9b185d36f29fae710320459ec45"
+    },
+    "normal.png": {
+      "bytes": 24897922,
+      "role": "texture",
+      "sha256": "40bf1bf792f9a92ae87c7bdcba30fbb5a763772a39c0bbafe848e6e16c3ecd2d"
+    },
+    "orm.png": {
+      "bytes": 11023396,
+      "role": "texture",
+      "sha256": "19e7daf8d14f3e16d7f49058b9a33b528171427239534a09c3958437bcbcfac8"
+    },
+    "surface.json": {
+      "bytes": 806,
+      "role": "record",
+      "sha256": "81db34c6642c9e25523ccc63df4cf6aad69a19189ce955e7437045f3bc78e2aa"
+    }
+  },
+  "id": "simready_m_opaque_plastic_black_dirty_c01_dec2aff5",
+  "kind": "surface",
+  "licence": {
+    "credit": "equipment_airDryer_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "equipment_airDryer_a01/simready_usd/Textures/t_plastic_dirty_c01_tile_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "equipment_airDryer_a01/simready_usd/Textures/t_plastic_dirty_c01_tile_nor.png",
+      "orm.png": "equipment_airDryer_a01/simready_usd/Textures/t_plastic_dirty_c01_tile_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__plastic__blackDirty_c01 maps of equipment_airDryer_a01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: equipment_airDryer_a01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "dec2aff530cc882eefae63c6850acd0818117e2ead760ddf5248d557b321bcea"
+    ]
+  },
+  "title": "m_opaque__plastic__blackDirty_c01",
+  "usd": null,
+  "version": 1
+}

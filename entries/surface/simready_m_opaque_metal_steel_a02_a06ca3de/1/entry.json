@@ -1,0 +1,78 @@
+{
+  "address": "surface/simready_m_opaque_metal_steel_a02_a06ca3de@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 5557085,
+      "role": "texture",
+      "sha256": "e61898b1e1a7b64dba44ee6e3b8b0d66f873508c09e141394d5535d208d96b12"
+    },
+    "material.usda": {
+      "bytes": 2286,
+      "role": "usd",
+      "sha256": "a48715489282c037d7d4ff3d7269f245067e1989dd0ff3bc4d1812d2329ccdf3"
+    },
+    "normal.png": {
+      "bytes": 2768543,
+      "role": "texture",
+      "sha256": "aee4f8822d397ae83b0074dc4748d013122f24a7b3b965bb92219bb159dd8c02"
+    },
+    "roughness.png": {
+      "bytes": 9240311,
+      "role": "texture",
+      "sha256": "c6cd5e4c207d3628d367e688d2908c2e62f3112159e9b1ad8e5a8b1058964571"
+    },
+    "surface.json": {
+      "bytes": 832,
+      "role": "record",
+      "sha256": "75f292fc7621eab8fb34f304627aaddbd733afca4d33efab84ffac9aa6317ffb"
+    }
+  },
+  "id": "simready_m_opaque_metal_steel_a02_a06ca3de",
+  "kind": "surface",
+  "licence": {
+    "credit": "engineComponent_flywheel_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "engineComponent_flywheel_a01/simready_usd/Textures/t_metal_steel_a01_tile_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "engineComponent_flywheel_a01/simready_usd/Textures/t_metal_steel_a02_tile_nor.png",
+      "roughness.png": "engineComponent_flywheel_a01/simready_usd/Textures/t_metal_aluminiumBrushed_d01_tile_rou.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__metal__steel_a02 maps of engineComponent_flywheel_a01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: engineComponent_flywheel_a01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "a06ca3dea5c1aa69042e2fcf35dc4a8f8f4c4c6a404f5f57b9e6868c71cd5460"
+    ]
+  },
+  "title": "m_opaque__metal__steel_a02",
+  "usd": null,
+  "version": 1
+}
