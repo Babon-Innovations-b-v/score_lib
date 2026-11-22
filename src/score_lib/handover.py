@@ -269,42 +269,53 @@ def committed(root, message, paths=SAVED_PATHS):
     return newest.stdout.strip(), ""
 
 
-def caught_up(root):
-    """(caught up, why): the current branch rebased onto origin's, so a push after other writers' commits (take-in,
-    another handover's checkout) is a fast-forward; a rebase that stops is aborted, the branch left as it was. A branch
-    origin does not hold yet has nothing to rebase onto, so its first push goes as it is."""
+def current_branch(root):
+    """(branch, why): the branch the library is on, or None and why when it is on none."""
     branch = git(root, "rev-parse", "--abbrev-ref", "HEAD")
     if branch.returncode != 0 or branch.stdout.strip() == "HEAD":
-        return False, "the library is on no branch" if branch.returncode == 0 else last_line(branch)
-    remote = git(root, "ls-remote", "--exit-code", "--heads", "origin", branch.stdout.strip())
+        return None, "the library is on no branch" if branch.returncode == 0 else last_line(branch)
+    return branch.stdout.strip(), ""
+
+
+def caught_up(root, target=None):
+    """(caught up, why): the current branch (or HEAD onto origin's `target` branch, from a worktree on any branch)
+    rebased onto origin's, so a push after other writers' commits (take-in, another handover's checkout) is a
+    fast-forward; a rebase that stops is aborted, the branch left as it was. A branch origin does not hold yet has
+    nothing to rebase onto, so its first push goes as it is."""
+    branch, why = (target, "") if target else current_branch(root)
+    if branch is None:
+        return False, why
+    remote = git(root, "ls-remote", "--exit-code", "--heads", "origin", branch)
     if remote.returncode == 2:
         return True, ""
-    done = git(root, "pull", "-q", "--rebase", "origin", branch.stdout.strip())
+    done = git(root, "pull", "-q", "--rebase", "origin", branch)
     if done.returncode != 0:
         git(root, "rebase", "--abort")
         return False, last_line(done)
     return True, ""
 
 
-def pushed(root):
-    """(pushed, why): rebase the current branch onto origin's, then push it to origin."""
+def pushed(root, target=None):
+    """(pushed, why): rebase the current branch onto origin's, then push it to origin (to origin's `target` branch,
+    HEAD:<target>, when one is given)."""
     if git(root, "remote", "get-url", "origin").returncode != 0:
         return False, "the library has no remote named origin"
-    rebased, why = caught_up(root)
+    rebased, why = caught_up(root, target)
     if not rebased:
         return False, why
-    done = git(root, "push", "-q", "origin", "HEAD")
+    done = git(root, "push", "-q", "origin", f"HEAD:{target}" if target else "HEAD")
     return (True, "") if done.returncode == 0 else (False, last_line(done))
 
 
-def saved(root, message, paths=SAVED_PATHS):
-    """The report's saved block: the library commit holding `paths` and whether it reached origin."""
+def saved(root, message, paths=SAVED_PATHS, target=None):
+    """The report's saved block: the library commit holding `paths` and whether it reached origin (origin's `target`
+    branch when one is given)."""
     if not is_repository(root):
         return {"committed": None, "pushed": False, "why": "the library root is not a git repository"}
     commit, why = committed(root, message, paths)
     if commit is None:
         return {"committed": None, "pushed": False, "why": why}
-    went, why = pushed(root)
+    went, why = pushed(root, target)
     if went:
         commit, why = committed(root, message, paths)
     return {"committed": commit, "pushed": went, "why": why}

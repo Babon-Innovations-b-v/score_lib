@@ -26,11 +26,23 @@ Every entry carrying the source's bytes names its licence and credit (the top-le
 the source into a capped cache and from there into the blob store, and the cache is emptied after each put (the disk
 rule): a file the store already holds is not downloaded, only stood in for by an empty file while its asset's USD is
 checked. An asset whose model entry already holds this revision is left as it is, so a stopped run picks up where it
-stopped. Whatever cannot be taken is a gap row naming the asset and why.
+stopped; with `save`, only when that entry is committed too, so entries a run without `save` (or a stopped save)
+left in the checkout are saved by the next one. `retake` takes such an asset again, its entries settled as any
+take-in's (unchanged, a changed draft, or a locked one's next version). Whatever cannot be taken is a gap row naming
+the asset and why.
 
-Requests are paced under the anonymous limit (PACE_LIMIT in PACE_WINDOW seconds) unless a Hugging Face token is set.
+A material whose map names UDIM tiles (`<UDIM>` in its path) gets a surface holding every tile the asset holds as its
+own file under the map's role (`albedo.1001.png`, `albedo.1002.png`), its material.usda naming them by the pattern
+(`./albedo.<UDIM>.png`).
+
+`jobs` assets are taken side by side on threads of one process. Every request to the source goes through one shared
+Pacer: under the anonymous limit (PACE_LIMIT in PACE_WINDOW seconds) unless a Hugging Face token is set, and a
+refusal for rate (HTTP 429) or a passing server fault backs every thread off for the wait the hub names before the
+request is tried again (up to TRIES times). The cache is put and its entries written (and saved, one commit each) a
+batch at a time, at most BATCH_LIMIT blob store commits an hour (the hub allows 128 a repository).
 """
 import collections
+import concurrent.futures
 import hashlib
 import json
 import os
@@ -40,17 +52,26 @@ import re
 import shutil
 import sys
 import tempfile
+import threading
 import time
 
 from score_lib import entry as entries
 from score_lib import handover, index, take_in
 from score_lib.admission import NotAdmitted, Sources
 from score_lib.blobs import BadBlob, check_sha, put_all
+from score_lib.blobs.hub import COMMIT_FILES
 
 REPO_TYPE = "dataset"
 REVISION = re.compile(r"^[0-9a-f]{40}$")
 PACE_LIMIT = 450  # requests in one window, under the hub's anonymous 500 per 300 s
 PACE_WINDOW = 300.0
+TRIES = 8  # times one request is tried while the hub refuses it for rate or a passing fault
+RETRY = (429, 500, 502, 503, 504)  # the refusals a request is tried again after
+BACK_OFF = 30.0  # seconds every thread waits after a refusal naming no wait, doubled each time it is refused again
+BATCH_LIMIT = 100  # blob store commits in one hour, under the hub's 128 a repository, room left for other writers
+BATCH_WINDOW = 3600.0
+LIBRARY_BRANCH = "main"  # the library branch a save pushes to (HEAD:main), from any branch or worktree
+UDIM = "<UDIM>"
 LIST_PAGE = 1000  # entries the hub returns in one page of a tree listing
 CACHE_BYTES = 4 << 30  # bytes the cache holds before they are put into the blob store and removed
 LAYERS = (".usd", ".usda", ".usdc")
@@ -80,61 +101,118 @@ class Gap(Exception):
 
 
 class Pacer:
-    """At most `limit` requests in any `window` seconds: a request over it waits for the oldest to leave."""
+    """At most `limit` requests in any `window` seconds (no count when `limit` is None), shared by every thread: a
+    request over it waits for the oldest to leave, and every request waits out a back-off a refusal set."""
 
     def __init__(self, limit=PACE_LIMIT, window=PACE_WINDOW, clock=time.monotonic, sleep=time.sleep):
         self.limit, self.window, self.clock, self.sleep = limit, window, clock, sleep
         self.times = collections.deque()
+        self.until = None
+        self.lock = threading.Lock()
 
     def tick(self):
-        """Count one request, waiting first when the window is full."""
-        now = self.clock()
-        while self.times and now - self.times[0] >= self.window:
-            self.times.popleft()
-        if len(self.times) >= self.limit:
-            self.sleep(self.window - (now - self.times[0]))
-            self.times.popleft()
+        """Count one request, waiting first for a back-off and when the window is full."""
+        with self.lock:
             now = self.clock()
-        self.times.append(now)
+            if self.until is not None and now < self.until:
+                self.sleep(self.until - now)
+                now = self.clock()
+            if self.limit is None:
+                return
+            while self.times and now - self.times[0] >= self.window:
+                self.times.popleft()
+            if len(self.times) >= self.limit:
+                self.sleep(self.window - (now - self.times[0]))
+                self.times.popleft()
+                now = self.clock()
+            self.times.append(now)
+
+    def back_off(self, seconds):
+        """Hold every request for `seconds` from now (a later hold already set kept)."""
+        with self.lock:
+            until = self.clock() + seconds
+            self.until = until if self.until is None else max(self.until, until)
 
 
 def pacer_for_token(token):
-    """A Pacer when no Hugging Face token is set (anonymous requests), else None."""
-    return None if token else Pacer()
+    """The run's one Pacer: counting under the anonymous limit when no Hugging Face token is set, else only backing
+    off."""
+    return Pacer(limit=None) if token else Pacer()
+
+
+def refusal_status(error):
+    """The HTTP status of a hub refusal, or None for any other fault."""
+    from huggingface_hub.errors import HfHubHTTPError
+    response = getattr(error, "response", None) if isinstance(error, HfHubHTTPError) else None
+    return getattr(response, "status_code", None)
+
+
+def refusal_wait(error, attempt):
+    """The seconds to wait after a refusal: the wait it names (Retry-After), else BACK_OFF doubled each attempt."""
+    named = (getattr(error.response, "headers", None) or {}).get("Retry-After")
+    try:
+        return float(named)
+    except (TypeError, ValueError):
+        return BACK_OFF * 2 ** attempt
 
 
 class HubSource:
-    """One dataset repository at one revision, read through a huggingface_hub HfApi, every request paced."""
+    """One dataset repository at one revision, read through a huggingface_hub HfApi, every request paced by one
+    Pacer shared by the run's threads and tried again after a refusal; `measure` counts requests, refusals for rate
+    (`throttled`), retries and bytes downloaded."""
 
     def __init__(self, api, repo, revision, pacer=None):
-        self.api, self.repo, self.revision, self.pacer = api, repo, revision, pacer
+        self.api, self.repo, self.revision = api, repo, revision
+        self.pacer = pacer or Pacer(limit=None)
+        self.measure = {"requests": 0, "throttled": 0, "retries": 0, "bytes": 0}
+        self.counting = threading.Lock()
 
-    def paced(self):
-        if self.pacer:
+    def counted(self, name, amount=1):
+        with self.counting:
+            self.measure[name] += amount
+
+    def asked(self, call):
+        """`call()` (one request) paced, tried again while the hub refuses it for rate or a passing fault, every
+        thread held for the wait the refusal names; the last refusal raised."""
+        for attempt in range(TRIES):
             self.pacer.tick()
+            self.counted("requests")
+            try:
+                return call()
+            except Exception as error:
+                status = refusal_status(error)
+                if status not in RETRY or attempt == TRIES - 1:
+                    raise
+                wait = refusal_wait(error, attempt)
+                self.counted("throttled" if status == 429 else "retries")
+                print(f"take-in hub: refused ({status}), every request waits {wait:.0f} s ({attempt + 1}/{TRIES})",
+                      file=sys.stderr, flush=True)
+                self.pacer.back_off(wait)
 
     def assets(self):
         """The repository's top-level folders, sorted (hidden ones left out)."""
         from huggingface_hub.hf_api import RepoFolder
-        found = []
-        self.paced()
-        listing = self.api.list_repo_tree(self.repo, recursive=False, revision=self.revision, repo_type=REPO_TYPE)
-        for count, item in enumerate(listing, 1):
-            if count % LIST_PAGE == 0:
-                self.paced()
-            if isinstance(item, RepoFolder) and not item.path.startswith("."):
-                found.append(item.path)
-        return sorted(found)
+
+        def listed():
+            found = []
+            listing = self.api.list_repo_tree(self.repo, recursive=False, revision=self.revision, repo_type=REPO_TYPE)
+            for count, item in enumerate(listing, 1):
+                if count % LIST_PAGE == 0:
+                    self.pacer.tick()
+                if isinstance(item, RepoFolder) and not item.path.startswith("."):
+                    found.append(item.path)
+            return found
+        return sorted(self.asked(listed))
 
     def download(self, path, destination):
         """One file of the repository at the revision to `destination`; the download's own folder removed after."""
         destination = pathlib.Path(destination)
         destination.parent.mkdir(parents=True, exist_ok=True)
-        self.paced()
         with tempfile.TemporaryDirectory(dir=destination.parent, prefix=".hub-") as folder:
-            found = self.api.hf_hub_download(self.repo, path, repo_type=REPO_TYPE, revision=self.revision,
-                                             local_dir=folder)
+            found = self.asked(lambda: self.api.hf_hub_download(self.repo, path, repo_type=REPO_TYPE,
+                                                                revision=self.revision, local_dir=folder))
             shutil.move(found, destination)
+        self.counted("bytes", destination.stat().st_size)
         return destination
 
 
@@ -274,12 +352,27 @@ def map_role(inputs):
     return "_".join(sorted(INPUT_ROLES.get(each, snake(each)) for each in inputs))
 
 
+def tiles_of(name, kept):
+    """[(tile, name)] of a map's files the asset holds: (None, name) for one map, each UDIM tile's number and name
+    for a pattern naming `<UDIM>`."""
+    if UDIM not in name:
+        return [(None, name)] if name in kept else []
+    head, tail = name.split(UDIM, 1)
+    pattern = re.compile(re.escape(head) + r"(\d{4})" + re.escape(tail))
+    return sorted((found.group(1), other) for other in kept if (found := pattern.fullmatch(other)))
+
+
+def map_name(role, name, tile=None):
+    """A surface's own name of one map: its role and the source's ending (`albedo.png`), a UDIM tile's number
+    (`albedo.1001.png`) or, for the pattern, `<UDIM>` (`albedo.<UDIM>.png`) between."""
+    middle = f".{tile}" if tile else f".{UDIM}" if UDIM in name else ""
+    return f"{role}{middle}{posixpath.splitext(name)[1].lower()}"
+
+
 def texture_name(layer_name, asset_path, kept):
-    """The entry name of a map a layer names; Gap when it names tiles (UDIM) or a file the asset does not hold."""
-    if "<UDIM>" in asset_path:
-        raise Gap(f"{layer_name} names UDIM tiles ({asset_path}), which a surface does not hold as one map")
+    """The entry name of a map a layer names (a UDIM pattern as it is); Gap when the asset holds no file of it."""
     name = posixpath.normpath(posixpath.join(posixpath.dirname(layer_name), asset_path))
-    if name not in kept:
+    if not tiles_of(name, kept):
         raise Gap(f"{layer_name} names a map {asset_path}, which the asset does not hold")
     return name
 
@@ -492,14 +585,16 @@ def tile_metres_of(folder, root_name, materials, kept):
 
 def maps_key(material, kept):
     """The sha256 a surface is keyed by: of its maps' bytes by role, or of its constants when it has no maps."""
-    content = ({"maps": {role: kept[name]["sha256"] for role, name in material["maps"].items()}}
+    content = ({"maps": {role: kept[name]["sha256"] if UDIM not in name else
+                         {tile: kept[each]["sha256"] for tile, each in tiles_of(name, kept)}
+                         for role, name in material["maps"].items()}}
                if material["maps"] else {"constants": material["constants"]})
     return hashlib.sha256(json.dumps(content, sort_keys=True).encode()).hexdigest()
 
 
 def is_tiling(material, kept):
     """A material whose maps tile (a shared set, `tile` in its maps' names), or one with no maps."""
-    return all("tile" in posixpath.basename(kept[name]["path"]).lower() for name in material["maps"].values())
+    return all("tile" in posixpath.basename(name).lower() for name in material["maps"].values())
 
 
 def look_layer(prim_name, maps, constants, scale, convention="opengl"):
@@ -555,7 +650,7 @@ def surface_record(row, material, tiling):
     """Our own surface.json: the material's settings as the source gives them, and its recipe (none yet; a written
     gap for a set painted for one model)."""
     return {"source": row["id"], "family": "image" if material["maps"] else "constant", "material": material["name"],
-            "maps": {role: role + posixpath.splitext(name)[1].lower() for role, name in material["maps"].items()},
+            "maps": {role: map_name(role, name) for role, name in material["maps"].items()},
             "constants": material["constants"], **material["settings"], "tiling": tiling, "recipe": None,
             "recipe_gap": None if tiling else ONE_MODEL_GAP}
 
@@ -622,12 +717,18 @@ def unchanged_copies(changed, kept, folder, pairs):
 class Run:
     """One take-in of a repository at a revision: what waits in the cache to be put, and the report."""
 
-    def __init__(self, root, blobs, source, sources, row, world, cache, cache_bytes=CACHE_BYTES, save=None):
+    def __init__(self, root, blobs, source, sources, row, world, cache, cache_bytes=CACHE_BYTES, save=None,
+                 retake=False):
         self.root, self.blobs, self.source, self.sources, self.row = root, blobs, source, sources, row
         self.world, self.cache, self.cache_bytes, self.save = world, pathlib.Path(cache), cache_bytes, save
+        self.retake = retake
         self.prefix = row["take_in"]["prefix"]
-        self.pairs, self.records, self.cached = {}, [], 0
+        self.pairs, self.records, self.cached, self.queued_assets = {}, [], 0, []
         self.stored = set()
+        self.lock = threading.RLock()  # the run's shared state: surfaces, the queue and its batch's put
+        self.order, self.ended, self.turn = {}, set(), 0  # assets settle in the run's order, however many side by side
+        self.turns = threading.Condition()
+        self.batches = Pacer(limit=BATCH_LIMIT, window=BATCH_WINDOW)
         self.surfaces = self.known_surfaces()
         self.ids = {}
         self.report = {"new": [], "unchanged": [], "changed draft": [], "new version": [], "refused": [], "gaps": []}
@@ -700,7 +801,7 @@ class Run:
         entry_id = f"{self.prefix}_{snake(material['name'])}_{key[:8]}"
         folder = pathlib.Path(folder) / entry_id
         folder.mkdir(parents=True, exist_ok=True)
-        (folder / "material.usda").write_text(look_layer(entry_id, {role: role + posixpath.splitext(name)[1].lower()
+        (folder / "material.usda").write_text(look_layer(entry_id, {role: map_name(role, name)
                                                                     for role, name in material["maps"].items()},
                                                          material["constants"], material["settings"]["tile_scale"],
                                                          material["settings"]["normal_convention"]))
@@ -708,9 +809,10 @@ class Run:
         files = {"material.usda": {"path": str(folder / "material.usda"), "from": LOOK_WRITTEN},
                  "surface.json": {"path": str(folder / "surface.json"), "from": RECORD_WRITTEN}}
         for role, name in material["maps"].items():
-            files[role + posixpath.splitext(name)[1].lower()] = {
-                "path": str(pathlib.Path(self.cache) / asset / name), "from": f"{asset}/{kept[name]['path']}",
-                "sha256": kept[name]["sha256"], "bytes": kept[name]["bytes"]}
+            for tile, each in tiles_of(name, kept):
+                files[map_name(role, name, tile)] = {
+                    "path": str(pathlib.Path(self.cache) / asset / each), "from": f"{asset}/{kept[each]['path']}",
+                    "sha256": kept[each]["sha256"], "bytes": kept[each]["bytes"]}
         made_with = [{"what": "its look and record", "source": "score"}]
         if material["maps"]:
             made_with.append({"what": f"the {material['name']} maps of {asset}", "source": self.row["id"],
@@ -767,15 +869,43 @@ class Run:
         return entry_id
 
     def taken(self, asset, entry_id):
-        """Whether the asset's model entry already holds this revision."""
+        """Whether the asset's model entry already holds this revision (with `save`, committed too)."""
         found = entries.versions(self.root, "model", entry_id)
-        return bool(found) and found[-1]["provenance"].get("taken_from") == self.about(asset)["taken_from"]
+        if not found or found[-1]["provenance"].get("taken_from") != self.about(asset)["taken_from"]:
+            return False
+        return not (self.save and uncommitted(self.root, f"entries/model/{entry_id}"))
+
+    def in_order(self, assets):
+        """Settle `assets` in this order: a surface two of them share is settled by the first, as one at a time
+        would."""
+        self.order = {asset: place for place, asset in enumerate(assets)}
+
+    def wait_turn(self, asset):
+        """Wait until every asset before this one in the run's order has ended."""
+        with self.turns:
+            self.turns.wait_for(lambda: self.turn >= self.order.get(asset, self.turn))
+
+    def end_turn(self, asset):
+        """Mark this asset ended, letting the next waiting one settle."""
+        with self.turns:
+            self.ended.add(self.order.get(asset))
+            while self.turn in self.ended:
+                self.turn += 1
+            self.turns.notify_all()
 
     def take(self, asset):
         """One asset: its surfaces and model planned, fetched and queued, or a gap row; the cache put when full."""
         try:
+            self.taken_or_gap(asset)
+        finally:
+            self.end_turn(asset)
+
+    def taken_or_gap(self, asset):
+        """One asset taken (its entries queued, the cache put when full), left as taken, or a gap row."""
+        print(f"take-in hub: {asset}", file=sys.stderr, flush=True)
+        try:
             entry_id = self.entry_id(asset)
-            if self.taken(asset, entry_id):
+            if not self.retake and self.taken(asset, entry_id):
                 self.report["unchanged"].append(entries.address_of("model", entry_id,
                                                                    entries.versions(self.root, "model",
                                                                                     entry_id)[-1]["version"]))
@@ -785,13 +915,14 @@ class Run:
             self.report["gaps"].append({"asset": asset, "why": str(why)})
             shutil.rmtree(self.cache / asset, ignore_errors=True)
             return
-        if self.cached >= self.cache_bytes:
-            self.flush()
+        with self.lock:
+            if self.cached >= self.cache_bytes:
+                self.flush()
 
     def queue(self, asset, entry_id):
         """An asset's entries settled and their files queued for the store (Gap and the rest raised)."""
         folder = self.cache / asset
-        root_path, bill = bill_of(self.source, asset, self.row, self.cache)
+        root_path, bill = bill_of(self.source, asset, self.row, folder)
         root_name, kept, left = planned(root_path, bill)
         for name in kept:
             entries.checked_name(name)
@@ -799,33 +930,63 @@ class Run:
         outside = self.completed(asset, root_name, kept, left, folder, pairs)
         materials = materials_in(folder, kept)
         tile_metres_of(folder, root_name, materials, kept)
-        addresses, mine = self.surfaces_of(asset, materials, kept, folder, queued, pairs)
-        changed = named_surfaces(folder, materials, addresses)
-        unchanged_copies(changed, kept, folder, pairs)
-        listed = self.model_listed(asset, entry_id, root_name, kept, changed, outside, folder, addresses.values())
-        status, record = take_in.settle(self.root, listed, self.about(asset), self.sources)
-        for name in changed:
-            pairs[record["files"][name]["sha256"]] = folder / name
-        queued.append((status, record))
-        self.surfaces.update(mine)
-        self.pairs.update(pairs)
-        self.records += queued
-        self.cached += sum(path.stat().st_size for path in pairs.values())
+        self.wait_turn(asset)
+        with self.lock:  # a surface new to the run settled once, however many assets side by side name it
+            addresses, mine = self.surfaces_of(asset, materials, kept, folder, queued, pairs)
+            changed = named_surfaces(folder, materials, addresses)
+            unchanged_copies(changed, kept, folder, pairs)
+            listed = self.model_listed(asset, entry_id, root_name, kept, changed, outside, folder, addresses.values())
+            status, record = take_in.settle(self.root, listed, self.about(asset), self.sources)
+            for name in changed:
+                pairs[record["files"][name]["sha256"]] = folder / name
+            queued.append((status, record))
+            self.surfaces.update(mine)
+            self.pairs.update(pairs)
+            self.records += queued
+            self.queued_assets.append(asset)
+            self.cached += sum(path.stat().st_size for path in pairs.values())
 
     def flush(self):
-        """Every queued file into the blob store, then the records naming them written (and saved, with --save);
-        the cache emptied."""
-        put_all(self.blobs, sorted(self.pairs.items()))
-        self.stored.update(self.pairs)
-        for status, record in self.records:
-            entries.write(self.root, record)
-            self.report[status].append(record["address"])
-        written = [record["address"] for _, record in self.records]
-        self.pairs, self.records, self.cached = {}, [], 0
-        shutil.rmtree(self.cache, ignore_errors=True)
-        self.cache.mkdir(parents=True)
-        if self.save and written:
-            self.save(written)
+        """One batch: every queued file into the blob store (at most BATCH_LIMIT store commits an hour), then the
+        records naming them written and, with --save, saved with the surfaces their models require; the queued
+        assets' cache folders removed."""
+        with self.lock:
+            for _ in range(-(-len(self.pairs) // COMMIT_FILES)):
+                self.batches.tick()
+            put_all(self.blobs, sorted(self.pairs.items()))
+            self.stored.update(self.pairs)
+            for status, record in self.records:
+                entries.write(self.root, record)
+                self.report[status].append(record["address"])
+            written = sorted({address for _, record in self.records
+                              for address in (record["address"], *record.get("requires", []))})
+            for asset in self.queued_assets:
+                shutil.rmtree(self.cache / asset, ignore_errors=True)
+            self.pairs, self.records, self.cached, self.queued_assets = {}, [], 0, []
+            if self.save and written:
+                self.save(written)
+
+
+def uncommitted(root, path):
+    """Whether a path of the library differs from its last commit (written, changed or untracked); never in a
+    library that is no git repository."""
+    if not handover.is_repository(root):
+        return False
+    done = handover.git(root, "status", "--porcelain", "--", path)
+    return done.returncode != 0 or bool(done.stdout.strip())
+
+
+def taken_side_by_side(run, assets, jobs):
+    """Every asset through `run.take` on `jobs` threads; the first fault raised once the assets begun are done, the
+    rest not begun."""
+    with concurrent.futures.ThreadPoolExecutor(max_workers=max(1, jobs)) as pool:
+        futures = [pool.submit(run.take, asset) for asset in assets]
+        try:
+            for future in concurrent.futures.as_completed(futures):
+                future.result()
+        except BaseException:
+            pool.shutdown(cancel_futures=True)
+            raise
 
 
 def saver(root, repo, revision, report):
@@ -839,36 +1000,42 @@ def saver(root, repo, revision, report):
             index.rebuild(root)
             folders = sorted({"entries/{0}/{1}".format(*entries.parse_address(address)[:2]) for address in written})
             message = f"take-in hub: {len(written)} entries from {repo} at {revision[:12]}"
-            report["saved"].append(handover.saved(root, message, (*folders, "index")))
+            report["saved"].append(handover.saved(root, message, (*folders, "index"), LIBRARY_BRANCH))
     return save
 
 
 def take_in_hub(root, blobs, source, only=None, sources=None, world="world1", cache_bytes=CACHE_BYTES, save=False,
-                cache_root=None):
-    """Take in every asset of a source (or those `only` names), its cache a new folder under `cache_root` (the
-    system's temp folder by default) removed after; the report {status: [address], gaps: [{asset, why}], saved: [...]
-    with `save`}; the index rebuilt."""
+                cache_root=None, jobs=1, retake=False):
+    """Take in every asset of a source (or those `only` names), `jobs` side by side, its cache a new folder under
+    `cache_root` (the system's temp folder by default) removed after; the report {status: [address], gaps: [{asset,
+    why}], saved: [...] with `save`, measure: {assets, jobs, seconds, requests, throttled, retries, bytes}}; the index
+    rebuilt."""
     if not REVISION.match(source.revision or ""):
         raise Gap(f"{source.revision!r}: take in a pinned revision (a 40-hex commit), never a branch")
     sources = sources or Sources.load()
     row = row_of(sources, source.repo)
     cache = pathlib.Path(tempfile.mkdtemp(prefix="score-lib-take-in-hub-", dir=cache_root))
-    run = Run(root, blobs, source, sources, row, world, cache, cache_bytes)
+    run = Run(root, blobs, source, sources, row, world, cache, cache_bytes, retake=retake)
     if save:
         run.save = saver(root, source.repo, source.revision, run.report)
+    started = time.monotonic()
     try:
         names = source.assets()
         wanted = sorted(only) if only else names
-        for asset in wanted:
-            if asset not in names:
-                run.report["gaps"].append({"asset": asset, "why": "not in the repository at this revision"})
-                continue
-            print(f"take-in hub: {asset}", file=sys.stderr, flush=True)
-            run.take(asset)
+        for asset in [asset for asset in wanted if asset not in names]:
+            run.report["gaps"].append({"asset": asset, "why": "not in the repository at this revision"})
+        present = [asset for asset in wanted if asset in names]
+        run.in_order(present)
+        taken_side_by_side(run, present, jobs)
         run.flush()
     finally:
         shutil.rmtree(cache, ignore_errors=True)
     index.rebuild(root)
+    for status, found in run.report.items():
+        if status != "saved":
+            found.sort(key=lambda each: each["asset"] if isinstance(each, dict) else each)
+    run.report["measure"] = {"assets": len(present), "jobs": jobs, "seconds": round(time.monotonic() - started, 1),
+                             **getattr(source, "measure", {})}
     return run.report
 
 

@@ -92,7 +92,8 @@ def hub_report(options):
     try:
         return take_in_hub.take_in_hub(options.root, blob_store(), take_in_hub.hub_source(options.repo,
                                                                                           options.revision),
-                                       only=only, world=options.world, save=options.save)
+                                       only=only, world=options.world, save=options.save, jobs=options.jobs,
+                                       retake=options.retake)
     except take_in_hub.Gap as why:
         raise SystemExit(str(why))
 
@@ -118,7 +119,10 @@ def command_take_in(options):
     report = take_in_report(options)
     if options.report:
         pathlib.Path(options.report).write_text(json.dumps(report, indent=2, sort_keys=True) + "\n")
-    print(", ".join(f"{status} {len(found)}" for status, found in report.items() if status != "saved"))
+    print(", ".join(f"{status} {len(found)}" for status, found in report.items()
+                    if status not in ("saved", "measure")))
+    if report.get("measure"):  # take-in hub's: its assets, seconds, requests, refusals for rate and bytes
+        print("measure: " + ", ".join(f"{name} {value}" for name, value in report["measure"].items()))
     found = report.get("saved")
     saves = found if isinstance(found, list) else [found] if found else []  # take-in hub saves once per put
     for saved in saves:
@@ -361,6 +365,10 @@ def parser():
     taken.add_argument("--revision", help="with hub: the repository's commit to take in (40 hex)")
     taken.add_argument("--only", action="append", help="with hub: only these asset folders (comma-separated, "
                                                        "repeatable)")
+    taken.add_argument("--jobs", type=int, default=1, help="with hub: assets taken side by side (threads sharing "
+                                                         "one pacer)")
+    taken.add_argument("--retake", action="store_true", help="with hub: take again the assets already taken at this "
+                                                             "revision, each entry settled as changed or unchanged")
     taken.add_argument("--place", help="a place built by score's placing method (a place_build folder), taken in "
                                        "as a draft place entry (take_in_place.py)")
     taken.add_argument("--commit", help="with --place: the score commit that built the place")

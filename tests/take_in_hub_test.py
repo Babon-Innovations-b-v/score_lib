@@ -1,14 +1,25 @@
-"""score-lib take-in hub: an adopted set's assets at one pinned revision taken in as model and surface entries under
-their own licence, their bytes in the blob store and none left on disk, and the pacing of an anonymous reader."""
+"""score-lib take-in hub: an adopted set's assets at one pinned revision taken in, side by side, as model and surface
+entries under their own licence (a UDIM map's every tile in its surface), their bytes in the blob store and none left
+on disk; a save from another branch pushed to the library's main, a run without --save no cause for the save to see
+them unchanged, and --retake settling them again; and the pacing of a reader, its back-off after a refusal for rate.
+
+Breaks that turn it red: a UDIM material gapped, a save pushed to its own branch, a save after a run without it
+committing nothing (or not the surfaces its models require), assets side by side settled out of the run's order (the
+shared tile set's size then the crate's, which has no mesh), --retake leaving a changed asset unchanged, a 429 not
+tried again or not counted, the shared back-off not held."""
 import hashlib
 import json
 import pathlib
 import shutil
+import subprocess
+import time
 
 import pytest
+from huggingface_hub.errors import HfHubHTTPError
 from huggingface_hub.hf_api import RepoFile, RepoFolder
+from huggingface_hub.utils import httpx
 
-from conftest import png, usd_text
+from conftest import git, png, usd_text
 from score_lib import entry as entries
 from score_lib import take_in_hub, verify
 from score_lib.admission import Sources
@@ -185,6 +196,21 @@ def bowl(folder):
     return "assets_usd/sm_bowl_b01_01.usda"
 
 
+def tiled(folder):
+    """A layout-B asset whose albedo names UDIM tiles (two of them)."""
+    usd = folder / "assets_usd"
+    (usd / "payloads").mkdir(parents=True)
+    (usd / "sm_panel_d01_01.usda").write_text('#usda 1.0\n(\n    defaultPrim = "RootNode"\n)\n\n'
+                                              'def Xform "RootNode" (\n'
+                                              '    prepend references = @./payloads/base.usda@\n)\n{\n}\n')
+    (usd / "payloads/base.usda").write_text(layer([material("m_panel", {"albedo": "panel_alb.<UDIM>.png"})],
+                                                  documentation="A panel"))
+    (usd / "Textures").mkdir()
+    for tile, colour in (("1001", (10, 200, 10)), ("1002", (10, 10, 200))):
+        (usd / f"Textures/panel_alb.{tile}.png").write_bytes(png(colour, 4))
+    return "assets_usd/sm_panel_d01_01.usda"
+
+
 def broken(folder):
     """An asset holding a file whose ending no role knows."""
     usd = folder / "assets_usd"
@@ -206,11 +232,12 @@ def billed(folder, root):
 
 
 class FolderApi:
-    """A dataset repository at one revision read from a folder, as huggingface_hub's HfApi reads one."""
+    """A dataset repository at one revision read from a folder, as huggingface_hub's HfApi reads one, the `slow`
+    assets' files a moment late each."""
 
-    def __init__(self, folder):
+    def __init__(self, folder, slow=()):
         self.folder = pathlib.Path(folder)
-        self.revisions, self.downloads = set(), []
+        self.revisions, self.downloads, self.slow = set(), [], set(slow)
 
     def list_repo_tree(self, repo_id, path_in_repo=None, *, recursive=False, revision=None, repo_type=None):
         self.revisions.add(revision)
@@ -221,6 +248,8 @@ class FolderApi:
     def hf_hub_download(self, repo_id, filename, *, repo_type=None, revision=None, local_dir=None):
         self.revisions.add(revision)
         self.downloads.append(filename)
+        if filename.split("/")[0] in self.slow:
+            time.sleep(0.05)
         target = pathlib.Path(local_dir) / filename
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy(self.folder / filename, target)
@@ -230,30 +259,45 @@ class FolderApi:
 @pytest.fixture
 def repository(tmp_path):
     folder = tmp_path / "repository"
-    for name, made in (("crate_A01", crate), ("bowl_b01", bowl), ("broken_c01", broken)):
+    for name, made in (("crate_A01", crate), ("bowl_b01", bowl), ("broken_c01", broken), ("tiles_d01", tiled)):
         (folder / name).mkdir(parents=True)
         billed(folder / name, made(folder / name))
     (folder / "README.md").write_text("license: cc-by-4.0\n")
     return folder
 
 
+def on_a_branch_beside_main(root, origin):
+    """The library root a git repository whose origin holds main, checked out on another branch (a worktree's)."""
+    subprocess.run(["git", "init", "-q", "--bare", str(origin)], check=True)
+    git(root, "init", "-q", "-b", "main")
+    git(root, "config", "user.name", "test")
+    git(root, "config", "user.email", "test@example.org")
+    (root / "entries/.keep").write_text("")
+    git(root, "add", ".")
+    git(root, "commit", "-q", "-m", "library")
+    git(root, "remote", "add", "origin", str(origin))
+    git(root, "push", "-q", "origin", "main")
+    git(root, "checkout", "-q", "-b", "x155-work")
+
+
 def test_an_adopted_set_is_taken_in_whole_under_its_licence(repository, tmp_path):
     root = tmp_path / "library"
     (root / "entries").mkdir(parents=True)
+    on_a_branch_beside_main(root, tmp_path / "origin.git")
     (tmp_path / "sources.toml").write_text(SOURCES)
     sources = Sources.load(tmp_path / "sources.toml")
     blobs = from_environment()
     cache = tmp_path / "caches"
     cache.mkdir()
-    api = FolderApi(repository)
+    api = FolderApi(repository, slow={"bowl_b01"})  # the crate, side by side, done first: settled after the bowl
     report = take_in_hub.take_in_hub(root, blobs, take_in_hub.HubSource(api, REPO, REVISION), sources=sources,
-                                     cache_bytes=1, cache_root=cache)
+                                     cache_bytes=1, cache_root=cache, jobs=2)
     assert api.revisions == {REVISION} and not list(cache.iterdir())
     assert [gap["asset"] for gap in report["gaps"]] == ["broken_c01"] and "notes.xyz" in report["gaps"][0]["why"]
     models = sorted(address for address in report["new"] if address.startswith("model/"))
-    assert models == ["model/demo_bowl_b01@1", "model/demo_crate_a01@1"], report
+    assert models == ["model/demo_bowl_b01@1", "model/demo_crate_a01@1", "model/demo_tiles_d01@1"], report
     surfaces = [entries.load_address(root, address) for address in report["new"] if address.startswith("surface/")]
-    assert len(surfaces) == 3, report  # the shared tile set once, the logo painted for the crate, the constant paint
+    assert len(surfaces) == 4, report  # the shared tile set once, the crate's logo and paint, the panel's UDIM tiles
     model = entries.load_address(root, "model/demo_crate_a01@1")
     assert model["usd"]["root"] == "sm_crate_A01_01.usd" and model["usd"]["default_prim"] == "/RootNode"
     assert model["usd"]["path"] == "score_lib/model/demo_crate_a01/1/sm_crate_A01_01.usd"
@@ -266,7 +310,7 @@ def test_an_adopted_set_is_taken_in_whole_under_its_licence(repository, tmp_path
     assert model["tags"]["wikidata_qcode"] == ["Q1"] and model["tags"]["description"] == ["A crate"]
     assert model["tags"]["simulators"] == ["newton"]
     assert "changed" in model["provenance"]["files_from"]["payloads/materials.usda"]
-    assert sorted(model["requires"]) == sorted(record["address"] for record in surfaces)
+    assert sorted(model["requires"]) == sorted(record["address"] for record in surfaces if record["title"] != "m_panel")
     from pxr import Sdf
     by_material = {json.loads((blob(blobs, record, "surface.json", tmp_path)).read_text())["material"]: record
                    for record in surfaces}
@@ -286,6 +330,12 @@ def test_an_adopted_set_is_taken_in_whole_under_its_licence(repository, tmp_path
     assert "licence" not in by_material["m_paint"] and "licence" in by_material["m_plastic_black"]
     assert sorted(by_material["m_plastic_black"]["files"]) == ["albedo.png", "material.usda", "normal.png", "orm.png",
                                                               "surface.json"]
+    udim = by_material["m_panel"]
+    assert sorted(udim["files"]) == ["albedo.1001.png", "albedo.1002.png", "material.usda", "surface.json"], udim
+    udim_record = json.loads(blob(blobs, udim, "surface.json", tmp_path).read_text())
+    assert udim_record["maps"] == {"albedo": "albedo.<UDIM>.png"}
+    tiles = Sdf.Layer.FindOrOpen(str(blob(blobs, udim, "material.usda", tmp_path)))
+    assert tiles.GetPrimAtPath(f"/{udim['id']}/albedo").attributes["inputs:file"].default.path == "./albedo.<UDIM>.png"
     bowl = entries.load_address(root, "model/demo_bowl_b01@1")
     assert by_material["m_plastic_black"]["address"] in bowl["requires"]
     named = Sdf.Layer.FindOrOpen(str(blob(blobs, model, "payloads/materials.usda", tmp_path)))
@@ -296,9 +346,23 @@ def test_an_adopted_set_is_taken_in_whole_under_its_licence(repository, tmp_path
               + verify.check_admission(root, records, sources) + verify.check_taken_in(blobs, records)
               + verify.check_usd(root, blobs, records))
     assert faults == []
+    hub = take_in_hub.HubSource(FolderApi(repository), REPO, REVISION)
+    saved = take_in_hub.take_in_hub(root, blobs, hub, sources=sources, save=True, jobs=2)
+    assert saved["saved"] and all(each["pushed"] for each in saved["saved"]), saved["saved"]
+    on_main = git(tmp_path / "origin.git", "ls-tree", "-r", "--name-only", "main", "entries").split()
+    assert sorted({"entries/{0}/{1}/{2}/entry.json".format(*entries.parse_address(address))
+                   for address in report["new"]} - set(on_main)) == []
+    (repository / "bowl_b01/assets_usd/payloads/base.usda").write_text(
+        (repository / "bowl_b01/assets_usd/payloads/base.usda").read_text().replace("A bowl", "A deep bowl"))
+    shutil.rmtree(repository / "bowl_b01/.metadata")
+    billed(repository / "bowl_b01", "assets_usd/sm_bowl_b01_01.usda")
     again = take_in_hub.take_in_hub(root, blobs, take_in_hub.HubSource(FolderApi(repository), REPO, REVISION),
-                                    sources=sources, only=["bowl_b01", "crate_A01"])
-    assert sorted(again["unchanged"]) == models and not again["new"] and not again["gaps"]
+                                    sources=sources, only=["bowl_b01", "crate_A01"], save=True)
+    assert again["unchanged"] == models[:2] and not again["new"] and not again["gaps"]
+    retaken = take_in_hub.take_in_hub(root, blobs, take_in_hub.HubSource(FolderApi(repository), REPO, REVISION),
+                                      sources=sources, only=["bowl_b01"], retake=True)
+    assert retaken["changed draft"] == ["model/demo_bowl_b01@1"], retaken
+    assert entries.load_address(root, "model/demo_bowl_b01@1")["tags"]["description"] == ["A deep bowl"]
 
 
 def blob(blobs, record, name, folder):
@@ -308,11 +372,42 @@ def blob(blobs, record, name, folder):
     return path
 
 
-def test_an_anonymous_reader_waits_for_the_window():
+class RefusingApi:
+    """An HfApi refusing each download first with the refusals given, then answering."""
+
+    def __init__(self, refusals):
+        self.refusals = list(refusals)
+
+    def hf_hub_download(self, repo_id, filename, *, repo_type=None, revision=None, local_dir=None):
+        if self.refusals:
+            status, named = self.refusals.pop(0)
+            response = httpx.Response(status, headers={"Retry-After": named} if named else {},
+                                      request=httpx.Request("GET", "https://example.org/x"))
+            raise HfHubHTTPError("refused", response=response)
+        target = pathlib.Path(local_dir) / filename
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_bytes(b"four")
+        return str(target)
+
+
+def test_a_reader_waits_for_the_window_and_after_a_refusal(tmp_path):
     now, waits = [0.0], []
-    pacer = take_in_hub.Pacer(limit=2, window=300.0, clock=lambda: now[0], sleep=lambda seconds: waits.append(seconds)
-                              or now.__setitem__(0, now[0] + seconds))
+
+    def pacer(limit):
+        return take_in_hub.Pacer(limit=limit, window=300.0, clock=lambda: now[0],
+                                 sleep=lambda seconds: waits.append(seconds) or now.__setitem__(0, now[0] + seconds))
+    counting = pacer(2)
     for _ in range(3):
-        pacer.tick()
+        counting.tick()
     assert waits == [300.0]
-    assert take_in_hub.pacer_for_token("hf_x") is None and take_in_hub.pacer_for_token(None) is not None
+    assert take_in_hub.pacer_for_token("hf_x").limit is None
+    assert take_in_hub.pacer_for_token(None).limit == take_in_hub.PACE_LIMIT
+    waits.clear()
+    source = take_in_hub.HubSource(RefusingApi([(429, "7"), (503, None)]), REPO, REVISION, pacer(None))
+    source.download("a/b.bin", tmp_path / "got/b.bin")
+    assert (tmp_path / "got/b.bin").read_bytes() == b"four"
+    assert waits == [7.0, take_in_hub.BACK_OFF * 2], waits  # the named wait, then the doubled back-off
+    assert source.measure == {"requests": 3, "throttled": 1, "retries": 1, "bytes": 4}, source.measure
+    with pytest.raises(HfHubHTTPError):
+        take_in_hub.HubSource(RefusingApi([(404, None)]), REPO, REVISION, pacer(None)).download("a/c.bin",
+                                                                                           tmp_path / "c.bin")
