@@ -377,9 +377,9 @@
       "sha256": "eaece579f9684da483f881eb1c661e597fdee82a890504d794948fcd5c2df59e"
     },
     "scene.usda": {
-      "bytes": 2980425,
+      "bytes": 2980353,
       "role": "usd",
-      "sha256": "50885f4fdd3570c024395b5ca33dccde6a1039f23e95338cb8acbe5e044cfd95"
+      "sha256": "0691761d57d2b019a869023f70c0db6683e1d0eeb64e4848089658636c6262f9"
     }
   },
   "id": "stairwell",
@@ -503,6 +503,7 @@
         "what": "scene.usda and the place's own files: laid by score's placing method"
       }
     ],
+    "note": "the walkers layer (layers/walkers/) was not kept with the place when it was taken in (score-lib's take-in kept only the named files, package/ and assets/), so the place holds no walkers; its scene was written again on 2026-11-22 without the sublayer it never held (score #156)",
     "place": "stairwell",
     "taken_from": "score's placing method (place_build) folder stairwell",
     "world": "world1"

@@ -3582,9 +3582,9 @@
       "sha256": "65b88c551575422a80f7c3c5c20450f40e8e1e8c88331b02f708ba58aaf7a2af"
     },
     "scene.usda": {
-      "bytes": 1888065,
+      "bytes": 1887993,
       "role": "usd",
-      "sha256": "beeec7de991d9add4fb1f27ddd7d1657d05f3489708c47a2d91b2e394a541c8f"
+      "sha256": "b5867ab91213874c4d06ab4c5374806d917caf4fa0921bd9d2628e3bd5ad03b5"
     }
   },
   "id": "street",
@@ -4382,6 +4382,7 @@
         "what": "scene.usda and the place's own files: laid by score's placing method"
       }
     ],
+    "note": "the walkers layer (layers/walkers/) was not kept with the place when it was taken in (score-lib's take-in kept only the named files, package/ and assets/), so the place holds no walkers; its scene was written again on 2026-11-22 without the sublayer it never held (score #156)",
     "place": "street",
     "taken_from": "score's placing method (place_build) folder street",
     "world": "world1"

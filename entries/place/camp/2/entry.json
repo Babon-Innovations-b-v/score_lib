@@ -832,9 +832,9 @@
       "sha256": "9cc277b370c7a3b3b10275c3fedcdb8e35c87122d8f207d53475709b2789224a"
     },
     "scene.usda": {
-      "bytes": 13213152,
+      "bytes": 13213080,
       "role": "usd",
-      "sha256": "f7c3982ee57107bef57b412c4f8a4a6f774bf67ae0924033ed9cfb1bcd285a88"
+      "sha256": "3c41972208ba1423d57947c09ccccf671a50d0c419fef25be7906b7346c3c7e1"
     },
     "viewer.glb": {
       "bytes": 14333244,
@@ -1088,6 +1088,7 @@
         "what": "scene.usda and the place's own files: laid by score's placing method"
       }
     ],
+    "note": "the walkers layer (layers/walkers/) was not kept with the place when it was taken in (score-lib's take-in kept only the named files, package/ and assets/), so the place holds no walkers; its scene was written again on 2026-11-22 without the sublayer it never held (score #156)",
     "place": "camp",
     "taken_from": "score's placing method (place_build) folder camp",
     "world": "world1"
