@@ -33,6 +33,9 @@ A library of reusable parts of SCORE worlds: records in git (`entries/`), bytes 
 - `src/score_lib/verify.py`: every check of `score-lib verify`.
 - `src/score_lib/take_in.py`: `score-lib take-in`, loose made files (no store outputs) in as draft entries; a `take`
   entry is one Pixal3D take whole with its `.svviews` camera folder; `--save` commits and pushes what it wrote.
+- `src/score_lib/kit_parts.py`: `score-lib kit-parts`, taken-in kit pieces and models whose GeomSubset parts had no
+  material made again part by part (each a placeholder material named after it, decal faces off; score #156), as
+  take-in lists.
 - `src/score_lib/take_in_place.py`: `score-lib take-in --place`, a place built by score's placing method (a
   `place_build` folder) as a draft place entry, its scene pointing at the library entries it lays.
 - `src/score_lib/take_in_hub.py`: `score-lib take-in hub --repo R --revision SHA [--only NAMES] [--save]`, an adopted

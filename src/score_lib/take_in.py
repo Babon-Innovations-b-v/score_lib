@@ -175,16 +175,19 @@ def settle(root, listed, about, sources):
     return "new version", record_of(listed, about, sources, newest["version"] + 1)
 
 
-def put_blobs(blobs, listed, record):
-    """Every file of an entry into the blob store (checked against its sha256 on the way in)."""
-    put_all(blobs, [(record["files"][name]["sha256"], pathlib.Path(about["path"]))
-                    for name, about in sorted(listed["files"].items())])
+def blob_pairs(listed, record):
+    """[(sha256, path)] of every file of an entry."""
+    return [(record["files"][name]["sha256"], pathlib.Path(about["path"]))
+            for name, about in sorted(listed["files"].items())]
 
 
 def take_in(root, blobs, listing):
-    """Take in every entry of a list; the report {status: [address]} and {refused: [{id, why}]}; the index rebuilt."""
+    """Take in every entry of a list; the report {status: [address]} and {refused: [{id, why}]}; the index rebuilt.
+    Every written entry's files go into the blob store together (checked against their sha256 on the way in; the
+    hub's commit rate allows a few commits an hour, not one an entry), before any record naming them is written."""
     sources = Sources.load()
     report = {"new": [], "unchanged": [], "changed draft": [], "new version": [], "refused": []}
+    written = []
     for listed in listing["entries"]:
         try:
             status, record = settle(root, listed, listing, sources)
@@ -192,9 +195,11 @@ def take_in(root, blobs, listing):
             report["refused"].append({"id": f"{listed.get('kind')}/{listed.get('id')}", "why": str(why)})
             continue
         if status != "unchanged":
-            put_blobs(blobs, listed, record)
-            entries.write(root, record)
+            written.append((listed, record))
         report[status].append(record["address"])
+    put_all(blobs, [pair for listed, record in written for pair in blob_pairs(listed, record)])
+    for _, record in written:
+        entries.write(root, record)
     index.rebuild(root)
     return report
 

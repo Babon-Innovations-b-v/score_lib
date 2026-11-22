@@ -305,6 +305,15 @@ def command_trace(options):
     print(f"{len(rows)} entries")
 
 
+def command_kit_parts(options):
+    from score_lib import kit_parts
+    written, left = kit_parts.listings(options.root, blob_store(reading=True), options.into, options.only)
+    for why in left:
+        print(f"left out: {why}")
+    lists = ", ".join(f"{path} ({count})" for path, count in written.items()) or "none"
+    print(f"{sum(written.values())} entries made again part by part; take-in lists: {lists}")
+
+
 def parser():
     found = argparse.ArgumentParser(prog="score-lib", description=__doc__)
     found.add_argument("--root", default=str(ROOT), help="the score_lib repository (default: this checkout)")
@@ -470,6 +479,11 @@ def parser():
     traced = commands.add_parser("trace", help="who added an entry or a blob, from which pull request, on what claim")
     traced.add_argument("query", help="an address, a blob's sha256, handle:<h>, source:<id> or pr:<n>")
     traced.set_defaults(handle=command_trace)
+    parted = commands.add_parser("kit-parts", help="make taken-in kit pieces and models readable part by part (each "
+                                                   "part a placeholder material, decals off) as take-in lists")
+    parted.add_argument("--into", required=True, help="the work folder for the made files and the lists")
+    parted.add_argument("--only", action="append", help="only this address (repeatable)")
+    parted.set_defaults(handle=command_kit_parts)
     return found
 
 
