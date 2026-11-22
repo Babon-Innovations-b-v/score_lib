@@ -1,0 +1,195 @@
+{
+  "address": "model/simready_instrument_suction_a01@1",
+  "files": {
+    "Textures/t_metal_glossy_a01_tile_alb.png": {
+      "bytes": 17018568,
+      "role": "texture",
+      "sha256": "bbb6a7fd1d0627aa44115b96a93c293d11b8eb164b5e0cbd767813644e47e65b"
+    },
+    "Textures/t_metal_glossy_a01_tile_nor.png": {
+      "bytes": 4969669,
+      "role": "texture",
+      "sha256": "f26a7354c9fcdd1b921aba49bd71c0d529cc68d404386d787ea3cd1872fbdb0e"
+    },
+    "Textures/t_metal_glossy_a01_tile_orm.png": {
+      "bytes": 14112974,
+      "role": "texture",
+      "sha256": "6d9b0891ee9d4a8dca391cfe5f0f0800d40754465d0b0ca25b95352565457e8d"
+    },
+    "payloads/MuJoCo/disabled.usda": {
+      "bytes": 4303,
+      "role": "usd",
+      "sha256": "6b1bb1135c48c1b5022a8aa8015970f97ef83b9b48feb49759ab47f8cc0142ac"
+    },
+    "payloads/MuJoCo/enabled.usda": {
+      "bytes": 5044,
+      "role": "usd",
+      "sha256": "cf0ade0a3ff8914c8acc50c481b2e2152482a448ad0bde9147c68391486e0769"
+    },
+    "payloads/Newton/disabled.usda": {
+      "bytes": 4303,
+      "role": "usd",
+      "sha256": "6b1bb1135c48c1b5022a8aa8015970f97ef83b9b48feb49759ab47f8cc0142ac"
+    },
+    "payloads/Newton/enabled.usda": {
+      "bytes": 4866,
+      "role": "usd",
+      "sha256": "3e8e7a0d51f3c90d0baee09cc32326104dc2aa5840e467759e655a12b29f77db"
+    },
+    "payloads/PhysX/disabled.usda": {
+      "bytes": 4303,
+      "role": "usd",
+      "sha256": "6b1bb1135c48c1b5022a8aa8015970f97ef83b9b48feb49759ab47f8cc0142ac"
+    },
+    "payloads/PhysX/enabled.usda": {
+      "bytes": 4580,
+      "role": "usd",
+      "sha256": "20a6b2838acda0a32d873e5c96be3c3c270f0086375a95f9ecaf53b20a0d3e75"
+    },
+    "payloads/Physics/physics.usda": {
+      "bytes": 4822,
+      "role": "usd",
+      "sha256": "18719fc47b9f87d36e601b3fe0459eb3fe962eda154fecb9965187b8a846c65e"
+    },
+    "payloads/base.usda": {
+      "bytes": 8880,
+      "role": "usd",
+      "sha256": "a06e9753f1fb5b3d7efbf4a6096a90e07e67f1987fe072ed6aeb2006dbeadf85"
+    },
+    "payloads/geometries.usd": {
+      "bytes": 655031,
+      "role": "usd",
+      "sha256": "948789215ea5cb2ca9f327fc6e477a507a99edc206478d8e45596a91c1c2e86e"
+    },
+    "payloads/instances.usda": {
+      "bytes": 5289,
+      "role": "usd",
+      "sha256": "15fc44d586628d13ab508724807421c2230687d8ba2b74ac85dc7968b9d306d5"
+    },
+    "payloads/instances_mujoco.usda": {
+      "bytes": 5561,
+      "role": "usd",
+      "sha256": "baab7cf00950059bad6a33f6d3483dc9e036c1789b93a597a706ab10fecb3cb3"
+    },
+    "payloads/instances_newton.usda": {
+      "bytes": 5412,
+      "role": "usd",
+      "sha256": "621cd9b2d9676db7a137c2661723d6c4474c816c65fe5069d4c886134b3711bc"
+    },
+    "payloads/instances_physx.usda": {
+      "bytes": 5537,
+      "role": "usd",
+      "sha256": "22a119968f642a1f954159f696f08704aef3bb7883d0aa1969be0e4fbca84885"
+    },
+    "payloads/materials.usda": {
+      "bytes": 10102,
+      "role": "usd",
+      "sha256": "456de43798e6d4c61bc33b59c45d58e941e12ab6997cda370262b4540f5376d3"
+    },
+    "sm_instrument_suction_a01_01.usd": {
+      "bytes": 21671,
+      "role": "usd",
+      "sha256": "1e106d728529ea80679d40b525b0d2dc6c2cbdf49b1429581621cedcdf917936"
+    },
+    "source_assets/OmniPBR.mdl": {
+      "bytes": 16010,
+      "role": "code",
+      "sha256": "6e6b3acbccd236e21a6c29964a431d2a53e77251cc6b8b1bc975eb1c62da1781"
+    },
+    "source_assets/OmniPBRBase.mdl": {
+      "bytes": 19369,
+      "role": "code",
+      "sha256": "a8fd9fe174e91892e94d06da90ba453a124024c2ce2c033be9d82c9e2f76a3b7"
+    },
+    "source_assets/OmniPBR_ClearCoat.mdl": {
+      "bytes": 29789,
+      "role": "code",
+      "sha256": "d84c5ba482561c0eaea2e0c5b607358af549e36cd921773462f92dbc4f32cbc3"
+    }
+  },
+  "id": "simready_instrument_suction_a01",
+  "kind": "model",
+  "licence": {
+    "credit": "instrument_suction_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0; changed: each Material names its library surface (score:surface)",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "Textures/t_metal_glossy_a01_tile_alb.png": "instrument_suction_a01/simready_usd/Textures/t_metal_glossy_a01_tile_alb.png",
+      "Textures/t_metal_glossy_a01_tile_nor.png": "instrument_suction_a01/simready_usd/Textures/t_metal_glossy_a01_tile_nor.png",
+      "Textures/t_metal_glossy_a01_tile_orm.png": "instrument_suction_a01/simready_usd/Textures/t_metal_glossy_a01_tile_orm.png",
+      "payloads/MuJoCo/disabled.usda": "instrument_suction_a01/simready_usd/payloads/MuJoCo/disabled.usda",
+      "payloads/MuJoCo/enabled.usda": "instrument_suction_a01/simready_usd/payloads/MuJoCo/enabled.usda",
+      "payloads/Newton/disabled.usda": "instrument_suction_a01/simready_usd/payloads/Newton/disabled.usda",
+      "payloads/Newton/enabled.usda": "instrument_suction_a01/simready_usd/payloads/Newton/enabled.usda",
+      "payloads/PhysX/disabled.usda": "instrument_suction_a01/simready_usd/payloads/PhysX/disabled.usda",
+      "payloads/PhysX/enabled.usda": "instrument_suction_a01/simready_usd/payloads/PhysX/enabled.usda",
+      "payloads/Physics/physics.usda": "instrument_suction_a01/simready_usd/payloads/Physics/physics.usda",
+      "payloads/base.usda": "instrument_suction_a01/simready_usd/payloads/base.usda",
+      "payloads/geometries.usd": "instrument_suction_a01/simready_usd/payloads/geometries.usd",
+      "payloads/instances.usda": "instrument_suction_a01/simready_usd/payloads/instances.usda",
+      "payloads/instances_mujoco.usda": "instrument_suction_a01/simready_usd/payloads/instances_mujoco.usda",
+      "payloads/instances_newton.usda": "instrument_suction_a01/simready_usd/payloads/instances_newton.usda",
+      "payloads/instances_physx.usda": "instrument_suction_a01/simready_usd/payloads/instances_physx.usda",
+      "payloads/materials.usda": "instrument_suction_a01/simready_usd/payloads/materials.usda (changed: each Material names its library surface (score:surface))",
+      "sm_instrument_suction_a01_01.usd": "instrument_suction_a01/simready_usd/sm_instrument_suction_a01_01.usd",
+      "source_assets/OmniPBR.mdl": "instrument_suction_a01/simready_usd/source_assets/OmniPBR.mdl",
+      "source_assets/OmniPBRBase.mdl": "instrument_suction_a01/simready_usd/source_assets/OmniPBRBase.mdl",
+      "source_assets/OmniPBR_ClearCoat.mdl": "instrument_suction_a01/simready_usd/source_assets/OmniPBR_ClearCoat.mdl"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "instrument_suction_a01: its model, physics and maps"
+      },
+      {
+        "by": "score",
+        "what": "the library surface each material names (score:surface)"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: instrument_suction_a01",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/simready_m_opaque_metal_glossy_a01_c49b4f9a@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "description": [
+      "the removal of respiratory secretions, saliva, blood or aspirated material with a flexible suction catheter from the respiratory tract"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "simulators": [
+      "mujoco",
+      "newton",
+      "physx"
+    ],
+    "wikidata_class": [
+      "suction"
+    ],
+    "wikidata_qcode": [
+      "Q331835"
+    ]
+  },
+  "title": "instrument_suction_a01",
+  "usd": {
+    "default_prim": "/RootNode",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/simready_instrument_suction_a01/1/sm_instrument_suction_a01_01.usd",
+    "root": "sm_instrument_suction_a01_01.usd",
+    "up_axis": "Z",
+    "use": "reference"
+  },
+  "version": 1
+}

@@ -1,0 +1,81 @@
+{
+  "address": "surface/simready_m_opaque_paper_white_a01_25661ca1@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 7295661,
+      "role": "texture",
+      "sha256": "66b88b231a7d59ab43cdb02d36da1501407b58329d19338f7a885bef067e05f6"
+    },
+    "material.usda": {
+      "bytes": 2483,
+      "role": "usd",
+      "sha256": "b9b4577aed87f02cfe8b8c69bde9689e91bb36015d85ef6c95c610f1ad5ccc29"
+    },
+    "normal.png": {
+      "bytes": 114854,
+      "role": "texture",
+      "sha256": "2fc5d292e418fa37e87fdfefd041364bd2cff5e2c984cbfcc4c3efc0145be4a8"
+    },
+    "orm.png": {
+      "bytes": 5706260,
+      "role": "texture",
+      "sha256": "d3e89ad8244cf37fb01d80d24bc60910d822f31e1e1c759c1978e338c21ce1ea"
+    },
+    "surface.json": {
+      "bytes": 1001,
+      "role": "record",
+      "sha256": "0cecc684e92c674580edaa93666778f950a09c3d3ab0f7aaf766f43c836cb684"
+    }
+  },
+  "id": "simready_m_opaque_paper_white_a01_25661ca1",
+  "kind": "surface",
+  "licence": {
+    "credit": "medicine_b01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "medicine_b01/simready_usd/Textures/t_medicine_b01_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "medicine_b01/simready_usd/Textures/t_medicine_b01_nor.png",
+      "orm.png": "medicine_b01/simready_usd/Textures/t_medicine_b01_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__paper__white_a01 maps of medicine_b01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: medicine_b01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "25661ca133559bc50bdccdf5834226f22fddce74ce003c274a5633a99f0a7985"
+    ],
+    "painted_for": [
+      "medicine_b01"
+    ]
+  },
+  "title": "m_opaque__paper__white_a01",
+  "usd": null,
+  "version": 1
+}

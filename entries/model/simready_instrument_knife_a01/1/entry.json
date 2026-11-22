@@ -1,0 +1,195 @@
+{
+  "address": "model/simready_instrument_knife_a01@1",
+  "files": {
+    "Textures/t_metal_glossy_a01_tile_alb.png": {
+      "bytes": 17018568,
+      "role": "texture",
+      "sha256": "bbb6a7fd1d0627aa44115b96a93c293d11b8eb164b5e0cbd767813644e47e65b"
+    },
+    "Textures/t_metal_glossy_a01_tile_nor.png": {
+      "bytes": 4969669,
+      "role": "texture",
+      "sha256": "f26a7354c9fcdd1b921aba49bd71c0d529cc68d404386d787ea3cd1872fbdb0e"
+    },
+    "Textures/t_metal_glossy_a01_tile_orm.png": {
+      "bytes": 14112974,
+      "role": "texture",
+      "sha256": "6d9b0891ee9d4a8dca391cfe5f0f0800d40754465d0b0ca25b95352565457e8d"
+    },
+    "payloads/MuJoCo/disabled.usda": {
+      "bytes": 4293,
+      "role": "usd",
+      "sha256": "11817107038750c9713eb271c17167e323ebe3c76ac2d6dfaffde240a2a50d4f"
+    },
+    "payloads/MuJoCo/enabled.usda": {
+      "bytes": 5028,
+      "role": "usd",
+      "sha256": "b73218a2422a1643d3f0c65b948366426411f782fe016d33aae5beaa3e2e7c46"
+    },
+    "payloads/Newton/disabled.usda": {
+      "bytes": 4293,
+      "role": "usd",
+      "sha256": "11817107038750c9713eb271c17167e323ebe3c76ac2d6dfaffde240a2a50d4f"
+    },
+    "payloads/Newton/enabled.usda": {
+      "bytes": 4850,
+      "role": "usd",
+      "sha256": "00e6a0c92d1bbbfd50456cacddd9659638bc716620b73ee7875fa90f53582998"
+    },
+    "payloads/PhysX/disabled.usda": {
+      "bytes": 4293,
+      "role": "usd",
+      "sha256": "11817107038750c9713eb271c17167e323ebe3c76ac2d6dfaffde240a2a50d4f"
+    },
+    "payloads/PhysX/enabled.usda": {
+      "bytes": 4564,
+      "role": "usd",
+      "sha256": "408e7536a46f7eb43914744b26cc87079cdd72e8247cffd271b507d751ed1ecb"
+    },
+    "payloads/Physics/physics.usda": {
+      "bytes": 5106,
+      "role": "usd",
+      "sha256": "612b61d7d725b9f10210d0e0e35cb90df7c03accf2102c7552225f5fe51ed7af"
+    },
+    "payloads/base.usda": {
+      "bytes": 9074,
+      "role": "usd",
+      "sha256": "167509a1ee8f189804453fb6ab26888762ba3cade27952905527ca66c1450f40"
+    },
+    "payloads/geometries.usd": {
+      "bytes": 561704,
+      "role": "usd",
+      "sha256": "df4ba0c79cc1c6ef4075eca6b09e4e44ec021c89bf450e520a2bd1f16c7cfe73"
+    },
+    "payloads/instances.usda": {
+      "bytes": 5276,
+      "role": "usd",
+      "sha256": "c6ed60f23512efc1bdd3f6908c18f937399ab4524dc56bc6969a7b0abc28fa1e"
+    },
+    "payloads/instances_mujoco.usda": {
+      "bytes": 5548,
+      "role": "usd",
+      "sha256": "0dd14cb60380575a3167f167f7daa4ea9fa1e23b0816bbe56211b2600f00fe2e"
+    },
+    "payloads/instances_newton.usda": {
+      "bytes": 5399,
+      "role": "usd",
+      "sha256": "3ad39a92f79b26115ab22d1aacd30f6c20560ebe7d2e8ec2411ca602251464d3"
+    },
+    "payloads/instances_physx.usda": {
+      "bytes": 5701,
+      "role": "usd",
+      "sha256": "97f08f97c6159c84aed536e32877b9a2c7c72a2d21d5383870029bc248bb6550"
+    },
+    "payloads/materials.usda": {
+      "bytes": 10092,
+      "role": "usd",
+      "sha256": "853adbe722ac298cf29b75f9a6a5daf4376548d68d028847366ef252bc16cbcd"
+    },
+    "sm_instrument_knife_a01_01.usd": {
+      "bytes": 21677,
+      "role": "usd",
+      "sha256": "cbfc5c329d6b78f667c6184892208407dd95d200bd28a474e7a24d32f03a5fd7"
+    },
+    "source_assets/OmniPBR.mdl": {
+      "bytes": 16010,
+      "role": "code",
+      "sha256": "6e6b3acbccd236e21a6c29964a431d2a53e77251cc6b8b1bc975eb1c62da1781"
+    },
+    "source_assets/OmniPBRBase.mdl": {
+      "bytes": 19369,
+      "role": "code",
+      "sha256": "a8fd9fe174e91892e94d06da90ba453a124024c2ce2c033be9d82c9e2f76a3b7"
+    },
+    "source_assets/OmniPBR_ClearCoat.mdl": {
+      "bytes": 29789,
+      "role": "code",
+      "sha256": "d84c5ba482561c0eaea2e0c5b607358af549e36cd921773462f92dbc4f32cbc3"
+    }
+  },
+  "id": "simready_instrument_knife_a01",
+  "kind": "model",
+  "licence": {
+    "credit": "instrument_knife_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0; changed: each Material names its library surface (score:surface)",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "Textures/t_metal_glossy_a01_tile_alb.png": "instrument_knife_a01/simready_usd/Textures/t_metal_glossy_a01_tile_alb.png",
+      "Textures/t_metal_glossy_a01_tile_nor.png": "instrument_knife_a01/simready_usd/Textures/t_metal_glossy_a01_tile_nor.png",
+      "Textures/t_metal_glossy_a01_tile_orm.png": "instrument_knife_a01/simready_usd/Textures/t_metal_glossy_a01_tile_orm.png",
+      "payloads/MuJoCo/disabled.usda": "instrument_knife_a01/simready_usd/payloads/MuJoCo/disabled.usda",
+      "payloads/MuJoCo/enabled.usda": "instrument_knife_a01/simready_usd/payloads/MuJoCo/enabled.usda",
+      "payloads/Newton/disabled.usda": "instrument_knife_a01/simready_usd/payloads/Newton/disabled.usda",
+      "payloads/Newton/enabled.usda": "instrument_knife_a01/simready_usd/payloads/Newton/enabled.usda",
+      "payloads/PhysX/disabled.usda": "instrument_knife_a01/simready_usd/payloads/PhysX/disabled.usda",
+      "payloads/PhysX/enabled.usda": "instrument_knife_a01/simready_usd/payloads/PhysX/enabled.usda",
+      "payloads/Physics/physics.usda": "instrument_knife_a01/simready_usd/payloads/Physics/physics.usda",
+      "payloads/base.usda": "instrument_knife_a01/simready_usd/payloads/base.usda",
+      "payloads/geometries.usd": "instrument_knife_a01/simready_usd/payloads/geometries.usd",
+      "payloads/instances.usda": "instrument_knife_a01/simready_usd/payloads/instances.usda",
+      "payloads/instances_mujoco.usda": "instrument_knife_a01/simready_usd/payloads/instances_mujoco.usda",
+      "payloads/instances_newton.usda": "instrument_knife_a01/simready_usd/payloads/instances_newton.usda",
+      "payloads/instances_physx.usda": "instrument_knife_a01/simready_usd/payloads/instances_physx.usda",
+      "payloads/materials.usda": "instrument_knife_a01/simready_usd/payloads/materials.usda (changed: each Material names its library surface (score:surface))",
+      "sm_instrument_knife_a01_01.usd": "instrument_knife_a01/simready_usd/sm_instrument_knife_a01_01.usd",
+      "source_assets/OmniPBR.mdl": "instrument_knife_a01/simready_usd/source_assets/OmniPBR.mdl",
+      "source_assets/OmniPBRBase.mdl": "instrument_knife_a01/simready_usd/source_assets/OmniPBRBase.mdl",
+      "source_assets/OmniPBR_ClearCoat.mdl": "instrument_knife_a01/simready_usd/source_assets/OmniPBR_ClearCoat.mdl"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "instrument_knife_a01: its model, physics and maps"
+      },
+      {
+        "by": "score",
+        "what": "the library surface each material names (score:surface)"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: instrument_knife_a01",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/simready_m_opaque_metal_glossy_a01_c49b4f9a@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "description": [
+      "knife"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "simulators": [
+      "mujoco",
+      "newton",
+      "physx"
+    ],
+    "wikidata_class": [
+      "medical device"
+    ],
+    "wikidata_qcode": [
+      "Q6554101"
+    ]
+  },
+  "title": "instrument_knife_a01",
+  "usd": {
+    "default_prim": "/RootNode",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/simready_instrument_knife_a01/1/sm_instrument_knife_a01_01.usd",
+    "root": "sm_instrument_knife_a01_01.usd",
+    "up_axis": "Z",
+    "use": "reference"
+  },
+  "version": 1
+}

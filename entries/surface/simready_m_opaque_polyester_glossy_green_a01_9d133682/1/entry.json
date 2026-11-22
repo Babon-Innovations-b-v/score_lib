@@ -1,0 +1,78 @@
+{
+  "address": "surface/simready_m_opaque_polyester_glossy_green_a01_9d133682@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 16524761,
+      "role": "texture",
+      "sha256": "be85736de0c503fae583501375a2a3657a970518fdeaddee163e6159dc5aaddb"
+    },
+    "material.usda": {
+      "bytes": 2617,
+      "role": "usd",
+      "sha256": "6b5ab95ad2742a2a910f1d6845cf61f6c937872565544763b4283900173f175a"
+    },
+    "normal.png": {
+      "bytes": 34091096,
+      "role": "texture",
+      "sha256": "f1bdffb8b15020c8d260a01ea808418f5b60343d6fac411c563ea70fca4a4cbb"
+    },
+    "orm.png": {
+      "bytes": 21462902,
+      "role": "texture",
+      "sha256": "413a5cb26c7926515bf47ad6146e00a5744335c54fa38f2ce0972ac792251cd8"
+    },
+    "surface.json": {
+      "bytes": 822,
+      "role": "record",
+      "sha256": "a36207c5704742d41ff8eeed0a3c8a66c2a4aeffbac3edf59d03b5e33fb38ca2"
+    }
+  },
+  "id": "simready_m_opaque_polyester_glossy_green_a01_9d133682",
+  "kind": "surface",
+  "licence": {
+    "credit": "mask_nebulization_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "mask_nebulization_a01/simready_usd/Textures/t_polyester_glossy_gray_a01_tile_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "mask_nebulization_a01/simready_usd/Textures/t_polyester_glossy_gray_a01_tile_nor.png",
+      "orm.png": "mask_nebulization_a01/simready_usd/Textures/t_polyester_glossy_gray_a01_tile_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__polyester__glossy_green_a01 maps of mask_nebulization_a01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: mask_nebulization_a01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "9d133682504dbfa4b72dcfe3c418f8aa43f2fa1208a0158554a34ec215724ccd"
+    ]
+  },
+  "title": "m_opaque__polyester__glossy_green_a01",
+  "usd": null,
+  "version": 1
+}

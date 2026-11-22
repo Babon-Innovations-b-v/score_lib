@@ -1,0 +1,78 @@
+{
+  "address": "surface/simready_m_opaque_metal_rough_a01_32b7ddb1@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 37876965,
+      "role": "texture",
+      "sha256": "2dbe51946f73ea5559c8d8d3867a23a9ff4d3028290c9d0c2d77121c99917bd2"
+    },
+    "material.usda": {
+      "bytes": 2285,
+      "role": "usd",
+      "sha256": "675165d7d336ae4d388e82d759b3d1aa4743ef887efab95b1371dbfe35446888"
+    },
+    "metallic.png": {
+      "bytes": 14732222,
+      "role": "texture",
+      "sha256": "3beb4bc13080a75d17206a296a63896e87e8a97854721a2270bcac4e602602f3"
+    },
+    "normal.png": {
+      "bytes": 19619769,
+      "role": "texture",
+      "sha256": "6d3c79a5ffc079c5a48a19a23bb08414122de0deaa3c20a0d7a559149fe18d5e"
+    },
+    "surface.json": {
+      "bytes": 831,
+      "role": "record",
+      "sha256": "f54879438121a51bc85138cd8a6e2935300f62ed9eb84a3a96ede3a70803d20c"
+    }
+  },
+  "id": "simready_m_opaque_metal_rough_a01_32b7ddb1",
+  "kind": "surface",
+  "licence": {
+    "credit": "lighting_main_light_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "lighting_main_light_a01/simready_usd/Textures/t_metal_rough_a01_tile_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "metallic.png": "lighting_main_light_a01/simready_usd/Textures/t_metal_rough_a01_tile_orm.png",
+      "normal.png": "lighting_main_light_a01/simready_usd/Textures/t_metal_rough_a01_tile_nor.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__metal__rough_a01 maps of lighting_main_light_a01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: lighting_main_light_a01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "32b7ddb1143e92a89c0172cf8eb1efa9955654f11f076156d7b7b13783e4c565"
+    ]
+  },
+  "title": "m_opaque__metal__rough_a01",
+  "usd": null,
+  "version": 1
+}

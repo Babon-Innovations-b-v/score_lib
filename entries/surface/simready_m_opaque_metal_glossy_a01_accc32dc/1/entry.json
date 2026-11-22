@@ -1,0 +1,78 @@
+{
+  "address": "surface/simready_m_opaque_metal_glossy_a01_accc32dc@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 15222435,
+      "role": "texture",
+      "sha256": "16cc6fcd767b1a52bc032da59d969ff011623324d93fd9e5dc268490b0009dec"
+    },
+    "material.usda": {
+      "bytes": 2495,
+      "role": "usd",
+      "sha256": "36338c1b10729437de7cd29b7be05c66e07a332954a59b045db693850f9e1247"
+    },
+    "normal.png": {
+      "bytes": 512396,
+      "role": "texture",
+      "sha256": "b75f4d4efcd5f0194ca207741acbda922fee6320b7d9dd6005e2ecbea8ebe8de"
+    },
+    "orm.png": {
+      "bytes": 13754527,
+      "role": "texture",
+      "sha256": "d20e52b8896853613a6c1aa84b7ddd1387986b4fe3ec2fae1b8a56ac496e3399"
+    },
+    "surface.json": {
+      "bytes": 801,
+      "role": "record",
+      "sha256": "34cb5ab94156f82019f74733429cefef97ede6bc22f179725203d2b9ce0519de"
+    }
+  },
+  "id": "simready_m_opaque_metal_glossy_a01_accc32dc",
+  "kind": "surface",
+  "licence": {
+    "credit": "instrument_spoon_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "instrument_spoon_a01/simready_usd/Textures/t_metal_glossy_a01_tile_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "instrument_spoon_a01/simready_usd/Textures/t_metal_glossy_a01_tile_nor.png",
+      "orm.png": "instrument_spoon_a01/simready_usd/Textures/t_metal_glossy_a01_tile_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__metal__glossy_a01 maps of instrument_spoon_a01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: instrument_spoon_a01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "accc32dcb705f97fef225e8a15bc9aff325d79f22da68ed742fc96ef25f1edc5"
+    ]
+  },
+  "title": "m_opaque__metal__glossy_a01",
+  "usd": null,
+  "version": 1
+}

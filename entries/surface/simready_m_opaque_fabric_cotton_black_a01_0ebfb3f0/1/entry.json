@@ -1,0 +1,78 @@
+{
+  "address": "surface/simready_m_opaque_fabric_cotton_black_a01_0ebfb3f0@1",
+  "files": {
+    "albedo.jpg": {
+      "bytes": 8349199,
+      "role": "texture",
+      "sha256": "4f0fe97098ee9a956ba37194c9f383891dc5cdfec98cec5b022d57b074e8454f"
+    },
+    "material.usda": {
+      "bytes": 2579,
+      "role": "usd",
+      "sha256": "dcbe83cf50f5f36e8931b12f5e989990d0487f4cecd6508f252a76ec52038f4a"
+    },
+    "normal.png": {
+      "bytes": 4071911,
+      "role": "texture",
+      "sha256": "6b0907b08b32b17bd37cb7112c76928659afa7374b13eb0eae0657047a6fe844"
+    },
+    "orm.png": {
+      "bytes": 2009114,
+      "role": "texture",
+      "sha256": "13efc93781f926fca55c0100bbb0392383c382b59f962f74267bff591f86096e"
+    },
+    "surface.json": {
+      "bytes": 809,
+      "role": "record",
+      "sha256": "5099522ef8e5892dbb67f712016a542c4cf9934a305e04c3a82e00f8ca53e199"
+    }
+  },
+  "id": "simready_m_opaque_fabric_cotton_black_a01_0ebfb3f0",
+  "kind": "surface",
+  "licence": {
+    "credit": "interiorPart_rear_seat_b01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.jpg": "interiorPart_rear_seat_b01/simready_usd/textures/t_fabric_black_a01_tile_alb.jpg",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "interiorPart_rear_seat_b01/simready_usd/textures/t_fabric_a01_tile_nor.png",
+      "orm.png": "interiorPart_rear_seat_b01/simready_usd/textures/t_fabric_a01_tile_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__fabric__cotton_black_a01 maps of interiorPart_rear_seat_b01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: interiorPart_rear_seat_b01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "0ebfb3f090f00f180339f3d35ef61dd4dc2526232eaed6fe194cd349b266ae50"
+    ]
+  },
+  "title": "m_opaque__fabric__cotton_black_a01",
+  "usd": null,
+  "version": 1
+}

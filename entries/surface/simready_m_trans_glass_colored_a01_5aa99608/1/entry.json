@@ -1,0 +1,66 @@
+{
+  "address": "surface/simready_m_trans_glass_colored_a01_5aa99608@1",
+  "files": {
+    "albedo_roughness.png": {
+      "bytes": 3184331,
+      "role": "texture",
+      "sha256": "cdc0c1be84f1ae1a4f2e31b089781e192b72dbe377445d19f7edaa45a6e086f3"
+    },
+    "material.usda": {
+      "bytes": 1260,
+      "role": "usd",
+      "sha256": "17cbedeacfec30b444c33ccdef8035c3035038ca734f70222abf5fb16e81ecb9"
+    },
+    "surface.json": {
+      "bytes": 798,
+      "role": "record",
+      "sha256": "d8c94280cf16a3f59d6e9f198229dc609e848917b8fb1835ad1685135ea1b7fa"
+    }
+  },
+  "id": "simready_m_trans_glass_colored_a01_5aa99608",
+  "kind": "surface",
+  "licence": {
+    "credit": "lung_ventilation_artificial_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo_roughness.png": "lung_ventilation_artificial_a01/simready_usd/Textures/t_glass_lensColoredGlossy_b01_tile_rou.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_trans__glass__colored_a01 maps of lung_ventilation_artificial_a01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: lung_ventilation_artificial_a01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "5aa996082eca9fe0eae62273c444c5527e607cc8f57dba757a5de9278a7ecb32"
+    ]
+  },
+  "title": "m_trans__glass__colored_a01",
+  "usd": null,
+  "version": 1
+}

@@ -1,0 +1,78 @@
+{
+  "address": "surface/simready_m_opaque_metal_paintedblack_a01_dd32ee05@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 2284193,
+      "role": "texture",
+      "sha256": "0fa8a7ebd6666661621aacf85921311b51f5d6ce30e89df979608a28cb410519"
+    },
+    "material.usda": {
+      "bytes": 2530,
+      "role": "usd",
+      "sha256": "466eefefb11a4f8761b1b17a687aa20236655dd1fe7678cd85856457b4b02809"
+    },
+    "normal.png": {
+      "bytes": 3504345,
+      "role": "texture",
+      "sha256": "f04bdcd1035be18fce5f94088a50bfcc1bc09640002cbe2940bfdfcb9ec2377a"
+    },
+    "orm.png": {
+      "bytes": 2517188,
+      "role": "texture",
+      "sha256": "1d08814257862f16c3c1e3b4e217939f23aa4280d779f6e4bc4875509d3761d9"
+    },
+    "surface.json": {
+      "bytes": 789,
+      "role": "record",
+      "sha256": "831eea2bd763fcd6d09a9e49c3ec85c0296dca2c7d8e644b1142836acfbe1682"
+    }
+  },
+  "id": "simready_m_opaque_metal_paintedblack_a01_dd32ee05",
+  "kind": "surface",
+  "licence": {
+    "credit": "labware_table_seattle_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "labware_table_seattle_a01/simready_usd/Textures/t_metal_painted_gray_a01_tile_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "labware_table_seattle_a01/simready_usd/Textures/t_metal_painted_gray_a01_tile_nor.png",
+      "orm.png": "labware_table_seattle_a01/simready_usd/Textures/t_metal_painted_gray_a01_tile_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__metal__paintedblack_a01 maps of labware_table_seattle_a01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: labware_table_seattle_a01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "dd32ee05b3965dd3684177fcd29cbf2ad75d24575a39aa7ba2cefed9efa8e75e"
+    ]
+  },
+  "title": "m_opaque__metal__paintedblack_a01",
+  "usd": null,
+  "version": 1
+}

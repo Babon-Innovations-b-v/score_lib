@@ -1,0 +1,195 @@
+{
+  "address": "model/simready_kitchenware_spatula_d01@1",
+  "files": {
+    "Textures/t_spatula_brown_d01_alb.png": {
+      "bytes": 172934,
+      "role": "texture",
+      "sha256": "435bd87bf8945e947fe88fa1c4d59cf291e3dbb7eab808bbf004301d9bf4a575"
+    },
+    "Textures/t_spatula_brown_d01_nor.png": {
+      "bytes": 108576,
+      "role": "texture",
+      "sha256": "8d94d89b2ed8ae6bdc3552bccb292fc8239140fcbe952376876b7977c9cf7c9d"
+    },
+    "Textures/t_spatula_brown_d01_orm.png": {
+      "bytes": 128503,
+      "role": "texture",
+      "sha256": "ca33b401a2d8024c24ed40cfc325216f77e639100a1dabb3a146d5f0a3763c65"
+    },
+    "payloads/MuJoCo/disabled.usda": {
+      "bytes": 4249,
+      "role": "usd",
+      "sha256": "368801a7ef6901e1c9c37629627a55059e8cb19a89b4c8cc1331f6917f938038"
+    },
+    "payloads/MuJoCo/enabled.usda": {
+      "bytes": 5270,
+      "role": "usd",
+      "sha256": "637715260081fba6424ab32122a988ec6cc4838b067c8453980c9c5ac8192d28"
+    },
+    "payloads/Newton/disabled.usda": {
+      "bytes": 4249,
+      "role": "usd",
+      "sha256": "368801a7ef6901e1c9c37629627a55059e8cb19a89b4c8cc1331f6917f938038"
+    },
+    "payloads/Newton/enabled.usda": {
+      "bytes": 4939,
+      "role": "usd",
+      "sha256": "b0dc4182718f54f8ba8c0dbcc60630171ba4b10706bb8963195882e96d46addb"
+    },
+    "payloads/PhysX/disabled.usda": {
+      "bytes": 4249,
+      "role": "usd",
+      "sha256": "368801a7ef6901e1c9c37629627a55059e8cb19a89b4c8cc1331f6917f938038"
+    },
+    "payloads/PhysX/enabled.usda": {
+      "bytes": 4653,
+      "role": "usd",
+      "sha256": "c1175a989de936a83da502160ebf00591b40dbad6fad3ffefdeaa97f995ba52b"
+    },
+    "payloads/Physics/physics.usda": {
+      "bytes": 4783,
+      "role": "usd",
+      "sha256": "cb239dbe238c63357d0fe27f1f28a6b68b89c20077a69c1ca52bd8473bd622b2"
+    },
+    "payloads/base.usda": {
+      "bytes": 9775,
+      "role": "usd",
+      "sha256": "3cc14b2e59794f023c4880e563eb1e8fa1083fc96c0234c592603032e45b9385"
+    },
+    "payloads/geometries.usd": {
+      "bytes": 241482,
+      "role": "usd",
+      "sha256": "28a49bc21a0ae03f5454f1c9979bf6925f438360e7d3958ad5f1bbcaf6fa76ba"
+    },
+    "payloads/instances.usda": {
+      "bytes": 5306,
+      "role": "usd",
+      "sha256": "61411ed64002aa561fc311e5fc93280353aafb559c63fee59d88187a1c82a115"
+    },
+    "payloads/instances_mujoco.usda": {
+      "bytes": 5578,
+      "role": "usd",
+      "sha256": "fb1aa6c3a97822f47226453d8f5a41ebdb9d2958684cd897634daf3c2da960e9"
+    },
+    "payloads/instances_newton.usda": {
+      "bytes": 5429,
+      "role": "usd",
+      "sha256": "4bd8b7677de8ef3c59807b675fef100b7382f90ed2abc8950d4eac5152986dd5"
+    },
+    "payloads/instances_physx.usda": {
+      "bytes": 5446,
+      "role": "usd",
+      "sha256": "98d3a7a397f04aa122001b1a9b46bbcb74ad406bb0097000524ff97da99b66e8"
+    },
+    "payloads/materials.usda": {
+      "bytes": 9548,
+      "role": "usd",
+      "sha256": "1a23389ac93f1365e07a25aeb607205a12884d3d3f749cc0bbf2abbf8be989be"
+    },
+    "sm_kitchenware_spatula_d01_01.usd": {
+      "bytes": 21515,
+      "role": "usd",
+      "sha256": "ac93bbca973ad163d56ead974d6366839aaea4bcd612a193cd2b552eb2946773"
+    },
+    "source_assets/OmniPBR.mdl": {
+      "bytes": 16010,
+      "role": "code",
+      "sha256": "6e6b3acbccd236e21a6c29964a431d2a53e77251cc6b8b1bc975eb1c62da1781"
+    },
+    "source_assets/OmniPBRBase.mdl": {
+      "bytes": 19369,
+      "role": "code",
+      "sha256": "a8fd9fe174e91892e94d06da90ba453a124024c2ce2c033be9d82c9e2f76a3b7"
+    },
+    "source_assets/OmniPBR_ClearCoat.mdl": {
+      "bytes": 29789,
+      "role": "code",
+      "sha256": "d84c5ba482561c0eaea2e0c5b607358af549e36cd921773462f92dbc4f32cbc3"
+    }
+  },
+  "id": "simready_kitchenware_spatula_d01",
+  "kind": "model",
+  "licence": {
+    "credit": "kitchenware_spatula_d01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0; changed: each Material names its library surface (score:surface)",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "Textures/t_spatula_brown_d01_alb.png": "kitchenware_spatula_d01/simready_usd/Textures/t_spatula_brown_d01_alb.png",
+      "Textures/t_spatula_brown_d01_nor.png": "kitchenware_spatula_d01/simready_usd/Textures/t_spatula_brown_d01_nor.png",
+      "Textures/t_spatula_brown_d01_orm.png": "kitchenware_spatula_d01/simready_usd/Textures/t_spatula_brown_d01_orm.png",
+      "payloads/MuJoCo/disabled.usda": "kitchenware_spatula_d01/simready_usd/payloads/MuJoCo/disabled.usda",
+      "payloads/MuJoCo/enabled.usda": "kitchenware_spatula_d01/simready_usd/payloads/MuJoCo/enabled.usda",
+      "payloads/Newton/disabled.usda": "kitchenware_spatula_d01/simready_usd/payloads/Newton/disabled.usda",
+      "payloads/Newton/enabled.usda": "kitchenware_spatula_d01/simready_usd/payloads/Newton/enabled.usda",
+      "payloads/PhysX/disabled.usda": "kitchenware_spatula_d01/simready_usd/payloads/PhysX/disabled.usda",
+      "payloads/PhysX/enabled.usda": "kitchenware_spatula_d01/simready_usd/payloads/PhysX/enabled.usda",
+      "payloads/Physics/physics.usda": "kitchenware_spatula_d01/simready_usd/payloads/Physics/physics.usda",
+      "payloads/base.usda": "kitchenware_spatula_d01/simready_usd/payloads/base.usda",
+      "payloads/geometries.usd": "kitchenware_spatula_d01/simready_usd/payloads/geometries.usd",
+      "payloads/instances.usda": "kitchenware_spatula_d01/simready_usd/payloads/instances.usda",
+      "payloads/instances_mujoco.usda": "kitchenware_spatula_d01/simready_usd/payloads/instances_mujoco.usda",
+      "payloads/instances_newton.usda": "kitchenware_spatula_d01/simready_usd/payloads/instances_newton.usda",
+      "payloads/instances_physx.usda": "kitchenware_spatula_d01/simready_usd/payloads/instances_physx.usda",
+      "payloads/materials.usda": "kitchenware_spatula_d01/simready_usd/payloads/materials.usda (changed: each Material names its library surface (score:surface))",
+      "sm_kitchenware_spatula_d01_01.usd": "kitchenware_spatula_d01/simready_usd/sm_kitchenware_spatula_d01_01.usd",
+      "source_assets/OmniPBR.mdl": "kitchenware_spatula_d01/simready_usd/source_assets/OmniPBR.mdl",
+      "source_assets/OmniPBRBase.mdl": "kitchenware_spatula_d01/simready_usd/source_assets/OmniPBRBase.mdl",
+      "source_assets/OmniPBR_ClearCoat.mdl": "kitchenware_spatula_d01/simready_usd/source_assets/OmniPBR_ClearCoat.mdl"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "kitchenware_spatula_d01: its model, physics and maps"
+      },
+      {
+        "by": "score",
+        "what": "the library surface each material names (score:surface)"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: kitchenware_spatula_d01",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/simready_m_opaque_wood_spatula_d01_0c8b9130@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "description": [
+      "spatula"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "simulators": [
+      "mujoco",
+      "newton",
+      "physx"
+    ],
+    "wikidata_class": [
+      "Spatula kitchen"
+    ],
+    "wikidata_qcode": [
+      "Q18131125"
+    ]
+  },
+  "title": "kitchenware_spatula_d01",
+  "usd": {
+    "default_prim": "/RootNode",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/simready_kitchenware_spatula_d01/1/sm_kitchenware_spatula_d01_01.usd",
+    "root": "sm_kitchenware_spatula_d01_01.usd",
+    "up_axis": "Z",
+    "use": "reference"
+  },
+  "version": 1
+}

@@ -1,0 +1,72 @@
+{
+  "address": "surface/simready_m_opaque_plastic_colored_a01_a1cd7e81@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 1838087,
+      "role": "texture",
+      "sha256": "0654a2bd1fba11bc460f217da85ab2d1b455227b97609c3d80632a832b140b76"
+    },
+    "material.usda": {
+      "bytes": 2025,
+      "role": "usd",
+      "sha256": "b5dd49a6e33b54afcebf1195b091f55a8f820e1746d49bc6b53fb0c176106b74"
+    },
+    "orm.png": {
+      "bytes": 3184331,
+      "role": "texture",
+      "sha256": "cdc0c1be84f1ae1a4f2e31b089781e192b72dbe377445d19f7edaa45a6e086f3"
+    },
+    "surface.json": {
+      "bytes": 778,
+      "role": "record",
+      "sha256": "8c8fb4fe51fb57fc0d963f05a10db0990a76396010e8d93dfa377dbb81e92cd5"
+    }
+  },
+  "id": "simready_m_opaque_plastic_colored_a01_a1cd7e81",
+  "kind": "surface",
+  "licence": {
+    "credit": "laser_system_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "laser_system_a01/simready_usd/Textures/t_glass_lensColoredGlossy_b01_tile_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "orm.png": "laser_system_a01/simready_usd/Textures/t_glass_lensColoredGlossy_b01_tile_rou.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__plastic__colored_a01 maps of laser_system_a01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: laser_system_a01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "a1cd7e812091d4695d6a132896ba8d1838bbd128c2c926e528d159468c7881e4"
+    ]
+  },
+  "title": "m_opaque__plastic__colored_a01",
+  "usd": null,
+  "version": 1
+}

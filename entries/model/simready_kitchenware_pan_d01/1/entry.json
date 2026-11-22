@@ -1,0 +1,195 @@
+{
+  "address": "model/simready_kitchenware_pan_d01@1",
+  "files": {
+    "Textures/t_pan_blue_d01_alb.png": {
+      "bytes": 190874,
+      "role": "texture",
+      "sha256": "1320fefbde93a81b52de415bb5bed7e87f6055d143526ae8b0f725e379e8baf7"
+    },
+    "Textures/t_pan_blue_d01_nor.png": {
+      "bytes": 262777,
+      "role": "texture",
+      "sha256": "846bd98f6ce2ec57cfc8471d681c03dda5003c1ec209dde00337d90a23dcfa2f"
+    },
+    "Textures/t_pan_blue_d01_orm.png": {
+      "bytes": 591374,
+      "role": "texture",
+      "sha256": "8e32463d11eac60666c26bf24acacb709a8aca548cda8d3ad8a7d481ce62f5dd"
+    },
+    "payloads/MuJoCo/disabled.usda": {
+      "bytes": 4294,
+      "role": "usd",
+      "sha256": "f24e103cea0397aeb0d1774b273a0a346321e0dfed0e49ef875c3c81b26f467f"
+    },
+    "payloads/MuJoCo/enabled.usda": {
+      "bytes": 5371,
+      "role": "usd",
+      "sha256": "4a3c2640d424b8db3028213f253a4565108acdcfbdf694a98375e061b54ceda1"
+    },
+    "payloads/Newton/disabled.usda": {
+      "bytes": 4294,
+      "role": "usd",
+      "sha256": "f24e103cea0397aeb0d1774b273a0a346321e0dfed0e49ef875c3c81b26f467f"
+    },
+    "payloads/Newton/enabled.usda": {
+      "bytes": 5208,
+      "role": "usd",
+      "sha256": "8b3760e0ba468ea887a382f839313841140b92c1211262535c24878167ed633b"
+    },
+    "payloads/PhysX/disabled.usda": {
+      "bytes": 4294,
+      "role": "usd",
+      "sha256": "f24e103cea0397aeb0d1774b273a0a346321e0dfed0e49ef875c3c81b26f467f"
+    },
+    "payloads/PhysX/enabled.usda": {
+      "bytes": 4682,
+      "role": "usd",
+      "sha256": "a3c4d42dc8189d04ec928e35c69ad1fbb981f0c0d6f9a9867ade7cc5b253e573"
+    },
+    "payloads/Physics/physics.usda": {
+      "bytes": 5144,
+      "role": "usd",
+      "sha256": "d3b7886989c53a9b8c8ff511e6f23b8d77674939fc1002400590aef227272d49"
+    },
+    "payloads/base.usda": {
+      "bytes": 9842,
+      "role": "usd",
+      "sha256": "a934e17df435382d5c06122b8213b2aa1785271ef330fc11b70fa2e5c5559519"
+    },
+    "payloads/geometries.usd": {
+      "bytes": 581151,
+      "role": "usd",
+      "sha256": "094a67d64f91caa752fedc3bca5d06b52afa21e0217ab76326daa9ec70754c1c"
+    },
+    "payloads/instances.usda": {
+      "bytes": 6261,
+      "role": "usd",
+      "sha256": "6453fd48a2ff1eefa124aee86a556ce57db40020badf3ceb3de1cdf59ee00590"
+    },
+    "payloads/instances_mujoco.usda": {
+      "bytes": 6533,
+      "role": "usd",
+      "sha256": "f3fb2c7cf20013af65fc87cd59940471fd00ea50fc150488b1c61918cf643455"
+    },
+    "payloads/instances_newton.usda": {
+      "bytes": 6384,
+      "role": "usd",
+      "sha256": "c93d6af6e174037b7f9181bf46f1b954da56b3e0ca56b8a2465be95d4d39d4c4"
+    },
+    "payloads/instances_physx.usda": {
+      "bytes": 6401,
+      "role": "usd",
+      "sha256": "bbe244bdef381c2ebb37a1f01dd06fc847057b24d9ed9b5997451ce9e292e020"
+    },
+    "payloads/materials.usda": {
+      "bytes": 14840,
+      "role": "usd",
+      "sha256": "2557ddd7a45ff3a69f603bf2393dcba43a7af83220ccb49dcc353d02e5bd2629"
+    },
+    "sm_kitchenware_pan_d01_01.usd": {
+      "bytes": 21681,
+      "role": "usd",
+      "sha256": "b19ab892f985ceeb1a9ae061a96bd61556102b5c830e5ed63870f5fdbdb9bcdc"
+    },
+    "source_assets/OmniPBR.mdl": {
+      "bytes": 16010,
+      "role": "code",
+      "sha256": "6e6b3acbccd236e21a6c29964a431d2a53e77251cc6b8b1bc975eb1c62da1781"
+    },
+    "source_assets/OmniPBRBase.mdl": {
+      "bytes": 19369,
+      "role": "code",
+      "sha256": "a8fd9fe174e91892e94d06da90ba453a124024c2ce2c033be9d82c9e2f76a3b7"
+    },
+    "source_assets/OmniPBR_ClearCoat.mdl": {
+      "bytes": 29789,
+      "role": "code",
+      "sha256": "d84c5ba482561c0eaea2e0c5b607358af549e36cd921773462f92dbc4f32cbc3"
+    }
+  },
+  "id": "simready_kitchenware_pan_d01",
+  "kind": "model",
+  "licence": {
+    "credit": "kitchenware_pan_d01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0; changed: each Material names its library surface (score:surface)",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "Textures/t_pan_blue_d01_alb.png": "kitchenware_pan_d01/simready_usd/Textures/t_pan_blue_d01_alb.png",
+      "Textures/t_pan_blue_d01_nor.png": "kitchenware_pan_d01/simready_usd/Textures/t_pan_blue_d01_nor.png",
+      "Textures/t_pan_blue_d01_orm.png": "kitchenware_pan_d01/simready_usd/Textures/t_pan_blue_d01_orm.png",
+      "payloads/MuJoCo/disabled.usda": "kitchenware_pan_d01/simready_usd/payloads/MuJoCo/disabled.usda",
+      "payloads/MuJoCo/enabled.usda": "kitchenware_pan_d01/simready_usd/payloads/MuJoCo/enabled.usda",
+      "payloads/Newton/disabled.usda": "kitchenware_pan_d01/simready_usd/payloads/Newton/disabled.usda",
+      "payloads/Newton/enabled.usda": "kitchenware_pan_d01/simready_usd/payloads/Newton/enabled.usda",
+      "payloads/PhysX/disabled.usda": "kitchenware_pan_d01/simready_usd/payloads/PhysX/disabled.usda",
+      "payloads/PhysX/enabled.usda": "kitchenware_pan_d01/simready_usd/payloads/PhysX/enabled.usda",
+      "payloads/Physics/physics.usda": "kitchenware_pan_d01/simready_usd/payloads/Physics/physics.usda",
+      "payloads/base.usda": "kitchenware_pan_d01/simready_usd/payloads/base.usda",
+      "payloads/geometries.usd": "kitchenware_pan_d01/simready_usd/payloads/geometries.usd",
+      "payloads/instances.usda": "kitchenware_pan_d01/simready_usd/payloads/instances.usda",
+      "payloads/instances_mujoco.usda": "kitchenware_pan_d01/simready_usd/payloads/instances_mujoco.usda",
+      "payloads/instances_newton.usda": "kitchenware_pan_d01/simready_usd/payloads/instances_newton.usda",
+      "payloads/instances_physx.usda": "kitchenware_pan_d01/simready_usd/payloads/instances_physx.usda",
+      "payloads/materials.usda": "kitchenware_pan_d01/simready_usd/payloads/materials.usda (changed: each Material names its library surface (score:surface))",
+      "sm_kitchenware_pan_d01_01.usd": "kitchenware_pan_d01/simready_usd/sm_kitchenware_pan_d01_01.usd",
+      "source_assets/OmniPBR.mdl": "kitchenware_pan_d01/simready_usd/source_assets/OmniPBR.mdl",
+      "source_assets/OmniPBRBase.mdl": "kitchenware_pan_d01/simready_usd/source_assets/OmniPBRBase.mdl",
+      "source_assets/OmniPBR_ClearCoat.mdl": "kitchenware_pan_d01/simready_usd/source_assets/OmniPBR_ClearCoat.mdl"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "kitchenware_pan_d01: its model, physics and maps"
+      },
+      {
+        "by": "score",
+        "what": "the library surface each material names (score:surface)"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: kitchenware_pan_d01",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/simready_m_opaque_metal_pan_d01_3f10d121@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "description": [
+      "frying pan"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "simulators": [
+      "mujoco",
+      "newton",
+      "physx"
+    ],
+    "wikidata_class": [
+      "frying pan"
+    ],
+    "wikidata_qcode": [
+      "Q127666"
+    ]
+  },
+  "title": "kitchenware_pan_d01",
+  "usd": {
+    "default_prim": "/RootNode",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/simready_kitchenware_pan_d01/1/sm_kitchenware_pan_d01_01.usd",
+    "root": "sm_kitchenware_pan_d01_01.usd",
+    "up_axis": "Z",
+    "use": "reference"
+  },
+  "version": 1
+}

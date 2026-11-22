@@ -1,0 +1,81 @@
+{
+  "address": "surface/simready_m_opaque_metal_pan_o01_a191f5a2@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 5356,
+      "role": "texture",
+      "sha256": "e2f667992b59b80884a171d2011f9279c22a65ccaaa485f888b6a5933141d03c"
+    },
+    "material.usda": {
+      "bytes": 2422,
+      "role": "usd",
+      "sha256": "4d48cab8cd5cedf5a63ef830bf83fc2a654e1df25b05cd91452c5a25744f426b"
+    },
+    "normal.png": {
+      "bytes": 111288,
+      "role": "texture",
+      "sha256": "f1674fd8bc527bd7bb1f866811a166c9e68244902e12fc6f021bed4be5bc13b6"
+    },
+    "orm.png": {
+      "bytes": 656254,
+      "role": "texture",
+      "sha256": "ce5225733158e4b9a687b41456252ecc910bdcba6de22f86ee25306d6cbab9ab"
+    },
+    "surface.json": {
+      "bytes": 994,
+      "role": "record",
+      "sha256": "4a091190864a5da267de7ab1f8e8b54ee683a50f009ca364469d20419cda09ec"
+    }
+  },
+  "id": "simready_m_opaque_metal_pan_o01_a191f5a2",
+  "kind": "surface",
+  "licence": {
+    "credit": "kitchenware_pan_o01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "kitchenware_pan_o01/simready_usd/Textures/t_pan_chrome_o01_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "kitchenware_pan_o01/simready_usd/Textures/t_pan_chrome_o01_nor.png",
+      "orm.png": "kitchenware_pan_o01/simready_usd/Textures/t_pan_chrome_o01_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__metal__pan_o01 maps of kitchenware_pan_o01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: kitchenware_pan_o01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "a191f5a2b89e1df2eb82f31faee586614a1b0ac7bd9fb93d2f99fb8c14cb935a"
+    ],
+    "painted_for": [
+      "kitchenware_pan_o01"
+    ]
+  },
+  "title": "m_opaque__metal__pan_o01",
+  "usd": null,
+  "version": 1
+}

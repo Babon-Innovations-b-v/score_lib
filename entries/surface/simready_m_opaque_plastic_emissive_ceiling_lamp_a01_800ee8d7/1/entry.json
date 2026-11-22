@@ -1,0 +1,81 @@
+{
+  "address": "surface/simready_m_opaque_plastic_emissive_ceiling_lamp_a01_800ee8d7@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 5635443,
+      "role": "texture",
+      "sha256": "5c9c4aaa2cc55b1faf805247f5566912563219a4fd3b437d704686ab7289ebc3"
+    },
+    "material.usda": {
+      "bytes": 2748,
+      "role": "usd",
+      "sha256": "2a2fa50ea903c0e6c00d751d66fdc758850fab2037f7313c293db49eda9abffd"
+    },
+    "normal.png": {
+      "bytes": 58788,
+      "role": "texture",
+      "sha256": "2cbc0ee77ec4e254e8c7192e3fdb47d0922ed73fadfe1ac4ea3a4b75f4aaf6ee"
+    },
+    "orm.png": {
+      "bytes": 6043529,
+      "role": "texture",
+      "sha256": "c2fdec176e47172ea74d5811a05a1490993266ec8984dde5cc7b71d4e1f4669e"
+    },
+    "surface.json": {
+      "bytes": 1080,
+      "role": "record",
+      "sha256": "fe4b7b4dc6c8b5e226e070eea5ce99bbe658c62c48020c323af043bec41fa5c2"
+    }
+  },
+  "id": "simready_m_opaque_plastic_emissive_ceiling_lamp_a01_800ee8d7",
+  "kind": "surface",
+  "licence": {
+    "credit": "lamp_ceiling_1m_rectangle_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "lamp_ceiling_1m_rectangle_a01/simready_usd/Textures/t_ceilingLamp_white_a01_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "lamp_ceiling_1m_rectangle_a01/simready_usd/Textures/t_ceilingLamp_white_a01_nor.png",
+      "orm.png": "lamp_ceiling_1m_rectangle_a01/simready_usd/Textures/t_ceilingLamp_white_a01_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__plastic__emissive_ceilingLamp_a01 maps of lamp_ceiling_1m_rectangle_a01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: lamp_ceiling_1m_rectangle_a01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "800ee8d7742b4c996f28ad1f0f3d406d27432fb241138b8533806fe90fa7692e"
+    ],
+    "painted_for": [
+      "lamp_ceiling_1m_rectangle_a01"
+    ]
+  },
+  "title": "m_opaque__plastic__emissive_ceilingLamp_a01",
+  "usd": null,
+  "version": 1
+}
