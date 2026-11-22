@@ -1,0 +1,78 @@
+{
+  "address": "surface/simready_m_opaque_metal_painted_white_a01_12ca185a@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 37090957,
+      "role": "texture",
+      "sha256": "31f870d1f56fc9d10752478130944451f9821c9e3538f68f2a73b729b129f901"
+    },
+    "material.usda": {
+      "bytes": 2579,
+      "role": "usd",
+      "sha256": "2f32257910d734f785ec1fdbe606478087f9afcec0ef870b3f185086bae1c412"
+    },
+    "normal.png": {
+      "bytes": 29162549,
+      "role": "texture",
+      "sha256": "5662f6f6f92c4656aefdf976d230f40b4e8c8b08d3d89a5ee686e91c296d58e3"
+    },
+    "orm.png": {
+      "bytes": 17017313,
+      "role": "texture",
+      "sha256": "09eafa9417db27e15def19e7d3edb000459a2a377b62cf11188cb1001ce938ef"
+    },
+    "surface.json": {
+      "bytes": 818,
+      "role": "record",
+      "sha256": "d68e7b8acfe7b8d328f5e528c2b1be503bda4d1ee1ffabcf09ffe3337203d400"
+    }
+  },
+  "id": "simready_m_opaque_metal_painted_white_a01_12ca185a",
+  "kind": "surface",
+  "licence": {
+    "credit": "structure_wall_entrance_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "structure_wall_entrance_a01/simready_usd/Textures/t_metal_painted_white_a01_tile_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "structure_wall_entrance_a01/simready_usd/Textures/t_metal_painted_white_a01_tile_nor.png",
+      "orm.png": "structure_wall_entrance_a01/simready_usd/Textures/t_metal_painted_white_a01_tile_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__metal__painted_white_a01 maps of structure_wall_entrance_a01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: structure_wall_entrance_a01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "12ca185a69af8f1793ff81d630d57f4478a37700f09cf7c5316f6094bf1753a3"
+    ]
+  },
+  "title": "m_opaque__metal__painted_white_a01",
+  "usd": null,
+  "version": 1
+}

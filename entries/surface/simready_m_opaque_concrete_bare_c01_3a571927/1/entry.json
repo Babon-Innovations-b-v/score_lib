@@ -1,0 +1,78 @@
+{
+  "address": "surface/simready_m_opaque_concrete_bare_c01_3a571927@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 29969033,
+      "role": "texture",
+      "sha256": "636a5bf59234639d297f7df47cbe88c41d8e3f9bec99d60b2749ad967ff6860a"
+    },
+    "material.usda": {
+      "bytes": 2507,
+      "role": "usd",
+      "sha256": "4fccad1995bcbc10770dc7181ebfd2518cfe48bc1c4c72e3e224e731ac7d7cc7"
+    },
+    "normal.png": {
+      "bytes": 36215591,
+      "role": "texture",
+      "sha256": "bff0b16e1766725c865aeae3e624bf3c06e2f80df37bd85937f94655a1601d94"
+    },
+    "orm.png": {
+      "bytes": 54420419,
+      "role": "texture",
+      "sha256": "a036800b84e195703617471318828df5b6267b9f7d4c00c9293a755a659602b1"
+    },
+    "surface.json": {
+      "bytes": 808,
+      "role": "record",
+      "sha256": "5fce139374bdc91e71dd9db139f9d82e4608c00317b30ac8285a17b71bab9789"
+    }
+  },
+  "id": "simready_m_opaque_concrete_bare_c01_3a571927",
+  "kind": "surface",
+  "licence": {
+    "credit": "structure_wall_column_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "structure_wall_column_a01/simready_usd/Textures/t_concrete_bare_a01_tile_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "structure_wall_column_a01/simready_usd/Textures/t_concrete_bare_a03_tile_nor.png",
+      "orm.png": "structure_wall_column_a01/simready_usd/Textures/t_concrete_bare_a03_tile_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__concrete__bare_c01 maps of structure_wall_column_a01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: structure_wall_column_a01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "3a57192738b8f251388383585f68cf399d1d53e39e44eae8a5c9edb775f51a0e"
+    ]
+  },
+  "title": "m_opaque__concrete__bare_c01",
+  "usd": null,
+  "version": 1
+}

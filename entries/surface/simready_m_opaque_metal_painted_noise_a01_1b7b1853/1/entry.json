@@ -1,0 +1,72 @@
+{
+  "address": "surface/simready_m_opaque_metal_painted_noise_a01_1b7b1853@1",
+  "files": {
+    "material.usda": {
+      "bytes": 2216,
+      "role": "usd",
+      "sha256": "ac21249d831e059d5885a27f74ecfc72176638b36b8b41eeaae407f5c2fec579"
+    },
+    "normal.png": {
+      "bytes": 30465034,
+      "role": "texture",
+      "sha256": "41f666be93c04ac8fcb2108fc39ea8b7817b42cba3390ea07bd14f60c6204b48"
+    },
+    "orm.png": {
+      "bytes": 25376027,
+      "role": "texture",
+      "sha256": "496b49a0c464fb991849b74c85c951f9553080e925b91fa091d521a6d1dc55a4"
+    },
+    "surface.json": {
+      "bytes": 865,
+      "role": "record",
+      "sha256": "6ded8706b97de534baf955e2dd2cbf9cb96d7d3a093cfa2ac814473cd6caa2d9"
+    }
+  },
+  "id": "simready_m_opaque_metal_painted_noise_a01_1b7b1853",
+  "kind": "surface",
+  "licence": {
+    "credit": "structure_wall_column_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "structure_wall_column_a01/simready_usd/Textures/t_metal_paintedNoise_a01_tile_nor.png",
+      "orm.png": "structure_wall_column_a01/simready_usd/Textures/t_metal_paintedNoise_a02_tile_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__metal__paintedNoise_a01 maps of structure_wall_column_a01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: structure_wall_column_a01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "1b7b1853ada06e9fc181da4429682d2ebac23fdeaa45b7b36bbebc36020772a9"
+    ]
+  },
+  "title": "m_opaque__metal__paintedNoise_a01",
+  "usd": null,
+  "version": 1
+}
