@@ -296,10 +296,10 @@ def body_file(far_shown):
 def test_a_body_is_carried_with_its_far_body_out_of_its_default_scene(world):
     from score_lib.export import character
     old, apart = body_file(True), body_file(False)
-    stored(world, "people-dress-crew-made", {"body.glb": old, "look.json": b"{}"})
-    stored(world, "people-dress-pilot-made", {"body.glb": apart, "look.json": b"{}"})
+    stored(world, "people-dress-crew-work", {"body.glb": old, "look.json": b"{}"})
+    stored(world, "people-dress-pilot-work", {"body.glb": apart, "look.json": b"{}"})
     world.export()
-    crew, pilot = (entries.load_address(world.root, f"character/dress_{name}_made@1") for name in ("crew", "pilot"))
+    crew, pilot = (entries.load_address(world.root, f"character/dress_{name}_work@1") for name in ("crew", "pilot"))
     store = LocalBlobStore(os.environ["SCORE_LIB_BLOBS_DIR"])
     document, rest = character.read_glb(store.path(crew["files"]["body.glb"]["sha256"]))
     scenes = {scene["name"]: scene["nodes"] for scene in document["scenes"]}
@@ -309,3 +309,14 @@ def test_a_body_is_carried_with_its_far_body_out_of_its_default_scene(world):
     assert pilot["files"]["body.glb"]["sha256"] == sha256(apart) and "files_from" not in pilot["provenance"]
     again = world.export()["kinds"]["character"]["counts"]
     assert again["unchanged"] == 2 and again["changed draft"] == 0, again
+
+
+def test_a_made_outfit_body_is_never_shipped(world):
+    """The people-dress route's per-part repaint (the made outfit and its variants) stays out of the library; another
+    outfit of the same look is exported (score #156)."""
+    for node in ("people-dress-crew-made", "people-dress-crew-made-v1", "people-body-crew-made", "people-dress-crew-work"):
+        stored(world, node, {"body.glb": body_file(False), "look.json": b"{}"})
+    world.export()
+    shipped = {name for name in ("dress_crew_made", "dress_crew_made_v1", "body_crew_made", "dress_crew_work")
+               if entries.load_address(world.root, f"character/{name}@1")}
+    assert shipped == {"dress_crew_work"}, shipped

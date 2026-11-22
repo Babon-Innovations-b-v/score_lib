@@ -8,7 +8,13 @@ the paper's Table C1 lists them.
 A body.glb whose far body (score's crowd level of detail) stands in its default scene is carried with it moved out of
 it (`levels_apart`, as score's tools/characters/people/glb.py writes a body since score #156): a reader that opens the
 file sees one body, and a reader that switches levels by distance opens the scene LEVELS_SCENE. The source's sha256
-is kept in files_from."""
+is kept in files_from.
+
+A row of the made outfit (`<look>-made`, its variants `-made-v<n>`) is never exported (`repainted`): its body wears
+score's people-dress route's per-part repaint of a Pixal3D take, whose region labels fall off the real seams and tore
+the suits, collars and visors of 25 such entries (score #156, withdrawn 2026-11-22). The owner ruled that route out
+for player models on 2026-11-19: a person reaches the library as a TRELLIS.2 still rigged by score's
+tools/characters/still_rig in its own paint graded toward its place's palette (`character/<look>_trellis`, taken in)."""
 import json
 import pathlib
 import posixpath
@@ -32,15 +38,23 @@ DRESS = "people-dress-"
 GLTF = "body.glb"
 FAR = "far"  # the far body's node
 NEAR_SCENE, LEVELS_SCENE = "near", "levels"  # the default scene, the near body alone; every level on one skeleton
+MADE = "made"  # the made outfit, per-part repainted (`repainted`)
 
 
 def plan(context):
-    """One candidate per accepted body and dress row."""
+    """One candidate per accepted body and dress row, the made outfit's left out."""
     found = []
     for node in context.store.nodes():
-        if node.startswith((BODY, DRESS)) and context.store.accepted(node):
+        if node.startswith((BODY, DRESS)) and context.store.accepted(node) and not repainted(node):
             found.append(candidate(context, node))
     return found
+
+
+def repainted(node):
+    """Whether a body or dress row is the made outfit's (`<look>-made`, `-made-v<n>`): the people-dress route's
+    per-part repaint, which the owner ruled out for player models (2026-11-19) and is never shipped."""
+    outfit = names_of(node)[0].partition("-")[2]
+    return outfit == MADE or outfit.startswith(f"{MADE}-")
 
 
 def names_of(node):
