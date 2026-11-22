@@ -1,0 +1,195 @@
+{
+  "address": "model/simready_pallet_b03@1",
+  "files": {
+    "Textures/T_Pallet_A3_Albedo.png": {
+      "bytes": 5907657,
+      "role": "texture",
+      "sha256": "3d1461abc0d80436db57c58e0bb86a701462217adaeacefafecafdcc7a5eccf9"
+    },
+    "Textures/T_Pallet_A3_Normal.png": {
+      "bytes": 3857623,
+      "role": "texture",
+      "sha256": "b058747734312e135fb286fc378cd922de7cce5278cc4156d54fe3f114575abf"
+    },
+    "Textures/T_Pallet_A3_ORM.png": {
+      "bytes": 3126873,
+      "role": "texture",
+      "sha256": "3e6c7c80c02a1d765410cb77265be1153913461a46dfe8fd3efe5203d6d3a62d"
+    },
+    "payloads/MuJoCo/disabled.usda": {
+      "bytes": 4325,
+      "role": "usd",
+      "sha256": "2941bdcd84d0d3b627c62d34a854f5239bebbd23c4695112deef6884ce578a35"
+    },
+    "payloads/MuJoCo/enabled.usda": {
+      "bytes": 4933,
+      "role": "usd",
+      "sha256": "675b1d19744d91f723c40bd8372f728f5956d1ca64df52578ae614914e9af03d"
+    },
+    "payloads/Newton/disabled.usda": {
+      "bytes": 4325,
+      "role": "usd",
+      "sha256": "2941bdcd84d0d3b627c62d34a854f5239bebbd23c4695112deef6884ce578a35"
+    },
+    "payloads/Newton/enabled.usda": {
+      "bytes": 4877,
+      "role": "usd",
+      "sha256": "24885112b2888eb702b9d8bc55a0a019fb5ff5228ca5a852d80c3551c0bd66d8"
+    },
+    "payloads/PhysX/disabled.usda": {
+      "bytes": 4325,
+      "role": "usd",
+      "sha256": "2941bdcd84d0d3b627c62d34a854f5239bebbd23c4695112deef6884ce578a35"
+    },
+    "payloads/PhysX/enabled.usda": {
+      "bytes": 4596,
+      "role": "usd",
+      "sha256": "6d17df0f077f64a4430e30b706c478b838f3968e00d4ca85b20af7eab19a4138"
+    },
+    "payloads/Physics/physics.usda": {
+      "bytes": 4841,
+      "role": "usd",
+      "sha256": "8075011357dfb990b2041f1b12f1c720075d45ede87f6277eafb7e48e2b0dc23"
+    },
+    "payloads/base.usda": {
+      "bytes": 7061,
+      "role": "usd",
+      "sha256": "ae77f2cab36a33b306d14a4397ba79bdcb8dda9c128ad5b583b7cf1e71cc5880"
+    },
+    "payloads/geometries.usd": {
+      "bytes": 162128,
+      "role": "usd",
+      "sha256": "0064b5fb451143a02e307ed69818f88f6b8feb47bba3ec72d678113a3afb0692"
+    },
+    "payloads/instances.usda": {
+      "bytes": 5300,
+      "role": "usd",
+      "sha256": "51e3d40ee7c486fa549e7ef78e16a145329195472f5d9dd8ac32e8b1c520b724"
+    },
+    "payloads/instances_mujoco.usda": {
+      "bytes": 5572,
+      "role": "usd",
+      "sha256": "76817b2862a3aa1519c36719e529452b337723fb08ec1c3525fe8568d1ae858c"
+    },
+    "payloads/instances_newton.usda": {
+      "bytes": 5423,
+      "role": "usd",
+      "sha256": "7a15db1c47aad1751d986c5ac60146b9d0516868cc50223f71587e538561294e"
+    },
+    "payloads/instances_physx.usda": {
+      "bytes": 5440,
+      "role": "usd",
+      "sha256": "29a4b89d3c417e593ffaf64b789844811aa632f43e525e250fa0eecbf7ab7d08"
+    },
+    "payloads/materials.usda": {
+      "bytes": 9860,
+      "role": "usd",
+      "sha256": "8f60fdcf175bc9c1ce1edb15ede52327a53fa9e102726e7c2a62635154d4410f"
+    },
+    "sm_pallet_b03_01.usd": {
+      "bytes": 22747,
+      "role": "usd",
+      "sha256": "c8d806b2e58ef69fe8ce16f47bc2eb9d0d65e232a30943c0a9895e49b90298d5"
+    },
+    "source_assets/OmniPBR.mdl": {
+      "bytes": 16010,
+      "role": "code",
+      "sha256": "6e6b3acbccd236e21a6c29964a431d2a53e77251cc6b8b1bc975eb1c62da1781"
+    },
+    "source_assets/OmniPBRBase.mdl": {
+      "bytes": 19369,
+      "role": "code",
+      "sha256": "a8fd9fe174e91892e94d06da90ba453a124024c2ce2c033be9d82c9e2f76a3b7"
+    },
+    "source_assets/OmniPBR_ClearCoat.mdl": {
+      "bytes": 29789,
+      "role": "code",
+      "sha256": "d84c5ba482561c0eaea2e0c5b607358af549e36cd921773462f92dbc4f32cbc3"
+    }
+  },
+  "id": "simready_pallet_b03",
+  "kind": "model",
+  "licence": {
+    "credit": "pallet_b03 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0; changed: each Material names its library surface (score:surface)",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "Textures/T_Pallet_A3_Albedo.png": "pallet_b03/simready_usd/Textures/T_Pallet_A3_Albedo.png",
+      "Textures/T_Pallet_A3_Normal.png": "pallet_b03/simready_usd/Textures/T_Pallet_A3_Normal.png",
+      "Textures/T_Pallet_A3_ORM.png": "pallet_b03/simready_usd/Textures/T_Pallet_A3_ORM.png",
+      "payloads/MuJoCo/disabled.usda": "pallet_b03/simready_usd/payloads/MuJoCo/disabled.usda",
+      "payloads/MuJoCo/enabled.usda": "pallet_b03/simready_usd/payloads/MuJoCo/enabled.usda",
+      "payloads/Newton/disabled.usda": "pallet_b03/simready_usd/payloads/Newton/disabled.usda",
+      "payloads/Newton/enabled.usda": "pallet_b03/simready_usd/payloads/Newton/enabled.usda",
+      "payloads/PhysX/disabled.usda": "pallet_b03/simready_usd/payloads/PhysX/disabled.usda",
+      "payloads/PhysX/enabled.usda": "pallet_b03/simready_usd/payloads/PhysX/enabled.usda",
+      "payloads/Physics/physics.usda": "pallet_b03/simready_usd/payloads/Physics/physics.usda",
+      "payloads/base.usda": "pallet_b03/simready_usd/payloads/base.usda",
+      "payloads/geometries.usd": "pallet_b03/simready_usd/payloads/geometries.usd",
+      "payloads/instances.usda": "pallet_b03/simready_usd/payloads/instances.usda",
+      "payloads/instances_mujoco.usda": "pallet_b03/simready_usd/payloads/instances_mujoco.usda",
+      "payloads/instances_newton.usda": "pallet_b03/simready_usd/payloads/instances_newton.usda",
+      "payloads/instances_physx.usda": "pallet_b03/simready_usd/payloads/instances_physx.usda",
+      "payloads/materials.usda": "pallet_b03/simready_usd/payloads/materials.usda (changed: each Material names its library surface (score:surface))",
+      "sm_pallet_b03_01.usd": "pallet_b03/simready_usd/sm_pallet_b03_01.usd",
+      "source_assets/OmniPBR.mdl": "pallet_b03/simready_usd/source_assets/OmniPBR.mdl",
+      "source_assets/OmniPBRBase.mdl": "pallet_b03/simready_usd/source_assets/OmniPBRBase.mdl",
+      "source_assets/OmniPBR_ClearCoat.mdl": "pallet_b03/simready_usd/source_assets/OmniPBR_ClearCoat.mdl"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "pallet_b03: its model, physics and maps"
+      },
+      {
+        "by": "score",
+        "what": "the library surface each material names (score:surface)"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: pallet_b03",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/simready_opaque_wood_unique_a_832a6007@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "description": [
+      "flat transport structure that supports goods in a stable fashion"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "simulators": [
+      "mujoco",
+      "newton",
+      "physx"
+    ],
+    "wikidata_class": [
+      "pallet"
+    ],
+    "wikidata_qcode": [
+      "Q505996"
+    ]
+  },
+  "title": "pallet_b03",
+  "usd": {
+    "default_prim": "/RootNode",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/simready_pallet_b03/1/sm_pallet_b03_01.usd",
+    "root": "sm_pallet_b03_01.usd",
+    "up_axis": "Z",
+    "use": "reference"
+  },
+  "version": 1
+}
