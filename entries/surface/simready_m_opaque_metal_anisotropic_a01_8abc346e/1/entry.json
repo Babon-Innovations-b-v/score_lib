@@ -1,0 +1,78 @@
+{
+  "address": "surface/simready_m_opaque_metal_anisotropic_a01_8abc346e@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 5932857,
+      "role": "texture",
+      "sha256": "6c22eb92c88609c06f2197bf47367b6a67b7fafeaf958261b3233089b93eca2e"
+    },
+    "material.usda": {
+      "bytes": 2346,
+      "role": "usd",
+      "sha256": "423e8c392948e3e132267850ab70bf0216dda474c55c4162c6233cbc324eb0c8"
+    },
+    "normal.png": {
+      "bytes": 66898794,
+      "role": "texture",
+      "sha256": "5bd284cbbed7a4d71feda2f0cf22665ee0ce87d8c847a40aa444d556d466b0af"
+    },
+    "roughness.png": {
+      "bytes": 5320708,
+      "role": "texture",
+      "sha256": "e8c13ec5847453314d3fe1dc37d07367b7c0adf5a9cad2dc1e1b2dbdb2491b2a"
+    },
+    "surface.json": {
+      "bytes": 838,
+      "role": "record",
+      "sha256": "a690549375c6f5f8b035960d4954eb72ce8723e5dbaaefd1f76310e9a8a17ef6"
+    }
+  },
+  "id": "simready_m_opaque_metal_anisotropic_a01_8abc346e",
+  "kind": "surface",
+  "licence": {
+    "credit": "equipment_bench_vise_heavy_b01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "equipment_bench_vise_heavy_b01/simready_usd/Textures/t_metal_anisotropic_a01_tile_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "equipment_bench_vise_heavy_b01/simready_usd/Textures/t_metal_anisotropic_a02_tile_nor.png",
+      "roughness.png": "equipment_bench_vise_heavy_b01/simready_usd/Textures/t_metal_anisotropic_a02_tile_rou.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__metal__anisotropic_a01 maps of equipment_bench_vise_heavy_b01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: equipment_bench_vise_heavy_b01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "8abc346ef834df013a29b8377765bd959d7201e0699f22382f671cbdeb1855d5"
+    ]
+  },
+  "title": "m_opaque__metal__anisotropic_a01",
+  "usd": null,
+  "version": 1
+}
