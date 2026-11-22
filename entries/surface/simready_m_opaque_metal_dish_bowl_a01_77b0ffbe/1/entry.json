@@ -1,0 +1,81 @@
+{
+  "address": "surface/simready_m_opaque_metal_dish_bowl_a01_77b0ffbe@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 502894,
+      "role": "texture",
+      "sha256": "0ba318934b8aedbfcbc8b1a93ac92a608a039c7e555ec91197a1aac3eef42070"
+    },
+    "material.usda": {
+      "bytes": 2494,
+      "role": "usd",
+      "sha256": "8ac35ddbc691919e23f278d12732e8d43286673963692380ffbdca99f73a5a3f"
+    },
+    "normal.png": {
+      "bytes": 570796,
+      "role": "texture",
+      "sha256": "ad55f3f0ec258e5d1246ee72d79150162c3c10aa2db8b3e2d661d3ab3ccdf288"
+    },
+    "orm.png": {
+      "bytes": 1057195,
+      "role": "texture",
+      "sha256": "4ae9a5aafae5d19c183abb1aaa575a48890490751c5c4c5ab77ce8048a2ab012"
+    },
+    "surface.json": {
+      "bytes": 995,
+      "role": "record",
+      "sha256": "e6c2d8b73531669249bf289bcd2585ea814822d109df6ae44eb3b2ed3cadd10c"
+    }
+  },
+  "id": "simready_m_opaque_metal_dish_bowl_a01_77b0ffbe",
+  "kind": "surface",
+  "licence": {
+    "credit": "dishware_bowl_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "dishware_bowl_a01/simready_usd/Textures/t_dishware_bowl_a01_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "dishware_bowl_a01/simready_usd/Textures/t_dishware_bowl_a01_nor.png",
+      "orm.png": "dishware_bowl_a01/simready_usd/Textures/t_dishware_bowl_a01_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__metal__dishBowl_a01 maps of dishware_bowl_a01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: dishware_bowl_a01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "77b0ffbe3ce39cd4250186fbcc6e91719995a98fc253fd052a764339c8c4012c"
+    ],
+    "painted_for": [
+      "dishware_bowl_a01"
+    ]
+  },
+  "title": "m_opaque__metal__dishBowl_a01",
+  "usd": null,
+  "version": 1
+}

@@ -1,0 +1,78 @@
+{
+  "address": "surface/simready_m_opaque_plastic_black_c01_6e99ef0c@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 60798,
+      "role": "texture",
+      "sha256": "c06cc8dcf25916497a7825154c535721076eb3aeb1594ffc09e52771bc5020b3"
+    },
+    "material.usda": {
+      "bytes": 2507,
+      "role": "usd",
+      "sha256": "724ea00e96f397fd279d1c6ca7f5d8b6921f2a19eb8c1e8565f9572dfb5d7502"
+    },
+    "normal.png": {
+      "bytes": 30346812,
+      "role": "texture",
+      "sha256": "ed11c1e2036f25fd62c40d6466b1eb37dff121a7fa160e00710f2f3bde84a215"
+    },
+    "orm.png": {
+      "bytes": 13005719,
+      "role": "texture",
+      "sha256": "891ad6023ec48c810caaf0e2ff8d0abd6236f7a1ad9a286a1d9146aad77edb2b"
+    },
+    "surface.json": {
+      "bytes": 804,
+      "role": "record",
+      "sha256": "f1bbc0b35a2d972286bd0d64292bd84400f8824bc8b94b78574766029d06e642"
+    }
+  },
+  "id": "simready_m_opaque_plastic_black_c01_6e99ef0c",
+  "kind": "surface",
+  "licence": {
+    "credit": "decor_wallClock_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "decor_wallClock_a01/simready_usd/Textures/t_plastic_black_c01_tile_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "decor_wallClock_a01/simready_usd/Textures/t_plastic_black_c01_tile_nor.png",
+      "orm.png": "decor_wallClock_a01/simready_usd/Textures/t_plastic_black_c01_tile_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__plastic__black_c01 maps of decor_wallClock_a01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: decor_wallClock_a01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "6e99ef0cfda9cece44a78df0aaa10a9b29a24bac8bb76488bb06bc98277eb810"
+    ]
+  },
+  "title": "m_opaque__plastic__black_c01",
+  "usd": null,
+  "version": 1
+}

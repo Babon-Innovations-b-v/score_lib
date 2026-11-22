@@ -1,0 +1,189 @@
+{
+  "address": "model/simready_dishware_glass_wine_red_b01@1",
+  "files": {
+    ".simready/validation.json": {
+      "bytes": 9769,
+      "role": "record",
+      "sha256": "3aa6571493a74654ee0e0830bbf6592f16d6deec00fa862492a7ee30e6b8f095"
+    },
+    "materials/OmniPBR/OmniGlass.mdl": {
+      "bytes": 10205,
+      "role": "code",
+      "sha256": "31a93eda2387572db4930a8b22f51e100716809e859505c97b82a17ac43d1e30"
+    },
+    "materials/OmniPBR/OmniGlass_Opacity.mdl": {
+      "bytes": 17706,
+      "role": "code",
+      "sha256": "b6110a46bb9e8cd94f20cf7d78992f6f81cd5546bbab277cf950256faae80261"
+    },
+    "payloads/Physics/physics.usda": {
+      "bytes": 1853,
+      "role": "usd",
+      "sha256": "4f7095e0efd3fdcbfab762ee986893aa962c14ccafbd2098ec45f7e2bf68d50f"
+    },
+    "payloads/base.usda": {
+      "bytes": 5595,
+      "role": "usd",
+      "sha256": "961d9e5ed54e898af69c09e53d4e0e303d709a65a2d3635641abdac66e501845"
+    },
+    "payloads/geometries.usd": {
+      "bytes": 451602,
+      "role": "usd",
+      "sha256": "1ca10533f9647ace6379c0000f57afb6e5028c15a4654ab563d397b2fede0aad"
+    },
+    "payloads/instances.usda": {
+      "bytes": 2464,
+      "role": "usd",
+      "sha256": "0097952c5b5ac5fe0e744c6260068cbc227491afd4ba7af3c804baca1de87f5e"
+    },
+    "payloads/instances_mujoco.usda": {
+      "bytes": 2633,
+      "role": "usd",
+      "sha256": "a36a11719ed707ae8f01e610b5f42c937b0b730650155c5da9397d584ea1a57c"
+    },
+    "payloads/instances_newton.usda": {
+      "bytes": 2587,
+      "role": "usd",
+      "sha256": "7ee2444212d88202b059ae09118dfa64118b99b1b32b3730586a53d261e47b6a"
+    },
+    "payloads/instances_physx.usda": {
+      "bytes": 2525,
+      "role": "usd",
+      "sha256": "af48e5e9675dbbc36c6cdf0cd45d70b8a6b9e700670f01c0bc100392adbaaf28"
+    },
+    "payloads/materials.usda": {
+      "bytes": 3834,
+      "role": "usd",
+      "sha256": "a46b3143437d57b002a2f312c4f81b43e536237a2a1f03a90c6925cc6cb03ddb"
+    },
+    "payloads/materials/OmniGlass.mdl": {
+      "bytes": 10205,
+      "role": "code",
+      "sha256": "31a93eda2387572db4930a8b22f51e100716809e859505c97b82a17ac43d1e30"
+    },
+    "payloads/materials/OmniGlass_Opacity.mdl": {
+      "bytes": 17706,
+      "role": "code",
+      "sha256": "b6110a46bb9e8cd94f20cf7d78992f6f81cd5546bbab277cf950256faae80261"
+    },
+    "runnables/physics/mujoco.usd": {
+      "bytes": 2003,
+      "role": "usd",
+      "sha256": "f4fcf325d429983ffb1ea141a1581a71054186a6b71d34c8e1e2fcb2f2d572a0"
+    },
+    "runnables/physics/mujoco.usda": {
+      "bytes": 559,
+      "role": "usd",
+      "sha256": "97444821a2c35d93cbae6b23fd8c30833bd517c2c1842455c25f586bbc70d36f"
+    },
+    "runnables/physics/newton.usd": {
+      "bytes": 2025,
+      "role": "usd",
+      "sha256": "82602a93d78e87de620d7085594c5fdccc5d4b0691fad8699c5e2174a707adf3"
+    },
+    "runnables/physics/newton.usda": {
+      "bytes": 712,
+      "role": "usd",
+      "sha256": "b5e09d804c06f4e693e2f9454f0ca2d43e42e5838172c1a141cc374f0201b75b"
+    },
+    "runnables/physics/physx.usd": {
+      "bytes": 1744,
+      "role": "usd",
+      "sha256": "15871ddbb54ef90d127a41fec39f11c0f980c4a16f5ce46a49c3dada6501fd17"
+    },
+    "runnables/physics/physx.usda": {
+      "bytes": 438,
+      "role": "usd",
+      "sha256": "ba0efb429abeb686137dc63488ea7435e2acb61dc063a2fe57dc22b0296cb8e2"
+    },
+    "sm_dishware_glass_wineRed_b01_01.usda": {
+      "bytes": 20013,
+      "role": "usd",
+      "sha256": "282b5045997f4d179d59b77955771cdbbefcefbcc41b44497443209350112fd0"
+    }
+  },
+  "id": "simready_dishware_glass_wine_red_b01",
+  "kind": "model",
+  "licence": {
+    "credit": "dishware_glass_wineRed_b01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0; changed: each Material names its library surface (score:surface)",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      ".simready/validation.json": "dishware_glass_wineRed_b01/simready_usd/.simready/validation.json",
+      "materials/OmniPBR/OmniGlass.mdl": "dishware_glass_wineRed_b01/simready_usd/materials/OmniPBR/OmniGlass.mdl",
+      "materials/OmniPBR/OmniGlass_Opacity.mdl": "dishware_glass_wineRed_b01/simready_usd/materials/OmniPBR/OmniGlass_Opacity.mdl",
+      "payloads/Physics/physics.usda": "dishware_glass_wineRed_b01/simready_usd/payloads/Physics/physics.usda",
+      "payloads/base.usda": "dishware_glass_wineRed_b01/simready_usd/payloads/base.usda",
+      "payloads/geometries.usd": "dishware_glass_wineRed_b01/simready_usd/payloads/geometries.usd",
+      "payloads/instances.usda": "dishware_glass_wineRed_b01/simready_usd/payloads/instances.usda",
+      "payloads/instances_mujoco.usda": "dishware_glass_wineRed_b01/simready_usd/payloads/instances_mujoco.usda",
+      "payloads/instances_newton.usda": "dishware_glass_wineRed_b01/simready_usd/payloads/instances_newton.usda",
+      "payloads/instances_physx.usda": "dishware_glass_wineRed_b01/simready_usd/payloads/instances_physx.usda",
+      "payloads/materials.usda": "dishware_glass_wineRed_b01/simready_usd/payloads/materials.usda (changed: each Material names its library surface (score:surface))",
+      "payloads/materials/OmniGlass.mdl": "dishware_glass_wineRed_b01/simready_usd/payloads/materials/OmniGlass.mdl",
+      "payloads/materials/OmniGlass_Opacity.mdl": "dishware_glass_wineRed_b01/simready_usd/payloads/materials/OmniGlass_Opacity.mdl",
+      "runnables/physics/mujoco.usd": "dishware_glass_wineRed_b01/simready_usd/runnables/physics/mujoco.usd",
+      "runnables/physics/mujoco.usda": "dishware_glass_wineRed_b01/simready_usd/runnables/physics/mujoco.usda",
+      "runnables/physics/newton.usd": "dishware_glass_wineRed_b01/simready_usd/runnables/physics/newton.usd",
+      "runnables/physics/newton.usda": "dishware_glass_wineRed_b01/simready_usd/runnables/physics/newton.usda",
+      "runnables/physics/physx.usd": "dishware_glass_wineRed_b01/simready_usd/runnables/physics/physx.usd",
+      "runnables/physics/physx.usda": "dishware_glass_wineRed_b01/simready_usd/runnables/physics/physx.usda",
+      "sm_dishware_glass_wineRed_b01_01.usda": "dishware_glass_wineRed_b01/simready_usd/sm_dishware_glass_wineRed_b01_01.usda"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "dishware_glass_wineRed_b01: its model, physics and maps"
+      },
+      {
+        "by": "score",
+        "what": "the library surface each material names (score:surface)"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: dishware_glass_wineRed_b01",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/simready_m_trans_glass_clear_a01_7f20daad@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "description": [
+      "drinking vessel for red wine"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "simulators": [
+      "mujoco",
+      "newton",
+      "physx"
+    ],
+    "wikidata_class": [
+      "red wine glass"
+    ],
+    "wikidata_qcode": [
+      "Q65621611"
+    ]
+  },
+  "title": "dishware_glass_wineRed_b01",
+  "usd": {
+    "default_prim": "/RootNode",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/simready_dishware_glass_wine_red_b01/1/sm_dishware_glass_wineRed_b01_01.usda",
+    "root": "sm_dishware_glass_wineRed_b01_01.usda",
+    "up_axis": "Z",
+    "use": "reference"
+  },
+  "version": 1
+}

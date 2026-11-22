@@ -1,0 +1,195 @@
+{
+  "address": "model/simready_decor_vase_c01@1",
+  "files": {
+    ".simready/validation.json": {
+      "bytes": 4053,
+      "role": "record",
+      "sha256": "53d8cc1b0263847c43d40b4b914dc9a65436dded46c72ee14e5442e998101ed3"
+    },
+    "Textures/t_misc_vase_c01_rou.png": {
+      "bytes": 2500938,
+      "role": "texture",
+      "sha256": "19e6de2844a71dda13965fb84603164010b68ed2a7f0ba19884686c43d3577c2"
+    },
+    "materials/OmniPBR/OmniGlass.mdl": {
+      "bytes": 10205,
+      "role": "code",
+      "sha256": "31a93eda2387572db4930a8b22f51e100716809e859505c97b82a17ac43d1e30"
+    },
+    "materials/OmniPBR/OmniGlass_Opacity.mdl": {
+      "bytes": 17706,
+      "role": "code",
+      "sha256": "b6110a46bb9e8cd94f20cf7d78992f6f81cd5546bbab277cf950256faae80261"
+    },
+    "payloads/Physics/physics.usda": {
+      "bytes": 1782,
+      "role": "usd",
+      "sha256": "14c4aca7fe6fa9aa27e78687191ad464b8aad4332c3d45624730fd2b9965aad3"
+    },
+    "payloads/base.usda": {
+      "bytes": 4798,
+      "role": "usd",
+      "sha256": "5140a1a7c8e465f04c37d5032953b49b3ee0f7e82697167dedc8c4a3ffed5675"
+    },
+    "payloads/geometries.usd": {
+      "bytes": 147405,
+      "role": "usd",
+      "sha256": "23ecf2cac851376f270b2173c709fdbdadc6f79b880df7e29f490a8299444544"
+    },
+    "payloads/instances.usda": {
+      "bytes": 2390,
+      "role": "usd",
+      "sha256": "8cf2b616bfd36cc269637b47f32d05dfde7b4f7ddd315c760a74f6f4b36c27b0"
+    },
+    "payloads/instances_mujoco.usda": {
+      "bytes": 2559,
+      "role": "usd",
+      "sha256": "8055060b85d9b7d25478c4ea17bce9fc4404cd91b43a34324a5cbba19b92ab1b"
+    },
+    "payloads/instances_newton.usda": {
+      "bytes": 2463,
+      "role": "usd",
+      "sha256": "e7ecd032f71354643fd027b87d58dde8a0eb0f53293e891227ee12e8ceec2e51"
+    },
+    "payloads/instances_physx.usda": {
+      "bytes": 2451,
+      "role": "usd",
+      "sha256": "a0050a42e521963495ecf2b199c9552fa57dd0dae1d00ebce5104d3d103e497f"
+    },
+    "payloads/materials.usda": {
+      "bytes": 5557,
+      "role": "usd",
+      "sha256": "df35239477515dee5b8125a06319036d71f33d3e52b6e311a8b44f0a628b35e5"
+    },
+    "payloads/materials/OmniGlass.mdl": {
+      "bytes": 10205,
+      "role": "code",
+      "sha256": "31a93eda2387572db4930a8b22f51e100716809e859505c97b82a17ac43d1e30"
+    },
+    "payloads/materials/OmniGlass_Opacity.mdl": {
+      "bytes": 17706,
+      "role": "code",
+      "sha256": "b6110a46bb9e8cd94f20cf7d78992f6f81cd5546bbab277cf950256faae80261"
+    },
+    "runnables/physics/mujoco.usd": {
+      "bytes": 1937,
+      "role": "usd",
+      "sha256": "57e6b45ab75bf7fc076da22dc61a22c8429b778b7b0ab4f6fdcef7c3ada8211f"
+    },
+    "runnables/physics/mujoco.usda": {
+      "bytes": 549,
+      "role": "usd",
+      "sha256": "9122d6942b16fbbe6432dd0ba5ae78e499c83b25891379a5955ab0b39718dd2a"
+    },
+    "runnables/physics/newton.usd": {
+      "bytes": 1941,
+      "role": "usd",
+      "sha256": "a529cfb9c038ab8dd937c7f990cbca43e24af425b6bdce0c70f73e4c66eede07"
+    },
+    "runnables/physics/newton.usda": {
+      "bytes": 656,
+      "role": "usd",
+      "sha256": "949ac76bfae4e1424eda305c4d3901f7825df79e1af48b5bbdcd08bb812fbcfa"
+    },
+    "runnables/physics/physx.usd": {
+      "bytes": 1660,
+      "role": "usd",
+      "sha256": "6c02acde7a46116964c1dce10a3b8e15c4a8199f9ab0a21d59bb76305c81078d"
+    },
+    "runnables/physics/physx.usda": {
+      "bytes": 428,
+      "role": "usd",
+      "sha256": "4177b561206cd9560bd2fd720f353671c264ddf56ca18f9f32b5555dc93a8273"
+    },
+    "sm_decor_vase_c01_01.usda": {
+      "bytes": 9499,
+      "role": "usd",
+      "sha256": "3a74dff1171a865309c744507aebda60a0108cf773b10e3e68baa07c61590a0a"
+    }
+  },
+  "id": "simready_decor_vase_c01",
+  "kind": "model",
+  "licence": {
+    "credit": "decor_vase_c01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0; changed: each Material names its library surface (score:surface)",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      ".simready/validation.json": "decor_vase_c01/simready_usd/.simready/validation.json",
+      "Textures/t_misc_vase_c01_rou.png": "decor_vase_c01/simready_usd/Textures/t_misc_vase_c01_rou.png",
+      "materials/OmniPBR/OmniGlass.mdl": "decor_vase_c01/simready_usd/materials/OmniPBR/OmniGlass.mdl",
+      "materials/OmniPBR/OmniGlass_Opacity.mdl": "decor_vase_c01/simready_usd/materials/OmniPBR/OmniGlass_Opacity.mdl",
+      "payloads/Physics/physics.usda": "decor_vase_c01/simready_usd/payloads/Physics/physics.usda",
+      "payloads/base.usda": "decor_vase_c01/simready_usd/payloads/base.usda",
+      "payloads/geometries.usd": "decor_vase_c01/simready_usd/payloads/geometries.usd",
+      "payloads/instances.usda": "decor_vase_c01/simready_usd/payloads/instances.usda",
+      "payloads/instances_mujoco.usda": "decor_vase_c01/simready_usd/payloads/instances_mujoco.usda",
+      "payloads/instances_newton.usda": "decor_vase_c01/simready_usd/payloads/instances_newton.usda",
+      "payloads/instances_physx.usda": "decor_vase_c01/simready_usd/payloads/instances_physx.usda",
+      "payloads/materials.usda": "decor_vase_c01/simready_usd/payloads/materials.usda (changed: each Material names its library surface (score:surface))",
+      "payloads/materials/OmniGlass.mdl": "decor_vase_c01/simready_usd/payloads/materials/OmniGlass.mdl",
+      "payloads/materials/OmniGlass_Opacity.mdl": "decor_vase_c01/simready_usd/payloads/materials/OmniGlass_Opacity.mdl",
+      "runnables/physics/mujoco.usd": "decor_vase_c01/simready_usd/runnables/physics/mujoco.usd",
+      "runnables/physics/mujoco.usda": "decor_vase_c01/simready_usd/runnables/physics/mujoco.usda",
+      "runnables/physics/newton.usd": "decor_vase_c01/simready_usd/runnables/physics/newton.usd",
+      "runnables/physics/newton.usda": "decor_vase_c01/simready_usd/runnables/physics/newton.usda",
+      "runnables/physics/physx.usd": "decor_vase_c01/simready_usd/runnables/physics/physx.usd",
+      "runnables/physics/physx.usda": "decor_vase_c01/simready_usd/runnables/physics/physx.usda",
+      "sm_decor_vase_c01_01.usda": "decor_vase_c01/simready_usd/sm_decor_vase_c01_01.usda"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "decor_vase_c01: its model, physics and maps"
+      },
+      {
+        "by": "score",
+        "what": "the library surface each material names (score:surface)"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: decor_vase_c01",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/simready_m_trans_glass_misc_vase_c01_9d793e30@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "description": [
+      "vase"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "simulators": [
+      "mujoco",
+      "newton",
+      "physx"
+    ],
+    "wikidata_class": [
+      "vase"
+    ],
+    "wikidata_qcode": [
+      "Q191851"
+    ]
+  },
+  "title": "decor_vase_c01",
+  "usd": {
+    "default_prim": "/RootNode",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/simready_decor_vase_c01/1/sm_decor_vase_c01_01.usda",
+    "root": "sm_decor_vase_c01_01.usda",
+    "up_axis": "Z",
+    "use": "reference"
+  },
+  "version": 1
+}

@@ -1,0 +1,81 @@
+{
+  "address": "surface/simready_m_opaque_plastic_white_a01_47b1d278@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 36291,
+      "role": "texture",
+      "sha256": "a364a0992302731392864e40e8c3b94b19f17f10f45c5a4d2060c1ba21c7572e"
+    },
+    "material.usda": {
+      "bytes": 2507,
+      "role": "usd",
+      "sha256": "1b479bb6a7f565b5a60c87705390c17c24734a88749d51942d96115a8d8bc2f1"
+    },
+    "normal.png": {
+      "bytes": 16902,
+      "role": "texture",
+      "sha256": "fe7d530dcef44fc4e06f6d6d78bcff2da66f629c86a047ac1947dcbeb9c3067d"
+    },
+    "orm.png": {
+      "bytes": 1054981,
+      "role": "texture",
+      "sha256": "eee3a34e6cb4795ee4a37e49a22cfbfcdfb2655feb57c87ce140a11a0c6d957d"
+    },
+    "surface.json": {
+      "bytes": 1003,
+      "role": "record",
+      "sha256": "e1148cf8da35ecba9126b0f76714fa686f38474e50809d2b3663e4797fbfca20"
+    }
+  },
+  "id": "simready_m_opaque_plastic_white_a01_47b1d278",
+  "kind": "surface",
+  "licence": {
+    "credit": "device_insulin_lancing_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "device_insulin_lancing_a01/simready_usd/Textures/t_insulinLancingDevice_a01_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "device_insulin_lancing_a01/simready_usd/Textures/t_insulinLancingDevice_a01_nor.png",
+      "orm.png": "device_insulin_lancing_a01/simready_usd/Textures/t_insulinLancingDevice_a01_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__plastic__white_a01 maps of device_insulin_lancing_a01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: device_insulin_lancing_a01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "47b1d278703fc9e6a882f9f5df3909579b06c05cf3de4755547ffb2152a6a82d"
+    ],
+    "painted_for": [
+      "device_insulin_lancing_a01"
+    ]
+  },
+  "title": "m_opaque__plastic__white_a01",
+  "usd": null,
+  "version": 1
+}

@@ -1,0 +1,195 @@
+{
+  "address": "model/simready_cooling_system_radiator_b01@1",
+  "files": {
+    "Textures/t_radiator_b01_alb.png": {
+      "bytes": 18962389,
+      "role": "texture",
+      "sha256": "e6067ae6b8e066981d05d005467b86eb332bb1012d7de8abb1260f5c85dfc48a"
+    },
+    "Textures/t_radiator_b01_nor.png": {
+      "bytes": 9161166,
+      "role": "texture",
+      "sha256": "ebd0106162043c311e57917109dfa3e427e8069ee5c5a4bd13255886d58902f6"
+    },
+    "Textures/t_radiator_b01_orm.png": {
+      "bytes": 18062056,
+      "role": "texture",
+      "sha256": "e7cb81d07a6cb89357d4c304d68ff1b1e0bba37c5e40158f58108ab72928bc25"
+    },
+    "payloads/MuJoCo/disabled.usda": {
+      "bytes": 4339,
+      "role": "usd",
+      "sha256": "f25f19babe69e78cd6f2043913d167798c65293d94c9320602957e616afe78c5"
+    },
+    "payloads/MuJoCo/enabled.usda": {
+      "bytes": 5246,
+      "role": "usd",
+      "sha256": "a056579cf259c3a614de04c2a06c4682cbc644a59219690be9395d40ea69ae6c"
+    },
+    "payloads/Newton/disabled.usda": {
+      "bytes": 4339,
+      "role": "usd",
+      "sha256": "f25f19babe69e78cd6f2043913d167798c65293d94c9320602957e616afe78c5"
+    },
+    "payloads/Newton/enabled.usda": {
+      "bytes": 5404,
+      "role": "usd",
+      "sha256": "da9e42cc9d93eb9b9fdcf0382153112900215bb368b444f7d59879ce19b5401a"
+    },
+    "payloads/PhysX/disabled.usda": {
+      "bytes": 4339,
+      "role": "usd",
+      "sha256": "f25f19babe69e78cd6f2043913d167798c65293d94c9320602957e616afe78c5"
+    },
+    "payloads/PhysX/enabled.usda": {
+      "bytes": 4622,
+      "role": "usd",
+      "sha256": "f6254144488b2497bc0b8e04565653e434ff895f44fd3d836561a8ed56db5872"
+    },
+    "payloads/Physics/physics.usda": {
+      "bytes": 5797,
+      "role": "usd",
+      "sha256": "bb16a6194982aeacee8f276d9d44bdd5d00d6fbe3861f5db14cb66aa231de5e5"
+    },
+    "payloads/base.usda": {
+      "bytes": 8748,
+      "role": "usd",
+      "sha256": "6ca4073904b21767aa73695ada72ae76ce6b102a9168260897f9ac1ec9d972c3"
+    },
+    "payloads/geometries.usd": {
+      "bytes": 28078840,
+      "role": "usd",
+      "sha256": "62a87c0897dd6126c99a6b04005dbc4ab451202e3c8be201920475b6986e570f"
+    },
+    "payloads/instances.usda": {
+      "bytes": 6968,
+      "role": "usd",
+      "sha256": "2913bc695378fb855deabfd24a100d548490edccefdeb7653d71bcd2f71172b6"
+    },
+    "payloads/instances_mujoco.usda": {
+      "bytes": 7253,
+      "role": "usd",
+      "sha256": "636fb8fb518a0ddc3045b6924f9eded687f9452ee35a7e007950593620a7291e"
+    },
+    "payloads/instances_newton.usda": {
+      "bytes": 7104,
+      "role": "usd",
+      "sha256": "a75583276a7279ff06642c52f9038a7c1d751cb9eadd3fd4b599cbdf5aa41697"
+    },
+    "payloads/instances_physx.usda": {
+      "bytes": 7334,
+      "role": "usd",
+      "sha256": "c3674bb303cdd6df1a4feca7547ddcceba8877472550e0bae13cce4a78fde5aa"
+    },
+    "payloads/materials.usda": {
+      "bytes": 21644,
+      "role": "usd",
+      "sha256": "a7afc2eceb19f7bf926e384b7ff9af89eeccbc6245c6e4ee573f3f7785d5afec"
+    },
+    "sm_coolingSystem_radiator_b01_01.usd": {
+      "bytes": 24951,
+      "role": "usd",
+      "sha256": "f683d5b92eb2283ce40559932868465f55289da43b2bcf88bafb1c0fa61768b7"
+    },
+    "source_assets/OmniPBR.mdl": {
+      "bytes": 16010,
+      "role": "code",
+      "sha256": "6e6b3acbccd236e21a6c29964a431d2a53e77251cc6b8b1bc975eb1c62da1781"
+    },
+    "source_assets/OmniPBRBase.mdl": {
+      "bytes": 19369,
+      "role": "code",
+      "sha256": "a8fd9fe174e91892e94d06da90ba453a124024c2ce2c033be9d82c9e2f76a3b7"
+    },
+    "source_assets/OmniPBR_ClearCoat.mdl": {
+      "bytes": 29789,
+      "role": "code",
+      "sha256": "d84c5ba482561c0eaea2e0c5b607358af549e36cd921773462f92dbc4f32cbc3"
+    }
+  },
+  "id": "simready_cooling_system_radiator_b01",
+  "kind": "model",
+  "licence": {
+    "credit": "coolingSystem_radiator_b01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0; changed: each Material names its library surface (score:surface)",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "Textures/t_radiator_b01_alb.png": "coolingSystem_radiator_b01/simready_usd/Textures/t_radiator_b01_alb.png",
+      "Textures/t_radiator_b01_nor.png": "coolingSystem_radiator_b01/simready_usd/Textures/t_radiator_b01_nor.png",
+      "Textures/t_radiator_b01_orm.png": "coolingSystem_radiator_b01/simready_usd/Textures/t_radiator_b01_orm.png",
+      "payloads/MuJoCo/disabled.usda": "coolingSystem_radiator_b01/simready_usd/payloads/MuJoCo/disabled.usda",
+      "payloads/MuJoCo/enabled.usda": "coolingSystem_radiator_b01/simready_usd/payloads/MuJoCo/enabled.usda",
+      "payloads/Newton/disabled.usda": "coolingSystem_radiator_b01/simready_usd/payloads/Newton/disabled.usda",
+      "payloads/Newton/enabled.usda": "coolingSystem_radiator_b01/simready_usd/payloads/Newton/enabled.usda",
+      "payloads/PhysX/disabled.usda": "coolingSystem_radiator_b01/simready_usd/payloads/PhysX/disabled.usda",
+      "payloads/PhysX/enabled.usda": "coolingSystem_radiator_b01/simready_usd/payloads/PhysX/enabled.usda",
+      "payloads/Physics/physics.usda": "coolingSystem_radiator_b01/simready_usd/payloads/Physics/physics.usda",
+      "payloads/base.usda": "coolingSystem_radiator_b01/simready_usd/payloads/base.usda",
+      "payloads/geometries.usd": "coolingSystem_radiator_b01/simready_usd/payloads/geometries.usd",
+      "payloads/instances.usda": "coolingSystem_radiator_b01/simready_usd/payloads/instances.usda",
+      "payloads/instances_mujoco.usda": "coolingSystem_radiator_b01/simready_usd/payloads/instances_mujoco.usda",
+      "payloads/instances_newton.usda": "coolingSystem_radiator_b01/simready_usd/payloads/instances_newton.usda",
+      "payloads/instances_physx.usda": "coolingSystem_radiator_b01/simready_usd/payloads/instances_physx.usda",
+      "payloads/materials.usda": "coolingSystem_radiator_b01/simready_usd/payloads/materials.usda (changed: each Material names its library surface (score:surface))",
+      "sm_coolingSystem_radiator_b01_01.usd": "coolingSystem_radiator_b01/simready_usd/sm_coolingSystem_radiator_b01_01.usd",
+      "source_assets/OmniPBR.mdl": "coolingSystem_radiator_b01/simready_usd/source_assets/OmniPBR.mdl",
+      "source_assets/OmniPBRBase.mdl": "coolingSystem_radiator_b01/simready_usd/source_assets/OmniPBRBase.mdl",
+      "source_assets/OmniPBR_ClearCoat.mdl": "coolingSystem_radiator_b01/simready_usd/source_assets/OmniPBR_ClearCoat.mdl"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "coolingSystem_radiator_b01: its model, physics and maps"
+      },
+      {
+        "by": "score",
+        "what": "the library surface each material names (score:surface)"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: coolingSystem_radiator_b01",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/simready_m_opaque_plastic_radiator_b01_9b0d3a10@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "description": [
+      "type of heat exchanger; radiant body through water or other liquids"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "simulators": [
+      "mujoco",
+      "newton",
+      "physx"
+    ],
+    "wikidata_class": [
+      "engine cooling radiator"
+    ],
+    "wikidata_qcode": [
+      "Q1163026"
+    ]
+  },
+  "title": "coolingSystem_radiator_b01",
+  "usd": {
+    "default_prim": "/RootNode",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/simready_cooling_system_radiator_b01/1/sm_coolingSystem_radiator_b01_01.usd",
+    "root": "sm_coolingSystem_radiator_b01_01.usd",
+    "up_axis": "Z",
+    "use": "reference"
+  },
+  "version": 1
+}

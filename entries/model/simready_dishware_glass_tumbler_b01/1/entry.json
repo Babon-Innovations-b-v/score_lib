@@ -1,0 +1,189 @@
+{
+  "address": "model/simready_dishware_glass_tumbler_b01@1",
+  "files": {
+    ".simready/validation.json": {
+      "bytes": 9769,
+      "role": "record",
+      "sha256": "b3ac29878c27681e1cfb54287cd3ddcc245ae2732a898bef799d23a6fddf332a"
+    },
+    "materials/OmniPBR/OmniGlass.mdl": {
+      "bytes": 10205,
+      "role": "code",
+      "sha256": "31a93eda2387572db4930a8b22f51e100716809e859505c97b82a17ac43d1e30"
+    },
+    "materials/OmniPBR/OmniGlass_Opacity.mdl": {
+      "bytes": 17706,
+      "role": "code",
+      "sha256": "b6110a46bb9e8cd94f20cf7d78992f6f81cd5546bbab277cf950256faae80261"
+    },
+    "payloads/Physics/physics.usda": {
+      "bytes": 1849,
+      "role": "usd",
+      "sha256": "3866774940e2088e55264183b53002f5484946c4a882d6f7358defafbce34cf7"
+    },
+    "payloads/base.usda": {
+      "bytes": 5579,
+      "role": "usd",
+      "sha256": "0e82d2299afecba96b4b1ba05c79a67c90b5c1f737e8bda2ef567fde543df87f"
+    },
+    "payloads/geometries.usd": {
+      "bytes": 348379,
+      "role": "usd",
+      "sha256": "fe3dfc9c8417719d49231b68b04d889258f3107b582bb3ad61dc578ded4ef6db"
+    },
+    "payloads/instances.usda": {
+      "bytes": 2450,
+      "role": "usd",
+      "sha256": "eb3342d0283fd6cbc0b9faa24cb879bb84e4dc7616c76042468f4055268697f1"
+    },
+    "payloads/instances_mujoco.usda": {
+      "bytes": 2619,
+      "role": "usd",
+      "sha256": "e7da1f3734b6188d7dcbf457817b0268da4c7aa2d618b6718443d70b5ac4975f"
+    },
+    "payloads/instances_newton.usda": {
+      "bytes": 2573,
+      "role": "usd",
+      "sha256": "0945319c3ddf305033a9f8d011d7ad36f7aac0db75db33b6d9125697a47c47b0"
+    },
+    "payloads/instances_physx.usda": {
+      "bytes": 2511,
+      "role": "usd",
+      "sha256": "2f17df67e4b56689c8d07c4f740e42a2b383f89e82926fe73d2d23b31c6587f8"
+    },
+    "payloads/materials.usda": {
+      "bytes": 3834,
+      "role": "usd",
+      "sha256": "7ec947b2a870afb6b0b27de300c9411528139d6cb5dd253012dd5bd89505b3f5"
+    },
+    "payloads/materials/OmniGlass.mdl": {
+      "bytes": 10205,
+      "role": "code",
+      "sha256": "31a93eda2387572db4930a8b22f51e100716809e859505c97b82a17ac43d1e30"
+    },
+    "payloads/materials/OmniGlass_Opacity.mdl": {
+      "bytes": 17706,
+      "role": "code",
+      "sha256": "b6110a46bb9e8cd94f20cf7d78992f6f81cd5546bbab277cf950256faae80261"
+    },
+    "runnables/physics/mujoco.usd": {
+      "bytes": 1996,
+      "role": "usd",
+      "sha256": "d966e0acdd9f290615137ec2a7b0bf9b97432ba816a77760bf40f1ef9bec363b"
+    },
+    "runnables/physics/mujoco.usda": {
+      "bytes": 551,
+      "role": "usd",
+      "sha256": "106789ef1747c4fe3a8b51f6a01a53f4d27495e6cdd27d0d3b3d1251923354dc"
+    },
+    "runnables/physics/newton.usd": {
+      "bytes": 2020,
+      "role": "usd",
+      "sha256": "acda843df0cd2a71026b00dbf4c3dfb1c34f74ead9f88be66fd064a197c9fec0"
+    },
+    "runnables/physics/newton.usda": {
+      "bytes": 704,
+      "role": "usd",
+      "sha256": "9414c84e5b50fd933480725ec5275ebfcfe9a9e89c39fcf2edae193ada6d7763"
+    },
+    "runnables/physics/physx.usd": {
+      "bytes": 1740,
+      "role": "usd",
+      "sha256": "a9b0322430ebd120b56ddd26e507524d0d477a30ed0a118b86be9e04334d4daa"
+    },
+    "runnables/physics/physx.usda": {
+      "bytes": 430,
+      "role": "usd",
+      "sha256": "d03e7f9a2218109a4373a481520a5efe317aa74a83df3fd254d64f09353644b8"
+    },
+    "sm_dishware_glass_tumbler_b01_01.usda": {
+      "bytes": 20000,
+      "role": "usd",
+      "sha256": "49d1a4a9bbef6e93ac85cdc47961ed27c093881c0733ac7c04bd4ceb07d6f600"
+    }
+  },
+  "id": "simready_dishware_glass_tumbler_b01",
+  "kind": "model",
+  "licence": {
+    "credit": "dishware_glass_tumbler_b01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0; changed: each Material names its library surface (score:surface)",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      ".simready/validation.json": "dishware_glass_tumbler_b01/simready_usd/.simready/validation.json",
+      "materials/OmniPBR/OmniGlass.mdl": "dishware_glass_tumbler_b01/simready_usd/materials/OmniPBR/OmniGlass.mdl",
+      "materials/OmniPBR/OmniGlass_Opacity.mdl": "dishware_glass_tumbler_b01/simready_usd/materials/OmniPBR/OmniGlass_Opacity.mdl",
+      "payloads/Physics/physics.usda": "dishware_glass_tumbler_b01/simready_usd/payloads/Physics/physics.usda",
+      "payloads/base.usda": "dishware_glass_tumbler_b01/simready_usd/payloads/base.usda",
+      "payloads/geometries.usd": "dishware_glass_tumbler_b01/simready_usd/payloads/geometries.usd",
+      "payloads/instances.usda": "dishware_glass_tumbler_b01/simready_usd/payloads/instances.usda",
+      "payloads/instances_mujoco.usda": "dishware_glass_tumbler_b01/simready_usd/payloads/instances_mujoco.usda",
+      "payloads/instances_newton.usda": "dishware_glass_tumbler_b01/simready_usd/payloads/instances_newton.usda",
+      "payloads/instances_physx.usda": "dishware_glass_tumbler_b01/simready_usd/payloads/instances_physx.usda",
+      "payloads/materials.usda": "dishware_glass_tumbler_b01/simready_usd/payloads/materials.usda (changed: each Material names its library surface (score:surface))",
+      "payloads/materials/OmniGlass.mdl": "dishware_glass_tumbler_b01/simready_usd/payloads/materials/OmniGlass.mdl",
+      "payloads/materials/OmniGlass_Opacity.mdl": "dishware_glass_tumbler_b01/simready_usd/payloads/materials/OmniGlass_Opacity.mdl",
+      "runnables/physics/mujoco.usd": "dishware_glass_tumbler_b01/simready_usd/runnables/physics/mujoco.usd",
+      "runnables/physics/mujoco.usda": "dishware_glass_tumbler_b01/simready_usd/runnables/physics/mujoco.usda",
+      "runnables/physics/newton.usd": "dishware_glass_tumbler_b01/simready_usd/runnables/physics/newton.usd",
+      "runnables/physics/newton.usda": "dishware_glass_tumbler_b01/simready_usd/runnables/physics/newton.usda",
+      "runnables/physics/physx.usd": "dishware_glass_tumbler_b01/simready_usd/runnables/physics/physx.usd",
+      "runnables/physics/physx.usda": "dishware_glass_tumbler_b01/simready_usd/runnables/physics/physx.usda",
+      "sm_dishware_glass_tumbler_b01_01.usda": "dishware_glass_tumbler_b01/simready_usd/sm_dishware_glass_tumbler_b01_01.usda"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "dishware_glass_tumbler_b01: its model, physics and maps"
+      },
+      {
+        "by": "score",
+        "what": "the library surface each material names (score:surface)"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: dishware_glass_tumbler_b01",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/simready_m_trans_glass_clear_a01_7f20daad@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "description": [
+      "flat-bottomed drinking glass"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "simulators": [
+      "mujoco",
+      "newton",
+      "physx"
+    ],
+    "wikidata_class": [
+      "drinking glass"
+    ],
+    "wikidata_qcode": [
+      "Q21167379"
+    ]
+  },
+  "title": "dishware_glass_tumbler_b01",
+  "usd": {
+    "default_prim": "/RootNode",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/simready_dishware_glass_tumbler_b01/1/sm_dishware_glass_tumbler_b01_01.usda",
+    "root": "sm_dishware_glass_tumbler_b01_01.usda",
+    "up_axis": "Z",
+    "use": "reference"
+  },
+  "version": 1
+}

@@ -1,0 +1,66 @@
+{
+  "address": "surface/simready_m_trans_glass_colored_a01_89c74d2a@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 1838087,
+      "role": "texture",
+      "sha256": "0654a2bd1fba11bc460f217da85ab2d1b455227b97609c3d80632a832b140b76"
+    },
+    "material.usda": {
+      "bytes": 1346,
+      "role": "usd",
+      "sha256": "68f7c5d1fdf966270804f742f62e7e27fe69638077385b69f0ec17132e363ee9"
+    },
+    "surface.json": {
+      "bytes": 757,
+      "role": "record",
+      "sha256": "17df085350f47879064ad3b40d06ba13b9ec782942be2cd0beb7eab4d4935fc2"
+    }
+  },
+  "id": "simready_m_trans_glass_colored_a01_89c74d2a",
+  "kind": "surface",
+  "licence": {
+    "credit": "device_otoscope_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "device_otoscope_a01/simready_usd/Textures/t_glassLens_colored_glossy_b01_tile_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_trans__glass__colored_a01 maps of device_otoscope_a01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: device_otoscope_a01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "89c74d2ac2e00837e656dd427124d4f7c55ce993bdab7c5c0abe117f716d9fb9"
+    ]
+  },
+  "title": "m_trans__glass__colored_a01",
+  "usd": null,
+  "version": 1
+}
