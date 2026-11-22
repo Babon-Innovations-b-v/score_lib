@@ -269,3 +269,79 @@ def test_hub_store_reads_without_a_key_and_the_mirror_copies_resumes_and_checks(
     checked = mirror.mirror(root, source, target, "owner/lib", check_only=True, say=lambda line: None)
     assert checked["copied"] == 0 and len(checked["failures"]) == 1 and shas[0] in checked["failures"][0]
 
+
+
+class FaultingHub(FakeHub):
+    """The fake hub meeting the first `faults` calls of one of its requests with the given network fault."""
+
+    def __init__(self, request, fault, faults):
+        super().__init__()
+        self.request, self.fault, self.faults = request, fault, faults
+
+    def faulted(self, request):
+        if request == self.request and self.faults:
+            self.faults -= 1
+            raise self.fault
+
+    def create_commit(self, *arguments, **options):
+        self.faulted("commit")
+        return super().create_commit(*arguments, **options)
+
+    def list_repo_tree(self, *arguments, **options):
+        self.faulted("listing")
+        return super().list_repo_tree(*arguments, **options)
+
+
+def network_fault(name):
+    """One of the passing network faults the hub's client or a plain read meets."""
+    from huggingface_hub.utils import httpx
+    request = httpx.Request("GET", "https://example.org/x")
+    return {"read timeout": httpx.ReadTimeout("The read operation timed out", request=request),
+            "connect timeout": httpx.ConnectTimeout("timed out", request=request),
+            "dropped": httpx.RemoteProtocolError("Server disconnected without sending a response.", request=request),
+            "reset": ConnectionResetError(104, "Connection reset by peer"),
+            "socket timeout": TimeoutError("timed out")}[name]
+
+
+@pytest.mark.parametrize("request_name, fault, faults, lands", [
+    ("listing", "read timeout", 2, True),
+    ("listing", "reset", 1, True),
+    ("commit", "connect timeout", 1, True),
+    ("commit", "dropped", 2, True),
+    ("read", "socket timeout", 2, True),
+    ("read", "reset", 1, True),
+    ("listing", "read timeout", 99, False),  # a fault that does not pass: raised once the tries run out
+    ("read", "socket timeout", 99, False),
+])
+def test_a_passing_network_fault_is_tried_again(tmp_path, monkeypatch, request_name, fault, faults, lands):
+    """Red when: a timeout, reset or dropped connection of the hub store's listing (`has`), a commit (`put`) or a read
+    (`get`) is raised at once (2026-11-22: one httpx ReadTimeout of `has` ended a 173-minute take-in), or a fault that
+    does not pass is tried for ever instead of raised after NET_TRIES."""
+    import io
+    from score_lib.blobs import hub as hub_module
+    waits = []
+    monkeypatch.setattr(hub_module.time, "sleep", waits.append)
+    monkeypatch.setattr("huggingface_hub.get_token", lambda: None)
+    hub = FaultingHub(request_name, network_fault(fault), faults)
+    left = [faults if request_name == "read" else 0]
+
+    def urlopen(request, timeout):
+        if left[0]:
+            left[0] -= 1
+            raise network_fault(fault)
+        return io.BytesIO(hub.files[request.full_url.split("/resolve/main/", 1)[1]])
+    monkeypatch.setattr(hub_module.urllib.request, "urlopen", urlopen)
+    store = HubBlobStore(hub, "owner/lib")
+    path, sha = a_file(tmp_path)
+
+    def round_trip():
+        store.put(sha, path)
+        store.get(sha, tmp_path / "out/copy.bin")
+    if not lands:
+        with pytest.raises(type(network_fault(fault))):
+            round_trip()
+        assert len(waits) == hub_module.NET_TRIES - 1, waits
+        return
+    round_trip()
+    assert (tmp_path / "out/copy.bin").read_bytes() == b"bytes" and hub.commits == [[key_of(sha)]]
+    assert waits == [hub_module.NET_WAIT * 2 ** attempt for attempt in range(faults)], waits

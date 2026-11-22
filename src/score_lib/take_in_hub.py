@@ -60,13 +60,13 @@ from score_lib import entry as entries
 from score_lib import handover, index, take_in
 from score_lib.admission import NotAdmitted, Sources
 from score_lib.blobs import BadBlob, check_sha, put_all
-from score_lib.blobs.hub import COMMIT_FILES
+from score_lib.blobs.hub import COMMIT_FILES, passing_fault
 
 REPO_TYPE = "dataset"
 REVISION = re.compile(r"^[0-9a-f]{40}$")
 PACE_LIMIT = 450  # requests in one window, under the hub's anonymous 500 per 300 s
 PACE_WINDOW = 300.0
-TRIES = 8  # times one request is tried while the hub refuses it for rate or a passing fault
+TRIES = 8  # times one request is tried while the hub refuses it for rate or a passing (server or network) fault
 RETRY = (429, 500, 502, 503, 504)  # the refusals a request is tried again after
 BACK_OFF = 30.0  # seconds every thread waits after a refusal naming no wait, doubled each time it is refused again
 BATCH_LIMIT = 100  # blob store commits in one hour, under the hub's 128 a repository, room left for other writers
@@ -179,8 +179,9 @@ class HubSource:
             self.measure[name] += amount
 
     def asked(self, call):
-        """`call()` (one request) paced, tried again while the hub refuses it for rate or a passing fault, every
-        thread held for the wait the refusal names; the last refusal raised."""
+        """`call()` (one request) paced, tried again while the hub refuses it for rate or a passing fault (a status in
+        RETRY, or a network fault with no status: a timeout, a reset or dropped connection), every thread held for the
+        wait the refusal names (BACK_OFF doubled for a fault); the last refusal raised."""
         for attempt in range(TRIES):
             self.pacer.tick()
             self.counted("requests")
@@ -188,11 +189,13 @@ class HubSource:
                 return call()
             except Exception as error:
                 status = refusal_status(error)
-                if status not in RETRY or attempt == TRIES - 1:
+                faulted = status is None and passing_fault(error)
+                if (status not in RETRY and not faulted) or attempt == TRIES - 1:
                     raise
-                wait = refusal_wait(error, attempt)
+                wait = BACK_OFF * 2 ** attempt if faulted else refusal_wait(error, attempt)
                 self.counted("throttled" if status == 429 else "retries")
-                print(f"take-in hub: refused ({status}), every request waits {wait:.0f} s ({attempt + 1}/{TRIES})",
+                said = type(error).__name__ if faulted else status
+                print(f"take-in hub: refused ({said}), every request waits {wait:.0f} s ({attempt + 1}/{TRIES})",
                       file=sys.stderr, flush=True)
                 self.pacer.back_off(wait)
 

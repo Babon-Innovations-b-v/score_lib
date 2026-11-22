@@ -405,12 +405,15 @@ def blob(blobs, record, name, folder):
 
 
 class RefusingApi:
-    """An HfApi refusing each download first with the refusals given, then answering."""
+    """An HfApi refusing each download first with the refusals given ((status, named wait), or a network fault to
+    raise), then answering."""
 
     def __init__(self, refusals):
         self.refusals = list(refusals)
 
     def hf_hub_download(self, repo_id, filename, *, repo_type=None, revision=None, local_dir=None):
+        if self.refusals and isinstance(self.refusals[0], Exception):
+            raise self.refusals.pop(0)
         if self.refusals:
             status, named = self.refusals.pop(0)
             response = httpx.Response(status, headers={"Retry-After": named} if named else {},
@@ -423,6 +426,9 @@ class RefusingApi:
 
 
 def test_a_reader_waits_for_the_window_and_after_a_refusal(tmp_path):
+    """Red when: the pacer lets a full window through; a 429 or 5xx is not tried again after its named wait or the
+    doubled back-off; a passing network fault with no status (a read timeout, a dropped connection) is raised at once
+    instead of tried again (2026-11-22: one ReadTimeout ended a 173-minute take-in); a 404 is tried again."""
     now, waits = [0.0], []
 
     def pacer(limit):
@@ -440,6 +446,15 @@ def test_a_reader_waits_for_the_window_and_after_a_refusal(tmp_path):
     assert (tmp_path / "got/b.bin").read_bytes() == b"four"
     assert waits == [7.0, take_in_hub.BACK_OFF * 2], waits  # the named wait, then the doubled back-off
     assert source.measure == {"requests": 3, "throttled": 1, "retries": 1, "bytes": 4}, source.measure
+    waits.clear()
+    request = httpx.Request("GET", "https://example.org/x")
+    faults = [httpx.ReadTimeout("The read operation timed out", request=request),
+              httpx.RemoteProtocolError("Server disconnected without sending a response.", request=request)]
+    faulted = take_in_hub.HubSource(RefusingApi(faults), REPO, REVISION, pacer(None))
+    faulted.download("a/d.bin", tmp_path / "got/d.bin")
+    assert waits == [take_in_hub.BACK_OFF, take_in_hub.BACK_OFF * 2], waits  # no status: the doubled back-off
+    assert faulted.measure["retries"] == 2 and faulted.measure["requests"] == 3, faulted.measure
     with pytest.raises(HfHubHTTPError):
         take_in_hub.HubSource(RefusingApi([(404, None)]), REPO, REVISION, pacer(None)).download("a/c.bin",
                                                                                            tmp_path / "c.bin")
+

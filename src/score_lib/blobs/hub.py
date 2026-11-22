@@ -16,8 +16,13 @@ Which blobs the repository holds comes from one listing of its tree (`held`), ma
 up to date with what the store commits: a request a blob (`file_exists`) was refused for rate after a few minutes of
 `score-lib verify` (2026-11-22, HTTP 429), and the listing also carries each large file's size and recorded sha256. A
 blob another writer commits after the listing reads as missing; a put of it commits nothing new.
+
+A passing network fault (a read or connect timeout, a reset or dropped connection) carries no HTTP status, so the rate
+waits above never see it: every request (the listing, a commit, a read) is tried again after it, NET_WAIT doubled each
+time, up to NET_TRIES, and raised only then (2026-11-22: one read timeout of the listing ended a 173-minute take-in).
 """
 import hashlib
+import http.client
 import pathlib
 import shutil
 import sys
@@ -34,6 +39,8 @@ RATE_TRIES = 30  # commits refused for the hub's commit rate tried again, each a
 RATE_WAIT = 120  # seconds to wait when the hub names none
 READ_RETRY = (429, 500, 502, 503, 504)  # a read refused for these is tried again
 READ_TIMEOUT = 600  # seconds one read may take (a large model over a slow link)
+NET_TRIES = 6  # times one request is tried while a passing network fault meets it
+NET_WAIT = 15.0  # seconds before the second try after a network fault, doubled for each later one
 EMPTY = hashlib.sha256(b"").hexdigest()  # the sha256 of no bytes
 
 
@@ -94,8 +101,9 @@ class HubBlobStore:
         from huggingface_hub.errors import HfHubHTTPError
         for attempt in range(RATE_TRIES):
             try:
-                return self.api.create_commit(self.repo_id, operations, commit_message=message, repo_type=REPO_TYPE,
-                                              revision=self.revision)
+                return retried(lambda: self.api.create_commit(self.repo_id, operations, commit_message=message,
+                                                              repo_type=REPO_TYPE, revision=self.revision),
+                               f"commit {message!r}")
             except HfHubHTTPError as error:
                 response = getattr(error, "response", None)
                 if response is None or response.status_code != 429 or attempt == RATE_TRIES - 1:
@@ -128,7 +136,8 @@ def hub_held(api, repo_id, revision, prefix):
     from huggingface_hub.errors import EntryNotFoundError, RepositoryNotFoundError, RevisionNotFoundError
     folder = f"{prefix}/blobs" if prefix else "blobs"
     try:
-        listing = list(api.list_repo_tree(repo_id, folder, recursive=True, repo_type=REPO_TYPE, revision=revision))
+        listing = retried(lambda: list(api.list_repo_tree(repo_id, folder, recursive=True, repo_type=REPO_TYPE,
+                                                          revision=revision)), f"listing of {repo_id}")
     except (EntryNotFoundError, RepositoryNotFoundError, RevisionNotFoundError):
         return {}
     return {item.path.rsplit("/", 1)[1]: (item.size, item.lfs.sha256 if item.lfs else EMPTY if item.size == 0 else None)
@@ -143,8 +152,7 @@ def read_link(url, target, sha256):
     request = urllib.request.Request(url, headers={"Authorization": f"Bearer {token}"} if token else {})
     for attempt in range(RATE_TRIES):
         try:
-            with urllib.request.urlopen(request, timeout=READ_TIMEOUT) as answer, open(target, "wb") as out:
-                shutil.copyfileobj(answer, out)
+            retried(lambda: copied(request, target), url)
             return
         except urllib.error.HTTPError as error:
             if error.code == 404:
@@ -153,4 +161,35 @@ def read_link(url, target, sha256):
                 raise
             wait = float(error.headers.get("Retry-After") or RATE_WAIT) if error.headers else RATE_WAIT
             print(f"hub: {url} refused ({error.code}); trying again in {wait:.0f} s", file=sys.stderr, flush=True)
+            time.sleep(wait)
+
+
+def copied(request, target):
+    """One read of a link's bytes into `target`."""
+    with urllib.request.urlopen(request, timeout=READ_TIMEOUT) as answer, open(target, "wb") as out:
+        shutil.copyfileobj(answer, out)
+
+
+def passing_fault(error):
+    """Whether an error is a passing network fault a later try may not meet: a read or connect timeout, a reset or
+    dropped connection, a link that could not be reached; never a refusal the server answered (an HTTP status)."""
+    from huggingface_hub.utils import httpx
+    if isinstance(error, urllib.error.HTTPError):
+        return False
+    return isinstance(error, (TimeoutError, ConnectionError, http.client.IncompleteRead, urllib.error.URLError,
+                              httpx.TimeoutException, httpx.NetworkError, httpx.RemoteProtocolError))
+
+
+def retried(call, what):
+    """`call()`, tried again after a passing network fault, NET_WAIT doubled each time, up to NET_TRIES; any other
+    error, and the last fault, raised."""
+    for attempt in range(NET_TRIES):
+        try:
+            return call()
+        except Exception as error:
+            if not passing_fault(error) or attempt == NET_TRIES - 1:
+                raise
+            wait = NET_WAIT * 2 ** attempt
+            print(f"hub: {what}: {type(error).__name__} ({error}); trying again in {wait:.0f} s "
+                  f"({attempt + 1}/{NET_TRIES})", file=sys.stderr, flush=True)
             time.sleep(wait)
