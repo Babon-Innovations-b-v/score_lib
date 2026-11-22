@@ -1,0 +1,706 @@
+"""score-lib take-in hub: an adopted set, one pinned revision of a Hugging Face dataset repository of OpenUSD assets,
+taken in whole as draft entries (score #155), its bytes copied into the blob store.
+
+The source is a `config/sources.toml` row with a `take_in` table: the repository (`repo`), where each asset folder
+keeps its bill of materials (`bom`: {items: [{relative_path, size, hash: {sha256}}]}) and its root file list
+(`roots`: {entries: [<path>]}), the prefix of the ids it writes and the credit and licence words of each entry's
+licence block. The repository's company and name live in that row only.
+
+Per asset folder, at the revision given (a 40-hex commit, never a branch):
+
+- one `model` entry: every file of the bill under the root file's folder, kept under its own path there (the physics
+  payloads of every simulator included), less the `.thumbs` pictures and the `source_assets` copies of files it
+  holds elsewhere; its `usd.root` the root file; its tags the Wikidata class, Q-code and one-line description its
+  layers give, and the simulators it carries;
+- one `surface` entry per distinct material, keyed by the sha256 of its maps (a material with no maps by its
+  constants), shared by every model that uses the same maps: the maps under their role (`albedo.png`, `normal.png`,
+  `orm.png`, ...), our own `material.usda` (a UsdPreviewSurface over them, ORM's green to roughness and blue to
+  metallic) and `surface.json` (the material's settings as the source gives them); a set painted for one model (its
+  maps unwrapped on that model's own UVs, no `tile` in their names) keeps its maps only, its recipe a written gap;
+- each of the model's own materials names its surface (`score:surface`, the USD attribute, written into the layer
+  that defines it; that change is marked on the file's files_from row).
+
+Every entry carrying the source's bytes names its licence and credit (the top-level `licence` block). Bytes go from
+the source into a capped cache and from there into the blob store, and the cache is emptied after each put (the disk
+rule): a file the store already holds is not downloaded, only stood in for by an empty file while its asset's USD is
+checked. An asset whose model entry already holds this revision is left as it is, so a stopped run picks up where it
+stopped. Whatever cannot be taken is a gap row naming the asset and why.
+
+Requests are paced under the anonymous limit (PACE_LIMIT in PACE_WINDOW seconds) unless a Hugging Face token is set.
+"""
+import collections
+import hashlib
+import json
+import os
+import pathlib
+import posixpath
+import re
+import shutil
+import sys
+import tempfile
+import time
+
+from score_lib import entry as entries
+from score_lib import handover, index, take_in
+from score_lib.admission import NotAdmitted, Sources
+from score_lib.blobs import BadBlob, check_sha, put_all
+
+REPO_TYPE = "dataset"
+REVISION = re.compile(r"^[0-9a-f]{40}$")
+PACE_LIMIT = 450  # requests in one window, under the hub's anonymous 500 per 300 s
+PACE_WINDOW = 300.0
+LIST_PAGE = 1000  # entries the hub returns in one page of a tree listing
+CACHE_BYTES = 4 << 30  # bytes the cache holds before they are put into the blob store and removed
+LAYERS = (".usd", ".usda", ".usdc")
+THUMBS = ".thumbs"
+COPIES = "source_assets"
+CHANGED = "changed: each Material names its library surface (score:surface)"
+SURFACE_ATTRIBUTE = "score:surface"
+# What a UsdPreviewSurface input a map feeds says about the map.
+INPUT_ROLES = {"diffuseColor": "albedo", "normal": "normal", "roughness": "roughness", "metallic": "metallic",
+               "occlusion": "occlusion", "emissiveColor": "emission", "opacity": "opacity",
+               "displacement": "displacement"}
+SRGB_ROLES = ("albedo", "emission")
+LOOK_WRITTEN = "written by score-lib take-in hub (a UsdPreviewSurface over the maps)"
+RECORD_WRITTEN = "written by score-lib take-in hub (the material's settings as the source gives them)"
+ONE_MODEL_GAP = ("painted for one model: its maps are unwrapped on that model's own UVs, so no tiling recipe can look "
+                 "the same; the maps are the surface")
+
+
+class Gap(Exception):
+    """An asset, or a part of one, that the take-in cannot take; the reason is the message."""
+
+
+class Pacer:
+    """At most `limit` requests in any `window` seconds: a request over it waits for the oldest to leave."""
+
+    def __init__(self, limit=PACE_LIMIT, window=PACE_WINDOW, clock=time.monotonic, sleep=time.sleep):
+        self.limit, self.window, self.clock, self.sleep = limit, window, clock, sleep
+        self.times = collections.deque()
+
+    def tick(self):
+        """Count one request, waiting first when the window is full."""
+        now = self.clock()
+        while self.times and now - self.times[0] >= self.window:
+            self.times.popleft()
+        if len(self.times) >= self.limit:
+            self.sleep(self.window - (now - self.times[0]))
+            self.times.popleft()
+            now = self.clock()
+        self.times.append(now)
+
+
+def pacer_for_token(token):
+    """A Pacer when no Hugging Face token is set (anonymous requests), else None."""
+    return None if token else Pacer()
+
+
+class HubSource:
+    """One dataset repository at one revision, read through a huggingface_hub HfApi, every request paced."""
+
+    def __init__(self, api, repo, revision, pacer=None):
+        self.api, self.repo, self.revision, self.pacer = api, repo, revision, pacer
+
+    def paced(self):
+        if self.pacer:
+            self.pacer.tick()
+
+    def assets(self):
+        """The repository's top-level folders, sorted (hidden ones left out)."""
+        from huggingface_hub.hf_api import RepoFolder
+        found = []
+        self.paced()
+        listing = self.api.list_repo_tree(self.repo, recursive=False, revision=self.revision, repo_type=REPO_TYPE)
+        for count, item in enumerate(listing, 1):
+            if count % LIST_PAGE == 0:
+                self.paced()
+            if isinstance(item, RepoFolder) and not item.path.startswith("."):
+                found.append(item.path)
+        return sorted(found)
+
+    def download(self, path, destination):
+        """One file of the repository at the revision to `destination`; the download's own folder removed after."""
+        destination = pathlib.Path(destination)
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        self.paced()
+        with tempfile.TemporaryDirectory(dir=destination.parent, prefix=".hub-") as folder:
+            found = self.api.hf_hub_download(self.repo, path, repo_type=REPO_TYPE, revision=self.revision,
+                                             local_dir=folder)
+            shutil.move(found, destination)
+        return destination
+
+
+def row_of(sources, repo):
+    """The sources.toml row whose take_in table names the repository; Gap when none does."""
+    for row in sources.rows:
+        if (row.get("take_in") or {}).get("repo") == repo:
+            return row
+    raise Gap(f"{repo}: no config/sources.toml row has a take_in table naming this repository")
+
+
+def snake(name):
+    """An entry id part of a source name: camel case split, lower case, anything else an underscore."""
+    split = re.sub(r"(?<=[a-z0-9])(?=[A-Z])", "_", name).lower()
+    return re.sub(r"_+", "_", re.sub(r"[^a-z0-9_]", "_", split)).strip("_")
+
+
+def credit_of(row, repo, revision, asset):
+    """The credit line of an entry carrying one asset's bytes."""
+    words = row["take_in"]
+    return (f"{asset} by {words['creator']}, from huggingface.co/datasets/{repo} at revision {revision}, "
+            f"{words['licence_name']}")
+
+
+def licence_of(row, repo, revision, asset):
+    """The licence block of an entry carrying one asset's bytes."""
+    return {"id": row["licence"], "source": row["id"], "credit": credit_of(row, repo, revision, asset),
+            "url": row["take_in"]["licence_url"]}
+
+
+def read_json(source, path, folder):
+    """A small JSON file of the repository, read through the cache and removed after."""
+    target = source.download(path, pathlib.Path(folder) / "read.json")
+    try:
+        return json.loads(target.read_text())
+    finally:
+        target.unlink()
+
+
+def bill_of(source, asset, row, folder):
+    """(root file path, {path: {sha256, bytes}}) of an asset from its root list and bill of materials."""
+    words = row["take_in"]
+    try:
+        roots = read_json(source, f"{asset}/{words['roots']}", folder).get("entries") or []
+        items = read_json(source, f"{asset}/{words['bom']}", folder).get("items") or []
+    except Exception as why:  # a missing or unreadable record of the asset: the asset is a gap, the run goes on
+        raise Gap(f"its root list or bill of materials could not be read ({type(why).__name__}: {why})") from why
+    if not roots:
+        raise Gap("its root list names no root file")
+    bill = {item["relative_path"]: {"sha256": item["hash"]["sha256"], "bytes": item["size"]} for item in items}
+    if roots[0] not in bill:
+        raise Gap(f"its root file {roots[0]} is not in its bill of materials")
+    return roots[0], bill
+
+
+def planned(root_path, bill):
+    """(root name, kept, left out): the bill's files under the root file's folder by their name there, those it keeps
+    and those it leaves out (the `.thumbs` pictures, the `source_assets` copies of files it holds elsewhere)."""
+    base = posixpath.dirname(root_path)
+    under = {path[len(base) + 1:] if base else path: {**about, "path": path} for path, about in bill.items()
+             if not base or path.startswith(base + "/")}
+    kept, left = {}, {}
+    for name, about in under.items():
+        parts = name.split("/")
+        (left if THUMBS in parts else kept)[name] = about
+    elsewhere = {about["sha256"] for name, about in kept.items() if name.split("/")[0] != COPIES}
+    for name in [name for name in kept if name.split("/")[0] == COPIES and kept[name]["sha256"] in elsewhere]:
+        left[name] = kept.pop(name)
+    return posixpath.basename(root_path), kept, left
+
+
+def unresolved_in(folder, root_name):
+    """The paths the root file's USD (every layer it reaches) names that do not resolve, by name under `folder` where
+    they fall inside it."""
+    from pxr import UsdUtils
+    _, _, missing = UsdUtils.ComputeAllDependencies(str(pathlib.Path(folder) / root_name))
+    found = []
+    for path in missing:
+        try:
+            found.append(pathlib.Path(path).resolve().relative_to(pathlib.Path(folder).resolve()).as_posix())
+        except ValueError:
+            found.append(path)
+    return sorted(set(found))
+
+
+def plain(value):
+    """A USD value as JSON: numbers rounded, vectors and arrays as lists, asset paths as their path."""
+    if isinstance(value, bool) or value is None or isinstance(value, (int, str)):
+        return value
+    if isinstance(value, float):
+        return round(value, 6)
+    if hasattr(value, "path") and not hasattr(value, "__len__"):
+        return value.path
+    try:
+        return [plain(each) for each in value]
+    except TypeError:
+        return str(value)
+
+
+def default_of(spec, name):
+    """The default value of a prim spec's attribute, or None."""
+    return spec.attributes[name].default if name in spec.attributes else None
+
+
+def shaders_under(spec):
+    """Every prim spec under a spec that has an info:id, by its id: {id: [spec]}."""
+    found = collections.defaultdict(list)
+    for child in spec.nameChildren:
+        shader_id = default_of(child, "info:id")
+        if shader_id:
+            found[str(shader_id)].append(child)
+        for key, specs in shaders_under(child).items():
+            found[key] += specs
+    return found
+
+
+def material_specs(spec):
+    """Every Material prim spec under a spec (the layer's pseudo-root for all of them)."""
+    found = []
+    for child in spec.nameChildren:
+        if child.typeName == "Material":
+            found.append(child)
+        found += material_specs(child)
+    return found
+
+
+def map_role(inputs):
+    """A map's role from the UsdPreviewSurface inputs it feeds: `orm` for one feeding roughness and metallic."""
+    if {"roughness", "metallic"} <= set(inputs):
+        return "orm"
+    return "_".join(sorted(INPUT_ROLES.get(each, snake(each)) for each in inputs))
+
+
+def texture_name(layer_name, asset_path, kept):
+    """The entry name of a map a layer names; Gap when it names tiles (UDIM) or a file the asset does not hold."""
+    if "<UDIM>" in asset_path:
+        raise Gap(f"{layer_name} names UDIM tiles ({asset_path}), which a surface does not hold as one map")
+    name = posixpath.normpath(posixpath.join(posixpath.dirname(layer_name), asset_path))
+    if name not in kept:
+        raise Gap(f"{layer_name} names a map {asset_path}, which the asset does not hold")
+    return name
+
+
+def preview_of(layer, material, layer_name, kept):
+    """(maps {role: entry name}, constants {input: value}) of a Material spec's UsdPreviewSurface; Gap when it has
+    none."""
+    shaders = shaders_under(material)
+    if not shaders.get("UsdPreviewSurface"):
+        raise Gap(f"{layer_name} {material.path}: no UsdPreviewSurface, so no surface can name its look")
+    feeds, constants = collections.defaultdict(list), {}
+    for attribute in shaders["UsdPreviewSurface"][0].attributes:
+        if not attribute.name.startswith("inputs:"):
+            continue
+        source = attribute.connectionPathList.GetAddedOrExplicitItems()
+        texture = layer.GetPrimAtPath(source[0].GetPrimPath()) if source else None
+        file_path = default_of(texture, "inputs:file") if texture else None
+        if file_path is not None:
+            feeds[texture_name(layer_name, file_path.path, kept)].append(attribute.name[len("inputs:"):])
+        elif attribute.default is not None:
+            constants[attribute.name[len("inputs:"):]] = plain(attribute.default)
+    maps = {}
+    for name, inputs in sorted(feeds.items()):
+        role = map_role(inputs)
+        maps[role if role not in maps else f"{role}_{len(maps)}"] = name
+    return maps, constants
+
+
+def settings_of(material):
+    """The material's own settings: the tile scale of its UV transform, its non-visual tags and its physics."""
+    scale = [default_of(spec, "inputs:scale") for spec in shaders_under(material).get("UsdTransform2d", [])]
+    nonvisual, physics = {}, {}
+    for attribute in material.attributes:
+        if attribute.name.endswith(":nonvisual:base") or attribute.name.endswith(":nonvisual:coating"):
+            nonvisual[attribute.name.rsplit(":", 1)[1]] = plain(attribute.default)
+        elif "physics_" in attribute.name:
+            physics[attribute.name.rsplit("physics_", 1)[1]] = plain(attribute.default)
+    return {"tile_scale": plain(scale[0]) if scale and scale[0] is not None else None, "nonvisual": nonvisual,
+            "physics": physics}
+
+
+def materials_in(folder, kept):
+    """Every Material the asset's layers define: [{layer, prim, name, maps, constants, settings}]."""
+    from pxr import Sdf
+    found = []
+    for name in sorted(name for name in kept if name.endswith(LAYERS)):
+        layer = Sdf.Layer.FindOrOpen(str(pathlib.Path(folder) / name))
+        if layer is None:
+            raise Gap(f"{name} does not open as a USD layer")
+        for material in material_specs(layer.pseudoRoot):
+            if material.specifier != Sdf.SpecifierDef:
+                continue
+            maps, constants = preview_of(layer, material, name, kept)
+            found.append({"layer": name, "prim": str(material.path), "name": material.name, "maps": maps,
+                          "constants": constants, "settings": settings_of(material)})
+    return found
+
+
+def maps_key(material, kept):
+    """The sha256 a surface is keyed by: of its maps' bytes by role, or of its constants when it has no maps."""
+    content = ({"maps": {role: kept[name]["sha256"] for role, name in material["maps"].items()}}
+               if material["maps"] else {"constants": material["constants"]})
+    return hashlib.sha256(json.dumps(content, sort_keys=True).encode()).hexdigest()
+
+
+def is_tiling(material, kept):
+    """A material whose maps tile (a shared set, `tile` in its maps' names), or one with no maps."""
+    return all("tile" in posixpath.basename(kept[name]["path"]).lower() for name in material["maps"].values())
+
+
+def look_layer(prim_name, maps, constants, scale):
+    """Our own material.usda text: a UsdPreviewSurface over the surface's maps under their entry names."""
+    from pxr import Sdf, Usd, UsdShade
+    types = Sdf.ValueTypeNames
+    wiring = {"albedo": [("diffuseColor", "rgb", types.Color3f)], "normal": [("normal", "rgb", types.Normal3f)],
+              "orm": [("occlusion", "r", types.Float), ("roughness", "g", types.Float), ("metallic", "b", types.Float)],
+              "roughness": [("roughness", "r", types.Float)], "metallic": [("metallic", "r", types.Float)],
+              "occlusion": [("occlusion", "r", types.Float)], "emission": [("emissiveColor", "rgb", types.Color3f)],
+              "opacity": [("opacity", "r", types.Float)]}
+    constant_types = {"diffuseColor": types.Color3f, "emissiveColor": types.Color3f, "specularColor": types.Color3f,
+                      "roughness": types.Float, "metallic": types.Float, "opacity": types.Float, "ior": types.Float,
+                      "occlusion": types.Float, "clearcoat": types.Float, "clearcoatRoughness": types.Float}
+    stage = Usd.Stage.CreateInMemory()
+    material = UsdShade.Material.Define(stage, f"/{prim_name}")
+    stage.SetDefaultPrim(material.GetPrim())
+    surface = UsdShade.Shader.Define(stage, f"/{prim_name}/surface")
+    surface.CreateIdAttr("UsdPreviewSurface")
+    material.CreateSurfaceOutput().ConnectToSource(surface.ConnectableAPI(), "surface")
+    wired = set()
+    if maps:
+        reader = UsdShade.Shader.Define(stage, f"/{prim_name}/st")
+        reader.CreateIdAttr("UsdPrimvarReader_float2")
+        reader.CreateInput("varname", types.String).Set("st")
+        mapping = UsdShade.Shader.Define(stage, f"/{prim_name}/mapping")
+        mapping.CreateIdAttr("UsdTransform2d")
+        mapping.CreateInput("in", types.Float2).ConnectToSource(reader.CreateOutput("result", types.Float2))
+        if scale:
+            mapping.CreateInput("scale", types.Float2).Set(tuple(scale[:2]))
+        for role, name in sorted(maps.items()):
+            texture = UsdShade.Shader.Define(stage, f"/{prim_name}/{role}")
+            texture.CreateIdAttr("UsdUVTexture")
+            texture.CreateInput("file", types.Asset).Set(Sdf.AssetPath(f"./{name}"))
+            texture.CreateInput("st", types.Float2).ConnectToSource(mapping.CreateOutput("result", types.Float2))
+            texture.CreateInput("sourceColorSpace", types.Token).Set("sRGB" if role in SRGB_ROLES else "raw")
+            if role == "normal":
+                texture.CreateInput("scale", types.Float4).Set((2.0, 2.0, 2.0, 1.0))
+                texture.CreateInput("bias", types.Float4).Set((-1.0, -1.0, -1.0, 0.0))
+            for field, channel, kind in wiring.get(role, []):
+                output = texture.CreateOutput(channel, types.Float3 if channel == "rgb" else types.Float)
+                surface.CreateInput(field, kind).ConnectToSource(output)
+                wired.add(field)
+    for field, value in sorted(constants.items()):
+        if field in constant_types and field not in wired:
+            surface.CreateInput(field, constant_types[field]).Set(tuple(value) if isinstance(value, list) else value)
+    return stage.GetRootLayer().ExportToString()
+
+
+def surface_record(row, material, tiling):
+    """Our own surface.json: the material's settings as the source gives them, and its recipe (none yet; a written
+    gap for a set painted for one model)."""
+    return {"source": row["id"], "family": "image" if material["maps"] else "constant", "material": material["name"],
+            "maps": {role: role + posixpath.splitext(name)[1].lower() for role, name in material["maps"].items()},
+            "constants": material["constants"], **material["settings"], "tiling": tiling, "recipe": None,
+            "recipe_gap": None if tiling else ONE_MODEL_GAP}
+
+
+def asset_tags(folder, kept):
+    """The model's tags its layers give: Wikidata class and Q-code, a one-line description, and its simulators."""
+    from pxr import Sdf
+    tags = collections.defaultdict(list)
+    for name in sorted(name for name in kept if name.endswith(LAYERS)):
+        layer = Sdf.Layer.FindOrOpen(str(pathlib.Path(folder) / name))
+        for prim in layer.pseudoRoot.nameChildren if layer else []:
+            for attribute in prim.attributes:
+                for word, tag in (("wikidata_class", "wikidata_class"), ("wikidata_qcode", "wikidata_qcode"),
+                                  (":documentation", "description")):
+                    value = plain(attribute.default)
+                    if word in attribute.name and value:
+                        tags[tag] += [str(each) for each in (value if isinstance(value, list) else [value])]
+    simulators = {word for name in kept for word in ("newton", "mujoco", "physx") if word in name.lower()}
+    found = {tag: sorted(set(values)) for tag, values in tags.items()}
+    return {**found, "engine": ["usd"], **({"simulators": sorted(simulators)} if simulators else {})}
+
+
+def root_usd(folder, root_name):
+    """The model's `usd` block (less its library path): its root file laid by reference, and what the root authors."""
+    from pxr import Sdf
+    layer = Sdf.Layer.FindOrOpen(str(pathlib.Path(folder) / root_name))
+    info = layer.pseudoRoot
+    return {"root": root_name, "use": "reference", "layer": "base",
+            "default_prim": f"/{layer.defaultPrim}" if layer.defaultPrim else None,
+            "up_axis": str(info.GetInfo("upAxis")) if info.HasInfo("upAxis") else None,
+            "meters_per_unit": float(info.GetInfo("metersPerUnit")) if info.HasInfo("metersPerUnit") else None}
+
+
+def named_surfaces(folder, materials, addresses):
+    """Each Material's layer given `score:surface` = its surface's address and saved; the layer names changed."""
+    from pxr import Sdf
+    changed = sorted({material["layer"] for material in materials})
+    for name in changed:
+        layer = Sdf.Layer.FindOrOpen(str(pathlib.Path(folder) / name))
+        for material in [each for each in materials if each["layer"] == name]:
+            spec = layer.GetPrimAtPath(material["prim"])
+            attribute = Sdf.AttributeSpec(spec, SURFACE_ATTRIBUTE, Sdf.ValueTypeNames.String, Sdf.VariabilityUniform,
+                                          True)
+            attribute.default = addresses[material["prim"], material["layer"]]
+        if not layer.Save():
+            raise Gap(f"{name}: the layer naming its surfaces could not be saved")
+    return changed
+
+
+def unchanged_copies(changed, kept, folder, pairs):
+    """The queued files whose layer was changed to name its surfaces: each source sha put from an unchanged copy in
+    the asset, or no longer put when there is none."""
+    for name in changed:
+        sha256 = kept[name]["sha256"]
+        if pairs.get(sha256) != folder / name:
+            continue
+        copies = [other for other in sorted(kept) if kept[other]["sha256"] == sha256 and other not in changed]
+        if copies:
+            pairs[sha256] = folder / copies[0]
+        else:
+            del pairs[sha256]
+
+
+class Run:
+    """One take-in of a repository at a revision: what waits in the cache to be put, and the report."""
+
+    def __init__(self, root, blobs, source, sources, row, world, cache, cache_bytes=CACHE_BYTES, save=None):
+        self.root, self.blobs, self.source, self.sources, self.row = root, blobs, source, sources, row
+        self.world, self.cache, self.cache_bytes, self.save = world, pathlib.Path(cache), cache_bytes, save
+        self.prefix = row["take_in"]["prefix"]
+        self.pairs, self.records, self.cached = {}, [], 0
+        self.stored = set()
+        self.surfaces = self.known_surfaces()
+        self.ids = {}
+        self.report = {"new": [], "unchanged": [], "changed draft": [], "new version": [], "refused": [], "gaps": []}
+
+    def known_surfaces(self):
+        """{maps key: address} of the library's surfaces from this source, newest version of each id."""
+        found = {}
+        for record in entries.all_entries(self.root, "surface"):
+            for key in record.get("tags", {}).get("maps_key", []):
+                if record["state"] != "withdrawn":
+                    found[key] = record["address"]
+        return found
+
+    def about(self, asset):
+        """The provenance an entry of one asset is taken in with."""
+        return {"world": self.world, "commit": self.source.revision,
+                "taken_from": f"huggingface.co/datasets/{self.source.repo} at revision {self.source.revision}: {asset}"}
+
+    def held(self, sha256):
+        """Whether the blob store holds a blob, or this run puts it before any record naming it is written."""
+        if sha256 in self.stored or sha256 in self.pairs:
+            return True
+        if self.blobs.has(sha256):
+            self.stored.add(sha256)
+            return True
+        return False
+
+    def fetched(self, asset, names, kept, folder, pairs):
+        """The named files of an asset into its cache folder: each downloaded and checked against its bill, or an
+        empty stand-in when the store already holds it (a layer always downloaded, to be read)."""
+        got = {}
+        for name in names:
+            about = kept[name]
+            target = entries.inside(folder, name)
+            target.parent.mkdir(parents=True, exist_ok=True)
+            if about["sha256"] in got:  # a layer copied, not linked, so naming its surfaces changes it alone
+                (shutil.copyfile if name.endswith(LAYERS) else os.link)(got[about["sha256"]], target)
+            elif not name.endswith(LAYERS) and self.held(about["sha256"]):
+                target.touch()
+            else:
+                self.source.download(f"{asset}/{about['path']}", target)
+                try:
+                    check_sha(target, about["sha256"])
+                except BadBlob as why:
+                    raise Gap(f"{name}: {why}") from why
+                got[about["sha256"]] = target
+                pairs[about["sha256"]] = target
+
+    def completed(self, asset, root_name, kept, left, folder, pairs):
+        """Every file the asset's USD names in its cache folder: a left-out file it names taken back, the rest
+        downloaded; the paths that resolve outside it (bare MDL library names) returned; Gap for any other."""
+        self.fetched(asset, sorted(kept), kept, folder, pairs)
+        while True:
+            missing = unresolved_in(folder, root_name)
+            back = [name for name in missing if name in left]
+            if not back:
+                break
+            for name in back:
+                kept[name] = left.pop(name)
+            self.fetched(asset, back, kept, folder, pairs)
+        outside = [path for path in missing if "/" not in path and path.endswith(".mdl")]
+        unheld = [path for path in missing if path not in outside]
+        if unheld:
+            raise Gap(f"its USD names {', '.join(unheld)}, which the asset does not hold")
+        return outside
+
+    def surface_listed(self, asset, material, kept, key, folder):
+        """The take-in list row of one material's surface entry, its own two files written into `folder`."""
+        tiling = is_tiling(material, kept)
+        entry_id = f"{self.prefix}_{snake(material['name'])}_{key[:8]}"
+        folder = pathlib.Path(folder) / entry_id
+        folder.mkdir(parents=True, exist_ok=True)
+        (folder / "material.usda").write_text(look_layer(entry_id, {role: role + posixpath.splitext(name)[1].lower()
+                                                                    for role, name in material["maps"].items()},
+                                                         material["constants"], material["settings"]["tile_scale"]))
+        (folder / "surface.json").write_text(entries.dumps(surface_record(self.row, material, tiling)))
+        files = {"material.usda": {"path": str(folder / "material.usda"), "from": LOOK_WRITTEN},
+                 "surface.json": {"path": str(folder / "surface.json"), "from": RECORD_WRITTEN}}
+        for role, name in material["maps"].items():
+            files[role + posixpath.splitext(name)[1].lower()] = {
+                "path": str(pathlib.Path(self.cache) / asset / name), "from": f"{asset}/{kept[name]['path']}",
+                "sha256": kept[name]["sha256"], "bytes": kept[name]["bytes"]}
+        made_with = [{"what": "its look and record", "source": "score"}]
+        if material["maps"]:
+            made_with.append({"what": f"the {material['name']} maps of {asset}", "source": self.row["id"],
+                              "carried": True})
+        else:
+            made_with.append({"what": f"the {material['name']} settings of {asset}", "source": self.row["id"]})
+        listed = {"kind": "surface", "id": entry_id, "title": material["name"], "files": files,
+                  "made_with": made_with, "tags": {"maps_key": [key], "engine": ["usd"]}}
+        if material["maps"]:
+            listed["licence"] = licence_of(self.row, self.source.repo, self.source.revision, asset)
+        return listed
+
+    def surfaces_of(self, asset, materials, kept, folder, queued, pairs):
+        """{(prim, layer): address} of an asset's materials, each new surface's record and files queued."""
+        addresses, mine = {}, {}
+        for material in materials:
+            key = maps_key(material, kept)
+            if key not in self.surfaces and key not in mine:
+                listed = self.surface_listed(asset, material, kept, key, folder / ".surfaces")
+                status, record = take_in.settle(self.root, listed, self.about(asset), self.sources)
+                mine[key] = record["address"]
+                if status != "unchanged":
+                    queued.append((status, record))
+                    for name in ("material.usda", "surface.json"):
+                        pairs[record["files"][name]["sha256"]] = pathlib.Path(listed["files"][name]["path"])
+            addresses[material["prim"], material["layer"]] = self.surfaces.get(key) or mine[key]
+        return addresses, mine
+
+    def model_listed(self, asset, entry_id, root_name, kept, changed, outside, folder, surfaces):
+        """The take-in list row of an asset's model entry."""
+        files = {}
+        for name, about in sorted(kept.items()):
+            files[name] = {"path": str(folder / name), "from": f"{asset}/{about['path']}"}
+            if name in changed:
+                files[name]["from"] += f" ({CHANGED})"
+            else:
+                files[name].update(sha256=about["sha256"], bytes=about["bytes"])
+        return {"kind": "model", "id": entry_id, "title": asset, "files": files, "usd": root_usd(folder, root_name),
+                "requires": sorted(set(surfaces)), "unresolved": outside, "tags": asset_tags(folder, kept),
+                "made_with": [{"what": f"{asset}: its model, physics and maps", "source": self.row["id"],
+                               "carried": True},
+                              {"what": "the library surface each material names (score:surface)", "source": "score"}],
+                "licence": licence_of(self.row, self.source.repo, self.source.revision, asset)}
+
+    def entry_id(self, asset):
+        """The model entry id of an asset; Gap when another asset of the run maps to the same id."""
+        entry_id = f"{self.prefix}_{snake(asset)}"
+        if not entries.ID_PATTERN.match(entry_id):
+            raise Gap(f"{entry_id}: not an entry id")
+        if self.ids.setdefault(entry_id, asset) != asset:
+            raise Gap(f"its id {entry_id} is the id of {self.ids[entry_id]} too")
+        return entry_id
+
+    def taken(self, asset, entry_id):
+        """Whether the asset's model entry already holds this revision."""
+        found = entries.versions(self.root, "model", entry_id)
+        return bool(found) and found[-1]["provenance"].get("taken_from") == self.about(asset)["taken_from"]
+
+    def take(self, asset):
+        """One asset: its surfaces and model planned, fetched and queued, or a gap row; the cache put when full."""
+        try:
+            entry_id = self.entry_id(asset)
+            if self.taken(asset, entry_id):
+                self.report["unchanged"].append(entries.address_of("model", entry_id,
+                                                                   entries.versions(self.root, "model",
+                                                                                    entry_id)[-1]["version"]))
+                return
+            self.queue(asset, entry_id)
+        except (Gap, take_in.Refused, NotAdmitted, entries.UnsafeName) as why:
+            self.report["gaps"].append({"asset": asset, "why": str(why)})
+            shutil.rmtree(self.cache / asset, ignore_errors=True)
+            return
+        if self.cached >= self.cache_bytes:
+            self.flush()
+
+    def queue(self, asset, entry_id):
+        """An asset's entries settled and their files queued for the store (Gap and the rest raised)."""
+        folder = self.cache / asset
+        root_path, bill = bill_of(self.source, asset, self.row, self.cache)
+        root_name, kept, left = planned(root_path, bill)
+        for name in kept:
+            entries.checked_name(name)
+        pairs, queued = {}, []
+        outside = self.completed(asset, root_name, kept, left, folder, pairs)
+        materials = materials_in(folder, kept)
+        addresses, mine = self.surfaces_of(asset, materials, kept, folder, queued, pairs)
+        changed = named_surfaces(folder, materials, addresses)
+        unchanged_copies(changed, kept, folder, pairs)
+        listed = self.model_listed(asset, entry_id, root_name, kept, changed, outside, folder, addresses.values())
+        status, record = take_in.settle(self.root, listed, self.about(asset), self.sources)
+        for name in changed:
+            pairs[record["files"][name]["sha256"]] = folder / name
+        queued.append((status, record))
+        self.surfaces.update(mine)
+        self.pairs.update(pairs)
+        self.records += queued
+        self.cached += sum(path.stat().st_size for path in pairs.values())
+
+    def flush(self):
+        """Every queued file into the blob store, then the records naming them written (and saved, with --save);
+        the cache emptied."""
+        put_all(self.blobs, sorted(self.pairs.items()))
+        self.stored.update(self.pairs)
+        for status, record in self.records:
+            entries.write(self.root, record)
+            self.report[status].append(record["address"])
+        written = [record["address"] for _, record in self.records]
+        self.pairs, self.records, self.cached = {}, [], 0
+        shutil.rmtree(self.cache, ignore_errors=True)
+        self.cache.mkdir(parents=True)
+        if self.save and written:
+            self.save(written)
+
+
+def saver(root, repo, revision, report):
+    """A function saving one put's entries and the index under the handover's lock (committed and pushed), each
+    save's block appended to the report's `saved` list."""
+    report.setdefault("saved", [])
+
+    def save(written):
+        wait = float(os.environ.get("SCORE_LIB_LOCK_WAIT", handover.LOCK_WAIT))
+        with handover.locked(root, wait):
+            index.rebuild(root)
+            folders = sorted({"entries/{0}/{1}".format(*entries.parse_address(address)[:2]) for address in written})
+            message = f"take-in hub: {len(written)} entries from {repo} at {revision[:12]}"
+            report["saved"].append(handover.saved(root, message, (*folders, "index")))
+    return save
+
+
+def take_in_hub(root, blobs, source, only=None, sources=None, world="world1", cache_bytes=CACHE_BYTES, save=False,
+                cache_root=None):
+    """Take in every asset of a source (or those `only` names), its cache a new folder under `cache_root` (the
+    system's temp folder by default) removed after; the report {status: [address], gaps: [{asset, why}], saved: [...]
+    with `save`}; the index rebuilt."""
+    if not REVISION.match(source.revision or ""):
+        raise Gap(f"{source.revision!r}: take in a pinned revision (a 40-hex commit), never a branch")
+    sources = sources or Sources.load()
+    row = row_of(sources, source.repo)
+    cache = pathlib.Path(tempfile.mkdtemp(prefix="score-lib-take-in-hub-", dir=cache_root))
+    run = Run(root, blobs, source, sources, row, world, cache, cache_bytes)
+    if save:
+        run.save = saver(root, source.repo, source.revision, run.report)
+    try:
+        names = source.assets()
+        wanted = sorted(only) if only else names
+        for asset in wanted:
+            if asset not in names:
+                run.report["gaps"].append({"asset": asset, "why": "not in the repository at this revision"})
+                continue
+            print(f"take-in hub: {asset}", file=sys.stderr, flush=True)
+            run.take(asset)
+        run.flush()
+    finally:
+        shutil.rmtree(cache, ignore_errors=True)
+    index.rebuild(root)
+    return run.report
+
+
+def hub_source(repo, revision):
+    """The real source: the Hugging Face Hub, read with the login's token when there is one, else paced."""
+    from huggingface_hub import HfApi, get_token
+    return HubSource(HfApi(), repo, revision, pacer_for_token(get_token()))

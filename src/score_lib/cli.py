@@ -83,6 +83,20 @@ def command_fetch(options):
     print(f"fetched {len(records)} entries into {options.into}")
 
 
+def hub_report(options):
+    """`take-in hub`: an adopted set, one pinned revision of a Hugging Face dataset repository (take_in_hub.py)."""
+    from score_lib import take_in_hub
+    if not options.repo or not options.revision:
+        raise SystemExit("take-in hub needs --repo <dataset repository> and --revision <its 40-hex commit>")
+    only = sorted({name for each in options.only or [] for name in each.split(",") if name})
+    try:
+        return take_in_hub.take_in_hub(options.root, blob_store(), take_in_hub.hub_source(options.repo,
+                                                                                          options.revision),
+                                       only=only, world=options.world, save=options.save)
+    except take_in_hub.Gap as why:
+        raise SystemExit(str(why))
+
+
 def take_in_report(options):
     """The take-in's report: a place_build folder's (--place) or a list's."""
     if options.place:
@@ -91,6 +105,8 @@ def take_in_report(options):
             raise SystemExit("take-in --place needs --commit <the score commit that built the place>")
         taking = take_in_place.taken_in_place_saved if options.save else take_in_place.taken_in_place
         return taking(options.root, blob_store(), options.place, options.commit, options.world)
+    if options.listing == "hub":
+        return hub_report(options)
     from score_lib import take_in
     if not options.listing:
         raise SystemExit("take-in needs a list file or --place <folder>")
@@ -103,10 +119,11 @@ def command_take_in(options):
     if options.report:
         pathlib.Path(options.report).write_text(json.dumps(report, indent=2, sort_keys=True) + "\n")
     print(", ".join(f"{status} {len(found)}" for status, found in report.items() if status != "saved"))
-    saved = report.get("saved")
-    if saved:
+    found = report.get("saved")
+    saves = found if isinstance(found, list) else [found] if found else []  # take-in hub saves once per put
+    for saved in saves:
         print(f"saved: commit {saved['committed']}, pushed {saved['pushed']} {saved['why']}".rstrip())
-    raise SystemExit(1 if report["refused"] or (saved and not saved["pushed"]) else 0)
+    raise SystemExit(1 if report["refused"] or any(not saved["pushed"] for saved in saves) else 0)
 
 
 def command_test(options):
@@ -318,11 +335,16 @@ def parser():
     taken = commands.add_parser("take-in", help="take loose made files (no store outputs), or a place built by score's "
                                                 "placing method, in as draft entries")
     taken.add_argument("listing", nargs="?",
-                       help="the list of entries and their files (take_in.py's docstring has its shape)")
+                       help="the list of entries and their files (take_in.py's docstring has its shape), or `hub` "
+                            "for an adopted set from a Hugging Face dataset repository (take_in_hub.py)")
+    taken.add_argument("--repo", help="with hub: the dataset repository (its config/sources.toml row's take_in.repo)")
+    taken.add_argument("--revision", help="with hub: the repository's commit to take in (40 hex)")
+    taken.add_argument("--only", action="append", help="with hub: only these asset folders (comma-separated, "
+                                                       "repeatable)")
     taken.add_argument("--place", help="a place built by score's placing method (a place_build folder), taken in "
                                        "as a draft place entry (take_in_place.py)")
     taken.add_argument("--commit", help="with --place: the score commit that built the place")
-    taken.add_argument("--world", default="world1", help="with --place: the world the place belongs to")
+    taken.add_argument("--world", default="world1", help="with --place or hub: the world the entries belong to")
     taken.add_argument("--report", help="write the report (every address by status, every refusal) as JSON")
     taken.add_argument("--save", action="store_true",
                        help="under the handover's lock, commit and push the entries written and the index")

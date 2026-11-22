@@ -34,6 +34,11 @@ A library of reusable parts of SCORE worlds: records in git (`entries/`), bytes 
   entry is one Pixal3D take whole with its `.svviews` camera folder; `--save` commits and pushes what it wrote.
 - `src/score_lib/take_in_place.py`: `score-lib take-in --place`, a place built by score's placing method (a
   `place_build` folder) as a draft place entry, its scene pointing at the library entries it lays.
+- `src/score_lib/take_in_hub.py`: `score-lib take-in hub --repo R --revision SHA [--only NAMES] [--save]`, an adopted
+  set (score #155): one pinned revision of a Hugging Face dataset of OpenUSD assets, named by a `config/sources.toml`
+  row's `take_in` table, taken in whole as model entries and the surfaces their materials name (`score:surface`),
+  each under the row's licence and credit; bytes through a capped cache into the blob store; a gap row per asset it
+  cannot take.
 - `src/score_lib/concept.py`: `score-lib concept`, a place's locked concept from score's concept review (score #40).
 - `src/score_lib/handover.py`: `score-lib handover`, the one call score's runner makes (contract `library-handover` v1); `held.py`: what a place holds and which entries hold a store output.
 - `src/score_lib/clip.py`: an entry's preview clip (owner, 2026-10-20): `score-lib clip-plan` says what each clip

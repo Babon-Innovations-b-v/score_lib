@@ -13,6 +13,12 @@ The list is one JSON file:
                   "tags": {<optional tags, {name: [values]}>}}],
      "contributor": {"handle": "<GitHub handle>", "claim": "<own work, or the source and its terms>"}}
 
+A route that takes a whole source in (take_in_hub.py) may also give, per entry: a file's `sha256` and `bytes` (the
+source's own record of them, so a blob the store already holds need not be on disk), `usd` ({root, use, layer,
+default_prim, ...}: its root file and how it is laid), `requires` (addresses), `unresolved` (paths its USD names that
+resolve outside the library, verify.allowed_unresolved) and `licence` (the top-level block of a part under its own
+licence, admission.Sources.licence_faults; any entry carrying such a source's bytes without it is refused).
+
 `contributor` is given by an outside contributor only (CONTRIBUTING.md): each entry then names its contributor
 (`provenance.contributor`) and keeps the contribution block (contribution.py), which `score-lib take-bundle` completes.
 
@@ -79,18 +85,29 @@ def role_of(name, kind=None):
 
 
 def file_table(files, kind):
-    """{name: {sha256, bytes, role}} of an entry's files."""
+    """{name: {sha256, bytes, role}} of an entry's files: hashed from its local path, or as listed when the list gives
+    its sha256 and bytes (a source's own record of them, checked when the bytes go into the blob store)."""
     table = {}
     for name, about in sorted(files.items()):
+        if "sha256" in about:
+            table[name] = {"sha256": about["sha256"], "bytes": about["bytes"], "role": role_of(name, kind)}
+            continue
         path = pathlib.Path(about["path"])
         table[name] = {"sha256": file_sha256(path), "bytes": path.stat().st_size, "role": role_of(name, kind)}
     return table
 
 
-def effect_usd(listed, version):
-    """An effect entry's `usd` block: its emitter file laid by reference, at its path in the library."""
-    path = entries.library_path("effect", listed["id"], version, EFFECT_USD["root"])
-    return {**EFFECT_USD, "path": str(path)}
+def usd_of(listed, version):
+    """An entry's `usd` block: an effect's emitter file laid by reference, or the block the list gives (its `root`
+    file and how it is laid), at its path in the library; None when it has neither."""
+    if listed["kind"] == "effect":
+        found = EFFECT_USD
+    elif listed.get("usd"):
+        found = listed["usd"]
+    else:
+        return None
+    path = entries.library_path(listed["kind"], listed["id"], version, found["root"])
+    return {**found, "path": str(path)}
 
 
 def record_of(listed, about, sources, version):
@@ -102,8 +119,15 @@ def record_of(listed, about, sources, version):
     record = {"schema": entries.SCHEMA, "address": address, "kind": listed["kind"], "id": listed["id"],
               "version": version, "title": listed["title"], "state": "draft", "picture": None,
               "picture_reason": NO_PICTURE, "files": file_table(listed["files"], listed["kind"]),
-              "usd": effect_usd(listed, version) if listed["kind"] == "effect" else None,
-              "requires": [], "provenance": provenance, "tags": listed.get("tags", {}), "seen_in": []}
+              "usd": usd_of(listed, version), "requires": sorted(listed.get("requires", [])),
+              "provenance": provenance, "tags": listed.get("tags", {}), "seen_in": []}
+    if listed.get("unresolved"):
+        provenance["unresolved"] = sorted(listed["unresolved"])
+    if listed.get("licence"):
+        record["licence"] = listed["licence"]
+    faults = sources.licence_faults(provenance["made_with"], listed.get("licence"))
+    if faults:
+        raise Refused(f"{listed['id']}: {'; '.join(faults)}")
     if about.get("contributor"):
         try:
             block = contribution.block_of(about["contributor"].get("handle"), about["contributor"].get("claim"))
