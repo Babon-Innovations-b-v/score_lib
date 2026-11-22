@@ -1,0 +1,78 @@
+{
+  "address": "surface/simready_m_opaque_metal_chrome_a01_83d1d630@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 20673810,
+      "role": "texture",
+      "sha256": "abd1a44e96a2192d073f407a033346f781ecb4806dbe9bb06786713c37ffbbf7"
+    },
+    "material.usda": {
+      "bytes": 2495,
+      "role": "usd",
+      "sha256": "8677a1241df5986ca627bec82ba40ae8e4d4140a0e89e91d436218924b4d62c2"
+    },
+    "normal.png": {
+      "bytes": 3420212,
+      "role": "texture",
+      "sha256": "a334c86d8d7355dd69617a4c29c88fd17b11abf54ae10c2f05aea7feffaa0bd1"
+    },
+    "orm.png": {
+      "bytes": 14704982,
+      "role": "texture",
+      "sha256": "8929777eff60f6e624755f79c4a05bc69184664f911058bc150415af648ecbec"
+    },
+    "surface.json": {
+      "bytes": 800,
+      "role": "record",
+      "sha256": "3de7cbfe84c174484c08a8419c3888aae4f7ff3d05b4f23c358cc1ca98055e2b"
+    }
+  },
+  "id": "simready_m_opaque_metal_chrome_a01_83d1d630",
+  "kind": "surface",
+  "licence": {
+    "credit": "dispenser_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "dispenser_a01/simready_usd/Textures/t_metal_chrome_a01_tile_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "dispenser_a01/simready_usd/Textures/t_metal_chrome_a01_tile_nor.png",
+      "orm.png": "dispenser_a01/simready_usd/Textures/t_metal_chrome_a01_tile_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__metal__chrome_a01 maps of dispenser_a01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: dispenser_a01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "83d1d630146a774e8ec0357684614a72902b4f34c08fea80c045497f5ea49597"
+    ]
+  },
+  "title": "m_opaque__metal__chrome_a01",
+  "usd": null,
+  "version": 1
+}

@@ -1,0 +1,72 @@
+{
+  "address": "surface/simready_m_opaque_plastic_glossy_black_a01_6f3202b0@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 58789,
+      "role": "texture",
+      "sha256": "a256461383279637552d0ce7c21d0b54d4db8b5238ae6637e4b4b8ad88042c44"
+    },
+    "material.usda": {
+      "bytes": 2079,
+      "role": "usd",
+      "sha256": "43240a4800bae664f6fb1c49fbac44c36b41c3cca99c39921e8c00870b2cf370"
+    },
+    "orm.png": {
+      "bytes": 9378835,
+      "role": "texture",
+      "sha256": "b481b6965cd5b4166332c8e3bd6bc1c51da44ac884bd6df5b785dec33c25469c"
+    },
+    "surface.json": {
+      "bytes": 783,
+      "role": "record",
+      "sha256": "abec8c7b7c563ccee0184f1c86d0b3eb463f882ad3dd62a548ebf8c5ebeeae65"
+    }
+  },
+  "id": "simready_m_opaque_plastic_glossy_black_a01_6f3202b0",
+  "kind": "surface",
+  "licence": {
+    "credit": "TV_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "TV_a01/simready_usd/Textures/t_plastic_glossy_black_a01_tile_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "orm.png": "TV_a01/simready_usd/Textures/t_plastic_glossy_black_a01_tile_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__plastic__glossy_black_a01 maps of TV_a01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: TV_a01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "6f3202b022f95a5c4b0ca6c00f8b27a124ff4b8bf8d2a705f70de3155ece2f29"
+    ]
+  },
+  "title": "m_opaque__plastic__glossy_black_a01",
+  "usd": null,
+  "version": 1
+}

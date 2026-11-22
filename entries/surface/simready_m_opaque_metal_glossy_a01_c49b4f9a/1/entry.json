@@ -1,0 +1,78 @@
+{
+  "address": "surface/simready_m_opaque_metal_glossy_a01_c49b4f9a@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 17018568,
+      "role": "texture",
+      "sha256": "bbb6a7fd1d0627aa44115b96a93c293d11b8eb164b5e0cbd767813644e47e65b"
+    },
+    "material.usda": {
+      "bytes": 2495,
+      "role": "usd",
+      "sha256": "5aea1c066b211a04892a0ff1ebb97fbc99b8337ac98bc37ff7efe310e5bf7db2"
+    },
+    "normal.png": {
+      "bytes": 4969669,
+      "role": "texture",
+      "sha256": "f26a7354c9fcdd1b921aba49bd71c0d529cc68d404386d787ea3cd1872fbdb0e"
+    },
+    "orm.png": {
+      "bytes": 14112974,
+      "role": "texture",
+      "sha256": "6d9b0891ee9d4a8dca391cfe5f0f0800d40754465d0b0ca25b95352565457e8d"
+    },
+    "surface.json": {
+      "bytes": 798,
+      "role": "record",
+      "sha256": "74dfca113df3b8baf720f3b7cb9e0441d2ad230d9d0d1331bcae9edba5898c0b"
+    }
+  },
+  "id": "simready_m_opaque_metal_glossy_a01_c49b4f9a",
+  "kind": "surface",
+  "licence": {
+    "credit": "TV_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "TV_a01/simready_usd/Textures/t_metal_glossy_a01_tile_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "TV_a01/simready_usd/Textures/t_metal_glossy_a01_tile_nor.png",
+      "orm.png": "TV_a01/simready_usd/Textures/t_metal_glossy_a01_tile_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__metal__glossy_a01 maps of TV_a01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: TV_a01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "c49b4f9a3101c52b933483dad2de76a4533123bcde053fefa8770692961de6b7"
+    ]
+  },
+  "title": "m_opaque__metal__glossy_a01",
+  "usd": null,
+  "version": 1
+}
