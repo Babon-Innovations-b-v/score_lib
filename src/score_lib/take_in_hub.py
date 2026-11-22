@@ -17,7 +17,8 @@ Per asset folder, at the revision given (a 40-hex commit, never a branch):
   constants), shared by every model that uses the same maps: the maps under their role (`albedo.png`, `normal.png`,
   `orm.png`, ...), our own `material.usda` (a UsdPreviewSurface over them, ORM's green to roughness and blue to
   metallic) and `surface.json` (the material's settings as the source gives them, its normal map's convention and
-  `tile_metres`, the metres one repeat of its maps covers on the asset); a set painted for one model (its
+  `tile_metres`, the metres one repeat of its maps covers on the asset, and a glass's `transmission`: the colour,
+  IOR and roughness its MDL glass shader gives, its look see-through by them); a set painted for one model (its
   maps unwrapped on that model's own UVs, no `tile` in their names) keeps its maps only, its recipe a written gap;
 - each of the model's own materials names its surface (`score:surface`, the USD attribute, written into the layer
   that defines it; that change is marked on the file's files_from row and in the model's credit).
@@ -92,6 +93,12 @@ NO_MAPS = "no maps: a constant finish has no repeat"
 ONE_MODEL_TILE = "painted for one model: its maps cover that model once, not as a repeat"
 NO_MESH = "no mesh of the asset is bound to this material"
 NO_UV_AREA = "the meshes bound to this material have no UV area in the UV set it reads"
+# An MDL glass shader (its module's name in a shader's `mdl:` id) and the inputs it carries into our transmission
+# block, under our names, each with the default its module gives: a glass is see-through throughout, its cutout
+# opacity counting only when `enable_opacity` is set.
+GLASS_SHADERS = ("OmniGlass", "OmniGlass_Opacity")
+GLASS_INPUTS = {"colour": ("glass_color", [1.0, 1.0, 1.0]), "ior": ("glass_ior", 1.491),
+                "roughness": ("frosting_roughness", 0.0), "thin_walled": ("thin_walled", False)}
 ONE_MODEL_GAP = ("painted for one model: its maps are unwrapped on that model's own UVs, so no tiling recipe can look "
                  "the same; the maps are the surface")
 
@@ -434,6 +441,39 @@ def settings_of(material):
             "physics": physics}
 
 
+def glass_shader(material):
+    """(module name, spec) of a Material spec's MDL glass shader, or None when it has none."""
+    for shader_id, specs in sorted(shaders_under(material).items()):
+        if shader_id.startswith("mdl:") and shader_id[len("mdl:"):] in GLASS_SHADERS:
+            return shader_id[len("mdl:"):], specs[0]
+    return None
+
+
+def transmission_of(material):
+    """A Material spec's transmission as its MDL glass shader gives it ({shader, weight, colour, ior, roughness,
+    thin_walled, presence}), or None for a material with no glass shader."""
+    found = glass_shader(material)
+    if found is None:
+        return None
+    module, shader = found
+    given = {ours: default_of(shader, f"inputs:{name}") for ours, (name, _) in GLASS_INPUTS.items()}
+    transmission = {"shader": module, "weight": 1.0}
+    transmission.update({ours: plain(value) if value is not None else GLASS_INPUTS[ours][1]
+                         for ours, value in given.items()})
+    cutout = default_of(shader, "inputs:cutout_opacity") if default_of(shader, "inputs:enable_opacity") else None
+    transmission["presence"] = plain(cutout) if cutout is not None else 1.0
+    return transmission
+
+
+def look_constants(constants, transmission):
+    """The UsdPreviewSurface constants our look writes: the source's, a glass's see-through (opacity 0, the spec's
+    clear glass that keeps its specular), its colour, IOR and roughness over them."""
+    if transmission is None:
+        return constants
+    return {**constants, "opacity": round(1.0 - transmission["weight"], 6), "diffuseColor": transmission["colour"],
+            "ior": transmission["ior"], "roughness": transmission["roughness"]}
+
+
 def looks_in(material):
     """Whether a Material spec defines a look: a shader under it or an output. An empty one is a physics material,
     its PhysicsMaterialAPI given by another layer and bound for physics only (`material:binding:physics`)."""
@@ -442,7 +482,8 @@ def looks_in(material):
 
 
 def materials_in(folder, kept):
-    """Every Material the asset's layers define with a look: [{layer, prim, name, maps, constants, settings}]."""
+    """Every Material the asset's layers define with a look: [{layer, prim, name, maps, constants, transmission,
+    settings}]."""
     from pxr import Sdf
     found = []
     for name in sorted(name for name in kept if name.endswith(LAYERS)):
@@ -455,7 +496,7 @@ def materials_in(folder, kept):
             maps, constants = preview_of(layer, material, name, kept)
             convention, assumed = normal_convention_of(layer, material)
             found.append({"layer": name, "prim": str(material.path), "name": material.name, "maps": maps,
-                          "constants": constants, "settings": {**settings_of(material), "normal_convention": convention,
+                          "constants": constants, "transmission": transmission_of(material), "settings": {**settings_of(material), "normal_convention": convention,
                                                                "normal_convention_assumed": assumed}})
     return found
 
@@ -584,11 +625,14 @@ def tile_metres_of(folder, root_name, materials, kept):
 
 
 def maps_key(material, kept):
-    """The sha256 a surface is keyed by: of its maps' bytes by role, or of its constants when it has no maps."""
+    """The sha256 a surface is keyed by: of its maps' bytes by role, or of its constants when it has no maps; a glass's
+    transmission beside them."""
     content = ({"maps": {role: kept[name]["sha256"] if UDIM not in name else
                          {tile: kept[each]["sha256"] for tile, each in tiles_of(name, kept)}
                          for role, name in material["maps"].items()}}
                if material["maps"] else {"constants": material["constants"]})
+    if material.get("transmission"):
+        content["transmission"] = material["transmission"]
     return hashlib.sha256(json.dumps(content, sort_keys=True).encode()).hexdigest()
 
 
@@ -647,12 +691,13 @@ def look_layer(prim_name, maps, constants, scale, convention="opengl"):
 
 
 def surface_record(row, material, tiling):
-    """Our own surface.json: the material's settings as the source gives them, and its recipe (none yet; a written
-    gap for a set painted for one model)."""
+    """Our own surface.json: the material's settings as the source gives them (a glass's transmission as its MDL shader
+    gives it among them) and its recipe (none yet; a written gap for a set painted for one model)."""
     return {"source": row["id"], "family": "image" if material["maps"] else "constant", "material": material["name"],
             "maps": {role: map_name(role, name) for role, name in material["maps"].items()},
             "constants": material["constants"], **material["settings"], "tiling": tiling, "recipe": None,
-            "recipe_gap": None if tiling else ONE_MODEL_GAP}
+            "recipe_gap": None if tiling else ONE_MODEL_GAP,
+            **({"transmission": material["transmission"]} if material.get("transmission") else {})}
 
 
 def asset_tags(folder, kept):
@@ -803,7 +848,9 @@ class Run:
         folder.mkdir(parents=True, exist_ok=True)
         (folder / "material.usda").write_text(look_layer(entry_id, {role: map_name(role, name)
                                                                     for role, name in material["maps"].items()},
-                                                         material["constants"], material["settings"]["tile_scale"],
+                                                         look_constants(material["constants"],
+                                                                        material.get("transmission")),
+                                                         material["settings"]["tile_scale"],
                                                          material["settings"]["normal_convention"]))
         (folder / "surface.json").write_text(entries.dumps(surface_record(self.row, material, tiling)))
         files = {"material.usda": {"path": str(folder / "material.usda"), "from": LOOK_WRITTEN},

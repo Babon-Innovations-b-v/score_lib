@@ -5,7 +5,8 @@ them unchanged, and --retake settling them again; and the pacing of a reader, it
 
 Breaks that turn it red: a UDIM material gapped, a save pushed to its own branch, a save after a run without it
 committing nothing (or not the surfaces its models require), assets side by side settled out of the run's order (the
-shared tile set's size then the crate's, which has no mesh), --retake leaving a changed asset unchanged, a 429 not
+shared tile set's size then the crate's, which has no mesh), a glass's MDL transmission left out of its record or
+its look left opaque, --retake leaving a changed asset unchanged, a 429 not
 tried again or not counted, the shared back-off not held."""
 import hashlib
 import json
@@ -107,6 +108,28 @@ def Material "{name}"
 }}"""
 
 
+GLASS = """
+def Material "m_glass"
+{
+    token outputs:surface.connect = </RootNode/Materials/m_glass/preview.outputs:surface>
+
+    def Shader "preview"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        color3f inputs:diffuseColor = (0.06, 0.06, 0.06)
+        float inputs:opacity = 1
+        float inputs:roughness = 0.25
+        token outputs:surface
+    }
+
+    def Shader "glass"
+    {
+        uniform token info:id = "mdl:OmniGlass"
+        float inputs:cutout_opacity = 0.4
+        color3f inputs:glass_color = (0.06, 0.06, 0.06)
+        float inputs:glass_ior = 1.3
+    }
+}"""  # a glass whose UsdPreviewSurface says opaque; its MDL glass shader is see-through, its frosting the default
 PHYSICS_ONLY = '\ndef Material "physics_mat_plastic"\n{\n}'  # a physics material: empty, its API in another layer
 QUAD = """    def Mesh "seat" (
         prepend apiSchemas = ["MaterialBindingAPI"]
@@ -157,7 +180,8 @@ def crate(folder):
     tile = {"albedo": f"{TILE}_alb.png", "normal": f"{TILE}_nor.png", "orm": f"{TILE}_orm.png"}
     (usd / "payloads/materials.usda").write_text(layer([
         material("m_plastic_black", tile, mdl="../source_assets/look.mdl"),
-        material("m_logo", {"albedo": "crate_logo_alb.png"}), material("m_paint", constant="(0.8, 0.1, 0.1)")]))
+        material("m_logo", {"albedo": "crate_logo_alb.png"}), material("m_paint", constant="(0.8, 0.1, 0.1)"),
+        GLASS]))
     tiles(usd / "Textures")
     (usd / "Textures/crate_logo_alb.png").write_bytes(png((200, 30, 30), 4))
     (usd / "source_assets").mkdir()
@@ -297,7 +321,7 @@ def test_an_adopted_set_is_taken_in_whole_under_its_licence(repository, tmp_path
     models = sorted(address for address in report["new"] if address.startswith("model/"))
     assert models == ["model/demo_bowl_b01@1", "model/demo_crate_a01@1", "model/demo_tiles_d01@1"], report
     surfaces = [entries.load_address(root, address) for address in report["new"] if address.startswith("surface/")]
-    assert len(surfaces) == 4, report  # the shared tile set once, the crate's logo and paint, the panel's UDIM tiles
+    assert len(surfaces) == 5, report  # the shared tile set once, the crate's logo, paint and glass, the UDIM tiles
     model = entries.load_address(root, "model/demo_crate_a01@1")
     assert model["usd"]["root"] == "sm_crate_A01_01.usd" and model["usd"]["default_prim"] == "/RootNode"
     assert model["usd"]["path"] == "score_lib/model/demo_crate_a01/1/sm_crate_A01_01.usd"
@@ -324,6 +348,14 @@ def test_an_adopted_set_is_taken_in_whole_under_its_licence(repository, tmp_path
         record = json.loads(blob(blobs, by_material[name], "surface.json", tmp_path).read_text())
         assert (record["tile_metres"], record["tile_metres_reason"], record["normal_convention_assumed"]) == (
             None, reason, True)
+    glass = json.loads(blob(blobs, by_material["m_glass"], "surface.json", tmp_path).read_text())
+    assert glass["transmission"] == {"shader": "OmniGlass", "weight": 1.0, "colour": [0.06, 0.06, 0.06], "ior": 1.3,
+                                     "roughness": 0.0, "thin_walled": False, "presence": 1.0}, glass
+    assert "transmission" not in tiled and glass["constants"]["opacity"] == 1.0  # the source's own settings kept
+    see_through = Sdf.Layer.FindOrOpen(str(blob(blobs, by_material["m_glass"], "material.usda", tmp_path)))
+    preview = see_through.GetPrimAtPath(f"/{by_material['m_glass']['id']}/surface").attributes
+    assert (preview["inputs:opacity"].default, preview["inputs:roughness"].default) == (0.0, 0.0)
+    assert preview["inputs:ior"].default == pytest.approx(1.3)
     look = Sdf.Layer.FindOrOpen(str(blob(blobs, by_material["m_plastic_black"], "material.usda", tmp_path)))
     normal = look.GetPrimAtPath(f"/{by_material['m_plastic_black']['id']}/normal")
     assert normal.attributes["inputs:scale"].default[1] < 0 < normal.attributes["inputs:bias"].default[1]
