@@ -11,12 +11,14 @@ CATALOGUE_SCHEMA = "score-lib-catalogue/1"
 
 
 def row(record):
-    """One entry's row in its kind's index."""
+    """One entry's row in its kind's index; a withdrawn entry's row names its replacement when it has one, so one
+    index read gives every retired entry's replacement."""
     picture = record.get("picture") or {}
     picture_file = record["files"].get(picture.get("file") or "", {})
     return {"address": record["address"], "title": record["title"], "state": record["state"],
             "version": record["version"], "picture_sha256": picture_file.get("sha256"),
-            "tags": record.get("tags", {}), "digest": entries.digest(record), "score": record.get("score")}
+            "tags": record.get("tags", {}), "digest": entries.digest(record), "score": record.get("score"),
+            **({"replaced_by": record["replaced_by"]} if record.get("replaced_by") else {})}
 
 
 def kind_index(root, kind):

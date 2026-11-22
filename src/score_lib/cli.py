@@ -68,9 +68,9 @@ def command_lock(options):
 
 def command_withdraw(options):
     from score_lib import index, locks
-    locks.withdraw(options.root, options.address)
+    locks.withdraw(options.root, options.address, replaced_by=options.replaced_by)
     index.rebuild(options.root)
-    print(f"withdrawn {options.address}")
+    print(f"withdrawn {options.address}" + (f", replaced by {options.replaced_by}" if options.replaced_by else ""))
 
 
 def command_fetch(options):
@@ -306,6 +306,8 @@ def parser():
     lock.set_defaults(handle=command_lock)
     withdraw = commands.add_parser("withdraw", help="withdraw a locked entry or a draft")
     withdraw.add_argument("address")
+    withdraw.add_argument("--replaced-by", help="the entry that replaces it (<kind>/<id>@<version>); also on an entry "
+                                                "already withdrawn")
     withdraw.set_defaults(handle=command_withdraw)
     fetched = commands.add_parser("fetch", help="materialise entries into a folder")
     fetched.add_argument("address", nargs="+")

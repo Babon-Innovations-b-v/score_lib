@@ -103,14 +103,14 @@ def check_licence_file(root):
 
 
 def check_admission(root, records, sources):
-    """5. admission: no entry names a licence of its own; every source in its made_with may go out under MIT; an
-    algorithm carries no file of its outside requirements."""
+    """5. admission: every source in an entry's made_with may go out under MIT (or under its row's own licence for
+    the bytes it carries); an entry names a licence block exactly when it carries such a source's bytes; an algorithm
+    carries no file of its outside requirements."""
     failures = []
     for record in records:
-        if "licence" in record:
-            failures.append((record["address"], "names a licence of its own; the library is MIT as a whole"))
-        failures += [(record["address"], f"not MIT: {fault}")
-                     for fault in sources.check(record.get("provenance", {}).get("made_with"))]
+        made_with = record.get("provenance", {}).get("made_with")
+        failures += [(record["address"], fault) for fault in sources.licence_faults(made_with, record.get("licence"))]
+        failures += [(record["address"], f"not MIT: {fault}") for fault in sources.check(made_with)]
         if record["kind"] == "algorithm":
             failures += [(record["address"], f"not MIT: carries {name}, which belongs to an outside requirement")
                          for name in outside_files(root, record)]

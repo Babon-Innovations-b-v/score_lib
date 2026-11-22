@@ -1,9 +1,13 @@
-# Where an entry's content comes from, and whether it may go out under the library's one licence (MIT, LICENSE).
-# The rule (owner, 2026-10-18): everything in the library is MIT; what cannot be released under MIT is not let in.
+# Where an entry's content comes from, and under which licence it may go out. The rule: everything in the library is
+# MIT (LICENSE), except parts from a source whose row names another licence, each entry naming it and its credit
+# (owner, 2026-11-22, score #155); what cannot go out under MIT or under its row's own licence is not let in.
 #
-#   output  what the source makes may be released under MIT (our own work, or a model or tool whose terms give us
-#           its output)
-#   copy    the source's own bytes may be copied into an entry under MIT (only when its terms allow relicensing)
+#   output   what the source makes may be released under MIT (our own work, or a model or tool whose terms give us
+#            its output)
+#   copy     the source's own bytes may be copied into an entry: under MIT (only when its terms allow relicensing),
+#            or, when the row names a `licence`, under that licence with its credit
+#   licence  (optional) the licence the source's own bytes keep when copied in, not MIT; an entry carrying them names
+#            it in a top-level `licence` block {id, source, credit, url}, and an entry with no such block is MIT
 #
 # An entry names its sources in provenance.made_with; a source missing here, or one used in a way its row does not
 # allow, is refused. A source whose own bytes may not be copied in stays outside: an algorithm names it as an outside
@@ -198,3 +202,13 @@ output = true
 copy = true
 why = "public domain (no copyright restriction), so a DTM's heights may be copied in and released under MIT; credit NASA/JPL/University of Arizona"
 from = "uahirise.org/media/usage.php ('there is no copyright restriction', 'All of the images produced by HiRISE and accessible on this site are within the public domain', 'We do ask for a credit line where possible: Image: NASA/JPL/University of Arizona'; read 2026-11-16)"
+
+[[source]]
+id = "nvidia_simready"
+name = "NVIDIA SimReady Assets (Hugging Face dataset nvidia/simready-assets, revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8)"
+output = true
+copy = true
+licence = "CC-BY-4.0"
+match = ["NVIDIA SimReady Assets, CC BY 4.0"]
+why = "CC BY 4.0: the assets' own files may be copied in and shared, changed or not, only under that licence with NVIDIA Corporation credited, a link to the licence and changes marked (its Section 3(a)); they never go out under MIT. What our routes make from them (records, fitted recipes) is ours, under MIT"
+from = "huggingface.co/datasets/nvidia/simready-assets at 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: the dataset card's 'license: cc-by-4.0'; each asset's com.nvidia.simready.packaging.json ('license': 'CC-BY-4.0') and .metadata/LICENSE.txt (the Creative Commons Attribution 4.0 International Public License, in full), read 2026-11-22 from CT_injection_system_a01"

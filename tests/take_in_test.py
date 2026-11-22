@@ -219,3 +219,9 @@ def test_a_take_keeps_its_camera_folder_and_is_saved_to_origin(library, tmp_path
     fetch(library, blobs, ["take/cup_s1@1"], into, names=["cup-s1.svviews/input.png"])
     assert (into / "score_lib/take/cup_s1/1/cup-s1.svviews/input.png").read_bytes() == b"\x89PNG close-up"
     assert take_in.taken_in_saved(library, blobs, a_take(tmp_path / "pixal"))["saved"] is None
+
+
+@pytest.mark.parametrize("name, role", [("model.usd", "usd"), ("look.mdl", "code"), ("look.usda", "usd")])
+def test_an_adopted_sets_usd_and_mdl_files_have_roles(name, role):
+    """Break: take_in.ROLES without '.usd' or '.mdl' (an adopted set's own files are refused at take-in)."""
+    assert take_in.role_of(name, "model") == role

@@ -2,7 +2,9 @@
 
 score_lib is a free library of 3D parts for building virtual places: models, surfaces, kit pieces, characters,
 sounds, effects, lights and the code that makes them. [SCORE](https://github.com/Babon-Innovations-b-v/score) builds every
-place it makes from these parts. Everything here is MIT, so you may use it for anything.
+place it makes from these parts. Everything here is MIT, so you may use it for anything, except
+parts from a source that keeps its own licence: each such entry names that licence and the credit it asks for, and
+you keep both when you use it.
 
 The records (what each entry is, where it came from, the hash of every file) live in this repository. The bytes
 live in a public Hugging Face dataset.

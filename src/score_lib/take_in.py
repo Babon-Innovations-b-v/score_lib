@@ -47,7 +47,7 @@ from score_lib.blobs import file_sha256, put_all
 KINDS = ("sound", "model", "take", "kit", "character", "surface", "effect")
 # An effect entry's emitter file, laid by reference as the export's effect entries are (export/effect.py).
 EFFECT_USD = {"root": "effect.usda", "layer": "effects", "use": "reference"}
-ROLES = {".json": "record", ".npz": "motion", ".usdc": "usd", ".usda": "usd", ".ogg": "audio", ".wav": "audio", ".mp3": "audio", ".flac": "audio", ".gltf": "gltf", ".glb": "gltf",
+ROLES = {".json": "record", ".npz": "motion", ".usdc": "usd", ".usda": "usd", ".usd": "usd", ".mdl": "code", ".ogg": "audio", ".wav": "audio", ".mp3": "audio", ".flac": "audio", ".gltf": "gltf", ".glb": "gltf",
          ".bin": "gltf", ".png": "texture", ".jpg": "texture", ".jpeg": "texture", ".webp": "texture"}
 # A take's files: its models and its record, and in its `.svviews` folder the close-up and its camera.
 TAKE_ROLES = {".glb": "gltf", ".json": "record"}

@@ -40,3 +40,18 @@ def test_site_refuses_the_repository(world):
     world.export()
     with pytest.raises(OutsideRepo):
         build(world.root, LocalBlobStore(os.environ["SCORE_LIB_BLOBS_DIR"]), world.root / "site", drafts=True)
+
+
+def test_an_entry_page_names_its_licence_and_credit(world, tmp_path):
+    """Break: page.build.licence_fact returning MIT for every entry (a CC BY entry shown as MIT, its credit lost)."""
+    world.export()
+    path = entries.folder_of(world.root, "sound", "hum", 1) / "entry.json"
+    record = entries.load(path)
+    record["licence"] = {"id": "CC-BY-4.0", "source": "outside_set", "credit": "hum by its maker, unchanged",
+                         "url": "https://creativecommons.org/licenses/by/4.0/"}
+    path.write_text(entries.dumps(record))
+    build(world.root, LocalBlobStore(os.environ["SCORE_LIB_BLOBS_DIR"]), tmp_path / "site", drafts=True)
+    page = (tmp_path / "site/sound/hum/1.html").read_text()
+    assert "CC-BY-4.0, not MIT" in page and "hum by its maker, unchanged" in page
+    assert "https://creativecommons.org/licenses/by/4.0/" in page
+    assert "MIT, as the whole library" in (tmp_path / "site/kit/room/1.html").read_text()

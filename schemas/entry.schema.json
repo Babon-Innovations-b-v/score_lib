@@ -625,6 +625,40 @@
           ]
         }
       }
+    },
+    "licence": {
+      "description": "only on an entry that carries the bytes of a source whose sources.toml row names a licence other than MIT (admission checks the pairing); an entry without it is MIT",
+      "type": "object",
+      "required": [
+        "id",
+        "source",
+        "credit",
+        "url"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "credit": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "pattern": "^https://"
+        }
+      },
+      "additionalProperties": false
+    },
+    "replaced_by": {
+      "description": "the entry that replaces this withdrawn one; outside the digest",
+      "type": "string",
+      "pattern": "^(algorithm|surface|model|light|sound|effect|character|ground|kit|layer|place|concept|take)/[a-z0-9_]+(\\.[a-z0-9_]+)?@[1-9][0-9]*$"
     }
   },
   "allOf": [
@@ -658,11 +692,20 @@
           "locked"
         ]
       }
+    },
+    {
+      "if": {
+        "required": [
+          "replaced_by"
+        ]
+      },
+      "then": {
+        "properties": {
+          "state": {
+            "const": "withdrawn"
+          }
+        }
+      }
     }
-  ],
-  "not": {
-    "required": [
-      "licence"
-    ]
-  }
+  ]
 }

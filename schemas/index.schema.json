@@ -88,6 +88,10 @@
                 "maximum": 100
               }
             ]
+          },
+          "replaced_by": {
+            "type": "string",
+            "pattern": "^(algorithm|surface|model|light|sound|effect|character|ground|kit|layer|place|concept|take)/[a-z0-9_]+(\\.[a-z0-9_]+)?@[1-9][0-9]*$"
           }
         }
       }

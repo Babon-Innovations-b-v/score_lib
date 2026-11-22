@@ -2,9 +2,12 @@
 import json
 import os
 
+import pytest
+
 from score_lib import entry as entries
 from score_lib import index, locks
 from score_lib.blobs.local import LocalBlobStore
+from score_lib import schema
 from score_lib.admission import Sources
 from score_lib.verify import verify
 
@@ -168,3 +171,62 @@ def test_7_usd_path_does_not_resolve(world):
     index.rebuild(world.root)
     assert any("layer/base.room@1: usd: layer.usda names score_lib/model/crate_1/1/model.usdc" in each
                for each in messages(world))
+
+
+LICENSED = {"id": "outside_set", "name": "an outside set under CC BY 4.0", "output": True, "copy": True,
+            "licence": "CC-BY-4.0", "why": "CC BY 4.0: copied in with its credit, never under MIT"}
+BLOCK = {"id": "CC-BY-4.0", "source": "outside_set", "credit": "a part by its maker, CC BY 4.0",
+         "url": "https://creativecommons.org/licenses/by/4.0/"}
+CARRIED = [{"what": "its files", "by": "outside_set", "carried": True}]
+
+
+@pytest.mark.parametrize("made_with, licence, fault", [
+    (CARRIED, BLOCK, None),
+    ([{"what": "a recipe fitted to it", "by": "outside_set"}], None, None),
+    (CARRIED, None, "names no licence block"),
+    (CARRIED, dict(BLOCK, id="CC-BY-SA-4.0"), "names 'CC-BY-SA-4.0', but outside_set's row names CC-BY-4.0"),
+    (CARRIED, dict(BLOCK, source="score"), "names source 'score', but its bytes are outside_set's"),
+    ([{"what": "made by score", "by": "score"}], BLOCK, "names a licence of its own"),
+    (CARRIED + [{"what": "other files", "by": "other_set", "carried": True}], BLOCK, "carries the bytes of 2 sources"),
+])
+def test_5_a_licence_block_exactly_when_it_carries_a_licensed_source(made_with, licence, fault):
+    """Break: admission.licence_faults returning [] (a carried CC BY part goes out with no credit, or an MIT entry
+    claims a licence), or its source/id comparison dropped (a block naming another licence passes)."""
+    rows = Sources.load().rows + [LICENSED, dict(LICENSED, id="other_set")]
+    found = Sources(rows).licence_faults(made_with, licence)
+    assert (found == []) if fault is None else any(fault in each for each in found), found
+
+
+def test_5_the_schema_takes_a_licence_block(world):
+    """Break: entry.schema.json's licence property removed or `not: required licence` put back."""
+    world.export()
+    record = entries.load_address(world.root, "sound/hum@1")
+    assert schema.faults("entry", dict(record, licence=BLOCK)) == []
+    assert schema.faults("entry", dict(record, licence=dict(BLOCK, url="http://x"))) != []
+    assert schema.faults("entry", dict(record, replaced_by="kit/room@1")) != []  # only a withdrawn entry names one
+
+
+def test_a_withdrawn_entry_names_its_replacement(world):
+    """Break: locks.withdraw ignoring replaced_by, replacement_fault returning None (a missing, withdrawn or self
+    target), replaced_by left out of entry.UNSTAMPED (its locks row's digest no longer holds), or index.row dropping
+    it."""
+    world.export()
+    locks.lock_many(world.root, ["kit/room@1"] + entries.load_address(world.root, "kit/room@1")["requires"])
+    locks.withdraw(world.root, "sound/hum@1")
+    rows = locks.read(world.root)
+    locks.withdraw(world.root, "sound/hum@1", replaced_by="kit/room@1")
+    record = entries.load_address(world.root, "sound/hum@1")
+    assert record["state"] == "withdrawn" and record["replaced_by"] == "kit/room@1"
+    assert locks.read(world.root) == rows and rows[-1]["digest"] == entries.digest(record)
+    for target, refusal in (("kit/none@1", "not in the library"), ("kit/room@1", "a loop"),
+                            ("hum", "not an entry address")):
+        with pytest.raises(locks.LockRefused, match=refusal):
+            locks.withdraw(world.root, "kit/room@1", replaced_by=target)
+    with pytest.raises(locks.LockRefused, match="withdrawn itself"):  # kit/room -> sound/hum -> kit/room
+        locks.withdraw(world.root, "kit/room@1", replaced_by="sound/hum@1")
+    with pytest.raises(locks.LockRefused, match="only a locked entry or a draft"):
+        locks.withdraw(world.root, "sound/hum@1")
+    index.rebuild(world.root)
+    row = next(each for each in index.kind_index(world.root, "sound")["entries"] if each["address"] == "sound/hum@1")
+    assert row["replaced_by"] == "kit/room@1"
+    assert messages(world) == []

@@ -8,9 +8,11 @@ A library of reusable parts of SCORE worlds: records in git (`entries/`), bytes 
   store is configured by environment variables only (`config/blobstore.env.template`, placeholders only). The one
   named host is the Hugging Face Hub backend (`blobs/hub.py`, the public copy, score #141), which names its own
   library; its repository is a setting too, never in code.
-- Everything in the library is MIT (`LICENSE`); what cannot be released under MIT is not let in. A row in
-  `config/sources.toml` is added only from the source's real terms; a source whose own bytes cannot go out under MIT
-  stays outside (an algorithm's `outside` requirement), never copied in.
+- Everything in the library is MIT (`LICENSE`), except parts from a source whose row names another licence, each
+  entry naming it and its credit (its top-level `licence` block; owner, 2026-11-22, score #155); what cannot go out
+  under MIT or under its row's own licence is not let in. A row in `config/sources.toml` is added only from the
+  source's real terms; a source whose own bytes may not be copied in stays outside (an algorithm's `outside`
+  requirement), never copied in.
 - Real data only.
 - Bytes live in the blob store, never on a local disk (the owner's rule for every machine, 2026-11-19: "everything
   lives in the bucket instead of my local"). A checkout and its caches are throwaway: a local copy of an entry's bytes

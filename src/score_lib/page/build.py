@@ -1,5 +1,6 @@
 """The catalogue site: index.html (a section per kind, a card per entry: picture, title, version, state, places;
-the whole library is MIT) and <kind>/<id>/<version>.html per entry. Pictures and the sound players' takes are copied
+the library is MIT but for entries that name another licence) and <kind>/<id>/<version>.html per entry, which shows
+an entry's licence and credit. Pictures and the sound players' takes are copied
 from the blob store (or linked through SCORE_LIB_PUBLIC_URL)."""
 import html
 import json
@@ -99,8 +100,8 @@ def front(site, records):
         cards = "".join(card(site, record) for record in sorted(by_kind[kind], key=lambda each: each["title"].lower()))
         sections.append(f'<section id="{kind}"><h2>{NAMES[kind]}</h2><div class="grid">{cards}</div></section>')
     header = ("<header><h1>score_lib</h1><p>Reusable parts of every OpenUSD layer of a SCORE world: "
-              f"{len(records)} entries. The library and every entry are MIT; nothing that cannot go out under MIT is let "
-              "in.</p></header>")
+              f"{len(records)} entries. The library is MIT, except parts from a source whose own licence they keep; each such "
+              "entry's page names that licence and its credit.</p></header>")
     return header + f'<nav class="kinds">{nav}</nav>' + "".join(sections)
 
 
@@ -168,6 +169,14 @@ def algorithm_parts(site, record):
             f"{''.join(rows)}</table></div><h2>World 1 preset</h2><ul>{preset_list}</ul>")
 
 
+def licence_fact(record):
+    """The licence line of an entry's page: MIT, or the licence and credit its `licence` block names."""
+    licence = record.get("licence")
+    if not licence:
+        return "MIT, as the whole library"
+    return f"{licence['id']}, not MIT ({licence['url']}): {licence['credit']}"
+
+
 def entry_page(site, record):
     """<kind>/<id>/<version>.html's content (two folders below the site root)."""
     prefix = "../../"
@@ -175,7 +184,8 @@ def entry_page(site, record):
     picture = (f'<div class="big"><img src="{html.escape(link if link.startswith("http") else prefix + link)}" '
                f'alt=""></div>') if link else f'<p>{html.escape(record.get("picture_reason", "no picture"))}</p>'
     usd = record.get("usd") or {}
-    facts = [("address", record["address"]), ("state", record["state"]), ("licence", "MIT, as the whole library"),
+    facts = [("address", record["address"]), ("state", record["state"]), ("licence", licence_fact(record)),
+             ("replaced by", record.get("replaced_by")),
              ("seen in", ", ".join(record.get("seen_in", []))),
              ("use in USD", f"{usd.get('use')} @{usd.get('path')}@" if usd else "not a USD entry")]
     listed = "".join(f"<dt>{html.escape(name)}</dt><dd>{html.escape(str(value))}</dd>" for name, value in facts

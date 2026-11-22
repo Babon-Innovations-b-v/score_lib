@@ -56,12 +56,37 @@ def drafts(root, kind):
     return [record["address"] for record in entries.all_entries(root, kind) if record["state"] == "draft"]
 
 
-def withdraw(root, address, date=None):
+def replacement_fault(root, address, replaced_by):
+    """Why `replaced_by` cannot replace the entry at `address`, or None: it must be an entry address that exists, is
+    not withdrawn and is not the entry itself. A withdrawn entry is never a target, so no chain of replacements can
+    lead back to where it started."""
+    try:
+        target = entries.load_address(root, replaced_by)
+    except ValueError as malformed:
+        return str(malformed)
+    if target is None:
+        return f"its replacement {replaced_by} is not in the library"
+    if replaced_by == address:
+        return "names itself as its replacement, a loop"
+    if target["state"] == "withdrawn":
+        return f"its replacement {replaced_by} is withdrawn itself"
+    return None
+
+
+def withdraw(root, address, date=None, replaced_by=None):
     """A locked entry or a draft becomes withdrawn: kept with its files, hidden from the catalogue. A draft is frozen
-    as it stood, its locks row written now (a retired kind's drafts, which nothing will make again)."""
+    as it stood, its locks row written now (a retired kind's drafts, which nothing will make again). `replaced_by`
+    names the entry that replaces it (places take it at their next build); it may also be set on an entry already
+    withdrawn, whose locks row stays as it is (the field is outside the digest)."""
     record = entries.load_address(root, address)
-    if record is None or record["state"] not in ("locked", "draft"):
+    allowed = ("locked", "draft", "withdrawn") if replaced_by else ("locked", "draft")
+    if record is None or record["state"] not in allowed:
         raise LockRefused(f"{address}: only a locked entry or a draft can be withdrawn")
+    if replaced_by:
+        fault = replacement_fault(root, address, replaced_by)
+        if fault:
+            raise LockRefused(f"{address}: {fault}")
+        record["replaced_by"] = replaced_by
     if record["state"] == "draft":
         record["locked"] = date or today()
         append(root, {"address": address, "digest": entries.digest(record), "date": record["locked"]})

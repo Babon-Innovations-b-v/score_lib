@@ -1,6 +1,8 @@
-"""The admission rule: the library and every entry are MIT (LICENSE), so an entry is let in only when every source of
-its content may be released under MIT (`config/sources.toml`). An entry keeps a short provenance of what made it
-(provenance.made_with), never a licence of its own."""
+"""The admission rule: the library and every entry are MIT (LICENSE), except parts from a source whose row names
+another licence (owner, 2026-11-22, score #155). An entry is let in only when every source of its content may go out
+under MIT, or, for the bytes of a source whose row names a licence, under that licence (`config/sources.toml`). An
+entry keeps a short provenance of what made it (provenance.made_with); it names a licence of its own (a top-level
+`licence` block {id, source, credit, url}) exactly when it carries such a source's bytes."""
 import pathlib
 import tomllib
 
@@ -70,6 +72,37 @@ class Sources:
                 item["carried"] = True
             found.append(item)
         return sorted(found, key=lambda item: (item["by"], item["what"]))
+
+    def licensed(self, made_with):
+        """The rows of the sources whose own bytes an entry carries and whose row names a licence other than MIT."""
+        found = {}
+        for item in made_with or []:
+            row = self.lookup(item.get("by")) if item.get("carried") else None
+            if row and row.get("licence"):
+                found[row["id"]] = row
+        return [found[name] for name in sorted(found)]
+
+    def licence_faults(self, made_with, licence):
+        """Faults of an entry's top-level `licence` block against the sources it carries: the block is there exactly
+        when the entry carries the bytes of one source whose row names a licence, and it names that row and that
+        licence. An entry with no block and no such source is MIT."""
+        rows = self.licensed(made_with)
+        if len(rows) > 1:
+            return [f"carries the bytes of {len(rows)} sources under licences of their own "
+                    f"({', '.join(row['id'] for row in rows)}); an entry names one"]
+        if not rows:
+            return [] if licence is None else ["names a licence of its own, and carries no bytes of a source whose row "
+                                               "names one; the library is MIT as a whole"]
+        row = rows[0]
+        if not isinstance(licence, dict):
+            return [f"carries {row['name']}'s own bytes ({row['licence']}) and names no licence block with its credit"]
+        faults = []
+        if licence.get("source") != row["id"]:
+            faults.append(f"its licence block names source {licence.get('source')!r}, but its bytes are {row['id']}'s")
+        if licence.get("id") != row["licence"]:
+            faults.append(f"its licence block names {licence.get('id')!r}, but {row['id']}'s row names "
+                          f"{row['licence']}")
+        return faults
 
     def check(self, made_with):
         """Faults of a stored provenance.made_with against the rows of today (verify)."""
