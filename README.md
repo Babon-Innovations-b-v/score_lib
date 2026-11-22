@@ -31,12 +31,13 @@ Counts are entry folders, withdrawn versions included: a withdrawn entry keeps i
 
 | | | |
 |:-:|:-:|:-:|
-| ![model](docs/demo/model.jpg)<br>**model** `model/rover_1.old_station@1` | ![surface](docs/demo/surface.jpg)<br>**surface** `surface/ambientcg_metalplates006@1` on a sphere | ![kit](docs/demo/kit.jpg)<br>**kit** `kit/quaternius_scifi_door_frame_a@1`, finished with `surface/ambientcg_paintedmetal006@1` |
-| ![character](docs/demo/character.jpg)<br>**character** `character/woman_stair_trellis@1` | ![effect](docs/demo/effect.jpg)<br>**effect** `effect/kettle_1_steam_jet@1` | ![light](docs/demo/light.jpg)<br>**light** `light/lamp@1`: its ceiling lamp and 46° aimed spot on a kit piece |
-| ![algorithm](docs/demo/algorithm.jpg)<br>**algorithm** a ribbed glass dome made by `algorithm/dome_shell@1` | ![concept](docs/demo/concept.jpg)<br>**concept** `concept/greenhouse@1` | ![place](docs/demo/place.jpg)<br>**place** `place/greenhouse@1`, rendered |
+| ![model](docs/demo/model.jpg)<br>**model** `model/tracked_rover_1.garage@1` | ![surface](docs/demo/surface.jpg)<br>**surface** `surface/ambientcg_diamondplate008a@1` on a sphere | ![kit](docs/demo/kit.jpg)<br>**kit** a corner laid from `kit/quaternius_scifi_*` pieces, each part a library surface |
+| ![character](docs/demo/character.jpg)<br>**character** `character/person_stair_trellis@1` in its walking clip | ![effect](docs/demo/effect.jpg)<br>**effect** `effect/kettle_1_steam_jet@1` from `model/kettle_1.flat@2` | ![light](docs/demo/light.jpg)<br>**light** `light/lamp@1`: a ceiling lamp and its 46° aimed spot in that corner |
+| ![algorithm](docs/demo/algorithm.jpg)<br>**algorithm** a ribbed glass dome made by `algorithm/dome_shell@1` | ![concept](docs/demo/concept.jpg)<br>**concept** `concept/cockpit@2` | ![place](docs/demo/place.jpg)<br>**place** `place/cockpit@2`, built from that concept |
 | ![take](docs/demo/take.jpg)<br>**take** `take/garage_rover_chassis_b26f85f9@1` | ![sound](docs/demo/sound.jpg)<br>**sound** `sound/hatch_open@2` | |
 
-Every picture is made from the entry's own files: the 3D ones rendered in Blender, the sound drawn from its samples.
+Every picture is made from library entries only: the 3D ones rendered in Blender by score's
+`tools/library/demo/pictures.py`, the concept, place and sound from the pictures their entries hold.
 
 ## Get an entry
 
