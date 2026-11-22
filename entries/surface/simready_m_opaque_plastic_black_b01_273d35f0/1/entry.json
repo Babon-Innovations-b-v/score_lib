@@ -1,0 +1,78 @@
+{
+  "address": "surface/simready_m_opaque_plastic_black_b01_273d35f0@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 12011013,
+      "role": "texture",
+      "sha256": "74fab2d505c4856048435abc2b466292a96f866172aaa4cd1202dbeea53e8762"
+    },
+    "material.usda": {
+      "bytes": 2507,
+      "role": "usd",
+      "sha256": "8367a3a2b85f5c80fecd5021cba6ac111cdb288695cb12f068dcd5e5d4121324"
+    },
+    "normal.png": {
+      "bytes": 10249372,
+      "role": "texture",
+      "sha256": "c148f0ce7cf4db0dae561fdb305c822b131a9b606f2f4dccefcc0505e43c8e1c"
+    },
+    "orm.png": {
+      "bytes": 9798354,
+      "role": "texture",
+      "sha256": "0f3f8d8c7f3b877b2845b7758b37cc321a7183ebf8e7277955541e6ddc722347"
+    },
+    "surface.json": {
+      "bytes": 804,
+      "role": "record",
+      "sha256": "84d44bbe6fadd79892ccb181d72851db21b8c8a0559411519346a9f513b14958"
+    }
+  },
+  "id": "simready_m_opaque_plastic_black_b01_273d35f0",
+  "kind": "surface",
+  "licence": {
+    "credit": "bodyPart_headLight_left_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "bodyPart_headLight_left_a01/simready_usd/Textures/t_plastic_black_b01_tile_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "bodyPart_headLight_left_a01/simready_usd/Textures/t_plastic_black_b01_tile_nor.png",
+      "orm.png": "bodyPart_headLight_left_a01/simready_usd/Textures/t_plastic_black_b01_tile_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__plastic__black_b01 maps of bodyPart_headLight_left_a01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: bodyPart_headLight_left_a01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "273d35f0d066b0ab5c2cdcdc7d1739f01929d7a1789b31ccc41e7a1f07aeb929"
+    ]
+  },
+  "title": "m_opaque__plastic__black_b01",
+  "usd": null,
+  "version": 1
+}

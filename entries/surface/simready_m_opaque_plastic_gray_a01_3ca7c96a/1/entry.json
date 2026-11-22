@@ -1,0 +1,78 @@
+{
+  "address": "surface/simready_m_opaque_plastic_gray_a01_3ca7c96a@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 14171366,
+      "role": "texture",
+      "sha256": "5b3a3d8c590fc9b0aa7faf01efb9332a4ad66c6a64707bc9485535207bc5bc7e"
+    },
+    "material.usda": {
+      "bytes": 2495,
+      "role": "usd",
+      "sha256": "65612884d696194c1e9aaee8b2b196b9b115724687a07ea672dbdb2b25c78208"
+    },
+    "normal.png": {
+      "bytes": 23016032,
+      "role": "texture",
+      "sha256": "03800c6bea09b58c8f9eeff66a2c161fc0a6f6d97e9c9b9d2ab02d5674af4f78"
+    },
+    "orm.png": {
+      "bytes": 12767191,
+      "role": "texture",
+      "sha256": "6998235c1ea1f1764df5c3b22a560b7ad6aaa19c4af1ddf165c7514beaf29ac3"
+    },
+    "surface.json": {
+      "bytes": 803,
+      "role": "record",
+      "sha256": "d02fcce391752209f8c513f23ec6ad05aed1463e59d6362a6240e967a5ae664c"
+    }
+  },
+  "id": "simready_m_opaque_plastic_gray_a01_3ca7c96a",
+  "kind": "surface",
+  "licence": {
+    "credit": "IV_pole_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "IV_pole_a01/simready_usd/Textures/t_plastic_gray_a01_tile_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "IV_pole_a01/simready_usd/Textures/t_plastic_gray_a01_tile_nor.png",
+      "orm.png": "IV_pole_a01/simready_usd/Textures/t_plastic_gray_a01_tile_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__plastic__gray_a01 maps of IV_pole_a01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: IV_pole_a01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "3ca7c96af60a8ccd64d9a3cba938006a5ea83eca3c805cab8f9fa68287e148e3"
+    ]
+  },
+  "title": "m_opaque__plastic__gray_a01",
+  "usd": null,
+  "version": 1
+}
