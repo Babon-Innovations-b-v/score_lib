@@ -67,7 +67,7 @@ QUALIFIERS = {"small", "large", "big", "medium", "tall", "short", "long", "wide"
               "basic", "standard", "generic", "heavy", "portable", "mobile", "empty", "full"}
 # The setting an object is made for, as the words of its name or of our place; an adopted object made for a setting
 # replaces only an entry of that setting (a hospital bed is not the bed of a flat).
-SETTINGS = {"medical": {"hospital", "medical", "clinic", "surgical", "iv", "patient", "exam"},
+SETTINGS = {"medical": {"hospital", "medical", "clinic", "surgical", "surgery", "operating", "iv", "patient", "exam"},
             "industrial": {"warehouse", "industrial", "factory", "workshop", "garage", "engineroom", "hangar",
                            "storage", "dock"},
             "domestic": {"domestic", "home", "house", "kitchen", "bedroom", "bathroom", "flat", "apartment",
@@ -97,6 +97,9 @@ CLASS_MEMBERS = {"drinking vessel": {"mug", "cup", "tumbler", "beaker"}}
 # An adopted model whose name says it is a part of a whole (a car body's door, an engine's valve lifter, a cooling
 # system's radiator) is not the whole object ours is.
 PART_WORDS = {"part", "parts", "component", "components", "system"}
+# Words marking an adopted model as a piece of a building (a structure's ceiling, an environment's floor): never fitted
+# to our place as our own walls, ceilings and entrances are.
+BUILDING_WORDS = {"structure", "environment"}
 # Words naming several of a thing as one (a bowl stack, a utensil set): a group is never one of them, nor one a group.
 GROUP_WORDS = {"stack", "stacked", "pile", "set", "group", "bundle", "heap"}
 # Plural words naming one thing (a corner shelves is one shelving unit).
@@ -192,10 +195,15 @@ def name_object(title):
     return found
 
 
+def class_items(values):
+    """The words of each item a Wikidata class names, one per item of a list class (IV Poles & Carts: iv poles,
+    carts)."""
+    return [words_of(item) for value in values for item in re.split(r"\s*(?:&|,|/|\band\b)\s*", value)]
+
+
 def class_objects(values):
     """The objects a Wikidata class names, one per item of a list class (IV Poles & Carts: pole, cart)."""
-    items = [item for value in values for item in re.split(r"\s*(?:&|,|/|\band\b)\s*", value)]
-    return {found for found in (object_of(words_of(item)) for item in items) if found}
+    return {found for found in (object_of(words) for words in class_items(values)) if found}
 
 
 def own_values(tags, key):
@@ -244,6 +252,7 @@ class Candidate:
         described = [word for each in own_values(tags, "description") for word in words_of(each)]
         self.known = set(self.words) | {word for each in classes for word in each} | set(described)
         self.classes = class_objects(own_values(tags, "wikidata_class"))
+        self.class_words = class_items(own_values(tags, "wikidata_class"))
         self.named = name_object(record["title"])
         self.settings = settings_of(self.words)
         self.colours = set(self.words) & COLOURS
@@ -270,7 +279,7 @@ def kind_of(ours, words, candidate):
     other words ours too or our object a compound of its own, or a member of a broader class: a bare door is not a
     vehicle door), "its name" when there is no class; None when it is not the same thing."""
     if ours in candidate.classes:
-        return "its Wikidata class"
+        return "its Wikidata class" if class_fits(ours, words, candidate) else None
     if ours != candidate.named:
         return None
     if not candidate.classes:
@@ -282,6 +291,14 @@ def kind_of(ours, words, candidate):
         if head == each.split()[-1] and (" " in ours or set(each.split()[:-1]) <= set(words)):
             return "its name, within its Wikidata class"
     return None
+
+
+def class_fits(ours, words, candidate):
+    """Whether a Wikidata class naming our object says nothing more than our id: every word of it (besides qualifiers
+    and colours) ours too (a tire-pressure gauge is not our pressure gauge, a storage bin not our waste bin)."""
+    ours_words = {singular(word) for word in words}
+    return any(object_of(each) == ours and {singular(word) for word in each} - QUALIFIERS - COLOURS <= ours_words
+               for each in candidate.class_words)
 
 
 def overlap(ours, candidate):
@@ -301,6 +318,8 @@ def finishes_agree(ours, theirs):
 def whole_refusal(record, words, ours, candidate):
     """Why the adopted model is not ours whole: a part of a whole, a container holding its content, a group against
     one; None when it is one whole object as ours is."""
+    if BUILDING_WORDS & set(candidate.words):
+        return f"a piece of a building (its name: {candidate.title}), not fitted to our place as ours is"
     if PART_WORDS & set(candidate.words) and not PART_WORDS & set(words):
         return f"a part of a whole (its name: {candidate.title}), not a whole {ours}"
     held = CONTENT_WORDS & set(candidate.words)
