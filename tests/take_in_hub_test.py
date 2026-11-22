@@ -458,3 +458,19 @@ def test_a_reader_waits_for_the_window_and_after_a_refusal(tmp_path):
         take_in_hub.HubSource(RefusingApi([(404, None)]), REPO, REVISION, pacer(None)).download("a/c.bin",
                                                                                            tmp_path / "c.bin")
 
+
+def test_a_save_that_does_not_reach_origin_stops_the_run(tmp_path, monkeypatch):
+    """Red when: a batch whose save stayed local (its push refused) is only noted in the report and the run goes on
+    (2026-11-22: 8 of 19 batch commits never reached origin while the run reported them saved), or the stop does not
+    name the commit left behind."""
+    from score_lib import handover
+    blocks = iter([{"committed": "a" * 40, "pushed": True, "why": ""},
+                   {"committed": "b" * 40, "pushed": False, "why": "! [rejected] HEAD -> main (fetch first)"}])
+    monkeypatch.setattr(handover, "saved", lambda root, message, paths, target: next(blocks))
+    monkeypatch.setattr(take_in_hub.index, "rebuild", lambda root: None)
+    report = {}
+    save = take_in_hub.saver(tmp_path, REPO, REVISION, report)
+    save(["model/one@1"])
+    with pytest.raises(handover.HandoverError, match="b" * 40 + r".*rejected"):
+        save(["model/two@1"])
+    assert [block["pushed"] for block in report["saved"]] == [True, False]

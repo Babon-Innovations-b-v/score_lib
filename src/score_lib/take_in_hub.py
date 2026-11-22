@@ -1041,7 +1041,8 @@ def taken_side_by_side(run, assets, jobs):
 
 def saver(root, repo, revision, report):
     """A function saving one put's entries and the index under the handover's lock (committed and pushed), each
-    save's block appended to the report's `saved` list."""
+    save's block appended to the report's `saved` list; a save that does not reach origin stops the run (HandoverError
+    naming its commit), so no batch stays local while the run goes on (2026-11-22: 8 of 19 did)."""
     report.setdefault("saved", [])
 
     def save(written):
@@ -1050,7 +1051,11 @@ def saver(root, repo, revision, report):
             index.rebuild(root)
             folders = sorted({"entries/{0}/{1}".format(*entries.parse_address(address)[:2]) for address in written})
             message = f"take-in hub: {len(written)} entries from {repo} at {revision[:12]}"
-            report["saved"].append(handover.saved(root, message, (*folders, "index"), LIBRARY_BRANCH))
+            block = handover.saved(root, message, (*folders, "index"), LIBRARY_BRANCH)
+            report["saved"].append(block)
+            if not block["pushed"]:
+                raise handover.HandoverError(f"take-in hub: the save {block['committed'] or '(no commit)'} did not "
+                                             f"reach origin {LIBRARY_BRANCH}: {block['why']}; the run stops")
     return save
 
 

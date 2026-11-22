@@ -13,7 +13,7 @@ from conftest import World, git
 
 from score_lib import entry as entries
 from score_lib import handover as handing
-from score_lib import locks, schema
+from score_lib import index, locks, schema
 from score_lib.cli import main
 from score_lib.held import held
 
@@ -149,6 +149,61 @@ def test_a_handover_after_another_writers_push_lands_on_top_of_it(world, tmp_pat
     assert report["saved"]["committed"] == git(origin, "rev-parse", "main") == git(world.root, "rev-parse", "HEAD")
     assert (world.root / "entries" / "elsewhere.txt").is_file()
 
+
+
+def other_writer(origin, folder):
+    """A second clone of the library's origin, as another session's checkout."""
+    subprocess.run(["git", "clone", "-q", "-b", "main", str(origin), str(folder)], check=True)
+    git(folder, "config", "user.name", "test")
+    git(folder, "config", "user.email", "test@example.org")
+    return folder
+
+
+def written_and_committed(root, name, text, message):
+    """A file under entries/ written, the index rebuilt from it, both committed (as a take-in batch's save)."""
+    (root / "entries").mkdir(exist_ok=True)
+    (root / "entries" / name).write_text(text)
+    index.rebuild(root)
+    git(root, "add", "entries", "index")
+    git(root, "commit", "-q", "-m", message)
+
+
+@pytest.mark.parametrize("theirs, lands", [
+    ("elsewhere.txt", True),  # only the generated index conflicts: rebuilt in the rebase, pushed
+    ("mine.txt", False),  # an entry file both wrote: the rebase aborted, nothing pushed, the branch as it was
+])
+def test_a_save_after_origin_moved_rebuilds_the_index_and_pushes_or_says_why(world, tmp_path, theirs, lands):
+    """Break: a rebase stopping on index/catalogue.json (generated; both sides rewrite it) aborted, so the save stayed
+    local while the run went on (2026-11-22: 8 of 19 take-in batches); a conflict in a real file pushed or left a
+    rebase in progress; a push refused because another writer pushed between the rebase and the push not caught up
+    and tried again."""
+    origin = with_remote(world)
+    index.rebuild(world.root)
+    git(world.root, "add", "index")
+    git(world.root, "commit", "-q", "--allow-empty", "-m", "index")
+    git(world.root, "push", "-q", "origin", "main")
+    other = other_writer(origin, world.base / "other")
+    written_and_committed(other, theirs, "another writer's entry\n", "take-in: elsewhere")
+    git(other, "push", "-q", "origin", "main")
+    written_and_committed(world.root, "mine.txt", "my entry\n", "take-in: mine")
+    before = git(world.root, "rev-parse", "HEAD")
+    # a writer pushing between this save's rebase and its push: its first push is refused as no fast-forward
+    hook = world.root / ".git/hooks/pre-push"
+    hook.write_text(f"#!/bin/sh\n[ -e {tmp_path}/raced ] && exit 0\ntouch {tmp_path}/raced\n"
+                    f"git -C {other} pull -q --rebase origin main && git -C {other} commit -q --allow-empty -m race "
+                    f"&& git -C {other} push -q origin main\n")
+    hook.chmod(0o755)
+    went, why = handing.pushed(world.root, "main")
+    assert not (world.root / ".git/rebase-merge").exists() and not (world.root / ".git/rebase-apply").exists()
+    if not lands:
+        assert not went and "take-in: mine" in why and git(world.root, "rev-parse", "HEAD") == before, why
+        return
+    assert went, why
+    assert git(origin, "rev-parse", "main") == git(world.root, "rev-parse", "HEAD")
+    assert git(origin, "log", "-3", "--format=%s", "main").splitlines() == ["take-in: mine", "race",
+                                                                            "take-in: elsewhere"]
+    assert index.stale(world.root) == [] and (world.root / "entries/elsewhere.txt").is_file()
+    assert git(world.root, "status", "--porcelain", "--", "entries", "index") == ""
 
 def test_two_handovers_side_by_side_both_land(world, tmp_path):
     with_remote(world)

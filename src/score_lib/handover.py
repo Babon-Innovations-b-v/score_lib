@@ -26,7 +26,7 @@ import time
 import tomllib
 
 from score_lib import entry as entries
-from score_lib import held
+from score_lib import held, index
 from score_lib.admission import Sources
 from score_lib.export import run
 from score_lib.source.repo import Repo
@@ -41,6 +41,7 @@ COPY_ROLE = "web3d"
 LOCK = ".handover.lock"
 LOCK_WAIT = 1800.0
 SAVED_PATHS = ("entries", "index", "worlds")
+PUSH_TRIES = 3  # times a save catches up with origin and pushes, while other writers push between the two
 # The hooks the copies and quality work fills in: each a function (root, blobs, record) -> its block, or None.
 COPY_HOOK = ("score_lib.copies", "web_copy")
 QUALITY_HOOK = ("score_lib.quality", "score_of")
@@ -280,8 +281,10 @@ def current_branch(root):
 def caught_up(root, target=None):
     """(caught up, why): the current branch (or HEAD onto origin's `target` branch, from a worktree on any branch)
     rebased onto origin's, so a push after other writers' commits (take-in, another handover's checkout) is a
-    fast-forward; a rebase that stops is aborted, the branch left as it was. A branch origin does not hold yet has
-    nothing to rebase onto, so its first push goes as it is."""
+    fast-forward. A step stopping only on generated index files (index/catalogue.json and the kind indexes, which both
+    sides rewrite) takes the index rebuilt from its merged entries and goes on (2026-11-22: 8 of 19 take-in saves
+    stayed local on a catalogue conflict); a rebase that stops on anything else is aborted, the branch left as it was.
+    A branch origin does not hold yet has nothing to rebase onto, so its first push goes as it is."""
     branch, why = (target, "") if target else current_branch(root)
     if branch is None:
         return False, why
@@ -289,22 +292,39 @@ def caught_up(root, target=None):
     if remote.returncode == 2:
         return True, ""
     done = git(root, "pull", "-q", "--rebase", "origin", branch)
+    while done.returncode != 0 and only_index_conflicts(root):
+        index.rebuild(root)
+        git(root, "add", "--", *index.built(root))
+        done = git(root, "-c", "core.editor=true", "rebase", "--continue")
     if done.returncode != 0:
         git(root, "rebase", "--abort")
         return False, last_line(done)
     return True, ""
 
 
+def only_index_conflicts(root):
+    """True when a stopped rebase's conflicted paths are all generated index files (locks.json is no generated file)."""
+    done = git(root, "diff", "--name-only", "--diff-filter=U")
+    conflicted = set(done.stdout.split())
+    return done.returncode == 0 and bool(conflicted) and conflicted <= set(index.built(root))
+
+
 def pushed(root, target=None):
     """(pushed, why): rebase the current branch onto origin's, then push it to origin (to origin's `target` branch,
-    HEAD:<target>, when one is given)."""
+    HEAD:<target>, when one is given); a push refused because origin moved in between caught up and tried again, up to
+    PUSH_TRIES."""
     if git(root, "remote", "get-url", "origin").returncode != 0:
         return False, "the library has no remote named origin"
-    rebased, why = caught_up(root, target)
-    if not rebased:
-        return False, why
-    done = git(root, "push", "-q", "origin", f"HEAD:{target}" if target else "HEAD")
-    return (True, "") if done.returncode == 0 else (False, last_line(done))
+    why = ""
+    for _ in range(PUSH_TRIES):
+        rebased, why = caught_up(root, target)
+        if not rebased:
+            return False, why
+        done = git(root, "push", "-q", "origin", f"HEAD:{target}" if target else "HEAD")
+        if done.returncode == 0:
+            return True, ""
+        why = last_line(done)
+    return False, why
 
 
 def saved(root, message, paths=SAVED_PATHS, target=None):
