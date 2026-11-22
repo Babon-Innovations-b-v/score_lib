@@ -1,7 +1,8 @@
 """score-lib adopted match: each older model and surface is paired with the adopted entry of the same kind of object or
 finish, or refused naming the clash; --apply withdraws the accepted ones naming their replacement. Red when a pair of
-another kind, setting or colour is accepted, a synonym or Wikidata class is missed, an adopted or already replaced
-entry is proposed, or --apply leaves an accepted entry standing or without its replacement."""
+another kind, setting or colour is accepted (an object sharing only a word, a compound naming another thing, a finish
+of another state: the rehearsal's lamps for a head light), a synonym or Wikidata class is missed, an adopted or already
+replaced entry is proposed, or --apply leaves an accepted entry standing or without its replacement."""
 import json
 
 import pytest
@@ -35,6 +36,16 @@ def library(tmp_path):
         put(root, "model", "demo_" + name.lower(), name, set_entry=True)
     put(root, "model", "demo_safety_fe_a01", "safety_FE_a01", {"wikidata_class": ["fire extinguisher"]},
         set_entry=True)
+    # The rehearsal's adopted models (score #155): their Wikidata class decides, a stray tag value is not a class.
+    put(root, "model", "demo_head_light", "bodyPart_headLight_left_a01",
+        {"wikidata_class": ["headlamp", "wikidata_class"], "description": ["lamp mounted in the front of a vehicle"]},
+        set_entry=True)
+    put(root, "model", "demo_electric_panel", "warehouse_EF_electricPanel_a01",
+        {"wikidata_class": ["control panel"], "description": ["control panel"]}, set_entry=True)
+    put(root, "model", "demo_mug", "dishware_mug_c01", {"wikidata_class": ["drinking vessel"]}, set_entry=True)
+    for title in ("m_opaque__metal__chrome_a01", "m_trans__glass__clean_a01", "opaque__plastic__emissive_red_led_a",
+                  "m_opaque__plastic__black_a01", "m_opaque__metal__paintedRough_white_a01"):
+        put(root, "surface", "demo_" + title.lower().strip("_"), title, set_entry=True)
     put(root, "model", "demo_old_wrench", "handTool_wrench_old", set_entry=True, state="withdrawn")
     put(root, "surface", "demo_aluminum_anodized_red", "Aluminum_Anodized_Red", set_entry=True)
     put(root, "surface", "demo_paint_metal_yellow", "Paint_Metal_Yellow", set_entry=True)
@@ -56,6 +67,23 @@ ROWS = [  # (our kind, id, tags, expected status, expected new id or None, a wor
     ("surface", "painted_metal", {"family": ["painted"]}, "refused", "demo_paint_metal_yellow", "palette"),
     ("surface", "rubber_grey", {"family": ["rubber"]}, "refused", "demo_rubber_gray_logo", "painted for one model"),
     ("surface", "label_waste", {"family": ["print"]}, "no match", None, "names"),
+    # The rehearsal's wrong pairs (score #155): a shared word is not the same thing, a qualifier makes another one.
+    ("model", "bedside_lamp_1", {}, "refused", "demo_head_light", "it is headlight)"),
+    ("model", "kenney_road_traffic_light", {}, "refused", "demo_head_light", "traffic light"),
+    ("model", "bay_panel_1", {}, "refused", "demo_electric_panel", "bay panel"),
+    ("model", "ceiling_light_panel_1.storage", {}, "refused", "demo_electric_panel", "light panel"),
+    ("model", "electrical_panel_1.workshop", {}, "accepted", "demo_electric_panel", "within its Wikidata class"),
+    ("model", "mug_1.quarters", {}, "accepted", "demo_mug", "within its Wikidata class"),
+    ("surface", "rusted_metal", {}, "refused", "demo_paint_metal_yellow", "not the same finish (metal"),
+    ("surface", "chrome_rusted", {}, "refused", "demo_m_opaque__metal__chrome_a01", "rusted"),
+    ("surface", "glass_tinted", {"family": ["glass"]}, "refused", "demo_m_trans__glass__clean_a01", "tinted"),
+    ("surface", "glass_fibre_panel", {"family": ["composite"]}, "no match", None, "names"),
+    ("surface", "clear_glass", {"family": ["glass"]}, "accepted", "demo_m_trans__glass__clean_a01", "glass"),
+    ("surface", "plastic_red", {"family": ["plastic"]}, "refused", "demo_opaque__plastic__emissive_red_led_a",
+     "emissive"),
+    ("surface", "leather_black", {"family": ["plastic"]}, "refused", "demo_m_opaque__plastic__black_a01", "leather"),
+    ("surface", "hull_white_gloss", {"family": ["painted"]}, "refused", "demo_m_opaque__metal__paintedrough_white_a01",
+     "gloss"),
 ]
 
 
@@ -75,7 +103,7 @@ def test_older_entries_pair_with_the_same_kind_and_apply_withdraws_them_naming_i
               "--apply"])
     report = json.loads(proposals.read_text())
     accepted = {row["old"]: row["new"] for row in report["proposals"] if row["status"] == "accepted"}
-    assert sorted(report["withdrawn"]) == sorted(accepted) and len(accepted) == 4
+    assert sorted(report["withdrawn"]) == sorted(accepted) and len(accepted) == 7
     for old, new in accepted.items():
         record = entries.load_address(library, old)
         assert (record["state"], record["replaced_by"]) == ("withdrawn", new)

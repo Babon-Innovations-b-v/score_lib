@@ -1,11 +1,13 @@
 """`score-lib adopted match`: an adopted set's overlap with our older entries (score #155, plan step 20). For each of
 our model and surface entries the set's entries do not hold, the adopted entry of the same kind of object or finish it
-overlaps is proposed, from our id's core noun and a synonym table against the adopted entry's object name, its
-Wikidata class and its description (models), or against its material's name (surfaces). A pair is accepted only when
-the kind is the same and nothing clashes: a setting the adopted object is made for and ours is not in, a colour, a
-finish painted for one model. The proposals file holds every older entry's row (accepted, refused or no match, with
-its score and reason); `--apply` withdraws each accepted one naming its replacement (`replaced_by`), so places take
-the replacement at their next build.
+overlaps is proposed. A model's kind is its Wikidata class first, its name's object only within that class (a mug
+among drinking vessels); ours pairs only when our id's object (its core noun with the word compounding it, synonyms
+mapped) is that same thing, never for a shared word (a bedside lamp is not a head light, a bay panel not an electric
+panel). A surface pairs only on the same finish words and the same finish states (rusted, tinted, emissive, gloss).
+A pair is accepted only when the kind is the same and nothing clashes: a setting the adopted object is made for and
+ours is not in, a colour, a finish painted for one model. The proposals file holds every older entry's row (accepted,
+refused or no match, with its score and reason); `--apply` withdraws each accepted one naming its replacement
+(`replaced_by`), so places take the replacement at their next build.
 
 An adopted set is a `config/sources.toml` row with a `take_in` table; its entries are those whose licence block or
 provenance names that row."""
@@ -27,7 +29,9 @@ FAR_PREFIX = "far_"
 PHRASES = {("trash", "can"): "bin", ("waste", "bin"): "bin", ("garbage", "can"): "bin", ("fire", "extinguisher"):
            "extinguisher", ("traffic", "cone"): "cone", ("hand", "truck"): "trolley", ("fork", "lift"): "forklift",
            ("filing", "cabinet"): "cabinet", ("tool", "box"): "toolbox", ("card", "board"): "cardboard",
-           ("stainless", "steel"): "steel", ("sheet", "metal"): "metal", ("power", "strip"): "socket"}
+           ("stainless", "steel"): "steel", ("sheet", "metal"): "metal", ("power", "strip"): "socket",
+           ("head", "light"): "headlight", ("head", "lamp"): "headlight", ("glass", "fibre"): "fibreglass",
+           ("fibre", "glass"): "fibreglass", ("fiber", "glass"): "fibreglass"}
 SYNONYMS = {"spanner": "wrench", "sofa": "couch", "settee": "couch", "cupboard": "cabinet", "dustbin": "bin",
             "trashcan": "bin", "garbage": "bin", "trash": "bin", "lorry": "truck", "aluminum": "aluminium",
             "alu": "aluminium", "colour": "color", "grey": "gray", "cloth": "fabric", "textile": "fabric",
@@ -39,8 +43,9 @@ SYNONYMS = {"spanner": "wrench", "sofa": "couch", "settee": "couch", "cupboard":
             "screws": "screw", "bolts": "bolt", "nuts": "nut", "rock": "stone", "boulder": "stone", "timber": "wood",
             "wooden": "wood", "plank": "board", "planks": "board", "boards": "board", "metallic": "metal",
             "plastics": "plastic", "rubbers": "rubber", "tiles": "tile", "tiled": "tile", "painted": "paint",
-            "cement": "concrete", "flooring": "floor"}
-# Words that qualify an object or a finish rather than name it: a core noun is the last word that is none of these.
+            "cement": "concrete", "flooring": "floor",
+            "headlamp": "headlight", "headlights": "headlight", "electrical": "electric"}
+# Words that qualify an object or a finish rather than name it: an object is the last word that is none of these.
 COLOURS = {"black", "white", "gray", "red", "green", "blue", "yellow", "orange", "purple", "pink", "brown", "beige",
            "cream", "gold", "silver", "charcoal", "khaki", "teal", "amber", "olive", "navy", "tan", "ivory", "natural"}
 QUALIFIERS = {"small", "large", "big", "medium", "tall", "short", "long", "wide", "narrow", "old", "new", "open",
@@ -66,6 +71,18 @@ FINISHES = {"steel", "iron", "aluminium", "copper", "brass", "bronze", "chrome",
             "tile", "stone", "marble", "granite", "gravel", "sand", "soil", "paper", "cardboard", "foam", "carpet",
             "paint", "vinyl", "cork", "felt", "cotton", "wool", "nylon", "polyester", "acrylic", "asphalt",
             "terrazzo", "enamel", "galvanized", "anodized", "carbon", "fibreglass", "composite", "bakelite"}
+# A finish's state that makes it another finish: ours pairs only with the same states (a tinted glass is not a clean
+# one, a red plastic not a red LED's glow). The unmarked state (new, clean, clear) is none.
+FINISH_STATES = {"rusted": "rusted", "rusty": "rusted", "rust": "rusted", "perforated": "perforated", "cast": "cast",
+                 "frosted": "frosted", "smoked": "smoked", "tinted": "tinted", "scorched": "scorched",
+                 "burnt": "scorched", "old": "old", "worn": "worn", "aged": "aged", "dirty": "dirty",
+                 "weathered": "weathered", "emissive": "emissive", "led": "emissive", "glowing": "emissive",
+                 "gloss": "gloss", "glossy": "gloss", "matte": "matte", "rough": "rough", "brushed": "brushed",
+                 "polished": "polished", "bare": "bare"}
+# Metals a finish names more exactly than "metal"; paint names a metal's finish too (paint on metal is paint).
+METALS = {"steel", "iron", "aluminium", "copper", "brass", "bronze", "chrome", "zinc", "tin"}
+# A Wikidata class broader than the objects it holds: an adopted model's name narrows it (a mug, of drinking vessels).
+CLASS_MEMBERS = {"drinking vessel": {"mug", "cup", "tumbler", "beaker"}}
 VARIANT = re.compile(r"^([a-z]?\d+[a-z]?|\d+p\d+|v\d+)$")
 CAMEL = re.compile(r"(?<=[a-z0-9])(?=[A-Z])|(?<=[A-Z])(?=[A-Z][a-z])")
 
@@ -87,12 +104,43 @@ def words_of(text):
     return [SYNONYMS.get(word, word) for word in joined]
 
 
-def core_noun(words):
-    """The last word that names the thing rather than its colour, size, place, setting or finish; None when all do."""
-    for word in reversed(words):
-        if word not in COLOURS and word not in QUALIFIERS and word not in SETTING_WORDS:
-            return word
+def singular(word):
+    """A plural's singular for comparing objects (poles, carts); a word ending in ss, us or is is kept."""
+    return word[:-1] if len(word) > 3 and word.endswith("s") and not word.endswith(("ss", "us", "is")) else word
+
+
+def object_of(words):
+    """The thing the words name: their core noun with the word compounding it before it (bedside lamp, electric panel),
+    singular; None when no word names a thing."""
+    for position in range(len(words) - 1, -1, -1):
+        word = words[position]
+        if word in COLOURS or word in QUALIFIERS or word in SETTING_WORDS:
+            continue
+        before = words[position - 1] if position else None
+        if before and before not in COLOURS | QUALIFIERS | SETTING_WORDS | FINISHES:
+            return f"{singular(before)} {singular(word)}"
+        return singular(word)
     return None
+
+
+def name_object(title):
+    """An adopted model's object as its name gives it: the object of the last name part that names one (its parts are
+    underscore-separated, so bodyPart_headLight_left is a headlight)."""
+    found = None
+    for part in re.split(r"_+", title or ""):
+        found = object_of(words_of(part)) or found
+    return found
+
+
+def class_objects(values):
+    """The objects a Wikidata class names, one per item of a list class (IV Poles & Carts: pole, cart)."""
+    items = [item for value in values for item in re.split(r"\s*(?:&|,|/|\band\b)\s*", value)]
+    return {found for found in (object_of(words_of(item)) for item in items) if found}
+
+
+def own_values(tags, key):
+    """A tag's values without its own name (a label's type taken as a label once wrote wikidata_class into it)."""
+    return [value for value in tags.get(key, []) if value != key]
 
 
 def settings_of(words):
@@ -123,21 +171,50 @@ def is_adopted(record, source_ids):
 
 
 class Candidate:
-    """One adopted entry as the matcher reads it: its address, its words, its kinds and its settings."""
+    """One adopted entry as the matcher reads it: its address, its words, its classes, its name's object
+    and its settings."""
 
     def __init__(self, record):
         self.address = record["address"]
         tags = record.get("tags", {})
         self.words = words_of(record["title"])
-        classes = [words_of(each) for each in tags.get("wikidata_class", [])]
-        described = [word for each in tags.get("description", []) for word in words_of(each)]
+        classes = [words_of(each) for each in own_values(tags, "wikidata_class")]
+        described = [word for each in own_values(tags, "description") for word in words_of(each)]
         self.known = set(self.words) | {word for each in classes for word in each} | set(described)
-        self.kinds = {core_noun(self.words)} | {core_noun(each) for each in classes}
-        self.kinds.discard(None)
+        self.classes = class_objects(own_values(tags, "wikidata_class"))
+        self.named = name_object(record["title"])
         self.settings = settings_of(self.words)
         self.colours = set(self.words) & COLOURS
-        self.finishes = set(self.words) & FINISHES
+        self.finishes = exact_finishes(self.words)
+        self.states = states_of(self.words)
         self.painted_for = tags.get("painted_for", [])
+
+
+def exact_finishes(words):
+    """The finish words, "metal" dropped where a metal or paint names it more exactly."""
+    finishes = set(words) & FINISHES
+    return finishes - {"metal"} if finishes & (METALS | {"paint"}) else finishes
+
+
+def states_of(words):
+    """The finish states the words name."""
+    return {FINISH_STATES[word] for word in words if word in FINISH_STATES}
+
+
+def kind_of(ours, candidate):
+    """How our object is the adopted model's kind: "its Wikidata class" when it is the class, "its name, within its
+    Wikidata class" when it is the name's object and the name keeps to the class (the same head noun, or a member of a
+    broader class), "its name" when there is no class; None when it is not the same thing."""
+    if ours in candidate.classes:
+        return "its Wikidata class"
+    if ours != candidate.named:
+        return None
+    if not candidate.classes:
+        return "its name"
+    head = ours.split()[-1]
+    if any(head == each.split()[-1] or head in CLASS_MEMBERS.get(each, ()) for each in candidate.classes):
+        return "its name, within its Wikidata class"
+    return None
 
 
 def overlap(ours, candidate):
@@ -150,16 +227,17 @@ def model_refusal(record, words, places, candidate):
     """Why an adopted model may not replace our model, or None when it is the same kind of object."""
     if record["id"].startswith(FAR_PREFIX):
         return "a far copy, a backdrop seen from afar, is not replaced by a simulated object"
-    noun = core_noun(words)
-    if noun is None:
+    ours = object_of(words)
+    if ours is None:
         return "our id names no object, only how it looks"
-    if noun not in candidate.kinds:
-        return f"not the same kind of object ({noun}; it is {', '.join(sorted(candidate.kinds))})"
-    ours = settings_of(words + places)
-    missing = candidate.settings - ours
+    if kind_of(ours, candidate) is None:
+        theirs = ", ".join(sorted(candidate.classes)) or candidate.named
+        return f"not the same kind of object ({ours}; it is {theirs})"
+    settings = settings_of(words + places)
+    missing = candidate.settings - settings
     if missing:
         return (f"it is made for a {', '.join(sorted(missing))} setting, and ours is "
-                f"{', '.join(sorted(ours)) or 'named for none'}")
+                f"{', '.join(sorted(settings)) or 'named for none'}")
     return None
 
 
@@ -167,13 +245,17 @@ def surface_refusal(record, words, candidate):
     """Why an adopted surface may not replace our surface, or None when it is the same finish."""
     if candidate.painted_for:
         return f"a finish painted for one model ({', '.join(candidate.painted_for)}), not a library finish"
-    finishes = set(words + [word for each in record.get("tags", {}).get("family", []) for word in words_of(each)])
-    finishes &= FINISHES
+    finishes = exact_finishes(words + [word for each in record.get("tags", {}).get("family", [])
+                                       for word in words_of(each)])
     if not finishes:
         return "our surface names no finish the adopted set's materials name (a picture, a glow or a ground)"
-    if not finishes & candidate.finishes:
+    if finishes != candidate.finishes:
         return (f"not the same finish ({', '.join(sorted(finishes))}; it is "
                 f"{', '.join(sorted(candidate.finishes)) or 'none named'})")
+    states = states_of(words)
+    if states != candidate.states:
+        return (f"not the same finish state ({', '.join(sorted(states)) or 'unmarked'}; it is "
+                f"{', '.join(sorted(candidate.states)) or 'unmarked'})")
     colours = set(words) & COLOURS
     if colours != candidate.colours:
         if not colours:
@@ -190,7 +272,7 @@ def candidate_rows(record, words, places, candidates):
     rows = []
     for candidate in candidates:
         if record["kind"] == "model":
-            if core_noun(words) not in candidate.kinds and not set(words) & (candidate.known - QUALIFIERS - COLOURS):
+            if not set(words) & (candidate.known - QUALIFIERS - COLOURS):
                 continue
             refusal = model_refusal(record, words, places, candidate)
         else:
@@ -211,8 +293,11 @@ def proposal(record, candidates):
     score, best, refusal = rows[0]
     if refusal:
         return {"old": record["address"], "new": best.address, "score": score, "status": "refused", "reason": refusal}
-    shared = sorted(set(words) & best.known) or sorted(best.kinds & set(words))
-    reason = f"the same {'object' if record['kind'] == 'model' else 'finish'}, sharing {', '.join(shared)}"
+    if record["kind"] == "model":
+        ours = object_of(words)
+        reason = f"the same object ({ours}), by {kind_of(ours, best)}"
+    else:
+        reason = f"the same finish ({', '.join(sorted(best.finishes | best.colours | best.states))})"
     equal = [row for row in rows[1:] if row[2] is None and row[0] == score]
     if equal:
         reason += f"; the first of {len(equal) + 1} equal candidates"
