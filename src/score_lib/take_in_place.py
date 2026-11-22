@@ -20,6 +20,8 @@ the folder (`taken_from`), every file's path in it (`files_from`) and every addr
 `score-lib fetch place/<place>@<v> --into <root> --with-requires` then gives a stage that opens with <root> as its
 search path. An unchanged place is left as it is; a changed one, draft or locked, becomes the next version, so a version
 a game or a later step already reads is never written over (score #148: closing the flat wrote over place/flat@1).
+A folder whose package is a draft (`package --draft`: its scene.json `draft`, nothing baked) is refused: a preview
+never becomes an entry.
 """
 import json
 import os
@@ -212,12 +214,21 @@ def place_of(folder):
     return json.loads(path.read_text())["place"]
 
 
+def undrafted(folder):
+    """Refused when the folder's scene package is a draft (package/scene.json `draft`: a preview that never ships)."""
+    path = pathlib.Path(folder) / "package/scene.json"
+    if path.is_file() and json.loads(path.read_text()).get("draft"):
+        raise take_in.Refused(f"{folder}: its package is a draft (package --draft), a preview that is never kept; "
+                              "package it again without --draft")
+
+
 def taken_in_place(root, blobs, folder, commit, world):
     """The place folder taken in; the report {status: [address]} and {refused: [{id, why}]}; the index rebuilt."""
     report = {"new": [], "unchanged": [], "changed draft": [], "new version": [], "refused": []}
     work = pathlib.Path(tempfile.mkdtemp(prefix="score-lib-place-"))
     try:
         about = {"place": place_of(folder), "world": world, "commit": commit}
+        undrafted(folder)
         kept, named = kept_files(root, folder, work)
         status, record = settle(root, folder, about, kept, named)
         if status != "unchanged":

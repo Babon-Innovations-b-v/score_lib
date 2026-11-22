@@ -147,7 +147,8 @@ def test_a_place_keeps_its_own_files_points_at_the_library_and_opens_fetched(tmp
     (the scene names ./assets/kit/crate/1/piece.usdc, which the entry does not hold, so verify and the fetched stage
     fail); take_in.role_of: drop the PLACE_ROLES branch (concept.png gets role texture, the package's scene.json
     record); take_in_place.settle: write a changed draft over its own version (the changed yard is taken in as
-    place/yard@1 again, not @2, and @1's bytes change under whatever reads it)."""
+    place/yard@1 again, not @2, and @1's bytes change under whatever reads it); take_in_place.undrafted: never called
+    (the yard with a draft package is taken in as place/yard@3)."""
     root = tmp_path / "library"
     (root / "entries").mkdir(parents=True)
     shutil.copyfile(LIBRARY / "LICENSE", root / "LICENSE")
@@ -176,6 +177,11 @@ def test_a_place_keeps_its_own_files_points_at_the_library_and_opens_fetched(tmp
     again = take_in_place.taken_in_place(root, blobs, folder, "a" * 40, "world1")
     assert again["new version"] == ["place/yard@2"] and not again.get("changed draft"), again
     assert entries.load_address(root, "place/yard@1") == kept, "a kept version was written over"
+    undrafted = (folder / "package/scene.json").read_bytes()
+    (folder / "package/scene.json").write_text(json.dumps({"format": "score.scene", "draft": {"baked": False}}))
+    drafted = take_in_place.taken_in_place(root, blobs, folder, "a" * 40, "world1")
+    assert [item["id"] for item in drafted["refused"]] == ["place/yard"] and not drafted["new version"], drafted
+    (folder / "package/scene.json").write_bytes(undrafted)
     assert verify.verify(root, blobs) == []
     into = tmp_path / "fetched"
     try:
