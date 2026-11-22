@@ -340,8 +340,15 @@ def settings_of(material):
             "physics": physics}
 
 
+def looks_in(material):
+    """Whether a Material spec defines a look: a shader under it or an output. An empty one is a physics material,
+    its PhysicsMaterialAPI given by another layer and bound for physics only (`material:binding:physics`)."""
+    return bool(material.nameChildren) or any(attribute.name.startswith("outputs:")
+                                              for attribute in material.attributes)
+
+
 def materials_in(folder, kept):
-    """Every Material the asset's layers define: [{layer, prim, name, maps, constants, settings}]."""
+    """Every Material the asset's layers define with a look: [{layer, prim, name, maps, constants, settings}]."""
     from pxr import Sdf
     found = []
     for name in sorted(name for name in kept if name.endswith(LAYERS)):
@@ -349,7 +356,7 @@ def materials_in(folder, kept):
         if layer is None:
             raise Gap(f"{name} does not open as a USD layer")
         for material in material_specs(layer.pseudoRoot):
-            if material.specifier != Sdf.SpecifierDef:
+            if material.specifier != Sdf.SpecifierDef or not looks_in(material):
                 continue
             maps, constants = preview_of(layer, material, name, kept)
             convention, assumed = normal_convention_of(layer, material)

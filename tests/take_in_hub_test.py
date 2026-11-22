@@ -96,6 +96,7 @@ def Material "{name}"
 }}"""
 
 
+PHYSICS_ONLY = '\ndef Material "physics_mat_plastic"\n{\n}'  # a physics material: empty, its API in another layer
 QUAD = """    def Mesh "seat" (
         prepend apiSchemas = ["MaterialBindingAPI"]
     )
@@ -139,7 +140,8 @@ def crate(folder):
            'def Xform "RootNode" (\n    prepend references = @./payloads/base.usda@\n)\n{\n}\n'
     (usd / "sm_crate_A01_01.usd").write_bytes(usd_text(root, ".usd", folder))
     (folder / "made.usd").unlink(missing_ok=True)
-    (usd / "payloads/base.usda").write_text(layer([], documentation="A crate", sub="materials.usda"))
+    (usd / "payloads/base.usda").write_text(layer([PHYSICS_ONLY], documentation="A crate",
+                                                          sub="materials.usda"))
     tile = {"albedo": f"{TILE}_alb.png", "normal": f"{TILE}_nor.png", "orm": f"{TILE}_orm.png"}
     (usd / "payloads/materials.usda").write_text(layer([
         material("m_plastic_black", tile, mdl="../source_assets/look.mdl"),
