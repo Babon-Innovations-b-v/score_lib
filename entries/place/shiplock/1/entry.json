@@ -941,6 +941,11 @@
       "role": "record",
       "sha256": "438fba4c407203217acde67a8b2b5c36d25b48d409abbf7b26e9a1de99ff0567"
     },
+    "render.png": {
+      "bytes": 2723736,
+      "role": "render",
+      "sha256": "4e0567b9ea881c755a5a8a86ab9dfdf40f95b8987791561aaf5a41caebeeeb31"
+    },
     "review/sheet.jpg": {
       "bytes": 582996,
       "role": "review",
@@ -959,8 +964,11 @@
   },
   "id": "shiplock",
   "kind": "place",
-  "picture": null,
-  "picture_reason": "a place taken in from score's placing method without its render (render.png)",
+  "picture": {
+    "file": "render.png",
+    "made_by": "score's placing method (Blender)",
+    "of": "the place from its concept's camera"
+  },
   "provenance": {
     "commit": "5841c2b444e705ba93df468c04863352a807e977",
     "files_from": {
@@ -1199,9 +1207,13 @@
       {
         "by": "score",
         "what": "scene.usda and the place's own files: laid by score's placing method"
+      },
+      {
+        "by": "blender",
+        "what": "render.png: rendered by Blender"
       }
     ],
-    "note": "its characters swapped on 2026-11-22 for TRELLIS.2 player models of the same look (score #156: broken per-part repainted bodies, or a withdrawn one), each held pose re-read on the new body's own clip: body_person_uniform_made -> person_uniform_trellis",
+    "note": "its characters swapped on 2026-11-22 for TRELLIS.2 player models of the same look (score #156: broken per-part repainted bodies, or a withdrawn one), each held pose re-read on the new body's own clip: body_person_uniform_made -> person_uniform_trellis; render.png made again on 2026-11-22 from the entry's own scene.usda by score's render route (score/stages/place_build/render.py at score 2deb139b7721), score #156",
     "place": "shiplock",
     "taken_from": "score's placing method (place_build) folder close-shiplock",
     "world": "world1"

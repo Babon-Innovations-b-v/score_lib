@@ -9641,6 +9641,11 @@
       "role": "record",
       "sha256": "3212451a50b45a07718c95b1ae88104a2dfff8712b4a05b806d68c6d489db389"
     },
+    "render.png": {
+      "bytes": 3604712,
+      "role": "render",
+      "sha256": "e1829f07b46d0dac3bd85d6689c8c19e94060c1237cdf945e553d3e17d0d3447"
+    },
     "scene.usda": {
       "bytes": 7768505,
       "role": "usd",
@@ -9649,8 +9654,11 @@
   },
   "id": "square",
   "kind": "place",
-  "picture": null,
-  "picture_reason": "a place taken in from score's placing method without its render (render.png)",
+  "picture": {
+    "file": "render.png",
+    "made_by": "score's placing method (Blender)",
+    "of": "the place from its concept's camera"
+  },
   "provenance": {
     "commit": "fbdfb9bc0",
     "files_from": {
@@ -11637,8 +11645,13 @@
       {
         "by": "score",
         "what": "scene.usda and the place's own files: laid by score's placing method"
+      },
+      {
+        "by": "blender",
+        "what": "render.png: rendered by Blender"
       }
     ],
+    "note": "render.png made again on 2026-11-22 from the entry's own scene.usda by score's render route (score/stages/place_build/render.py at score 2deb139b7721), score #156",
     "place": "square",
     "taken_from": "score's placing method (place_build) folder square",
     "world": "world1"

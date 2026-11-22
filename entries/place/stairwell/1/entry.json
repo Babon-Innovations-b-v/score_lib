@@ -376,6 +376,11 @@
       "role": "record",
       "sha256": "eaece579f9684da483f881eb1c661e597fdee82a890504d794948fcd5c2df59e"
     },
+    "render.png": {
+      "bytes": 2539336,
+      "role": "render",
+      "sha256": "19c0a39b0730968bfa4af115435e85c48a7f020d2451eeeacc557f7107581ea3"
+    },
     "scene.usda": {
       "bytes": 2980357,
       "role": "usd",
@@ -384,8 +389,11 @@
   },
   "id": "stairwell",
   "kind": "place",
-  "picture": null,
-  "picture_reason": "a place taken in from score's placing method without its render (render.png)",
+  "picture": {
+    "file": "render.png",
+    "made_by": "score's placing method (Blender)",
+    "of": "the place from its concept's camera"
+  },
   "provenance": {
     "commit": "02136ed1c85e331fb7e747544ba3c460743f658a",
     "files_from": {
@@ -501,9 +509,13 @@
       {
         "by": "score",
         "what": "scene.usda and the place's own files: laid by score's placing method"
+      },
+      {
+        "by": "blender",
+        "what": "render.png: rendered by Blender"
       }
     ],
-    "note": "the walkers layer (layers/walkers/) was not kept with the place when it was taken in (score-lib's take-in kept only the named files, package/ and assets/), so the place holds no walkers; its scene was written again on 2026-11-22 without the sublayer it never held (score #156); its characters swapped on 2026-11-22 for TRELLIS.2 player models of the same look (score #156: broken per-part repainted bodies, or a withdrawn one), each held pose re-read on the new body's own clip: body_person_made -> person_stair_trellis, body_woman_stair_made -> woman_stair_trellis",
+    "note": "the walkers layer (layers/walkers/) was not kept with the place when it was taken in (score-lib's take-in kept only the named files, package/ and assets/), so the place holds no walkers; its scene was written again on 2026-11-22 without the sublayer it never held (score #156); its characters swapped on 2026-11-22 for TRELLIS.2 player models of the same look (score #156: broken per-part repainted bodies, or a withdrawn one), each held pose re-read on the new body's own clip: body_person_made -> person_stair_trellis, body_woman_stair_made -> woman_stair_trellis; render.png made again on 2026-11-22 from the entry's own scene.usda by score's render route (score/stages/place_build/render.py at score 2deb139b7721), score #156",
     "place": "stairwell",
     "taken_from": "score's placing method (place_build) folder stairwell",
     "world": "world1"
