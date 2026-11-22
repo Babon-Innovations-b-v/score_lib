@@ -10,7 +10,7 @@ from score_lib import entry as entries
 from score_lib import index, locks, schema
 from score_lib.blobs import BadBlob, check_sha
 from score_lib.export import algorithm as algorithm_export
-from score_lib.fetch import fetch
+from score_lib.fetch import closure, destination, fetch
 from score_lib.admission import Sources
 
 USD_ROLES = ("usd",)
@@ -63,8 +63,22 @@ def check_locks(root, records):
     return failures
 
 
+def listed_fault(blobs, described):
+    """What a store that lists its blobs with their size and recorded sha256 (the hub's) says against one file, or
+    None: the bytes are not downloaded for it."""
+    if not hasattr(blobs, "held"):
+        return None
+    size, recorded = blobs.held()[described["sha256"]]
+    if recorded is not None and recorded != described["sha256"]:
+        return f"the store records its sha256 as {recorded}"
+    if size != described["bytes"]:
+        return f"the store holds {size} bytes, the entry names {described['bytes']}"
+    return None
+
+
 def check_blobs(records, blobs, deep):
-    """4. every blob present; with deep (always for a local store) its bytes hash to its name."""
+    """4. every blob present, its listed size and sha256 its record's (a store that lists them); with deep (always for
+    a local store) its bytes hash to its name."""
     failures = []
     checked = set()
     for record in records:
@@ -73,6 +87,9 @@ def check_blobs(records, blobs, deep):
             if not blobs.has(sha):
                 failures.append((record["address"], f"blob missing: {name} {sha}"))
                 continue
+            listed = listed_fault(blobs, described)
+            if listed:
+                failures.append((record["address"], f"blob corrupt: {name}: {listed}"))
             if (deep or getattr(blobs, "deep_always", False)) and sha not in checked:
                 checked.add(sha)
                 try:
@@ -214,15 +231,30 @@ def allowed_unresolved(records):
     return allowed
 
 
+def stand_ins(folder, records, roles):
+    """An empty file where each file of `roles` would be fetched: the resolve check asks only that it is there (its
+    bytes are check_blobs' to check), so only the USD layers are downloaded (68 GB a full verify otherwise)."""
+    for record in records:
+        for name, described in record["files"].items():
+            target = destination(folder, record, name)
+            if described["role"] in roles and not (target.exists() or target.is_symlink()):
+                target.parent.mkdir(parents=True, exist_ok=True)
+                target.touch()
+
+
 def check_usd_entry(root, blobs, record):
-    """7. one entry fetched with its requires into a temp root; each usd file opened with that root as the search
-    path, every dependency resolved, the default prim present."""
+    """7. one entry fetched with its requires into a temp root (its layers' bytes, a stand-in for every other file);
+    each usd file opened with that root as the search path, every dependency resolved, the default prim present."""
     from pxr import Ar, Usd, UsdUtils
     failures = []
     folder = pathlib.Path(tempfile.mkdtemp(prefix="score-lib-verify-"))
     try:
+        required = closure(root, [record["address"]], with_requires=True)
+        others = {described["role"] for each in required for described in each["files"].values()} - set(USD_ROLES)
         try:
-            fetched = fetch(root, blobs, [record["address"]], folder, with_requires=True, link=True)
+            fetched = fetch(root, blobs, [record["address"]], folder, with_requires=True, link=True,
+                            left_out_roles=others)
+            stand_ins(folder, fetched, others)
         except entries.UnsafeName as why:
             return [(record["address"], f"files: {why}")]
         allowed = allowed_unresolved(fetched)

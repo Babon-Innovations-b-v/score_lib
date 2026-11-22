@@ -112,12 +112,10 @@ class FakeHub:
 
     def __init__(self, refusals=0):
         self.files, self.pending, self.commits, self.made, self.refusals = {}, {}, [], [], refusals
+        self.listings = 0
 
     def create_repo(self, repo_id, repo_type, private, exist_ok):
         self.made.append((repo_id, repo_type, private))
-
-    def file_exists(self, repo_id, filename, repo_type, revision):
-        return filename in self.files
 
     def upload_file(self, path_or_fileobj, path_in_repo, repo_id, repo_type, revision, commit_message):
         self.files[path_in_repo] = pathlib.Path(path_or_fileobj).read_bytes()
@@ -139,6 +137,7 @@ class FakeHub:
         self.commits.append([operation.path_in_repo for operation in operations])
 
     def list_repo_tree(self, repo_id, path_in_repo, recursive, repo_type, revision):
+        self.listings += 1
         return [SimpleNamespace(path=path, size=len(data), lfs=SimpleNamespace(sha256=hashlib.sha256(data).hexdigest())
                                 if data else None)  # as the hub: an empty file is no large file
                 for path, data in self.files.items() if path.startswith(path_in_repo + "/")]
@@ -188,7 +187,9 @@ def test_hub_store_reads_without_a_key_and_the_mirror_copies_resumes_and_checks(
     named blob behind, copies one no entry names, re-uploads what the repository holds, or its check misses a blob
     whose bytes differ, or an empty blob (no sha256 recorded) is told a failure; a read asks the hub for anything but
     the blob's resolve link, or is not tried again after a 429; an entry's files go up one commit a file,
-    or a commit refused for the hub's rate is not tried again after its named wait."""
+    or a commit refused for the hub's rate is not tried again after its named wait; `has` asks the hub more than one
+    listing for a store's life or forgets what the store committed, or verify's blob check downloads a blob, misses one
+    the listing does not hold, or passes one whose listed size or sha256 is not its record's."""
     import json
     from score_lib.blobs import MissingBlob, mirror
     hub = FakeHub()
@@ -220,6 +221,19 @@ def test_hub_store_reads_without_a_key_and_the_mirror_copies_resumes_and_checks(
     put_all(HubBlobStore(rated, "owner/lib"), pairs)
     assert rated.commits == [sorted(key_of(blob) for blob, _ in pairs[1:])] and waits == [7.0, 7.0], (rated.commits,
                                                                                                     waits)
+    # verify's blob check answered from one listing: a missing blob, a wrong size and wrong bytes told, none downloaded
+    from score_lib.verify import check_blobs
+    listed = FakeHub()
+    datas = {"good": b"good", "short": b"short", "swapped": b"swapped"}
+    shas_by = {name: hashlib.sha256(data).hexdigest() for name, data in datas.items()}
+    listed.files = {key_of(shas_by["good"]): b"good", key_of(shas_by["short"]): b"short",
+                    key_of(shas_by["swapped"]): b"other bytes!"}
+    files = {name: {"sha256": shas_by[name], "bytes": len(datas[name]) + (name == "short")} for name in datas}
+    files["gone"] = {"sha256": hashlib.sha256(b"gone").hexdigest(), "bytes": 4}
+    told = check_blobs([{"address": "model/a@1", "files": files}], HubBlobStore(listed, "owner/lib"), deep=False)
+    assert [message.split(":")[0] + " " + message.split(" ")[2].rstrip(":") for _, message in told] == [
+        "blob missing gone", "blob corrupt short", "blob corrupt swapped"], told
+    assert listed.listings == 1 and len(reads) == 2 and hub.listings == 1, (listed.listings, reads)
     picked = from_environment({"SCORE_LIB_HUB_REPO": "owner/lib", "SCORE_LIB_HUB_PREFIX": "lib"})
     assert isinstance(picked, HubBlobStore) and picked.key(sha) == f"lib/{key_of(sha)}"
 

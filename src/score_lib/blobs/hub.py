@@ -11,7 +11,13 @@ A read is one plain GET of the blob's resolve link (`url`), with the login's tok
 own download asks for a read token before each file, and with no login it refuses after a few (2026-11-22: HTTP 429
 with 215 s waits, so the README's `score-lib fetch` failed for every visitor), while the resolve links fetched 386 files
 in 77 s. A read refused for rate or a passing server fault is tried again after the wait it names, up to RATE_TRIES.
+
+Which blobs the repository holds comes from one listing of its tree (`held`), made once for the store's life and kept
+up to date with what the store commits: a request a blob (`file_exists`) was refused for rate after a few minutes of
+`score-lib verify` (2026-11-22, HTTP 429), and the listing also carries each large file's size and recorded sha256. A
+blob another writer commits after the listing reads as missing; a put of it commits nothing new.
 """
+import hashlib
 import pathlib
 import shutil
 import sys
@@ -28,6 +34,7 @@ RATE_TRIES = 30  # commits refused for the hub's commit rate tried again, each a
 RATE_WAIT = 120  # seconds to wait when the hub names none
 READ_RETRY = (429, 500, 502, 503, 504)  # a read refused for these is tried again
 READ_TIMEOUT = 600  # seconds one read may take (a large model over a slow link)
+EMPTY = hashlib.sha256(b"").hexdigest()  # the sha256 of no bytes
 
 
 class HubBlobStore:
@@ -38,6 +45,7 @@ class HubBlobStore:
         self.repo_id = repo_id
         self.revision = revision or "main"
         self.prefix = prefix.strip("/")
+        self.listing = None
 
     @classmethod
     def from_environment(cls, environ):
@@ -50,8 +58,14 @@ class HubBlobStore:
         """The path of a blob in the repository, under the optional prefix."""
         return f"{self.prefix}/{key_of(sha256)}" if self.prefix else key_of(sha256)
 
+    def held(self):
+        """{sha256: (size, recorded sha256 or None)} of every blob the repository holds, listed on first use."""
+        if self.listing is None:
+            self.listing = hub_held(self.api, self.repo_id, self.revision, self.prefix)
+        return self.listing
+
     def has(self, sha256):
-        return self.api.file_exists(self.repo_id, self.key(sha256), repo_type=REPO_TYPE, revision=self.revision)
+        return sha256 in self.held()
 
     def put(self, sha256, source):
         """Commit a file under its sha256 after checking it; nothing when already there."""
@@ -72,6 +86,7 @@ class HubBlobStore:
             operations = [CommitOperationAdd(path_in_repo=self.key(sha), path_or_fileobj=str(wanted[sha]))
                           for sha in batch]
             self.committed(operations, f"blobs: {len(batch)} files")
+            self.held().update({sha: (pathlib.Path(wanted[sha]).stat().st_size, sha) for sha in batch})
         return len(shas)
 
     def committed(self, operations, message):
@@ -104,6 +119,20 @@ class HubBlobStore:
         """The public read link of the blob."""
         from huggingface_hub import hf_hub_url
         return hf_hub_url(self.repo_id, self.key(sha256), repo_type=REPO_TYPE, revision=self.revision)
+
+
+def hub_held(api, repo_id, revision, prefix):
+    """{sha256: (size, recorded sha256 or None)} of every blob the repository holds; empty when it holds none. An empty
+    file is kept outside large-file storage, so nothing records its sha256: its size, 0, is its bytes, and its sha256
+    is EMPTY's (the library's one empty blob read as a failure, 2026-11-20)."""
+    from huggingface_hub.errors import EntryNotFoundError, RepositoryNotFoundError, RevisionNotFoundError
+    folder = f"{prefix}/blobs" if prefix else "blobs"
+    try:
+        listing = list(api.list_repo_tree(repo_id, folder, recursive=True, repo_type=REPO_TYPE, revision=revision))
+    except (EntryNotFoundError, RepositoryNotFoundError, RevisionNotFoundError):
+        return {}
+    return {item.path.rsplit("/", 1)[1]: (item.size, item.lfs.sha256 if item.lfs else EMPTY if item.size == 0 else None)
+            for item in listing if hasattr(item, "lfs")}
 
 
 def read_link(url, target, sha256):
