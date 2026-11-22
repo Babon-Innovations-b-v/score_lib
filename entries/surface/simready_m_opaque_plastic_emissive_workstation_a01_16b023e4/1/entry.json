@@ -1,0 +1,81 @@
+{
+  "address": "surface/simready_m_opaque_plastic_emissive_workstation_a01_16b023e4@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 585597,
+      "role": "texture",
+      "sha256": "2487a2585b0d3fcad841f35b2885166004922d3f49e402896d1403346df0d813"
+    },
+    "emission.png": {
+      "bytes": 1381136,
+      "role": "texture",
+      "sha256": "1254e796e54a67b3f7c1e75ac0605502283c121ee06ce3c2c970e79b639b027e"
+    },
+    "material.usda": {
+      "bytes": 2612,
+      "role": "usd",
+      "sha256": "bd9cac69c013df594b7ee108db86358f3c1fbe32bbbd42412fc914ed99584278"
+    },
+    "orm.png": {
+      "bytes": 58787,
+      "role": "texture",
+      "sha256": "c1b9bd37759261634542e3cdd916a987124b5c59408b991ce25851bc4b9ddacc"
+    },
+    "surface.json": {
+      "bytes": 1022,
+      "role": "record",
+      "sha256": "46f81c1f28cbbd2f8b2259f023e62deeccd2a45139f7b9ce9bce13d7f106c520"
+    }
+  },
+  "id": "simready_m_opaque_plastic_emissive_workstation_a01_16b023e4",
+  "kind": "surface",
+  "licence": {
+    "credit": "workstation_factory_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "workstation_factory_a01/simready_usd/Textures/t_workstationFactory_a01_alb.png",
+      "emission.png": "workstation_factory_a01/simready_usd/Textures/t_workstationFactory_a01_emi.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "orm.png": "workstation_factory_a01/simready_usd/Textures/t_workstationFactory_a01_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__plastic__emissive_workstation_a01 maps of workstation_factory_a01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: workstation_factory_a01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "16b023e4f17d0c6b6acf352644d87457dc08e4aaec213ea6fa7a436b0d71497a"
+    ],
+    "painted_for": [
+      "workstation_factory_a01"
+    ]
+  },
+  "title": "m_opaque__plastic__emissive_workstation_a01",
+  "usd": null,
+  "version": 1
+}
