@@ -2,14 +2,14 @@
   "address": "model/cigarette_1@1",
   "files": {
     "model.json": {
-      "bytes": 529,
+      "bytes": 544,
       "role": "record",
-      "sha256": "139d8cfe42fb58b901e5ff98ad0b708925039c1f56571749b074812140c36c00"
+      "sha256": "d8ce55b55286c58f116ad230825da1a92f26bf6b076dfb1a7a87909e810dcf3f"
     },
     "model.usdc": {
-      "bytes": 3236,
+      "bytes": 3664,
       "role": "usd",
-      "sha256": "40637a3020ed1016c68ae1255b01c199651820623029272279d8fbdc307c753c"
+      "sha256": "ff6bc917679f21867da4ab928575fc4f0e6b19d11431777ade502f958d129ba0"
     }
   },
   "id": "cigarette_1",
@@ -26,6 +26,10 @@
       {
         "by": "score",
         "what": "built in code by score (tools/props/smoke_beat/cigarette.py)"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "score tools/props/smoke_beat/cigarette.py on this PC: the 2099 prologue's cigarette built in code at a king size cigarette's measures (score #152)",
