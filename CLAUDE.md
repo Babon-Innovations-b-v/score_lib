@@ -47,8 +47,12 @@ A library of reusable parts of SCORE worlds: records in git (`entries/`), bytes 
 - `src/score_lib/adopted.py`: `score-lib adopted match [--source ID] --proposals FILE [--apply]`, an adopted set's
   overlap with our older models and surfaces (score #155): each paired with the adopted entry of the same kind of
   object (its Wikidata class first, its name's object only within it; never a shared word alone) or the same finish
-  and finish state, or refused naming the clash (setting, colour, a finish painted for one model, a far copy);
-  `--apply` withdraws the accepted ones naming their replacement (`replaced_by`).
+  and finish state, or refused naming the clash (setting, colour, material, a part of a whole, a stack against one, a
+  container holding its content, a size past twice or half ours, a finish painted for one model or made for another
+  use, a far copy); equal candidates are told apart only by evidence (shared words, a name adding nothing, the only
+  one within twice our size, the same maps), else refused as tied, never the first taken; a model's size is read from
+  its record or its glTF or USD through a cache emptied after each read; `--apply` withdraws the accepted ones naming
+  their replacement (`replaced_by`).
 - `src/score_lib/concept.py`: `score-lib concept`, a place's locked concept from score's concept review (score #40).
 - `src/score_lib/handover.py`: `score-lib handover`, the one call score's runner makes (contract `library-handover` v1); `held.py`: what a place holds and which entries hold a store output.
 - `src/score_lib/clip.py`: an entry's preview clip (owner, 2026-10-20): `score-lib clip-plan` says what each clip

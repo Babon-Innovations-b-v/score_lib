@@ -139,7 +139,9 @@ def command_take_in(options):
 
 def command_adopted(options):
     from score_lib import adopted
-    report = adopted.match(options.root, source_ids=options.source or None)
+    cache = pathlib.Path(os.environ.get("SCORE_LIB_CACHE") or pathlib.Path.home() / ".cache/score-lib") / "adopted"
+    sizes = adopted.Sizes(options.root, lambda: blob_store(reading=True), cache)
+    report = adopted.match(options.root, source_ids=options.source or None, sizes=sizes)
     if options.apply:
         report["withdrawn"] = adopted.apply(options.root, report)
     adopted.write_report(options.proposals, report)
