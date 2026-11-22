@@ -20,6 +20,12 @@ Per asset folder, at the revision given (a 40-hex commit, never a branch):
   `tile_metres`, the metres one repeat of its maps covers on the asset, and a glass's `transmission`: the colour,
   IOR and roughness its MDL glass shader gives, its look see-through by them); a set painted for one model (its
   maps unwrapped on that model's own UVs, no `tile` in their names) keeps its maps only, its recipe a written gap;
+- a material with no UsdPreviewSurface gets its look from its MDL OmniPBR shader's maps and constants (`look_from` in
+  its surface.json), and an OmniPBR cutout opacity (`enable_opacity`: its constant, threshold and map) is carried into
+  every look and record (`opacity`); a Material with no shader and no wired output (a physics material, a stand-in)
+  is no look and is skipped;
+- a file no layer names whose ending has no role in an entry (the source's own check reports) is left out of the
+  model, a `left out` row of the report naming it and why;
 - each of the model's own materials names its surface (`score:surface`, the USD attribute, written into the layer
   that defines it; that change is marked on the file's files_from row and in the model's credit).
 
@@ -101,6 +107,21 @@ GLASS_INPUTS = {"colour": ("glass_color", [1.0, 1.0, 1.0]), "ior": ("glass_ior",
                 "roughness": ("frosting_roughness", 0.0), "thin_walled": ("thin_walled", False)}
 ONE_MODEL_GAP = ("painted for one model: its maps are unwrapped on that model's own UVs, so no tiling recipe can look "
                  "the same; the maps are the surface")
+# An MDL OmniPBR shader (a module named OmniPBR..., by its `mdl:` id or its source asset's sub-identifier): the maps
+# it reads by their role, and its inputs' defaults as its module gives them. A material with no UsdPreviewSurface gets
+# its look from these; its cutout opacity (`enable_opacity`) is carried into every material's look and record.
+PBR_SHADER = "OmniPBR"
+PBR_MAPS = {"albedo": "diffuse_texture", "normal": "normalmap_texture", "orm": "ORM_texture",
+            "roughness": "reflectionroughness_texture", "metallic": "metallic_texture", "emission":
+            "emissive_color_texture"}
+PBR_DEFAULTS = {"diffuse_color_constant": [0.2, 0.2, 0.2], "reflection_roughness_constant": 0.5,
+                "reflection_roughness_texture_influence": 0.0, "metallic_constant": 0.0,
+                "metallic_texture_influence": 0.0, "enable_ORM_texture": False, "enable_emission": False,
+                "emissive_color": [1.0, 0.1, 0.1], "enable_opacity": False, "opacity_constant": 1.0,
+                "enable_opacity_texture": False, "opacity_mode": "mono_average", "opacity_threshold": 0.0,
+                "texture_scale": [1.0, 1.0]}
+LEFT_OUT = ("no USD layer of the asset names it and its ending has no role in an entry: not part of the asset's look "
+            "or physics (the source's own check report)")
 
 
 class Gap(Exception):
@@ -314,6 +335,32 @@ def unresolved_in(folder, root_name):
     return sorted(set(found))
 
 
+def named_in(folder, root_name):
+    """The files under `folder` the root file's USD (every layer it reaches) names, by name there."""
+    from pxr import UsdUtils
+    layers, assets, _ = UsdUtils.ComputeAllDependencies(str(pathlib.Path(folder) / root_name))
+    base = pathlib.Path(folder).resolve()
+    found = set()
+    for path in [layer.realPath for layer in layers] + list(assets):
+        if path and pathlib.Path(path).resolve().is_relative_to(base):
+            found.add(pathlib.Path(path).resolve().relative_to(base).as_posix())
+    return found
+
+
+def unnamed_without_role(folder, root_name, kept):
+    """The kept files no layer of the asset names whose ending has no role in an entry (the source's own check
+    reports): not part of the asset's look or physics."""
+    named = named_in(folder, root_name)
+    found = []
+    for name in sorted(kept):
+        try:
+            take_in.role_of(name)
+        except take_in.Refused:
+            if name not in named:
+                found.append(name)
+    return found
+
+
 def plain(value):
     """A USD value as JSON: numbers rounded, vectors and arrays as lists, asset paths as their path."""
     if isinstance(value, bool) or value is None or isinstance(value, (int, str)):
@@ -387,12 +434,81 @@ def texture_name(layer_name, asset_path, kept):
     return name
 
 
+def mdl_module(spec):
+    """The MDL module a shader spec runs: its `mdl:` id, else its source asset's sub-identifier; None for neither."""
+    shader_id = str(default_of(spec, "info:id") or "")
+    if shader_id.startswith("mdl:"):
+        return shader_id[len("mdl:"):]
+    found = default_of(spec, "info:mdl:sourceAsset:subIdentifier")
+    return str(found) if found else None
+
+
+def pbr_shader(material):
+    """A Material spec's MDL OmniPBR shader spec (its first, depth first), or None."""
+    for child in material.nameChildren:
+        if (mdl_module(child) or "").startswith(PBR_SHADER):
+            return child
+        found = pbr_shader(child)
+        if found is not None:
+            return found
+    return None
+
+
+def pbr_inputs(shader):
+    """An OmniPBR shader spec's inputs as JSON, each its module's default where the spec gives none."""
+    given = {attribute.name[len("inputs:"):]: plain(attribute.default) for attribute in shader.attributes
+             if attribute.name.startswith("inputs:") and attribute.default is not None}
+    return {**PBR_DEFAULTS, **given}
+
+
+def pbr_maps(inputs, layer_name, kept):
+    """{role: entry name} of the maps an OmniPBR shader's inputs read: its ORM map only when enabled, a roughness or
+    metallic map only with an influence, an emission map only with emission (an opacity map is `opacity_of`'s)."""
+    used = {"orm": inputs["enable_ORM_texture"], "roughness": inputs["reflection_roughness_texture_influence"] > 0
+            and not inputs["enable_ORM_texture"], "metallic": inputs["metallic_texture_influence"] > 0
+            and not inputs["enable_ORM_texture"], "emission": inputs["enable_emission"]}
+    return {role: texture_name(layer_name, inputs[name], kept) for role, name in PBR_MAPS.items()
+            if inputs.get(name) and used.get(role, True)}
+
+
+def pbr_preview(material, layer_name, kept):
+    """(maps, constants) of a Material spec with no UsdPreviewSurface, read from its OmniPBR shader's inputs (its
+    cutout opacity left to `opacity_of`); a glass's (an MDL glass shader alone) none, its transmission its look; Gap
+    for any other."""
+    shader = pbr_shader(material)
+    if shader is None:
+        if glass_shader(material) is not None:
+            return {}, {}
+        raise Gap(f"{layer_name} {material.path}: no UsdPreviewSurface and no OmniPBR or glass MDL shader, so no "
+                  "surface can name its look")
+    inputs = pbr_inputs(shader)
+    maps = pbr_maps(inputs, layer_name, kept)
+    constants = {"diffuseColor": inputs["diffuse_color_constant"], "roughness": inputs["reflection_roughness_constant"],
+                 "metallic": inputs["metallic_constant"]}
+    if inputs["enable_emission"]:
+        constants["emissiveColor"] = inputs["emissive_color"]
+    return maps, constants
+
+
+def opacity_of(material, layer_name, kept):
+    """A Material spec's cutout opacity as its OmniPBR shader gives it when `enable_opacity` is set ({shader, constant,
+    map, mode, threshold}, the map the opacity texture's entry name when that is enabled), or None."""
+    shader = pbr_shader(material)
+    inputs = pbr_inputs(shader) if shader is not None else {}
+    if not inputs.get("enable_opacity"):
+        return None
+    texture = inputs.get("opacity_texture") if inputs["enable_opacity_texture"] else None
+    return {"shader": mdl_module(shader), "constant": inputs["opacity_constant"],
+            "map": texture_name(layer_name, texture, kept) if texture else None, "mode": inputs["opacity_mode"],
+            "threshold": inputs["opacity_threshold"]}
+
+
 def preview_of(layer, material, layer_name, kept):
-    """(maps {role: entry name}, constants {input: value}) of a Material spec's UsdPreviewSurface; Gap when it has
-    none."""
+    """(maps {role: entry name}, constants {input: value}) of a Material spec's UsdPreviewSurface, or from its OmniPBR
+    shader's inputs when it has none; Gap when it has neither."""
     shaders = shaders_under(material)
     if not shaders.get("UsdPreviewSurface"):
-        raise Gap(f"{layer_name} {material.path}: no UsdPreviewSurface, so no surface can name its look")
+        return pbr_preview(material, layer_name, kept)
     feeds, constants = collections.defaultdict(list), {}
     for attribute in shaders["UsdPreviewSurface"][0].attributes:
         if not attribute.name.startswith("inputs:"):
@@ -468,9 +584,13 @@ def transmission_of(material):
     return transmission
 
 
-def look_constants(constants, transmission):
-    """The UsdPreviewSurface constants our look writes: the source's, a glass's see-through (opacity 0, the spec's
-    clear glass that keeps its specular), its colour, IOR and roughness over them."""
+def look_constants(constants, transmission, opacity=None):
+    """The UsdPreviewSurface constants our look writes: the source's, an OmniPBR cutout opacity's constant and
+    threshold over them, a glass's see-through (opacity 0, the spec's clear glass that keeps its specular), its colour,
+    IOR and roughness over those."""
+    if opacity is not None:
+        constants = {**constants, "opacity": opacity["constant"],
+                     **({"opacityThreshold": opacity["threshold"]} if opacity["threshold"] else {})}
     if transmission is None:
         return constants
     return {**constants, "opacity": round(1.0 - transmission["weight"], 6), "diffuseColor": transmission["colour"],
@@ -478,10 +598,19 @@ def look_constants(constants, transmission):
 
 
 def looks_in(material):
-    """Whether a Material spec defines a look: a shader under it or an output. An empty one is a physics material,
-    its PhysicsMaterialAPI given by another layer and bound for physics only (`material:binding:physics`)."""
+    """Whether a Material spec defines a look: a shader under it or an output connected to one. An empty one (its
+    outputs declared, none connected) is a physics material, its PhysicsMaterialAPI given by another layer and bound
+    for physics only (`material:binding:physics`), or a stand-in whose look another layer defines."""
     return bool(material.nameChildren) or any(attribute.name.startswith("outputs:")
+                                              and attribute.connectionPathList.GetAddedOrExplicitItems()
                                               for attribute in material.attributes)
+
+
+def look_from(material):
+    """The MDL shader a Material spec's look is read from when it has no UsdPreviewSurface ({shader, inputs}), or
+    None when its UsdPreviewSurface is its look (or its glass's transmission alone)."""
+    shader = None if shaders_under(material).get("UsdPreviewSurface") else pbr_shader(material)
+    return {"shader": mdl_module(shader), "inputs": pbr_inputs(shader)} if shader is not None else None
 
 
 def materials_in(folder, kept):
@@ -497,10 +626,17 @@ def materials_in(folder, kept):
             if material.specifier != Sdf.SpecifierDef or not looks_in(material):
                 continue
             maps, constants = preview_of(layer, material, name, kept)
+            opacity = opacity_of(material, name, kept)
+            if opacity and opacity["map"]:
+                maps.setdefault("opacity", opacity["map"])
             convention, assumed = normal_convention_of(layer, material)
+            settings, source = settings_of(material), look_from(material)
+            if source:
+                settings["tile_scale"] = source["inputs"]["texture_scale"]
             found.append({"layer": name, "prim": str(material.path), "name": material.name, "maps": maps,
-                          "constants": constants, "transmission": transmission_of(material), "settings": {**settings_of(material), "normal_convention": convention,
-                                                               "normal_convention_assumed": assumed}})
+                          "constants": constants, "transmission": transmission_of(material), "opacity": opacity,
+                          "look_from": source, "settings": {**settings, "normal_convention": convention,
+                                                            "normal_convention_assumed": assumed}})
     return found
 
 
@@ -634,8 +770,9 @@ def maps_key(material, kept):
                          {tile: kept[each]["sha256"] for tile, each in tiles_of(name, kept)}
                          for role, name in material["maps"].items()}}
                if material["maps"] else {"constants": material["constants"]})
-    if material.get("transmission"):
-        content["transmission"] = material["transmission"]
+    for block in ("transmission", "opacity"):
+        if material.get(block):
+            content[block] = material[block]
     return hashlib.sha256(json.dumps(content, sort_keys=True).encode()).hexdigest()
 
 
@@ -644,19 +781,20 @@ def is_tiling(material, kept):
     return all("tile" in posixpath.basename(name).lower() for name in material["maps"].values())
 
 
-def look_layer(prim_name, maps, constants, scale, convention="opengl"):
+def look_layer(prim_name, maps, constants, scale, convention="opengl", opacity_channel="r"):
     """Our own material.usda text: a UsdPreviewSurface over the surface's maps under their entry names, a normal map
-    read in its `convention`."""
+    read in its `convention`, an opacity map from its `opacity_channel` (`a` for an alpha one)."""
     from pxr import Sdf, Usd, UsdShade
     types = Sdf.ValueTypeNames
     wiring = {"albedo": [("diffuseColor", "rgb", types.Color3f)], "normal": [("normal", "rgb", types.Normal3f)],
               "orm": [("occlusion", "r", types.Float), ("roughness", "g", types.Float), ("metallic", "b", types.Float)],
               "roughness": [("roughness", "r", types.Float)], "metallic": [("metallic", "r", types.Float)],
               "occlusion": [("occlusion", "r", types.Float)], "emission": [("emissiveColor", "rgb", types.Color3f)],
-              "opacity": [("opacity", "r", types.Float)]}
+              "opacity": [("opacity", opacity_channel, types.Float)]}
     constant_types = {"diffuseColor": types.Color3f, "emissiveColor": types.Color3f, "specularColor": types.Color3f,
-                      "roughness": types.Float, "metallic": types.Float, "opacity": types.Float, "ior": types.Float,
-                      "occlusion": types.Float, "clearcoat": types.Float, "clearcoatRoughness": types.Float}
+                      "roughness": types.Float, "metallic": types.Float, "opacity": types.Float,
+                      "opacityThreshold": types.Float, "ior": types.Float, "occlusion": types.Float,
+                      "clearcoat": types.Float, "clearcoatRoughness": types.Float}
     stage = Usd.Stage.CreateInMemory()
     material = UsdShade.Material.Define(stage, f"/{prim_name}")
     stage.SetDefaultPrim(material.GetPrim())
@@ -693,14 +831,22 @@ def look_layer(prim_name, maps, constants, scale, convention="opengl"):
     return stage.GetRootLayer().ExportToString()
 
 
+def opacity_channel(opacity):
+    """The channel of an opacity map our look reads: its alpha for an OmniPBR `mono_alpha` mode (the enum's first, 0),
+    else red (a grey map's average, luminance and maximum)."""
+    mode = opacity["mode"] if opacity else None
+    return "a" if mode is not None and (str(mode) == "0" or str(mode).endswith("alpha")) else "r"
+
+
 def surface_record(row, material, tiling):
     """Our own surface.json: the material's settings as the source gives them (a glass's transmission as its MDL shader
-    gives it among them) and its recipe (none yet; a written gap for a set painted for one model)."""
+    gives it among them, an OmniPBR cutout opacity as `opacity`, and the MDL shader a look with no UsdPreviewSurface is
+    read from as `look_from`) and its recipe (none yet; a written gap for a set painted for one model)."""
     return {"source": row["id"], "family": "image" if material["maps"] else "constant", "material": material["name"],
             "maps": {role: map_name(role, name) for role, name in material["maps"].items()},
             "constants": material["constants"], **material["settings"], "tiling": tiling, "recipe": None,
             "recipe_gap": None if tiling else ONE_MODEL_GAP,
-            **({"transmission": material["transmission"]} if material.get("transmission") else {})}
+            **{block: material[block] for block in ("transmission", "opacity", "look_from") if material.get(block)}}
 
 
 def asset_tags(folder, kept):
@@ -779,7 +925,8 @@ class Run:
         self.batches = Pacer(limit=BATCH_LIMIT, window=BATCH_WINDOW)
         self.surfaces = self.known_surfaces()
         self.ids = {}
-        self.report = {"new": [], "unchanged": [], "changed draft": [], "new version": [], "refused": [], "gaps": []}
+        self.report = {"new": [], "unchanged": [], "changed draft": [], "new version": [], "refused": [], "gaps": [],
+                       "left out": []}
 
     def known_surfaces(self):
         """{maps key: address} of the library's surfaces from this source, newest version of each id."""
@@ -843,6 +990,18 @@ class Run:
             raise Gap(f"its USD names {', '.join(unheld)}, which the asset does not hold")
         return outside
 
+    def left_out(self, asset, root_name, kept, folder, pairs):
+        """The asset's files no layer names and no role has, taken out of `kept` and of the queue (unless a kept file
+        has the same bytes): its report rows [{asset, file, why}]."""
+        rows = []
+        for name in unnamed_without_role(folder, root_name, kept):
+            kept.pop(name)
+            rows.append({"asset": asset, "file": name, "why": LEFT_OUT})
+        held = {about["sha256"] for about in kept.values()}
+        for sha256 in [sha256 for sha256 in pairs if sha256 not in held]:
+            del pairs[sha256]
+        return rows
+
     def surface_listed(self, asset, material, kept, key, folder):
         """The take-in list row of one material's surface entry, its own two files written into `folder`."""
         tiling = is_tiling(material, kept)
@@ -852,9 +1011,11 @@ class Run:
         (folder / "material.usda").write_text(look_layer(entry_id, {role: map_name(role, name)
                                                                     for role, name in material["maps"].items()},
                                                          look_constants(material["constants"],
-                                                                        material.get("transmission")),
+                                                                        material.get("transmission"),
+                                                                        material.get("opacity")),
                                                          material["settings"]["tile_scale"],
-                                                         material["settings"]["normal_convention"]))
+                                                         material["settings"]["normal_convention"],
+                                                         opacity_channel(material.get("opacity"))))
         (folder / "surface.json").write_text(entries.dumps(surface_record(self.row, material, tiling)))
         files = {"material.usda": {"path": str(folder / "material.usda"), "from": LOOK_WRITTEN},
                  "surface.json": {"path": str(folder / "surface.json"), "from": RECORD_WRITTEN}}
@@ -978,6 +1139,7 @@ class Run:
             entries.checked_name(name)
         pairs, queued = {}, []
         outside = self.completed(asset, root_name, kept, left, folder, pairs)
+        dropped = self.left_out(asset, root_name, kept, folder, pairs)
         materials = materials_in(folder, kept)
         tile_metres_of(folder, root_name, materials, kept)
         self.wait_turn(asset)
@@ -994,6 +1156,7 @@ class Run:
             self.pairs.update(pairs)
             self.records += queued
             self.queued_assets.append(asset)
+            self.report["left out"] += dropped
             self.cached += sum(path.stat().st_size for path in pairs.values())
 
     def flush(self):

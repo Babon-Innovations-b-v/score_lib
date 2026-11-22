@@ -6,8 +6,11 @@ them unchanged, and --retake settling them again; and the pacing of a reader, it
 Breaks that turn it red: a UDIM material gapped, a save pushed to its own branch, a save after a run without it
 committing nothing (or not the surfaces its models require), assets side by side settled out of the run's order (the
 shared tile set's size then the crate's, which has no mesh), a glass's MDL transmission left out of its record or
-its look left opaque, --retake leaving a changed asset unchanged, a 429 not
-tried again or not counted, the shared back-off not held."""
+its look left opaque, a material with no UsdPreviewSurface gapped though its OmniPBR shader gives its look (or its look
+not read from that shader's maps, scale and constants), a stand-in material whose outputs no shader feeds gapped, an
+OmniPBR cutout opacity (constant, threshold or map) left out of the look or record, the source's own check report
+(no layer names it, no role) gapping its asset or kept in its entry, --retake leaving a changed asset unchanged, a 429
+not tried again or not counted, the shared back-off not held."""
 import hashlib
 import json
 import pathlib
@@ -131,6 +134,51 @@ def Material "m_glass"
     }
 }"""  # a glass whose UsdPreviewSurface says opaque; its MDL glass shader is see-through, its frosting the default
 PHYSICS_ONLY = '\ndef Material "physics_mat_plastic"\n{\n}'  # a physics material: empty, its API in another layer
+STAND_IN = '\ndef Material "m_stand_in_1"\n{\n    token outputs:surface\n    token outputs:displacement\n}'
+# a stand-in: its outputs declared, none wired, no shader (its look, if any, another layer's)
+PBR_ONLY = f"""
+def Material "m_pbr"
+{{
+    token outputs:mdl:surface.connect = </RootNode/Materials/m_pbr/pbr.outputs:out>
+    token outputs:surface
+
+    def Shader "pbr"
+    {{
+        uniform token info:implementationSource = "sourceAsset"
+        uniform asset info:mdl:sourceAsset = @../source_assets/look.mdl@
+        uniform token info:mdl:sourceAsset:subIdentifier = "OmniPBR"
+        asset inputs:diffuse_texture = @../Textures/{TILE}_alb.png@
+        bool inputs:enable_ORM_texture = 1
+        asset inputs:ORM_texture = @../Textures/{TILE}_orm.png@
+        float2 inputs:texture_scale = (2, 2)
+        bool inputs:enable_opacity = 1
+        float inputs:opacity_constant = 0.5
+        float inputs:opacity_threshold = 0.25
+        token outputs:out
+    }}
+}}"""  # an MDL OmniPBR alone (named by its sub-identifier, no UsdPreviewSurface), its cutout opacity a constant
+CUTOUT = """
+def Material "m_cutout"
+{
+    token outputs:surface.connect = </RootNode/Materials/m_cutout/preview.outputs:surface>
+
+    def Shader "preview"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        color3f inputs:diffuseColor = (0.5, 0.5, 0.5)
+        float inputs:opacity = 1
+        token outputs:surface
+    }
+
+    def Shader "pbr"
+    {
+        uniform token info:id = "mdl:OmniPBR"
+        bool inputs:enable_opacity = 1
+        bool inputs:enable_opacity_texture = 1
+        asset inputs:opacity_texture = @../Textures/crate_logo_alb.png@
+        int inputs:opacity_mode = 0
+    }
+}"""  # a UsdPreviewSurface saying opaque beside an OmniPBR whose opacity map cuts it out (mode 0: its alpha)
 QUAD = """    def Mesh "seat" (
         prepend apiSchemas = ["MaterialBindingAPI"]
     )
@@ -181,7 +229,7 @@ def crate(folder):
     (usd / "payloads/materials.usda").write_text(layer([
         material("m_plastic_black", tile, mdl="../source_assets/look.mdl"),
         material("m_logo", {"albedo": "crate_logo_alb.png"}), material("m_paint", constant="(0.8, 0.1, 0.1)"),
-        GLASS]))
+        GLASS, STAND_IN, PBR_ONLY, CUTOUT]))
     tiles(usd / "Textures")
     (usd / "Textures/crate_logo_alb.png").write_bytes(png((200, 30, 30), 4))
     (usd / "source_assets").mkdir()
@@ -217,6 +265,7 @@ def bowl(folder):
     (usd / "payloads/base.usda").write_text(layer([material("m_plastic_black", tile, directx=True)],
                                                   documentation="A bowl", mesh=QUAD))
     tiles(usd / "Textures")
+    (usd / "validator_sm_bowl_b01_01_issues.csv").write_text("Asset,Rule,Message\n")  # the source's check report
     return "assets_usd/sm_bowl_b01_01.usda"
 
 
@@ -236,11 +285,11 @@ def tiled(folder):
 
 
 def broken(folder):
-    """An asset holding a file whose ending no role knows."""
+    """An asset whose layer names a file whose ending no role knows."""
     usd = folder / "assets_usd"
     usd.mkdir(parents=True)
     (usd / "sm_broken_c01_01.usda").write_text('#usda 1.0\n(\n    defaultPrim = "RootNode"\n)\n\n'
-                                               'def Xform "RootNode"\n{\n}\n')
+                                               'def Xform "RootNode"\n{\n    asset notes = @./notes.xyz@\n}\n')
     (usd / "notes.xyz").write_text("?")
     return "assets_usd/sm_broken_c01_01.usda"
 
@@ -321,7 +370,10 @@ def test_an_adopted_set_is_taken_in_whole_under_its_licence(repository, tmp_path
     models = sorted(address for address in report["new"] if address.startswith("model/"))
     assert models == ["model/demo_bowl_b01@1", "model/demo_crate_a01@1", "model/demo_tiles_d01@1"], report
     surfaces = [entries.load_address(root, address) for address in report["new"] if address.startswith("surface/")]
-    assert len(surfaces) == 5, report  # the shared tile set once, the crate's logo, paint and glass, the UDIM tiles
+    assert len(surfaces) == 7, report  # the shared tile set once, the crate's logo, paint, glass, OmniPBR and cutout,
+    # the UDIM tiles; the crate's stand-in material none
+    assert report["left out"] == [{"asset": "bowl_b01", "file": "validator_sm_bowl_b01_01_issues.csv",
+                                   "why": take_in_hub.LEFT_OUT}], report["left out"]
     model = entries.load_address(root, "model/demo_crate_a01@1")
     assert model["usd"]["root"] == "sm_crate_A01_01.usd" and model["usd"]["default_prim"] == "/RootNode"
     assert model["usd"]["path"] == "score_lib/model/demo_crate_a01/1/sm_crate_A01_01.usd"
@@ -356,6 +408,23 @@ def test_an_adopted_set_is_taken_in_whole_under_its_licence(repository, tmp_path
     preview = see_through.GetPrimAtPath(f"/{by_material['m_glass']['id']}/surface").attributes
     assert (preview["inputs:opacity"].default, preview["inputs:roughness"].default) == (0.0, 0.0)
     assert preview["inputs:ior"].default == pytest.approx(1.3)
+    pbr = json.loads(blob(blobs, by_material["m_pbr"], "surface.json", tmp_path).read_text())
+    assert (pbr["maps"], pbr["tile_scale"], pbr["look_from"]["shader"]) == (
+        {"albedo": "albedo.png", "orm": "orm.png"}, [2.0, 2.0], "OmniPBR"), pbr
+    assert pbr["opacity"] == {"shader": "OmniPBR", "constant": 0.5, "map": None, "mode": "mono_average",
+                              "threshold": 0.25}, pbr
+    pbr_look = Sdf.Layer.FindOrOpen(str(blob(blobs, by_material["m_pbr"], "material.usda", tmp_path)))
+    pbr_inputs = pbr_look.GetPrimAtPath(f"/{by_material['m_pbr']['id']}/surface").attributes
+    assert (pbr_inputs["inputs:opacity"].default, pbr_inputs["inputs:opacityThreshold"].default) == (0.5, 0.25)
+    assert pbr_inputs["inputs:diffuseColor"].connectionPathList.GetAddedOrExplicitItems()
+    cutout = json.loads(blob(blobs, by_material["m_cutout"], "surface.json", tmp_path).read_text())
+    assert cutout["maps"]["opacity"] == "opacity.png" and cutout["opacity"]["map"] and "look_from" not in cutout
+    cut_look = Sdf.Layer.FindOrOpen(str(blob(blobs, by_material["m_cutout"], "material.usda", tmp_path)))
+    wired = cut_look.GetPrimAtPath(f"/{by_material['m_cutout']['id']}/surface").attributes["inputs:opacity"]
+    assert [str(path) for path in wired.connectionPathList.GetAddedOrExplicitItems()] == [
+        f"/{by_material['m_cutout']['id']}/opacity.outputs:a"]
+    assert "opacity" not in tiled and "look_from" not in tiled
+    assert not [name for name in entries.load_address(root, "model/demo_bowl_b01@1")["files"] if name.endswith(".csv")]
     look = Sdf.Layer.FindOrOpen(str(blob(blobs, by_material["m_plastic_black"], "material.usda", tmp_path)))
     normal = look.GetPrimAtPath(f"/{by_material['m_plastic_black']['id']}/normal")
     assert normal.attributes["inputs:scale"].default[1] < 0 < normal.attributes["inputs:bias"].default[1]
