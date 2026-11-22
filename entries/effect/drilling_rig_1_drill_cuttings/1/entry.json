@@ -2,14 +2,14 @@
   "address": "effect/drilling_rig_1_drill_cuttings@1",
   "files": {
     "clip.usdc": {
-      "bytes": 164685690,
+      "bytes": 164685713,
       "role": "usd",
-      "sha256": "971ba05982af13447f224b29ced8dbc9536dd4b6bf07ee5ab21fe0520fe574fd"
+      "sha256": "6c19af23d3d83b3dde8b9f82c2046ea82536550f96a6ad2d93d35449a68a7bd9"
     },
     "effect.usda": {
-      "bytes": 3241,
+      "bytes": 3280,
       "role": "usd",
-      "sha256": "19a3240690c21042284d97c0753f51d90bbf2da8d40aa649149629559565fd88"
+      "sha256": "029c18541ff60ded89804082e6fe4811f66ba80995e9cf9e601d8c9b8bed5248"
     },
     "preview.png": {
       "bytes": 1152,
@@ -36,6 +36,12 @@
     },
     "code": "b61c09faa3d678538e882755d1676a270134fa9e2e67bd298364770f146fee64",
     "commit": "d309f6764f00aa1566833817ff3ff040d3abc9df",
+    "files_from": {
+      "clip.usdc": {
+        "path": "assets/effects/drilling_rig_1_drill_cuttings.usdc",
+        "sha256": "971ba05982af13447f224b29ced8dbc9536dd4b6bf07ee5ab21fe0520fe574fd"
+      }
+    },
     "from": "footage: grl-50586, pia16726 (a drilling rig's cuttings poured out at its collar over six seconds, settling into a cone at the slip-face angle measured on Mars's dunes, in the grey of Curiosity's first drill tailings)",
     "made_with": [
       {
@@ -78,11 +84,11 @@
   "usd": {
     "default_prim": "/drilling_rig_1_drill_cuttings",
     "layer": "effects",
-    "meters_per_unit": null,
+    "meters_per_unit": 1.0,
     "path": "score_lib/effect/drilling_rig_1_drill_cuttings/1/effect.usda",
     "root": "effect.usda",
     "time_codes_per_second": 24.0,
-    "up_axis": null,
+    "up_axis": "Y",
     "use": "reference"
   },
   "version": 1

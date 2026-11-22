@@ -2,14 +2,14 @@
   "address": "effect/kettle_1_steam_jet@1",
   "files": {
     "clip.usdc": {
-      "bytes": 3202721,
+      "bytes": 3202758,
       "role": "usd",
-      "sha256": "4448ecd31bc6224c98f7873fa71fdc8660bda8b5a88704ef71972ede80032cad"
+      "sha256": "57450e4e5438ca663636fd06ea3b89720b8ce075f54987e156b1e5d4295f4646"
     },
     "effect.usda": {
-      "bytes": 16502,
+      "bytes": 16541,
       "role": "usd",
-      "sha256": "dda002c5135c919e48774c32187765f74855adf36e5152d3fc67a010f6a84c28"
+      "sha256": "93081ff5581d3bce4fa6b8d0c75f2463f4854e83bc852fc4f6081f9cfb1ac847"
     },
     "preview.png": {
       "bytes": 21040,
@@ -36,6 +36,12 @@
     },
     "code": "b61c09faa3d678538e882755d1676a270134fa9e2e67bd298364770f146fee64",
     "commit": "d309f6764f00aa1566833817ff3ff040d3abc9df",
+    "files_from": {
+      "clip.usdc": {
+        "path": "assets/effects/kettle_1_steam_jet.usdc",
+        "sha256": "4448ecd31bc6224c98f7873fa71fdc8660bda8b5a88704ef71972ede80032cad"
+      }
+    },
     "from": "footage: flickr-5587696584, commons-boilingkettle, arxiv-2201.12128 (a boiling kettle's turbulent jet out of its spout (the mesh's farthest point from its middle above half its height, toward +z), clear for its first 1.5 to 4.5 cm where the steam is still too hot to condense, then white as it mixes with the room's air, rising and widening, drying away within half a metre)",
     "made_with": [
       {
@@ -78,11 +84,11 @@
   "usd": {
     "default_prim": "/kettle_1_steam_jet",
     "layer": "effects",
-    "meters_per_unit": null,
+    "meters_per_unit": 1.0,
     "path": "score_lib/effect/kettle_1_steam_jet/1/effect.usda",
     "root": "effect.usda",
     "time_codes_per_second": 24.0,
-    "up_axis": null,
+    "up_axis": "Y",
     "use": "reference"
   },
   "version": 1

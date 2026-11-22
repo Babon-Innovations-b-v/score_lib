@@ -2,14 +2,14 @@
   "address": "effect/stove@1",
   "files": {
     "clip.usdc": {
-      "bytes": 901768,
+      "bytes": 901806,
       "role": "usd",
-      "sha256": "27cd3fd49cdc157407abe85bbfb3639a705958589e6a174fdd35474e7b6f4b7c"
+      "sha256": "07ae6d55781309f383e0e76dd3f1748e8d00c5a6689146236ea61428e3cf387f"
     },
     "effect.usda": {
-      "bytes": 32118,
+      "bytes": 32157,
       "role": "usd",
-      "sha256": "71a117b1e77944a2edd320f6619f5ce020a795a91e3678bb87e84d06d444c087"
+      "sha256": "5a1321541f03b97422965b909b1800af3c155eb6ce50548f4a3ff1cec167eb80"
     },
     "preview.png": {
       "bytes": 31183,
@@ -36,6 +36,12 @@
     },
     "code": "da362ab5ebdca25e0f8a279f044ed3e26551128363d0218b2d649c38c1c3beee",
     "commit": "2e6fdaa503b9010d36f5b9f8b306c179083241cb",
+    "files_from": {
+      "clip.usdc": {
+        "path": "assets/effects/stove_top_1_steam_rise.usdc",
+        "sha256": "27cd3fd49cdc157407abe85bbfb3639a705958589e6a174fdd35474e7b6f4b7c"
+      }
+    },
     "from": "footage: flickr-4276025236, commons-steam-asparagus (a simmering pot's steam rising slowly off its whole top (its rim 3.5 cm under the box's top, at the lid's handle) and curling as it cools, gone about 0.05 to 0.12 m over the rim at a simmer)",
     "made_with": [
       {
@@ -83,11 +89,11 @@
   "usd": {
     "default_prim": "/stove",
     "layer": "effects",
-    "meters_per_unit": null,
+    "meters_per_unit": 1.0,
     "path": "score_lib/effect/stove/1/effect.usda",
     "root": "effect.usda",
     "time_codes_per_second": 24.0,
-    "up_axis": null,
+    "up_axis": "Y",
     "use": "reference"
   },
   "version": 1
