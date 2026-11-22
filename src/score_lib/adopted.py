@@ -110,6 +110,9 @@ PLACEMENTS = {"floor", "ceiling", "table", "wall", "desk"}
 SURFACE_NEUTRAL = {"m", "opaque", "trans", "clear", "semi", "colored", "misc", "aniso"}
 # Two models are the same size when the longer side of either is at most this many times the other's.
 SIZE_RATIO = 2.0
+# A tie of more candidates than this is never settled by size: with more, several fit (a crate among 160 boxes), and
+# reading each one's USD is the run's whole cost.
+SIZE_TIE_MOST = 6
 # A model's files read for its size at most this many bytes (one model's USD in the cache at a time).
 SIZE_READ_BYTES = 2 << 30
 VARIANT = re.compile(r"^([a-z]?\d+[a-z]?|\d+p\d+|v\d+)$")
@@ -422,8 +425,8 @@ def size_ratio(ours, theirs):
 
 def only_size_fit(record, tied, sizes):
     """The one tied candidate within SIZE_RATIO of our size when every other one is known to be outside it, else
-    None (read no further than a second fit or an unknown size)."""
-    ours = sizes(record) if sizes else None
+    None (read no further than a second fit or an unknown size, and not at all for more than SIZE_TIE_MOST)."""
+    ours = sizes(record) if sizes and len(tied) <= SIZE_TIE_MOST else None
     if not ours:
         return None
     fits = []
