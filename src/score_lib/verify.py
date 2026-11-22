@@ -1,5 +1,6 @@
 """score-lib verify (spec section 8): every check over the entries and the index; each failure named with its
 address. Exit code 0 only when all pass."""
+import concurrent.futures
 import json
 import pathlib
 import shutil
@@ -8,12 +9,13 @@ import tempfile
 from score_lib import contribution
 from score_lib import entry as entries
 from score_lib import index, locks, schema
-from score_lib.blobs import BadBlob, check_sha
+from score_lib.blobs import BadBlob, MissingBlob, check_sha
 from score_lib.export import algorithm as algorithm_export
-from score_lib.fetch import closure, destination, fetch
+from score_lib.fetch import MissingEntry, closure, destination, fetch
 from score_lib.admission import Sources
 
 USD_ROLES = ("usd",)
+READERS = 16  # entries whose blobs are read side by side (a read from the hub waits ~0.5 s on the network)
 
 
 def check_schemas(root, records):
@@ -186,11 +188,15 @@ def taken_in_faults(blobs, record):
 
 
 def gltf_faults(blobs, name, sha, files):
-    """Every buffer or picture a .gltf names that its entry does not hold beside it."""
+    """Every buffer or picture a .gltf names that its entry does not hold beside it; the one fault of a .gltf that
+    cannot be read."""
     with tempfile.TemporaryDirectory() as folder:
         path = pathlib.Path(folder) / "model.gltf"
-        blobs.get(sha, path)
-        found = json.loads(path.read_text())
+        try:
+            blobs.get(sha, path)
+            found = json.loads(path.read_text())
+        except (MissingBlob, BadBlob, ValueError) as why:  # a JSON fault is a ValueError
+            return [f"{name} cannot be read: {why}"]
     base = pathlib.PurePosixPath(name).parent
     named = [each["uri"] for each in found.get("buffers", []) + found.get("images", []) if "uri" in each]
     return [f"{name} names {uri}, which the entry does not hold" for uri in named
@@ -198,10 +204,13 @@ def gltf_faults(blobs, name, sha, files):
 
 
 def check_taken_in(blobs, records):
-    """8. every taken-in entry (provenance.taken_from: loose made files, score-lib take-in) whole and named."""
-    return [(record["address"], f"taken in: {fault}") for record in records
-            if "taken_from" in record.get("provenance", {}) and record["state"] != "withdrawn"
-            for fault in taken_in_faults(blobs, record)]
+    """8. every taken-in entry (provenance.taken_from: loose made files, score-lib take-in) whole and named; READERS
+    entries side by side."""
+    taken = [record for record in records
+             if "taken_from" in record.get("provenance", {}) and record["state"] != "withdrawn"]
+    with concurrent.futures.ThreadPoolExecutor(READERS) as pool:
+        found = list(pool.map(lambda record: taken_in_faults(blobs, record), taken))
+    return [(record["address"], f"taken in: {fault}") for record, faults in zip(taken, found) for fault in faults]
 
 
 def check_contributed(records, pending=False):
@@ -242,51 +251,60 @@ def stand_ins(folder, records, roles):
                 target.touch()
 
 
-def check_usd_entry(root, blobs, record):
-    """7. one entry fetched with its requires into a temp root (its layers' bytes, a stand-in for every other file);
-    each usd file opened with that root as the search path, every dependency resolved, the default prim present."""
-    from pxr import Ar, Usd, UsdUtils
-    failures = []
+def usd_fetched(root, blobs, record):
+    """One entry fetched with its requires into a new temp root: its layers' bytes, a stand-in for every other file;
+    (the folder, the records fetched, or why its files could not be fetched)."""
     folder = pathlib.Path(tempfile.mkdtemp(prefix="score-lib-verify-"))
     try:
         required = closure(root, [record["address"]], with_requires=True)
         others = {described["role"] for each in required for described in each["files"].values()} - set(USD_ROLES)
-        try:
-            fetched = fetch(root, blobs, [record["address"]], folder, with_requires=True, link=True,
-                            left_out_roles=others)
-            stand_ins(folder, fetched, others)
-        except entries.UnsafeName as why:
-            return [(record["address"], f"files: {why}")]
-        allowed = allowed_unresolved(fetched)
-        context = Ar.ResolverContext(Ar.DefaultResolverContext([str(folder)]))
-        kind, entry_id, version = entries.parse_address(record["address"])
-        base = folder / entries.library_path(kind, entry_id, version, "")
-        usd_files = [name for name, described in sorted(record["files"].items()) if described["role"] in USD_ROLES]
-        for name in usd_files:
-            path = base / name
-            with Ar.ResolverContextBinder(context):
-                _, _, unresolved = UsdUtils.ComputeAllDependencies(str(path))
-            for missing in unresolved:
-                if not any(missing.endswith(each) for each in allowed):
-                    failures.append((record["address"], f"usd: {name} names {missing}, which does not resolve"))
-        root_file = (record.get("usd") or {}).get("root")
-        default = (record.get("usd") or {}).get("default_prim")
-        if root_file:
-            stage = Usd.Stage.Open(str(base / root_file), context)
-            if stage is None:
-                failures.append((record["address"], f"usd: {root_file} does not open"))
-            elif default and not stage.GetPrimAtPath(default):
-                failures.append((record["address"], f"usd: default prim {default} missing"))
-    finally:
-        shutil.rmtree(folder, ignore_errors=True)
+        fetched = fetch(root, blobs, [record["address"]], folder, with_requires=True, link=True, left_out_roles=others)
+        stand_ins(folder, fetched, others)
+    except (entries.UnsafeName, MissingEntry, MissingBlob, BadBlob) as why:  # each also told by its own check
+        return folder, None, f"files: {why}"
+    return folder, fetched, None
+
+
+def usd_faults(folder, fetched, record):
+    """7. each usd file of a fetched entry opened with its temp root as the search path, every dependency resolved,
+    the default prim present."""
+    from pxr import Ar, Usd, UsdUtils
+    failures = []
+    allowed = allowed_unresolved(fetched)
+    context = Ar.ResolverContext(Ar.DefaultResolverContext([str(folder)]))
+    kind, entry_id, version = entries.parse_address(record["address"])
+    base = folder / entries.library_path(kind, entry_id, version, "")
+    usd_files = [name for name, described in sorted(record["files"].items()) if described["role"] in USD_ROLES]
+    for name in usd_files:
+        with Ar.ResolverContextBinder(context):
+            _, _, unresolved = UsdUtils.ComputeAllDependencies(str(base / name))
+        for missing in unresolved:
+            if not any(missing.endswith(each) for each in allowed):
+                failures.append((record["address"], f"usd: {name} names {missing}, which does not resolve"))
+    root_file = (record.get("usd") or {}).get("root")
+    default = (record.get("usd") or {}).get("default_prim")
+    if root_file:
+        stage = Usd.Stage.Open(str(base / root_file), context)
+        if stage is None:
+            failures.append((record["address"], f"usd: {root_file} does not open"))
+        elif default and not stage.GetPrimAtPath(default):
+            failures.append((record["address"], f"usd: default prim {default} missing"))
     return failures
 
 
 def check_usd(root, blobs, records):
+    """7. every USD entry: READERS fetched side by side, each then checked (usd_faults) and its temp root removed."""
+    wanted = [record for record in records if record.get("usd") and record["state"] != "withdrawn"]
     failures = []
-    for record in records:
-        if record.get("usd") and record["state"] != "withdrawn":
-            failures += check_usd_entry(root, blobs, record)
+    with concurrent.futures.ThreadPoolExecutor(READERS) as pool:
+        for start in range(0, len(wanted), READERS):
+            batch = wanted[start:start + READERS]
+            for record, (folder, fetched, why) in zip(batch, pool.map(lambda each: usd_fetched(root, blobs, each),
+                                                                      batch)):
+                try:
+                    failures += [(record["address"], why)] if why else usd_faults(folder, fetched, record)
+                finally:
+                    shutil.rmtree(folder, ignore_errors=True)
     return failures
 
 
