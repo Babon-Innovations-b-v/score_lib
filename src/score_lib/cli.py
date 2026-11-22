@@ -140,7 +140,7 @@ def command_take_in(options):
 def command_adopted(options):
     from score_lib import adopted
     cache = pathlib.Path(os.environ.get("SCORE_LIB_CACHE") or pathlib.Path.home() / ".cache/score-lib") / "adopted"
-    sizes = adopted.Sizes(options.root, lambda: blob_store(reading=True), cache)
+    sizes = adopted.Sizes(options.root, lambda: blob_store(reading=True), cache, options.sizes)
     report = adopted.match(options.root, source_ids=options.source or None, sizes=sizes)
     if options.apply:
         report["withdrawn"] = adopted.apply(options.root, report)
@@ -400,6 +400,8 @@ def parser():
     adopting.add_argument("--proposals", required=True,
                           help="where to write the proposals (every older entry's row, its pair, score and "
                                "reason); a path outside the checkout")
+    adopting.add_argument("--sizes", help="a JSON file of models' sizes kept between runs (outside the checkout): "
+                                           "each size read is kept there, and a later run reads no bytes again")
     adopting.add_argument("--apply", action="store_true",
                           help="withdraw each accepted pair's older entry naming its replacement, and rebuild the index")
     adopting.set_defaults(handle=command_adopted)

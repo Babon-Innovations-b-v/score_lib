@@ -18,6 +18,7 @@ its USD's, the files fetched through a cache folder emptied after each read (`Si
 
 An adopted set is a `config/sources.toml` row with a `take_in` table; its entries are those whose licence block or
 provenance names that row."""
+import hashlib
 import json
 import pathlib
 import re
@@ -631,21 +632,45 @@ def size_reads(record):
     return reads
 
 
+def files_key(record):
+    """What a size read from a record's files holds for: the sha256 of its files' hashes."""
+    return hashlib.sha256(" ".join(sorted(described["sha256"] for described in record["files"].values()))
+                          .encode()).hexdigest()
+
+
 class Sizes:
     """Each model's bounding box sides in metres, longest first, read once a run through a cache folder emptied after
     each read; `blobs` is the blob store or a function giving it (opened at the first read). `found` holds each size
-    read (None when unknown), `unread` the models whose bytes the store did not give."""
+    read (None when unknown), `unread` the models whose bytes the store did not give. With `known` (a small JSON file
+    of sizes, outside the checkout) each size read is kept there with its files' key and taken from there by a later
+    run while the files are the same, so a second run reads no bytes again."""
 
-    def __init__(self, root, blobs, cache):
+    def __init__(self, root, blobs, cache, known=None):
         self.root, self.blobs, self.cache = root, blobs, pathlib.Path(cache)
         self.found, self.unread = {}, set()
+        self.known = pathlib.Path(known) if known else None
+        self.kept = json.loads(self.known.read_text()) if self.known and self.known.is_file() else {}
 
     def __call__(self, record):
         if record["kind"] != "model":
             return None
         if record["address"] not in self.found:
-            self.found[record["address"]] = self.read(record)
+            self.found[record["address"]] = self.remembered(record)
         return self.found[record["address"]]
+
+    def remembered(self, record):
+        """A model's size from the known file when its files are the same, else read and kept there."""
+        key = files_key(record)
+        kept = self.kept.get(record["address"])
+        if kept and kept["files"] == key:
+            return kept["sides"]
+        sides = self.read(record)
+        if self.known and record["address"] not in self.unread:
+            self.kept[record["address"]] = {"files": key, "sides": sides}
+            partial = self.known.with_name(self.known.name + ".partial")
+            partial.write_text(json.dumps(self.kept, indent=1, sort_keys=True) + "\n")
+            partial.replace(self.known)
+        return sides
 
     def store(self):
         """The blob store, opened once."""

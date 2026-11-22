@@ -5,11 +5,11 @@ of another state: the rehearsal's lamps for a head light), a synonym or Wikidata
 replaced entry is proposed, or --apply leaves an accepted entry standing or without its replacement; red too when a
 tie is settled by taking the first of equal candidates rather than by evidence (shared words, a name adding nothing,
 the only one within twice our size, the same maps), when a pair more than twice or half our size is accepted, when a
-size is misread from a record, a glTF's node transforms or a USD stage, or when the full run's wrong pairs come back
-(score #155: a crate for the first of 59 boxes, a bowl stack for one bowl, a plant pot for a potted plant, a car's
-radiator, a floor lamp for a floor, a tilt truck classed as a dumpster, a khaki case for a blue box, an exam couch for a
-sofa, a tire-pressure gauge, a surgery room's control panel, a building's wall piece, a suit's or a tarp's fabric for a
-blanket's or a body's)."""
+size is misread from a record, a glTF's node transforms or a USD stage or not kept for the next run, or when the full
+run's wrong pairs come back (score #155: a crate for the first of 59 boxes, a bowl stack for one bowl, a plant pot for a
+potted plant, a car's radiator, a floor lamp for a floor, a tilt truck classed as a dumpster, a khaki case for a blue
+box, an exam couch for a sofa, a tire-pressure gauge, a surgery room's control panel, a building's wall piece, a suit's
+or a tarp's fabric for a blanket's or a body's)."""
 import hashlib
 import json
 
@@ -199,8 +199,9 @@ def test_older_entries_pair_with_the_same_kind_and_apply_withdraws_them_naming_i
              or word not in found[entries.address_of(kind, entry_id, 1)]["reason"]]
     assert not wrong, wrong
     proposals = tmp_path / "proposals.json"
+    known = tmp_path / "sizes.json"
     cli.main(["--root", str(library), "adopted", "match", "--source", SOURCE, "--proposals", str(proposals),
-              "--apply"])
+              "--sizes", str(known), "--apply"])
     report = json.loads(proposals.read_text())
     accepted = {row["old"]: row["new"] for row in report["proposals"] if row["status"] == "accepted"}
     assert sorted(report["withdrawn"]) == sorted(accepted) and len(accepted) == 9
@@ -209,6 +210,9 @@ def test_older_entries_pair_with_the_same_kind_and_apply_withdraws_them_naming_i
         assert (record["state"], record["replaced_by"]) == ("withdrawn", new)
     rows = {row["address"]: row for row in json.loads((library / "index/model.json").read_text())["entries"]}
     assert rows["model/stool_1@1"]["replaced_by"] == "model/demo_stool@1"
-    again = adopted.match(library, source_ids=[SOURCE], sizes=adopted.Sizes(library, LocalBlobStore(tmp_path / "blobs"),
-                                                                            tmp_path / "cache" / "again"))
+    # A second run takes the kept sizes and reads no bytes: its store is empty, and an unread size would let the
+    # 5 m crate past the size check.
+    again = adopted.match(library, source_ids=[SOURCE], sizes=adopted.Sizes(
+        library, LocalBlobStore(tmp_path / "empty"), tmp_path / "cache" / "again", known))
+    assert json.loads(known.read_text())["model/crate_4@1"]["sides"] == [1.0, 0.4, 0.2] and not again["sizes_unread"]
     assert again["counts"]["accepted"] == 0 and not set(accepted) & {row["old"] for row in again["proposals"]}
