@@ -1,0 +1,195 @@
+{
+  "address": "model/simready_container_bottle_glass_a01@1",
+  "files": {
+    "Textures/t_container_bottle_glass_alb.png": {
+      "bytes": 39451321,
+      "role": "texture",
+      "sha256": "81453c3141d18a2260501ffde409b98f6fd5d894bf0fd0a8ea77b5b46f0f90a5"
+    },
+    "Textures/t_container_bottle_glass_nor.png": {
+      "bytes": 38432651,
+      "role": "texture",
+      "sha256": "94c90eb1219d1c52819679613afcbdbe12ae446cc913c8a4c361d30ffb5e3e53"
+    },
+    "Textures/t_container_bottle_glass_rou.png": {
+      "bytes": 14152505,
+      "role": "texture",
+      "sha256": "e2939310f31b6976213bc504b6ffb496a7665667f0b4b74ef58bbc093682cc44"
+    },
+    "payloads/MuJoCo/disabled.usda": {
+      "bytes": 6688,
+      "role": "usd",
+      "sha256": "8dc498b38cabaf02e7015eb2cabc63589112f4d900eaef41f19c827c7f3567ba"
+    },
+    "payloads/MuJoCo/enabled.usda": {
+      "bytes": 7440,
+      "role": "usd",
+      "sha256": "e0b464ecbd154a48eac61b0f399d3b8d808443fafa65bd45ab7853a11be975da"
+    },
+    "payloads/Newton/disabled.usda": {
+      "bytes": 6688,
+      "role": "usd",
+      "sha256": "8dc498b38cabaf02e7015eb2cabc63589112f4d900eaef41f19c827c7f3567ba"
+    },
+    "payloads/Newton/enabled.usda": {
+      "bytes": 7262,
+      "role": "usd",
+      "sha256": "5af4563481ff7fe337105c84ef2c5eec0556aba5d6e111339bb72ed91cf4d8df"
+    },
+    "payloads/PhysX/disabled.usda": {
+      "bytes": 6688,
+      "role": "usd",
+      "sha256": "8dc498b38cabaf02e7015eb2cabc63589112f4d900eaef41f19c827c7f3567ba"
+    },
+    "payloads/PhysX/enabled.usda": {
+      "bytes": 6967,
+      "role": "usd",
+      "sha256": "06b07b528fa2610a699c714eaaa63aa8b3b09eb5e5d69793ec2be52994e996fe"
+    },
+    "payloads/Physics/physics.usda": {
+      "bytes": 7504,
+      "role": "usd",
+      "sha256": "859537d5afa6a852fe14dee06e89843095936288bc0081c7d84fff864e0e0c2c"
+    },
+    "payloads/base.usda": {
+      "bytes": 10913,
+      "role": "usd",
+      "sha256": "a0c8ac0bbe3fc5e412d073f48758c7fc88ad438b8562e29b29b05389178fd24c"
+    },
+    "payloads/geometries.usd": {
+      "bytes": 1756656,
+      "role": "usd",
+      "sha256": "cad412a88a2426bd2ecbf3cf9f9167a570dcdf26877caa88c2c1522601947d45"
+    },
+    "payloads/instances.usda": {
+      "bytes": 7693,
+      "role": "usd",
+      "sha256": "54a51c12f6f5809f0018a4e41fb35df37e49ddc121014302af51de78dffd66d8"
+    },
+    "payloads/instances_mujoco.usda": {
+      "bytes": 7965,
+      "role": "usd",
+      "sha256": "7a35172ff322ae339898441114c323825dfed38c15c6cd7dc1f46e6d663a6bd7"
+    },
+    "payloads/instances_newton.usda": {
+      "bytes": 7816,
+      "role": "usd",
+      "sha256": "393e91b6f24436323e0b332a00060536d92ff2e5da7eaee769d7c37191f59d5b"
+    },
+    "payloads/instances_physx.usda": {
+      "bytes": 7833,
+      "role": "usd",
+      "sha256": "bcefa6f6b83f04fa4d556a0dfbda74cdcb4d110dfe2b1c933daf8752565afb65"
+    },
+    "payloads/materials.usda": {
+      "bytes": 12439,
+      "role": "usd",
+      "sha256": "9e178c119ef7f987c8d99cbab2bd9d34f81d6dc9c6ba0fd818c38850f12c3752"
+    },
+    "sm_container_bottle_glass_a01_01.usd": {
+      "bytes": 21676,
+      "role": "usd",
+      "sha256": "11c4c9f5e3da12216ed628aeffcd3980a19b00ef64e4fca1df4def47a1678d26"
+    },
+    "source_assets/OmniGlass.mdl": {
+      "bytes": 10205,
+      "role": "code",
+      "sha256": "31a93eda2387572db4930a8b22f51e100716809e859505c97b82a17ac43d1e30"
+    },
+    "source_assets/OmniGlass_Opacity.mdl": {
+      "bytes": 17706,
+      "role": "code",
+      "sha256": "b6110a46bb9e8cd94f20cf7d78992f6f81cd5546bbab277cf950256faae80261"
+    },
+    "source_assets/OmniPBRBase.mdl": {
+      "bytes": 19369,
+      "role": "code",
+      "sha256": "a8fd9fe174e91892e94d06da90ba453a124024c2ce2c033be9d82c9e2f76a3b7"
+    }
+  },
+  "id": "simready_container_bottle_glass_a01",
+  "kind": "model",
+  "licence": {
+    "credit": "container_bottle_glass_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0; changed: each Material names its library surface (score:surface)",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "Textures/t_container_bottle_glass_alb.png": "container_bottle_glass_a01/simready_usd/Textures/t_container_bottle_glass_alb.png",
+      "Textures/t_container_bottle_glass_nor.png": "container_bottle_glass_a01/simready_usd/Textures/t_container_bottle_glass_nor.png",
+      "Textures/t_container_bottle_glass_rou.png": "container_bottle_glass_a01/simready_usd/Textures/t_container_bottle_glass_rou.png",
+      "payloads/MuJoCo/disabled.usda": "container_bottle_glass_a01/simready_usd/payloads/MuJoCo/disabled.usda",
+      "payloads/MuJoCo/enabled.usda": "container_bottle_glass_a01/simready_usd/payloads/MuJoCo/enabled.usda",
+      "payloads/Newton/disabled.usda": "container_bottle_glass_a01/simready_usd/payloads/Newton/disabled.usda",
+      "payloads/Newton/enabled.usda": "container_bottle_glass_a01/simready_usd/payloads/Newton/enabled.usda",
+      "payloads/PhysX/disabled.usda": "container_bottle_glass_a01/simready_usd/payloads/PhysX/disabled.usda",
+      "payloads/PhysX/enabled.usda": "container_bottle_glass_a01/simready_usd/payloads/PhysX/enabled.usda",
+      "payloads/Physics/physics.usda": "container_bottle_glass_a01/simready_usd/payloads/Physics/physics.usda",
+      "payloads/base.usda": "container_bottle_glass_a01/simready_usd/payloads/base.usda",
+      "payloads/geometries.usd": "container_bottle_glass_a01/simready_usd/payloads/geometries.usd",
+      "payloads/instances.usda": "container_bottle_glass_a01/simready_usd/payloads/instances.usda",
+      "payloads/instances_mujoco.usda": "container_bottle_glass_a01/simready_usd/payloads/instances_mujoco.usda",
+      "payloads/instances_newton.usda": "container_bottle_glass_a01/simready_usd/payloads/instances_newton.usda",
+      "payloads/instances_physx.usda": "container_bottle_glass_a01/simready_usd/payloads/instances_physx.usda",
+      "payloads/materials.usda": "container_bottle_glass_a01/simready_usd/payloads/materials.usda (changed: each Material names its library surface (score:surface))",
+      "sm_container_bottle_glass_a01_01.usd": "container_bottle_glass_a01/simready_usd/sm_container_bottle_glass_a01_01.usd",
+      "source_assets/OmniGlass.mdl": "container_bottle_glass_a01/simready_usd/source_assets/OmniGlass.mdl",
+      "source_assets/OmniGlass_Opacity.mdl": "container_bottle_glass_a01/simready_usd/source_assets/OmniGlass_Opacity.mdl",
+      "source_assets/OmniPBRBase.mdl": "container_bottle_glass_a01/simready_usd/source_assets/OmniPBRBase.mdl"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "container_bottle_glass_a01: its model, physics and maps"
+      },
+      {
+        "by": "score",
+        "what": "the library surface each material names (score:surface)"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: container_bottle_glass_a01",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/simready_m_trans_glass_container_bottle_a01_bc8ebb56@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "description": [
+      "closable cylindrical container for transport and storage of liquids and gases"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "simulators": [
+      "mujoco",
+      "newton",
+      "physx"
+    ],
+    "wikidata_class": [
+      "bottle"
+    ],
+    "wikidata_qcode": [
+      "Q80228"
+    ]
+  },
+  "title": "container_bottle_glass_a01",
+  "usd": {
+    "default_prim": "/RootNode",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/simready_container_bottle_glass_a01/1/sm_container_bottle_glass_a01_01.usd",
+    "root": "sm_container_bottle_glass_a01_01.usd",
+    "up_axis": "Z",
+    "use": "reference"
+  },
+  "version": 1
+}
