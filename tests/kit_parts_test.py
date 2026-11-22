@@ -1,9 +1,10 @@
 """score-lib kit-parts: a taken-in kit piece whose parts are unbound GeomSubsets and one of them a decal made again
-part by part (each part a placeholder material named after it, the decal's faces off), taken in over its draft, and
+part by part (each part a placeholder material named after it, plain grey and marked, the decal's faces off), taken in over its draft, and
 a second run listing nothing."""
 import json
 
 import numpy as np
+import pytest
 from pxr import Sdf, Usd, UsdGeom, UsdShade
 
 from score_lib import entry as entries
@@ -70,7 +71,9 @@ def test_a_piece_is_made_again_part_by_part_without_its_decal(tmp_path):
     assert parts == {"Trim": [0], "Glass": [1]}
     for name in parts:
         bound = UsdShade.MaterialBindingAPI(stage.GetPrimAtPath(f"/wall/geo/{name}")).ComputeBoundMaterial()[0]
-        assert str(bound.GetPath()) == f"/wall/Looks/{name}" and not bound.GetSurfaceOutput().HasConnectedSource()
+        assert str(bound.GetPath()) == f"/wall/Looks/{name}" and bound.GetPrim().GetAttribute("score:placeholder").Get()
+        grey = bound.ComputeSurfaceSource()[0]  # a plain reader draws it grey, never Cycles' black
+        assert tuple(grey.GetInput("diffuseColor").Get()) == pytest.approx(kit_parts.GREY)
     glass = np.asarray(mesh.GetPointsAttr().Get())[4:]
     assert glass[:, 0].min() == 2.0  # the glass face keeps its own corners after the renumbering
     assert np.isclose(np.asarray(UsdGeom.PrimvarsAPI(mesh).GetPrimvar("st").Get())[4:, 0].min(), 2 / 3)
@@ -78,3 +81,7 @@ def test_a_piece_is_made_again_part_by_part_without_its_decal(tmp_path):
     assert own["parts"] == ["Glass", "Trim"] and own["size_m"] == [3.0, 1.0, 0.0]
     assert verify.check_taken_in(blobs, entries.all_entries(library)) == []
     assert kit_parts.listings(library, blobs, tmp_path / "again") == ({}, [])
+    shaderless = Usd.Stage.Open(str(usd))  # an earlier run's placeholder with no shader is made again
+    shaderless.RemovePrim("/wall/Looks/Trim/surface")
+    shaderless.GetPrimAtPath("/wall/Looks/Trim").RemoveProperty("outputs:surface")
+    assert kit_parts.needs_parts(shaderless)

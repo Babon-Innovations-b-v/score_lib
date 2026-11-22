@@ -9,8 +9,10 @@ again:
 
 - every decal part's faces taken off the mesh (its points, primvars and the other parts' face numbers following),
   and the part out of its record's `parts`;
-- every other part bound to a placeholder material named after it (`/<default prim>/Looks/<part>`, no shader, so it
-  gives no colour and no finish: a place still lays a library surface on it, place_build's `surface --part`).
+- every other part bound to a placeholder material named after it (`/<default prim>/Looks/<part>`): a plain
+  UsdPreviewSurface in a neutral grey (a material with no shader renders black in Blender's Cycles), marked
+  `score:placeholder` so score's finish check knows it is no finish and a place still lays a library surface on it
+  (place_build's `surface --part`; score's dome_shell.placeholder makes the same one).
 
     score-lib kit-parts --into <work folder> [--only <address>]
 
@@ -32,9 +34,13 @@ KINDS = {"kit": ("piece.usdc", "piece.json"), "model": ("model.usdc", "model.jso
 FETCHES = 16  # entries' files fetched side by side
 DECAL = "decal"
 LOOKS = "Looks"
-STEP = {"what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any "
-                "USD reader splits them, and its decal faces taken off (their logo a picture the library does not "
-                "keep) (score #156)", "source": "score"}
+PLACEHOLDER = "score:placeholder"  # the mark score's finish check reads (score's dome_shell.PLACEHOLDER)
+GREY = (0.8, 0.8, 0.8)  # a plain reader's neutral grey, never a finish
+ROUGHNESS = 0.6
+STEPS = "its parts each bound to a placeholder material named after the part"  # how this step's words begin
+STEP = {"what": f"{STEPS} (a plain grey marked score:placeholder, no finish) so any USD reader splits them and draws "
+                "them grey, and its decal faces taken off (their logo a picture the library does not keep) "
+                "(score #156)", "source": "score"}
 
 
 def is_decal(name):
@@ -48,15 +54,21 @@ def part_subsets(mesh):
             if subset.GetFamilyNameAttr().Get() == UsdShade.Tokens.materialBind]
 
 
+def drawn(material):
+    """Whether a material has a surface a plain reader draws (a shader on its surface output)."""
+    return bool(material) and material.GetSurfaceOutput().HasConnectedSource()
+
+
 def needs_parts(stage):
-    """Whether the stage holds a decal part or a part with no material bound."""
+    """Whether the stage holds a decal part, a part with no material bound, or one bound to a material with no
+    surface (an earlier run's shaderless placeholder, drawn black)."""
     from pxr import UsdGeom, UsdShade
     for prim in stage.Traverse():
         if not prim.IsA(UsdGeom.Mesh):
             continue
         for subset in part_subsets(prim):
             bound = UsdShade.MaterialBindingAPI(subset.GetPrim()).GetDirectBinding().GetMaterial()
-            if is_decal(subset.GetPrim().GetName()) or not bound:
+            if is_decal(subset.GetPrim().GetName()) or not drawn(bound):
                 return True
     return False
 
@@ -132,14 +144,26 @@ def decals_off(stage, mesh_prim):
     return left, names
 
 
+def placeholder(stage, path):
+    """The placeholder material at `path`: a plain UsdPreviewSurface in GREY, marked PLACEHOLDER."""
+    from pxr import Gf, Sdf, UsdShade
+    material = UsdShade.Material.Define(stage, path)
+    material.GetPrim().CreateAttribute(PLACEHOLDER, Sdf.ValueTypeNames.Bool).Set(True)
+    shader = UsdShade.Shader.Define(stage, path.AppendChild("surface"))
+    shader.CreateIdAttr("UsdPreviewSurface")
+    shader.CreateInput("diffuseColor", Sdf.ValueTypeNames.Color3f).Set(Gf.Vec3f(*GREY))
+    shader.CreateInput("roughness", Sdf.ValueTypeNames.Float).Set(ROUGHNESS)
+    material.CreateSurfaceOutput().ConnectToSource(shader.ConnectableAPI(), "surface")
+    return material
+
+
 def placeholders_bound(stage, mesh_prim, top):
     """Each part of the mesh bound to the placeholder material named after it (made once under the top's Looks)."""
     from pxr import UsdShade
     UsdShade.MaterialBindingAPI.Apply(mesh_prim)
     for subset in part_subsets(mesh_prim):
-        name = subset.GetPrim().GetName()
-        material = UsdShade.Material.Define(stage, top.GetPath().AppendChild(LOOKS).AppendChild(name))
-        UsdShade.MaterialBindingAPI.Apply(subset.GetPrim()).Bind(material)
+        path = top.GetPath().AppendChild(LOOKS).AppendChild(subset.GetPrim().GetName())
+        UsdShade.MaterialBindingAPI.Apply(subset.GetPrim()).Bind(placeholder(stage, path))
 
 
 def made_again(source, target):
@@ -207,9 +231,8 @@ def fetched(blobs, record, name, folder):
 def listed(record, files):
     """The take-in list's row of an entry made again (`files`: {name in the entry: made path})."""
     made_with = [{"what": step["what"], "source": step["by"], **({"carried": True} if step.get("carried") else {})}
-                 for step in record["provenance"]["made_with"]]
-    if STEP["what"] not in [step["what"] for step in made_with]:
-        made_with.append(dict(STEP))
+                 for step in record["provenance"]["made_with"] if not step["what"].startswith(STEPS)]
+    made_with.append(dict(STEP))
     return {"kind": record["kind"], "id": record["id"], "title": record["title"], "tags": record.get("tags", {}),
             "requires": record.get("requires", []), "made_with": made_with,
             "files": {name: {"path": str(path), "from": record["provenance"]["files_from"][name]}
