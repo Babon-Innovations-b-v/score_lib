@@ -1,0 +1,78 @@
+{
+  "address": "surface/simready_m_opaque_metal_bronze_polished_a01_b1b82569@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 3470597,
+      "role": "texture",
+      "sha256": "1ef1aac3815fed6bd6af80fdc59d28b00f29021bbd15727ac54acc5767f42ac6"
+    },
+    "material.usda": {
+      "bytes": 2603,
+      "role": "usd",
+      "sha256": "e6a1883ef389106113ef2032cf8f395b4c6c47316edde68f4463f8bfe9feef70"
+    },
+    "normal.png": {
+      "bytes": 2690549,
+      "role": "texture",
+      "sha256": "e6ac86e52abc18712847b160ecdde5437eac5eb290dd8394fd1dba38386e6267"
+    },
+    "orm.png": {
+      "bytes": 4763902,
+      "role": "texture",
+      "sha256": "9c6a192c1e1d6b209b17a8beca3a2635200fd6e27dd2c2e1d35282a745bffe49"
+    },
+    "surface.json": {
+      "bytes": 880,
+      "role": "record",
+      "sha256": "d8513294720ce63746dcae305bbac87a02d0d4787b0936fdc8f8dde4062a4fe5"
+    }
+  },
+  "id": "simready_m_opaque_metal_bronze_polished_a01_b1b82569",
+  "kind": "surface",
+  "licence": {
+    "credit": "airSystem_compressor_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "airSystem_compressor_a01/simready_usd/Textures/t_metal_bronzePolished_a01_tile_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "airSystem_compressor_a01/simready_usd/Textures/t_metal_bronzePolished_a01_tile_nor.png",
+      "orm.png": "airSystem_compressor_a01/simready_usd/Textures/t_metal_bronzePolished_a01_tile_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__metal__bronzePolished_a01 maps of airSystem_compressor_a01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: airSystem_compressor_a01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "b1b82569c7d90ab03e87f1c86805876eacfe1819af31fcf424aec0ecf26b2026"
+    ]
+  },
+  "title": "m_opaque__metal__bronzePolished_a01",
+  "usd": null,
+  "version": 1
+}

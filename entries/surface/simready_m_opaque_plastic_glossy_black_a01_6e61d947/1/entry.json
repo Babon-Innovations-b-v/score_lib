@@ -1,0 +1,72 @@
+{
+  "address": "surface/simready_m_opaque_plastic_glossy_black_a01_6e61d947@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 58789,
+      "role": "texture",
+      "sha256": "a256461383279637552d0ce7c21d0b54d4db8b5238ae6637e4b4b8ad88042c44"
+    },
+    "material.usda": {
+      "bytes": 1986,
+      "role": "usd",
+      "sha256": "0774eec25165b3bd29a19acb09fc4b7373b6e0bc4f100817dff083f693034895"
+    },
+    "normal.png": {
+      "bytes": 9513502,
+      "role": "texture",
+      "sha256": "a03864998e9916c83af666d3a4fee5bc6c70705d66ecbf4b344cbb14a7324f99"
+    },
+    "surface.json": {
+      "bytes": 838,
+      "role": "record",
+      "sha256": "afff21c4a117aeb508f4e0b55c9923c50d33bfda6f84d4c80670597f43758b4a"
+    }
+  },
+  "id": "simready_m_opaque_plastic_glossy_black_a01_6e61d947",
+  "kind": "surface",
+  "licence": {
+    "credit": "appliance_handDryer_automatic_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "appliance_handDryer_automatic_a01/simready_usd/Textures/t_plastic_glossy_black_a01_tile_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "appliance_handDryer_automatic_a01/simready_usd/Textures/t_plastic_glossy_black_a01_tile_nor.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__plastic__glossy_black_a01 maps of appliance_handDryer_automatic_a01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: appliance_handDryer_automatic_a01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "6e61d94766f3fb6c7ce689ff96c4ac89740b7a2612fbd44f6f245ba4b1f72437"
+    ]
+  },
+  "title": "m_opaque__plastic__glossy_black_a01",
+  "usd": null,
+  "version": 1
+}

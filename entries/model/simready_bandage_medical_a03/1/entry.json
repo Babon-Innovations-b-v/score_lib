@@ -1,0 +1,195 @@
+{
+  "address": "model/simready_bandage_medical_a03@1",
+  "files": {
+    "Textures/t_medicalBandage_a01_alb.png": {
+      "bytes": 11532149,
+      "role": "texture",
+      "sha256": "323225911801bc654c0192bf312df9347d6a0db4bbc94e0df810a32409c53624"
+    },
+    "Textures/t_medicalBandage_a01_nor.png": {
+      "bytes": 6958109,
+      "role": "texture",
+      "sha256": "6af71da14f48d11b0a29bc7e300eb22f7fdf8ed2236f87e605ffb9e2a8325654"
+    },
+    "Textures/t_medicalBandage_a01_orm.png": {
+      "bytes": 8650716,
+      "role": "texture",
+      "sha256": "953d52fe1730fdab8f582177473d829349e687a7a746c5f9f76c9e3123176437"
+    },
+    "payloads/MuJoCo/disabled.usda": {
+      "bytes": 4288,
+      "role": "usd",
+      "sha256": "bede5c3ab167f11f08bceada22b58052fb1db0b94755116a7b9c68a8e9b95415"
+    },
+    "payloads/MuJoCo/enabled.usda": {
+      "bytes": 5048,
+      "role": "usd",
+      "sha256": "19cfe8df70d91962c07069d0da9e33cb172fd748939029fea94c188ac59ea28a"
+    },
+    "payloads/Newton/disabled.usda": {
+      "bytes": 4288,
+      "role": "usd",
+      "sha256": "bede5c3ab167f11f08bceada22b58052fb1db0b94755116a7b9c68a8e9b95415"
+    },
+    "payloads/Newton/enabled.usda": {
+      "bytes": 4870,
+      "role": "usd",
+      "sha256": "d33737658ec6a7d26013e3ca3b4e907315ca2c32a0696558b94ad3588ffbd69e"
+    },
+    "payloads/PhysX/disabled.usda": {
+      "bytes": 4288,
+      "role": "usd",
+      "sha256": "bede5c3ab167f11f08bceada22b58052fb1db0b94755116a7b9c68a8e9b95415"
+    },
+    "payloads/PhysX/enabled.usda": {
+      "bytes": 4576,
+      "role": "usd",
+      "sha256": "d956240b037f43d9726632d87b0f5cb00980f6ecfe81a9388231cc5103b397da"
+    },
+    "payloads/Physics/physics.usda": {
+      "bytes": 4822,
+      "role": "usd",
+      "sha256": "b6d6d7a96085ba96b02ce236c7c92d624fd66d039a0319a9dfd6866dc55df724"
+    },
+    "payloads/base.usda": {
+      "bytes": 8883,
+      "role": "usd",
+      "sha256": "411e276883be8b7a07285007a541b0b5de8967f012e2d9f80eaeb15e844bdddd"
+    },
+    "payloads/geometries.usd": {
+      "bytes": 250209,
+      "role": "usd",
+      "sha256": "d1dfd02d4a67e02c3bbc6ed766f2a1fe3bd435ea5b854dd3e1d2bdb44c2758e4"
+    },
+    "payloads/instances.usda": {
+      "bytes": 5339,
+      "role": "usd",
+      "sha256": "829e6e2c0fdfff2a23d08f49a5d5c239e19e9f5af3bd32194140e57735c56add"
+    },
+    "payloads/instances_mujoco.usda": {
+      "bytes": 5611,
+      "role": "usd",
+      "sha256": "f8dc663e0fdbbb62b2ffbf969e2983a39c6c95aad7353230264dd27710280d8e"
+    },
+    "payloads/instances_newton.usda": {
+      "bytes": 5462,
+      "role": "usd",
+      "sha256": "81c94d977dd2528d3d0ed46b1eb84b641024620afd9d669acd159856bf71d69b"
+    },
+    "payloads/instances_physx.usda": {
+      "bytes": 5766,
+      "role": "usd",
+      "sha256": "fa915869f8013d332f1df579fb89d565474fb68f04d867b8885b6b994fd4e532"
+    },
+    "payloads/materials.usda": {
+      "bytes": 10170,
+      "role": "usd",
+      "sha256": "4ce99bdb6b57c94cf9ac6cee20768f9a518dcd49c7cbf54a6c3977d4217ce2b2"
+    },
+    "sm_bandage_medical_a03_01.usd": {
+      "bytes": 21543,
+      "role": "usd",
+      "sha256": "f1a03a0de7c02a19d0e8b3b685bf32131b74c177aade7d5495c323f64eb962c6"
+    },
+    "source_assets/OmniPBR.mdl": {
+      "bytes": 16010,
+      "role": "code",
+      "sha256": "6e6b3acbccd236e21a6c29964a431d2a53e77251cc6b8b1bc975eb1c62da1781"
+    },
+    "source_assets/OmniPBRBase.mdl": {
+      "bytes": 19369,
+      "role": "code",
+      "sha256": "a8fd9fe174e91892e94d06da90ba453a124024c2ce2c033be9d82c9e2f76a3b7"
+    },
+    "source_assets/OmniPBR_ClearCoat.mdl": {
+      "bytes": 29789,
+      "role": "code",
+      "sha256": "d84c5ba482561c0eaea2e0c5b607358af549e36cd921773462f92dbc4f32cbc3"
+    }
+  },
+  "id": "simready_bandage_medical_a03",
+  "kind": "model",
+  "licence": {
+    "credit": "bandage_medical_a03 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0; changed: each Material names its library surface (score:surface)",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "Textures/t_medicalBandage_a01_alb.png": "bandage_medical_a03/simready_usd/Textures/t_medicalBandage_a01_alb.png",
+      "Textures/t_medicalBandage_a01_nor.png": "bandage_medical_a03/simready_usd/Textures/t_medicalBandage_a01_nor.png",
+      "Textures/t_medicalBandage_a01_orm.png": "bandage_medical_a03/simready_usd/Textures/t_medicalBandage_a01_orm.png",
+      "payloads/MuJoCo/disabled.usda": "bandage_medical_a03/simready_usd/payloads/MuJoCo/disabled.usda",
+      "payloads/MuJoCo/enabled.usda": "bandage_medical_a03/simready_usd/payloads/MuJoCo/enabled.usda",
+      "payloads/Newton/disabled.usda": "bandage_medical_a03/simready_usd/payloads/Newton/disabled.usda",
+      "payloads/Newton/enabled.usda": "bandage_medical_a03/simready_usd/payloads/Newton/enabled.usda",
+      "payloads/PhysX/disabled.usda": "bandage_medical_a03/simready_usd/payloads/PhysX/disabled.usda",
+      "payloads/PhysX/enabled.usda": "bandage_medical_a03/simready_usd/payloads/PhysX/enabled.usda",
+      "payloads/Physics/physics.usda": "bandage_medical_a03/simready_usd/payloads/Physics/physics.usda",
+      "payloads/base.usda": "bandage_medical_a03/simready_usd/payloads/base.usda",
+      "payloads/geometries.usd": "bandage_medical_a03/simready_usd/payloads/geometries.usd",
+      "payloads/instances.usda": "bandage_medical_a03/simready_usd/payloads/instances.usda",
+      "payloads/instances_mujoco.usda": "bandage_medical_a03/simready_usd/payloads/instances_mujoco.usda",
+      "payloads/instances_newton.usda": "bandage_medical_a03/simready_usd/payloads/instances_newton.usda",
+      "payloads/instances_physx.usda": "bandage_medical_a03/simready_usd/payloads/instances_physx.usda",
+      "payloads/materials.usda": "bandage_medical_a03/simready_usd/payloads/materials.usda (changed: each Material names its library surface (score:surface))",
+      "sm_bandage_medical_a03_01.usd": "bandage_medical_a03/simready_usd/sm_bandage_medical_a03_01.usd",
+      "source_assets/OmniPBR.mdl": "bandage_medical_a03/simready_usd/source_assets/OmniPBR.mdl",
+      "source_assets/OmniPBRBase.mdl": "bandage_medical_a03/simready_usd/source_assets/OmniPBRBase.mdl",
+      "source_assets/OmniPBR_ClearCoat.mdl": "bandage_medical_a03/simready_usd/source_assets/OmniPBR_ClearCoat.mdl"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "bandage_medical_a03: its model, physics and maps"
+      },
+      {
+        "by": "score",
+        "what": "the library surface each material names (score:surface)"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: bandage_medical_a03",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/simready_m_opaque_cardboard_medical_bandage_a01_b73646a3@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "description": [
+      "piece of material used either to support a medical device such as a dressing or splint, or on its own to provide support for the movement of a part of the body"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "simulators": [
+      "mujoco",
+      "newton",
+      "physx"
+    ],
+    "wikidata_class": [
+      "bandage"
+    ],
+    "wikidata_qcode": [
+      "Q376724"
+    ]
+  },
+  "title": "bandage_medical_a03",
+  "usd": {
+    "default_prim": "/RootNode",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/simready_bandage_medical_a03/1/sm_bandage_medical_a03_01.usd",
+    "root": "sm_bandage_medical_a03_01.usd",
+    "up_axis": "Z",
+    "use": "reference"
+  },
+  "version": 1
+}

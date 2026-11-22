@@ -1,0 +1,78 @@
+{
+  "address": "surface/simready_m_opaque_metal_painted_a01_00875d13@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 4081154,
+      "role": "texture",
+      "sha256": "94f7888987b151e0c9a04c20d1f22b8265277dee753c983f6671610a15c80319"
+    },
+    "material.usda": {
+      "bytes": 2507,
+      "role": "usd",
+      "sha256": "8b61af2b39e491810badd9c2528478414d39c83e29ab5d96cd3c9119da0f3530"
+    },
+    "normal.png": {
+      "bytes": 11422848,
+      "role": "texture",
+      "sha256": "dc88314a7a288da7db07702da0a4d370590da41fefcc3e40469dea3ace7a3f48"
+    },
+    "orm.png": {
+      "bytes": 8317816,
+      "role": "texture",
+      "sha256": "19c526303235f63c3264474e68c737aa326477d65027f279bf303c4692082d58"
+    },
+    "surface.json": {
+      "bytes": 809,
+      "role": "record",
+      "sha256": "4d8efbdfdc0c2fa71dc7a86e6aa7988dfb92aab3dfbf6c757f3635505308c2e0"
+    }
+  },
+  "id": "simready_m_opaque_metal_painted_a01_00875d13",
+  "kind": "surface",
+  "licence": {
+    "credit": "anesthesia_machine_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "anesthesia_machine_a01/simready_usd/Textures/t_metal_paintedGlossy_white_a01_tile_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "anesthesia_machine_a01/simready_usd/Textures/t_metal_paintedGlossy_white_a01_tile_nor.png",
+      "orm.png": "anesthesia_machine_a01/simready_usd/Textures/t_metal_paintedGlossy_white_a01_tile_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__metal__painted_a01 maps of anesthesia_machine_a01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: anesthesia_machine_a01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "00875d13122fb2f124fb19afc4113eba11489862712f3dc47e4c792a7404d810"
+    ]
+  },
+  "title": "m_opaque__metal__painted_a01",
+  "usd": null,
+  "version": 1
+}

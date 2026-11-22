@@ -1,0 +1,78 @@
+{
+  "address": "surface/simready_m_opaque_metal_steel_clean_a01_70ece735@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 38407354,
+      "role": "texture",
+      "sha256": "52a7df4cd76a31c6f00b4bde562ec880ed4d4446793d9e2d91aecd6df94b2e92"
+    },
+    "material.usda": {
+      "bytes": 2557,
+      "role": "usd",
+      "sha256": "0877bde15d2ed2c8a7ed2106c6c0327ee30957f43ca990a11eb111dd6768f394"
+    },
+    "normal.png": {
+      "bytes": 9069490,
+      "role": "texture",
+      "sha256": "c878d92cda05e0ee1043ba253431fa2439ecc41315ec99d2f73d49ee68469f63"
+    },
+    "orm.png": {
+      "bytes": 8181183,
+      "role": "texture",
+      "sha256": "394f71f414aef43409560ce9e7dc827a82efa83c125a15ddc7c0256db874e4fc"
+    },
+    "surface.json": {
+      "bytes": 807,
+      "role": "record",
+      "sha256": "d65d5e266984b3e36f1aa07abd2509c104a0582a3cb7c24fb628e3543f5d8d05"
+    }
+  },
+  "id": "simready_m_opaque_metal_steel_clean_a01_70ece735",
+  "kind": "surface",
+  "licence": {
+    "credit": "CT_injection_system_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "CT_injection_system_a01/simready_usd/Textures/t_metal_steelStainless_clean_a01_tile_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "CT_injection_system_a01/simready_usd/Textures/t_metal_steelStainless_clean_a01_tile_nor.png",
+      "orm.png": "CT_injection_system_a01/simready_usd/Textures/t_metal_steelStainless_clean_a01_tile_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__metal__steel_clean_a01 maps of CT_injection_system_a01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: CT_injection_system_a01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "70ece73577f531a56293d0dd7b49b1e648064e6c288070e77645153200047924"
+    ]
+  },
+  "title": "m_opaque__metal__steel_clean_a01",
+  "usd": null,
+  "version": 1
+}

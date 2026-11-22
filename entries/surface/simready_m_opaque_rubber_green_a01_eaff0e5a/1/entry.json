@@ -1,0 +1,78 @@
+{
+  "address": "surface/simready_m_opaque_rubber_green_a01_eaff0e5a@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 15793385,
+      "role": "texture",
+      "sha256": "7914ddda7d7e86f5920e97220515f21e9e7e1b776d4818544a31b72ee8d99920"
+    },
+    "material.usda": {
+      "bytes": 2495,
+      "role": "usd",
+      "sha256": "fe6e99bf29320e75f3bc9b43c690bff182b6106505c2f6de95807a6cb9a2a1ab"
+    },
+    "normal.png": {
+      "bytes": 8688651,
+      "role": "texture",
+      "sha256": "8e3e8e904c19d77a070953b8712d22a532b2d25c95dc2fa755884337d1dfc4a0"
+    },
+    "orm.png": {
+      "bytes": 18410263,
+      "role": "texture",
+      "sha256": "380c45c7a96f18c5778cbe9dd5dd07c2ef095a6ef43489058d91936a9af8d9cd"
+    },
+    "surface.json": {
+      "bytes": 802,
+      "role": "record",
+      "sha256": "4b6ef8967fcbb90f6ff75669dc0610696ea1f5e659197a4e3504a5d4959e54a8"
+    }
+  },
+  "id": "simready_m_opaque_rubber_green_a01_eaff0e5a",
+  "kind": "surface",
+  "licence": {
+    "credit": "anesthesia_machine_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "anesthesia_machine_a01/simready_usd/Textures/t_plastic_green_a01_tile_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "anesthesia_machine_a01/simready_usd/Textures/t_rubber_glossy_glack_a01_tile_nor.png",
+      "orm.png": "anesthesia_machine_a01/simready_usd/Textures/t_rubber_glossy_glack_a01_tile_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__rubber__green_a01 maps of anesthesia_machine_a01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: anesthesia_machine_a01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "eaff0e5a6802ec0a66ca793022a03ee43b6a60bc48e0562de924da75dbf9dddd"
+    ]
+  },
+  "title": "m_opaque__rubber__green_a01",
+  "usd": null,
+  "version": 1
+}
