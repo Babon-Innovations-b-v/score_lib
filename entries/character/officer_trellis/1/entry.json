@@ -1,0 +1,85 @@
+{
+  "address": "character/officer_trellis@1",
+  "files": {
+    "body.glb": {
+      "bytes": 6555580,
+      "role": "gltf",
+      "sha256": "b82087b0cb48d3c3148f7fa257343ec77addf098628fb0b5c44996fa17508bd1"
+    },
+    "character.usdc": {
+      "bytes": 2591154,
+      "role": "usd",
+      "sha256": "46dff0cb5d8ab5daf1611c933f0a6441727d6e59204c155907a6fd123f4a309d"
+    },
+    "rig.json": {
+      "bytes": 2484,
+      "role": "record",
+      "sha256": "6683c091d648f2c04df852f6ca48f93f236f5460033342e8da4bd47a03fbd833"
+    },
+    "source.json": {
+      "bytes": 2346,
+      "role": "record",
+      "sha256": "4d7100a9b90a8d37114e3aa9422de0cca12d080a285b0bb2622e6452f613a449"
+    },
+    "textures/body_0.png": {
+      "bytes": 2238634,
+      "role": "texture",
+      "sha256": "b8befe0f79ba3066b8756ded93b2a9b0dee950254c86d2c3606844cd659ff184"
+    },
+    "textures/body_1.png": {
+      "bytes": 946843,
+      "role": "texture",
+      "sha256": "a28c31c7f49994755ad373ba1eebbdeb4de1d028865a568c54e681aeeeb63ef9"
+    }
+  },
+  "id": "officer_trellis",
+  "kind": "character",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "f3cee349d",
+    "files_from": {
+      "body.glb": "still_rig/body.glb",
+      "character.usdc": "still_rig/character.usdc",
+      "rig.json": "still_rig/rig.json",
+      "source.json": "still_rig/source.json",
+      "textures/body_0.png": "still_rig/usd/textures/body_0.png",
+      "textures/body_1.png": "still_rig/usd/textures/body_1.png"
+    },
+    "made_with": [
+      {
+        "by": "kimodo",
+        "what": "the clips"
+      },
+      {
+        "by": "score",
+        "what": "rigged by score (tools/characters/still_rig)"
+      },
+      {
+        "by": "soma_x",
+        "what": "the skeleton, clips and the SOMA surface its skin weights are moved from"
+      },
+      {
+        "by": "trellis2",
+        "what": "the body's shape and paint (TRELLIS.2-4B from the people line's officer close-up)"
+      }
+    ],
+    "taken_from": "score tools/characters/still_rig on this PC: the officer and the person in uniform as TRELLIS.2 player models in their own graded paint, rigged on their dressed bodies' skeletons (score #156)",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "look": [
+      "officer"
+    ],
+    "maker": [
+      "trellis2"
+    ]
+  },
+  "title": "Officer (TRELLIS.2, rigged)",
+  "usd": null,
+  "version": 1
+}
