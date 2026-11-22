@@ -1,0 +1,195 @@
+{
+  "address": "model/simready_exhaust_system_catalytic_converter_c01@1",
+  "files": {
+    "Textures/t_automotive_factory_catalytic_converter_Nor.png": {
+      "bytes": 6467852,
+      "role": "texture",
+      "sha256": "cbbd1f0a3b73f097c258aa3e15ee1c44d7052c66f0a2d06591cf428f48188cad"
+    },
+    "Textures/t_automotive_factory_catalytic_converter_alb.png": {
+      "bytes": 19350498,
+      "role": "texture",
+      "sha256": "2d0ed009aca867e07c9678f43e8582de40b7ef20f161bd435782f6617f930894"
+    },
+    "Textures/t_automotive_factory_catalytic_converter_orm.png": {
+      "bytes": 20254264,
+      "role": "texture",
+      "sha256": "de0b9d6629c63b5de19ba48a0073ac234ba54da2ccb5bf9657c67988c68655e3"
+    },
+    "payloads/MuJoCo/disabled.usda": {
+      "bytes": 3855,
+      "role": "usd",
+      "sha256": "b38361a56ace9512a19f6df3746f513963413e267ea22e34e1a22b27afad53cc"
+    },
+    "payloads/MuJoCo/enabled.usda": {
+      "bytes": 4646,
+      "role": "usd",
+      "sha256": "af0623fc158d9b3e7970368a92ec4a2eed6b8582a87a51f9a83286c87a293fa4"
+    },
+    "payloads/Newton/disabled.usda": {
+      "bytes": 3855,
+      "role": "usd",
+      "sha256": "b38361a56ace9512a19f6df3746f513963413e267ea22e34e1a22b27afad53cc"
+    },
+    "payloads/Newton/enabled.usda": {
+      "bytes": 4468,
+      "role": "usd",
+      "sha256": "76fd602460e271327d7568174180bdd173452ca696905731170f1f661f007fac"
+    },
+    "payloads/PhysX/disabled.usda": {
+      "bytes": 3855,
+      "role": "usd",
+      "sha256": "b38361a56ace9512a19f6df3746f513963413e267ea22e34e1a22b27afad53cc"
+    },
+    "payloads/PhysX/enabled.usda": {
+      "bytes": 4169,
+      "role": "usd",
+      "sha256": "8932e353c4288243400b7c886440574d90cea68a5effa2d03048b0a75ebdc503"
+    },
+    "payloads/Physics/physics.usda": {
+      "bytes": 4398,
+      "role": "usd",
+      "sha256": "a9aad68d64c39dc1305d9e577b4db399a060a1fbd06cd82d0dd45c7bd05d26ee"
+    },
+    "payloads/base.usda": {
+      "bytes": 8812,
+      "role": "usd",
+      "sha256": "0fc19408f435e6da895a87e32639dc1de087cdc0eef93ad7d2b5504c70079c63"
+    },
+    "payloads/geometries.usd": {
+      "bytes": 15781957,
+      "role": "usd",
+      "sha256": "290eb487ea4cf3f05e0eaa31b59c279d8111e3a82ee54681a72abb196c1176aa"
+    },
+    "payloads/instances.usda": {
+      "bytes": 9155547,
+      "role": "usd",
+      "sha256": "dafd806260a8bddf5e211c4fe7dbcb4b2ef2d81f870dcc486fd801569f088b31"
+    },
+    "payloads/instances_mujoco.usda": {
+      "bytes": 9155819,
+      "role": "usd",
+      "sha256": "6d22b6f9ead27b35003f27dc0e6800d6d8dcd40a1adb1b5fe41804e9081db19b"
+    },
+    "payloads/instances_newton.usda": {
+      "bytes": 9155670,
+      "role": "usd",
+      "sha256": "d45b39e44f62db453e1810365777de157f5d969c98b10c9e2864ec46dcfff479"
+    },
+    "payloads/instances_physx.usda": {
+      "bytes": 9155687,
+      "role": "usd",
+      "sha256": "f766b04fc88a440bc57ff432e0ddc71a47709a5e085c4f63d954bc2c72043191"
+    },
+    "payloads/materials.usda": {
+      "bytes": 9888,
+      "role": "usd",
+      "sha256": "06fc05943635c8e9f95649824a8eb67f303dc94cdfef79b31174dadc72af0970"
+    },
+    "sm_exhaustSystem_catalytic_converter_c01_01.usd": {
+      "bytes": 20887,
+      "role": "usd",
+      "sha256": "62a432b7e171de513014cb1fc8959edf7dab534583744b8aada7a7b3cc65b0b2"
+    },
+    "source_assets/OmniPBR.mdl": {
+      "bytes": 16010,
+      "role": "code",
+      "sha256": "6e6b3acbccd236e21a6c29964a431d2a53e77251cc6b8b1bc975eb1c62da1781"
+    },
+    "source_assets/OmniPBRBase.mdl": {
+      "bytes": 19369,
+      "role": "code",
+      "sha256": "a8fd9fe174e91892e94d06da90ba453a124024c2ce2c033be9d82c9e2f76a3b7"
+    },
+    "source_assets/OmniPBR_ClearCoat.mdl": {
+      "bytes": 29789,
+      "role": "code",
+      "sha256": "d84c5ba482561c0eaea2e0c5b607358af549e36cd921773462f92dbc4f32cbc3"
+    }
+  },
+  "id": "simready_exhaust_system_catalytic_converter_c01",
+  "kind": "model",
+  "licence": {
+    "credit": "exhaustSystem_catalytic_converter_c01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0; changed: each Material names its library surface (score:surface)",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "Textures/t_automotive_factory_catalytic_converter_Nor.png": "exhaustSystem_catalytic_converter_c01/simready_usd/Textures/t_automotive_factory_catalytic_converter_Nor.png",
+      "Textures/t_automotive_factory_catalytic_converter_alb.png": "exhaustSystem_catalytic_converter_c01/simready_usd/Textures/t_automotive_factory_catalytic_converter_alb.png",
+      "Textures/t_automotive_factory_catalytic_converter_orm.png": "exhaustSystem_catalytic_converter_c01/simready_usd/Textures/t_automotive_factory_catalytic_converter_orm.png",
+      "payloads/MuJoCo/disabled.usda": "exhaustSystem_catalytic_converter_c01/simready_usd/payloads/MuJoCo/disabled.usda",
+      "payloads/MuJoCo/enabled.usda": "exhaustSystem_catalytic_converter_c01/simready_usd/payloads/MuJoCo/enabled.usda",
+      "payloads/Newton/disabled.usda": "exhaustSystem_catalytic_converter_c01/simready_usd/payloads/Newton/disabled.usda",
+      "payloads/Newton/enabled.usda": "exhaustSystem_catalytic_converter_c01/simready_usd/payloads/Newton/enabled.usda",
+      "payloads/PhysX/disabled.usda": "exhaustSystem_catalytic_converter_c01/simready_usd/payloads/PhysX/disabled.usda",
+      "payloads/PhysX/enabled.usda": "exhaustSystem_catalytic_converter_c01/simready_usd/payloads/PhysX/enabled.usda",
+      "payloads/Physics/physics.usda": "exhaustSystem_catalytic_converter_c01/simready_usd/payloads/Physics/physics.usda",
+      "payloads/base.usda": "exhaustSystem_catalytic_converter_c01/simready_usd/payloads/base.usda",
+      "payloads/geometries.usd": "exhaustSystem_catalytic_converter_c01/simready_usd/payloads/geometries.usd",
+      "payloads/instances.usda": "exhaustSystem_catalytic_converter_c01/simready_usd/payloads/instances.usda",
+      "payloads/instances_mujoco.usda": "exhaustSystem_catalytic_converter_c01/simready_usd/payloads/instances_mujoco.usda",
+      "payloads/instances_newton.usda": "exhaustSystem_catalytic_converter_c01/simready_usd/payloads/instances_newton.usda",
+      "payloads/instances_physx.usda": "exhaustSystem_catalytic_converter_c01/simready_usd/payloads/instances_physx.usda",
+      "payloads/materials.usda": "exhaustSystem_catalytic_converter_c01/simready_usd/payloads/materials.usda (changed: each Material names its library surface (score:surface))",
+      "sm_exhaustSystem_catalytic_converter_c01_01.usd": "exhaustSystem_catalytic_converter_c01/simready_usd/sm_exhaustSystem_catalytic_converter_c01_01.usd",
+      "source_assets/OmniPBR.mdl": "exhaustSystem_catalytic_converter_c01/simready_usd/source_assets/OmniPBR.mdl",
+      "source_assets/OmniPBRBase.mdl": "exhaustSystem_catalytic_converter_c01/simready_usd/source_assets/OmniPBRBase.mdl",
+      "source_assets/OmniPBR_ClearCoat.mdl": "exhaustSystem_catalytic_converter_c01/simready_usd/source_assets/OmniPBR_ClearCoat.mdl"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "exhaustSystem_catalytic_converter_c01: its model, physics and maps"
+      },
+      {
+        "by": "score",
+        "what": "the library surface each material names (score:surface)"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: exhaustSystem_catalytic_converter_c01",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/simready_m_opaque_metal_catalytic_onverter_c01_3124c5ba@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "description": [
+      "emission control device that treats engine exhaust gas by catalyzing pollutant-destroying redox reactions"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "simulators": [
+      "mujoco",
+      "newton",
+      "physx"
+    ],
+    "wikidata_class": [
+      "catalytic converter"
+    ],
+    "wikidata_qcode": [
+      "Q653807"
+    ]
+  },
+  "title": "exhaustSystem_catalytic_converter_c01",
+  "usd": {
+    "default_prim": "/RootNode",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/simready_exhaust_system_catalytic_converter_c01/1/sm_exhaustSystem_catalytic_converter_c01_01.usd",
+    "root": "sm_exhaustSystem_catalytic_converter_c01_01.usd",
+    "up_axis": "Z",
+    "use": "reference"
+  },
+  "version": 1
+}
