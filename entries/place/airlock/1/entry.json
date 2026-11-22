@@ -1757,9 +1757,9 @@
       "sha256": "e0af4433b8479d294ecef3c7e9d9940ba2a3bb96e15816994ec87aee1a00ab6a"
     },
     "scene.usda": {
-      "bytes": 595474,
+      "bytes": 595462,
       "role": "usd",
-      "sha256": "a705e33497cd91757f836aeffd776223fe4a44f8cd63b7d4ad0460aae3570c65"
+      "sha256": "5b496fbaf30e69e24b9ed70e9ba7a72f63d777862591ddf606e596cf77a6e33b"
     },
     "viewer.glb": {
       "bytes": 10684128,
@@ -2133,7 +2133,7 @@
     },
     "lays": [
       "algorithm/dome_shell",
-      "character/body_astronaut_suit_made@1",
+      "character/astronaut_trellis@1",
       "light/earth_surface@1",
       "light/lamp@1",
       "model/ac_unit_1.airlock@1",
@@ -2201,13 +2201,14 @@
         "what": "scene.usda and the place's own files: laid by score's placing method"
       }
     ],
+    "note": "its characters swapped on 2026-11-22 for TRELLIS.2 player models of the same look (score #156: broken per-part repainted bodies, or a withdrawn one), each held pose re-read on the new body's own clip: body_astronaut_suit_made -> astronaut_trellis",
     "place": "airlock",
     "taken_from": "score's placing method (place_build) folder airlock",
     "world": "world1"
   },
   "requires": [
     "algorithm/dome_shell@1",
-    "character/body_astronaut_suit_made@1",
+    "character/astronaut_trellis@1",
     "light/earth_surface@1",
     "light/lamp@1",
     "model/ac_unit_1.airlock@1",

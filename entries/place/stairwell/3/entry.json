@@ -472,9 +472,9 @@
       "sha256": "37bb7ca5d3d794275b58c6bd8811a7a40218adebff9b3f0afd8761b808588150"
     },
     "scene.usda": {
-      "bytes": 2989502,
+      "bytes": 2989506,
       "role": "usd",
-      "sha256": "ba9a9690e1a1c3d0b7ace2fc4bb0df27d8601e9ef7f02cf2c78f2613a6ab47de"
+      "sha256": "2a877aed886edca0c03abbc68a3e53271d735e40da78c9b555ecf3870df7b89e"
     }
   },
   "id": "stairwell",
@@ -586,8 +586,8 @@
     "lays": [
       "algorithm/dome_shell",
       "algorithm/stair_core",
-      "character/body_person_made@1",
-      "character/body_woman_stair_made@1",
+      "character/person_stair_trellis@1",
+      "character/woman_stair_trellis@1",
       "light/lamp@1",
       "model/air_conditioner_unit_1.street@1",
       "model/cable_bundle_1.hub@2",
@@ -619,6 +619,7 @@
         "what": "scene.usda and the place's own files: laid by score's placing method"
       }
     ],
+    "note": "its characters swapped on 2026-11-22 for TRELLIS.2 player models of the same look (score #156: broken per-part repainted bodies, or a withdrawn one), each held pose re-read on the new body's own clip: body_person_made -> person_stair_trellis, body_woman_stair_made -> woman_stair_trellis",
     "place": "stairwell",
     "taken_from": "score's placing method (place_build) folder stairwell",
     "world": "world1"
@@ -626,8 +627,8 @@
   "requires": [
     "algorithm/dome_shell@1",
     "algorithm/stair_core@1",
-    "character/body_person_made@1",
-    "character/body_woman_stair_made@1",
+    "character/person_stair_trellis@1",
+    "character/woman_stair_trellis@1",
     "light/lamp@1",
     "model/air_conditioner_unit_1.street@1",
     "model/cable_bundle_1.hub@2",

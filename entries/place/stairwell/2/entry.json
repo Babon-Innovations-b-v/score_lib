@@ -392,9 +392,9 @@
       "sha256": "ee34601b2cf9943131fbb0c05908e81d2c36eb348a60dfefdcc997af6634d3d6"
     },
     "scene.usda": {
-      "bytes": 2982366,
+      "bytes": 2982370,
       "role": "usd",
-      "sha256": "9deef05d0bcf9b84c97ad08e34ae1a246c6b3df4bac642342d5780b58f9e8963"
+      "sha256": "a41c91504aa2659c6027de947a37e1ddff898b65f6239b669aeec3476619b63f"
     }
   },
   "id": "stairwell",
@@ -489,8 +489,8 @@
     },
     "lays": [
       "algorithm/stair_core",
-      "character/body_person_made@1",
-      "character/body_woman_stair_made@1",
+      "character/person_stair_trellis@1",
+      "character/woman_stair_trellis@1",
       "light/earth_surface@1",
       "light/lamp@1",
       "model/air_conditioner_unit_1.street@1",
@@ -528,15 +528,15 @@
         "what": "scene.usda and the place's own files: laid by score's placing method"
       }
     ],
-    "note": "the walkers layer (layers/walkers/) was not kept with the place when it was taken in (score-lib's take-in kept only the named files, package/ and assets/), so the place holds no walkers; its scene was written again on 2026-11-22 without the sublayer it never held (score #156)",
+    "note": "the walkers layer (layers/walkers/) was not kept with the place when it was taken in (score-lib's take-in kept only the named files, package/ and assets/), so the place holds no walkers; its scene was written again on 2026-11-22 without the sublayer it never held (score #156); its characters swapped on 2026-11-22 for TRELLIS.2 player models of the same look (score #156: broken per-part repainted bodies, or a withdrawn one), each held pose re-read on the new body's own clip: body_person_made -> person_stair_trellis, body_woman_stair_made -> woman_stair_trellis",
     "place": "stairwell",
     "taken_from": "score's placing method (place_build) folder sw",
     "world": "world1"
   },
   "requires": [
     "algorithm/stair_core@1",
-    "character/body_person_made@1",
-    "character/body_woman_stair_made@1",
+    "character/person_stair_trellis@1",
+    "character/woman_stair_trellis@1",
     "light/earth_surface@1",
     "light/lamp@1",
     "model/air_conditioner_unit_1.street@1",

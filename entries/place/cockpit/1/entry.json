@@ -1632,9 +1632,9 @@
       "sha256": "0c6f4a2a9edaf639f6258a7ad40bbd46b08f057f6966bea5e842b87f91c05432"
     },
     "scene.usda": {
-      "bytes": 313008,
+      "bytes": 313002,
       "role": "usd",
-      "sha256": "832f33dc81eb480ebb2508441d03ca24c35648a83f23d37a169f3bf23cb2ee1c"
+      "sha256": "7613fa2f04a75f34cb4eea3274a7720b2dd0a5a0b1d1fb69b89dd7be85ab49f9"
     },
     "viewer.glb": {
       "bytes": 11511240,
@@ -1983,8 +1983,8 @@
     },
     "lays": [
       "algorithm/dome_shell",
-      "character/dress_officer_made@1",
       "character/dress_pilot_made@1",
+      "character/officer_trellis@1",
       "light/lamp@1",
       "model/cable_drop_2@1",
       "model/ceiling_light_panel_1.cockpit@1",
@@ -2031,14 +2031,15 @@
         "what": "scene.usda and the place's own files: laid by score's placing method"
       }
     ],
+    "note": "its characters swapped on 2026-11-22 for TRELLIS.2 player models of the same look (score #156: broken per-part repainted bodies, or a withdrawn one), each held pose re-read on the new body's own clip: dress_officer_made -> officer_trellis",
     "place": "cockpit",
     "taken_from": "score's placing method (place_build) folder close-cockpit",
     "world": "world1"
   },
   "requires": [
     "algorithm/dome_shell@1",
-    "character/dress_officer_made@1",
     "character/dress_pilot_made@1",
+    "character/officer_trellis@1",
     "light/lamp@1",
     "model/cable_drop_2@1",
     "model/ceiling_light_panel_1.cockpit@1",

@@ -952,9 +952,9 @@
       "sha256": "5bc274a025edb05d28f98430f60e36f0c28bd68b6c9a7d5498006321b39749f8"
     },
     "scene.usda": {
-      "bytes": 657042,
+      "bytes": 657038,
       "role": "usd",
-      "sha256": "1b213423bc4520cfe0e16a398348fb6c5c26d42f9c8b56b91c8ed9c0b3d1360a"
+      "sha256": "5310a0270fee6c0759ff42623c36c63c7061ddcc12b1be2704d8d4311661a1ee"
     },
     "viewer.glb": {
       "bytes": 8807440,
@@ -1167,8 +1167,8 @@
     },
     "lays": [
       "algorithm/dome_shell",
-      "character/body_person_uniform_made@1",
       "character/dress_worker_jumpsuit_made.denim_coverall_blue_v7@1",
+      "character/person_uniform_trellis@1",
       "light/lamp@1",
       "model/access_stair_1@1",
       "model/bench_1.shiplock@1",
@@ -1214,14 +1214,15 @@
         "what": "scene.usda and the place's own files: laid by score's placing method"
       }
     ],
+    "note": "its characters swapped on 2026-11-22 for TRELLIS.2 player models of the same look (score #156: broken per-part repainted bodies, or a withdrawn one), each held pose re-read on the new body's own clip: body_person_uniform_made -> person_uniform_trellis",
     "place": "shiplock",
     "taken_from": "score's placing method (place_build) folder shiplock",
     "world": "world1"
   },
   "requires": [
     "algorithm/dome_shell@1",
-    "character/body_person_uniform_made@1",
     "character/dress_worker_jumpsuit_made.denim_coverall_blue_v7@1",
+    "character/person_uniform_trellis@1",
     "light/lamp@1",
     "model/access_stair_1@1",
     "model/bench_1.shiplock@1",

@@ -1577,9 +1577,9 @@
       "sha256": "d7024f4feadb6d2c6acebcdc50a27e9c11526f16f4a7749d34451c7508bd5580"
     },
     "scene.usda": {
-      "bytes": 4212273,
+      "bytes": 4212251,
       "role": "usd",
-      "sha256": "04f0248725e0274f8d6590bf5415adef9754019dcdadc8a764715727e16ca572"
+      "sha256": "a62330e583b93fbffbc498b1f960ae08b23dd8c751fa8dd9a664739aef994762"
     },
     "viewer.glb": {
       "bytes": 12131900,
@@ -1917,8 +1917,8 @@
     },
     "lays": [
       "algorithm/dome_shell",
-      "character/body_astronaut_made@1",
-      "character/body_kit_m_avg_coat_grey@1",
+      "character/astronaut_trellis@1",
+      "character/person_trellis_v1@1",
       "light/earth_surface@1",
       "light/lamp@1",
       "model/analyser_trellis.lab@1",
@@ -1982,14 +1982,15 @@
         "what": "scene.usda and the place's own files: laid by score's placing method"
       }
     ],
+    "note": "its characters swapped on 2026-11-22 for TRELLIS.2 player models of the same look (score #156: broken per-part repainted bodies, or a withdrawn one), each held pose re-read on the new body's own clip: body_astronaut_made -> astronaut_trellis, body_kit_m_avg_coat_grey -> person_trellis_v1",
     "place": "lab",
     "taken_from": "score's placing method (place_build) folder close-lab",
     "world": "world1"
   },
   "requires": [
     "algorithm/dome_shell@1",
-    "character/body_astronaut_made@1",
-    "character/body_kit_m_avg_coat_grey@1",
+    "character/astronaut_trellis@1",
+    "character/person_trellis_v1@1",
     "light/earth_surface@1",
     "light/lamp@1",
     "model/analyser_trellis.lab@1",

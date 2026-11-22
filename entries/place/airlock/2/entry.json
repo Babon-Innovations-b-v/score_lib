@@ -1762,9 +1762,9 @@
       "sha256": "8369d0e029b2eab0ed94b5765748daea2def13d7581b3e4357b05e675f12f679"
     },
     "scene.usda": {
-      "bytes": 4450393,
+      "bytes": 4450381,
       "role": "usd",
-      "sha256": "2e694d41cddb07f1e92a0f42a70b00150ed17a2402b366cf952ad3a8bf25c7d9"
+      "sha256": "e3fcef31d2d2f5687ef120066e1165ade3f7a0c80d3736eaad2d53bd498d1802"
     },
     "viewer.glb": {
       "bytes": 10151072,
@@ -2139,7 +2139,7 @@
     },
     "lays": [
       "algorithm/dome_shell",
-      "character/body_astronaut_suit_made@1",
+      "character/astronaut_trellis@1",
       "kit/ceiling_duct@1",
       "kit/polyhaven_modular_pipes_pipe_200cm_metal@1",
       "kit/polyhaven_modular_pipes_pipe_40cm_metal@1",
@@ -2204,13 +2204,14 @@
         "what": "scene.usda and the place's own files: laid by score's placing method"
       }
     ],
+    "note": "its characters swapped on 2026-11-22 for TRELLIS.2 player models of the same look (score #156: broken per-part repainted bodies, or a withdrawn one), each held pose re-read on the new body's own clip: body_astronaut_suit_made -> astronaut_trellis",
     "place": "airlock",
     "taken_from": "score's placing method (place_build) folder air-airlock",
     "world": "world1"
   },
   "requires": [
     "algorithm/dome_shell@1",
-    "character/body_astronaut_suit_made@1",
+    "character/astronaut_trellis@1",
     "kit/ceiling_duct@1",
     "kit/polyhaven_modular_pipes_pipe_200cm_metal@1",
     "kit/polyhaven_modular_pipes_pipe_40cm_metal@1",
