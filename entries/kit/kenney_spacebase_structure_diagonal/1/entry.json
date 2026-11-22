@@ -7,9 +7,9 @@
       "sha256": "148dd424c34758355d702e6069ba30eeba41b484b0f50b3e0e96b08974eb28be"
     },
     "piece.usdc": {
-      "bytes": 42852,
+      "bytes": 43275,
       "role": "usd",
-      "sha256": "cf017b7532a50213647c56d30f1262c29889c0b96a7130bb6b13486a621c6642"
+      "sha256": "e73c2e5ddebb65977db4e1af91f900fe7dc2445df29947ac53a88b6fdbd39393"
     }
   },
   "id": "kenney_spacebase_structure_diagonal",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

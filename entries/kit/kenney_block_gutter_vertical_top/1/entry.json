@@ -7,9 +7,9 @@
       "sha256": "6cae3dd4504f2e6a837778558bf32401fe21f168980b2bee095e381257c7c12d"
     },
     "piece.usdc": {
-      "bytes": 10553,
+      "bytes": 10948,
       "role": "usd",
-      "sha256": "950345f16c140ae59ffaab3cd2a0891bf8e5e44176f7a09b815d61bce1623c85"
+      "sha256": "3fb82baef2344a5f7465eb386b6754d7277886b6ddddf523f75791d6edf485c6"
     }
   },
   "id": "kenney_block_gutter_vertical_top",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

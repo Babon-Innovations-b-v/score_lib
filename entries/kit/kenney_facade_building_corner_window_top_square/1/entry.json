@@ -7,9 +7,9 @@
       "sha256": "26178dd5dc17b77e4d759f75a46291a36695f7ee07699afa72b8d9bd8dd0ed7d"
     },
     "piece.usdc": {
-      "bytes": 5053,
+      "bytes": 5426,
       "role": "usd",
-      "sha256": "1327b7d3630d398b0f95414655d44f2d38d95089bc26282046d5215d669cc71c"
+      "sha256": "311866c8ffcde51c81c5bb22ce66af14e91bbd326049d4b2d173a9806cbbb62c"
     }
   },
   "id": "kenney_facade_building_corner_window_top_square",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

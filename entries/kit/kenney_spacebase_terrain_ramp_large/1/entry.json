@@ -7,9 +7,9 @@
       "sha256": "45389147b4eb343faab23446c3acd20c970abe6dc14c48edb8e392299b384215"
     },
     "piece.usdc": {
-      "bytes": 2128,
+      "bytes": 2518,
       "role": "usd",
-      "sha256": "70857db7e881f491764d6bc3e7dbe0e249eb4986fe85dcd56cd17b3ff46345a7"
+      "sha256": "93d57f0f49c5e07a9caebf3a2d01a812213db0312b821f9c7e231a88f7ec2f68"
     }
   },
   "id": "kenney_spacebase_terrain_ramp_large",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

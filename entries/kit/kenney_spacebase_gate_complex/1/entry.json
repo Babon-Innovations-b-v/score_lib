@@ -7,9 +7,9 @@
       "sha256": "692286fb0dbba91110f91dd32118fc4fbc7d77b13c8cdc965ebc5971738128dc"
     },
     "piece.usdc": {
-      "bytes": 89154,
+      "bytes": 89624,
       "role": "usd",
-      "sha256": "8401bb4df29c034a29eef5ca39c8543c411c3d5b50ddc818d1ed3f802321332b"
+      "sha256": "9692848fa12c90ff401f2da58126127e071aebb5608ed17fbb93b69c99b8dc7a"
     }
   },
   "id": "kenney_spacebase_gate_complex",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

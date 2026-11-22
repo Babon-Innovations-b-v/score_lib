@@ -7,9 +7,9 @@
       "sha256": "86b0b25c6151889c783c120670e9b1f50a981a870c12d4c4380f996a9654c519"
     },
     "piece.usdc": {
-      "bytes": 5361,
+      "bytes": 5749,
       "role": "usd",
-      "sha256": "05a413cddd22bcbca04ac1611e8d39e11f74c601c9db361fce66afdde8b6b4f5"
+      "sha256": "d85764a55ac308df62d0b1ba51f07f232bb252d6b08b2c312c9b47da057c163f"
     }
   },
   "id": "kenney_spacebase_terrain_road_corner",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

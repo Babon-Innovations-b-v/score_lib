@@ -7,9 +7,9 @@
       "sha256": "731faef8a040e3636d283da22fc34d0a9006ebc04fa834c9a029137649e95ac3"
     },
     "model.usdc": {
-      "bytes": 79454,
+      "bytes": 79913,
       "role": "usd",
-      "sha256": "08823d7085ebfa7a39217680bd7f882b4ceb194691c32ff3879ffddc4be6c3c3"
+      "sha256": "0884968e9e0955f082331c65f7acb8593f342f51bd6b4c9191c7f28f73c04d72"
     }
   },
   "id": "kenney_furniture_shower_round",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

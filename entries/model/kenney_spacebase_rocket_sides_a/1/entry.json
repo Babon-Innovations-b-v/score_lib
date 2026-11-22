@@ -7,9 +7,9 @@
       "sha256": "a98e22cc5d72106486f089290ce8c15b733551e5f1891610d2b0c6912015efe5"
     },
     "model.usdc": {
-      "bytes": 28954,
+      "bytes": 29370,
       "role": "usd",
-      "sha256": "a3fd54c0b80538563c7f40ebd4f49fb687997476b7b09d8fd70f022bec981e45"
+      "sha256": "a254b25558c7b20b761a3d28f9cfae2da74e494320da55da7b67df78fa5d6a83"
     }
   },
   "id": "kenney_spacebase_rocket_sides_a",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

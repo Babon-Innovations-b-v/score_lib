@@ -7,9 +7,9 @@
       "sha256": "dafcfea16debc19669dc7b95fcfbaa6a90670e76e8767c8296bd4b33060a052e"
     },
     "piece.usdc": {
-      "bytes": 29050,
+      "bytes": 29474,
       "role": "usd",
-      "sha256": "718a4c58b7faa3615e938f2fb9830804e23f2d42d3da72d40c1dc1bff2395379"
+      "sha256": "26afef30d845fe0848f92bac0f3bcc3d04c7fd90072bc3317fc8331b18e12469"
     }
   },
   "id": "kenney_station_wall_pillar_banner",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

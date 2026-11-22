@@ -7,9 +7,9 @@
       "sha256": "7217077dbf7e50bac6f16b5d14c3bb011d1ee36e53a49d99762ca1a8c0496784"
     },
     "model.usdc": {
-      "bytes": 9306,
+      "bytes": 9693,
       "role": "usd",
-      "sha256": "831748710743e4cf8fc6c865a5253a6c2e3f0e21be2d745484c880050ddea947"
+      "sha256": "dde52d6f3fce6320a93508bb30e2b37765f160332cbaf19e94521254097070f3"
     }
   },
   "id": "kenney_furniture_lamp_round_floor",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

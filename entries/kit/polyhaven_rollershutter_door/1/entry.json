@@ -7,9 +7,9 @@
       "sha256": "a72f227fdab639ef24a073109ace9679e1271224af40dab24c5a1438fbd27e45"
     },
     "piece.usdc": {
-      "bytes": 45822,
+      "bytes": 46209,
       "role": "usd",
-      "sha256": "f86ab3517511907db90524a56ad92899dedb14efd7eabd62c57375c9a4c7745e"
+      "sha256": "357734d3539aff0da7136993cb832151ca27bcd9b55e22cfa1405116c44e0f21"
     }
   },
   "id": "polyhaven_rollershutter_door",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

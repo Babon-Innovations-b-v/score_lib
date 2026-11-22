@@ -7,9 +7,9 @@
       "sha256": "a4a8730e06a52bb4ea6c39fabab0f4b6b2e15dfe8166e2792aa9416052dfb37f"
     },
     "model.usdc": {
-      "bytes": 37275,
+      "bytes": 37727,
       "role": "usd",
-      "sha256": "4a17baaa6600df39ea7faed1a5ea4068c8492f5bc8c0008ce7bb9833610595e8"
+      "sha256": "c339064be45913bb14c4eb64e9d8dc28f054dac24ef11e4a5b31d95f575e9c09"
     }
   },
   "id": "kenney_spacebase_machine_barrel_large",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

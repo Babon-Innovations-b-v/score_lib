@@ -7,9 +7,9 @@
       "sha256": "4d03aaa10a17b2d686ca37ee61fc7bc49982fe56d9800e7fe55af6d637b51f74"
     },
     "model.usdc": {
-      "bytes": 17066,
+      "bytes": 17486,
       "role": "usd",
-      "sha256": "f74db81392de9526db8ca81065399e941a8b6f2d5e5129e0f22d207f2a83e714"
+      "sha256": "fef67d286e5a721d1d5be84937b8589e7d6e8f7728ce0fac796b08b385ee3812"
     }
   },
   "id": "kenney_station_table",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

@@ -7,9 +7,9 @@
       "sha256": "86022a124b018514fb3d7e2a5530ff1786d20256a5676233a2a809283cf977ea"
     },
     "model.usdc": {
-      "bytes": 72562,
+      "bytes": 73073,
       "role": "usd",
-      "sha256": "82fdc6b23368d866aa41606cc3c86fa18de13174a5d9133864c05c50a671468e"
+      "sha256": "bac9bc459dabedfc1f60f0707480ddc109eb5fe24333e511d9477c4131fcf503"
     }
   },
   "id": "kenney_furniture_kitchen_sink",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

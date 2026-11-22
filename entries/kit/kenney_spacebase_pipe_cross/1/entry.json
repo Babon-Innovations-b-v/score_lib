@@ -7,9 +7,9 @@
       "sha256": "a4c479d5855a93bf3ffa7e1565313dbf4d49bfa7d63e309b80bf94ad670ff9a0"
     },
     "piece.usdc": {
-      "bytes": 28518,
+      "bytes": 28940,
       "role": "usd",
-      "sha256": "bc3c96cece7959d7f3d67df6c94e19a4f3902f54c7b8237aad5a1ac424d4d30c"
+      "sha256": "afdda091f120ce33591f2d67e415f8f5e8182890de55eb0de5dfee2d4f24cfa6"
     }
   },
   "id": "kenney_spacebase_pipe_cross",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

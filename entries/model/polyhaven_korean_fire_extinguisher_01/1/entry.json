@@ -7,9 +7,9 @@
       "sha256": "5e9c3441dde38a6761840e005d4dffd4ae61484427bb0a3b62348155ef24995d"
     },
     "model.usdc": {
-      "bytes": 244540,
+      "bytes": 244964,
       "role": "usd",
-      "sha256": "af6599fbefd9f64b605a22ea643076388bc9716d74f7aeeee6e6a2d8b8cfe99d"
+      "sha256": "97066742f48462775ebf95d7c117638ad4eb83a74a25e25f65f5d294dceff639"
     }
   },
   "id": "polyhaven_korean_fire_extinguisher_01",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

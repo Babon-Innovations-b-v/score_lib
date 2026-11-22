@@ -7,9 +7,9 @@
       "sha256": "2d2532203f042234af32e4dda3c800a23b2181c951c60abffc1362760bc5e4a8"
     },
     "model.usdc": {
-      "bytes": 17712,
+      "bytes": 18103,
       "role": "usd",
-      "sha256": "08478e29017f52cb3c43766055eb7d79969c0772258f620861c6c34bd491825f"
+      "sha256": "2e896d30174faad88680e041cd752311939e0f63f6da7705c4e9c3a6daabe288"
     }
   },
   "id": "kenney_road_light_curved_double",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

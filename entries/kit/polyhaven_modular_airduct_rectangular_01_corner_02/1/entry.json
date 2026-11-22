@@ -7,9 +7,9 @@
       "sha256": "a323b326f3744fa9a9cd32122085246ea49631255e5d1725cce205fa5a9c0c7c"
     },
     "piece.usdc": {
-      "bytes": 116051,
+      "bytes": 116437,
       "role": "usd",
-      "sha256": "fabb3d6692c272638ed3bc171d8e7e90753d4575101654d683d6063e90f8cf9f"
+      "sha256": "aaca783cb76d2705dfb9aa1516b9619e1d538f05c0923ba0e5928389251edd5d"
     }
   },
   "id": "polyhaven_modular_airduct_rectangular_01_corner_02",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

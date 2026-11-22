@@ -7,9 +7,9 @@
       "sha256": "61f715be6000e69c28a19e1100a32fc9f4fe6b59cd80a1ad4a99c1ec360b66d5"
     },
     "model.usdc": {
-      "bytes": 18529,
+      "bytes": 18914,
       "role": "usd",
-      "sha256": "d919d1fd2bd86eef0e48a31a6731185eb7ddfe4211e7393e32520e9bdf7516e2"
+      "sha256": "67e0c23ef4363cf4c024a68419fd0b1889d17856f2cdaa811277fab62d05cd7e"
     }
   },
   "id": "kenney_furniture_bench_cushion",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

@@ -7,9 +7,9 @@
       "sha256": "b420d9bac5886e1b082ff825c28ed5466b09d64cd4d5dc60cc464d1ed2165fb3"
     },
     "piece.usdc": {
-      "bytes": 47420,
+      "bytes": 47870,
       "role": "usd",
-      "sha256": "1d9208d13abfc3592b847619dd199257c2b4fe692e651dc1ec4883465df55ba4"
+      "sha256": "1ed3edac7f35661312dfa0dbb3ace2f0635a692c001988758dff4bf75f96e9d0"
     }
   },
   "id": "kenney_spacebase_hangar_large_a",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

@@ -7,9 +7,9 @@
       "sha256": "1d0a7043d1b7a382b559c9fbeaf76313426977d3b26770ceba015ce21bd45be5"
     },
     "piece.usdc": {
-      "bytes": 25924,
+      "bytes": 26350,
       "role": "usd",
-      "sha256": "58715cdfa1782d5cb768b08abdb5ec991eaf65995ec8bb81c107c096bcd6a4b7"
+      "sha256": "db11a8943b98977783f8b4e195608178c5b2b2e8af36a2e74c5cec65bd09e6f2"
     }
   },
   "id": "kenney_station_stairs_small_edges_handrail",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

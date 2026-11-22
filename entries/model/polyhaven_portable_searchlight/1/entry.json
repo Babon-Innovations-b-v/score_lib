@@ -7,9 +7,9 @@
       "sha256": "a00a03da23e5e91009a6c1cc0f341d7dd879b1d1ebd44e5e4d333b8330b761cd"
     },
     "model.usdc": {
-      "bytes": 421629,
+      "bytes": 422018,
       "role": "usd",
-      "sha256": "0c91a50141e6e31adf711bf49bd8471fd3786926f433177b4ff7633f191bc25c"
+      "sha256": "813481731362e0a7537f4bb098482f5ff2ac00fd764115eaef7f22f7456f3427"
     }
   },
   "id": "polyhaven_portable_searchlight",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

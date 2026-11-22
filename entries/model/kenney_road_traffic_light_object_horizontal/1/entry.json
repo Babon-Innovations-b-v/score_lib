@@ -7,9 +7,9 @@
       "sha256": "0c4d34de183b4f4da0cbfa8663f9445bd499441c0c5d07f6003a030aaa28069f"
     },
     "model.usdc": {
-      "bytes": 33286,
+      "bytes": 33757,
       "role": "usd",
-      "sha256": "97e609895fb7eec1539111203c975224a9085185db1603448355bc10a7b31579"
+      "sha256": "6d509a6804b8b6c83567546adfd5912d46d7e05b0d9d1638fa5cbc5c5e6ab611"
     }
   },
   "id": "kenney_road_traffic_light_object_horizontal",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

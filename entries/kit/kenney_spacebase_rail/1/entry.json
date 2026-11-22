@@ -7,9 +7,9 @@
       "sha256": "95ca9e03bea3125fab157512d11a2b0755845509cb00262d9fee5498386da012"
     },
     "piece.usdc": {
-      "bytes": 9278,
+      "bytes": 9670,
       "role": "usd",
-      "sha256": "75e96bebb2c8dcab9be1fa2ded6e1f6779a562233b7fa1e48f171557a2dadc8f"
+      "sha256": "28148750c251d390bb11b7aabedf83ed9470dac33d2d7062cf0f77ccc7533823"
     }
   },
   "id": "kenney_spacebase_rail",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

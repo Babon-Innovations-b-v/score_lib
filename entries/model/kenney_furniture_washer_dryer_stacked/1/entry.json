@@ -7,9 +7,9 @@
       "sha256": "ad69cfad1959803ca3cb06032c90c8902e9cf081c62205d658995d23f9f4a364"
     },
     "model.usdc": {
-      "bytes": 135534,
+      "bytes": 136041,
       "role": "usd",
-      "sha256": "9d7d1230bea93bdf7cb89fac2c3884e59f426e8fd4aa5881325823ab5244eba3"
+      "sha256": "a15f46c0e933527acb164fc9fadf6c7d4a9168885ed0094c338e1730b8a1866e"
     }
   },
   "id": "kenney_furniture_washer_dryer_stacked",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

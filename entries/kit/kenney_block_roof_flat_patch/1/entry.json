@@ -7,9 +7,9 @@
       "sha256": "1e652c6d43eece429f757aa8940ae638e586712ebada98b7aa94d71cc794eeda"
     },
     "piece.usdc": {
-      "bytes": 6211,
+      "bytes": 6600,
       "role": "usd",
-      "sha256": "ae8e94f25e9f8684d5efeeb4ca7d93458fba78e02272da252cc82980a7ab7aa4"
+      "sha256": "eebac12e44fac3edc0aa467c5c2e0e22096a55be976b1b21ba3f647a30c6b249"
     }
   },
   "id": "kenney_block_roof_flat_patch",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

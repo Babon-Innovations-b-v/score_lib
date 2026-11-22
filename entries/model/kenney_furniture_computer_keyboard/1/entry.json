@@ -7,9 +7,9 @@
       "sha256": "8960dfd1bbb3d5e1b08a1bc04051ee83f489e9c32f4cadfe398ded1caa57bf4f"
     },
     "model.usdc": {
-      "bytes": 4007,
+      "bytes": 4393,
       "role": "usd",
-      "sha256": "4631ac058f1ee859a1e4e9a1b29f96579f44bfd06627d55fb873032d702c9692"
+      "sha256": "ba1eccb9fadc5e62400a9ee012835af4b37df81c79603892a320c9a6df551613"
     }
   },
   "id": "kenney_furniture_computer_keyboard",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

@@ -7,9 +7,9 @@
       "sha256": "a4b097511f5061064211fa444c3fdd3cc9069301ab92a570940dbf79e2339607"
     },
     "model.usdc": {
-      "bytes": 18310,
+      "bytes": 18764,
       "role": "usd",
-      "sha256": "d8817fef3661f58b5eab41cacdce34ac91bffabfe8a8e171098bb18390c56896"
+      "sha256": "f6610361b58c97d4e40b20ae143c2640199bc396468a37360914acfc467d5d26"
     }
   },
   "id": "kenney_furniture_kitchen_microwave",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

@@ -7,9 +7,9 @@
       "sha256": "331baff9003ff1c073ddb0aaf0d3b3b97cc6fc8d0f3c4596848a82ad67e03ffa"
     },
     "model.usdc": {
-      "bytes": 80502,
+      "bytes": 80929,
       "role": "usd",
-      "sha256": "b65fa1813afe3c07f552d5690f1356f8dbffb87937107a82f1e8d5f1a9a89473"
+      "sha256": "755964b40673b98966aa94684dba89cda6afb03145663a2e17f2ab5bfe177b41"
     }
   },
   "id": "kenney_road_electricity_pole",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

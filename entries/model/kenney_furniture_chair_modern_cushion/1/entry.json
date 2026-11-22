@@ -7,9 +7,9 @@
       "sha256": "e4ab456a2b001e17d9fadb647be92b3098129fd852105709dbca3a7c78e7c681"
     },
     "model.usdc": {
-      "bytes": 10539,
+      "bytes": 10928,
       "role": "usd",
-      "sha256": "8241463661628fd9f6ee7167fa650826c308d7ac88bd872a728c634ef9e7b5e4"
+      "sha256": "b9c81107bb15311460ac80b3a1be6de8f553b3cdad04cec5cb1faccb425148be"
     }
   },
   "id": "kenney_furniture_chair_modern_cushion",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

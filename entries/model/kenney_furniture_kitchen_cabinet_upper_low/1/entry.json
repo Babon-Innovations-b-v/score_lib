@@ -7,9 +7,9 @@
       "sha256": "7ca102eaba2d0408710a787a65f635d4ab84f40fe0f6c2c22a766a341a876c54"
     },
     "model.usdc": {
-      "bytes": 8232,
+      "bytes": 8654,
       "role": "usd",
-      "sha256": "0e5e89dc165578af3aeaaa2ecd5aa96304e912ca51c2126fe51c1e35b4cc48d0"
+      "sha256": "7dafad46a21a05775f4a8c103cbdeda5aa1518ded5a996fbb3fd2d03ef13ae49"
     }
   },
   "id": "kenney_furniture_kitchen_cabinet_upper_low",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

@@ -7,9 +7,9 @@
       "sha256": "0d5046a2fea9b012c0fc662b0517dd276b60b10753f0fd8674d1c096c62a2cb9"
     },
     "model.usdc": {
-      "bytes": 9850,
+      "bytes": 10234,
       "role": "usd",
-      "sha256": "6ad8f0624f989d5d0b9eb58c51d995d760ced2e9bb9380915633cefaf19c15a8"
+      "sha256": "35325f37d1878ade37483af0f744caf775591c4497e2749c5136460f1de94b7a"
     }
   },
   "id": "kenney_spacebase_desk_chair_stool",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

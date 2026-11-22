@@ -7,9 +7,9 @@
       "sha256": "db050697d5292ea355c60c3a21b8929b15f7838cd40682f62d4a624865aa6754"
     },
     "piece.usdc": {
-      "bytes": 35187,
+      "bytes": 35666,
       "role": "usd",
-      "sha256": "7995337626e6308df815abeade92c4829e627b3b0fa29fdf750b7e551eb75d4a"
+      "sha256": "fa414a8b3e6a60a14e6c09d080dcf6ad9eadbd051df956ca7714730093175e63"
     }
   },
   "id": "kenney_city_detail_parasol_b",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

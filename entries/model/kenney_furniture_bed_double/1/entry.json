@@ -7,9 +7,9 @@
       "sha256": "ea375bf70b60fa0333952e1975b05adff5988a7a30ae2a083f29da9c65e25ff0"
     },
     "model.usdc": {
-      "bytes": 29767,
+      "bytes": 30203,
       "role": "usd",
-      "sha256": "6aa7cea10dc9c9f51e1f39489bb9dae7a81a67379090e0646613306bb72057cb"
+      "sha256": "b1cf5d6f8160fd6b2f633beb8ef5979bb6c3f105f695507ea0c75f947892d26e"
     }
   },
   "id": "kenney_furniture_bed_double",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

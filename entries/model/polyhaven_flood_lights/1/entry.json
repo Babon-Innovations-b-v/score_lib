@@ -7,9 +7,9 @@
       "sha256": "dc5ebb9c7284c1534f7e76ef3b4f793190574619ee8da1414b4d5f799f047e7b"
     },
     "model.usdc": {
-      "bytes": 2568457,
+      "bytes": 2568850,
       "role": "usd",
-      "sha256": "aacdec696f17aa23646934072a5bc4e967d3f43de7e641842011304f0d8a75a3"
+      "sha256": "5ab257819f549f8c7698b8425547d2afacfc437e228fa47134f2e293497e9122"
     }
   },
   "id": "polyhaven_flood_lights",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

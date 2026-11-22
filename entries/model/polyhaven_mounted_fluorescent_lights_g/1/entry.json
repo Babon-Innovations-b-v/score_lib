@@ -7,9 +7,9 @@
       "sha256": "8556149dc891906352b6004782737d9eaf40c23e616c9064fd2c12b2675a96a5"
     },
     "model.usdc": {
-      "bytes": 26097,
+      "bytes": 26475,
       "role": "usd",
-      "sha256": "1a53d6178f9c4cfbec12f39bb5bbbff1c1e960effb8035f5e6aa75919051870d"
+      "sha256": "239e5f18868e6cfd34efd7b4dd092542a3308e77aaabc9372f7cfb16999302d8"
     }
   },
   "id": "polyhaven_mounted_fluorescent_lights_g",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

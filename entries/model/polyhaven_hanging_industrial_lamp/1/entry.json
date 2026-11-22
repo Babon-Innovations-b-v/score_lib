@@ -7,9 +7,9 @@
       "sha256": "415695ca034910ab306783a188b8710148a6f0681f38241a10e99caac8c63f4c"
     },
     "model.usdc": {
-      "bytes": 314525,
+      "bytes": 314907,
       "role": "usd",
-      "sha256": "6c3f8777fa8098404bd007715a92730bd0a89170be9324723e8b9e499f87b7b3"
+      "sha256": "d0cd51b36f1568d58b275462dbe47b11bae69d76205f25a67191ca365c5e1fc2"
     }
   },
   "id": "polyhaven_hanging_industrial_lamp",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

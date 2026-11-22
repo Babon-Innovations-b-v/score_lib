@@ -7,9 +7,9 @@
       "sha256": "bdac13fe19dc716da1cb017e943e530e6e6f84f3cbfe31eefd8aa7748c7cc6c6"
     },
     "model.usdc": {
-      "bytes": 93257,
+      "bytes": 93733,
       "role": "usd",
-      "sha256": "7b5b2e5a8831052848017944083d96c6e1c7c4c25eef7711f58ff928c82096ae"
+      "sha256": "afff5cde9f7f3846cefa056b3745acfeb3738127d4c7ae26c1c642f6a6f4df33"
     }
   },
   "id": "kenney_spacebase_satellite_dish_detailed",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

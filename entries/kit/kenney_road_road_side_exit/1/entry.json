@@ -7,9 +7,9 @@
       "sha256": "14fd41c82513bbd6b589fe0e4d6cb1ec1cb279227c19be46981bb7d65cc76601"
     },
     "piece.usdc": {
-      "bytes": 29572,
+      "bytes": 29961,
       "role": "usd",
-      "sha256": "431c4f683e4ed90b34ef2cdaaf2ec0c7d55d0c4e56c869585f67133b63e36f52"
+      "sha256": "fb071084ad082545289c1e213bf78bc4a55e74d8ca714e0c0f4df006789b524f"
     }
   },
   "id": "kenney_road_road_side_exit",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

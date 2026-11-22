@@ -7,9 +7,9 @@
       "sha256": "a038d537c33bf3ea138931a38368cd705901e09d3805941893e7c397aabf6191"
     },
     "piece.usdc": {
-      "bytes": 12894,
+      "bytes": 13288,
       "role": "usd",
-      "sha256": "9aa9c72292418b5787f72ab2f7804e9156c1f4dd752135fc184b77a3ca196044"
+      "sha256": "88bb11d39e3745f8774fd95414510bfa9bd1ed94a28484e8487ba7c22b5f8c06"
     }
   },
   "id": "kenney_spacebase_pipe_entrance",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

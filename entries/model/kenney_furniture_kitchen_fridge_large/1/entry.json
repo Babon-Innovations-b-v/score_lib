@@ -7,9 +7,9 @@
       "sha256": "9f40718b0c4b7887dabf707af6d835f05fca20c89eebaf9682f327780ca8874a"
     },
     "model.usdc": {
-      "bytes": 37441,
+      "bytes": 37829,
       "role": "usd",
-      "sha256": "f91acbfc2d11ad014bd0de9f5bc93b9954a8a706f53271b2f1823333a897a38c"
+      "sha256": "cf31492860e2df2af50c53a3456bc45276af24da6dec834f7d45d92b405bfc26"
     }
   },
   "id": "kenney_furniture_kitchen_fridge_large",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

@@ -7,9 +7,9 @@
       "sha256": "ac3fc853232256ee0bf2d6f469b33017937aea653fc3fe32405e144f0b6ab13a"
     },
     "piece.usdc": {
-      "bytes": 6148,
+      "bytes": 6535,
       "role": "usd",
-      "sha256": "6474c4bdefcde310c8d824364e6dc9fc1bb1b7229fb1458b7df5ef8ff850f69e"
+      "sha256": "a9f680cef1eca05ab9af48cac814ab74ed7d6bf5446f250b96a24fa60d2d660a"
     }
   },
   "id": "kenney_station_pipe_ring",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

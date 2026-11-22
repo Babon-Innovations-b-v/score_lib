@@ -7,9 +7,9 @@
       "sha256": "7aeeda7f1212264f84c79b450de82b646c91f2567cedb8bee06f20d2bd508b88"
     },
     "model.usdc": {
-      "bytes": 67868,
+      "bytes": 68384,
       "role": "usd",
-      "sha256": "da4cdc838b26db136f66a7ef3709c0441e93f24ba3e8837c7424850dbd1deed4"
+      "sha256": "9b674b5ed9975632e0c972af1ebe0afcbc6737219e180f8b61488d1f379ac06a"
     }
   },
   "id": "kenney_furniture_kitchen_stove_electric",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

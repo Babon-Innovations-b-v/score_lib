@@ -7,9 +7,9 @@
       "sha256": "2664fe27f7a48c991eb5a022b7a0ec27ae45e0c78ffc6c562b4844ab130537b4"
     },
     "model.usdc": {
-      "bytes": 14774,
+      "bytes": 15164,
       "role": "usd",
-      "sha256": "715ee008dc3d07d224d7c6975fe5ca00a81804f4721666c47e0b0c0c7dccae79"
+      "sha256": "ea06fe75d1adda10bbfa581da70a0147548cfc69577c515bfb190ec81a2fcb01"
     }
   },
   "id": "kenney_furniture_coat_rack",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

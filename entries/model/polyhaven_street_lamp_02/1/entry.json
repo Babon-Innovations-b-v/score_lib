@@ -7,9 +7,9 @@
       "sha256": "d2ab98d5bc95a774e74371906a912473992b7ffd7e51cdf88e42f5d0ad1c85f1"
     },
     "model.usdc": {
-      "bytes": 482588,
+      "bytes": 483009,
       "role": "usd",
-      "sha256": "fb32aa19cee77d9e9f88b333ed8003491191b17f5861fb8224619abaa3c1bda4"
+      "sha256": "f1a47f80ddc1cdc4c42d051b76bf9010e76411929f0733a83e0157f0ff980ad9"
     }
   },
   "id": "polyhaven_street_lamp_02",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

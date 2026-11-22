@@ -7,9 +7,9 @@
       "sha256": "29c2034a4aec27741c42343fe7819f780c00d049ba5bfc37a7f493ed6e8788fc"
     },
     "piece.usdc": {
-      "bytes": 45568,
+      "bytes": 46044,
       "role": "usd",
-      "sha256": "1c16592daf4030245b46d78fb079a4f279dc8bce0d24b7fbae9d947d79fb8d15"
+      "sha256": "718526859074adade190190da523619c781fbdf6de46e1937d55053396610e1d"
     }
   },
   "id": "kenney_spacebase_pipe_ring_high_end",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

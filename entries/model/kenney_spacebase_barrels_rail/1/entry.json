@@ -7,9 +7,9 @@
       "sha256": "a41fb33cc43a61c0caa50e0c3109bf037395d0d4381a4b96ebc99f008938bcfb"
     },
     "model.usdc": {
-      "bytes": 47582,
+      "bytes": 47999,
       "role": "usd",
-      "sha256": "f6698102a76706df8fd1cfb4983767398da75e0b17b7aef429f63b37cc5336c1"
+      "sha256": "d25fc90db257e893398c0e5264c9ea2a03084514827ef22d80e90ba3ab45039b"
     }
   },
   "id": "kenney_spacebase_barrels_rail",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
