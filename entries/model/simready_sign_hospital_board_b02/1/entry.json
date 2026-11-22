@@ -1,0 +1,196 @@
+{
+  "address": "model/simready_sign_hospital_board_b02@1",
+  "files": {
+    "Textures/t_plastic_black_a01_tile_alb.png": {
+      "bytes": 15321300,
+      "role": "texture",
+      "sha256": "b6bccbf9f0086817688c53c8203e3563034d5704e750f81e6ed866382613c6d3"
+    },
+    "Textures/t_plastic_black_a01_tile_nor.png": {
+      "bytes": 21091456,
+      "role": "texture",
+      "sha256": "50c9be331ece773c992fddd42d2440bcbc01b3bfcf1992f96b6ecf22bf9db6d2"
+    },
+    "Textures/t_plastic_black_a01_tile_orm.png": {
+      "bytes": 15783445,
+      "role": "texture",
+      "sha256": "c840f18380e08ec52d43ebe660d0f1290122fec5ae7c43cf8a987b0163661da9"
+    },
+    "payloads/MuJoCo/disabled.usda": {
+      "bytes": 4308,
+      "role": "usd",
+      "sha256": "091ef09b41438bde61aa1cb642dd7dfa229e432bbbb222d36f6a23eaa245127d"
+    },
+    "payloads/MuJoCo/enabled.usda": {
+      "bytes": 5010,
+      "role": "usd",
+      "sha256": "3e834850208d7efd3512b1811ca10bb9b60f92c14e162909d859102c31b4d8a6"
+    },
+    "payloads/Newton/disabled.usda": {
+      "bytes": 4308,
+      "role": "usd",
+      "sha256": "091ef09b41438bde61aa1cb642dd7dfa229e432bbbb222d36f6a23eaa245127d"
+    },
+    "payloads/Newton/enabled.usda": {
+      "bytes": 5122,
+      "role": "usd",
+      "sha256": "049e86ed1ee646746e28465f20c063023475193fd1e2c41a050ab4314fb62973"
+    },
+    "payloads/PhysX/disabled.usda": {
+      "bytes": 4308,
+      "role": "usd",
+      "sha256": "091ef09b41438bde61aa1cb642dd7dfa229e432bbbb222d36f6a23eaa245127d"
+    },
+    "payloads/PhysX/enabled.usda": {
+      "bytes": 4590,
+      "role": "usd",
+      "sha256": "56efed13f9e8bb6ae466cabc9adade970d329f465c6e7dbbba232fb9f3853ec4"
+    },
+    "payloads/Physics/physics.usda": {
+      "bytes": 5153,
+      "role": "usd",
+      "sha256": "67230f0574214fbe0ed7d0ff63257be1be632d4abbe8dfda5d06b615320c0c28"
+    },
+    "payloads/base.usda": {
+      "bytes": 7193,
+      "role": "usd",
+      "sha256": "bd5668a2ad21e963ff7a584a275422ba247c95c9095dc2d7e07f1abafeb86310"
+    },
+    "payloads/geometries.usd": {
+      "bytes": 220235,
+      "role": "usd",
+      "sha256": "bf9c09fcc72d864da9607ad77143577fee89385207b7e252251e0fc206e94e61"
+    },
+    "payloads/instances.usda": {
+      "bytes": 6231,
+      "role": "usd",
+      "sha256": "5f2b6250cdbce2288db38c169ddd84219b8be1953b1aae3d8b553eb4d91febc9"
+    },
+    "payloads/instances_mujoco.usda": {
+      "bytes": 6503,
+      "role": "usd",
+      "sha256": "321ec5e1fd403d1d951b4bd3d28046922410470893dd28902d7cdd09be76d400"
+    },
+    "payloads/instances_newton.usda": {
+      "bytes": 6354,
+      "role": "usd",
+      "sha256": "f975a8021e2b8126e93bdc79c2c94cca60fe12fea45f09031d30fd011dd89a5c"
+    },
+    "payloads/instances_physx.usda": {
+      "bytes": 6371,
+      "role": "usd",
+      "sha256": "f6acdc33406360d0279ea8768dc11c0a2fbbba4e6c9c89065dafa802acb60a88"
+    },
+    "payloads/materials.usda": {
+      "bytes": 15346,
+      "role": "usd",
+      "sha256": "f201afe30256b141631fefbcb79514329dfa528a866be09be290ba7b63203f1f"
+    },
+    "sm_sign_hospital_board_b02_01.usd": {
+      "bytes": 22263,
+      "role": "usd",
+      "sha256": "724d5df95ede6a1d537dbb9b8169334a082824a309f591b8ab223a4742b1a4c2"
+    },
+    "source_assets/OmniPBR.mdl": {
+      "bytes": 16010,
+      "role": "code",
+      "sha256": "6e6b3acbccd236e21a6c29964a431d2a53e77251cc6b8b1bc975eb1c62da1781"
+    },
+    "source_assets/OmniPBRBase.mdl": {
+      "bytes": 19369,
+      "role": "code",
+      "sha256": "a8fd9fe174e91892e94d06da90ba453a124024c2ce2c033be9d82c9e2f76a3b7"
+    },
+    "source_assets/OmniPBR_ClearCoat.mdl": {
+      "bytes": 29789,
+      "role": "code",
+      "sha256": "d84c5ba482561c0eaea2e0c5b607358af549e36cd921773462f92dbc4f32cbc3"
+    }
+  },
+  "id": "simready_sign_hospital_board_b02",
+  "kind": "model",
+  "licence": {
+    "credit": "sign_hospital_board_b02 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0; changed: each Material names its library surface (score:surface)",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "Textures/t_plastic_black_a01_tile_alb.png": "sign_hospital_board_b02/simready_usd/Textures/t_plastic_black_a01_tile_alb.png",
+      "Textures/t_plastic_black_a01_tile_nor.png": "sign_hospital_board_b02/simready_usd/Textures/t_plastic_black_a01_tile_nor.png",
+      "Textures/t_plastic_black_a01_tile_orm.png": "sign_hospital_board_b02/simready_usd/Textures/t_plastic_black_a01_tile_orm.png",
+      "payloads/MuJoCo/disabled.usda": "sign_hospital_board_b02/simready_usd/payloads/MuJoCo/disabled.usda",
+      "payloads/MuJoCo/enabled.usda": "sign_hospital_board_b02/simready_usd/payloads/MuJoCo/enabled.usda",
+      "payloads/Newton/disabled.usda": "sign_hospital_board_b02/simready_usd/payloads/Newton/disabled.usda",
+      "payloads/Newton/enabled.usda": "sign_hospital_board_b02/simready_usd/payloads/Newton/enabled.usda",
+      "payloads/PhysX/disabled.usda": "sign_hospital_board_b02/simready_usd/payloads/PhysX/disabled.usda",
+      "payloads/PhysX/enabled.usda": "sign_hospital_board_b02/simready_usd/payloads/PhysX/enabled.usda",
+      "payloads/Physics/physics.usda": "sign_hospital_board_b02/simready_usd/payloads/Physics/physics.usda",
+      "payloads/base.usda": "sign_hospital_board_b02/simready_usd/payloads/base.usda",
+      "payloads/geometries.usd": "sign_hospital_board_b02/simready_usd/payloads/geometries.usd",
+      "payloads/instances.usda": "sign_hospital_board_b02/simready_usd/payloads/instances.usda",
+      "payloads/instances_mujoco.usda": "sign_hospital_board_b02/simready_usd/payloads/instances_mujoco.usda",
+      "payloads/instances_newton.usda": "sign_hospital_board_b02/simready_usd/payloads/instances_newton.usda",
+      "payloads/instances_physx.usda": "sign_hospital_board_b02/simready_usd/payloads/instances_physx.usda",
+      "payloads/materials.usda": "sign_hospital_board_b02/simready_usd/payloads/materials.usda (changed: each Material names its library surface (score:surface))",
+      "sm_sign_hospital_board_b02_01.usd": "sign_hospital_board_b02/simready_usd/sm_sign_hospital_board_b02_01.usd",
+      "source_assets/OmniPBR.mdl": "sign_hospital_board_b02/simready_usd/source_assets/OmniPBR.mdl",
+      "source_assets/OmniPBRBase.mdl": "sign_hospital_board_b02/simready_usd/source_assets/OmniPBRBase.mdl",
+      "source_assets/OmniPBR_ClearCoat.mdl": "sign_hospital_board_b02/simready_usd/source_assets/OmniPBR_ClearCoat.mdl"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "sign_hospital_board_b02: its model, physics and maps"
+      },
+      {
+        "by": "score",
+        "what": "the library surface each material names (score:surface)"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: sign_hospital_board_b02",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/simready_m_opaque_plastic_black_a01_df90d22c@1",
+    "surface/simready_m_opaque_plastic_glossy_brown_a01_55311121@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "description": [
+      "design or use of signs and symbols on physical objects to communicate a message to a particular audience in a particular context"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "simulators": [
+      "mujoco",
+      "newton",
+      "physx"
+    ],
+    "wikidata_class": [
+      "signage"
+    ],
+    "wikidata_qcode": [
+      "Q1211272"
+    ]
+  },
+  "title": "sign_hospital_board_b02",
+  "usd": {
+    "default_prim": "/RootNode",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/simready_sign_hospital_board_b02/1/sm_sign_hospital_board_b02_01.usd",
+    "root": "sm_sign_hospital_board_b02_01.usd",
+    "up_axis": "Z",
+    "use": "reference"
+  },
+  "version": 1
+}

@@ -1,0 +1,195 @@
+{
+  "address": "model/simready_service_tool_oil_pan_a01@1",
+  "files": {
+    "Textures/t_plastic_black_a01_tile_alb.png": {
+      "bytes": 15321300,
+      "role": "texture",
+      "sha256": "b6bccbf9f0086817688c53c8203e3563034d5704e750f81e6ed866382613c6d3"
+    },
+    "Textures/t_plastic_black_a01_tile_nor.png": {
+      "bytes": 21091456,
+      "role": "texture",
+      "sha256": "50c9be331ece773c992fddd42d2440bcbc01b3bfcf1992f96b6ecf22bf9db6d2"
+    },
+    "Textures/t_plastic_black_a01_tile_orm.png": {
+      "bytes": 15783445,
+      "role": "texture",
+      "sha256": "c840f18380e08ec52d43ebe660d0f1290122fec5ae7c43cf8a987b0163661da9"
+    },
+    "payloads/MuJoCo/disabled.usda": {
+      "bytes": 6709,
+      "role": "usd",
+      "sha256": "6822f0b7b82c4b910d3365dad3f8312c82274348e69e82a93c6df9c62abc72f0"
+    },
+    "payloads/MuJoCo/enabled.usda": {
+      "bytes": 7446,
+      "role": "usd",
+      "sha256": "d3eb2bae65332aebc1bf0538980da7d33018777ad3400c56474ea0c9cbb2053f"
+    },
+    "payloads/Newton/disabled.usda": {
+      "bytes": 6709,
+      "role": "usd",
+      "sha256": "6822f0b7b82c4b910d3365dad3f8312c82274348e69e82a93c6df9c62abc72f0"
+    },
+    "payloads/Newton/enabled.usda": {
+      "bytes": 7268,
+      "role": "usd",
+      "sha256": "8abae6ff900c395409972f3497513403690634b9d56afbf62e273b706f7fcc02"
+    },
+    "payloads/PhysX/disabled.usda": {
+      "bytes": 6709,
+      "role": "usd",
+      "sha256": "6822f0b7b82c4b910d3365dad3f8312c82274348e69e82a93c6df9c62abc72f0"
+    },
+    "payloads/PhysX/enabled.usda": {
+      "bytes": 6981,
+      "role": "usd",
+      "sha256": "dc3fc6ab35933191cfa05c4f6d0a20abb8079d22cf1a8be94d5c3a3ff7241228"
+    },
+    "payloads/Physics/physics.usda": {
+      "bytes": 7225,
+      "role": "usd",
+      "sha256": "fe158f4be620a784ba01c3c34583f592eb9c50422272c63000e976edb1f9e0ac"
+    },
+    "payloads/base.usda": {
+      "bytes": 11377,
+      "role": "usd",
+      "sha256": "c1932fc04275bb8134738bdf3a73246853f0885dbdb29b8158b5727ef725493d"
+    },
+    "payloads/geometries.usd": {
+      "bytes": 1594428,
+      "role": "usd",
+      "sha256": "62b2a282600395fcb6017af37c9c8a1fa0377dcf574561afac578e9d53601ac8"
+    },
+    "payloads/instances.usda": {
+      "bytes": 7689,
+      "role": "usd",
+      "sha256": "3a605809c3c30447525838c5de21a468749e39cdde841542f8497457f424a28e"
+    },
+    "payloads/instances_mujoco.usda": {
+      "bytes": 7961,
+      "role": "usd",
+      "sha256": "4e3597f2d5cc1cb32ecfdceae23d6a284337e5d52d26414a563422affe075407"
+    },
+    "payloads/instances_newton.usda": {
+      "bytes": 7812,
+      "role": "usd",
+      "sha256": "ea08c3425444409378d47f0354c23d0a7ab25906dc00f616932311cb0d953570"
+    },
+    "payloads/instances_physx.usda": {
+      "bytes": 7829,
+      "role": "usd",
+      "sha256": "3331f4a114184b1f874507fe48f7eac2500a1f0a58934c51aefc32ed42ef30ac"
+    },
+    "payloads/materials.usda": {
+      "bytes": 12531,
+      "role": "usd",
+      "sha256": "8b1f2d2e321f54bbd35cfdcb8ddafa2215df22708f004e1e6ea1c1609887f39c"
+    },
+    "sm_serviceTool_oil_pan_a01_01.usd": {
+      "bytes": 21536,
+      "role": "usd",
+      "sha256": "7b5ed95817ac2f6a37676444583938c865e93b597eb4c770dc262bc77f40b72b"
+    },
+    "source_assets/OmniPBR.mdl": {
+      "bytes": 16010,
+      "role": "code",
+      "sha256": "6e6b3acbccd236e21a6c29964a431d2a53e77251cc6b8b1bc975eb1c62da1781"
+    },
+    "source_assets/OmniPBRBase.mdl": {
+      "bytes": 19369,
+      "role": "code",
+      "sha256": "a8fd9fe174e91892e94d06da90ba453a124024c2ce2c033be9d82c9e2f76a3b7"
+    },
+    "source_assets/OmniPBR_ClearCoat.mdl": {
+      "bytes": 29789,
+      "role": "code",
+      "sha256": "d84c5ba482561c0eaea2e0c5b607358af549e36cd921773462f92dbc4f32cbc3"
+    }
+  },
+  "id": "simready_service_tool_oil_pan_a01",
+  "kind": "model",
+  "licence": {
+    "credit": "serviceTool_oil_pan_a01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0; changed: each Material names its library surface (score:surface)",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "Textures/t_plastic_black_a01_tile_alb.png": "serviceTool_oil_pan_a01/simready_usd/Textures/t_plastic_black_a01_tile_alb.png",
+      "Textures/t_plastic_black_a01_tile_nor.png": "serviceTool_oil_pan_a01/simready_usd/Textures/t_plastic_black_a01_tile_nor.png",
+      "Textures/t_plastic_black_a01_tile_orm.png": "serviceTool_oil_pan_a01/simready_usd/Textures/t_plastic_black_a01_tile_orm.png",
+      "payloads/MuJoCo/disabled.usda": "serviceTool_oil_pan_a01/simready_usd/payloads/MuJoCo/disabled.usda",
+      "payloads/MuJoCo/enabled.usda": "serviceTool_oil_pan_a01/simready_usd/payloads/MuJoCo/enabled.usda",
+      "payloads/Newton/disabled.usda": "serviceTool_oil_pan_a01/simready_usd/payloads/Newton/disabled.usda",
+      "payloads/Newton/enabled.usda": "serviceTool_oil_pan_a01/simready_usd/payloads/Newton/enabled.usda",
+      "payloads/PhysX/disabled.usda": "serviceTool_oil_pan_a01/simready_usd/payloads/PhysX/disabled.usda",
+      "payloads/PhysX/enabled.usda": "serviceTool_oil_pan_a01/simready_usd/payloads/PhysX/enabled.usda",
+      "payloads/Physics/physics.usda": "serviceTool_oil_pan_a01/simready_usd/payloads/Physics/physics.usda",
+      "payloads/base.usda": "serviceTool_oil_pan_a01/simready_usd/payloads/base.usda",
+      "payloads/geometries.usd": "serviceTool_oil_pan_a01/simready_usd/payloads/geometries.usd",
+      "payloads/instances.usda": "serviceTool_oil_pan_a01/simready_usd/payloads/instances.usda",
+      "payloads/instances_mujoco.usda": "serviceTool_oil_pan_a01/simready_usd/payloads/instances_mujoco.usda",
+      "payloads/instances_newton.usda": "serviceTool_oil_pan_a01/simready_usd/payloads/instances_newton.usda",
+      "payloads/instances_physx.usda": "serviceTool_oil_pan_a01/simready_usd/payloads/instances_physx.usda",
+      "payloads/materials.usda": "serviceTool_oil_pan_a01/simready_usd/payloads/materials.usda (changed: each Material names its library surface (score:surface))",
+      "sm_serviceTool_oil_pan_a01_01.usd": "serviceTool_oil_pan_a01/simready_usd/sm_serviceTool_oil_pan_a01_01.usd",
+      "source_assets/OmniPBR.mdl": "serviceTool_oil_pan_a01/simready_usd/source_assets/OmniPBR.mdl",
+      "source_assets/OmniPBRBase.mdl": "serviceTool_oil_pan_a01/simready_usd/source_assets/OmniPBRBase.mdl",
+      "source_assets/OmniPBR_ClearCoat.mdl": "serviceTool_oil_pan_a01/simready_usd/source_assets/OmniPBR_ClearCoat.mdl"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "serviceTool_oil_pan_a01: its model, physics and maps"
+      },
+      {
+        "by": "score",
+        "what": "the library surface each material names (score:surface)"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: serviceTool_oil_pan_a01",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/simready_m_opaque_plastic_black_a01_df90d22c@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "description": [
+      "device creating a partially or fully enclosed space that can be used to contain store and transport objects or materials"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "simulators": [
+      "mujoco",
+      "newton",
+      "physx"
+    ],
+    "wikidata_class": [
+      "physical container"
+    ],
+    "wikidata_qcode": [
+      "Q987767"
+    ]
+  },
+  "title": "serviceTool_oil_pan_a01",
+  "usd": {
+    "default_prim": "/RootNode",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/simready_service_tool_oil_pan_a01/1/sm_serviceTool_oil_pan_a01_01.usd",
+    "root": "sm_serviceTool_oil_pan_a01_01.usd",
+    "up_axis": "Z",
+    "use": "reference"
+  },
+  "version": 1
+}
