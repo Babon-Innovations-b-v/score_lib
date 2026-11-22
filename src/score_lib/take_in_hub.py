@@ -58,6 +58,7 @@ THUMBS = ".thumbs"
 COPIES = "source_assets"
 CHANGED = "changed: each Material names its library surface (score:surface)"
 SURFACE_ATTRIBUTE = "score:surface"
+SEMANTIC_TYPE = ":semanticType"  # a semantics attribute naming its label's type (`wikidata_class`), not the label
 # What a UsdPreviewSurface input a map feeds says about the map.
 INPUT_ROLES = {"diffuseColor": "albedo", "normal": "normal", "roughness": "roughness", "metallic": "metallic",
                "occlusion": "occlusion", "emissiveColor": "emission", "opacity": "opacity",
@@ -570,7 +571,7 @@ def asset_tags(folder, kept):
                 for word, tag in (("wikidata_class", "wikidata_class"), ("wikidata_qcode", "wikidata_qcode"),
                                   (":documentation", "description")):
                     value = plain(attribute.default)
-                    if word in attribute.name and value:
+                    if word in attribute.name and value and not attribute.name.endswith(SEMANTIC_TYPE):
                         tags[tag] += [str(each) for each in (value if isinstance(value, list) else [value])]
     simulators = {word for name in kept for word in ("newton", "mujoco", "physx") if word in name.lower()}
     found = {tag: sorted(set(values)) for tag, values in tags.items()}

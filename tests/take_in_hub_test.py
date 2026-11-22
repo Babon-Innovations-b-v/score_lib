@@ -117,7 +117,8 @@ def layer(materials, documentation=None, sub=None, mesh=""):
     head = f"(\n    defaultPrim = \"RootNode\"\n    subLayers = [@./{sub}@]\n)" if sub else "(\n    defaultPrim = \"RootNode\"\n)"
     tags = (f'    custom string acme:documentation = "{documentation}"\n'
             '    custom string semantics:wikidata_class = "Crates"\n'
-            '    custom string semantics:wikidata_qcode = "Q1"\n') if documentation else ""
+            '    custom string semantics:wikidata_qcode = "Q1"\n'
+            '    custom string semantic:wikidata_qcode:params:semanticType = "wikidata_qcode"\n') if documentation else ""
     body = "".join(materials).replace("\n", "\n        ")
     return f"""#usda 1.0
 {head}
