@@ -6,6 +6,7 @@ import os
 import pathlib
 
 import pytest
+from pxr import Usd, UsdGeom
 from conftest import MANIFEST_TEXT, World, git, png, sha256, write_files
 
 from score_lib import entry as entries
@@ -96,10 +97,18 @@ def test_a_given_close_up_stays_out(world):
     assert "closeup.png" not in entries.load_address(world.root, "model/crate_1@1")["files"]
 
 
-def test_effect_and_sound_paths_are_rewritten(world):
+def test_effect_and_sound_paths_are_rewritten(world, tmp_path):
     world.export()
     effect = entries.load_address(world.root, "effect/steam@1")
     assert "@./clip.usdc@" in blob_text(effect, "effect.usda")
+    store = LocalBlobStore(os.environ["SCORE_LIB_BLOBS_DIR"])
+    for name in ("effect.usda", "clip.usdc"):  # the place's values are metres: a file saying none reads centimetres
+        copy = tmp_path / name
+        copy.write_bytes(store.path(effect["files"][name]["sha256"]).read_bytes())
+        stage = Usd.Stage.Open(str(copy))
+        assert (UsdGeom.GetStageMetersPerUnit(stage), UsdGeom.GetStageUpAxis(stage)) == (1.0, "Y"), name
+    assert effect["usd"]["meters_per_unit"] == 1.0
+    assert effect["provenance"]["files_from"]["clip.usdc"]["path"] == "assets/effects/steam.usdc"
     assert json.loads(blob_text(effect, "settings.json"))["kind"] == "steam_jet"
     assert effect["requires"] == []  # the fixture library holds no particle_effects algorithm
     sound = entries.load_address(world.root, "sound/hum@1")

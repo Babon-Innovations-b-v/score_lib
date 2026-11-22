@@ -2,12 +2,14 @@
 emitter of a place's effects-layer output (the one its assembly took, else the accepted one) carries 35
 score:effect:* attributes and a baked value clip (spec 4.4); its placement settings (PLACEMENT: where and how much,
 fitted to its spot, door or room) stay in the place's layer, as does every placement's own clip, and the entry keeps
-one placement's settings and clip as its sample and names every placement (provenance `placements`)."""
+one placement's settings and clip as its sample and names every placement (provenance `placements`). Its effect.usda
+and clip.usdc state the units their values are in, the place stage's (metres, Y up): a clip SCORE wrote saying none
+read as centimetres, the default, and shrank the effect a hundred times (score #156)."""
 import hashlib
 import json
 import os
 
-from pxr import Sdf
+from pxr import Sdf, UsdGeom
 
 from score_lib.export import places as place_reads
 from score_lib.export.run import Candidate, write_json
@@ -21,6 +23,8 @@ LAYER = "layers/effects.usda"
 # and the density over that size, the source lines it was read from): the place's, never the effect's.
 PLACEMENT = ("from", "seed", "wind", "emitter_size", "direction", "count", "rate", "loop", "trigger_every",
              "explosiveness", "opacity", "size")
+# A SCORE place stage's units (score/contracts: metres, Y up), which its layers and clips are written in.
+STAGE_UNITS = {UsdGeom.Tokens.metersPerUnit: 1.0, UsdGeom.Tokens.upAxis: UsdGeom.Tokens.y}
 
 
 def plan(context):
@@ -107,14 +111,39 @@ def place_emitters(context, place):
     return found
 
 
+def units_of(layer):
+    """{metersPerUnit, upAxis} a place's layer states, SCORE's stage units where it states none."""
+    root = layer.pseudoRoot
+    return {key: root.GetInfo(key) if root.HasInfo(key) else value for key, value in STAGE_UNITS.items()}
+
+
+def stated(layer, units):
+    """The layer with the units written on its root; the layer back."""
+    for key, value in units.items():
+        layer.pseudoRoot.SetInfo(key, value)
+    return layer
+
+
 def effect_usda(context, use, root_name, work):
-    """The emitter Xform copied to /<root_name> with its clip asset pointed at ./clip.usdc."""
+    """The emitter Xform copied to /<root_name> with its clip asset pointed at ./clip.usdc, in its place's units."""
     source = Sdf.Layer.OpenAsAnonymous(str(context.tree(use["output"]) / LAYER))
     layer = copy_prim(source, use["path"], "effect.usda", root_name)
     layer.timeCodesPerSecond = source.timeCodesPerSecond
     layer.framesPerSecond = source.framesPerSecond
+    stated(layer, units_of(source))
     rewrite(layer, {path: "./clip.usdc" for path in asset_paths(layer) if joined("layers", path) == use["clip"]})
     return export(layer, work / "effect.usda")
+
+
+def stated_clip(context, use, work):
+    """The emitter's clip copied into `work` as clip.usdc stating its place's units (its values are the place stage's,
+    so a clip lifted out of it says so); the copy's path."""
+    source = Sdf.Layer.OpenAsAnonymous(str(context.tree(use["output"]) / LAYER), metadataOnly=True)
+    clip = Sdf.Layer.OpenAsAnonymous(str(context.tree(use["output"]) / use["clip"]))
+    destination = work / "clip.usdc"
+    if not stated(clip, units_of(source)).Export(str(destination)):
+        raise RuntimeError(f"{use['clip']}: the clip could not be written to {destination}")
+    return destination
 
 
 def stem(names):
@@ -135,12 +164,12 @@ def candidate(context, uses):
     files = {"settings.json": write_json(work / "settings.json", first["settings"]),
              "effect.usda": effect_usda(context, first, root_name, work)}
     roles = {"settings.json": "record", "effect.usda": "usd"}
-    known = {}
+    files_from = {}
     picture = {"reason": "the emitter has no baked clip"}
     if first["clip"]:
-        files["clip.usdc"] = context.tree(first["output"]) / first["clip"]
+        files["clip.usdc"] = stated_clip(context, first, work)
         roles["clip.usdc"] = "usd"
-        known["clip.usdc"] = first["clip_sha"]
+        files_from["clip.usdc"] = {"path": first["clip"], "sha256": first["clip_sha"]}
         clip_time, _ = points.render(files["clip.usdc"], work / "preview.png", first["settings"].get("colour"))
         files["preview.png"] = work / "preview.png"
         roles["preview.png"] = "picture"
@@ -157,4 +186,4 @@ def candidate(context, uses):
                      requires=[], provenance=provenance,
                      tags={"effect": [first["settings"].get("kind")], "weather": weathers, "engine": ["usd"],
                            "place_kind": sorted({tag for each in places for tag in place_reads.place_kind(context, each)})},
-                     picture=picture, known=known)
+                     picture=picture, files_from=files_from)
