@@ -1,0 +1,195 @@
+{
+  "address": "model/simready_food_processed_chips_k01@1",
+  "files": {
+    "Textures/t_chips_blue_k01_alb.png": {
+      "bytes": 144045,
+      "role": "texture",
+      "sha256": "6f11b65d2e3295e0d891365c724ca65271a2cbaea1dc1b323c4b9560d06211a9"
+    },
+    "Textures/t_chips_blue_k01_nor.png": {
+      "bytes": 166933,
+      "role": "texture",
+      "sha256": "79cbec614b4de89125d31beb8fbfeecf059695704bac6c4edffaa03f9094b41c"
+    },
+    "Textures/t_chips_blue_k01_orm.png": {
+      "bytes": 95140,
+      "role": "texture",
+      "sha256": "f573df00892cd1fef64db4eb73c9ebb4679349115b4fc05fc01d3a58a3c1442c"
+    },
+    "payloads/MuJoCo/disabled.usda": {
+      "bytes": 4141,
+      "role": "usd",
+      "sha256": "096df30ab08c813046d0decbc74859aef7689833481f8271587c980c82265c8c"
+    },
+    "payloads/MuJoCo/enabled.usda": {
+      "bytes": 5043,
+      "role": "usd",
+      "sha256": "0ff6a97d7f0e9ade43ffb2fd7a859e643cfa7999ee28486b2d852ee12dac3632"
+    },
+    "payloads/Newton/disabled.usda": {
+      "bytes": 4141,
+      "role": "usd",
+      "sha256": "096df30ab08c813046d0decbc74859aef7689833481f8271587c980c82265c8c"
+    },
+    "payloads/Newton/enabled.usda": {
+      "bytes": 4836,
+      "role": "usd",
+      "sha256": "dad85ec809e83091319bbfc29e0a77c845c05da12f17a7419be610d200bc82c4"
+    },
+    "payloads/PhysX/disabled.usda": {
+      "bytes": 4141,
+      "role": "usd",
+      "sha256": "096df30ab08c813046d0decbc74859aef7689833481f8271587c980c82265c8c"
+    },
+    "payloads/PhysX/enabled.usda": {
+      "bytes": 4549,
+      "role": "usd",
+      "sha256": "720bcf211f2aedb279c371df6914e22c83c8ca2e71f00684262bcec687bfee2b"
+    },
+    "payloads/Physics/physics.usda": {
+      "bytes": 4968,
+      "role": "usd",
+      "sha256": "7e77de873b9ee309827a4c43c0bddd155d80164761f4ce8b064da389b5e5d9bb"
+    },
+    "payloads/base.usda": {
+      "bytes": 9159,
+      "role": "usd",
+      "sha256": "1d80a87c9ad8ff8581e5217dbbb3fe42fa3535854bb7616e800312a994fb2422"
+    },
+    "payloads/geometries.usd": {
+      "bytes": 174596,
+      "role": "usd",
+      "sha256": "091321569fa5ecb778ddb7a6512e8eb5f762d5b8de680786a6cd159878785b2f"
+    },
+    "payloads/instances.usda": {
+      "bytes": 5202,
+      "role": "usd",
+      "sha256": "ad44e3eb23006342739d3779deb48a908d1bf2e85996088c2c05ea630073718e"
+    },
+    "payloads/instances_mujoco.usda": {
+      "bytes": 5474,
+      "role": "usd",
+      "sha256": "7a1bc0d0a7505cdae820619390dd41d8ffa1af1468f31861e37ad3d1a9604739"
+    },
+    "payloads/instances_newton.usda": {
+      "bytes": 5325,
+      "role": "usd",
+      "sha256": "05cdc7945a228aeed6f73419b039c37bf00a3371ed10cdb674291ada8092851f"
+    },
+    "payloads/instances_physx.usda": {
+      "bytes": 5342,
+      "role": "usd",
+      "sha256": "4b476c1e39254bcc6b8a19999aff10a07e062ff8b8f97ca0be39b20c8d914ebf"
+    },
+    "payloads/materials.usda": {
+      "bytes": 9443,
+      "role": "usd",
+      "sha256": "aeaf9cf0c055d2d017c39609805ee8491f89d56fffa5be663a35b74a008f77c6"
+    },
+    "sm_food_processed_chips_k01_01.usd": {
+      "bytes": 21452,
+      "role": "usd",
+      "sha256": "7c2399d643e6c6b216386d691d071d8f8513ca6d46662b48bc48ff97a6b8ee6d"
+    },
+    "source_assets/OmniPBR.mdl": {
+      "bytes": 16010,
+      "role": "code",
+      "sha256": "6e6b3acbccd236e21a6c29964a431d2a53e77251cc6b8b1bc975eb1c62da1781"
+    },
+    "source_assets/OmniPBRBase.mdl": {
+      "bytes": 19369,
+      "role": "code",
+      "sha256": "a8fd9fe174e91892e94d06da90ba453a124024c2ce2c033be9d82c9e2f76a3b7"
+    },
+    "source_assets/OmniPBR_ClearCoat.mdl": {
+      "bytes": 29789,
+      "role": "code",
+      "sha256": "d84c5ba482561c0eaea2e0c5b607358af549e36cd921773462f92dbc4f32cbc3"
+    }
+  },
+  "id": "simready_food_processed_chips_k01",
+  "kind": "model",
+  "licence": {
+    "credit": "food_processed_chips_k01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0; changed: each Material names its library surface (score:surface)",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "Textures/t_chips_blue_k01_alb.png": "food_processed_chips_k01/simready_usd/Textures/t_chips_blue_k01_alb.png",
+      "Textures/t_chips_blue_k01_nor.png": "food_processed_chips_k01/simready_usd/Textures/t_chips_blue_k01_nor.png",
+      "Textures/t_chips_blue_k01_orm.png": "food_processed_chips_k01/simready_usd/Textures/t_chips_blue_k01_orm.png",
+      "payloads/MuJoCo/disabled.usda": "food_processed_chips_k01/simready_usd/payloads/MuJoCo/disabled.usda",
+      "payloads/MuJoCo/enabled.usda": "food_processed_chips_k01/simready_usd/payloads/MuJoCo/enabled.usda",
+      "payloads/Newton/disabled.usda": "food_processed_chips_k01/simready_usd/payloads/Newton/disabled.usda",
+      "payloads/Newton/enabled.usda": "food_processed_chips_k01/simready_usd/payloads/Newton/enabled.usda",
+      "payloads/PhysX/disabled.usda": "food_processed_chips_k01/simready_usd/payloads/PhysX/disabled.usda",
+      "payloads/PhysX/enabled.usda": "food_processed_chips_k01/simready_usd/payloads/PhysX/enabled.usda",
+      "payloads/Physics/physics.usda": "food_processed_chips_k01/simready_usd/payloads/Physics/physics.usda",
+      "payloads/base.usda": "food_processed_chips_k01/simready_usd/payloads/base.usda",
+      "payloads/geometries.usd": "food_processed_chips_k01/simready_usd/payloads/geometries.usd",
+      "payloads/instances.usda": "food_processed_chips_k01/simready_usd/payloads/instances.usda",
+      "payloads/instances_mujoco.usda": "food_processed_chips_k01/simready_usd/payloads/instances_mujoco.usda",
+      "payloads/instances_newton.usda": "food_processed_chips_k01/simready_usd/payloads/instances_newton.usda",
+      "payloads/instances_physx.usda": "food_processed_chips_k01/simready_usd/payloads/instances_physx.usda",
+      "payloads/materials.usda": "food_processed_chips_k01/simready_usd/payloads/materials.usda (changed: each Material names its library surface (score:surface))",
+      "sm_food_processed_chips_k01_01.usd": "food_processed_chips_k01/simready_usd/sm_food_processed_chips_k01_01.usd",
+      "source_assets/OmniPBR.mdl": "food_processed_chips_k01/simready_usd/source_assets/OmniPBR.mdl",
+      "source_assets/OmniPBRBase.mdl": "food_processed_chips_k01/simready_usd/source_assets/OmniPBRBase.mdl",
+      "source_assets/OmniPBR_ClearCoat.mdl": "food_processed_chips_k01/simready_usd/source_assets/OmniPBR_ClearCoat.mdl"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "food_processed_chips_k01: its model, physics and maps"
+      },
+      {
+        "by": "score",
+        "what": "the library surface each material names (score:surface)"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: food_processed_chips_k01",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/simready_m_opaque_plastic_chips_k01_68c82451@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "description": [
+      "chips"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "simulators": [
+      "mujoco",
+      "newton",
+      "physx"
+    ],
+    "wikidata_class": [
+      "product packaging"
+    ],
+    "wikidata_qcode": [
+      "Q207822"
+    ]
+  },
+  "title": "food_processed_chips_k01",
+  "usd": {
+    "default_prim": "/RootNode",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/simready_food_processed_chips_k01/1/sm_food_processed_chips_k01_01.usd",
+    "root": "sm_food_processed_chips_k01_01.usd",
+    "up_axis": "Z",
+    "use": "reference"
+  },
+  "version": 1
+}

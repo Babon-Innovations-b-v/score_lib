@@ -1,0 +1,195 @@
+{
+  "address": "model/simready_food_prepared_bar_e01@1",
+  "files": {
+    "Textures/t_chocolatebar_blue_e01_alb.png": {
+      "bytes": 244697,
+      "role": "texture",
+      "sha256": "7b0567b2c551f1610223365e3145a3a986c692f9995064255cfa293cb4f121c6"
+    },
+    "Textures/t_chocolatebar_blue_e01_nor.png": {
+      "bytes": 202456,
+      "role": "texture",
+      "sha256": "1833c4d14eec642eb5f31943c8299ff17408cadd3b036255bdaa048cbece3bc7"
+    },
+    "Textures/t_chocolatebar_blue_e01_orm.png": {
+      "bytes": 37694,
+      "role": "texture",
+      "sha256": "214b40318da117d6ca52aabe0d92d9617895cd300eaf5140802b8d750759005a"
+    },
+    "payloads/MuJoCo/disabled.usda": {
+      "bytes": 4225,
+      "role": "usd",
+      "sha256": "affeb2cd830763be29c2fdd457df84fbe2b155056aa66a59ecae0b78d1e96d2b"
+    },
+    "payloads/MuJoCo/enabled.usda": {
+      "bytes": 5237,
+      "role": "usd",
+      "sha256": "46e663f4a8cd334e199b75f510ed667ef0979c770b1f493fb7c8f2ed0086949b"
+    },
+    "payloads/Newton/disabled.usda": {
+      "bytes": 4225,
+      "role": "usd",
+      "sha256": "affeb2cd830763be29c2fdd457df84fbe2b155056aa66a59ecae0b78d1e96d2b"
+    },
+    "payloads/Newton/enabled.usda": {
+      "bytes": 4906,
+      "role": "usd",
+      "sha256": "3b349873de5c3abe2eced17151331507adcb25dc275b74bb06e8e1b216333a91"
+    },
+    "payloads/PhysX/disabled.usda": {
+      "bytes": 4225,
+      "role": "usd",
+      "sha256": "affeb2cd830763be29c2fdd457df84fbe2b155056aa66a59ecae0b78d1e96d2b"
+    },
+    "payloads/PhysX/enabled.usda": {
+      "bytes": 4621,
+      "role": "usd",
+      "sha256": "41d31a9491f3b49cde0172896f6f7470ed445a759025b94163a2f8de7062419e"
+    },
+    "payloads/Physics/physics.usda": {
+      "bytes": 4759,
+      "role": "usd",
+      "sha256": "794717735a3f7b273489c24048158e71b2770bbc49133146d51c1cb43e6665e0"
+    },
+    "payloads/base.usda": {
+      "bytes": 9615,
+      "role": "usd",
+      "sha256": "f1638fe968cecbcba106fb80e039371f3dbc4556774de9d9fec40567ff93fb9b"
+    },
+    "payloads/geometries.usd": {
+      "bytes": 308633,
+      "role": "usd",
+      "sha256": "7a8a5dac9295b2e12726a0ffb4040c0dd8d887ea4e29db423250dc60ca939180"
+    },
+    "payloads/instances.usda": {
+      "bytes": 5267,
+      "role": "usd",
+      "sha256": "d6094e540c81bc5e076799cb48b16de2466ba8c30d9ddae5cb66142a72d37963"
+    },
+    "payloads/instances_mujoco.usda": {
+      "bytes": 5539,
+      "role": "usd",
+      "sha256": "43eaaa3665afa21cd82a3e623cf02edcc143ee6c45c5cde777a451ae2154eaf6"
+    },
+    "payloads/instances_newton.usda": {
+      "bytes": 5390,
+      "role": "usd",
+      "sha256": "ab3b89e306be09409e29257070f5e58c290fddbbc09331993a1fe069943048d7"
+    },
+    "payloads/instances_physx.usda": {
+      "bytes": 5407,
+      "role": "usd",
+      "sha256": "3b3fd4814e2395380015603f2a6c3b96606c2938b8343c902773e5840d1f505e"
+    },
+    "payloads/materials.usda": {
+      "bytes": 9553,
+      "role": "usd",
+      "sha256": "353d3684dc18d9c6c46d61cb02f5a80cb88cede0d683f0006aa36afe4daba937"
+    },
+    "sm_food_prepared_bar_e01_01.usd": {
+      "bytes": 21548,
+      "role": "usd",
+      "sha256": "c6aeb5786a82d59fe9390a1af85912c2755023f44a5d3a6c2f1fd94aa6273ce4"
+    },
+    "source_assets/OmniPBR.mdl": {
+      "bytes": 16010,
+      "role": "code",
+      "sha256": "6e6b3acbccd236e21a6c29964a431d2a53e77251cc6b8b1bc975eb1c62da1781"
+    },
+    "source_assets/OmniPBRBase.mdl": {
+      "bytes": 19369,
+      "role": "code",
+      "sha256": "a8fd9fe174e91892e94d06da90ba453a124024c2ce2c033be9d82c9e2f76a3b7"
+    },
+    "source_assets/OmniPBR_ClearCoat.mdl": {
+      "bytes": 29789,
+      "role": "code",
+      "sha256": "d84c5ba482561c0eaea2e0c5b607358af549e36cd921773462f92dbc4f32cbc3"
+    }
+  },
+  "id": "simready_food_prepared_bar_e01",
+  "kind": "model",
+  "licence": {
+    "credit": "food_prepared_bar_e01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0; changed: each Material names its library surface (score:surface)",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "Textures/t_chocolatebar_blue_e01_alb.png": "food_prepared_bar_e01/simready_usd/Textures/t_chocolatebar_blue_e01_alb.png",
+      "Textures/t_chocolatebar_blue_e01_nor.png": "food_prepared_bar_e01/simready_usd/Textures/t_chocolatebar_blue_e01_nor.png",
+      "Textures/t_chocolatebar_blue_e01_orm.png": "food_prepared_bar_e01/simready_usd/Textures/t_chocolatebar_blue_e01_orm.png",
+      "payloads/MuJoCo/disabled.usda": "food_prepared_bar_e01/simready_usd/payloads/MuJoCo/disabled.usda",
+      "payloads/MuJoCo/enabled.usda": "food_prepared_bar_e01/simready_usd/payloads/MuJoCo/enabled.usda",
+      "payloads/Newton/disabled.usda": "food_prepared_bar_e01/simready_usd/payloads/Newton/disabled.usda",
+      "payloads/Newton/enabled.usda": "food_prepared_bar_e01/simready_usd/payloads/Newton/enabled.usda",
+      "payloads/PhysX/disabled.usda": "food_prepared_bar_e01/simready_usd/payloads/PhysX/disabled.usda",
+      "payloads/PhysX/enabled.usda": "food_prepared_bar_e01/simready_usd/payloads/PhysX/enabled.usda",
+      "payloads/Physics/physics.usda": "food_prepared_bar_e01/simready_usd/payloads/Physics/physics.usda",
+      "payloads/base.usda": "food_prepared_bar_e01/simready_usd/payloads/base.usda",
+      "payloads/geometries.usd": "food_prepared_bar_e01/simready_usd/payloads/geometries.usd",
+      "payloads/instances.usda": "food_prepared_bar_e01/simready_usd/payloads/instances.usda",
+      "payloads/instances_mujoco.usda": "food_prepared_bar_e01/simready_usd/payloads/instances_mujoco.usda",
+      "payloads/instances_newton.usda": "food_prepared_bar_e01/simready_usd/payloads/instances_newton.usda",
+      "payloads/instances_physx.usda": "food_prepared_bar_e01/simready_usd/payloads/instances_physx.usda",
+      "payloads/materials.usda": "food_prepared_bar_e01/simready_usd/payloads/materials.usda (changed: each Material names its library surface (score:surface))",
+      "sm_food_prepared_bar_e01_01.usd": "food_prepared_bar_e01/simready_usd/sm_food_prepared_bar_e01_01.usd",
+      "source_assets/OmniPBR.mdl": "food_prepared_bar_e01/simready_usd/source_assets/OmniPBR.mdl",
+      "source_assets/OmniPBRBase.mdl": "food_prepared_bar_e01/simready_usd/source_assets/OmniPBRBase.mdl",
+      "source_assets/OmniPBR_ClearCoat.mdl": "food_prepared_bar_e01/simready_usd/source_assets/OmniPBR_ClearCoat.mdl"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "food_prepared_bar_e01: its model, physics and maps"
+      },
+      {
+        "by": "score",
+        "what": "the library surface each material names (score:surface)"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: food_prepared_bar_e01",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/simready_m_opaque_plastic_bar_e01_bbc01569@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "description": [
+      "chocolate bar"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "simulators": [
+      "mujoco",
+      "newton",
+      "physx"
+    ],
+    "wikidata_class": [
+      "chocolate bar"
+    ],
+    "wikidata_qcode": [
+      "Q1361086"
+    ]
+  },
+  "title": "food_prepared_bar_e01",
+  "usd": {
+    "default_prim": "/RootNode",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/simready_food_prepared_bar_e01/1/sm_food_prepared_bar_e01_01.usd",
+    "root": "sm_food_prepared_bar_e01_01.usd",
+    "up_axis": "Z",
+    "use": "reference"
+  },
+  "version": 1
+}

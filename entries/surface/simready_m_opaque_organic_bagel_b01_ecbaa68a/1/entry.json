@@ -1,0 +1,81 @@
+{
+  "address": "surface/simready_m_opaque_organic_bagel_b01_ecbaa68a@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 376860,
+      "role": "texture",
+      "sha256": "b0c53acf913cfa77cc75ddd063ecb34a4276ad463c5349994e700a3f6759b760"
+    },
+    "material.usda": {
+      "bytes": 2470,
+      "role": "usd",
+      "sha256": "8e0953b18d8da6efb4a7b57d8825c95045ea1776e289183883682e75df404fc3"
+    },
+    "normal.png": {
+      "bytes": 447640,
+      "role": "texture",
+      "sha256": "782cdc1cbde76dc64efd9b36fd2a171850e864108d6879315be3809c45153235"
+    },
+    "orm.png": {
+      "bytes": 165903,
+      "role": "texture",
+      "sha256": "bba35c1c6d2d520fed517c3af4980dd7f79a54e6d5fc2ab3de421f60216b877d"
+    },
+    "surface.json": {
+      "bytes": 980,
+      "role": "record",
+      "sha256": "db4be790fa75f152d4030080dca1ba2348dee63a846752d912e9105582407897"
+    }
+  },
+  "id": "simready_m_opaque_organic_bagel_b01_ecbaa68a",
+  "kind": "surface",
+  "licence": {
+    "credit": "food_prepared_bagel_b01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "food_prepared_bagel_b01/simready_usd/Textures/t_bagel_brown_b01_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "food_prepared_bagel_b01/simready_usd/Textures/t_bagel_brown_b01_nor.png",
+      "orm.png": "food_prepared_bagel_b01/simready_usd/Textures/t_bagel_brown_b01_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__organic__bagel_b01 maps of food_prepared_bagel_b01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: food_prepared_bagel_b01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "ecbaa68a63572de090a72d5fac4038cd847ccac757c64ed7203cad23c82d467b"
+    ],
+    "painted_for": [
+      "food_prepared_bagel_b01"
+    ]
+  },
+  "title": "m_opaque__organic__bagel_b01",
+  "usd": null,
+  "version": 1
+}

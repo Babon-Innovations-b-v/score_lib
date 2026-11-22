@@ -1,0 +1,81 @@
+{
+  "address": "surface/simready_m_opaque_organic_banana_g01_100bf8d8@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 94887,
+      "role": "texture",
+      "sha256": "b1331061321cb872f6f505b8c90ecb651427ac094716beadf40dce4f39a9674c"
+    },
+    "material.usda": {
+      "bytes": 2482,
+      "role": "usd",
+      "sha256": "dfd5493c29361c224044e4d74bf78fcd1e327cf92aa19d5ffeba7c8009af5c26"
+    },
+    "normal.png": {
+      "bytes": 211431,
+      "role": "texture",
+      "sha256": "1fd578bb83902401a2f7d773d8c75539fe34c1d1766973b15b71aac22294b561"
+    },
+    "orm.png": {
+      "bytes": 87558,
+      "role": "texture",
+      "sha256": "6b94369b7a4bf8fb03e91d0f21e3b0b1f28c61677c28ffbfdf31b74ecdea679c"
+    },
+    "surface.json": {
+      "bytes": 982,
+      "role": "record",
+      "sha256": "a9e5548c950f51815f5b93b3d2e67b09bafa9d9d698c7862f5e9e0b97087a971"
+    }
+  },
+  "id": "simready_m_opaque_organic_banana_g01_100bf8d8",
+  "kind": "surface",
+  "licence": {
+    "credit": "food_produce_banana_g01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "food_produce_banana_g01/simready_usd/Textures/t_banana_yellow_g01_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "food_produce_banana_g01/simready_usd/Textures/t_banana_yellow_g01_nor.png",
+      "orm.png": "food_produce_banana_g01/simready_usd/Textures/t_banana_yellow_g01_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__organic__banana_g01 maps of food_produce_banana_g01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: food_produce_banana_g01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "100bf8d8b3256906f3c596418004f858e219b679dcae3a768c8c583e00038195"
+    ],
+    "painted_for": [
+      "food_produce_banana_g01"
+    ]
+  },
+  "title": "m_opaque__organic__banana_g01",
+  "usd": null,
+  "version": 1
+}

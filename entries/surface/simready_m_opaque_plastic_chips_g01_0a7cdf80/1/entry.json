@@ -1,0 +1,81 @@
+{
+  "address": "surface/simready_m_opaque_plastic_chips_g01_0a7cdf80@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 314711,
+      "role": "texture",
+      "sha256": "732bc16020fc2466d9f6c7e219d9e10b03a23eb11a6c0f940c87e0f05ccc9c99"
+    },
+    "material.usda": {
+      "bytes": 2470,
+      "role": "usd",
+      "sha256": "064573bf437afde4c6e28bc3571f471a933d41279057502f2553b630618a64fa"
+    },
+    "normal.png": {
+      "bytes": 224224,
+      "role": "texture",
+      "sha256": "910e9b34fca95059e36e48901b2c55735489cc1cb041eb7b3e47fcc729145835"
+    },
+    "orm.png": {
+      "bytes": 203759,
+      "role": "texture",
+      "sha256": "9f15eb99b232d96da414ccf13b9bd19579f9714d0b266f50f9c9ecac8f2b8156"
+    },
+    "surface.json": {
+      "bytes": 985,
+      "role": "record",
+      "sha256": "f5eafc70392381a46e36d7f475564618a0a43db52102cd0efce7dd27e41ad6af"
+    }
+  },
+  "id": "simready_m_opaque_plastic_chips_g01_0a7cdf80",
+  "kind": "surface",
+  "licence": {
+    "credit": "food_processed_chips_g01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "food_processed_chips_g01/simready_usd/Textures/t_chips_blue_g01_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "food_processed_chips_g01/simready_usd/Textures/t_chips_blue_g01_nor.png",
+      "orm.png": "food_processed_chips_g01/simready_usd/Textures/t_chips_blue_g01_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__plastic__chips_g01 maps of food_processed_chips_g01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: food_processed_chips_g01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "0a7cdf80b22632cd0ece6a252ab5c85680e8bf9581dcd1721d476ef1731d2473"
+    ],
+    "painted_for": [
+      "food_processed_chips_g01"
+    ]
+  },
+  "title": "m_opaque__plastic__chips_g01",
+  "usd": null,
+  "version": 1
+}

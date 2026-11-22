@@ -1,0 +1,195 @@
+{
+  "address": "model/simready_food_produce_apple_b01@1",
+  "files": {
+    "Textures/t_apple_red_b01_alb.png": {
+      "bytes": 332029,
+      "role": "texture",
+      "sha256": "d04e6e553351093e901874e3230d18c5d920b8d5154ffb959e58425e4fe93369"
+    },
+    "Textures/t_apple_red_b01_nor.png": {
+      "bytes": 67657,
+      "role": "texture",
+      "sha256": "c3060e34d5354f9c9b9e70738c565917c3d94dd34d23f4a915b6bc9341c08cbb"
+    },
+    "Textures/t_apple_red_b01_orm.png": {
+      "bytes": 107881,
+      "role": "texture",
+      "sha256": "f6125015a78e91c5151145af61a6d0238d80f0c0b71c228d886a32c507b41128"
+    },
+    "payloads/MuJoCo/disabled.usda": {
+      "bytes": 4295,
+      "role": "usd",
+      "sha256": "95942e63bda7b5db5af53323395d23d21572cee33257a889177785b5d7c11673"
+    },
+    "payloads/MuJoCo/enabled.usda": {
+      "bytes": 5313,
+      "role": "usd",
+      "sha256": "a2c2d4bdc12a03f87823258430625c369b1142c8ce8997f3c327e16fbf2227f8"
+    },
+    "payloads/Newton/disabled.usda": {
+      "bytes": 4295,
+      "role": "usd",
+      "sha256": "95942e63bda7b5db5af53323395d23d21572cee33257a889177785b5d7c11673"
+    },
+    "payloads/Newton/enabled.usda": {
+      "bytes": 4982,
+      "role": "usd",
+      "sha256": "e62d4a3bf1cf8bd5c222344476e48654e7006b208bb20decd0cbe7954df86a3c"
+    },
+    "payloads/PhysX/disabled.usda": {
+      "bytes": 4295,
+      "role": "usd",
+      "sha256": "95942e63bda7b5db5af53323395d23d21572cee33257a889177785b5d7c11673"
+    },
+    "payloads/PhysX/enabled.usda": {
+      "bytes": 4695,
+      "role": "usd",
+      "sha256": "7f9841ffa03ffaaee46ce63c16fc25a420d5ff20f9defc54eae28785e95cb39c"
+    },
+    "payloads/Physics/physics.usda": {
+      "bytes": 4830,
+      "role": "usd",
+      "sha256": "9efb82cd935540a18e031c57e157959c6ed9ab7e8926758d932a29b2be55d149"
+    },
+    "payloads/base.usda": {
+      "bytes": 10097,
+      "role": "usd",
+      "sha256": "1505506f5fc6a756ec1ad972debd66c6a7e8ef90ff1d94643f5b6a3f5cab870f"
+    },
+    "payloads/geometries.usd": {
+      "bytes": 142627,
+      "role": "usd",
+      "sha256": "da056193afb3c88c67081e1349e6534e5f76d37c722c332985e27b227b944687"
+    },
+    "payloads/instances.usda": {
+      "bytes": 5350,
+      "role": "usd",
+      "sha256": "133c53c04fc430f9f576d36554c5fea938623f159935091a739c6af8ab9a2bb0"
+    },
+    "payloads/instances_mujoco.usda": {
+      "bytes": 5622,
+      "role": "usd",
+      "sha256": "be74c44222135075a0d06e4c1050f218212c5dc1c27da8ca7a397970819285c2"
+    },
+    "payloads/instances_newton.usda": {
+      "bytes": 5473,
+      "role": "usd",
+      "sha256": "047dc2d60ff10b8ab13b00456108673bc9ee8f55d68b075296c70eff83bd11fe"
+    },
+    "payloads/instances_physx.usda": {
+      "bytes": 5490,
+      "role": "usd",
+      "sha256": "50c93665fe208c5b31137040002af6ea880edf2be4fb6ae80d9a16b7ba5e9bdc"
+    },
+    "payloads/materials.usda": {
+      "bytes": 9545,
+      "role": "usd",
+      "sha256": "75c24298e62601b6c2b4756331a616ebedfe1d833094ee7e48c84a0e62a6861c"
+    },
+    "sm_food_produce_apple_b01_01.usd": {
+      "bytes": 21624,
+      "role": "usd",
+      "sha256": "01fcc6001873defd33c7fb321066750c6a1df2762aef943df7838f116760a375"
+    },
+    "source_assets/OmniPBR.mdl": {
+      "bytes": 16010,
+      "role": "code",
+      "sha256": "6e6b3acbccd236e21a6c29964a431d2a53e77251cc6b8b1bc975eb1c62da1781"
+    },
+    "source_assets/OmniPBRBase.mdl": {
+      "bytes": 19369,
+      "role": "code",
+      "sha256": "a8fd9fe174e91892e94d06da90ba453a124024c2ce2c033be9d82c9e2f76a3b7"
+    },
+    "source_assets/OmniPBR_ClearCoat.mdl": {
+      "bytes": 29789,
+      "role": "code",
+      "sha256": "d84c5ba482561c0eaea2e0c5b607358af549e36cd921773462f92dbc4f32cbc3"
+    }
+  },
+  "id": "simready_food_produce_apple_b01",
+  "kind": "model",
+  "licence": {
+    "credit": "food_produce_apple_b01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0; changed: each Material names its library surface (score:surface)",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "Textures/t_apple_red_b01_alb.png": "food_produce_apple_b01/simready_usd/Textures/t_apple_red_b01_alb.png",
+      "Textures/t_apple_red_b01_nor.png": "food_produce_apple_b01/simready_usd/Textures/t_apple_red_b01_nor.png",
+      "Textures/t_apple_red_b01_orm.png": "food_produce_apple_b01/simready_usd/Textures/t_apple_red_b01_orm.png",
+      "payloads/MuJoCo/disabled.usda": "food_produce_apple_b01/simready_usd/payloads/MuJoCo/disabled.usda",
+      "payloads/MuJoCo/enabled.usda": "food_produce_apple_b01/simready_usd/payloads/MuJoCo/enabled.usda",
+      "payloads/Newton/disabled.usda": "food_produce_apple_b01/simready_usd/payloads/Newton/disabled.usda",
+      "payloads/Newton/enabled.usda": "food_produce_apple_b01/simready_usd/payloads/Newton/enabled.usda",
+      "payloads/PhysX/disabled.usda": "food_produce_apple_b01/simready_usd/payloads/PhysX/disabled.usda",
+      "payloads/PhysX/enabled.usda": "food_produce_apple_b01/simready_usd/payloads/PhysX/enabled.usda",
+      "payloads/Physics/physics.usda": "food_produce_apple_b01/simready_usd/payloads/Physics/physics.usda",
+      "payloads/base.usda": "food_produce_apple_b01/simready_usd/payloads/base.usda",
+      "payloads/geometries.usd": "food_produce_apple_b01/simready_usd/payloads/geometries.usd",
+      "payloads/instances.usda": "food_produce_apple_b01/simready_usd/payloads/instances.usda",
+      "payloads/instances_mujoco.usda": "food_produce_apple_b01/simready_usd/payloads/instances_mujoco.usda",
+      "payloads/instances_newton.usda": "food_produce_apple_b01/simready_usd/payloads/instances_newton.usda",
+      "payloads/instances_physx.usda": "food_produce_apple_b01/simready_usd/payloads/instances_physx.usda",
+      "payloads/materials.usda": "food_produce_apple_b01/simready_usd/payloads/materials.usda (changed: each Material names its library surface (score:surface))",
+      "sm_food_produce_apple_b01_01.usd": "food_produce_apple_b01/simready_usd/sm_food_produce_apple_b01_01.usd",
+      "source_assets/OmniPBR.mdl": "food_produce_apple_b01/simready_usd/source_assets/OmniPBR.mdl",
+      "source_assets/OmniPBRBase.mdl": "food_produce_apple_b01/simready_usd/source_assets/OmniPBRBase.mdl",
+      "source_assets/OmniPBR_ClearCoat.mdl": "food_produce_apple_b01/simready_usd/source_assets/OmniPBR_ClearCoat.mdl"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "food_produce_apple_b01: its model, physics and maps"
+      },
+      {
+        "by": "score",
+        "what": "the library surface each material names (score:surface)"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: food_produce_apple_b01",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/simready_m_opaque_organic_apple_b01_76a9296b@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "description": [
+      "apple fruit"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "simulators": [
+      "mujoco",
+      "newton",
+      "physx"
+    ],
+    "wikidata_class": [
+      "apple"
+    ],
+    "wikidata_qcode": [
+      "Q89"
+    ]
+  },
+  "title": "food_produce_apple_b01",
+  "usd": {
+    "default_prim": "/RootNode",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/simready_food_produce_apple_b01/1/sm_food_produce_apple_b01_01.usd",
+    "root": "sm_food_produce_apple_b01_01.usd",
+    "up_axis": "Z",
+    "use": "reference"
+  },
+  "version": 1
+}

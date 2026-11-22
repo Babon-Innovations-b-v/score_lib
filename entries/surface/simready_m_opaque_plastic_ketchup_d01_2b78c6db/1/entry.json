@@ -1,0 +1,81 @@
+{
+  "address": "surface/simready_m_opaque_plastic_ketchup_d01_2b78c6db@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 315763,
+      "role": "texture",
+      "sha256": "cec09b51352c6dacfff3f032e0209172cc6d1885655c82bf616330ce9961b5b8"
+    },
+    "material.usda": {
+      "bytes": 2494,
+      "role": "usd",
+      "sha256": "82ffc6a04a6a99f6e8dbcb7d77cef9915b9c683065bb9b8878900f3664f7684a"
+    },
+    "normal.png": {
+      "bytes": 597826,
+      "role": "texture",
+      "sha256": "342d6571e1b7ce4a3e29db6716204cc68a3a822e1dd32565661d584fcd8bdd8d"
+    },
+    "orm.png": {
+      "bytes": 397118,
+      "role": "texture",
+      "sha256": "a818ab070a28aa18bec26e2f51b6c5a4280bc2ad94f6dd92365e8cd3d9419ba6"
+    },
+    "surface.json": {
+      "bytes": 987,
+      "role": "record",
+      "sha256": "7fe027d1bdeb6f001030dc80970bbaba757ca33d2f195ea424664c4c96b4c659"
+    }
+  },
+  "id": "simready_m_opaque_plastic_ketchup_d01_2b78c6db",
+  "kind": "surface",
+  "licence": {
+    "credit": "food_processed_ketchup_d01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "food_processed_ketchup_d01/simready_usd/Textures/t_ketchup_red_d01_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "food_processed_ketchup_d01/simready_usd/Textures/t_ketchup_red_d01_nor.png",
+      "orm.png": "food_processed_ketchup_d01/simready_usd/Textures/t_ketchup_red_d01_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__plastic__ketchup_d01 maps of food_processed_ketchup_d01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: food_processed_ketchup_d01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "2b78c6dbb58538e53af8d49c63b97dbbd6f91d6debf0993929b2222583f41b35"
+    ],
+    "painted_for": [
+      "food_processed_ketchup_d01"
+    ]
+  },
+  "title": "m_opaque__plastic__ketchup_d01",
+  "usd": null,
+  "version": 1
+}

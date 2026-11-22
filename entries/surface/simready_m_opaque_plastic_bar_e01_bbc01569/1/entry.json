@@ -1,0 +1,81 @@
+{
+  "address": "surface/simready_m_opaque_plastic_bar_e01_bbc01569@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 244697,
+      "role": "texture",
+      "sha256": "7b0567b2c551f1610223365e3145a3a986c692f9995064255cfa293cb4f121c6"
+    },
+    "material.usda": {
+      "bytes": 2446,
+      "role": "usd",
+      "sha256": "a305a15df639afd76202ed0ecca852bab4632e7ee85bf2e7f4593787cbb07fce"
+    },
+    "normal.png": {
+      "bytes": 202456,
+      "role": "texture",
+      "sha256": "1833c4d14eec642eb5f31943c8299ff17408cadd3b036255bdaa048cbece3bc7"
+    },
+    "orm.png": {
+      "bytes": 37694,
+      "role": "texture",
+      "sha256": "214b40318da117d6ca52aabe0d92d9617895cd300eaf5140802b8d750759005a"
+    },
+    "surface.json": {
+      "bytes": 989,
+      "role": "record",
+      "sha256": "4d024aa7a9096de8c8da0e0e5283560140520adafdaf99b7ddf8f9415321e107"
+    }
+  },
+  "id": "simready_m_opaque_plastic_bar_e01_bbc01569",
+  "kind": "surface",
+  "licence": {
+    "credit": "food_prepared_bar_e01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "food_prepared_bar_e01/simready_usd/Textures/t_chocolatebar_blue_e01_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "food_prepared_bar_e01/simready_usd/Textures/t_chocolatebar_blue_e01_nor.png",
+      "orm.png": "food_prepared_bar_e01/simready_usd/Textures/t_chocolatebar_blue_e01_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__plastic__bar_e01 maps of food_prepared_bar_e01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: food_prepared_bar_e01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "bbc015691877a54d9f3a0948759a3bd0026fbfed4fe5219c72a5124d6daeaa03"
+    ],
+    "painted_for": [
+      "food_prepared_bar_e01"
+    ]
+  },
+  "title": "m_opaque__plastic__bar_e01",
+  "usd": null,
+  "version": 1
+}

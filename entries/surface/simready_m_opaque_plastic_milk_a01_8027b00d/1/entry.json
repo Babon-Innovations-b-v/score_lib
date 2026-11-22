@@ -1,0 +1,81 @@
+{
+  "address": "surface/simready_m_opaque_plastic_milk_a01_8027b00d@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 239901,
+      "role": "texture",
+      "sha256": "dec25e3f7cc48e50c49cb8544e36d89a00c50e4193d351ab11b9cf6f729984fc"
+    },
+    "material.usda": {
+      "bytes": 2458,
+      "role": "usd",
+      "sha256": "854a108fcd65b5fae7da10d7cc0ce20790f8743a14271327a29a4f6f5071e4e4"
+    },
+    "normal.png": {
+      "bytes": 46902,
+      "role": "texture",
+      "sha256": "2643e984aa92584339f773765cc54eab6b4dda9a41069ea7aaac4b30387827bc"
+    },
+    "orm.png": {
+      "bytes": 135846,
+      "role": "texture",
+      "sha256": "0220c688f0f938749141fd2d1f4b7e0fe7f6dd93d7bee171ac375ce99aa85b37"
+    },
+    "surface.json": {
+      "bytes": 984,
+      "role": "record",
+      "sha256": "94bca112fcda1cb62fd1f372a81aff8c2cf0a7f304811ec4385b5657ebbb2dc9"
+    }
+  },
+  "id": "simready_m_opaque_plastic_milk_a01_8027b00d",
+  "kind": "surface",
+  "licence": {
+    "credit": "food_processed_milk_d01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "food_processed_milk_d01/simready_usd/Textures/t_milk_yellow_d01_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "food_processed_milk_d01/simready_usd/Textures/t_milk_yellow_d01_nor.png",
+      "orm.png": "food_processed_milk_d01/simready_usd/Textures/t_milk_yellow_d01_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__plastic__milk_a01 maps of food_processed_milk_d01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: food_processed_milk_d01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "8027b00d70e0a5f150645ec88ebd7cdf665bd3ac8030ffa95ae1e60a01682a8d"
+    ],
+    "painted_for": [
+      "food_processed_milk_d01"
+    ]
+  },
+  "title": "m_opaque__plastic__milk_a01",
+  "usd": null,
+  "version": 1
+}

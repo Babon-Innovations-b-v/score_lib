@@ -1,0 +1,81 @@
+{
+  "address": "surface/simready_m_opaque_organic_chocolate_d01_d724b21f@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 1903,
+      "role": "texture",
+      "sha256": "f04c74e02807726c4b8bbb9c2db8df6431892628279e42255e0a01f0e86c888a"
+    },
+    "material.usda": {
+      "bytes": 2518,
+      "role": "usd",
+      "sha256": "dc48539a77f405eb3844066c6b5451bb1ab06c1ae4e1f95acaec31619de7dd87"
+    },
+    "normal.png": {
+      "bytes": 78348,
+      "role": "texture",
+      "sha256": "1c8e50561f837e7eff5164c19cf77b1fef139b2ba512328db2010bc9dd8242c8"
+    },
+    "orm.png": {
+      "bytes": 107304,
+      "role": "texture",
+      "sha256": "a07e941dfd1fae91971ae7814428330ca9f74319db9b44e5c68d357f123add51"
+    },
+    "surface.json": {
+      "bytes": 992,
+      "role": "record",
+      "sha256": "062671f5801301b90c7eb1980198603cf0c66a7f46ff2653bbcd161c48b6b848"
+    }
+  },
+  "id": "simready_m_opaque_organic_chocolate_d01_d724b21f",
+  "kind": "surface",
+  "licence": {
+    "credit": "food_processed_chocolate_d01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "food_processed_chocolate_d01/simready_usd/Textures/t_chocolate_darkBrown_d01_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "food_processed_chocolate_d01/simready_usd/Textures/t_chocolate_darkBrown_d01_nor.png",
+      "orm.png": "food_processed_chocolate_d01/simready_usd/Textures/t_chocolate_darkBrown_d01_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__organic__chocolate_d01 maps of food_processed_chocolate_d01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: food_processed_chocolate_d01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "d724b21f832b309ecd6ff883cc9982460538d34255475a4dec44a83d97febc64"
+    ],
+    "painted_for": [
+      "food_processed_chocolate_d01"
+    ]
+  },
+  "title": "m_opaque__organic__chocolate_d01",
+  "usd": null,
+  "version": 1
+}

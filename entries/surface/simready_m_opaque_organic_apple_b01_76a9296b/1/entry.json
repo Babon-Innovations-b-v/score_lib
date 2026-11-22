@@ -1,0 +1,81 @@
+{
+  "address": "surface/simready_m_opaque_organic_apple_b01_76a9296b@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 332029,
+      "role": "texture",
+      "sha256": "d04e6e553351093e901874e3230d18c5d920b8d5154ffb959e58425e4fe93369"
+    },
+    "material.usda": {
+      "bytes": 2470,
+      "role": "usd",
+      "sha256": "1b65134760208d7f5bc6e3a6255cf7ea4453e4c497fa5ce43b37dbd5878ce815"
+    },
+    "normal.png": {
+      "bytes": 67657,
+      "role": "texture",
+      "sha256": "c3060e34d5354f9c9b9e70738c565917c3d94dd34d23f4a915b6bc9341c08cbb"
+    },
+    "orm.png": {
+      "bytes": 107881,
+      "role": "texture",
+      "sha256": "f6125015a78e91c5151145af61a6d0238d80f0c0b71c228d886a32c507b41128"
+    },
+    "surface.json": {
+      "bytes": 981,
+      "role": "record",
+      "sha256": "ef85c1d906f6d007e71f5eeaa16a08abd44c34b6e2101c82ac7dfa851b83d20b"
+    }
+  },
+  "id": "simready_m_opaque_organic_apple_b01_76a9296b",
+  "kind": "surface",
+  "licence": {
+    "credit": "food_produce_apple_b01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "food_produce_apple_b01/simready_usd/Textures/t_apple_red_b01_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "food_produce_apple_b01/simready_usd/Textures/t_apple_red_b01_nor.png",
+      "orm.png": "food_produce_apple_b01/simready_usd/Textures/t_apple_red_b01_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__organic__apple_b01 maps of food_produce_apple_b01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: food_produce_apple_b01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "76a9296b2fde7c728264536935f57c59584d6264ca616ee491aeddf2c36f4f09"
+    ],
+    "painted_for": [
+      "food_produce_apple_b01"
+    ]
+  },
+  "title": "m_opaque__organic__apple_b01",
+  "usd": null,
+  "version": 1
+}

@@ -1,0 +1,195 @@
+{
+  "address": "model/simready_food_processed_canned_food_d01@1",
+  "files": {
+    "Textures/t_cannedFood_white_d01_alb.png": {
+      "bytes": 135839,
+      "role": "texture",
+      "sha256": "6b44d4d7946627405d5d145677fac05c7432104964b0a98df9b0e180d71cf817"
+    },
+    "Textures/t_cannedFood_white_d01_nor.png": {
+      "bytes": 57655,
+      "role": "texture",
+      "sha256": "866512f1205e3ad847a52bd4a096c1dc45af46f16f317fc5e31f10bfa250b8dc"
+    },
+    "Textures/t_cannedFood_white_d01_orm.png": {
+      "bytes": 146276,
+      "role": "texture",
+      "sha256": "5315b68079726f2edb5c2ee602530af5f26af161e2a342b1a307667b4bc55f5b"
+    },
+    "payloads/MuJoCo/disabled.usda": {
+      "bytes": 4288,
+      "role": "usd",
+      "sha256": "38ac85d9482dc5e518664be8299b2f399db024b066ff450f11ca48c017bf71ec"
+    },
+    "payloads/MuJoCo/enabled.usda": {
+      "bytes": 5639,
+      "role": "usd",
+      "sha256": "852980cc43457128170617666298c6227bfc3d8967b031503058d5559d869a80"
+    },
+    "payloads/Newton/disabled.usda": {
+      "bytes": 4288,
+      "role": "usd",
+      "sha256": "38ac85d9482dc5e518664be8299b2f399db024b066ff450f11ca48c017bf71ec"
+    },
+    "payloads/Newton/enabled.usda": {
+      "bytes": 5021,
+      "role": "usd",
+      "sha256": "a1acc7d6abd3bdd2c780b7c123c95ad5c62635097ded0cab8a55e5737fd04c82"
+    },
+    "payloads/PhysX/disabled.usda": {
+      "bytes": 4288,
+      "role": "usd",
+      "sha256": "38ac85d9482dc5e518664be8299b2f399db024b066ff450f11ca48c017bf71ec"
+    },
+    "payloads/PhysX/enabled.usda": {
+      "bytes": 4731,
+      "role": "usd",
+      "sha256": "8ca42265827dadf715f006a128d2515be2382f50ce940a9752e9c3d8d32b4625"
+    },
+    "payloads/Physics/physics.usda": {
+      "bytes": 4840,
+      "role": "usd",
+      "sha256": "6477858e6ef0bf43a33d9e94c607678ecd12c3098fa3a6fdee46ce9ce29511ac"
+    },
+    "payloads/base.usda": {
+      "bytes": 11443,
+      "role": "usd",
+      "sha256": "1b21c643042c8e0f0c358cecb4639552293289541ab3fb332aef5979cd67399e"
+    },
+    "payloads/geometries.usd": {
+      "bytes": 377273,
+      "role": "usd",
+      "sha256": "87e8bfc08bef63fe1355c85794b01d6e59508512342fa8b6fd296ee5b8f6791a"
+    },
+    "payloads/instances.usda": {
+      "bytes": 5397,
+      "role": "usd",
+      "sha256": "670e7a6ad7ca81b07cddc1826f35cbf513ef2b680498f01d0eeb396d2bfd1c3e"
+    },
+    "payloads/instances_mujoco.usda": {
+      "bytes": 5669,
+      "role": "usd",
+      "sha256": "f072989ece5e93ee30edda3f79393c5d236359cd2e954d8dd273692e806fe741"
+    },
+    "payloads/instances_newton.usda": {
+      "bytes": 5520,
+      "role": "usd",
+      "sha256": "196c0f23adfad74d2772dc33d58c926b5bc8de6f71e18d28223e6d57e918f021"
+    },
+    "payloads/instances_physx.usda": {
+      "bytes": 5537,
+      "role": "usd",
+      "sha256": "76156862243d7af452bc5e175c6d3791e86a6fcf332254b15608c3dd276add05"
+    },
+    "payloads/materials.usda": {
+      "bytes": 9389,
+      "role": "usd",
+      "sha256": "7745338c9664fb6296b4c8015e25bf6b54f5cf9c2b79d217f17bcb2777a4acc6"
+    },
+    "sm_food_processed_cannedFood_d01_01.usd": {
+      "bytes": 21479,
+      "role": "usd",
+      "sha256": "8ca076571822c468bdbd1bbba05097a8e20605f5c6c599d91c9da32e2b14248b"
+    },
+    "source_assets/OmniPBR.mdl": {
+      "bytes": 16010,
+      "role": "code",
+      "sha256": "6e6b3acbccd236e21a6c29964a431d2a53e77251cc6b8b1bc975eb1c62da1781"
+    },
+    "source_assets/OmniPBRBase.mdl": {
+      "bytes": 19369,
+      "role": "code",
+      "sha256": "a8fd9fe174e91892e94d06da90ba453a124024c2ce2c033be9d82c9e2f76a3b7"
+    },
+    "source_assets/OmniPBR_ClearCoat.mdl": {
+      "bytes": 29789,
+      "role": "code",
+      "sha256": "d84c5ba482561c0eaea2e0c5b607358af549e36cd921773462f92dbc4f32cbc3"
+    }
+  },
+  "id": "simready_food_processed_canned_food_d01",
+  "kind": "model",
+  "licence": {
+    "credit": "food_processed_cannedFood_d01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0; changed: each Material names its library surface (score:surface)",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "Textures/t_cannedFood_white_d01_alb.png": "food_processed_cannedFood_d01/simready_usd/Textures/t_cannedFood_white_d01_alb.png",
+      "Textures/t_cannedFood_white_d01_nor.png": "food_processed_cannedFood_d01/simready_usd/Textures/t_cannedFood_white_d01_nor.png",
+      "Textures/t_cannedFood_white_d01_orm.png": "food_processed_cannedFood_d01/simready_usd/Textures/t_cannedFood_white_d01_orm.png",
+      "payloads/MuJoCo/disabled.usda": "food_processed_cannedFood_d01/simready_usd/payloads/MuJoCo/disabled.usda",
+      "payloads/MuJoCo/enabled.usda": "food_processed_cannedFood_d01/simready_usd/payloads/MuJoCo/enabled.usda",
+      "payloads/Newton/disabled.usda": "food_processed_cannedFood_d01/simready_usd/payloads/Newton/disabled.usda",
+      "payloads/Newton/enabled.usda": "food_processed_cannedFood_d01/simready_usd/payloads/Newton/enabled.usda",
+      "payloads/PhysX/disabled.usda": "food_processed_cannedFood_d01/simready_usd/payloads/PhysX/disabled.usda",
+      "payloads/PhysX/enabled.usda": "food_processed_cannedFood_d01/simready_usd/payloads/PhysX/enabled.usda",
+      "payloads/Physics/physics.usda": "food_processed_cannedFood_d01/simready_usd/payloads/Physics/physics.usda",
+      "payloads/base.usda": "food_processed_cannedFood_d01/simready_usd/payloads/base.usda",
+      "payloads/geometries.usd": "food_processed_cannedFood_d01/simready_usd/payloads/geometries.usd",
+      "payloads/instances.usda": "food_processed_cannedFood_d01/simready_usd/payloads/instances.usda",
+      "payloads/instances_mujoco.usda": "food_processed_cannedFood_d01/simready_usd/payloads/instances_mujoco.usda",
+      "payloads/instances_newton.usda": "food_processed_cannedFood_d01/simready_usd/payloads/instances_newton.usda",
+      "payloads/instances_physx.usda": "food_processed_cannedFood_d01/simready_usd/payloads/instances_physx.usda",
+      "payloads/materials.usda": "food_processed_cannedFood_d01/simready_usd/payloads/materials.usda (changed: each Material names its library surface (score:surface))",
+      "sm_food_processed_cannedFood_d01_01.usd": "food_processed_cannedFood_d01/simready_usd/sm_food_processed_cannedFood_d01_01.usd",
+      "source_assets/OmniPBR.mdl": "food_processed_cannedFood_d01/simready_usd/source_assets/OmniPBR.mdl",
+      "source_assets/OmniPBRBase.mdl": "food_processed_cannedFood_d01/simready_usd/source_assets/OmniPBRBase.mdl",
+      "source_assets/OmniPBR_ClearCoat.mdl": "food_processed_cannedFood_d01/simready_usd/source_assets/OmniPBR_ClearCoat.mdl"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "food_processed_cannedFood_d01: its model, physics and maps"
+      },
+      {
+        "by": "score",
+        "what": "the library surface each material names (score:surface)"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: food_processed_cannedFood_d01",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/simready_m_opaque_metal_canned_food_d01_ce623bb0@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "description": [
+      "canned_food"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "simulators": [
+      "mujoco",
+      "newton",
+      "physx"
+    ],
+    "wikidata_class": [
+      "canned food"
+    ],
+    "wikidata_qcode": [
+      "Q12372738"
+    ]
+  },
+  "title": "food_processed_cannedFood_d01",
+  "usd": {
+    "default_prim": "/RootNode",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/simready_food_processed_canned_food_d01/1/sm_food_processed_cannedFood_d01_01.usd",
+    "root": "sm_food_processed_cannedFood_d01_01.usd",
+    "up_axis": "Z",
+    "use": "reference"
+  },
+  "version": 1
+}

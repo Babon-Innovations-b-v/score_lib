@@ -1,0 +1,81 @@
+{
+  "address": "surface/simready_m_opaque_metal_can_g01_c0972dc5@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 207547,
+      "role": "texture",
+      "sha256": "9edee44b661c3627ce1cf8c0b0b213530a1ca9b758ea479be8ab62b8c69ed7d5"
+    },
+    "material.usda": {
+      "bytes": 2422,
+      "role": "usd",
+      "sha256": "202a0dee6feecc30b7978159ee3fc329a3573d638bb3d08723e4d0477bc9faaf"
+    },
+    "normal.png": {
+      "bytes": 765491,
+      "role": "texture",
+      "sha256": "6859c84ea2587b913e0c3bf45741d9769a5fc023087fdd3d40de24403204b220"
+    },
+    "orm.png": {
+      "bytes": 297939,
+      "role": "texture",
+      "sha256": "c508268465d4609b8b9d12f522df85f9f02ff39d8bc2ee532703a2315b1cac69"
+    },
+    "surface.json": {
+      "bytes": 986,
+      "role": "record",
+      "sha256": "377099e575878f7e69590a8c5193c58050eaa1842ba808bc3e5c620c61cfe848"
+    }
+  },
+  "id": "simready_m_opaque_metal_can_g01_c0972dc5",
+  "kind": "surface",
+  "licence": {
+    "credit": "food_beverage_can_g01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "food_beverage_can_g01/simready_usd/Textures/t_can_blue_g01_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "food_beverage_can_g01/simready_usd/Textures/t_can_blue_g01_nor.png",
+      "orm.png": "food_beverage_can_g01/simready_usd/Textures/t_can_blue_g01_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__metal__can_g01 maps of food_beverage_can_g01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: food_beverage_can_g01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "c0972dc51e55587659b36a0c2bd8e054aa9ddb310cc00f42bc9b73c3c1942253"
+    ],
+    "painted_for": [
+      "food_beverage_can_g01"
+    ]
+  },
+  "title": "m_opaque__metal__can_g01",
+  "usd": null,
+  "version": 1
+}

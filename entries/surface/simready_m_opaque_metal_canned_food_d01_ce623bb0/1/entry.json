@@ -1,0 +1,81 @@
+{
+  "address": "surface/simready_m_opaque_metal_canned_food_d01_ce623bb0@1",
+  "files": {
+    "albedo.png": {
+      "bytes": 135839,
+      "role": "texture",
+      "sha256": "6b44d4d7946627405d5d145677fac05c7432104964b0a98df9b0e180d71cf817"
+    },
+    "material.usda": {
+      "bytes": 2518,
+      "role": "usd",
+      "sha256": "7eefbbe487220d945516ed215d46850a19371b6b4e135bd765cb7888487ef891"
+    },
+    "normal.png": {
+      "bytes": 57655,
+      "role": "texture",
+      "sha256": "866512f1205e3ad847a52bd4a096c1dc45af46f16f317fc5e31f10bfa250b8dc"
+    },
+    "orm.png": {
+      "bytes": 146276,
+      "role": "texture",
+      "sha256": "5315b68079726f2edb5c2ee602530af5f26af161e2a342b1a307667b4bc55f5b"
+    },
+    "surface.json": {
+      "bytes": 993,
+      "role": "record",
+      "sha256": "4a452e9115121c977f56674358800704ed593a9053f7213180889019ca5037d5"
+    }
+  },
+  "id": "simready_m_opaque_metal_canned_food_d01_ce623bb0",
+  "kind": "surface",
+  "licence": {
+    "credit": "food_processed_cannedFood_d01 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "albedo.png": "food_processed_cannedFood_d01/simready_usd/Textures/t_cannedFood_white_d01_alb.png",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "normal.png": "food_processed_cannedFood_d01/simready_usd/Textures/t_cannedFood_white_d01_nor.png",
+      "orm.png": "food_processed_cannedFood_d01/simready_usd/Textures/t_cannedFood_white_d01_orm.png",
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "the m_opaque__metal__cannedFood_d01 maps of food_processed_cannedFood_d01"
+      },
+      {
+        "by": "score",
+        "what": "its look and record"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: food_processed_cannedFood_d01",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "maps_key": [
+      "ce623bb02868d6933a752280f694ed1ff003196973429c048837f3a281e611d1"
+    ],
+    "painted_for": [
+      "food_processed_cannedFood_d01"
+    ]
+  },
+  "title": "m_opaque__metal__cannedFood_d01",
+  "usd": null,
+  "version": 1
+}

@@ -1,0 +1,195 @@
+{
+  "address": "model/simready_food_egg_chicken_b12@1",
+  "files": {
+    "Textures/t_food_egg_chicken_b12_alb.png": {
+      "bytes": 1566106,
+      "role": "texture",
+      "sha256": "0dd84e02042f1ff72dbf0ad7b319aafd0d16fe87215a66a742d3d346831dd688"
+    },
+    "Textures/t_food_egg_chicken_b12_nor.png": {
+      "bytes": 789957,
+      "role": "texture",
+      "sha256": "b3fd374a09d1172f911580668fe91cb8bb562975ce6f73b4a1438be8130d2d84"
+    },
+    "Textures/t_food_egg_chicken_b12_orm.png": {
+      "bytes": 908465,
+      "role": "texture",
+      "sha256": "3745cd36fac97631aea2a25d7b90b5627cc4da4af24223e0219550921c403aa4"
+    },
+    "payloads/MuJoCo/disabled.usda": {
+      "bytes": 4167,
+      "role": "usd",
+      "sha256": "f3404df80995645c8b10790e5894fdc8c50133946dd12d957093e77b5c241ba9"
+    },
+    "payloads/MuJoCo/enabled.usda": {
+      "bytes": 5073,
+      "role": "usd",
+      "sha256": "ffefff65baa895b163502fee7de98ee4775e9c17b6a77c68269233fd9902c92b"
+    },
+    "payloads/Newton/disabled.usda": {
+      "bytes": 4167,
+      "role": "usd",
+      "sha256": "f3404df80995645c8b10790e5894fdc8c50133946dd12d957093e77b5c241ba9"
+    },
+    "payloads/Newton/enabled.usda": {
+      "bytes": 4866,
+      "role": "usd",
+      "sha256": "0d574806601c2ada9f7fac1551ce4d1dddae6a309050c9d34d5626bfee06daf1"
+    },
+    "payloads/PhysX/disabled.usda": {
+      "bytes": 4167,
+      "role": "usd",
+      "sha256": "f3404df80995645c8b10790e5894fdc8c50133946dd12d957093e77b5c241ba9"
+    },
+    "payloads/PhysX/enabled.usda": {
+      "bytes": 4568,
+      "role": "usd",
+      "sha256": "a364f733b7c672712915fde4c0074a3329d853d842d8830ff941402fa0a8d8ad"
+    },
+    "payloads/Physics/physics.usda": {
+      "bytes": 4714,
+      "role": "usd",
+      "sha256": "962ad48eb382286c2f08aad22ba7f9408c45304e79bef5c55a22af5400284ded"
+    },
+    "payloads/base.usda": {
+      "bytes": 9611,
+      "role": "usd",
+      "sha256": "3c6d37a89c74af788313e5fb98187b08e0ca7ce4cab78ab34f4455eb7f5ed0dd"
+    },
+    "payloads/geometries.usd": {
+      "bytes": 42732,
+      "role": "usd",
+      "sha256": "2cd2438a8afd62096ad774992bb82e2a1c18f3948eaf759e1ff007614feb760e"
+    },
+    "payloads/instances.usda": {
+      "bytes": 5252,
+      "role": "usd",
+      "sha256": "27673dd031876e5e46404af788790e74efdd615ef4c178491d7f2cb9a41adf9e"
+    },
+    "payloads/instances_mujoco.usda": {
+      "bytes": 5524,
+      "role": "usd",
+      "sha256": "53f1eaa352e57b4cab6df324bc7f57536781f681d98b956c4c702b13f5f15f23"
+    },
+    "payloads/instances_newton.usda": {
+      "bytes": 5375,
+      "role": "usd",
+      "sha256": "38cb75d6c69eff6213e6a1460995dec119cbf19069ff3ab48d4d2ada0fcaa56a"
+    },
+    "payloads/instances_physx.usda": {
+      "bytes": 5392,
+      "role": "usd",
+      "sha256": "2cc9b5a62a948983d35f5f8e6068be7f0c6e183b0103ad15a89831f5118093a1"
+    },
+    "payloads/materials.usda": {
+      "bytes": 9619,
+      "role": "usd",
+      "sha256": "07550594b812aa25393bafc0ff7fd43ff1f51cab8bba04a2ae44ba87165b418f"
+    },
+    "sm_food_egg_chicken_b12_01.usd": {
+      "bytes": 21472,
+      "role": "usd",
+      "sha256": "4571690f54a5812262a026b9232571849cff2daf9351e03756d354f987b6e23e"
+    },
+    "source_assets/OmniPBR.mdl": {
+      "bytes": 16010,
+      "role": "code",
+      "sha256": "6e6b3acbccd236e21a6c29964a431d2a53e77251cc6b8b1bc975eb1c62da1781"
+    },
+    "source_assets/OmniPBRBase.mdl": {
+      "bytes": 19369,
+      "role": "code",
+      "sha256": "a8fd9fe174e91892e94d06da90ba453a124024c2ce2c033be9d82c9e2f76a3b7"
+    },
+    "source_assets/OmniPBR_ClearCoat.mdl": {
+      "bytes": 29789,
+      "role": "code",
+      "sha256": "d84c5ba482561c0eaea2e0c5b607358af549e36cd921773462f92dbc4f32cbc3"
+    }
+  },
+  "id": "simready_food_egg_chicken_b12",
+  "kind": "model",
+  "licence": {
+    "credit": "food_egg_chicken_b12 by NVIDIA Corporation, from huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8, CC BY 4.0; changed: each Material names its library surface (score:surface)",
+    "id": "CC-BY-4.0",
+    "source": "nvidia_simready",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+    "files_from": {
+      "Textures/t_food_egg_chicken_b12_alb.png": "food_egg_chicken_b12/simready_usd/Textures/t_food_egg_chicken_b12_alb.png",
+      "Textures/t_food_egg_chicken_b12_nor.png": "food_egg_chicken_b12/simready_usd/Textures/t_food_egg_chicken_b12_nor.png",
+      "Textures/t_food_egg_chicken_b12_orm.png": "food_egg_chicken_b12/simready_usd/Textures/t_food_egg_chicken_b12_orm.png",
+      "payloads/MuJoCo/disabled.usda": "food_egg_chicken_b12/simready_usd/payloads/MuJoCo/disabled.usda",
+      "payloads/MuJoCo/enabled.usda": "food_egg_chicken_b12/simready_usd/payloads/MuJoCo/enabled.usda",
+      "payloads/Newton/disabled.usda": "food_egg_chicken_b12/simready_usd/payloads/Newton/disabled.usda",
+      "payloads/Newton/enabled.usda": "food_egg_chicken_b12/simready_usd/payloads/Newton/enabled.usda",
+      "payloads/PhysX/disabled.usda": "food_egg_chicken_b12/simready_usd/payloads/PhysX/disabled.usda",
+      "payloads/PhysX/enabled.usda": "food_egg_chicken_b12/simready_usd/payloads/PhysX/enabled.usda",
+      "payloads/Physics/physics.usda": "food_egg_chicken_b12/simready_usd/payloads/Physics/physics.usda",
+      "payloads/base.usda": "food_egg_chicken_b12/simready_usd/payloads/base.usda",
+      "payloads/geometries.usd": "food_egg_chicken_b12/simready_usd/payloads/geometries.usd",
+      "payloads/instances.usda": "food_egg_chicken_b12/simready_usd/payloads/instances.usda",
+      "payloads/instances_mujoco.usda": "food_egg_chicken_b12/simready_usd/payloads/instances_mujoco.usda",
+      "payloads/instances_newton.usda": "food_egg_chicken_b12/simready_usd/payloads/instances_newton.usda",
+      "payloads/instances_physx.usda": "food_egg_chicken_b12/simready_usd/payloads/instances_physx.usda",
+      "payloads/materials.usda": "food_egg_chicken_b12/simready_usd/payloads/materials.usda (changed: each Material names its library surface (score:surface))",
+      "sm_food_egg_chicken_b12_01.usd": "food_egg_chicken_b12/simready_usd/sm_food_egg_chicken_b12_01.usd",
+      "source_assets/OmniPBR.mdl": "food_egg_chicken_b12/simready_usd/source_assets/OmniPBR.mdl",
+      "source_assets/OmniPBRBase.mdl": "food_egg_chicken_b12/simready_usd/source_assets/OmniPBRBase.mdl",
+      "source_assets/OmniPBR_ClearCoat.mdl": "food_egg_chicken_b12/simready_usd/source_assets/OmniPBR_ClearCoat.mdl"
+    },
+    "made_with": [
+      {
+        "by": "nvidia_simready",
+        "carried": true,
+        "what": "food_egg_chicken_b12: its model, physics and maps"
+      },
+      {
+        "by": "score",
+        "what": "the library surface each material names (score:surface)"
+      }
+    ],
+    "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: food_egg_chicken_b12",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/simready_m_opaque_organic_food_egg_chicken_b12_9906adb5@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "description": [
+      "egg, laid by a chicken, color; light olive, with spots"
+    ],
+    "engine": [
+      "usd"
+    ],
+    "simulators": [
+      "mujoco",
+      "newton",
+      "physx"
+    ],
+    "wikidata_class": [
+      "egg as food"
+    ],
+    "wikidata_qcode": [
+      "Q93189"
+    ]
+  },
+  "title": "food_egg_chicken_b12",
+  "usd": {
+    "default_prim": "/RootNode",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/simready_food_egg_chicken_b12/1/sm_food_egg_chicken_b12_01.usd",
+    "root": "sm_food_egg_chicken_b12_01.usd",
+    "up_axis": "Z",
+    "use": "reference"
+  },
+  "version": 1
+}
