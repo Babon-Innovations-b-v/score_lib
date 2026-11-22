@@ -7,9 +7,9 @@
       "sha256": "c4222644d4442e780948a75417ac5c11273e7fb3a1364a18944dceae9f222646"
     },
     "model.usdc": {
-      "bytes": 437544,
+      "bytes": 438077,
       "role": "usd",
-      "sha256": "d99f8ef82a9a72c46249c44b20f4010271d33bfe6d90c3ff539b600490594d52"
+      "sha256": "80406275a3e5182d6ea6afa21901aa5502c7c7fe0b09aeb2976bb39bfedd0bf4"
     }
   },
   "id": "kenney_car_police",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

@@ -7,9 +7,9 @@
       "sha256": "f01de85bb260acd59deb8a073597431aa53d86c93dd6ad276fd81ffc148afaf4"
     },
     "piece.usdc": {
-      "bytes": 142940,
+      "bytes": 143373,
       "role": "usd",
-      "sha256": "7d88efcfea15cf049a6bbd95dc870f545898e475653ae195ded1ac73d996bacb"
+      "sha256": "de70fa721426043b1fb01390a33954cd1c12dfc1b2d68e02ae7e93c62ef4d594"
     }
   },
   "id": "quaternius_scifi_prop_pipe_holder",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

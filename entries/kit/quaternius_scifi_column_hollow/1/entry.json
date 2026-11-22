@@ -7,9 +7,9 @@
       "sha256": "27d7f144f203cd2f13e12e248044095e5ec6212e0a3641719d39df248142e440"
     },
     "piece.usdc": {
-      "bytes": 121953,
+      "bytes": 122333,
       "role": "usd",
-      "sha256": "e841e317e0ebd0495d71cda9e630fcc1ad39d6cdafa3d96ab6892454741e5639"
+      "sha256": "af8155952b87f3edc6f96b189b3cec4ec1f8bf0976ed24e4df23cf5b126d0210"
     }
   },
   "id": "quaternius_scifi_column_hollow",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",

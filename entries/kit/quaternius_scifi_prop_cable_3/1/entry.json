@@ -7,9 +7,9 @@
       "sha256": "61b6373a01e531a97274afe1afd6ba780941354df1722ab22a7651c64e6fa82f"
     },
     "piece.usdc": {
-      "bytes": 102888,
+      "bytes": 103288,
       "role": "usd",
-      "sha256": "1aec2b8230f3462087c1392cbf0bdb6b9262e0e327383da5ddf4ca9abc7e2a1d"
+      "sha256": "784de811ad6fdeb83e4d1a05a4002818ab4e2021ec9bc7b10062ff8495d634a4"
     }
   },
   "id": "quaternius_scifi_prop_cable_3",
@@ -31,6 +31,10 @@
       {
         "by": "score",
         "what": "converted to OpenUSD at real-world size, its finish taken off and its colour regions kept as parts"
+      },
+      {
+        "by": "score",
+        "what": "its parts each bound to a placeholder material named after the part (no shader, no finish) so any USD reader splits them, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
       }
     ],
     "taken_from": "open CC0 building kits and models (Kenney, Poly Haven) for the demo's four places (score #128)",
