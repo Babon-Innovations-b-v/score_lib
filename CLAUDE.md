@@ -38,7 +38,12 @@ A library of reusable parts of SCORE worlds: records in git (`entries/`), bytes 
   material made again part by part (each a placeholder material named after it, decal faces off; score #156), as
   take-in lists.
 - `src/score_lib/take_in_place.py`: `score-lib take-in --place`, a place built by score's placing method (a
-  `place_build` folder) as a draft place entry, its scene pointing at the library entries it lays.
+  `place_build` folder) as a draft place entry, its scene pointing at the library entries it lays; its piece list
+  (`pieces/`, score.scene v2, 2099 #245) kept beside its package with no bake, a draft or stale package left out
+  (`--without-package`) and an unchanged scene's package carried from the version before.
+- `src/score_lib/game.py`: `score-lib game-attach --list FILE`, a game engine's converted files (2099's Unity piece
+  bundles, texture sets and light packs) kept in an entry's `unity` block by their path under the engine's piece
+  cache, outside the digest; `score-lib fetch --unity` (or `--unity-only`) lays them back there.
 - `src/score_lib/take_in_hub.py`: `score-lib take-in hub --repo R --revision SHA [--only NAMES] [--jobs N] [--retake]
   [--save]`, an adopted set (score #155): one pinned revision of a Hugging Face dataset of OpenUSD assets, named by a `config/sources.toml`
   row's `take_in` table, taken in whole as model entries and the surfaces their materials name (`score:surface`),

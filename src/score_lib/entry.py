@@ -20,7 +20,9 @@ QUALITY = ("score", "score_parts", "refine_options", "score_made")
 # `replaced_by` points a withdrawn entry at the entry that replaces it (score #155); naming the replacement later never
 # moves a locked entry's digest. `lost` records that a withdrawn entry's bytes are gone for good (its date and why, score
 # #156): kept for traceability, noted by verify, and outside the digest so writing it never moves the locks row.
-UNSTAMPED = ("state", "locked", "replaced_by", "lost") + QUALITY
+# `unity` is a game engine's kept form of the entry (score_lib.game, 2099 #245): derived from its content, never part of
+# it, so keeping one never moves a locked entry's digest or the digest a piece list names.
+UNSTAMPED = ("state", "locked", "replaced_by", "lost", "unity") + QUALITY
 
 
 def parse_address(address):

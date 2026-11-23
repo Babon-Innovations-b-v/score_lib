@@ -23,6 +23,15 @@ search path. An unchanged place is left as it is; a changed one, draft or locked
 a game or a later step already reads is never written over (score #148: closing the flat wrote over place/flat@1).
 A folder whose package is a draft (`package --draft`: its scene.json `draft`, nothing baked) is refused: a preview
 never becomes an entry.
+
+A place's piece list (2099 #245: score's `package <folder> <folder>/pieces --pieces`, `score.scene` version 2: each
+library piece by address and digest, the place's own geometry as small untextured `made/*.glb`, each part's look) is
+kept beside its scene package at `pieces/` (role pieces), with no bake. It is taken in only when it holds: version 2,
+every made file and library piece's mesh at its sha256, every library piece an entry the library holds unwithdrawn at
+that digest and holding the glTF it names (the scene names each, so each is required). Beside a piece list the scene package is the place's version 1: a draft one is left out rather than
+refused, and `--without-package` leaves out one baked before the place last changed (its v1 waits for its bake).
+A version taken in without its package carries the newest version's package when the two scenes are the same bytes
+(an unchanged place gains its piece list and keeps its v1).
 """
 import json
 import os
@@ -42,7 +51,9 @@ NAMED = ("scene.usda", "place.json", "objects.json", "palette.json", "check.json
          "review/sheet.jpg", "viewer.glb")
 SCENE = "scene.usda"
 ASSETS = "assets/"
-OWN_PARTS = ("package", "assets", "layers")  # the folder's parts kept whole: the scene package, own assets, own layers
+OWN_PARTS = ("package", "pieces", "assets", "layers")  # the folder's parts kept whole: the scene package, the piece
+# list, own assets, own layers
+PIECE_LIST = ("score.scene", 2)  # a piece list's format and version (score's tools/props/library/package.py)
 LAYERED = (ASSETS, "layers/")  # the parts whose USD layers get their paths pointed
 LAYER_ENDINGS = (".usda", ".usdc")
 NAMES = ("score:library", "score:surface")  # the scene's attributes that name a laid entry's address
@@ -56,11 +67,11 @@ def entry_id_of(place):
     return re.sub(r"[^a-z0-9_]", "_", place.lower())
 
 
-def folder_files(folder):
-    """{name in the folder: path} of the files a place entry keeps: NAMED that are present, and OWN_PARTS whole."""
+def folder_files(folder, parts=OWN_PARTS):
+    """{name in the folder: path} of the files a place entry keeps: NAMED that are present, and `parts` whole."""
     folder = pathlib.Path(folder)
     found = {name: folder / name for name in NAMED if (folder / name).is_file()}
-    for part in OWN_PARTS:
+    for part in parts:
         found.update({path.relative_to(folder).as_posix(): path for path in sorted((folder / part).rglob("*"))
                       if path.is_file()})
     return found
@@ -148,10 +159,10 @@ def held_address(root, address):
     return found[-1]["address"] if found else None
 
 
-def kept_files(root, folder, work):
-    """({entry name: path to its bytes} of what the entry keeps, the addresses its layers name): library copies
-    left out, every layer (the scene and the own USD) with its paths pointed."""
-    files = folder_files(folder)
+def kept_files(root, folder, work, parts=OWN_PARTS):
+    """({entry name: path to its bytes} of what the entry keeps of `parts`, the addresses its layers name): library
+    copies left out, every layer (the scene and the own USD) with its paths pointed."""
+    files = folder_files(folder, parts)
     copies = {name: found for name, path in files.items() if (found := library_copy(root, name, path))}
     kept, named = {}, set()
     for name, path in files.items():
@@ -197,16 +208,17 @@ def record_of(root, folder, about, kept, named, version):
             "tags": {"place": [about["place"]], "laid_by": ["place_build"]}, "seen_in": []}
 
 
-def settle(root, folder, about, kept, named):
+def settle(root, folder, about, kept, named, parts=OWN_PARTS):
     """(status, record) of the place: new, unchanged or new version (a changed place never writes over a kept one)."""
     found = entries.versions(root, "place", entry_id_of(about["place"]))
     newest = found[-1] if found else None
     if newest is None:
         return "new", record_of(root, folder, about, kept, named, 1)
-    same = record_of(root, folder, about, kept, named, newest["version"])
+    same = carried_package(root, about, record_of(root, folder, about, kept, named, newest["version"]), parts)
     if take_in.comparable(same) == take_in.comparable(newest):
         return "unchanged", newest
-    return "new version", record_of(root, folder, about, kept, named, newest["version"] + 1)
+    return "new version", carried_package(root, about, record_of(root, folder, about, kept, named,
+                                                                  newest["version"] + 1), parts)
 
 
 def place_of(folder):
@@ -217,23 +229,84 @@ def place_of(folder):
     return json.loads(path.read_text())["place"]
 
 
-def undrafted(folder):
-    """Refused when the folder's scene package is a draft (package/scene.json `draft`: a preview that never ships)."""
-    path = pathlib.Path(folder) / "package/scene.json"
-    if path.is_file() and json.loads(path.read_text()).get("draft"):
+def kept_parts(folder, without_package):
+    """The OWN_PARTS the entry keeps: the scene package left out when asked, or when it is a draft (package/scene.json
+    `draft`: a preview that never ships) beside a piece list; Refused for a draft package with no piece list."""
+    folder = pathlib.Path(folder)
+    path = folder / "package/scene.json"
+    drafted = path.is_file() and json.loads(path.read_text()).get("draft")
+    if drafted and not (folder / take_in.PIECES / "scene.json").is_file():
         raise take_in.Refused(f"{folder}: its package is a draft (package --draft), a preview that is never kept; "
                               "package it again without --draft")
+    return tuple(part for part in OWN_PARTS if part != "package" or not (without_package or drafted))
 
 
-def taken_in_place(root, blobs, folder, commit, world):
-    """The place folder taken in; the report {status: [address]} and {refused: [{id, why}]}; the index rebuilt."""
+def piece_list_problems(root, folder):
+    """What is wrong with the folder's piece list (pieces/scene.json): not version 2, a made file missing or another
+    sha256, a library piece the library does not hold, withdrew, holds at another digest or holds without the glTF it
+    names (its mesh, when it has one, checked as a made piece's file); [] without one."""
+    pieces = pathlib.Path(folder) / take_in.PIECES
+    if not (pieces / "scene.json").is_file():
+        return []
+    scene = json.loads((pieces / "scene.json").read_text())
+    if (scene.get("format"), scene.get("version")) != PIECE_LIST:
+        return [f"pieces/scene.json is {scene.get('format')} version {scene.get('version')}, not a piece list"]
+    found = []
+    for name, piece in sorted(scene.get("pieces", {}).items()):
+        packaged = piece.get("made") or piece.get("mesh")  # a made piece's GLB, a library piece's mesh as laid
+        if packaged is not None:
+            path = pieces / packaged
+            if not path.is_file() or file_sha256(path) != piece.get("sha256"):
+                found.append(f"piece {name}: {packaged} is missing or not its sha256")
+        if "library" not in piece:
+            continue
+        record = held_record(root, piece["library"])
+        if record is None or record.get("state") == "withdrawn":
+            found.append(f"piece {name}: the library holds no unwithdrawn {piece['library']}")
+        elif entries.digest(record) != piece.get("digest"):
+            found.append(f"piece {name}: {piece['library']} is held at another digest")
+        elif packaged is None and piece.get("gltf") not in record["files"]:
+            found.append(f"piece {name}: {piece['library']} holds no {piece.get('gltf')} to read it from")
+    return found
+
+
+def held_record(root, address):
+    """The entry record at `address`, or None when the library holds none."""
+    try:
+        return entries.load_address(root, address)
+    except ValueError:
+        return None
+
+
+def carried_package(root, about, record, parts):
+    """The record with the newest version's scene package rows carried in when the package is left out of `parts`
+    and the two versions' scenes are the same bytes; else the record as it is."""
+    found = entries.versions(root, "place", entry_id_of(about["place"]))
+    if "package" in parts or not found:
+        return record
+    newest = found[-1]
+    package = {name: row for name, row in newest["files"].items() if name.startswith(take_in.PACKAGE)}
+    if not package or newest["files"].get(SCENE, {}).get("sha256") != record["files"][SCENE]["sha256"]:
+        return record
+    files = {**record["files"], **package}
+    provenance = {**record["provenance"], "files_from": {**record["provenance"]["files_from"],
+                                                         **{name: f"{newest['address']} {name}" for name in package}}}
+    return {**record, "files": dict(sorted(files.items())), "provenance": provenance}
+
+
+def taken_in_place(root, blobs, folder, commit, world, without_package=False):
+    """The place folder taken in (its scene package left out when `without_package`); the report {status: [address]}
+    and {refused: [{id, why}]}; the index rebuilt."""
     report = {"new": [], "unchanged": [], "changed draft": [], "new version": [], "refused": []}
     work = pathlib.Path(tempfile.mkdtemp(prefix="score-lib-place-"))
     try:
         about = {"place": place_of(folder), "world": world, "commit": commit}
-        undrafted(folder)
-        kept, named = kept_files(root, folder, work)
-        status, record = settle(root, folder, about, kept, named)
+        parts = kept_parts(folder, without_package)
+        problems = piece_list_problems(root, folder)
+        if problems:
+            raise take_in.Refused(f"{folder}: its piece list does not hold: {'; '.join(problems[:12])}")
+        kept, named = kept_files(root, folder, work, parts)
+        status, record = settle(root, folder, about, kept, named, parts)
         if status != "unchanged":
             put_all(blobs, [(record["files"][name]["sha256"], pathlib.Path(path))
                             for name, path in sorted(kept.items())])
@@ -247,12 +320,12 @@ def taken_in_place(root, blobs, folder, commit, world):
     return report
 
 
-def taken_in_place_saved(root, blobs, folder, commit, world):
+def taken_in_place_saved(root, blobs, folder, commit, world, without_package=False):
     """taken_in_place under the handover's lock, then the entry it wrote and the index committed and pushed (only
     those paths); its report with the `saved` block (handover.saved), saved only when it wrote something."""
     wait = float(os.environ.get("SCORE_LIB_LOCK_WAIT", handover.LOCK_WAIT))
     with handover.locked(root, wait):
-        report = taken_in_place(root, blobs, folder, commit, world)
+        report = taken_in_place(root, blobs, folder, commit, world, without_package)
         written = [address for status in ("new", "new version") for address in report[status]]
         if not written:
             return {**report, "saved": None}

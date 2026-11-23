@@ -1,5 +1,6 @@
 """score-lib take-in --place: a place built by score's placing method kept as a draft place entry whose scene points
 at the library, and fetched back as a stage that opens."""
+import hashlib
 import json
 import pathlib
 import shutil
@@ -170,7 +171,10 @@ def test_a_place_keeps_its_own_files_points_at_the_library_and_opens_fetched(tmp
     record); take_in_place.settle: write a changed draft over its own version (the changed yard is taken in as
     place/yard@1 again, not @2, and @1's bytes change under whatever reads it); take_in_place.undrafted: never called
     (the yard with a draft package is taken in as place/yard@3); take_in_place.OWN_PARTS: drop "layers" (the scene's
-    walkers sublayer is not kept, so verify and the fetched stage fail)."""
+    walkers sublayer is not kept, so verify and the fetched stage fail); take_in_place.kept_parts: a draft package beside a
+    piece list refused, or kept (the yard with its piece list is refused, or keeps its preview); carried_package: never
+    carrying (place/yard@3 holds no package although its scene is @2's); piece_list_problems: a library piece's digest
+    or a made file's sha256 left unchecked (the stale lamp or the changed slab is taken in)."""
     root = tmp_path / "library"
     (root / "entries").mkdir(parents=True)
     shutil.copyfile(LIBRARY / "LICENSE", root / "LICENSE")
@@ -217,3 +221,40 @@ def test_a_place_keeps_its_own_files_points_at_the_library_and_opens_fetched(tmp
     opened = subprocess.run([sys.executable, "-c", OPENS, str(scene)], capture_output=True, text=True,
                             env={"PXR_AR_DEFAULT_SEARCH_PATH": str(into), "PATH": "/usr/bin:/bin"})
     assert opened.stdout.strip() == "True []", opened.stdout + opened.stderr
+    pieces_kept(root, blobs, folder)
+
+
+def pieces_kept(root, blobs, folder):
+    """A piece list (pieces/, score.scene v2) beside a draft package: the draft left out, the piece list kept with role
+    pieces, its library pieces required, and the unchanged scene's v1 package carried from the newest version; a stale
+    digest or a changed made file refused; --without-package on a changed scene keeps no package."""
+    lamp = entries.load_address(root, "model/lamp@1")
+    slab = b"glTF a made slab"
+    listed = {"format": "score.scene", "version": 2, "place": "yard", "pieces": {
+        "slab": {"made": "made/slab.glb", "sha256": hashlib.sha256(slab).hexdigest(), "parts": ["top"]},
+        "lamp_piece": {"library": "model/lamp@1", "digest": entries.digest(lamp), "gltf": "gltf/lamp.glb",
+                       "parts": ["lamp"]}}, "copies": []}
+    write(folder, {"pieces/scene.json": json.dumps(listed).encode(), "pieces/made/slab.glb": slab,
+                   "package/scene.json": json.dumps({"format": "score.scene", "draft": {"baked": False}}).encode()})
+    kept = take_in_place.taken_in_place(root, blobs, folder, "a" * 40, "world1")
+    assert kept["new version"] == ["place/yard@3"], kept
+    record, before = entries.load_address(root, "place/yard@3"), entries.load_address(root, "place/yard@2")
+    assert record["files"]["pieces/scene.json"]["role"] == "pieces" and "pieces/made/slab.glb" in record["files"]
+    assert record["files"]["package/scene.json"] == before["files"]["package/scene.json"], "the v1 package not carried"
+    assert "model/lamp@1" in record["requires"] and verify.verify(root, blobs) == []
+    for broken, why in ((dict(listed["pieces"]["lamp_piece"], digest="stale"), "another digest"),
+                        (dict(listed["pieces"]["lamp_piece"], gltf="gltf/none.glb"), "holds no gltf/none.glb")):
+        (folder / "pieces/scene.json").write_text(json.dumps({**listed, "pieces": {**listed["pieces"],
+                                                                                  "lamp_piece": broken}}))
+        refused = take_in_place.taken_in_place(root, blobs, folder, "a" * 40, "world1")
+        assert why in refused["refused"][0]["why"], refused
+    (folder / "pieces/scene.json").write_text(json.dumps(listed))
+    (folder / "pieces/made/slab.glb").write_bytes(slab + b"changed")
+    changed = take_in_place.taken_in_place(root, blobs, folder, "a" * 40, "world1")
+    assert "slab.glb is missing or not its sha256" in changed["refused"][0]["why"], changed
+    (folder / "pieces/made/slab.glb").write_bytes(slab)
+    (folder / "package/scene.json").write_text(json.dumps({"format": "score.scene"}))  # a baked package, stale
+    (folder / "scene.usda").write_text(SCENE.replace('score:surface = "surface/steel@1"', 'score:note = "moved"'))
+    without = take_in_place.taken_in_place(root, blobs, folder, "a" * 40, "world1", without_package=True)
+    assert without["new version"] == ["place/yard@4"], without
+    assert not [name for name in entries.load_address(root, "place/yard@4")["files"] if name.startswith("package/")]

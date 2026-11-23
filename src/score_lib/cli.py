@@ -84,10 +84,27 @@ def command_fetch(options):
     from score_lib.fetch import MissingEntry, MissingFile, fetch
     try:
         records = fetch(options.root, blob_store(reading=True), options.address, options.into, options.with_requires,
-                        names=options.file)
+                        names=options.file, unity="only" if options.unity_only else "also" if options.unity else None)
     except (MissingEntry, MissingFile) as missing:
         raise SystemExit(f"not in the library: {missing}")
     print(f"fetched {len(records)} entries into {options.into}")
+
+
+def command_game_attach(options):
+    from score_lib import game
+    try:
+        rows = game.read_list(options.list)
+    except game.Refused as why:
+        raise SystemExit(str(why))
+    report = (game.attached_saved if options.save else game.attached)(options.root, blob_store(), rows)
+    if options.report:
+        pathlib.Path(options.report).write_text(json.dumps(report, indent=2, sort_keys=True) + "\n")
+    print(f"kept {len(report['kept'])}, unchanged {len(report['unchanged'])}, refused {len(report['refused'])} "
+          f"in {len(report['entries'])} entries")
+    saved = report.get("saved")
+    if saved:
+        print(f"saved: commit {saved['committed']}, pushed {saved['pushed']} {saved['why']}".rstrip())
+    raise SystemExit(1 if report["refused"] or (saved and not saved["pushed"]) else 0)
 
 
 def hub_report(options):
@@ -112,7 +129,8 @@ def take_in_report(options):
         if not options.commit:
             raise SystemExit("take-in --place needs --commit <the score commit that built the place>")
         taking = take_in_place.taken_in_place_saved if options.save else take_in_place.taken_in_place
-        return taking(options.root, blob_store(), options.place, options.commit, options.world)
+        return taking(options.root, blob_store(), options.place, options.commit, options.world,
+                      options.without_package)
     if options.listing == "hub":
         return hub_report(options)
     from score_lib import take_in
@@ -370,7 +388,16 @@ def parser():
     fetched.add_argument("--into", required=True)
     fetched.add_argument("--with-requires", action="store_true")
     fetched.add_argument("--file", action="append", help="only this file of the entries (repeatable)")
+    fetched.add_argument("--unity", action="store_true", help="also each entry's kept Unity files (score_lib.game) at "
+                                                              "<into>/<their path>")
+    fetched.add_argument("--unity-only", action="store_true", help="only each entry's kept Unity files, none of its own")
     fetched.set_defaults(handle=command_fetch)
+    attach = commands.add_parser("game-attach", help="keep a game engine's converted files beside their entries "
+                                                     "(score_lib.game: the unity block, outside the digest)")
+    attach.add_argument("--list", required=True, help="a JSON list of {address, path, file}")
+    attach.add_argument("--save", action="store_true", help="commit and push the entries it wrote")
+    attach.add_argument("--report")
+    attach.set_defaults(handle=command_game_attach)
     taken = commands.add_parser("take-in", help="take loose made files (no store outputs), or a place built by score's "
                                                 "placing method, in as draft entries")
     taken.add_argument("listing", nargs="?",
@@ -387,6 +414,9 @@ def parser():
     taken.add_argument("--place", help="a place built by score's placing method (a place_build folder), taken in "
                                        "as a draft place entry (take_in_place.py)")
     taken.add_argument("--commit", help="with --place: the score commit that built the place")
+    taken.add_argument("--without-package", action="store_true",
+                       help="with --place: leave the folder's scene package out (one baked before the place last "
+                            "changed), keeping its piece list (pieces/) as the place's package")
     taken.add_argument("--world", default="world1", help="with --place or hub: the world the entries belong to")
     taken.add_argument("--report", help="write the report (every address by status, every refusal) as JSON")
     taken.add_argument("--save", action="store_true",

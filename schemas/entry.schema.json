@@ -132,7 +132,8 @@
               "render",
               "review",
               "viewer",
-              "package"
+              "package",
+              "pieces"
             ]
           }
         }
@@ -659,6 +660,31 @@
       "description": "the entry that replaces this withdrawn one; outside the digest",
       "type": "string",
       "pattern": "^(algorithm|surface|model|light|sound|effect|character|ground|kit|layer|place|concept|take)/[a-z0-9_]+(\\.[a-z0-9_]+)?@[1-9][0-9]*$"
+    },
+    "unity": {
+      "description": "a game engine's kept form of the entry (score_lib.game): each file by its path under the engine's piece cache, derived and outside the digest",
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^pieces/[^\\\\:]+$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "sha256",
+          "bytes"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "bytes": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      }
     },
     "lost": {
       "description": "a withdrawn entry's bytes lost for good: when it was found and why; outside the digest",
