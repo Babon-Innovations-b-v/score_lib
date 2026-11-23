@@ -20,6 +20,9 @@ Per asset folder, at the revision given (a 40-hex commit, never a branch):
   `tile_metres`, the metres one repeat of its maps covers on the asset, and a glass's `transmission`: the colour,
   IOR and roughness its MDL glass shader gives, its look see-through by them); a set painted for one model (its
   maps unwrapped on that model's own UVs, no `tile` in their names) keeps its maps only, its recipe a written gap;
+  a material alike to the eye to a live surface of its own name (the same maps, its constants a hair apart: under
+  COLOUR_DELTA_E and LOOK_TOLERANCES) takes that surface, the most required one when several are, so one material
+  the source writes alike in many assets is one surface;
 - a material with no UsdPreviewSurface gets its look from its MDL OmniPBR shader's maps and constants (`look_from` in
   its surface.json), and an OmniPBR cutout opacity (`enable_opacity`: its constant, threshold and map) is carried into
   every look and record (`opacity`); a Material with no shader and no wired output (a physics material, a stand-in)
@@ -122,6 +125,22 @@ PBR_DEFAULTS = {"diffuse_color_constant": [0.2, 0.2, 0.2], "reflection_roughness
                 "texture_scale": [1.0, 1.0]}
 LEFT_OUT = ("no USD layer of the asset names it and its ending has no role in an entry: not part of the asset's look "
             "or physics (the source's own check report)")
+# Alike to the eye (score #155: the source names one material alike in many assets, its constants a hair apart): a
+# material of a surface's own name whose look differs from it by less than a person can see takes that surface. Its
+# maps byte for byte the same; a colour within COLOUR_DELTA_E (CIE76 in CIELAB, the usual just-noticeable
+# difference); each other constant within its tolerance below, each far under what a person tells apart on a lit
+# surface: a roughness or metallic of 0.02 moves a highlight's width by about a pixel, an IOR of 0.02 near 1.5 moves
+# a dielectric's reflectance from 4.0 to 4.3 percent, an opacity of 0.01 is one 8-bit step; a word, a switch or a
+# missing block the same exactly. A constant one side does not give is UsdPreviewSurface's default (`specular`, which
+# it has not, the 0.5 the source writes by default).
+COLOUR_DELTA_E = 1.0
+LOOK_TOLERANCES = {"roughness": 0.02, "metallic": 0.02, "clearcoat": 0.02, "clearcoatRoughness": 0.02,
+                   "specular": 0.02, "ior": 0.02, "occlusion": 0.02, "displacement": 0.02, "opacity": 0.01,
+                   "opacityThreshold": 0.01, "weight": 0.01, "presence": 0.01, "constant": 0.01, "threshold": 0.01}
+LOOK_DEFAULTS = {"diffuseColor": [0.18, 0.18, 0.18], "emissiveColor": [0.0, 0.0, 0.0],
+                 "specularColor": [0.0, 0.0, 0.0], "useSpecularWorkflow": 0, "metallic": 0.0, "roughness": 0.5,
+                 "clearcoat": 0.0, "clearcoatRoughness": 0.01, "opacity": 1.0, "opacityThreshold": 0.0, "ior": 1.5,
+                 "occlusion": 1.0, "displacement": 0.0, "specular": 0.5}
 
 
 class Gap(Exception):
@@ -776,6 +795,83 @@ def maps_key(material, kept):
     return hashlib.sha256(json.dumps(content, sort_keys=True).encode()).hexdigest()
 
 
+def material_look(material, kept):
+    """What a person sees of a material, as `alike_to_the_eye` compares it: {maps: {entry name: sha256}, constants
+    (the ones its look writes, a glass's and a cutout's over the source's), transmission, opacity}."""
+    maps = {map_name(role, name, tile): kept[each]["sha256"] for role, name in material["maps"].items()
+            for tile, each in tiles_of(name, kept)}
+    return seen_look(maps, material["constants"], material.get("transmission"), material.get("opacity"))
+
+
+def surface_look(record, settings):
+    """What a person sees of a surface entry: its maps' sha256 from its record, the rest from its surface.json."""
+    maps = {name: about["sha256"] for name, about in record["files"].items()
+            if name not in ("material.usda", "surface.json")}
+    return seen_look(maps, settings["constants"], settings.get("transmission"), settings.get("opacity"))
+
+
+def seen_look(maps, constants, transmission, opacity):
+    """A look as compared: the constants only when there are no maps (as `maps_key` keys it), a glass's transmission
+    and a cutout's opacity (its map among the maps) beside them."""
+    return {"maps": maps, "constants": {} if maps else look_constants(constants, transmission, opacity),
+            "transmission": transmission or None,
+            "opacity": {key: value for key, value in opacity.items() if key != "map"} if opacity else None}
+
+
+def lab_of(colour):
+    """CIELAB (D65) of a linear Rec. 709 colour, as USD's colour inputs are."""
+    red, green, blue = (float(each) for each in colour[:3])
+    xyz = (0.4124564 * red + 0.3575761 * green + 0.1804375 * blue,
+           0.2126729 * red + 0.7151522 * green + 0.0721750 * blue,
+           0.0193339 * red + 0.1191920 * green + 0.9503041 * blue)
+    white = (0.95047, 1.0, 1.08883)
+    edge = (6 / 29) ** 3
+    fx, fy, fz = ((value / reference) ** (1 / 3) if value / reference > edge
+                  else value / reference / (3 * (6 / 29) ** 2) + 4 / 29 for value, reference in zip(xyz, white))
+    return 116 * fy - 16, 500 * (fx - fy), 200 * (fy - fz)
+
+
+def alike_value(field, mine, theirs):
+    """Whether one setting of two looks is the same to the eye: colours within COLOUR_DELTA_E, numbers within their
+    LOOK_TOLERANCES (none: equal), anything else equal."""
+    if isinstance(mine, list) and isinstance(theirs, list) and len(mine) == len(theirs) == 3:
+        return sum((one - other) ** 2 for one, other in zip(lab_of(mine), lab_of(theirs))) ** 0.5 < COLOUR_DELTA_E
+    numbers = all(isinstance(each, (int, float)) and not isinstance(each, bool) for each in (mine, theirs))
+    if numbers:
+        return abs(mine - theirs) <= LOOK_TOLERANCES.get(field, 0.0)
+    return mine == theirs
+
+
+def alike_to_the_eye(mine, theirs):
+    """Whether two looks (`material_look`, `surface_look`) differ by less than a person can see: the same maps byte
+    for byte, every constant (a missing one its default) and every transmission and opacity setting alike."""
+    if mine["maps"] != theirs["maps"]:
+        return False
+    for block in ("transmission", "opacity"):
+        if (mine[block] is None) != (theirs[block] is None):
+            return False
+        ours, other = mine[block] or {}, theirs[block] or {}
+        if not all(alike_value(field, ours.get(field), other.get(field)) for field in set(ours) | set(other)):
+            return False
+    ours, other = mine["constants"], theirs["constants"]
+    return all(alike_value(field, ours.get(field, LOOK_DEFAULTS.get(field)), other.get(field, LOOK_DEFAULTS.get(field)))
+               for field in set(ours) | set(other))
+
+
+def required_counts(root):
+    """{(kind, id): how many live entries require it}, each entry's newest version counted."""
+    newest = {}
+    for record in entries.all_entries(root):
+        known = newest.get((record["kind"], record["id"]))
+        if known is None or record["version"] > known["version"]:
+            newest[record["kind"], record["id"]] = record
+    counts = collections.Counter()
+    for record in newest.values():
+        if record["state"] != "withdrawn":
+            counts.update({entries.parse_address(address)[:2] for address in record.get("requires", [])})
+    return counts
+
+
 def is_tiling(material, kept):
     """A material whose maps tile (a shared set, `tile` in its maps' names), or one with no maps."""
     return all("tile" in posixpath.basename(name).lower() for name in material["maps"].values())
@@ -924,6 +1020,8 @@ class Run:
         self.turns = threading.Condition()
         self.batches = Pacer(limit=BATCH_LIMIT, window=BATCH_WINDOW)
         self.surfaces = self.known_surfaces()
+        self.named, self.required = self.named_surfaces(), required_counts(root)
+        self.looks, self.fresh = {}, []  # {address: look} of library surfaces; [(name, address, look)] of new ones
         self.ids = {}
         self.report = {"new": [], "unchanged": [], "changed draft": [], "new version": [], "refused": [], "gaps": [],
                        "left out": []}
@@ -936,6 +1034,42 @@ class Run:
                 if record["state"] != "withdrawn":
                     found[key] = record["address"]
         return found
+
+    def named_surfaces(self):
+        """{material name: [record]} of the library's live surfaces from this source, the newest version of each."""
+        newest = {}
+        for record in entries.all_entries(self.root, "surface"):
+            if record["id"].startswith(f"{self.prefix}_") and record.get("tags", {}).get("maps_key"):
+                if record["id"] not in newest or record["version"] > newest[record["id"]]["version"]:
+                    newest[record["id"]] = record
+        named = collections.defaultdict(list)
+        for record in newest.values():
+            if record["state"] != "withdrawn":
+                named[record["title"]].append(record)
+        return named
+
+    def look_of(self, record):
+        """What a person sees of a library surface (`surface_look`), its surface.json read from the blob store
+        through the cache, the copy removed once read."""
+        if record["address"] not in self.looks:
+            copy = self.cache / ".looks" / f"{record['id']}.json"
+            self.blobs.get(record["files"]["surface.json"]["sha256"], copy)
+            try:
+                self.looks[record["address"]] = surface_look(record, json.loads(copy.read_text()))
+            finally:
+                copy.unlink(missing_ok=True)
+        return self.looks[record["address"]]
+
+    def alike_surface(self, material, look, fresh=()):
+        """The address of the surface of this material's own name that looks the same to the eye (the library's
+        live ones and those new to this run, `fresh` [(name, address, look)] the asset's own not yet settled), the
+        most required of them (then the first address) when several do; None when none does."""
+        found = [(self.required[entries.parse_address(record["address"])[:2]], record["address"])
+                 for record in self.named.get(material["name"], [])
+                 if alike_to_the_eye(look, self.look_of(record))]
+        found += [(0, address) for name, address, theirs in [*self.fresh, *fresh]
+                  if name == material["name"] and alike_to_the_eye(look, theirs)]
+        return min(found, key=lambda each: (-each[0], each[1]))[1] if found else None
 
     def about(self, asset):
         """The provenance an entry of one asset is taken in with."""
@@ -1039,20 +1173,25 @@ class Run:
         return listed
 
     def surfaces_of(self, asset, materials, kept, folder, queued, pairs):
-        """{(prim, layer): address} of an asset's materials, each new surface's record and files queued."""
-        addresses, mine = {}, {}
+        """({(prim, layer): address} of an asset's materials, {maps key: address} and [(name, address, look)] of
+        its new surfaces), each new surface's record and files queued: a material
+        alike to the eye to a surface of its own name takes that one (`alike_surface`), else the one of its maps
+        key, else a new one."""
+        addresses, mine, fresh = {}, {}, []
         for material in materials:
-            key = maps_key(material, kept)
-            if key not in self.surfaces and key not in mine:
+            key, look = maps_key(material, kept), material_look(material, kept)
+            alike = self.alike_surface(material, look, fresh)
+            if alike is None and key not in self.surfaces and key not in mine:
                 listed = self.surface_listed(asset, material, kept, key, folder / ".surfaces")
                 status, record = take_in.settle(self.root, listed, self.about(asset), self.sources)
                 mine[key] = record["address"]
+                fresh.append((material["name"], record["address"], look))
                 if status != "unchanged":
                     queued.append((status, record))
                     for name in ("material.usda", "surface.json"):
                         pairs[record["files"][name]["sha256"]] = pathlib.Path(listed["files"][name]["path"])
-            addresses[material["prim"], material["layer"]] = self.surfaces.get(key) or mine[key]
-        return addresses, mine
+            addresses[material["prim"], material["layer"]] = alike or self.surfaces.get(key) or mine[key]
+        return addresses, mine, fresh
 
     def model_listed(self, asset, entry_id, root_name, kept, changed, outside, folder, surfaces):
         """The take-in list row of an asset's model entry."""
@@ -1144,7 +1283,7 @@ class Run:
         tile_metres_of(folder, root_name, materials, kept)
         self.wait_turn(asset)
         with self.lock:  # a surface new to the run settled once, however many assets side by side name it
-            addresses, mine = self.surfaces_of(asset, materials, kept, folder, queued, pairs)
+            addresses, mine, fresh = self.surfaces_of(asset, materials, kept, folder, queued, pairs)
             changed = named_surfaces(folder, materials, addresses)
             unchanged_copies(changed, kept, folder, pairs)
             listed = self.model_listed(asset, entry_id, root_name, kept, changed, outside, folder, addresses.values())
@@ -1153,6 +1292,7 @@ class Run:
                 pairs[record["files"][name]["sha256"]] = folder / name
             queued.append((status, record))
             self.surfaces.update(mine)
+            self.fresh += fresh
             self.pairs.update(pairs)
             self.records += queued
             self.queued_assets.append(asset)

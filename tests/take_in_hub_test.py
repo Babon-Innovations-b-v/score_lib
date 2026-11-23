@@ -543,3 +543,72 @@ def test_a_save_that_does_not_reach_origin_stops_the_run(tmp_path, monkeypatch):
     with pytest.raises(handover.HandoverError, match="b" * 40 + r".*rejected"):
         save(["model/two@1"])
     assert [block["pushed"] for block in report["saved"]] == [True, False]
+
+
+def finish(name, colour, roughness):
+    """A Material spec: a UsdPreviewSurface of one grey (linear) and a roughness."""
+    return f"""
+def Material "{name}"
+{{
+    token outputs:surface.connect = </RootNode/Materials/{name}/preview.outputs:surface>
+
+    def Shader "preview"
+    {{
+        uniform token info:id = "UsdPreviewSurface"
+        color3f inputs:diffuseColor = ({colour}, {colour}, {colour})
+        float inputs:roughness = {roughness}
+        token outputs:surface
+    }}
+}}"""
+
+
+def finished(folder, asset, name, colour, roughness):
+    """An asset of one root layer holding one finish, billed."""
+    usd = folder / asset / "assets_usd"
+    usd.mkdir(parents=True)
+    (usd / f"sm_{asset}.usda").write_text(layer([finish(name, colour, roughness)], documentation=f"A {asset}"))
+    billed(folder / asset, f"assets_usd/sm_{asset}.usda")
+
+
+@pytest.mark.parametrize("taken_apart, name, colour, roughness, takes", [
+    (False, "m_finish", 0.513, 0.5, "b"),  # within delta E 1 of both a and b: b, required twice, a once
+    (False, "m_finish", 0.505, 0.51, "a"),  # within delta E 1 of a alone, its roughness 0.01 apart
+    (True, "m_finish", 0.505, 0.5, "a"),  # taken apart before, retaken: the alike surface takes its place
+    (False, "m_finish", 0.8, 0.5, None),  # a colour a person sees apart: a surface of its own
+    (False, "m_finish", 0.5, 0.6, None),  # a roughness 0.1 apart: a surface of its own
+    (False, "m_other", 0.505, 0.5, None),  # alike, but another material's name: a surface of its own
+])
+def test_a_material_alike_to_the_eye_takes_the_most_required_surface(tmp_path, monkeypatch, taken_apart, name, colour,
+                                                                      roughness, takes):
+    """Red when: a material of the same name whose constants differ from a live surface's by less than a person sees
+    (delta E under 1, roughness within 0.02) gets a surface of its own (score #155: one NVIDIA glass became 37
+    surfaces), a retake leaves the one it was taken apart into, the one taken is not the most required of those
+    alike, or a colour or roughness a person sees apart, or another name, is merged."""
+    repository = tmp_path / "repository"
+    for asset, colour_of in (("a_01", 0.5), ("b_01", 0.526), ("d_01", 0.526)):  # a and b delta E 1.57 apart
+        finished(repository, asset, "m_finish", colour_of, 0.5)
+    finished(repository, "c_01", name, colour, roughness)
+    root = tmp_path / "library"
+    (root / "entries").mkdir(parents=True)
+    (tmp_path / "sources.toml").write_text(SOURCES)
+    sources, blobs = Sources.load(tmp_path / "sources.toml"), from_environment()
+
+    def taken(only, retake=False):
+        hub = take_in_hub.HubSource(FolderApi(repository), REPO, REVISION)
+        return take_in_hub.take_in_hub(root, blobs, hub, sources=sources, only=only, retake=retake)
+    with monkeypatch.context() as patched:
+        patched.setattr(take_in_hub, "COLOUR_DELTA_E", 0.0, raising=False)
+        patched.setattr(take_in_hub, "LOOK_TOLERANCES", {}, raising=False)
+        first = taken(["a_01", "b_01", "d_01", *(["c_01"] if taken_apart else [])])
+    assert not first["gaps"], first
+    required = {asset: entries.load_address(root, f"model/demo_{asset}_01@1")["requires"] for asset in ("a", "b", "d")}
+    assert required["b"] == required["d"] != required["a"], required
+    before = entries.load_address(root, "model/demo_c_01@1")["requires"] if taken_apart else None
+    report = taken(["c_01"], retake=taken_apart)
+    assert not report["gaps"], report
+    now = entries.load_address(root, "model/demo_c_01@1")["requires"]
+    if takes:
+        assert now == required[takes] and not [address for address in report["new"] if address.startswith("surface/")]
+        assert before is None or before != now
+    else:
+        assert len(now) == 1 and now[0] not in (required["a"] + required["b"]), (now, required)
