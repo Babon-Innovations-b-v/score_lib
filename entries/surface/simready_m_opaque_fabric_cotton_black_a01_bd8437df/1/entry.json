@@ -17,9 +17,9 @@
       "sha256": "6b0907b08b32b17bd37cb7112c76928659afa7374b13eb0eae0657047a6fe844"
     },
     "surface.json": {
-      "bytes": 1767,
+      "bytes": 2193,
       "role": "record",
-      "sha256": "ddcaadaee4a5eec26e0effd6257f7e71d95d16f33a6f34849f4b64f189974110"
+      "sha256": "5065981a9172d1dc161fa61001a899c207653e1c83eea6e5ee7d24ee09354336"
     }
   },
   "id": "simready_m_opaque_fabric_cotton_black_a01_bd8437df",
@@ -49,12 +49,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: device_blood_pressure_monitor_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

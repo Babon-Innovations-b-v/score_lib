@@ -22,9 +22,9 @@
       "sha256": "dab96b160e698c245a23bb5c8acb96c409f91292dc5d4800849a357b2e2aaa25"
     },
     "surface.json": {
-      "bytes": 1689,
+      "bytes": 2160,
       "role": "record",
-      "sha256": "00ac4f0239f812ff520066c1a9a4f74ff7756c46c2706a587b16154d64911c9e"
+      "sha256": "98e345bc5a9aea019a9607988c3d164768a827372c8315d3adc325e9d8910e4d"
     }
   },
   "id": "simready_m_opaque_concrete_plain_wall_bottom_a01_be64aac2",
@@ -55,12 +55,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: structure_wall_corner_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

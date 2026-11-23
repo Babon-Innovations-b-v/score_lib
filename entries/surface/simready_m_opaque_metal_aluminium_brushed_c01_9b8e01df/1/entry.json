@@ -22,9 +22,9 @@
       "sha256": "01b1363cb89b9447b533ed38e22067fb3a69f7325051d1a9cb0dd7b0d5c0dc46"
     },
     "surface.json": {
-      "bytes": 1683,
+      "bytes": 2108,
       "role": "record",
-      "sha256": "d012b8fa950579f1aa417b5a3fa291501aa433edf69c2198473bd700fee9520d"
+      "sha256": "6ed884793a0b5762dd7afdea8d27a7d8b1e154bfa5c934e37d5c26ec51383aee"
     }
   },
   "id": "simready_m_opaque_metal_aluminium_brushed_c01_9b8e01df",
@@ -55,12 +55,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: equipment_tools_trolley_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

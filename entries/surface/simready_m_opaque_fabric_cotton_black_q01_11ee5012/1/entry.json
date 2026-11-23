@@ -22,9 +22,9 @@
       "sha256": "f965eb5dbf8562fde89f19a47c6907dff708813ab53ccb4e9b74cd7b010ee2af"
     },
     "surface.json": {
-      "bytes": 1716,
+      "bytes": 2157,
       "role": "record",
-      "sha256": "11a1a6c42de0fac2191f0fa233c574acd1b3bcdbf641f3957d39ec27907ab97a"
+      "sha256": "51cbf0756c7c5690bdb838d3b140370a43adc3c06b54a5794ded28dabc4d2e35"
     }
   },
   "id": "simready_m_opaque_fabric_cotton_black_q01_11ee5012",
@@ -55,12 +55,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: wheelChair_c01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

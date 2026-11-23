@@ -22,9 +22,9 @@
       "sha256": "eb4224702c53a143ab41ad20bd3e2192e8566ffc6dfeec0a2ea5ef0ac6942470"
     },
     "surface.json": {
-      "bytes": 1733,
+      "bytes": 2167,
       "role": "record",
-      "sha256": "3a6ab06953b0c461a6f9638856d5d85ff9cfd3341ff9f3a4fd938d2159c89bbf"
+      "sha256": "2d9b25ef2254dc1264789ef401d697182d236e1ea739bfc325f03415bebff54d"
     }
   },
   "id": "simready_m_opaque_fabric_cotton_blue_o01_a59b8391",
@@ -55,12 +55,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: screen_hospital_b01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

@@ -17,9 +17,9 @@
       "sha256": "887a5c31cc004b8e5d122d1a2f7e63bbef08f32543efe412cac05112fb37d2cf"
     },
     "surface.json": {
-      "bytes": 1878,
+      "bytes": 2325,
       "role": "record",
-      "sha256": "ecd345c3d8b7d27934c2589bee1a7caaeb3dfc4dfa58ddf8c1b47c41aa573a0b"
+      "sha256": "8c6dd40f8962477ed4b43952690648dd36b18b1b96c2d3f19e4b23109b5909c5"
     }
   },
   "id": "simready_m_opaque_metal_painted_noise_a01_4b9ecf00",
@@ -49,12 +49,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: climate_heater_dieselTorpedo_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

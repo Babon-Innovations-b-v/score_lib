@@ -22,9 +22,9 @@
       "sha256": "73bdd42918626843146d4888e13184c1dcdd14f126cc5758abd29de487e701d8"
     },
     "surface.json": {
-      "bytes": 1720,
+      "bytes": 2156,
       "role": "record",
-      "sha256": "5dc674da1e90770273eab8120f9c4c68b1a3ca09929ae4b23a0f97cec5b9e05f"
+      "sha256": "0176a7edba0fb4d904c05baf91ea0707d1c4bb9eb184db0371ef0308e30f7b4c"
     }
   },
   "id": "simready_m_opaque_fabric_cotton_black_b01_704aa067",
@@ -55,12 +55,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: bodyPart_interior_roof_panel_b01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

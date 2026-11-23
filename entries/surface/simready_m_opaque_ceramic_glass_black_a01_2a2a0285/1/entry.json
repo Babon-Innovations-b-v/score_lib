@@ -7,9 +7,9 @@
       "sha256": "170b937a8855a5a4f5ef82d4ea4a4316bc4a2aa377a1b0b000f5fe7137725bd3"
     },
     "surface.json": {
-      "bytes": 1855,
+      "bytes": 2148,
       "role": "record",
-      "sha256": "3c9d56a118faa5912792763ee96c4bcbd7c9c3b8777ba63a846f3d712368318a"
+      "sha256": "c20bf5b7691e7e7a6497f9a64e92664f7a2fdf83e93f430bba6e41dbd0d4e803"
     }
   },
   "id": "simready_m_opaque_ceramic_glass_black_a01_2a2a0285",
@@ -30,12 +30,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: facilitySystem_kitchenette_module_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

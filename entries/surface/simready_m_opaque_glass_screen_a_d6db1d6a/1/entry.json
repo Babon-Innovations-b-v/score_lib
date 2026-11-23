@@ -7,9 +7,9 @@
       "sha256": "f2654d544677e7200602f9cf226aebbef07386520844a607fa4b67fbd3c03233"
     },
     "surface.json": {
-      "bytes": 1896,
+      "bytes": 2131,
       "role": "record",
-      "sha256": "8ac2bbd1196a72c8adda3ed79225e75fcba4aa34a2e07b959927a294ff2915f3"
+      "sha256": "e676bb8c6600a51d11e07dce7bd442f7085b544208f714640d9dd92121344733"
     }
   },
   "id": "simready_m_opaque_glass_screen_a_d6db1d6a",
@@ -30,12 +30,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: light_surgical_ceiling_arm_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

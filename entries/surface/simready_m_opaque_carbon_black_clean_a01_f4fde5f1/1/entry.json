@@ -22,9 +22,9 @@
       "sha256": "9907df42f67ed0d5259e3f740940d4f81be999670293b81ed2bb8f15d99d698b"
     },
     "surface.json": {
-      "bytes": 1691,
+      "bytes": 2057,
       "role": "record",
-      "sha256": "f8ea01a2a33b17bb92dd1c58a80b95e228db7d9f6d3314d797b55ab60e2e2666"
+      "sha256": "ac2257ccf7232c7720db37e1f5f4fc5b9058a01dd393a09134ad15ba19183cf4"
     }
   },
   "id": "simready_m_opaque_carbon_black_clean_a01_f4fde5f1",
@@ -55,12 +55,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: bodyPart_car_side_mirror_b01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",
