@@ -1,0 +1,64 @@
+{
+  "address": "model/washbasin_stand_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 1237,
+      "role": "record",
+      "sha256": "c1f3fba38776bcd30a3911b3aaa7d77465c918a4c72c5a5e64e65f6ef4cc1812"
+    },
+    "model.usdc": {
+      "bytes": 62611,
+      "role": "usd",
+      "sha256": "395b48051f6d41ca3a6581c006ac4c9d2d2f0e57c1b0db039f9f3c31094b6900"
+    }
+  },
+  "id": "washbasin_stand_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "17c0003b208c3a683a75b0c3c7e3ae22636bfffa",
+    "files_from": {
+      "model.json": "model/washbasin_stand_1@1/model.json, with its parts",
+      "model.usdc": "model/washbasin_stand_1@1/model.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 17c0003b2)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/wood@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "inside"
+    ]
+  },
+  "title": "Washbasin stand 1",
+  "usd": {
+    "default_prim": "/washbasin_stand_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/washbasin_stand_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}
