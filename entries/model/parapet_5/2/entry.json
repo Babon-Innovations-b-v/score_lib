@@ -1,0 +1,65 @@
+{
+  "address": "model/parapet_5@2",
+  "files": {
+    "model.json": {
+      "bytes": 781,
+      "role": "record",
+      "sha256": "73a1dac7d82a90c28c66b0dbf9961222c36433b9b18c8f2c8ea869933d0751f3"
+    },
+    "model.usdc": {
+      "bytes": 11174,
+      "role": "usd",
+      "sha256": "eb7ce906c6cf4574a0697c58c1d17d5c679ea003da6fab5846992d8a007d8c50"
+    }
+  },
+  "id": "parapet_5",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "89f5562de20f05ab49200254aab4db60ceee461f",
+    "files_from": {
+      "model.json": "model/parapet_5@1/model.json, with its parts",
+      "model.usdc": "model/parapet_5@1/model.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 89f5562de)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/cast_metal@1",
+    "surface/painted_plaster@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "outside"
+    ]
+  },
+  "title": "Parapet 5",
+  "usd": {
+    "default_prim": "/parapet_5",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/parapet_5/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

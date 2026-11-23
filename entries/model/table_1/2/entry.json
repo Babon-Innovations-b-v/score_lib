@@ -1,0 +1,64 @@
+{
+  "address": "model/table_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 729,
+      "role": "record",
+      "sha256": "4d57446d106f37e6e7d2e2ea2b94eb0feb64c9e6822011d277002f67925ea04c"
+    },
+    "model.usdc": {
+      "bytes": 30258,
+      "role": "usd",
+      "sha256": "03f68ab314a7584e3c06a4cdff183063b01f6dffc7187da030b6a438dcbaacca"
+    }
+  },
+  "id": "table_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "89f5562de20f05ab49200254aab4db60ceee461f",
+    "files_from": {
+      "model.json": "model/table_1@1/model.json, with its parts",
+      "model.usdc": "model/table_1@1/model.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 89f5562de)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/wood@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "inside"
+    ]
+  },
+  "title": "Table 1",
+  "usd": {
+    "default_prim": "/table_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/table_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

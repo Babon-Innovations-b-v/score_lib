@@ -1,0 +1,73 @@
+{
+  "address": "model/dome_roof_cap_2@2",
+  "files": {
+    "model.json": {
+      "bytes": 1139,
+      "role": "record",
+      "sha256": "69395388c6d3995e1e28cea889104ee8d3a7cfab86c6aba0a111b2c26cc8e17c"
+    },
+    "model.usdc": {
+      "bytes": 133971,
+      "role": "usd",
+      "sha256": "01ef4fcf110809a9c42025b9890d0ad3543a0b35299cf04c4979698037a919a5"
+    },
+    "model_glow.usdc": {
+      "bytes": 19278,
+      "role": "usd",
+      "sha256": "990e93988a52369041bf3301f001b2e0ba79d346f0356eb58eb6fcc2e193ec42"
+    }
+  },
+  "id": "dome_roof_cap_2",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "89f5562de20f05ab49200254aab4db60ceee461f",
+    "files_from": {
+      "model.json": "model/dome_roof_cap_2@1/model.json, with its parts",
+      "model.usdc": "model/dome_roof_cap_2@1/model.usdc, remade",
+      "model_glow.usdc": "model/dome_roof_cap_2@1/model_glow.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 89f5562de)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/anodized@1",
+    "surface/composite@1",
+    "surface/glowing@1",
+    "surface/quilted@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "mars",
+      "outside"
+    ]
+  },
+  "title": "Dome roof cap 2",
+  "usd": {
+    "default_prim": "/dome_roof_cap_2",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/dome_roof_cap_2/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

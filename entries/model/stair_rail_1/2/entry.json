@@ -1,0 +1,64 @@
+{
+  "address": "model/stair_rail_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 773,
+      "role": "record",
+      "sha256": "a4c1e44c6affb2cd98620baff8b166d9a2c0bb0cc45a3c1912f0a93daa6ec835"
+    },
+    "model.usdc": {
+      "bytes": 52722,
+      "role": "usd",
+      "sha256": "d9dc3c12ac0cf336680b4768b055452216be5566b4e92182459bc6c7ed552bc3"
+    }
+  },
+  "id": "stair_rail_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "89f5562de20f05ab49200254aab4db60ceee461f",
+    "files_from": {
+      "model.json": "model/stair_rail_1@1/model.json, with its parts",
+      "model.usdc": "model/stair_rail_1@1/model.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 89f5562de)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/rusted_metal@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "inside"
+    ]
+  },
+  "title": "Stair rail 1",
+  "usd": {
+    "default_prim": "/stair_rail_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/stair_rail_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

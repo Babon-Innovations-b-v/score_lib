@@ -1,0 +1,65 @@
+{
+  "address": "model/balcony_slab_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 751,
+      "role": "record",
+      "sha256": "89ef21b6141704e7ffea766360b19b97c3f14bf6e10bc80aff5a708f159d8501"
+    },
+    "model.usdc": {
+      "bytes": 13666,
+      "role": "usd",
+      "sha256": "61c1201af45cf0d151731e04d49f8fb4fec93a5cdc509e94448a8e8c66c0ed69"
+    }
+  },
+  "id": "balcony_slab_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "89f5562de20f05ab49200254aab4db60ceee461f",
+    "files_from": {
+      "model.json": "model/balcony_slab_1@1/model.json, with its parts",
+      "model.usdc": "model/balcony_slab_1@1/model.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 89f5562de)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/cast_metal@1",
+    "surface/terrazzo@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "inside"
+    ]
+  },
+  "title": "Balcony slab 1",
+  "usd": {
+    "default_prim": "/balcony_slab_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/balcony_slab_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

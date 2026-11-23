@@ -1,0 +1,64 @@
+{
+  "address": "model/grab_bar_1.hub@2",
+  "files": {
+    "model.json": {
+      "bytes": 1115,
+      "role": "record",
+      "sha256": "534fc0556c0205e02def220786410b0bc772b12104ddf475e27a296ab94291ca"
+    },
+    "model.usdc": {
+      "bytes": 33411,
+      "role": "usd",
+      "sha256": "9229bb7446f62bad50f63a55ebf4f17eba4ff55a4b64e9e52a80938c82934517"
+    }
+  },
+  "id": "grab_bar_1.hub",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "89f5562de20f05ab49200254aab4db60ceee461f",
+    "files_from": {
+      "model.json": "model/grab_bar_1.hub@1/model.json, with its parts",
+      "model.usdc": "model/grab_bar_1.hub@1/model.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 89f5562de)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/bare_metal@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Grab bar 1",
+  "usd": {
+    "default_prim": "/grab_bar_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/grab_bar_1.hub/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

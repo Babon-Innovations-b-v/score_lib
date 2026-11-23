@@ -1,0 +1,64 @@
+{
+  "address": "model/road_line_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 477,
+      "role": "record",
+      "sha256": "848752b00387b9e8a4e543229898006876e1396dbdb2aeca8ef35facf35ede21"
+    },
+    "model.usdc": {
+      "bytes": 3607,
+      "role": "usd",
+      "sha256": "18c2b76d8af868791756e357473a4035f2e295c8f163a3ca44bcf12dad4e5860"
+    }
+  },
+  "id": "road_line_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "89f5562de20f05ab49200254aab4db60ceee461f",
+    "files_from": {
+      "model.json": "model/road_line_1@1/model.json, with its parts",
+      "model.usdc": "model/road_line_1@1/model.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 89f5562de)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/painted_plaster@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "outside"
+    ]
+  },
+  "title": "Road line 1",
+  "usd": {
+    "default_prim": "/road_line_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/road_line_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

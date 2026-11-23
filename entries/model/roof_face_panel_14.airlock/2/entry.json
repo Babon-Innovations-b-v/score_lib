@@ -1,0 +1,64 @@
+{
+  "address": "model/roof_face_panel_14.airlock@2",
+  "files": {
+    "model.json": {
+      "bytes": 474,
+      "role": "record",
+      "sha256": "1e248277b7d933297e5bcc748cbc8092f92324d66f1a5be209b53f79496526e4"
+    },
+    "model.usdc": {
+      "bytes": 6032,
+      "role": "usd",
+      "sha256": "0d51af2f815a266ed8b2ad90b82c2f32d42e0738d1fa8c07f59ee3431f3ab9a1"
+    }
+  },
+  "id": "roof_face_panel_14.airlock",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "89f5562de20f05ab49200254aab4db60ceee461f",
+    "files_from": {
+      "model.json": "model/roof_face_panel_14.airlock@1/model.json, with its parts",
+      "model.usdc": "model/roof_face_panel_14.airlock@1/model.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 89f5562de)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/painted_metal@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Roof face panel 14",
+  "usd": {
+    "default_prim": "/roof_face_panel_14",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/roof_face_panel_14.airlock/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

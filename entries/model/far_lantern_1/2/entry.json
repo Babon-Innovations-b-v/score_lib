@@ -1,0 +1,72 @@
+{
+  "address": "model/far_lantern_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 910,
+      "role": "record",
+      "sha256": "4562ea858236cb99ab229aef057e84d7d97be17075515e12b8dadb086f4e0527"
+    },
+    "model.usdc": {
+      "bytes": 10129,
+      "role": "usd",
+      "sha256": "36a5c7b903d12acc5102c36b0a6680b3318b8dc6f8933910f4cec720501e982b"
+    },
+    "model_glow.usdc": {
+      "bytes": 19977,
+      "role": "usd",
+      "sha256": "52510709cd9603f2077c501ebef846a16359d4639306c33bd1fc2cee25896ba9"
+    }
+  },
+  "id": "far_lantern_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "89f5562de20f05ab49200254aab4db60ceee461f",
+    "files_from": {
+      "model.json": "model/far_lantern_1@1/model.json, with its parts",
+      "model.usdc": "model/far_lantern_1@1/model.usdc, remade",
+      "model_glow.usdc": "model/far_lantern_1@1/model_glow.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 89f5562de)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/anodized@1",
+    "surface/glowing@1",
+    "surface/rubber@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "outside"
+    ]
+  },
+  "title": "Far lantern 1",
+  "usd": {
+    "default_prim": "/far_lantern_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/far_lantern_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

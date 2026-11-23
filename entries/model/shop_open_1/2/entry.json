@@ -1,0 +1,74 @@
+{
+  "address": "model/shop_open_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 1244,
+      "role": "record",
+      "sha256": "005be3df484ec57b8839567a4e37d34ad4bf1f27005734f00e96d2f32fd61ff1"
+    },
+    "model.usdc": {
+      "bytes": 53596,
+      "role": "usd",
+      "sha256": "0d754eb448de3b0c420398420fbb363530de6c46e2ecf284454fa57ceb89c073"
+    },
+    "model_glow.usdc": {
+      "bytes": 4673,
+      "role": "usd",
+      "sha256": "82bf3bc88dcf32e65a2177e0da93141ad73f8dea05fb5894ca44f0f4d522110c"
+    }
+  },
+  "id": "shop_open_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "89f5562de20f05ab49200254aab4db60ceee461f",
+    "files_from": {
+      "model.json": "model/shop_open_1@1/model.json, with its parts",
+      "model.usdc": "model/shop_open_1@1/model.usdc, remade",
+      "model_glow.usdc": "model/shop_open_1@1/model_glow.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 89f5562de)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/bare_metal@1",
+    "surface/cast_metal@1",
+    "surface/galvanized@1",
+    "surface/glowing@1",
+    "surface/tiles@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "outside"
+    ]
+  },
+  "title": "Shop open 1",
+  "usd": {
+    "default_prim": "/shop_open_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/shop_open_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

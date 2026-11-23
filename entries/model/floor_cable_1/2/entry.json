@@ -1,0 +1,65 @@
+{
+  "address": "model/floor_cable_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 640,
+      "role": "record",
+      "sha256": "5345b7ea3db64feb545061c3181e96ab52ec348cdc175364bcdb400f15cefba2"
+    },
+    "model.usdc": {
+      "bytes": 48125,
+      "role": "usd",
+      "sha256": "4071c6a2b9b12e8f167178db5c70ebed9341eada5faf7f65ef20eae98cf98d0a"
+    }
+  },
+  "id": "floor_cable_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "89f5562de20f05ab49200254aab4db60ceee461f",
+    "files_from": {
+      "model.json": "model/floor_cable_1@1/model.json, with its parts",
+      "model.usdc": "model/floor_cable_1@1/model.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 89f5562de)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/composite@1",
+    "surface/rubber@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "mars",
+      "outside"
+    ]
+  },
+  "title": "Floor cable 1",
+  "usd": {
+    "default_prim": "/floor_cable_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/floor_cable_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

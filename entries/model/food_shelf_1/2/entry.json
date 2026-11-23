@@ -1,0 +1,64 @@
+{
+  "address": "model/food_shelf_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 1481,
+      "role": "record",
+      "sha256": "75abe8b2b8ec736feeff7678906cb17fa18b444f19c550a218ae24eb321ea769"
+    },
+    "model.usdc": {
+      "bytes": 54393,
+      "role": "usd",
+      "sha256": "a09e2ccdf6457a8002285653b1d2684534b39d2de5607d1d8a71b0fd44c6395c"
+    }
+  },
+  "id": "food_shelf_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "89f5562de20f05ab49200254aab4db60ceee461f",
+    "files_from": {
+      "model.json": "model/food_shelf_1@1/model.json, with its parts",
+      "model.usdc": "model/food_shelf_1@1/model.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 89f5562de)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/galvanized@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Food shelf 1",
+  "usd": {
+    "default_prim": "/food_shelf_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/food_shelf_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

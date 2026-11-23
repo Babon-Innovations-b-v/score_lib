@@ -1,0 +1,65 @@
+{
+  "address": "model/wall_upper_plain_4.garage@2",
+  "files": {
+    "model.json": {
+      "bytes": 974,
+      "role": "record",
+      "sha256": "901863f9ce437f0e0b38be494f8140347fa683f4572c0baf9b9c2e693ec25163"
+    },
+    "model.usdc": {
+      "bytes": 33953,
+      "role": "usd",
+      "sha256": "efe85556017dca755fa8c825a62bb5a93aeddb8ec18e1faa7d2c01e857a93f27"
+    }
+  },
+  "id": "wall_upper_plain_4.garage",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "89f5562de20f05ab49200254aab4db60ceee461f",
+    "files_from": {
+      "model.json": "model/wall_upper_plain_4.garage@1/model.json, with its parts",
+      "model.usdc": "model/wall_upper_plain_4.garage@1/model.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 89f5562de)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/bare_metal@1",
+    "surface/painted_metal@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Wall upper plain 4",
+  "usd": {
+    "default_prim": "/wall_upper_plain_4",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/wall_upper_plain_4.garage/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

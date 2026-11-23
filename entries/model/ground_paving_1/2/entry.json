@@ -1,0 +1,64 @@
+{
+  "address": "model/ground_paving_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 475,
+      "role": "record",
+      "sha256": "43d979a88ffcbf1e2020ac2b9d8ae8c75fb654df74587374965b0fb193598ba9"
+    },
+    "model.usdc": {
+      "bytes": 6899,
+      "role": "usd",
+      "sha256": "9dc41dbb6f3466cd73c7652d5424d5f4017099c6715c84ebe7f44828a0fede4e"
+    }
+  },
+  "id": "ground_paving_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "89f5562de20f05ab49200254aab4db60ceee461f",
+    "files_from": {
+      "model.json": "model/ground_paving_1@1/model.json, with its parts",
+      "model.usdc": "model/ground_paving_1@1/model.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 89f5562de)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/tiles@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "outside"
+    ]
+  },
+  "title": "Ground paving 1",
+  "usd": {
+    "default_prim": "/ground_paving_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/ground_paving_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

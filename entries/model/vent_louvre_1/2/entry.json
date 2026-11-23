@@ -1,0 +1,64 @@
+{
+  "address": "model/vent_louvre_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 625,
+      "role": "record",
+      "sha256": "114e0b6f3623442d7cc03d2a48ecd72e7d681912aee7561c4e52b43fe3767d88"
+    },
+    "model.usdc": {
+      "bytes": 9538,
+      "role": "usd",
+      "sha256": "18ff6ad232f4101cdaf6df35579f27f9db1a7c9edc23bf9ce691d4d66f320394"
+    }
+  },
+  "id": "vent_louvre_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "89f5562de20f05ab49200254aab4db60ceee461f",
+    "files_from": {
+      "model.json": "model/vent_louvre_1@1/model.json, with its parts",
+      "model.usdc": "model/vent_louvre_1@1/model.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 89f5562de)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/rusted_metal@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "outside"
+    ]
+  },
+  "title": "Vent louvre 1",
+  "usd": {
+    "default_prim": "/vent_louvre_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/vent_louvre_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

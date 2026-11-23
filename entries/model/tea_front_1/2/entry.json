@@ -1,0 +1,74 @@
+{
+  "address": "model/tea_front_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 1237,
+      "role": "record",
+      "sha256": "7ac1e21eacb40047702334cb6a38481c6374b629552d1bb32c51efbb10019a0e"
+    },
+    "model.usdc": {
+      "bytes": 53744,
+      "role": "usd",
+      "sha256": "93a4dd73d7f59830149a2ce8f336ecc77e2299f8607af4a276910f1c9a779a91"
+    },
+    "model_glow.usdc": {
+      "bytes": 4673,
+      "role": "usd",
+      "sha256": "911d34606c1bc40386fefa932f409dfc244ccabf47d1dd54efb36ef8774ac84e"
+    }
+  },
+  "id": "tea_front_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "89f5562de20f05ab49200254aab4db60ceee461f",
+    "files_from": {
+      "model.json": "model/tea_front_1@1/model.json, with its parts",
+      "model.usdc": "model/tea_front_1@1/model.usdc, remade",
+      "model_glow.usdc": "model/tea_front_1@1/model_glow.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 89f5562de)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/bare_metal@1",
+    "surface/cast_metal@1",
+    "surface/galvanized@1",
+    "surface/glowing@1",
+    "surface/tiles@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "outside"
+    ]
+  },
+  "title": "Tea front 1",
+  "usd": {
+    "default_prim": "/tea_front_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/tea_front_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

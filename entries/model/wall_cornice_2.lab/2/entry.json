@@ -1,0 +1,64 @@
+{
+  "address": "model/wall_cornice_2.lab@2",
+  "files": {
+    "model.json": {
+      "bytes": 787,
+      "role": "record",
+      "sha256": "d2f9357df3e00c227b219342bb4b480fc6656bbc9b5739de6054be1c65dca6e3"
+    },
+    "model.usdc": {
+      "bytes": 13129,
+      "role": "usd",
+      "sha256": "fdc8ce51f6de7872712e7913c240ad6e3c24463217b498ed9d6fb272bb13e868"
+    }
+  },
+  "id": "wall_cornice_2.lab",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "89f5562de20f05ab49200254aab4db60ceee461f",
+    "files_from": {
+      "model.json": "model/wall_cornice_2.lab@1/model.json, with its parts",
+      "model.usdc": "model/wall_cornice_2.lab@1/model.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 89f5562de)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/painted_metal@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Wall cornice 2",
+  "usd": {
+    "default_prim": "/wall_cornice_2",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/wall_cornice_2.lab/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}
