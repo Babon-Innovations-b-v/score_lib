@@ -17,9 +17,9 @@
       "sha256": "1e85848234c3bb694b1161ecf8c2a86fdfd89129eba23a87bafdc2cceeee2ead"
     },
     "surface.json": {
-      "bytes": 1076,
+      "bytes": 2283,
       "role": "record",
-      "sha256": "fd16bafc253b0614648c98ea8fe8505b0a1763b16ba6bf21fb6191a0307b0f29"
+      "sha256": "b9b7d41b01b9ac94014b7604c0149999bf83e460a1339b02715c0bf50258b8b0"
     }
   },
   "id": "simready_m_trans_glass_orange_a01_5dda2ff2",
@@ -38,7 +38,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "normal.png": "serviceTool_inflator_a01/simready_usd/Textures/t_plastic_orange_a01_tile_nor.png",
       "orm.png": "serviceTool_inflator_a01/simready_usd/Textures/t_plastic_orange_a01_tile_orm.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -49,12 +49,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: serviceTool_inflator_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

@@ -7,9 +7,9 @@
       "sha256": "8bd07e24a9e0834e678a46ae96b1dc27e001091d8a3c138d8336cd55db970c5a"
     },
     "surface.json": {
-      "bytes": 874,
+      "bytes": 2142,
       "role": "record",
-      "sha256": "126161f69aac989c29edf32bb63ceab3216dc4195067b7ce597386758a024419"
+      "sha256": "e176767348894e4578549678289fe52447bc48b8d2613b976d3d05fe95de6dc0"
     }
   },
   "id": "simready_m_trans_plastic_orange_clean_a01_3cc2cd17",
@@ -20,7 +20,7 @@
     "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
     "files_from": {
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -30,12 +30,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: hemodialysis_machine_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

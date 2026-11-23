@@ -7,9 +7,9 @@
       "sha256": "cf8d2d8eb9060b7b86e887396d276164c84dcaac6ef52b491f448fb4d7e420ec"
     },
     "surface.json": {
-      "bytes": 1100,
+      "bytes": 2376,
       "role": "record",
-      "sha256": "8f80a3bb0d306dadc5e7fb1cdfc93fa39dc71183d8bdf36594dae995fc022a74"
+      "sha256": "ea808072625059930716442ac42165e11d5827fa5b6a3cd33d23e3d268a0f447"
     }
   },
   "id": "simready_m_trans_salt_water_detergent_a01_1a15b4c3",
@@ -20,7 +20,7 @@
     "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
     "files_from": {
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -30,12 +30,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: cleaning_dishSoap_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

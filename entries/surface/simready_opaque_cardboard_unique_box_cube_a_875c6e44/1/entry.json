@@ -22,9 +22,9 @@
       "sha256": "049a8cd3cd5ad347b213ac7dc9c21c8ef63f989754539e2889ebba9df5083242"
     },
     "surface.json": {
-      "bytes": 817,
+      "bytes": 2120,
       "role": "record",
-      "sha256": "4dedd9dc2621cf600c441de3fda85b2be38d5d665991a7284ded02a6f927647d"
+      "sha256": "d0f83c27c0c4c7183363fc62734f1ec2a744ca57161f974e722c0497ce8244da"
     }
   },
   "id": "simready_opaque_cardboard_unique_box_cube_a_875c6e44",
@@ -44,7 +44,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "normal.png": "box_cube_white_b04/simready_usd/Textures/t_corrugatedboxes_b01_tile02_normal.png",
       "orm.png": "box_cube_white_b04/simready_usd/Textures/t_corrugatedboxes_b01_tile02_orm.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -55,12 +55,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: box_cube_white_b04",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

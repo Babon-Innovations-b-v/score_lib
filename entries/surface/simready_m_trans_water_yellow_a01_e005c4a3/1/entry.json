@@ -12,9 +12,9 @@
       "sha256": "cdc0c1be84f1ae1a4f2e31b089781e192b72dbe377445d19f7edaa45a6e086f3"
     },
     "surface.json": {
-      "bytes": 1064,
+      "bytes": 2316,
       "role": "record",
-      "sha256": "b5ffee9a9965f089077a3d7cabdae38281daf9a14bba5fb1c54139b6a2f050fa"
+      "sha256": "6e6b32c913e0555fd528a33080232777cf484c83fbc671a16209d3c751939657"
     }
   },
   "id": "simready_m_trans_water_yellow_a01_e005c4a3",
@@ -32,7 +32,7 @@
     "files_from": {
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "roughness.png": "cleaning_bathproduct_a01/simready_usd/Textures/t_glass_lensColoredGlossy_b01_tile_rou.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -43,12 +43,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: cleaning_bathproduct_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

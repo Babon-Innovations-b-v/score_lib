@@ -7,9 +7,9 @@
       "sha256": "a2c64bdf854c6f72e6cf3268971ab3a66abf7694062d3baab7fb6a06684e858f"
     },
     "surface.json": {
-      "bytes": 865,
+      "bytes": 2122,
       "role": "record",
-      "sha256": "fc8da14b3963af77d8a88a80c8185b09efea9e38c83cf2c28d2a625fde8235f2"
+      "sha256": "09c282458bce8fa8e1221a1e1d0bfbc69a99c837d7983f69fe2b8a5e0e34b084"
     }
   },
   "id": "simready_opaque_paper_decal_black_a_41d92e94",
@@ -20,7 +20,7 @@
     "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
     "files_from": {
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -30,12 +30,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: vehicle_forklift_red_b01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

@@ -22,9 +22,9 @@
       "sha256": "92cbdfbd7da1c15c61244c2f2543bbcfae0996837ad9046783e0d511eb285031"
     },
     "surface.json": {
-      "bytes": 804,
+      "bytes": 2100,
       "role": "record",
-      "sha256": "03b18a6a45ffaf00762ac60966c2af5ab6eedce3cc66fe0d12962a09c9065d2c"
+      "sha256": "ae83b9d26c208bb0913cfd21106bc8a5a0118718e94ec916fb7762992d05071f"
     }
   },
   "id": "simready_m_opaque_wood_walnut_panelling_a02_7adbef49",
@@ -44,7 +44,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "normal.png": "furniture_counter_coffeeStation_a01/simready_usd/Textures/t_wood_walnutPanelling_a02_tile_nor.png",
       "orm.png": "furniture_counter_coffeeStation_a01/simready_usd/Textures/t_wood_walnutPanelling_a02_tile_orm.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -55,12 +55,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: furniture_counter_coffeeStation_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

@@ -7,9 +7,9 @@
       "sha256": "c58f63bfb12a4080b57504f3587a328d32b45e2508cc0cf1e92fe6d5075f3a68"
     },
     "surface.json": {
-      "bytes": 1061,
+      "bytes": 2278,
       "role": "record",
-      "sha256": "e571075503a266dd1af49f1df1f327c4bdddca94a846eeeb85a03147a12196ef"
+      "sha256": "bcea3887b87cd1e3ce0eb066d2da6d45c26b7f6ee5d0e502bc9b2e16720b28d3"
     }
   },
   "id": "simready_m_trans_plastic_glossy_a01_4bf817c4",
@@ -20,7 +20,7 @@
     "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
     "files_from": {
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -30,12 +30,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: device_insulin_lancing_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

@@ -17,9 +17,9 @@
       "sha256": "6457e7dea0eb034a75183edc58c352812a36897e71687b89b6412e1fd8e4e647"
     },
     "surface.json": {
-      "bytes": 857,
+      "bytes": 2150,
       "role": "record",
-      "sha256": "1f346cea014c5bff77c4be917a4612f03b289e97388bb251cce262f3cb588cca"
+      "sha256": "963851b6c813b418698b5b13a04207a86d60e257e85fe1062238ac0eeff0099c"
     }
   },
   "id": "simready_m_opaque_rubber_glossy_black_a01_9df21842",
@@ -38,7 +38,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "normal.png": "powerTool_grinder_a01/simready_usd/Textures/t_rubber_glossy_black_a01_tile_nor.png",
       "orm.png": "powerTool_grinder_a01/simready_usd/Textures/t_rubber_glossy_black_a01_tile_orm.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -49,12 +49,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: powerTool_grinder_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

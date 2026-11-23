@@ -7,9 +7,9 @@
       "sha256": "a99dcf5474d7d1a70ff4c3c442c569b14732c533c92b9fd2a294c46260e81065"
     },
     "surface.json": {
-      "bytes": 869,
+      "bytes": 2077,
       "role": "record",
-      "sha256": "c4e3f067be608203a95dd4e5d9f1b9f60a387e0930329568fb1e1765c4657346"
+      "sha256": "b74b06cd0298031048e09fe181542ee3fd3962c9c3bc7c09fbe479d3a2b73897"
     }
   },
   "id": "simready_m_trans_glass_clean_a01_b9425461",
@@ -20,7 +20,7 @@
     "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
     "files_from": {
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -30,12 +30,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: machine_coffee_vending_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

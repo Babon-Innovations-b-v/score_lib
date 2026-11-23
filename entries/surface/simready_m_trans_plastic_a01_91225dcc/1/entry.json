@@ -7,9 +7,9 @@
       "sha256": "fdabca102ac13d7f5ee37b2807489476c069a62dd7d7db7b3441e97e77a4909e"
     },
     "surface.json": {
-      "bytes": 1040,
+      "bytes": 2253,
       "role": "record",
-      "sha256": "de0ce7a7cd5315d3fe47ade3ff7f0a7b575a73c91f9d9c5c84be6b4c617a9cd8"
+      "sha256": "14715be1db625daf36490efbd34789bd6620dc2d43238152e5b1dd28dfe8d615"
     }
   },
   "id": "simready_m_trans_plastic_a01_91225dcc",
@@ -20,7 +20,7 @@
     "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
     "files_from": {
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -30,12 +30,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: warehouse_conveyorBelt_a07",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

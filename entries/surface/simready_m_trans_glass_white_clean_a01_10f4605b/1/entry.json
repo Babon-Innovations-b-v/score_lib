@@ -7,9 +7,9 @@
       "sha256": "b712088a7a3ef234d428bf3960689db85288c70208b8d54b5e713e7811e08840"
     },
     "surface.json": {
-      "bytes": 876,
+      "bytes": 2079,
       "role": "record",
-      "sha256": "fecdf0476a91353241d1c655aa42ccf5dead8903dadc325e432823bd5a2b4009"
+      "sha256": "fa82420272120dac3dab0c5bea2c12d9e6de0b3d4557c0aaa49f555404bbfb39"
     }
   },
   "id": "simready_m_trans_glass_white_clean_a01_10f4605b",
@@ -20,7 +20,7 @@
     "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
     "files_from": {
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -30,12 +30,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: light_surgical_ceiling_mobile_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

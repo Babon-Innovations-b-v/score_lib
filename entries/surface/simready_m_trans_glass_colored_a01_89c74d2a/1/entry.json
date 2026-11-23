@@ -12,9 +12,9 @@
       "sha256": "68f7c5d1fdf966270804f742f62e7e27fe69638077385b69f0ec17132e363ee9"
     },
     "surface.json": {
-      "bytes": 757,
+      "bytes": 1974,
       "role": "record",
-      "sha256": "17df085350f47879064ad3b40d06ba13b9ec782942be2cd0beb7eab4d4935fc2"
+      "sha256": "37f698bf093cca892509dd91c507860bf6ed2c859dc8e808283abb7efe15d3aa"
     }
   },
   "id": "simready_m_trans_glass_colored_a01_89c74d2a",
@@ -32,7 +32,7 @@
     "files_from": {
       "albedo.png": "device_otoscope_a01/simready_usd/Textures/t_glassLens_colored_glossy_b01_tile_alb.png",
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -43,12 +43,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: device_otoscope_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

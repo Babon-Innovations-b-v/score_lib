@@ -7,9 +7,9 @@
       "sha256": "659e61481b7f430a2019ab66a8c945de1e04ee7132040aaef19c517195d59c26"
     },
     "surface.json": {
-      "bytes": 853,
+      "bytes": 2014,
       "role": "record",
-      "sha256": "9c814172287720e57a521a9514842fdf4edfa4d5d3c946dd1e88e4f67ed82104"
+      "sha256": "d91e8be697e2e732781aff55ac35075bfa4e241af005a55e6d472b886f137670"
     }
   },
   "id": "simready_m_trans_plexiglass_a01_cc67a13a",
@@ -20,7 +20,7 @@
     "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
     "files_from": {
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -30,12 +30,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: facilitySystem_kitchenette_module_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

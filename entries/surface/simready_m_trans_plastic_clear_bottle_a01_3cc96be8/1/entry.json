@@ -7,9 +7,9 @@
       "sha256": "562a05d3ac9779957672f875dcaafa88cd4fe5a807e152c6355e3458ce310116"
     },
     "surface.json": {
-      "bytes": 860,
+      "bytes": 2077,
       "role": "record",
-      "sha256": "01d4144b12e01d6230cb73e4a301f37cad0fba7769d640b379fa26a9a63d44d6"
+      "sha256": "f656ae0f0c307ab5eb39513b8be172437c8a2eb1a244ba74641ec6dba9c9158c"
     }
   },
   "id": "simready_m_trans_plastic_clear_bottle_a01_3cc96be8",
@@ -20,7 +20,7 @@
     "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
     "files_from": {
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -30,12 +30,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: medicine_c02",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

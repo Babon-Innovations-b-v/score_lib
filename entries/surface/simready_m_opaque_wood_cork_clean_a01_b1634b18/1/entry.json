@@ -22,9 +22,9 @@
       "sha256": "3ee257f65185cb5b945694ccc4e8a427965a2d16675c476e7a2e41231f61f472"
     },
     "surface.json": {
-      "bytes": 797,
+      "bytes": 2093,
       "role": "record",
-      "sha256": "92102a70e7230376d9a163f4bd675a9060e548ca4f05cdd5b286ec7750fd0f7c"
+      "sha256": "756d69a463f853fa8627806ff1b3ad15a7427b880e4eeda5cc4e6567400b1e23"
     }
   },
   "id": "simready_m_opaque_wood_cork_clean_a01_b1634b18",
@@ -44,7 +44,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "normal.png": "serviceTool_extractor_fluidPneumatic_a01/simready_usd/Textures/t_wood_corkClean_a01_tile_nor.png",
       "orm.png": "serviceTool_extractor_fluidPneumatic_a01/simready_usd/Textures/t_wood_corkClean_a01_tile_orm.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -55,12 +55,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: serviceTool_extractor_fluidPneumatic_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

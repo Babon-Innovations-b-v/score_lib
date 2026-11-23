@@ -22,9 +22,9 @@
       "sha256": "169bf2e5118a80d78921e98c75290af61fc9e94e1d63c8047c3cadf0151a95db"
     },
     "surface.json": {
-      "bytes": 896,
+      "bytes": 2191,
       "role": "record",
-      "sha256": "6a8e7398746eafdc84cd387b13c1884b2934674f92f65e239efd105148a7f609"
+      "sha256": "18101b7a29ed1886fe4f57cba341c5007d29b21fc11699b34fabf50adfdb2e38"
     }
   },
   "id": "simready_m_opaque_stone_matte_grain_a01_89b30588",
@@ -44,7 +44,7 @@
       "metallic.png": "brakeSystem_brakes_assembly_b01/simready_usd/Textures/t_ceramic_matteGrain_a01_tile_orm.png",
       "normal.png": "brakeSystem_brakes_assembly_b01/simready_usd/Textures/t_ceramic_matteGrain_a01_tile_nor.png",
       "roughness.png": "brakeSystem_brakes_assembly_b01/simready_usd/Textures/t_ceramic_matteGrain_a01_tile_alb.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -55,12 +55,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: brakeSystem_brakes_assembly_b01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

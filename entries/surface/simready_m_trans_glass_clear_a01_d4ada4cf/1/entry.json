@@ -7,9 +7,9 @@
       "sha256": "5d8301c8f3f20c8ff3668605ffbec3746d2024e8397f9e2ae09e61665d713c3f"
     },
     "surface.json": {
-      "bytes": 1046,
+      "bytes": 2207,
       "role": "record",
-      "sha256": "70d6caf2aba001bc5c96e40dc8afa82dbf4414c1a5b5f62377cd2db530bf33fb"
+      "sha256": "2c371792fc186f9b7c53b5e43aa52431f377cf677d07a7f1b9ac1ebbc9a788f7"
     }
   },
   "id": "simready_m_trans_glass_clear_a01_d4ada4cf",
@@ -20,7 +20,7 @@
     "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
     "files_from": {
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -30,12 +30,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: dishware_glass_liqueur_b01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

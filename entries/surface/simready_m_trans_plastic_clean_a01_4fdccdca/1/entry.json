@@ -7,9 +7,9 @@
       "sha256": "7bc1b918297b8c811915c57412443b0eb04c52bf7a839ba193d1234aa837a821"
     },
     "surface.json": {
-      "bytes": 853,
+      "bytes": 2066,
       "role": "record",
-      "sha256": "4feb54f68a9e0e2e152fc0e19115be2e761c74bee9d96bfe1051619fc6a45248"
+      "sha256": "50e94867b5af4b4e5a80eeff40da47ea9c3a4c728df8acfb3fa7c0d25016ead3"
     }
   },
   "id": "simready_m_trans_plastic_clean_a01_4fdccdca",
@@ -20,7 +20,7 @@
     "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
     "files_from": {
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -30,12 +30,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: drainage_pumpSystem_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

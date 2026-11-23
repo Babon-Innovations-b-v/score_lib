@@ -7,9 +7,9 @@
       "sha256": "259bb37fcb956d593063a20ab7c0d4c699fc095df538b48eb4b5578bb3bfde52"
     },
     "surface.json": {
-      "bytes": 1086,
+      "bytes": 2291,
       "role": "record",
-      "sha256": "f004b3a3d0ce126d67eab178f10be7f94bd586bddf877c323eb5c7f62c67e267"
+      "sha256": "45f82f7939c7d023263ce140452ae9501446b990f72cf6517e5db3945f6839f3"
     }
   },
   "id": "simready_m_trans_glass_clean_a01_ea5acba1",
@@ -20,7 +20,7 @@
     "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
     "files_from": {
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -30,12 +30,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: device_catheter_positioning_system_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

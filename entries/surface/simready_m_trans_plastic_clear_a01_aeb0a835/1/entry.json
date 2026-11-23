@@ -7,9 +7,9 @@
       "sha256": "6c3c6320b85b9e878115e51620fa3eb4765e092ada0344e7e97eddd80e8dea28"
     },
     "surface.json": {
-      "bytes": 1059,
+      "bytes": 2272,
       "role": "record",
-      "sha256": "7cb3491f065e54326daec063bbb10605eb980fb47b9f7be9c3a59d904ec04a43"
+      "sha256": "03f174ee760a6f73e39699dfd7584d93a85153935d257065874d5e859e9c61c5"
     }
   },
   "id": "simready_m_trans_plastic_clear_a01_aeb0a835",
@@ -20,7 +20,7 @@
     "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
     "files_from": {
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -30,12 +30,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: pump_suction_surgical_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

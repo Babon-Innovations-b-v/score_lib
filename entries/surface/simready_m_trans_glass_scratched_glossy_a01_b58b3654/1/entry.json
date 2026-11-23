@@ -12,9 +12,9 @@
       "sha256": "12f9365941bf2b9fda8a010f36e8ae5d3800227fba2578436bf4ada8c1b22c3b"
     },
     "surface.json": {
-      "bytes": 1062,
+      "bytes": 2223,
       "role": "record",
-      "sha256": "ce0f45310182f9524011e2422b45cfd95daddd8e287e0b98e0a2b79f928f779b"
+      "sha256": "689e520d4f53bc91173f9006564fb4f0d5d2b8ef156c64131a5e5ad25ba5ec1f"
     }
   },
   "id": "simready_m_trans_glass_scratched_glossy_a01_b58b3654",
@@ -32,7 +32,7 @@
     "files_from": {
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "roughness.png": "ppe_eyeProtection_goggles_a01/simready_usd/Textures/t_clearBottle_a01_tile_rou.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -43,12 +43,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: ppe_eyeProtection_goggles_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

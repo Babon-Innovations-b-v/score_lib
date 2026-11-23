@@ -7,9 +7,9 @@
       "sha256": "520243b677a7063221bb284a8680c3bc0c3e3ea017d388ae0845174de4f1625b"
     },
     "surface.json": {
-      "bytes": 1089,
+      "bytes": 2362,
       "role": "record",
-      "sha256": "8eedc8e8e66231c320ae06c173e4cb1bfcc13efb25805b22082cbd193b735fa1"
+      "sha256": "1e862d82452d16e9649e79fb1086191a07dda9c2be53bdbf390d2d44bf5b8ce8"
     }
   },
   "id": "simready_m_trans_plastic_clear_a01_c1aaafa7",
@@ -20,7 +20,7 @@
     "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
     "files_from": {
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -30,12 +30,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: cabinet_for_drugs_a03",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",
