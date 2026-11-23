@@ -1,0 +1,71 @@
+{
+  "address": "model/dash_light_bar_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 674,
+      "role": "record",
+      "sha256": "4b9136332ee6cc17ba6aad10ef7a623502e42eb05ece0fea6ea5a18d0d196361"
+    },
+    "model.usdc": {
+      "bytes": 6917,
+      "role": "usd",
+      "sha256": "32ed8add5bec50a61ce6f77dc7d4bce428374655d5612ee1c50daf1343dea66d"
+    },
+    "model_glow.usdc": {
+      "bytes": 3535,
+      "role": "usd",
+      "sha256": "32613b19dde37b18fa465426d47e7fcc8df0b1c36334d6848d457e93bc7c262b"
+    }
+  },
+  "id": "dash_light_bar_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "2289553f5332faa7f6cdc97471714f265172a430",
+    "files_from": {
+      "model.json": "model/dash_light_bar_1@1/model.json, with its parts",
+      "model.usdc": "model/dash_light_bar_1@1/model.usdc, remade",
+      "model_glow.usdc": "model/dash_light_bar_1@1/model_glow.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 2289553f5)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/glowing@1",
+    "surface/painted_metal@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Dash light bar 1",
+  "usd": {
+    "default_prim": "/dash_light_bar_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/dash_light_bar_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

@@ -1,0 +1,71 @@
+{
+  "address": "model/ceiling_light_panel_1.cockpit@2",
+  "files": {
+    "model.json": {
+      "bytes": 840,
+      "role": "record",
+      "sha256": "8ab89ea176a250dc5aa80a28bcd23be2f6862318c58bfb3f31ad5e38d79e5156"
+    },
+    "model.usdc": {
+      "bytes": 9059,
+      "role": "usd",
+      "sha256": "72f13d79fc3357af32e62adb63423b99756ea46d2c4f4922ec50d7f06491744b"
+    },
+    "model_glow.usdc": {
+      "bytes": 3540,
+      "role": "usd",
+      "sha256": "8c7d4ceaa3dd3095571c46705552ee621d87f921c8acf4667aba8bca6c0e1a6c"
+    }
+  },
+  "id": "ceiling_light_panel_1.cockpit",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "2289553f5332faa7f6cdc97471714f265172a430",
+    "files_from": {
+      "model.json": "model/ceiling_light_panel_1.cockpit@1/model.json, with its parts",
+      "model.usdc": "model/ceiling_light_panel_1.cockpit@1/model.usdc, remade",
+      "model_glow.usdc": "model/ceiling_light_panel_1.cockpit@1/model_glow.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 2289553f5)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/glowing@1",
+    "surface/painted_metal@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Ceiling light panel 1",
+  "usd": {
+    "default_prim": "/ceiling_light_panel_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/ceiling_light_panel_1.cockpit/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

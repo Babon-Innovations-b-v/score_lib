@@ -1,0 +1,65 @@
+{
+  "address": "model/frame_rib_2.cockpit@2",
+  "files": {
+    "model.json": {
+      "bytes": 648,
+      "role": "record",
+      "sha256": "da86467b61e3bcb739a156d27285944894ac4e942a92192a2d6acfa2beddacfe"
+    },
+    "model.usdc": {
+      "bytes": 10376,
+      "role": "usd",
+      "sha256": "d5646d15e331d43303d63b1cf44f7f74d20c2f94d162d65e252378d1720916ce"
+    }
+  },
+  "id": "frame_rib_2.cockpit",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "2289553f5332faa7f6cdc97471714f265172a430",
+    "files_from": {
+      "model.json": "model/frame_rib_2.cockpit@1/model.json, with its parts",
+      "model.usdc": "model/frame_rib_2.cockpit@1/model.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 2289553f5)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/bare_metal@1",
+    "surface/painted_metal@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Frame rib 2",
+  "usd": {
+    "default_prim": "/frame_rib_2",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/frame_rib_2.cockpit/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

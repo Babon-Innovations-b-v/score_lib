@@ -1,0 +1,65 @@
+{
+  "address": "model/plaster_wall_5@2",
+  "files": {
+    "model.json": {
+      "bytes": 974,
+      "role": "record",
+      "sha256": "35c053b0508c48f696f610135432d128e6c8fb811f437ba64fdd1cc8db212c2c"
+    },
+    "model.usdc": {
+      "bytes": 17777,
+      "role": "usd",
+      "sha256": "91c7584bc47c1e12ad95c3482a2907ad50dcafb693201e7cbb01e6635e9baaed"
+    }
+  },
+  "id": "plaster_wall_5",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "2289553f5332faa7f6cdc97471714f265172a430",
+    "files_from": {
+      "model.json": "model/plaster_wall_5@1/model.json, with its parts",
+      "model.usdc": "model/plaster_wall_5@1/model.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 2289553f5)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/painted_plaster@1",
+    "surface/rusted_metal@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "inside"
+    ]
+  },
+  "title": "Plaster wall 5",
+  "usd": {
+    "default_prim": "/plaster_wall_5",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/plaster_wall_5/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}
