@@ -22,9 +22,9 @@
       "sha256": "51f838ca8301aa19c95fcac91b25c238a2ff6b1447e6e85758fc71ed8fc902f8"
     },
     "surface.json": {
-      "bytes": 1681,
+      "bytes": 2141,
       "role": "record",
-      "sha256": "86472fdcbb1b2b394d8beba43183d8af49f79f729a8b39cf42719fde174f8dbb"
+      "sha256": "f9bc4e8112173bde2944df0475aeb71c3f057d85e696ac4c70df5f651bbfa94f"
     }
   },
   "id": "simready_m_opaque_rubber_antislip_black_a01_86aa3bdd",
@@ -55,12 +55,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: consumable_belt_serpentine_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

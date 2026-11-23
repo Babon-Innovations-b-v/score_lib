@@ -22,9 +22,9 @@
       "sha256": "fbebee61dca13e493a263237d1adbdbdec444c1ef3375f782f303e446c302852"
     },
     "surface.json": {
-      "bytes": 1721,
+      "bytes": 2136,
       "role": "record",
-      "sha256": "fcb50920da4cc66c4438a0e3d60494789a19235d9a14d38f0fa60fc07a85645f"
+      "sha256": "3b6bff750122d95c87c05f71490568b7fb876c7223e2c99156233329ac60c08e"
     }
   },
   "id": "simready_m_opaque_rubber_lined_black_b01_832b63de",
@@ -55,12 +55,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: powerTool_cutting_tool_c01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

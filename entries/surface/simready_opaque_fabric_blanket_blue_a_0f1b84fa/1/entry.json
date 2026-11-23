@@ -17,9 +17,9 @@
       "sha256": "a422778260b192a9fa060b1b05f4e618bc4c9ac1ddfbd06d85fd7c79d11b0d90"
     },
     "surface.json": {
-      "bytes": 1771,
+      "bytes": 2143,
       "role": "record",
-      "sha256": "d7adedeb024b30888697c7599f2c0aa6e04e2ca1d10433aadd9856cd370d3799"
+      "sha256": "45013812a4c90d963d59d3891bafd7ecbbefdb50fbdedfb0d9530dc257823dd9"
     }
   },
   "id": "simready_opaque_fabric_blanket_blue_a_0f1b84fa",
@@ -49,12 +49,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: bedding_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

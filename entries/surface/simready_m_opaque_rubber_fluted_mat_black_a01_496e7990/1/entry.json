@@ -17,9 +17,9 @@
       "sha256": "deb7d58ae88bd5c43e486ed1b63b9b8c7736f165cee69e9a268700c6962caaaf"
     },
     "surface.json": {
-      "bytes": 1774,
+      "bytes": 2193,
       "role": "record",
-      "sha256": "e155b57f9a5cc2ece73665da24d94972de496d3b2bff530fd0b37108379a934f"
+      "sha256": "1df9264a7935ee1623043aa1b84d6d15c4a5bdadf572fbc2f4eb9e5d50c0f1d5"
     }
   },
   "id": "simready_m_opaque_rubber_fluted_mat_black_a01_496e7990",
@@ -49,12 +49,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: testingTool_alignment_machine_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",
