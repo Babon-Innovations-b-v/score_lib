@@ -1,0 +1,65 @@
+{
+  "address": "model/beacon_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 1088,
+      "role": "record",
+      "sha256": "1448c446e951259b7174c314320243877c07a1484f407b6961c7a8be932d214f"
+    },
+    "model.usdc": {
+      "bytes": 156424,
+      "role": "usd",
+      "sha256": "e5d321e7b122ecbddb19604fb5b388f36e8988f38d77003cc8a020543faa4f9e"
+    },
+    "model_glow.usdc": {
+      "bytes": 43217,
+      "role": "usd",
+      "sha256": "30f243669ae5f167cf733fab5973ab9fd7a679b5283504a007a34a848d070c91"
+    }
+  },
+  "id": "beacon_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "0a91e3ad62c1",
+    "files_from": {
+      "model.json": "model/beacon_1@1 model.json",
+      "model.usdc": "model/beacon_1@1 model.usdc, cleaned",
+      "model_glow.usdc": "model/beacon_1@1 model_glow.usdc, cleaned"
+    },
+    "made_with": [
+      {
+        "by": "framework_models",
+        "what": "beacon_1: its shape, code-built for the airlock (model/beacon_1@1)"
+      },
+      {
+        "by": "score",
+        "what": "cleaned: atlas finish and UVs off, normals made again with a crease, each part a library surface of the capsule's palette"
+      }
+    ],
+    "taken_from": "score: the capsule's messy beacon and vent grille cleaned on this PC",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "place": [
+      "capsule"
+    ]
+  },
+  "title": "Beacon 1 (cleaned, library surfaces)",
+  "usd": {
+    "default_prim": "/beacon_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/beacon_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}
