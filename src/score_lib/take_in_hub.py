@@ -1159,17 +1159,15 @@ class Run:
                     "path": str(pathlib.Path(self.cache) / asset / each), "from": f"{asset}/{kept[each]['path']}",
                     "sha256": kept[each]["sha256"], "bytes": kept[each]["bytes"]}
         made_with = [{"what": "its look and record", "source": "score"}]
-        if material["maps"]:
-            made_with.append({"what": f"the {material['name']} maps of {asset}", "source": self.row["id"],
-                              "carried": True})
-        else:
-            made_with.append({"what": f"the {material['name']} settings of {asset}", "source": self.row["id"]})
+        # a constant-only finish carries the source's own settings, so it is credited like maps (2099's credits check)
+        carried_what = "maps" if material["maps"] else "settings"
+        made_with.append({"what": f"the {material['name']} {carried_what} of {asset}", "source": self.row["id"],
+                          "carried": True})
         listed = {"kind": "surface", "id": entry_id, "title": material["name"], "files": files,
                   "made_with": made_with, "tags": {"maps_key": [key], "engine": ["usd"]}}
         if not tiling:
             listed["tags"]["painted_for"] = [asset]
-        if material["maps"]:
-            listed["licence"] = licence_of(self.row, self.source.repo, self.source.revision, asset)
+        listed["licence"] = licence_of(self.row, self.source.repo, self.source.revision, asset)
         return listed
 
     def surfaces_of(self, asset, materials, kept, folder, queued, pairs):

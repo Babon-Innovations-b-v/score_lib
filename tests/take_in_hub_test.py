@@ -3,7 +3,7 @@ entries under their own licence (a UDIM map's every tile in its surface), their 
 on disk; a save from another branch pushed to the library's main, a run without --save no cause for the save to see
 them unchanged, and --retake settling them again; and the pacing of a reader, its back-off after a refusal for rate.
 
-Breaks that turn it red: a UDIM material gapped, a save pushed to its own branch, a save after a run without it
+Breaks that turn it red: a constant-only surface left without its licence block and carried source, a UDIM material gapped, a save pushed to its own branch, a save after a run without it
 committing nothing (or not the surfaces its models require), assets side by side settled out of the run's order (the
 shared tile set's size then the crate's, which has no mesh), a glass's MDL transmission left out of its record or
 its look left opaque, a material with no UsdPreviewSurface gapped though its OmniPBR shader gives its look (or its look
@@ -428,7 +428,8 @@ def test_an_adopted_set_is_taken_in_whole_under_its_licence(repository, tmp_path
     look = Sdf.Layer.FindOrOpen(str(blob(blobs, by_material["m_plastic_black"], "material.usda", tmp_path)))
     normal = look.GetPrimAtPath(f"/{by_material['m_plastic_black']['id']}/normal")
     assert normal.attributes["inputs:scale"].default[1] < 0 < normal.attributes["inputs:bias"].default[1]
-    assert "licence" not in by_material["m_paint"] and "licence" in by_material["m_plastic_black"]
+    assert by_material["m_paint"]["licence"]["source"] == "example_assets" and "licence" in by_material["m_plastic_black"]
+    assert [made for made in by_material["m_paint"]["provenance"]["made_with"] if made.get("carried")]
     assert sorted(by_material["m_plastic_black"]["files"]) == ["albedo.png", "material.usda", "normal.png", "orm.png",
                                                               "surface.json"]
     udim = by_material["m_panel"]
