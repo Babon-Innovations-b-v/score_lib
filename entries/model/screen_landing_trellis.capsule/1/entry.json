@@ -1,0 +1,69 @@
+{
+  "address": "model/screen_landing_trellis.capsule@1",
+  "files": {
+    "preview.png": {
+      "bytes": 641142,
+      "role": "picture",
+      "sha256": "e93dccc242fa64721d20826f8e028972dde3bc7f227c45841cdaa543f6c24e75"
+    },
+    "screen_landing_trellis.capsule-final.glb": {
+      "bytes": 11967424,
+      "role": "gltf",
+      "sha256": "256c0eaf8b77bdb17834250d7e35b88b89c6725d0e3a7a8f1799d7a0e74fbdf8"
+    },
+    "screen_landing_trellis.capsule-hulls.glb": {
+      "bytes": 141256,
+      "role": "gltf",
+      "sha256": "5064d5207af3bc501c25a42a71b8c709dddfac873da14184490f1d67615f39e7"
+    },
+    "screen_landing_trellis.capsule.json": {
+      "bytes": 2461,
+      "role": "record",
+      "sha256": "e6690658612ac8b6edcbfbbb444f7cf092ad42c58a963e0d7d767d37c12c4330"
+    }
+  },
+  "id": "screen_landing_trellis.capsule",
+  "kind": "model",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "score place_build render (Blender, laid with its library finish)",
+    "of": "screen_landing_trellis.capsule-final.glb"
+  },
+  "provenance": {
+    "commit": "0a91e3ad62c1d255046fe78951660a8b02fba59b",
+    "files_from": {
+      "preview.png": "render/view-p_screen_landing.png",
+      "screen_landing_trellis.capsule-final.glb": "made/screen_landing_trellis.capsule-final.glb",
+      "screen_landing_trellis.capsule-hulls.glb": "made/screen_landing_trellis.capsule-hulls.glb",
+      "screen_landing_trellis.capsule.json": "made/screen_landing_trellis.capsule.json"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "its reference picture drawn on this PC (Blender, simple solids at the part's real size) and its preview rendered laid in the capsule's palette by place_build render"
+      },
+      {
+        "by": "score",
+        "what": "set in the place, its paint graded to the place's palette, CoACD hulls and mass by score place_build make"
+      },
+      {
+        "by": "trellis2",
+        "what": "screen_landing: its shape and paint, TRELLIS.2 (1024 cascade, seed 42) from the picture screen_landing.png"
+      }
+    ],
+    "taken_from": "score place_build make (TRELLIS.2 on this PC)",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "maker": [
+      "trellis2"
+    ]
+  },
+  "title": "Screen landing (TRELLIS.2, capsule)",
+  "usd": null,
+  "version": 1
+}

@@ -15,18 +15,27 @@
       "bytes": 43217,
       "role": "usd",
       "sha256": "30f243669ae5f167cf733fab5973ab9fd7a679b5283504a007a34a848d070c91"
+    },
+    "preview.png": {
+      "bytes": 540256,
+      "role": "picture",
+      "sha256": "926bbff1629f0d94fba2778b42960abefaef77156b148d0a81393c2d630f059a"
     }
   },
   "id": "beacon_1",
   "kind": "model",
-  "picture": null,
-  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "score place_build render (Blender, laid with its library finish)",
+    "of": "model.usdc"
+  },
   "provenance": {
     "commit": "0a91e3ad62c1",
     "files_from": {
       "model.json": "model/beacon_1@1 model.json",
       "model.usdc": "model/beacon_1@1 model.usdc, cleaned",
-      "model_glow.usdc": "model/beacon_1@1 model_glow.usdc, cleaned"
+      "model_glow.usdc": "model/beacon_1@1 model_glow.usdc, cleaned",
+      "preview.png": "render/view-p_beacon.png"
     },
     "made_with": [
       {

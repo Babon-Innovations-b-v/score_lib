@@ -10,17 +10,26 @@
       "bytes": 126129,
       "role": "usd",
       "sha256": "c843973027094e80268bb60755fbd80be45f3dc0ad9f74abf5d2cc7bec802770"
+    },
+    "preview.png": {
+      "bytes": 598840,
+      "role": "picture",
+      "sha256": "b14720412e38c9cca5ed118d11781a00c45fade9162be25aa2fa44e9438e777e"
     }
   },
   "id": "vent_grille_1",
   "kind": "model",
-  "picture": null,
-  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "score place_build render (Blender, laid with its library finish)",
+    "of": "model.usdc"
+  },
   "provenance": {
     "commit": "0a91e3ad62c1",
     "files_from": {
       "model.json": "model/vent_grille_1@1 model.json",
-      "model.usdc": "model/vent_grille_1@1 model.usdc, cleaned"
+      "model.usdc": "model/vent_grille_1@1 model.usdc, cleaned",
+      "preview.png": "render/view-p_vent.png"
     },
     "made_with": [
       {
