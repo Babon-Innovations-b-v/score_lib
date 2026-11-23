@@ -17,9 +17,9 @@
       "sha256": "c240877bc45383be03bc37e12f3da5648a6e0e47ccd420ee102e08a7c967db36"
     },
     "surface.json": {
-      "bytes": 1735,
+      "bytes": 2145,
       "role": "record",
-      "sha256": "dca40a155d3ab1b6a378293c0707aa6b0d9d83aed0a0eafb3785336ce4e796c2"
+      "sha256": "988456e115490fd8fb95f91540c7808f7cfa5e97bf71038fc0a6e4844d97d5f6"
     }
   },
   "id": "simready_opaque_stone_marble_floor_tile_a_c6a94056",
@@ -49,12 +49,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: set_office_main_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

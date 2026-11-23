@@ -7,9 +7,9 @@
       "sha256": "33427f1c30888433509355d774f9558b90ff9dd434eaf50653460576857bd9ec"
     },
     "surface.json": {
-      "bytes": 1950,
+      "bytes": 2252,
       "role": "record",
-      "sha256": "e5d423b1b76e1576d86d6c20e58cb3a728b563b4f83cc624e3ce1ee5520f57be"
+      "sha256": "acefd620c12e4f10a089c08bea5950441059a19539c202f1b45232d3e887f404"
     }
   },
   "id": "simready_trans_glass_red_firelamp_a_51aeb0d6",
@@ -30,12 +30,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: warehouse_fireAlarmLight_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

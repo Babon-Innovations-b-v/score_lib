@@ -12,9 +12,9 @@
       "sha256": "cdc0c1be84f1ae1a4f2e31b089781e192b72dbe377445d19f7edaa45a6e086f3"
     },
     "surface.json": {
-      "bytes": 1967,
+      "bytes": 2436,
       "role": "record",
-      "sha256": "2ed80cbeec3a03fdfbdf652580ce37436dd6e412bf147fc00a0870c7c807bd9e"
+      "sha256": "0e3bd95e531c69ea77b7b16b5f2eb9333df4cdef64d4795a6661e22e38c68d3a"
     }
   },
   "id": "simready_m_trans_plastic_light_grayish_purple_a01_6333f866",
@@ -43,12 +43,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: cannulae_nasal_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",
