@@ -58,6 +58,11 @@ A library of reusable parts of SCORE worlds: records in git (`entries/`), bytes 
   one within twice our size, the same maps), else refused as tied, never the first taken; a model's size is read from
   its record or its glTF or USD through a cache emptied after each read; `--apply` withdraws the accepted ones naming
   their replacement (`replaced_by`).
+- `src/score_lib/adopted_recipes.py`: `score-lib adopted recipes --from FOLDER [--apply] [--save] [--report FILE]`,
+  score's look-alike check's results (`<id>@<version>/likeness.json`, `summary.json`) written into the adopted surfaces
+  (score #155): a pass sets surface.json's recipe and likeness and gains the recipe in made_with as our own work; a
+  fail or unread one keeps no recipe and a gap naming its measures past their bounds or why; a locked entry's next
+  version as a draft; without `--apply` a report only.
 - `src/score_lib/concept.py`: `score-lib concept`, a place's locked concept from score's concept review (score #40).
 - `src/score_lib/handover.py`: `score-lib handover`, the one call score's runner makes (contract `library-handover` v1); `held.py`: what a place holds and which entries hold a store output.
 - `src/score_lib/clip.py`: an entry's preview clip (owner, 2026-10-20): `score-lib clip-plan` says what each clip

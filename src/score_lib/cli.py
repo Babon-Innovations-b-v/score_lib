@@ -155,7 +155,35 @@ def command_take_in(options):
     raise SystemExit(1 if report["refused"] or any(not saved["pushed"] for saved in saves) else 0)
 
 
+def command_adopted_recipes(options):
+    """`adopted recipes`: score's look-alike results written into the adopted surfaces (adopted_recipes.py)."""
+    from score_lib import adopted_recipes, handover
+    if not options.from_folder:
+        raise SystemExit("adopted recipes needs --from <the look-alike check's folder>")
+    try:
+        report = adopted_recipes.write_recipes(options.root, blob_store() if options.apply else None,
+                                               options.from_folder, apply=options.apply, save=options.save)
+    except (adopted_recipes.Refused, handover.HandoverError) as why:
+        raise SystemExit(str(why))
+    if options.report:
+        adopted_recipes.write_report(options.report, report)
+    outcomes = report["outcomes"]
+    line = (f"pass {outcomes['pass']}, fail {outcomes['fail']}, unread {outcomes['unread']}, "
+            f"refused {len(report['refused'])}")
+    if options.apply:
+        line += ", " + ", ".join(f"{status} {len(report[status])}" for status in ("in place", "new version",
+                                                                                   "unchanged"))
+        line += f", saved {len(report['saved'])} commits" if options.save else ""
+    else:
+        line += " (a report only: --apply writes them)"
+    print(line + (f"; report in {options.report}" if options.report else ""))
+
+
 def command_adopted(options):
+    if options.action == "recipes":
+        return command_adopted_recipes(options)
+    if not options.proposals:
+        raise SystemExit("adopted match needs --proposals <file>")
     from score_lib import adopted
     cache = pathlib.Path(os.environ.get("SCORE_LIB_CACHE") or pathlib.Path.home() / ".cache/score-lib") / "adopted"
     sizes = adopted.Sizes(options.root, lambda: blob_store(reading=True), cache, options.sizes)
@@ -423,17 +451,25 @@ def parser():
                        help="under the handover's lock, commit and push the entries written and the index")
     taken.set_defaults(handle=command_take_in)
     adopting = commands.add_parser("adopted", help="an adopted set against our older entries: `match` proposes the "
-                                                   "adopted entry each older model and surface overlaps (adopted.py)")
-    adopting.add_argument("action", choices=["match"])
+                                                   "adopted entry each older model and surface overlaps (adopted.py); "
+                                                   "`recipes` writes score's look-alike results into its surfaces "
+                                                   "(adopted_recipes.py)")
+    adopting.add_argument("action", choices=["match", "recipes"])
     adopting.add_argument("--source", action="append", help="the adopted set's config/sources.toml row id "
                                                             "(repeatable; default every row with a take_in table)")
-    adopting.add_argument("--proposals", required=True,
-                          help="where to write the proposals (every older entry's row, its pair, score and "
+    adopting.add_argument("--proposals",
+                          help="match: where to write the proposals (every older entry's row, its pair, score and "
                                "reason); a path outside the checkout")
     adopting.add_argument("--sizes", help="a JSON file of models' sizes kept between runs (outside the checkout): "
                                            "each size read is kept there, and a later run reads no bytes again")
     adopting.add_argument("--apply", action="store_true",
-                          help="withdraw each accepted pair's older entry naming its replacement, and rebuild the index")
+                          help="match: withdraw each accepted pair's older entry naming its replacement, and rebuild "
+                               "the index; recipes: write the results (without it, a report only)")
+    adopting.add_argument("--from", dest="from_folder",
+                          help="recipes: the look-alike check's folder (summary.json and <id>@<version>/likeness.json)")
+    adopting.add_argument("--save", action="store_true",
+                          help="recipes, with --apply: commit and push each batch written, under the handover's lock")
+    adopting.add_argument("--report", help="recipes: write the report as JSON")
     adopting.set_defaults(handle=command_adopted)
     tested = commands.add_parser("test", help="run an algorithm entry's tests")
     tested.add_argument("address")
