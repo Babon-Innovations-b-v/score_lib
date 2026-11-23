@@ -22,9 +22,9 @@
       "sha256": "b50560050a09934338cbc0a75cd3082ab94a494de55d48ce0ebc260f94ab9a62"
     },
     "surface.json": {
-      "bytes": 1794,
+      "bytes": 2138,
       "role": "record",
-      "sha256": "56e5e5c4d144a11bb6b4534e5ddf6b2332db6018d116832f7b36ce41c739ad63"
+      "sha256": "c26a5900478a5d50b66a22a151a5583e2f83f366103ed13a6fd7394c817a8c0b"
     }
   },
   "id": "simready_m_opaque_metal_steel_rope_mid_gloss_gray_a01_dbf1163d",
@@ -55,12 +55,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: airSystem_compressor_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

@@ -17,9 +17,9 @@
       "sha256": "edb2e946426813a6cf8f8abd84a3fdbd5cfa67e2c74e30b786c8f6e804fb01b9"
     },
     "surface.json": {
-      "bytes": 1774,
+      "bytes": 2159,
       "role": "record",
-      "sha256": "1b5240759abcedb39de119b8125fd60dd8c35f43620d13ea68a6cd3e12014e74"
+      "sha256": "35c8dd10216072a51314cde6f087b2c5c143efbddb02b60d49f0bad9f0e37aa2"
     }
   },
   "id": "simready_m_opaque_metal_steel_stainless_scratched_a01_f82ad8af",
@@ -49,12 +49,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: powerTool_grinder_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

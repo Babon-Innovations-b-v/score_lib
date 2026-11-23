@@ -22,9 +22,9 @@
       "sha256": "394f71f414aef43409560ce9e7dc827a82efa83c125a15ddc7c0256db874e4fc"
     },
     "surface.json": {
-      "bytes": 1705,
+      "bytes": 2117,
       "role": "record",
-      "sha256": "11026fab59c5cecbb092329104239bf367988f3e4e76dbb2548d6c0d6b31d699"
+      "sha256": "25b6b23aace4b6b57d4b78db0c498b9e98216447a7b4faa2c04bbf275c04f6aa"
     }
   },
   "id": "simready_m_opaque_metal_steel_stainless_clean_a02_041d59e8",
@@ -55,12 +55,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: brakeSystem_pad_b01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

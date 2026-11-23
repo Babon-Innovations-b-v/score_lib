@@ -22,9 +22,9 @@
       "sha256": "130b991ae199d6eb2d8ebbb6c210627e280334e0395af88e679fd115f7b78867"
     },
     "surface.json": {
-      "bytes": 1730,
+      "bytes": 2095,
       "role": "record",
-      "sha256": "63f7e185a93ef647995bfc83c7f4fcaeeac2c5b42d44eb2e6c8dfad144c76af6"
+      "sha256": "7b094612358cde0f3f51f46ea6a1d186f759100760e44f28a326adb47231d30c"
     }
   },
   "id": "simready_m_opaque_metal_steel_stainless_scratched_a01_290e5abb",
@@ -55,12 +55,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: electricalSystem_alternator_d01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

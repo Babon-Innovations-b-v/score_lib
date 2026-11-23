@@ -22,9 +22,9 @@
       "sha256": "10ccd9eec68beeec67b69db782450f140ec02004775b5e293c45195a3c93fc5c"
     },
     "surface.json": {
-      "bytes": 1709,
+      "bytes": 2183,
       "role": "record",
-      "sha256": "19f294c111c207014f9b7a71c7072edc9f4d9e58f60540b4f408838ea6cbd9f4"
+      "sha256": "21d6ef8da0a4fd6fa2434359b6d3d359a4850340fc56222f443924a4ba80589f"
     }
   },
   "id": "simready_m_opaque_plastic_black_dirty_c01_8e4882bf",
@@ -55,12 +55,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: coolingSystem_fan_shroud_b01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

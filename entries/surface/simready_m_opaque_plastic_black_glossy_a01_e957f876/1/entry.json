@@ -22,9 +22,9 @@
       "sha256": "e7e4520e1df80f7ca0fbec7ad7cf5cc53a7ef60a450d87b13b637c290ed20342"
     },
     "surface.json": {
-      "bytes": 1705,
+      "bytes": 2134,
       "role": "record",
-      "sha256": "0175ab95cc610900aaf38411d88667782ac14ece916163d04bdd53f5f77e99ca"
+      "sha256": "b396cfbc04c13a06dfce0897d0505395548f98f577e892d8f8228e22dcaff33c"
     }
   },
   "id": "simready_m_opaque_plastic_black_glossy_a01_e957f876",
@@ -55,12 +55,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: warehouse_barrel_plastic_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

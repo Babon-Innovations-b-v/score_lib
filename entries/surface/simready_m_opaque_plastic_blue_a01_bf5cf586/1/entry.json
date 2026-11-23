@@ -17,9 +17,9 @@
       "sha256": "fe3f2d70899d17d5f4f0ffa0f2c6599617bb211ebbcfca6e10e6cdc8f04e8527"
     },
     "surface.json": {
-      "bytes": 1889,
+      "bytes": 2139,
       "role": "record",
-      "sha256": "640e833075dafdf4f88715ca4dfed29e7caf2efa396c084666602bc0ee075d69"
+      "sha256": "35039501b8471daeba7e811a20ab6c1bee012b3c12942d87b2a0ce7d64b7ca5d"
     }
   },
   "id": "simready_m_opaque_plastic_blue_a01_bf5cf586",
@@ -49,12 +49,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: equipment_extensionCord_EV_type2_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",
