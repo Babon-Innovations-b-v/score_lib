@@ -1,0 +1,109 @@
+{
+  "address": "model/wall_screen_cluster_1.greenhouse@2",
+  "files": {
+    "model.json": {
+      "bytes": 2150,
+      "role": "record",
+      "sha256": "4578c6323e12e98a415576636a7e1d6dff2d72b774d0596562c0d3ca8d481552"
+    },
+    "model.usdc": {
+      "bytes": 247972,
+      "role": "usd",
+      "sha256": "e83bc139b1867c8711f9bd834280e800d8b87993dbbaeb06d97a699f55cbde1f"
+    },
+    "model_glow.usdc": {
+      "bytes": 7572,
+      "role": "usd",
+      "sha256": "3a625a4a47e345ef33a72bbc805bb675f4c1fa0186e77c881a2fb6071d43e452"
+    },
+    "textures/label_air.png": {
+      "bytes": 5139,
+      "role": "texture",
+      "sha256": "baf70b26065a838e3deadc9056381e2324861de3e367fbf10cceaca9fe7f8c22"
+    },
+    "textures/label_power.png": {
+      "bytes": 8787,
+      "role": "texture",
+      "sha256": "419aa68e9ab7af14ce49b6149a765eaa2089e44f8431d03e4965248d68d66841"
+    },
+    "textures/label_water.png": {
+      "bytes": 8043,
+      "role": "texture",
+      "sha256": "154fb691ada19e9650d2ff63aa6743ffc3610460428035e9362868a4dc739742"
+    },
+    "textures/screen.png": {
+      "bytes": 27671,
+      "role": "texture",
+      "sha256": "de83e99eb7abf5aa4c123032b20c317d7a6b9fd4924c15933893e1d05256ed20"
+    },
+    "textures/screen_amber.png": {
+      "bytes": 12231,
+      "role": "texture",
+      "sha256": "3aaa18ee24cff4aea7ad9f3ff4d3fbb231b41077d0e674d17cb02728f1f803af"
+    }
+  },
+  "id": "wall_screen_cluster_1.greenhouse",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/wall_screen_cluster_1.greenhouse@1/model.json, with its parts",
+      "model.usdc": "model/wall_screen_cluster_1.greenhouse@1/model.usdc, remade",
+      "model_glow.usdc": "model/wall_screen_cluster_1.greenhouse@1/model_glow.usdc, remade",
+      "textures/label_air.png": "surface/label_air@2/decal.png, printed as its old recipe printed it",
+      "textures/label_power.png": "surface/label_power@2/decal.png, printed as its old recipe printed it",
+      "textures/label_water.png": "surface/label_water@2/decal.png, printed as its old recipe printed it",
+      "textures/screen.png": "surface/screen_status@1/decal.png, printed as its old recipe printed it",
+      "textures/screen_amber.png": "surface/screen_readout@1/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/anodized@1",
+    "surface/bare_metal@1",
+    "surface/label_air@2",
+    "surface/label_power@2",
+    "surface/label_water@2",
+    "surface/painted_metal@1",
+    "surface/printed@1",
+    "surface/screen@1",
+    "surface/screen_readout@1",
+    "surface/screen_status@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Wall screen cluster 1",
+  "usd": {
+    "default_prim": "/wall_screen_cluster_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/wall_screen_cluster_1.greenhouse/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

@@ -1,0 +1,72 @@
+{
+  "address": "model/food_jug_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 890,
+      "role": "record",
+      "sha256": "2d4c5b2b03de329b829e85681af09db88f6917415b104e3195926f42e311b6e2"
+    },
+    "model.usdc": {
+      "bytes": 35883,
+      "role": "usd",
+      "sha256": "cf9c443b1c3e982f8089295b602857ef626671a20bf8e59db2eb8c8c4c32fcf2"
+    },
+    "textures/label_food_pack.png": {
+      "bytes": 10245,
+      "role": "texture",
+      "sha256": "df2d227252a6db720396e4963d492e4cb2c258595747b7b9867c0c5a76b7721c"
+    }
+  },
+  "id": "food_jug_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/food_jug_1@1/model.json, with its parts",
+      "model.usdc": "model/food_jug_1@1/model.usdc, remade",
+      "textures/label_food_pack.png": "surface/label_food_pack@2/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/label_food_pack@2",
+    "surface/printed@1",
+    "surface/rubber@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Food jug 1",
+  "usd": {
+    "default_prim": "/food_jug_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/food_jug_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

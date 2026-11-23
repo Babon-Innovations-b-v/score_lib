@@ -1,0 +1,72 @@
+{
+  "address": "model/wall_print_5@2",
+  "files": {
+    "model.json": {
+      "bytes": 609,
+      "role": "record",
+      "sha256": "a59b7dc480411eb06ce84a7b2b0fc13c44416d99ba103b3a2e2f6e765cf7154a"
+    },
+    "model.usdc": {
+      "bytes": 5804,
+      "role": "usd",
+      "sha256": "aba7dc78927469707f3c0fb9268e82c22399b587be81245022d9853039c72772"
+    },
+    "textures/floor_2.png": {
+      "bytes": 12777,
+      "role": "texture",
+      "sha256": "b7be15f8ce0b9b8ca4d2af20e5bdc181a46ac6825010fa7ca6835ec17491d7d7"
+    }
+  },
+  "id": "wall_print_5",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/wall_print_5@1/model.json, with its parts",
+      "model.usdc": "model/wall_print_5@1/model.usdc, remade",
+      "textures/floor_2.png": "surface/floor_2@2/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/floor_2@2",
+    "surface/printed@1",
+    "surface/rubber@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "inside"
+    ]
+  },
+  "title": "Wall print 5",
+  "usd": {
+    "default_prim": "/wall_print_5",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/wall_print_5/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

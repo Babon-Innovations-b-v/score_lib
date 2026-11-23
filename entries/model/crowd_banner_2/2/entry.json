@@ -1,0 +1,73 @@
+{
+  "address": "model/crowd_banner_2@2",
+  "files": {
+    "model.json": {
+      "bytes": 816,
+      "role": "record",
+      "sha256": "5f51014c2afb9086ad148f46cf9785d80f5d221453f6de0b2d7b2896694ad0fa"
+    },
+    "model.usdc": {
+      "bytes": 18379,
+      "role": "usd",
+      "sha256": "d67d06679d3962839f1c12c7cac9a4893bf7b06bfdce93846718ffe6e409d21c"
+    },
+    "textures/banner_first.png": {
+      "bytes": 15899,
+      "role": "texture",
+      "sha256": "88612538f813fc3152446d036f9148977201ae75f57af56313b52810144183e7"
+    }
+  },
+  "id": "crowd_banner_2",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/crowd_banner_2@1/model.json, with its parts",
+      "model.usdc": "model/crowd_banner_2@1/model.usdc, remade",
+      "textures/banner_first.png": "surface/banner_first@2/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/banner_first@2",
+    "surface/galvanized@1",
+    "surface/printed@1",
+    "surface/rubber@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "outside"
+    ]
+  },
+  "title": "Crowd banner 2",
+  "usd": {
+    "default_prim": "/crowd_banner_2",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/crowd_banner_2/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

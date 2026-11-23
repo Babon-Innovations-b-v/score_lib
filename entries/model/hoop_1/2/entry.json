@@ -1,0 +1,64 @@
+{
+  "address": "model/hoop_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 638,
+      "role": "record",
+      "sha256": "448c3dda47668f183472dc753636ce5f5919e8f1b5f202ecb484df41e189d56c"
+    },
+    "model.usdc": {
+      "bytes": 94627,
+      "role": "usd",
+      "sha256": "34d73d7f6f730aeefd954941b18727ef5753eb59ee51ddda60a4e5a8cc136664"
+    }
+  },
+  "id": "hoop_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/hoop_1@1/model.json, with its parts",
+      "model.usdc": "model/hoop_1@1/model.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/painted_metal@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Hoop 1",
+  "usd": {
+    "default_prim": "/hoop_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/hoop_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

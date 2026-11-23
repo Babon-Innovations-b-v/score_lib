@@ -1,0 +1,88 @@
+{
+  "address": "model/tool_bench_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 2434,
+      "role": "record",
+      "sha256": "63fabc9339afdc1d590d38fae15a90fff3bc725cdd8ad8b4b722a7a5c2775b38"
+    },
+    "model.usdc": {
+      "bytes": 178658,
+      "role": "usd",
+      "sha256": "2c29e35308ff797aeaf76bc216ea3225b9594e4116becb7b37203e05d94d3db8"
+    },
+    "textures/label_sockets.png": {
+      "bytes": 9766,
+      "role": "texture",
+      "sha256": "1464449794de8b52fd2ecc33b5cca3ff66ac9dac3d35ce5b1d9732990073cce0"
+    },
+    "textures/label_tools.png": {
+      "bytes": 6543,
+      "role": "texture",
+      "sha256": "01fb2391843377c43d42fad110f5221ca6c07f0527c41c79775a02bf7e921925"
+    },
+    "textures/label_wrenches.png": {
+      "bytes": 11829,
+      "role": "texture",
+      "sha256": "6c253e9a261531e86e2885678bf1f6be648e0cfb9699da27101469b1497e65f7"
+    }
+  },
+  "id": "tool_bench_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/tool_bench_1@1/model.json, with its parts",
+      "model.usdc": "model/tool_bench_1@1/model.usdc, remade",
+      "textures/label_sockets.png": "surface/label_sockets@2/decal.png, printed as its old recipe printed it",
+      "textures/label_tools.png": "surface/label_tools@2/decal.png, printed as its old recipe printed it",
+      "textures/label_wrenches.png": "surface/label_wrenches@2/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/bare_metal@1",
+    "surface/label_sockets@2",
+    "surface/label_tools@2",
+    "surface/label_wrenches@2",
+    "surface/painted_metal@1",
+    "surface/printed@1",
+    "surface/wood@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Tool bench 1",
+  "usd": {
+    "default_prim": "/tool_bench_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/tool_bench_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

@@ -1,0 +1,74 @@
+{
+  "address": "model/pit_junction_box_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 1592,
+      "role": "record",
+      "sha256": "964a6a5dd56a1f6baae2a6297cba631f333465e831d5f6ae19c29442958fbce0"
+    },
+    "model.usdc": {
+      "bytes": 83544,
+      "role": "usd",
+      "sha256": "a3b0175a277bc90985a4cda4a8c182368e867606af1151d8b58404f14aabcad2"
+    },
+    "textures/label_junction.png": {
+      "bytes": 13991,
+      "role": "texture",
+      "sha256": "21023aa8489eab54cd99ce71f3d49df250fa3a8b4ed2783cfb2684179da0e5e4"
+    }
+  },
+  "id": "pit_junction_box_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/pit_junction_box_1@1/model.json, with its parts",
+      "model.usdc": "model/pit_junction_box_1@1/model.usdc, remade",
+      "textures/label_junction.png": "surface/label_junction@2/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/bare_metal@1",
+    "surface/label_junction@2",
+    "surface/painted_metal@1",
+    "surface/printed@1",
+    "surface/rubber@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Pit junction box 1",
+  "usd": {
+    "default_prim": "/pit_junction_box_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/pit_junction_box_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

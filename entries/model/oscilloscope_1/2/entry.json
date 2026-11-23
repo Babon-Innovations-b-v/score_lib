@@ -1,0 +1,75 @@
+{
+  "address": "model/oscilloscope_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 1812,
+      "role": "record",
+      "sha256": "5ea16dfe316fc061e9eb05790b043bd4aac6fa4abda7c8f995e5a119c2a1d944"
+    },
+    "model.usdc": {
+      "bytes": 148661,
+      "role": "usd",
+      "sha256": "2134ea72477099fe71c35c26cd9b678e1d471871e29ead028554a5425132478b"
+    },
+    "model_glow.usdc": {
+      "bytes": 3434,
+      "role": "usd",
+      "sha256": "500a84f7fb16a820f64b1c1f9c225a8530fbb32c4567f5f9e076a668c4ebca42"
+    }
+  },
+  "id": "oscilloscope_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/oscilloscope_1@1/model.json, with its parts",
+      "model.usdc": "model/oscilloscope_1@1/model.usdc, remade",
+      "model_glow.usdc": "model/oscilloscope_1@1/model_glow.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade in library surfaces by score's part_looks (tools/library/part_looks) from its atlas regions: its old code build could not be recovered, so its geometry was kept, its faces split by the UV island of the shared atlas they lie in and each island worn in its room's library surface whose recipe colour is nearest the island's painted colour (score 4547b8c54); the shared atlas taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/anodized@1",
+    "surface/bare_metal@1",
+    "surface/cast_metal@1",
+    "surface/glowing@1",
+    "surface/painted_metal@1",
+    "surface/rubber@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Oscilloscope 1",
+  "usd": {
+    "default_prim": "/oscilloscope_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/oscilloscope_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

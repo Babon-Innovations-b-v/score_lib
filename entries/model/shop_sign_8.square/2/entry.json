@@ -1,0 +1,81 @@
+{
+  "address": "model/shop_sign_8.square@2",
+  "files": {
+    "model.json": {
+      "bytes": 1262,
+      "role": "record",
+      "sha256": "7ad855d9fb928e6653864a458d40fffb5f3539d3a8880dbcd3d91499501e04b9"
+    },
+    "model.usdc": {
+      "bytes": 66887,
+      "role": "usd",
+      "sha256": "89423c1ae6109fa77cfedf4667b39eef38d93dfb3a61b9ac075c1fc796d642dc"
+    },
+    "model_glow.usdc": {
+      "bytes": 7274,
+      "role": "usd",
+      "sha256": "cc72b4d47b7d6605d2c23e9089ddaa010eb9f3bf581973cc02e2ba089661c0e6"
+    },
+    "textures/sign_watches.png": {
+      "bytes": 19935,
+      "role": "texture",
+      "sha256": "ca3f751b29cf72565fbf5073cccac9d2802897fa7692157e59768f5c617201d7"
+    }
+  },
+  "id": "shop_sign_8.square",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/shop_sign_8.square@1/model.json, with its parts",
+      "model.usdc": "model/shop_sign_8.square@1/model.usdc, remade",
+      "model_glow.usdc": "model/shop_sign_8.square@1/model_glow.usdc, remade",
+      "textures/sign_watches.png": "surface/sign_watches@2/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/galvanized@1",
+    "surface/glowing@1",
+    "surface/painted_metal@1",
+    "surface/printed@1",
+    "surface/rusted_metal@1",
+    "surface/sign_watches@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "outside"
+    ]
+  },
+  "title": "Shop sign 8",
+  "usd": {
+    "default_prim": "/shop_sign_8",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/shop_sign_8.square/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

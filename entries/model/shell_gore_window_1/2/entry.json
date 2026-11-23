@@ -1,0 +1,67 @@
+{
+  "address": "model/shell_gore_window_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 966,
+      "role": "record",
+      "sha256": "610b98935346643adfa56201207bcd97caf5da0aacb2f5aa09885186bf3d230f"
+    },
+    "model.usdc": {
+      "bytes": 29715,
+      "role": "usd",
+      "sha256": "11803d66c098098689d1927cf595ca2c75e458bfb2af08dc08fb17bdc4cfdd53"
+    }
+  },
+  "id": "shell_gore_window_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/shell_gore_window_1@1/model.json, with its parts",
+      "model.usdc": "model/shell_gore_window_1@1/model.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/anodized@1",
+    "surface/glass@2",
+    "surface/quilted@1",
+    "surface/rubber@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "mars",
+      "outside"
+    ]
+  },
+  "title": "Shell gore window 1",
+  "usd": {
+    "default_prim": "/shell_gore_window_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/shell_gore_window_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

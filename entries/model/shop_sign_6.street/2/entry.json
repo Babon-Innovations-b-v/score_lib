@@ -1,0 +1,81 @@
+{
+  "address": "model/shop_sign_6.street@2",
+  "files": {
+    "model.json": {
+      "bytes": 1268,
+      "role": "record",
+      "sha256": "3bf6d514d38f292306a804a34586ec72247cf0ae35164aa0f0ec475bd6bcb111"
+    },
+    "model.usdc": {
+      "bytes": 67043,
+      "role": "usd",
+      "sha256": "8c584adbdd26dbef528a4c37fd267df8244b56637eed6d913f81d0825d30eeb5"
+    },
+    "model_glow.usdc": {
+      "bytes": 7267,
+      "role": "usd",
+      "sha256": "c53736d3dffaded1ba9b9a18a71b4a713dff151e0f39f39b99eac20894301d4b"
+    },
+    "textures/sign_books.png": {
+      "bytes": 19928,
+      "role": "texture",
+      "sha256": "e5b7292dee111f327fcf1200f8ac2ab7908ec3b1ab636ca9535c894aba2ca9ad"
+    }
+  },
+  "id": "shop_sign_6.street",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/shop_sign_6.street@1/model.json, with its parts",
+      "model.usdc": "model/shop_sign_6.street@1/model.usdc, remade",
+      "model_glow.usdc": "model/shop_sign_6.street@1/model_glow.usdc, remade",
+      "textures/sign_books.png": "surface/sign_books@2/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/galvanized@1",
+    "surface/glowing@1",
+    "surface/painted_metal@1",
+    "surface/printed@1",
+    "surface/rusted_metal@1",
+    "surface/sign_books@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "outside"
+    ]
+  },
+  "title": "Shop sign 6",
+  "usd": {
+    "default_prim": "/shop_sign_6",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/shop_sign_6.street/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

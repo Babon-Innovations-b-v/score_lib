@@ -1,0 +1,87 @@
+{
+  "address": "model/mess_table_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 1480,
+      "role": "record",
+      "sha256": "085ffb63ace75890d46d319189b75e61ff0668edbefb0a1505961a12ae0ce0e3"
+    },
+    "model.usdc": {
+      "bytes": 98087,
+      "role": "usd",
+      "sha256": "3734b557c7135c29041162dc2b0b17ee0390d21282afd439978ddbb1915f65cf"
+    },
+    "textures/label_base_property.png": {
+      "bytes": 13551,
+      "role": "texture",
+      "sha256": "fc641379c014bd1e2e23256e8f961ce8dc906dcf222c3bdc9eda8af41e3684bf"
+    },
+    "textures/label_clean_after_use.png": {
+      "bytes": 12275,
+      "role": "texture",
+      "sha256": "2d75776e7a4b45c6383cc02d59ed70e5b874d7160363a9c15fa840a62b72427d"
+    },
+    "textures/label_mess_table.png": {
+      "bytes": 9609,
+      "role": "texture",
+      "sha256": "6491a1f4c017c5be18de8054847246bb01409459f20c80a2cb22fac98baccf74"
+    }
+  },
+  "id": "mess_table_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/mess_table_1@1/model.json, with its parts",
+      "model.usdc": "model/mess_table_1@1/model.usdc, remade",
+      "textures/label_base_property.png": "surface/label_base_property@2/decal.png, printed as its old recipe printed it",
+      "textures/label_clean_after_use.png": "surface/label_clean_after_use@2/decal.png, printed as its old recipe printed it",
+      "textures/label_mess_table.png": "surface/label_mess_table@2/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/bare_metal@1",
+    "surface/label_base_property@2",
+    "surface/label_clean_after_use@2",
+    "surface/label_mess_table@2",
+    "surface/printed@1",
+    "surface/rubber@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Mess table 1",
+  "usd": {
+    "default_prim": "/mess_table_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/mess_table_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

@@ -1,0 +1,72 @@
+{
+  "address": "model/ration_box_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 742,
+      "role": "record",
+      "sha256": "e2c351f3231653843e66e3bfeac9053f16c0303e6c9012f23cce80cebc760816"
+    },
+    "model.usdc": {
+      "bytes": 24293,
+      "role": "usd",
+      "sha256": "39844da12cbd972dbb3bf252b97132b9d3f4f15563e17d5a91f8dcef9e7b8789"
+    },
+    "textures/label_rations.png": {
+      "bytes": 10338,
+      "role": "texture",
+      "sha256": "1e05a63cba084ce8907a9a648bcd3670bda3c3bda51d96dab4670d7fea566a29"
+    }
+  },
+  "id": "ration_box_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/ration_box_1@1/model.json, with its parts",
+      "model.usdc": "model/ration_box_1@1/model.usdc, remade",
+      "textures/label_rations.png": "surface/label_rations@2/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/label_rations@2",
+    "surface/printed@1",
+    "surface/rubber@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Ration box 1",
+  "usd": {
+    "default_prim": "/ration_box_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/ration_box_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

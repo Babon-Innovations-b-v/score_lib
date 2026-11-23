@@ -1,0 +1,81 @@
+{
+  "address": "model/shop_sign_9.square@2",
+  "files": {
+    "model.json": {
+      "bytes": 1261,
+      "role": "record",
+      "sha256": "e122f4e11c8067de0ae4ade5b384145e0597cd1867426075615d09fb426049d0"
+    },
+    "model.usdc": {
+      "bytes": 66841,
+      "role": "usd",
+      "sha256": "6f7353ad25ddd3eed570f1294a33e3b2b27fb313a4337eb61991bff578af7eda"
+    },
+    "model_glow.usdc": {
+      "bytes": 7282,
+      "role": "usd",
+      "sha256": "1c3cf3d258e33f84294419cf3e09a6f0cfdae2fe7761140411d82015df2b481c"
+    },
+    "textures/sign_barber.png": {
+      "bytes": 23298,
+      "role": "texture",
+      "sha256": "2da21bdc292cc2d3cc8dd838a27afd70d6e41d7395322a36e78378d8d6f95af5"
+    }
+  },
+  "id": "shop_sign_9.square",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/shop_sign_9.square@1/model.json, with its parts",
+      "model.usdc": "model/shop_sign_9.square@1/model.usdc, remade",
+      "model_glow.usdc": "model/shop_sign_9.square@1/model_glow.usdc, remade",
+      "textures/sign_barber.png": "surface/sign_barber@2/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/galvanized@1",
+    "surface/glowing@1",
+    "surface/painted_metal@1",
+    "surface/printed@1",
+    "surface/rusted_metal@1",
+    "surface/sign_barber@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "outside"
+    ]
+  },
+  "title": "Shop sign 9",
+  "usd": {
+    "default_prim": "/shop_sign_9",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/shop_sign_9.square/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

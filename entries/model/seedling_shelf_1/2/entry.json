@@ -1,0 +1,75 @@
+{
+  "address": "model/seedling_shelf_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 1701,
+      "role": "record",
+      "sha256": "27fa02a24fcb3f69e2d040810c9c85ea36888352521f58f1c176193048763828"
+    },
+    "model.usdc": {
+      "bytes": 166020,
+      "role": "usd",
+      "sha256": "16dcb34f6800295195a9bb3e2ca9dba230c5647fc205b4a9b55d39046601871e"
+    },
+    "model_glow.usdc": {
+      "bytes": 14229,
+      "role": "usd",
+      "sha256": "414c4486cf5f7a2a355ff13e2c1d7152ee1ba684165568a3ff33b3b4d746e8ab"
+    }
+  },
+  "id": "seedling_shelf_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/seedling_shelf_1@1/model.json, with its parts",
+      "model.usdc": "model/seedling_shelf_1@1/model.usdc, remade",
+      "model_glow.usdc": "model/seedling_shelf_1@1/model_glow.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade in library surfaces by score's part_looks (tools/library/part_looks) from its atlas regions: its old code build could not be recovered, so its geometry was kept, its faces split by the UV island of the shared atlas they lie in and each island worn in its room's library surface whose recipe colour is nearest the island's painted colour (score 4547b8c54); the shared atlas taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/anodized@1",
+    "surface/bare_metal@1",
+    "surface/cast_metal@1",
+    "surface/glowing@1",
+    "surface/painted_metal@1",
+    "surface/rubber@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Seedling shelf 1",
+  "usd": {
+    "default_prim": "/seedling_shelf_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/seedling_shelf_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

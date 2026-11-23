@@ -1,0 +1,81 @@
+{
+  "address": "model/far_shop_sign_6@2",
+  "files": {
+    "model.json": {
+      "bytes": 1291,
+      "role": "record",
+      "sha256": "ba40acc3f6a4fc8d159498e3323ad6b356e80f14b60c3993fed91f7545a95408"
+    },
+    "model.usdc": {
+      "bytes": 66844,
+      "role": "usd",
+      "sha256": "c8acd56985252a356a81409f675d3a7db662f9e3698e13771759457bb0f4ebb6"
+    },
+    "model_glow.usdc": {
+      "bytes": 7254,
+      "role": "usd",
+      "sha256": "e1ca11d70203e3c7187f598d8b8fee3bca261f82664e0efd9a6cf3aaf28fe9be"
+    },
+    "textures/sign_electric.png": {
+      "bytes": 13014,
+      "role": "texture",
+      "sha256": "f7eaab224fddbbb36c4d7db42c4c3a61f66f0538ea89ba9f55362e4978a2f262"
+    }
+  },
+  "id": "far_shop_sign_6",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/far_shop_sign_6@1/model.json, with its parts",
+      "model.usdc": "model/far_shop_sign_6@1/model.usdc, remade",
+      "model_glow.usdc": "model/far_shop_sign_6@1/model_glow.usdc, remade",
+      "textures/sign_electric.png": "surface/sign_electric@2/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/galvanized@1",
+    "surface/glowing@1",
+    "surface/painted_metal@1",
+    "surface/printed@1",
+    "surface/rusted_metal@1",
+    "surface/sign_electric@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "outside"
+    ]
+  },
+  "title": "Far shop sign 6",
+  "usd": {
+    "default_prim": "/far_shop_sign_6",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/far_shop_sign_6/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

@@ -1,0 +1,90 @@
+{
+  "address": "model/rig_rail_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 1765,
+      "role": "record",
+      "sha256": "5e230489fc527c66f4fd0f6fb1a65dd024d8623f90996182a7a05583198e3440"
+    },
+    "model.usdc": {
+      "bytes": 162884,
+      "role": "usd",
+      "sha256": "1fdea45eacfca97c59948f521cd118884fb92c6211c83007dd1a57a8efd52300"
+    },
+    "textures/label_high_voltage.png": {
+      "bytes": 8380,
+      "role": "texture",
+      "sha256": "266ae78ed8c62b375297ba5c1f29e47eb3f4f709dbfbfa071a91687cf44b1a3b"
+    },
+    "textures/label_rail_load.png": {
+      "bytes": 15882,
+      "role": "texture",
+      "sha256": "2b3ebf1127c877bf06268b55933c69f8fb015ffcbc49d6424ec1a7fc3b278b7c"
+    },
+    "textures/note_check_cables.png": {
+      "bytes": 16782,
+      "role": "texture",
+      "sha256": "0384cfa9990fefe97cd3a65ef224af560c6903c5cc5c92b5bf65aa42a08c237b"
+    }
+  },
+  "id": "rig_rail_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/rig_rail_1@1/model.json, with its parts",
+      "model.usdc": "model/rig_rail_1@1/model.usdc, remade",
+      "textures/label_high_voltage.png": "surface/label_high_voltage@2/decal.png, printed as its old recipe printed it",
+      "textures/label_rail_load.png": "surface/label_rail_load@2/decal.png, printed as its old recipe printed it",
+      "textures/note_check_cables.png": "surface/note_check_cables@2/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/bare_metal@1",
+    "surface/cast_metal@1",
+    "surface/galvanized@1",
+    "surface/label_high_voltage@2",
+    "surface/label_rail_load@2",
+    "surface/note_check_cables@2",
+    "surface/painted_metal@1",
+    "surface/printed@1",
+    "surface/rubber@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Rig rail 1",
+  "usd": {
+    "default_prim": "/rig_rail_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/rig_rail_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

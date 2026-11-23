@@ -1,0 +1,81 @@
+{
+  "address": "model/shop_sign_4.square@2",
+  "files": {
+    "model.json": {
+      "bytes": 1263,
+      "role": "record",
+      "sha256": "65ba03e985035977e149386e7bca7469d6b42b492a4c11dada59dcb8f1e3fbcf"
+    },
+    "model.usdc": {
+      "bytes": 66897,
+      "role": "usd",
+      "sha256": "bddd8856f32dccb54079e977fa2724dc8267c8bd798bddfc4f02d6734ac0d058"
+    },
+    "model_glow.usdc": {
+      "bytes": 7289,
+      "role": "usd",
+      "sha256": "c19cdbc1cb69a71fd42f61f7c58347c9b4f6639d6ccd0a29b90e914263b9cec1"
+    },
+    "textures/sign_electric.png": {
+      "bytes": 13014,
+      "role": "texture",
+      "sha256": "f7eaab224fddbbb36c4d7db42c4c3a61f66f0538ea89ba9f55362e4978a2f262"
+    }
+  },
+  "id": "shop_sign_4.square",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/shop_sign_4.square@1/model.json, with its parts",
+      "model.usdc": "model/shop_sign_4.square@1/model.usdc, remade",
+      "model_glow.usdc": "model/shop_sign_4.square@1/model_glow.usdc, remade",
+      "textures/sign_electric.png": "surface/sign_electric@2/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/galvanized@1",
+    "surface/glowing@1",
+    "surface/painted_metal@1",
+    "surface/printed@1",
+    "surface/rusted_metal@1",
+    "surface/sign_electric@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "outside"
+    ]
+  },
+  "title": "Shop sign 4",
+  "usd": {
+    "default_prim": "/shop_sign_4",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/shop_sign_4.square/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

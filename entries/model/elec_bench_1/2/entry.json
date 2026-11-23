@@ -1,0 +1,82 @@
+{
+  "address": "model/elec_bench_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 3458,
+      "role": "record",
+      "sha256": "76eab0ee7669d5f80a40ae491416344953ca269690e6d42cd0a76d7d190fad88"
+    },
+    "model.usdc": {
+      "bytes": 347163,
+      "role": "usd",
+      "sha256": "772e637c337e4fc032e8a0ed650b1afdc7e6ec85c0e104ef3b6e45bb60a59665"
+    },
+    "textures/label_esd_safe.png": {
+      "bytes": 9919,
+      "role": "texture",
+      "sha256": "01e90d5d152a6b52c85629e0aef89fd6603092b4a6cbd3793f906e576a81a300"
+    },
+    "textures/label_power.png": {
+      "bytes": 8787,
+      "role": "texture",
+      "sha256": "419aa68e9ab7af14ce49b6149a765eaa2089e44f8431d03e4965248d68d66841"
+    }
+  },
+  "id": "elec_bench_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/elec_bench_1@1/model.json, with its parts",
+      "model.usdc": "model/elec_bench_1@1/model.usdc, remade",
+      "textures/label_esd_safe.png": "surface/label_esd_safe@2/decal.png, printed as its old recipe printed it",
+      "textures/label_power.png": "surface/label_power@2/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/anodized@1",
+    "surface/bare_metal@1",
+    "surface/label_esd_safe@2",
+    "surface/label_power@2",
+    "surface/painted_metal@1",
+    "surface/printed@1",
+    "surface/rubber@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Elec bench 1",
+  "usd": {
+    "default_prim": "/elec_bench_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/elec_bench_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

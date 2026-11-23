@@ -1,0 +1,95 @@
+{
+  "address": "model/work_desk_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 2932,
+      "role": "record",
+      "sha256": "df0aff4eae836d62cfcf89e46662fade1bafdf839798270877df7bad09c742cf"
+    },
+    "model.usdc": {
+      "bytes": 126650,
+      "role": "usd",
+      "sha256": "aabab8a44fc57fbea1c9b177b136c6c7a258ec5224fc74a041e93d6e4ec8b3e8"
+    },
+    "textures/label_caution_hot.png": {
+      "bytes": 9944,
+      "role": "texture",
+      "sha256": "dfeac9971f78211290251a5fe67d9b071bcf0079ffabc6d6ea34085f030f39c2"
+    },
+    "textures/label_data_entry.png": {
+      "bytes": 9074,
+      "role": "texture",
+      "sha256": "3197f393cd6c47d93cbabdfe1e12eae956e323b8793f52d05da69a359e0e9f47"
+    },
+    "textures/label_spare_parts.png": {
+      "bytes": 9807,
+      "role": "texture",
+      "sha256": "ded6eb909f3396493058aa5bb0aeb1736c6fc68f3d346ac063b24bc6d44d5ec9"
+    },
+    "textures/label_station_log.png": {
+      "bytes": 10858,
+      "role": "texture",
+      "sha256": "72e4d087bf43fc3a6020f9f6265dee5d219e28ffadeed50b91919e659026a134"
+    }
+  },
+  "id": "work_desk_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/work_desk_1@1/model.json, with its parts",
+      "model.usdc": "model/work_desk_1@1/model.usdc, remade",
+      "textures/label_caution_hot.png": "surface/label_caution_hot@2/decal.png, printed as its old recipe printed it",
+      "textures/label_data_entry.png": "surface/label_data_entry@2/decal.png, printed as its old recipe printed it",
+      "textures/label_spare_parts.png": "surface/label_spare_parts@2/decal.png, printed as its old recipe printed it",
+      "textures/label_station_log.png": "surface/label_station_log@2/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/bare_metal@1",
+    "surface/galvanized@1",
+    "surface/label_caution_hot@2",
+    "surface/label_data_entry@2",
+    "surface/label_spare_parts@2",
+    "surface/label_station_log@2",
+    "surface/printed@1",
+    "surface/rubber@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Work desk 1",
+  "usd": {
+    "default_prim": "/work_desk_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/work_desk_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

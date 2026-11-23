@@ -1,0 +1,110 @@
+{
+  "address": "model/door_control_box_1.workshop@2",
+  "files": {
+    "model.json": {
+      "bytes": 2096,
+      "role": "record",
+      "sha256": "192d29f132274d5c5ad7e9645c2ad1a8ac2c2a4e91e13dcd5ef7c6ff7e0e650a"
+    },
+    "model.usdc": {
+      "bytes": 66490,
+      "role": "usd",
+      "sha256": "8f4a7b54446ddb7eb4b874a2e20baf308d94b5220e34add203df6651a4817811"
+    },
+    "model_glow.usdc": {
+      "bytes": 7634,
+      "role": "usd",
+      "sha256": "dc90833f7e54ba86c521f403ff398609465f09e12dd292b93f696efc4c54d062"
+    },
+    "textures/keypad_print.png": {
+      "bytes": 15493,
+      "role": "texture",
+      "sha256": "2a7591ee4947f340a2e622e477a3dcaedd78b4dc672e050a184f3a446226f61c"
+    },
+    "textures/label_check_seal.png": {
+      "bytes": 9327,
+      "role": "texture",
+      "sha256": "4ae8603939ca7730c95ba83585120b61492c1fecdfca0121d1a5db682b185259"
+    },
+    "textures/label_control_box.png": {
+      "bytes": 11862,
+      "role": "texture",
+      "sha256": "2cf25f7f1333f5222675c7f46e5b7ce7b1c9e9c52faebbd76f6175e0a16daa94"
+    },
+    "textures/screen_amber.png": {
+      "bytes": 12231,
+      "role": "texture",
+      "sha256": "3aaa18ee24cff4aea7ad9f3ff4d3fbb231b41077d0e674d17cb02728f1f803af"
+    },
+    "textures/sheet_main_box.png": {
+      "bytes": 11988,
+      "role": "texture",
+      "sha256": "6d2ada0cad66e642f41afc8509cf37e58797c42de0048da0647b9362ac78da54"
+    }
+  },
+  "id": "door_control_box_1.workshop",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/door_control_box_1.workshop@1/model.json, with its parts",
+      "model.usdc": "model/door_control_box_1.workshop@1/model.usdc, remade",
+      "model_glow.usdc": "model/door_control_box_1.workshop@1/model_glow.usdc, remade",
+      "textures/keypad_print.png": "surface/keypad_print@2/decal.png, printed as its old recipe printed it",
+      "textures/label_check_seal.png": "surface/label_check_seal@2/decal.png, printed as its old recipe printed it",
+      "textures/label_control_box.png": "surface/label_control_box@2/decal.png, printed as its old recipe printed it",
+      "textures/screen_amber.png": "surface/screen_readout@1/decal.png, printed as its old recipe printed it",
+      "textures/sheet_main_box.png": "surface/sheet_main_box@2/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/anodized@1",
+    "surface/bare_metal@1",
+    "surface/glowing@1",
+    "surface/keypad_print@2",
+    "surface/label_check_seal@2",
+    "surface/label_control_box@2",
+    "surface/painted_metal@1",
+    "surface/printed@1",
+    "surface/screen@1",
+    "surface/screen_readout@1",
+    "surface/sheet_main_box@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Door control box 1",
+  "usd": {
+    "default_prim": "/door_control_box_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/door_control_box_1.workshop/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

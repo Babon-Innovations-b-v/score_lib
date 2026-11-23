@@ -1,0 +1,81 @@
+{
+  "address": "model/intercom_panel_1.workshop@2",
+  "files": {
+    "model.json": {
+      "bytes": 1642,
+      "role": "record",
+      "sha256": "9dff7797be8f2f1299c17299373f58d0b42bb99f9e4f0b9d37d87fb00a2131fa"
+    },
+    "model.usdc": {
+      "bytes": 113457,
+      "role": "usd",
+      "sha256": "d8079398b722c23f5ba8edf8b9512023ce48895f1abe0577b966b493d4a66b4c"
+    },
+    "textures/intercom_print.png": {
+      "bytes": 9144,
+      "role": "texture",
+      "sha256": "00344d4293c258010798ea8501494a7cee9a611618511441e03bc8d78b7bb902"
+    },
+    "textures/label_handset.png": {
+      "bytes": 12569,
+      "role": "texture",
+      "sha256": "b0771440951ee56183d2dff740ed655062cf164cd037603e56b5541f2782093c"
+    }
+  },
+  "id": "intercom_panel_1.workshop",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/intercom_panel_1.workshop@1/model.json, with its parts",
+      "model.usdc": "model/intercom_panel_1.workshop@1/model.usdc, remade",
+      "textures/intercom_print.png": "surface/intercom_print@2/decal.png, printed as its old recipe printed it",
+      "textures/label_handset.png": "surface/label_handset@2/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/anodized@1",
+    "surface/bare_metal@1",
+    "surface/intercom_print@2",
+    "surface/label_handset@2",
+    "surface/painted_metal@1",
+    "surface/printed@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Intercom panel 1",
+  "usd": {
+    "default_prim": "/intercom_panel_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/intercom_panel_1.workshop/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

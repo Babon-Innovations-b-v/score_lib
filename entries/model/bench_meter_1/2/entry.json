@@ -1,0 +1,88 @@
+{
+  "address": "model/bench_meter_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 2217,
+      "role": "record",
+      "sha256": "1e657d447bb3363e39a409c92ec3ab66f1b86618682476a1fc4a00f67f0e77cf"
+    },
+    "model.usdc": {
+      "bytes": 166118,
+      "role": "usd",
+      "sha256": "94580e5cc9192823578c590fe90cd2f1436bdac0d7a592a5bc115e24b7d9c61f"
+    },
+    "model_glow.usdc": {
+      "bytes": 4274,
+      "role": "usd",
+      "sha256": "137256a32eec53479f0d2c756c528c3b6e6e3196c601ee810f228643375adf58"
+    },
+    "textures/label_multimeter.png": {
+      "bytes": 6123,
+      "role": "texture",
+      "sha256": "698ff8a25279bf802770aaf81af4324c4097052120e0012d559afabd40461fbd"
+    },
+    "textures/screen.png": {
+      "bytes": 27671,
+      "role": "texture",
+      "sha256": "de83e99eb7abf5aa4c123032b20c317d7a6b9fd4924c15933893e1d05256ed20"
+    }
+  },
+  "id": "bench_meter_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/bench_meter_1@1/model.json, with its parts",
+      "model.usdc": "model/bench_meter_1@1/model.usdc, remade",
+      "model_glow.usdc": "model/bench_meter_1@1/model_glow.usdc, remade",
+      "textures/label_multimeter.png": "surface/label_multimeter@2/decal.png, printed as its old recipe printed it",
+      "textures/screen.png": "surface/screen_status@1/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/anodized@1",
+    "surface/label_multimeter@2",
+    "surface/painted_metal@1",
+    "surface/printed@1",
+    "surface/rubber@2",
+    "surface/screen@1",
+    "surface/screen_status@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Bench meter 1",
+  "usd": {
+    "default_prim": "/bench_meter_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/bench_meter_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

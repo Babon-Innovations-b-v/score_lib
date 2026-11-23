@@ -1,0 +1,79 @@
+{
+  "address": "model/barber_pole_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 1069,
+      "role": "record",
+      "sha256": "5f1a9146f5567866ef3500dd927d0eb7c593c23d1c0f8a2f9e4e3e68c3bfdfb7"
+    },
+    "model.usdc": {
+      "bytes": 19689,
+      "role": "usd",
+      "sha256": "1b3747db0c6518a65d41f28e5ee82df45950c03f2470af38450c98a8d5637c2b"
+    },
+    "model_glow.usdc": {
+      "bytes": 5791,
+      "role": "usd",
+      "sha256": "3d4bc64d8c48d605cbdc3ee175358c43d4950a88b4cce93f431a5f99b69577ab"
+    },
+    "textures/stripes_barber.png": {
+      "bytes": 7557,
+      "role": "texture",
+      "sha256": "a99a45b333e3e72993f38e39f16efed455aa8496d6906f373491fd279fbd9743"
+    }
+  },
+  "id": "barber_pole_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/barber_pole_1@1/model.json, with its parts",
+      "model.usdc": "model/barber_pole_1@1/model.usdc, remade",
+      "model_glow.usdc": "model/barber_pole_1@1/model_glow.usdc, remade",
+      "textures/stripes_barber.png": "surface/stripes_barber@2/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/bare_metal@1",
+    "surface/glowing@1",
+    "surface/printed@1",
+    "surface/stripes_barber@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "outside"
+    ]
+  },
+  "title": "Barber pole 1",
+  "usd": {
+    "default_prim": "/barber_pole_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/barber_pole_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

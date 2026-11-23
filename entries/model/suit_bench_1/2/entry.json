@@ -1,0 +1,87 @@
+{
+  "address": "model/suit_bench_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 1262,
+      "role": "record",
+      "sha256": "4cce74467830e4b6a6935ce5be00996deb4670478dd801ba87dd99436636e83c"
+    },
+    "model.usdc": {
+      "bytes": 52944,
+      "role": "usd",
+      "sha256": "a78ab1a897816bead636e4f3d3df7db61c8a1375d29bafd709f20bc6922fc90d"
+    },
+    "textures/label_suit_up.png": {
+      "bytes": 11420,
+      "role": "texture",
+      "sha256": "75a9ed3bc8ee73d54c481ddb6a0cdea12b1a9efffa6d39915dacdf19a19e9a47"
+    },
+    "textures/note_bench.png": {
+      "bytes": 11180,
+      "role": "texture",
+      "sha256": "94ab187f1c25c217d122c96a6cb2c5bde2c7d662e82159df055d7cb5a3b2fd14"
+    },
+    "textures/stencil_suit_up_bench.png": {
+      "bytes": 7127,
+      "role": "texture",
+      "sha256": "d0ce3d9feeb90a2dda1df8e0ad425973ef7b4d05a076e9c5c63fc4041e91dae4"
+    }
+  },
+  "id": "suit_bench_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/suit_bench_1@1/model.json, with its parts",
+      "model.usdc": "model/suit_bench_1@1/model.usdc, remade",
+      "textures/label_suit_up.png": "surface/label_suit_up@2/decal.png, printed as its old recipe printed it",
+      "textures/note_bench.png": "surface/note_bench@2/decal.png, printed as its old recipe printed it",
+      "textures/stencil_suit_up_bench.png": "surface/stencil_suit_up_bench@2/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/galvanized@1",
+    "surface/label_suit_up@2",
+    "surface/note_bench@2",
+    "surface/printed@1",
+    "surface/rubber@2",
+    "surface/stencil_suit_up_bench@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Suit bench 1",
+  "usd": {
+    "default_prim": "/suit_bench_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/suit_bench_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

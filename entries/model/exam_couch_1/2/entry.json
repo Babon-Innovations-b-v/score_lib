@@ -1,0 +1,81 @@
+{
+  "address": "model/exam_couch_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 1795,
+      "role": "record",
+      "sha256": "0c148afe7191b5cc668f856d351becefe34426dad51277968ed929fd11be37fb"
+    },
+    "model.usdc": {
+      "bytes": 103043,
+      "role": "usd",
+      "sha256": "5c2e27ec1dfcaafdfab29d89278f0cac23f7e0c3902a073a49449f0ddef7a03d"
+    },
+    "textures/label_clean_after_use.png": {
+      "bytes": 12275,
+      "role": "texture",
+      "sha256": "2d75776e7a4b45c6383cc02d59ed70e5b874d7160363a9c15fa840a62b72427d"
+    },
+    "textures/label_exam_couch.png": {
+      "bytes": 12575,
+      "role": "texture",
+      "sha256": "35f640c1797deefdc052ced3a381c246bf0c9e01fda8510fd76915b958ee6e70"
+    }
+  },
+  "id": "exam_couch_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/exam_couch_1@1/model.json, with its parts",
+      "model.usdc": "model/exam_couch_1@1/model.usdc, remade",
+      "textures/label_clean_after_use.png": "surface/label_clean_after_use@2/decal.png, printed as its old recipe printed it",
+      "textures/label_exam_couch.png": "surface/label_exam_couch@2/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/galvanized@1",
+    "surface/label_clean_after_use@2",
+    "surface/label_exam_couch@2",
+    "surface/painted_metal@1",
+    "surface/printed@1",
+    "surface/rubber@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Exam couch 1",
+  "usd": {
+    "default_prim": "/exam_couch_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/exam_couch_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

@@ -1,0 +1,72 @@
+{
+  "address": "model/wall_print_3.stairwell@2",
+  "files": {
+    "model.json": {
+      "bytes": 613,
+      "role": "record",
+      "sha256": "e52b2cf34b6dac9ee758b54ef8f3fd197e87b27bc8abb9fe2bfb773ac1ee31ee"
+    },
+    "model.usdc": {
+      "bytes": 5807,
+      "role": "usd",
+      "sha256": "471ff306eea1ccfb05e4a5aca31b2b9c84fb36a081b3173059a2416027998d61"
+    },
+    "textures/couplet_top.png": {
+      "bytes": 30536,
+      "role": "texture",
+      "sha256": "362d2af895d9c724a7358a480e07f9a9555d31f37d23bcc413e890168a83a980"
+    }
+  },
+  "id": "wall_print_3.stairwell",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/wall_print_3.stairwell@1/model.json, with its parts",
+      "model.usdc": "model/wall_print_3.stairwell@1/model.usdc, remade",
+      "textures/couplet_top.png": "surface/couplet_top@2/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/couplet_top@2",
+    "surface/printed@1",
+    "surface/rubber@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "inside"
+    ]
+  },
+  "title": "Wall print 3",
+  "usd": {
+    "default_prim": "/wall_print_3",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/wall_print_3.stairwell/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

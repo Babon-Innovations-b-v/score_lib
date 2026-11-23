@@ -1,0 +1,77 @@
+{
+  "address": "model/sleep_pod_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 3099,
+      "role": "record",
+      "sha256": "15977ed98c463d3ff3475620228a28e391db2d9c8f35a1e73b36cc0581930a14"
+    },
+    "model.usdc": {
+      "bytes": 168332,
+      "role": "usd",
+      "sha256": "06a8ae3ee8a646c024e14e3d7e40f49650685bc3d1436f2cda7cef08148b3a7c"
+    },
+    "model_glow.usdc": {
+      "bytes": 9686,
+      "role": "usd",
+      "sha256": "6d9cb99c2ff085e54412f5a4b284fa291501edfbe7a957b1307cb19282e7c589"
+    }
+  },
+  "id": "sleep_pod_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/sleep_pod_1@1/model.json, with its parts",
+      "model.usdc": "model/sleep_pod_1@1/model.usdc, remade",
+      "model_glow.usdc": "model/sleep_pod_1@1/model_glow.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade in library surfaces by score's part_looks (tools/library/part_looks) from its atlas regions: its old code build could not be recovered, so its geometry was kept, its faces split by the UV island of the shared atlas they lie in and each island worn in its room's library surface whose recipe colour is nearest the island's painted colour (score 4547b8c54); the shared atlas taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/anodized@1",
+    "surface/bare_metal@1",
+    "surface/cast_metal@1",
+    "surface/glass@2",
+    "surface/glowing@1",
+    "surface/painted_metal@1",
+    "surface/quilted@1",
+    "surface/rubber@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Sleep pod 1",
+  "usd": {
+    "default_prim": "/sleep_pod_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/sleep_pod_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

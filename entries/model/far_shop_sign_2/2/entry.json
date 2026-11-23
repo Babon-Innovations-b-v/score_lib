@@ -1,0 +1,81 @@
+{
+  "address": "model/far_shop_sign_2@2",
+  "files": {
+    "model.json": {
+      "bytes": 1289,
+      "role": "record",
+      "sha256": "216c709aa43740574ecc96ed8f5e98645cde0dd6944211762516bb9d393229c1"
+    },
+    "model.usdc": {
+      "bytes": 66847,
+      "role": "usd",
+      "sha256": "a67a0b053cca170357c82bd1ac4e58517d79ef40a093f2282d53193aacda235d"
+    },
+    "model_glow.usdc": {
+      "bytes": 7254,
+      "role": "usd",
+      "sha256": "c1325aa10b2fce119def59d78dbd6cd220258377d401757350b2eeb7200ed892"
+    },
+    "textures/sign_barber.png": {
+      "bytes": 23298,
+      "role": "texture",
+      "sha256": "2da21bdc292cc2d3cc8dd838a27afd70d6e41d7395322a36e78378d8d6f95af5"
+    }
+  },
+  "id": "far_shop_sign_2",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/far_shop_sign_2@1/model.json, with its parts",
+      "model.usdc": "model/far_shop_sign_2@1/model.usdc, remade",
+      "model_glow.usdc": "model/far_shop_sign_2@1/model_glow.usdc, remade",
+      "textures/sign_barber.png": "surface/sign_barber@2/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/galvanized@1",
+    "surface/glowing@1",
+    "surface/painted_metal@1",
+    "surface/printed@1",
+    "surface/rusted_metal@1",
+    "surface/sign_barber@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "outside"
+    ]
+  },
+  "title": "Far shop sign 2",
+  "usd": {
+    "default_prim": "/far_shop_sign_2",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/far_shop_sign_2/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

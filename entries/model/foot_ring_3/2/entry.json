@@ -1,0 +1,64 @@
+{
+  "address": "model/foot_ring_3@2",
+  "files": {
+    "model.json": {
+      "bytes": 622,
+      "role": "record",
+      "sha256": "7e7f8840a558872653e529c0c0da2f27987363808594eb68061690f3ec4a3e6a"
+    },
+    "model.usdc": {
+      "bytes": 15421,
+      "role": "usd",
+      "sha256": "a6c72f6d054c516f78238a09756b881dfc75faa850a84ad10fd65aa995f8c16c"
+    }
+  },
+  "id": "foot_ring_3",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/foot_ring_3@1/model.json, with its parts",
+      "model.usdc": "model/foot_ring_3@1/model.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/quilted@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "mars",
+      "outside"
+    ]
+  },
+  "title": "Foot ring 3",
+  "usd": {
+    "default_prim": "/foot_ring_3",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/foot_ring_3/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

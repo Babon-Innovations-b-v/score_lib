@@ -1,0 +1,73 @@
+{
+  "address": "model/wall_upper_pipes_1.lab@2",
+  "files": {
+    "model.json": {
+      "bytes": 1783,
+      "role": "record",
+      "sha256": "6adb4291e4eb357b89255eec7cad9d82569b763177a1d6d0367351495605e872"
+    },
+    "model.usdc": {
+      "bytes": 118773,
+      "role": "usd",
+      "sha256": "abd82363b763bf9af418ff6d8702b5e54475e944d83f7b66f56eb168870dba88"
+    },
+    "textures/label_caution_hot.png": {
+      "bytes": 9944,
+      "role": "texture",
+      "sha256": "dfeac9971f78211290251a5fe67d9b071bcf0079ffabc6d6ea34085f030f39c2"
+    }
+  },
+  "id": "wall_upper_pipes_1.lab",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/wall_upper_pipes_1.lab@1/model.json, with its parts",
+      "model.usdc": "model/wall_upper_pipes_1.lab@1/model.usdc, remade",
+      "textures/label_caution_hot.png": "surface/label_caution_hot@2/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/bare_metal@1",
+    "surface/label_caution_hot@2",
+    "surface/painted_metal@1",
+    "surface/printed@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Wall upper pipes 1",
+  "usd": {
+    "default_prim": "/wall_upper_pipes_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/wall_upper_pipes_1.lab/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

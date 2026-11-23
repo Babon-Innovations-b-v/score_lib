@@ -1,0 +1,87 @@
+{
+  "address": "model/status_display_1.workshop@2",
+  "files": {
+    "model.json": {
+      "bytes": 1336,
+      "role": "record",
+      "sha256": "5e06557ec90dce0de777f06ae3b4d338a1ee6af1df9740f573fb8f15d428d477"
+    },
+    "model.usdc": {
+      "bytes": 84839,
+      "role": "usd",
+      "sha256": "e94c01478ccdb6e88862a881edfa41617936c2b4986b65a8c14ba572edb74372"
+    },
+    "model_glow.usdc": {
+      "bytes": 4255,
+      "role": "usd",
+      "sha256": "cfff2c3037908d21c1793e9d341c8d0a7d1555e068c3710daeed0a5fa051eeab"
+    },
+    "textures/label_life_support.png": {
+      "bytes": 10165,
+      "role": "texture",
+      "sha256": "473f2cfad1127e3c695659081793bc243038661ed2c2d94da0f8c6c31c3c5ae2"
+    },
+    "textures/screen.png": {
+      "bytes": 27671,
+      "role": "texture",
+      "sha256": "de83e99eb7abf5aa4c123032b20c317d7a6b9fd4924c15933893e1d05256ed20"
+    }
+  },
+  "id": "status_display_1.workshop",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/status_display_1.workshop@1/model.json, with its parts",
+      "model.usdc": "model/status_display_1.workshop@1/model.usdc, remade",
+      "model_glow.usdc": "model/status_display_1.workshop@1/model_glow.usdc, remade",
+      "textures/label_life_support.png": "surface/label_life_support@2/decal.png, printed as its old recipe printed it",
+      "textures/screen.png": "surface/screen_status@1/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/bare_metal@1",
+    "surface/label_life_support@2",
+    "surface/painted_metal@1",
+    "surface/printed@1",
+    "surface/screen@1",
+    "surface/screen_status@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Status display 1",
+  "usd": {
+    "default_prim": "/status_display_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/status_display_1.workshop/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

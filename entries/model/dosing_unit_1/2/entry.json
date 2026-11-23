@@ -1,0 +1,126 @@
+{
+  "address": "model/dosing_unit_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 4661,
+      "role": "record",
+      "sha256": "b01027defde928834669c1541470138ccaefafef3213f51defdaaf880b063fa3"
+    },
+    "model.usdc": {
+      "bytes": 440072,
+      "role": "usd",
+      "sha256": "8fd1f752e50887757924a6a6d2c9b77ef115601f3eeb8044129dc5b9347e4f20"
+    },
+    "model_glow.usdc": {
+      "bytes": 12963,
+      "role": "usd",
+      "sha256": "7a6681dde449b893f3113b09dbaf0d78c58f20f0fce98aa57a341dbad6a5eda4"
+    },
+    "textures/label_dose_meter.png": {
+      "bytes": 9772,
+      "role": "texture",
+      "sha256": "69ed209bb3694fbccc3e66c2f6047899a5c4c4f0b7e16cd6a005242527840abd"
+    },
+    "textures/label_main_unit.png": {
+      "bytes": 7151,
+      "role": "texture",
+      "sha256": "7bab55fccf92fafaa1d8874c5b48758954a8041e0a59fbf4e8612f7d1774e9ed"
+    },
+    "textures/label_nutrient_supply.png": {
+      "bytes": 11851,
+      "role": "texture",
+      "sha256": "5b33da1cb6290032102419dd11dd1868c1c0a827cfa7e5b27375885cefe42f83"
+    },
+    "textures/label_pump_a.png": {
+      "bytes": 6652,
+      "role": "texture",
+      "sha256": "9f26528599882071069a01bee720e138c34c7cd161039194aca416bd058610b6"
+    },
+    "textures/label_pump_b.png": {
+      "bytes": 6583,
+      "role": "texture",
+      "sha256": "5253cfe5a8308dfc622c96d5c86653934dc156717b029a9a19839201b313f29c"
+    },
+    "textures/label_pump_c.png": {
+      "bytes": 6558,
+      "role": "texture",
+      "sha256": "bc1c384e0368f3885e83eaf6983d91bf27732a507a7045b96b55f4af2b7d2420"
+    },
+    "textures/screen.png": {
+      "bytes": 27671,
+      "role": "texture",
+      "sha256": "de83e99eb7abf5aa4c123032b20c317d7a6b9fd4924c15933893e1d05256ed20"
+    }
+  },
+  "id": "dosing_unit_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/dosing_unit_1@1/model.json, with its parts",
+      "model.usdc": "model/dosing_unit_1@1/model.usdc, remade",
+      "model_glow.usdc": "model/dosing_unit_1@1/model_glow.usdc, remade",
+      "textures/label_dose_meter.png": "surface/label_dose_meter@2/decal.png, printed as its old recipe printed it",
+      "textures/label_main_unit.png": "surface/label_main_unit@2/decal.png, printed as its old recipe printed it",
+      "textures/label_nutrient_supply.png": "surface/label_nutrient_supply@2/decal.png, printed as its old recipe printed it",
+      "textures/label_pump_a.png": "surface/label_pump_a@2/decal.png, printed as its old recipe printed it",
+      "textures/label_pump_b.png": "surface/label_pump_b@2/decal.png, printed as its old recipe printed it",
+      "textures/label_pump_c.png": "surface/label_pump_c@2/decal.png, printed as its old recipe printed it",
+      "textures/screen.png": "surface/screen_status@1/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/anodized@1",
+    "surface/bare_metal@1",
+    "surface/glass@2",
+    "surface/glowing@1",
+    "surface/label_dose_meter@2",
+    "surface/label_main_unit@2",
+    "surface/label_nutrient_supply@2",
+    "surface/label_pump_a@2",
+    "surface/label_pump_b@2",
+    "surface/label_pump_c@2",
+    "surface/painted_metal@1",
+    "surface/printed@1",
+    "surface/rubber@2",
+    "surface/screen@1",
+    "surface/screen_status@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Dosing unit 1",
+  "usd": {
+    "default_prim": "/dosing_unit_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/dosing_unit_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

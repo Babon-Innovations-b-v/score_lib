@@ -1,0 +1,74 @@
+{
+  "address": "model/door_leaf_1.storage@2",
+  "files": {
+    "model.json": {
+      "bytes": 1773,
+      "role": "record",
+      "sha256": "0140c66d705290f71cf2035ecd2d952da0b9aec4d578f7ef9234ba5791d1d371"
+    },
+    "model.usdc": {
+      "bytes": 232259,
+      "role": "usd",
+      "sha256": "09f509ab99502f097fa2f70b682268da18ba046d960ed6a6087b19f698d27bc2"
+    },
+    "textures/label_airlock_leaf.png": {
+      "bytes": 9726,
+      "role": "texture",
+      "sha256": "45e1a75479662ef3792f76168be52d200e8dcf86c645164cfc5d08f813d462bc"
+    }
+  },
+  "id": "door_leaf_1.storage",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/door_leaf_1.storage@1/model.json, with its parts",
+      "model.usdc": "model/door_leaf_1.storage@1/model.usdc, remade",
+      "textures/label_airlock_leaf.png": "surface/label_airlock_leaf@2/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/bare_metal@1",
+    "surface/cast_metal@1",
+    "surface/label_airlock_leaf@2",
+    "surface/painted_metal@1",
+    "surface/printed@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Door leaf 1",
+  "usd": {
+    "default_prim": "/door_leaf_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/door_leaf_1.storage/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

@@ -1,0 +1,78 @@
+{
+  "address": "model/monitor_1.workshop@2",
+  "files": {
+    "model.json": {
+      "bytes": 1202,
+      "role": "record",
+      "sha256": "8e78a0f0e11e430ea2f52f5595a78d3249dc168dc3ce553ce4019b21583a105a"
+    },
+    "model.usdc": {
+      "bytes": 36852,
+      "role": "usd",
+      "sha256": "73c3e930be26e148487ffc26d48962eb88a9d24d7ad05fb594b790147a7d0a6e"
+    },
+    "model_glow.usdc": {
+      "bytes": 4262,
+      "role": "usd",
+      "sha256": "556f9eda7a821ab540466bc5f55c2f6d2d43a88408497520940f640ae679acbd"
+    },
+    "textures/screen.png": {
+      "bytes": 27671,
+      "role": "texture",
+      "sha256": "de83e99eb7abf5aa4c123032b20c317d7a6b9fd4924c15933893e1d05256ed20"
+    }
+  },
+  "id": "monitor_1.workshop",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/monitor_1.workshop@1/model.json, with its parts",
+      "model.usdc": "model/monitor_1.workshop@1/model.usdc, remade",
+      "model_glow.usdc": "model/monitor_1.workshop@1/model_glow.usdc, remade",
+      "textures/screen.png": "surface/screen_status@1/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/anodized@1",
+    "surface/screen@1",
+    "surface/screen_status@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Monitor 1",
+  "usd": {
+    "default_prim": "/monitor_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/monitor_1.workshop/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

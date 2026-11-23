@@ -1,0 +1,72 @@
+{
+  "address": "model/spares_crate_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 1840,
+      "role": "record",
+      "sha256": "7e904d100adbd3026508ea22351a9f5de37b47a52f3389ef3b33db6b5b59fbaf"
+    },
+    "model.usdc": {
+      "bytes": 182690,
+      "role": "usd",
+      "sha256": "822a2b0eba9ac1c58e224c02c6d1d47c006f782f246b00d30e864ff4cb90b8c5"
+    },
+    "textures/label_parts.png": {
+      "bytes": 8762,
+      "role": "texture",
+      "sha256": "fbe73d5a4e4ab24c01d99537dd0828f27d5b65ec9a4a46c467b4c26a3223d333"
+    }
+  },
+  "id": "spares_crate_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/spares_crate_1@1/model.json, with its parts",
+      "model.usdc": "model/spares_crate_1@1/model.usdc, remade",
+      "textures/label_parts.png": "surface/label_parts@2/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/label_parts@2",
+    "surface/printed@1",
+    "surface/rubber@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Spares crate 1",
+  "usd": {
+    "default_prim": "/spares_crate_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/spares_crate_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

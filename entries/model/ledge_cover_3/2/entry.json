@@ -1,0 +1,88 @@
+{
+  "address": "model/ledge_cover_3@2",
+  "files": {
+    "model.json": {
+      "bytes": 2090,
+      "role": "record",
+      "sha256": "f3ef250cd8799a18b13da16565d2a29be9bc88d14d0680c004621e509f00bfd6"
+    },
+    "model.usdc": {
+      "bytes": 109288,
+      "role": "usd",
+      "sha256": "e21049a0cdb7d9eb2826b53058949faa2d7d405dcb213f14e0b60f713a12a44a"
+    },
+    "textures/label_inspection.png": {
+      "bytes": 10565,
+      "role": "texture",
+      "sha256": "d2c6e1549488e48b825848fdc0eaf15e0df027cf1c90602b1889aa866b2b0991"
+    },
+    "textures/label_ledge_cover.png": {
+      "bytes": 13448,
+      "role": "texture",
+      "sha256": "4a8e0bd8abade1885a1d14252bdb499f29d3f50307252ae603393e9503e142f3"
+    },
+    "textures/note_ledge_cover.png": {
+      "bytes": 12271,
+      "role": "texture",
+      "sha256": "6a091f4ebd6cadd6cbeb8ba1ecc9a807697e96fa0af16fbe417d0ba6639d1a9f"
+    }
+  },
+  "id": "ledge_cover_3",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/ledge_cover_3@1/model.json, with its parts",
+      "model.usdc": "model/ledge_cover_3@1/model.usdc, remade",
+      "textures/label_inspection.png": "surface/label_inspection@2/decal.png, printed as its old recipe printed it",
+      "textures/label_ledge_cover.png": "surface/label_ledge_cover@2/decal.png, printed as its old recipe printed it",
+      "textures/note_ledge_cover.png": "surface/note_ledge_cover@2/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/anodized@1",
+    "surface/bare_metal@1",
+    "surface/galvanized@1",
+    "surface/label_inspection@2",
+    "surface/label_ledge_cover@2",
+    "surface/note_ledge_cover@2",
+    "surface/printed@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Ledge cover 3",
+  "usd": {
+    "default_prim": "/ledge_cover_3",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/ledge_cover_3/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

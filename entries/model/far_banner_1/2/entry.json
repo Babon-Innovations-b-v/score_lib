@@ -1,0 +1,73 @@
+{
+  "address": "model/far_banner_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 916,
+      "role": "record",
+      "sha256": "cb072a83b57b277b61be3dcb801cf1828d05409cdd07aca12752f7b462f86df9"
+    },
+    "model.usdc": {
+      "bytes": 16046,
+      "role": "usd",
+      "sha256": "0f4f76f5c0233f3d047a7535734cc8f51a8ea1f00e569d3b3439b4ad0444d550"
+    },
+    "textures/banner_second.png": {
+      "bytes": 17828,
+      "role": "texture",
+      "sha256": "cd9f46974262e3b96959406104e6fc403e861d6edaeb0c45cbcbcf059452e4e1"
+    }
+  },
+  "id": "far_banner_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/far_banner_1@1/model.json, with its parts",
+      "model.usdc": "model/far_banner_1@1/model.usdc, remade",
+      "textures/banner_second.png": "surface/banner_second@2/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/banner_second@2",
+    "surface/galvanized@1",
+    "surface/printed@1",
+    "surface/rubber@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "outside"
+    ]
+  },
+  "title": "Far banner 1",
+  "usd": {
+    "default_prim": "/far_banner_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/far_banner_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

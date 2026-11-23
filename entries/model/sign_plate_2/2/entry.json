@@ -1,0 +1,73 @@
+{
+  "address": "model/sign_plate_2@2",
+  "files": {
+    "model.json": {
+      "bytes": 797,
+      "role": "record",
+      "sha256": "d559e7265750a04b391e16cc7ddff95c938f307b1be3bbdf7b243e144ac4bb9d"
+    },
+    "model.usdc": {
+      "bytes": 41670,
+      "role": "usd",
+      "sha256": "71b7f2bf7932f949f3cc5fb428f481d1f4c5dfafb8e728dd4fbd2efb72912531"
+    },
+    "textures/sign_pressure_hatch.png": {
+      "bytes": 11386,
+      "role": "texture",
+      "sha256": "6ba1048dad38c1dad517bbe08914bfde77b2eaf936f84fa4facd29fab920a7fd"
+    }
+  },
+  "id": "sign_plate_2",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/sign_plate_2@1/model.json, with its parts",
+      "model.usdc": "model/sign_plate_2@1/model.usdc, remade",
+      "textures/sign_pressure_hatch.png": "surface/sign_pressure_hatch@2/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/cast_metal@1",
+    "surface/painted_metal@1",
+    "surface/printed@1",
+    "surface/sign_pressure_hatch@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Sign plate 2",
+  "usd": {
+    "default_prim": "/sign_plate_2",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/sign_plate_2/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

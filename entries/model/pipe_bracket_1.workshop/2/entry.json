@@ -1,0 +1,67 @@
+{
+  "address": "model/pipe_bracket_1.workshop@2",
+  "files": {
+    "model.json": {
+      "bytes": 1165,
+      "role": "record",
+      "sha256": "16915a59e6630e0fe2cd5400f6c300c56fc34b7e67557a670ddd2a44582c73b5"
+    },
+    "model.usdc": {
+      "bytes": 37919,
+      "role": "usd",
+      "sha256": "f519531d812940306698bbe465a9622afe2f6c9a0abdb4a9f288aecb23b3e2b1"
+    }
+  },
+  "id": "pipe_bracket_1.workshop",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/pipe_bracket_1.workshop@1/model.json, with its parts",
+      "model.usdc": "model/pipe_bracket_1.workshop@1/model.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade in library surfaces by score's part_looks (tools/library/part_looks) from its atlas regions: its old code build could not be recovered, so its geometry was kept, its faces split by the UV island of the shared atlas they lie in and each island worn in its room's library surface whose recipe colour is nearest the island's painted colour (score 4547b8c54); the shared atlas taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/bare_metal@1",
+    "surface/cast_metal@1",
+    "surface/painted_metal@1",
+    "surface/rubber@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Pipe bracket 1",
+  "usd": {
+    "default_prim": "/pipe_bracket_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/pipe_bracket_1.workshop/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

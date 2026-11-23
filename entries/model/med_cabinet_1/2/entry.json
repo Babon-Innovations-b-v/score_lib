@@ -1,0 +1,88 @@
+{
+  "address": "model/med_cabinet_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 1981,
+      "role": "record",
+      "sha256": "bf600040c8fd5695d87667cfe46d18bbb4703d5b6b453420a729fdec4dcd6c19"
+    },
+    "model.usdc": {
+      "bytes": 114551,
+      "role": "usd",
+      "sha256": "8856aba471af1fb02e70888092385489c41b9455ce736bd054c90f9118395f0c"
+    },
+    "textures/label_first_aid.png": {
+      "bytes": 8951,
+      "role": "texture",
+      "sha256": "8d590336e69fdc80952ede7024f339afc9390805f7056615987d830d6fb5029f"
+    },
+    "textures/note_stock_check.png": {
+      "bytes": 14103,
+      "role": "texture",
+      "sha256": "c055173223bedb827c6005ae7ec43fda20b243e3eb52da9f79dfdfad8e034ef5"
+    },
+    "textures/stencil_med_store.png": {
+      "bytes": 6688,
+      "role": "texture",
+      "sha256": "207215199b41d82832f083a0f887f5e3d6cf44e7ae98e81105c30320d0391196"
+    }
+  },
+  "id": "med_cabinet_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/med_cabinet_1@1/model.json, with its parts",
+      "model.usdc": "model/med_cabinet_1@1/model.usdc, remade",
+      "textures/label_first_aid.png": "surface/label_first_aid@2/decal.png, printed as its old recipe printed it",
+      "textures/note_stock_check.png": "surface/note_stock_check@2/decal.png, printed as its old recipe printed it",
+      "textures/stencil_med_store.png": "surface/stencil_med_store@2/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/bare_metal@1",
+    "surface/glass@2",
+    "surface/label_first_aid@2",
+    "surface/note_stock_check@2",
+    "surface/painted_metal@1",
+    "surface/printed@1",
+    "surface/stencil_med_store@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Med cabinet 1",
+  "usd": {
+    "default_prim": "/med_cabinet_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/med_cabinet_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

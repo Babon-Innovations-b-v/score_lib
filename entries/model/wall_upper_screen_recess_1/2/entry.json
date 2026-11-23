@@ -1,0 +1,87 @@
+{
+  "address": "model/wall_upper_screen_recess_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 1657,
+      "role": "record",
+      "sha256": "eae6f7d66dd42896035175ec711257f863606d722ea6ab8d92cf6e41600d6de7"
+    },
+    "model.usdc": {
+      "bytes": 102782,
+      "role": "usd",
+      "sha256": "757113ef642e0d39a6ab446a2157cb7ddd0ebb2c89e852ee1ab47e431ecbffad"
+    },
+    "model_glow.usdc": {
+      "bytes": 4264,
+      "role": "usd",
+      "sha256": "134bc9522ae79322939afb7b3d51d4df182bfca4d5a730536acbd61c0bb0a6fd"
+    },
+    "textures/label_storage_a.png": {
+      "bytes": 11294,
+      "role": "texture",
+      "sha256": "7768e4b6dd6670506d9d58cc008bc061d16a46d9a213a108d4aca64e255361ad"
+    },
+    "textures/screen.png": {
+      "bytes": 27671,
+      "role": "texture",
+      "sha256": "de83e99eb7abf5aa4c123032b20c317d7a6b9fd4924c15933893e1d05256ed20"
+    }
+  },
+  "id": "wall_upper_screen_recess_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/wall_upper_screen_recess_1@1/model.json, with its parts",
+      "model.usdc": "model/wall_upper_screen_recess_1@1/model.usdc, remade",
+      "model_glow.usdc": "model/wall_upper_screen_recess_1@1/model_glow.usdc, remade",
+      "textures/label_storage_a.png": "surface/label_storage_a@2/decal.png, printed as its old recipe printed it",
+      "textures/screen.png": "surface/screen_status@1/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/anodized@1",
+    "surface/label_storage_a@2",
+    "surface/painted_metal@1",
+    "surface/printed@1",
+    "surface/screen@1",
+    "surface/screen_status@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Wall upper screen recess 1",
+  "usd": {
+    "default_prim": "/wall_upper_screen_recess_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/wall_upper_screen_recess_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

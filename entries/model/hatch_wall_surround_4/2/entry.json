@@ -1,0 +1,73 @@
+{
+  "address": "model/hatch_wall_surround_4@2",
+  "files": {
+    "model.json": {
+      "bytes": 1165,
+      "role": "record",
+      "sha256": "c0ba04e15199c73336dc8393f832311f95dfe2af1fade91caea0a0167873395a"
+    },
+    "model.usdc": {
+      "bytes": 92288,
+      "role": "usd",
+      "sha256": "a7450b5bdfa781fc621ce3d1777cbdc34896bcaa27297ca36b4e467dc2c64af9"
+    },
+    "textures/label_east_hatch.png": {
+      "bytes": 8957,
+      "role": "texture",
+      "sha256": "e9083ef58c862b6379dafc2e818a21ee1eb5cf547d4f329dead7d3e841fcb19a"
+    }
+  },
+  "id": "hatch_wall_surround_4",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/hatch_wall_surround_4@1/model.json, with its parts",
+      "model.usdc": "model/hatch_wall_surround_4@1/model.usdc, remade",
+      "textures/label_east_hatch.png": "surface/label_east_hatch@2/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/bare_metal@1",
+    "surface/label_east_hatch@2",
+    "surface/painted_metal@1",
+    "surface/printed@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Hatch wall surround 4",
+  "usd": {
+    "default_prim": "/hatch_wall_surround_4",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/hatch_wall_surround_4/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

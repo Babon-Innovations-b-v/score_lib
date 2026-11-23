@@ -1,0 +1,75 @@
+{
+  "address": "model/rack_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 1927,
+      "role": "record",
+      "sha256": "a90c7584b74eead0d62791f116b849b654286a12d4f41296117e1463a21994dd"
+    },
+    "model.usdc": {
+      "bytes": 98622,
+      "role": "usd",
+      "sha256": "c173297d8c4194c02fe0046023d24da2b8195a29b7ef69d9c1bcfb3a64096f5f"
+    },
+    "textures/stencil_number.png": {
+      "bytes": 5077,
+      "role": "texture",
+      "sha256": "d0625d6c407aaa8f5b260e941b30cb4e8f75ce7bb972aa134ff130904b5aad99"
+    }
+  },
+  "id": "rack_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/rack_1@1/model.json, with its parts",
+      "model.usdc": "model/rack_1@1/model.usdc, remade",
+      "textures/stencil_number.png": "surface/stencil_number@2/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/anodized@1",
+    "surface/bare_metal@1",
+    "surface/painted_metal@1",
+    "surface/printed@1",
+    "surface/rubber@2",
+    "surface/stencil_number@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Rack 1",
+  "usd": {
+    "default_prim": "/rack_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/rack_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

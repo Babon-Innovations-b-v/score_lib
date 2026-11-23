@@ -1,0 +1,73 @@
+{
+  "address": "model/storage_case_2@2",
+  "files": {
+    "model.json": {
+      "bytes": 928,
+      "role": "record",
+      "sha256": "c79820098ffcd6adf75143ce22218560a0959e3137c306ef60652b4cec8c1695"
+    },
+    "model.usdc": {
+      "bytes": 35805,
+      "role": "usd",
+      "sha256": "983f59a5fbb96824bbe3492b4fbb0ca81c98878103fb3d61eded46c1fb7be811"
+    },
+    "textures/label_storage.png": {
+      "bytes": 11007,
+      "role": "texture",
+      "sha256": "4e30009c7532d11b08710a9849f5a66304ee1e3a22ca9aa97a4aec3a748bf3bf"
+    }
+  },
+  "id": "storage_case_2",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/storage_case_2@1/model.json, with its parts",
+      "model.usdc": "model/storage_case_2@1/model.usdc, remade",
+      "textures/label_storage.png": "surface/label_storage@2/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/bare_metal@1",
+    "surface/label_storage@2",
+    "surface/painted_metal@1",
+    "surface/printed@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Storage case 2",
+  "usd": {
+    "default_prim": "/storage_case_2",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/storage_case_2/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

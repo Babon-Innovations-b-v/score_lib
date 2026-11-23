@@ -1,0 +1,73 @@
+{
+  "address": "model/waste_bin_1.hub@2",
+  "files": {
+    "model.json": {
+      "bytes": 1736,
+      "role": "record",
+      "sha256": "45ffe93c2f9fc8d786ccd7af6f506a621fadf8881a1805f8ce79e4e164031138"
+    },
+    "model.usdc": {
+      "bytes": 87332,
+      "role": "usd",
+      "sha256": "21f7281cb488f5e6a9a321e6bcd67d7608711b696360c2a725d55b5cde123ab8"
+    },
+    "textures/label_waste.png": {
+      "bytes": 9190,
+      "role": "texture",
+      "sha256": "f9aafe1a6806d1c635a2a9881600a50a2291ad494e943c9731dbd2e51a2a975c"
+    }
+  },
+  "id": "waste_bin_1.hub",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/waste_bin_1.hub@1/model.json, with its parts",
+      "model.usdc": "model/waste_bin_1.hub@1/model.usdc, remade",
+      "textures/label_waste.png": "surface/label_waste@2/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/bare_metal@1",
+    "surface/cast_metal@1",
+    "surface/label_waste@2",
+    "surface/printed@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Waste bin 1",
+  "usd": {
+    "default_prim": "/waste_bin_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/waste_bin_1.hub/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

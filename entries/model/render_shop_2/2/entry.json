@@ -1,0 +1,65 @@
+{
+  "address": "model/render_shop_2@2",
+  "files": {
+    "model.json": {
+      "bytes": 627,
+      "role": "record",
+      "sha256": "a2228979874f35ae385bf19fc4c4f8fab09eee70fdac582ad4c80b9e850aa0ef"
+    },
+    "model.usdc": {
+      "bytes": 13345,
+      "role": "usd",
+      "sha256": "a073995dc96ba562dac106364e5883b5b69c801832d9252927f47330daf0d45b"
+    }
+  },
+  "id": "render_shop_2",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/render_shop_2@1/model.json, with its parts",
+      "model.usdc": "model/render_shop_2@1/model.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/cast_metal@1",
+    "surface/weathered_render@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "outside"
+    ]
+  },
+  "title": "Render shop 2",
+  "usd": {
+    "default_prim": "/render_shop_2",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/render_shop_2/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

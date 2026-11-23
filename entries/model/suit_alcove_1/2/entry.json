@@ -1,0 +1,75 @@
+{
+  "address": "model/suit_alcove_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 1735,
+      "role": "record",
+      "sha256": "bfa728547ca13ee6bdd6055f23b6a9ca962c18aabbdbd5ebbd9e65b0fffec691"
+    },
+    "model.usdc": {
+      "bytes": 60620,
+      "role": "usd",
+      "sha256": "586fd30baa0f5180f7534e5c5f912652246e3c5c5afcc8369ed68feeff4515b0"
+    },
+    "model_glow.usdc": {
+      "bytes": 3438,
+      "role": "usd",
+      "sha256": "08603afc0a4b6f8917612c8c74bdc854c17dce6df49c34a72a0489929a13f202"
+    }
+  },
+  "id": "suit_alcove_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/suit_alcove_1@1/model.json, with its parts",
+      "model.usdc": "model/suit_alcove_1@1/model.usdc, remade",
+      "model_glow.usdc": "model/suit_alcove_1@1/model_glow.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade in library surfaces by score's part_looks (tools/library/part_looks) from its atlas regions: its old code build could not be recovered, so its geometry was kept, its faces split by the UV island of the shared atlas they lie in and each island worn in its room's library surface whose recipe colour is nearest the island's painted colour (score 4547b8c54); the shared atlas taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/anodized@1",
+    "surface/bare_metal@1",
+    "surface/glowing@1",
+    "surface/painted_metal@1",
+    "surface/quilted@1",
+    "surface/wood@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Suit alcove 1",
+  "usd": {
+    "default_prim": "/suit_alcove_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/suit_alcove_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

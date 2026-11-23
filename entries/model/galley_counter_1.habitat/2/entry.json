@@ -1,0 +1,88 @@
+{
+  "address": "model/galley_counter_1.habitat@2",
+  "files": {
+    "model.json": {
+      "bytes": 3943,
+      "role": "record",
+      "sha256": "079fa03d9dc56945eca39deb82d15165e8cf18c314d30c9d4c9b431e538909a5"
+    },
+    "model.usdc": {
+      "bytes": 389743,
+      "role": "usd",
+      "sha256": "9de441728cfe2990b0737dceab8e2e0b0595f838e994003cb841a9baf6ef3716"
+    },
+    "textures/label_electric_hob.png": {
+      "bytes": 9079,
+      "role": "texture",
+      "sha256": "23d2fc6393ba686d6d78b350a6688e1cfe6f6e766c3b17cb8e6eeeb516df7c67"
+    },
+    "textures/label_sink.png": {
+      "bytes": 7122,
+      "role": "texture",
+      "sha256": "0548ab28f75a96c5a397c3250d0e1bc366b29d97e8564f1c2d58f3ea4de9cdf9"
+    },
+    "textures/label_storage.png": {
+      "bytes": 11007,
+      "role": "texture",
+      "sha256": "4e30009c7532d11b08710a9849f5a66304ee1e3a22ca9aa97a4aec3a748bf3bf"
+    }
+  },
+  "id": "galley_counter_1.habitat",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/galley_counter_1.habitat@1/model.json, with its parts",
+      "model.usdc": "model/galley_counter_1.habitat@1/model.usdc, remade",
+      "textures/label_electric_hob.png": "surface/label_electric_hob@2/decal.png, printed as its old recipe printed it",
+      "textures/label_sink.png": "surface/label_sink@2/decal.png, printed as its old recipe printed it",
+      "textures/label_storage.png": "surface/label_storage@2/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/anodized@1",
+    "surface/bare_metal@1",
+    "surface/label_electric_hob@2",
+    "surface/label_sink@2",
+    "surface/label_storage@2",
+    "surface/painted_metal@1",
+    "surface/printed@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Galley counter 1",
+  "usd": {
+    "default_prim": "/galley_counter_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/galley_counter_1.habitat/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

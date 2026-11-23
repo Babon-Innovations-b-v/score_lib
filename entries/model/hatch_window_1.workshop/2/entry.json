@@ -1,0 +1,67 @@
+{
+  "address": "model/hatch_window_1.workshop@2",
+  "files": {
+    "model.json": {
+      "bytes": 1368,
+      "role": "record",
+      "sha256": "60d7721c1d13b80fb3fb2570231e2fdb1a6b8a5b290292b0e4afeec4bc2016e8"
+    },
+    "model.usdc": {
+      "bytes": 90713,
+      "role": "usd",
+      "sha256": "6ec3d7255d715cf21e2828509b3c0fcd8aae93097b8417be779b379d7dd0ffc6"
+    }
+  },
+  "id": "hatch_window_1.workshop",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/hatch_window_1.workshop@1/model.json, with its parts",
+      "model.usdc": "model/hatch_window_1.workshop@1/model.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade in library surfaces by score's part_looks (tools/library/part_looks) from its atlas regions: its old code build could not be recovered, so its geometry was kept, its faces split by the UV island of the shared atlas they lie in and each island worn in its room's library surface whose recipe colour is nearest the island's painted colour (score 4547b8c54); the shared atlas taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/bare_metal@1",
+    "surface/cast_metal@1",
+    "surface/glass@2",
+    "surface/painted_metal@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Hatch window 1",
+  "usd": {
+    "default_prim": "/hatch_window_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/hatch_window_1.workshop/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

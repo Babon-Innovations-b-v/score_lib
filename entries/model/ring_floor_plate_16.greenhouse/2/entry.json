@@ -1,0 +1,65 @@
+{
+  "address": "model/ring_floor_plate_16.greenhouse@2",
+  "files": {
+    "model.json": {
+      "bytes": 628,
+      "role": "record",
+      "sha256": "23f50343c4212f7fd690cdc8184f90a95bd497d32412a575bbbab4f0723d5b6e"
+    },
+    "model.usdc": {
+      "bytes": 15064,
+      "role": "usd",
+      "sha256": "3dfac6e7602d72d2130b133c400e9e24e42d92bf55da7005528bd4f451397a00"
+    }
+  },
+  "id": "ring_floor_plate_16.greenhouse",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/ring_floor_plate_16.greenhouse@1/model.json, with its parts",
+      "model.usdc": "model/ring_floor_plate_16.greenhouse@1/model.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/bare_metal@1",
+    "surface/painted_metal@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Ring floor plate 16",
+  "usd": {
+    "default_prim": "/ring_floor_plate_16",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/ring_floor_plate_16.greenhouse/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

@@ -1,0 +1,118 @@
+{
+  "address": "model/control_console_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 5902,
+      "role": "record",
+      "sha256": "8716b8204add67edbfed5e20c5d5dd3627e9e196f17e07d60754bbc23b2622f0"
+    },
+    "model.usdc": {
+      "bytes": 421430,
+      "role": "usd",
+      "sha256": "bfa3570659cedfbdfd9802a1b95b581b958e6c8333c3f13958613d88f5aa7884"
+    },
+    "model_glow.usdc": {
+      "bytes": 46623,
+      "role": "usd",
+      "sha256": "c04ba353f53e603f9da34961d51edad329e9e563141f82a2c00bb10c55cb69f5"
+    },
+    "textures/label_caution_voltage.png": {
+      "bytes": 12149,
+      "role": "texture",
+      "sha256": "a4a54d1de680ec43e529d14b5e03689af4b8f045fc7499fd2b4e58e3b4913d06"
+    },
+    "textures/label_grow_control.png": {
+      "bytes": 12541,
+      "role": "texture",
+      "sha256": "3c980180c864330ac2240fa658caab7b4d275647ebcd26fed7af3bc88f14bce2"
+    },
+    "textures/screen.png": {
+      "bytes": 27671,
+      "role": "texture",
+      "sha256": "de83e99eb7abf5aa4c123032b20c317d7a6b9fd4924c15933893e1d05256ed20"
+    },
+    "textures/screen_amber.png": {
+      "bytes": 12231,
+      "role": "texture",
+      "sha256": "3aaa18ee24cff4aea7ad9f3ff4d3fbb231b41077d0e674d17cb02728f1f803af"
+    },
+    "textures/sheet_log.png": {
+      "bytes": 12985,
+      "role": "texture",
+      "sha256": "8e76a4cf027681fc33589d4d26e3d74088971bf7d1f91db67a8fa984123c9d14"
+    },
+    "textures/sheet_plan.png": {
+      "bytes": 10317,
+      "role": "texture",
+      "sha256": "12e4c2d87ae92c77ab5cc8a9212bdb2a93d4d0600a89a9a9bc62f7f8a22c5ebc"
+    }
+  },
+  "id": "control_console_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/control_console_1@1/model.json, with its parts",
+      "model.usdc": "model/control_console_1@1/model.usdc, remade",
+      "model_glow.usdc": "model/control_console_1@1/model_glow.usdc, remade",
+      "textures/label_caution_voltage.png": "surface/label_caution_voltage@2/decal.png, printed as its old recipe printed it",
+      "textures/label_grow_control.png": "surface/label_grow_control@2/decal.png, printed as its old recipe printed it",
+      "textures/screen.png": "surface/screen_status@1/decal.png, printed as its old recipe printed it",
+      "textures/screen_amber.png": "surface/screen_readout@1/decal.png, printed as its old recipe printed it",
+      "textures/sheet_log.png": "surface/sheet_log@2/decal.png, printed as its old recipe printed it",
+      "textures/sheet_plan.png": "surface/sheet_plan@2/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/anodized@1",
+    "surface/bare_metal@1",
+    "surface/glowing@1",
+    "surface/label_caution_voltage@2",
+    "surface/label_grow_control@2",
+    "surface/painted_metal@1",
+    "surface/printed@1",
+    "surface/rubber@2",
+    "surface/screen@1",
+    "surface/screen_readout@1",
+    "surface/screen_status@1",
+    "surface/sheet_log@2",
+    "surface/sheet_plan@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Control console 1",
+  "usd": {
+    "default_prim": "/control_console_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/control_console_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

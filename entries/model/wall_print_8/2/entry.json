@@ -1,0 +1,72 @@
+{
+  "address": "model/wall_print_8@2",
+  "files": {
+    "model.json": {
+      "bytes": 620,
+      "role": "record",
+      "sha256": "42a669089b3793ae1d1e8670bdeb993ee6c52ed51d8cadf54374acfb53f0fb27"
+    },
+    "model.usdc": {
+      "bytes": 5697,
+      "role": "usd",
+      "sha256": "4e4016a72505f81dc44ddc1a49b6111f4c174e79561c0cd7342d827f24c36723"
+    },
+    "textures/poster_moon_flight.png": {
+      "bytes": 51289,
+      "role": "texture",
+      "sha256": "b02f73960ee18b21dbd561f59a76114f4ae9299669dd75ebb3ec981d7482d59f"
+    }
+  },
+  "id": "wall_print_8",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/wall_print_8@1/model.json, with its parts",
+      "model.usdc": "model/wall_print_8@1/model.usdc, remade",
+      "textures/poster_moon_flight.png": "surface/poster_moon_flight@2/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/poster_moon_flight@2",
+    "surface/printed@1",
+    "surface/rubber@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "inside"
+    ]
+  },
+  "title": "Wall print 8",
+  "usd": {
+    "default_prim": "/wall_print_8",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/wall_print_8/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

@@ -1,0 +1,109 @@
+{
+  "address": "model/notice_board_1.greenhouse@2",
+  "files": {
+    "model.json": {
+      "bytes": 1918,
+      "role": "record",
+      "sha256": "fde3857600359e9a8ddcd80d006114c2ca1db97c67dac7e0bbb6d078bef6f548"
+    },
+    "model.usdc": {
+      "bytes": 101913,
+      "role": "usd",
+      "sha256": "335d1ea022b5e889e04357530f4a13184705445fb8c0cc63067125f829137815"
+    },
+    "textures/note_filter.png": {
+      "bytes": 14086,
+      "role": "texture",
+      "sha256": "7d2faed4bf31964dd090fb06d031ec0d6ec80b629bcb064567224b1989c7571f"
+    },
+    "textures/note_link.png": {
+      "bytes": 11268,
+      "role": "texture",
+      "sha256": "06a4ee3dc88e01bfba48b6a0b2fc711c6b51f79ef5cc7b2127a18b83a263aa54"
+    },
+    "textures/sheet_eva.png": {
+      "bytes": 11458,
+      "role": "texture",
+      "sha256": "2e4059c87f5ec3b97da8d9c2b255c63d7c1ae60255ceaf7a18a7549f5b69ee9b"
+    },
+    "textures/sheet_log.png": {
+      "bytes": 12985,
+      "role": "texture",
+      "sha256": "8e76a4cf027681fc33589d4d26e3d74088971bf7d1f91db67a8fa984123c9d14"
+    },
+    "textures/sheet_plan.png": {
+      "bytes": 10317,
+      "role": "texture",
+      "sha256": "12e4c2d87ae92c77ab5cc8a9212bdb2a93d4d0600a89a9a9bc62f7f8a22c5ebc"
+    },
+    "textures/sheet_roster.png": {
+      "bytes": 12692,
+      "role": "texture",
+      "sha256": "2af9d8e35237e045109e1fd97388e28be0f9144fe11d6eeea8bb1df73b307972"
+    }
+  },
+  "id": "notice_board_1.greenhouse",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/notice_board_1.greenhouse@1/model.json, with its parts",
+      "model.usdc": "model/notice_board_1.greenhouse@1/model.usdc, remade",
+      "textures/note_filter.png": "surface/note_filter@2/decal.png, printed as its old recipe printed it",
+      "textures/note_link.png": "surface/note_link@2/decal.png, printed as its old recipe printed it",
+      "textures/sheet_eva.png": "surface/sheet_eva@2/decal.png, printed as its old recipe printed it",
+      "textures/sheet_log.png": "surface/sheet_log@2/decal.png, printed as its old recipe printed it",
+      "textures/sheet_plan.png": "surface/sheet_plan@2/decal.png, printed as its old recipe printed it",
+      "textures/sheet_roster.png": "surface/sheet_roster@2/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/anodized@1",
+    "surface/note_filter@2",
+    "surface/note_link@2",
+    "surface/painted_metal@1",
+    "surface/printed@1",
+    "surface/sheet_eva@2",
+    "surface/sheet_log@2",
+    "surface/sheet_plan@2",
+    "surface/sheet_roster@2",
+    "surface/wood@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Notice board 1",
+  "usd": {
+    "default_prim": "/notice_board_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/notice_board_1.greenhouse/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

@@ -1,0 +1,103 @@
+{
+  "address": "model/locker_bank_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 2820,
+      "role": "record",
+      "sha256": "829dd5e552b830e736ab3764f1ecaec9d32478bf3fbdf93765531781957db54c"
+    },
+    "model.usdc": {
+      "bytes": 383974,
+      "role": "usd",
+      "sha256": "bc1590887754f67b2f30a7a5bfef102fe3d98ca84da780b7fa0c55995165759b"
+    },
+    "textures/label_crew_lkr_1.png": {
+      "bytes": 10043,
+      "role": "texture",
+      "sha256": "30d537e4c4b6506b560a03cecc553d21bde4b9edd3604b26e873196044175b13"
+    },
+    "textures/label_crew_lkr_2.png": {
+      "bytes": 11428,
+      "role": "texture",
+      "sha256": "5996cfc3171fdbf54c739f9e40d2464e93ef4972177c09791ddcf6c5489a192f"
+    },
+    "textures/label_crew_lkr_3.png": {
+      "bytes": 11532,
+      "role": "texture",
+      "sha256": "4a72c3bdae652323214b728338b5bb5f31601e0a3933d48b1083133bcd3e2bde"
+    },
+    "textures/label_crew_lkr_4.png": {
+      "bytes": 10677,
+      "role": "texture",
+      "sha256": "37ed352f0e052a945af18e8c8a6f35929ce6c5f78d9a889a9c446d0b37943c80"
+    },
+    "textures/note_crew_keep_shut.png": {
+      "bytes": 7707,
+      "role": "texture",
+      "sha256": "cfc593fcfc6266d114bfe039d601a590f611a3fd8d5d8084bae94160039a4024"
+    }
+  },
+  "id": "locker_bank_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/locker_bank_1@1/model.json, with its parts",
+      "model.usdc": "model/locker_bank_1@1/model.usdc, remade",
+      "textures/label_crew_lkr_1.png": "surface/label_crew_lkr_1@2/decal.png, printed as its old recipe printed it",
+      "textures/label_crew_lkr_2.png": "surface/label_crew_lkr_2@2/decal.png, printed as its old recipe printed it",
+      "textures/label_crew_lkr_3.png": "surface/label_crew_lkr_3@2/decal.png, printed as its old recipe printed it",
+      "textures/label_crew_lkr_4.png": "surface/label_crew_lkr_4@2/decal.png, printed as its old recipe printed it",
+      "textures/note_crew_keep_shut.png": "surface/note_crew_keep_shut@2/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/anodized@1",
+    "surface/bare_metal@1",
+    "surface/label_crew_lkr_1@2",
+    "surface/label_crew_lkr_2@2",
+    "surface/label_crew_lkr_3@2",
+    "surface/label_crew_lkr_4@2",
+    "surface/note_crew_keep_shut@2",
+    "surface/painted_metal@1",
+    "surface/printed@1",
+    "surface/rubber@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Locker bank 1",
+  "usd": {
+    "default_prim": "/locker_bank_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/locker_bank_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

@@ -1,0 +1,65 @@
+{
+  "address": "model/ring_floor_plate_6.cockpit@2",
+  "files": {
+    "model.json": {
+      "bytes": 992,
+      "role": "record",
+      "sha256": "dc0aa85237438272cd376122a43dda932df733b8ade50542850449c1c42a1200"
+    },
+    "model.usdc": {
+      "bytes": 16678,
+      "role": "usd",
+      "sha256": "0083b6e626de305ceaa5d000f53a781bc49f49c3589643b5647d1a3221008faf"
+    }
+  },
+  "id": "ring_floor_plate_6.cockpit",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/ring_floor_plate_6.cockpit@1/model.json, with its parts",
+      "model.usdc": "model/ring_floor_plate_6.cockpit@1/model.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade in library surfaces by score's part_looks (tools/library/part_looks) from its atlas regions: its old code build could not be recovered, so its geometry was kept, its faces split by the UV island of the shared atlas they lie in and each island worn in its room's library surface whose recipe colour is nearest the island's painted colour (score 4547b8c54); the shared atlas taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/bare_metal@1",
+    "surface/painted_metal@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Ring floor plate 6",
+  "usd": {
+    "default_prim": "/ring_floor_plate_6",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/ring_floor_plate_6.cockpit/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

@@ -1,0 +1,73 @@
+{
+  "address": "model/lobby_notice_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 916,
+      "role": "record",
+      "sha256": "e48843c3e24bd302051d07611141ab45d939136b9a83376130caa314bdc938c5"
+    },
+    "model.usdc": {
+      "bytes": 65796,
+      "role": "usd",
+      "sha256": "82d791483648b3c095a1dc0392d9b4a9e9f49c9a9036131f0352d8e31b0b0b0e"
+    },
+    "textures/lobby_sheets.png": {
+      "bytes": 20471,
+      "role": "texture",
+      "sha256": "d08c53ecfc07081b95a741af740f4b8f80d4dd2658e468ff48f8e492f0c1a19e"
+    }
+  },
+  "id": "lobby_notice_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "9ba4e3f4f7248ff94dd25e07d031d1196c669ae6",
+    "files_from": {
+      "model.json": "model/lobby_notice_1@1/model.json, with its parts",
+      "model.usdc": "model/lobby_notice_1@1/model.usdc, remade",
+      "textures/lobby_sheets.png": "surface/lobby_sheets@2/decal.png, printed as its old recipe printed it"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 9ba4e3f4f)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/bare_metal@1",
+    "surface/lobby_sheets@2",
+    "surface/printed@1",
+    "surface/wood@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "inside"
+    ]
+  },
+  "title": "Lobby notice 1",
+  "usd": {
+    "default_prim": "/lobby_notice_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/lobby_notice_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}
