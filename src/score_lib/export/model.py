@@ -22,7 +22,7 @@ from score_lib.rewrite import asset_paths, export, joined, open_copy, rewrite
 from score_lib.source.store import place_of
 
 MADE_STAGES = ("surfaces-bake", "ship_kit", "crops-surfaces-bake")
-PREVIEW_VERSION = "mesh-3"
+PREVIEW_VERSION = "mesh-4"
 # a model the ground layer shows is a terrain piece (the terrain adapter's, made through the prop pipeline)
 LAYER_TAGS = {"layers/crops.usda": "crop", "layers/machines.usda": "machine", "layers/ground.usdc": "terrain"}
 ROUTE_TAGS = {"code": "piece", "model": "prop"}

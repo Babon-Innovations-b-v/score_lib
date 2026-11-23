@@ -255,6 +255,16 @@ def command_verify(options):
     raise SystemExit(1 if failures else 0)
 
 
+def command_layout(options):
+    from score_lib import layout
+    failures = layout.run(options.root, blob_store(reading=True), options.address or None, options.withdrawn,
+                          options.report)
+    for address, message in failures:
+        print(f"FAIL {address}: {message}")
+    print(f"{len(failures)} failures" + (f"; every measure in {options.report}" if options.report else ""))
+    raise SystemExit(1 if failures else 0)
+
+
 def command_quality(options):
     import os
     from score_lib import index, quality
@@ -514,14 +524,21 @@ def parser():
     ran.set_defaults(handle=command_run)
     indexed = commands.add_parser("index", help="rebuild the index from entries/")
     indexed.set_defaults(handle=command_index)
-    verified = commands.add_parser("verify", help="check entries, index, locks, blobs, the MIT admission and USD")
+    verified = commands.add_parser("verify", help="check entries, index, locks, blobs, the MIT admission, USD and "
+                                                  "model layouts")
     verified.add_argument("--deep", action="store_true")
     verified.add_argument("--address", action="append")
-    verified.add_argument("--no-usd", action="store_true", help="skip the USD check (section 8.7)")
+    verified.add_argument("--no-usd", action="store_true", help="skip the USD check (section 8.7) and the layout check")
     verified.add_argument("--contribution-pending", action="store_true",
                           help="an outside contribution before its merge: check only the contributor's half of its "
                                "trace")
     verified.set_defaults(handle=command_verify)
+    laid = commands.add_parser("layout", help="list model entries with faces far below their own texture detail "
+                                              "(the layout check verify runs on live entries)")
+    laid.add_argument("--address", action="append")
+    laid.add_argument("--withdrawn", action="store_true", help="withdrawn entries too")
+    laid.add_argument("--report", help="a JSON file of every entry's measure")
+    laid.set_defaults(handle=command_layout)
     scored = commands.add_parser("quality", help="score entries' quality from free local measures (reads "
                                  "SCORE_STORE and SCORE_REPO; run with stdin from /dev/null when detached)")
     scored.add_argument("--kind", action="append")

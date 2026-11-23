@@ -334,6 +334,15 @@ def check_usd(root, blobs, records):
     return failures
 
 
+def check_layout(root, blobs, records):
+    """11. every live model entry's texture layout: no more than layout.LEAST of its textured surface under a quarter
+    of its own median texture detail (layout.py, score's uv_layout `sparse`)."""
+    from score_lib import layout
+    wanted = [record for record in records if record["kind"] == "model" and record["state"] != "withdrawn"
+              and layout.drawn_file(record) is not None]
+    return layout.check(root, blobs, wanted)[0]
+
+
 def selected(root, addresses):
     """The records to verify: every entry, or the addresses asked for."""
     records = entries.all_entries(root)
@@ -352,5 +361,5 @@ def verify(root, blobs, addresses=None, deep=False, usd=True, pending=False):
     failures += check_taken_in(blobs, records)
     failures += check_contributed(records, pending) + check_decals(blobs, records)
     if usd:
-        failures += check_usd(root, blobs, records)
+        failures += check_usd(root, blobs, records) + check_layout(root, blobs, records)
     return failures

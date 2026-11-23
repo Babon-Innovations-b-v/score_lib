@@ -30,6 +30,9 @@ A library of reusable parts of SCORE worlds: records in git (`entries/`), bytes 
 ## Where things are
 
 - `src/score_lib/export/<kind>.py`: one exporter per kind; `export/run.py` the order, versions and writes.
+- `src/score_lib/layout.py`: `score-lib layout [--withdrawn] [--report FILE]`, every model entry's faces given under a
+  quarter of its own median texture detail (score's uv_layout `sparse`; the October 2026 bake's back faces at a
+  twentieth, score 2026-11-23), read from its USD; verify holds every live model entry to it (`check_layout`).
 - `src/score_lib/verify.py`: every check of `score-lib verify`; a withdrawn entry whose bytes are gone for good carries
   a `lost` block (`score-lib lost <address> --why`, score #156), which verify prints as a note, never a failure.
 - `src/score_lib/take_in.py`: `score-lib take-in`, loose made files (no store outputs) in as draft entries; a `take`

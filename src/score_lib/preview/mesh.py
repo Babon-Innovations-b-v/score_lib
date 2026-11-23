@@ -1,6 +1,7 @@
 """A mesh preview from the entry's own data: every mesh of a USD file drawn three-quarter orthographic with numpy and
-a painter's algorithm (far triangles first), each triangle filled with the base colour sampled at its UV centre and
-shaded by a fixed light. No renderer."""
+a painter's algorithm (far triangles first), each pixel coloured by the base colour texture at its own UV (the
+triangle's corner UVs interpolated at that pixel; one sample at a triangle's centre hid what a model wears, 2026-11-23)
+or by its material's constant colour, and shaded by its triangle's facing to a fixed light. No renderer."""
 import math
 import pathlib
 
@@ -38,7 +39,7 @@ def triangulated(counts, indices):
 
 
 def bound_texture(prim):
-    """(texture image as float array, or None) and the constant base colour of the prim's bound material."""
+    """(texture file path, or None) and the constant base colour of the prim's bound material."""
     material = UsdShade.MaterialBindingAPI(prim).ComputeBoundMaterial()[0]
     if not material:
         return None, GREY
@@ -50,8 +51,8 @@ def bound_texture(prim):
 
 
 def surface_colour(surface):
-    """(texture, constant) behind a UsdPreviewSurface's diffuseColor: the texture its connection reads, or its
-    constant colour."""
+    """(texture path, constant) behind a UsdPreviewSurface's diffuseColor: the texture file its connection reads, or
+    its constant colour."""
     colour = surface.GetInput("diffuseColor")
     if not colour:
         return None, GREY
@@ -60,8 +61,7 @@ def surface_colour(surface):
         texture_input = UsdShade.Shader(source.GetPrim()).GetInput("file")
         asset = texture_input.Get() if texture_input else None
         if asset is not None and asset.resolvedPath and pathlib.Path(asset.resolvedPath).is_file():
-            with Image.open(asset.resolvedPath) as picture:
-                return np.asarray(picture.convert("RGB"), dtype=np.float32) / 255.0, GREY
+            return asset.resolvedPath, GREY
         return None, GREY
     if colour.Get() is not None:
         return None, np.array(colour.Get(), dtype=np.float64) ** (1 / 2.2)
@@ -90,26 +90,47 @@ def sampled(texture, uvs):
     return texture[rows, columns]
 
 
-def mesh_triangles(prim):
-    """(world triangle corners (n, 3, 3), colours (n, 3)) of one mesh prim."""
+def load_texture(path):
+    """A texture file as an RGB float array."""
+    with Image.open(path) as picture:
+        return np.asarray(picture.convert("RGB"), dtype=np.float32) / 255.0
+
+
+def mesh_triangles(prim, textures):
+    """(world triangle corners (n, 3, 3), colours (n, 3), corner UVs (n, 3, 2), texture numbers (n)) of one mesh
+    prim: a triangle's texture number indexes `textures` (the texture files' paths, each added as met), -1 for a
+    constant colour."""
     mesh = UsdGeom.Mesh(prim)
     points = np.array(mesh.GetPointsAttr().Get() or [], dtype=np.float64)
     counts = np.array(mesh.GetFaceVertexCountsAttr().Get() or [], dtype=np.int64)
     indices = np.array(mesh.GetFaceVertexIndicesAttr().Get() or [], dtype=np.int64)
     if not len(points) or not len(counts):
-        return np.zeros((0, 3, 3)), np.zeros((0, 3))
+        return np.zeros((0, 3, 3)), np.zeros((0, 3)), np.zeros((0, 3, 2)), np.zeros(0, dtype=np.int64)
     matrix = np.array(UsdGeom.Xformable(prim).ComputeLocalToWorldTransform(Usd.TimeCode.Default()))
     world = np.c_[points, np.ones(len(points))] @ matrix
     corners = triangulated(counts, indices)
     triangles = world[indices[corners]][:, :, :3]
     faces = np.repeat(np.arange(len(counts)), np.maximum(counts - 2, 0))
-    centres = corner_uvs(mesh, len(indices), indices)
-    centres = centres[corners].mean(axis=1) if centres is not None else None
+    uvs = corner_uvs(mesh, len(indices), indices)
+    uvs = uvs[corners] if uvs is not None else None
     colours = np.tile(GREY, (len(triangles), 1))
+    numbers = np.full(len(triangles), -1, dtype=np.int64)
     for bound, face_indices in material_parts(mesh, len(counts)):
         chosen = np.isin(faces, face_indices)
-        colours[chosen] = part_colours(bound, centres[chosen] if centres is not None else None, int(chosen.sum()))
-    return triangles, colours
+        path, constant = bound_texture(bound)
+        colours[chosen] = constant
+        if path is not None and uvs is not None:
+            numbers[chosen] = texture_number(textures, path)
+    if uvs is None:
+        uvs = np.zeros((len(triangles), 3, 2))
+    return triangles, colours, uvs, numbers
+
+
+def texture_number(textures, path):
+    """The number of the texture file `path` in the list `textures`, added when new."""
+    if path not in textures:
+        textures.append(path)
+    return textures.index(path)
 
 
 def material_parts(mesh, face_count):
@@ -121,33 +142,32 @@ def material_parts(mesh, face_count):
     return found
 
 
-def part_colours(bound, centres, count):
-    """The colours of `count` triangles painted by `bound`'s material: its texture at their UV centres, else its
-    constant colour."""
-    texture, constant = bound_texture(bound)
-    if texture is None or centres is None:
-        return np.tile(constant, (count, 1))
-    return sampled(texture, centres)
-
-
 def drawn(prim):
     """Whether a mesh shows in a render: visible, and not a guide or proxy (such as a model's collision hull)."""
     imageable = UsdGeom.Imageable(prim)
     return imageable.ComputeVisibility() != UsdGeom.Tokens.invisible and imageable.ComputePurpose() in SHOWN_PURPOSES
 
 
+class Skin:
+    """What textures a set of triangles wears: each triangle's corner UVs (n, 3, 2), its texture's number (n; -1 for
+    none) and the texture files' paths."""
+
+    def __init__(self, uvs, numbers, paths):
+        self.uvs, self.numbers, self.paths = uvs, numbers, paths
+
+
 def collect(path):
-    """Every triangle and colour of every mesh a render of a USD file shows (its composed stage)."""
+    """Every triangle, constant colour and Skin of every mesh a render of a USD file shows (its composed stage)."""
     stage = Usd.Stage.Open(str(path))
-    found_triangles, found_colours = [], []
+    textures = []
+    found = []
     for prim in stage.Traverse():
         if prim.IsA(UsdGeom.Mesh) and drawn(prim):
-            triangles, colours = mesh_triangles(prim)
-            found_triangles.append(triangles)
-            found_colours.append(colours)
-    if not found_triangles:
-        return np.zeros((0, 3, 3)), np.zeros((0, 3)), stage
-    return np.concatenate(found_triangles), np.concatenate(found_colours), stage
+            found.append(mesh_triangles(prim, textures))
+    if not found:
+        return np.zeros((0, 3, 3)), np.zeros((0, 3)), stage, Skin(np.zeros((0, 3, 2)), np.zeros(0, dtype=int), [])
+    triangles, colours, uvs, numbers = (np.concatenate(parts) for parts in zip(*found))
+    return triangles, colours, stage, Skin(uvs, numbers, textures)
 
 
 def up_rotation(stage):
@@ -157,41 +177,77 @@ def up_rotation(stage):
     return np.eye(3)
 
 
-def shade(view_triangles, colours):
-    """Colours lit by the fixed light from each triangle's facing (both sides lit)."""
+def lighting(view_triangles):
+    """Each triangle's brightness under the fixed light from its facing (both sides lit)."""
     normals = np.cross(view_triangles[:, 1] - view_triangles[:, 0], view_triangles[:, 2] - view_triangles[:, 0])
     lengths = np.linalg.norm(normals, axis=1, keepdims=True)
     normals = np.divide(normals, lengths, out=np.zeros_like(normals), where=lengths > 0)
-    light = np.abs(normals @ (view_matrix() @ LIGHT))
-    return np.clip(colours * (0.42 + 0.58 * light[:, None]), 0, 1)
+    return 0.42 + 0.58 * np.abs(normals @ (view_matrix() @ LIGHT))
 
 
-def draw(view_triangles, colours, size):
-    """The triangles painted far to near on a square picture fitted to their outline."""
+def triangle_ids(view_triangles, canvas, middle, scale):
+    """Which triangle covers each pixel (its number + 1, 0 for none), painted far to near."""
+    ids = Image.new("I", (canvas, canvas), 0)
+    pen = ImageDraw.Draw(ids)
+    for number in np.argsort(view_triangles[:, :, 2].mean(axis=1), kind="stable"):
+        corners = (view_triangles[number, :, :2] - middle) * scale
+        pen.polygon([(canvas / 2 + x, canvas / 2 - y) for x, y in corners], fill=int(number) + 1)
+    return np.asarray(ids, dtype=np.int64) - 1
+
+
+def pixel_uvs(view_triangles, uvs, rows, columns, covering, canvas, middle, scale):
+    """The UV at each covered pixel: its triangle's corner UVs weighted by the pixel's place in the drawn triangle
+    (clamped into it at the rim; a triangle drawn edge-on takes its middle)."""
+    points = np.c_[(columns - canvas / 2) / scale, (canvas / 2 - rows) / scale] + middle
+    corners = view_triangles[covering, :, :2]
+    first, second = corners[:, 1] - corners[:, 0], corners[:, 2] - corners[:, 0]
+    offset = points - corners[:, 0]
+    area = first[:, 0] * second[:, 1] - first[:, 1] * second[:, 0]
+    flat = np.abs(area) < 1e-12
+    safe = np.where(flat, 1.0, area)
+    along_first = np.where(flat, 1 / 3, (offset[:, 0] * second[:, 1] - offset[:, 1] * second[:, 0]) / safe)
+    along_second = np.where(flat, 1 / 3, (first[:, 0] * offset[:, 1] - first[:, 1] * offset[:, 0]) / safe)
+    weights = np.clip(np.c_[1 - along_first - along_second, along_first, along_second], 0, None)
+    weights /= np.maximum(weights.sum(axis=1, keepdims=True), 1e-12)
+    return np.einsum("pk,pkc->pc", weights, uvs[covering])
+
+
+def draw(view_triangles, colours, size, skin=None):
+    """The triangles painted far to near on a square picture fitted to their outline, each pixel in its triangle's
+    constant colour or, where `skin` gives it a texture, that texture at the pixel's own UV."""
     canvas = size * OVERSAMPLE
-    picture = Image.new("RGB", (canvas, canvas), BACKGROUND)
+    picture = np.tile(np.array(BACKGROUND, dtype=np.uint8), (canvas, canvas, 1))
     if not len(view_triangles):
-        return picture.resize((size, size), Image.LANCZOS)
+        return Image.fromarray(picture).resize((size, size), Image.LANCZOS)
     flat = view_triangles[:, :, :2].reshape(-1, 2)
     low, high = flat.min(axis=0), flat.max(axis=0)
     scale = 0.9 * canvas / max(float((high - low).max()), 1e-9)
     middle = (low + high) / 2
-    order = np.argsort(view_triangles[:, :, 2].mean(axis=1), kind="stable")
-    pen = ImageDraw.Draw(picture)
-    filled = (shade(view_triangles, colours) * 255).astype(np.uint8)
-    for number in order:
-        corners = (view_triangles[number, :, :2] - middle) * scale
-        outline = [(canvas / 2 + x, canvas / 2 - y) for x, y in corners]
-        pen.polygon(outline, fill=tuple(int(value) for value in filled[number]))
-    return picture.resize((size, size), Image.LANCZOS)
+    ids = triangle_ids(view_triangles, canvas, middle, scale)
+    rows, columns = np.nonzero(ids >= 0)
+    covering = ids[rows, columns]
+    painted = colours[covering].astype(np.float64)
+    if skin is not None:
+        numbers = skin.numbers[covering]
+        textured = numbers >= 0
+        if textured.any():
+            found = pixel_uvs(view_triangles, skin.uvs, rows[textured], columns[textured], covering[textured],
+                              canvas, middle, scale)
+            for number in np.unique(numbers[textured]):
+                chosen = numbers[textured] == number
+                where = np.flatnonzero(textured)[chosen]
+                painted[where] = sampled(load_texture(skin.paths[number]), found[chosen])
+    lit = np.clip(painted * lighting(view_triangles)[covering, None], 0, 1)
+    picture[rows, columns] = (lit * 255).astype(np.uint8)
+    return Image.fromarray(picture).resize((size, size), Image.LANCZOS)
 
 
 def render(path, destination, size=SIZE):
     """Draw a USD file's meshes to a png; the number of triangles drawn."""
-    triangles, colours, stage = collect(path)
+    triangles, colours, stage, skin = collect(path)
     turned = triangles @ up_rotation(stage).T
     view = turned @ view_matrix().T
-    picture = draw(view, colours, size)
+    picture = draw(view, colours, size, skin)
     pathlib.Path(destination).parent.mkdir(parents=True, exist_ok=True)
     picture.save(destination, format="PNG", optimize=False)
     return len(triangles)
