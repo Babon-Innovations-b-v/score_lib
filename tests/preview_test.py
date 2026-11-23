@@ -1,5 +1,6 @@
 """The mesh preview draws only what a render shows: a guide mesh (a model's collision hull) is left out, and a
-textured triangle shows its texture pixel by pixel (red if one sample at its centre paints it whole)."""
+textured triangle shows its texture pixel by pixel (red if one sample at its centre paints it whole), and a small near
+triangle shows over a big far one whose middle lies nearer (red if triangles are painted by their middles' depth)."""
 import numpy as np
 import pytest
 from PIL import Image
@@ -85,3 +86,15 @@ def test_a_texture_is_drawn_pixel_by_pixel(tmp_path, painted, dark_shown):
     red = (drawn[:, 0] > 100) & (drawn[:, 1] < 40)
     dark = drawn.max(axis=1) < 30
     assert red.sum() > 500 and (dark.sum() > 500) == dark_shown
+
+
+def test_a_near_part_shows_over_a_far_face_by_its_depth_at_each_pixel():
+    """A big face sloping from near (its far corner off to the side) to far behind a small upright triangle: its
+    middle lies nearer than the small one's, but where the two overlap the small one is nearer, so it shows there."""
+    big = [[-4.0, -1.0, 10.0], [1.0, -1.0, -1.0], [1.0, 1.0, -1.0]]
+    small = [[0.6, -0.2, 0.0], [0.9, -0.2, 0.0], [0.75, 0.2, 0.0]]
+    view = np.array([big, small], dtype=np.float64)
+    assert view[0, :, 2].mean() > view[1, :, 2].mean()
+    ids = mesh.triangle_ids(view, 200, np.array([-1.5, 0.0]), 30.0)
+    column, row = int(100 + (0.75 + 1.5) * 30), int(100 - 0.0 * 30)
+    assert ids[row, column] == 1

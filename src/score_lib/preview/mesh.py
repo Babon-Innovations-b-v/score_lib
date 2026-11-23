@@ -1,7 +1,9 @@
 """A mesh preview from the entry's own data: every mesh of a USD file drawn three-quarter orthographic with numpy and
-a painter's algorithm (far triangles first), each pixel coloured by the base colour texture at its own UV (the
-triangle's corner UVs interpolated at that pixel; one sample at a triangle's centre hid what a model wears, 2026-11-23)
-or by its material's constant colour, and shaded by its triangle's facing to a fixed light. No renderer."""
+a depth buffer (at each pixel the nearest triangle there, by its depth at that pixel; a painter's algorithm by
+triangle middles let a big far face cover a small near part, 2026-11-23), each pixel coloured by the base colour
+texture at its own UV (the triangle's corner UVs interpolated at that pixel; one sample at a triangle's centre hid
+what a model wears, 2026-11-23) or by its material's constant colour, and shaded by its triangle's facing to a fixed
+light. No renderer."""
 import math
 import pathlib
 
@@ -161,7 +163,7 @@ def collect(path):
     stage = Usd.Stage.Open(str(path))
     textures = []
     found = []
-    for prim in stage.Traverse():
+    for prim in stage.Traverse(Usd.TraverseInstanceProxies()):  # an instanced part's meshes too (SimReady models)
         if prim.IsA(UsdGeom.Mesh) and drawn(prim):
             found.append(mesh_triangles(prim, textures))
     if not found:
@@ -186,13 +188,36 @@ def lighting(view_triangles):
 
 
 def triangle_ids(view_triangles, canvas, middle, scale):
-    """Which triangle covers each pixel (its number + 1, 0 for none), painted far to near."""
-    ids = Image.new("I", (canvas, canvas), 0)
-    pen = ImageDraw.Draw(ids)
-    for number in np.argsort(view_triangles[:, :, 2].mean(axis=1), kind="stable"):
-        corners = (view_triangles[number, :, :2] - middle) * scale
-        pen.polygon([(canvas / 2 + x, canvas / 2 - y) for x, y in corners], fill=int(number) + 1)
-    return np.asarray(ids, dtype=np.int64) - 1
+    """Which triangle covers each pixel (its number, -1 for none): the nearest one at that pixel by its own depth
+    there (a depth buffer), so a big far face whose middle lies nearer never covers a small near part; a pixel within
+    half a pixel of a triangle's edge counts as covered, so thin parts still draw."""
+    ids = np.full((canvas, canvas), -1, dtype=np.int64)
+    nearest = np.full((canvas, canvas), -np.inf)
+    across = canvas / 2 + (view_triangles[:, :, 0] - middle[0]) * scale
+    down = canvas / 2 - (view_triangles[:, :, 1] - middle[1]) * scale
+    for number in range(len(view_triangles)):
+        columns, rows, depths = across[number], down[number], view_triangles[number, :, 2]
+        area = ((columns[1] - columns[0]) * (rows[2] - rows[0]) - (columns[2] - columns[0]) * (rows[1] - rows[0]))
+        if abs(area) < 1e-9:
+            continue  # seen edge-on: it covers no pixel
+        left, right = max(int(np.floor(columns.min() - 0.5)), 0), min(int(np.ceil(columns.max() + 0.5)), canvas - 1)
+        top, bottom = max(int(np.floor(rows.min() - 0.5)), 0), min(int(np.ceil(rows.max() + 0.5)), canvas - 1)
+        if left > right or top > bottom:
+            continue
+        pixel_rows, pixel_columns = np.mgrid[top:bottom + 1, left:right + 1]
+        weights = np.stack([((columns[(at + 1) % 3] - pixel_columns) * (rows[(at + 2) % 3] - pixel_rows)
+                             - (columns[(at + 2) % 3] - pixel_columns) * (rows[(at + 1) % 3] - pixel_rows)) / area
+                            for at in range(3)])
+        edges = np.array([np.hypot(columns[(at + 2) % 3] - columns[(at + 1) % 3],
+                                   rows[(at + 2) % 3] - rows[(at + 1) % 3]) for at in range(3)])
+        inside = (weights >= -0.5 * edges[:, None, None] / abs(area)).all(axis=0)
+        clamped = np.clip(weights, 0.0, None)
+        depth = np.einsum("k,kij->ij", depths, clamped / np.maximum(clamped.sum(axis=0), 1e-12))
+        window = (slice(top, bottom + 1), slice(left, right + 1))
+        nearer = inside & (depth > nearest[window])
+        nearest[window][nearer] = depth[nearer]
+        ids[window][nearer] = number
+    return ids
 
 
 def pixel_uvs(view_triangles, uvs, rows, columns, covering, canvas, middle, scale):
@@ -213,8 +238,8 @@ def pixel_uvs(view_triangles, uvs, rows, columns, covering, canvas, middle, scal
 
 
 def draw(view_triangles, colours, size, skin=None):
-    """The triangles painted far to near on a square picture fitted to their outline, each pixel in its triangle's
-    constant colour or, where `skin` gives it a texture, that texture at the pixel's own UV."""
+    """The triangles drawn through a depth buffer on a square picture fitted to their outline, each pixel in its
+    triangle's constant colour or, where `skin` gives it a texture, that texture at the pixel's own UV."""
     canvas = size * OVERSAMPLE
     picture = np.tile(np.array(BACKGROUND, dtype=np.uint8), (canvas, canvas, 1))
     if not len(view_triangles):
