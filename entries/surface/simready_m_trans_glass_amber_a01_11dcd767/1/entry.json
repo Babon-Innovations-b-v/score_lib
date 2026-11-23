@@ -7,9 +7,9 @@
       "sha256": "5cf6ea47c58197bf17802fe60cc9ab4f2e97028972eada87e5626d514cc7d036"
     },
     "surface.json": {
-      "bytes": 1958,
+      "bytes": 2252,
       "role": "record",
-      "sha256": "3de86d1f5ff26d9504885e1cfbdd75edc484e0621bb17d8f6c466e30ed6b3f46"
+      "sha256": "8284c7da5cd23daa66b954d3e093d9ac4a964333f8a3bf493ed1dcd568b82dcb"
     }
   },
   "id": "simready_m_trans_glass_amber_a01_11dcd767",
@@ -30,12 +30,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: consumable_lightBulb_py21w_amber_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

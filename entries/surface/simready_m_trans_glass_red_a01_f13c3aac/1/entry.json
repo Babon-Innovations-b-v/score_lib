@@ -7,9 +7,9 @@
       "sha256": "1b4c1cdc4832e377c21bdbbf58cec4609f154b3f24b9a22b664df582b4bef5c2"
     },
     "surface.json": {
-      "bytes": 1967,
+      "bytes": 2270,
       "role": "record",
-      "sha256": "eb7b06847dccca406940d708ba09318e4a7db7ba45de642adc275c29cd6897c2"
+      "sha256": "1194e319775ed70b17a03d93a97d776b54155195d75037833e64a8860efcea0b"
     }
   },
   "id": "simready_m_trans_glass_red_a01_f13c3aac",
@@ -30,12 +30,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: testingTool_battery_analyzer_b01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

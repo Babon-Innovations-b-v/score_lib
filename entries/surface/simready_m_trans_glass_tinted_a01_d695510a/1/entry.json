@@ -7,9 +7,9 @@
       "sha256": "a86c25515c701b27748589d583077887ffc491e057093463f211725e02dcd76c"
     },
     "surface.json": {
-      "bytes": 2068,
+      "bytes": 2300,
       "role": "record",
-      "sha256": "830bbe43303a882f51f811887666e716ed8951ec97efd544980063557faf6549"
+      "sha256": "3b347dba4971cbfdcad8ed502d51f3c05138911d2e516b879228a7c2d497fe82"
     }
   },
   "id": "simready_m_trans_glass_tinted_a01_d695510a",
@@ -30,12 +30,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: cabinet_for_drugs_a03",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

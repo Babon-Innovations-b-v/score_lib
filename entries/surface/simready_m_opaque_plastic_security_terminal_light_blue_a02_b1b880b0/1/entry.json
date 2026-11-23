@@ -7,9 +7,9 @@
       "sha256": "b0b280fcf542838127b0669ae929e173ff43ca59ab81a29f9ec78062c6163617"
     },
     "surface.json": {
-      "bytes": 1864,
+      "bytes": 2117,
       "role": "record",
-      "sha256": "8e973ab5593d8893afaf3729ca6db72b2485aa9e4b865d4a83eb90985732e483"
+      "sha256": "4b29a9f652f513bd10fd79f1ebb8f07c20ce302b0e505019f792dad5cfeab670"
     }
   },
   "id": "simready_m_opaque_plastic_security_terminal_light_blue_a02_b1b880b0",
@@ -30,12 +30,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: security_terminal_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

@@ -7,9 +7,9 @@
       "sha256": "dda1318abf6bd27038d1e685214c5b3e7536ea036f1ad60eccb0e7de3d573314"
     },
     "surface.json": {
-      "bytes": 1881,
+      "bytes": 2067,
       "role": "record",
-      "sha256": "dc93fecbd2f9a74df8f9a3e170d113745d4691f842c273c1c6a5d6f17067eb6c"
+      "sha256": "73dad0b8a65b6ac76dc2708256e4677a2f7e0e97512ffd6eeb1be044116433f4"
     }
   },
   "id": "simready_m_trans_glass_black_a01_9116cb6b",
@@ -30,12 +30,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: humidifier_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

@@ -22,9 +22,9 @@
       "sha256": "5fb547200178377f4873596c1791b1eaf7994dc2853a363ee2bbb819d6250a2a"
     },
     "surface.json": {
-      "bytes": 1666,
+      "bytes": 2091,
       "role": "record",
-      "sha256": "285e22c8dd280849c27a1b1b1f95c1d7a24451ad2520016313de95bc71dab094"
+      "sha256": "f5cb63bfa891d5df323a100cebb1ac954a16b8b414a3b79aa3d1a11b59ef5971"
     }
   },
   "id": "simready_m_opaque_wood_recycled_a01_4ea8157a",
@@ -55,12 +55,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: furniture_workbench_standard_e01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

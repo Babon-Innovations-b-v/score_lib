@@ -7,9 +7,9 @@
       "sha256": "a962297a161c833f7a056dcad753fbc5cbee1f7204e1ee9483958e0cb4efccc3"
     },
     "surface.json": {
-      "bytes": 1842,
+      "bytes": 2130,
       "role": "record",
-      "sha256": "da472d01c2a09470a0b416c1084a05331d4ef22e3e999524a8241ec24bc08831"
+      "sha256": "f76bd711dbea8a9b905c6522970c4cd27fdc6502c5e9a375610c1e38b72e340f"
     }
   },
   "id": "simready_m_trans_glass_black_a01_d7f2b887",
@@ -30,12 +30,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: lung_ventilation_artificial_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

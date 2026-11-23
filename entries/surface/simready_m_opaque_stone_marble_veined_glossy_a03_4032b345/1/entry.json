@@ -22,9 +22,9 @@
       "sha256": "bd0f39fc55413df2daa80c0059e7eaf40fbc68a47cfaab3c78c89194da244edd"
     },
     "surface.json": {
-      "bytes": 1716,
+      "bytes": 2143,
       "role": "record",
-      "sha256": "49ada92699976f1e9c0594f33b243218dcfaf2be0a9a9554d959c2a98928676f"
+      "sha256": "6d281bd9c5c389d9155f900d8adf83da3d7726c8ff53196673a45317dc0d8a7f"
     }
   },
   "id": "simready_m_opaque_stone_marble_veined_glossy_a03_4032b345",
@@ -55,12 +55,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: dispenser_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

@@ -22,9 +22,9 @@
       "sha256": "8c8cf7b5924887525746256e3b3ef381a9685e0d3d6c8b57c235b70dfad05237"
     },
     "surface.json": {
-      "bytes": 1707,
+      "bytes": 2095,
       "role": "record",
-      "sha256": "af8aea2393f3250a72dea8c5638650cd2a2d7503bb0c6c3dda359dd3e7519fc7"
+      "sha256": "a4214585b3e7316711756e526c2f49278f0651fcd8f6b2497143f79ebf76897f"
     }
   },
   "id": "simready_m_opaque_wood_oak_b01_28494184",
@@ -55,12 +55,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: facilitySystem_beverageStation_breakArea_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",
