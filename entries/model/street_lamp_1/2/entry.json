@@ -1,0 +1,73 @@
+{
+  "address": "model/street_lamp_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 1431,
+      "role": "record",
+      "sha256": "743536eca548f7ce7e6ae9f6437ccdd52dbf43b195cd600cb8da81d3672a2173"
+    },
+    "model.usdc": {
+      "bytes": 44113,
+      "role": "usd",
+      "sha256": "431aff54ba8668358bd45edccf8c88ed002d55781a42ed56fbfbde5543be80b2"
+    },
+    "model_glow.usdc": {
+      "bytes": 3428,
+      "role": "usd",
+      "sha256": "ad5afdb8eebd243c477e801e65192a15ef35cdefc53900018e8e660852d24d7e"
+    }
+  },
+  "id": "street_lamp_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "2289553f5332faa7f6cdc97471714f265172a430",
+    "files_from": {
+      "model.json": "model/street_lamp_1@1/model.json, with its parts",
+      "model.usdc": "model/street_lamp_1@1/model.usdc, remade",
+      "model_glow.usdc": "model/street_lamp_1@1/model_glow.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 2289553f5)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/bare_metal@1",
+    "surface/galvanized@1",
+    "surface/glowing@1",
+    "surface/rusted_metal@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "outside"
+    ]
+  },
+  "title": "Street lamp 1",
+  "usd": {
+    "default_prim": "/street_lamp_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/street_lamp_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}
