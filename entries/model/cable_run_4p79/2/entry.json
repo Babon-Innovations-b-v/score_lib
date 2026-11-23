@@ -1,0 +1,65 @@
+{
+  "address": "model/cable_run_4p79@2",
+  "files": {
+    "model.json": {
+      "bytes": 609,
+      "role": "record",
+      "sha256": "aa8b208facdcf0b2f01347faf73e11abbabdf13501b747b631b46922585a32f2"
+    },
+    "model.usdc": {
+      "bytes": 48361,
+      "role": "usd",
+      "sha256": "832c22f4eef99048ffa3080fb1c5d67c4642aa0b0229e9481eef654f48ca5e2f"
+    }
+  },
+  "id": "cable_run_4p79",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "2289553f5332faa7f6cdc97471714f265172a430",
+    "files_from": {
+      "model.json": "model/cable_run_4p79@1/model.json, with its parts",
+      "model.usdc": "model/cable_run_4p79@1/model.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 2289553f5)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/bare_metal@1",
+    "surface/rubber@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "moon",
+      "outside"
+    ]
+  },
+  "title": "Cable run 4p79",
+  "usd": {
+    "default_prim": "/cable_run_4p79",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/cable_run_4p79/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

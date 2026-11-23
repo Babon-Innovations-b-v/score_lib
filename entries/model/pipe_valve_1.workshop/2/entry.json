@@ -1,0 +1,67 @@
+{
+  "address": "model/pipe_valve_1.workshop@2",
+  "files": {
+    "model.json": {
+      "bytes": 1714,
+      "role": "record",
+      "sha256": "d07743233428171638508ec5b840e75de7c4ad6c8c1957f57d13a91355f17afb"
+    },
+    "model.usdc": {
+      "bytes": 95748,
+      "role": "usd",
+      "sha256": "68e2133a57004ca173681c33cf3482eea1454654ecc2bd3216cd224eaefc3bb5"
+    }
+  },
+  "id": "pipe_valve_1.workshop",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "2289553f5332faa7f6cdc97471714f265172a430",
+    "files_from": {
+      "model.json": "model/pipe_valve_1.workshop@1/model.json, with its parts",
+      "model.usdc": "model/pipe_valve_1.workshop@1/model.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 2289553f5)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/anodized@1",
+    "surface/bare_metal@1",
+    "surface/cast_metal@1",
+    "surface/painted_metal@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Pipe valve 1",
+  "usd": {
+    "default_prim": "/pipe_valve_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/pipe_valve_1.workshop/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

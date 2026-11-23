@@ -1,0 +1,73 @@
+{
+  "address": "model/far_window_lit_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 1266,
+      "role": "record",
+      "sha256": "9bdd22cc2420c1761ed7500294fd5bcaac6abff2e3c95f2ecf678afb1a9a76de"
+    },
+    "model.usdc": {
+      "bytes": 13360,
+      "role": "usd",
+      "sha256": "f7223a0026cca007e0e27714ef85fd238722d7bfe162c5ae4e4b475d6cd0e3e2"
+    },
+    "model_glow.usdc": {
+      "bytes": 4668,
+      "role": "usd",
+      "sha256": "36627428651a3fd79b1afafb06f414dc83151fc59c9b54a613ab6aa1a0c3f643"
+    }
+  },
+  "id": "far_window_lit_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "2289553f5332faa7f6cdc97471714f265172a430",
+    "files_from": {
+      "model.json": "model/far_window_lit_1@1/model.json, with its parts",
+      "model.usdc": "model/far_window_lit_1@1/model.usdc, remade",
+      "model_glow.usdc": "model/far_window_lit_1@1/model_glow.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 2289553f5)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/bare_metal@1",
+    "surface/cast_metal@1",
+    "surface/glowing@1",
+    "surface/rusted_metal@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "outside"
+    ]
+  },
+  "title": "Far window lit 1",
+  "usd": {
+    "default_prim": "/far_window_lit_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/far_window_lit_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}
