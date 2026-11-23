@@ -1,0 +1,67 @@
+{
+  "address": "model/rig_hanger_3@2",
+  "files": {
+    "model.json": {
+      "bytes": 1768,
+      "role": "record",
+      "sha256": "b156e9954e185cd5278d87b032c050ee7b380847f42086258455241f3301c728"
+    },
+    "model.usdc": {
+      "bytes": 118921,
+      "role": "usd",
+      "sha256": "0859fed5ffdd0a490706566f13f7a2fd098e539b18a767c1f96bc3d4db6f5f8e"
+    }
+  },
+  "id": "rig_hanger_3",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "2289553f5332faa7f6cdc97471714f265172a430",
+    "files_from": {
+      "model.json": "model/rig_hanger_3@1/model.json, with its parts",
+      "model.usdc": "model/rig_hanger_3@1/model.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 2289553f5)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/bare_metal@1",
+    "surface/cast_metal@1",
+    "surface/galvanized@1",
+    "surface/rubber@2"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Rig hanger 3",
+  "usd": {
+    "default_prim": "/rig_hanger_3",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/rig_hanger_3/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

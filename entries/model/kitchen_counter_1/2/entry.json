@@ -1,0 +1,68 @@
+{
+  "address": "model/kitchen_counter_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 1881,
+      "role": "record",
+      "sha256": "0e534eab09cb7becb00ce16de4a08d454c2b72b8cca2e7959dbd2ca92b3a8ca0"
+    },
+    "model.usdc": {
+      "bytes": 91606,
+      "role": "usd",
+      "sha256": "985cc9f28c2f183b480f1232d51d4c0756cb506972f16655e7ba368d44e6c23d"
+    }
+  },
+  "id": "kitchen_counter_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "2289553f5332faa7f6cdc97471714f265172a430",
+    "files_from": {
+      "model.json": "model/kitchen_counter_1@1/model.json, with its parts",
+      "model.usdc": "model/kitchen_counter_1@1/model.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score 2289553f5)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/bare_metal@1",
+    "surface/cast_metal@1",
+    "surface/rubber@2",
+    "surface/tiles@1",
+    "surface/wood@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "inside"
+    ]
+  },
+  "title": "Kitchen counter 1",
+  "usd": {
+    "default_prim": "/kitchen_counter_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/kitchen_counter_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}
