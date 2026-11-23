@@ -7,9 +7,9 @@
       "sha256": "14b0310935999266c93b30e0975d99280901900359c4368fabc8e8d8d7bed91e"
     },
     "surface.json": {
-      "bytes": 1082,
+      "bytes": 2248,
       "role": "record",
-      "sha256": "1d13075322f3aac3ae2e3954fc567672c50e90de5ed860bbe8bf9abbb3911e70"
+      "sha256": "8ecbc17ee01620bf6c4345370faca2a1b04db34360cccb61b00abaebcbaa3626"
     }
   },
   "id": "simready_trans_glass_unique_fire_extinguisher_a_f696711e",
@@ -20,7 +20,7 @@
     "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
     "files_from": {
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -30,12 +30,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: fireExtinguisher_abc_a03",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

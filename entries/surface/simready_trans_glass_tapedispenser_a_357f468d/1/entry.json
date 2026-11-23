@@ -7,9 +7,9 @@
       "sha256": "fd958845d87f51dca03ab0d8e2ce896fc325f65b57294adc0ba34dc2ce454c19"
     },
     "surface.json": {
-      "bytes": 1068,
+      "bytes": 2234,
       "role": "record",
-      "sha256": "1ea74a5ee3040a06a5696c15cb078b32334dc91c66b0607915707ed64f899608"
+      "sha256": "aa78eea77003dee90f9cd603c830b743f4f35eae323993ad205d7fde87177126"
     }
   },
   "id": "simready_trans_glass_tapedispenser_a_357f468d",
@@ -20,7 +20,7 @@
     "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
     "files_from": {
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -30,12 +30,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: tape_dispenser_a03",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

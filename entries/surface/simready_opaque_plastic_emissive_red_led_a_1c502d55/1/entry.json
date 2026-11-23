@@ -7,9 +7,9 @@
       "sha256": "00f95f592af9736ffa173c4260740913f9446330ef66e68e3b5f6e48b6e37923"
     },
     "surface.json": {
-      "bytes": 928,
+      "bytes": 2097,
       "role": "record",
-      "sha256": "af44ab8e3c81096ea9999d994cb1f4c23131594b7ee506df09676876913b35e5"
+      "sha256": "b68155c5b22ac85153a1a68469a5668f441cc0c8b201cbbd34161423281c718a"
     }
   },
   "id": "simready_opaque_plastic_emissive_red_led_a_1c502d55",
@@ -20,7 +20,7 @@
     "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
     "files_from": {
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -30,12 +30,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: warehouse_EF_electricPanel_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

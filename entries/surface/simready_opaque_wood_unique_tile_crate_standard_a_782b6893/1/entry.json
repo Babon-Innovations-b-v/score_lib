@@ -22,9 +22,9 @@
       "sha256": "e4c117df66a63f4ad4cfba786fdf427887387177f14aca783ff5dcf4d649a13b"
     },
     "surface.json": {
-      "bytes": 812,
+      "bytes": 2099,
       "role": "record",
-      "sha256": "2040544cb3fc158b8d33e4036e94fd492c3368aea4dd2630736cc5dfebe66071"
+      "sha256": "4c649c695ec82714d594b4c5117ab841d6a63647ae23869add631efe16d11460"
     }
   },
   "id": "simready_opaque_wood_unique_tile_crate_standard_a_782b6893",
@@ -44,7 +44,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "normal.png": "rack_composition_a06/simready_usd/Textures/T_StandardWoodCrate_A1_Tile_Normal.png",
       "orm.png": "rack_composition_a06/simready_usd/Textures/T_StandardWoodCrate_A1_Tile_ORM.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -55,12 +55,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: rack_composition_a06",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",
