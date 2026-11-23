@@ -22,9 +22,9 @@
       "sha256": "24a572633b453cbcc570bf02fed7e0e388a90733dc763c3dcc9acd9e7204f4b6"
     },
     "surface.json": {
-      "bytes": 853,
+      "bytes": 2077,
       "role": "record",
-      "sha256": "4e1481fac586d57693ec998ebd574b030b9a747db6690df04a8d0ad6d79566ad"
+      "sha256": "82080670652facd1feac382edf9f39a316b11dfe850b05360e8a0c0fbbed7f26"
     }
   },
   "id": "simready_m_opaque_plastic_fluted_mat_black_a01_e323d0af",
@@ -44,7 +44,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "metallic.png": "bodyPart_door_assembled_c01/simready_usd/Textures/t_rubber_flutedMat_a01_tile_orm.png",
       "normal.png": "bodyPart_door_assembled_c01/simready_usd/Textures/t_rubber_flutedMat_a01_tile_nor.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -55,12 +55,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: bodyPart_door_assembled_c01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

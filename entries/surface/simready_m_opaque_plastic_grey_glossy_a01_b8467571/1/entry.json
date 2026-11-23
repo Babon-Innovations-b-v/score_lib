@@ -22,9 +22,9 @@
       "sha256": "3e85854e225cdb984a0d7395e7ef0a05e6286d4089992693c4396f1aa4dbd395"
     },
     "surface.json": {
-      "bytes": 793,
+      "bytes": 2060,
       "role": "record",
-      "sha256": "1004f76e7bd7918f2c7a561ba4a27698f220f212cf529ed79787ffb87178b69d"
+      "sha256": "1c898df8523a1a6d3dfe12a1c09539f90218c2b0606f56a6a3df55b5bf583d9a"
     }
   },
   "id": "simready_m_opaque_plastic_grey_glossy_a01_b8467571",
@@ -44,7 +44,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "normal.png": "warehouse_barrel_plastic_a01/simready_usd/Textures/t_plastic_glossy_grey_a01_tile_nor.png",
       "orm.png": "warehouse_barrel_plastic_a01/simready_usd/Textures/t_plastic_glossy_grey_a01_tile_orm.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -55,12 +55,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: warehouse_barrel_plastic_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

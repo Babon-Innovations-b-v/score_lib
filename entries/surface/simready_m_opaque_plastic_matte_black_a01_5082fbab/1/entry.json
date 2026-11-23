@@ -12,9 +12,9 @@
       "sha256": "51c9e8aa2c9293233131d203792b5c4432375d9930657c09d723311fd38d5f62"
     },
     "surface.json": {
-      "bytes": 883,
+      "bytes": 2150,
       "role": "record",
-      "sha256": "e30bdc80c846fd44a7379728ddcea875cbb8d403736c02bacda6bc6abf851b53"
+      "sha256": "235c5a792a80ccbea24ad64af0022fa0f45a19a84c3651258a0e6b56542b8d6c"
     }
   },
   "id": "simready_m_opaque_plastic_matte_black_a01_5082fbab",
@@ -32,7 +32,7 @@
     "files_from": {
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "normal.png": "testingTool_wheel_alignment_lift_main_b01/simready_usd/Textures/t_plastic_gray_a01_tile_nor.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -43,12 +43,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: testingTool_wheel_alignment_lift_main_b01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

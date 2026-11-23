@@ -17,9 +17,9 @@
       "sha256": "4b7cc78f18aac0f901702fba5887363671b2234ea78c828bcb8af6e5437bd18e"
     },
     "surface.json": {
-      "bytes": 852,
+      "bytes": 2121,
       "role": "record",
-      "sha256": "0526b99c37ea9ad53995c2dac7a42f06ef36dbc839a9d8e7a368a1ad3fca79b2"
+      "sha256": "2bb12479796f29895e298f4e917f50ef09e5716e9b1df08e9f5039fca7430293"
     }
   },
   "id": "simready_m_opaque_plastic_green_a01_dcb93e7e",
@@ -38,7 +38,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "normal.png": "testingTool_wheel_balancing_machine_b01/simready_usd/Textures/t_plastic_green_a01_tile_nor.png",
       "orm.png": "testingTool_wheel_balancing_machine_b01/simready_usd/Textures/t_plastic_green_a01_tile_orm.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -49,12 +49,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: testingTool_wheel_balancing_machine_b01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

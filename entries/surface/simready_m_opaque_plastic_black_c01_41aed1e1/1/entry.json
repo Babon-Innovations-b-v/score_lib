@@ -12,9 +12,9 @@
       "sha256": "b481b6965cd5b4166332c8e3bd6bc1c51da44ac884bd6df5b785dec33c25469c"
     },
     "surface.json": {
-      "bytes": 853,
+      "bytes": 2121,
       "role": "record",
-      "sha256": "898251ed28e114b223e9e6f91bb22d9208379cc0897b5f5438d2a59cf478c27a"
+      "sha256": "a43896ca222239c7fbba73f8e6f2dde7841fbcfbafc7a0532675479e1b8e4967"
     }
   },
   "id": "simready_m_opaque_plastic_black_c01_41aed1e1",
@@ -32,7 +32,7 @@
     "files_from": {
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "metallic.png": "cart_medical_utility_a01/simready_usd/Textures/t_plastic_glossy_black_a01_tile_orm.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -43,12 +43,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: cart_medical_utility_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

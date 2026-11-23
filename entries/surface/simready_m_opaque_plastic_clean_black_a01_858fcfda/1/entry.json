@@ -7,9 +7,9 @@
       "sha256": "5b6d6d8bd2c6756a13bc674de92796fb75aa82c29ba750b1f0059d530675d237"
     },
     "surface.json": {
-      "bytes": 870,
+      "bytes": 2136,
       "role": "record",
-      "sha256": "a976ee088cb1a3c00b6a12b5d2771fae5d535b6c0e71927e697e8f40ea78a08c"
+      "sha256": "a8d4740fef2ffc775843386a868292d35826c9aeb169e932c8549e29f2839886"
     }
   },
   "id": "simready_m_opaque_plastic_clean_black_a01_858fcfda",
@@ -20,7 +20,7 @@
     "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
     "files_from": {
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -30,12 +30,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: fixture_soapDispenser_wallMounted_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

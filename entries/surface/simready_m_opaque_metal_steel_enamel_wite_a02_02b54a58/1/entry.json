@@ -17,9 +17,9 @@
       "sha256": "144f1fbc80168a7d9089802e5fcdc7aeb724ab997e67b63f3872c0383c665194"
     },
     "surface.json": {
-      "bytes": 895,
+      "bytes": 2272,
       "role": "record",
-      "sha256": "8d2fb408e9e0444d578e55995e6454f622350276903753b960b04c22cc8a8767"
+      "sha256": "780130190328261ef0b101f86207bc0a2f4412895fe66ae05977db2cd58b8bc7"
     }
   },
   "id": "simready_m_opaque_metal_steel_enamel_wite_a02_02b54a58",
@@ -38,7 +38,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "metallic.png": "testingTool_battery_analyzer_c01/simready_usd/Textures/t_metal_steelEnamel_wite_a02_tile_orm.png",
       "normal.png": "testingTool_battery_analyzer_c01/simready_usd/Textures/t_metal_steelEnamel_wite_a02_tile_nor.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -49,12 +49,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: testingTool_battery_analyzer_c01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

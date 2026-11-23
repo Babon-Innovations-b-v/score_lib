@@ -17,9 +17,9 @@
       "sha256": "7f8387649c8a8df242ec610d1e2633c91b9cba10c6ea6043bd0bed3ffe4ef441"
     },
     "surface.json": {
-      "bytes": 854,
+      "bytes": 2109,
       "role": "record",
-      "sha256": "288f480c5ac44122df31e175499260dd4050ee25c8a1b05044c893cb8f2f14cd"
+      "sha256": "5ec586fa14d7da735a0cf98be50c6acf850d1fdcda356a8a585c5e36989e1c52"
     }
   },
   "id": "simready_m_opaque_plastic_rough_gray_a01_5df5e620",
@@ -38,7 +38,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "normal.png": "appliance_dishwasher_a01/simready_usd/Textures/t_plastic_dirty_b01_tile_nor.png",
       "orm.png": "appliance_dishwasher_a01/simready_usd/Textures/t_plastic_dirty_b01_tile_orm.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -49,12 +49,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: appliance_dishwasher_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

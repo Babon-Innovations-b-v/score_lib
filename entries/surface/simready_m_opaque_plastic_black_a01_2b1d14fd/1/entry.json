@@ -22,9 +22,9 @@
       "sha256": "c840f18380e08ec52d43ebe660d0f1290122fec5ae7c43cf8a987b0163661da9"
     },
     "surface.json": {
-      "bytes": 804,
+      "bytes": 2072,
       "role": "record",
-      "sha256": "4ace8848001940568b7e0808570cf54ac21fb03f6ac96bae6cc9acdbd95a73bc"
+      "sha256": "0320791d9b3d62e8f2f1f8f3764a008f10ab5a65735814dabad8ca546328b962"
     }
   },
   "id": "simready_m_opaque_plastic_black_a01_2b1d14fd",
@@ -44,7 +44,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "normal.png": "tireTool_tire_changer_a01/simready_usd/Textures/t_plastic_black_a01_tile_nor.png",
       "orm.png": "tireTool_tire_changer_a01/simready_usd/Textures/t_plastic_black_a01_tile_orm.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -55,12 +55,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: tireTool_tire_changer_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

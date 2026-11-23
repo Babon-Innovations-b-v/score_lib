@@ -22,9 +22,9 @@
       "sha256": "18ea61358f56a946746d4c180eadb1e78e58fc58987a4def18fec34a08014f81"
     },
     "surface.json": {
-      "bytes": 499,
+      "bytes": 1758,
       "role": "record",
-      "sha256": "d04a82a11aea9fbb725625c0810095f75e4be3e7131e5e6da7572cb2c60291e2"
+      "sha256": "f7093fd9dab47f4dd2f85998d818cba5bd2d4cd494ad869fd0e4d26e1341ccb6"
     }
   },
   "id": "simready_m_opaque_plastic_rope_white_a01_fde7ed49",
@@ -44,7 +44,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "normal.png": "cleaning_brush_a01/simready_usd/Textures/t_plastic_rope_white_a01_tile_nor.png",
       "orm.png": "cleaning_brush_a01/simready_usd/Textures/t_plastic_rope_white_a01_tile_orm.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -55,12 +55,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: cleaning_brush_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

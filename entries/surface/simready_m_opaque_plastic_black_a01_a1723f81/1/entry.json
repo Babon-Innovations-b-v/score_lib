@@ -22,9 +22,9 @@
       "sha256": "ba024787cf979d1c9382a5657a6bbd55eeab02400e12b7a217695c03dbdc5093"
     },
     "surface.json": {
-      "bytes": 846,
+      "bytes": 2113,
       "role": "record",
-      "sha256": "7a8f8aaf091437ad2d7c69efceee2fa36ed65259c59f5fd4f214ecfb8ab9d1c4"
+      "sha256": "877f102d254f5afc1f2b1f7d0ca8bd777c831c1aabe878aed2476f50d3f8caf0"
     }
   },
   "id": "simready_m_opaque_plastic_black_a01_a1723f81",
@@ -44,7 +44,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "normal.png": "bodyPart_car_side_mirror_b01/simready_usd/Textures/t_plastic_black_a01_tile_nor.png",
       "orm.png": "bodyPart_car_side_mirror_b01/simready_usd/Textures/t_plastic_black_a01_tile_orm.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -55,12 +55,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: bodyPart_car_side_mirror_b01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

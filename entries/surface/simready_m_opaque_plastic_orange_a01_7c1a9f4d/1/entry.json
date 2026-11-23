@@ -22,9 +22,9 @@
       "sha256": "31a26fe2f4702573edbf1fa27f97184e8da89a2698ade577d8e4e0868e98bf32"
     },
     "surface.json": {
-      "bytes": 805,
+      "bytes": 2066,
       "role": "record",
-      "sha256": "2d234c6b730240e9cdfa90648fd1f5f234b95f123ee8211167507b90f85a52a2"
+      "sha256": "204bfcaad6c91c1bb3cd5fb3fc942347bffa6f530248ec28e3bb9ab66de16f7c"
     }
   },
   "id": "simready_m_opaque_plastic_orange_a01_7c1a9f4d",
@@ -44,7 +44,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "normal.png": "equipment_powerStrip_portable_c01/simready_usd/Textures/t_plastic_orange_a01_tile_nor.png",
       "orm.png": "equipment_powerStrip_portable_c01/simready_usd/Textures/t_plastic_orange_a01_tile_orm.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -55,12 +55,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: equipment_powerStrip_portable_c01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

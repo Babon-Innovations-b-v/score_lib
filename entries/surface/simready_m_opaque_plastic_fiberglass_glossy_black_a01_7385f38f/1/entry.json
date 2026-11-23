@@ -12,9 +12,9 @@
       "sha256": "61c6ee09f54a162f5b5e1be3847f24ab03d8af70899b13c61ca0530230d047b0"
     },
     "surface.json": {
-      "bytes": 843,
+      "bytes": 2108,
       "role": "record",
-      "sha256": "36166084a95bdaa710eacd76740bbc9c9d4b2f5747bfcf70e721db0d3612be7d"
+      "sha256": "2890cff24394a6a4f99ea95ab4a6ec49a6216c516a885ae8af62e81ecf4c2417"
     }
   },
   "id": "simready_m_opaque_plastic_fiberglass_glossy_black_a01_7385f38f",
@@ -32,7 +32,7 @@
     "files_from": {
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "orm.png": "equipment_airDryer_c01/simready_usd/Textures/t_plastic_fiberglassGlossy_white_a01_tile_orm.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -43,12 +43,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: equipment_airDryer_c01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

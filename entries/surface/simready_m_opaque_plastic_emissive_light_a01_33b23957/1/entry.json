@@ -7,9 +7,9 @@
       "sha256": "75ad5900b800c95b6066a4d4f30e03c600d4f44267043492947a743bcca55c38"
     },
     "surface.json": {
-      "bytes": 920,
+      "bytes": 2021,
       "role": "record",
-      "sha256": "6fea641faf0ce7d70c3f23636d3495a642a7e0bdd334a40a0d77ca14a6369517"
+      "sha256": "8e29bfd3b2b8efa01ab3d00b61f41856a2c8b5139b05cd0ee3ddd012e72bb713"
     }
   },
   "id": "simready_m_opaque_plastic_emissive_light_a01_33b23957",
@@ -20,7 +20,7 @@
     "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
     "files_from": {
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -30,12 +30,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: equipment_3d_printer_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

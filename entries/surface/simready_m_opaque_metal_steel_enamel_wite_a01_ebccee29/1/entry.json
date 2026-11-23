@@ -17,9 +17,9 @@
       "sha256": "183fb555ae191f42df0491ebb8f02e8ec2f18e4108eb4fd428b41b89729a4c25"
     },
     "surface.json": {
-      "bytes": 870,
+      "bytes": 2245,
       "role": "record",
-      "sha256": "cda3b83dd7034926b3b84255836640a489ba1dc477910b78e3191f98b6d1e650"
+      "sha256": "8fa0f3c1791d30135aa9c18c155bac8081edb98d1a5e8e787fa10b816dff12b2"
     }
   },
   "id": "simready_m_opaque_metal_steel_enamel_wite_a01_ebccee29",
@@ -38,7 +38,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "normal.png": "cleaning_squeegee_a01/simready_usd/Textures/t_metal_steelEnamel_wite_a01_tile_nor.png",
       "orm.png": "cleaning_squeegee_a01/simready_usd/Textures/t_metal_steelEnamel_wite_a01_tile_orm.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -49,12 +49,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: cleaning_squeegee_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

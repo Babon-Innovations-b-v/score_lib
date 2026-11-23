@@ -17,9 +17,9 @@
       "sha256": "db53f2f66592db03f87c0e38d1f8168e0ed971b137d3882fbeecd0a51edbb5c6"
     },
     "surface.json": {
-      "bytes": 890,
+      "bytes": 2155,
       "role": "record",
-      "sha256": "3a8404be3dcc79c2d087d02b8fd35443aa320e33e73172af5c82845119742502"
+      "sha256": "84ec79140d58435079f1c21d9d82b3553a6ecff68af6994bfd9f6fadfa4d070d"
     }
   },
   "id": "simready_m_opaque_plastic_yellow_a01_18df1902",
@@ -38,7 +38,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "metallic.png": "brakeSystem_brake_master_cylinder_b01/simready_usd/Textures/t_plastic_yellow_a01_tile_orm.png",
       "normal.png": "brakeSystem_brake_master_cylinder_b01/simready_usd/Textures/t_plastic_yellow_a01_tile_nor.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -49,12 +49,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: brakeSystem_brake_master_cylinder_b01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

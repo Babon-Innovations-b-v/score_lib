@@ -17,9 +17,9 @@
       "sha256": "a03864998e9916c83af666d3a4fee5bc6c70705d66ecbf4b344cbb14a7324f99"
     },
     "surface.json": {
-      "bytes": 838,
+      "bytes": 2102,
       "role": "record",
-      "sha256": "afff21c4a117aeb508f4e0b55c9923c50d33bfda6f84d4c80670597f43758b4a"
+      "sha256": "d6095d04dd03aa1e5ed7d3f1a6509efa2761aee2a36c722dee4ac6fec51891f1"
     }
   },
   "id": "simready_m_opaque_plastic_glossy_black_a01_6e61d947",
@@ -38,7 +38,7 @@
       "albedo.png": "appliance_handDryer_automatic_a01/simready_usd/Textures/t_plastic_glossy_black_a01_tile_alb.png",
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "normal.png": "appliance_handDryer_automatic_a01/simready_usd/Textures/t_plastic_glossy_black_a01_tile_nor.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -49,12 +49,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: appliance_handDryer_automatic_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

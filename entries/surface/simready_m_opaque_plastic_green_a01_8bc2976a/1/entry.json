@@ -12,9 +12,9 @@
       "sha256": "40a05f32cfcc1637efab451d3582b62f4bd12020df0d9d8a3cc67ead5159b0be"
     },
     "surface.json": {
-      "bytes": 878,
+      "bytes": 2147,
       "role": "record",
-      "sha256": "902104c09b337b1671c9b9cbb3a473047a082d309036f093e391ad294b657648"
+      "sha256": "615522ae90c84118b0374d0f547daa01dd717c761edaed7b4aea998e15ff5a22"
     }
   },
   "id": "simready_m_opaque_plastic_green_a01_8bc2976a",
@@ -32,7 +32,7 @@
     "files_from": {
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "normal.png": "powerTool_welding_station_d01/simready_usd/textures/t_plastic_green_a01_tile_nor.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -43,12 +43,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: powerTool_welding_station_d01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

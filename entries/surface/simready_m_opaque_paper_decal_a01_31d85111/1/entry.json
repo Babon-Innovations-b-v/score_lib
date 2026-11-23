@@ -7,9 +7,9 @@
       "sha256": "efd3ea6fef9d18ff7dd449853424a067109769e4e165f0e1a3ce709885ce8148"
     },
     "surface.json": {
-      "bytes": 868,
+      "bytes": 2137,
       "role": "record",
-      "sha256": "dfb04008aff9082a3f33018d45104a0d01c257b2858c35556c4b9329620be07f"
+      "sha256": "aa513f63ed5a1668698831ea9f3fee35afc11e3897ae08e6ea24f1e3a3535c6d"
     }
   },
   "id": "simready_m_opaque_paper_decal_a01_31d85111",
@@ -20,7 +20,7 @@
     "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
     "files_from": {
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -30,12 +30,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: light_surgical_ceiling_arm_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

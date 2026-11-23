@@ -22,9 +22,9 @@
       "sha256": "87e2272957b484984e97ad850ce117d3794a9b97da0059ea6fff4a4418ea633d"
     },
     "surface.json": {
-      "bytes": 859,
+      "bytes": 2126,
       "role": "record",
-      "sha256": "7d450bbfd3be202995d37df42a75ed29a95857c04fda87dac41a03097dbfd539"
+      "sha256": "1e651153069637562021b570351891782a4480c50603005a87aad3f381437b12"
     }
   },
   "id": "simready_m_opaque_plastic_polyurethane_rough_black_a01_55c8036e",
@@ -44,7 +44,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "metallic.png": "equipment_extension_12v_a01/simready_usd/Textures/t_plastic_polyurethaneRough_black_a01_tile_orm.png",
       "normal.png": "equipment_extension_12v_a01/simready_usd/Textures/t_plastic_polyurethaneRough_black_a01_tile_nor.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -55,12 +55,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: equipment_extension_12v_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

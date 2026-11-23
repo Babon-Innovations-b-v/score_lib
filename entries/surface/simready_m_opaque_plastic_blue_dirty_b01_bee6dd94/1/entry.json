@@ -22,9 +22,9 @@
       "sha256": "7f8387649c8a8df242ec610d1e2633c91b9cba10c6ea6043bd0bed3ffe4ef441"
     },
     "surface.json": {
-      "bytes": 809,
+      "bytes": 2082,
       "role": "record",
-      "sha256": "0c651622cd12e531f95c1499d6e403f42977c6217aba66df42dd19c5f6bed4f0"
+      "sha256": "e1bf4cacd9e3def90d8be324147b2e2eeab9b7a498dca3d1bdf245fa7e4ed2a5"
     }
   },
   "id": "simready_m_opaque_plastic_blue_dirty_b01_bee6dd94",
@@ -44,7 +44,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "normal.png": "equipment_trash_trolley_a01/simready_usd/Textures/t_plastic_dirty_b01_tile_nor.png",
       "orm.png": "equipment_trash_trolley_a01/simready_usd/Textures/t_plastic_dirty_b01_tile_orm.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -55,12 +55,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: equipment_trash_trolley_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

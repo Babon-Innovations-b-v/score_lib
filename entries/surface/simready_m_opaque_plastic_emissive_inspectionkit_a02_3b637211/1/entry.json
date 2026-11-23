@@ -7,9 +7,9 @@
       "sha256": "8103a9fd5ca6933dd3850e3266765756c7d89864d3d4ce3914cc4e59b108f89c"
     },
     "surface.json": {
-      "bytes": 928,
+      "bytes": 2029,
       "role": "record",
-      "sha256": "2af889994b04b3fb8f41ac79e6707372cd4f1ceef472c797591f187d8cb4ed29"
+      "sha256": "80c164443b81742b0b8d6385ed0163d7c22467de8ae63b58ab4fe608c0f7de14"
     }
   },
   "id": "simready_m_opaque_plastic_emissive_inspectionkit_a02_3b637211",
@@ -20,7 +20,7 @@
     "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
     "files_from": {
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -30,12 +30,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: serviceTool_camera_inspectionKit_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

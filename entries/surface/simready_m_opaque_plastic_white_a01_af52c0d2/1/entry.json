@@ -17,9 +17,9 @@
       "sha256": "9a4389739da9ee7325972569e730a32a98ddeb6903d46a8d26fc0a136078f5ad"
     },
     "surface.json": {
-      "bytes": 776,
+      "bytes": 2037,
       "role": "record",
-      "sha256": "57f1663166291185e2199bd515eadd2b05b6fe9b36922f9e59afd35947eac10f"
+      "sha256": "3ca5c9200bcc8163c28a5c8d70674e94b769d69d3d69219cf33ac8b1d73bffaf"
     }
   },
   "id": "simready_m_opaque_plastic_white_a01_af52c0d2",
@@ -38,7 +38,7 @@
       "albedo.png": "electrical_power_terminal_a01/simready_usd/Textures/t_plastic_glossy_white_a01_tile_alb.png",
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "orm.png": "electrical_power_terminal_a01/simready_usd/Textures/t_plastic_glossy_white_a01_tile_orm.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -49,12 +49,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: electrical_power_terminal_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

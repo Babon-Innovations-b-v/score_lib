@@ -17,9 +17,9 @@
       "sha256": "31a26fe2f4702573edbf1fa27f97184e8da89a2698ade577d8e4e0868e98bf32"
     },
     "surface.json": {
-      "bytes": 853,
+      "bytes": 2121,
       "role": "record",
-      "sha256": "32c5b825b86e0147af7a5ece2bd473826cd5c34655fe99d808c7e96a575eabab"
+      "sha256": "50823de67fa8cf9a6e22d632bc3411860f36f4190e70087411fbe6f158bb3862"
     }
   },
   "id": "simready_m_opaque_plastic_orange_a01_83f8d296",
@@ -38,7 +38,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "normal.png": "climate_heater_dieselTorpedo_a01/simready_usd/Textures/t_plastic_orange_a01_tile_nor.png",
       "orm.png": "climate_heater_dieselTorpedo_a01/simready_usd/Textures/t_plastic_orange_a01_tile_orm.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -49,12 +49,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: climate_heater_dieselTorpedo_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

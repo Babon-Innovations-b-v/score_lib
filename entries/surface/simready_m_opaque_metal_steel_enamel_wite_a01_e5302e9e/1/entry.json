@@ -17,9 +17,9 @@
       "sha256": "144f1fbc80168a7d9089802e5fcdc7aeb724ab997e67b63f3872c0383c665194"
     },
     "surface.json": {
-      "bytes": 892,
+      "bytes": 2270,
       "role": "record",
-      "sha256": "ea6501573afa94e62c5ed123b6791c56e7ffea781d2859caa7dcb1dd1ad538ec"
+      "sha256": "28e1da24936b3ca736972b662e0a9583b199b7a8ac7fe90400fdc199d3d2aa8c"
     }
   },
   "id": "simready_m_opaque_metal_steel_enamel_wite_a01_e5302e9e",
@@ -38,7 +38,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "metallic.png": "machine_vending_snacksDrinks_a01/simready_usd/Textures/t_metal_steelEnamel_wite_a01_tile_orm.png",
       "normal.png": "machine_vending_snacksDrinks_a01/simready_usd/Textures/t_metal_steelEnamel_wite_a01_tile_nor.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -49,12 +49,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: machine_vending_snacksDrinks_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

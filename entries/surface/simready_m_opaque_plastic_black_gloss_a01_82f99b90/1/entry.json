@@ -7,9 +7,9 @@
       "sha256": "6b595ac76ff7f58a4d055004f992fdb2a7e32125612d79830cb541eb7bb60315"
     },
     "surface.json": {
-      "bytes": 871,
+      "bytes": 2130,
       "role": "record",
-      "sha256": "ed2dfe9c27571ccabef75deb609dc597d4213e2fba88758d1f641529d5c45f3b"
+      "sha256": "bac88c2579fba3d9f95cdf805df7d4b3a92a8822bb548262794b5f01c72b97af"
     }
   },
   "id": "simready_m_opaque_plastic_black_gloss_a01_82f99b90",
@@ -20,7 +20,7 @@
     "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
     "files_from": {
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -30,12 +30,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: laser_system_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

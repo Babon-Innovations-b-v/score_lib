@@ -22,9 +22,9 @@
       "sha256": "1e85848234c3bb694b1161ecf8c2a86fdfd89129eba23a87bafdc2cceeee2ead"
     },
     "surface.json": {
-      "bytes": 805,
+      "bytes": 2066,
       "role": "record",
-      "sha256": "231fd5826c7b079ab5c894703a8c90d06e1bffc2b6a51bb82744ecb3fe134226"
+      "sha256": "092a7ee7f2d55f88d0648da74ded8d47900cbb458989aa9fea15e5ce6797d5c4"
     }
   },
   "id": "simready_m_opaque_plastic_orange_a01_aae5eb50",
@@ -44,7 +44,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "normal.png": "appliance_stoveHood_a01/simready_usd/Textures/t_plastic_orange_a01_tile_nor.png",
       "orm.png": "appliance_stoveHood_a01/simready_usd/Textures/t_plastic_orange_a01_tile_orm.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -55,12 +55,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: appliance_stoveHood_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

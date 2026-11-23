@@ -17,9 +17,9 @@
       "sha256": "23cc9d83901dfc62d4715143c4f7ef6ae2b7eaaeab81313d28aabcab70ce8a03"
     },
     "surface.json": {
-      "bytes": 875,
+      "bytes": 2097,
       "role": "record",
-      "sha256": "c084a7c64cdf3bad3eec79a7fa0548525e9e49f3af572493d6b1c84474473ee2"
+      "sha256": "79ec93dcff093af1d8043a36b30ff8a837af209302b75eed0a2645282601ff15"
     }
   },
   "id": "simready_m_opaque_plastic_rough_black_a01_ef98aa7d",
@@ -38,7 +38,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "metallic.png": "powerTool_welding_station_c01/simready_usd/Textures/t_plastic_rough_black_a01_tile_orm.png",
       "normal.png": "powerTool_welding_station_c01/simready_usd/Textures/t_plastic_rough_black_a01_tile_nor.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -49,12 +49,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: powerTool_welding_station_c01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

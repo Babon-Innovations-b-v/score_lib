@@ -22,9 +22,9 @@
       "sha256": "a03864998e9916c83af666d3a4fee5bc6c70705d66ecbf4b344cbb14a7324f99"
     },
     "surface.json": {
-      "bytes": 849,
+      "bytes": 2111,
       "role": "record",
-      "sha256": "af6f680f738f76ce6cc2a085a31b90a141783013d3268f37743b7caadeb9b9ea"
+      "sha256": "24fe13a3110c4cb35fa507aaecbaf1d28e7ae922e874ba021e9afd0a5aaed319"
     }
   },
   "id": "simready_m_opaque_plastic_glossy_black_b01_83823cd9",
@@ -44,7 +44,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "metallic.png": "electricalSystem_battery_c01/simready_usd/Textures/t_plastic_glossy_black_a01_tile_orm.png",
       "normal.png": "electricalSystem_battery_c01/simready_usd/Textures/t_plastic_glossy_black_a01_tile_nor.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -55,12 +55,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: electricalSystem_battery_c01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

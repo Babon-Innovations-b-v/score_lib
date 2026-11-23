@@ -7,9 +7,9 @@
       "sha256": "19dcaab792fd37de43a93ffb0b846e8bfb4d1d6dd278e594905428ab597d8069"
     },
     "surface.json": {
-      "bytes": 964,
+      "bytes": 2116,
       "role": "record",
-      "sha256": "139b9343fbc5d4def87b0f89d4f80b963218b879d6518c8e0c91b449727beaad"
+      "sha256": "26083572a968a84224d74920a227dcc6aad18968ee04e2ad7eeead3430bb0604"
     }
   },
   "id": "simready_m_opaque_plastic_emissive_led_strip_light_a01_f138cb29",
@@ -20,7 +20,7 @@
     "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
     "files_from": {
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -30,12 +30,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: mirror_bathroom_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",
