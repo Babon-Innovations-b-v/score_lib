@@ -12,9 +12,9 @@
       "sha256": "948692ab8726cae5bb1cb592986e28f852cfc12c791e836908d99d52cbf4c38c"
     },
     "surface.json": {
-      "bytes": 876,
+      "bytes": 2257,
       "role": "record",
-      "sha256": "df950fc33966df3c0fda67affa07459be7374b806b629e0d852627044800c595"
+      "sha256": "1baa08ae8d46e4f02b412f1bee028896e3c6e9f9144b80bdf154102a85880d64"
     }
   },
   "id": "simready_m_opaque_metal_painted_black_a03_fd48305e",
@@ -32,7 +32,7 @@
     "files_from": {
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "metallic.png": "powerTool_welding_station_c01/simready_usd/Textures/t_metal_painted_a03_tile_orm.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -43,12 +43,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: powerTool_welding_station_c01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

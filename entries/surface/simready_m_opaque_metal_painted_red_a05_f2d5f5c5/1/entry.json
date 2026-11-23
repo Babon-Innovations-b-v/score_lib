@@ -22,9 +22,9 @@
       "sha256": "b82367a09324f704b5aa41b71be3d3738befb50a140107dd670033f7194128f4"
     },
     "surface.json": {
-      "bytes": 815,
+      "bytes": 2195,
       "role": "record",
-      "sha256": "84b9d5345916db368293c74a1eaa3edffced9775b8e5c3e1f254bce0a0cbbab8"
+      "sha256": "e50a19db729ff88bcc56c11913b161d050f9e342eadc98e9dc02c96962e2a935"
     }
   },
   "id": "simready_m_opaque_metal_painted_red_a05_f2d5f5c5",
@@ -44,7 +44,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "normal.png": "serviceTool_engine_crane_a01/simready_usd/Textures/t_metal_painted_a05_tile_nor.png",
       "orm.png": "serviceTool_engine_crane_a01/simready_usd/Textures/t_metal_painted_a05_tile_orm.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -55,12 +55,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: serviceTool_engine_crane_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

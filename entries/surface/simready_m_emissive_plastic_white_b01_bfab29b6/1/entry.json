@@ -7,9 +7,9 @@
       "sha256": "57cfbeb32f3c60d4e8eaf866b745f2ae70aeae078cb51c59e28d670e216b5aaf"
     },
     "surface.json": {
-      "bytes": 927,
+      "bytes": 2028,
       "role": "record",
-      "sha256": "2a31541251b3a78ef647975fa6ccdc3f6e0d1da14779672d71b294c7baa21b16"
+      "sha256": "1386982b788d5daa3be8d86f3114000fc9564c538dee871ab4c4a992f5435fd8"
     }
   },
   "id": "simready_m_emissive_plastic_white_b01_bfab29b6",
@@ -20,7 +20,7 @@
     "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
     "files_from": {
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -30,12 +30,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: furniture_counter_coffeeStation_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

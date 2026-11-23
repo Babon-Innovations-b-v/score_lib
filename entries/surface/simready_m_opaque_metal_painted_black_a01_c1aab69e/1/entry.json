@@ -22,9 +22,9 @@
       "sha256": "6f7f9860122cb0d88b43a6ef255da3b6cda275fecae70463758b0a30d2cd9848"
     },
     "surface.json": {
-      "bytes": 886,
+      "bytes": 2265,
       "role": "record",
-      "sha256": "1ee20b5f110552b04a2091ec58b67373a8db9d5484e3224263bf377d060d4cdc"
+      "sha256": "0a691ab74c415bc1b25df00a6ac93600f5b2bf970f170333cade3265c216cd52"
     }
   },
   "id": "simready_m_opaque_metal_painted_black_a01_c1aab69e",
@@ -44,7 +44,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "normal.png": "climate_shopFan_floorAxial_a01/simready_usd/Textures/t_metal_painted_black_a01_tile_nor.png",
       "orm.png": "climate_shopFan_floorAxial_a01/simready_usd/Textures/t_metal_painted_black_a01_tile_orm.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -55,12 +55,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: climate_shopFan_floorAxial_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

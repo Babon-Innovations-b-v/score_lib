@@ -17,9 +17,9 @@
       "sha256": "57ca4fc10b1759931ef63de5f636f509ae3f0fea1c7b7e459584ce6d8028455c"
     },
     "surface.json": {
-      "bytes": 865,
+      "bytes": 2239,
       "role": "record",
-      "sha256": "c4244b4ecaee1f564bb2b2b1b7f3df311ce964b096a53cb30458c99895888b8d"
+      "sha256": "60b16827d5672c9b795bcfb6b4da27b4e241466b15912b1c12ebca0914d2fb64"
     }
   },
   "id": "simready_m_opaque_metal_painted_noise_a01_4043023a",
@@ -38,7 +38,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "normal.png": "suspension_shock_absorber_b01/simready_usd/Textures/t_metal_paintedNoise_a02_tile_nor.png",
       "orm.png": "suspension_shock_absorber_b01/simready_usd/Textures/t_metal_paintedNoise_a01_tile_orm.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -49,12 +49,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: suspension_shock_absorber_b01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

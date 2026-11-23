@@ -7,9 +7,9 @@
       "sha256": "4a6b60339ae5b4dca7c02e58c01934a6c0ab9bb058d36b4a1f1cb39492a8addb"
     },
     "surface.json": {
-      "bytes": 889,
+      "bytes": 2162,
       "role": "record",
-      "sha256": "b739fe6d05a26f83c5204eb3b8c2b2923b28551315054276b6128207a4e7df95"
+      "sha256": "ed69c9ef0d64a21297ff968c8282a7843227daf9d397c437a9b858efd4ff0763"
     }
   },
   "id": "simready_m_opaque_metal_black_chrome_a01_d8e26e1d",
@@ -20,7 +20,7 @@
     "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
     "files_from": {
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -30,12 +30,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: headlight_surgical_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

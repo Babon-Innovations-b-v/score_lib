@@ -17,9 +17,9 @@
       "sha256": "3aa6dace478e0b53598ffd77bb641649975abb8558ca2a89b73d68a8ce06c0f2"
     },
     "surface.json": {
-      "bytes": 869,
+      "bytes": 2235,
       "role": "record",
-      "sha256": "371ffc1c05216550de420587986be0b4a7a6cd167425760f13e4cc796e5608c1"
+      "sha256": "9163ee5cedc32bfe78231dd29226965fed8e0b4252fe04b4e93736b258c1da63"
     }
   },
   "id": "simready_m_opaque_metal_painted_worn_gray_a01_0b6de2fe",
@@ -38,7 +38,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "normal.png": "suspension_controlArm_upper_a01/simready_usd/Textures/t_metal_paintedWorn_gray_a02_tile_nor.png",
       "orm.png": "suspension_controlArm_upper_a01/simready_usd/Textures/t_metal_paintedWorn_gray_a02_tile_orm.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -49,12 +49,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: suspension_controlArm_upper_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

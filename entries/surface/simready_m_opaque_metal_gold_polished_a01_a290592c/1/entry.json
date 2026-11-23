@@ -17,9 +17,9 @@
       "sha256": "53b2b17d4e13c8fa32a25eabefa27db28ff2d5925964d41927b6205830b0abe2"
     },
     "surface.json": {
-      "bytes": 857,
+      "bytes": 2128,
       "role": "record",
-      "sha256": "eacf3cb7a00e7148564fb5ef0d823a3b02582b785ff893400e614534d0925654"
+      "sha256": "4a66517d07e9c806994b2ef3610a446c7cb5a4c191d6b10bb465d251f7ddec9f"
     }
   },
   "id": "simready_m_opaque_metal_gold_polished_a01_a290592c",
@@ -38,7 +38,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "normal.png": "airSystem_compressor_a01/simready_usd/Textures/t_metal_goldPolished_a01_tile_nor.png",
       "orm.png": "airSystem_compressor_a01/simready_usd/Textures/t_metal_goldPolished_a01_tile_orm.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -49,12 +49,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: airSystem_compressor_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

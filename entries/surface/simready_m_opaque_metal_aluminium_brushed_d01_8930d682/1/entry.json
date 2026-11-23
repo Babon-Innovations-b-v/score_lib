@@ -12,9 +12,9 @@
       "sha256": "a88d47bf97d19abef7826118a610965913de098f3b7c4696afa4d6ffeb22fcfb"
     },
     "surface.json": {
-      "bytes": 838,
+      "bytes": 2128,
       "role": "record",
-      "sha256": "b175688df0a3e80eff0597b01590cb9ccc518b9fbac8a0cda6c473952150f0a1"
+      "sha256": "27fca8638abd3b8b6a21c0f69da42c58b14a3bcec1927d464ecdbec4f9ceeb2f"
     }
   },
   "id": "simready_m_opaque_metal_aluminium_brushed_d01_8930d682",
@@ -32,7 +32,7 @@
     "files_from": {
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "orm.png": "drivetrain_transfer_case_c01/simready_usd/Textures/t_metal_aluminiumBrushed_d02_tile_orm.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -43,12 +43,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: drivetrain_transfer_case_c01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

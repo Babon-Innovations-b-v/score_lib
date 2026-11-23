@@ -22,9 +22,9 @@
       "sha256": "11483872eac7bed857cfebec0d5e69fd8f9b165f9961875681b299d4caf4e887"
     },
     "surface.json": {
-      "bytes": 811,
+      "bytes": 2185,
       "role": "record",
-      "sha256": "ecd810ff52a4e9c9dfffba1bf59c717e25314ce77e56e55b1bcea90d5cf7c972"
+      "sha256": "0e97869b89e661d1a759c2bb55256b992180a30601d26ce0eb30586cbbd97a0f"
     }
   },
   "id": "simready_m_opaque_metal_painted_worn_gray_a01_a5aa7934",
@@ -44,7 +44,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "normal.png": "fuelSystem_fuel_injector_a01/simready_usd/Textures/t_metal_aluminiumRaw_a02_tile_nor.png",
       "orm.png": "fuelSystem_fuel_injector_a01/simready_usd/Textures/t_metal_paintedMetallic_gray_a02_tile_orm.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -55,12 +55,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: fuelSystem_fuel_injector_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

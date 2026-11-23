@@ -22,9 +22,9 @@
       "sha256": "156ca05fe4e087ccc0defc20c25297182d47c6347d083509d4c7df13bf0cf53a"
     },
     "surface.json": {
-      "bytes": 809,
+      "bytes": 2073,
       "role": "record",
-      "sha256": "00267c9d972565eb03e6f35c3704e39d926f49a52d584456347d7b3b957d422a"
+      "sha256": "38e6f9d22ed052fbf6ef54a01196c69f283d16cb708338a0e3336824e3b8393c"
     }
   },
   "id": "simready_m_opaque_fabric_cotton_black_c01_0ddd918a",
@@ -44,7 +44,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "normal.png": "bodyPart_interior_roof_panel_a01/simready_usd/Textures/t_fabric_c01_tile_nor.png",
       "orm.png": "bodyPart_interior_roof_panel_a01/simready_usd/Textures/t_fabric_c01_tile_orm.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -55,12 +55,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: bodyPart_interior_roof_panel_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

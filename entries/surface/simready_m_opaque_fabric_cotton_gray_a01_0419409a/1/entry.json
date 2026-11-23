@@ -17,9 +17,9 @@
       "sha256": "2e2d011fbe7c9ba7df8605a583185467ad21fbd2d7763b0aa282ddd164d7f4c6"
     },
     "surface.json": {
-      "bytes": 858,
+      "bytes": 2103,
       "role": "record",
-      "sha256": "5928b04e92fb6c044bfe971092a71904bef6585b3926ca9947dd8b7b8b0a38c9"
+      "sha256": "8d58b66456d993cc662741d71319fd795673ca97ca5177a61c7e9db7af413187"
     }
   },
   "id": "simready_m_opaque_fabric_cotton_gray_a01_0419409a",
@@ -38,7 +38,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "normal.png": "headlight_surgical_a01/simready_usd/Textures/t_fabric_cotton_a01_tile_nor.png",
       "orm.png": "headlight_surgical_a01/simready_usd/Textures/t_fabric_cotton_a01_tile_orm.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -49,12 +49,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: headlight_surgical_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

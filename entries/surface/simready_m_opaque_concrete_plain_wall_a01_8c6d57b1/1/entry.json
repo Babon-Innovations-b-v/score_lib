@@ -22,9 +22,9 @@
       "sha256": "dab96b160e698c245a23bb5c8acb96c409f91292dc5d4800849a357b2e2aaa25"
     },
     "surface.json": {
-      "bytes": 814,
+      "bytes": 2149,
       "role": "record",
-      "sha256": "fcb5d8e8672c360ff68d0bc2451327665184a7dc721208cf867834d90c40365a"
+      "sha256": "c44a7a9d59961ebdf086b48c4e71b058652e4509c5d6970fffa0095eeb76cb49"
     }
   },
   "id": "simready_m_opaque_concrete_plain_wall_a01_8c6d57b1",
@@ -44,7 +44,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "normal.png": "structure_wall_corner_a01/simready_usd/Textures/t_concrete_plain_a01_tile_nor.png",
       "orm.png": "structure_wall_corner_a01/simready_usd/Textures/t_concrete_plain_a01_tile_orm.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -55,12 +55,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: structure_wall_corner_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

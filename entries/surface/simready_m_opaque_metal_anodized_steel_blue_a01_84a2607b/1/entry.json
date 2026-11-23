@@ -17,9 +17,9 @@
       "sha256": "6828111256b896db65b24f76065633c4307063771333d8d311ca4a4c43cddc7e"
     },
     "surface.json": {
-      "bytes": 838,
+      "bytes": 2108,
       "role": "record",
-      "sha256": "5209a2796dd49a7659e03357088d73a3cdc4445999c4c639a8d12537c9e56854"
+      "sha256": "16eb75d8ffb5b81aceacf9b5d3acd92c2cf184706e3c7eac1a37dab502f55c61"
     }
   },
   "id": "simready_m_opaque_metal_anodized_steel_blue_a01_84a2607b",
@@ -38,7 +38,7 @@
       "albedo.png": "tool_power_surgical_c01/simready_usd/Textures/t_metal_anodizedSteel_semiGloss_blue_a01_tile_alb.png",
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "normal.png": "tool_power_surgical_c01/simready_usd/Textures/t_metal_anodizedSteel_semiGloss_blue_a01_tile_nor.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -49,12 +49,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: tool_power_surgical_c01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

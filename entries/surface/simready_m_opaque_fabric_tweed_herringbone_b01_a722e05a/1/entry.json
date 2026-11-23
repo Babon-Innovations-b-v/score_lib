@@ -22,9 +22,9 @@
       "sha256": "b579eff09829452c14050ebd1ff8c000db9015ac638e2e0e7bcb86dbeae82262"
     },
     "surface.json": {
-      "bytes": 814,
+      "bytes": 2077,
       "role": "record",
-      "sha256": "0f031e2963e0c7a681a0d8136335c4a19073abd52691aae5786f7192c51c12fe"
+      "sha256": "7db856b5d530a1534d7b78c5b24bd0b8b7bfd669c08bd30f8af2842138a5dd76"
     }
   },
   "id": "simready_m_opaque_fabric_tweed_herringbone_b01_a722e05a",
@@ -44,7 +44,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "normal.png": "bed_hospital_standard_a01/simready_usd/Textures/t_tweed_herringbone_a01_tile_nor.png",
       "orm.png": "bed_hospital_standard_a01/simready_usd/Textures/t_tweed_herringbone_a01_tile_orm.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -55,12 +55,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: bed_hospital_standard_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

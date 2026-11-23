@@ -17,9 +17,9 @@
       "sha256": "02bb406ae220814968c7a3dfd1b9fb941478d96a496f5d837b585236a5d5690e"
     },
     "surface.json": {
-      "bytes": 859,
+      "bytes": 2119,
       "role": "record",
-      "sha256": "c63fc4f59961c1a0f3ed5fec3dbc43459319bbd42bc9d394ab4e2d3c0309678f"
+      "sha256": "068ad6b1f168d8938295ae8b84115f070ce41407934088cadd5972185ee17273"
     }
   },
   "id": "simready_m_opaque_metal_bronze_polished_a01_07baabc5",
@@ -38,7 +38,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "normal.png": "device_blood_pressure_monitor_a01/simready_usd/Textures/t_metal_bronzePolished_a01_tile_nor.png",
       "orm.png": "device_blood_pressure_monitor_a01/simready_usd/Textures/t_metal_bronzePolished_a01_tile_orm.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -49,12 +49,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: device_blood_pressure_monitor_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

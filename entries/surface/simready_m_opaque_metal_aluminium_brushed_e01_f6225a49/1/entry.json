@@ -22,9 +22,9 @@
       "sha256": "56ecca4f8cadf0f2d931ac52a7cd93b927be20919f38fc41ea77b2bb94f91b31"
     },
     "surface.json": {
-      "bytes": 818,
+      "bytes": 2097,
       "role": "record",
-      "sha256": "5a663f0eba5a3374c3157e2493415d63a28b2eb67cb61a0af464af4334bb5f4f"
+      "sha256": "efbf6371f9be24de358581cf89bfd06b0c34182b316107ad552ee381dc3e07ae"
     }
   },
   "id": "simready_m_opaque_metal_aluminium_brushed_e01_f6225a49",
@@ -44,7 +44,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "normal.png": "suspension_wheelHubABS_assembly_a01/simready_usd/Textures/t_metal_aluminiumBrushed_e01_tile_nor.png",
       "orm.png": "suspension_wheelHubABS_assembly_a01/simready_usd/Textures/t_metal_aluminiumBrushed_d02_tile_orm.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -55,12 +55,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: suspension_wheelHubABS_assembly_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

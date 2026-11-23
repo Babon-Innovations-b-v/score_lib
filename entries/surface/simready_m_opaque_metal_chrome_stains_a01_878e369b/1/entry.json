@@ -17,9 +17,9 @@
       "sha256": "fbb51d41d06809b6a9f9d27291eb8661bb6c088b49d492835cc5e8ec780467d6"
     },
     "surface.json": {
-      "bytes": 854,
+      "bytes": 2119,
       "role": "record",
-      "sha256": "bf964c70d0780266d679c754ddc469160df3fb5ecceb7ee4f3da5e03702e4f1d"
+      "sha256": "78a295eff462317ce3d933315a25f4f8daba9be47638f4499af4b1038a8b1632"
     }
   },
   "id": "simready_m_opaque_metal_chrome_stains_a01_878e369b",
@@ -38,7 +38,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "normal.png": "electrical_power_shutoff_a01/simready_usd/Textures/t_metal_chromeStains_a01_tile_nor.png",
       "orm.png": "electrical_power_shutoff_a01/simready_usd/Textures/t_metal_chromeStains_a01_tile_orm.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -49,12 +49,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: electrical_power_shutoff_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

@@ -12,9 +12,9 @@
       "sha256": "5cb33cbee8f161b8342f0ec27544a1cffd0f96c70153dde9e19d8df5ce1da47b"
     },
     "surface.json": {
-      "bytes": 866,
+      "bytes": 2105,
       "role": "record",
-      "sha256": "ecec911f45460257648c3246e6ed01a954c849d2161848cd6961208d13f4dc79"
+      "sha256": "6c408b84a6b13574d20787ca4bae92a045435635add30eb9d7429f1b4ee32669"
     }
   },
   "id": "simready_m_opaque_carbon_red_clean_a01_a3c85774",
@@ -32,7 +32,7 @@
     "files_from": {
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "metallic.png": "steeringSystem_steering_wheel_b01/simready_usd/Textures/t_carbon_a01_tile_orm.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -43,12 +43,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: steeringSystem_steering_wheel_b01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

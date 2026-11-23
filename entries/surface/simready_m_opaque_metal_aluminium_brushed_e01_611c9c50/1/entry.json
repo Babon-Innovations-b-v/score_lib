@@ -17,9 +17,9 @@
       "sha256": "8007e641dfcc7383f2c5a0bc470eeaf3c3277472c38a3de1b8b2366efad92674"
     },
     "surface.json": {
-      "bytes": 867,
+      "bytes": 2155,
       "role": "record",
-      "sha256": "1c2248d257d80b0c1fef19bd8651cacb680150a8342c55b53b481982e10c5026"
+      "sha256": "fcac1073a7cd233d5d238eb54e1c0736539f301434d5dcc355ccdefc8de30cf2"
     }
   },
   "id": "simready_m_opaque_metal_aluminium_brushed_e01_611c9c50",
@@ -38,7 +38,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "normal.png": "appliance_refrigerator_a01/simready_usd/Textures/t_metal_aluminiumBrushed_e01_tile_nor.png",
       "orm.png": "appliance_refrigerator_a01/simready_usd/Textures/t_metal_aluminiumBrushed_e01_tile_orm.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -49,12 +49,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: appliance_refrigerator_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

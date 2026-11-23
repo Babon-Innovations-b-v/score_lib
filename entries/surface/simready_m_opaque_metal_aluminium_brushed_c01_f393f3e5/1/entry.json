@@ -22,9 +22,9 @@
       "sha256": "01b1363cb89b9447b533ed38e22067fb3a69f7325051d1a9cb0dd7b0d5c0dc46"
     },
     "surface.json": {
-      "bytes": 818,
+      "bytes": 2102,
       "role": "record",
-      "sha256": "3d0eb63b2fb33d78062f3e172a41ff4bd91e19f5f25ee8361f016ff8ff4662ef"
+      "sha256": "b8ce2e062fbc3374f5c3d5423632bfdb663dfb69cf87efd37b93f427b2c1c75d"
     }
   },
   "id": "simready_m_opaque_metal_aluminium_brushed_c01_f393f3e5",
@@ -44,7 +44,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "normal.png": "Xray_machine_XrayArmRack_a01/simready_usd/Textures/t_metal_aluminiumBrushed_c01_tile_nor.png",
       "orm.png": "Xray_machine_XrayArmRack_a01/simready_usd/Textures/t_metal_aluminiumBrushed_c01_tile_orm.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -55,12 +55,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: Xray_machine_XrayArmRack_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

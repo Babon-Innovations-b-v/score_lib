@@ -17,9 +17,9 @@
       "sha256": "e351d48aa86a7028d4c1905152118d90ee61503af69f6bda7d68ab32c379cdaf"
     },
     "surface.json": {
-      "bytes": 910,
+      "bytes": 2283,
       "role": "record",
-      "sha256": "abfdc83bf07a4b16b9e766f22cafe0183c1e2dddde4f9b0d8e6c50940a03521c"
+      "sha256": "728cec169864804a647ac0a4b3b9ab4c56be5178d06466fdb051ad9fa1284e88"
     }
   },
   "id": "simready_m_opaque_metal_painted_metallic_red_a01_0f3f15b3",
@@ -38,7 +38,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "metallic.png": "vehicleSupport_axle_differential_stand_b01/simready_usd/Textures/t_metal_paintedMetallic_gray_a01_tile_orm.png",
       "normal.png": "vehicleSupport_axle_differential_stand_b01/simready_usd/Textures/t_metal_paintedMetallic_gray_a01_tile_nor.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -49,12 +49,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: vehicleSupport_axle_differential_stand_b01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

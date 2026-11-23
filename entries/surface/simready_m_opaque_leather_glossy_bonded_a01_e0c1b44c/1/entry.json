@@ -17,9 +17,9 @@
       "sha256": "69502a8173041cab95d4e1547818122b5a39b412a8fb6ceba2e735abee19611e"
     },
     "surface.json": {
-      "bytes": 859,
+      "bytes": 2142,
       "role": "record",
-      "sha256": "af52024110c36e4fa6e9d0769e1d71c9355753c6ce27b57c5b72e62ea621f3a9"
+      "sha256": "bf4c3c4ccbb22f790a967bc37e82bcb11191bc62f91776de2b20fb9ccdf391b4"
     }
   },
   "id": "simready_m_opaque_leather_glossy_bonded_a01_e0c1b44c",
@@ -38,7 +38,7 @@
       "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
       "normal.png": "chair_patient_mobile_a01/simready_usd/Textures/t_leather_glossy_bonded_a01_tile_nor.png",
       "orm.png": "chair_patient_mobile_a01/simready_usd/Textures/t_leather_glossy_bonded_a01_tile_orm.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its recipe and likeness by score-lib adopted recipes (score's look-alike check)"
     },
     "made_with": [
       {
@@ -49,12 +49,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: chair_patient_mobile_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",
