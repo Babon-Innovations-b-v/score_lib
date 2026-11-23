@@ -17,7 +17,8 @@ def test_a_kept_unity_file_stays_beside_its_entry_and_outside_its_digest(tmp_pat
     """Break: entry.UNSTAMPED: drop "unity" (keeping a bundle moves the locked lamp's digest, so a piece list naming it
     goes stale); game.checked_path: let a path outside pieces/ through (the ../ row is kept and fetched outside the
     cache); fetch: the unity block left unlaid (the bundle is not at its cache path) or laid with unity "only" its own
-    files too (the lamp's glb is fetched with it); game.attached: a row put again when held (unchanged is empty)."""
+    files too (the lamp's glb is fetched with it); game.attached: a row put again when held (unchanged is empty), or each row put on its own (two bundles kept
+    in two hub commits: a place's 33 waited hours on the hub's commit rate, 2099 #161)."""
     root = tmp_path / "library"
     (root / "entries").mkdir(parents=True)
     shutil.copyfile(LIBRARY / "LICENSE", root / "LICENSE")
@@ -55,3 +56,20 @@ def test_a_kept_unity_file_stays_beside_its_entry_and_outside_its_digest(tmp_pat
     except SystemExit as stopped:
         assert not stopped.code, stopped
     assert (tmp_path / "again" / path).is_file() and (tmp_path / "again/score_lib/model/lamp/1/lamp.glb").is_file()
+    puts = []
+
+    class Counted:
+        """The store, each put_many (one hub commit) counted."""
+        def put_many(self, pairs):
+            puts.append(list(pairs))
+            for sha256, file in puts[-1]:
+                blobs.put(sha256, file)
+
+    texture, light = tmp_path / "set.bundle", tmp_path / "light.bundle"
+    texture.write_bytes(b"UnityFS a texture set")
+    light.write_bytes(b"UnityFS a light pack")
+    both = game.attached(root, Counted(), [{"address": "model/lamp@1", "path": "pieces/model/lamp@1/set.bundle",
+                                            "file": str(texture)},
+                                           {"address": "model/lamp@1", "path": "pieces/model/lamp@1/light.bundle",
+                                            "file": str(light)}])
+    assert len(both["kept"]) == 2 and len(puts) == 1 and len(puts[0]) == 2, (both, puts)

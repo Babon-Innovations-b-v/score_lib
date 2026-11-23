@@ -51,10 +51,11 @@ def read_list(path):
 
 
 def attached(root, blobs, rows):
-    """Every row's file put into the blob store and named in its entry's unity block; the report {kept: [path],
+    """Every row's file put into the blob store, all in one put (the hub allows a few commits an hour, so one a file
+    held a place's 33 bundles for hours, 2099 #161), and named in its entry's unity block; the report {kept: [path],
     unchanged: [path], refused: [{path, why}]}, the index rebuilt when an entry changed."""
     report = {"kept": [], "unchanged": [], "refused": []}
-    changed = {}
+    changed, puts = {}, []
     for row in rows:
         try:
             address, path, file = row["address"], checked_path(row["path"]), pathlib.Path(row["file"])
@@ -67,11 +68,13 @@ def attached(root, blobs, rows):
             if record.get(BLOCK, {}).get(path) == kept:
                 report["unchanged"].append(path)
                 continue
-            put_all(blobs, [(kept["sha256"], file)])
+            puts.append((kept["sha256"], file))
             changed[address] = {**record, BLOCK: dict(sorted({**record.get(BLOCK, {}), path: kept}.items()))}
             report["kept"].append(path)
         except (Refused, ValueError) as why:
             report["refused"].append({"path": row.get("path"), "why": str(why)})
+    if puts:
+        put_all(blobs, list({sha256: (sha256, file) for sha256, file in puts}.values()))
     for record in changed.values():
         entries.write(root, record)
     if changed:
