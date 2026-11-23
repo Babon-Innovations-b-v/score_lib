@@ -1,15 +1,17 @@
 """A model entry's texture layout against its own detail: the share of its textured surface whose texels a metre
 fall under DENSITY_FALL of the model's own area-weighted median, score's `sparse` measure
 (score/stages/surfaces/uv_layout.py, which judges each model the bake makes, #92), read here from the entry's USD so
-every entry is held to it, old ones too. The October 2026 code-built models' bake gave each face toward the kit's
-back a twentieth of the density, and those faces show the picture's unpainted black (score, 2026-11-23: 1,137
-entries, a median 37% of each one's surface).
+every entry is held to it, old ones too; a model kept as glTF is read from its .gltf or .glb (node transforms left
+out, as score-lib review draws one: the measure is against the model's own median). The October 2026 code-built
+models' bake gave each face toward the kit's back a twentieth of the density, and those faces show the picture's
+unpainted black (score, 2026-11-23: 1,137 entries, a median 37% of each one's surface).
 
     score-lib layout [--address a] [--withdrawn] [--report FILE]
 
 `score-lib verify` holds every live model entry to it (verify.check_layout); this command lists any set of entries,
 withdrawn ones too, with each one's measure in the report."""
 import concurrent.futures
+import io
 import json
 import pathlib
 import shutil
@@ -29,10 +31,92 @@ DEGENERATE_TEXELS = 1e-4
 DEGENERATE_M2 = 1e-14
 
 
+# The roles a measure reads whole; every other file is fetched as an empty stand-in.
+READ_ROLES = ("usd", "gltf")
+
+
 def drawn_file(record):
-    """The USD file a model entry is drawn from: its usd root, else its model.usdc; None when it has neither."""
+    """The file a model entry is drawn from: its usd root, else its model.usdc, else its one .gltf or .glb that is
+    not a collision hull (`-hulls`); None when it has none of them."""
     named = (record.get("usd") or {}).get("root") or "model.usdc"
-    return named if named in record["files"] else None
+    if named in record["files"]:
+        return named
+    kept = [name for name, described in record["files"].items() if described["role"] == "gltf"
+            and name.endswith((".gltf", ".glb")) and not pathlib.Path(name).stem.endswith("-hulls")]
+    return kept[0] if len(kept) == 1 else None
+
+
+def gltf_parts(path):
+    """(document, [each buffer's bytes]) of a .gltf (its buffers in files beside it) or a .glb (its binary chunk)."""
+    from score_lib import review
+    path = pathlib.Path(path)
+    if path.suffix == ".glb":
+        document, binary = review.glb_parts(path)
+        return document, [binary]
+    document = json.loads(path.read_text())
+    return document, [(path.parent / buffer["uri"]).read_bytes() for buffer in document.get("buffers", [])]
+
+
+# glTF accessor component types and element widths.
+COMPONENTS = {5121: np.uint8, 5123: np.uint16, 5125: np.uint32, 5126: np.float32}
+WIDTHS = {"SCALAR": 1, "VEC2": 2, "VEC3": 3}
+
+
+def gltf_values(document, buffers, number):
+    """One accessor's values as rows, from the buffer its view names, its view's stride kept (no sparse accessors)."""
+    found = document["accessors"][number]
+    view = document["bufferViews"][found["bufferView"]]
+    kind, width = np.dtype(COMPONENTS[found["componentType"]]), WIDTHS[found["type"]]
+    stride = view.get("byteStride") or kind.itemsize * width
+    start = view.get("byteOffset", 0) + found.get("byteOffset", 0)
+    rows = np.lib.stride_tricks.as_strided(
+        np.frombuffer(buffers[view.get("buffer", 0)], dtype=np.uint8, offset=start),
+        shape=(found["count"], kind.itemsize * width), strides=(stride, 1), writeable=False)
+    return np.ascontiguousarray(rows).view(kind).reshape(-1, width)
+
+
+def gltf_picture(document, buffers, image, folder):
+    """The path of a glTF image: its file beside the model, or its bytes inside a buffer written into `folder`."""
+    found = document["images"][image]
+    if "uri" in found:
+        return str(pathlib.Path(folder) / found["uri"])
+    view = document["bufferViews"][found["bufferView"]]
+    start = view.get("byteOffset", 0)
+    target = pathlib.Path(folder) / f"embedded_{image}.png"
+    Image.open(io.BytesIO(buffers[view.get("buffer", 0)][start:start + view["byteLength"]])).save(target)
+    return str(target)
+
+
+def gltf_collect(path):
+    """(triangle corners (n, 3, 3), Skin) of every triangle primitive of a .gltf or .glb, each wearing its material's
+    base colour texture."""
+    document, buffers = gltf_parts(path)
+    corners, uvs, numbers, images = [], [], [], []
+    for primitive in (each for drawn in document.get("meshes", []) for each in drawn["primitives"]):
+        if primitive.get("mode", 4) != 4:
+            continue
+        points = gltf_values(document, buffers, primitive["attributes"]["POSITION"]).astype(np.float64)
+        order = (gltf_values(document, buffers, primitive["indices"]).ravel() if "indices" in primitive
+                 else np.arange(len(points)))
+        order = order[: len(order) // 3 * 3].reshape(-1, 3)
+        corners.append(points[order])
+        material = document["materials"][primitive["material"]] if "material" in primitive else {}
+        texture = (material.get("pbrMetallicRoughness") or {}).get("baseColorTexture")
+        if texture is None or "TEXCOORD_0" not in primitive["attributes"]:
+            uvs.append(np.zeros((len(order), 3, 2)))
+            numbers.append(np.full(len(order), -1))
+            continue
+        image = document["textures"][texture["index"]]["source"]
+        if image not in images:
+            images.append(image)
+        uvs.append(gltf_values(document, buffers, primitive["attributes"]["TEXCOORD_0"]).astype(np.float64)[order])
+        numbers.append(np.full(len(order), images.index(image)))
+    if not corners:
+        return np.zeros((0, 3, 3)), mesh.Skin(np.zeros((0, 3, 2)), np.zeros(0, dtype=np.int64), [])
+    folder = pathlib.Path(path).parent
+    paths = [gltf_picture(document, buffers, image, folder) for image in images] if len(images) > 1 else \
+        [str(folder / document["images"][image].get("uri", "embedded")) for image in images]
+    return np.concatenate(corners), mesh.Skin(np.concatenate(uvs), np.concatenate(numbers), paths)
 
 
 def picture_sizes(skin):
@@ -99,7 +183,10 @@ def measured(blobs, folder, fetched, record):
         return None
     kind, entry_id, version = entries.parse_address(record["address"])
     path = pathlib.Path(folder) / entries.library_path(kind, entry_id, version, named)
-    triangles, _, _, skin = mesh.collect(path)
+    if path.suffix in (".gltf", ".glb"):
+        triangles, skin = gltf_collect(path)
+    else:
+        triangles, _, _, skin = mesh.collect(path)
     if len(set(skin.numbers[skin.numbers >= 0].tolist())) > 1:
         real_textures(blobs, fetched, folder, skin)
     share, median = sparse_share(triangles, skin, picture_sizes(skin))
@@ -127,10 +214,10 @@ def measure_one(root, blobs, record):
     """(record, its measure or None, why it could not be fetched or read or None), its temp root removed after."""
     from pxr import Tf
     from score_lib import verify
-    folder, fetched, why = verify.usd_fetched(root, blobs, record)
+    folder, fetched, why = verify.usd_fetched(root, blobs, record, READ_ROLES)
     try:
         return record, (None if why else measured(blobs, folder, fetched, record)), why
-    except Tf.ErrorException as error:  # a USD file that does not open; verify's USD check names it too
+    except (Tf.ErrorException, OSError, ValueError, KeyError) as error:  # a file that does not open or parse
         return record, None, f"layout: {drawn_file(record)} does not open ({str(error).strip()[:200]})"
     finally:
         shutil.rmtree(folder, ignore_errors=True)

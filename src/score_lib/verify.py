@@ -277,13 +277,13 @@ def stand_ins(folder, records, roles):
                 target.touch()
 
 
-def usd_fetched(root, blobs, record):
-    """One entry fetched with its requires into a new temp root: its layers' bytes, a stand-in for every other file;
-    (the folder, the records fetched, or why its files could not be fetched)."""
+def usd_fetched(root, blobs, record, kept_roles=USD_ROLES):
+    """One entry fetched with its requires into a new temp root: its files of `kept_roles` (its layers) whole, a
+    stand-in for every other file; (the folder, the records fetched, or why its files could not be fetched)."""
     folder = pathlib.Path(tempfile.mkdtemp(prefix="score-lib-verify-"))
     try:
         required = closure(root, [record["address"]], with_requires=True)
-        others = {described["role"] for each in required for described in each["files"].values()} - set(USD_ROLES)
+        others = {described["role"] for each in required for described in each["files"].values()} - set(kept_roles)
         fetched = fetch(root, blobs, [record["address"]], folder, with_requires=True, link=True, left_out_roles=others)
         stand_ins(folder, fetched, others)
     except (entries.UnsafeName, MissingEntry, MissingBlob, BadBlob) as why:  # each also told by its own check
