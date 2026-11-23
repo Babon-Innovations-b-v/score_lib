@@ -60,6 +60,8 @@ def test_a_pick_locks_the_concept_an_unlock_withdraws_it_and_a_new_pick_is_the_n
     assert [draw["sha"] for draw in told["led_to_it"]] == [first["sha"], second["sha"]]
     assert told["led_to_it"][1]["marks"] == [mark] and told["led_to_it"][1]["note"] == "warmer"
     assert [draw["sha"] for draw in told["history"]] == [first["sha"], second["sha"]]
+    assert record["provenance"]["by"] == told["picked"]["by"] == "Babon Innovations B.V." and "joey" not in json.dumps(
+        [record, told])  # a person's name never goes out in a published record
     assert index.stale(world.root) == []
     shown = git(world.root, "show", "--stat", "--format=", "HEAD")
     assert "entries/concept/room/1/entry.json" in shown and "loose.txt" not in shown

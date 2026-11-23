@@ -52,10 +52,21 @@ def lineage(draws, sha):
     return chain
 
 
+MAKER = "Babon Innovations B.V."  # who a concept's pick and draws are credited to: a published record names the
+# library's maker, never the person who clicked (owner, 2026-11-22: "babon")
+
+
+def credited(record):
+    """A pick or draw record with its `by` given to the library's maker."""
+    return {**record, "by": MAKER} if "by" in record else record
+
+
 def concept_record(place, pick, draws):
     """concept.json's content: the place, its pick, the draws that led to it and the place's draw history."""
+    pick = credited(pick)
     return {"place": place, "picked": {key: pick[key] for key in ("sha", "at", "by")},
-            "led_to_it": [{key: draw.get(key) for key in DRAW_FIELDS} for draw in lineage(draws, pick["sha"])],
+            "led_to_it": [{key: credited(draw).get(key) for key in DRAW_FIELDS}
+                          for draw in lineage(draws, pick["sha"])],
             "history": [{"sha": draw["sha"], "at": draw["at"]} for draw in draws if draw["at"] <= pick["at"]]}
 
 
@@ -72,7 +83,7 @@ def candidate(objects, place, pick, scratch):
         roles={"concept.png": "picture", "concept.json": "record"}, known={"concept.png": pick["sha"]},
         made_with=[made_by("concept.png: a Nano Banana Pro picture", "nano_banana_pro"),
                    made_by("concept.json: the concept review's record", "score")],
-        provenance={"source": "score's concept review", "place": place, "picked": pick["at"], "by": pick["by"]},
+        provenance={"source": "score's concept review", "place": place, "picked": pick["at"], "by": MAKER},
         tags={"place": [place]}, picture={"file": "concept.png", "made_by": "Nano Banana Pro", "of": place},
         entry_id=place)
 
