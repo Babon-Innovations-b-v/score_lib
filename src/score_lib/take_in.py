@@ -10,7 +10,9 @@ The list is one JSON file:
                   "files": {"<name in the entry>": {"path": "<local file>", "from": "<its name where it came from>"}},
                   "made_with": [{"what": "<part>", "source": "<a sources.toml id or credit text>",
                                  "carried": true when the source's own bytes are copied in}],
-                  "tags": {<optional tags, {name: [values]}>}}],
+                  "tags": {<optional tags, {name: [values]}>},
+                  "picture": {"file": "<one of its files, a .png or .jpg>", "made_by": "<the tool that drew it>",
+                              "of": "<the file it shows>"} when it brings its own preview picture}],
      "contributor": {"handle": "<GitHub handle>", "claim": "<own work, or the source and its terms>"}}
 
 A route that takes a whole source in (take_in_hub.py) may also give, per entry: a file's `sha256` and `bytes` (the
@@ -22,8 +24,9 @@ licence, admission.Sources.licence_faults; any entry carrying such a source's by
 `contributor` is given by an outside contributor only (CONTRIBUTING.md): each entry then names its contributor
 (`provenance.contributor`) and keeps the contribution block (contribution.py), which `score-lib take-bundle` completes.
 
-Each entry is admitted by the MIT rule (config/sources.toml) or refused. Its record has no OpenUSD form and no
-picture (`usd` null, `picture_reason` says why) and keeps `provenance.taken_from` and `files_from`, which
+Each entry is admitted by the MIT rule (config/sources.toml) or refused. Its record has no OpenUSD form (`usd` null)
+and no picture (`picture_reason` says why) unless the list gives its own (`picture`: a preview drawn of it, its file
+role `picture`) and keeps `provenance.taken_from` and `files_from`, which
 `score-lib verify` checks (verify.check_taken_in). An entry whose newest version holds the same content is left as it
 is; a changed draft is written over; a changed locked entry becomes the next version as a draft.
 
@@ -64,6 +67,7 @@ PLACE_ROLES = {"scene.usda": "usd", "concept.png": "concept", "render.png": "ren
 PACKAGE = "package/"
 PIECES = "pieces/"  # a place's piece list (score.scene version 2, 2099 #245) beside its scene package
 NO_PICTURE = "a loose made file taken in (score-lib take-in): no picture made yet"
+PICTURE_ENDINGS = (".png", ".jpg")  # an entry's own preview picture (`picture` in the list)
 COMPARED_OUT = ("address", "version") + entries.UNSTAMPED
 
 
@@ -87,17 +91,33 @@ def role_of(name, kind=None):
     return role
 
 
-def file_table(files, kind):
+def file_table(files, kind, picture=None):
     """{name: {sha256, bytes, role}} of an entry's files: hashed from its local path, or as listed when the list gives
-    its sha256 and bytes (a source's own record of them, checked when the bytes go into the blob store)."""
+    its sha256 and bytes (a source's own record of them, checked when the bytes go into the blob store); the file
+    named `picture` takes the role `picture`."""
     table = {}
     for name, about in sorted(files.items()):
+        role = "picture" if name == picture else role_of(name, kind)
         if "sha256" in about:
-            table[name] = {"sha256": about["sha256"], "bytes": about["bytes"], "role": role_of(name, kind)}
+            table[name] = {"sha256": about["sha256"], "bytes": about["bytes"], "role": role}
             continue
         path = pathlib.Path(about["path"])
-        table[name] = {"sha256": file_sha256(path), "bytes": path.stat().st_size, "role": role_of(name, kind)}
+        table[name] = {"sha256": file_sha256(path), "bytes": path.stat().st_size, "role": role}
     return table
+
+
+def picture_of(listed):
+    """The entry's own picture block ({file, made_by, of}) when the list gives one, else None; Refused when it names a
+    file the entry does not hold or one that is no picture."""
+    given = listed.get("picture")
+    if not given:
+        return None
+    name = given.get("file")
+    if name not in listed["files"] or pathlib.PurePosixPath(name).suffix.lower() not in PICTURE_ENDINGS:
+        raise Refused(f"{listed['id']}: its picture {name!r} is not one of its {'/'.join(PICTURE_ENDINGS)} files")
+    if not given.get("made_by") or given.get("of") not in listed["files"]:
+        raise Refused(f"{listed['id']}: its picture names no tool that drew it (made_by) or no file of it (of)")
+    return {"file": name, "made_by": given["made_by"], "of": given["of"]}
 
 
 def usd_of(listed, version):
@@ -119,9 +139,11 @@ def record_of(listed, about, sources, version):
     provenance = {"world": about["world"], "commit": about["commit"], "taken_from": about["taken_from"],
                   "made_with": sources.made_with(listed["made_with"]),
                   "files_from": {name: file["from"] for name, file in sorted(listed["files"].items())}}
+    picture = picture_of(listed)
     record = {"schema": entries.SCHEMA, "address": address, "kind": listed["kind"], "id": listed["id"],
-              "version": version, "title": listed["title"], "state": "draft", "picture": None,
-              "picture_reason": NO_PICTURE, "files": file_table(listed["files"], listed["kind"]),
+              "version": version, "title": listed["title"], "state": "draft", "picture": picture,
+              **({} if picture else {"picture_reason": NO_PICTURE}),
+              "files": file_table(listed["files"], listed["kind"], (picture or {}).get("file")),
               "usd": usd_of(listed, version), "requires": sorted(listed.get("requires", [])),
               "provenance": provenance, "tags": listed.get("tags", {}), "seen_in": []}
     if listed.get("unresolved"):

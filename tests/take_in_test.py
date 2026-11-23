@@ -228,3 +228,19 @@ def test_a_take_keeps_its_camera_folder_and_is_saved_to_origin(library, tmp_path
 def test_an_adopted_sets_usd_and_mdl_files_have_roles(name, role):
     """Break: take_in.ROLES without '.usd' or '.mdl' (an adopted set's own files are refused at take-in)."""
     assert take_in.role_of(name, "model") == role
+
+
+def test_an_entry_brings_its_own_preview_picture(library, tmp_path):
+    folder = loose(tmp_path / "loose")
+    (folder / "preview.png").write_bytes(b"\x89PNG a preview")
+    listed = listing(folder)
+    model = listed["entries"][1]
+    model["files"]["preview.png"] = {"path": str(folder / "preview.png"), "from": "previews/box.png"}
+    model["picture"] = {"file": "preview.png", "made_by": "a test's renderer", "of": "gltf/box.gltf"}
+    listed["entries"].append(dict(model, id="odd.gltf", picture=dict(model["picture"], file="gltf/box.bin")))
+    report = take_in.take_in(library, from_environment(), listed)
+    record = entries.load_address(library, "model/box.gltf@1")
+    assert record["picture"] == {"file": "preview.png", "made_by": "a test's renderer", "of": "gltf/box.gltf"}
+    assert "picture_reason" not in record and record["files"]["preview.png"]["role"] == "picture"
+    assert [row["id"] for row in report["refused"]] == ["model/odd.gltf"]
+    assert entries.load_address(library, "sound/hum.recordings@1")["picture_reason"] == take_in.NO_PICTURE
