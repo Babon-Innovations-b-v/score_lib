@@ -7,9 +7,9 @@
       "sha256": "2f4b1c429b3105fbe5ae86907d49574e84b8dcab03321a673abb21b90686b488"
     },
     "surface.json": {
-      "bytes": 2011,
+      "bytes": 2329,
       "role": "record",
-      "sha256": "0a8ce4227e851a2ecf8421149a832275165084cb12c6b70e42de0e09c84e006d"
+      "sha256": "aa3957ed847e6974c2c50939e565db499eff007493a4a9bc11dcf6e97ceb17fd"
     }
   },
   "id": "simready_m_trans_plastic_matte_a01_2b02c738",
@@ -30,12 +30,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: blood_line_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

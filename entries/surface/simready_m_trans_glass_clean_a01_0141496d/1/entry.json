@@ -7,9 +7,9 @@
       "sha256": "30bf68b2d80ec046729ef54df7af80c6adee04d2a5cd3ce2d4f529087ff7ea91"
     },
     "surface.json": {
-      "bytes": 2017,
+      "bytes": 2335,
       "role": "record",
-      "sha256": "fb059579245bf7ca1ee389ba2a687aac056904f1411f0aa337934211b823d87c"
+      "sha256": "3fc7f7ca656fe79d6f1dab8a1e5c3e2d5ba2f03a2d4c046960f9d293c08c89d5"
     }
   },
   "id": "simready_m_trans_glass_clean_a01_0141496d",
@@ -30,12 +30,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: panel_control_surgery_room_b01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

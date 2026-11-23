@@ -7,9 +7,9 @@
       "sha256": "6c3c6320b85b9e878115e51620fa3eb4765e092ada0344e7e97eddd80e8dea28"
     },
     "surface.json": {
-      "bytes": 2010,
+      "bytes": 2328,
       "role": "record",
-      "sha256": "ad85715268d7d2f1b9698407fd0485adfba27ef130e35ed11d35077fb9caa16f"
+      "sha256": "dc42eccccf1e2c995fd7c756f3be6397c4224a773893b10625e68a4d71a720af"
     }
   },
   "id": "simready_m_trans_plastic_clear_a01_aeb0a835",
@@ -30,12 +30,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: pump_suction_surgical_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

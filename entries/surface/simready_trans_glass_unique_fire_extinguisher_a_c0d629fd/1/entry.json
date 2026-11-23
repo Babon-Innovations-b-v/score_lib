@@ -7,9 +7,9 @@
       "sha256": "bb89b926e0f9ca5391a5a4c7352195c7678c802ebe338d55a7752760bf3fbcc9"
     },
     "surface.json": {
-      "bytes": 2035,
+      "bytes": 2374,
       "role": "record",
-      "sha256": "80b7a6dff9e67b735db31574b05990219be6b926dbb607e1ae5d6cb068d41224"
+      "sha256": "6d1d120afc01d8a054f6eb1471292ee526f3b446c383b1175c5826e6c272b0b0"
     }
   },
   "id": "simready_trans_glass_unique_fire_extinguisher_a_c0d629fd",
@@ -30,12 +30,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: warehouse_h10m_corner_in_a01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",

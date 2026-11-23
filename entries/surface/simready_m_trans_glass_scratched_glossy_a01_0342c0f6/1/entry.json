@@ -7,9 +7,9 @@
       "sha256": "24488b47526a8755629d4fd4eb180f095e8d8b7456e0a8e91ac6f1c9e6c3f41e"
     },
     "surface.json": {
-      "bytes": 2009,
+      "bytes": 2326,
       "role": "record",
-      "sha256": "ee657d0c7b85a26d574215aecd0714ca3cdf9707a03af6546158b3829eaf49db"
+      "sha256": "400945076104f2e9af99dba44090f28d9efb714bd15b04abf8512d975f67c1ca"
     }
   },
   "id": "simready_m_trans_glass_scratched_glossy_a01_0342c0f6",
@@ -30,12 +30,18 @@
       {
         "by": "score",
         "what": "its look and record"
+      },
+      {
+        "by": "score",
+        "what": "its recipe, fitted to its maps by score's look-alike check"
       }
     ],
     "taken_from": "huggingface.co/datasets/nvidia/simready-assets at revision 99bb6c7c1247ff3a1f63e484996336e9e35b9cf8: decor_plant_dried_vase_b01",
     "world": "world1"
   },
-  "requires": [],
+  "requires": [
+    "algorithm/surface_recipes@2"
+  ],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",
