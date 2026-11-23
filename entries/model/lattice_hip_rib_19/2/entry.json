@@ -1,0 +1,64 @@
+{
+  "address": "model/lattice_hip_rib_19@2",
+  "files": {
+    "model.json": {
+      "bytes": 648,
+      "role": "record",
+      "sha256": "7a868876f2230e23bfeead95436728ecfc9cc4f5c7f8ba17dc24265320d93146"
+    },
+    "model.usdc": {
+      "bytes": 10656,
+      "role": "usd",
+      "sha256": "1c8f30aba41f108be271293d8dd3fec9099e682158ef393de55d7ac69c53f9d5"
+    }
+  },
+  "id": "lattice_hip_rib_19",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "d86ec83e1ffde48ad6033127e9023093492bf894",
+    "files_from": {
+      "model.json": "model/lattice_hip_rib_19@1/model.json, with its parts",
+      "model.usdc": "model/lattice_hip_rib_19@1/model.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score d86ec83e1)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/painted_metal@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Lattice hip rib 19",
+  "usd": {
+    "default_prim": "/lattice_hip_rib_19",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/lattice_hip_rib_19/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

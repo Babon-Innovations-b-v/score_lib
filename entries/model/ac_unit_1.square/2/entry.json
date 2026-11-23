@@ -1,0 +1,67 @@
+{
+  "address": "model/ac_unit_1.square@2",
+  "files": {
+    "model.json": {
+      "bytes": 1220,
+      "role": "record",
+      "sha256": "e1142eb4772417d1cf271bac4e90580e4d82a676e54c60f4c10d521881d1f232"
+    },
+    "model.usdc": {
+      "bytes": 41078,
+      "role": "usd",
+      "sha256": "55080653ddb72816c530c099e8e119b234b9a526b670030828ea53d5199e6a20"
+    }
+  },
+  "id": "ac_unit_1.square",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "d86ec83e1ffde48ad6033127e9023093492bf894",
+    "files_from": {
+      "model.json": "model/ac_unit_1.square@1/model.json, with its parts",
+      "model.usdc": "model/ac_unit_1.square@1/model.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score d86ec83e1)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/bare_metal@1",
+    "surface/painted_metal@1",
+    "surface/rubber@2",
+    "surface/rusted_metal@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "outside"
+    ]
+  },
+  "title": "Ac unit 1",
+  "usd": {
+    "default_prim": "/ac_unit_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/ac_unit_1.square/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

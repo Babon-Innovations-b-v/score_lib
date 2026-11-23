@@ -1,0 +1,71 @@
+{
+  "address": "model/far_square_lamp_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 1090,
+      "role": "record",
+      "sha256": "cae6d760c7cba7a46f7e8b55f17426f73f512c173a9b6bcedafbef8bd0532133"
+    },
+    "model.usdc": {
+      "bytes": 11475,
+      "role": "usd",
+      "sha256": "08f23eb05d9be7632707fa365a4d91c28cb59ab500037459d839c3429181ea1d"
+    },
+    "model_glow.usdc": {
+      "bytes": 3433,
+      "role": "usd",
+      "sha256": "f4711eb5bef3d4167a384cb75de21dab5889df4e46b20b759957fb0a58c33199"
+    }
+  },
+  "id": "far_square_lamp_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "d86ec83e1ffde48ad6033127e9023093492bf894",
+    "files_from": {
+      "model.json": "model/far_square_lamp_1@1/model.json, with its parts",
+      "model.usdc": "model/far_square_lamp_1@1/model.usdc, remade",
+      "model_glow.usdc": "model/far_square_lamp_1@1/model_glow.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score d86ec83e1)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/glowing@1",
+    "surface/rusted_metal@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "outside"
+    ]
+  },
+  "title": "Far square lamp 1",
+  "usd": {
+    "default_prim": "/far_square_lamp_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/far_square_lamp_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

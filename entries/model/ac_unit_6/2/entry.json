@@ -1,0 +1,67 @@
+{
+  "address": "model/ac_unit_6@2",
+  "files": {
+    "model.json": {
+      "bytes": 1238,
+      "role": "record",
+      "sha256": "7244da51c2c669c5a30d1b13e85edc5aed38ebf276378b3a1139381751fb623c"
+    },
+    "model.usdc": {
+      "bytes": 41185,
+      "role": "usd",
+      "sha256": "763837e5e53273dba263e26e2d0022164016fabc038b354313e983458461bf58"
+    }
+  },
+  "id": "ac_unit_6",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "d86ec83e1ffde48ad6033127e9023093492bf894",
+    "files_from": {
+      "model.json": "model/ac_unit_6@1/model.json, with its parts",
+      "model.usdc": "model/ac_unit_6@1/model.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score d86ec83e1)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/bare_metal@1",
+    "surface/painted_metal@1",
+    "surface/rubber@2",
+    "surface/rusted_metal@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "outside"
+    ]
+  },
+  "title": "Ac unit 6",
+  "usd": {
+    "default_prim": "/ac_unit_6",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/ac_unit_6/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

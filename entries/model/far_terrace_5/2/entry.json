@@ -1,0 +1,65 @@
+{
+  "address": "model/far_terrace_5@2",
+  "files": {
+    "model.json": {
+      "bytes": 621,
+      "role": "record",
+      "sha256": "845d3a55a070aa2cbf36d260c6ad0d40cba87b57dfda9c7f62aafe9236743291"
+    },
+    "model.usdc": {
+      "bytes": 7556,
+      "role": "usd",
+      "sha256": "a46e5a9bead3bc4cd274d602def58524883f4267dead7b0b7e71eab7412d6a5a"
+    }
+  },
+  "id": "far_terrace_5",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "d86ec83e1ffde48ad6033127e9023093492bf894",
+    "files_from": {
+      "model.json": "model/far_terrace_5@1/model.json, with its parts",
+      "model.usdc": "model/far_terrace_5@1/model.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score d86ec83e1)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/cast_metal@1",
+    "surface/tiles@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "outside"
+    ]
+  },
+  "title": "Far terrace 5",
+  "usd": {
+    "default_prim": "/far_terrace_5",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/far_terrace_5/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

@@ -1,0 +1,66 @@
+{
+  "address": "model/meter_box_2@2",
+  "files": {
+    "model.json": {
+      "bytes": 926,
+      "role": "record",
+      "sha256": "5b42e8d837279112181316afa436222023b0ff6d3240aef88110d3aae9bfe9cd"
+    },
+    "model.usdc": {
+      "bytes": 12963,
+      "role": "usd",
+      "sha256": "46849ebb0cb7c64b8c605f9347af03c7db3d214984b1ec6ec27b77186a52ebf2"
+    }
+  },
+  "id": "meter_box_2",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "d86ec83e1ffde48ad6033127e9023093492bf894",
+    "files_from": {
+      "model.json": "model/meter_box_2@1/model.json, with its parts",
+      "model.usdc": "model/meter_box_2@1/model.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score d86ec83e1)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/bare_metal@1",
+    "surface/galvanized@1",
+    "surface/rusted_metal@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "outside"
+    ]
+  },
+  "title": "Meter box 2",
+  "usd": {
+    "default_prim": "/meter_box_2",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/meter_box_2/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

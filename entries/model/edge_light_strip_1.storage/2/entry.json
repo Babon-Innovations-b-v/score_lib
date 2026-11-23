@@ -1,0 +1,71 @@
+{
+  "address": "model/edge_light_strip_1.storage@2",
+  "files": {
+    "model.json": {
+      "bytes": 670,
+      "role": "record",
+      "sha256": "5d939f73a9b2be93b43e9cff1f8fff5d5830f784d74d19c13a379a5e93cc4d4f"
+    },
+    "model.usdc": {
+      "bytes": 6907,
+      "role": "usd",
+      "sha256": "cbc7e239eac057199f4f6ad6ba208aa6fd0095ac22272f5166aa2f9abee02fa1"
+    },
+    "model_glow.usdc": {
+      "bytes": 3536,
+      "role": "usd",
+      "sha256": "a3dbf9ca19156ee0f7f5f8c455bfecb8c8270a04888ca20b852f827d1a8d7470"
+    }
+  },
+  "id": "edge_light_strip_1.storage",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "d86ec83e1ffde48ad6033127e9023093492bf894",
+    "files_from": {
+      "model.json": "model/edge_light_strip_1.storage@1/model.json, with its parts",
+      "model.usdc": "model/edge_light_strip_1.storage@1/model.usdc, remade",
+      "model_glow.usdc": "model/edge_light_strip_1.storage@1/model_glow.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score d86ec83e1)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/glowing@1",
+    "surface/painted_metal@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Edge light strip 1",
+  "usd": {
+    "default_prim": "/edge_light_strip_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/edge_light_strip_1.storage/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

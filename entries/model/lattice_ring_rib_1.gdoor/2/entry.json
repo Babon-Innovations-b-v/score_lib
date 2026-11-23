@@ -1,0 +1,61 @@
+{
+  "address": "model/lattice_ring_rib_1.gdoor@2",
+  "files": {
+    "model.json": {
+      "bytes": 670,
+      "role": "record",
+      "sha256": "8529234a9fddc9a9aaecb0d89e33e6a9c99b7216a2fa71bed84095c39681df81"
+    },
+    "model.usdc": {
+      "bytes": 10625,
+      "role": "usd",
+      "sha256": "497c01195298e489b076c3e164072187f73c2820f1927423635eca467fee182c"
+    }
+  },
+  "id": "lattice_ring_rib_1.gdoor",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "d86ec83e1ffde48ad6033127e9023093492bf894",
+    "files_from": {
+      "model.json": "model/lattice_ring_rib_1.gdoor@1/model.json, with its parts",
+      "model.usdc": "model/lattice_ring_rib_1.gdoor@1/model.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score d86ec83e1)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/painted_metal@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": []
+  },
+  "title": "Lattice ring rib 1",
+  "usd": {
+    "default_prim": "/lattice_ring_rib_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/lattice_ring_rib_1.gdoor/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

@@ -1,0 +1,73 @@
+{
+  "address": "model/light_ring_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 1620,
+      "role": "record",
+      "sha256": "28693d239357c2f2799262a39b4994a1c646d3181dcbe4d8aabf0a9915a02e46"
+    },
+    "model.usdc": {
+      "bytes": 184837,
+      "role": "usd",
+      "sha256": "ba7a4494c60cda88b734c8e86693beda1e870893b37b2f41b0a2cc9a6b19e6dc"
+    },
+    "model_glow.usdc": {
+      "bytes": 47443,
+      "role": "usd",
+      "sha256": "3a6f8c7afe04d74a702e83f59e8fc93f2b9750f66087fc16fb3bd299e29f67ee"
+    }
+  },
+  "id": "light_ring_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "d86ec83e1ffde48ad6033127e9023093492bf894",
+    "files_from": {
+      "model.json": "model/light_ring_1@1/model.json, with its parts",
+      "model.usdc": "model/light_ring_1@1/model.usdc, remade",
+      "model_glow.usdc": "model/light_ring_1@1/model_glow.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score d86ec83e1)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/bare_metal@1",
+    "surface/cast_metal@1",
+    "surface/glowing@1",
+    "surface/painted_metal@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Light ring 1",
+  "usd": {
+    "default_prim": "/light_ring_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/light_ring_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

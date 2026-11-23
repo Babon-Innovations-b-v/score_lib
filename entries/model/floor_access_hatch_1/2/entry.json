@@ -1,0 +1,66 @@
+{
+  "address": "model/floor_access_hatch_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 1459,
+      "role": "record",
+      "sha256": "25485555bd9f20f2d0f394893c07efb073f93cd60579304697fc0f1d65893383"
+    },
+    "model.usdc": {
+      "bytes": 98212,
+      "role": "usd",
+      "sha256": "15f130b8ef4572eba512ed56a5bcdd98a0c81fdb715e57af2881e42718268d1c"
+    }
+  },
+  "id": "floor_access_hatch_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "d86ec83e1ffde48ad6033127e9023093492bf894",
+    "files_from": {
+      "model.json": "model/floor_access_hatch_1@1/model.json, with its parts",
+      "model.usdc": "model/floor_access_hatch_1@1/model.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score d86ec83e1)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/bare_metal@1",
+    "surface/galvanized@1",
+    "surface/painted_metal@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Floor access hatch 1",
+  "usd": {
+    "default_prim": "/floor_access_hatch_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/floor_access_hatch_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

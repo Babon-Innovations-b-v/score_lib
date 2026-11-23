@@ -1,0 +1,71 @@
+{
+  "address": "model/ceiling_light_panel_1.walkway@2",
+  "files": {
+    "model.json": {
+      "bytes": 818,
+      "role": "record",
+      "sha256": "35c039dc3ae615911fd5f6e0186eb754370a0d6a9da1de0d845be89a22fd2750"
+    },
+    "model.usdc": {
+      "bytes": 9035,
+      "role": "usd",
+      "sha256": "5e8a88a51b94512b47c9ae9221475b017485680976b25ddddde4e464219c86b4"
+    },
+    "model_glow.usdc": {
+      "bytes": 3540,
+      "role": "usd",
+      "sha256": "94fe6a10645c6a8b8a9ffe957411ec3e6673ae1f9d033c74763d5357d5e8d780"
+    }
+  },
+  "id": "ceiling_light_panel_1.walkway",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "d86ec83e1ffde48ad6033127e9023093492bf894",
+    "files_from": {
+      "model.json": "model/ceiling_light_panel_1.walkway@1/model.json, with its parts",
+      "model.usdc": "model/ceiling_light_panel_1.walkway@1/model.usdc, remade",
+      "model_glow.usdc": "model/ceiling_light_panel_1.walkway@1/model_glow.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score d86ec83e1)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/glowing@1",
+    "surface/painted_metal@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Ceiling light panel 1",
+  "usd": {
+    "default_prim": "/ceiling_light_panel_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/ceiling_light_panel_1.walkway/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}

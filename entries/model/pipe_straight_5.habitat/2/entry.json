@@ -1,0 +1,64 @@
+{
+  "address": "model/pipe_straight_5.habitat@2",
+  "files": {
+    "model.json": {
+      "bytes": 617,
+      "role": "record",
+      "sha256": "d9699b6a14941bad20e0eec04f6bd29d3ce6125b534ae0c5e196e5d9b2e5c357"
+    },
+    "model.usdc": {
+      "bytes": 20322,
+      "role": "usd",
+      "sha256": "de8bfcdd0cc488a18a75e55fa06249be3021a2f0a171da8eef2a96e3a5a739a0"
+    }
+  },
+  "id": "pipe_straight_5.habitat",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "d86ec83e1ffde48ad6033127e9023093492bf894",
+    "files_from": {
+      "model.json": "model/pipe_straight_5.habitat@1/model.json, with its parts",
+      "model.usdc": "model/pipe_straight_5.habitat@1/model.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score d86ec83e1)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/bare_metal@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "inside",
+      "moon"
+    ]
+  },
+  "title": "Pipe straight 5",
+  "usd": {
+    "default_prim": "/pipe_straight_5",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/pipe_straight_5.habitat/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}
