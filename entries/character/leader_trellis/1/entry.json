@@ -1,0 +1,86 @@
+{
+  "address": "character/leader_trellis@1",
+  "files": {
+    "body.glb": {
+      "bytes": 7374868,
+      "role": "gltf",
+      "sha256": "cf689758dd2d5029154423dac09b1d4322b2e7c8f91291338897dab0d9221666"
+    },
+    "character.usdc": {
+      "bytes": 3000062,
+      "role": "usd",
+      "sha256": "15e6de555a77ec9f9157ad5d4c0a5ec7ccaee65d084db3d0ae9c9b48c81366a8"
+    },
+    "rig.json": {
+      "bytes": 2367,
+      "role": "record",
+      "sha256": "a30b6be867af62251aee572c0ae08d8e27f84c9840cec0b90db2f663b4c2e4a4"
+    },
+    "source.json": {
+      "bytes": 2990,
+      "role": "record",
+      "sha256": "fd77e45b4b6e773da7763aada592022e7edbd8a03b866acb09b74a76ed1c9e46"
+    },
+    "textures/body_0.png": {
+      "bytes": 2082926,
+      "role": "texture",
+      "sha256": "964df0ad3d74e4b65fbc3f1f8dbd4e5c0ea7be8b6d7972e854d57ee21da5e595"
+    },
+    "textures/body_1.png": {
+      "bytes": 1438600,
+      "role": "texture",
+      "sha256": "afa5b87dc27f6953fb42b176226d79fa8bf58c21928a7f83e0d3423081a058df"
+    }
+  },
+  "id": "leader_trellis",
+  "kind": "character",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "4339bf860",
+    "files_from": {
+      "body.glb": "still_rig/body.glb",
+      "character.usdc": "still_rig/character.usdc",
+      "rig.json": "still_rig/rig.json",
+      "source.json": "still_rig/source.json",
+      "textures/body_0.png": "still_rig/usd/textures/body_0.png",
+      "textures/body_1.png": "still_rig/usd/textures/body_1.png"
+    },
+    "made_with": [
+      {
+        "by": "kimodo",
+        "what": "the clips"
+      },
+      {
+        "by": "score",
+        "what": "rigged by score (tools/characters/still_rig)"
+      },
+      {
+        "by": "soma_x",
+        "what": "the skeleton, clips and the SOMA surface its skin weights are moved from"
+      },
+      {
+        "by": "trellis2",
+        "what": "the body's shape and paint (TRELLIS.2-4B from the people line's leader close-up, on this PC's card), its suit darkened, graded to the palette"
+      }
+    ],
+    "taken_from": "score tools/characters/still_rig and tools/characters/speech on this PC: the 2099 prologue's leader as a TRELLIS.2 player model in his own graded paint, rigged on people-dress-person-made's skeleton, and his speaking pose at the square's lectern (2099 #161)",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "look": [
+      "leader",
+      "state suit"
+    ],
+    "maker": [
+      "trellis2"
+    ]
+  },
+  "title": "The leader (TRELLIS.2, dark state suit, rigged)",
+  "usd": null,
+  "version": 1
+}
