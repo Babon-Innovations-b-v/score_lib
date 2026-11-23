@@ -1,0 +1,65 @@
+{
+  "address": "model/security_gate_1@2",
+  "files": {
+    "model.json": {
+      "bytes": 1254,
+      "role": "record",
+      "sha256": "9152e64c1e514d06b6f8ae5579dda07f8d17e56ba774927e9c6a2b49cf790ed1"
+    },
+    "model.usdc": {
+      "bytes": 124909,
+      "role": "usd",
+      "sha256": "5da6c51e381e2a67a5c510100afef2f9a351344d622c4dd97da66ad90f3fa77d"
+    }
+  },
+  "id": "security_gate_1",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "d86ec83e1ffde48ad6033127e9023093492bf894",
+    "files_from": {
+      "model.json": "model/security_gate_1@1/model.json, with its parts",
+      "model.usdc": "model/security_gate_1@1/model.usdc, remade"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "remade part by part in library surfaces by score's part_looks (tools/library/part_looks): its geometry kept, each part of its old code builder (score 4547b8c54) bound to the library recipe its builder named, in the colour and settings the old library gave it in its place; the shared atlas (every face toward the kit's back at a twentieth of the texel density) taken off (score d86ec83e1)"
+      }
+    ],
+    "taken_from": "score's part_looks: the October 2026 code-built models remade part by part in library surfaces, the shared atlas off",
+    "world": "world1"
+  },
+  "requires": [
+    "surface/bare_metal@1",
+    "surface/rusted_metal@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "engine": [
+      "usd"
+    ],
+    "model": [
+      "piece"
+    ],
+    "place_kind": [
+      "earth",
+      "inside"
+    ]
+  },
+  "title": "Security gate 1",
+  "usd": {
+    "default_prim": "/security_gate_1",
+    "layer": "base",
+    "meters_per_unit": 1.0,
+    "path": "score_lib/model/security_gate_1/2/model.usdc",
+    "root": "model.usdc",
+    "time_codes_per_second": null,
+    "up_axis": "Y",
+    "use": "reference"
+  },
+  "version": 2
+}
