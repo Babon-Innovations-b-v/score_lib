@@ -63,6 +63,12 @@ A library of reusable parts of SCORE worlds: records in git (`entries/`), bytes 
   (score #155): a pass sets surface.json's recipe and likeness and gains the recipe in made_with as our own work; a
   fail or unread one keeps no recipe and a gap naming its measures past their bounds or why; a locked entry's next
   version as a draft; without `--apply` a report only.
+- `src/score_lib/decals.py`: `score-lib decals cut --from surface/<id>@<v> [--subset NAME] [--apply] [--save]
+  [--report FILE]` (score #164), the printed marks of a surface painted for one model (`painted_for`) cut out as draft
+  decal entries: surfaces of family `decal` (`decal.png` with transparency, `size_m` from the model's measured texel
+  density, its material class and ink), its source's licence and credit carried with the cut marked as a change; wear,
+  trim strips, second finishes and marks under 4 mm are not cut. Without `--apply` a report only; verify checks every
+  decal's transparency, size and class (`check_decals`).
 - `src/score_lib/concept.py`: `score-lib concept`, a place's locked concept from score's concept review (score #40).
 - `src/score_lib/handover.py`: `score-lib handover`, the one call score's runner makes (contract `library-handover` v1); `held.py`: what a place holds and which entries hold a store output.
 - `src/score_lib/clip.py`: an entry's preview clip (owner, 2026-10-20): `score-lib clip-plan` says what each clip

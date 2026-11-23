@@ -227,6 +227,18 @@ def check_taken_in(blobs, records):
     return [(record["address"], f"taken in: {fault}") for record, faults in zip(taken, found) for fault in faults]
 
 
+def check_decals(blobs, records):
+    """10. every decal (a surface of family decal, score #164): its decal.png has transparency, its size_m is two
+    positive sides in metres and its class one of the material class words (decals.decal_faults); READERS side by
+    side, a missing blob being check_blobs' fault."""
+    from score_lib import decals
+    held = [record for record in records if decals.is_decal(record) and record["state"] != "withdrawn"
+            and all(blobs.has(described["sha256"]) for described in record["files"].values())]
+    with concurrent.futures.ThreadPoolExecutor(READERS) as pool:
+        found = list(pool.map(lambda record: decals.check_decal(blobs, record), held))
+    return [(record["address"], f"decal: {fault}") for record, faults in zip(held, found) for fault in faults]
+
+
 def check_contributed(records, pending=False):
     """9. every outside entry traced to its contributor, pull request, signed-off commit, claim and bundle
     (contribution.py); `pending` checks only the contributor's half, before the pull request is merged."""
@@ -338,7 +350,7 @@ def verify(root, blobs, addresses=None, deep=False, usd=True, pending=False):
     failures += check_admission(root, records, Sources.load())
     failures += check_requires(root, records) + check_replacements(root, records)
     failures += check_taken_in(blobs, records)
-    failures += check_contributed(records, pending)
+    failures += check_contributed(records, pending) + check_decals(blobs, records)
     if usd:
         failures += check_usd(root, blobs, records)
     return failures

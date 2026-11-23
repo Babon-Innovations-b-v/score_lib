@@ -196,6 +196,25 @@ def command_adopted(options):
           + (f", withdrawn {len(report['withdrawn'])}" if options.apply else "") + f"; proposals in {options.proposals}")
 
 
+def command_decals(options):
+    """`decals cut`: a painted surface's printed marks cut out as draft decal entries (decals.py)."""
+    from score_lib import decals, handover
+    try:
+        report = decals.cut_all(options.root, blob_store(reading=not options.apply), options.from_address,
+                                subset=options.subset, apply=options.apply, save=options.save)
+    except (decals.Refused, handover.HandoverError) as why:
+        raise SystemExit(str(why))
+    if options.report:
+        pathlib.Path(options.report).write_text(json.dumps(report, indent=2, sort_keys=True) + "\n")
+    line = (f"cut {len(report['cut'])} surfaces into {sum(len(row['decals']) for row in report['cut'])} decals, "
+            f"refused {len(report['refused'])}")
+    line += f", written {len(report['written'])}" if options.apply else " (a report only: --apply writes them)"
+    saved = report.get("saved")
+    line += f", saved commit {saved['committed']} pushed {saved['pushed']}" if saved else ""
+    print(line + (f"; report in {options.report}" if options.report else ""))
+    raise SystemExit(1 if report["refused"] or (saved and not saved["pushed"]) else 0)
+
+
 def command_test(options):
     import tempfile
     from score_lib import algorithms
@@ -471,6 +490,17 @@ def parser():
                           help="recipes, with --apply: commit and push each batch written, under the handover's lock")
     adopting.add_argument("--report", help="recipes: write the report as JSON")
     adopting.set_defaults(handle=command_adopted)
+    cutting = commands.add_parser("decals", help="`cut`: a surface painted for one model cut into draft decal "
+                                                 "entries, its printed marks at their size in metres (decals.py)")
+    cutting.add_argument("action", choices=["cut"])
+    cutting.add_argument("--from", dest="from_address", action="append", required=True,
+                         help="a painted surface's address (repeatable)")
+    cutting.add_argument("--subset", help="only the faces of this GeomSubset of its model")
+    cutting.add_argument("--apply", action="store_true", help="write the decals (without it, a report only)")
+    cutting.add_argument("--save", action="store_true", help="with --apply: commit and push them under the "
+                                                             "handover's lock")
+    cutting.add_argument("--report", help="write the report as JSON (a path outside the checkout)")
+    cutting.set_defaults(handle=command_decals)
     tested = commands.add_parser("test", help="run an algorithm entry's tests")
     tested.add_argument("address")
     tested.add_argument("--score", default=os.environ.get("SCORE_REPO", ""),
