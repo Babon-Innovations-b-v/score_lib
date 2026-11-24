@@ -76,6 +76,11 @@ A library of reusable parts of SCORE worlds: records in git (`entries/`), bytes 
   density, its material class and ink), its source's licence and credit carried with the cut marked as a change; wear,
   trim strips, second finishes and marks under 4 mm are not cut. Without `--apply` a report only; verify checks every
   decal's transparency, size and class (`check_decals`).
+- `src/score_lib/hardware.py`: `score-lib hardware cut --from model/<id>@<v> --prim PATH --kind KIND [--facing AXIS]
+  [--moves HOW] [--apply] [--save]` (score #212), one piece of an adopted model's hardware (a lock, knob, handle,
+  hinge or latch) cut out as a draft `model` entry of family `hardware`: `hardware.glb` (its mesh alone, no material:
+  score paints it with a library surface) in its own frame (+z out of its face, its back at z 0, centred, metres) and
+  `hardware.json` {kind, size_m, moves, facing, from}; its source's licence and credit carried, the cut marked.
 - `src/score_lib/concept.py`: `score-lib concept`, a place's locked concept from score's concept review (score #40).
 - `src/score_lib/handover.py`: `score-lib handover`, the one call score's runner makes (contract `library-handover` v1); `held.py`: what a place holds and which entries hold a store output.
 - `src/score_lib/clip.py`: an entry's preview clip (owner, 2026-10-20): `score-lib clip-plan` says what each clip

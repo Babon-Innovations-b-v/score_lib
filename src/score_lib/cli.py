@@ -237,6 +237,27 @@ def command_decals(options):
     raise SystemExit(1 if report["refused"] or (saved and not saved["pushed"]) else 0)
 
 
+def command_hardware(options):
+    """`hardware cut`: one piece of an adopted model's hardware cut out as a draft hardware entry (hardware.py)."""
+    from score_lib import handover, hardware
+    piece = {"address": options.from_address, "prim": options.prim, "kind": options.kind, "facing": options.facing,
+             "moves": options.moves}
+    try:
+        report = hardware.cut_all(options.root, blob_store(reading=not options.apply), [piece], apply=options.apply,
+                                  save=options.save)
+    except (hardware.Refused, handover.HandoverError) as why:
+        raise SystemExit(str(why))
+    if options.report:
+        pathlib.Path(options.report).write_text(json.dumps(report, indent=2, sort_keys=True) + "\n")
+    line = "; ".join(f"cut {row['id']} {row['size_m']} m facing {row['facing']}" for row in report["cut"])
+    line += "; ".join(f"refused {row['prim']}: {row['why']}" for row in report["refused"])
+    line += f", written {len(report['written'])}" if options.apply else " (a report only: --apply writes it)"
+    saved = report.get("saved")
+    line += f", saved commit {saved['committed']} pushed {saved['pushed']}" if saved else ""
+    print(line + (f"; report in {options.report}" if options.report else ""))
+    raise SystemExit(1 if report["refused"] or (saved and not saved["pushed"]) else 0)
+
+
 def command_test(options):
     import tempfile
     from score_lib import algorithms
@@ -534,6 +555,21 @@ def parser():
                                                              "handover's lock")
     cutting.add_argument("--report", help="write the report as JSON (a path outside the checkout)")
     cutting.set_defaults(handle=command_decals)
+    pieces = commands.add_parser("hardware", help="`cut`: one piece of an adopted model's hardware (a lock, knob, "
+                                                  "handle, hinge or latch) cut into a draft hardware entry (hardware.py)")
+    pieces.add_argument("action", choices=["cut"])
+    pieces.add_argument("--from", dest="from_address", required=True, help="the model entry's address")
+    pieces.add_argument("--prim", required=True, help="the piece's mesh prim path in the model's USD")
+    pieces.add_argument("--kind", required=True, help="lock, knob, handle, hinge or latch")
+    pieces.add_argument("--facing", choices=["+x", "-x", "+y", "-y", "+z", "-z"],
+                        help="the axis out of the face it is mounted on (default: its box's thinnest, away from the "
+                             "model's middle)")
+    pieces.add_argument("--moves", default="none", help="how it moves on its part: none, turn, press or slide")
+    pieces.add_argument("--apply", action="store_true", help="write the piece (without it, a report only)")
+    pieces.add_argument("--save", action="store_true", help="with --apply: commit and push it under the handover's "
+                                                            "lock")
+    pieces.add_argument("--report", help="write the report as JSON (a path outside the checkout)")
+    pieces.set_defaults(handle=command_hardware)
     tested = commands.add_parser("test", help="run an algorithm entry's tests")
     tested.add_argument("address")
     tested.add_argument("--score", default=os.environ.get("SCORE_REPO", ""),
