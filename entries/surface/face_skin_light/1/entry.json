@@ -1,0 +1,49 @@
+{
+  "address": "surface/face_skin_light@1",
+  "files": {
+    "material.usda": {
+      "bytes": 425,
+      "role": "usd",
+      "sha256": "f54b5b9db1f70fea3c6d04f559670edc260d66906b506dfca7ef7d1eb7c8fa29"
+    },
+    "surface.json": {
+      "bytes": 305,
+      "role": "record",
+      "sha256": "4b985dfe8e4ce015ecd5a2fa66065a34a82190f86e3e82a215ea15981458aab3"
+    }
+  },
+  "id": "face_skin_light",
+  "kind": "surface",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "5c60612d26d8f386787125cad8075e27a9ae9ec3",
+    "files_from": {
+      "material.usda": "score tools/characters/face/finishes.py (face_skin_light)",
+      "surface.json": "score tools/characters/face/finishes.py (face_skin_light)"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "the finish's constants, set by score for the face (#226)"
+      }
+    ],
+    "taken_from": "the face's finishes written by score's face tools (#226, PRD #223)",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "skin"
+    ],
+    "use": [
+      "face"
+    ]
+  },
+  "title": "Face skin, light (constant)",
+  "usd": null,
+  "version": 1
+}

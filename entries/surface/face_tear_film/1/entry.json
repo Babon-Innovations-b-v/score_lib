@@ -1,0 +1,49 @@
+{
+  "address": "surface/face_tear_film@1",
+  "files": {
+    "material.usda": {
+      "bytes": 471,
+      "role": "usd",
+      "sha256": "172ee8670fb2c248dbdb91015f0aab59a3c01812dfba4bd77e142750420f1b8d"
+    },
+    "surface.json": {
+      "bytes": 325,
+      "role": "record",
+      "sha256": "cb6bbc2d77e6ca13681df67980f302249d4f56506f390b5c1be3d00d7253b76e"
+    }
+  },
+  "id": "face_tear_film",
+  "kind": "surface",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "5c60612d26d8f386787125cad8075e27a9ae9ec3",
+    "files_from": {
+      "material.usda": "score tools/characters/face/finishes.py (face_tear_film)",
+      "surface.json": "score tools/characters/face/finishes.py (face_tear_film)"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "the finish's constants, set by score for the face (#226)"
+      }
+    ],
+    "taken_from": "the face's finishes written by score's face tools (#226, PRD #223)",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "eye"
+    ],
+    "use": [
+      "face"
+    ]
+  },
+  "title": "Tear film (constant)",
+  "usd": null,
+  "version": 1
+}
