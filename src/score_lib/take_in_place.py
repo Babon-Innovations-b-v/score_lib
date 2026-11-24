@@ -331,4 +331,5 @@ def taken_in_place_saved(root, blobs, folder, commit, world, without_package=Fal
             return {**report, "saved": None}
         kind, entry_id, _ = entries.parse_address(written[0])
         message = f"take-in: {written[0]} from score's placing method (score {commit[:12]})"
-        return {**report, "saved": handover.saved(root, message, (f"entries/{kind}/{entry_id}", "index"))}
+        return {**report, "saved": handover.saved(root, message, (f"entries/{kind}/{entry_id}", "index"),
+                                                   handover.LIBRARY_BRANCH)}

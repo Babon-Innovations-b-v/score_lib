@@ -94,7 +94,7 @@ def attached_saved(root, blobs, rows):
         paths = sorted({f"entries/{kind}/{entry_id}" for kind, entry_id, _ in map(entries.parse_address,
                                                                                     report["entries"])})
         message = f"game-attach: {len(report['kept'])} unity files kept beside {len(report['entries'])} entries (2099 #245)"
-        return {**report, "saved": handover.saved(root, message, (*paths, "index"))}
+        return {**report, "saved": handover.saved(root, message, (*paths, "index"), handover.LIBRARY_BRANCH)}
 
 
 def files_of(record):

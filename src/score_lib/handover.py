@@ -42,6 +42,8 @@ LOCK = ".handover.lock"
 LOCK_WAIT = 1800.0
 SAVED_PATHS = ("entries", "index", "worlds")
 PUSH_TRIES = 3  # times a save catches up with origin and pushes, while other writers push between the two
+# The library branch a take-in or game-attach saves to (HEAD:main), from any branch, a worktree or a detached HEAD.
+LIBRARY_BRANCH = "main"
 # The hooks the copies and quality work fills in: each a function (root, blobs, record) -> its block, or None.
 COPY_HOOK = ("score_lib.copies", "web_copy")
 QUALITY_HOOK = ("score_lib.quality", "score_of")
