@@ -1,0 +1,56 @@
+{
+  "address": "surface/flat_family_portrait@1",
+  "files": {
+    "decal.png": {
+      "bytes": 253168,
+      "role": "picture",
+      "sha256": "e4330fd03b374425765f5f01ea22b463ad99d6d5bdcb2e3aefdd6fcf482b1417"
+    },
+    "surface.json": {
+      "bytes": 412,
+      "role": "record",
+      "sha256": "3c5ad377920174c85892c9419b1be4f729b8bf1dcb501c56f12634bd4d5e2eea"
+    }
+  },
+  "id": "flat_family_portrait",
+  "kind": "surface",
+  "picture": {
+    "file": "decal.png",
+    "made_by": "PIL quad transform of the concept",
+    "of": "decal.png"
+  },
+  "provenance": {
+    "commit": "9d2df057ab151046fc97f4ca18ff15c9f5a0083c",
+    "files_from": {
+      "decal.png": "concept/flat@2/concept.png, a rectified crop",
+      "surface.json": "written by the flat's piece owner"
+    },
+    "made_with": [
+      {
+        "by": "nano_banana_pro",
+        "what": "the picture: a crop of the flat concept"
+      },
+      {
+        "by": "score",
+        "what": "the crop rectified by its four corners and the record"
+      }
+    ],
+    "taken_from": "crops of the locked flat concept (concept/flat@2 concept.png), each rectified to a flat picture by its four corners, for the flat's calendar, family photo and television (2099 #161)",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "class": [
+      "paper"
+    ],
+    "family": [
+      "decal"
+    ]
+  },
+  "title": "Flat family portrait (decal)",
+  "usd": null,
+  "version": 1
+}
