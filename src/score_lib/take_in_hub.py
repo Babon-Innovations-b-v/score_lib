@@ -16,7 +16,8 @@ Per asset folder, at the revision given (a 40-hex commit, never a branch):
 - one `surface` entry per distinct material, keyed by the sha256 of its maps (a material with no maps by its
   constants), shared by every model that uses the same maps: the maps under their role (`albedo.png`, `normal.png`,
   `orm.png`, ...), our own `material.usda` (a UsdPreviewSurface over them, ORM's green to roughness and blue to
-  metallic) and `surface.json` (the material's settings as the source gives them, its normal map's convention and
+  metallic; its emission in the recipes' units, `glow_of`, score #197) and `surface.json` (the material's settings as
+  the source gives them, its emission in the recipes' units as `emission`, its normal map's convention and
   `tile_metres`, the metres one repeat of its maps covers on the asset, and a glass's `transmission`: the colour,
   IOR and roughness its MDL glass shader gives, its look see-through by them); a set painted for one model (its
   maps unwrapped on that model's own UVs, no `tile` in their names) keeps its maps only, its recipe a written gap;
@@ -137,6 +138,17 @@ COLOUR_DELTA_E = 1.0
 LOOK_TOLERANCES = {"roughness": 0.02, "metallic": 0.02, "clearcoat": 0.02, "clearcoatRoughness": 0.02,
                    "specular": 0.02, "ior": 0.02, "occlusion": 0.02, "displacement": 0.02, "opacity": 0.01,
                    "opacityThreshold": 0.01, "weight": 0.01, "presence": 0.01, "constant": 0.01, "threshold": 0.01}
+# A source's emission (UsdPreviewSurface emissiveColor) is its colour times its intensity in nits: NVIDIA's writes
+# OmniPBR's emissive_color times emissive_intensity (score #197: the mirror's LED strip 5000, a coffee station's canopy
+# light 100000, an exit sign 2), and NVIDIA's own renders draw none of it (OmniPBR's enable_emission, false by default,
+# is set on none of the set's materials). Our look and record carry it in the recipes' units instead (`glow_of`): the
+# nits over EMISSION_WHITE_NITS, the luminance white reaches at Omniverse's default exposure (ISO 100, f/5, 1/50 s:
+# about 1000 cd/m2), at most GLOW_MOST, the strongest glow the library's studio light draws a lit colour at before it
+# washes to white (score #197: the push button's pale amber cap at 0.1 to 0.6, cream at 1, white at 5), and none under
+# GLOW_SEEN, one 8-bit step, which no render shows.
+EMISSION_WHITE_NITS = 1000.0
+GLOW_MOST = 0.5
+GLOW_SEEN = 1.0 / 255.0
 LOOK_DEFAULTS = {"diffuseColor": [0.18, 0.18, 0.18], "emissiveColor": [0.0, 0.0, 0.0],
                  "specularColor": [0.0, 0.0, 0.0], "useSpecularWorkflow": 0, "metallic": 0.0, "roughness": 0.5,
                  "clearcoat": 0.0, "clearcoatRoughness": 0.01, "opacity": 1.0, "opacityThreshold": 0.0, "ior": 1.5,
@@ -603,10 +615,28 @@ def transmission_of(material):
     return transmission
 
 
+def glow_of(emissive):
+    """A source's emissiveColor (its colour times its intensity in nits) in the recipes' units: its hue at its nits
+    over EMISSION_WHITE_NITS, at most GLOW_MOST; black under GLOW_SEEN."""
+    strongest = max(float(value) for value in emissive)
+    strength = min(strongest / EMISSION_WHITE_NITS, GLOW_MOST) if strongest > 0 else 0.0
+    if strength < GLOW_SEEN:
+        return [0.0, 0.0, 0.0]
+    return [round(float(value) / strongest * strength, 6) for value in emissive]
+
+
+def glowing_constants(constants):
+    """The constants with their emissiveColor, when they carry one, in the recipes' units (glow_of)."""
+    if "emissiveColor" not in constants:
+        return constants
+    return {**constants, "emissiveColor": glow_of(constants["emissiveColor"])}
+
+
 def look_constants(constants, transmission, opacity=None):
     """The UsdPreviewSurface constants our look writes: the source's, an OmniPBR cutout opacity's constant and
     threshold over them, a glass's see-through (opacity 0, the spec's clear glass that keeps its specular), its colour,
-    IOR and roughness over those."""
+    IOR and roughness over those; its emission in the recipes' units (glowing_constants)."""
+    constants = glowing_constants(constants)
     if opacity is not None:
         constants = {**constants, "opacity": opacity["constant"],
                      **({"opacityThreshold": opacity["threshold"]} if opacity["threshold"] else {})}
@@ -937,10 +967,13 @@ def opacity_channel(opacity):
 def surface_record(row, material, tiling):
     """Our own surface.json: the material's settings as the source gives them (a glass's transmission as its MDL shader
     gives it among them, an OmniPBR cutout opacity as `opacity`, and the MDL shader a look with no UsdPreviewSurface is
-    read from as `look_from`) and its recipe (none yet; a written gap for a set painted for one model)."""
+    read from as `look_from`), its emission in the recipes' units (`emission`, glow_of) and its recipe (none yet; a
+    written gap for a set painted for one model)."""
     return {"source": row["id"], "family": "image" if material["maps"] else "constant", "material": material["name"],
             "maps": {role: map_name(role, name) for role, name in material["maps"].items()},
             "constants": material["constants"], **material["settings"], "tiling": tiling, "recipe": None,
+            **({"emission": glow_of(material["constants"]["emissiveColor"])}
+               if "emissiveColor" in material["constants"] else {}),
             "recipe_gap": None if tiling else ONE_MODEL_GAP,
             **{block: material[block] for block in ("transmission", "opacity", "look_from") if material.get(block)}}
 

@@ -179,9 +179,31 @@ def command_adopted_recipes(options):
     print(line + (f"; report in {options.report}" if options.report else ""))
 
 
+def command_adopted_glow(options):
+    """`adopted glow`: the adopted surfaces' emission put in the recipes' units (adopted_glow.py)."""
+    from score_lib import adopted_glow, handover
+    try:
+        report = adopted_glow.write_glows(options.root, blob_store(reading=not options.apply), apply=options.apply,
+                                          save=options.save)
+    except (adopted_glow.Refused, handover.HandoverError) as why:
+        raise SystemExit(str(why))
+    if options.report:
+        adopted_glow.write_report(options.report, report)
+    line = f"glowing {len(report['planned'])}"
+    if options.apply:
+        line += ", " + ", ".join(f"{status} {len(report[status])}" for status in ("in place", "new version",
+                                                                                   "unchanged"))
+        line += f", saved {len(report['saved'])} commits" if options.save else ""
+    else:
+        line += " (a report only: --apply writes them)"
+    print(line + (f"; report in {options.report}" if options.report else ""))
+
+
 def command_adopted(options):
     if options.action == "recipes":
         return command_adopted_recipes(options)
+    if options.action == "glow":
+        return command_adopted_glow(options)
     if not options.proposals:
         raise SystemExit("adopted match needs --proposals <file>")
     from score_lib import adopted
@@ -482,8 +504,9 @@ def parser():
     adopting = commands.add_parser("adopted", help="an adopted set against our older entries: `match` proposes the "
                                                    "adopted entry each older model and surface overlaps (adopted.py); "
                                                    "`recipes` writes score's look-alike results into its surfaces "
-                                                   "(adopted_recipes.py)")
-    adopting.add_argument("action", choices=["match", "recipes"])
+                                                   "(adopted_recipes.py); `glow` puts its surfaces' emission in the "
+                                                   "recipes' units (adopted_glow.py)")
+    adopting.add_argument("action", choices=["match", "recipes", "glow"])
     adopting.add_argument("--source", action="append", help="the adopted set's config/sources.toml row id "
                                                             "(repeatable; default every row with a take_in table)")
     adopting.add_argument("--proposals",
@@ -493,12 +516,12 @@ def parser():
                                            "each size read is kept there, and a later run reads no bytes again")
     adopting.add_argument("--apply", action="store_true",
                           help="match: withdraw each accepted pair's older entry naming its replacement, and rebuild "
-                               "the index; recipes: write the results (without it, a report only)")
+                               "the index; recipes, glow: write the results (without it, a report only)")
     adopting.add_argument("--from", dest="from_folder",
                           help="recipes: the look-alike check's folder (summary.json and <id>@<version>/likeness.json)")
     adopting.add_argument("--save", action="store_true",
-                          help="recipes, with --apply: commit and push each batch written, under the handover's lock")
-    adopting.add_argument("--report", help="recipes: write the report as JSON")
+                          help="recipes, glow, with --apply: commit and push what is written, under the handover's lock")
+    adopting.add_argument("--report", help="recipes, glow: write the report as JSON")
     adopting.set_defaults(handle=command_adopted)
     cutting = commands.add_parser("decals", help="`cut`: a surface painted for one model cut into draft decal "
                                                  "entries, its printed marks at their size in metres (decals.py)")

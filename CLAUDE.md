@@ -66,6 +66,10 @@ A library of reusable parts of SCORE worlds: records in git (`entries/`), bytes 
   (score #155): a pass sets surface.json's recipe and likeness and gains the recipe in made_with as our own work; a
   fail or unread one keeps no recipe and a gap naming its measures past their bounds or why; a locked entry's next
   version as a draft; without `--apply` a report only.
+- `src/score_lib/adopted_glow.py`: `score-lib adopted glow [--apply] [--save] [--report FILE]` (score #197), the adopted
+  surfaces already in, their emission put in the recipes' units as a new take-in writes it (take_in_hub.glow_of: the
+  source's nits over 1000, at most 0.5, none under one 8-bit step): surface.json's `emission` and material.usda's
+  emissiveColor, a draft in place, a locked entry as its next version; the recipe is left for score's look-alike check.
 - `src/score_lib/decals.py`: `score-lib decals cut --from surface/<id>@<v> [--subset NAME] [--apply] [--save]
   [--report FILE]` (score #164), the printed marks of a surface painted for one model (`painted_for`) cut out as draft
   decal entries: surfaces of family `decal` (`decal.png` with transparency, `size_m` from the model's measured texel
