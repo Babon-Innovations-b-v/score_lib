@@ -7,9 +7,9 @@
       "sha256": "5c9c4aaa2cc55b1faf805247f5566912563219a4fd3b437d704686ab7289ebc3"
     },
     "material.usda": {
-      "bytes": 2748,
+      "bytes": 2760,
       "role": "usd",
-      "sha256": "2a2fa50ea903c0e6c00d751d66fdc758850fab2037f7313c293db49eda9abffd"
+      "sha256": "e56f9dcc4656de5b433a00e84be9d6d996913a36ad044e23ea06a4c9cad2beca"
     },
     "normal.png": {
       "bytes": 58788,
@@ -22,9 +22,9 @@
       "sha256": "c2fdec176e47172ea74d5811a05a1490993266ec8984dde5cc7b71d4e1f4669e"
     },
     "surface.json": {
-      "bytes": 1080,
+      "bytes": 1133,
       "role": "record",
-      "sha256": "fe4b7b4dc6c8b5e226e070eea5ce99bbe658c62c48020c323af043bec41fa5c2"
+      "sha256": "436ac5f19a7d6dfb14cc6f2a2f52ffddc8e7e7c35803486ae5273e7e1f9e1ecc"
     }
   },
   "id": "simready_m_opaque_plastic_emissive_ceiling_lamp_a01_800ee8d7",
@@ -41,10 +41,10 @@
     "commit": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
     "files_from": {
       "albedo.png": "lamp_ceiling_1m_rectangle_a01/simready_usd/Textures/t_ceilingLamp_white_a01_alb.png",
-      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps)",
+      "material.usda": "written by score-lib take-in hub (a UsdPreviewSurface over the maps); its emission in the recipes' units (score-lib adopted glow, score #197)",
       "normal.png": "lamp_ceiling_1m_rectangle_a01/simready_usd/Textures/t_ceilingLamp_white_a01_nor.png",
       "orm.png": "lamp_ceiling_1m_rectangle_a01/simready_usd/Textures/t_ceilingLamp_white_a01_orm.png",
-      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them)"
+      "surface.json": "written by score-lib take-in hub (the material's settings as the source gives them); its emission in the recipes' units (score-lib adopted glow, score #197)"
     },
     "made_with": [
       {
