@@ -53,6 +53,9 @@ from score_lib import handover, index
 from score_lib.admission import NotAdmitted, Sources
 from score_lib.blobs import file_sha256, put_all
 
+# The library branch a take-in's save pushes to (HEAD:main), from any branch, a worktree or a detached HEAD.
+LIBRARY_BRANCH = "main"
+
 KINDS = ("sound", "model", "take", "kit", "character", "surface", "effect")
 # An effect entry's emitter file, laid by reference as the export's effect entries are (export/effect.py).
 EFFECT_USD = {"root": "effect.usda", "layer": "effects", "use": "reference"}
@@ -241,7 +244,7 @@ def taken_in_saved(root, blobs, listing):
             return {**report, "saved": None}
         folders = sorted({"entries/{0}/{1}".format(*entries.parse_address(address)[:2]) for address in written})
         message = (f"take-in: {len(written)} entries from {listing['taken_from']} (score {listing['commit'][:12]})")
-        return {**report, "saved": handover.saved(root, message, (*folders, "index"))}
+        return {**report, "saved": handover.saved(root, message, (*folders, "index"), LIBRARY_BRANCH)}
 
 
 def read_listing(path):

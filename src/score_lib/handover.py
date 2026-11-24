@@ -320,7 +320,7 @@ def pushed(root, target=None):
         rebased, why = caught_up(root, target)
         if not rebased:
             return False, why
-        done = git(root, "push", "-q", "origin", f"HEAD:{target}" if target else "HEAD")
+        done = git(root, "push", "-q", "origin", f"HEAD:refs/heads/{target}" if target else "HEAD")
         if done.returncode == 0:
             return True, ""
         why = last_line(done)

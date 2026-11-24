@@ -200,11 +200,14 @@ def git(folder, *words):
 
 def test_a_take_keeps_its_camera_folder_and_is_saved_to_origin(library, tmp_path):
     """Break: take_in.role_of: 'CAMERA_ROLES if path.parent.suffix == ".svviews" else TAKE_ROLES' -> 'TAKE_ROLES'
-    (the close-up is refused), or taken_in_saved's 'handover.saved(...)' -> None (the take reaches no remote)."""
+    (the close-up is refused), or taken_in_saved's 'handover.saved(...)' -> None (the take reaches no remote), or
+    its LIBRARY_BRANCH target dropped (a library checkout on a detached HEAD, as every score worktree's is, saves
+    nothing: "the library is on no branch", 2099 #161's car)."""
     remote = tmp_path / "remote.git"
-    subprocess.run(["git", "init", "-q", "--bare", str(remote)], check=True)
-    for words in (["init", "-q"], ["remote", "add", "origin", str(remote)], ["config", "user.email", "t@t"],
-                  ["config", "user.name", "t"], ["commit", "-q", "--allow-empty", "-m", "start"]):
+    subprocess.run(["git", "init", "-q", "--bare", "-b", "main", str(remote)], check=True)
+    for words in (["init", "-q", "-b", "main"], ["remote", "add", "origin", str(remote)], ["config", "user.email", "t@t"],
+                  ["config", "user.name", "t"], ["commit", "-q", "--allow-empty", "-m", "start"],
+                  ["checkout", "-q", "--detach"]):
         git(library, *words)
     blobs = from_environment()
     report = take_in.taken_in_saved(library, blobs, a_take(tmp_path / "pixal"))
