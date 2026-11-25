@@ -1,15 +1,20 @@
 {
   "address": "model/cigarette_1@1",
   "files": {
+    "model.glb": {
+      "bytes": 14588,
+      "role": "gltf",
+      "sha256": "3f229c0f88f4251e9eadc4c65f7000f0042d85373dc05899c39173203df296f1"
+    },
     "model.json": {
-      "bytes": 544,
+      "bytes": 1056,
       "role": "record",
-      "sha256": "d8ce55b55286c58f116ad230825da1a92f26bf6b076dfb1a7a87909e810dcf3f"
+      "sha256": "10136274d13f618d2e9768ce14cdb2dd3924739ec89277bad2e7f94e6c90fd77"
     },
     "model.usdc": {
-      "bytes": 4169,
+      "bytes": 4706,
       "role": "usd",
-      "sha256": "b6ccecff0ad577e5a29da47d9b451be8f4d5061952199e5049aac7aeb03b22ec"
+      "sha256": "07e7613299787b3c81c3aeb11c51e7af7f516f7a027dc70fec499e221fe52df6"
     }
   },
   "id": "cigarette_1",
@@ -17,8 +22,9 @@
   "picture": null,
   "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
   "provenance": {
-    "commit": "05d7a5149",
+    "commit": "428c29795",
     "files_from": {
+      "model.glb": "cigarette.glb",
       "model.json": "cigarette.json",
       "model.usdc": "cigarette.usdc"
     },
@@ -29,10 +35,10 @@
       },
       {
         "by": "score",
-        "what": "its parts each bound to a placeholder material named after the part (a plain grey marked score:placeholder, no finish) so any USD reader splits them and draws them grey, and its decal faces taken off (their logo a picture the library does not keep) (score #156)"
+        "what": "its filter, paper, ember and ash each finished by a library surface: surface/printed in its tipping, paper and ash colours, surface/glowing for the burn line (cigarette.FINISHES)"
       }
     ],
-    "taken_from": "score tools/props/smoke_beat/cigarette.py on this PC: the 2099 prologue's cigarette built in code at a king size cigarette's measures (score #152)",
+    "taken_from": "score tools/props/smoke_beat/cigarette.py on this PC: the 2099 prologue's cigarette built in code at a king size cigarette's measures, each part finished by a library surface (2099 #161)",
     "world": "world1"
   },
   "requires": [],
@@ -47,7 +53,7 @@
       "code"
     ]
   },
-  "title": "Cigarette (king size, code-built)",
+  "title": "Cigarette (king size, lit, code-built)",
   "usd": null,
   "version": 1
 }
