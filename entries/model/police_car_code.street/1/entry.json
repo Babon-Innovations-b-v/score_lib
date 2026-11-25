@@ -1,0 +1,46 @@
+{
+  "address": "model/police_car_code.street@1",
+  "files": {
+    "police_car_code.street.glb": {
+      "bytes": 472636,
+      "role": "gltf",
+      "sha256": "c4c4a4874b7631ff56803a2b606c57f60b260a26d13535fec466aec01f0ffe47"
+    },
+    "police_car_code.street.json": {
+      "bytes": 3830,
+      "role": "record",
+      "sha256": "e05b5f0cec0ce3fef8b45e92527c78d358fa80dec0d556a68661669c15f8ae1d"
+    }
+  },
+  "id": "police_car_code.street",
+  "kind": "model",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "983352bb1",
+    "files_from": {
+      "police_car_code.street.glb": "moving_parts.build(police_car) painted by car.painted",
+      "police_car_code.street.json": "moving_parts.build(police_car)'s parts record"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "police_car: a saloon built in code, its right front door and window hinged at the door's front edge (door__hinge_y, door_window__hinge_y) and its wheels on their axles, every part painted from the library surfaces (the street palette's car_body_paint, car_window, car_chrome, tyre_rubber, lamp_head_glow, barrier_plastic_red, siren_blue, siren_red, licence_plate, lantern_cable)"
+      }
+    ],
+    "taken_from": "score's moving_parts car builder (score/stages/props/moving_parts/car.py) run on this PC with the street's palette",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "maker": [
+      "code"
+    ]
+  },
+  "title": "Police car (code-built, street)",
+  "usd": null,
+  "version": 1
+}
