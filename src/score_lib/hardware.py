@@ -1,6 +1,6 @@
 """`score-lib hardware cut --from model/<id>@<v> --prim <mesh prim> --kind <kind> [--facing AXIS] [--moves HOW]
 [--apply] [--save] [--report FILE]`: one small piece of an adopted model's hardware (a cam lock, a knob, a handle, a
-hinge, a latch) cut out as a draft hardware entry (score #212), which score's finish route lays on a made model where
+hinge, a latch, a push button) cut out as a draft hardware entry (score #212), which score's finish route lays on a made model where
 the close-up shows such a piece, in place of the blob a picture-made model draws there.
 
 A hardware piece is a `model` entry tagged family `hardware`: `hardware.glb` (its mesh alone, triangles and normals, no
@@ -29,7 +29,7 @@ from score_lib import entry as entries
 from score_lib import fetch, handover, index
 from score_lib.blobs import MissingBlob, file_sha256, put_all
 
-KINDS = ("lock", "knob", "handle", "hinge", "latch")
+KINDS = ("lock", "knob", "handle", "hinge", "latch", "button")  # a button: a push button on a panel (score #229)
 MOVES = ("none", "turn", "press", "slide")  # how the piece moves on its part: score #177's joints
 AXES = {"+x": (1, 0, 0), "-x": (-1, 0, 0), "+y": (0, 1, 0), "-y": (0, -1, 0), "+z": (0, 0, 1), "-z": (0, 0, -1)}
 CUT_WHAT = "cut out as a hardware piece (score-lib hardware cut, score #212)"

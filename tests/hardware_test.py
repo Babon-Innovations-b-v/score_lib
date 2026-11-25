@@ -2,7 +2,7 @@
 at z 0, centred) at its size in metres, carrying its source's licence and credit. Red when: the piece's mesh is read
 without its prim's transform or the stage's units (its size or place wrong), its facing is not the axis out of its
 face (a door's lock read as facing into the door), its back is not at z 0, the licence or the credit is not carried,
-the cache is not emptied, or the entry written does not pass verify's schema and admission checks."""
+the cache is not emptied, a push button is refused as a kind, or the entry written does not pass verify's schema and admission checks."""
 import json
 import os
 import struct
@@ -94,3 +94,7 @@ def test_a_piece_is_cut_out_of_its_face_at_its_size_with_its_credit(tmp_path, mo
     faults = verify.check_schemas(root, [record]) + verify.check_admission(root, [record], verify.Sources.load())
     assert faults == []
     assert list((tmp_path / "cache").iterdir()) == []  # the bytes passed through a cache emptied after
+    # a push button is a kind (score #229); a kind outside KINDS is refused
+    pressed = hardware.cut_all(root, blobs, [{"address": MODEL, "prim": LOCK, "kind": "button", "moves": "press"}])
+    dialled = hardware.cut_all(root, blobs, [{"address": MODEL, "prim": LOCK, "kind": "dial", "moves": "turn"}])
+    assert pressed["refused"] == [] and len(dialled["refused"]) == 1, (pressed, dialled)
