@@ -1,0 +1,49 @@
+{
+  "address": "surface/face_cornea@1",
+  "files": {
+    "material.usda": {
+      "bytes": 423,
+      "role": "usd",
+      "sha256": "61074334033425197eba0184966ae26b7958acb8776a466b446c2c7a6fe9e71f"
+    },
+    "surface.json": {
+      "bytes": 487,
+      "role": "record",
+      "sha256": "0b15566193e0a89ccab3db1df20e50503b0a256dcc7a7c500603af4b4b6c5025"
+    }
+  },
+  "id": "face_cornea",
+  "kind": "surface",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "d2dec2f0ed91852219bc95c526b9a716c4dbdbb1",
+    "files_from": {
+      "material.usda": "score tools/characters/face/finishes.py (face_cornea)",
+      "surface.json": "score tools/characters/face/finishes.py (face_cornea)"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "the finish's constants, set by score for the face (#226)"
+      }
+    ],
+    "taken_from": "the face's finishes written by score's face tools (#226, PRD #223)",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "eye"
+    ],
+    "use": [
+      "face"
+    ]
+  },
+  "title": "Cornea and tear film, clear",
+  "usd": null,
+  "version": 1
+}
