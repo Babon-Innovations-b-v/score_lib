@@ -1,0 +1,66 @@
+{
+  "address": "surface/milky_way_eso@1",
+  "files": {
+    "map.jpg": {
+      "bytes": 8228817,
+      "role": "texture",
+      "sha256": "60400c92c54b7c1bd12299c69e83b16e5b6256e7dabacc478c021758ecd28179"
+    },
+    "preview.png": {
+      "bytes": 750224,
+      "role": "picture",
+      "sha256": "4c553faba4a427cc08410aec6da522f8ef65bb1be07c0696ebffc567b0f4be2e"
+    },
+    "surface.json": {
+      "bytes": 437,
+      "role": "record",
+      "sha256": "5b97b6ea617e05602ee19fb0ef72bf96665aa8b5e8a66b15f9f0869a00660237"
+    }
+  },
+  "id": "milky_way_eso",
+  "kind": "surface",
+  "licence": {
+    "credit": "The Milky Way panorama, ESO/S. Brunier, from eso.org/public/images/eso0932a, CC BY 4.0; changed: a preview drawn at 1024x512 beside it (the map itself is unchanged)",
+    "id": "CC-BY-4.0",
+    "source": "eso_milky_way",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "ffmpeg lanczos resize",
+    "of": "map.jpg"
+  },
+  "provenance": {
+    "commit": "da98fc56",
+    "files_from": {
+      "map.jpg": "eso0932a.jpg (unchanged)",
+      "preview.png": "the map at 1024x512 (Lanczos)",
+      "surface.json": "written by 2099's night sky (the map's projection and source)"
+    },
+    "made_with": [
+      {
+        "by": "eso_milky_way",
+        "carried": true,
+        "what": "ESO's Milky Way panorama (eso0932a), carried as published"
+      }
+    ],
+    "taken_from": "ESO's public image eso0932a (the Milky Way panorama, ESO/S. Brunier, CC BY 4.0), downloaded 2026-11-26 from cdn.eso.org/images/large/eso0932a.jpg for 2099's night and space skies (2099 #161)",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "look": [
+      "sky map",
+      "milky way"
+    ],
+    "maker": [
+      "eso"
+    ]
+  },
+  "title": "The Milky Way panorama (ESO/S. Brunier)",
+  "usd": null,
+  "version": 1
+}
