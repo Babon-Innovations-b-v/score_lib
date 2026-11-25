@@ -1,0 +1,66 @@
+{
+  "address": "surface/stars_bsc5@1",
+  "files": {
+    "preview.png": {
+      "bytes": 175567,
+      "role": "picture",
+      "sha256": "b125c0792fe617c4492dccea2d000b5ac38f596b5a40cd1c35d4b2fb9c145a09"
+    },
+    "stars.json": {
+      "bytes": 361549,
+      "role": "record",
+      "sha256": "09d83834b3076bfd76fbb9b6d0f23bb3bbf9190b76c1f87d1a5a1716283a5e74"
+    },
+    "surface.json": {
+      "bytes": 323,
+      "role": "record",
+      "sha256": "3875b6672e9bf6f86b8444a633e7d5ea62959317ad58e60756336cd2cdface57"
+    }
+  },
+  "id": "stars_bsc5",
+  "kind": "surface",
+  "licence": {
+    "credit": "The HYG star database 4.1 (astronexus, David Nash), CC BY-SA 4.0, its Yale Bright Star Catalogue stars (Hoffleit and Warren 1991); changed: only the columns hr, position, magnitude, colour index and name kept, and a preview drawn",
+    "id": "CC-BY-SA-4.0",
+    "source": "hyg_stars",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "numpy and Pillow, one dot a star by its magnitude",
+    "of": "stars.json"
+  },
+  "provenance": {
+    "commit": "3272c875",
+    "files_from": {
+      "preview.png": "the stars drawn on an equirectangular map, 2048x1024",
+      "stars.json": "hygdata_v41.csv's rows with an hr number: hr, ra x 15, dec, mag, ci, proper",
+      "surface.json": "written by 2099's night sky (the record's columns and source)"
+    },
+    "made_with": [
+      {
+        "by": "hyg_stars",
+        "carried": true,
+        "what": "HYG 4.1's Yale Bright Star Catalogue rows, carried as published (columns chosen)"
+      }
+    ],
+    "taken_from": "the HYG star database 4.1 (github.com/astronexus/HYG-Database, hyg/CURRENT/hygdata_v41.csv, CC BY-SA 4.0), its 9,041 rows carrying a Yale Bright Star Catalogue (HR) number, downloaded 2026-11-26 for 2099's night and space skies (2099 #161)",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "look": [
+      "sky map",
+      "stars"
+    ],
+    "maker": [
+      "hyg"
+    ]
+  },
+  "title": "The bright stars (Yale BSC5 via HYG 4.1)",
+  "usd": null,
+  "version": 1
+}
