@@ -225,3 +225,13 @@ prefix = "simready"
 creator = "NVIDIA Corporation"
 licence_name = "CC BY 4.0"
 licence_url = "https://creativecommons.org/licenses/by/4.0/"
+
+[[source]]
+id = "shopify_gltf_samples"
+name = "Shopify's models in the Khronos glTF Sample Assets (github.com/KhronosGroup/glTF-Sample-Assets, commit e124e8d8d7330a5372bc2b4d00d39a4a9d7997ea)"
+output = true
+copy = true
+licence = "CC-BY-4.0"
+match = ["Materials Variants Shoe, (c) 2021 Shopify, CC BY 4.0"]
+why = "CC BY 4.0: the model's own files may be copied in and shared, changed or not, only under that licence with Shopify credited, a link to the licence and changes marked (its Section 3(a)); they never go out under MIT. What our routes make from them (records, looks, fits) is ours, under MIT"
+from = "github.com/KhronosGroup/glTF-Sample-Assets at e124e8d8d7330a5372bc2b4d00d39a4a9d7997ea: Models/MaterialsVariantsShoe/README.md, its Legal section ('(c) 2021, Shopify. Creative Commons Attribution 4.0 International'), read 2026-11-25"
