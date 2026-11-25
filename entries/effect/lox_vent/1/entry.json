@@ -2,19 +2,19 @@
   "address": "effect/lox_vent@1",
   "files": {
     "clip.usdc": {
-      "bytes": 33605704,
+      "bytes": 43207048,
       "role": "usd",
-      "sha256": "e60845d2d67f3b612125bf856233bcc8ed457205b6c448d44b56d99b5bbd03b8"
+      "sha256": "78835e2ebcc3cfc741e40602931132baa183489217ba28c4812f4fb869b6b8f4"
     },
     "effect.usda": {
-      "bytes": 7277,
+      "bytes": 6805,
       "role": "usd",
-      "sha256": "0a1bb85513abc7fc4064adf37359fea776240a9e86a102cf5877110f1aa17707"
+      "sha256": "5c0b0d06994eec9298ad400e38068a9238bfac981b34cac4590b6f83663e8057"
     },
     "settings.json": {
-      "bytes": 3523,
+      "bytes": 3509,
       "role": "record",
-      "sha256": "59cefccb5c9a43047e14baa56aed5abc7336b70e32f83be7cf6879e73b528cd1"
+      "sha256": "c59f1b9b57ef0a7819e9a16b7cf9e542049b53fedeb076300f7e767cd3e19db8"
     }
   },
   "id": "lox_vent",
@@ -22,7 +22,7 @@
   "picture": null,
   "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
   "provenance": {
-    "commit": "78363bfb9",
+    "commit": "b2ee93a0a",
     "files_from": {
       "clip.usdc": "clip.usdc",
       "effect.usda": "effect.usda",
@@ -34,21 +34,14 @@
         "what": "baked by score's particle effects algorithm (tools/props/pad_vent/vent.py) from the launch's footage-measured venting: the liquid oxygen boil-off let out of the rocket's side vent, scaled to the pad's 48 m rocket"
       }
     ],
-    "taken_from": "score tools/props/pad_vent on this PC: the 2099 prologue pad's cryogenic venting before launch, baked by the particle effects algorithm from the launch footage's measured venting (2099 #161)",
+    "taken_from": "score tools/props/pad_vent on this PC: the 2099 prologue pad's cryogenic venting before launch, baked by the particle effects algorithm from the launch footage's measured venting, round 2: the footage's bright white cloud in larger, denser puffs (2099 #161)",
     "world": "world1"
   },
   "requires": [],
   "schema": "score-lib-entry/1",
   "seen_in": [],
   "state": "draft",
-  "tags": {
-    "effect": [
-      "cryogenic_vent"
-    ],
-    "engine": [
-      "usd"
-    ]
-  },
+  "tags": {},
   "title": "Pad rocket's liquid oxygen vent",
   "usd": {
     "layer": "effects",
