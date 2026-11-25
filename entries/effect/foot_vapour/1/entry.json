@@ -1,0 +1,60 @@
+{
+  "address": "effect/foot_vapour@1",
+  "files": {
+    "clip.usdc": {
+      "bytes": 46089064,
+      "role": "usd",
+      "sha256": "88fb7bd44b0eb3293c478300549ff65e864412e8517a17a6a12f4e50181af955"
+    },
+    "effect.usda": {
+      "bytes": 6337,
+      "role": "usd",
+      "sha256": "72a1cdf7035cf75a7bb6c41f5be10bd40abc024f1581dc06463a6224f0c794b1"
+    },
+    "settings.json": {
+      "bytes": 3574,
+      "role": "record",
+      "sha256": "15c24c448d843b17c46bc3c257d1f0cff7d3328064980763271f8c75cf082224"
+    }
+  },
+  "id": "foot_vapour",
+  "kind": "effect",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "78363bfb9",
+    "files_from": {
+      "clip.usdc": "clip.usdc",
+      "effect.usda": "effect.usda",
+      "settings.json": "settings.json"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "baked by score's particle effects algorithm (tools/props/pad_vent/vent.py) from the launch's footage-measured venting: the cold vapour creeping down the rocket and swelling round its foot, scaled to the pad's 48 m rocket"
+      }
+    ],
+    "taken_from": "score tools/props/pad_vent on this PC: the 2099 prologue pad's cryogenic venting before launch, baked by the particle effects algorithm from the launch footage's measured venting (2099 #161)",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "effect": [
+      "cryogenic_vent"
+    ],
+    "engine": [
+      "usd"
+    ]
+  },
+  "title": "Pad rocket's foot vapour",
+  "usd": {
+    "layer": "effects",
+    "path": "score_lib/effect/foot_vapour/1/effect.usda",
+    "root": "effect.usda",
+    "use": "reference"
+  },
+  "version": 1
+}

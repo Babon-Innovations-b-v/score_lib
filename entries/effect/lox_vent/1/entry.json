@@ -1,0 +1,60 @@
+{
+  "address": "effect/lox_vent@1",
+  "files": {
+    "clip.usdc": {
+      "bytes": 33605704,
+      "role": "usd",
+      "sha256": "e60845d2d67f3b612125bf856233bcc8ed457205b6c448d44b56d99b5bbd03b8"
+    },
+    "effect.usda": {
+      "bytes": 7277,
+      "role": "usd",
+      "sha256": "0a1bb85513abc7fc4064adf37359fea776240a9e86a102cf5877110f1aa17707"
+    },
+    "settings.json": {
+      "bytes": 3523,
+      "role": "record",
+      "sha256": "59cefccb5c9a43047e14baa56aed5abc7336b70e32f83be7cf6879e73b528cd1"
+    }
+  },
+  "id": "lox_vent",
+  "kind": "effect",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "78363bfb9",
+    "files_from": {
+      "clip.usdc": "clip.usdc",
+      "effect.usda": "effect.usda",
+      "settings.json": "settings.json"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "baked by score's particle effects algorithm (tools/props/pad_vent/vent.py) from the launch's footage-measured venting: the liquid oxygen boil-off let out of the rocket's side vent, scaled to the pad's 48 m rocket"
+      }
+    ],
+    "taken_from": "score tools/props/pad_vent on this PC: the 2099 prologue pad's cryogenic venting before launch, baked by the particle effects algorithm from the launch footage's measured venting (2099 #161)",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "effect": [
+      "cryogenic_vent"
+    ],
+    "engine": [
+      "usd"
+    ]
+  },
+  "title": "Pad rocket's liquid oxygen vent",
+  "usd": {
+    "layer": "effects",
+    "path": "score_lib/effect/lox_vent/1/effect.usda",
+    "root": "effect.usda",
+    "use": "reference"
+  },
+  "version": 1
+}
