@@ -1,0 +1,60 @@
+{
+  "address": "surface/earth_black_marble@1",
+  "files": {
+    "map.jpg": {
+      "bytes": 3480931,
+      "role": "texture",
+      "sha256": "3a401bb438e0dcc84f3d827b01b9b3d2545d5b04c8953ffcd1fa514e86152c8e"
+    },
+    "preview.png": {
+      "bytes": 261492,
+      "role": "picture",
+      "sha256": "21b8fe73b2b38703a9bd62c7b9458b3465b1e4a7e727cab4da53a77182fea77a"
+    },
+    "surface.json": {
+      "bytes": 366,
+      "role": "record",
+      "sha256": "df4899db11b4c64bb886d6c6a14bad5ee1f2c1d9dac5813db6666f031fa7b165"
+    }
+  },
+  "id": "earth_black_marble",
+  "kind": "surface",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "PIL resize",
+    "of": "map.jpg"
+  },
+  "provenance": {
+    "commit": "193ce476",
+    "files_from": {
+      "map.jpg": "BlackMarble_2016_3km.jpg (resampled to 8192x4096)",
+      "preview.png": "the map at 1024x512 (Lanczos)",
+      "surface.json": "written by 2099's space-view (the map's body, projection and source)"
+    },
+    "made_with": [
+      {
+        "by": "nasa_black_marble",
+        "carried": true,
+        "what": "the Black Marble 2016 3 km map, resampled from 13500x6750 to 8192x4096 (Lanczos)"
+      }
+    ],
+    "taken_from": "NASA's public-domain planet maps (Blue Marble, Black Marble 2016, the SVS CGI Moon Kit's LROC colour), downloaded 2026-11-25 for 2099's views out of the capsule (2099 #161)",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "look": [
+      "planet map",
+      "earth"
+    ],
+    "maker": [
+      "nasa"
+    ]
+  },
+  "title": "Earth's night lights (NASA Black Marble 2016)",
+  "usd": null,
+  "version": 1
+}

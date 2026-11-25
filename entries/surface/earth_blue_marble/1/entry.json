@@ -1,0 +1,60 @@
+{
+  "address": "surface/earth_blue_marble@1",
+  "files": {
+    "map.jpg": {
+      "bytes": 1617810,
+      "role": "texture",
+      "sha256": "f55226d46d27e05511f2118dc6aa24f5dbf9b6b2cddc87cc6e0e7dd067c00b11"
+    },
+    "preview.png": {
+      "bytes": 411767,
+      "role": "picture",
+      "sha256": "2463ca921edead0261ad05af84a4f0305b88cbd89c7dc5043569807922732e94"
+    },
+    "surface.json": {
+      "bytes": 365,
+      "role": "record",
+      "sha256": "8483bebdf5320c2d7c1631094269b20121393b7cbda63b64daf09d0780758022"
+    }
+  },
+  "id": "earth_blue_marble",
+  "kind": "surface",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "PIL resize",
+    "of": "map.jpg"
+  },
+  "provenance": {
+    "commit": "193ce476",
+    "files_from": {
+      "map.jpg": "world.200407.3x5400x2700.jpg",
+      "preview.png": "the map at 1024x512 (Lanczos)",
+      "surface.json": "written by 2099's space-view (the map's body, projection and source)"
+    },
+    "made_with": [
+      {
+        "by": "nasa_visible_earth",
+        "carried": true,
+        "what": "the Blue Marble Next Generation July 2004 map, its bytes as published"
+      }
+    ],
+    "taken_from": "NASA's public-domain planet maps (Blue Marble, Black Marble 2016, the SVS CGI Moon Kit's LROC colour), downloaded 2026-11-25 for 2099's views out of the capsule (2099 #161)",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "look": [
+      "planet map",
+      "earth"
+    ],
+    "maker": [
+      "nasa"
+    ]
+  },
+  "title": "Earth's day face (NASA Blue Marble Next Generation, July 2004)",
+  "usd": null,
+  "version": 1
+}

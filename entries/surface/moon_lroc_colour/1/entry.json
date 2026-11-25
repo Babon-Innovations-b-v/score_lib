@@ -1,0 +1,60 @@
+{
+  "address": "surface/moon_lroc_colour@1",
+  "files": {
+    "map.jpg": {
+      "bytes": 2484879,
+      "role": "texture",
+      "sha256": "b01b0842d9ec1b24140b925cba0de485e9887741c34add25dd5c41f47c47ee91"
+    },
+    "preview.png": {
+      "bytes": 724979,
+      "role": "picture",
+      "sha256": "1d6f44dc0d534258992778176444d3bdb4258f04e970e17098a3537f854b94df"
+    },
+    "surface.json": {
+      "bytes": 392,
+      "role": "record",
+      "sha256": "7a7de7c63f7c9bb05fc73250cbb2b1c65b91f8c025ae54a1b807ef2b853f7081"
+    }
+  },
+  "id": "moon_lroc_colour",
+  "kind": "surface",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "PIL resize",
+    "of": "map.jpg"
+  },
+  "provenance": {
+    "commit": "193ce476",
+    "files_from": {
+      "map.jpg": "lroc_color_poles_4k.tif (as JPEG)",
+      "preview.png": "the map at 1024x512 (Lanczos)",
+      "surface.json": "written by 2099's space-view (the map's body, projection and source)"
+    },
+    "made_with": [
+      {
+        "by": "nasa_svs_moon_kit",
+        "carried": true,
+        "what": "the CGI Moon Kit's LROC colour map (4k), converted from TIFF to JPEG"
+      }
+    ],
+    "taken_from": "NASA's public-domain planet maps (Blue Marble, Black Marble 2016, the SVS CGI Moon Kit's LROC colour), downloaded 2026-11-25 for 2099's views out of the capsule (2099 #161)",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "look": [
+      "planet map",
+      "moon"
+    ],
+    "maker": [
+      "nasa"
+    ]
+  },
+  "title": "The Moon's face (NASA SVS CGI Moon Kit, LROC colour)",
+  "usd": null,
+  "version": 1
+}
