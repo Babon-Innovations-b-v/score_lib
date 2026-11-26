@@ -6,23 +6,46 @@
       "role": "usd",
       "sha256": "b5d394dab0a725eaf50e1335b46a63fae2db8541849d3915be38b2481c940c97"
     },
+    "skin_detail_colour.png": {
+      "bytes": 107873,
+      "role": "texture",
+      "sha256": "95e66636626cfeed777a7f96da9cbcee911be76aef20409c2253ba8c2134ed9d"
+    },
+    "skin_detail_height.png": {
+      "bytes": 192746,
+      "role": "texture",
+      "sha256": "a9442154c18cd3871df3523fec50d3c0547a42c4d6c5dc7130ebc1088aa197b8"
+    },
     "surface.json": {
-      "bytes": 2425,
+      "bytes": 2807,
       "role": "record",
-      "sha256": "9bd30a0e0a4b199193245a69c548b182dc460dd617b87a6cb86696c3bc320d95"
+      "sha256": "cf48ddd6ffe54818d1e15249867de01467e7e7a627c62c5bb8f2149c60447e48"
     }
   },
   "id": "face_skin_light",
   "kind": "surface",
+  "licence": {
+    "credit": "Infinite, 3D Head Scan by Lee Perry-Smith (Infinite-Realities, ir-ltd.net), based on a work at www.triplegangers.com, converted by Morgan McGuire and Guedis Cardenas, from github.com/keijiro/InfiniteScan at 150b6c46ebb6a011b93ed2e0fee9b612df78281b, CC BY 3.0; changed: a forehead square cut out, its light and broad tone taken out, made to repeat",
+    "id": "CC-BY-3.0",
+    "source": "infinite_head_scan",
+    "url": "https://creativecommons.org/licenses/by/3.0/"
+  },
   "picture": null,
   "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
   "provenance": {
-    "commit": "ed6d3057bee2a2b33069c4ea6dca753b9edaa7a2",
+    "commit": "0efb529fbea0",
     "files_from": {
       "material.usda": "score tools/characters/face/finishes.py (face_skin_light)",
+      "skin_detail_colour.png": "score tools/characters/face/skin_scan.py from https://github.com/keijiro/InfiniteScan/raw/150b6c46ebb6a011b93ed2e0fee9b612df78281b/Assets/InfiniteScan/Textures/lambertian.jpg",
+      "skin_detail_height.png": "score tools/characters/face/skin_scan.py from https://github.com/keijiro/InfiniteScan/raw/150b6c46ebb6a011b93ed2e0fee9b612df78281b/Assets/InfiniteScan/Textures/lambertian.jpg",
       "surface.json": "score tools/characters/face/finishes.py (face_skin_light)"
     },
     "made_with": [
+      {
+        "by": "infinite_head_scan",
+        "carried": true,
+        "what": "the skin detail tiles, cut from the scan's albedo"
+      },
       {
         "by": "score",
         "what": "the finish's constants, set by score for the face (#226)"
@@ -43,7 +66,7 @@
       "face"
     ]
   },
-  "title": "Skin, light, with light through it and pores",
+  "title": "Skin, light, photographed detail, light through it",
   "usd": null,
   "version": 1
 }
