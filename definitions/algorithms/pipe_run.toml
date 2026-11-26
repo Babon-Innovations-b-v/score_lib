@@ -1,0 +1,15 @@
+# One engine algorithm of world 1 (README.md, Layout); read by score_lib/export/algorithm.py.
+name = "pipe_run"
+title = "Pipe run: a long thin part laid along its path with its profile, fittings and a part a library surface: pipes, conduits, drainpipes, cable bundles, hoses, cords, lantern strings, straps, ribs, trays and railings (2099 ADR-0008)"
+entry = "score.stages.place_build.pipe_run:write"
+roots = ["score/stages/place_build/pipe_run.py"]
+search = ["score/stages/place_build"]
+constants = ["score/stages/place_build/pipe_run.py:BEND_RADII", "score/stages/place_build/pipe_run.py:FLEXIBLE_RADII", "score/stages/place_build/pipe_run.py:ELBOW_TURN", "score/stages/place_build/pipe_run.py:FITTING_SHARE", "score/stages/place_build/pipe_run.py:CLAMP_SHARE", "score/stages/place_build/pipe_run.py:BRACKET_GAP", "score/stages/place_build/pipe_run.py:TIE_GAP", "score/stages/place_build/pipe_run.py:POST_GAP", "score/stages/place_build/pipe_run.py:RIDGE_DEPTH", "score/stages/place_build/pipe_run.py:BARS_GAP"]
+preset = []
+stage = ""
+contract = []
+needs = []
+tests = ["score/stages/place_build/test_a_laid_scene_holds_its_library_entries_where_the_agent_put_them.py"]
+picture = []
+requires = ["numpy", "usd-core"]
+test_requires = ["pillow", "python-fcl", "scipy", "trimesh", "rtree", "embreex"]
