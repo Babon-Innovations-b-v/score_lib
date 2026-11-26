@@ -1,0 +1,53 @@
+{
+  "address": "effect/awning_drips@1",
+  "files": {
+    "clip.usdc": {
+      "bytes": 23135,
+      "role": "usd",
+      "sha256": "a45c13cf1d3140a177c307b03fe38f5ffc82345ba3516de6f373a629e6bd2e42"
+    },
+    "effect.usda": {
+      "bytes": 52839,
+      "role": "usd",
+      "sha256": "a88b79ea560910883fc272c69cff20152c022013368bdebf931d36fe2f60b942"
+    },
+    "settings.json": {
+      "bytes": 2002,
+      "role": "record",
+      "sha256": "37deb759e6d955804091191150c744d54f89686aa31714da34dddcf312e99094"
+    }
+  },
+  "id": "awning_drips",
+  "kind": "effect",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "95d9ec22c",
+    "files_from": {
+      "clip.usdc": "clip.usdc",
+      "effect.usda": "effect.usda",
+      "settings.json": "settings.json"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "baked by score's particle effects algorithm (tools/props/prologue_fx/fx.py): drops of a filmed pendant drop's pinch-off volume falling a 2 m awning edge's 2.4 m to the pavement at their drag-slowed speed, draining heavy rain"
+      }
+    ],
+    "taken_from": "score tools/props/prologue_fx on this PC: the 2099 prologue's water effects, baked by the particle effects algorithm from published footage measures (2099 #161)",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {},
+  "title": "Street awning's rain drips",
+  "usd": {
+    "layer": "effects",
+    "path": "score_lib/effect/awning_drips/1/effect.usda",
+    "root": "effect.usda",
+    "use": "reference"
+  },
+  "version": 1
+}

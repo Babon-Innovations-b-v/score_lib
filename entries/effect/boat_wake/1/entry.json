@@ -1,0 +1,53 @@
+{
+  "address": "effect/boat_wake@1",
+  "files": {
+    "clip.usdc": {
+      "bytes": 11526376,
+      "role": "usd",
+      "sha256": "483f64fe7f7bd4b84edd4c27d24f102abfa2682111aef78e2e84fc22a77ae260"
+    },
+    "effect.usda": {
+      "bytes": 6674,
+      "role": "usd",
+      "sha256": "82f0f56a56ba05ee1b101735aec631ac45bf77b584af1fe1aabe09619899b8d0"
+    },
+    "settings.json": {
+      "bytes": 2367,
+      "role": "record",
+      "sha256": "d2313be7fa00e8a2990adff6205f99043978e1c7b5583c08175d54ded620a102"
+    }
+  },
+  "id": "boat_wake",
+  "kind": "effect",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "95d9ec22c",
+    "files_from": {
+      "clip.usdc": "clip.usdc",
+      "effect.usda": "effect.usda",
+      "settings.json": "settings.json"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "baked by score's particle effects algorithm (tools/props/prologue_fx/fx.py): an 8 m speedboat's whitecaps at 15 m/s, their angle between the bright waves' 1/Fr angle off airborne images and Kelvin's 19.47 degrees"
+      }
+    ],
+    "taken_from": "score tools/props/prologue_fx on this PC: the 2099 prologue's water effects, baked by the particle effects algorithm from published footage measures (2099 #161)",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {},
+  "title": "Speedboat's white-water wake",
+  "usd": {
+    "layer": "effects",
+    "path": "score_lib/effect/boat_wake/1/effect.usda",
+    "root": "effect.usda",
+    "use": "reference"
+  },
+  "version": 1
+}
