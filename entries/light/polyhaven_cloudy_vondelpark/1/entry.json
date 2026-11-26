@@ -1,0 +1,79 @@
+{
+  "address": "light/polyhaven_cloudy_vondelpark@1",
+  "files": {
+    "dome.usda": {
+      "bytes": 413,
+      "role": "usd",
+      "sha256": "aad6e4e19fcbff47132acc848f740e85031a6cf396de372dc603343e8fca8622"
+    },
+    "sky.exr": {
+      "bytes": 109185887,
+      "role": "texture",
+      "sha256": "83bac1849b08cedc152c771afd7e6a7f5b62c8ab2f2ef70147d1d77c1048e6f9"
+    },
+    "sky.png": {
+      "bytes": 4759272,
+      "role": "picture",
+      "sha256": "4231558089235d11e3ecbfd56598477fefb302e1dfd6c7b6904fa5cf8458671d"
+    }
+  },
+  "id": "polyhaven_cloudy_vondelpark",
+  "kind": "light",
+  "picture": {
+    "file": "sky.png",
+    "made_by": "Blender 5.2.2 (AgX view, scaled to 2048 x 1024)",
+    "of": "sky.exr"
+  },
+  "provenance": {
+    "commit": "bf50637fab7adcad4a572ca56e854af71b10c144",
+    "files_from": {
+      "dome.usda": "written by score for this entry: a UsdLux dome over sky.exr",
+      "sky.exr": "https://dl.polyhaven.org/file/ph-assets/HDRIs/exr/8k/cloudy_vondelpark_8k.exr (md5 af79ab0a431bbd2357f65ae41673a3d7, 2026-11-26)",
+      "sky.png": "drawn by score from sky.exr: Blender 5.2.2, AgX, 2048 x 1024"
+    },
+    "made_with": [
+      {
+        "by": "polyhaven",
+        "carried": true,
+        "what": "polyhaven.com/a/cloudy_vondelpark (8k unclipped EXR, Greg Zaal): an overcast midday sky over an autumn park path, Amsterdam (Poly Haven, CC0 1.0)"
+      },
+      {
+        "by": "score",
+        "what": "its UsdLux dome and its preview picture"
+      }
+    ],
+    "taken_from": "a CC0 sky and setting from Poly Haven for people drawn as photographs (score #223)",
+    "world": "kits"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "licence": [
+      "CC0 1.0"
+    ],
+    "pack": [
+      "Poly Haven"
+    ],
+    "place_kind": [
+      "outside",
+      "park"
+    ],
+    "time_of_day": [
+      "midday"
+    ],
+    "weather": [
+      "overcast"
+    ]
+  },
+  "title": "Cloudy Vondelpark (Poly Haven)",
+  "usd": {
+    "default_prim": "Sky",
+    "layer": "lights",
+    "path": "score_lib/light/polyhaven_cloudy_vondelpark/1/dome.usda",
+    "root": "dome.usda",
+    "use": "reference"
+  },
+  "version": 1
+}
