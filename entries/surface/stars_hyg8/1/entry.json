@@ -1,0 +1,66 @@
+{
+  "address": "surface/stars_hyg8@1",
+  "files": {
+    "preview.png": {
+      "bytes": 79684,
+      "role": "picture",
+      "sha256": "2c89714640c8ec1808ecc2e38150a667bce9cbff57d09b7106e37b9c74aaa3e7"
+    },
+    "stars.json": {
+      "bytes": 1693230,
+      "role": "record",
+      "sha256": "a8ac571804f095f0349b03c28afceb5a3acaa97236609a1e2ce78604c6a9367a"
+    },
+    "surface.json": {
+      "bytes": 313,
+      "role": "record",
+      "sha256": "f9f6b0a638c3b453f85d45cae2cdb04233b687e9aa312329f2525d8661ad8e32"
+    }
+  },
+  "id": "stars_hyg8",
+  "kind": "surface",
+  "licence": {
+    "credit": "The HYG star database 4.1 (astronexus, David Nash), CC BY-SA 4.0; changed: only its stars to V magnitude 8.0 and the columns id, position, magnitude, colour index and name kept, and a preview drawn",
+    "id": "CC-BY-SA-4.0",
+    "source": "hyg_stars",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "picture": {
+    "file": "preview.png",
+    "made_by": "numpy and Pillow, one dot a star by its magnitude",
+    "of": "stars.json"
+  },
+  "provenance": {
+    "commit": "7625c1e8",
+    "files_from": {
+      "preview.png": "the stars drawn on an equirectangular map, 1024x512",
+      "stars.json": "hygdata_v41.csv's rows with mag <= 8.0: id, ra x 15, dec, mag, ci, proper, brightest first",
+      "surface.json": "written by 2099's night sky (the record's columns and source)"
+    },
+    "made_with": [
+      {
+        "by": "hyg_stars",
+        "carried": true,
+        "what": "HYG 4.1's rows to V magnitude 8.0, carried as published (columns chosen)"
+      }
+    ],
+    "taken_from": "the HYG star database 4.1 (github.com/astronexus/HYG-Database, hyg/CURRENT/hygdata_v41.csv, CC BY-SA 4.0), its 41,487 rows to V magnitude 8.0 (the Sun left out), downloaded 2026-11-26 for 2099's night and space skies: the bright catalogue (surface/stars_bsc5, to about 6.5) leaves a sky far emptier than the prologue's concepts (2099 #161)",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "look": [
+      "sky map",
+      "stars"
+    ],
+    "maker": [
+      "hyg"
+    ]
+  },
+  "title": "The stars to magnitude 8 (HYG 4.1)",
+  "usd": null,
+  "version": 1
+}
