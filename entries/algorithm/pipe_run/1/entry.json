@@ -2,9 +2,9 @@
   "address": "algorithm/pipe_run@1",
   "files": {
     "code.json": {
-      "bytes": 53129,
+      "bytes": 53244,
       "role": "record",
-      "sha256": "754caf67d4bfcabe29c9bc95544c0da3374644a79440f352625805b4f82dbc14"
+      "sha256": "0d673534bbb014ecf53f7fe7e8c1e61c65419dce2423ad06decc7fb3ec7b7359"
     },
     "code/score/__init__.py": {
       "bytes": 0,
@@ -912,14 +912,19 @@
       "sha256": "ba7039be8ad39bd4c029912fdf27994c91bec3bc3a9c569a05379d14aad814b9"
     },
     "code/score/stages/place_build/__init__.py": {
-      "bytes": 147241,
+      "bytes": 150389,
       "role": "code",
-      "sha256": "fa7bb2e531da982ad4d7f71900bbfed5aa767382ff1606f80094c77cac447c79"
+      "sha256": "58c894dc461b5767157da7125746ef8ebd64aba8a016ad0b277ac64bda8c9d10"
     },
     "code/score/stages/place_build/area/__init__.py": {
       "bytes": 30930,
       "role": "code",
       "sha256": "e82546971fc5926bf5e7b937427acfe8b72f82d7ff686d2678a1f9484ff770eb"
+    },
+    "code/score/stages/place_build/cabin_shell.py": {
+      "bytes": 27227,
+      "role": "code",
+      "sha256": "ba104de60157f53f4cac271bcfc52cb0367f36de3d36a8cb6db85706ba648d27"
     },
     "code/score/stages/place_build/cockpit_kit.py": {
       "bytes": 136471,
@@ -1027,9 +1032,9 @@
       "sha256": "d4c9fd76213ec67e0603dec47bc97d270d2bf0647570d1506c546500c295f532"
     },
     "code/score/stages/place_build/pipe_run.py": {
-      "bytes": 27238,
+      "bytes": 28187,
       "role": "code",
-      "sha256": "01b431f9d50622271cbdcd347f6ab96cf05aede9ed67494d674e6aa8bd4f9f34"
+      "sha256": "33d75960a848af2d8642a722031fabd3590f0cddcdbfdd63b36315d275259ba3"
     },
     "code/score/stages/place_build/plan_fit/__init__.py": {
       "bytes": 21925,
@@ -1067,9 +1072,9 @@
       "sha256": "66836e697fbfc3adfda1e5ef60bdadec65c47fa4f9175b5292206ba33522bb50"
     },
     "code/score/stages/place_build/scene_package.py": {
-      "bytes": 117299,
+      "bytes": 117748,
       "role": "code",
-      "sha256": "64e54c10e7b5c3ecc6ba1227d994e6e6eaeb7f4e42ad3e83ed82331ff26ff26b"
+      "sha256": "0c84b79e365e238b944896db209a3eb39308a1b13855d0d89000ed3e21b1a172"
     },
     "code/score/stages/place_build/shapes/__init__.py": {
       "bytes": 15078,
@@ -1782,9 +1787,9 @@
       "sha256": "35f514d283de9fb426cfe0203bc215d0077da9c76bbb85fd2fd87f862ff5e76b"
     },
     "code/tools/props/library/package.py": {
-      "bytes": 33193,
+      "bytes": 33408,
       "role": "code",
-      "sha256": "e37dac6fb9e9d041d1461021ca9cdafe03b2e0a9ef695de80c391f047e4dc0ed"
+      "sha256": "2f7ab2745e30d1917c5be6fb81c1645da6aef1ff072adef83c90757b46120088"
     },
     "code/tools/props/library/part_judge.py": {
       "bytes": 8597,
@@ -2492,9 +2497,9 @@
       "sha256": "0b2d8d239e625acb4f40d9913067c8839bf0b88a86c221afff82e57d7f86541a"
     },
     "presets/world1/score/stages/people_cloth/inside/cloth.py": {
-      "bytes": 11632,
+      "bytes": 13147,
       "role": "record",
-      "sha256": "c0c18ac372883a62103909ced3939c7a09a4ab9cca88e8bfcb8835bc72559f5d"
+      "sha256": "80141a7e83cbf29ba1485fd2194ee81d28ce49e3fde4fb7066e0c00b453b8575"
     },
     "presets/world1/score/stages/physics/inside/newton_env.sh": {
       "bytes": 1476,
@@ -2774,7 +2779,7 @@
     "settings.schema.json": {
       "bytes": 1825,
       "role": "record",
-      "sha256": "42f52dfba9427506a348fbca61e1f48393bc9a7e4565cf7ca13c498666603bee"
+      "sha256": "de74cd4f8c951bf0298b50766023260b5557375564e7c6e5a3a651d65790641d"
     },
     "test/conftest.py": {
       "bytes": 5453,
@@ -2782,9 +2787,9 @@
       "sha256": "f806701c1ceeeacba599c2bcbef5d674f8b24cdb51ab031ad1042172f923367d"
     },
     "test/score/stages/place_build/test_a_laid_scene_holds_its_library_entries_where_the_agent_put_them.py": {
-      "bytes": 213141,
+      "bytes": 218623,
       "role": "code",
-      "sha256": "3f9a011ae67531c09dea2428c155859fb383e7a5114e41d80b3d10fc3b3f4ca4"
+      "sha256": "bc06f50bf12aa28eb7f6d743dc4651207d691b2900868b687580e52dbcb9f9ba"
     }
   },
   "id": "pipe_run",
@@ -2792,8 +2797,8 @@
   "picture": null,
   "picture_reason": "no world 1 output in the store pictures this algorithm",
   "provenance": {
-    "code": "da551cb56568808664fc8e2f8c055d77bb8cf7c5dc057b4a66fea30c9412de19",
-    "commit": "26bd3d2c0a839530cdae8d57e13bf81fc4e3bece",
+    "code": "df418e96dbbbf80a73918f429538e28933f4016554139af01f621d2ab7eb73ab",
+    "commit": "d04e9f43a24a5afc4c29d2903933ad706131b638",
     "made_with": [
       {
         "by": "score",
