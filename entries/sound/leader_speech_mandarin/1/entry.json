@@ -1,0 +1,79 @@
+{
+  "address": "sound/leader_speech_mandarin@1",
+  "files": {
+    "audio/voices/leader/leader_1.ogg": {
+      "bytes": 68597,
+      "role": "audio",
+      "sha256": "d7d933f8f6d4463c6d716501a120c236fbf6d1c3d0c263c510573e791c53ba45"
+    },
+    "audio/voices/leader/leader_2.ogg": {
+      "bytes": 70453,
+      "role": "audio",
+      "sha256": "0d9a1ed393fdccb2e15e83ba64fb60f4c816374bcd638c58da71f42b771f5710"
+    },
+    "audio/voices/leader/leader_3.ogg": {
+      "bytes": 69921,
+      "role": "audio",
+      "sha256": "0101fd3a7b036f982f1d9e9bad1d436442e86fe976b60993e5e33724f3dfc6bd"
+    },
+    "audio/voices/leader/leader_4.ogg": {
+      "bytes": 60121,
+      "role": "audio",
+      "sha256": "5ef81343a6bb4948eb7ac867599e7d1fcb6fbe02df5ad402d3868880a1158516"
+    },
+    "audio/voices/leader/leader_5.ogg": {
+      "bytes": 71517,
+      "role": "audio",
+      "sha256": "55d6175f125cb5071ccd1bfa79d91c0117bb6bca9e99049daec1519906fca1b4"
+    },
+    "audio/voices/leader/leader_6.ogg": {
+      "bytes": 70573,
+      "role": "audio",
+      "sha256": "5c02c77d1f1f1e1a3e424e80b6595d62c34d45d74a0a7785654db9f521089276"
+    },
+    "leader_lines.json": {
+      "bytes": 3073,
+      "role": "record",
+      "sha256": "91dbc5186963c15453e9ac9ae5907a3568bb427934acfae9c250e72dc221b765"
+    }
+  },
+  "id": "leader_speech_mandarin",
+  "kind": "sound",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "7575be87",
+    "files_from": {
+      "audio/voices/leader/leader_1.ogg": "game/prologue/voices/leader_1.ogg",
+      "audio/voices/leader/leader_2.ogg": "game/prologue/voices/leader_2.ogg",
+      "audio/voices/leader/leader_3.ogg": "game/prologue/voices/leader_3.ogg",
+      "audio/voices/leader/leader_4.ogg": "game/prologue/voices/leader_4.ogg",
+      "audio/voices/leader/leader_5.ogg": "game/prologue/voices/leader_5.ogg",
+      "audio/voices/leader/leader_6.ogg": "game/prologue/voices/leader_6.ogg",
+      "leader_lines.json": "game/prologue/voices/leader.json"
+    },
+    "made_with": [
+      {
+        "by": "cosyvoice",
+        "what": "audio/voices/leader/*.ogg: the six lines said by Fun-CosyVoice3-0.5B-2512's instruct2 mode, a reference clip of CosyVoice-300M-SFT's speaker 中文男, a horn loudspeaker band and the square's slap-back echoes in post"
+      }
+    ],
+    "taken_from": "the 2099 game's checkout at 7575be87: game/prologue/voices/ (the leader's six Mandarin lines, 2099 #161) and game/cockpit/mission/voices/ (Mission Control's eight preflight and liftoff lines and the guard's line, 2099 #246), made on this PC's card with CosyVoice",
+    "world": "2099"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "category": [
+      "voice"
+    ],
+    "made_by": [
+      "cosyvoice"
+    ]
+  },
+  "title": "Leader's speech, six Mandarin lines off the square's speakers",
+  "usd": null,
+  "version": 1
+}

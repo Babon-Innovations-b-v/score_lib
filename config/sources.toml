@@ -98,6 +98,15 @@ why = "Apache-2.0 weights: the licence covers the model, not the sounds it makes
 from = "score data/sound/licences.json; paper/source/score.md Table C1"
 
 [[source]]
+id = "cosyvoice"
+name = "Fun-CosyVoice3-0.5B-2512 and CosyVoice-300M-SFT (FunAudioLLM)"
+output = true
+copy = false
+match = ["made for this game with Fun-CosyVoice3-0.5B-2512 (Apache-2.0)"]
+why = "Apache-2.0 weights: the licence covers the model, not the speech it makes; no weights are copied in"
+from = "2099 game/prologue/voices/leader.json's from; huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512 (Apache-2.0)"
+
+[[source]]
 id = "cc0_recordings"
 name = "CC0 recordings (freesound.org, Kenney)"
 output = true
