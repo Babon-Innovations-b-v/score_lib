@@ -1,0 +1,72 @@
+{
+  "address": "surface/face_skin_dark@1",
+  "files": {
+    "material.usda": {
+      "bytes": 455,
+      "role": "usd",
+      "sha256": "e65350d9f21f52066dd2d4c27390589481247353614a59167c61bf3ac38bdb8c"
+    },
+    "skin_detail_colour.png": {
+      "bytes": 107873,
+      "role": "texture",
+      "sha256": "95e66636626cfeed777a7f96da9cbcee911be76aef20409c2253ba8c2134ed9d"
+    },
+    "skin_detail_height.png": {
+      "bytes": 192746,
+      "role": "texture",
+      "sha256": "a9442154c18cd3871df3523fec50d3c0547a42c4d6c5dc7130ebc1088aa197b8"
+    },
+    "surface.json": {
+      "bytes": 2204,
+      "role": "record",
+      "sha256": "b14765683bba477a13f8985696db3041d06898bc08fd00aaec3c38af3bbdede2"
+    }
+  },
+  "id": "face_skin_dark",
+  "kind": "surface",
+  "licence": {
+    "credit": "Infinite, 3D Head Scan by Lee Perry-Smith (Infinite-Realities, ir-ltd.net), based on a work at www.triplegangers.com, converted by Morgan McGuire and Guedis Cardenas, from github.com/keijiro/InfiniteScan at 150b6c46ebb6a011b93ed2e0fee9b612df78281b, CC BY 3.0; changed: a forehead square cut out, its light and broad tone taken out, made to repeat",
+    "id": "CC-BY-3.0",
+    "source": "infinite_head_scan",
+    "url": "https://creativecommons.org/licenses/by/3.0/"
+  },
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "95c66a21a",
+    "files_from": {
+      "material.usda": "score tools/characters/face/finishes.py (face_skin_dark)",
+      "skin_detail_colour.png": "score tools/characters/face/skin_scan.py from https://github.com/keijiro/InfiniteScan/raw/150b6c46ebb6a011b93ed2e0fee9b612df78281b/Assets/InfiniteScan/Textures/lambertian.jpg",
+      "skin_detail_height.png": "score tools/characters/face/skin_scan.py from https://github.com/keijiro/InfiniteScan/raw/150b6c46ebb6a011b93ed2e0fee9b612df78281b/Assets/InfiniteScan/Textures/lambertian.jpg",
+      "surface.json": "score tools/characters/face/finishes.py (face_skin_dark)"
+    },
+    "made_with": [
+      {
+        "by": "infinite_head_scan",
+        "carried": true,
+        "what": "the skin detail tiles, cut from the scan's albedo"
+      },
+      {
+        "by": "score",
+        "what": "the finish's constants, set by score for the face (#226)"
+      }
+    ],
+    "taken_from": "the dark skin finish written by score's face tools (#223)",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "skin"
+    ],
+    "use": [
+      "face"
+    ]
+  },
+  "title": "Skin, dark, photographed detail, light through it",
+  "usd": null,
+  "version": 1
+}
