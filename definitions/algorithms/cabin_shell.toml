@@ -1,0 +1,15 @@
+# One engine algorithm of world 1 (README.md, Layout); read by score_lib/export/algorithm.py.
+name = "cabin_shell"
+title = "Cabin shell: a capsule cabin's structure in its cone, a wall of flat Beta-cloth panels on frames with riveted ribs and fasteners, a deck of walkway plates over joists and an underfloor bay, a flat panelled ceiling (2099 #246)"
+entry = "score.stages.place_build.cabin_shell:write"
+roots = ["score/stages/place_build/cabin_shell.py"]
+search = ["score/stages/place_build"]
+constants = ["score/stages/place_build/cabin_shell.py:COURSES", "score/stages/place_build/cabin_shell.py:CEILING", "score/stages/place_build/cabin_shell.py:INSET", "score/stages/place_build/cabin_shell.py:JOINTS", "score/stages/place_build/cabin_shell.py:SEAM", "score/stages/place_build/cabin_shell.py:FRAME", "score/stages/place_build/cabin_shell.py:BACK", "score/stages/place_build/cabin_shell.py:PANEL", "score/stages/place_build/cabin_shell.py:RIB", "score/stages/place_build/cabin_shell.py:FASTENER", "score/stages/place_build/cabin_shell.py:DECK", "score/stages/place_build/cabin_shell.py:RING", "score/stages/place_build/cabin_shell.py:JOIST", "score/stages/place_build/cabin_shell.py:BAY"]
+preset = []
+stage = ""
+contract = []
+needs = []
+tests = ["score/stages/place_build/test_a_laid_scene_holds_its_library_entries_where_the_agent_put_them.py"]
+picture = []
+requires = ["numpy", "usd-core", "scipy"]
+test_requires = ["pillow", "python-fcl", "trimesh", "rtree", "embreex"]
