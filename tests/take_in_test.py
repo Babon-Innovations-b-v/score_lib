@@ -88,9 +88,15 @@ def test_a_kit_piece_a_surface_and_motion_clips_take_their_roles_and_tags(librar
          "made_with": [{"what": "the bake", "source": MADE}]},
         {"kind": "effect", "id": "no_emitter", "title": "No emitter",
          "files": {"clip.usdc": {"path": str(folder / "piece.usda"), "from": "clip.usdc"}},
-         "made_with": [{"what": "the bake", "source": MADE}]}]
+         "made_with": [{"what": "the bake", "source": MADE}]},
+        {"kind": "light", "id": "park_sky", "title": "Park sky",
+         "files": {"dome.usda": {"path": str(folder / "piece.usda"), "from": "dome.usda"},
+                   "sky.exr": {"path": str(folder / "walking.npz"), "from": "park_4k.exr"}},
+         "usd": {"root": "dome.usda", "use": "reference", "layer": "lights"},
+         "made_with": [{"what": "the sky", "source": MADE}]}]
     report = take_in.take_in(library, blobs, listed)
-    assert report["new"] == ["kit/door_frame_1@1", "character/clips@1", "surface/concrete_maps@1", "effect/wisp@1"]
+    assert report["new"] == ["kit/door_frame_1@1", "character/clips@1", "surface/concrete_maps@1", "effect/wisp@1",
+                             "light/park_sky@1"]
     assert [row["id"] for row in report["refused"]] == ["effect/no_emitter"]
     effect = entries.load_address(library, "effect/wisp@1")
     assert effect["usd"]["root"] == "effect.usda" and effect["files"]["clip.usdc"]["role"] == "usd"
@@ -101,6 +107,8 @@ def test_a_kit_piece_a_surface_and_motion_clips_take_their_roles_and_tags(librar
     clips = entries.load_address(library, "character/clips@1")
     assert kit["files"]["piece.usda"]["role"] == "usd" and kit["tags"] == {"kit": ["piece"]}
     assert clips["files"]["motions/walking.npz"]["role"] == "motion"
+    sky = entries.load_address(library, "light/park_sky@1")
+    assert sky["files"]["sky.exr"]["role"] == "texture" and sky["usd"]["root"] == "dome.usda"
     records = entries.all_entries(library)
     assert verify.check_taken_in(blobs, records) == [] and verify.check_schemas(library, records) == []
 
@@ -124,11 +132,11 @@ def test_refused_unknown_source_kind_and_ending(library, tmp_path):
     folder = loose(tmp_path / "loose")
     listed = listing(folder)
     listed["entries"][0]["made_with"] = [{"what": "x", "source": "a stranger's sounds"}]
-    listed["entries"][1]["kind"] = "light"
+    listed["entries"][1]["kind"] = "ground"
     listed["entries"].append({"kind": "sound", "id": "odd", "title": "Odd", "made_with": [{"what": "x", "source": CC0}],
                               "files": {"audio/odd.txt": {"path": str(folder / "hum.ogg"), "from": "odd.txt"}}})
     report = take_in.take_in(library, from_environment(), listed)
-    assert [row["id"] for row in report["refused"]] == ["sound/hum.recordings", "light/box.gltf", "sound/odd"]
+    assert [row["id"] for row in report["refused"]] == ["sound/hum.recordings", "ground/box.gltf", "sound/odd"]
     assert "not in sources.toml" in report["refused"][0]["why"]
     assert not list((library / "entries").rglob("entry.json"))
 
@@ -227,10 +235,13 @@ def test_a_take_keeps_its_camera_folder_and_is_saved_to_origin(library, tmp_path
     assert take_in.taken_in_saved(library, blobs, a_take(tmp_path / "pixal"))["saved"] is None
 
 
-@pytest.mark.parametrize("name, role", [("model.usd", "usd"), ("look.mdl", "code"), ("look.usda", "usd")])
-def test_an_adopted_sets_usd_and_mdl_files_have_roles(name, role):
-    """Break: take_in.ROLES without '.usd' or '.mdl' (an adopted set's own files are refused at take-in)."""
-    assert take_in.role_of(name, "model") == role
+@pytest.mark.parametrize("name, kind, role", [("model.usd", "model", "usd"), ("look.mdl", "model", "code"),
+                                             ("look.usda", "model", "usd"), ("sky.exr", "light", "texture"),
+                                             ("sky.hdr", "light", "texture"), ("dome.usda", "light", "usd")])
+def test_an_adopted_sets_usd_and_mdl_files_have_roles(name, kind, role):
+    """Break: take_in.ROLES without '.usd' or '.mdl' (an adopted set's own files are refused at take-in), or without
+    '.exr' or '.hdr' (a CC0 sky's high-range picture is refused, score #223)."""
+    assert take_in.role_of(name, kind) == role
 
 
 def test_an_entry_brings_its_own_preview_picture(library, tmp_path):

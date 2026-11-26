@@ -5,7 +5,7 @@ The list is one JSON file:
 
     {"world": "world1", "commit": "<the score commit that named the files>", "taken_from": "<where the bytes came
      from, in words>",
-     "entries": [{"kind": "sound" | "model" | "kit" | "character" | "surface" | "take" | "effect",
+     "entries": [{"kind": "sound" | "model" | "kit" | "character" | "surface" | "take" | "effect" | "light",
                   "id": "<entry id>", "title": "<title>",
                   "files": {"<name in the entry>": {"path": "<local file>", "from": "<its name where it came from>"}},
                   "made_with": [{"what": "<part>", "source": "<a sources.toml id or credit text>",
@@ -35,7 +35,9 @@ clips (`.npz`) and their records; a `surface` entry is one image-mapped finish (
 and its record, `surface.json`), such as a CC0 PBR set; an `effect` entry is one emitter score's particle effects
 algorithm baked (its schema prim, `effect.usda`, the root its record's `usd` names as the export's effects do, the
 clip it plays, `.usdc`, and its settings record), never one from outside (CONTRIBUTING.md). A `.json` file of any kind
-is a record.
+is a record. A `light` entry is one photographed sky and setting as an environment light (a CC0 HDRI's
+high-range picture, `.exr` or `.hdr`, and its UsdLux dome, `dome.usda`), lighting and backing a picture as the real
+place it was taken in (score #223: a person drawn as a photograph).
 
 A `take` entry is one Pixal3D take whole (score's work/pixal, 2026-10-28: its only copy lay on one disk): its models
 and record (`<take>.glb`, `<take>-final.glb`, `<take>-<faces>.glb`, `<take>.json`) and its camera folder
@@ -54,11 +56,12 @@ from score_lib.admission import NotAdmitted, Sources
 from score_lib.blobs import file_sha256, put_all
 
 
-KINDS = ("sound", "model", "take", "kit", "character", "surface", "effect")
+KINDS = ("sound", "model", "take", "kit", "character", "surface", "effect", "light")
 # An effect entry's emitter file, laid by reference as the export's effect entries are (export/effect.py).
 EFFECT_USD = {"root": "effect.usda", "layer": "effects", "use": "reference"}
 ROLES = {".json": "record", ".npz": "motion", ".usdc": "usd", ".usda": "usd", ".usd": "usd", ".mdl": "code", ".ogg": "audio", ".wav": "audio", ".mp3": "audio", ".flac": "audio", ".gltf": "gltf", ".glb": "gltf",
-         ".bin": "gltf", ".png": "texture", ".jpg": "texture", ".jpeg": "texture", ".webp": "texture"}
+         ".bin": "gltf", ".png": "texture", ".jpg": "texture", ".jpeg": "texture", ".webp": "texture",
+         ".exr": "texture", ".hdr": "texture"}
 # A take's files: its models and its record, and in its `.svviews` folder the close-up and its camera.
 TAKE_ROLES = {".glb": "gltf", ".json": "record"}
 CAMERA_ROLES = {".png": "closeup", ".json": "record"}
