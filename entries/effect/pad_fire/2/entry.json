@@ -1,0 +1,63 @@
+{
+  "address": "effect/pad_fire@2",
+  "files": {
+    "clip.usdc": {
+      "bytes": 39983416,
+      "role": "usd",
+      "sha256": "0a7a02d093cf7e37076b040dffc90e525a8595b473416c35cabcf96168e65d3d"
+    },
+    "effect.usda": {
+      "bytes": 4946,
+      "role": "usd",
+      "sha256": "e79a605a8c25384b8b32aad7a2eef9b3b9a1a7126ce03ef370f1a257b9b4647d"
+    },
+    "settings.json": {
+      "bytes": 5464,
+      "role": "record",
+      "sha256": "13b2e28ef34d9d6a252db98df29831a3a94b18a5aa7fe2f46d9081239b16594f"
+    }
+  },
+  "id": "pad_fire",
+  "kind": "effect",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "63a02beb68995267a7dfe1a6f18927c257cdee03",
+    "files_from": {
+      "clip.usdc": "pad_fire/clip.usdc",
+      "effect.usda": "pad_fire/effect.usda",
+      "settings.json": "pad_fire/settings.json"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "baked by score's particle effects algorithm (tools/props/launch_exhaust/exhaust.py) from the launch's footage-measured exhaust, scaled to the pad's 48 m rocket: the hot exhaust glowing as it spreads over the pad at ignition"
+      }
+    ],
+    "taken_from": "score tools/props/smoke_card, launch_cloud, launch_exhaust and moon_dust on this PC: the 2099 prologue's launch smoke, exhaust and Moon landing dust baked again from their footage-measured records, the smoke drawn with a Mantaflow billow flipbook (2099 #161)",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/particle_effects@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "effect": [
+      "exhaust_on_the_pad"
+    ],
+    "place_kind": [
+      "earth",
+      "outside"
+    ]
+  },
+  "title": "Launch pad fire",
+  "usd": {
+    "layer": "effects",
+    "path": "score_lib/effect/pad_fire/2/effect.usda",
+    "root": "effect.usda",
+    "use": "reference"
+  },
+  "version": 2
+}

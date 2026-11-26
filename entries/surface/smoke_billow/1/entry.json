@@ -1,0 +1,71 @@
+{
+  "address": "surface/smoke_billow@1",
+  "files": {
+    "material.usda": {
+      "bytes": 1757,
+      "role": "usd",
+      "sha256": "a359f3da4308d56f795649a7d6fc68c5560af66755150f16c73f18174d1d15f9"
+    },
+    "preview.png": {
+      "bytes": 288989,
+      "role": "picture",
+      "sha256": "4c82c22b10ed2debcd780e502dfab32f5683fab3632f9ad0f699e3fa6732fbd6"
+    },
+    "smoke_a.png": {
+      "bytes": 642711,
+      "role": "texture",
+      "sha256": "6a3f8b9e2808002a9e49e47d9772f300a79f61a14b9601d99105cd7bf0dc6696"
+    },
+    "smoke_b.png": {
+      "bytes": 630319,
+      "role": "texture",
+      "sha256": "be7c5d8d18764e2569be2cddfda901e1115d576bfd11af70ff0e7af1f9ca9a87"
+    },
+    "surface.json": {
+      "bytes": 1044,
+      "role": "record",
+      "sha256": "d2715b7cebd8fde9b62255915115e837ca851381b2ce357cd4ed6047fc89f7cf"
+    }
+  },
+  "id": "smoke_billow",
+  "kind": "surface",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "tools/props/smoke_card/card.py",
+    "of": "smoke_a.png"
+  },
+  "provenance": {
+    "commit": "63a02beb68995267a7dfe1a6f18927c257cdee03",
+    "files_from": {
+      "material.usda": "smoke_billow/material.usda",
+      "preview.png": "smoke_billow/preview.png",
+      "smoke_a.png": "smoke_billow/smoke_a.png",
+      "smoke_b.png": "smoke_billow/smoke_b.png",
+      "surface.json": "smoke_billow/surface.json"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "one puff of smoke simulated by Mantaflow (Blender's gas solver) and rendered six-way lit by Cycles on the processor, packed as two 4 x 4 flipbook atlases (tools/props/smoke_card)"
+      }
+    ],
+    "taken_from": "score tools/props/smoke_card, launch_cloud, launch_exhaust and moon_dust on this PC: the 2099 prologue's launch smoke, exhaust and Moon landing dust baked again from their footage-measured records, the smoke drawn with a Mantaflow billow flipbook (2099 #161)",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "effect": [
+      "smoke",
+      "steam"
+    ],
+    "family": [
+      "flipbook"
+    ]
+  },
+  "title": "Billowing smoke flipbook",
+  "usd": null,
+  "version": 1
+}

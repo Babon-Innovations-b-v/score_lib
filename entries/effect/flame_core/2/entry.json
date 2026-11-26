@@ -1,0 +1,63 @@
+{
+  "address": "effect/flame_core@2",
+  "files": {
+    "clip.usdc": {
+      "bytes": 361200,
+      "role": "usd",
+      "sha256": "d39cdef9103094968419839121ca1738ab20952678205cb09da9022eb04b055a"
+    },
+    "effect.usda": {
+      "bytes": 139657,
+      "role": "usd",
+      "sha256": "a6ea894309cd4ce8d734a2334fd9206ac64b802cc6ced84f4e50c6a379147923"
+    },
+    "settings.json": {
+      "bytes": 5486,
+      "role": "record",
+      "sha256": "c47fce5b2014d259219913bfa6cefccc1a3e1ae088d561ecbc53d1c5ee7d7ddf"
+    }
+  },
+  "id": "flame_core",
+  "kind": "effect",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "63a02beb68995267a7dfe1a6f18927c257cdee03",
+    "files_from": {
+      "clip.usdc": "flame_core/clip.usdc",
+      "effect.usda": "flame_core/effect.usda",
+      "settings.json": "flame_core/settings.json"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "baked by score's particle effects algorithm (tools/props/launch_exhaust/exhaust.py) from the launch's footage-measured exhaust, scaled to the pad's 48 m rocket: the white core of the flame under the engines"
+      }
+    ],
+    "taken_from": "score tools/props/smoke_card, launch_cloud, launch_exhaust and moon_dust on this PC: the 2099 prologue's launch smoke, exhaust and Moon landing dust baked again from their footage-measured records, the smoke drawn with a Mantaflow billow flipbook (2099 #161)",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/particle_effects@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "effect": [
+      "rocket_flame"
+    ],
+    "place_kind": [
+      "earth",
+      "outside"
+    ]
+  },
+  "title": "Rocket flame core",
+  "usd": {
+    "layer": "effects",
+    "path": "score_lib/effect/flame_core/2/effect.usda",
+    "root": "effect.usda",
+    "use": "reference"
+  },
+  "version": 2
+}

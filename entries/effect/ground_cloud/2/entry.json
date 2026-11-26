@@ -1,0 +1,76 @@
+{
+  "address": "effect/ground_cloud@2",
+  "files": {
+    "clip.usdc": {
+      "bytes": 36122440,
+      "role": "usd",
+      "sha256": "8fd8e27d4e097a7c92340e6e3ec6f66fca2989b300036cd4da850a5ff19b9f37"
+    },
+    "effect.usda": {
+      "bytes": 5516,
+      "role": "usd",
+      "sha256": "61375ee4544ac6c2b3e854a31b7644259a6e29356c146a31dfb1bdb45df3b3c5"
+    },
+    "settings.json": {
+      "bytes": 7465,
+      "role": "record",
+      "sha256": "1c175837fa2fd98a35c17e7212b9cf5e9312030d9c33e8b737927c1bdc53972b"
+    },
+    "smoke_a.png": {
+      "bytes": 642711,
+      "role": "texture",
+      "sha256": "6a3f8b9e2808002a9e49e47d9772f300a79f61a14b9601d99105cd7bf0dc6696"
+    },
+    "smoke_b.png": {
+      "bytes": 630319,
+      "role": "texture",
+      "sha256": "be7c5d8d18764e2569be2cddfda901e1115d576bfd11af70ff0e7af1f9ca9a87"
+    }
+  },
+  "id": "ground_cloud",
+  "kind": "effect",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "63a02beb68995267a7dfe1a6f18927c257cdee03",
+    "files_from": {
+      "clip.usdc": "ground_cloud/clip.usdc",
+      "effect.usda": "ground_cloud/effect.usda",
+      "settings.json": "ground_cloud/settings.json",
+      "smoke_a.png": "ground_cloud/smoke_a.png",
+      "smoke_b.png": "ground_cloud/smoke_b.png"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "baked by score's particle effects algorithm (tools/props/launch_cloud/cloud.py) from the launch's footage-measured cloud, scaled to the pad's 48 m rocket, its puffs drawn with the smoke flipbook: the exhaust and steam rolling out sideways from the pad at ignition"
+      }
+    ],
+    "taken_from": "score tools/props/smoke_card, launch_cloud, launch_exhaust and moon_dust on this PC: the 2099 prologue's launch smoke, exhaust and Moon landing dust baked again from their footage-measured records, the smoke drawn with a Mantaflow billow flipbook (2099 #161)",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/particle_effects@1",
+    "surface/smoke_billow@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "effect": [
+      "exhaust_ground_cloud"
+    ],
+    "place_kind": [
+      "earth",
+      "outside"
+    ]
+  },
+  "title": "Launch ground cloud",
+  "usd": {
+    "layer": "effects",
+    "path": "score_lib/effect/ground_cloud/2/effect.usda",
+    "root": "effect.usda",
+    "use": "reference"
+  },
+  "version": 2
+}

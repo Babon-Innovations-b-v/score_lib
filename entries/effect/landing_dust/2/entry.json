@@ -1,0 +1,63 @@
+{
+  "address": "effect/landing_dust@2",
+  "files": {
+    "clip.usdc": {
+      "bytes": 12002088,
+      "role": "usd",
+      "sha256": "55919c7c143f36d4a587582dbcb00f07c344799056e522042a8818850b86d94a"
+    },
+    "effect.usda": {
+      "bytes": 54864,
+      "role": "usd",
+      "sha256": "2bd848c79d40b6d9ca8e0a0c7537d0e25a9d29cdea54cec7236f05661a6c8b84"
+    },
+    "settings.json": {
+      "bytes": 5674,
+      "role": "record",
+      "sha256": "d5e59f4987dcea0577ef28e8b01ad515b7a2f596d61dae519b45097cdc5a1c76"
+    }
+  },
+  "id": "landing_dust",
+  "kind": "effect",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "63a02beb68995267a7dfe1a6f18927c257cdee03",
+    "files_from": {
+      "clip.usdc": "landing_dust/clip.usdc",
+      "effect.usda": "landing_dust/effect.usda",
+      "settings.json": "landing_dust/settings.json"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "baked by score's particle effects algorithm (tools/props/moon_dust/dust.py) from the Apollo films' measured landing dust sheet, falling at the Moon's own pull"
+      }
+    ],
+    "taken_from": "score tools/props/smoke_card, launch_cloud, launch_exhaust and moon_dust on this PC: the 2099 prologue's launch smoke, exhaust and Moon landing dust baked again from their footage-measured records, the smoke drawn with a Mantaflow billow flipbook (2099 #161)",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/particle_effects@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "effect": [
+      "landing_dust_veil"
+    ],
+    "place_kind": [
+      "moon",
+      "outside"
+    ]
+  },
+  "title": "Moon landing dust",
+  "usd": {
+    "layer": "effects",
+    "path": "score_lib/effect/landing_dust/2/effect.usda",
+    "root": "effect.usda",
+    "use": "reference"
+  },
+  "version": 2
+}

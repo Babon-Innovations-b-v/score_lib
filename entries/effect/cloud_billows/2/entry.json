@@ -1,0 +1,76 @@
+{
+  "address": "effect/cloud_billows@2",
+  "files": {
+    "clip.usdc": {
+      "bytes": 48543952,
+      "role": "usd",
+      "sha256": "c71e34fe87c4f9efdce8d6b84d034a7fd2b9bd65c88a74ab156f2ff462407ea8"
+    },
+    "effect.usda": {
+      "bytes": 5329,
+      "role": "usd",
+      "sha256": "3810dab7a6c71f1db18f098fa0c339fbbdff7dbbbe24b371101c8f292b4bc2f6"
+    },
+    "settings.json": {
+      "bytes": 7453,
+      "role": "record",
+      "sha256": "8691e46e8247b7243549252c14c7ec209b1624c42730a792bf9ae51967ada9d5"
+    },
+    "smoke_a.png": {
+      "bytes": 642711,
+      "role": "texture",
+      "sha256": "6a3f8b9e2808002a9e49e47d9772f300a79f61a14b9601d99105cd7bf0dc6696"
+    },
+    "smoke_b.png": {
+      "bytes": 630319,
+      "role": "texture",
+      "sha256": "be7c5d8d18764e2569be2cddfda901e1115d576bfd11af70ff0e7af1f9ca9a87"
+    }
+  },
+  "id": "cloud_billows",
+  "kind": "effect",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "63a02beb68995267a7dfe1a6f18927c257cdee03",
+    "files_from": {
+      "clip.usdc": "cloud_billows/clip.usdc",
+      "effect.usda": "cloud_billows/effect.usda",
+      "settings.json": "cloud_billows/settings.json",
+      "smoke_a.png": "cloud_billows/smoke_a.png",
+      "smoke_b.png": "cloud_billows/smoke_b.png"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "baked by score's particle effects algorithm (tools/props/launch_cloud/cloud.py) from the launch's footage-measured cloud, scaled to the pad's 48 m rocket, its puffs drawn with the smoke flipbook: the billows the exhaust throws up as it rolls out"
+      }
+    ],
+    "taken_from": "score tools/props/smoke_card, launch_cloud, launch_exhaust and moon_dust on this PC: the 2099 prologue's launch smoke, exhaust and Moon landing dust baked again from their footage-measured records, the smoke drawn with a Mantaflow billow flipbook (2099 #161)",
+    "world": "world1"
+  },
+  "requires": [
+    "algorithm/particle_effects@1",
+    "surface/smoke_billow@1"
+  ],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "effect": [
+      "exhaust_ground_cloud"
+    ],
+    "place_kind": [
+      "earth",
+      "outside"
+    ]
+  },
+  "title": "Launch cloud billows",
+  "usd": {
+    "layer": "effects",
+    "path": "score_lib/effect/cloud_billows/2/effect.usda",
+    "root": "effect.usda",
+    "use": "reference"
+  },
+  "version": 2
+}
