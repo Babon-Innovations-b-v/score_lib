@@ -1,0 +1,49 @@
+{
+  "address": "surface/hair_strands_ash_brown@1",
+  "files": {
+    "material.usda": {
+      "bytes": 470,
+      "role": "usd",
+      "sha256": "3e946bc8dd15c24dd0d4cda6195803127f036a2568a6daa9c7d2fac03fbe3314"
+    },
+    "surface.json": {
+      "bytes": 909,
+      "role": "record",
+      "sha256": "4dafd66e6ac9ade9112cd9b9fa431e8bc54870fe67f09a063a0016f92143d0eb"
+    }
+  },
+  "id": "hair_strands_ash_brown",
+  "kind": "surface",
+  "picture": null,
+  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "provenance": {
+    "commit": "be0be92b85ae2e7d087e2546238899a111830955",
+    "files_from": {
+      "material.usda": "score tools/characters/hair/finish.py (hair_strands_ash_brown)",
+      "surface.json": "score tools/characters/hair/finish.py (hair_strands_ash_brown)"
+    },
+    "made_with": [
+      {
+        "by": "score",
+        "what": "the fibre's constants, set by score from pbrt-v3's hair material (Chiang et al. 2016) for strand hair (#223)"
+      }
+    ],
+    "taken_from": "the strand hair's finish written by score's hair tools (#223)",
+    "world": "world1"
+  },
+  "requires": [],
+  "schema": "score-lib-entry/1",
+  "seen_in": [],
+  "state": "draft",
+  "tags": {
+    "family": [
+      "hair"
+    ],
+    "use": [
+      "hair"
+    ]
+  },
+  "title": "Hair strands, mid ash brown (Principled Hair)",
+  "usd": null,
+  "version": 1
+}
