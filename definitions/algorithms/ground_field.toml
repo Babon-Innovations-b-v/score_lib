@@ -1,0 +1,15 @@
+# One engine algorithm of world 1 (README.md, Layout); read by score_lib/export/algorithm.py.
+name = "ground_field"
+title = "Ground field: a place's shaped ground as one closed heightfield solid in library surfaces, each face the first band its height and slope meet, the bands' limits moved in seeded patches, finer cells in fine boxes (2099 #161)"
+entry = "score.stages.place_build.ground_field:write"
+roots = ["score/stages/place_build/ground_field.py"]
+search = ["score/stages/place_build"]
+constants = ["score/stages/place_build/ground_field.py:BAND_LIMITS", "score/stages/place_build/ground_field.py:PATCH", "score/stages/place_build/ground_field.py:BOTTOM"]
+preset = []
+stage = ""
+contract = []
+needs = []
+tests = ["score/stages/place_build/test_a_laid_scene_holds_its_library_entries_where_the_agent_put_them.py"]
+picture = []
+requires = ["numpy", "usd-core"]
+test_requires = ["pillow", "python-fcl", "scipy", "trimesh", "rtree", "embreex"]
