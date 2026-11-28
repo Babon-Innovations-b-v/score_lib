@@ -3,13 +3,13 @@
   "files": {
     "preview.png": {
       "bytes": 555847,
-      "role": "texture",
+      "role": "picture",
       "sha256": "5bb88d05d554abddcf6cdc8e1b9368ce5e0087ba7cf3f095c0446c29a59b4cc3"
     },
     "toggle_switch_trellis.capsule-final.glb": {
-      "bytes": 6003092,
+      "bytes": 6144420,
       "role": "gltf",
-      "sha256": "2bd633c1f8f5dc0c07f1f81d1927900dccda5355e5417ae1c2ee74bb7b69d5a4"
+      "sha256": "9fdfe9b3f3bb70887ca397042a0ea80af2972cc022cb1a3e7b86b94d37206b5e"
     },
     "toggle_switch_trellis.capsule-hulls.glb": {
       "bytes": 210044,
@@ -17,19 +17,22 @@
       "sha256": "ea4e42ab613267d332e30c9150eebae9890d369d481b2b70d369b288c3b6c9b3"
     },
     "toggle_switch_trellis.capsule.json": {
-      "bytes": 2558,
+      "bytes": 2461,
       "role": "record",
-      "sha256": "db11a355f321650c92fe064355bd7e7d429f45751a9f5edb4d7053776e2c9109"
+      "sha256": "09b1db4e831d87b70fd5d10b1dd1bd167ff05735b59a8ab083590694a137859a"
     }
   },
   "id": "toggle_switch_trellis.capsule",
   "kind": "model",
-  "picture": null,
-  "picture_reason": "a loose made file taken in (score-lib take-in): no picture made yet",
+  "picture": {
+    "file": "preview.png",
+    "made_by": "score place_build render (Blender, laid with its library finish)",
+    "of": "toggle_switch_trellis.capsule-final.glb"
+  },
   "provenance": {
-    "commit": "5c9cc4bb28568a3b2f1eae506ce4e3862de9fe6f",
+    "commit": "0a91e3ad62c1d255046fe78951660a8b02fba59b",
     "files_from": {
-      "preview.png": "made/preview.png",
+      "preview.png": "render/view-p_toggle_switch.png",
       "toggle_switch_trellis.capsule-final.glb": "made/toggle_switch_trellis.capsule-final.glb",
       "toggle_switch_trellis.capsule-hulls.glb": "made/toggle_switch_trellis.capsule-hulls.glb",
       "toggle_switch_trellis.capsule.json": "made/toggle_switch_trellis.capsule.json"
